@@ -6,9 +6,13 @@ This project was inspired by [Honey's Monster Hunter World build calculator](htt
 
 **This project is an early work-in-progress. Also, I'm still learning React!**
 
-## How do I run this?
+## How do I use this?
 
-Simply host the `src` directory on a web server. The codebase is totally toolchainless.
+I'm currently hosting this website here: <http://mhr-builder.simshadows.com/>
+
+## How do I host this myself?
+
+Simply host the `src` directory on a web server. The codebase is totally toolchainless and has no backend application code.
 
 For example, you can use the Python simple server:
 
