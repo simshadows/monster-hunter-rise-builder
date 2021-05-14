@@ -8,17 +8,14 @@ This project was inspired by [Honey's Monster Hunter World build calculator](htt
 
 **This project is an early work-in-progress. Also, I'm still learning React!**
 
-## How do I use this?
-
-
 ## How do I host this myself?
 
-Simply host the `src` directory on a web server. The codebase is totally toolchainless and has no backend application code.
+Simply host the repository root on a web server. The codebase is static and totally toolchainless.
 
 For example, you can use the Python simple server:
 
 ```
-cd src
+cd monster-hunter-rise-builder
 python3 -m http.server
 ```
 

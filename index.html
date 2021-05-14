@@ -1,16 +1,51 @@
 <!doctype html>
 
 <html>
-
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="refresh" content="0; URL=src" />
+
     <title>MHR Builder</title>
+
+    <!-- <link rel="stylesheet" href="/stylesheets/style.css"> -->
 </head>
 
 <body>
-    Click <a href="src">here</a> to access the application.
-</body>
 
+    <!-- IMPORT THESE INSTEAD IN PRODUCTION
+        <script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
+        <script type="text/javascript">
+        if (typeof React == 'undefined') {
+            document.write(unescape("%3Cscript src='/js/dependencies/react.production.min.js' type='text/javascript' crossorigin%3E%3C/script%3E"));
+        }
+        </script>
+
+        <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>
+        <script type="text/javascript">
+        if (typeof ReactDOM == 'undefined') {
+            document.write(unescape("%3Cscript src='/js/dependencies/react-dom.production.min.js' type='text/javascript' crossorigin%3E%3C/script%3E"));
+        }
+        </script>
+    -->
+
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script type="text/javascript">
+    if (typeof React == 'undefined') {
+        document.write(unescape("%3Cscript src='./js/dependencies/react.development.js' type='text/javascript' crossorigin%3E%3C/script%3E"));
+    }
+    </script>
+
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script type="text/javascript">
+    if (typeof ReactDOM == 'undefined') {
+        document.write(unescape("%3Cscript src='./js/dependencies/react-dom.development.js' type='text/javascript' crossorigin%3E%3C/script%3E"));
+    }
+    </script>
+
+    <h1>Monster Hunter Rise Builder</h1>
+
+    <div id="mhr-builder-app-container"></div>
+    <script src="./js/app.js" type="module"></script>
+
+</body>
 </html>
 
