@@ -1,0 +1,35 @@
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+div.tmpboxes {
+    border: thin solid lightgrey;
+    margin: 2px;
+    padding: 2px;
+}
+
+div.mhrbuilderappcontainer {
+    display: flex;
+    flex-direction: row;
+}
+
+div.mainbox {
+    border: thin solid black;
+    margin: 4px;
+    padding: 6px;
+    height: 600px;
+}
+
+#skillsresultsbox {
+    width: 20%;
+}
+
+#equipmentselectionsbox {
+    width: 30%;
+}
+
+#calculationresultsbox {
+    width: 100%;
+}
+
