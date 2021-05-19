@@ -3,33 +3,71 @@ body {
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+#footer {
+    text-align: center;
+}
+
 div.tmpboxes {
     border: thin solid lightgrey;
-    margin: 2px;
-    padding: 2px;
 }
 
-div.mhrbuilderappcontainer {
+div.mhr-builder-app {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+div.main-box {
     display: flex;
     flex-direction: row;
-}
-
-div.mainbox {
-    border: thin solid black;
-    margin: 4px;
-    padding: 6px;
     height: 600px;
 }
 
+div.sub-box {
+    border: thin solid black;
+    height: auto;
+    margin: 4px;
+    padding: 6px;
+}
+
 #skillsresultsbox {
-    width: 20%;
+    width: 280px;
+    padding: 2px;
 }
 
 #equipmentselectionsbox {
-    width: 30%;
+    width: 600px;
 }
 
 #calculationresultsbox {
     width: 100%;
+}
+
+/*** Skill Results ***/
+
+div.skill-box {
+    border: none;
+    background: lightgrey;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin: 4px;
+    padding: 4px;
+}
+
+/*** Utility Box ***/
+
+#util-box {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#settings-button {
+    border: thin solid black;
+    margin: 4px;
+    height: 24px;
+    width: 24px;
+    text-align: center;
 }
 

@@ -5,6 +5,14 @@
 
 const element = React.createElement;
 
+function checkInt(obj) {
+    console.assert((typeof obj === "number") && (obj % 1 === 0), "Expected an integer Number. Instead got:", obj);
+}
+
+function checkStr(obj) {
+    console.assert((typeof obj === "string"), "Expected a String type. Instead got:", obj);
+}
+
 /*********************************************************************
  * Model *************************************************************
  *********************************************************************/
@@ -22,18 +30,65 @@ const element = React.createElement;
 //}
 
 /*********************************************************************
- * Rendering: Components *********************************************
+ * Components (Rendering): Skills Results ****************************
  *********************************************************************/
+
+function SkillResult(props) {
+    checkStr(props.skillName)
+    checkInt(props.skillLevel)
+    checkInt(props.skillLevelMax)
+
+    return element("div",
+        {
+        className: "skill-box",
+        },
+        props.skillName,
+        element("br", null, null),
+        "Level " + parseInt(props.skillLevel) + " / " + parseInt(props.skillLevelMax),
+    )
+}
+
+/*********************************************************************
+ * Components (Rendering): Root **************************************
+ *********************************************************************/
+
+function UtilBox() {
+    return element("div",
+        {
+        id: "util-box",
+        className: "tmpboxes",
+        },
+        element("div",
+            {
+            id: "settings-button",
+            className: "tmpboxes",
+            },
+            "\u2699" // TODO: Replace with a proper icon
+        ),
+    );
+}
 
 function SkillsResultsBox() {
     return element("div",
         {
         id: "skillsresultsbox",
-        className: "mainbox",
+        className: "sub-box",
         },
-        element("p",
+        element(SkillResult,
+            {
+            skillName: "Attack Boost",
+            skillLevel: 7,
+            skillLevelMax: 7,
+            },
             null,
-            "SkillsResultsBox",
+        ),
+        element(SkillResult,
+            {
+            skillName: "Weakness Exploit",
+            skillLevel: 2,
+            skillLevelMax: 3,
+            },
+            null,
         ),
     );
 }
@@ -42,12 +97,9 @@ function EquipmentSelectionsBox() {
     return element("div",
         {
         id: "equipmentselectionsbox",
-        className: "mainbox",
+        className: "sub-box",
         },
-        element("p",
-            null,
-            "EquipmentSelectionsBox",
-        ),
+        "EquipmentSelectionsBox",
     );
 }
 
@@ -55,12 +107,9 @@ function CalculationResultsBox() {
     return element("div",
         {
         id: "calculationresultsbox",
-        className: "mainbox",
+        className: "sub-box",
         },
-        element("p",
-            null,
-            "CalculationResultsBox",
-        ),
+        "CalculationResultsBox",
     );
 }
 
@@ -74,19 +123,28 @@ class MHRBuilderAppContainer extends React.Component {
     render() {
         return element("div",
             {
-            className: "tmpboxes mhrbuilderappcontainer",
+            className: "tmpboxes mhr-builder-app",
             },
-            element(SkillsResultsBox,
+            element(UtilBox,
                 null,
                 null,
             ),
-            element(EquipmentSelectionsBox,
-                null,
-                null,
-            ),
-            element(CalculationResultsBox,
-                null,
-                null,
+            element("div",
+                {
+                className: "tmpboxes main-box",
+                },
+                element(SkillsResultsBox,
+                    null,
+                    null,
+                ),
+                element(EquipmentSelectionsBox,
+                    null,
+                    null,
+                ),
+                element(CalculationResultsBox,
+                    null,
+                    null,
+                ),
             ),
         );
     }
