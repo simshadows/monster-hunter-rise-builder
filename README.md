@@ -4,7 +4,7 @@ A web-based build calculator for Monster Hunter Rise.
 
 I'm currently hosting it here: <http://mhr-builder.simshadows.com/>
 
-This project was inspired by [Honey's Monster Hunter World build calculator](https://honeyhunterworld.com/mhwbi/).
+This project was inspired by Honey's [MHW build calculator](https://honeyhunterworld.com/mhwbi/).
 
 **This project is an early work-in-progress. Also, I'm still learning React!**
 

@@ -1,10 +1,11 @@
 body {
-    padding: 40px;
-    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    padding: 15px;
+    font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 #footer {
     text-align: center;
+    font-size: 12px;
 }
 
 div.mhr-builder-app {
@@ -57,6 +58,7 @@ div.skill-box {
     height: 40px;
     width: 140px;
     padding: 2px 6px 2px 6px;
+    font-size: 14px;
 }
 
 /*** Equipment Selections ***/
@@ -64,7 +66,6 @@ div.skill-box {
 div.equip-box {
     display: flex;
     align-items: flex-start;
-    column-gap: 4px;
 
     border: none;
     background: lightgrey;
@@ -88,30 +89,42 @@ div.equip-info-box {
     align-items: flex-start;
     justify-content: flex-start;
 
-    width: 180px;
+    padding: 0 2px 0 4px;
+    width: 300px;
 }
 
 div.equip-name-box {
     box-sizing: border-box;
     width: 100%;
-    padding: 4px;
+    padding: 0 4px 0 6px;
 }
 
 div.equip-skills-wrap-box {
-    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    column-gap: 5px;
+    row-gap: 5px;
+
+    box-sizing: border-box;
     margin: 0;
-    padding: 0;
-    height: 120px;
+    padding: 3px 5px 5px 4px;
+    height: 52px;
+    width: 100%;
 }
 
 div.equip-skills-box {
-    background: white;
+    flex: 0 0 49%; /* what the fuck? TODO: FIGURE OUT WHY 50% DOESN'T WORK. */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     box-sizing: border-box;
-    width: calc(100% - 8px);
+    background: white;
     padding: 4px;
-    margin: 4px;
-    text-align: center;
-    font-size: 12px;
+    font-size: 14px;
+    height: 49%; /* TODO: Same here, figure out why 50% doesn't work. */
 }
 
 div.equip-decos-wrap-box {
@@ -119,24 +132,29 @@ div.equip-decos-wrap-box {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    row-gap: 4px;
+    row-gap: 3px;
 
+    box-sizing: border-box;
+    padding: 0 0 0 4px;
     height: 100%;
     width: 180px;
 }
 
 div.equip-deco-box {
+    flex: 0 0 30%;
+    
     display: flex;
     flex-direction: row;
     align-items: center;
 
     background: white;
     box-sizing: border-box;
-    width: calc(100% - 8px);
-    padding: 4px;
-    margin: 4px;
+    width: 100%;
+    padding: 0 0 0 3px;
+    margin: 0;
     text-align: center;
     font-size: 14px;
+    height: 14px;
 }
 
 div.equip-deco-icon-box {
@@ -144,6 +162,7 @@ div.equip-deco-icon-box {
     align-items: center;
     justify-content: center;
 
+    box-sizing: border-box;
     border: thin solid black;
     background: darkgrey;
     height: 16px;
@@ -157,14 +176,23 @@ div.equip-deco-name-box {
     padding: 0 6px 0 6px;
 }
 
-div.equip-defenses-box {
+div.equip-defenses-wrap-box {
     display: flex;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box;
 
-    border: thin solid black;
+    border: none;
+    /*border-right: 2px solid darkgrey;*/
+    /*border: thin solid black;*/
     height: 100%;
-    width: 180px;
+    width: 90px;
+    font-size: 14px;
+}
+
+div.equip-defenses-wrap-box > table {
+    /*border: thin solid black;*/
+    border-collapse: collapse;
 }
 
 /*** Utility Box ***/
