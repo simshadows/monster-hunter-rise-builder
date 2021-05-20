@@ -3,8 +3,8 @@
  * License: GNU Affero General Public License v3 (AGPL-3.0)
  */
 
-const element = React.createElement;
 const assert = console.assert;
+const element = React.createElement;
 
 function checkObj(obj) {
     assert((typeof obj === "object"), "Expected an Object type. Instead got:", obj);
@@ -27,6 +27,14 @@ function checkArr(obj) {
 
 function checkMap(obj) {
     assert((obj instanceof Map), "Expected a Map type. Instead got:", obj);
+}
+
+/*********************************************************************
+ * Common React Elements *********************************************
+ *********************************************************************/
+
+function clipsafeP(...children) {
+    return element("p", {className: "clipsafe"}, ...children);
 }
 
 /*********************************************************************
@@ -83,9 +91,9 @@ function EquipInfoBox(props) {
         skillBoxes.push(
             element("div",
                 {
-                className: "equip-skills-box",
+                className: "equip-skills-box clipsafe",
                 },
-                skillName + " +" + parseInt(skillLevel),
+                clipsafeP(skillName + " +" + parseInt(skillLevel)),
             )
         );
     }
@@ -96,9 +104,9 @@ function EquipInfoBox(props) {
         },
         element("div",
             {
-            className: "equip-name-box",
+            className: "equip-name-box clipsafe",
             },
-            element("b", null, props.eqName),
+            clipsafeP(element("b", null, props.eqName)),
         ),
         element("div",
             {
@@ -176,9 +184,9 @@ function EquipDecosWrapBox(props) {
                 ),
                 element("div",
                     {
-                    className: "equip-deco-name-box",
+                    className: "equip-deco-name-box clipsafe",
                     },
-                    ((slotText === null) ? "None" : slotText),
+                    clipsafeP(((slotText === null) ? "None" : slotText)),
                 ),
             )
         );
