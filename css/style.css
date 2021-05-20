@@ -1,5 +1,5 @@
 body {
-    padding: 50px;
+    padding: 40px;
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -7,21 +7,19 @@ body {
     text-align: center;
 }
 
-div.tmpboxes {
-    border: thin solid lightgrey;
-}
-
 div.mhr-builder-app {
     display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
+    /* border: thin solid lightgrey; */
 }
 
 div.main-box {
     display: flex;
     flex-direction: row;
-    height: 600px;
+
+    min-height: 600px;
 }
 
 div.sub-box {
@@ -32,12 +30,15 @@ div.sub-box {
 }
 
 #skillsresultsbox {
-    width: 280px;
-    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
 }
 
 #equipmentselectionsbox {
-    width: 600px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
 }
 
 #calculationresultsbox {
@@ -47,13 +48,123 @@ div.sub-box {
 /*** Skill Results ***/
 
 div.skill-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     border: none;
     background: lightgrey;
     height: 40px;
+    width: 140px;
+    padding: 2px 6px 2px 6px;
+}
+
+/*** Equipment Selections ***/
+
+div.equip-box {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 4px;
+
+    border: none;
+    background: lightgrey;
+    padding: 4px;
+}
+
+div.equip-icon-box {
     display: flex;
     align-items: center;
-    margin: 4px;
+    justify-content: center;
+
+    border: thin solid black;
+    background: darkgrey;
+    height: 50px;
+    width: 50px;
+}
+
+div.equip-info-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    width: 180px;
+}
+
+div.equip-name-box {
+    box-sizing: border-box;
+    width: 100%;
     padding: 4px;
+}
+
+div.equip-skills-wrap-box {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 120px;
+}
+
+div.equip-skills-box {
+    background: white;
+    box-sizing: border-box;
+    width: calc(100% - 8px);
+    padding: 4px;
+    margin: 4px;
+    text-align: center;
+    font-size: 12px;
+}
+
+div.equip-decos-wrap-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    row-gap: 4px;
+
+    height: 100%;
+    width: 180px;
+}
+
+div.equip-deco-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    background: white;
+    box-sizing: border-box;
+    width: calc(100% - 8px);
+    padding: 4px;
+    margin: 4px;
+    text-align: center;
+    font-size: 14px;
+}
+
+div.equip-deco-icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: thin solid black;
+    background: darkgrey;
+    height: 16px;
+    width: 16px;
+}
+
+div.equip-deco-name-box {
+    text-align: left;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 6px 0 6px;
+}
+
+div.equip-defenses-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: thin solid black;
+    height: 100%;
+    width: 180px;
 }
 
 /*** Utility Box ***/

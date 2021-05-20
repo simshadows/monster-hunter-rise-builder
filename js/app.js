@@ -4,13 +4,25 @@
  */
 
 const element = React.createElement;
+const assert = console.assert;
 
 function checkInt(obj) {
-    console.assert((typeof obj === "number") && (obj % 1 === 0), "Expected an integer Number. Instead got:", obj);
+    assert((typeof obj === "number") && (obj % 1 === 0), "Expected an integer Number. Instead got:", obj);
 }
 
 function checkStr(obj) {
-    console.assert((typeof obj === "string"), "Expected a String type. Instead got:", obj);
+    assert((typeof obj === "string"), "Expected a String type. Instead got:", obj);
+}
+function checkStrOrNull(obj) {
+    assert((typeof obj === "string") || (obj === null), "Expected a String type or null. Instead got:", obj);
+}
+
+function checkArr(obj) {
+    assert(Array.isArray(obj), "Expected an Array type. Instead got:", obj);
+}
+
+function checkMap(obj) {
+    assert((obj instanceof Map), "Expected a Map type. Instead got:", obj);
 }
 
 /*********************************************************************
@@ -34,18 +46,140 @@ function checkStr(obj) {
  *********************************************************************/
 
 function SkillResult(props) {
-    checkStr(props.skillName)
-    checkInt(props.skillLevel)
-    checkInt(props.skillLevelMax)
+    checkStr(props.skillName);
+    checkInt(props.skillLevel);
+    checkInt(props.skillLevelMax);
+    assert((props.skillLevel <= props.skillLevelMax) && (props.skillLevel > 0));
 
     return element("div",
         {
         className: "skill-box",
         },
-        props.skillName,
-        element("br", null, null),
+        element("b", null, props.skillName),
+        //element("br", null, null),
         "Level " + parseInt(props.skillLevel) + " / " + parseInt(props.skillLevelMax),
+    );
+}
+
+/*********************************************************************
+ * Components (Rendering): Equipment Selections **********************
+ *********************************************************************/
+
+function EquipInfoBox(props) {
+    checkStr(props.eqName);
+    assert(props.eqName.length > 0);
+    checkArr(props.skillsArray);
+    assert(props.skillsArray.length <= 4);
+
+    const skillBoxes = [];
+    for (let [skillName, skillLevel] of props.skillsArray) {
+        checkStr(skillName);
+        checkInt(skillLevel);
+
+        skillBoxes.push(
+            element("div",
+                {
+                className: "equip-skills-box",
+                },
+                skillName + " +" + parseInt(skillLevel),
+            )
+        );
+    }
+
+    return element("div",
+        {
+        className: "equip-info-box",
+        },
+        element("div",
+            {
+            className: "equip-name-box",
+            },
+            element("b", null, props.eqName),
+        ),
+        element("div",
+            {
+            className: "equip-skills-wrap-box",
+            },
+            ...skillBoxes
+        ),
     )
+}
+
+function EquipDecosWrapBox(props) {
+    checkArr(props.decosArray);
+    assert(props.decosArray.length <= 3);
+
+    const decoBoxes = [];
+    for (let [slotSize, slotText] of props.decosArray) {
+        checkInt(slotSize);
+        assert((slotSize > 0) && (slotSize <= 3));
+        assert(slotText != "None"); // Should be set to null if no deco in slot
+        checkStrOrNull(slotText);
+
+        decoBoxes.push(
+            element("div",
+                {
+                className: "equip-deco-box",
+                },
+                element("div",
+                    {
+                    className: "equip-deco-icon-box",
+                    },
+                    parseInt(slotSize),
+                ),
+                element("div",
+                    {
+                    className: "equip-deco-name-box",
+                    },
+                    ((slotText === null) ? "None" : slotText),
+                ),
+            )
+        );
+    }
+
+    return element("div",
+        {
+        className: "equip-decos-wrap-box",
+        },
+        ...decoBoxes
+    );
+}
+
+function ArmourSelection(props) {
+    checkStr(props.eqName); // Validate later
+    checkArr(props.skillsArray); // Validate later
+    checkArr(props.decosArray); // Validate later
+
+    return element("div",
+        {
+        className: "equip-box",
+        },
+        element("div",
+            {
+            className: "equip-icon-box",
+            },
+            "icon",
+        ),
+        element(EquipInfoBox,
+            {
+                eqName: props.eqName,
+                skillsArray: props.skillsArray,
+            },
+            null,
+        ),
+        element(EquipDecosWrapBox,
+            {
+                decosArray: props.decosArray,
+            },
+            null,
+        ),
+        element("div",
+            {
+            className: "equip-defenses-box",
+            },
+            "defense stats?",
+        ),
+    );
 }
 
 /*********************************************************************
@@ -56,12 +190,10 @@ function UtilBox() {
     return element("div",
         {
         id: "util-box",
-        className: "tmpboxes",
         },
         element("div",
             {
             id: "settings-button",
-            className: "tmpboxes",
             },
             "\u2699" // TODO: Replace with a proper icon
         ),
@@ -99,7 +231,54 @@ function EquipmentSelectionsBox() {
         id: "equipmentselectionsbox",
         className: "sub-box",
         },
-        "EquipmentSelectionsBox",
+        element(ArmourSelection,
+            {
+            eqName: "Kaiser Crown",
+            skillsArray: [["Critical Eye"  , 3],
+                          ["Critical Boost", 1]],
+            decosArray: [[1, null]],
+            },
+            null,
+        ),
+        element(ArmourSelection,
+            {
+            eqName: "Tobi-Kadachi Mail S",
+            skillsArray: [["Mind's Eye"  , 1],
+                          ["Critical Eye", 1]],
+            decosArray: [[3, "Charger Jewel 2"]],
+            },
+            null,
+        ),
+        element(ArmourSelection,
+            {
+            eqName: "Kaiser Vambraces",
+            skillsArray: [["Teostra Blessing", 1],
+                          ["Critical Eye"    , 1],
+                          ["Critical Boost"  , 1],
+                          ["NotARealSkill"   , 9]],
+            decosArray: [[2, "Tenderizer Jewel 2"]],
+            },
+            null,
+        ),
+        element(ArmourSelection,
+            {
+            eqName: "Anjanath Coil S",
+            skillsArray: [["Attack Boost", 2]],
+            decosArray: [[2, "Charger Jewel 2"],
+                         [1, "Steadfast Jewel 1"],
+                         [1, "Steadfast Jewel 1"]],
+            },
+            null,
+        ),
+        element(ArmourSelection,
+            {
+            eqName: "Ingot Greaves S",
+            skillsArray: [["Attack Boost", 2],
+                          ["Critical Eye", 2]],
+            decosArray: [[1, "Steadfast Jewel 1"]],
+            },
+            null,
+        ),
     );
 }
 
@@ -123,7 +302,7 @@ class MHRBuilderAppContainer extends React.Component {
     render() {
         return element("div",
             {
-            className: "tmpboxes mhr-builder-app",
+            className: "mhr-builder-app",
             },
             element(UtilBox,
                 null,
@@ -131,7 +310,7 @@ class MHRBuilderAppContainer extends React.Component {
             ),
             element("div",
                 {
-                className: "tmpboxes main-box",
+                className: "main-box",
                 },
                 element(SkillsResultsBox,
                     null,
