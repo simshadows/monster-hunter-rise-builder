@@ -77,7 +77,20 @@ div.equip-box {
 
     border: none;
     background: lightgrey;
+}
+
+div.equip-main-box {
+    flex: 1 0 0;
+
+    display: flex;
+    align-items: flex-start;
+
     padding: 4px;
+    cursor: pointer;
+}
+div.highlight-equip-main-box:hover {
+    background: black;
+    opacity: 0.5;
 }
 
 div.equip-icon-box {
@@ -164,10 +177,10 @@ div.equip-decos-wrap-box {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    row-gap: 3px;
+    row-gap: 2px;
 
     box-sizing: border-box;
-    padding: 0 0 0 4px;
+    padding: 2px 2px 2px 6px;
     height: 100%;
     width: 190px;
 }
@@ -186,7 +199,12 @@ div.equip-deco-box {
     margin: 0;
     text-align: center;
     font-size: 14px;
-    height: 14px;
+    height: 23px;
+}
+div.highlight-equip-deco-box:hover {
+    background: black;
+    opacity: 0.5;
+    cursor: pointer;
 }
 
 div.equip-deco-icon-box {
@@ -195,8 +213,8 @@ div.equip-deco-icon-box {
     justify-content: center;
 
     box-sizing: border-box;
-    height: 24px;
-    width: 24px;
+    height: 23px;
+    width: 23px;
 }
 div.equip-deco-icon-box > img {
     width: 100%;

@@ -13,6 +13,15 @@ import UtilBox from "./component_groups/util_box.js";
 
 const element = React.createElement;
 
+class RightBox extends React.Component {
+    render() {
+        return element(CalculationResultsBox,
+            null,
+            null,
+        );
+    }
+}
+
 class MHRBuilderAppContainer extends React.Component {
 
     constructor(props) {
@@ -45,7 +54,7 @@ class MHRBuilderAppContainer extends React.Component {
                         null,
                         null,
                     ),
-                    element(CalculationResultsBox,
+                    element(RightBox,
                         null,
                         null,
                     ),

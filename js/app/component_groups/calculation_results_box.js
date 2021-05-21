@@ -13,7 +13,9 @@ function CalculationResultsBox() {
         id: "calculationresultsbox",
         className: "sub-box",
         },
-        "CalculationResultsBox",
+        "Calculation results (such as EFR) go here,",
+        element("br", null, null),
+        "but I haven't made a layout for it yet.",
     );
 }
 
