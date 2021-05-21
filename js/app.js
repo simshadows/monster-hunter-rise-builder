@@ -1,6 +1,8 @@
 /*
  * Author:  simshadows <contact@simshadows.com>
  * License: GNU Affero General Public License v3 (AGPL-3.0)
+ *
+ * Requires React and ReactDOM to be imported in HTML.
  */
 
 const assert = console.assert;
@@ -90,15 +92,49 @@ function SkillResult(props) {
         {
         className: "skill-box",
         },
-        element("b", null, props.skillName),
-        //element("br", null, null),
-        "Level " + parseInt(props.skillLevel) + " / " + parseInt(props.skillLevelMax),
+        element("div",
+            {
+            className: "skill-icon-box",
+            },
+            element("img",
+                {
+                src: "./images/placeholders/skill.png",
+                alt: "icon",
+                },
+                null,
+            ),
+        ),
+        element("div",
+            {
+            className: "skill-detail-box",
+            },
+            element("b", null, props.skillName),
+            //element("br", null, null),
+            "Level " + parseInt(props.skillLevel) + " / " + parseInt(props.skillLevelMax),
+        ),
     );
 }
 
 /*********************************************************************
  * Components (Rendering): Equipment Selections **********************
  *********************************************************************/
+
+function EquipIcon(props) {
+    checkStr(props.iconImg);
+
+    return element("div",
+        {
+        className: "equip-icon-box",
+        },
+        element("img",
+            {
+            src: props.iconImg,
+            alt: "icon",
+            },
+            null,
+        ),
+    )
+}
 
 /*** Weapon ***/
 
@@ -185,11 +221,11 @@ function WeaponSelection(props) {
         {
         className: "equip-box",
         },
-        element("div",
+        element(EquipIcon,
             {
-            className: "equip-icon-box",
+            iconImg: "./images/placeholders/weapon.png",
             },
-            "icon",
+            null,
         ),
         element(EquipWeaponInfoBox,
             {
@@ -316,6 +352,12 @@ function EquipDecosWrapBox(props) {
         assert(slotText != "None"); // Should be set to null if no deco in slot
         checkStrOrNull(slotText);
 
+        const iconImg = "./images/placeholders/" + (()=>{
+            if (slotSize == 1) return "deco_slot_1.png";
+            if (slotSize == 2) return "deco_slot_2.png";
+            if (slotSize == 3) return "deco_slot_3.png";
+        })();
+
         decoBoxes.push(
             element("div",
                 {
@@ -325,7 +367,13 @@ function EquipDecosWrapBox(props) {
                     {
                     className: "equip-deco-icon-box",
                     },
-                    parseInt(slotSize),
+                    element("img",
+                        {
+                        src: iconImg,
+                        alt: "icon",
+                        },
+                        null,
+                    ),
                 ),
                 element("div",
                     {
@@ -346,6 +394,7 @@ function EquipDecosWrapBox(props) {
 }
 
 function ArmourSelection(props) {
+    checkStr(props.slotIconImg);
     checkStr(props.eqName); // Validate later
     checkArr(props.skillsArray); // Validate later
     checkArr(props.decosArray); // Validate later
@@ -355,11 +404,11 @@ function ArmourSelection(props) {
         {
         className: "equip-box",
         },
-        element("div",
+        element(EquipIcon,
             {
-            className: "equip-icon-box",
+            iconImg: props.slotIconImg,
             },
-            "icon",
+            null,
         ),
         element(EquipArmourInfoBox,
             {
@@ -394,11 +443,11 @@ function TalismanSelection(props) {
         {
         className: "equip-box",
         },
-        element("div",
+        element(EquipIcon,
             {
-            className: "equip-icon-box",
+            iconImg: "./images/placeholders/talisman.png",
             },
-            "icon",
+            null,
         ),
         element(EquipArmourInfoBox,
             {
@@ -501,6 +550,7 @@ function EquipmentSelectionsBox() {
         ),
         element(ArmourSelection,
             {
+            slotIconImg: "./images/placeholders/head.png",
             eqName: "Kaiser Crown",
             skillsArray: [["Critical Eye"  , 3],
                           ["Critical Boost", 1]],
@@ -516,6 +566,7 @@ function EquipmentSelectionsBox() {
         ),
         element(ArmourSelection,
             {
+            slotIconImg: "./images/placeholders/chest.png",
             eqName: "Tobi-Kadachi Mail S",
             skillsArray: [["Mind's Eye"  , 1],
                           ["Critical Eye", 1]],
@@ -531,6 +582,7 @@ function EquipmentSelectionsBox() {
         ),
         element(ArmourSelection,
             {
+            slotIconImg: "./images/placeholders/arms.png",
             eqName: "Kaiser Vambraces",
             skillsArray: [["Teostra Blessing" , 1],
                           ["Critical Eye"     , 1],
@@ -548,6 +600,7 @@ function EquipmentSelectionsBox() {
         ),
         element(ArmourSelection,
             {
+            slotIconImg: "./images/placeholders/waist.png",
             eqName: "Anjanath Coil S",
             skillsArray: [["Attack Boost", 2]],
             decosArray: [[2, "Charger Jewel 2"],
@@ -564,6 +617,7 @@ function EquipmentSelectionsBox() {
         ),
         element(ArmourSelection,
             {
+            slotIconImg: "./images/placeholders/legs.png",
             eqName: "Ingot Greaves S",
             skillsArray: [["Attack Boost"     , 2],
                           ["Critical Eye"     , 2],
@@ -615,25 +669,30 @@ class MHRBuilderAppContainer extends React.Component {
             {
             className: "mhr-builder-app",
             },
-            element(UtilBox,
-                null,
-                null,
-            ),
             element("div",
                 {
-                className: "main-box",
+                className: "mhr-builder-app-inner-box",
                 },
-                element(SkillsResultsBox,
+                element(UtilBox,
                     null,
                     null,
                 ),
-                element(EquipmentSelectionsBox,
-                    null,
-                    null,
-                ),
-                element(CalculationResultsBox,
-                    null,
-                    null,
+                element("div",
+                    {
+                    className: "main-box",
+                    },
+                    element(SkillsResultsBox,
+                        null,
+                        null,
+                    ),
+                    element(EquipmentSelectionsBox,
+                        null,
+                        null,
+                    ),
+                    element(CalculationResultsBox,
+                        null,
+                        null,
+                    ),
                 ),
             ),
         );

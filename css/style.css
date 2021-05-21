@@ -1,6 +1,11 @@
 body {
-    padding: 15px;
     font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+#footer {
+    text-align: center;
+    font-size: 12px;
+    padding-bottom: 60px;
 }
 
 /* Makes single lines of text clip gracefully to prevent breaking the layout */
@@ -12,17 +17,39 @@ body {
     overflow: hidden;
 }
 
-#footer {
-    text-align: center;
-    font-size: 12px;
+/* Stacks a div on top of another. */
+/* Use stackouter for outer div, stackinner for inner div. */
+/* Currently unused.
+.stackouter {
+    position: relative;
+}
+.stackinner {
+    position: absolute;
+    background: red;
+    opacity: 0.5;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+*/
+
+div.mhr-builder-app {
+    box-sizing: border-box;
+    padding: 20px 15px 15px 15px;
+    width: 100%;
+    height: 100%;
 }
 
-.mhr-builder-app {
+div.mhr-builder-app-inner-box {
     display: flex;
     flex-direction: column;
-    margin: 0;
+    margin: 0 auto 0 auto;
     padding: 0;
-    /* border: thin solid lightgrey; */
+
+    /* min-width: 1350px; */
+    width: 1350px;
 }
 
 div.main-box {
@@ -42,7 +69,7 @@ div.sub-box {
 #skillsresultsbox {
     display: flex;
     flex-direction: column;
-    row-gap: 6px;
+    row-gap: 4px;
 }
 
 #equipmentselectionsbox {
@@ -59,15 +86,41 @@ div.sub-box {
 
 div.skill-box {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    align-items: center;
 
     border: none;
     background: lightgrey;
-    height: 40px;
+    height: 34px;
     width: 160px;
     padding: 2px 6px 2px 6px;
     font-size: 14px;
+}
+
+div.skill-icon-box {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: thin solid black;
+    background: black;
+    height: 25px;
+    width: 25px;
+}
+div.skill-icon-box > img {
+    height: 85%;
+    width: 85%;
+}
+
+div.skill-detail-box {
+    flex: 1 0 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 0 4px 0 4px;
 }
 
 /*** Equipment Selections ***/
@@ -113,11 +166,11 @@ div.equip-weapon-stat-box {
     justify-content: center;
 
     box-sizing: border-box;
-    border: thin solid black;
     height: 100%;
     width: 60px;
     padding: 0 4px 0 4px;
     font-size: 14px;
+    background: darkgrey;
 }
 
 div.equip-weapon-ramps-group-box {
@@ -161,9 +214,13 @@ div.equip-icon-box {
     justify-content: center;
 
     border: thin solid black;
-    background: darkgrey;
+    background: black;
     height: 50px;
     width: 50px;
+}
+div.equip-icon-box > img {
+    height: 90%;
+    width: 90%;
 }
 
 div.equip-info-box {
@@ -239,7 +296,7 @@ div.equip-decos-wrap-box {
     box-sizing: border-box;
     padding: 0 0 0 4px;
     height: 100%;
-    width: 180px;
+    width: 190px;
 }
 
 div.equip-deco-box {
@@ -252,7 +309,7 @@ div.equip-deco-box {
     background: white;
     box-sizing: border-box;
     width: 100%;
-    padding: 0 0 0 3px;
+    padding: 0 0 0 4px;
     margin: 0;
     text-align: center;
     font-size: 14px;
@@ -265,10 +322,12 @@ div.equip-deco-icon-box {
     justify-content: center;
 
     box-sizing: border-box;
-    border: thin solid black;
-    background: darkgrey;
-    height: 16px;
-    width: 16px;
+    height: 24px;
+    width: 24px;
+}
+div.equip-deco-icon-box > img {
+    width: 100%;
+    height: 100%;
 }
 
 div.equip-deco-name-box {
