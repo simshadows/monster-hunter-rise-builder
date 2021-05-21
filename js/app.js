@@ -29,6 +29,29 @@ function checkMap(obj) {
     assert((obj instanceof Map), "Expected a Map type. Instead got:", obj);
 }
 
+
+const _eleStatStrs = new Set(["none", "fire", "water", "thunder", "ice", "dragon", "paralysis", "sleep", "blast"]);
+function isEleStatStr(obj) {
+    return _eleStatStrs.has(obj);
+}
+
+const _eleStatStrToEmojiMap = {
+    none: "-",
+
+    fire: "\ud83d\udd25",
+    water: "\ud83d\udca7",
+    thunder: "\u26a1",
+    ice: "\u2744\ufe0f",
+    dragon: "\ud83d\udc32",
+
+    paralysis: "\ud83e\udda0",
+    sleep: "\ud83d\udca4",
+    blast: "\ud83d\udca5",
+}
+function eleStatStrToEmoji(obj) {
+    return _eleStatStrToEmojiMap[obj];
+}
+
 /*********************************************************************
  * Common React Elements *********************************************
  *********************************************************************/
@@ -77,7 +100,121 @@ function SkillResult(props) {
  * Components (Rendering): Equipment Selections **********************
  *********************************************************************/
 
-function EquipInfoBox(props) {
+/*** Weapon ***/
+
+function EquipWeaponInfoBox(props) {
+    checkStr(props.eqName);
+    assert(props.eqName.length > 0);
+    checkInt(props.wepAttack);
+    assert(props.wepAttack > 0);
+    checkInt(props.wepAffinity);
+    assert((props.wepAffinity >= -100) && (props.wepAffinity <= 100));
+    isEleStatStr(props.wepEleStatType);
+    checkInt(props.wepEleStatValue);
+    assert(props.wepEleStatValue >= 0);
+    checkInt(props.wepDefenseBonus);
+    checkArr(props.wepRampageSkills);
+    assert(props.wepDefenseBonus >= 0);
+    // TODO: Sharpness?
+
+    function statBox(text, value) {
+        return element("div",
+            {className: "equip-weapon-stat-box clipsafe"},
+            clipsafeP(text + parseInt(value)),
+        );
+    }
+
+    const rampageSkillBoxes = [];
+    for (let rampageSkillName of props.wepRampageSkills) {
+        checkStr(rampageSkillName);
+
+        rampageSkillBoxes.push(
+            element("div",
+                {
+                className: "equip-weapon-ramp-box clipsafe",
+                },
+                clipsafeP(rampageSkillName),
+            )
+        );
+    }
+
+    return element("div",
+        {
+        className: "equip-weapon-info-box",
+        },
+        element("div",
+            {
+            className: "equip-name-box clipsafe",
+            },
+            clipsafeP(element("b", null, props.eqName)),
+        ),
+        element("div",
+            {
+            className: "equip-weapon-detail-box",
+            },
+            element("div",
+                {
+                className: "equip-weapon-stats-group-box",
+                },
+                statBox("\u2694\ufe0f ", props.wepAttack),
+                statBox("\ud83d\udca2 ", props.wepAffinity),
+                statBox(eleStatStrToEmoji(props.wepEleStatType) + " ", props.wepEleStatValue),
+                statBox("\ud83d\udee1\ufe0f ", props.wepDefenseBonus),
+            ),
+            element("div",
+                {
+                className: "equip-weapon-ramps-group-box",
+                },
+                ...rampageSkillBoxes
+            ),
+        ),
+    )
+}
+
+function WeaponSelection(props) {
+    checkStr(props.eqName); // Validate later
+    checkInt(props.wepAttack); // Validate later
+    checkInt(props.wepAffinity); // Validate later
+    checkStr(props.wepEleStatType); // Validate later
+    checkInt(props.wepEleStatValue); // Validate later
+    checkInt(props.wepDefenseBonus); // Validate later
+    checkArr(props.wepRampageSkills); // Validate later
+    checkArr(props.decosArray); // Validate later
+
+    return element("div",
+        {
+        className: "equip-box",
+        },
+        element("div",
+            {
+            className: "equip-icon-box",
+            },
+            "icon",
+        ),
+        element(EquipWeaponInfoBox,
+            {
+                eqName: props.eqName,
+                wepAttack: props.wepAttack,
+                wepAffinity: props.wepAffinity,
+                wepEleStatType: props.wepEleStatType,
+                wepEleStatValue: props.wepEleStatValue,
+                wepDefenseBonus: props.wepDefenseBonus,
+                wepRampageSkills: props.wepRampageSkills,
+            },
+            null,
+        ),
+        element(EquipDecosWrapBox,
+            {
+                decosArray: props.decosArray,
+            },
+            null,
+        ),
+    );
+}
+
+/*** Armour ***/
+
+function EquipArmourInfoBox(props) {
     checkStr(props.eqName);
     assert(props.eqName.length > 0);
     checkArr(props.skillsArray);
@@ -117,6 +254,14 @@ function EquipInfoBox(props) {
     )
 }
 
+function EquipDefensesBoxEmpty() {
+    return element("div",
+        {
+        className: "equip-defenses-wrap-box",
+        },
+        null,
+    );
+}
 function EquipDefensesBox(props) {
     checkObj(props.defenses);
     for (let [stat, value] of Object.entries(props.defenses)) {
@@ -138,21 +283,21 @@ function EquipDefensesBox(props) {
                     null,
                     element("th", null, "\uD83D\uDEE1\uFE0F"),
                     element("th", null, parseInt(props.defenses.defense)),
-                    element("th", null, "\u26A1"),
+                    element("th", null, eleStatStrToEmoji("thunder")),
                     element("th", null, parseInt(props.defenses.thunderRes)),
                 ),
                 element("tr",
                     null,
-                    element("th", null, "\uD83D\uDD25"),
+                    element("th", null, eleStatStrToEmoji("fire")),
                     element("th", null, parseInt(props.defenses.fireRes)),
-                    element("th", null, "\u2744\uFE0F"),
+                    element("th", null, eleStatStrToEmoji("ice")),
                     element("th", null, parseInt(props.defenses.iceRes)),
                 ),
                 element("tr",
                     null,
-                    element("th", null, "\uD83D\uDCA7"),
+                    element("th", null, eleStatStrToEmoji("water")),
                     element("th", null, parseInt(props.defenses.waterRes)),
-                    element("th", null, "\uD83D\uDC32"),
+                    element("th", null, eleStatStrToEmoji("dragon")),
                     element("th", null, parseInt(props.defenses.dragonRes)),
                 ),
             ),
@@ -216,7 +361,7 @@ function ArmourSelection(props) {
             },
             "icon",
         ),
-        element(EquipInfoBox,
+        element(EquipArmourInfoBox,
             {
                 eqName: props.eqName,
                 skillsArray: props.skillsArray,
@@ -235,6 +380,57 @@ function ArmourSelection(props) {
             },
             null,
         ),
+    );
+}
+
+/*** Others ***/
+
+function TalismanSelection(props) {
+    checkStr(props.eqName); // Validate later
+    checkArr(props.skillsArray); // Validate later
+    checkArr(props.decosArray); // Validate later
+
+    return element("div",
+        {
+        className: "equip-box",
+        },
+        element("div",
+            {
+            className: "equip-icon-box",
+            },
+            "icon",
+        ),
+        element(EquipArmourInfoBox,
+            {
+                eqName: props.eqName,
+                skillsArray: props.skillsArray,
+            },
+            null,
+        ),
+        element(EquipDefensesBoxEmpty,
+            null,
+            null,
+        ),
+        element(EquipDecosWrapBox,
+            {
+                decosArray: props.decosArray,
+            },
+            null,
+        ),
+    );
+}
+
+function MiscSelection(props) {
+    return element("div",
+        {
+        id: "misc-selections-box",
+        className: "equip-box",
+        },
+        "Misc stuff (like Power Charm and HH buffs) to be implemented here later.",
+        element("br", null, null),
+        "Or I might move buffs to the top as simple icons.",
+        element("br", null, null),
+        "Maybe also Petalace, idk.",
     );
 }
 
@@ -287,6 +483,22 @@ function EquipmentSelectionsBox() {
         id: "equipmentselectionsbox",
         className: "sub-box",
         },
+        element(WeaponSelection,
+            {
+            eqName: "Abominable Great Sword",
+            wepAttack: 230,
+            wepAffinity: -15,
+            wepEleStatType: "ice",
+            wepEleStatValue: 20,
+            wepDefenseBonus: 0,
+            wepRampageSkills: ["Affinity Boost I",
+                               "~~NOTREAL~~",
+                               "~~NOTREAL~~"],
+            decosArray: [[2, "Charger Jewel 2"],
+                         [1, "~~NOTREAL~~"]],
+            },
+            null,
+        ),
         element(ArmourSelection,
             {
             eqName: "Kaiser Crown",
@@ -320,10 +532,10 @@ function EquipmentSelectionsBox() {
         element(ArmourSelection,
             {
             eqName: "Kaiser Vambraces",
-            skillsArray: [["Teostra Blessing", 1],
-                          ["Critical Eye"    , 1],
-                          ["Critical Boost"  , 1],
-                          ["NotARealSkill"   , 9]],
+            skillsArray: [["Teostra Blessing" , 1],
+                          ["Critical Eye"     , 1],
+                          ["Critical Boost"   , 1],
+                          ["~~NOTREAL~~", 9]],
             decosArray: [[2, "Tenderizer Jewel 2"]],
             defenses: {defense: 74,
                        fireRes: 4,
@@ -353,9 +565,9 @@ function EquipmentSelectionsBox() {
         element(ArmourSelection,
             {
             eqName: "Ingot Greaves S",
-            skillsArray: [["Attack Boost" , 2],
-                          ["Critical Eye" , 2],
-                          ["NotARealSkill", 3]],
+            skillsArray: [["Attack Boost"     , 2],
+                          ["Critical Eye"     , 2],
+                          ["~~NOTREAL~~", 3]],
             decosArray: [[1, "Steadfast Jewel 1"]],
             defenses: {defense: 40,
                        fireRes: -1,
@@ -364,6 +576,18 @@ function EquipmentSelectionsBox() {
                        iceRes: 0,
                        dragonRes: 0},
             },
+            null,
+        ),
+        element(TalismanSelection,
+            {
+            eqName: "Talisman",
+            skillsArray: [["Weakness Exploit", 1]],
+            decosArray: [[2, "Tenderizer Jewel 2"]],
+            },
+            null,
+        ),
+        element(MiscSelection,
+            null,
             null,
         ),
     );
