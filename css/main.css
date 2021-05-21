@@ -1,0 +1,80 @@
+body {
+    font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+#footer {
+    text-align: center;
+    font-size: 12px;
+    padding-bottom: 60px;
+}
+
+/* Makes single lines of text clip gracefully to prevent breaking the layout */
+/* Intended for both div and p */
+.clipsafe {
+    display: inline;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* Stacks a div on top of another. */
+/* Use stackouter for outer div, stackinner for inner div. */
+/* Currently unused.
+.stackouter {
+    position: relative;
+}
+.stackinner {
+    position: absolute;
+    background: red;
+    opacity: 0.5;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+*/
+
+div.mhr-builder-app {
+    box-sizing: border-box;
+    padding: 20px 15px 15px 15px;
+    width: 100%;
+    height: 100%;
+}
+
+div.mhr-builder-app-inner-box {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 0 auto;
+    padding: 0;
+
+    /* min-width: 1350px; */
+    width: 1350px;
+}
+
+div.main-box {
+    display: flex;
+    flex-direction: row;
+
+    min-height: 600px;
+}
+
+div.sub-box {
+    border: thin solid black;
+    height: auto;
+    margin: 4px;
+    padding: 6px;
+}
+
+#skillsresultsbox {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+}
+
+#equipmentselectionsbox {
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+}
+

@@ -5,57 +5,17 @@
  * Requires React and ReactDOM to be imported in HTML.
  */
 
+import * as check from "../check.js";
+import {
+    isEleStatStr,
+    eleStatStrToEmoji,
+} from "../common.js";
+
 const assert = console.assert;
 const element = React.createElement;
 
-function checkObj(obj) {
-    assert((typeof obj === "object"), "Expected an Object type. Instead got:", obj);
-}
-
-function checkInt(obj) {
-    assert((typeof obj === "number") && (obj % 1 === 0), "Expected an integer Number. Instead got:", obj);
-}
-
-function checkStr(obj) {
-    assert((typeof obj === "string"), "Expected a String type. Instead got:", obj);
-}
-function checkStrOrNull(obj) {
-    assert((typeof obj === "string") || (obj === null), "Expected a String type or null. Instead got:", obj);
-}
-
-function checkArr(obj) {
-    assert(Array.isArray(obj), "Expected an Array type. Instead got:", obj);
-}
-
-function checkMap(obj) {
-    assert((obj instanceof Map), "Expected a Map type. Instead got:", obj);
-}
-
-
-const _eleStatStrs = new Set(["none", "fire", "water", "thunder", "ice", "dragon", "paralysis", "sleep", "blast"]);
-function isEleStatStr(obj) {
-    return _eleStatStrs.has(obj);
-}
-
-const _eleStatStrToEmojiMap = {
-    none: "-",
-
-    fire: "\ud83d\udd25",
-    water: "\ud83d\udca7",
-    thunder: "\u26a1",
-    ice: "\u2744\ufe0f",
-    dragon: "\ud83d\udc32",
-
-    paralysis: "\ud83e\udda0",
-    sleep: "\ud83d\udca4",
-    blast: "\ud83d\udca5",
-}
-function eleStatStrToEmoji(obj) {
-    return _eleStatStrToEmojiMap[obj];
-}
-
 /*********************************************************************
- * Common React Elements *********************************************
+ * Utility ***********************************************************
  *********************************************************************/
 
 function clipsafeP(...children) {
@@ -63,64 +23,11 @@ function clipsafeP(...children) {
 }
 
 /*********************************************************************
- * Model *************************************************************
- *********************************************************************/
-
-//class Build {
-//
-//    constructor() {
-//        // TODO
-//    }
-//
-//    getText() {
-//        return "Hello, world!";
-//    }
-//
-//}
-
-/*********************************************************************
- * Components (Rendering): Skills Results ****************************
- *********************************************************************/
-
-function SkillResult(props) {
-    checkStr(props.skillName);
-    checkInt(props.skillLevel);
-    checkInt(props.skillLevelMax);
-    assert((props.skillLevel <= props.skillLevelMax) && (props.skillLevel > 0));
-
-    return element("div",
-        {
-        className: "skill-box",
-        },
-        element("div",
-            {
-            className: "skill-icon-box",
-            },
-            element("img",
-                {
-                src: "./images/placeholders/skill.png",
-                alt: "icon",
-                },
-                null,
-            ),
-        ),
-        element("div",
-            {
-            className: "skill-detail-box",
-            },
-            element("b", null, props.skillName),
-            //element("br", null, null),
-            "Level " + parseInt(props.skillLevel) + " / " + parseInt(props.skillLevelMax),
-        ),
-    );
-}
-
-/*********************************************************************
- * Components (Rendering): Equipment Selections **********************
+ * Components ********************************************************
  *********************************************************************/
 
 function EquipIcon(props) {
-    checkStr(props.iconImg);
+    check.isStr(props.iconImg);
 
     return element("div",
         {
@@ -139,17 +46,17 @@ function EquipIcon(props) {
 /*** Weapon ***/
 
 function EquipWeaponInfoBox(props) {
-    checkStr(props.eqName);
+    check.isStr(props.eqName);
     assert(props.eqName.length > 0);
-    checkInt(props.wepAttack);
+    check.isInt(props.wepAttack);
     assert(props.wepAttack > 0);
-    checkInt(props.wepAffinity);
+    check.isInt(props.wepAffinity);
     assert((props.wepAffinity >= -100) && (props.wepAffinity <= 100));
     isEleStatStr(props.wepEleStatType);
-    checkInt(props.wepEleStatValue);
+    check.isInt(props.wepEleStatValue);
     assert(props.wepEleStatValue >= 0);
-    checkInt(props.wepDefenseBonus);
-    checkArr(props.wepRampageSkills);
+    check.isInt(props.wepDefenseBonus);
+    check.isArr(props.wepRampageSkills);
     assert(props.wepDefenseBonus >= 0);
     // TODO: Sharpness?
 
@@ -162,7 +69,7 @@ function EquipWeaponInfoBox(props) {
 
     const rampageSkillBoxes = [];
     for (let rampageSkillName of props.wepRampageSkills) {
-        checkStr(rampageSkillName);
+        check.isStr(rampageSkillName);
 
         rampageSkillBoxes.push(
             element("div",
@@ -208,14 +115,14 @@ function EquipWeaponInfoBox(props) {
 }
 
 function WeaponSelection(props) {
-    checkStr(props.eqName); // Validate later
-    checkInt(props.wepAttack); // Validate later
-    checkInt(props.wepAffinity); // Validate later
-    checkStr(props.wepEleStatType); // Validate later
-    checkInt(props.wepEleStatValue); // Validate later
-    checkInt(props.wepDefenseBonus); // Validate later
-    checkArr(props.wepRampageSkills); // Validate later
-    checkArr(props.decosArray); // Validate later
+    check.isStr(props.eqName); // Validate later
+    check.isInt(props.wepAttack); // Validate later
+    check.isInt(props.wepAffinity); // Validate later
+    check.isStr(props.wepEleStatType); // Validate later
+    check.isInt(props.wepEleStatValue); // Validate later
+    check.isInt(props.wepDefenseBonus); // Validate later
+    check.isArr(props.wepRampageSkills); // Validate later
+    check.isArr(props.decosArray); // Validate later
 
     return element("div",
         {
@@ -251,15 +158,15 @@ function WeaponSelection(props) {
 /*** Armour ***/
 
 function EquipArmourInfoBox(props) {
-    checkStr(props.eqName);
+    check.isStr(props.eqName);
     assert(props.eqName.length > 0);
-    checkArr(props.skillsArray);
+    check.isArr(props.skillsArray);
     assert(props.skillsArray.length <= 4);
 
     const skillBoxes = [];
     for (let [skillName, skillLevel] of props.skillsArray) {
-        checkStr(skillName);
-        checkInt(skillLevel);
+        check.isStr(skillName);
+        check.isInt(skillLevel);
 
         skillBoxes.push(
             element("div",
@@ -299,9 +206,9 @@ function EquipDefensesBoxEmpty() {
     );
 }
 function EquipDefensesBox(props) {
-    checkObj(props.defenses);
+    check.isObj(props.defenses);
     for (let [stat, value] of Object.entries(props.defenses)) {
-        checkInt(value);
+        check.isInt(value);
     }
     assert(Object.keys(props.defenses).length === 6);
 
@@ -342,15 +249,15 @@ function EquipDefensesBox(props) {
 }
 
 function EquipDecosWrapBox(props) {
-    checkArr(props.decosArray);
+    check.isArr(props.decosArray);
     assert(props.decosArray.length <= 3);
 
     const decoBoxes = [];
     for (let [slotSize, slotText] of props.decosArray) {
-        checkInt(slotSize);
+        check.isInt(slotSize);
         assert((slotSize > 0) && (slotSize <= 3));
         assert(slotText != "None"); // Should be set to null if no deco in slot
-        checkStrOrNull(slotText);
+        check.isStrOrNull(slotText);
 
         const iconImg = "./images/placeholders/" + (()=>{
             if (slotSize == 1) return "deco_slot_1.png";
@@ -394,11 +301,11 @@ function EquipDecosWrapBox(props) {
 }
 
 function ArmourSelection(props) {
-    checkStr(props.slotIconImg);
-    checkStr(props.eqName); // Validate later
-    checkArr(props.skillsArray); // Validate later
-    checkArr(props.decosArray); // Validate later
-    checkObj(props.defenses); // Validate later
+    check.isStr(props.slotIconImg);
+    check.isStr(props.eqName); // Validate later
+    check.isArr(props.skillsArray); // Validate later
+    check.isArr(props.decosArray); // Validate later
+    check.isObj(props.defenses); // Validate later
 
     return element("div",
         {
@@ -435,9 +342,9 @@ function ArmourSelection(props) {
 /*** Others ***/
 
 function TalismanSelection(props) {
-    checkStr(props.eqName); // Validate later
-    checkArr(props.skillsArray); // Validate later
-    checkArr(props.decosArray); // Validate later
+    check.isStr(props.eqName); // Validate later
+    check.isArr(props.skillsArray); // Validate later
+    check.isArr(props.decosArray); // Validate later
 
     return element("div",
         {
@@ -483,48 +390,7 @@ function MiscSelection(props) {
     );
 }
 
-/*********************************************************************
- * Components (Rendering): Root **************************************
- *********************************************************************/
-
-function UtilBox() {
-    return element("div",
-        {
-        id: "util-box",
-        },
-        element("div",
-            {
-            id: "settings-button",
-            },
-            "\u2699" // TODO: Replace with a proper icon
-        ),
-    );
-}
-
-function SkillsResultsBox() {
-    return element("div",
-        {
-        id: "skillsresultsbox",
-        className: "sub-box",
-        },
-        element(SkillResult,
-            {
-            skillName: "Attack Boost",
-            skillLevel: 7,
-            skillLevelMax: 7,
-            },
-            null,
-        ),
-        element(SkillResult,
-            {
-            skillName: "Weakness Exploit",
-            skillLevel: 2,
-            skillLevelMax: 3,
-            },
-            null,
-        ),
-    );
-}
+/*** Box ***/
 
 function EquipmentSelectionsBox() {
     return element("div",
@@ -647,60 +513,5 @@ function EquipmentSelectionsBox() {
     );
 }
 
-function CalculationResultsBox() {
-    return element("div",
-        {
-        id: "calculationresultsbox",
-        className: "sub-box",
-        },
-        "CalculationResultsBox",
-    );
-}
-
-class MHRBuilderAppContainer extends React.Component {
-
-    constructor(props) {
-        super(props);
-        this.state = {message: "kek"};
-    }
-
-    render() {
-        return element("div",
-            {
-            className: "mhr-builder-app",
-            },
-            element("div",
-                {
-                className: "mhr-builder-app-inner-box",
-                },
-                element(UtilBox,
-                    null,
-                    null,
-                ),
-                element("div",
-                    {
-                    className: "main-box",
-                    },
-                    element(SkillsResultsBox,
-                        null,
-                        null,
-                    ),
-                    element(EquipmentSelectionsBox,
-                        null,
-                        null,
-                    ),
-                    element(CalculationResultsBox,
-                        null,
-                        null,
-                    ),
-                ),
-            ),
-        );
-    }
-}
-
-ReactDOM.render(
-    element(MHRBuilderAppContainer, null),
-    document.getElementById("mhr-builder-app-container")
-);
+export default EquipmentSelectionsBox;
 

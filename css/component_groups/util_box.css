@@ -1,0 +1,13 @@
+#util-box {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#settings-button {
+    border: thin solid black;
+    margin: 4px;
+    height: 24px;
+    width: 24px;
+    text-align: center;
+}
+
