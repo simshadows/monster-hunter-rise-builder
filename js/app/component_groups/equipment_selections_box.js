@@ -43,6 +43,57 @@ function EquipIcon(props) {
     )
 }
 
+/*** Buffs and State ***/
+
+function PlaceholderBuffIcon() {
+    return element("div",
+        {
+        className: "equip-buff-icon-box",
+        },
+        element("img",
+            {
+            src: "./images/placeholders/buff.png",
+            alt: "icon",
+            },
+            null,
+        ),
+    );
+}
+
+function BuffsSelection(props) {
+
+    return element("div",
+        {
+        className: "equip-box",
+        },
+        element("div",
+            {
+            className: "equip-main-box equip-buffs-main-box stackouter",
+            },
+            element(PlaceholderBuffIcon,
+                null,
+                null,
+            ),
+            element(PlaceholderBuffIcon,
+                null,
+                null,
+            ),
+            element(PlaceholderBuffIcon,
+                null,
+                null,
+            ),
+            element(PlaceholderBuffIcon,
+                null,
+                null,
+            ),
+            element("div",
+                {className: "highlight-equip-main-box stackinner"},
+                null,
+            ),
+        ),
+    );
+}
+
 /*** Weapon ***/
 
 function EquipWeaponInfoBox(props) {
@@ -409,6 +460,49 @@ function TalismanSelection(props) {
     );
 }
 
+function PetalaceSelection(props) {
+    check.isStr(props.eqName); // Validate later
+
+    return element("div",
+        {
+        className: "equip-box",
+        },
+        element("div",
+            {
+            className: "equip-main-box stackouter",
+            },
+            element(EquipIcon,
+                {
+                iconImg: "./images/placeholders/talisman.png",
+                },
+                null,
+            ),
+            element(EquipArmourInfoBox,
+                {
+                    eqName: props.eqName,
+                    skillsArray: [],
+                },
+                null,
+            ),
+            element(EquipDefensesBoxEmpty,
+                null,
+                null,
+            ),
+            element("div",
+                {className: "highlight-equip-main-box stackinner"},
+                null,
+            ),
+        ),
+        element(EquipDecosWrapBox,
+            {
+                decosArray: [],
+            },
+            null,
+        ),
+    );
+}
+
+/*
 function MiscSelection(props) {
     return element("div",
         {
@@ -422,6 +516,7 @@ function MiscSelection(props) {
         "Maybe also Petalace, idk.",
     );
 }
+*/
 
 /*** Box ***/
 
@@ -431,6 +526,10 @@ function EquipmentSelectionsBox() {
         id: "equipmentselectionsbox",
         className: "sub-box",
         },
+        element(BuffsSelection,
+            null,
+            null,
+        ),
         element(WeaponSelection,
             {
             eqName: "Abominable Great Sword",
@@ -539,8 +638,10 @@ function EquipmentSelectionsBox() {
             },
             null,
         ),
-        element(MiscSelection,
-            null,
+        element(PetalaceSelection,
+            {
+            eqName: "Demon Petalace III",
+            },
             null,
         ),
     );

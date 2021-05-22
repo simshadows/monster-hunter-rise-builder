@@ -31,6 +31,10 @@ body {
     box-sizing: border-box;
 }
 
+#loading-box {
+    text-align: left;
+}
+
 div.mhr-builder-app {
     box-sizing: border-box;
     padding: 20px 15px 15px 15px;

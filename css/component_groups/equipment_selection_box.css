@@ -1,3 +1,24 @@
+div.equip-buffs-main-box {
+    display: flex;
+    column-gap: 4px;
+
+    height: 30px;
+}
+
+div.equip-buff-icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: black;
+    height: 30px;
+    width: 30px;
+}
+div.equip-buff-icon-box > img {
+    height: 90%;
+    width: 90%;
+}
+
 div.equip-weapon-info-box {
     flex: 1 0 0;
 
