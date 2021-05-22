@@ -5,7 +5,7 @@
  * Requires React and ReactDOM to be imported in HTML.
  */
 
-import * as check from "../check.js";
+import * as check from "../../check.js";
 
 const assert = console.assert;
 const element = React.createElement;

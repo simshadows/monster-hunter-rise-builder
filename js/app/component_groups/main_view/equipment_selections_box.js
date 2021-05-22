@@ -5,11 +5,11 @@
  * Requires React and ReactDOM to be imported in HTML.
  */
 
-import * as check from "../check.js";
+import * as check from "../../check.js";
 import {
     isEleStatStr,
     eleStatStrToEmoji,
-} from "../common.js";
+} from "../../common.js";
 
 const assert = console.assert;
 const element = React.createElement;
@@ -87,7 +87,10 @@ function BuffsSelection(props) {
                 null,
             ),
             element("div",
-                {className: "highlight-equip-main-box stackinner"},
+                {
+                className: "highlight-equip-main-box stackinner",
+                onClick: () => {console.log("clicked on buffs/states!");},
+                },
                 null,
             ),
         ),
@@ -202,7 +205,10 @@ function WeaponSelection(props) {
                 null,
             ),
             element("div",
-                {className: "highlight-equip-main-box stackinner"},
+                {
+                className: "highlight-equip-main-box stackinner",
+                onClick: () => {console.log("clicked on weapon!");},
+                },
                 null,
             ),
         ),
@@ -351,6 +357,7 @@ function EquipDecosWrapBox(props) {
                 element("div",
                     {
                     className: "highlight-equip-deco-box stackinner",
+                    onClick: () => {console.log("clicked on deco!");},
                     },
                     null,
                 ),
@@ -372,6 +379,8 @@ function ArmourSelection(props) {
     check.isArr(props.skillsArray); // Validate later
     check.isArr(props.decosArray); // Validate later
     check.isObj(props.defenses); // Validate later
+
+    check.isFunction(props.handleClickArmourSelect);
 
     return element("div",
         {
@@ -401,7 +410,10 @@ function ArmourSelection(props) {
                 null,
             ),
             element("div",
-                {className: "highlight-equip-main-box stackinner"},
+                {
+                className: "highlight-equip-main-box stackinner",
+                onClick: () => {props.handleClickArmourSelect()},
+                },
                 null,
             ),
         ),
@@ -447,7 +459,10 @@ function TalismanSelection(props) {
                 null,
             ),
             element("div",
-                {className: "highlight-equip-main-box stackinner"},
+                {
+                className: "highlight-equip-main-box stackinner",
+                onClick: () => {console.log("clicked on talisman!");},
+                },
                 null,
             ),
         ),
@@ -489,15 +504,12 @@ function PetalaceSelection(props) {
                 null,
             ),
             element("div",
-                {className: "highlight-equip-main-box stackinner"},
+                {
+                className: "highlight-equip-main-box stackinner",
+                onClick: () => {console.log("clicked on petalace!");},
+                },
                 null,
             ),
-        ),
-        element(EquipDecosWrapBox,
-            {
-                decosArray: [],
-            },
-            null,
         ),
     );
 }
@@ -520,7 +532,9 @@ function MiscSelection(props) {
 
 /*** Box ***/
 
-function EquipmentSelectionsBox() {
+function EquipmentSelectionsBox(props) {
+    check.isFunction(props.handleClickArmourSelect);
+
     return element("div",
         {
         id: "equipmentselectionsbox",
@@ -559,6 +573,7 @@ function EquipmentSelectionsBox() {
                        thunderRes: 1,
                        iceRes: -1,
                        dragonRes: -3},
+            handleClickArmourSelect: () => {props.handleClickArmourSelect();},
             },
             null,
         ),
@@ -575,6 +590,7 @@ function EquipmentSelectionsBox() {
                        thunderRes: 3,
                        iceRes: 0,
                        dragonRes: 0},
+            handleClickArmourSelect: () => {props.handleClickArmourSelect();},
             },
             null,
         ),
@@ -593,6 +609,7 @@ function EquipmentSelectionsBox() {
                        thunderRes: 1,
                        iceRes: -1,
                        dragonRes: -3},
+            handleClickArmourSelect: () => {props.handleClickArmourSelect();},
             },
             null,
         ),
@@ -610,6 +627,7 @@ function EquipmentSelectionsBox() {
                        thunderRes: -1,
                        iceRes: -1,
                        dragonRes: 0},
+            handleClickArmourSelect: () => {props.handleClickArmourSelect();},
             },
             null,
         ),
@@ -627,6 +645,7 @@ function EquipmentSelectionsBox() {
                        thunderRes: 1,
                        iceRes: 0,
                        dragonRes: 0},
+            handleClickArmourSelect: () => {props.handleClickArmourSelect();},
             },
             null,
         ),

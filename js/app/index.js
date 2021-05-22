@@ -6,30 +6,98 @@
  */
 
 import * as check from "./check.js";
-import SkillsResultsBox from "./component_groups/skill_results_box.js";
-import EquipmentSelectionsBox from "./component_groups/equipment_selections_box.js";
-import CalculationResultsBox from "./component_groups/calculation_results_box.js";
-import UtilBox from "./component_groups/util_box.js";
+import SkillsResultsBox from "./component_groups/main_view/skill_results_box.js";
+import EquipmentSelectionsBox from "./component_groups/main_view/equipment_selections_box.js";
+import CalculationResultsBox from "./component_groups/main_view/calculation_results_box.js";
+import UtilBox from "./component_groups/main_view/util_box.js";
 
 const element = React.createElement;
 
-class RightBox extends React.Component {
+class MHRBuilderAppMainView extends React.Component {
+
+    constructor(props) {
+        super(props);
+        check.isFunction(props.handleClickArmourSelect);
+    }
+
     render() {
-        return element(CalculationResultsBox,
-            null,
-            null,
+        return element("div",
+            {
+            className: "app-view-box",
+            id: "mhr-builder-app-main-view",
+            },
+            element("div",
+                {
+                className: "main-view-inner-box",
+                },
+                element(SkillsResultsBox,
+                    null,
+                    null,
+                ),
+                element(EquipmentSelectionsBox,
+                    {
+                    handleClickArmourSelect: () => {this.props.handleClickArmourSelect();},
+                    },
+                    null,
+                ),
+                element(CalculationResultsBox,
+                    null,
+                    null,
+                ),
+            ),
+        );
+    }
+}
+
+class MHRBuilderAppArmourSelectView extends React.Component {
+    render() {
+        return element("div",
+            {
+            className: "app-view-box",
+            id: "mhr-builder-app-armour-select-view",
+            },
+            "This is the armour select view! It's not implemented yet. Also, you're gonna have to refresh the page to go back.",
         );
     }
 }
 
 class MHRBuilderAppContainer extends React.Component {
 
+    static _viewValues = new Set([
+            "main",
+            "armour_select_view",
+        ]);
+
     constructor(props) {
         super(props);
-        this.state = {message: "kek"};
+        this.state = {
+                view: "main", // Always open with the main view
+            };
+    }
+
+    handleClickArmourSelect() {
+        this.setState({view: "armour_select_view"});
     }
 
     render() {
+        const viewElement = (()=>{
+                if (this.state.view == "main") {
+                    return element(MHRBuilderAppMainView,
+                        {
+                        handleClickArmourSelect: () => {this.handleClickArmourSelect();},
+                        },
+                        null,
+                    );
+                } else if (this.state.view == "armour_select_view") {
+                    return element(MHRBuilderAppArmourSelectView,
+                        null,
+                        null,
+                    );
+                } else {
+                    throw "invalid view";
+                }
+            })();
+
         return element("div",
             {
             className: "mhr-builder-app",
@@ -42,23 +110,7 @@ class MHRBuilderAppContainer extends React.Component {
                     null,
                     null,
                 ),
-                element("div",
-                    {
-                    className: "main-box",
-                    },
-                    element(SkillsResultsBox,
-                        null,
-                        null,
-                    ),
-                    element(EquipmentSelectionsBox,
-                        null,
-                        null,
-                    ),
-                    element(RightBox,
-                        null,
-                        null,
-                    ),
-                ),
+                viewElement,
             ),
         );
     }
