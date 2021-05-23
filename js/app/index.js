@@ -6,12 +6,16 @@
  */
 
 import * as check from "./check.js";
+
+import Modal from "./component_groups/modal.js";
+
 import SkillsResultsBox from "./component_groups/main_view/skill_results_box.js";
 import EquipmentSelectionsBox from "./component_groups/main_view/equipment_selections_box.js";
 import CalculationResultsBox from "./component_groups/main_view/calculation_results_box.js";
 import UtilBox from "./component_groups/main_view/util_box.js";
 
 const element = React.createElement;
+const assert = console.assert;
 
 function Footer(props) {
     return element("footer",
@@ -31,32 +35,6 @@ function Footer(props) {
             ),
             "."
         )
-    );
-}
-
-function Modal(props) {
-    check.isBool(props.visible);
-
-    console.log(props.children);
-
-    const bgStyle = (props.visible ? {} : {display: "none"});
-
-    return element("div",
-        {
-        className: "modal-background body-outer-box stackinner",
-        style: bgStyle,
-        },
-        element("div",
-            {
-            className: "body-inner-box",
-            },
-            element("div",
-                {
-                className: "modal-foreground",
-                },
-                ...React.Children.toArray(props.children)
-            ),
-        ),
     );
 }
 
@@ -123,7 +101,7 @@ class MHRBuilderAppArmourSelectView extends React.Component {
             className: "app-view-box",
             id: "mhr-builder-app-armour-select-view",
             },
-            "This is the armour select view! It's not implemented yet. Also, you're gonna have to refresh the page to go back.",
+            "This is the armour select view! It's not implemented yet.",
         );
     }
 }
@@ -143,9 +121,19 @@ class MHRBuilderAppContainer extends React.Component {
             };
     }
 
+    // Handlers
+
     handleClickArmourSelect() {
+        assert(this.state.view == "main");
         this.setState({view: "armour_select_view"});
     }
+
+    handleCloseArmourSelect() {
+        assert(this.state.view == "armour_select_view");
+        this.setState({view: "main"});
+    }
+
+    // Render
 
     render() {
         const armourSelectIsVisible = (()=>{
@@ -172,6 +160,8 @@ class MHRBuilderAppContainer extends React.Component {
             element(Modal,
                 {
                 visible: armourSelectIsVisible,
+                title: "Select Armor",
+                handleCloseModal: () => {this.handleCloseArmourSelect();},
                 },
                 element(MHRBuilderAppArmourSelectView,
                     null,

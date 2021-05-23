@@ -32,8 +32,8 @@ div.body-inner-box {
     margin: 0 auto 0 auto;
     padding: 0;
 
-    /* min-width: 1350px; */
-    width: 1350px;
+    /* min-width: 1250px; */
+    width: 1250px;
 }
 
 #footer {
@@ -41,28 +41,6 @@ div.body-inner-box {
     font-size: 12px;
     padding-top: 20px;
     padding-bottom: 40px;
-}
-
-/* Modals */
-div.modal-background {
-    display: flex;
-    justify-content: center;
-
-    background: rgba(0, 0, 0, 0.5);;
-
-    visibility: visible;
-}
-div.modal-foreground {
-    display: flex;
-
-    background: white;
-    margin: 60px 40px 40px 40px;
-    padding: 15px;
-    border-radius: 15px;
-    border: thick solid black;
-
-    /* min-height: 640px; */ /* TODO: Make it so the modal UI can stretch vertically. */
-    height: 635px; /* Temporary static height */
 }
 
 /* Makes single lines of text clip gracefully to prevent breaking the layout */
@@ -93,8 +71,8 @@ div.modal-foreground {
 }
 
 div.app-view-box {
-    /* min-width: 1350px; */
-    width: 1350px;
+    /* min-width: 1250px; */
+    width: 1250px;
 }
 
 /*** Main View ***/
