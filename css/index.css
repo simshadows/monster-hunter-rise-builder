@@ -1,11 +1,46 @@
 body {
     font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+    margin: 0;
+}
+
+div.body-outer-box {
+    box-sizing: border-box;
+    padding: 40px 15px 15px 15px;
+}
+div.body-inner-box {
+    margin: 0 auto 0 auto;
+    padding: 0;
+
+    /* min-width: 1350px; */
+    width: 1350px;
 }
 
 #footer {
     text-align: center;
     font-size: 12px;
     padding-bottom: 60px;
+}
+
+/* Modals */
+div.modal-background {
+    display: flex;
+    justify-content: center;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);;
+
+    visibility: visible;
+}
+div.modal-foreground {
+    background: white;
+    margin: 70px 40px 40px 40px;
+    padding: 10px;
+
+    min-height: 640px;
 }
 
 /* Makes single lines of text clip gracefully to prevent breaking the layout */
@@ -36,8 +71,6 @@ body {
 }
 
 div.mhr-builder-app {
-    box-sizing: border-box;
-    padding: 20px 15px 15px 15px;
     width: 100%;
     height: 100%;
 }
@@ -45,11 +78,6 @@ div.mhr-builder-app {
 div.mhr-builder-app-inner-box {
     display: flex;
     flex-direction: column;
-    margin: 0 auto 0 auto;
-    padding: 0;
-
-    /* min-width: 1350px; */
-    width: 1350px;
 }
 
 div.app-view-box {
@@ -96,6 +124,7 @@ div.sub-box {
 
 #mhr-builder-app-armour-select-view {
     background: lightgrey;
+    width: 100%;
     height: 200px;
 }
 

@@ -15,6 +15,10 @@ export function isInt(obj) {
     console.assert((typeof obj === "number") && (obj % 1 === 0), "Expected an integer. Instead got:", obj);
 }
 
+export function isBool(obj) {
+    console.assert((typeof obj === "boolean"), "Expected a boolean. Instead got:", obj);
+}
+
 export function isStr(obj) {
     console.assert((typeof obj === "string"), "Expected a string. Instead got:", obj);
 }

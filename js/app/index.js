@@ -13,6 +13,30 @@ import UtilBox from "./component_groups/main_view/util_box.js";
 
 const element = React.createElement;
 
+function Modal(props) {
+    check.isBool(props.visible);
+
+    const bgStyle = (props.visible ? {display: "unset"} : {display: "none"});
+
+    return element("div",
+        {
+        className: "modal-background body-outer-box",
+        style: bgStyle,
+        },
+        element("div",
+            {
+            className: "body-inner-box",
+            },
+            element("div",
+                {
+                className: "modal-foreground",
+                },
+                ...props.children
+            ),
+        ),
+    );
+}
+
 class MHRBuilderAppMainView extends React.Component {
 
     constructor(props) {
@@ -23,29 +47,44 @@ class MHRBuilderAppMainView extends React.Component {
     render() {
         return element("div",
             {
-            className: "app-view-box",
-            id: "mhr-builder-app-main-view",
+            className: "body-outer-box",
             },
             element("div",
                 {
-                className: "main-view-inner-box",
+                className: "mhr-builder-app-inner-box body-inner-box",
                 },
-                element(SkillsResultsBox,
+                element(UtilBox,
                     null,
                     null,
                 ),
-                element(EquipmentSelectionsBox,
+                element("div",
                     {
-                    handleClickArmourSelect: () => {this.props.handleClickArmourSelect();},
+                    className: "app-view-box",
+                    id: "mhr-builder-app-main-view",
                     },
-                    null,
-                ),
-                element(CalculationResultsBox,
-                    null,
-                    null,
+                    element("div",
+                        {
+                        className: "main-view-inner-box",
+                        },
+                        element(SkillsResultsBox,
+                            null,
+                            null,
+                        ),
+                        element(EquipmentSelectionsBox,
+                            {
+                            handleClickArmourSelect: () => {this.props.handleClickArmourSelect();},
+                            },
+                            null,
+                        ),
+                        element(CalculationResultsBox,
+                            null,
+                            null,
+                        ),
+                    ),
                 ),
             ),
         );
+
     }
 }
 
@@ -72,6 +111,7 @@ class MHRBuilderAppContainer extends React.Component {
         super(props);
         this.state = {
                 view: "main", // Always open with the main view
+                //view: "armour_select_view",
             };
     }
 
@@ -80,19 +120,11 @@ class MHRBuilderAppContainer extends React.Component {
     }
 
     render() {
-        const viewElement = (()=>{
+        const armourSelectIsVisible = (()=>{
                 if (this.state.view == "main") {
-                    return element(MHRBuilderAppMainView,
-                        {
-                        handleClickArmourSelect: () => {this.handleClickArmourSelect();},
-                        },
-                        null,
-                    );
+                    return false;
                 } else if (this.state.view == "armour_select_view") {
-                    return element(MHRBuilderAppArmourSelectView,
-                        null,
-                        null,
-                    );
+                    return true;
                 } else {
                     throw "invalid view";
                 }
@@ -102,15 +134,21 @@ class MHRBuilderAppContainer extends React.Component {
             {
             className: "mhr-builder-app",
             },
-            element("div",
+            element(MHRBuilderAppMainView,
                 {
-                className: "mhr-builder-app-inner-box",
+                handleClickArmourSelect: () => {this.handleClickArmourSelect();},
                 },
-                element(UtilBox,
+                null,
+            ),
+            element(Modal,
+                {
+                visible: armourSelectIsVisible,
+                },
+                element(MHRBuilderAppArmourSelectView,
                     null,
                     null,
                 ),
-                viewElement,
+                "lmao",
             ),
         );
     }
