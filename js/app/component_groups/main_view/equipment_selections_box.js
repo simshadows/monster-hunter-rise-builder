@@ -61,6 +61,7 @@ function PlaceholderBuffIcon() {
 }
 
 function BuffsSelection(props) {
+    check.isFunction(props.handleClickBuffsSelect);
 
     return element("div",
         {
@@ -89,7 +90,7 @@ function BuffsSelection(props) {
             element("div",
                 {
                 className: "highlight-equip-main-box stackinner",
-                onClick: () => {console.log("clicked on buffs/states!");},
+                onClick: () => {props.handleClickBuffsSelect()},
                 },
                 null,
             ),
@@ -178,6 +179,8 @@ function WeaponSelection(props) {
     check.isArr(props.wepRampageSkills); // Validate later
     check.isArr(props.decosArray); // Validate later
 
+    check.isFunction(props.handleClickWeaponSelect);
+
     return element("div",
         {
         className: "equip-box",
@@ -207,7 +210,7 @@ function WeaponSelection(props) {
             element("div",
                 {
                 className: "highlight-equip-main-box stackinner",
-                onClick: () => {console.log("clicked on weapon!");},
+                onClick: () => {props.handleClickWeaponSelect()},
                 },
                 null,
             ),
@@ -433,6 +436,8 @@ function TalismanSelection(props) {
     check.isArr(props.skillsArray); // Validate later
     check.isArr(props.decosArray); // Validate later
 
+    check.isFunction(props.handleClickTalismanSelect);
+
     return element("div",
         {
         className: "equip-box",
@@ -461,7 +466,7 @@ function TalismanSelection(props) {
             element("div",
                 {
                 className: "highlight-equip-main-box stackinner",
-                onClick: () => {console.log("clicked on talisman!");},
+                onClick: () => {props.handleClickTalismanSelect()},
                 },
                 null,
             ),
@@ -477,6 +482,7 @@ function TalismanSelection(props) {
 
 function PetalaceSelection(props) {
     check.isStr(props.eqName); // Validate later
+    check.isFunction(props.handleClickPetalaceSelect);
 
     return element("div",
         {
@@ -506,7 +512,7 @@ function PetalaceSelection(props) {
             element("div",
                 {
                 className: "highlight-equip-main-box stackinner",
-                onClick: () => {console.log("clicked on petalace!");},
+                onClick: () => {props.handleClickPetalaceSelect()},
                 },
                 null,
             ),
@@ -533,7 +539,11 @@ function MiscSelection(props) {
 /*** Box ***/
 
 function EquipmentSelectionsBox(props) {
+    check.isFunction(props.handleClickBuffsSelect);
+    check.isFunction(props.handleClickWeaponSelect);
     check.isFunction(props.handleClickArmourSelect);
+    check.isFunction(props.handleClickTalismanSelect);
+    check.isFunction(props.handleClickPetalaceSelect);
 
     return element("div",
         {
@@ -541,6 +551,9 @@ function EquipmentSelectionsBox(props) {
         className: "sub-box",
         },
         element(BuffsSelection,
+            {
+            handleClickBuffsSelect: () => {props.handleClickBuffsSelect();},
+            },
             null,
             null,
         ),
@@ -557,6 +570,7 @@ function EquipmentSelectionsBox(props) {
                                "~~NOTREAL~~"],
             decosArray: [[2, "Charger Jewel 2"],
                          [1, "~~NOTREAL~~"]],
+            handleClickWeaponSelect: () => {props.handleClickWeaponSelect();},
             },
             null,
         ),
@@ -654,12 +668,14 @@ function EquipmentSelectionsBox(props) {
             eqName: "Talisman",
             skillsArray: [["Weakness Exploit", 1]],
             decosArray: [[2, "Tenderizer Jewel 2"]],
+            handleClickTalismanSelect: () => {props.handleClickTalismanSelect();},
             },
             null,
         ),
         element(PetalaceSelection,
             {
             eqName: "Demon Petalace III",
+            handleClickPetalaceSelect: () => {props.handleClickPetalaceSelect();},
             },
             null,
         ),

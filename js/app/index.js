@@ -38,14 +38,15 @@ function Footer(props) {
     );
 }
 
-class MHRBuilderAppMainView extends React.Component {
-
-    constructor(props) {
-        super(props);
-        check.isFunction(props.handleClickArmourSelect);
-    }
+class MainView extends React.Component {
 
     render() {
+        check.isFunction(this.props.handleClickBuffsSelect);
+        check.isFunction(this.props.handleClickWeaponSelect);
+        check.isFunction(this.props.handleClickArmourSelect);
+        check.isFunction(this.props.handleClickTalismanSelect);
+        check.isFunction(this.props.handleClickPetalaceSelect);
+
         return element("div",
             {
             className: "body-outer-box",
@@ -74,7 +75,11 @@ class MHRBuilderAppMainView extends React.Component {
                         ),
                         element(EquipmentSelectionsBox,
                             {
-                            handleClickArmourSelect: () => {this.props.handleClickArmourSelect();},
+                            handleClickBuffsSelect:    () => {this.props.handleClickBuffsSelect();},
+                            handleClickWeaponSelect:   () => {this.props.handleClickWeaponSelect();},
+                            handleClickArmourSelect:   () => {this.props.handleClickArmourSelect();},
+                            handleClickTalismanSelect: () => {this.props.handleClickTalismanSelect();},
+                            handleClickPetalaceSelect: () => {this.props.handleClickPetalaceSelect();},
                             },
                             null,
                         ),
@@ -94,7 +99,31 @@ class MHRBuilderAppMainView extends React.Component {
     }
 }
 
-class MHRBuilderAppArmourSelectView extends React.Component {
+class BuffsSelectView extends React.Component {
+    render() {
+        return element("div",
+            {
+            className: "app-view-box",
+            id: "mhr-builder-app-buffs-select-view",
+            },
+            "This is the buffs/states select view! It's not implemented yet.",
+        );
+    }
+}
+
+class WeaponSelectView extends React.Component {
+    render() {
+        return element("div",
+            {
+            className: "app-view-box",
+            id: "mhr-builder-app-weapon-select-view",
+            },
+            "This is the weapon select view! It's not implemented yet.",
+        );
+    }
+}
+
+class ArmourSelectView extends React.Component {
     render() {
         return element("div",
             {
@@ -106,64 +135,181 @@ class MHRBuilderAppArmourSelectView extends React.Component {
     }
 }
 
+class TalismanSelectView extends React.Component {
+    render() {
+        return element("div",
+            {
+            className: "app-view-box",
+            id: "mhr-builder-app-talisman-select-view",
+            },
+            "This is the talisman select view! It's not implemented yet.",
+        );
+    }
+}
+
+class PetalaceSelectView extends React.Component {
+    render() {
+        return element("div",
+            {
+            className: "app-view-box",
+            id: "mhr-builder-app-petalace-select-view",
+            },
+            "This is the petalace select view! It's not implemented yet.",
+        );
+    }
+}
+
+class DecorationsSelectView extends React.Component {
+    render() {
+        return element("div",
+            {
+            className: "app-view-box",
+            id: "mhr-builder-app-decorations-select-view",
+            },
+            "This is the decorations select view! It's not implemented yet.",
+        );
+    }
+}
+
 class MHRBuilderAppContainer extends React.Component {
 
     static _viewValues = new Set([
             "main",
+            "buffs_select_view",
             "armour_select_view",
+            "weapon_select_view",
+            "talisman_select_view",
+            "petalace_select_view",
+            "decos_select_view",
         ]);
 
     constructor(props) {
         super(props);
         this.state = {
-                view: "main", // Always open with the main view
-                //view: "armour_select_view",
+                view: "main", // Always start with the main view
             };
     }
 
-    // Handlers
-
+    handleClickBuffsSelect() {
+        assert(this.state.view == "main");
+        this.setState({view: "buffs_select_view"});
+    }
+    handleClickWeaponSelect() {
+        assert(this.state.view == "main");
+        this.setState({view: "weapon_select_view"});
+    }
     handleClickArmourSelect() {
         assert(this.state.view == "main");
         this.setState({view: "armour_select_view"});
     }
+    handleClickTalismanSelect() {
+        assert(this.state.view == "main");
+        this.setState({view: "talisman_select_view"});
+    }
+    handleClickPetalaceSelect() {
+        assert(this.state.view == "main");
+        this.setState({view: "petalace_select_view"});
+    }
 
+    handleCloseBuffsSelect() {
+        assert(this.state.view == "buffs_select_view");
+        this.setState({view: "main"});
+    }
+    handleCloseWeaponSelect() {
+        assert(this.state.view == "weapon_select_view");
+        this.setState({view: "main"});
+    }
     handleCloseArmourSelect() {
         assert(this.state.view == "armour_select_view");
+        this.setState({view: "main"});
+    }
+    handleCloseTalismanSelect() {
+        assert(this.state.view == "talisman_select_view");
+        this.setState({view: "main"});
+    }
+    handleClosePetalaceSelect() {
+        assert(this.state.view == "petalace_select_view");
         this.setState({view: "main"});
     }
 
     // Render
 
     render() {
-        const armourSelectIsVisible = (()=>{
-                if (this.state.view == "main") {
-                    return false;
-                } else if (this.state.view == "armour_select_view") {
-                    return true;
-                } else {
-                    throw "invalid view";
-                }
-            })();
+        const selectionViewIsVisible = {
+                buffs:    (this.state.view == "buffs_select_view" ),
+                weapon:   (this.state.view == "weapon_select_view"),
+                armour:   (this.state.view == "armour_select_view"),
+                talisman: (this.state.view == "talisman_select_view"),
+                petalace: (this.state.view == "petalace_select_view"),
+                decos:    (this.state.view == "decos_select_view"),
+            };
 
         return element("div",
             {
             id: "app",
             className: "stackouter",
             },
-            element(MHRBuilderAppMainView,
+            element(MainView,
                 {
-                handleClickArmourSelect: () => {this.handleClickArmourSelect();},
+                handleClickBuffsSelect:    () => {this.handleClickBuffsSelect();},
+                handleClickWeaponSelect:   () => {this.handleClickWeaponSelect();},
+                handleClickArmourSelect:   () => {this.handleClickArmourSelect();},
+                handleClickTalismanSelect: () => {this.handleClickTalismanSelect();},
+                handleClickPetalaceSelect: () => {this.handleClickPetalaceSelect();},
                 },
                 null,
             ),
             element(Modal,
                 {
-                visible: armourSelectIsVisible,
+                visible: selectionViewIsVisible.buffs,
+                title: "Select Buffs and States",
+                handleCloseModal: () => {this.handleCloseBuffsSelect();},
+                },
+                element(BuffsSelectView,
+                    null,
+                    null,
+                ),
+            ),
+            element(Modal,
+                {
+                visible: selectionViewIsVisible.weapon,
+                title: "Select And Customize Weapon",
+                handleCloseModal: () => {this.handleCloseWeaponSelect();},
+                },
+                element(WeaponSelectView,
+                    null,
+                    null,
+                ),
+            ),
+            element(Modal,
+                {
+                visible: selectionViewIsVisible.armour,
                 title: "Select Armor",
                 handleCloseModal: () => {this.handleCloseArmourSelect();},
                 },
-                element(MHRBuilderAppArmourSelectView,
+                element(ArmourSelectView,
+                    null,
+                    null,
+                ),
+            ),
+            element(Modal,
+                {
+                visible: selectionViewIsVisible.talisman,
+                title: "Set Talisman",
+                handleCloseModal: () => {this.handleCloseTalismanSelect();},
+                },
+                element(TalismanSelectView,
+                    null,
+                    null,
+                ),
+            ),
+            element(Modal,
+                {
+                visible: selectionViewIsVisible.petalace,
+                title: "Select Petalace",
+                handleCloseModal: () => {this.handleClosePetalaceSelect();},
+                },
+                element(PetalaceSelectView,
                     null,
                     null,
                 ),
