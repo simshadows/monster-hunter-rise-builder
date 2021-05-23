@@ -13,14 +13,37 @@ import UtilBox from "./component_groups/main_view/util_box.js";
 
 const element = React.createElement;
 
+function Footer(props) {
+    return element("footer",
+        {
+        id: "footer",
+        },
+        element("p",
+            null,
+            element("b", null, "This project is currently in very early development."),
+            " Full source code available ",
+            element("a",
+                {
+                href: "https://github.com/simshadows/monster-hunter-rise-builder",
+                target: "_blank",
+                },
+                "here"
+            ),
+            "."
+        )
+    );
+}
+
 function Modal(props) {
     check.isBool(props.visible);
 
-    const bgStyle = (props.visible ? {display: "unset"} : {display: "none"});
+    console.log(props.children);
+
+    const bgStyle = (props.visible ? {} : {display: "none"});
 
     return element("div",
         {
-        className: "modal-background body-outer-box",
+        className: "modal-background body-outer-box stackinner",
         style: bgStyle,
         },
         element("div",
@@ -31,7 +54,7 @@ function Modal(props) {
                 {
                 className: "modal-foreground",
                 },
-                ...props.children
+                ...React.Children.toArray(props.children)
             ),
         ),
     );
@@ -51,7 +74,8 @@ class MHRBuilderAppMainView extends React.Component {
             },
             element("div",
                 {
-                className: "mhr-builder-app-inner-box body-inner-box",
+                id: "app-inner-box",
+                className: "body-inner-box",
                 },
                 element(UtilBox,
                     null,
@@ -82,6 +106,10 @@ class MHRBuilderAppMainView extends React.Component {
                         ),
                     ),
                 ),
+            ),
+            element(Footer,
+                null,
+                null,
             ),
         );
 
@@ -132,7 +160,8 @@ class MHRBuilderAppContainer extends React.Component {
 
         return element("div",
             {
-            className: "mhr-builder-app",
+            id: "app",
+            className: "stackouter",
             },
             element(MHRBuilderAppMainView,
                 {
@@ -148,7 +177,6 @@ class MHRBuilderAppContainer extends React.Component {
                     null,
                     null,
                 ),
-                "lmao",
             ),
         );
     }
@@ -156,6 +184,6 @@ class MHRBuilderAppContainer extends React.Component {
 
 ReactDOM.render(
     element(MHRBuilderAppContainer, null),
-    document.getElementById("mhr-builder-app-container")
+    document.getElementById("app-container")
 );
 

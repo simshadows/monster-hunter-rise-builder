@@ -25,6 +25,9 @@ export function isStr(obj) {
 export function isStrOrNull(obj) {
     console.assert((typeof obj === "string") || (obj === null), "Expected a string or null. Instead got:", obj);
 }
+export function isStrOrUndef(obj) {
+    console.assert((typeof obj === "string") || (obj === undefined), "Expected a string or undefined. Instead got:", obj);
+}
 
 export function isArr(obj) {
     console.assert(Array.isArray(obj), "Expected an Array type. Instead got:", obj);
