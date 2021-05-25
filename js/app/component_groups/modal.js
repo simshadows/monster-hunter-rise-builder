@@ -12,28 +12,24 @@ const assert = console.assert;
 
 class Modal extends React.Component {
 
-    constructor(props) {
-        super(props);
-        check.isBool(this.props.visible);
-
-        check.isStr(this.props.title);
-        assert(this.props.title.length > 0);
-
-        check.isFunction(props.handleCloseModal);
-
-        //this.handleClickBackground.bind(this);
-    }
-
     handleXButton(e) {
         e.stopPropagation();
         this.props.handleCloseModal();
     }
 
     handleClickBackground(e) {
+        e.stopPropagation();
         this.props.handleCloseModal();
     }
 
     render() {
+        check.isBool(this.props.visible);
+
+        check.isStr(this.props.title);
+        assert(this.props.title.length > 0);
+
+        check.isFunction(this.props.handleCloseModal);
+
         const bgStyle = (this.props.visible ? {} : {display: "none"});
 
         return element("div",

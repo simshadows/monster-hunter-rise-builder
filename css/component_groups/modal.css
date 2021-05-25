@@ -2,7 +2,7 @@ div.modal-background {
     display: flex;
     justify-content: center;
 
-    background: rgba(0, 0, 0, 0.5);;
+    background: rgba(0, 0, 0, 0.6);;
 
     visibility: visible;
 }

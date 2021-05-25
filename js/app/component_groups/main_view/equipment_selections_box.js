@@ -28,19 +28,33 @@ function clipsafeP(...children) {
 
 function EquipIcon(props) {
     check.isStr(props.iconImg);
+    check.isFunction(props.onClick);
 
     return element("div",
         {
-        className: "equip-icon-box",
+        className: "stackouter",
         },
-        element("img",
+        element("div",
             {
-            src: props.iconImg,
-            alt: "icon",
+            className: "equip-icon-box",
+            },
+            element("img",
+                {
+                src: props.iconImg,
+                alt: "icon",
+                },
+                null,
+            ),
+        ),
+        element("div",
+            {
+            className: "highlight-equip-main-box stackinner",
+            onClick: (e) => {props.onClick(e)},
             },
             null,
         ),
-    )
+    );
+
 }
 
 /*** Buffs and State ***/
@@ -114,6 +128,7 @@ function EquipWeaponInfoBox(props) {
     check.isArr(props.wepRampageSkills);
     assert(props.wepDefenseBonus >= 0);
     // TODO: Sharpness?
+    check.isFunction(props.onClick);
 
     function statBox(text, value) {
         return element("div",
@@ -148,7 +163,7 @@ function EquipWeaponInfoBox(props) {
         ),
         element("div",
             {
-            className: "equip-weapon-detail-box",
+            className: "equip-weapon-detail-box stackouter",
             },
             element("div",
                 {
@@ -165,6 +180,13 @@ function EquipWeaponInfoBox(props) {
                 },
                 ...rampageSkillBoxes
             ),
+            element("div",
+                {
+                className: "highlight-equip-main-box stackinner",
+                onClick: (e) => {props.onClick(e)},
+                },
+                null,
+            ),
         ),
     )
 }
@@ -180,6 +202,7 @@ function WeaponSelection(props) {
     check.isArr(props.decosArray); // Validate later
 
     check.isFunction(props.handleClickWeaponSelect);
+    check.isFunction(props.handleClickWeaponCustomize);
 
     return element("div",
         {
@@ -187,11 +210,12 @@ function WeaponSelection(props) {
         },
         element("div",
             {
-            className: "equip-main-box stackouter",
+            className: "equip-main-box",
             },
             element(EquipIcon,
                 {
                 iconImg: "./images/placeholders/weapon.png",
+                onClick: () => {props.handleClickWeaponSelect()},
                 },
                 null,
             ),
@@ -204,13 +228,7 @@ function WeaponSelection(props) {
                     wepEleStatValue: props.wepEleStatValue,
                     wepDefenseBonus: props.wepDefenseBonus,
                     wepRampageSkills: props.wepRampageSkills,
-                },
-                null,
-            ),
-            element("div",
-                {
-                className: "highlight-equip-main-box stackinner",
-                onClick: () => {props.handleClickWeaponSelect()},
+                    onClick: (e) => {props.handleClickWeaponCustomize(e)},
                 },
                 null,
             ),
@@ -391,11 +409,12 @@ function ArmourSelection(props) {
         },
         element("div",
             {
-            className: "equip-main-box stackouter",
+            className: "equip-main-box",
             },
             element(EquipIcon,
                 {
                 iconImg: props.slotIconImg,
+                onClick: () => {props.handleClickArmourSelect()},
                 },
                 null,
             ),
@@ -409,13 +428,6 @@ function ArmourSelection(props) {
             element(EquipDefensesBox,
                 {
                 defenses: props.defenses,
-                },
-                null,
-            ),
-            element("div",
-                {
-                className: "highlight-equip-main-box stackinner",
-                onClick: () => {props.handleClickArmourSelect()},
                 },
                 null,
             ),
@@ -444,11 +456,12 @@ function TalismanSelection(props) {
         },
         element("div",
             {
-            className: "equip-main-box stackouter",
+            className: "equip-main-box",
             },
             element(EquipIcon,
                 {
                 iconImg: "./images/placeholders/talisman.png",
+                onClick: () => {props.handleClickTalismanSelect()},
                 },
                 null,
             ),
@@ -461,13 +474,6 @@ function TalismanSelection(props) {
             ),
             element(EquipDefensesBoxEmpty,
                 null,
-                null,
-            ),
-            element("div",
-                {
-                className: "highlight-equip-main-box stackinner",
-                onClick: () => {props.handleClickTalismanSelect()},
-                },
                 null,
             ),
         ),
@@ -490,11 +496,12 @@ function PetalaceSelection(props) {
         },
         element("div",
             {
-            className: "equip-main-box stackouter",
+            className: "equip-main-box",
             },
             element(EquipIcon,
                 {
                 iconImg: "./images/placeholders/talisman.png",
+                onClick: () => {props.handleClickPetalaceSelect()},
                 },
                 null,
             ),
@@ -509,38 +516,16 @@ function PetalaceSelection(props) {
                 null,
                 null,
             ),
-            element("div",
-                {
-                className: "highlight-equip-main-box stackinner",
-                onClick: () => {props.handleClickPetalaceSelect()},
-                },
-                null,
-            ),
         ),
     );
 }
-
-/*
-function MiscSelection(props) {
-    return element("div",
-        {
-        id: "misc-selections-box",
-        className: "equip-box",
-        },
-        "Misc stuff (like Power Charm and HH buffs) to be implemented here later.",
-        element("br", null, null),
-        "Or I might move buffs to the top as simple icons.",
-        element("br", null, null),
-        "Maybe also Petalace, idk.",
-    );
-}
-*/
 
 /*** Box ***/
 
 function EquipmentSelectionsBox(props) {
     check.isFunction(props.handleClickBuffsSelect);
     check.isFunction(props.handleClickWeaponSelect);
+    check.isFunction(props.handleClickWeaponCustomize);
     check.isFunction(props.handleClickArmourSelect);
     check.isFunction(props.handleClickTalismanSelect);
     check.isFunction(props.handleClickPetalaceSelect);
@@ -571,6 +556,7 @@ function EquipmentSelectionsBox(props) {
             decosArray: [[2, "Charger Jewel 2"],
                          [1, "~~NOTREAL~~"]],
             handleClickWeaponSelect: () => {props.handleClickWeaponSelect();},
+            handleClickWeaponCustomize: () => {props.handleClickWeaponCustomize();},
             },
             null,
         ),

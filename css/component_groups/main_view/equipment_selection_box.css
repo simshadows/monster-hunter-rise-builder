@@ -107,11 +107,11 @@ div.equip-main-box {
     align-items: flex-start;
 
     padding: 4px;
-    cursor: pointer;
 }
 div.highlight-equip-main-box:hover {
-    background: black;
-    opacity: 0.5;
+    background: rgba(0, 0, 0, 0.5);;
+    /* border: thin solid white; */
+    cursor: pointer;
 }
 
 div.equip-icon-box {
