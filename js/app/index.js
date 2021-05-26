@@ -6,6 +6,10 @@
  */
 
 import * as check from "./check.js";
+import {
+    isArmourSlotStr,
+    br,
+} from "./common.js";
 
 import Modal from "./component_groups/modal.js";
 
@@ -76,12 +80,12 @@ class MainView extends React.Component {
                         ),
                         element(EquipmentSelectionsBox,
                             {
-                            handleClickBuffsSelect:     () => {this.props.handleClickBuffsSelect();},
-                            handleClickWeaponSelect:    () => {this.props.handleClickWeaponSelect();},
-                            handleClickWeaponCustomize: () => {this.props.handleClickWeaponCustomize();},
-                            handleClickArmourSelect:    () => {this.props.handleClickArmourSelect();},
-                            handleClickTalismanSelect:  () => {this.props.handleClickTalismanSelect();},
-                            handleClickPetalaceSelect:  () => {this.props.handleClickPetalaceSelect();},
+                            handleClickBuffsSelect:     ()       => {this.props.handleClickBuffsSelect();},
+                            handleClickWeaponSelect:    ()       => {this.props.handleClickWeaponSelect();},
+                            handleClickWeaponCustomize: ()       => {this.props.handleClickWeaponCustomize();},
+                            handleClickArmourSelect:    (slotID) => {this.props.handleClickArmourSelect(slotID);},
+                            handleClickTalismanSelect:  ()       => {this.props.handleClickTalismanSelect();},
+                            handleClickPetalaceSelect:  ()       => {this.props.handleClickPetalaceSelect();},
                             },
                             null,
                         ),
@@ -138,6 +142,19 @@ class WeaponCustomizeView extends React.Component {
 }
 
 class ArmourSelectView extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+                querySlotID: "head",
+            };
+    }
+
+    reinitialize(slotID) {
+        assert(isArmourSlotStr(slotID));
+        this.setState({querySlotID: slotID});
+    }
+
     render() {
         return element("div",
             {
@@ -145,6 +162,8 @@ class ArmourSelectView extends React.Component {
             id: "mhr-builder-app-armour-select-view",
             },
             "This is the armour select view! It's not implemented yet.",
+            br(),
+            "Initialized to search for: " + this.state.querySlotID,
         );
     }
 }
@@ -204,6 +223,10 @@ class MHRBuilderAppContainer extends React.Component {
                 view: "main", // Always start with the main view
             };
 
+        this.myRefs = {
+                armourSelectView: React.createRef(),
+            };
+
         // TODO: Ugh, the fact that we don't do this consistently is weird. Change it later?
         this.handleKeypress = this.handleKeypress.bind(this);
     }
@@ -228,8 +251,10 @@ class MHRBuilderAppContainer extends React.Component {
         assert(this.state.view == "main");
         this.setState({view: "weapon_customize_view"});
     }
-    handleClickArmourSelect() {
+    handleClickArmourSelect(slotID) {
+        assert(isArmourSlotStr(slotID));
         assert(this.state.view == "main");
+        this.myRefs.armourSelectView.current.reinitialize(slotID);
         this.setState({view: "armour_select_view"});
     }
     handleClickTalismanSelect() {
@@ -277,6 +302,8 @@ class MHRBuilderAppContainer extends React.Component {
     }
 
     render() {
+        assert(this.constructor._viewEnumValues.has(this.state.view));
+
         const selectionViewIsVisible = {
                 buffs:       (this.state.view == "buffs_select_view" ),
                 weapon:      (this.state.view == "weapon_select_view"),
@@ -294,12 +321,12 @@ class MHRBuilderAppContainer extends React.Component {
             },
             element(MainView,
                 {
-                handleClickBuffsSelect:     () => {this.handleClickBuffsSelect();},
-                handleClickWeaponSelect:    () => {this.handleClickWeaponSelect();},
-                handleClickWeaponCustomize: () => {this.handleClickWeaponCustomize();},
-                handleClickArmourSelect:    () => {this.handleClickArmourSelect();},
-                handleClickTalismanSelect:  () => {this.handleClickTalismanSelect();},
-                handleClickPetalaceSelect:  () => {this.handleClickPetalaceSelect();},
+                handleClickBuffsSelect:     ()       => {this.handleClickBuffsSelect();},
+                handleClickWeaponSelect:    ()       => {this.handleClickWeaponSelect();},
+                handleClickWeaponCustomize: ()       => {this.handleClickWeaponCustomize();},
+                handleClickArmourSelect:    (slotID) => {this.handleClickArmourSelect(slotID);},
+                handleClickTalismanSelect:  ()       => {this.handleClickTalismanSelect();},
+                handleClickPetalaceSelect:  ()       => {this.handleClickPetalaceSelect();},
                 },
                 null,
             ),
@@ -340,10 +367,12 @@ class MHRBuilderAppContainer extends React.Component {
                 {
                 visible: selectionViewIsVisible.armour,
                 title: "Select Armor",
-                handleCloseModal: () => {this.handleCloseArmourSelect();},
+                handleCloseModal: (slotID) => {this.handleCloseArmourSelect(slotID);},
                 },
                 element(ArmourSelectView,
-                    null,
+                    {
+                    ref: this.myRefs.armourSelectView,
+                    },
                     null,
                 ),
             ),

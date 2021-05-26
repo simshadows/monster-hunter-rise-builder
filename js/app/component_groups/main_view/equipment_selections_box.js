@@ -8,6 +8,7 @@
 import * as check from "../../check.js";
 import {
     isEleStatStr,
+    isArmourSlotStr,
     eleStatStrToEmoji,
 } from "../../common.js";
 
@@ -121,7 +122,7 @@ function EquipWeaponInfoBox(props) {
     assert(props.wepAttack > 0);
     check.isInt(props.wepAffinity);
     assert((props.wepAffinity >= -100) && (props.wepAffinity <= 100));
-    isEleStatStr(props.wepEleStatType);
+    assert(isEleStatStr(props.wepEleStatType));
     check.isInt(props.wepEleStatValue);
     assert(props.wepEleStatValue >= 0);
     check.isInt(props.wepDefenseBonus);
@@ -394,51 +395,66 @@ function EquipDecosWrapBox(props) {
     );
 }
 
-function ArmourSelection(props) {
-    check.isStr(props.slotIconImg);
-    check.isStr(props.eqName); // Validate later
-    check.isArr(props.skillsArray); // Validate later
-    check.isArr(props.decosArray); // Validate later
-    check.isObj(props.defenses); // Validate later
+class ArmourSelection extends React.Component {
 
-    check.isFunction(props.handleClickArmourSelect);
+    static _slotNameToIconImgPath = new Map([
+            ["head" , "./images/placeholders/head.png" ],
+            ["chest", "./images/placeholders/chest.png"],
+            ["arms" , "./images/placeholders/arms.png" ],
+            ["waist", "./images/placeholders/waist.png"],
+            ["legs" , "./images/placeholders/legs.png" ],
+        ]);
 
-    return element("div",
-        {
-        className: "equip-box",
-        },
-        element("div",
+    handleClickArmourSelect() {
+        this.props.handleClickArmourSelect(this.props.slotID);
+    }
+
+    render() {
+        assert(isArmourSlotStr(this.props.slotID));
+        check.isStr(this.props.eqName); // Validate later
+        check.isArr(this.props.skillsArray); // Validate later
+        check.isArr(this.props.decosArray); // Validate later
+        check.isObj(this.props.defenses); // Validate later
+
+        check.isFunction(this.props.handleClickArmourSelect);
+
+        return element("div",
             {
-            className: "equip-main-box",
+            className: "equip-box",
             },
-            element(EquipIcon,
+            element("div",
                 {
-                iconImg: props.slotIconImg,
-                onClick: () => {props.handleClickArmourSelect()},
+                className: "equip-main-box",
+                },
+                element(EquipIcon,
+                    {
+                    iconImg: this.constructor._slotNameToIconImgPath.get(this.props.slotID),
+                    onClick: () => {this.handleClickArmourSelect()},
+                    },
+                    null,
+                ),
+                element(EquipArmourInfoBox,
+                    {
+                        eqName: this.props.eqName,
+                        skillsArray: this.props.skillsArray,
+                    },
+                    null,
+                ),
+                element(EquipDefensesBox,
+                    {
+                    defenses: this.props.defenses,
+                    },
+                    null,
+                ),
+            ),
+            element(EquipDecosWrapBox,
+                {
+                    decosArray: this.props.decosArray,
                 },
                 null,
             ),
-            element(EquipArmourInfoBox,
-                {
-                    eqName: props.eqName,
-                    skillsArray: props.skillsArray,
-                },
-                null,
-            ),
-            element(EquipDefensesBox,
-                {
-                defenses: props.defenses,
-                },
-                null,
-            ),
-        ),
-        element(EquipDecosWrapBox,
-            {
-                decosArray: props.decosArray,
-            },
-            null,
-        ),
-    );
+        );
+    }
 }
 
 /*** Others ***/
@@ -522,150 +538,172 @@ function PetalaceSelection(props) {
 
 /*** Box ***/
 
-function EquipmentSelectionsBox(props) {
-    check.isFunction(props.handleClickBuffsSelect);
-    check.isFunction(props.handleClickWeaponSelect);
-    check.isFunction(props.handleClickWeaponCustomize);
-    check.isFunction(props.handleClickArmourSelect);
-    check.isFunction(props.handleClickTalismanSelect);
-    check.isFunction(props.handleClickPetalaceSelect);
+class EquipmentSelectionsBox extends React.Component {
 
-    return element("div",
-        {
-        id: "equipmentselectionsbox",
-        className: "sub-box",
-        },
-        element(BuffsSelection,
+    handleClickBuffsSelect(){
+        this.props.handleClickBuffsSelect();
+    }
+    handleClickWeaponSelect() {
+        this.props.handleClickWeaponSelect();
+    }
+    handleClickWeaponCustomize() {
+        this.props.handleClickWeaponCustomize();
+    }
+    handleClickArmourSelect(slotID) {
+        this.props.handleClickArmourSelect(slotID);
+    }
+    handleClickTalismanSelect() {
+        this.props.handleClickTalismanSelect();
+    }
+    handleClickPetalaceSelect() {
+        this.props.handleClickPetalaceSelect();
+    }
+
+    render() {
+        check.isFunction(this.props.handleClickBuffsSelect);
+        check.isFunction(this.props.handleClickWeaponSelect);
+        check.isFunction(this.props.handleClickWeaponCustomize);
+        check.isFunction(this.props.handleClickArmourSelect);
+        check.isFunction(this.props.handleClickTalismanSelect);
+        check.isFunction(this.props.handleClickPetalaceSelect);
+
+        return element("div",
             {
-            handleClickBuffsSelect: () => {props.handleClickBuffsSelect();},
+            id: "equipmentselectionsbox",
+            className: "sub-box",
             },
-            null,
-            null,
-        ),
-        element(WeaponSelection,
-            {
-            eqName: "Abominable Great Sword",
-            wepAttack: 230,
-            wepAffinity: -15,
-            wepEleStatType: "ice",
-            wepEleStatValue: 20,
-            wepDefenseBonus: 0,
-            wepRampageSkills: ["Affinity Boost I",
-                               "~~NOTREAL~~",
-                               "~~NOTREAL~~"],
-            decosArray: [[2, "Charger Jewel 2"],
-                         [1, "~~NOTREAL~~"]],
-            handleClickWeaponSelect: () => {props.handleClickWeaponSelect();},
-            handleClickWeaponCustomize: () => {props.handleClickWeaponCustomize();},
-            },
-            null,
-        ),
-        element(ArmourSelection,
-            {
-            slotIconImg: "./images/placeholders/head.png",
-            eqName: "Kaiser Crown",
-            skillsArray: [["Critical Eye"  , 3],
-                          ["Critical Boost", 1]],
-            decosArray: [[1, null]],
-            defenses: {defense: 74,
-                       fireRes: 4,
-                       waterRes: -4,
-                       thunderRes: 1,
-                       iceRes: -1,
-                       dragonRes: -3},
-            handleClickArmourSelect: () => {props.handleClickArmourSelect();},
-            },
-            null,
-        ),
-        element(ArmourSelection,
-            {
-            slotIconImg: "./images/placeholders/chest.png",
-            eqName: "Tobi-Kadachi Mail S",
-            skillsArray: [["Mind's Eye"  , 1],
-                          ["Critical Eye", 1]],
-            decosArray: [[3, "Charger Jewel 2"]],
-            defenses: {defense: 58,
-                       fireRes: 0,
-                       waterRes: -3,
-                       thunderRes: 3,
-                       iceRes: 0,
-                       dragonRes: 0},
-            handleClickArmourSelect: () => {props.handleClickArmourSelect();},
-            },
-            null,
-        ),
-        element(ArmourSelection,
-            {
-            slotIconImg: "./images/placeholders/arms.png",
-            eqName: "Kaiser Vambraces",
-            skillsArray: [["Teostra Blessing" , 1],
-                          ["Critical Eye"     , 1],
-                          ["Critical Boost"   , 1],
-                          ["~~NOTREAL~~", 9]],
-            decosArray: [[2, "Tenderizer Jewel 2"]],
-            defenses: {defense: 74,
-                       fireRes: 4,
-                       waterRes: -4,
-                       thunderRes: 1,
-                       iceRes: -1,
-                       dragonRes: -3},
-            handleClickArmourSelect: () => {props.handleClickArmourSelect();},
-            },
-            null,
-        ),
-        element(ArmourSelection,
-            {
-            slotIconImg: "./images/placeholders/waist.png",
-            eqName: "Anjanath Coil S",
-            skillsArray: [["Attack Boost", 2]],
-            decosArray: [[2, "Charger Jewel 2"],
-                         [1, "Steadfast Jewel 1"],
-                         [1, "Steadfast Jewel 1"]],
-            defenses: {defense: 60,
-                       fireRes: 3,
-                       waterRes: -3,
-                       thunderRes: -1,
-                       iceRes: -1,
-                       dragonRes: 0},
-            handleClickArmourSelect: () => {props.handleClickArmourSelect();},
-            },
-            null,
-        ),
-        element(ArmourSelection,
-            {
-            slotIconImg: "./images/placeholders/legs.png",
-            eqName: "Ingot Greaves S",
-            skillsArray: [["Attack Boost"     , 2],
-                          ["Critical Eye"     , 2],
-                          ["~~NOTREAL~~", 3]],
-            decosArray: [[1, "Steadfast Jewel 1"]],
-            defenses: {defense: 40,
-                       fireRes: -1,
-                       waterRes: -1,
-                       thunderRes: 1,
-                       iceRes: 0,
-                       dragonRes: 0},
-            handleClickArmourSelect: () => {props.handleClickArmourSelect();},
-            },
-            null,
-        ),
-        element(TalismanSelection,
-            {
-            eqName: "Talisman",
-            skillsArray: [["Weakness Exploit", 1]],
-            decosArray: [[2, "Tenderizer Jewel 2"]],
-            handleClickTalismanSelect: () => {props.handleClickTalismanSelect();},
-            },
-            null,
-        ),
-        element(PetalaceSelection,
-            {
-            eqName: "Demon Petalace III",
-            handleClickPetalaceSelect: () => {props.handleClickPetalaceSelect();},
-            },
-            null,
-        ),
-    );
+            element(BuffsSelection,
+                {
+                handleClickBuffsSelect: () => {this.handleClickBuffsSelect();},
+                },
+                null,
+                null,
+            ),
+            element(WeaponSelection,
+                {
+                eqName: "Abominable Great Sword",
+                wepAttack: 230,
+                wepAffinity: -15,
+                wepEleStatType: "ice",
+                wepEleStatValue: 20,
+                wepDefenseBonus: 0,
+                wepRampageSkills: ["Affinity Boost I",
+                                   "~~NOTREAL~~",
+                                   "~~NOTREAL~~"],
+                decosArray: [[2, "Charger Jewel 2"],
+                             [1, "~~NOTREAL~~"]],
+                handleClickWeaponSelect: () => {this.handleClickWeaponSelect();},
+                handleClickWeaponCustomize: () => {this.handleClickWeaponCustomize();},
+                },
+                null,
+            ),
+            element(ArmourSelection,
+                {
+                slotID: "head",
+                eqName: "Kaiser Crown",
+                skillsArray: [["Critical Eye"  , 3],
+                              ["Critical Boost", 1]],
+                decosArray: [[1, null]],
+                defenses: {defense: 74,
+                           fireRes: 4,
+                           waterRes: -4,
+                           thunderRes: 1,
+                           iceRes: -1,
+                           dragonRes: -3},
+                handleClickArmourSelect: (slotID) => {this.handleClickArmourSelect(slotID);},
+                },
+                null,
+            ),
+            element(ArmourSelection,
+                {
+                slotID: "chest",
+                eqName: "Tobi-Kadachi Mail S",
+                skillsArray: [["Mind's Eye"  , 1],
+                              ["Critical Eye", 1]],
+                decosArray: [[3, "Charger Jewel 2"]],
+                defenses: {defense: 58,
+                           fireRes: 0,
+                           waterRes: -3,
+                           thunderRes: 3,
+                           iceRes: 0,
+                           dragonRes: 0},
+                handleClickArmourSelect: (slotID) => {this.handleClickArmourSelect(slotID);},
+                },
+                null,
+            ),
+            element(ArmourSelection,
+                {
+                slotID: "arms",
+                eqName: "Kaiser Vambraces",
+                skillsArray: [["Teostra Blessing" , 1],
+                              ["Critical Eye"     , 1],
+                              ["Critical Boost"   , 1],
+                              ["~~NOTREAL~~", 9]],
+                decosArray: [[2, "Tenderizer Jewel 2"]],
+                defenses: {defense: 74,
+                           fireRes: 4,
+                           waterRes: -4,
+                           thunderRes: 1,
+                           iceRes: -1,
+                           dragonRes: -3},
+                handleClickArmourSelect: (slotID) => {this.handleClickArmourSelect(slotID);},
+                },
+                null,
+            ),
+            element(ArmourSelection,
+                {
+                slotID: "waist",
+                eqName: "Anjanath Coil S",
+                skillsArray: [["Attack Boost", 2]],
+                decosArray: [[2, "Charger Jewel 2"],
+                             [1, "Steadfast Jewel 1"],
+                             [1, "Steadfast Jewel 1"]],
+                defenses: {defense: 60,
+                           fireRes: 3,
+                           waterRes: -3,
+                           thunderRes: -1,
+                           iceRes: -1,
+                           dragonRes: 0},
+                handleClickArmourSelect: (slotID) => {this.handleClickArmourSelect(slotID);},
+                },
+                null,
+            ),
+            element(ArmourSelection,
+                {
+                slotID: "legs",
+                eqName: "Ingot Greaves S",
+                skillsArray: [["Attack Boost"     , 2],
+                              ["Critical Eye"     , 2],
+                              ["~~NOTREAL~~", 3]],
+                decosArray: [[1, "Steadfast Jewel 1"]],
+                defenses: {defense: 40,
+                           fireRes: -1,
+                           waterRes: -1,
+                           thunderRes: 1,
+                           iceRes: 0,
+                           dragonRes: 0},
+                handleClickArmourSelect: (slotID) => {this.handleClickArmourSelect(slotID);},
+                },
+                null,
+            ),
+            element(TalismanSelection,
+                {
+                eqName: "Talisman",
+                skillsArray: [["Weakness Exploit", 1]],
+                decosArray: [[2, "Tenderizer Jewel 2"]],
+                handleClickTalismanSelect: () => {this.handleClickTalismanSelect();},
+                },
+                null,
+            ),
+            element(PetalaceSelection,
+                {
+                eqName: "Demon Petalace III",
+                handleClickPetalaceSelect: () => {this.handleClickPetalaceSelect();},
+                },
+                null,
+            ),
+        );
+    }
 }
 
 export default EquipmentSelectionsBox;
