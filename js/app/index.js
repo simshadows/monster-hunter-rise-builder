@@ -8,6 +8,7 @@
 import * as check from "./check.js";
 import {
     isArmourSlotStr,
+    isDecoEquippableSlotStr,
     br,
 } from "./common.js";
 
@@ -51,6 +52,7 @@ class MainView extends React.Component {
         check.isFunction(this.props.handleClickArmourSelect);
         check.isFunction(this.props.handleClickTalismanSelect);
         check.isFunction(this.props.handleClickPetalaceSelect);
+        check.isFunction(this.props.handleClickPetalaceSelect);
 
         return element("div",
             {
@@ -86,6 +88,7 @@ class MainView extends React.Component {
                             handleClickArmourSelect:    (slotID) => {this.props.handleClickArmourSelect(slotID);},
                             handleClickTalismanSelect:  ()       => {this.props.handleClickTalismanSelect();},
                             handleClickPetalaceSelect:  ()       => {this.props.handleClickPetalaceSelect();},
+                            handleClickDecorationSelect: (slotID, decoSlotID) => {this.props.handleClickDecorationSelect(slotID, decoSlotID)},
                             },
                             null,
                         ),
@@ -192,14 +195,36 @@ class PetalaceSelectView extends React.Component {
     }
 }
 
-class DecorationsSelectView extends React.Component {
+class DecorationSelectView extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+                querySlotID: "head",
+                queryDecoSlotID: 0,
+            };
+    }
+
+    reinitialize(slotID, decoSlotID) {
+        this.setState({
+                querySlotID: slotID,
+                queryDecoSlotID: decoSlotID,
+            });
+    }
+
     render() {
+        assert(isDecoEquippableSlotStr(this.state.querySlotID));
+        check.isInt(this.state.queryDecoSlotID);
+        assert((this.state.queryDecoSlotID >= 0) && (this.state.queryDecoSlotID < 3));
+
         return element("div",
             {
             className: "app-view-box",
             id: "mhr-builder-app-decorations-select-view",
             },
             "This is the decorations select view! It's not implemented yet.",
+            br(),
+            "Initialized to search for: " + this.state.querySlotID + ", slot " + parseInt(this.state.queryDecoSlotID),
         );
     }
 }
@@ -214,7 +239,7 @@ class MHRBuilderAppContainer extends React.Component {
             "weapon_customize_view",
             "talisman_select_view",
             "petalace_select_view",
-            "decos_select_view",
+            "decoration_select_view",
         ]);
 
     constructor(props) {
@@ -225,6 +250,7 @@ class MHRBuilderAppContainer extends React.Component {
 
         this.myRefs = {
                 armourSelectView: React.createRef(),
+                decoSelectView: React.createRef(),
             };
 
         // TODO: Ugh, the fact that we don't do this consistently is weird. Change it later?
@@ -265,29 +291,17 @@ class MHRBuilderAppContainer extends React.Component {
         assert(this.state.view == "main");
         this.setState({view: "petalace_select_view"});
     }
+    handleClickDecorationSelect(slotID, decoSlotID) {
+        assert(isDecoEquippableSlotStr(slotID));
+        check.isInt(decoSlotID);
+        assert((decoSlotID >= 0) && (decoSlotID < 3));
+        assert(this.state.view == "main");
+        this.myRefs.decoSelectView.current.reinitialize(slotID, decoSlotID);
+        this.setState({view: "decoration_select_view"});
+    }
 
-    handleCloseBuffsSelect() {
-        assert(this.state.view == "buffs_select_view");
-        this.setState({view: "main"});
-    }
-    handleCloseWeaponSelect() {
-        assert(this.state.view == "weapon_select_view");
-        this.setState({view: "main"});
-    }
-    handleCloseWeaponCustomize() {
-        assert(this.state.view == "weapon_customize_view");
-        this.setState({view: "main"});
-    }
-    handleCloseArmourSelect() {
-        assert(this.state.view == "armour_select_view");
-        this.setState({view: "main"});
-    }
-    handleCloseTalismanSelect() {
-        assert(this.state.view == "talisman_select_view");
-        this.setState({view: "main"});
-    }
-    handleClosePetalaceSelect() {
-        assert(this.state.view == "petalace_select_view");
+    handleReturnToMainView() {
+        assert(this.state.view != "main");
         this.setState({view: "main"});
     }
 
@@ -311,7 +325,7 @@ class MHRBuilderAppContainer extends React.Component {
                 armour:      (this.state.view == "armour_select_view"),
                 talisman:    (this.state.view == "talisman_select_view"),
                 petalace:    (this.state.view == "petalace_select_view"),
-                decos:       (this.state.view == "decos_select_view"),
+                decos:       (this.state.view == "decoration_select_view"),
             };
 
         return element("div",
@@ -321,12 +335,13 @@ class MHRBuilderAppContainer extends React.Component {
             },
             element(MainView,
                 {
-                handleClickBuffsSelect:     ()       => {this.handleClickBuffsSelect();},
-                handleClickWeaponSelect:    ()       => {this.handleClickWeaponSelect();},
-                handleClickWeaponCustomize: ()       => {this.handleClickWeaponCustomize();},
-                handleClickArmourSelect:    (slotID) => {this.handleClickArmourSelect(slotID);},
-                handleClickTalismanSelect:  ()       => {this.handleClickTalismanSelect();},
-                handleClickPetalaceSelect:  ()       => {this.handleClickPetalaceSelect();},
+                handleClickBuffsSelect:      ()       => {this.handleClickBuffsSelect();},
+                handleClickWeaponSelect:     ()       => {this.handleClickWeaponSelect();},
+                handleClickWeaponCustomize:  ()       => {this.handleClickWeaponCustomize();},
+                handleClickArmourSelect:     (slotID) => {this.handleClickArmourSelect(slotID);},
+                handleClickTalismanSelect:   ()       => {this.handleClickTalismanSelect();},
+                handleClickPetalaceSelect:   ()       => {this.handleClickPetalaceSelect();},
+                handleClickDecorationSelect: (slotID, decoSlotID) => {this.handleClickDecorationSelect(slotID, decoSlotID);},
                 },
                 null,
             ),
@@ -334,7 +349,7 @@ class MHRBuilderAppContainer extends React.Component {
                 {
                 visible: selectionViewIsVisible.buffs,
                 title: "Select Buffs and States",
-                handleCloseModal: () => {this.handleCloseBuffsSelect();},
+                handleCloseModal: () => {this.handleReturnToMainView();},
                 },
                 element(BuffsSelectView,
                     null,
@@ -345,7 +360,7 @@ class MHRBuilderAppContainer extends React.Component {
                 {
                 visible: selectionViewIsVisible.weapon,
                 title: "Select Weapon",
-                handleCloseModal: () => {this.handleCloseWeaponSelect();},
+                handleCloseModal: () => {this.handleReturnToMainView();},
                 },
                 element(WeaponSelectView,
                     null,
@@ -356,7 +371,7 @@ class MHRBuilderAppContainer extends React.Component {
                 {
                 visible: selectionViewIsVisible.weapon_cust,
                 title: "Customize Weapon",
-                handleCloseModal: () => {this.handleCloseWeaponCustomize();},
+                handleCloseModal: () => {this.handleReturnToMainView();},
                 },
                 element(WeaponCustomizeView,
                     null,
@@ -367,7 +382,7 @@ class MHRBuilderAppContainer extends React.Component {
                 {
                 visible: selectionViewIsVisible.armour,
                 title: "Select Armor",
-                handleCloseModal: (slotID) => {this.handleCloseArmourSelect(slotID);},
+                handleCloseModal: () => {this.handleReturnToMainView();},
                 },
                 element(ArmourSelectView,
                     {
@@ -380,7 +395,7 @@ class MHRBuilderAppContainer extends React.Component {
                 {
                 visible: selectionViewIsVisible.talisman,
                 title: "Set Talisman",
-                handleCloseModal: () => {this.handleCloseTalismanSelect();},
+                handleCloseModal: () => {this.handleReturnToMainView();},
                 },
                 element(TalismanSelectView,
                     null,
@@ -391,10 +406,23 @@ class MHRBuilderAppContainer extends React.Component {
                 {
                 visible: selectionViewIsVisible.petalace,
                 title: "Select Petalace",
-                handleCloseModal: () => {this.handleClosePetalaceSelect();},
+                handleCloseModal: () => {this.handleReturnToMainView();},
                 },
                 element(PetalaceSelectView,
                     null,
+                    null,
+                ),
+            ),
+            element(Modal,
+                {
+                visible: selectionViewIsVisible.decos,
+                title: "Select Decoration",
+                handleCloseModal: () => {this.handleReturnToMainView();},
+                },
+                element(DecorationSelectView,
+                    {
+                    ref: this.myRefs.decoSelectView,
+                    },
                     null,
                 ),
             ),

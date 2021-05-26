@@ -5,6 +5,14 @@
 
 const element = React.createElement;
 
+export function setUnion(setA, setB) {
+    let _union = new Set(setA)
+    for (let elem of setB) {
+        _union.add(elem)
+    }
+    return _union
+}
+
 /*** Enums Verification ***/
 
 const eleStatStrs = new Set(["none", "fire", "water", "thunder", "ice", "dragon", "paralysis", "sleep", "blast"]);
@@ -15,6 +23,11 @@ export function isEleStatStr(obj) {
 const armourSlotStrs = new Set(["head", "chest", "arms", "waist", "legs"]);
 export function isArmourSlotStr(obj) {
     return armourSlotStrs.has(obj);
+}
+
+const decoEquippableSlotStrs = setUnion((new Set(["weapon", "talisman"])), armourSlotStrs);
+export function isDecoEquippableSlotStr(obj) {
+    return decoEquippableSlotStrs.has(obj);
 }
 
 /*** Maps ***/

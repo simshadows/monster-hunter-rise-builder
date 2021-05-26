@@ -9,6 +9,7 @@ import * as check from "../../check.js";
 import {
     isEleStatStr,
     isArmourSlotStr,
+    isDecoEquippableSlotStr,
     eleStatStrToEmoji,
 } from "../../common.js";
 
@@ -204,6 +205,7 @@ function WeaponSelection(props) {
 
     check.isFunction(props.handleClickWeaponSelect);
     check.isFunction(props.handleClickWeaponCustomize);
+    check.isFunction(props.handleClickDecorationSelect);
 
     return element("div",
         {
@@ -237,6 +239,7 @@ function WeaponSelection(props) {
         element(EquipDecosWrapBox,
             {
                 decosArray: props.decosArray,
+                handleClickSelect: (decoSlotID) => {props.handleClickDecorationSelect(decoSlotID);},
             },
             null,
         ),
@@ -336,63 +339,72 @@ function EquipDefensesBox(props) {
     );
 }
 
-function EquipDecosWrapBox(props) {
-    check.isArr(props.decosArray);
-    assert(props.decosArray.length <= 3);
+class EquipDecosWrapBox extends React.Component {
 
-    const decoBoxes = [];
-    for (let [slotSize, slotText] of props.decosArray) {
-        check.isInt(slotSize);
-        assert((slotSize > 0) && (slotSize <= 3));
-        assert(slotText != "None"); // Should be set to null if no deco in slot
-        check.isStrOrNull(slotText);
+    handleClickSelect(decoSlotID) {
+        this.props.handleClickSelect(decoSlotID);
+    }
 
-        const iconImg = "./images/placeholders/" + (()=>{
-            if (slotSize == 1) return "deco_slot_1.png";
-            if (slotSize == 2) return "deco_slot_2.png";
-            if (slotSize == 3) return "deco_slot_3.png";
-        })();
+    render() {
+        check.isArr(this.props.decosArray);
+        assert(this.props.decosArray.length <= 3);
 
-        decoBoxes.push(
-            element("div",
-                {
-                className: "equip-deco-box stackouter",
-                },
+        check.isFunction(this.props.handleClickSelect);
+
+        const decoBoxes = [];
+        for (let [decoSlotID, [slotSize, slotText]] of this.props.decosArray.entries()) {
+            check.isInt(slotSize);
+            assert((slotSize > 0) && (slotSize <= 3));
+            assert(slotText != "None"); // Should be set to null if no deco in slot
+            check.isStrOrNull(slotText);
+
+            const iconImg = "./images/placeholders/" + (()=>{
+                if (slotSize == 1) return "deco_slot_1.png";
+                if (slotSize == 2) return "deco_slot_2.png";
+                if (slotSize == 3) return "deco_slot_3.png";
+            })();
+
+            decoBoxes.push(
                 element("div",
                     {
-                    className: "equip-deco-icon-box",
+                    className: "equip-deco-box stackouter",
                     },
-                    element("img",
+                    element("div",
                         {
-                        src: iconImg,
-                        alt: "icon",
+                        className: "equip-deco-icon-box",
+                        },
+                        element("img",
+                            {
+                            src: iconImg,
+                            alt: "icon",
+                            },
+                            null,
+                        ),
+                    ),
+                    element("div",
+                        {
+                        className: "equip-deco-name-box clipsafe",
+                        },
+                        clipsafeP(((slotText === null) ? "None" : slotText)),
+                    ),
+                    element("div",
+                        {
+                        className: "highlight-equip-deco-box stackinner",
+                        onClick: () => {this.props.handleClickSelect(decoSlotID);},
                         },
                         null,
                     ),
-                ),
-                element("div",
-                    {
-                    className: "equip-deco-name-box clipsafe",
-                    },
-                    clipsafeP(((slotText === null) ? "None" : slotText)),
-                ),
-                element("div",
-                    {
-                    className: "highlight-equip-deco-box stackinner",
-                    onClick: () => {console.log("clicked on deco!");},
-                    },
-                    null,
-                ),
-            )
+                )
+            );
+        }
+
+        return element("div",
+            {
+            className: "equip-decos-wrap-box",
+            },
+            ...decoBoxes
         );
     }
-
-    return element("div",
-        {
-        className: "equip-decos-wrap-box",
-        },
-        ...decoBoxes
-    );
 }
 
 class ArmourSelection extends React.Component {
@@ -409,6 +421,10 @@ class ArmourSelection extends React.Component {
         this.props.handleClickArmourSelect(this.props.slotID);
     }
 
+    handleClickDecorationSelect(decoSlotID) {
+        this.props.handleClickDecorationSelect(decoSlotID);
+    }
+
     render() {
         assert(isArmourSlotStr(this.props.slotID));
         check.isStr(this.props.eqName); // Validate later
@@ -417,6 +433,7 @@ class ArmourSelection extends React.Component {
         check.isObj(this.props.defenses); // Validate later
 
         check.isFunction(this.props.handleClickArmourSelect);
+        check.isFunction(this.props.handleClickDecorationSelect);
 
         return element("div",
             {
@@ -450,6 +467,7 @@ class ArmourSelection extends React.Component {
             element(EquipDecosWrapBox,
                 {
                     decosArray: this.props.decosArray,
+                    handleClickSelect: (decoSlotID) => {this.handleClickDecorationSelect(decoSlotID);},
                 },
                 null,
             ),
@@ -465,6 +483,7 @@ function TalismanSelection(props) {
     check.isArr(props.decosArray); // Validate later
 
     check.isFunction(props.handleClickTalismanSelect);
+    check.isFunction(props.handleClickDecorationSelect);
 
     return element("div",
         {
@@ -496,6 +515,7 @@ function TalismanSelection(props) {
         element(EquipDecosWrapBox,
             {
                 decosArray: props.decosArray,
+                handleClickSelect: (decoSlotID) => {props.handleClickDecorationSelect(decoSlotID);},
             },
             null,
         ),
@@ -558,6 +578,13 @@ class EquipmentSelectionsBox extends React.Component {
     handleClickPetalaceSelect() {
         this.props.handleClickPetalaceSelect();
     }
+    handleClickDecorationSelect(slotID, decoSlotID) {
+        assert(isDecoEquippableSlotStr(slotID));
+        check.isInt(decoSlotID);
+        assert((decoSlotID >= 0) && (decoSlotID < 3));
+
+        this.props.handleClickDecorationSelect(slotID, decoSlotID);
+    }
 
     render() {
         check.isFunction(this.props.handleClickBuffsSelect);
@@ -566,6 +593,7 @@ class EquipmentSelectionsBox extends React.Component {
         check.isFunction(this.props.handleClickArmourSelect);
         check.isFunction(this.props.handleClickTalismanSelect);
         check.isFunction(this.props.handleClickPetalaceSelect);
+        check.isFunction(this.props.handleClickDecorationSelect);
 
         return element("div",
             {
@@ -592,8 +620,9 @@ class EquipmentSelectionsBox extends React.Component {
                                    "~~NOTREAL~~"],
                 decosArray: [[2, "Charger Jewel 2"],
                              [1, "~~NOTREAL~~"]],
-                handleClickWeaponSelect: () => {this.handleClickWeaponSelect();},
-                handleClickWeaponCustomize: () => {this.handleClickWeaponCustomize();},
+                handleClickWeaponSelect:     () => {this.handleClickWeaponSelect();},
+                handleClickWeaponCustomize:  () => {this.handleClickWeaponCustomize();},
+                handleClickDecorationSelect: (decoSlotID) => {this.handleClickDecorationSelect("weapon", decoSlotID);},
                 },
                 null,
             ),
@@ -611,6 +640,7 @@ class EquipmentSelectionsBox extends React.Component {
                            iceRes: -1,
                            dragonRes: -3},
                 handleClickArmourSelect: (slotID) => {this.handleClickArmourSelect(slotID);},
+                handleClickDecorationSelect: (decoSlotID) => {this.handleClickDecorationSelect("head", decoSlotID);},
                 },
                 null,
             ),
@@ -628,6 +658,7 @@ class EquipmentSelectionsBox extends React.Component {
                            iceRes: 0,
                            dragonRes: 0},
                 handleClickArmourSelect: (slotID) => {this.handleClickArmourSelect(slotID);},
+                handleClickDecorationSelect: (decoSlotID) => {this.handleClickDecorationSelect("chest", decoSlotID);},
                 },
                 null,
             ),
@@ -647,6 +678,7 @@ class EquipmentSelectionsBox extends React.Component {
                            iceRes: -1,
                            dragonRes: -3},
                 handleClickArmourSelect: (slotID) => {this.handleClickArmourSelect(slotID);},
+                handleClickDecorationSelect: (decoSlotID) => {this.handleClickDecorationSelect("arms", decoSlotID);},
                 },
                 null,
             ),
@@ -665,6 +697,7 @@ class EquipmentSelectionsBox extends React.Component {
                            iceRes: -1,
                            dragonRes: 0},
                 handleClickArmourSelect: (slotID) => {this.handleClickArmourSelect(slotID);},
+                handleClickDecorationSelect: (decoSlotID) => {this.handleClickDecorationSelect("waist", decoSlotID);},
                 },
                 null,
             ),
@@ -683,6 +716,7 @@ class EquipmentSelectionsBox extends React.Component {
                            iceRes: 0,
                            dragonRes: 0},
                 handleClickArmourSelect: (slotID) => {this.handleClickArmourSelect(slotID);},
+                handleClickDecorationSelect: (decoSlotID) => {this.handleClickDecorationSelect("legs", decoSlotID);},
                 },
                 null,
             ),
@@ -692,6 +726,7 @@ class EquipmentSelectionsBox extends React.Component {
                 skillsArray: [["Weakness Exploit", 1]],
                 decosArray: [[2, "Tenderizer Jewel 2"]],
                 handleClickTalismanSelect: () => {this.handleClickTalismanSelect();},
+                handleClickDecorationSelect: (decoSlotID) => {this.handleClickDecorationSelect("talisman", decoSlotID);},
                 },
                 null,
             ),
