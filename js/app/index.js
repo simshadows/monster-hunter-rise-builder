@@ -6,6 +6,7 @@
  */
 
 import * as check from "./check.js";
+import getData from "./database.js";
 import {
     isArmourSlotStr,
     isDecoEquippableSlotStr,
@@ -18,6 +19,16 @@ import SkillsResultsBox from "./component_groups/main_view/skill_results_box.js"
 import EquipmentSelectionsBox from "./component_groups/main_view/equipment_selections_box.js";
 import CalculationResultsBox from "./component_groups/main_view/calculation_results_box.js";
 import UtilBox from "./component_groups/main_view/util_box.js";
+
+import {
+    BuffsSelectView,
+    WeaponSelectView,
+    WeaponCustomizeView,
+    ArmourSelectView,
+    TalismanSelectView,
+    PetalaceSelectView,
+    DecorationSelectView,
+} from "./component_groups/select_views.js";
 
 const element = React.createElement;
 const assert = console.assert;
@@ -52,7 +63,7 @@ class MainView extends React.Component {
         check.isFunction(this.props.handleClickArmourSelect);
         check.isFunction(this.props.handleClickTalismanSelect);
         check.isFunction(this.props.handleClickPetalaceSelect);
-        check.isFunction(this.props.handleClickPetalaceSelect);
+        check.isFunction(this.props.handleClickDecorationSelect);
 
         return element("div",
             {
@@ -108,127 +119,6 @@ class MainView extends React.Component {
     }
 }
 
-class BuffsSelectView extends React.Component {
-    render() {
-        return element("div",
-            {
-            className: "app-view-box",
-            id: "mhr-builder-app-buffs-select-view",
-            },
-            "This is the buffs/states select view! It's not implemented yet.",
-        );
-    }
-}
-
-class WeaponSelectView extends React.Component {
-    render() {
-        return element("div",
-            {
-            className: "app-view-box",
-            id: "mhr-builder-app-weapon-select-view",
-            },
-            "This is the weapon select view! It's not implemented yet.",
-        );
-    }
-}
-
-class WeaponCustomizeView extends React.Component {
-    render() {
-        return element("div",
-            {
-            className: "app-view-box",
-            id: "mhr-builder-app-weapon-customize-view",
-            },
-            "This is the weapon customize view! It's not implemented yet.",
-        );
-    }
-}
-
-class ArmourSelectView extends React.Component {
-
-    constructor(props) {
-        super(props);
-        this.state = {
-                querySlotID: "head",
-            };
-    }
-
-    reinitialize(slotID) {
-        assert(isArmourSlotStr(slotID));
-        this.setState({querySlotID: slotID});
-    }
-
-    render() {
-        return element("div",
-            {
-            className: "app-view-box",
-            id: "mhr-builder-app-armour-select-view",
-            },
-            "This is the armour select view! It's not implemented yet.",
-            br(),
-            "Initialized to search for: " + this.state.querySlotID,
-        );
-    }
-}
-
-class TalismanSelectView extends React.Component {
-    render() {
-        return element("div",
-            {
-            className: "app-view-box",
-            id: "mhr-builder-app-talisman-select-view",
-            },
-            "This is the talisman select view! It's not implemented yet.",
-        );
-    }
-}
-
-class PetalaceSelectView extends React.Component {
-    render() {
-        return element("div",
-            {
-            className: "app-view-box",
-            id: "mhr-builder-app-petalace-select-view",
-            },
-            "This is the petalace select view! It's not implemented yet.",
-        );
-    }
-}
-
-class DecorationSelectView extends React.Component {
-
-    constructor(props) {
-        super(props);
-        this.state = {
-                querySlotID: "head",
-                queryDecoSlotID: 0,
-            };
-    }
-
-    reinitialize(slotID, decoSlotID) {
-        this.setState({
-                querySlotID: slotID,
-                queryDecoSlotID: decoSlotID,
-            });
-    }
-
-    render() {
-        assert(isDecoEquippableSlotStr(this.state.querySlotID));
-        check.isInt(this.state.queryDecoSlotID);
-        assert((this.state.queryDecoSlotID >= 0) && (this.state.queryDecoSlotID < 3));
-
-        return element("div",
-            {
-            className: "app-view-box",
-            id: "mhr-builder-app-decorations-select-view",
-            },
-            "This is the decorations select view! It's not implemented yet.",
-            br(),
-            "Initialized to search for: " + this.state.querySlotID + ", slot " + parseInt(this.state.queryDecoSlotID),
-        );
-    }
-}
-
 class MHRBuilderAppContainer extends React.Component {
 
     static _viewEnumValues = new Set([
@@ -244,8 +134,10 @@ class MHRBuilderAppContainer extends React.Component {
 
     constructor(props) {
         super(props);
+
         this.state = {
                 view: "main", // Always start with the main view
+                rawData: null,
             };
 
         this.myRefs = {
@@ -307,8 +199,12 @@ class MHRBuilderAppContainer extends React.Component {
 
     /* Inherited Methods */
 
-    componentDidMount() {
+    async componentDidMount() {
         document.addEventListener("keydown", this.handleKeypress);
+
+        const rawData = await getData();
+        this.setState({rawData: rawData});
+        console.log(rawData);
     }
     componentWillUnmount() {
         // TODO: Verify event removal matching?
@@ -317,6 +213,12 @@ class MHRBuilderAppContainer extends React.Component {
 
     render() {
         assert(this.constructor._viewEnumValues.has(this.state.view));
+
+        // Don't load UI until all data is loaded.
+        // TODO: Consider making a proper loading screen.
+        if (this.state.rawData === null) {
+            return "Loading app... Done! Loading data...";
+        }
 
         const selectionViewIsVisible = {
                 buffs:       (this.state.view == "buffs_select_view" ),

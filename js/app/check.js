@@ -4,36 +4,68 @@
  */
 
 export function isObj(obj) {
-    console.assert((typeof obj === "object"), "Expected an Object type. Instead got:", obj);
+    const res = (typeof obj === "object");
+    console.assert(res, "Expected an Object type. Instead got:", obj);
+    return res;
 }
 
 export function isFunction(obj) {
-    console.assert((typeof obj === "function"), "Expected a function type. Instead got:", obj);
+    const res = (typeof obj === "function");
+    console.assert(res, "Expected a function type. Instead got:", obj);
+    return res;
 }
 
 export function isInt(obj) {
-    console.assert((typeof obj === "number") && (obj % 1 === 0), "Expected an integer. Instead got:", obj);
+    const res = (typeof obj === "number") && (obj % 1 === 0);
+    console.assert(res, "Expected an integer. Instead got:", obj);
+    return res;
 }
 
 export function isBool(obj) {
-    console.assert((typeof obj === "boolean"), "Expected a boolean. Instead got:", obj);
+    const res = (typeof obj === "boolean");
+    console.assert(res, "Expected a boolean. Instead got:", obj);
+    return res;
 }
 
 export function isStr(obj) {
-    console.assert((typeof obj === "string"), "Expected a string. Instead got:", obj);
+    const res = (typeof obj === "string");
+    console.assert(res, "Expected a string. Instead got:", obj);
+    return res;
+}
+export function isNonEmptyStr(obj) {
+    const res = (typeof obj === "string") && (obj.length > 0);
+    console.assert(res, "Expected a string. Instead got:", obj);
+    return res;
 }
 export function isStrOrNull(obj) {
-    console.assert((typeof obj === "string") || (obj === null), "Expected a string or null. Instead got:", obj);
+    const res = (typeof obj === "string") || (obj === null);
+    console.assert(res, "Expected a string or null. Instead got:", obj);
+    return res;
 }
 export function isStrOrUndef(obj) {
-    console.assert((typeof obj === "string") || (obj === undefined), "Expected a string or undefined. Instead got:", obj);
+    const res = (typeof obj === "string") || (obj === undefined);
+    console.assert(res, "Expected a string or undefined. Instead got:", obj);
+    return res;
 }
 
 export function isArr(obj) {
-    console.assert(Array.isArray(obj), "Expected an Array type. Instead got:", obj);
+    const res = Array.isArray(obj);
+    console.assert(res, "Expected an Array type. Instead got:", obj);
+    return res;
 }
 
 export function isMap(obj) {
-    console.assert((obj instanceof Map), "Expected a Map type. Instead got:", obj);
+    const res = (obj instanceof Map);
+    console.assert(res, "Expected a Map type. Instead got:", obj);
+    return res;
+}
+
+/****/
+
+// This throws an error.
+export function assert(testResult, ...args) {
+    if (!testResult) {
+        throw new Error(...args);
+    }
 }
 

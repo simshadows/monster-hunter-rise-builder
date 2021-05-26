@@ -1,0 +1,95 @@
+{
+    "Goss Harag Tree": {
+        "2c": {
+            "rarity": 6,
+            "name": "Abominable Great Sword",
+            "attack": 230,
+            "affinity": -15,
+            "defense": 0,
+            "decoSlots": [2],
+            "eleStatType": "ice",
+            "eleStatValue": 20,
+
+            "rampSkills": [
+                ["aff1", "ice3", "bs"]
+            ],
+
+            "maxSharpness": [100, 30, 100, 40, 70, 10]
+        }
+    },
+    "Tigrex Tree": {
+        "6c": {
+            "rarity": 6,
+            "name": "Tigrex Great Sword",
+            "attack": 210,
+            "affinity": -15,
+            "defense": 0,
+            "decoSlots": [1],
+            "eleStatType": "none",
+            "eleStatValue": 0,
+
+            "rampSkills": [
+                ["att3", "aff2", "bs"]
+            ],
+
+            "maxSharpness": [50, 40, 120, 120, 50, 20]
+        }
+    },
+    "Nargacuga Tree": {
+        "10c": {
+            "rarity": 6,
+            "name": "Dark of Night",
+            "attack": 180,
+            "affinity": 35,
+            "defense": 0,
+            "decoSlots": [2],
+            "eleStatType": "none",
+            "eleStatValue": 0,
+
+            "rampSkills": [
+                ["att3", "aff2", "mr"]
+            ],
+
+            "maxSharpness": [70, 40, 120, 90, 60, 20]
+        }
+    },
+    "Royal Ludroth Tree": {
+        "27c": {
+            "rarity": 5,
+            "name": "Cataclysm Blade",
+            "attack": 170,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2,1,1],
+            "eleStatType": "water",
+            "eleStatValue": 35,
+
+            "rampSkills": [
+                ["att3", "wat2", "wbe"]
+            ],
+
+            "maxSharpness": [60, 40, 120, 10, 30, 0]
+        }
+    },
+    "Rampage Tree": {
+        "41e": {
+            "rarity": 6,
+            "name": "Rampage Cleaver V",
+            "attack": 200,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "none",
+            "eleStatValue": 0,
+
+            "rampSkills": [
+                ["att3", "ele2", "aff3", "def3", "sht1", "sht2", "sht3"],
+                ["neb", "fir3", "wat3", "thu3", "ice3", "dra3", "poi2", "par2", "sle2", "bla2"],
+                ["atts", "eles", "affs"]
+            ],
+
+            "maxSharpness": [50, 70, 50, 50, 70, 10]
+        }
+    }
+}
+

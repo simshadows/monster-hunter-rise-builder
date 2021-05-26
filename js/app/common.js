@@ -5,6 +5,10 @@
 
 const element = React.createElement;
 
+export function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 export function setUnion(setA, setB) {
     let _union = new Set(setA)
     for (let elem of setB) {
@@ -28,6 +32,11 @@ export function isArmourSlotStr(obj) {
 const decoEquippableSlotStrs = setUnion((new Set(["weapon", "talisman"])), armourSlotStrs);
 export function isDecoEquippableSlotStr(obj) {
     return decoEquippableSlotStrs.has(obj);
+}
+
+const equipSlotStrs = setUnion((new Set(["petalace"])), decoEquippableSlotStrs);
+export function isEquipSlotStr(obj) {
+    return equipSlotStrs.has(obj);
 }
 
 /*** Maps ***/
