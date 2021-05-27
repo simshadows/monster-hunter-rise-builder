@@ -1,0 +1,35 @@
+{
+    "Kamura Tree": {
+        "1f": {
+            "rarity": 5,
+            "name": "Kamura Ninja L. Bowgun",
+            "attack": 170,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2,1],
+            "eleStatType": "none",
+            "eleStatValue": 0,
+
+            "rampSkills": [
+                ["aff4", "def2", "mr"]
+            ]
+        }
+    },
+    "Nargacuga Tree": {
+        "2c": {
+            "rarity": 6,
+            "name": "Night Owl",
+            "attack": 180,
+            "affinity": 40,
+            "defense": 0,
+            "decoSlots": [2],
+            "eleStatType": "none",
+            "eleStatValue": 0,
+
+            "rampSkills": [
+                ["att3", "aff2", "mr"]
+            ]
+        }
+    }
+}
+

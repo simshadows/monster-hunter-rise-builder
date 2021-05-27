@@ -1,0 +1,21 @@
+{
+    "Nargacuga Tree": {
+        "30c": {
+            "rarity": 6,
+            "name": "Night Eternal",
+            "attack": 180,
+            "affinity": 45,
+            "defense": 0,
+            "decoSlots": [2],
+            "eleStatType": "none",
+            "eleStatValue": 0,
+
+            "rampSkills": [
+                ["att3", "aff2", "mr"]
+            ],
+
+            "maxSharpness": [70, 40, 120, 90, 60, 20]
+        }
+    }
+}
+

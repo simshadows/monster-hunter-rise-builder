@@ -70,7 +70,7 @@ const weaponCategoryToNameMap = {
     longsword: "Longsword",
     swordandshield: "Sword and Shield",
     dualblades: "Dual Blades",
-    switchaxe: "Switchaxe",
+    switchaxe: "Switch Axe",
     chargeblade: "Charge Blade",
     hammer: "Hammer",
     huntinghorn: "Hunting Horn",

@@ -108,6 +108,8 @@ class SelectionTable extends React.Component {
 
     // Logically static
     _renderRow(weaponData) {
+        const specialMechStr = (weaponData.maxSharpness === undefined) ? "" : "Sharpness: " + weaponData.maxSharpness.toString();
+
         return element("tr",
             {
             className: "selection-table-body-row",
@@ -142,15 +144,15 @@ class SelectionTable extends React.Component {
                 weaponData.decoSlots.toString()
             ),
             this._renderCell(
-                "selection-table-body-cell-sharpness",
-                weaponData.maxSharpness.toString()
+                "selection-table-body-cell-specialmech",
+                specialMechStr
             ),
         );
     }
 
     render() {
-        check.isObj(this.props.rawData);
-        check.isMap(this.props.rawData.weapons.greatsword); // Spot check to see if it has the right structure
+        check.isObj(this.props.dataArray);
+        check.isInt(this.props.dataArray[0].affinity); // Spot check
 
         const headerRow = element("tr",
                 {
@@ -163,11 +165,11 @@ class SelectionTable extends React.Component {
                 element("th", {className: "selection-table-head-cell"}, "\ud83d\udee1\ufe0f"),
                 element("th", {className: "selection-table-head-cell"}, "Ele/Stat"),
                 element("th", {className: "selection-table-head-cell"}, "Slots"),
-                element("th", {className: "selection-table-head-cell"}, "Sharpness"),
+                element("th", {className: "selection-table-head-cell"}, "Special Mechanics"),
             );
 
         const bodyRows = [];
-        for (const [weaponID, weaponData] of this.props.rawData.weapons.greatsword.entries()) {
+        for (const weaponData of this.props.dataArray) {
             // TODO: Verify data structure?
             bodyRows.push(this._renderRow(weaponData));
         }
@@ -202,17 +204,26 @@ class WeaponSelectView extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-                rawData: props.rawData,
+                allWeapons: null,
             };
     }
 
+    populateWithData(allWeapons) {
+        // Verify incoming data
+        check.isArr(allWeapons);
+        check.isInt(allWeapons[0].affinity); // Spot check structure
+
+        // State should be empty of data
+        assert(this.state.allWeapons === null);
+
+        // Now, we add the data
+        this.setState({allWeapons: allWeapons});
+    }
+
     render() {
-        if (this.state.rawData === null) {
+        if (this.state.allWeapons === null) {
             return "Error: You shouldn't be able to see this screen before the data is loaded.";
         }
-
-        check.isObj(this.props.rawData);
-        check.isMap(this.props.rawData.weapons.greatsword); // Spot check to see if it has the right structure
 
         return element("div",
             {
@@ -237,10 +248,17 @@ class WeaponSelectView extends React.Component {
                     },
                     null,
                 ),
+                element(TypeFilterButton,
+                    {
+                    iconImg: "./images/placeholders/weapon_small_swordandshield.webp",
+                    onClick: () => {console.log("not yet implemented")}, // TODO
+                    },
+                    null,
+                ),
             ),
             element(SelectionTable,
                 {
-                rawData: this.state.rawData,
+                dataArray: this.state.allWeapons,
                 },
                 null,
             ),

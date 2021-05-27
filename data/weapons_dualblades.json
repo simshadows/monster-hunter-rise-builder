@@ -1,0 +1,21 @@
+{
+    "Nargacuga Tree": {
+        "13c": {
+            "rarity": 6,
+            "name": "Night Wings",
+            "attack": 190,
+            "affinity": 40,
+            "defense": 0,
+            "decoSlots": [2],
+            "eleStatType": "none",
+            "eleStatValue": 0,
+
+            "rampSkills": [
+                ["att3", "aff2", "mr"]
+            ],
+
+            "maxSharpness": [70, 40, 100, 90, 70, 30]
+        }
+    }
+}
+

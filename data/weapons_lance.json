@@ -1,0 +1,21 @@
+{
+    "Nargacuga Tree": {
+        "11c": {
+            "rarity": 6,
+            "name": "Night Rains Black",
+            "attack": 180,
+            "affinity": 35,
+            "defense": 0,
+            "decoSlots": [2],
+            "eleStatType": "none",
+            "eleStatValue": 0,
+
+            "rampSkills": [
+                ["att3", "aff2", "mr"]
+            ],
+
+            "maxSharpness": [70, 40, 110, 90, 60, 30]
+        }
+    }
+}
+

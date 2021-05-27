@@ -146,6 +146,7 @@ class MHRBuilderAppContainer extends React.Component {
             };
 
         this.myRefs = {
+                weaponSelectView: React.createRef(),
                 armourSelectView: React.createRef(),
                 decoSelectView: React.createRef(),
             };
@@ -209,7 +210,9 @@ class MHRBuilderAppContainer extends React.Component {
 
         const rawData = await downloadRawData();
         this.setState({rawData: rawData});
-        console.log(rawData);
+        console.log(rawData.readonly);
+
+        this.myRefs.weaponSelectView.current.populateWithData(rawData.getWeaponsArray());
     }
     componentWillUnmount() {
         // TODO: Verify event removal matching?
@@ -271,7 +274,7 @@ class MHRBuilderAppContainer extends React.Component {
                 },
                 element(WeaponSelectView,
                     {
-                    rawData: this.state.rawData,
+                    ref: this.myRefs.weaponSelectView,
                     },
                     null,
                 ),

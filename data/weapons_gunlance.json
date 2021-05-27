@@ -1,0 +1,21 @@
+{
+    "Nargacuga Tree": {
+        "19c": {
+            "rarity": 6,
+            "name": "Fading Night",
+            "attack": 180,
+            "affinity": 40,
+            "defense": 0,
+            "decoSlots": [2],
+            "eleStatType": "none",
+            "eleStatValue": 0,
+
+            "rampSkills": [
+                ["att3", "aff2", "mr"]
+            ],
+
+            "maxSharpness": [50, 70, 100, 90, 70, 20]
+        }
+    }
+}
+
