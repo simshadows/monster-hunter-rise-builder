@@ -108,3 +108,11 @@ export function br() {
     return element("br", null, null);
 }
 
+/*** Others ***/
+
+export function toNameFilterString(s) {
+    // TODO: Also strip out punctuation?
+    return s.toLowerCase().replace(/\s/g, "");
+}
+
+

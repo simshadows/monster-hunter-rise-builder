@@ -38,6 +38,21 @@ div.highlight-select-view-type-filter-icon-box:hover { /* Oh lawdy I need better
     cursor: pointer;
 }
 
+/*** Name Filter Text Field ***/
+
+div.select-view-name-filter-box {
+    width: 100%;
+    padding: 2px 2px 10px 2px;
+    box-sizing: border-box;
+}
+.select-view-name-filter-field {
+    width: 100%;
+    font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/*** Selection Table ***/
+
 div.selection-table-wrap-box {
     flex: 1 0 0;
     border: thin solid black;

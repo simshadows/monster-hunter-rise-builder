@@ -4,6 +4,7 @@
  */
 
 import {
+    isObj,
     isFunction,
     isInt,
     isNonEmptyStr,
@@ -14,6 +15,7 @@ import {
     sleep,
     isWeaponCategoryStr,
     isEleStatStr,
+    toNameFilterString,
 } from "./common.js";
 
 const WEAPON_GS_PATH  = "../../../data/weapons_greatsword.json";
@@ -38,6 +40,11 @@ function validateWeaponData(weaponData) {
     assert(isInt(weaponData.rarity), "Rarity must be an integer.");
 
     assert(isNonEmptyStr(weaponData.name), "Name must be a non-empty string.");
+
+    assert(isNonEmptyStr(weaponData.treeName), "Tree name must be a non-empty string.");
+    
+    assert(isObj(weaponData.filterHelpers), "Filter helpers must be a non-empty string.");
+    // Not going to further test the structure of this.
 
     assert(isInt(weaponData.attack) && (weaponData.attack > 0), "Attack must be an integer >0.");
 
@@ -101,9 +108,13 @@ async function downloadRawWeaponData(category, path, op) {
     for (const [treeName, treeData] of Object.entries(rawData)) {
         assert(isNonEmptyStr(treeName), "Tree name must be a non-empty string.");
         for (const [weaponID, weaponData] of Object.entries(treeData)) {
+            // Merge in data
             weaponData.category = category;
             weaponData.id = weaponID;
-            weaponData.treeName = treeName; // Merge in data
+            weaponData.treeName = treeName;
+            // Merge in helper strings for filter functions
+            weaponData.filterHelpers = {};
+            weaponData.filterHelpers.nameLower = toNameFilterString(weaponData.name);
 
             // Validate Common Data
             validateWeaponData(weaponData);

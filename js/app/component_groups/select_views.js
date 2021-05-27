@@ -12,24 +12,42 @@ import {
     weaponCategoryToName,
     eleStatStrToEmoji,
     br,
+    toNameFilterString,
 } from "../common.js";
 
 const element = React.createElement;
 const assert = console.assert;
 
-/*** Common Components: Type Filter Button ***/
+/*** Common Components: Name Filter Text Field ***/
 
-class BuffsSelectView extends React.Component {
+class NameFilterTextField extends React.Component {
+
+    handleChange(e) {
+        const newInput = e.target.value;
+        check.isStr(newInput);
+        this.props.onChange(newInput);
+    }
+
     render() {
+        check.isFunction(this.props.onChange);
+
         return element("div",
             {
-            className: "select-view-wrap-box",
-            id: "mhr-builder-app-buffs-select-view",
+            className: "select-view-name-filter-box",
             },
-            "This is the buffs/states select view! It's not implemented yet.",
+            element("input",
+                {
+                type: "text",
+                className: "select-view-name-filter-field",
+                onChange: (e) => {this.handleChange(e);},
+                },
+                null,
+            ),
         );
     }
 }
+
+/*** Common Components: Type Filter Button ***/
 
 class TypeFilterButton extends React.Component {
 
@@ -152,7 +170,6 @@ class SelectionTable extends React.Component {
 
     render() {
         check.isObj(this.props.dataArray);
-        check.isInt(this.props.dataArray[0].affinity); // Spot check
 
         const headerRow = element("tr",
                 {
@@ -199,12 +216,25 @@ class SelectionTable extends React.Component {
 
 /*** View Implementations ***/
 
+class BuffsSelectView extends React.Component {
+    render() {
+        return element("div",
+            {
+            className: "select-view-wrap-box",
+            id: "mhr-builder-app-buffs-select-view",
+            },
+            "This is the buffs/states select view! It's not implemented yet.",
+        );
+    }
+}
+
 class WeaponSelectView extends React.Component {
 
     constructor(props) {
         super(props);
         this.state = {
                 allWeapons: null,
+                filterByName: "",
             };
     }
 
@@ -220,45 +250,70 @@ class WeaponSelectView extends React.Component {
         this.setState({allWeapons: allWeapons});
     }
 
+    handleNameFilterTextChange(newText) {
+        check.isStr(newText);
+        this.setState({filterByName: toNameFilterString(newText)});
+    }
+
+    _getFilteredWeaponsArray() {
+        const op = (element) => {
+                return element.filterHelpers.nameLower.includes(this.state.filterByName);
+            };
+        return this.state.allWeapons.filter(op);
+    }
+
+    _renderCategoryFilterButton(weaponCategory, iconImg) {
+        return element(TypeFilterButton,
+            {
+            iconImg: iconImg,
+            onClick: () => {console.log("not yet implemented")}, // TODO
+            },
+            null,
+        );
+    }
+
     render() {
         if (this.state.allWeapons === null) {
             return "Error: You shouldn't be able to see this screen before the data is loaded.";
         }
+
+        check.isStr(this.state.filterByName);
+
+        const filteredWeaponsArray = this._getFilteredWeaponsArray();
 
         return element("div",
             {
             className: "select-view-wrap-box",
             id: "mhr-builder-app-weapon-select-view",
             },
+            element(NameFilterTextField,
+                {
+                onChange: (newText) => {this.handleNameFilterTextChange(newText)},
+                },
+                null,
+            ),
             element("div",
                 {
                 className: "select-view-type-filter-box",
                 },
-                element(TypeFilterButton,
-                    {
-                    iconImg: "./images/placeholders/weapon_small_greatsword.webp",
-                    onClick: () => {console.log("not yet implemented")}, // TODO
-                    },
-                    null,
-                ),
-                element(TypeFilterButton,
-                    {
-                    iconImg: "./images/placeholders/weapon_small_longsword.webp",
-                    onClick: () => {console.log("not yet implemented")}, // TODO
-                    },
-                    null,
-                ),
-                element(TypeFilterButton,
-                    {
-                    iconImg: "./images/placeholders/weapon_small_swordandshield.webp",
-                    onClick: () => {console.log("not yet implemented")}, // TODO
-                    },
-                    null,
-                ),
+                this._renderCategoryFilterButton("greatsword", "./images/placeholders/weapon_small_greatsword.webp"),
+                this._renderCategoryFilterButton("longsword", "./images/placeholders/weapon_small_longsword.webp"),
+                this._renderCategoryFilterButton("swordandshield", "./images/placeholders/weapon_small_swordandshield.webp"),
+                this._renderCategoryFilterButton("dualblades", "./images/placeholders/weapon_small_dualblades.webp"),
+                this._renderCategoryFilterButton("lance", "./images/placeholders/weapon_small_lance.webp"),
+                this._renderCategoryFilterButton("gunlance", "./images/placeholders/weapon_small_gunlance.webp"),
+                this._renderCategoryFilterButton("hammer", "./images/placeholders/weapon_small_hammer.webp"),
+                this._renderCategoryFilterButton("huntinghorn", "./images/placeholders/weapon_small_huntinghorn.webp"),
+                this._renderCategoryFilterButton("switchaxe", "./images/placeholders/weapon_small_switchaxe.webp"),
+                this._renderCategoryFilterButton("chargeblade", "./images/placeholders/weapon_small_chargeblade.webp"),
+                this._renderCategoryFilterButton("insectglaive", "./images/placeholders/weapon_small_insectglaive.webp"),
+                this._renderCategoryFilterButton("lightbowgun", "./images/placeholders/weapon_small_lightbowgun.webp"),
+                this._renderCategoryFilterButton("heavybowgun", "./images/placeholders/weapon_small_heavybowgun.webp"),
+                this._renderCategoryFilterButton("bow", "./images/placeholders/weapon_small_bow.webp"),
             ),
             element(SelectionTable,
                 {
-                dataArray: this.state.allWeapons,
+                dataArray: filteredWeaponsArray,
                 },
                 null,
             ),
