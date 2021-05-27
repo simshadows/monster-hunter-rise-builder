@@ -60,6 +60,12 @@ export function isMap(obj) {
     return res;
 }
 
+export function isSet(obj) {
+    const res = (obj instanceof Set);
+    console.assert(res, "Expected a Set type. Instead got:", obj);
+    return res;
+}
+
 /****/
 
 // This throws an error.

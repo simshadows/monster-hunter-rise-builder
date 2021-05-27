@@ -29,7 +29,7 @@ function clipsafeP(...children) {
  *********************************************************************/
 
 function EquipIcon(props) {
-    check.isStr(props.iconImg);
+    check.isNonEmptyStr(props.iconImg);
     check.isFunction(props.onClick);
 
     return element("div",

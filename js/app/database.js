@@ -17,9 +17,7 @@ import {
 const WEAPON_GS_PATH = "../../../data/weapons_greatsword.json";
 
 // Common stuff
-function validateWeaponData(weaponID, weaponData, finalData) {
-    assert(isNonEmptyStr(weaponID), "Weapon ID must be a non-empty string.");
-
+function validateWeaponData(weaponData, finalData) {
     assert(isInt(weaponData.rarity), "Rarity must be an integer.");
 
     assert(isNonEmptyStr(weaponData.name), "Name must be a non-empty string.");
@@ -58,8 +56,9 @@ function validateWeaponData(weaponID, weaponData, finalData) {
 
     // Now, we just check for duplicate keys, and to make sure "0" is unused.
 
-    assert(weaponID != "0", "Weapon ID must not be 0 since that is a reserved ID.");
-    assert(!finalData.has(weaponID), "Weapon ID already exists. ID: " + weaponID);
+    assert(isNonEmptyStr(weaponData.id), "Weapon ID must be a non-empty string.");
+    assert(weaponData.id != "0", "Weapon ID must not be 0 since that is a reserved ID.");
+    assert(!finalData.has(weaponData.id), "Weapon ID already exists. ID: " + weaponData.id);
 }
 
 // Only weapons with sharpness bars
@@ -79,18 +78,17 @@ function validateWeaponDataSharpness(weaponData) {
     assert((hitSum > 100), "Hits must add up to at least 100."); // If we find cases where this is wrong, remove this check.
 }
 
-async function getGreatswordData() {
+async function downloadRawGreatswordData() {
     const res = await fetch(WEAPON_GS_PATH);
     const rawData = await res.json();
 
     const finalData = new Map();
-
-    // A lot of these error checks are more for debugging purposes.
     for (const [treeName, treeData] of Object.entries(rawData)) {
         assert(isNonEmptyStr(treeName), "Tree name must be a non-empty string.");
         for (const [weaponID, weaponData] of Object.entries(treeData)) {
-            weaponData.treeName = treeName; // Merge the data in first
-            validateWeaponData(weaponID, weaponData, finalData);
+            weaponData.id = weaponID; // Merge in data
+            weaponData.treeName = treeName; // Merge in data
+            validateWeaponData(weaponData, finalData);
             validateWeaponDataSharpness(weaponData);
             finalData.set(weaponID, weaponData);
         }
@@ -99,15 +97,17 @@ async function getGreatswordData() {
     return finalData;
 }
 
-async function getData() {
+async function downloadRawData() {
     // TODO: Consider pipelining this.
     //await sleep(3000); // For testing
     return {
             weapons: {
-                    greatsword: await getGreatswordData(),
+                    greatsword: await downloadRawGreatswordData(),
                 },
         };
 }
 
-export default getData;
+export {
+    downloadRawData,
+};
 

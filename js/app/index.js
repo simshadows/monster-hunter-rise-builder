@@ -6,7 +6,9 @@
  */
 
 import * as check from "./check.js";
-import getData from "./database.js";
+import {
+    downloadRawData,
+} from "./database.js";
 import {
     isArmourSlotStr,
     isDecoEquippableSlotStr,
@@ -80,7 +82,6 @@ class MainView extends React.Component {
                 ),
                 element("div",
                     {
-                    className: "app-view-box",
                     id: "mhr-builder-app-main-view",
                     },
                     element("div",
@@ -136,7 +137,11 @@ class MHRBuilderAppContainer extends React.Component {
         super(props);
 
         this.state = {
+                // All possible states are in _viewEnumValues
                 view: "main", // Always start with the main view
+                //view: "weapon_select_view", // Useful for debugging
+
+                // Two states: Either it's null, or it's a fully-constructed raw data object. Don't modify it once it's built.
                 rawData: null,
             };
 
@@ -157,33 +162,33 @@ class MHRBuilderAppContainer extends React.Component {
         }
     }
 
-    handleClickBuffsSelect() {
+    handleSwitchToBuffsSelect() {
         assert(this.state.view == "main");
         this.setState({view: "buffs_select_view"});
     }
-    handleClickWeaponSelect() {
+    handleSwitchToWeaponSelect() {
         assert(this.state.view == "main");
         this.setState({view: "weapon_select_view"});
     }
-    handleClickWeaponCustomize() {
+    handleSwitchToWeaponCustomize() {
         assert(this.state.view == "main");
         this.setState({view: "weapon_customize_view"});
     }
-    handleClickArmourSelect(slotID) {
+    handleSwitchToArmourSelect(slotID) {
         assert(isArmourSlotStr(slotID));
         assert(this.state.view == "main");
         this.myRefs.armourSelectView.current.reinitialize(slotID);
         this.setState({view: "armour_select_view"});
     }
-    handleClickTalismanSelect() {
+    handleSwitchToTalismanSelect() {
         assert(this.state.view == "main");
         this.setState({view: "talisman_select_view"});
     }
-    handleClickPetalaceSelect() {
+    handleSwitchToPetalaceSelect() {
         assert(this.state.view == "main");
         this.setState({view: "petalace_select_view"});
     }
-    handleClickDecorationSelect(slotID, decoSlotID) {
+    handleSwitchToDecorationSelect(slotID, decoSlotID) {
         assert(isDecoEquippableSlotStr(slotID));
         check.isInt(decoSlotID);
         assert((decoSlotID >= 0) && (decoSlotID < 3));
@@ -202,7 +207,7 @@ class MHRBuilderAppContainer extends React.Component {
     async componentDidMount() {
         document.addEventListener("keydown", this.handleKeypress);
 
-        const rawData = await getData();
+        const rawData = await downloadRawData();
         this.setState({rawData: rawData});
         console.log(rawData);
     }
@@ -217,7 +222,7 @@ class MHRBuilderAppContainer extends React.Component {
         // Don't load UI until all data is loaded.
         // TODO: Consider making a proper loading screen.
         if (this.state.rawData === null) {
-            return "Loading app... Done! Loading data...";
+            return "Loading app... Loading data...";
         }
 
         const selectionViewIsVisible = {
@@ -237,13 +242,13 @@ class MHRBuilderAppContainer extends React.Component {
             },
             element(MainView,
                 {
-                handleClickBuffsSelect:      ()       => {this.handleClickBuffsSelect();},
-                handleClickWeaponSelect:     ()       => {this.handleClickWeaponSelect();},
-                handleClickWeaponCustomize:  ()       => {this.handleClickWeaponCustomize();},
-                handleClickArmourSelect:     (slotID) => {this.handleClickArmourSelect(slotID);},
-                handleClickTalismanSelect:   ()       => {this.handleClickTalismanSelect();},
-                handleClickPetalaceSelect:   ()       => {this.handleClickPetalaceSelect();},
-                handleClickDecorationSelect: (slotID, decoSlotID) => {this.handleClickDecorationSelect(slotID, decoSlotID);},
+                handleClickBuffsSelect:      ()       => {this.handleSwitchToBuffsSelect();},
+                handleClickWeaponSelect:     ()       => {this.handleSwitchToWeaponSelect();},
+                handleClickWeaponCustomize:  ()       => {this.handleSwitchToWeaponCustomize();},
+                handleClickArmourSelect:     (slotID) => {this.handleSwitchToArmourSelect(slotID);},
+                handleClickTalismanSelect:   ()       => {this.handleSwitchToTalismanSelect();},
+                handleClickPetalaceSelect:   ()       => {this.handleSwitchToPetalaceSelect();},
+                handleClickDecorationSelect: (slotID, decoSlotID) => {this.handleSwitchToDecorationSelect(slotID, decoSlotID);},
                 },
                 null,
             ),
@@ -265,7 +270,9 @@ class MHRBuilderAppContainer extends React.Component {
                 handleCloseModal: () => {this.handleReturnToMainView();},
                 },
                 element(WeaponSelectView,
-                    null,
+                    {
+                    rawData: this.state.rawData,
+                    },
                     null,
                 ),
             ),

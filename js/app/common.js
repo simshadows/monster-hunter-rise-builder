@@ -3,13 +3,17 @@
  * License: GNU Affero General Public License v3 (AGPL-3.0)
  */
 
+import * as check from "./check.js";
+
 const element = React.createElement;
 
 export function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
+    return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 export function setUnion(setA, setB) {
+    check.isSet(setA);
+    check.isSet(setB);
     let _union = new Set(setA)
     for (let elem of setB) {
         _union.add(elem)

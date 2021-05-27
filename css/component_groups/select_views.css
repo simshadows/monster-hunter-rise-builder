@@ -1,0 +1,60 @@
+div.select-view-wrap-box {
+    display: flex;
+    flex-direction: column;
+
+    /* min-width: 1250px; */
+    width: 100%;
+    /* border: thin solid red; */
+    box-sizing: border-box;
+    height: 100%;
+}
+div.select-view-wrap-box > * {
+}
+
+div.select-view-type-filter-box {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+
+    padding: 2px 0 4px 0;
+}
+
+div.select-view-type-filter-icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 35px;
+    height: 35px;
+    background: lightgray;
+}
+div.select-view-type-filter-icon-box > img {
+    height: 90%;
+    width: 90%;
+}
+div.highlight-select-view-type-filter-icon-box:hover { /* Oh lawdy I need better names */
+    background: rgba(0, 0, 0, 0.5);;
+    /* border: thin solid white; */
+    cursor: pointer;
+}
+
+div.selection-table-wrap-box {
+    flex: 1 0 0;
+    border: thin solid black;
+    margin: 8px 0 0 0;
+    background: lightgray;
+    overflow-y: scroll;
+}
+
+.selection-table {
+}
+.selection-table-head {
+    border: thin solid black;
+}
+.selection-table-row {
+    border: thin solid black;
+}
+.selection-table-cell {
+    border: thin solid black;
+}
+
