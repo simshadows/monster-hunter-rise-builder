@@ -23,6 +23,26 @@ export function setUnion(setA, setB) {
 
 /*** Enums Verification ***/
 
+const weaponCategoryStrs = new Set([
+    "greatsword",
+    "longsword",
+    "swordandshield",
+    "dualblades",
+    "switchaxe",
+    "chargeblade",
+    "hammer",
+    "huntinghorn",
+    "lance",
+    "gunlance",
+    "insectglaive",
+    "bow",
+    "lightbowgun",
+    "heavybowgun",
+]);
+export function isWeaponCategoryStr(obj) {
+    return weaponCategoryStrs.has(obj);
+}
+
 const eleStatStrs = new Set(["none", "fire", "water", "thunder", "ice", "dragon", "paralysis", "sleep", "blast"]);
 export function isEleStatStr(obj) {
     return eleStatStrs.has(obj);
@@ -44,6 +64,26 @@ export function isEquipSlotStr(obj) {
 }
 
 /*** Maps ***/
+
+const weaponCategoryToNameMap = {
+    greatsword: "Greatsword",
+    longsword: "Longsword",
+    swordandshield: "Sword and Shield",
+    dualblades: "Dual Blades",
+    switchaxe: "Switchaxe",
+    chargeblade: "Charge Blade",
+    hammer: "Hammer",
+    huntinghorn: "Hunting Horn",
+    lance: "Lance",
+    gunlance: "Gunlance",
+    insectglaive: "Insect Glaive",
+    bow: "Bow",
+    lightbowgun: "Light Bowgun",
+    heavybowgun: "Heavy Bowgun",
+}
+export function weaponCategoryToName(obj) {
+    return weaponCategoryToNameMap[obj];
+}
 
 const eleStatStrToEmojiMap = {
     none: "-",

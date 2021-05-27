@@ -42,19 +42,50 @@ div.selection-table-wrap-box {
     flex: 1 0 0;
     border: thin solid black;
     margin: 8px 0 0 0;
-    background: lightgray;
+    background: darkgrey;
     overflow-y: scroll;
 }
 
 .selection-table {
+    table-layout: auto;
+    width: 100%;
 }
-.selection-table-head {
+
+.selection-table-head-row {
+    border: thin solid black;
+    background: darkgrey;
+    cursor: pointer;
+}
+.selection-table-head-cell {
+    position: sticky;
+    top: 0;
     border: thin solid black;
 }
-.selection-table-row {
+
+.selection-table-body-row {
+    border: thin solid black;
+    background: white;
+    cursor: pointer;
+}
+.selection-table-body-row:hover {
+    background: lightgrey;
+}
+.selection-table-body-cell {
     border: thin solid black;
 }
-.selection-table-cell {
-    border: thin solid black;
+.selection-table-body-cell-category {
+    width: 150px;
+}
+.selection-table-body-cell-name {
+    width: 280px;
+}
+.selection-table-body-cell-numeric {
+    width: 60px;
+}
+.selection-table-body-cell-deco {
+    width: 80px;
+}
+.selection-table-body-cell-sharpness {
+    width: auto;
 }
 

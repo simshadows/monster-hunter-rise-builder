@@ -9,6 +9,8 @@ import * as check from "../check.js";
 import {
     isArmourSlotStr,
     isDecoEquippableSlotStr,
+    weaponCategoryToName,
+    eleStatStrToEmoji,
     br,
 } from "../common.js";
 
@@ -65,20 +67,109 @@ class TypeFilterButton extends React.Component {
 /*** Common Components: Selection Table ***/
 
 class SelectionTable extends React.Component {
+
+    /* CURRENTLY UNUSED
+    static _weaponCategoryToIconMap = new Map([
+            ["greatsword"    , "./images/placeholders/weapon_small_greatsword.webp"    ],
+            ["longsword"     , "./images/placeholders/weapon_small_longsword.webp"     ],
+            ["swordandshield", "./images/placeholders/weapon_small_swordandshield.webp"],
+            ["dualblades"    , "./images/placeholders/weapon_small_dualblades.webp"    ],
+            ["switchaxe"     , "./images/placeholders/weapon_small_switchaxe.webp"     ],
+            ["chargeblade"   , "./images/placeholders/weapon_small_chargeblade.webp"   ],
+            ["hammer"        , "./images/placeholders/weapon_small_hammer.webp"        ],
+            ["huntinghorn"   , "./images/placeholders/weapon_small_huntinghorn.webp"   ],
+            ["lance"         , "./images/placeholders/weapon_small_lance.webp"         ],
+            ["gunlance"      , "./images/placeholders/weapon_small_gunlance.webp"      ],
+            ["insectglaive"  , "./images/placeholders/weapon_small_insectglaive.webp"  ],
+            ["bow"           , "./images/placeholders/weapon_small_bow.webp"           ],
+            ["lightbowgun"   , "./images/placeholders/weapon_small_lightbowgun.webp"   ],
+            ["heavybowgun"   , "./images/placeholders/weapon_small_heavybowgun.webp"   ],
+        ]);
+    */
+
+    handleRowClick(e, weaponData) {
+        e.stopPropagation();
+        console.log(weaponData.name);
+        console.log(weaponData);
+    }
+
+    // Logically static
+    _renderCell(extraClasses, ...content) {
+        check.isStr(extraClasses);
+
+        const classNameAppend = (extraClasses.length > 0) ? (" " + extraClasses) : "";
+        return element("th",
+            {
+            className: "selection-table-body-cell" + classNameAppend,
+            },
+            ...content
+        );
+    }
+
+    // Logically static
+    _renderRow(weaponData) {
+        return element("tr",
+            {
+            className: "selection-table-body-row",
+            onClick: (e) => {this.handleRowClick(e, weaponData)},
+            },
+            this._renderCell(
+                "selection-table-body-cell-category",
+                weaponCategoryToName(weaponData.category)
+            ),
+            this._renderCell(
+                "selection-table-body-cell-name",
+                weaponData.name
+            ),
+            this._renderCell(
+                "selection-table-body-cell-numeric",
+                parseInt(weaponData.attack)
+            ),
+            this._renderCell(
+                "selection-table-body-cell-numeric",
+                parseInt(weaponData.affinity) + "%"
+            ),
+            this._renderCell(
+                "selection-table-body-cell-numeric",
+                parseInt(weaponData.defense)
+            ),
+            this._renderCell(
+                "selection-table-body-cell-numeric",
+                parseInt(weaponData.eleStatValue) + " " + eleStatStrToEmoji(weaponData.eleStatType)
+            ),
+            this._renderCell(
+                "selection-table-body-cell-deco",
+                weaponData.decoSlots.toString()
+            ),
+            this._renderCell(
+                "selection-table-body-cell-sharpness",
+                weaponData.maxSharpness.toString()
+            ),
+        );
+    }
+
     render() {
-        const rows = [];
-        for (let i = 0; i < 100; ++i) {
-            rows.push(
-                element("tr",
-                    {
-                    className: "selection-table-row",
-                    },
-                    element("th", {className: "selection-table-cell"}, "placeholder-content"),
-                    element("th", {className: "selection-table-cell"}, parseInt(i)),
-                    element("th", {className: "selection-table-cell"}, "placeholder-content"),
-                    element("th", {className: "selection-table-cell"}, parseInt(i)),
-                )
+        check.isObj(this.props.rawData);
+        check.isMap(this.props.rawData.weapons.greatsword); // Spot check to see if it has the right structure
+
+        const headerRow = element("tr",
+                {
+                className: "selection-table-head-row",
+                },
+                element("th", {className: "selection-table-head-cell"}, "Category"),
+                element("th", {className: "selection-table-head-cell"}, "Name"),
+                element("th", {className: "selection-table-head-cell"}, "\u2694\ufe0f"),
+                element("th", {className: "selection-table-head-cell"}, "\ud83d\udca2"),
+                element("th", {className: "selection-table-head-cell"}, "\ud83d\udee1\ufe0f"),
+                element("th", {className: "selection-table-head-cell"}, "Ele/Stat"),
+                element("th", {className: "selection-table-head-cell"}, "Slots"),
+                element("th", {className: "selection-table-head-cell"}, "Sharpness"),
             );
+
+        const bodyRows = [];
+        for (const [weaponID, weaponData] of this.props.rawData.weapons.greatsword.entries()) {
+            // TODO: Verify data structure?
+            bodyRows.push(this._renderRow(weaponData));
         }
 
         return element("div",
@@ -93,19 +184,11 @@ class SelectionTable extends React.Component {
                     {
                     className: "selection-table-head",
                     },
-                    element("tr",
-                        {
-                        className: "selection-table-row",
-                        },
-                        element("th", {className: "selection-table-cell"}, "head 1"),
-                        element("th", {className: "selection-table-cell"}, "head 2"),
-                        element("th", {className: "selection-table-cell"}, "head 3"),
-                        element("th", {className: "selection-table-cell"}, "head 4"),
-                    ),
+                    headerRow,
                 ),
                 element("tbody",
                     null,
-                    ...rows
+                    ...bodyRows
                 ),
             ),
         );
@@ -119,12 +202,12 @@ class WeaponSelectView extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-                fullRawData: props.rawData,
+                rawData: props.rawData,
             };
     }
 
     render() {
-        if (this.state.fullRawData === null) {
+        if (this.state.rawData === null) {
             return "Error: You shouldn't be able to see this screen before the data is loaded.";
         }
 
@@ -156,7 +239,9 @@ class WeaponSelectView extends React.Component {
                 ),
             ),
             element(SelectionTable,
-                null,
+                {
+                rawData: this.state.rawData,
+                },
                 null,
             ),
         );

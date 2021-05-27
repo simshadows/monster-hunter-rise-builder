@@ -11,6 +11,7 @@ import {
 } from "./check.js";
 import {
     sleep,
+    isWeaponCategoryStr,
     isEleStatStr,
 } from "./common.js";
 
@@ -18,6 +19,8 @@ const WEAPON_GS_PATH = "../../../data/weapons_greatsword.json";
 
 // Common stuff
 function validateWeaponData(weaponData, finalData) {
+    assert(isWeaponCategoryStr(weaponData.category), "Category must be valid.");
+
     assert(isInt(weaponData.rarity), "Rarity must be an integer.");
 
     assert(isNonEmptyStr(weaponData.name), "Name must be a non-empty string.");
@@ -86,7 +89,9 @@ async function downloadRawGreatswordData() {
     for (const [treeName, treeData] of Object.entries(rawData)) {
         assert(isNonEmptyStr(treeName), "Tree name must be a non-empty string.");
         for (const [weaponID, weaponData] of Object.entries(treeData)) {
-            weaponData.id = weaponID; // Merge in data
+            // Add more data
+            weaponData.category = "greatsword";
+            weaponData.id = weaponID;
             weaponData.treeName = treeName; // Merge in data
             validateWeaponData(weaponData, finalData);
             validateWeaponDataSharpness(weaponData);
