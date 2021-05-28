@@ -41,11 +41,23 @@ class Build {
     }
 
     // THIS WILL ONLY SUCCEED IF this.weaponRO IS NOT NULL
-    getWeaponProps() {
+    getRenderingProps() {
         this._validateWeaponNotNull();
 
         return {
-    
+                weaponRO: {
+                    name: this.weaponRO.name,
+                    attack: this.weaponRO.attack,
+                    affinity: this.weaponRO.affinity,
+                    defense: this.weaponRO.defense,
+                    eleStatType: this.weaponRO.eleStatType,
+                    eleStatValue: this.weaponRO.eleStatValue,
+                    rampSkillNamesArray: ["Affinity Boost I",
+                                          "~~NOTREAL~~",
+                                          "~~NOTREAL~~"],
+                    decosArray: [[2, "Charger Jewel 2"],
+                                 [1, "~~NOTREAL~~"]],
+                },
             };
     }
 

@@ -60,6 +60,9 @@ function Footer(props) {
 class MainView extends React.Component {
 
     render() {
+        check.isObj(this.props.buildRenderingProps);
+        check.isArr(this.props.buildRenderingProps.weaponRO.rampSkillNamesArray); // Spot check for structure
+
         check.isFunction(this.props.handleClickBuffsSelect);
         check.isFunction(this.props.handleClickWeaponSelect);
         check.isFunction(this.props.handleClickWeaponCustomize);
@@ -95,6 +98,7 @@ class MainView extends React.Component {
                         ),
                         element(EquipmentSelectionsBox,
                             {
+                            buildRenderingProps:        this.props.buildRenderingProps,
                             handleClickBuffsSelect:     ()       => {this.props.handleClickBuffsSelect();},
                             handleClickWeaponSelect:    ()       => {this.props.handleClickWeaponSelect();},
                             handleClickWeaponCustomize: ()       => {this.props.handleClickWeaponCustomize();},
@@ -262,6 +266,7 @@ class MHRBuilderAppContainer extends React.Component {
             },
             element(MainView,
                 {
+                buildRenderingProps:         this.state.build.getRenderingProps(),
                 handleClickBuffsSelect:      ()       => {this.handleSwitchToBuffsSelect();},
                 handleClickWeaponSelect:     ()       => {this.handleSwitchToWeaponSelect();},
                 handleClickWeaponCustomize:  ()       => {this.handleSwitchToWeaponCustomize();},

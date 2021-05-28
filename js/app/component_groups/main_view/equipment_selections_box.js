@@ -135,7 +135,7 @@ function EquipWeaponInfoBox(props) {
     function statBox(text, value) {
         return element("div",
             {className: "equip-weapon-stat-box clipsafe"},
-            clipsafeP(text + parseInt(value)),
+            clipsafeP(text + value),
         );
     }
 
@@ -171,10 +171,10 @@ function EquipWeaponInfoBox(props) {
                 {
                 className: "equip-weapon-stats-group-box",
                 },
-                statBox("\u2694\ufe0f ", props.wepAttack),
-                statBox("\ud83d\udca2 ", props.wepAffinity),
-                statBox(eleStatStrToEmoji(props.wepEleStatType) + " ", props.wepEleStatValue),
-                statBox("\ud83d\udee1\ufe0f ", props.wepDefenseBonus),
+                statBox("\u2694\ufe0f ", parseInt(props.wepAttack)),
+                statBox("\ud83d\udca2 ", parseInt(props.wepAffinity) + "%"),
+                statBox(eleStatStrToEmoji(props.wepEleStatType) + " ", parseInt(props.wepEleStatValue)),
+                statBox("\ud83d\udee1\ufe0f ", parseInt(props.wepDefenseBonus)),
             ),
             element("div",
                 {
@@ -194,18 +194,15 @@ function EquipWeaponInfoBox(props) {
 }
 
 function WeaponSelection(props) {
-    check.isStr(props.eqName); // Validate later
-    check.isInt(props.wepAttack); // Validate later
-    check.isInt(props.wepAffinity); // Validate later
-    check.isStr(props.wepEleStatType); // Validate later
-    check.isInt(props.wepEleStatValue); // Validate later
-    check.isInt(props.wepDefenseBonus); // Validate later
-    check.isArr(props.wepRampageSkills); // Validate later
-    check.isArr(props.decosArray); // Validate later
+    check.isObj(props.weaponRORenderingProps);
+    check.isArr(props.weaponRORenderingProps.rampSkillNamesArray); // Spot check for structure
 
     check.isFunction(props.handleClickWeaponSelect);
     check.isFunction(props.handleClickWeaponCustomize);
     check.isFunction(props.handleClickDecorationSelect);
+
+    // Convenience alias
+    const weaponRO = props.weaponRORenderingProps;
 
     return element("div",
         {
@@ -224,13 +221,13 @@ function WeaponSelection(props) {
             ),
             element(EquipWeaponInfoBox,
                 {
-                    eqName: props.eqName,
-                    wepAttack: props.wepAttack,
-                    wepAffinity: props.wepAffinity,
-                    wepEleStatType: props.wepEleStatType,
-                    wepEleStatValue: props.wepEleStatValue,
-                    wepDefenseBonus: props.wepDefenseBonus,
-                    wepRampageSkills: props.wepRampageSkills,
+                    eqName: weaponRO.name,
+                    wepAttack: weaponRO.attack,
+                    wepAffinity: weaponRO.affinity,
+                    wepEleStatType: weaponRO.eleStatType,
+                    wepEleStatValue: weaponRO.eleStatValue,
+                    wepDefenseBonus: weaponRO.defense,
+                    wepRampageSkills: weaponRO.rampSkillNamesArray,
                     onClick: (e) => {props.handleClickWeaponCustomize(e)},
                 },
                 null,
@@ -238,7 +235,7 @@ function WeaponSelection(props) {
         ),
         element(EquipDecosWrapBox,
             {
-                decosArray: props.decosArray,
+                decosArray: weaponRO.decosArray,
                 handleClickSelect: (decoSlotID) => {props.handleClickDecorationSelect(decoSlotID);},
             },
             null,
@@ -587,6 +584,9 @@ class EquipmentSelectionsBox extends React.Component {
     }
 
     render() {
+        check.isObj(this.props.buildRenderingProps);
+        check.isArr(this.props.buildRenderingProps.weaponRO.rampSkillNamesArray); // Spot check for structure
+
         check.isFunction(this.props.handleClickBuffsSelect);
         check.isFunction(this.props.handleClickWeaponSelect);
         check.isFunction(this.props.handleClickWeaponCustomize);
@@ -594,6 +594,9 @@ class EquipmentSelectionsBox extends React.Component {
         check.isFunction(this.props.handleClickTalismanSelect);
         check.isFunction(this.props.handleClickPetalaceSelect);
         check.isFunction(this.props.handleClickDecorationSelect);
+
+        // Convenience aliases
+        const propWeapon = this.props.buildRenderingProps.weapon;
 
         return element("div",
             {
@@ -609,17 +612,7 @@ class EquipmentSelectionsBox extends React.Component {
             ),
             element(WeaponSelection,
                 {
-                eqName: "Abominable Great Sword",
-                wepAttack: 230,
-                wepAffinity: -15,
-                wepEleStatType: "ice",
-                wepEleStatValue: 20,
-                wepDefenseBonus: 0,
-                wepRampageSkills: ["Affinity Boost I",
-                                   "~~NOTREAL~~",
-                                   "~~NOTREAL~~"],
-                decosArray: [[2, "Charger Jewel 2"],
-                             [1, "~~NOTREAL~~"]],
+                weaponRORenderingProps: this.props.buildRenderingProps.weaponRO,
                 handleClickWeaponSelect:     () => {this.handleClickWeaponSelect();},
                 handleClickWeaponCustomize:  () => {this.handleClickWeaponCustomize();},
                 handleClickDecorationSelect: (decoSlotID) => {this.handleClickDecorationSelect("weapon", decoSlotID);},
