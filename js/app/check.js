@@ -8,6 +8,11 @@ export function isObj(obj) {
     console.assert(res, "Expected an Object type. Instead got:", obj);
     return res;
 }
+export function isObjOrNull(obj) {
+    const res = (typeof obj === "object") || (obj == null);
+    console.assert(res, "Expected an Object type or null. Instead got:", obj);
+    return res;
+}
 
 export function isFunction(obj) {
     const res = (typeof obj === "function");

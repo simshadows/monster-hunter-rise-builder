@@ -57,7 +57,7 @@ class MainView extends React.Component {
 
     render() {
         check.isObj(this.props.buildRenderingProps);
-        check.isArr(this.props.buildRenderingProps.weaponRO.rampSkillNamesArray); // Spot check for structure
+        check.isArr(this.props.buildRenderingProps.weaponRO.rampSkillSelectionsArray); // Spot check for structure
 
         check.isFunction(this.props.handleClickBuffsSelect);
         check.isFunction(this.props.handleClickWeaponSelect);
@@ -211,7 +211,16 @@ class MHRBuilderAppContainer extends React.Component {
         assert(check.isInt(weaponRO.affinity)); // Spot check for structure
         this.setState({
                 view: "main", // Return back to main view
-                build: this.state.build.setWeapon(weaponRO)
+                build: this.state.build.setWeapon(this.state.rawData, weaponRO)
+            });
+        console.log(this.state);
+    }
+    handleSelectRampSkill(position, rampSkillID) {
+        assert(check.isInt(position));
+        assert(check.isStrOrNull(rampSkillID));
+
+        this.setState({
+                build: this.state.build.setRampageSkill(this.state.rawData, position, rampSkillID),
             });
         console.log(this.state);
     }
@@ -225,7 +234,7 @@ class MHRBuilderAppContainer extends React.Component {
 
         this.setState({
                 rawData: rawData,
-                build: this.state.build.setWeapon(rawData.getDefaultWeapon()),
+                build: this.state.build.setWeapon(rawData, rawData.getDefaultWeapon()),
             });
         this.myRefs.weaponSelectView.current.populateWithData(rawData.getWeaponsArray());
 
@@ -255,6 +264,9 @@ class MHRBuilderAppContainer extends React.Component {
                 decos:       (this.state.view == "decoration_select_view"),
             };
 
+
+        const buildRenderingProps = this.state.build.getRenderingProps(this.state.rawData);
+
         return element("div",
             {
             id: "app",
@@ -262,7 +274,7 @@ class MHRBuilderAppContainer extends React.Component {
             },
             element(MainView,
                 {
-                buildRenderingProps:         this.state.build.getRenderingProps(),
+                buildRenderingProps:         buildRenderingProps,
                 handleClickBuffsSelect:      ()       => {this.handleSwitchToBuffsSelect();},
                 handleClickWeaponSelect:     ()       => {this.handleSwitchToWeaponSelect();},
                 handleClickWeaponCustomize:  ()       => {this.handleSwitchToWeaponCustomize();},
@@ -305,7 +317,10 @@ class MHRBuilderAppContainer extends React.Component {
                 handleCloseModal: () => {this.handleReturnToMainView();},
                 },
                 element(WeaponCustomizeView,
-                    null,
+                    {
+                    buildRenderingProps: buildRenderingProps,
+                    handleSelectRampageSkill: (position, rampSkillID) => {this.handleSelectRampSkill(position, rampSkillID)},
+                    },
                     null,
                 ),
             ),

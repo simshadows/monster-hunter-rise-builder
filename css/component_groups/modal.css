@@ -59,7 +59,7 @@ div.modal-utility-bar-close-button:hover {
 
 div.modal-content {
     flex: 1 0 0;
-    padding: 8px 15px 15px 15px;
+    padding: 15px 15px 15px 15px;
     box-sizing: border-box;
 
     display: flex;

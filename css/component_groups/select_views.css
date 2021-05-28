@@ -119,3 +119,21 @@ div.selection-table-wrap-box {
     width: auto;
 }
 
+/*** Weapon Customize View ***/
+
+div.weapon-customize-view-select-box {
+    background: lightgrey;
+    padding: 5px;
+}
+div.weapon-customize-view-select-heading-box {
+    padding: 2px;
+    font-weight: bold;
+}
+div.weapon-customize-view-select-content-box {
+    padding: 2px;
+}
+
+#weapon-customize-view-ramp-select-box {
+
+}
+

@@ -91,6 +91,9 @@ div.equip-weapon-ramp-box {
     font-size: 14px;
     background: white;
 }
+div.equip-weapon-unused-ramp-box {
+    color: lightgrey;
+}
 
 div.equip-box {
     display: flex;

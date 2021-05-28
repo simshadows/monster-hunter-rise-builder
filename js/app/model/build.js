@@ -6,7 +6,8 @@
 import {
     isObj,
     isInt,
-    assert,
+    isStrOrNull,
+    isMap,
 } from "../check.js";
 import {
     isWeaponCategoryStr,
@@ -14,51 +15,97 @@ import {
     toNameFilterString,
 } from "../common.js";
 
+const assert = console.assert;
+
 class Build {
 
     _validateState() {
-        if (this.weaponRO !== null) {
-            assert(isObj(this.weaponRO));
-            assert(isInt(this.weaponRO.affinity)); // Spot check for structure
+        if (this._weaponRO !== null) {
+            assert(isObj(this._weaponRO));
+            assert(isInt(this._weaponRO.affinity)); // Spot check for structure
         }
     }
     _validateWeaponNotNull() {
-        if (this.weaponRO === null) {
+        if (this._weaponRO === null) {
             throw new Error("Cannot call this method when weapon is null.");
         }
     }
 
+    _initWeaponRampSkillSelections() {
+        const numSlots = this._weaponRO.rampSkills.length;
+        return new Array(numSlots).fill(null); // Array of nulls
+    }
+
     constructor(weaponObj) {
-        this.weaponRO = weaponObj; // Object from the databasea, or null
+        // Equipment Selections
+        this._weaponRO = weaponObj; // Object from the databasea, or null
+        this._weaponRampSkillSelections = null; // Initialize later
 
         this._validateState();
     }
 
     // Usefully returns self for use in React state transitions.
-    setWeapon(weaponObj) {
-        this.weaponRO = weaponObj;
+    setWeapon(db, weaponObj) {
+        assert(isObj(db));
+        assert(isMap(db.readonly.weapons.greatsword)); // Spot check for structure
+
+        this._weaponRO = weaponObj;
+        this._validateWeaponNotNull();
+        this._weaponRampSkillSelections = this._initWeaponRampSkillSelections();
         return this;
     }
 
-    // THIS WILL ONLY SUCCEED IF this.weaponRO IS NOT NULL
-    getRenderingProps() {
+    // Usefully returns self for use in React state transitions.
+    setRampageSkill(db, position, rampageSkillID) {
+        assert(isObj(db));
+        assert(isMap(db.readonly.weapons.greatsword)); // Spot check for structure
+        assert(isInt(position));
+        assert(isStrOrNull(rampageSkillID));
+        this._validateWeaponNotNull();
+
+        assert((position >= 0) && (position < this._weaponRampSkillSelections.length));
+        // TODO: Verify if the rampage skill ID is valid?
+
+        this._weaponRampSkillSelections[position] = db.readonly.weaponRampSkills.getRampSkill(rampageSkillID);
+        return this;
+    }
+
+    // THIS WILL ONLY SUCCEED IF this._weaponRO IS NOT NULL
+    getRenderingProps(db) {
+        assert(isObj(db));
+        assert(isMap(db.readonly.weapons.greatsword)); // Spot check for structure
+
         this._validateWeaponNotNull();
 
         return {
                 weaponRO: {
-                    name: this.weaponRO.name,
-                    attack: this.weaponRO.attack,
-                    affinity: this.weaponRO.affinity,
-                    defense: this.weaponRO.defense,
-                    eleStatType: this.weaponRO.eleStatType,
-                    eleStatValue: this.weaponRO.eleStatValue,
-                    rampSkillNamesArray: ["Affinity Boost I",
-                                          "~~NOTREAL~~",
-                                          "~~NOTREAL~~"],
+                    name:                     this._weaponRO.name,
+                    attack:                   this._weaponRO.attack,
+                    affinity:                 this._weaponRO.affinity,
+                    defense:                  this._weaponRO.defense,
+                    eleStatType:              this._weaponRO.eleStatType,
+                    eleStatValue:             this._weaponRO.eleStatValue,
+                    rampSkillSelectionsArray: this._getRampSkillSelectionsArray(db),
+                    rampSkillOptionsArray:    this._weaponRO.rampSkills,
                     decosArray: [[2, "Charger Jewel 2"],
                                  [1, "~~NOTREAL~~"]],
                 },
             };
+    }
+
+    _getRampSkillSelectionsArray(db) {
+        assert(isObj(db));
+        assert(isMap(db.readonly.weapons.greatsword)); // Spot check for structure
+
+        const ret = [];
+        for (const rampSkillObj of this._weaponRampSkillSelections) {
+            if (rampSkillObj === null) {
+                ret.push(null);
+            } else {
+                ret.push(rampSkillObj);
+            }
+        }
+        return ret;
     }
 
 }

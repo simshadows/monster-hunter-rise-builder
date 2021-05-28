@@ -178,21 +178,26 @@ async function downloadAllRawWeaponData() {
         };
 }
 
-/*** Verifying Weapon Data Referential Integrity ***/
+/*** Joining Data ***/
 
-function verifyReferencesInWeaponData(weaponData, rampSkillsData) {
+function joinRampSkillObjsToWeaponData(weaponData, rampSkillsData) {
     assert(isObj(weaponData));
     assert(rampSkillsData instanceof RampageSkillsData);
     for (const [categoryID, weaponDataMap] of Object.entries(weaponData)) {
         for (const [weaponID, weaponDataObj] of weaponDataMap.entries()) {
-            for (const rampSkillOptionsArray of weaponDataObj.rampSkills) {
-                for (const rampSkillID of rampSkillOptionsArray) {
+            const newRampArray = [];
+            for (const rampSkillRampArray of weaponDataObj.rampSkills) {
+                const newRampSubArray = [];
+                for (const rampSkillID of rampSkillRampArray) {
                     assert(
                         rampSkillsData.isValidRampSkillID(rampSkillID),
                         "Invalid rampage skill ID '" + rampSkillID + "' from " + categoryID + " " + weaponID
                     );
+                    newRampSubArray.push(rampSkillsData.getRampSkill(rampSkillID));
                 }
+                newRampArray.push(newRampSubArray);
             }
+            weaponDataObj.rampSkills = newRampArray;
         }
     }
 }
@@ -210,8 +215,8 @@ class GameData {
         const weaponData = await downloadAllRawWeaponData();
         const rampSkillsData = new RampageSkillsData()
 
-        // Check referential integrity
-        verifyReferencesInWeaponData(weaponData, rampSkillsData);
+        // Replace all ramp skill IDs with ramp skill objects
+        joinRampSkillObjsToWeaponData(weaponData, rampSkillsData);
 
         // Return Data
         const obj = new GameData("hello smish");

@@ -10,7 +10,6 @@ import {
     assert,
 } from "../../check.js";
 
-
 function generateEleMap(idPrefix, name) {
     return new Map([
         [idPrefix + "b1", {
@@ -167,6 +166,11 @@ class RampageSkillsData {
                 ...generateStatMap("sle", "Sleep"),
                 ...generateStatMap("bla", "Blast"),
             ]);
+
+        // For convenience, we also attach IDs to each object
+        for (const [rampSkillID, rampSkillObj] of this._dataRO.entries()) {
+            rampSkillObj.id = rampSkillID;
+        }
     }
 
     isValidRampSkillID(rampSkillID) {

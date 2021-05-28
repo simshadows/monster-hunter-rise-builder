@@ -117,20 +117,26 @@ function BuffsSelection(props) {
 /*** Weapon ***/
 
 function EquipWeaponInfoBox(props) {
-    check.isStr(props.eqName);
-    assert(props.eqName.length > 0);
-    check.isInt(props.wepAttack);
-    assert(props.wepAttack > 0);
-    check.isInt(props.wepAffinity);
-    assert((props.wepAffinity >= -100) && (props.wepAffinity <= 100));
-    assert(isEleStatStr(props.wepEleStatType));
-    check.isInt(props.wepEleStatValue);
-    assert(props.wepEleStatValue >= 0);
-    check.isInt(props.wepDefenseBonus);
-    check.isArr(props.wepRampageSkills);
-    assert(props.wepDefenseBonus >= 0);
-    // TODO: Sharpness?
+    // Convenience Alias
+    const weaponRO = props.weaponRORenderingProps;
+
+    check.isObj(props.weaponRORenderingProps);
     check.isFunction(props.onClick);
+
+    // Check structure of props.weaponRORenderingProps
+    check.isStr(weaponRO.name);
+    assert(weaponRO.name.length > 0);
+    check.isInt(weaponRO.attack);
+    assert(weaponRO.attack > 0);
+    check.isInt(weaponRO.affinity);
+    assert((weaponRO.affinity >= -100) && (weaponRO.affinity <= 100));
+    assert(isEleStatStr(weaponRO.eleStatType));
+    check.isInt(weaponRO.eleStatValue);
+    assert(weaponRO.eleStatValue >= 0);
+    check.isInt(weaponRO.defense);
+    assert(weaponRO.defense >= 0);
+    check.isArr(weaponRO.rampSkillSelectionsArray);
+    // TODO: Sharpness?
 
     function statBox(text, value) {
         return element("div",
@@ -140,17 +146,28 @@ function EquipWeaponInfoBox(props) {
     }
 
     const rampageSkillBoxes = [];
-    for (let rampageSkillName of props.wepRampageSkills) {
-        check.isStr(rampageSkillName);
+    for (let rampageSkillObj of weaponRO.rampSkillSelectionsArray) {
+        check.isObjOrNull(rampageSkillObj);
 
-        rampageSkillBoxes.push(
-            element("div",
-                {
-                className: "equip-weapon-ramp-box clipsafe",
-                },
-                clipsafeP(rampageSkillName),
-            )
-        );
+        if (rampageSkillObj === null) {
+            rampageSkillBoxes.push(
+                element("div",
+                    {
+                    className: "equip-weapon-ramp-box equip-weapon-unused-ramp-box clipsafe",
+                    },
+                    clipsafeP("No Ramp Skill"),
+                )
+            );
+        } else {
+            rampageSkillBoxes.push(
+                element("div",
+                    {
+                    className: "equip-weapon-ramp-box clipsafe",
+                    },
+                    clipsafeP(rampageSkillObj.name),
+                )
+            );
+        }
     }
 
     return element("div",
@@ -161,7 +178,7 @@ function EquipWeaponInfoBox(props) {
             {
             className: "equip-name-box clipsafe",
             },
-            clipsafeP(element("b", null, props.eqName)),
+            clipsafeP(element("b", null, weaponRO.name)),
         ),
         element("div",
             {
@@ -171,10 +188,10 @@ function EquipWeaponInfoBox(props) {
                 {
                 className: "equip-weapon-stats-group-box",
                 },
-                statBox("\u2694\ufe0f ", parseInt(props.wepAttack)),
-                statBox("\ud83d\udca2 ", parseInt(props.wepAffinity) + "%"),
-                statBox(eleStatStrToEmoji(props.wepEleStatType) + " ", parseInt(props.wepEleStatValue)),
-                statBox("\ud83d\udee1\ufe0f ", parseInt(props.wepDefenseBonus)),
+                statBox("\u2694\ufe0f ", parseInt(weaponRO.attack)),
+                statBox("\ud83d\udca2 ", parseInt(weaponRO.affinity) + "%"),
+                statBox(eleStatStrToEmoji(weaponRO.eleStatType) + " ", parseInt(weaponRO.eleStatValue)),
+                statBox("\ud83d\udee1\ufe0f ", parseInt(weaponRO.defense)),
             ),
             element("div",
                 {
@@ -195,14 +212,11 @@ function EquipWeaponInfoBox(props) {
 
 function WeaponSelection(props) {
     check.isObj(props.weaponRORenderingProps);
-    check.isArr(props.weaponRORenderingProps.rampSkillNamesArray); // Spot check for structure
+    check.isArr(props.weaponRORenderingProps.rampSkillSelectionsArray); // Spot check for structure
 
     check.isFunction(props.handleClickWeaponSelect);
     check.isFunction(props.handleClickWeaponCustomize);
     check.isFunction(props.handleClickDecorationSelect);
-
-    // Convenience alias
-    const weaponRO = props.weaponRORenderingProps;
 
     return element("div",
         {
@@ -221,13 +235,7 @@ function WeaponSelection(props) {
             ),
             element(EquipWeaponInfoBox,
                 {
-                    eqName: weaponRO.name,
-                    wepAttack: weaponRO.attack,
-                    wepAffinity: weaponRO.affinity,
-                    wepEleStatType: weaponRO.eleStatType,
-                    wepEleStatValue: weaponRO.eleStatValue,
-                    wepDefenseBonus: weaponRO.defense,
-                    wepRampageSkills: weaponRO.rampSkillNamesArray,
+                    weaponRORenderingProps: props.weaponRORenderingProps,
                     onClick: (e) => {props.handleClickWeaponCustomize(e)},
                 },
                 null,
@@ -235,7 +243,7 @@ function WeaponSelection(props) {
         ),
         element(EquipDecosWrapBox,
             {
-                decosArray: weaponRO.decosArray,
+                decosArray: props.weaponRORenderingProps.decosArray,
                 handleClickSelect: (decoSlotID) => {props.handleClickDecorationSelect(decoSlotID);},
             },
             null,
@@ -585,7 +593,7 @@ class EquipmentSelectionsBox extends React.Component {
 
     render() {
         check.isObj(this.props.buildRenderingProps);
-        check.isArr(this.props.buildRenderingProps.weaponRO.rampSkillNamesArray); // Spot check for structure
+        check.isArr(this.props.buildRenderingProps.weaponRO.rampSkillSelectionsArray); // Spot check for structure
 
         check.isFunction(this.props.handleClickBuffsSelect);
         check.isFunction(this.props.handleClickWeaponSelect);
