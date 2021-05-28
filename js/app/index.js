@@ -23,15 +23,13 @@ import EquipmentSelectionsBox from "./component_groups/main_view/equipment_selec
 import CalculationResultsBox from "./component_groups/main_view/calculation_results_box.js";
 import UtilBox from "./component_groups/main_view/util_box.js";
 
-import {
-    BuffsSelectView,
-    WeaponSelectView,
-    WeaponCustomizeView,
-    ArmourSelectView,
-    TalismanSelectView,
-    PetalaceSelectView,
-    DecorationSelectView,
-} from "./component_groups/select_views.js";
+import {WeaponSelectView} from "./component_groups/select_views/weapon_select_view.js";
+import {WeaponCustomizeView} from "./component_groups/select_views/weapon_customize_view.js";
+import {ArmourSelectView} from "./component_groups/select_views/armour_select_view.js";
+import {TalismanSelectView} from "./component_groups/select_views/talisman_select_view.js";
+import {BuffsSelectView} from "./component_groups/select_views/buffs_select_view.js";
+import {PetalaceSelectView} from "./component_groups/select_views/petalace_select_view.js";
+import {DecorationSelectView} from "./component_groups/select_views/decoration_select_view.js";
 
 const element = React.createElement;
 const assert = console.assert;
