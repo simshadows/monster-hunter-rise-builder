@@ -14,6 +14,7 @@ import {
     isDecoEquippableSlotStr,
     br,
 } from "./common.js";
+import {Build} from "./model/build.js";
 
 import Modal from "./component_groups/modal.js";
 
@@ -143,7 +144,10 @@ class MHRBuilderAppContainer extends React.Component {
 
                 // Two states: Either it's null, or it's a fully-constructed raw data object. Don't modify it once it's built.
                 rawData: null,
+
+                build: new Build(null),
             };
+        console.log(this.state);
 
         this.myRefs = {
                 weaponSelectView: React.createRef(),
@@ -203,16 +207,29 @@ class MHRBuilderAppContainer extends React.Component {
         this.setState({view: "main"});
     }
 
+    handleSelectWeapon(weaponRO) {
+        assert(check.isInt(weaponRO.affinity)); // Spot check for structure
+        this.setState({
+                view: "main", // Return back to main view
+                build: this.state.build.setWeapon(weaponRO)
+            });
+        console.log(this.state);
+    }
+
     /* Inherited Methods */
 
     async componentDidMount() {
         document.addEventListener("keydown", this.handleKeypress);
 
         const rawData = await downloadRawData();
-        this.setState({rawData: rawData});
-        console.log(rawData.readonly);
 
+        this.setState({
+                rawData: rawData,
+                build: this.state.build.setWeapon(rawData.getDefaultWeapon()),
+            });
         this.myRefs.weaponSelectView.current.populateWithData(rawData.getWeaponsArray());
+
+        console.log(this.state);
     }
     componentWillUnmount() {
         // TODO: Verify event removal matching?
@@ -275,6 +292,7 @@ class MHRBuilderAppContainer extends React.Component {
                 element(WeaponSelectView,
                     {
                     ref: this.myRefs.weaponSelectView,
+                    handleSelectWeapon: (weaponRO) => {this.handleSelectWeapon(weaponRO)},
                     },
                     null,
                 ),

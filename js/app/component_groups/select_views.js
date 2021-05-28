@@ -112,10 +112,11 @@ class SelectionTable extends React.Component {
         ]);
     */
 
-    handleRowClick(e, weaponData) {
+    handleRowClick(e, weaponRO) {
+        assert(check.isInt(weaponRO.affinity)); // Spot check for structure
+
         e.stopPropagation();
-        console.log(weaponData.name);
-        console.log(weaponData);
+        this.props.handleRowClick(weaponRO);
     }
 
     // Logically static
@@ -177,6 +178,7 @@ class SelectionTable extends React.Component {
 
     render() {
         check.isObj(this.props.dataArray);
+        check.isFunction(this.props.handleRowClick);
 
         const headerRow = element("tr",
                 {
@@ -259,6 +261,10 @@ class WeaponSelectView extends React.Component {
         this.setState({allWeapons: allWeapons});
     }
 
+    handleSelectWeapon(weaponRO) {
+        this.props.handleSelectWeapon(weaponRO);
+    }
+
     handleNameFilterTextChange(newText) {
         check.isStr(newText);
         this.setState({filterByName: toNameFilterString(newText)});
@@ -338,8 +344,8 @@ class WeaponSelectView extends React.Component {
         if (this.state.allWeapons === null) {
             return "Error: You shouldn't be able to see this screen before the data is loaded.";
         }
-
         check.isStr(this.state.filterByName);
+        check.isFunction(this.props.handleSelectWeapon);
 
         const filteredWeaponsArray = this._getFilteredWeaponsArray();
 
@@ -378,6 +384,7 @@ class WeaponSelectView extends React.Component {
             element(SelectionTable,
                 {
                 dataArray: filteredWeaponsArray,
+                handleRowClick: (weaponRO) => {this.handleSelectWeapon(weaponRO)},
                 },
                 null,
             ),

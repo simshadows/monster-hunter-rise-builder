@@ -198,6 +198,9 @@ class GameData {
         }
         return ret;
     }
+    getDefaultWeapon() {
+        return this.readonly.weapons.greatsword.get("1a");
+    }
 }
 
 // Convenience
