@@ -1,7 +1,155 @@
 {
+    "Kamura Tree": {
+        "1a": {
+            "rarity": 1,
+            "endlineTag": "",
+
+            "name": "Kamura Cleaver I",
+            "attack": 50,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "none",
+            "eleStatValue": 0,
+
+            "rampSkills": [
+                ["att1", "aff2", "def1"]
+            ],
+
+            "maxSharpness": [50, 90, 100, 10, 0, 0]
+        },
+        "1b": {
+            "rarity": 1,
+            "endlineTag": "",
+
+            "name": "Kamura Cleaver II",
+            "attack": 60,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "none",
+            "eleStatValue": 0,
+
+            "rampSkills": [
+                ["att1", "aff2", "def1"]
+            ],
+
+            "maxSharpness": [60, 70, 110, 10, 0, 0]
+        },
+        "1c": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Kamura Cleaver III",
+            "attack": 90,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "none",
+            "eleStatValue": 0,
+
+            "rampSkills": [
+                ["att1", "aff2", "def2"]
+            ],
+
+            "maxSharpness": [70, 70, 90, 70, 0, 0]
+        },
+        "1d": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Kamura Cleaver IV",
+            "attack": 140,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "none",
+            "eleStatValue": 0,
+
+            "rampSkills": [
+                ["att2", "aff2", "def2"]
+            ],
+
+            "maxSharpness": [60, 80, 80, 20, 60, 0]
+        },
+        "1e": {
+            "rarity": 4,
+            "endlineTag": "",
+
+            "name": "Kamura Cleaver V",
+            "attack": 150,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2],
+            "eleStatType": "none",
+            "eleStatValue": 0,
+
+            "rampSkills": [
+                ["aff3", "def2", "mr"]
+            ],
+
+            "maxSharpness": [60, 80, 90, 40, 70, 10]
+        },
+        "1f": {
+            "rarity": 5,
+            "endlineTag": "hr",
+
+            "name": "Kamura Ninja Cleaver",
+            "attack": 190,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2,1],
+            "eleStatType": "none",
+            "eleStatValue": 0,
+
+            "rampSkills": [
+                ["aff4", "def2", "mr"]
+            ],
+
+            "maxSharpness": [40, 90, 60, 60, 80, 20]
+        }
+    },
     "Goss Harag Tree": {
+        "2a": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Gossblade I",
+            "attack": 170,
+            "affinity": -15,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "ice",
+            "eleStatValue": 15,
+
+            "rampSkills": [
+                ["aff1", "ice1", "bs"]
+            ],
+
+            "maxSharpness": [100, 30, 90, 70, 10, 0]
+        },
+        "2b": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Gossblade II",
+            "attack": 200,
+            "affinity": -15,
+            "defense": 0,
+            "decoSlots": [2],
+            "eleStatType": "ice",
+            "eleStatValue": 17,
+
+            "rampSkills": [
+                ["aff1", "ice2", "bs"]
+            ],
+
+            "maxSharpness": [100, 30, 110, 40, 70, 0]
+        },
         "2c": {
             "rarity": 6,
+            "endlineTag": "hr",
+
             "name": "Abominable Great Sword",
             "attack": 230,
             "affinity": -15,
@@ -20,6 +168,8 @@
     "Tigrex Tree": {
         "6c": {
             "rarity": 6,
+            "endlineTag": "hr",
+
             "name": "Tigrex Great Sword",
             "attack": 210,
             "affinity": -15,
@@ -38,6 +188,8 @@
     "Nargacuga Tree": {
         "10c": {
             "rarity": 6,
+            "endlineTag": "hr",
+
             "name": "Dark of Night",
             "attack": 180,
             "affinity": 35,
@@ -56,6 +208,8 @@
     "Royal Ludroth Tree": {
         "27c": {
             "rarity": 5,
+            "endlineTag": "hr",
+
             "name": "Cataclysm Blade",
             "attack": 170,
             "affinity": 0,
@@ -74,6 +228,8 @@
     "Rampage Tree": {
         "41e": {
             "rarity": 6,
+            "endlineTag": "hr",
+
             "name": "Rampage Cleaver V",
             "attack": 200,
             "affinity": 0,

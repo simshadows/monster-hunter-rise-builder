@@ -133,7 +133,7 @@ class SelectionTable extends React.Component {
 
     // Logically static
     _renderRow(weaponData) {
-        const specialMechStr = (weaponData.maxSharpness === undefined) ? "" : "Sharpness: " + weaponData.maxSharpness.toString();
+        const specialMechStr = (weaponData.maxSharpness === undefined) ? "" : "MaxSharpness: " + weaponData.maxSharpness.toString();
 
         return element("tr",
             {
@@ -243,6 +243,7 @@ class WeaponSelectView extends React.Component {
                 allWeapons: null,
                 filterByName: "", // Empty string by default
                 filterByCategory: "", // Empty string, or a weapon category string
+                filterByEndlineTag: "", // Empty string, or a weapon endline tag string
             };
     }
 
@@ -272,10 +273,22 @@ class WeaponSelectView extends React.Component {
         }
     }
 
+    handleEndlineTagFilterCheckboxChange(e) {
+        if (this.state.filterByEndlineTag == "hr") {
+            this.setState({filterByEndlineTag: ""});
+        } else {
+            this.setState({filterByEndlineTag: "hr"});
+        }
+    }
+
     _getFilteredWeaponsArray() {
         const op = (element) => {
                 return (
-                    element.filterHelpers.nameLower.includes(this.state.filterByName)
+                    (
+                        element.filterHelpers.nameLower.includes(this.state.filterByName)
+                        || element.filterHelpers.treeNameLower.includes(this.state.filterByName)
+                    )
+                    && ((this.state.filterByEndlineTag == "") || (element.endlineTag == this.state.filterByEndlineTag))
                     && ((this.state.filterByCategory == "") || (element.category == this.state.filterByCategory))
                 );
             };
@@ -288,6 +301,34 @@ class WeaponSelectView extends React.Component {
             iconImg: iconImg,
             isSelected: (this.state.filterByCategory == weaponCategory),
             onClick: () => {this.handleCategoryFilterButton(weaponCategory)},
+            },
+            null,
+        );
+    }
+
+    _renderEndlineFilterBox() {
+        return element("div",
+            {
+            className: "select-view-endline-filter-box",
+            },
+            element("label",
+                null,
+                element("input",
+                    {
+                    type: "checkbox",
+                    checked: (this.state.filterByEndlineTag == "hr"),
+                    onChange: (e) => {this.handleEndlineTagFilterCheckboxChange(e)},
+                    },
+                    null,
+                ),
+                "HR Endline Only",
+            ),
+        );
+    }
+    _renderEmptyEndlineFilterBox() {
+        return element("div",
+            {
+            className: "select-view-endline-filter-box",
             },
             null,
         );
@@ -317,6 +358,7 @@ class WeaponSelectView extends React.Component {
                 {
                 className: "select-view-type-filter-box",
                 },
+                this._renderEndlineFilterBox(),
                 this._renderCategoryFilterButton("greatsword", "./images/placeholders/weapon_small_greatsword.webp"),
                 this._renderCategoryFilterButton("longsword", "./images/placeholders/weapon_small_longsword.webp"),
                 this._renderCategoryFilterButton("swordandshield", "./images/placeholders/weapon_small_swordandshield.webp"),
@@ -331,6 +373,7 @@ class WeaponSelectView extends React.Component {
                 this._renderCategoryFilterButton("lightbowgun", "./images/placeholders/weapon_small_lightbowgun.webp"),
                 this._renderCategoryFilterButton("heavybowgun", "./images/placeholders/weapon_small_heavybowgun.webp"),
                 this._renderCategoryFilterButton("bow", "./images/placeholders/weapon_small_bow.webp"),
+                this._renderEmptyEndlineFilterBox(),
             ),
             element(SelectionTable,
                 {

@@ -2,6 +2,8 @@
     "Nargacuga Tree": {
         "2c": {
             "rarity": 6,
+            "endlineTag": "hr",
+
             "name": "Evening Calm",
             "attack": 190,
             "affinity": 40,

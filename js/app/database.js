@@ -14,6 +14,7 @@ import {
 import {
     sleep,
     isWeaponCategoryStr,
+    isWeaponEndlineTagStr,
     isEleStatStr,
     toNameFilterString,
 } from "./common.js";
@@ -38,6 +39,8 @@ function validateWeaponData(weaponData) {
     assert(isWeaponCategoryStr(weaponData.category), "Category must be valid.");
 
     assert(isInt(weaponData.rarity), "Rarity must be an integer.");
+
+    assert(isWeaponEndlineTagStr(weaponData.endlineTag), "Endline tag must be valid.");
 
     assert(isNonEmptyStr(weaponData.name), "Name must be a non-empty string.");
 
@@ -115,6 +118,7 @@ async function downloadRawWeaponData(category, path, op) {
             // Merge in helper strings for filter functions
             weaponData.filterHelpers = {};
             weaponData.filterHelpers.nameLower = toNameFilterString(weaponData.name);
+            weaponData.filterHelpers.treeNameLower = toNameFilterString(treeName);
 
             // Validate Common Data
             validateWeaponData(weaponData);

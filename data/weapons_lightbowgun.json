@@ -2,6 +2,8 @@
     "Kamura Tree": {
         "1f": {
             "rarity": 5,
+            "endlineTag": "hr",
+
             "name": "Kamura Ninja L. Bowgun",
             "attack": 170,
             "affinity": 0,
@@ -18,6 +20,8 @@
     "Nargacuga Tree": {
         "2c": {
             "rarity": 6,
+            "endlineTag": "hr",
+
             "name": "Night Owl",
             "attack": 180,
             "affinity": 40,

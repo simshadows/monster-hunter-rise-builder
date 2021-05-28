@@ -2,6 +2,8 @@
     "Nargacuga Tree": {
         "11c": {
             "rarity": 6,
+            "endlineTag": "hr",
+
             "name": "Cry in the Night",
             "attack": 170,
             "affinity": 40,

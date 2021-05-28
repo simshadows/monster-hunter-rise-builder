@@ -43,6 +43,11 @@ export function isWeaponCategoryStr(obj) {
     return weaponCategoryStrs.has(obj);
 }
 
+const weaponEndlineTagStrs = new Set(["", "hr"]);
+export function isWeaponEndlineTagStr(obj) {
+    return weaponEndlineTagStrs.has(obj);
+}
+
 const eleStatStrs = new Set(["none", "fire", "water", "thunder", "ice", "dragon", "paralysis", "sleep", "blast"]);
 export function isEleStatStr(obj) {
     return eleStatStrs.has(obj);

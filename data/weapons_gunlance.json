@@ -2,6 +2,8 @@
     "Nargacuga Tree": {
         "19c": {
             "rarity": 6,
+            "endlineTag": "hr",
+
             "name": "Fading Night",
             "attack": 180,
             "affinity": 40,

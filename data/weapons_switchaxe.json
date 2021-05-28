@@ -2,6 +2,8 @@
     "Nargacuga Tree": {
         "24c": {
             "rarity": 6,
+            "endlineTag": "hr",
+
             "name": "Night's Crescent",
             "attack": 180,
             "affinity": 40,

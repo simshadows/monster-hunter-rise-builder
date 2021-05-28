@@ -2,6 +2,8 @@
     "Nargacuga Tree": {
         "22c": {
             "rarity": 6,
+            "endlineTag": "hr",
+
             "name": "Baleful Night",
             "attack": 190,
             "affinity": 30,
