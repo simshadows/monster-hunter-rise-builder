@@ -13,7 +13,7 @@
             "eleStatValue": 0,
 
             "rampSkills": [
-                ["aff4", "def2", "mr"]
+                ["affb4", "defb2", "mr"]
             ]
         }
     },
@@ -31,7 +31,7 @@
             "eleStatValue": 0,
 
             "rampSkills": [
-                ["att3", "aff2", "mr"]
+                ["attb3", "affb2", "mr"]
             ]
         }
     }

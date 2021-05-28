@@ -81,6 +81,7 @@ div.body-inner-box {
     flex-direction: column;
     margin: 0 auto 0 auto;
     padding: 0;
+    width: 100%;
 }
 
 div.main-view-inner-box {

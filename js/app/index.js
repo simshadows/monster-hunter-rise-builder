@@ -6,9 +6,7 @@
  */
 
 import * as check from "./check.js";
-import {
-    downloadRawData,
-} from "./database.js";
+import {downloadRawData} from "./database/database.js";
 import {
     isArmourSlotStr,
     isDecoEquippableSlotStr,

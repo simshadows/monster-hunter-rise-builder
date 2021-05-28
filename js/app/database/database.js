@@ -10,29 +10,34 @@ import {
     isNonEmptyStr,
     isArr,
     assert,
-} from "./check.js";
+} from "../check.js";
 import {
     sleep,
     isWeaponCategoryStr,
     isWeaponEndlineTagStr,
     isEleStatStr,
     toNameFilterString,
-} from "./common.js";
+} from "../common.js";
+import {
+    RampageSkillsData,
+} from "./hardcoded_data/rampage_skills.js";
 
-const WEAPON_GS_PATH  = "../../../data/weapons_greatsword.json";
-const WEAPON_LS_PATH  = "../../../data/weapons_longsword.json";
-const WEAPON_SNS_PATH = "../../../data/weapons_swordandshield.json";
-const WEAPON_DB_PATH  = "../../../data/weapons_dualblades.json";
-const WEAPON_L_PATH   = "../../../data/weapons_lance.json";
-const WEAPON_GL_PATH  = "../../../data/weapons_gunlance.json";
-const WEAPON_H_PATH   = "../../../data/weapons_hammer.json";
-const WEAPON_HH_PATH  = "../../../data/weapons_huntinghorn.json";
-const WEAPON_SA_PATH  = "../../../data/weapons_switchaxe.json";
-const WEAPON_CB_PATH  = "../../../data/weapons_chargeblade.json";
-const WEAPON_IG_PATH  = "../../../data/weapons_insectglaive.json";
-const WEAPON_LBG_PATH = "../../../data/weapons_lightbowgun.json";
-const WEAPON_HBG_PATH = "../../../data/weapons_heavybowgun.json";
-const WEAPON_BOW_PATH = "../../../data/weapons_bow.json";
+/*** Downloading and Validating Weapon Data (without referential integrity checking) ***/
+
+const WEAPON_GS_PATH  = "../../../../data/weapons_greatsword.json";
+const WEAPON_LS_PATH  = "../../../../data/weapons_longsword.json";
+const WEAPON_SNS_PATH = "../../../../data/weapons_swordandshield.json";
+const WEAPON_DB_PATH  = "../../../../data/weapons_dualblades.json";
+const WEAPON_L_PATH   = "../../../../data/weapons_lance.json";
+const WEAPON_GL_PATH  = "../../../../data/weapons_gunlance.json";
+const WEAPON_H_PATH   = "../../../../data/weapons_hammer.json";
+const WEAPON_HH_PATH  = "../../../../data/weapons_huntinghorn.json";
+const WEAPON_SA_PATH  = "../../../../data/weapons_switchaxe.json";
+const WEAPON_CB_PATH  = "../../../../data/weapons_chargeblade.json";
+const WEAPON_IG_PATH  = "../../../../data/weapons_insectglaive.json";
+const WEAPON_LBG_PATH = "../../../../data/weapons_lightbowgun.json";
+const WEAPON_HBG_PATH = "../../../../data/weapons_heavybowgun.json";
+const WEAPON_BOW_PATH = "../../../../data/weapons_bow.json";
 
 // Common stuff
 function validateWeaponData(weaponData) {
@@ -99,7 +104,7 @@ function validateWeaponDataSharpness(weaponData) {
     assert((hitSum > 100), "Hits must add up to at least 100."); // If we find cases where this is wrong, remove this check.
 }
 
-async function downloadRawWeaponData(category, path, op) {
+async function downloadCategoryRawWeaponData(category, path, op) {
     console.assert(isWeaponCategoryStr(category));
     isNonEmptyStr(path);
     isFunction(op);
@@ -137,55 +142,89 @@ async function downloadRawWeaponData(category, path, op) {
     return finalData;
 }
 
+async function downloadAllRawWeaponData() {
+    const validateSimpleMelee  = (weaponData) => {validateWeaponDataSharpness(weaponData);};
+    const validateSimpleRanged = (weaponData) => {};
+
+    const gsDataFut  = downloadCategoryRawWeaponData("greatsword",     WEAPON_GS_PATH,  validateSimpleMelee);
+    const lsDataFut  = downloadCategoryRawWeaponData("longsword",      WEAPON_LS_PATH,  validateSimpleMelee);
+    const snsDataFut = downloadCategoryRawWeaponData("swordandshield", WEAPON_SNS_PATH, validateSimpleMelee);
+    const dbDataFut  = downloadCategoryRawWeaponData("dualblades",     WEAPON_DB_PATH,  validateSimpleMelee);
+    const lDataFut   = downloadCategoryRawWeaponData("lance",          WEAPON_L_PATH,   validateSimpleMelee);
+    const glDataFut  = downloadCategoryRawWeaponData("gunlance",       WEAPON_GL_PATH,  validateSimpleMelee);
+    const hDataFut   = downloadCategoryRawWeaponData("hammer",         WEAPON_H_PATH,   validateSimpleMelee);
+    const hhDataFut  = downloadCategoryRawWeaponData("huntinghorn",    WEAPON_HH_PATH,  validateSimpleMelee);
+    const saDataFut  = downloadCategoryRawWeaponData("switchaxe",      WEAPON_SA_PATH,  validateSimpleMelee);
+    const cbDataFut  = downloadCategoryRawWeaponData("chargeblade",    WEAPON_CB_PATH,  validateSimpleMelee);
+    const igDataFut  = downloadCategoryRawWeaponData("insectglaive",   WEAPON_IG_PATH,  validateSimpleMelee);
+    const lbgDataFut = downloadCategoryRawWeaponData("lightbowgun",    WEAPON_LBG_PATH, validateSimpleRanged);
+    const hbgDataFut = downloadCategoryRawWeaponData("heavybowgun",    WEAPON_HBG_PATH, validateSimpleRanged);
+    const bowDataFut = downloadCategoryRawWeaponData("bow",            WEAPON_BOW_PATH, validateSimpleRanged);
+    return {
+            greatsword:     await gsDataFut,
+            longsword:      await lsDataFut,
+            swordandshield: await snsDataFut,
+            dualblades:     await dbDataFut,
+            lance:          await lDataFut,
+            gunlance:       await glDataFut,
+            hammer:         await hDataFut,
+            huntinghorn:    await hhDataFut,
+            switchaxe:      await saDataFut,
+            chargeblade:    await cbDataFut,
+            insectglaive:   await igDataFut,
+            lightbowgun:    await lbgDataFut,
+            heavybowgun:    await hbgDataFut,
+            bow:            await bowDataFut,
+        };
+}
+
+/*** Verifying Weapon Data Referential Integrity ***/
+
+function verifyReferencesInWeaponData(weaponData, rampSkillsData) {
+    assert(isObj(weaponData));
+    assert(rampSkillsData instanceof RampageSkillsData);
+    for (const [categoryID, weaponDataMap] of Object.entries(weaponData)) {
+        for (const [weaponID, weaponDataObj] of weaponDataMap.entries()) {
+            for (const rampSkillOptionsArray of weaponDataObj.rampSkills) {
+                for (const rampSkillID of rampSkillOptionsArray) {
+                    assert(
+                        rampSkillsData.isValidRampSkillID(rampSkillID),
+                        "Invalid rampage skill ID '" + rampSkillID + "' from " + categoryID + " " + weaponID
+                    );
+                }
+            }
+        }
+    }
+}
+
+/*** GameData Class ***/
+
 class GameData {
 
     // Builder Function
     static async downloadRawData() {
         //await sleep(3000); // For testing
 
-        const validateSimpleMelee  = (weaponData) => {validateWeaponDataSharpness(weaponData);};
-        const validateSimpleRanged = (weaponData) => {};
+        // Pull all data first
+        // Also verify data, except we verify referential integrity later.
+        const weaponData = await downloadAllRawWeaponData();
+        const rampSkillsData = new RampageSkillsData()
 
-        const gsDataFut  = downloadRawWeaponData("greatsword",     WEAPON_GS_PATH,  validateSimpleMelee);
-        const lsDataFut  = downloadRawWeaponData("longsword",      WEAPON_LS_PATH,  validateSimpleMelee);
-        const snsDataFut = downloadRawWeaponData("swordandshield", WEAPON_SNS_PATH, validateSimpleMelee);
-        const dbDataFut  = downloadRawWeaponData("dualblades",     WEAPON_DB_PATH,  validateSimpleMelee);
-        const lDataFut   = downloadRawWeaponData("lance",          WEAPON_L_PATH,   validateSimpleMelee);
-        const glDataFut  = downloadRawWeaponData("gunlance",       WEAPON_GL_PATH,  validateSimpleMelee);
-        const hDataFut   = downloadRawWeaponData("hammer",         WEAPON_H_PATH,   validateSimpleMelee);
-        const hhDataFut  = downloadRawWeaponData("huntinghorn",    WEAPON_HH_PATH,  validateSimpleMelee);
-        const saDataFut  = downloadRawWeaponData("switchaxe",      WEAPON_SA_PATH,  validateSimpleMelee);
-        const cbDataFut  = downloadRawWeaponData("chargeblade",    WEAPON_CB_PATH,  validateSimpleMelee);
-        const igDataFut  = downloadRawWeaponData("insectglaive",   WEAPON_IG_PATH,  validateSimpleMelee);
-        const lbgDataFut = downloadRawWeaponData("lightbowgun",    WEAPON_LBG_PATH, validateSimpleRanged);
-        const hbgDataFut = downloadRawWeaponData("heavybowgun",    WEAPON_HBG_PATH, validateSimpleRanged);
-        const bowDataFut = downloadRawWeaponData("bow",            WEAPON_BOW_PATH, validateSimpleRanged);
+        // Check referential integrity
+        verifyReferencesInWeaponData(weaponData, rampSkillsData);
 
-        const obj = new GameData("hello");
+        // Return Data
+        const obj = new GameData("hello smish");
         obj.readonly = {
-            weapons: {
-                greatsword: await gsDataFut,
-                longsword: await lsDataFut,
-                swordandshield: await snsDataFut,
-                dualblades: await dbDataFut,
-                lance: await lDataFut,
-                gunlance: await glDataFut,
-                hammer: await hDataFut,
-                huntinghorn: await hhDataFut,
-                switchaxe: await saDataFut,
-                chargeblade: await cbDataFut,
-                insectglaive: await igDataFut,
-                lightbowgun: await lbgDataFut,
-                heavybowgun: await hbgDataFut,
-                bow: await bowDataFut,
-            },
+            weaponRampSkills: rampSkillsData,
+            weapons:          weaponData,
         };
 
         return obj;
     }
 
     constructor(magic_phrase) {
-        if (magic_phrase != "hello") {
+        if (magic_phrase != "hello smish") {
             throw new Error("Do not instantiate directly.");
         }
     }

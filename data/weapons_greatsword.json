@@ -13,7 +13,7 @@
             "eleStatValue": 0,
 
             "rampSkills": [
-                ["att1", "aff2", "def1"]
+                ["attb1", "affb2", "defb1"]
             ],
 
             "maxSharpness": [50, 90, 100, 10, 0, 0]
@@ -31,7 +31,7 @@
             "eleStatValue": 0,
 
             "rampSkills": [
-                ["att1", "aff2", "def1"]
+                ["attb1", "affb2", "defb1"]
             ],
 
             "maxSharpness": [60, 70, 110, 10, 0, 0]
@@ -49,7 +49,7 @@
             "eleStatValue": 0,
 
             "rampSkills": [
-                ["att1", "aff2", "def2"]
+                ["attb1", "affb2", "defb2"]
             ],
 
             "maxSharpness": [70, 70, 90, 70, 0, 0]
@@ -67,7 +67,7 @@
             "eleStatValue": 0,
 
             "rampSkills": [
-                ["att2", "aff2", "def2"]
+                ["attb2", "affb2", "defb2"]
             ],
 
             "maxSharpness": [60, 80, 80, 20, 60, 0]
@@ -85,7 +85,7 @@
             "eleStatValue": 0,
 
             "rampSkills": [
-                ["aff3", "def2", "mr"]
+                ["affb3", "defb2", "mr"]
             ],
 
             "maxSharpness": [60, 80, 90, 40, 70, 10]
@@ -103,7 +103,7 @@
             "eleStatValue": 0,
 
             "rampSkills": [
-                ["aff4", "def2", "mr"]
+                ["affb4", "defb2", "mr"]
             ],
 
             "maxSharpness": [40, 90, 60, 60, 80, 20]
@@ -123,7 +123,7 @@
             "eleStatValue": 15,
 
             "rampSkills": [
-                ["aff1", "ice1", "bs"]
+                ["affb1", "iceb1", "bs"]
             ],
 
             "maxSharpness": [100, 30, 90, 70, 10, 0]
@@ -141,7 +141,7 @@
             "eleStatValue": 17,
 
             "rampSkills": [
-                ["aff1", "ice2", "bs"]
+                ["affb1", "iceb2", "bs"]
             ],
 
             "maxSharpness": [100, 30, 110, 40, 70, 0]
@@ -159,7 +159,7 @@
             "eleStatValue": 20,
 
             "rampSkills": [
-                ["aff1", "ice3", "bs"]
+                ["affb1", "iceb3", "bs"]
             ],
 
             "maxSharpness": [100, 30, 100, 40, 70, 10]
@@ -179,7 +179,7 @@
             "eleStatValue": 0,
 
             "rampSkills": [
-                ["att3", "aff2", "bs"]
+                ["attb3", "affb2", "bs"]
             ],
 
             "maxSharpness": [50, 40, 120, 120, 50, 20]
@@ -199,7 +199,7 @@
             "eleStatValue": 0,
 
             "rampSkills": [
-                ["att3", "aff2", "mr"]
+                ["attb3", "affb2", "mr"]
             ],
 
             "maxSharpness": [70, 40, 120, 90, 60, 20]
@@ -219,7 +219,7 @@
             "eleStatValue": 35,
 
             "rampSkills": [
-                ["att3", "wat2", "wbe"]
+                ["attb3", "watb2", "wbe"]
             ],
 
             "maxSharpness": [60, 40, 120, 10, 30, 0]
@@ -239,9 +239,9 @@
             "eleStatValue": 0,
 
             "rampSkills": [
-                ["att3", "ele2", "aff3", "def3", "sht1", "sht2", "sht3"],
-                ["neb", "fir3", "wat3", "thu3", "ice3", "dra3", "poi2", "par2", "sle2", "bla2"],
-                ["atts", "eles", "affs"]
+                ["attb3", "eleb2", "affb3", "defb3", "sht1", "sht2", "sht3"],
+                ["neb", "firx3", "watx3", "thux3", "icex3", "drax3", "poix2", "parx2", "slex2", "blax2"],
+                ["attsu", "elesu", "affsu"]
             ],
 
             "maxSharpness": [50, 70, 50, 50, 70, 10]
