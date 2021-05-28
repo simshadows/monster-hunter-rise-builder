@@ -33,9 +33,12 @@ div.select-view-type-filter-icon-box > img {
     width: 90%;
 }
 div.highlight-select-view-type-filter-icon-box:hover { /* Oh lawdy I need better names */
-    background: rgba(0, 0, 0, 0.5);;
+    background: rgba(0, 0, 0, 0.5);
     /* border: thin solid white; */
     cursor: pointer;
+}
+div.selected-select-view-type-filter-icon-box { /* Oh lawdy I need better names */
+    border: thick solid rgba(255, 0, 0, 0.5);
 }
 
 /*** Name Filter Text Field ***/

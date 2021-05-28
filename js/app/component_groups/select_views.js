@@ -7,6 +7,7 @@
 
 import * as check from "../check.js";
 import {
+    isWeaponCategoryStr,
     isArmourSlotStr,
     isDecoEquippableSlotStr,
     weaponCategoryToName,
@@ -58,7 +59,19 @@ class TypeFilterButton extends React.Component {
 
     render() {
         check.isNonEmptyStr(this.props.iconImg);
+        check.isBool(this.props.isSelected);
         check.isFunction(this.props.onClick);
+
+        const highlightBox = (()=>{
+                const c = (this.props.isSelected) ? " selected-select-view-type-filter-icon-box" : "";
+                return element("div",
+                        {
+                        className: "highlight-select-view-type-filter-icon-box stackinner" + c,
+                        onClick: (e) => {this.handleOnClick(e)},
+                        },
+                        null,
+                    );
+            })();
 
         return element("div",
             {
@@ -71,13 +84,7 @@ class TypeFilterButton extends React.Component {
                 },
                 null,
             ),
-            element("div",
-                {
-                className: "highlight-select-view-type-filter-icon-box stackinner",
-                onClick: (e) => {this.handleOnClick(e)},
-                },
-                null,
-            ),
+            highlightBox,
         );
     }
 }
@@ -234,7 +241,8 @@ class WeaponSelectView extends React.Component {
         super(props);
         this.state = {
                 allWeapons: null,
-                filterByName: "",
+                filterByName: "", // Empty string by default
+                filterByCategory: "", // Empty string, or a weapon category string
             };
     }
 
@@ -255,9 +263,21 @@ class WeaponSelectView extends React.Component {
         this.setState({filterByName: toNameFilterString(newText)});
     }
 
+    handleCategoryFilterButton(weaponCategory) {
+        assert(isWeaponCategoryStr(weaponCategory));
+        if (this.state.filterByCategory != weaponCategory) {
+            this.setState({filterByCategory: weaponCategory});
+        } else {
+            this.setState({filterByCategory: ""});
+        }
+    }
+
     _getFilteredWeaponsArray() {
         const op = (element) => {
-                return element.filterHelpers.nameLower.includes(this.state.filterByName);
+                return (
+                    element.filterHelpers.nameLower.includes(this.state.filterByName)
+                    && ((this.state.filterByCategory == "") || (element.category == this.state.filterByCategory))
+                );
             };
         return this.state.allWeapons.filter(op);
     }
@@ -266,7 +286,8 @@ class WeaponSelectView extends React.Component {
         return element(TypeFilterButton,
             {
             iconImg: iconImg,
-            onClick: () => {console.log("not yet implemented")}, // TODO
+            isSelected: (this.state.filterByCategory == weaponCategory),
+            onClick: () => {this.handleCategoryFilterButton(weaponCategory)},
             },
             null,
         );
