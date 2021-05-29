@@ -108,21 +108,6 @@ div.selection-table-wrap-box {
 .selection-table-body-cell {
     border: thin solid black;
 }
-.selection-table-body-cell-category {
-    width: 150px;
-}
-.selection-table-body-cell-name {
-    width: 280px;
-}
-.selection-table-body-cell-numeric {
-    width: 60px;
-}
-.selection-table-body-cell-deco {
-    width: 80px;
-}
-.selection-table-body-cell-specialmech {
-    width: auto;
-}
 
 /*** Weapon Customize View ***/
 
@@ -138,7 +123,19 @@ div.weapon-customize-view-select-content-box {
     padding: 2px;
 }
 
-#weapon-customize-view-ramp-select-box {
-
+.weapon-selection-table-head-cell-category {
+    width: 150px;
+}
+.weapon-selection-table-head-cell-name {
+    width: 280px;
+}
+.weapon-selection-table-head-cell-numeric {
+    width: 60px;
+}
+.weapon-selection-table-head-cell-deco {
+    width: 80px;
+}
+.weapon-selection-table-head-cell-specialmech {
+    width: auto;
 }
 

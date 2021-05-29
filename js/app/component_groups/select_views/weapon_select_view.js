@@ -8,6 +8,8 @@
 import * as check from "../../check.js";
 import {
     isWeaponCategoryStr,
+    weaponCategoryToName,
+    eleStatStrToEmoji,
     toNameFilterString,
 } from "../../common.js";
 import {
@@ -18,6 +20,65 @@ import {
 
 const element = React.createElement;
 const assert = console.assert;
+
+class WeaponSelectionTable extends React.Component {
+
+    static _cspecHeadRowFormat = [
+            // [Markup Class, Content]
+            ["weapon-selection-table-head-cell-category",    "Category"          ],
+            ["weapon-selection-table-head-cell-name",        "Name"              ],
+            ["weapon-selection-table-head-cell-numeric",     "Attack"            ],
+            ["weapon-selection-table-head-cell-numeric",     "Affinity"          ],
+            ["weapon-selection-table-head-cell-numeric",     "Defense"           ],
+            ["weapon-selection-table-head-cell-numeric",     "Ele/Stat"          ],
+            ["weapon-selection-table-head-cell-deco",        "Slots"             ],
+            ["weapon-selection-table-head-cell-specialmech", "Special Mechanics" ],
+        ];
+
+    // Logically Static
+    _cspecGetRowContent(weaponData) {
+        const specialMechStr = (weaponData.maxSharpness === undefined)
+                               ? ""
+                               : "MaxSharpness: " + weaponData.maxSharpness.toString();
+        return [
+            weaponCategoryToName(weaponData.category),
+            weaponData.name,
+            parseInt(weaponData.attack),
+            parseInt(weaponData.affinity) + "%",
+            parseInt(weaponData.defense),
+            parseInt(weaponData.eleStatValue) + " " + eleStatStrToEmoji(weaponData.eleStatType),
+            weaponData.decoSlots.toString(),
+            specialMechStr,
+        ];
+    }
+
+    _cspecHighlightConditionFn(weaponData) {
+        return weaponData == this.props.currentSelectedWeapon;
+    }
+
+    handleRowClick(weaponRO) {
+        assert(check.isInt(weaponRO.affinity)); // Spot check for structure
+        this.props.handleRowClick(weaponRO);
+    }
+
+    render() {
+        check.isObj(this.props.dataArray);
+        check.isObj(this.props.currentSelectedWeapon);
+        check.isFunction(this.props.handleRowClick);
+
+        return element(SelectionTable,
+            {
+            dataArray:                 this.props.dataArray,
+            handleRowClick:            (weaponRO) => {this.handleRowClick(weaponRO);},
+            cspecHeadRowFormat:        this.constructor._cspecHeadRowFormat,
+            cspecGetRowContent:        (weaponData) => {return this._cspecGetRowContent(weaponData);},
+            cspecHighlightConditionFn: (weaponData) => {return this._cspecHighlightConditionFn(weaponData);},
+            },
+            null,
+        );
+    }
+
+}
 
 class WeaponSelectView extends React.Component {
 
@@ -181,7 +242,7 @@ class WeaponSelectView extends React.Component {
                 this._renderCategoryFilterButton("bow"           ),
                 this._renderEmptyEndlineFilterBox(),
             ),
-            element(SelectionTable,
+            element(WeaponSelectionTable,
                 {
                 dataArray: filteredWeaponsArray,
                 currentSelectedWeapon: this.props.currentSelectedWeapon,

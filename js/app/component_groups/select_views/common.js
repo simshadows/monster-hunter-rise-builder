@@ -6,10 +6,6 @@
  */
 
 import * as check from "../../check.js";
-import {
-    weaponCategoryToName,
-    eleStatStrToEmoji,
-} from "../../common.js";
 
 const element = React.createElement;
 const assert = console.assert;
@@ -86,95 +82,56 @@ class TypeFilterButton extends React.Component {
 
 /*** Common Components: Selection Table ***/
 
+// Highly recommended to specialize this component
 class SelectionTable extends React.Component {
 
-    handleRowClick(e, weaponRO) {
-        assert(check.isInt(weaponRO.affinity)); // Spot check for structure
-
+    handleRowClick(e, unprocessedRowData) {
         e.stopPropagation();
-        this.props.handleRowClick(weaponRO);
+        this.props.handleRowClick(unprocessedRowData);
     }
 
     // Logically static
-    _renderCell(extraClasses, ...content) {
-        check.isStr(extraClasses);
+    _renderRow(unprocessedRowData) {
+        const rowContent = this.props.cspecGetRowContent(unprocessedRowData);
+        check.isArr(rowContent);
 
-        const classNameAppend = (extraClasses.length > 0) ? (" " + extraClasses) : "";
-        return element("th",
-            {
-            className: "selection-table-body-cell" + classNameAppend,
-            },
-            ...content
-        );
-    }
+        const cellElements = [];
+        for (const cellContent of rowContent) {
+            cellElements.push(
+                element("th",
+                    {
+                    className: "selection-table-body-cell",
+                    },
+                    cellContent,
+                ),
+            );
+        }
 
-    // Logically static
-    _renderRow(weaponData, isHighlighted) {
-        const specialMechStr = (weaponData.maxSharpness === undefined) ? "" : "MaxSharpness: " + weaponData.maxSharpness.toString();
-
+        const isHighlighted = this.props.cspecHighlightConditionFn(unprocessedRowData);
         return element("tr",
             {
             className: (isHighlighted) ? "selection-table-body-row-highlighted" : "selection-table-body-row",
-            onClick: (e) => {this.handleRowClick(e, weaponData)},
+            onClick: (e) => {this.handleRowClick(e, unprocessedRowData)},
             },
-            this._renderCell(
-                "selection-table-body-cell-category",
-                weaponCategoryToName(weaponData.category)
-            ),
-            this._renderCell(
-                "selection-table-body-cell-name",
-                weaponData.name
-            ),
-            this._renderCell(
-                "selection-table-body-cell-numeric",
-                parseInt(weaponData.attack)
-            ),
-            this._renderCell(
-                "selection-table-body-cell-numeric",
-                parseInt(weaponData.affinity) + "%"
-            ),
-            this._renderCell(
-                "selection-table-body-cell-numeric",
-                parseInt(weaponData.defense)
-            ),
-            this._renderCell(
-                "selection-table-body-cell-numeric",
-                parseInt(weaponData.eleStatValue) + " " + eleStatStrToEmoji(weaponData.eleStatType)
-            ),
-            this._renderCell(
-                "selection-table-body-cell-deco",
-                weaponData.decoSlots.toString()
-            ),
-            this._renderCell(
-                "selection-table-body-cell-specialmech",
-                specialMechStr
-            ),
+            ...cellElements,
         );
     }
 
     render() {
         check.isObj(this.props.dataArray);
-        check.isObj(this.props.currentSelectedWeapon);
         check.isFunction(this.props.handleRowClick);
+        check.isArr(this.props.cspecHeadRowFormat);
+        check.isFunction(this.props.cspecGetRowContent);
+        check.isFunction(this.props.cspecHighlightConditionFn);
 
-        const headerRow = element("tr",
-                {
-                className: "selection-table-head-row",
-                },
-                element("th", {className: "selection-table-head-cell"}, "Category"),
-                element("th", {className: "selection-table-head-cell"}, "Name"),
-                element("th", {className: "selection-table-head-cell"}, "\u2694\ufe0f"),
-                element("th", {className: "selection-table-head-cell"}, "\ud83d\udca2"),
-                element("th", {className: "selection-table-head-cell"}, "\ud83d\udee1\ufe0f"),
-                element("th", {className: "selection-table-head-cell"}, "Ele/Stat"),
-                element("th", {className: "selection-table-head-cell"}, "Slots"),
-                element("th", {className: "selection-table-head-cell"}, "Special Mechanics"),
-            );
+        const headRowCells = [];
+        for (const [markupClass, content] of this.props.cspecHeadRowFormat) {
+            headRowCells.push(element("th", {className: "selection-table-head-cell " + markupClass}, content));
+        }
 
         const bodyRows = [];
-        for (const weaponData of this.props.dataArray) {
-            // TODO: Verify data structure?
-            bodyRows.push(this._renderRow(weaponData, (this.props.currentSelectedWeapon == weaponData)));
+        for (const unprocessedRowData of this.props.dataArray) {
+            bodyRows.push(this._renderRow(unprocessedRowData));
         }
 
         return element("div",
@@ -189,7 +146,12 @@ class SelectionTable extends React.Component {
                     {
                     className: "selection-table-head",
                     },
-                    headerRow,
+                    element("tr",
+                        {
+                        className: "selection-table-head-row",
+                        },
+                        ...headRowCells,
+                    ),
                 ),
                 element("tbody",
                     null,
