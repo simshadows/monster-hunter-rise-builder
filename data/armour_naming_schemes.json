@@ -1,0 +1,208 @@
+{
+
+
+
+"scheme_1": [
+    "Headgear",
+    "Vest",
+    "Gloves",
+    "Belt",
+    "Pants"
+],
+"scheme_2": [
+    "Helm",
+    "Mail",
+    "Vambraces",
+    "Coil",
+    "Greaves"
+],
+"scheme_3": [
+    "Helm",
+    "Mail",
+    "Braces",
+    "Coil",
+    "Greaves"
+],
+"scheme_4": [
+    "Vizor",
+    "Ribplate",
+    "Creeper",
+    "Folia",
+    "Roots"
+],
+
+
+
+"bnahabra": [
+    "Hat",
+    "Suit",
+    "Gloves",
+    "Coil",
+    "Boots"
+],
+"channeler": [
+    "Hair-tie",
+    "Robe",
+    "Hope",
+    "Obi",
+    "Hakama"
+],
+"chrome_metal": [
+    "---",
+    "---",
+    "---",
+    "Coil",
+    "Boots"
+],
+"death_stench": [
+    "Brain",
+    "Muscle",
+    "Grip",
+    "Bowels",
+    "Heel"
+],
+"flame_seal": [
+    "Seal",
+    "---",
+    "---",
+    "---",
+    "---"
+],
+"golden": [
+    "Headdress",
+    "Haori",
+    "Kote",
+    "Obi",
+    "Hakama"
+],
+"ibushi": [
+    "Ibushi's Helm",
+    "Ibushi Breastplate",
+    "Ibushi's Pauldrons",
+    "Ibushi's Fauld",
+    "Foot of Ibushi"
+],
+"jaggi": [
+    "---",
+    "---",
+    "Gauntlets",
+    "---",
+    "Shinguards"
+],
+"jelly": [
+    "Hat",
+    "Vest",
+    "Gloves",
+    "Coil",
+    "Boots"
+],
+"kaiser": [
+    "Crown",
+    "Mail",
+    "Vambraces",
+    "Coil",
+    "Greaves"
+],
+"kamura": [
+    "Head Scarf",
+    "Garb",
+    "Braces",
+    "Obi",
+    "Leggings"
+],
+"kushala": [
+    "Glare",
+    "Cista",
+    "Grip",
+    "Cocoon",
+    "Crus"
+],
+"mask": [
+    "Mask",
+    "---",
+    "---",
+    "---",
+    "---"
+],
+"medium": [
+    "Hair-tie",
+    "Robe",
+    "Prayer",
+    "Obi",
+    "Hakama"
+],
+"mizuha": [
+    "Cap",
+    "Guards",
+    "Sleeves",
+    "Sash",
+    "Gaiters"
+],
+"narwa": [
+    "Narwa's Helm",
+    "Narwa Breastplate",
+    "Narwa's Pauldrons",
+    "Narwa's Fauld",
+    "Foot of Narwa"
+],
+"rakna_kadaki": [
+    "Helm",
+    "Mail",
+    "Armguards",
+    "Coil",
+    "Greaves"
+],
+"remobra": [
+    "Headgear",
+    "Suit",
+    "Gloves",
+    "Belt",
+    "Feet"
+],
+"rhopessa": [
+    "Vertex",
+    "Thorax",
+    "Brachia",
+    "Elytra",
+    "Crura"
+],
+"shell_studded": [
+    "Hat",
+    "Vest",
+    "Gloves",
+    "Sash",
+    "Sandals"
+],
+"sinister": [
+    "Helm",
+    "Garb",
+    "Gauntlets",
+    "Tassets",
+    "Greaves"
+],
+"slagtoth": [
+    "Hood",
+    "Cloak",
+    "---",
+    "---",
+    "---"
+],
+"uroktor": [
+    "---",
+    "Torso",
+    "---",
+    "Coil",
+    "---"
+],
+"visage": [
+    "Visage",
+    "---",
+    "---",
+    "---",
+    "---"
+]
+
+
+
+}
+

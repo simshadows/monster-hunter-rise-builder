@@ -1,0 +1,3000 @@
+{
+
+
+
+"l0": {
+    "tier": "lr",
+    "rarity": 1,
+    "setName": "Kamura",
+
+    "prefix": "Kamura",
+    "naming_scheme": "kamura",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[], {"divine_blessing"  : 1}],
+        "chest": [[], {"wirebug_whisperer": 1}],
+        "arms":  [[], {"heroics"          : 1}],
+        "waist": [[], {"critical_eye"     : 1}],
+        "legs":  [[], {"wall_runner"      : 1}]
+    },
+    "defenses": {
+        "head":  {"f":1, "w":0, "t":0, "i":0, "d":0},
+        "chest": {"f":1, "w":0, "t":0, "i":0, "d":0},
+        "arms":  {"f":1, "w":0, "t":0, "i":0, "d":0},
+        "waist": {"f":1, "w":0, "t":0, "i":0, "d":0},
+        "legs":  {"f":1, "w":0, "t":0, "i":0, "d":0}
+    }
+},
+"l1": {
+    "tier": "lr",
+    "rarity": 1,
+    "setName": "Leather",
+
+    "prefix": "Leather",
+    "naming_scheme": "scheme_1",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[], {"hunger_resistance": 1}],
+        "chest": [[], {"botanist"         : 1}],
+        "arms":  [[], {"geologist"        : 1}],
+        "waist": [[], {"recovery_up"      : 1}],
+        "legs":  [[], {"geologist"        : 1}]
+    },
+    "defenses": {
+        "head":  {"f":0, "w":0, "t":0, "i":0, "d":0},
+        "chest": {"f":0, "w":0, "t":0, "i":0, "d":0},
+        "arms":  {"f":0, "w":0, "t":0, "i":0, "d":0},
+        "waist": {"f":0, "w":0, "t":0, "i":0, "d":0},
+        "legs":  {"f":0, "w":0, "t":0, "i":0, "d":0}
+    }
+},
+"l2": {
+    "tier": "lr",
+    "rarity": 1,
+    "setName": "Leather",
+
+    "prefix": "Leather",
+    "naming_scheme": "scheme_1",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[], {"hunger_resistance": 1}],
+        "chest": [[], {"botanist"         : 1}],
+        "arms":  [[], {"geologist"        : 1}],
+        "waist": [[], {"recovery_up"      : 1}],
+        "legs":  [[], {"geologist"        : 1}]
+    },
+    "defenses": {
+        "head":  {"f":0, "w":0, "t":0, "i":0, "d":0},
+        "chest": {"f":0, "w":0, "t":0, "i":0, "d":0},
+        "arms":  {"f":0, "w":0, "t":0, "i":0, "d":0},
+        "waist": {"f":0, "w":0, "t":0, "i":0, "d":0},
+        "legs":  {"f":0, "w":0, "t":0, "i":0, "d":0}
+    }
+},
+"l3": {
+    "tier": "lr",
+    "rarity": 1,
+    "setName": "Chainmail",
+
+    "prefix": "Chainmail",
+    "naming_scheme": "scheme_1",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[], {"botanist"         : 1, "defense_boost": 1}],
+        "chest": [[], {"peak_performance" : 1, "defense_boost": 1}],
+        "arms":  [[], {"botanist"         : 1                    }],
+        "waist": [[], {"guard"            : 1                    }],
+        "legs":  [[], {"stamina_surge"    : 1                    }]
+    },
+    "defenses": {
+        "head":  {"f":0, "w":0, "t":1, "i":0, "d":0},
+        "chest": {"f":0, "w":0, "t":1, "i":0, "d":0},
+        "arms":  {"f":0, "w":0, "t":1, "i":0, "d":0},
+        "waist": {"f":0, "w":0, "t":1, "i":0, "d":0},
+        "legs":  {"f":0, "w":0, "t":1, "i":0, "d":0}
+    }
+},
+"l4": {
+    "tier": "lr",
+    "rarity": 1,
+    "setName": "Hunter",
+
+    "prefix": "Hunter's",
+    "naming_scheme": "scheme_2",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[], {"item_prolonger"   : 1                   }],
+        "chest": [[], {"attack_boost"     : 1                   }],
+        "arms":  [[], {"quick_sheath"     : 1                   }],
+        "waist": [[], {"stun_resistance"  : 1                   }],
+        "legs":  [[], {"stun_resistance"  : 1, "attack_boost": 1}]
+    },
+    "defenses": {
+        "head":  {"f":0, "w":0, "t":0, "i":0, "d":0},
+        "chest": {"f":0, "w":0, "t":0, "i":0, "d":0},
+        "arms":  {"f":0, "w":0, "t":0, "i":0, "d":0},
+        "waist": {"f":0, "w":0, "t":0, "i":0, "d":0},
+        "legs":  {"f":0, "w":0, "t":0, "i":0, "d":0}
+    }
+},
+"l5": {
+    "tier": "lr",
+    "rarity": 1,
+    "setName": "Izuchi",
+
+    "prefix": "Izuchi",
+    "naming_scheme": "scheme_3",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[], {"critical_eye"  : 1                     }],
+        "chest": [[], {"critical_eye"  : 1, "recovery_speed": 1}],
+        "arms":  [[], {"constitution"  : 1                     }],
+        "waist": [[], {"critical_eye"  : 1                     }],
+        "legs":  [[], {"recovery_speed": 1                     }]
+    },
+    "defenses": {
+        "head":  {"f":2, "w":-1, "t":-2, "i":0, "d":0},
+        "chest": {"f":2, "w":-1, "t":-2, "i":0, "d":0},
+        "arms":  {"f":2, "w":-1, "t":-2, "i":0, "d":0},
+        "waist": {"f":2, "w":-1, "t":-2, "i":0, "d":0},
+        "legs":  {"f":2, "w":-1, "t":-2, "i":0, "d":0}
+    }
+},
+"l6": {
+    "tier": "lr",
+    "rarity": 1,
+    "setName": "Baggi",
+
+    "prefix": "Baggi",
+    "naming_scheme": "scheme_2",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[], {"ice_attack"      : 1                 }],
+        "chest": [[], {"attack_boost"    : 1                 }],
+        "arms":  [[], {"sleep_resistance": 1, "ice_attack": 1}],
+        "waist": [[], {"sleep_resistance": 1                 }],
+        "legs":  [[], {"attack_boost"    : 1                 }]
+    },
+    "defenses": {
+        "head":  {"f":-4, "w":-1, "t":-1, "i":2, "d":1},
+        "chest": {"f":-4, "w":-1, "t":-1, "i":2, "d":1},
+        "arms":  {"f":-4, "w":-1, "t":-1, "i":2, "d":1},
+        "waist": {"f":-4, "w":-1, "t":-1, "i":2, "d":1},
+        "legs":  {"f":-4, "w":-1, "t":-1, "i":2, "d":1}
+    }
+},
+"l7": {
+    "tier": "lr",
+    "rarity": 1,
+    "setName": "Arzuros",
+
+    "prefix": "Arzuros",
+    "naming_scheme": "scheme_2",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[], {"fortify"      : 1}],
+        "chest": [[], {"counterstrike": 1}],
+        "arms":  [[], {"defense_boost": 1}],
+        "waist": [[], {"defense_boost": 1}],
+        "legs":  [[], {"diversion"    : 1}]
+    },
+    "defenses": {
+        "head":  {"f":-2, "w":0, "t":-2, "i":0, "d":0},
+        "chest": {"f":-2, "w":0, "t":-2, "i":0, "d":0},
+        "arms":  {"f":-2, "w":0, "t":-2, "i":0, "d":0},
+        "waist": {"f":-2, "w":0, "t":-2, "i":0, "d":0},
+        "legs":  {"f":-2, "w":0, "t":-2, "i":0, "d":0}
+    }
+},
+"l8": {
+    "tier": "lr",
+    "rarity": 1,
+    "setName": "Lagombi",
+
+    "prefix": "Lagombi",
+    "naming_scheme": "scheme_2",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[], {"critical_eye"    : 1}],
+        "chest": [[], {"affinity_sliding": 1}],
+        "arms":  [[], {"ice_attack"      : 1}],
+        "waist": [[], {"constitution"    : 1}],
+        "legs":  [[], {"critical_eye"    : 1}]
+    },
+    "defenses": {
+        "head":  {"f":-3, "w":1, "t":0, "i":4, "d":0},
+        "chest": {"f":-3, "w":1, "t":0, "i":4, "d":0},
+        "arms":  {"f":-3, "w":1, "t":0, "i":4, "d":0},
+        "waist": {"f":-3, "w":1, "t":0, "i":4, "d":0},
+        "legs":  {"f":-3, "w":1, "t":0, "i":4, "d":0}
+    }
+},
+"l9": {
+    "tier": "lr",
+    "rarity": 2,
+    "setName": "Alloy",
+
+    "prefix": "Alloy",
+    "naming_scheme": "scheme_2",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[], {"water_attack"    : 1                   }],
+        "chest": [[], {"speed_sharpening": 1                   }],
+        "arms":  [[], {"critical_eye"    : 1                   }],
+        "waist": [[], {"water_attack"    : 1, "critical_eye": 1}],
+        "legs":  [[], {"speed_sharpening": 1                   }]
+    },
+    "defenses": {
+        "head":  {"f":-1, "w":0, "t":-1, "i":-1, "d":0},
+        "chest": {"f":-1, "w":0, "t":-1, "i":-1, "d":0},
+        "arms":  {"f":-1, "w":0, "t":-1, "i":-1, "d":0},
+        "waist": {"f":-1, "w":0, "t":-1, "i":-1, "d":0},
+        "legs":  {"f":-1, "w":0, "t":-1, "i":-1, "d":0}
+    }
+},
+"l10": {
+    "tier": "lr",
+    "rarity": 2,
+    "setName": "Bone",
+
+    "prefix": "Bone",
+    "naming_scheme": "scheme_2",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[], {"partbreaker"    : 1}],
+        "chest": [[], {"stamina_thief"  : 1}],
+        "arms":  [[], {"stamina_thief"  : 1}],
+        "waist": [[], {"focus"          : 1}],
+        "legs":  [[], {"muck_resistance": 1}]
+    },
+    "defenses": {
+        "head":  {"f":0, "w":0, "t":0, "i":-1, "d":0},
+        "chest": {"f":0, "w":0, "t":0, "i":-1, "d":0},
+        "arms":  {"f":0, "w":0, "t":0, "i":-1, "d":0},
+        "waist": {"f":0, "w":0, "t":0, "i":-1, "d":0},
+        "legs":  {"f":0, "w":0, "t":0, "i":-1, "d":0}
+    }
+},
+"l11": {
+    "tier": "lr",
+    "rarity": 2,
+    "setName": "Edel",
+
+    "prefix": "Edel",
+    "naming_scheme": "scheme_4",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[], {"poison_resistance" : 1}],
+        "chest": [[], {"recovery_up"       : 1}],
+        "arms":  [[], {"poison_resistance" : 1}],
+        "waist": [[], {"thunder_resistance": 1}],
+        "legs":  [[], {"thunder_resistance": 1}]
+    },
+    "defenses": {
+        "head":  {"f":-1, "w":3, "t":-1, "i":0, "d":0},
+        "chest": {"f":-1, "w":3, "t":-1, "i":0, "d":0},
+        "arms":  {"f":-1, "w":3, "t":-1, "i":0, "d":0},
+        "waist": {"f":-1, "w":3, "t":-1, "i":0, "d":0},
+        "legs":  {"f":-1, "w":3, "t":-1, "i":0, "d":0}
+    }
+},
+"l12": {
+    "tier": "lr",
+    "rarity": 2,
+    "setName": "Shell-Studded",
+
+    "prefix": [
+        "S. Studded",
+        "Shell-Studded",
+        "Shell-Studded",
+        "S. Studded",
+        "Shelled"
+    ],
+    "naming_scheme": "shell_studded",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[], {"water_resistance": 1}],
+        "chest": [[], {"reload_speed"    : 1}],
+        "arms":  [[], {"recoil_down"     : 1}],
+        "waist": [[], {"ballistics"      : 1}],
+        "legs":  [[], {"spread_up"       : 1}]
+    },
+    "defenses": {
+        "head":  {"f":0, "w":2, "t":1, "i":-1, "d":0},
+        "chest": {"f":0, "w":2, "t":1, "i":-1, "d":0},
+        "arms":  {"f":0, "w":2, "t":1, "i":-1, "d":0},
+        "waist": {"f":0, "w":2, "t":1, "i":-1, "d":0},
+        "legs":  {"f":0, "w":2, "t":1, "i":-1, "d":0}
+    }
+},
+"l13": {
+    "tier": "lr",
+    "rarity": 2,
+    "setName": "Rhenoplos",
+
+    "prefix": "Rhenoplos",
+    "naming_scheme": "scheme_3",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[], {"pierce_up"        : 1                      }],
+        "chest": [[], {"artillery"        : 1, "stun_resistance": 1}],
+        "arms":  [[], {"artillery"        : 1                      }],
+        "waist": [[], {"tremor_resistance": 1                      }],
+        "legs":  [[], {"tremor_resistance": 1                      }]
+    },
+    "defenses": {
+        "head":  {"f":2, "w":0, "t":0, "i":-2, "d":0},
+        "chest": {"f":2, "w":0, "t":0, "i":-2, "d":0},
+        "arms":  {"f":2, "w":0, "t":0, "i":-2, "d":0},
+        "waist": {"f":2, "w":0, "t":0, "i":-2, "d":0},
+        "legs":  {"f":2, "w":0, "t":0, "i":-2, "d":0}
+    }
+},
+"l14": {
+    "tier": "lr",
+    "rarity": 2,
+    "setName": "Droth",
+
+    "prefix": "Droth",
+    "naming_scheme": "scheme_2",
+    "suffix": "",
+
+    "pieces": {
+        "head":  null,
+        "chest": [[], {"water_resistance": 1}],
+        "arms":  null,
+        "waist": [[], {"diversion"       : 1}],
+        "legs":  [[], {"water_resistance": 2}]
+    },
+    "defenses": {
+        "head":  null,
+        "chest": {"f":-2, "w":4, "t":-1, "i":0, "d":0},
+        "arms":  null,
+        "waist": {"f":-2, "w":4, "t":-1, "i":0, "d":0},
+        "legs":  {"f":-2, "w":4, "t":-1, "i":0, "d":0}
+    }
+},
+"l15": {
+    "tier": "lr",
+    "rarity": 2,
+    "setName": "Bnahabra",
+
+    "prefix": "Bnahabra",
+    "naming_scheme": "bnahabra",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[], {"recoil_down"     : 1}],
+        "chest": [[], {"paralysis_attack": 1}],
+        "arms":  [[], {"evade_window"    : 1}],
+        "waist": [[], {"paralysis_attack": 1}],
+        "legs":  [[], {"recoil_down"     : 1}]
+    },
+    "defenses": {
+        "head":  {"f":-2, "w":0, "t":0, "i":0, "d":2},
+        "chest": {"f":-2, "w":0, "t":0, "i":0, "d":2},
+        "arms":  {"f":-2, "w":0, "t":0, "i":0, "d":2},
+        "waist": {"f":-2, "w":0, "t":0, "i":0, "d":2},
+        "legs":  {"f":-2, "w":0, "t":0, "i":0, "d":2}
+    }
+},
+"l16": {
+    "tier": "lr",
+    "rarity": 2,
+    "setName": "Jaggi",
+
+    "prefix": "Jaggi",
+    "naming_scheme": "jaggi",
+    "suffix": "",
+
+    "pieces": {
+        "head":  null,
+        "chest": null,
+        "arms":  [[], {"attack_boost"  : 1}],
+        "waist": null,
+        "legs":  [[], {"master_mounter": 1}]
+    },
+    "defenses": {
+        "head":  null,
+        "chest": null,
+        "arms":  {"f":0, "w":0, "t":0, "i":1, "d":0},
+        "waist": null,
+        "legs":  {"f":0, "w":0, "t":0, "i":1, "d":0}
+    }
+},
+"l17": {
+    "tier": "lr",
+    "rarity": 2,
+    "setName": "Kulu",
+
+    "prefix": "Kulu-Ya-Ku",
+    "naming_scheme": "scheme_3",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[], {"maximum_might"  : 1                   }],
+        "chest": [[], {"horn_maestro"   : 1                   }],
+        "arms":  [[], {"slugger"        : 1                   }],
+        "waist": [[], {"stamina_thief"  : 1                   }],
+        "legs":  [[], {"stun_resistance": 1, "critical_eye": 1}]
+    },
+    "defenses": {
+        "head":  {"f":0, "w":-3, "t":0, "i":1, "d":0},
+        "chest": {"f":0, "w":-3, "t":0, "i":1, "d":0},
+        "arms":  {"f":0, "w":-3, "t":0, "i":1, "d":0},
+        "waist": {"f":0, "w":-3, "t":0, "i":1, "d":0},
+        "legs":  {"f":0, "w":-3, "t":0, "i":1, "d":0}
+    }
+},
+"l18": {
+    "tier": "lr",
+    "rarity": 2,
+    "setName": "Wroggi",
+
+    "prefix": "Wroggi",
+    "naming_scheme": "scheme_2",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[], {"evade_extender": 1}],
+        "chest": [[], {"poison_attack" : 1}],
+        "arms":  [[], {"ammo_up"       : 1}],
+        "waist": [[], {"poison_attack" : 1}],
+        "legs":  [[], {"evade_extender": 1}]
+    },
+    "defenses": {
+        "head":  {"f":2, "w":-2, "t":1, "i":-4, "d":0},
+        "chest": {"f":2, "w":-2, "t":1, "i":-4, "d":0},
+        "arms":  {"f":2, "w":-2, "t":1, "i":-4, "d":0},
+        "waist": {"f":2, "w":-2, "t":1, "i":-4, "d":0},
+        "legs":  {"f":2, "w":-2, "t":1, "i":-4, "d":0}
+    }
+},
+"l19": {
+    "tier": "lr",
+    "rarity": 2,
+    "setName": "Aknosom",
+
+    "prefix": "Aknosom",
+    "naming_scheme": "scheme_3",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[], {"fire_attack"   : 1}],
+        "chest": [[], {"quick_sheath"  : 1}],
+        "arms":  [[], {"fire_attack"   : 1}],
+        "waist": [[], {"recovery_speed": 1}],
+        "legs":  [[], {"fire_attack"   : 1}]
+    },
+    "defenses": {
+        "head":  {"f":3, "w":-3, "t":1, "i":0, "d":0},
+        "chest": {"f":3, "w":-3, "t":1, "i":0, "d":0},
+        "arms":  {"f":3, "w":-3, "t":1, "i":0, "d":0},
+        "waist": {"f":3, "w":-3, "t":1, "i":0, "d":0},
+        "legs":  {"f":3, "w":-3, "t":1, "i":0, "d":0}
+    }
+},
+"l20": {
+    "tier": "lr",
+    "rarity": 2,
+    "setName": "Ludroth",
+
+    "prefix": "Ludroth",
+    "naming_scheme": "scheme_3",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[], {"water_attack"   : 1}],
+        "chest": [[], {"stamina_surge"  : 1}],
+        "arms":  [[], {"marathon_runner": 1}],
+        "waist": [[], {"water_attack"   : 2}],
+        "legs":  [[], {"power_prolonger": 1}]
+    },
+    "defenses": {
+        "head":  {"f":-3, "w":4, "t":-1, "i":0, "d":0},
+        "chest": {"f":-3, "w":4, "t":-1, "i":0, "d":0},
+        "arms":  {"f":-3, "w":4, "t":-1, "i":0, "d":0},
+        "waist": {"f":-3, "w":4, "t":-1, "i":0, "d":0},
+        "legs":  {"f":-3, "w":4, "t":-1, "i":0, "d":0}
+    }
+},
+"l21": {
+    "tier": "lr",
+    "rarity": 2,
+    "setName": "Barroth",
+
+    "prefix": "Barroth",
+    "naming_scheme": "scheme_2",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[], {"attack_boost"    : 1                    }],
+        "chest": [[], {"attack_boost"    : 1, "defense_boost": 1}],
+        "arms":  [[], {"affinity_sliding": 1                    }],
+        "waist": [[], {"guard"           : 1                    }],
+        "legs":  [[], {"guard"           : 1                    }]
+    },
+    "defenses": {
+        "head":  {"f":-3, "w":-1, "t":3, "i":-1, "d":0},
+        "chest": {"f":-3, "w":-1, "t":3, "i":-1, "d":0},
+        "arms":  {"f":-3, "w":-1, "t":3, "i":-1, "d":0},
+        "waist": {"f":-3, "w":-1, "t":3, "i":-1, "d":0},
+        "legs":  {"f":-3, "w":-1, "t":3, "i":-1, "d":0}
+    }
+},
+"l22": {
+    "tier": "lr",
+    "rarity": 2,
+    "setName": "Khezu",
+
+    "prefix": "Khezu",
+    "naming_scheme": "scheme_2",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[], {"recovery_up"   : 1                                          }],
+        "chest": [[], {"wall_runner"   : 1                                          }],
+        "arms":  [[], {"wall_runner"   : 1, "recovery_speed": 1, "thunder_attack": 1}],
+        "waist": [[], {"focus"         : 1, "slugger"       : 1                     }],
+        "legs":  [[], {"recovery_speed": 1                                          }]
+    },
+    "defenses": {
+        "head":  {"f":-4, "w":1, "t":4, "i":2, "d":1},
+        "chest": {"f":-4, "w":1, "t":4, "i":2, "d":1},
+        "arms":  {"f":-4, "w":1, "t":4, "i":2, "d":1},
+        "waist": {"f":-4, "w":1, "t":4, "i":2, "d":1},
+        "legs":  {"f":-4, "w":1, "t":4, "i":2, "d":1}
+    }
+},
+"l23": {
+    "tier": "lr",
+    "rarity": 2,
+    "setName": "Tetranadon",
+
+    "prefix": "Tetranadon",
+    "naming_scheme": "scheme_3",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[], {"speed_eating"      : 1}],
+        "chest": [[], {"normal_rapid_up"   : 1}],
+        "arms":  [[], {"special_ammo_boost": 1}],
+        "waist": [[], {"heroics"           : 1}],
+        "legs":  [[], {"hunger_resistance" : 1}]
+    },
+    "defenses": {
+        "head":  {"f":-1, "w":4, "t":-2, "i":1, "d":0},
+        "chest": {"f":-1, "w":4, "t":-2, "i":1, "d":0},
+        "arms":  {"f":-1, "w":4, "t":-2, "i":1, "d":0},
+        "waist": {"f":-1, "w":4, "t":-2, "i":1, "d":0},
+        "legs":  {"f":-1, "w":4, "t":-2, "i":1, "d":0}
+    }
+},
+"l24": {
+    "tier": "lr",
+    "rarity": 2,
+    "setName": "Ingot",
+
+    "prefix": "Ingot",
+    "naming_scheme": "scheme_2",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[], {"windproof"      : 1                   }],
+        "chest": [[], {"windproof"      : 1                   }],
+        "arms":  [[], {"thunder_attack" : 2                   }],
+        "waist": [[], {"power_prolonger": 1                   }],
+        "legs":  [[], {"attack_boost"   : 1, "critical_eye": 1}]
+    },
+    "defenses": {
+        "head":  {"f":-1, "w":-1, "t":1, "i":0, "d":0},
+        "chest": {"f":-1, "w":-1, "t":1, "i":0, "d":0},
+        "arms":  {"f":-1, "w":-1, "t":1, "i":0, "d":0},
+        "waist": {"f":-1, "w":-1, "t":1, "i":0, "d":0},
+        "legs":  {"f":-1, "w":-1, "t":1, "i":0, "d":0}
+    }
+},
+"l25": {
+    "tier": "lr",
+    "rarity": 2,
+    "setName": "Death Stench",
+
+    "prefix": "Death Stench",
+    "naming_scheme": "death_stench",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[], {"dragon_resistance": 2}],
+        "chest": [[], {"rapid_morph"      : 1}],
+        "arms":  [[], {"maximum_might"    : 1}],
+        "waist": [[], {"dragon_resistance": 1}],
+        "legs":  [[], {"rapid_morph"      : 1}]
+    },
+    "defenses": {
+        "head":  {"f":3, "w":1, "t":1, "i":-1, "d":0},
+        "chest": {"f":3, "w":1, "t":1, "i":-1, "d":0},
+        "arms":  {"f":3, "w":1, "t":1, "i":-1, "d":0},
+        "waist": {"f":3, "w":1, "t":1, "i":-1, "d":0},
+        "legs":  {"f":3, "w":1, "t":1, "i":-1, "d":0}
+    }
+},
+"l26": {
+    "tier": "lr",
+    "rarity": 2,
+    "setName": "Mosgharl",
+
+    "prefix": "Mosgharl",
+    "naming_scheme": "scheme_4",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[], {"blast_resistance": 1}],
+        "chest": [[], {"reload_speed"    : 2}],
+        "arms":  [[], {"blast_resistance": 1}],
+        "waist": [[], {"fire_attack"     : 2}],
+        "legs":  [[], {"recoil_down"     : 2}]
+    },
+    "defenses": {
+        "head":  {"f":-3, "w":1, "t":0, "i":3, "d":0},
+        "chest": {"f":-3, "w":1, "t":0, "i":3, "d":0},
+        "arms":  {"f":-3, "w":1, "t":0, "i":3, "d":0},
+        "waist": {"f":-3, "w":1, "t":0, "i":3, "d":0},
+        "legs":  {"f":-3, "w":1, "t":0, "i":3, "d":0}
+    }
+},
+"l27": {
+    "tier": "lr",
+    "rarity": 2,
+    "setName": "Gargwa Mask",
+
+    "prefix": "Gargwa",
+    "naming_scheme": "mask",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[], {"leap_of_faith": 1}],
+        "chest": null,
+        "arms":  null,
+        "waist": null,
+        "legs":  null
+    },
+    "defenses": {
+        "head":  {"f":-3, "w":-2, "t":-2, "i":1, "d":0},
+        "chest": null,
+        "arms":  null,
+        "waist": null,
+        "legs":  null
+    }
+},
+"l28": {
+    "tier": "lr",
+    "rarity": 2,
+    "setName": "Bullfango Mask",
+
+    "prefix": "Bullfango",
+    "naming_scheme": "mask",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[], {"bludgeoner": 1}],
+        "chest": null,
+        "arms":  null,
+        "waist": null,
+        "legs":  null
+    },
+    "defenses": {
+        "head":  {"f":0, "w":4, "t":-2, "i":0, "d":0},
+        "chest": null,
+        "arms":  null,
+        "waist": null,
+        "legs":  null
+    }
+},
+"l29": {
+    "tier": "lr",
+    "rarity": 2,
+    "setName": "Uroktor",
+
+    "prefix": "Uroktor",
+    "naming_scheme": "uroktor",
+    "suffix": "",
+
+    "pieces": {
+        "head":  null,
+        "chest": [[], {"fire_resistance": 2}],
+        "arms":  null,
+        "waist": [[], {"fire_resistance": 1}],
+        "legs":  null
+    },
+    "defenses": {
+        "head":  null,
+        "chest": {"f":4, "w":-2, "t":0, "i":-1, "d":0},
+        "arms":  null,
+        "waist": {"f":4, "w":-2, "t":0, "i":-1, "d":0},
+        "legs":  null
+    }
+},
+"l30": {
+    "tier": "lr",
+    "rarity": 2,
+    "setName": "Remobra",
+
+    "prefix": "Remobra",
+    "naming_scheme": "remobra",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[], {"windproof"       : 2                }],
+        "chest": [[], {"item_prolonger"  : 1                }],
+        "arms":  [[], {"critical_element": 1, "windproof": 1}],
+        "waist": [[], {"critical_element": 1                }],
+        "legs":  [[], {"divine_blessing" : 1                }]
+    },
+    "defenses": {
+        "head":  {"f":1, "w":1, "t":1, "i":1, "d":2},
+        "chest": {"f":1, "w":1, "t":1, "i":1, "d":2},
+        "arms":  {"f":1, "w":1, "t":1, "i":1, "d":2},
+        "waist": {"f":1, "w":1, "t":1, "i":1, "d":2},
+        "legs":  {"f":1, "w":1, "t":1, "i":1, "d":2}
+    }
+},
+"l31": {
+    "tier": "lr",
+    "rarity": 2,
+    "setName": "Jaggi Mask",
+
+    "prefix": "Jaggi",
+    "naming_scheme": "mask",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[], {"affinity_sliding": 1}],
+        "chest": null,
+        "arms":  null,
+        "waist": null,
+        "legs":  null
+    },
+    "defenses": {
+        "head":  {"f":0, "w":0, "t":0, "i":0, "d":0},
+        "chest": null,
+        "arms":  null,
+        "waist": null,
+        "legs":  null
+    }
+},
+"l32": {
+    "tier": "lr",
+    "rarity": 2,
+    "setName": "Volvidon",
+
+    "prefix": "Volvidon",
+    "naming_scheme": "scheme_2",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[], {"paralysis_attack": 1}],
+        "chest": [[], {"rapid_morph"     : 1}],
+        "arms":  [[], {"evade_extender"  : 1}],
+        "waist": [[], {"rapid_morph"     : 1}],
+        "legs":  [[], {"evade_extender"  : 1}]
+    },
+    "defenses": {
+        "head":  {"f":2, "w":-3, "t":0, "i":-1, "d":1},
+        "chest": {"f":2, "w":-3, "t":0, "i":-1, "d":1},
+        "arms":  {"f":2, "w":-3, "t":0, "i":-1, "d":1},
+        "waist": {"f":2, "w":-3, "t":0, "i":-1, "d":1},
+        "legs":  {"f":2, "w":-3, "t":0, "i":-1, "d":1}
+    }
+},
+"l33": {
+    "tier": "lr",
+    "rarity": 2,
+    "setName": "Bishaten",
+
+    "prefix": "Bishaten",
+    "naming_scheme": "scheme_2",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[], {"item_prolonger" : 1, "stun_resistance": 1}],
+        "chest": [[], {"wide_range"     : 1                      }],
+        "arms":  [[], {"stun_resistance": 1                      }],
+        "waist": [[], {"item_prolonger" : 1                      }],
+        "legs":  [[], {"maximum_might"  : 1                      }]
+    },
+    "defenses": {
+        "head":  {"f":-2, "w":2, "t":2, "i":-4, "d":2},
+        "chest": {"f":-2, "w":2, "t":2, "i":-4, "d":2},
+        "arms":  {"f":-2, "w":2, "t":2, "i":-4, "d":2},
+        "waist": {"f":-2, "w":2, "t":2, "i":-4, "d":2},
+        "legs":  {"f":-2, "w":2, "t":2, "i":-4, "d":2}
+    }
+},
+"l34": {
+    "tier": "lr",
+    "rarity": 2,
+    "setName": "Pukei",
+
+    "prefix": [
+        "Pukei-Pukei",
+        "Pukei-Pukei",
+        "Pukei-Pukei",
+        "Pukei-Pukei",
+        "Pukei"
+    ],
+    "naming_scheme": "scheme_2",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[], {"special_ammo_boost": 1}],
+        "chest": [[], {"constitution"      : 1}],
+        "arms":  [[], {"spare_shot"        : 1}],
+        "waist": [[], {"poison_attack"     : 2}],
+        "legs":  [[], {"constitution"      : 1}]
+    },
+    "defenses": {
+        "head":  {"f":0, "w":3, "t":-3, "i":0, "d":1},
+        "chest": {"f":0, "w":3, "t":-3, "i":0, "d":1},
+        "arms":  {"f":0, "w":3, "t":-3, "i":0, "d":1},
+        "waist": {"f":0, "w":3, "t":-3, "i":0, "d":1},
+        "legs":  {"f":0, "w":3, "t":-3, "i":0, "d":1}
+    }
+},
+"l35": {
+    "tier": "lr",
+    "rarity": 2,
+    "setName": "Basarios",
+
+    "prefix": "Basarios",
+    "naming_scheme": "scheme_2",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[], {"defense_boost"   : 2                       }],
+        "chest": [[], {"guard"           : 1                       }],
+        "arms":  [[], {"guard"           : 1, "speed_sharpening": 1}],
+        "waist": [[], {"speed_sharpening": 1, "defense_boost": 1   }],
+        "legs":  [[], {"load_shells"     : 1, "defense_boost": 1   }]
+    },
+    "defenses": {
+        "head":  {"f":0, "w":-2, "t":1, "i":1, "d":-3},
+        "chest": {"f":0, "w":-2, "t":1, "i":1, "d":-3},
+        "arms":  {"f":0, "w":-2, "t":1, "i":1, "d":-3},
+        "waist": {"f":0, "w":-2, "t":1, "i":1, "d":-3},
+        "legs":  {"f":0, "w":-2, "t":1, "i":1, "d":-3}
+    }
+},
+"l36": {
+    "tier": "lr",
+    "rarity": 2,
+    "setName": "Somnacanth",
+
+    "prefix": "Somnacanth",
+    "naming_scheme": "scheme_3",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[], {"sleep_attack"   : 1                      }],
+        "chest": [[], {"item_prolonger" : 1                      }],
+        "arms":  [[], {"bombardier"     : 1, "divine_blessing": 1}],
+        "waist": [[], {"bombardier"     : 1                      }],
+        "legs":  [[], {"divine_blessing": 1                      }]
+    },
+    "defenses": {
+        "head":  {"f":-1, "w":2, "t":-3, "i":0, "d":1},
+        "chest": {"f":-1, "w":2, "t":-3, "i":0, "d":1},
+        "arms":  {"f":-1, "w":2, "t":-3, "i":0, "d":1},
+        "waist": {"f":-1, "w":2, "t":-3, "i":0, "d":1},
+        "legs":  {"f":-1, "w":2, "t":-3, "i":0, "d":1}
+    }
+},
+"l37": {
+    "tier": "lr",
+    "rarity": 2,
+    "setName": "Rathian",
+
+    "prefix": "Rathian",
+    "naming_scheme": "scheme_3",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[], {"blight_resistance": 1                 }],
+        "chest": [[], {"recovery_up"      : 1                 }],
+        "arms":  [[], {"blight_resistance": 1                 }],
+        "waist": [[], {"recovery_up"      : 1, "wide_range": 1}],
+        "legs":  [[], {"free_meal"        : 1                 }]
+    },
+    "defenses": {
+        "head":  {"f":3, "w":0, "t":-2, "i":0, "d":-3},
+        "chest": {"f":3, "w":0, "t":-2, "i":0, "d":-3},
+        "arms":  {"f":3, "w":0, "t":-2, "i":0, "d":-3},
+        "waist": {"f":3, "w":0, "t":-2, "i":0, "d":-3},
+        "legs":  {"f":3, "w":0, "t":-2, "i":0, "d":-3}
+    }
+},
+"l38": {
+    "tier": "lr",
+    "rarity": 2,
+    "setName": "Barioth",
+
+    "prefix": "Barioth",
+    "naming_scheme": "scheme_2",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[], {"critical_draw": 1}],
+        "chest": [[], {"quick_sheath" : 1}],
+        "arms":  [[], {"critical_eye" : 1}],
+        "waist": [[], {"critical_eye" : 2}],
+        "legs":  [[], {"quick_sheath" : 1}]
+    },
+    "defenses": {
+        "head":  {"f":-1, "w":0, "t":-1, "i":3, "d":0},
+        "chest": {"f":-1, "w":0, "t":-1, "i":3, "d":0},
+        "arms":  {"f":-1, "w":0, "t":-1, "i":3, "d":0},
+        "waist": {"f":-1, "w":0, "t":-1, "i":3, "d":0},
+        "legs":  {"f":-1, "w":0, "t":-1, "i":3, "d":0}
+    }
+},
+"l39": {
+    "tier": "lr",
+    "rarity": 2,
+    "setName": "Kadachi",
+
+    "prefix": [
+        "Kadachi",
+        "Tobi-Kadachi",
+        "Tobi-Kadachi",
+        "Tobi-Kadachi",
+        "Kadachi"
+    ],
+    "naming_scheme": "scheme_3",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[], {"jump_master"   : 1                   }],
+        "chest": [[], {"critical_eye"  : 1                   }],
+        "arms":  [[], {"constitution"  : 1                   }],
+        "waist": [[], {"thunder_attack": 2                   }],
+        "legs":  [[], {"constitution"  : 1, "critical_eye": 1}]
+    },
+    "defenses": {
+        "head":  {"f":0, "w":-3, "t":3, "i":0, "d":0},
+        "chest": {"f":0, "w":-3, "t":3, "i":0, "d":0},
+        "arms":  {"f":0, "w":-3, "t":3, "i":0, "d":0},
+        "waist": {"f":0, "w":-3, "t":3, "i":0, "d":0},
+        "legs":  {"f":0, "w":-3, "t":3, "i":0, "d":0}
+    }
+},
+"l40": {
+    "tier": "lr",
+    "rarity": 3,
+    "setName": "Rhopessa",
+
+    "prefix": "Rhopessa",
+    "naming_scheme": "rhopessa",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[], {"critical_element": 1                    }],
+        "chest": [[], {"critical_element": 1, "dragon_attack": 1}],
+        "arms":  [[], {"evade_window"    : 1                    }],
+        "waist": [[], {"dragon_attack"   : 2                    }],
+        "legs":  [[], {"critical_eye"    : 2                    }]
+    },
+    "defenses": {
+        "head":  {"f":-2, "w":0, "t":3, "i":-2, "d":2},
+        "chest": {"f":-2, "w":0, "t":3, "i":-2, "d":2},
+        "arms":  {"f":-2, "w":0, "t":3, "i":-2, "d":2},
+        "waist": {"f":-2, "w":0, "t":3, "i":-2, "d":2},
+        "legs":  {"f":-2, "w":0, "t":3, "i":-2, "d":2}
+    }
+},
+"l41": {
+    "tier": "lr",
+    "rarity": 3,
+    "setName": "Jelly",
+
+    "prefix": "Jelly",
+    "naming_scheme": "jelly",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[], {"divine_blessing": 1}],
+        "chest": [[], {"blast_attack"   : 1}],
+        "arms":  [[], {"divine_blessing": 1}],
+        "waist": [[], {"partbreaker"    : 1}],
+        "legs":  [[], {"blast_attack"   : 1}]
+    },
+    "defenses": {
+        "head":  {"f":1, "w":3, "t":0, "i":2, "d":0},
+        "chest": {"f":1, "w":3, "t":0, "i":2, "d":0},
+        "arms":  {"f":1, "w":3, "t":0, "i":2, "d":0},
+        "waist": {"f":1, "w":3, "t":0, "i":2, "d":0},
+        "legs":  {"f":1, "w":3, "t":0, "i":2, "d":0}
+    }
+},
+"l42": {
+    "tier": "lr",
+    "rarity": 3,
+    "setName": "Medium",
+
+    "prefix": "Medium's",
+    "naming_scheme": "medium",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[], {"speed_eating": 1, "free_meal": 1}],
+        "chest": [[], {"wide_range"  : 1                }],
+        "arms":  [[], {"wide_range"  : 1                }],
+        "waist": [[], {"speed_eating": 1                }],
+        "legs":  [[], {"wide_range"  : 1                }]
+    },
+    "defenses": {
+        "head":  {"f":3, "w":0, "t":0, "i":0, "d":0},
+        "chest": {"f":3, "w":0, "t":0, "i":0, "d":0},
+        "arms":  {"f":3, "w":0, "t":0, "i":0, "d":0},
+        "waist": {"f":3, "w":0, "t":0, "i":0, "d":0},
+        "legs":  {"f":3, "w":0, "t":0, "i":0, "d":0}
+    }
+},
+"l43": {
+    "tier": "lr",
+    "rarity": 3,
+    "setName": "Channeler",
+
+    "prefix": "Channeler's",
+    "naming_scheme": "channeler",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[], {"razor_sharp" : 1, "spare_shot": 1       }],
+        "chest": [[], {"razor_sharp" : 1, "spare_shot": 1       }],
+        "arms":  [[], {"evade_window": 1, "wirebug_whisperer": 1}],
+        "waist": [[], {"agitator"    : 1                        }],
+        "legs":  [[], {"evade_window": 1, "agitator": 1         }]
+    },
+    "defenses": {
+        "head":  {"f":3, "w":0, "t":0, "i":0, "d":0},
+        "chest": {"f":3, "w":0, "t":0, "i":0, "d":0},
+        "arms":  {"f":3, "w":0, "t":0, "i":0, "d":0},
+        "waist": {"f":3, "w":0, "t":0, "i":0, "d":0},
+        "legs":  {"f":3, "w":0, "t":0, "i":0, "d":0}
+    }
+},
+"l44": {
+    "tier": "lr",
+    "rarity": 3,
+    "setName": "Sinister",
+
+    "prefix": "Sinister",
+    "naming_scheme": "sinister",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[], {"resentment"    : 1, "counterstrike": 1}],
+        "chest": [[], {"hellfire_cloak": 1, "resentment"   : 1}],
+        "arms":  [[], {"hellfire_cloak": 1                    }],
+        "waist": [[], {"hellfire_cloak": 1, "counterstrike": 2}],
+        "legs":  [[], {"resentment"    : 1                    }]
+    },
+    "defenses": {
+        "head":  {"f":3, "w":-3, "t":-2, "i":1, "d":1},
+        "chest": {"f":3, "w":-3, "t":-2, "i":1, "d":1},
+        "arms":  {"f":3, "w":-3, "t":-2, "i":1, "d":1},
+        "waist": {"f":3, "w":-3, "t":-2, "i":1, "d":1},
+        "legs":  {"f":3, "w":-3, "t":-2, "i":1, "d":1}
+    }
+},
+"l45": {
+    "tier": "lr",
+    "rarity": 3,
+    "setName": "Anja",
+
+    "prefix": "Anjanath",
+    "naming_scheme": "scheme_2",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[], {"focus"          : 1, "slugger"        : 1}],
+        "chest": [[], {"focus"          : 1, "marathon_runner": 1}],
+        "arms":  [[], {"slugger"        : 1, "attack_boost"   : 1}],
+        "waist": [[], {"attack_boost"   : 2                      }],
+        "legs":  [[], {"marathon_runner": 1                      }]
+    },
+    "defenses": {
+        "head":  {"f":3, "w":-3, "t":-1, "i":-1, "d":0},
+        "chest": {"f":3, "w":-3, "t":-1, "i":-1, "d":0},
+        "arms":  {"f":3, "w":-3, "t":-1, "i":-1, "d":0},
+        "waist": {"f":3, "w":-3, "t":-1, "i":-1, "d":0},
+        "legs":  {"f":3, "w":-3, "t":-1, "i":-1, "d":0}
+    }
+},
+"l46": {
+    "tier": "lr",
+    "rarity": 3,
+    "setName": "Nargacuga",
+
+    "prefix": "Nargacuga",
+    "naming_scheme": "scheme_3",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[], {"evade_window"  : 1                     }],
+        "chest": [[], {"critical_eye"  : 1                     }],
+        "arms":  [[], {"evade_window"  : 1, "evade_extender": 1}],
+        "waist": [[], {"evade_extender": 1                     }],
+        "legs":  [[], {"evade_window"  : 1, "critical_eye"  : 1}]
+    },
+    "defenses": {
+        "head":  {"f":-2, "w":1, "t":-3, "i":1, "d":1},
+        "chest": {"f":-2, "w":1, "t":-3, "i":1, "d":1},
+        "arms":  {"f":-2, "w":1, "t":-3, "i":1, "d":1},
+        "waist": {"f":-2, "w":1, "t":-3, "i":1, "d":1},
+        "legs":  {"f":-2, "w":1, "t":-3, "i":1, "d":1}
+    }
+},
+"l47": {
+    "tier": "lr",
+    "rarity": 3,
+    "setName": "Mizutsune",
+
+    "prefix": "Mizutsune",
+    "naming_scheme": "scheme_3",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[], {"water_attack": 1                   }],
+        "chest": [[], {"bubbly_dance": 1, "water_attack": 1}],
+        "arms":  [[], {"water_attack": 1, "free_meal"   : 1}],
+        "waist": [[], {"free_meal"   : 1                   }],
+        "legs":  [[], {"bubbly_dance": 1                   }]
+    },
+    "defenses": {
+        "head":  {"f":0, "w":2, "t":-3, "i":1, "d":-1},
+        "chest": {"f":0, "w":2, "t":-3, "i":1, "d":-1},
+        "arms":  {"f":0, "w":2, "t":-3, "i":1, "d":-1},
+        "waist": {"f":0, "w":2, "t":-3, "i":1, "d":-1},
+        "legs":  {"f":0, "w":2, "t":-3, "i":1, "d":-1}
+    }
+},
+"l48": {
+    "tier": "lr",
+    "rarity": 3,
+    "setName": "Rathalos",
+
+    "prefix": "Rathalos",
+    "naming_scheme": "scheme_3",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[], {"attack_boost": 1, "fire_attack": 1}],
+        "chest": [[], {"partbreaker" : 1, "windproof"  : 1}],
+        "arms":  [[], {"attack_boost": 1                  }],
+        "waist": [[], {"attack_boost": 1, "windproof"  : 1}],
+        "legs":  [[], {"attack_boost": 1, "fire_attack": 1}]
+    },
+    "defenses": {
+        "head":  {"f":4, "w":0, "t":-2, "i":0, "d":-4},
+        "chest": {"f":4, "w":0, "t":-2, "i":0, "d":-4},
+        "arms":  {"f":4, "w":0, "t":-2, "i":0, "d":-4},
+        "waist": {"f":4, "w":0, "t":-2, "i":0, "d":-4},
+        "legs":  {"f":4, "w":0, "t":-2, "i":0, "d":-4}
+    }
+},
+"l49": {
+    "tier": "lr",
+    "rarity": 3,
+    "setName": "Zinogre",
+
+    "prefix": "Zinogre",
+    "naming_scheme": "scheme_3",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[], {"latent_power": 1, "critical_eye": 1}],
+        "chest": [[], {"latent_power": 1, "critical_eye": 1}],
+        "arms":  [[], {"constitution": 1                   }],
+        "waist": [[], {"latent_power": 1                   }],
+        "legs":  [[], {"constitution": 2                   }]
+    },
+    "defenses": {
+        "head":  {"f":0, "w":-1, "t":4, "i":-4, "d":1},
+        "chest": {"f":0, "w":-1, "t":4, "i":-4, "d":1},
+        "arms":  {"f":0, "w":-1, "t":4, "i":-4, "d":1},
+        "waist": {"f":0, "w":-1, "t":4, "i":-4, "d":1},
+        "legs":  {"f":0, "w":-1, "t":4, "i":-4, "d":1}
+    }
+},
+"l50": {
+    "tier": "lr",
+    "rarity": 3,
+    "setName": "Skull",
+
+    "prefix": "Skull",
+    "naming_scheme": "visage",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[], {"fortify": 1}],
+        "chest": null,
+        "arms":  null,
+        "waist": null,
+        "legs":  null
+    },
+    "defenses": {
+        "head":  {"f":-3, "w":-3, "t":-3, "i":-3, "d":4},
+        "chest": null,
+        "arms":  null,
+        "waist": null,
+        "legs":  null
+    }
+},
+"l51": {
+    "tier": "lr",
+    "rarity": 3,
+    "setName": "Goss Harag",
+
+    "prefix": "Goss Harag",
+    "naming_scheme": "scheme_3",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[], {"agitator"      : 1                     }],
+        "chest": [[], {"critical_draw" : 1                     }],
+        "arms":  [[], {"critical_draw" : 1, "punishing_draw": 1}],
+        "waist": [[], {"punishing_draw": 1, "resentment"    : 1}],
+        "legs":  [[], {"agitator"      : 1                     }]
+    },
+    "defenses": {
+        "head":  {"f":-4, "w":1, "t":-1, "i":4, "d":0},
+        "chest": {"f":-4, "w":1, "t":-1, "i":4, "d":0},
+        "arms":  {"f":-4, "w":1, "t":-1, "i":4, "d":0},
+        "waist": {"f":-4, "w":1, "t":-1, "i":4, "d":0},
+        "legs":  {"f":-4, "w":1, "t":-1, "i":4, "d":0}
+    }
+},
+"l52": {
+    "tier": "lr",
+    "rarity": 3,
+    "setName": "Almudron",
+
+    "prefix": "Almudron",
+    "naming_scheme": "scheme_2",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[], {"rapid_morph"    : 1                   }],
+        "chest": [[], {"razor_sharp"    : 1                   }],
+        "arms":  [[], {"rapid_morph"    : 1, "evade_window": 1}],
+        "waist": [[], {"power_prolonger": 1                   }],
+        "legs":  [[], {"razor_sharp"    : 1                   }]
+    },
+    "defenses": {
+        "head":  {"f":-4, "w":3, "t":3, "i":-2, "d":-2},
+        "chest": {"f":-4, "w":3, "t":3, "i":-2, "d":-2},
+        "arms":  {"f":-4, "w":3, "t":3, "i":-2, "d":-2},
+        "waist": {"f":-4, "w":3, "t":3, "i":-2, "d":-2},
+        "legs":  {"f":-4, "w":3, "t":3, "i":-2, "d":-2}
+    }
+},
+"l53": {
+    "tier": "lr",
+    "rarity": 3,
+    "setName": "Tigrex",
+
+    "prefix": "Tigrex",
+    "naming_scheme": "scheme_3",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[], {"earplugs"    : 1, "speed_eating": 1}],
+        "chest": [[], {"earplugs"    : 1, "bludgeoner"  : 1}],
+        "arms":  [[], {"bludgeoner"  : 2                   }],
+        "waist": [[], {"earplugs"    : 1                   }],
+        "legs":  [[], {"speed_eating": 1                   }]
+    },
+    "defenses": {
+        "head":  {"f":2, "w":0, "t":-3, "i":0, "d":-2},
+        "chest": {"f":2, "w":0, "t":-3, "i":0, "d":-2},
+        "arms":  {"f":2, "w":0, "t":-3, "i":0, "d":-2},
+        "waist": {"f":2, "w":0, "t":-3, "i":0, "d":-2},
+        "legs":  {"f":2, "w":0, "t":-3, "i":0, "d":-2}
+    }
+},
+"l54": {
+    "tier": "lr",
+    "rarity": 3,
+    "setName": "Diablos",
+
+    "prefix": "Diablos",
+    "naming_scheme": "scheme_2",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[], {"guard"          : 1, "stamina_surge"  : 1}],
+        "chest": [[], {"guard"          : 1                      }],
+        "arms":  [[], {"offensive_guard": 1                      }],
+        "waist": [[], {"stamina_surge"  : 1                      }],
+        "legs":  [[], {"guard"          : 1, "offensive_guard": 1}]
+    },
+    "defenses": {
+        "head":  {"f":3, "w":-1, "t":-1, "i":-3, "d":-1},
+        "chest": {"f":3, "w":-1, "t":-1, "i":-3, "d":-1},
+        "arms":  {"f":3, "w":-1, "t":-1, "i":-3, "d":-1},
+        "waist": {"f":3, "w":-1, "t":-1, "i":-3, "d":-1},
+        "legs":  {"f":3, "w":-1, "t":-1, "i":-3, "d":-1}
+    }
+},
+
+
+
+"h0": {
+    "tier": "hr",
+    "rarity": 4,
+    "setName": "Kamura S",
+
+    "prefix": "Kamura",
+    "naming_scheme": "kamura",
+    "suffix": "S",
+
+    "pieces": {
+        "head":  [[1  ], {"divine_blessing"  : 1, "resuscitate" : 1                   }],
+        "chest": [[1  ], {"wirebug_whisperer": 2, "wall_runner" : 1, "critical_eye": 1}],
+        "arms":  [[2  ], {"critical_eye"     : 2, "heroics"     : 1                   }],
+        "waist": [[1,1], {"wirebug_whisperer": 1, "critical_eye": 1                   }],
+        "legs":  [[1  ], {"wall_runner"      : 2, "resuscitate" : 1                   }]
+    },
+    "defenses": {
+        "head":  {"f":2, "w":0, "t":0, "i":0, "d":0},
+        "chest": {"f":2, "w":0, "t":0, "i":0, "d":0},
+        "arms":  {"f":2, "w":0, "t":0, "i":0, "d":0},
+        "waist": {"f":2, "w":0, "t":0, "i":0, "d":0},
+        "legs":  {"f":2, "w":0, "t":0, "i":0, "d":0}
+    }
+},
+"h1": {
+    "tier": "hr",
+    "rarity": 4,
+    "setName": "Leather S",
+
+    "prefix": "Leather",
+    "naming_scheme": "scheme_1",
+    "suffix": "S",
+
+    "pieces": {
+        "head":  [[1,1], {"geologist"  : 1, "hunger_resistance" : 1}],
+        "chest": [[2  ], {"botanist"   : 1                         }],
+        "arms":  [[1,1], {"geologist"  : 1, "special_ammo_boost": 1}],
+        "waist": [[1  ], {"recovery_up": 1, "hunger_resistance" : 2}],
+        "legs":  [[2  ], {"geologist"  : 1                         }]
+    },
+    "defenses": {
+        "head":  {"f":0, "w":0, "t":0, "i":0, "d":0},
+        "chest": {"f":0, "w":0, "t":0, "i":0, "d":0},
+        "arms":  {"f":0, "w":0, "t":0, "i":0, "d":0},
+        "waist": {"f":0, "w":0, "t":0, "i":0, "d":0},
+        "legs":  {"f":0, "w":0, "t":0, "i":0, "d":0}
+    }
+},
+"h2": {
+    "tier": "hr",
+    "rarity": 4,
+    "setName": "Chainmail S",
+
+    "prefix": "Chainmail",
+    "naming_scheme": "scheme_1",
+    "suffix": "S",
+
+    "pieces": {
+        "head":  [[2  ], {"botanist"     : 1, "defense_boost": 1}],
+        "chest": [[1  ], {"defense_boost": 1, "flinch_free"  : 2}],
+        "arms":  [[1,1], {"botanist"     : 1, "defense_boost": 2}],
+        "waist": [[1,1], {"botanist"     : 1, "guard"        : 1}],
+        "legs":  [[1,1], {"botanist"     : 1, "stamina_surge": 1}]
+    },
+    "defenses": {
+        "head":  {"f":0, "w":0, "t":1, "i":0, "d":0},
+        "chest": {"f":0, "w":0, "t":1, "i":0, "d":0},
+        "arms":  {"f":0, "w":0, "t":1, "i":0, "d":0},
+        "waist": {"f":0, "w":0, "t":1, "i":0, "d":0},
+        "legs":  {"f":0, "w":0, "t":1, "i":0, "d":0}
+    }
+},
+"h3": {
+    "tier": "hr",
+    "rarity": 4,
+    "setName": "Hunter S",
+
+    "prefix": "Hunter's",
+    "naming_scheme": "scheme_2",
+    "suffix": "S",
+
+    "pieces": {
+        "head":  [[2  ], {"item_prolonger" : 1                   }],
+        "chest": [[1  ], {"attack_boost"   : 1, "handicraft"  : 1}],
+        "arms":  [[2  ], {"quick_sheath"   : 1                   }],
+        "waist": [[1,1], {"stun_resistance": 2                   }],
+        "legs":  [[2  ], {"stun_resistance": 1, "attack_boost": 2}]
+    },
+    "defenses": {
+        "head":  {"f":0, "w":0, "t":0, "i":0, "d":0},
+        "chest": {"f":0, "w":0, "t":0, "i":0, "d":0},
+        "arms":  {"f":0, "w":0, "t":0, "i":0, "d":0},
+        "waist": {"f":0, "w":0, "t":0, "i":0, "d":0},
+        "legs":  {"f":0, "w":0, "t":0, "i":0, "d":0}
+    }
+},
+"h4": {
+    "tier": "hr",
+    "rarity": 4,
+    "setName": "Alloy S",
+
+    "prefix": "Alloy",
+    "naming_scheme": "scheme_2",
+    "suffix": "S",
+
+    "pieces": {
+        "head":  [[1  ], {"water_attack"    : 1, "protective_polish": 1}],
+        "chest": [[2  ], {"speed_sharpening": 2                        }],
+        "arms":  [[1  ], {"water_attack"    : 1, "critical_eye"     : 2}],
+        "waist": [[1,1], {"water_attack"    : 2, "critical_eye"     : 1}],
+        "legs":  [[2  ], {"speed_sharpening": 1, "critical_eye"     : 1}]
+    },
+    "defenses": {
+        "head":  {"f":-1, "w":0, "t":-1, "i":-1, "d":0},
+        "chest": {"f":-1, "w":0, "t":-1, "i":-1, "d":0},
+        "arms":  {"f":-1, "w":0, "t":-1, "i":-1, "d":0},
+        "waist": {"f":-1, "w":0, "t":-1, "i":-1, "d":0},
+        "legs":  {"f":-1, "w":0, "t":-1, "i":-1, "d":0}
+    }
+},
+"h5": {
+    "tier": "hr",
+    "rarity": 4,
+    "setName": "Bone S",
+
+    "prefix": "Bone",
+    "naming_scheme": "scheme_2",
+    "suffix": "S",
+
+    "pieces": {
+        "head":  [[1  ], {"stamina_thief"  : 1, "partbreaker"    : 1}],
+        "chest": [[1  ], {"stamina_thief"  : 1, "marathon_runner": 1}],
+        "arms":  [[1,1], {"muck_resistance": 1, "stamina_thief"  : 1}],
+        "waist": [[2,1], {"focus"          : 1                      }],
+        "legs":  [[2  ], {"muck_resistance": 2, "focus"          : 1}]
+    },
+    "defenses": {
+        "head":  {"f":0, "w":0, "t":0, "i":-1, "d":0},
+        "chest": {"f":0, "w":0, "t":0, "i":-1, "d":0},
+        "arms":  {"f":0, "w":0, "t":0, "i":-1, "d":0},
+        "waist": {"f":0, "w":0, "t":0, "i":-1, "d":0},
+        "legs":  {"f":0, "w":0, "t":0, "i":-1, "d":0}
+    }
+},
+"h6": {
+    "tier": "hr",
+    "rarity": 4,
+    "setName": "Bnahabra S",
+
+    "prefix": "Bnahabra",
+    "naming_scheme": "bnahabra",
+    "suffix": "S",
+
+    "pieces": {
+        "head":  [[2  ], {"poison_attack"   : 1, "recoil_down" : 2}],
+        "chest": [[1,1], {"paralysis_attack": 1, "evade_window": 1}],
+        "arms":  [[1  ], {"poison_attack"   : 2, "evade_window": 1}],
+        "waist": [[1,1], {"paralysis_attack": 1, "evade_window": 1}],
+        "legs":  [[2,1], {"paralysis_attack": 1, "recoil_down" : 1}]
+    },
+    "defenses": {
+        "head":  {"f":-2, "w":0, "t":0, "i":0, "d":2},
+        "chest": {"f":-2, "w":0, "t":0, "i":0, "d":2},
+        "arms":  {"f":-2, "w":0, "t":0, "i":0, "d":2},
+        "waist": {"f":-2, "w":0, "t":0, "i":0, "d":2},
+        "legs":  {"f":-2, "w":0, "t":0, "i":0, "d":2}
+    }
+},
+"h7": {
+    "tier": "hr",
+    "rarity": 4,
+    "setName": "Izuchi S",
+
+    "prefix": "Izuchi",
+    "naming_scheme": "scheme_3",
+    "suffix": "S",
+
+    "pieces": {
+        "head":  [[1,1], {"critical_eye"  : 1                     }],
+        "chest": [[1  ], {"critical_eye"  : 2, "recovery_speed": 1}],
+        "arms":  [[1,1], {"constitution"  : 2                     }],
+        "waist": [[1,1], {"critical_eye"  : 2                     }],
+        "legs":  [[1,1], {"recovery_speed": 1, "constitution"  : 1}]
+    },
+    "defenses": {
+        "head":  {"f":2, "w":-1, "t":-2, "i":0, "d":0},
+        "chest": {"f":2, "w":-1, "t":-2, "i":0, "d":0},
+        "arms":  {"f":2, "w":-1, "t":-2, "i":0, "d":0},
+        "waist": {"f":2, "w":-1, "t":-2, "i":0, "d":0},
+        "legs":  {"f":2, "w":-1, "t":-2, "i":0, "d":0}
+    }
+},
+"h8": {
+    "tier": "hr",
+    "rarity": 4,
+    "setName": "Baggi S",
+
+    "prefix": "Baggi",
+    "naming_scheme": "scheme_2",
+    "suffix": "S",
+
+    "pieces": {
+        "head":  [[2,1], {"ice_attack"      : 2                       }],
+        "chest": [[1  ], {"attack_boost"    : 1, "ice_attack"      : 1}],
+        "arms":  [[1,1], {"sleep_resistance": 1, "ice_attack"      : 1}],
+        "waist": [[1  ], {"attack_boost"    : 2, "sleep_resistance": 1}],
+        "legs":  [[2,1], {"attack_boost"    : 1                       }]
+    },
+    "defenses": {
+        "head":  {"f":-4, "w":-1, "t":-1, "i":2, "d":1},
+        "chest": {"f":-4, "w":-1, "t":-1, "i":2, "d":1},
+        "arms":  {"f":-4, "w":-1, "t":-1, "i":2, "d":1},
+        "waist": {"f":-4, "w":-1, "t":-1, "i":2, "d":1},
+        "legs":  {"f":-4, "w":-1, "t":-1, "i":2, "d":1}
+    }
+},
+"h9": {
+    "tier": "hr",
+    "rarity": 4,
+    "setName": "Kulu S",
+
+    "prefix": "Kulu-Ya-Ku",
+    "naming_scheme": "scheme_3",
+    "suffix": "S",
+
+    "pieces": {
+        "head":  [[1,1], {"maximum_might"  : 1                    }],
+        "chest": [[2  ], {"slugger"        : 2, "horn_maestro" : 1}],
+        "arms":  [[2  ], {"slugger"        : 1, "stamina_thief": 2}],
+        "waist": [[1,1], {"stamina_thief"  : 1, "maximum_might": 1}],
+        "legs":  [[1  ], {"stun_resistance": 1, "critical_eye" : 2}]
+    },
+    "defenses": {
+        "head":  {"f":0, "w":-3, "t":0, "i":1, "d":0},
+        "chest": {"f":0, "w":-3, "t":0, "i":1, "d":0},
+        "arms":  {"f":0, "w":-3, "t":0, "i":1, "d":0},
+        "waist": {"f":0, "w":-3, "t":0, "i":1, "d":0},
+        "legs":  {"f":0, "w":-3, "t":0, "i":1, "d":0}
+    }
+},
+"h10": {
+    "tier": "hr",
+    "rarity": 4,
+    "setName": "Wroggi S",
+
+    "prefix": "Wroggi",
+    "naming_scheme": "scheme_2",
+    "suffix": "S",
+
+    "pieces": {
+        "head":  [[1  ], {"rapid_fire_up": 1, "evade_extender": 1}],
+        "chest": [[1  ], {"rapid_fire_up": 1, "poison_attack" : 1}],
+        "arms":  [[3  ], {"ammo_up"      : 1                     }],
+        "waist": [[1  ], {"ammo_up"      : 1, "poison_attack" : 2}],
+        "legs":  [[1,1], {"ammo_up"      : 1, "evade_extender": 1}]
+    },
+    "defenses": {
+        "head":  {"f":2, "w":-2, "t":1, "i":-4, "d":0},
+        "chest": {"f":2, "w":-2, "t":1, "i":-4, "d":0},
+        "arms":  {"f":2, "w":-2, "t":1, "i":-4, "d":0},
+        "waist": {"f":2, "w":-2, "t":1, "i":-4, "d":0},
+        "legs":  {"f":2, "w":-2, "t":1, "i":-4, "d":0}
+    }
+},
+"h11": {
+    "tier": "hr",
+    "rarity": 4,
+    "setName": "Arzuros S",
+
+    "prefix": "Arzuros",
+    "naming_scheme": "scheme_2",
+    "suffix": "S",
+
+    "pieces": {
+        "head":  [[1,1  ], {"fortify"      : 1, "defense_boost": 1}],
+        "chest": [[2    ], {"counterstrike": 1                    }],
+        "arms":  [[1    ], {"counterstrike": 1, "defense_boost": 2}],
+        "waist": [[1,1  ], {"counterstrike": 1, "defense_boost": 1}],
+        "legs":  [[3,2,1], {                                      }]
+    },
+    "defenses": {
+        "head":  {"f":-2, "w":0, "t":-2, "i":0, "d":0},
+        "chest": {"f":-2, "w":0, "t":-2, "i":0, "d":0},
+        "arms":  {"f":-2, "w":0, "t":-2, "i":0, "d":0},
+        "waist": {"f":-2, "w":0, "t":-2, "i":0, "d":0},
+        "legs":  {"f":-2, "w":0, "t":-2, "i":0, "d":0}
+    }
+},
+"h12": {
+    "tier": "hr",
+    "rarity": 4,
+    "setName": "Lagombi S",
+
+    "prefix": "Lagombi",
+    "naming_scheme": "scheme_2",
+    "suffix": "S",
+
+    "pieces": {
+        "head":  [[3  ], {"critical_eye"    : 1, "ice_attack"  : 2}],
+        "chest": [[1,1], {"affinity_sliding": 1, "constitution": 1}],
+        "arms":  [[2,1], {"critical_eye"    : 2, "ice_attack"  : 1}],
+        "waist": [[2  ], {"constitution"    : 2                   }],
+        "legs":  [[1,1], {"jump_master"     : 1, "critical_eye": 1}]
+    },
+    "defenses": {
+        "head":  {"f":-3, "w":1, "t":0, "i":3, "d":0},
+        "chest": {"f":-3, "w":1, "t":0, "i":3, "d":0},
+        "arms":  {"f":-3, "w":1, "t":0, "i":3, "d":0},
+        "waist": {"f":-3, "w":1, "t":0, "i":3, "d":0},
+        "legs":  {"f":-3, "w":1, "t":0, "i":3, "d":0}
+    }
+},
+"h13": {
+    "tier": "hr",
+    "rarity": 4,
+    "setName": "Aknosom S",
+
+    "prefix": "Aknosom",
+    "naming_scheme": "scheme_3",
+    "suffix": "S",
+
+    "pieces": {
+        "head":  [[2  ], {"quick_sheath"    : 1, "fire_attack"     : 1}],
+        "chest": [[1  ], {"quick_sheath"    : 1, "peak_performance": 1}],
+        "arms":  [[1,1], {"peak_performance": 1, "fire_attack"     : 1}],
+        "waist": [[3,1], {"quick_sheath"    : 1                       }],
+        "legs":  [[1  ], {"peak_performance": 1, "fire_attack"     : 2}]
+    },
+    "defenses": {
+        "head":  {"f":3, "w":-3, "t":-1, "i":0, "d":0},
+        "chest": {"f":3, "w":-3, "t":-1, "i":0, "d":0},
+        "arms":  {"f":3, "w":-3, "t":-1, "i":0, "d":0},
+        "waist": {"f":3, "w":-3, "t":-1, "i":0, "d":0},
+        "legs":  {"f":3, "w":-3, "t":-1, "i":0, "d":0}
+    }
+},
+"h14": {
+    "tier": "hr",
+    "rarity": 4,
+    "setName": "Khezu S",
+
+    "prefix": "Khezu",
+    "naming_scheme": "scheme_2",
+    "suffix": "S",
+
+    "pieces": {
+        "head":  [[1  ], {"focus"      : 1, "recovery_up"   : 1                     }],
+        "chest": [[1,1], {"wall_runner": 1, "recovery_up"   : 1                     }],
+        "arms":  [[1,1], {"wall_runner": 1, "recovery_speed": 1, "thunder_attack": 2}],
+        "waist": [[1,1], {"focus"      : 1, "slugger"       : 1                     }],
+        "legs":  [[1,1], {"focus"      : 1, "slugger"       : 1, "recovery_speed": 1}]
+    },
+    "defenses": {
+        "head":  {"f":-4, "w":1, "t":4, "i":2, "d":1},
+        "chest": {"f":-4, "w":1, "t":4, "i":2, "d":1},
+        "arms":  {"f":-4, "w":1, "t":4, "i":2, "d":1},
+        "waist": {"f":-4, "w":1, "t":4, "i":2, "d":1},
+        "legs":  {"f":-4, "w":1, "t":4, "i":2, "d":1}
+    }
+},
+"h15": {
+    "tier": "hr",
+    "rarity": 4,
+    "setName": "Tetranadon S",
+
+    "prefix": "Tetranadon",
+    "naming_scheme": "scheme_3",
+    "suffix": "S",
+
+    "pieces": {
+        "head":  [[1  ], {"normal_rapid_up": 1, "speed_eating"      : 1}],
+        "chest": [[1  ], {"normal_rapid_up": 1, "evade_extender"    : 1}],
+        "arms":  [[1,1], {"heroics"        : 1, "special_ammo_boost": 1}],
+        "waist": [[2  ], {"heroics"        : 2                         }],
+        "legs":  [[1  ], {"normal_rapid_up": 1, "hunger_resistance" : 1}]
+    },
+    "defenses": {
+        "head":  {"f":-1, "w":4, "t":-2, "i":1, "d":0},
+        "chest": {"f":-1, "w":4, "t":-2, "i":1, "d":0},
+        "arms":  {"f":-1, "w":4, "t":-2, "i":1, "d":0},
+        "waist": {"f":-1, "w":4, "t":-2, "i":1, "d":0},
+        "legs":  {"f":-1, "w":4, "t":-2, "i":1, "d":0}
+    }
+},
+"h16": {
+    "tier": "hr",
+    "rarity": 4,
+    "setName": "Ingot S",
+
+    "prefix": "Ingot",
+    "naming_scheme": "scheme_2",
+    "suffix": "S",
+
+    "pieces": {
+        "head":  [[3,1], {"windproof"      : 1                   }],
+        "chest": [[2,1], {"windproof"      : 2                   }],
+        "arms":  [[1  ], {"thunder_attack" : 3                   }],
+        "waist": [[2  ], {"power_prolonger": 2                   }],
+        "legs":  [[1  ], {"attack_boost"   : 2, "critical_eye": 2}]
+    },
+    "defenses": {
+        "head":  {"f":-1, "w":-1, "t":1, "i":0, "d":0},
+        "chest": {"f":-1, "w":-1, "t":1, "i":0, "d":0},
+        "arms":  {"f":-1, "w":-1, "t":1, "i":0, "d":0},
+        "waist": {"f":-1, "w":-1, "t":1, "i":0, "d":0},
+        "legs":  {"f":-1, "w":-1, "t":1, "i":0, "d":0}
+    }
+},
+"h17": {
+    "tier": "hr",
+    "rarity": 4,
+    "setName": "Edel S",
+
+    "prefix": "Edel",
+    "naming_scheme": "scheme_4",
+    "suffix": "S",
+
+    "pieces": {
+        "head":  [[2,2], {"poison_resistance": 2}],
+        "chest": [[1,1], {"recovery_up"      : 2}],
+        "arms":  [[   ], {"capture_master"   : 1}],
+        "waist": [[2  ], {"recovery_up"      : 1}],
+        "legs":  [[3,1], {"poison_resistance": 1}]
+    },
+    "defenses": {
+        "head":  {"f":-1, "w":3, "t":-1, "i":0, "d":0},
+        "chest": {"f":-1, "w":3, "t":-1, "i":0, "d":0},
+        "arms":  {"f":-1, "w":3, "t":-1, "i":0, "d":0},
+        "waist": {"f":-1, "w":3, "t":-1, "i":0, "d":0},
+        "legs":  {"f":-1, "w":3, "t":-1, "i":0, "d":0}
+    }
+},
+"h18": {
+    "tier": "hr",
+    "rarity": 4,
+    "setName": "Slagtoth S",
+
+    "prefix": "Slagtoth",
+    "naming_scheme": "slagtoth",
+    "suffix": "S",
+
+    "pieces": {
+        "head":  [[3  ], {"free_meal": 1, "diversion": 1}],
+        "chest": [[2,1], {"free_meal": 2                }],
+        "arms":  null,
+        "waist": null,
+        "legs":  null
+    },
+    "defenses": {
+        "head":  {"f":-2, "w":2, "t":0, "i":-1, "d":1},
+        "chest": {"f":-2, "w":2, "t":0, "i":-1, "d":1},
+        "arms":  null,
+        "waist": null,
+        "legs":  null
+    }
+},
+"h19": {
+    "tier": "hr",
+    "rarity": 4,
+    "setName": "Rhenoplos S",
+
+    "prefix": "Rhenoplos",
+    "naming_scheme": "scheme_3",
+    "suffix": "S",
+
+    "pieces": {
+        "head":  [[1  ], {"pierce_up"        : 2, "stun_resistance"  : 1}],
+        "chest": [[2,1], {"artillery"        : 1, "stun_resistance"  : 2}],
+        "arms":  [[2,1], {"artillery"        : 2                        }],
+        "waist": [[3,1], {"tremor_resistance": 2                        }],
+        "legs":  [[1,1], {"pierce_up"        : 1, "tremor_resistance": 1}]
+    },
+    "defenses": {
+        "head":  {"f":2, "w":0, "t":0, "i":-2, "d":0},
+        "chest": {"f":2, "w":0, "t":0, "i":-2, "d":0},
+        "arms":  {"f":2, "w":0, "t":0, "i":-2, "d":0},
+        "waist": {"f":2, "w":0, "t":0, "i":-2, "d":0},
+        "legs":  {"f":2, "w":0, "t":0, "i":-2, "d":0}
+    }
+},
+"h20": {
+    "tier": "hr",
+    "rarity": 4,
+    "setName": "Bullfango Mask S",
+
+    "prefix": "Bullfango",
+    "naming_scheme": "mask",
+    "suffix": "S",
+
+    "pieces": {
+        "head":  [[1], {"bludgeoner": 2}],
+        "chest": null,
+        "arms":  null,
+        "waist": null,
+        "legs":  null
+    },
+    "defenses": {
+        "head":  {"f":0, "w":4, "t":-2, "i":0, "d":0},
+        "chest": null,
+        "arms":  null,
+        "waist": null,
+        "legs":  null
+    }
+},
+"h21": {
+    "tier": "hr",
+    "rarity": 4,
+    "setName": "Droth S",
+
+    "prefix": "Droth",
+    "naming_scheme": "scheme_2",
+    "suffix": "S",
+
+    "pieces": {
+        "head":  null,
+        "chest": [[2,1], {"water_attack": 2}],
+        "arms":  null,
+        "waist": [[3,1], {"diversion"   : 1}],
+        "legs":  [[2  ], {"water_attack": 3}]
+    },
+    "defenses": {
+        "head":  null,
+        "chest": {"f":-2, "w":4, "t":-1, "i":0, "d":0},
+        "arms":  null,
+        "waist": {"f":-2, "w":4, "t":-1, "i":0, "d":0},
+        "legs":  {"f":-2, "w":4, "t":-1, "i":0, "d":0}
+    }
+},
+"h22": {
+    "tier": "hr",
+    "rarity": 4,
+    "setName": "Jaggi S",
+
+    "prefix": "Jaggi",
+    "naming_scheme": "jaggi",
+    "suffix": "S",
+
+    "pieces": {
+        "head":  null,
+        "chest": null,
+        "arms":  [[1,1], {"attack_boost"  : 2}],
+        "waist": null,
+        "legs":  [[2,1], {"master_mounter": 1}]
+    },
+    "defenses": {
+        "head":  null,
+        "chest": null,
+        "arms":  {"f":0, "w":0, "t":0, "i":1, "d":0},
+        "waist": null,
+        "legs":  {"f":0, "w":0, "t":0, "i":1, "d":0}
+    }
+},
+"h23": {
+    "tier": "hr",
+    "rarity": 4,
+    "setName": "Jaggi Mask S",
+
+    "prefix": "Jaggi",
+    "naming_scheme": "mask",
+    "suffix": "S",
+
+    "pieces": {
+        "head":  [[2], {"affinity_sliding": 1}],
+        "chest": null,
+        "arms":  null,
+        "waist": null,
+        "legs":  null
+    },
+    "defenses": {
+        "head":  {"f":0, "w":0, "t":0, "i":0, "d":0},
+        "chest": null,
+        "arms":  null,
+        "waist": null,
+        "legs":  null
+    }
+},
+"h24": {
+    "tier": "hr",
+    "rarity": 4,
+    "setName": "Ludroth S",
+
+    "prefix": "Ludroth",
+    "naming_scheme": "scheme_3",
+    "suffix": "S",
+
+    "pieces": {
+        "head":  [[1,1  ], {"marathon_runner": 1, "peak_performance": 1}],
+        "chest": [[2    ], {"stamina_surge"  : 2                       }],
+        "arms":  [[2,1,1], {"marathon_runner": 1                       }],
+        "waist": [[1    ], {"marathon_runner": 1, "peak_performance": 2}],
+        "legs":  [[3    ], {"power_prolonger": 2                       }]
+    },
+    "defenses": {
+        "head":  {"f":-3, "w":4, "t":-1, "i":0, "d":0},
+        "chest": {"f":-3, "w":4, "t":-1, "i":0, "d":0},
+        "arms":  {"f":-3, "w":4, "t":-1, "i":0, "d":0},
+        "waist": {"f":-3, "w":4, "t":-1, "i":0, "d":0},
+        "legs":  {"f":-3, "w":4, "t":-1, "i":0, "d":0}
+    }
+},
+"h25": {
+    "tier": "hr",
+    "rarity": 4,
+    "setName": "Barroth S",
+
+    "prefix": "Barroth",
+    "naming_scheme": "scheme_2",
+    "suffix": "S",
+
+    "pieces": {
+        "head":  [[2,1], {"attack_boost": 1, "defense_boost"   : 1, "offensive_guard": 1}],
+        "chest": [[2  ], {"attack_boost": 1, "defense_boost"   : 2                      }],
+        "arms":  [[1,1], {"attack_boost": 2, "affinity_sliding": 1                      }],
+        "waist": [[1  ], {"guard"       : 2, "defense_boost"   : 1                      }],
+        "legs":  [[2,1], {"guard"       : 1, "defense_boost"   : 1, "offensive_guard": 1}]
+    },
+    "defenses": {
+        "head":  {"f":-3, "w":-1, "t":3, "i":-1, "d":0},
+        "chest": {"f":-3, "w":-1, "t":3, "i":-1, "d":0},
+        "arms":  {"f":-3, "w":-1, "t":3, "i":-1, "d":0},
+        "waist": {"f":-3, "w":-1, "t":3, "i":-1, "d":0},
+        "legs":  {"f":-3, "w":-1, "t":3, "i":-1, "d":0}
+    }
+},
+"h26": {
+    "tier": "hr",
+    "rarity": 5,
+    "setName": "Bishaten S",
+
+    "prefix": "Bishaten",
+    "naming_scheme": "scheme_2",
+    "suffix": "S",
+
+    "pieces": {
+        "head":  [[1    ], {"item_prolonger": 1, "wide_range"     : 1, "stun_resistance": 1}],
+        "chest": [[3    ], {"wide_range"    : 1                                            }],
+        "arms":  [[3    ], {"item_prolonger": 1, "stun_resistance": 1                      }],
+        "waist": [[1,1  ], {"item_prolonger": 1, "maximum_might"  : 1                      }],
+        "legs":  [[2,1,1], {"maximum_might" : 1                                            }]
+    },
+    "defenses": {
+        "head":  {"f":-2, "w":2, "t":2, "i":-4, "d":2},
+        "chest": {"f":-2, "w":2, "t":2, "i":-4, "d":2},
+        "arms":  {"f":-2, "w":2, "t":2, "i":-4, "d":2},
+        "waist": {"f":-2, "w":2, "t":2, "i":-4, "d":2},
+        "legs":  {"f":-2, "w":2, "t":2, "i":-4, "d":2}
+    }
+},
+"h27": {
+    "tier": "hr",
+    "rarity": 5,
+    "setName": "Pukei S",
+
+    "prefix": [
+        "Pukei-Pukei",
+        "Pukei-Pukei",
+        "Pukei-Pukei",
+        "Pukei-Pukei",
+        "Pukei"
+    ],
+    "naming_scheme": "scheme_3",
+    "suffix": "S",
+
+    "pieces": {
+        "head":  [[2    ], {"special_ammo_boost": 1, "spare_shot"   : 1}],
+        "chest": [[1    ], {"special_ammo_boost": 1, "constitution" : 2}],
+        "arms":  [[2    ], {"spare_shot"        : 1, "ballistics"   : 1}],
+        "waist": [[2,1  ], {"spare_shot"        : 1, "poison_attack": 1}],
+        "legs":  [[1,1,1], {"constitution"      : 1, "ballistics"   : 1}]
+    },
+    "defenses": {
+        "head":  {"f":0, "w":3, "t":-3, "i":0, "d":1},
+        "chest": {"f":0, "w":3, "t":-3, "i":0, "d":1},
+        "arms":  {"f":0, "w":3, "t":-3, "i":0, "d":1},
+        "waist": {"f":0, "w":3, "t":-3, "i":0, "d":1},
+        "legs":  {"f":0, "w":3, "t":-3, "i":0, "d":1}
+    }
+},
+"h28": {
+    "tier": "hr",
+    "rarity": 5,
+    "setName": "Jyura",
+
+    "prefix": "Jyuratodus",
+    "naming_scheme": "scheme_2",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[2,1  ], {"offensive_guard": 1, "evade_extender" : 1                      }],
+        "chest": [[1,1,1], {"power_prolonger": 2, "evade_extender" : 1                      }],
+        "arms":  [[3,2,1], {                                                                }],
+        "waist": [[1,1  ], {"guard_up"       : 1, "power_prolonger": 1, "offensive_guard": 1}],
+        "legs":  [[2,1,1], {"guard_up"       : 2                                            }]
+    },
+    "defenses": {
+        "head":  {"f":-1, "w":2, "t":-3, "i":0, "d":0},
+        "chest": {"f":-1, "w":2, "t":-3, "i":0, "d":0},
+        "arms":  {"f":-1, "w":2, "t":-3, "i":0, "d":0},
+        "waist": {"f":-1, "w":2, "t":-3, "i":0, "d":0},
+        "legs":  {"f":-1, "w":2, "t":-3, "i":0, "d":0}
+    }
+},
+"h29": {
+    "tier": "hr",
+    "rarity": 5,
+    "setName": "Basarios S",
+
+    "prefix": "Basarios",
+    "naming_scheme": "scheme_2",
+    "suffix": "S",
+
+    "pieces": {
+        "head":  [[2,1], {"load_shells"     : 1, "defense_boost"   : 1}],
+        "chest": [[1,1], {"guard"           : 1, "load_shells"     : 1}],
+        "arms":  [[1,1], {"guard"           : 2, "speed_sharpening": 1}],
+        "waist": [[2  ], {"speed_sharpening": 2, "defense_boost"   : 2}],
+        "legs":  [[3  ], {"load_shells"     : 1, "defense_boost"   : 1}]
+    },
+    "defenses": {
+        "head":  {"f":0, "w":-2, "t":1, "i":1, "d":-3},
+        "chest": {"f":0, "w":-2, "t":1, "i":1, "d":-3},
+        "arms":  {"f":0, "w":-2, "t":1, "i":1, "d":-3},
+        "waist": {"f":0, "w":-2, "t":1, "i":1, "d":-3},
+        "legs":  {"f":0, "w":-2, "t":1, "i":1, "d":-3}
+    }
+},
+"h30": {
+    "tier": "hr",
+    "rarity": 5,
+    "setName": "Rathian S",
+
+    "prefix": "Rathian",
+    "naming_scheme": "scheme_3",
+    "suffix": "S",
+
+    "pieces": {
+        "head":  [[2,1  ], {"blight_resistance": 1                 }],
+        "chest": [[3,1,1], {"recovery_up"      : 1, "botanist"  : 1}],
+        "arms":  [[1,1  ], {"blight_resistance": 1, "wide_range": 1}],
+        "waist": [[2    ], {"recovery_up"      : 2, "wide_range": 1}],
+        "legs":  [[2    ], {"blight_resistance": 1, "free_meal" : 1}]
+    },
+    "defenses": {
+        "head":  {"f":3, "w":0, "t":-2, "i":0, "d":-3},
+        "chest": {"f":3, "w":0, "t":-2, "i":0, "d":-3},
+        "arms":  {"f":3, "w":0, "t":-2, "i":0, "d":-3},
+        "waist": {"f":3, "w":0, "t":-2, "i":0, "d":-3},
+        "legs":  {"f":3, "w":0, "t":-2, "i":0, "d":-3}
+    }
+},
+"h31": {
+    "tier": "hr",
+    "rarity": 5,
+    "setName": "Skull S",
+
+    "prefix": "Skull",
+    "naming_scheme": "visage",
+    "suffix": "S",
+
+    "pieces": {
+        "head":  [[3,2], {"fortify": 1}],
+        "chest": null,
+        "arms":  null,
+        "waist": null,
+        "legs":  null
+    },
+    "defenses": {
+        "head":  {"f":-3, "w":-3, "t":-3, "i":-3, "d":4},
+        "chest": null,
+        "arms":  null,
+        "waist": null,
+        "legs":  null
+    }
+},
+"h32": {
+    "tier": "hr",
+    "rarity": 5,
+    "setName": "Chrome Metal",
+
+    "prefix": "Chrome Metal",
+    "naming_scheme": "chrome_metal",
+    "suffix": "",
+
+    "pieces": {
+        "head":  null,
+        "chest": null,
+        "arms":  null,
+        "waist": [[3,2,1], {                }],
+        "legs":  [[3    ], {"flinch_free": 2}]
+    },
+    "defenses": {
+        "head":  null,
+        "chest": null,
+        "arms":  null,
+        "waist": {"f":-2, "w":-2, "t":-2, "i":-2, "d":-2},
+        "legs":  {"f":-2, "w":-2, "t":-2, "i":-2, "d":-2}
+    }
+},
+"h33": {
+    "tier": "hr",
+    "rarity": 5,
+    "setName": "Dober",
+
+    "prefix": "Dober",
+    "naming_scheme": "scheme_2",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[1,1  ], {"dragon_attack": 1, "attack_boost"   : 1, "heroics"        : 1              }],
+        "chest": [[1    ], {"dragon_attack": 1, "focus"          : 1, "power_prolonger": 1, "heroics": 1}],
+        "arms":  [[2,1,1], {"dragon_attack": 1, "power_prolonger": 1                                    }],
+        "waist": [[2    ], {"dragon_attack": 1, "attack_boost"   : 2                                    }],
+        "legs":  [[2    ], {"dragon_attack": 1, "focus"          : 1, "heroics"        : 1              }]
+    },
+    "defenses": {
+        "head":  {"f":-2, "w":0, "t":0, "i":0, "d":4},
+        "chest": {"f":-2, "w":0, "t":0, "i":0, "d":4},
+        "arms":  {"f":-2, "w":0, "t":0, "i":0, "d":4},
+        "waist": {"f":-2, "w":0, "t":0, "i":0, "d":4},
+        "legs":  {"f":-2, "w":0, "t":0, "i":0, "d":4}
+    }
+},
+"h34": {
+    "tier": "hr",
+    "rarity": 5,
+    "setName": "Shell-Studded S",
+
+    "prefix": [
+        "S. Studded",
+        "Shell-Studded",
+        "S. Studded",
+        "S. Studded",
+        "Shelled"
+    ],
+    "naming_scheme": "shell_studded",
+    "suffix": "S",
+
+    "pieces": {
+        "head":  [[2,1], {"ballistics"     : 2                      }],
+        "chest": [[1,1], {"normal_rapid_up": 1, "pierce_up"      : 1}],
+        "arms":  [[1,1], {"spread_up"      : 1, "normal_rapid_up": 1}],
+        "waist": [[3,1], {"ballistics"     : 1                      }],
+        "legs":  [[1,1], {"spread_up"      : 1, "pierce_up"      : 1}]
+    },
+    "defenses": {
+        "head":  {"f":0, "w":2, "t":1, "i":-1, "d":0},
+        "chest": {"f":0, "w":2, "t":1, "i":-1, "d":0},
+        "arms":  {"f":0, "w":2, "t":1, "i":-1, "d":0},
+        "waist": {"f":0, "w":2, "t":1, "i":-1, "d":0},
+        "legs":  {"f":0, "w":2, "t":1, "i":-1, "d":0}
+    }
+},
+"h35": {
+    "tier": "hr",
+    "rarity": 5,
+    "setName": "Death Stench S",
+
+    "prefix": "Death Stench",
+    "naming_scheme": "death_stench",
+    "suffix": "S",
+
+    "pieces": {
+        "head":  [[2  ], {"protective_polish": 1                    }],
+        "chest": [[2  ], {"fortify"          : 1, "rapid_morph"  : 1}],
+        "arms":  [[1  ], {"maximum_might"    : 2                    }],
+        "waist": [[1,1], {"protective_polish": 1, "maximum_might": 1}],
+        "legs":  [[1,1], {"protective_polish": 1, "rapid_morph"  : 1}]
+    },
+    "defenses": {
+        "head":  {"f":3, "w":1, "t":1, "i":-1, "d":0},
+        "chest": {"f":3, "w":1, "t":1, "i":-1, "d":0},
+        "arms":  {"f":3, "w":1, "t":1, "i":-1, "d":0},
+        "waist": {"f":3, "w":1, "t":1, "i":-1, "d":0},
+        "legs":  {"f":3, "w":1, "t":1, "i":-1, "d":0}
+    }
+},
+"h36": {
+    "tier": "hr",
+    "rarity": 5,
+    "setName": "Mosgharl S",
+
+    "prefix": "Mosgharl",
+    "naming_scheme": "scheme_4",
+    "suffix": "S",
+
+    "pieces": {
+        "head":  [[2,2  ], {"blast_resistance": 2                  }],
+        "chest": [[2    ], {"reload_speed"    : 2                  }],
+        "arms":  [[2,1,1], {"blast_resistance": 1, "flinch_free": 1}],
+        "waist": [[1    ], {"fire_attack"     : 3                  }],
+        "legs":  [[2,1  ], {"recoil_down"     : 1                  }]
+    },
+    "defenses": {
+        "head":  {"f":-3, "w":1, "t":0, "i":3, "d":0},
+        "chest": {"f":-3, "w":1, "t":0, "i":3, "d":0},
+        "arms":  {"f":-3, "w":1, "t":0, "i":3, "d":0},
+        "waist": {"f":-3, "w":1, "t":0, "i":3, "d":0},
+        "legs":  {"f":-3, "w":1, "t":0, "i":3, "d":0}
+    }
+},
+"h37": {
+    "tier": "hr",
+    "rarity": 5,
+    "setName": "Medium S",
+
+    "prefix": "Medium's",
+    "naming_scheme": "medium",
+    "suffix": "S",
+
+    "pieces": {
+        "head":  [[1  ], {"speed_eating": 1, "free_meal": 1, "good_luck": 1}],
+        "chest": [[1,1], {"wide_range"  : 1, "good_luck": 1                }],
+        "arms":  [[3  ], {"wide_range"  : 1                                }],
+        "waist": [[2  ], {"speed_eating": 1, "free_meal": 1                }],
+        "legs":  [[1  ], {"wide_range"  : 1, "free_meal": 1, "good_luck": 1}]
+    },
+    "defenses": {
+        "head":  {"f":3, "w":0, "t":0, "i":0, "d":0},
+        "chest": {"f":3, "w":0, "t":0, "i":0, "d":0},
+        "arms":  {"f":3, "w":0, "t":0, "i":0, "d":0},
+        "waist": {"f":3, "w":0, "t":0, "i":0, "d":0},
+        "legs":  {"f":3, "w":0, "t":0, "i":0, "d":0}
+    }
+},
+"hx38": {
+    "tier": "hr",
+    "rarity": 5,
+    "setName": "Channeler S",
+
+    "prefix": "Channeler's",
+    "naming_scheme": "channeler",
+    "suffix": "S",
+
+    "pieces": {
+        "head":  [[1  ], {"razor_sharp" : 2, "spare_shot"       : 2, "wirebug_whisperer": 1               }],
+        "chest": [[1  ], {"razor_sharp" : 1, "spare_shot"       : 1, "evade_window"     : 1, "agitator": 1}],
+        "arms":  [[2  ], {"evade_window": 1, "wirebug_whisperer": 1                                       }],
+        "waist": [[1  ], {"agitator"    : 2, "wirebug_whisperer": 1                                       }],
+        "legs":  [[1,1], {"evade_window": 1, "agitator"         : 1                                       }]
+    },
+    "defenses": {
+        "head":  {"f":3, "w":0, "t":0, "i":0, "d":0},
+        "chest": {"f":3, "w":0, "t":0, "i":0, "d":0},
+        "arms":  {"f":3, "w":0, "t":0, "i":0, "d":0},
+        "waist": {"f":3, "w":0, "t":0, "i":0, "d":0},
+        "legs":  {"f":3, "w":0, "t":0, "i":0, "d":0}
+    }
+},
+"h39": {
+    "tier": "hr",
+    "rarity": 4,
+    "setName": "Uroktor S",
+
+    "prefix": "Uroktor",
+    "naming_scheme": "uroktor",
+    "suffix": "S",
+
+    "pieces": {
+        "head":  null,
+        "chest": [[2  ], {"fire_attack": 3}],
+        "arms":  null,
+        "waist": [[2,1], {"fire_attack": 2}],
+        "legs":  null
+    },
+    "defenses": {
+        "head":  null,
+        "chest": {"f":4, "w":-2, "t":0, "i":-1, "d":0},
+        "arms":  null,
+        "waist": {"f":4, "w":-2, "t":0, "i":-1, "d":0},
+        "legs":  null
+    }
+},
+"h40": {
+    "tier": "hr",
+    "rarity": 5,
+    "setName": "Remobra S",
+
+    "prefix": "Remobra",
+    "naming_scheme": "remobra",
+    "suffix": "S",
+
+    "pieces": {
+        "head":  [[2  ], {"windproof"       : 2                }],
+        "chest": [[1,1], {"critical_boost"  : 1                }],
+        "arms":  [[2  ], {"critical_element": 1, "windproof": 1}],
+        "waist": [[1,1], {"critical_element": 2                }],
+        "legs":  [[1,1], {"weakness_exploit": 1                }]
+    },
+    "defenses": {
+        "head":  {"f":1, "w":1, "t":1, "i":1, "d":3},
+        "chest": {"f":1, "w":1, "t":1, "i":1, "d":3},
+        "arms":  {"f":1, "w":1, "t":1, "i":1, "d":3},
+        "waist": {"f":1, "w":1, "t":1, "i":1, "d":3},
+        "legs":  {"f":1, "w":1, "t":1, "i":1, "d":3}
+    }
+},
+"h41": {
+    "tier": "hr",
+    "rarity": 5,
+    "setName": "Somnacanth S",
+
+    "prefix": "Somnacanth",
+    "naming_scheme": "scheme_3",
+    "suffix": "S",
+
+    "pieces": {
+        "head":  [[2,1], {"sleep_attack"   : 1                      }],
+        "chest": [[1,1], {"sleep_attack"   : 1, "item_prolonger" : 1}],
+        "arms":  [[2  ], {"bombardier"     : 2, "divine_blessing": 1}],
+        "waist": [[3  ], {"sleep_attack"   : 1, "bombardier"     : 1}],
+        "legs":  [[1,1], {"divine_blessing": 2                      }]
+    },
+    "defenses": {
+        "head":  {"f":-1, "w":2, "t":-3, "i":0, "d":1},
+        "chest": {"f":-1, "w":2, "t":-3, "i":0, "d":1},
+        "arms":  {"f":-1, "w":2, "t":-3, "i":0, "d":1},
+        "waist": {"f":-1, "w":2, "t":-3, "i":0, "d":1},
+        "legs":  {"f":-1, "w":2, "t":-3, "i":0, "d":1}
+    }
+},
+"h42": {
+    "tier": "hr",
+    "rarity": 5,
+    "setName": "Barioth S",
+
+    "prefix": "Barioth",
+    "naming_scheme": "scheme_2",
+    "suffix": "S",
+
+    "pieces": {
+        "head":  [[1    ], {"critical_draw": 2                                       }],
+        "chest": [[2,1,1], {"quick_sheath" : 1, "maximum_might": 1                   }],
+        "arms":  [[2    ], {"quick_sheath" : 1, "maximum_might": 1, "critical_eye": 1}],
+        "waist": [[1    ], {"critical_draw": 1, "critical_eye" : 2                   }],
+        "legs":  [[3,1  ], {"quick_sheath" : 1                                       }]
+    },
+    "defenses": {
+        "head":  {"f":-3, "w":0, "t":-1, "i":3, "d":0},
+        "chest": {"f":-3, "w":0, "t":-1, "i":3, "d":0},
+        "arms":  {"f":-3, "w":0, "t":-1, "i":3, "d":0},
+        "waist": {"f":-3, "w":0, "t":-1, "i":3, "d":0},
+        "legs":  {"f":-3, "w":0, "t":-1, "i":3, "d":0}
+    }
+},
+"h43": {
+    "tier": "hr",
+    "rarity": 5,
+    "setName": "Kadachi S",
+
+    "prefix": [
+        "Kadachi",
+        "Tobi-Kadachi",
+        "Kadachi",
+        "Tobi-Kadachi",
+        "Kadachi"
+    ],
+    "naming_scheme": "scheme_3",
+    "suffix": "S",
+
+    "pieces": {
+        "head":  [[1,1], {"jump_master" : 1, "constitution": 1, "critical_eye": 1}],
+        "chest": [[3  ], {"minds_eye"   : 1, "critical_eye": 1                   }],
+        "arms":  [[2  ], {"constitution": 3                                      }],
+        "waist": [[1,1], {"minds_eye"   : 2                                      }],
+        "legs":  [[2,1], {"constitution": 1, "critical_eye": 2                   }]
+    },
+    "defenses": {
+        "head":  {"f":0, "w":-3, "t":3, "i":0, "d":0},
+        "chest": {"f":0, "w":-3, "t":3, "i":0, "d":0},
+        "arms":  {"f":0, "w":-3, "t":3, "i":0, "d":0},
+        "waist": {"f":0, "w":-3, "t":3, "i":0, "d":0},
+        "legs":  {"f":0, "w":-3, "t":3, "i":0, "d":0}
+    }
+},
+"h44": {
+    "tier": "hr",
+    "rarity": 6,
+    "setName": "Anja S",
+
+    "prefix": "Anjanath",
+    "naming_scheme": "scheme_2",
+    "suffix": "S",
+
+    "pieces": {
+        "head":  [[2    ], {"focus"          : 1, "slugger"        : 1}],
+        "chest": [[1,1  ], {"focus"          : 2, "marathon_runner": 1}],
+        "arms":  [[1    ], {"slugger"        : 2, "attack_boost"   : 2}],
+        "waist": [[2,1,1], {"attack_boost"   : 2                      }],
+        "legs":  [[2    ], {"marathon_runner": 2                      }]
+    },
+    "defenses": {
+        "head":  {"f":3, "w":-3, "t":-1, "i":-1, "d":0},
+        "chest": {"f":3, "w":-3, "t":-1, "i":-1, "d":0},
+        "arms":  {"f":3, "w":-3, "t":-1, "i":-1, "d":0},
+        "waist": {"f":3, "w":-3, "t":-1, "i":-1, "d":0},
+        "legs":  {"f":3, "w":-3, "t":-1, "i":-1, "d":0}
+    }
+},
+"h45": {
+    "tier": "hr",
+    "rarity": 6,
+    "setName": "Nargacuga S",
+
+    "prefix": "Nargacuga",
+    "naming_scheme": "scheme_3",
+    "suffix": "S",
+
+    "pieces": {
+        "head":  [[3  ], {"evade_window"  : 1                     }],
+        "chest": [[1,1], {"evade_window"  : 1, "critical_eye"  : 2}],
+        "arms":  [[1,1], {"evade_window"  : 1, "evade_extender": 1}],
+        "waist": [[2  ], {"evade_extender": 2, "critical_eye"  : 1}],
+        "legs":  [[1  ], {"evade_window"  : 2, "critical_eye"  : 1}]
+    },
+    "defenses": {
+        "head":  {"f":-2, "w":1, "t":-3, "i":1, "d":1},
+        "chest": {"f":-2, "w":1, "t":-3, "i":1, "d":1},
+        "arms":  {"f":-2, "w":1, "t":-3, "i":1, "d":1},
+        "waist": {"f":-2, "w":1, "t":-3, "i":1, "d":1},
+        "legs":  {"f":-2, "w":1, "t":-3, "i":1, "d":1}
+    }
+},
+"h46": {
+    "tier": "hr",
+    "rarity": 6,
+    "setName": "Mizutsune S",
+
+    "prefix": "Mizutsune",
+    "naming_scheme": "scheme_3",
+    "suffix": "S",
+
+    "pieces": {
+        "head":  [[2,1  ], {"resuscitate" : 1                  }],
+        "chest": [[1    ], {"bubbly_dance": 1, "resuscitate": 1}],
+        "arms":  [[2    ], {"resuscitate" : 1, "free_meal"  : 1}],
+        "waist": [[2,1  ], {"bubbly_dance": 1, "free_meal"  : 1}],
+        "legs":  [[3,1,1], {"bubbly_dance": 1                  }]
+    },
+    "defenses": {
+        "head":  {"f":0, "w":2, "t":-3, "i":1, "d":-1},
+        "chest": {"f":0, "w":2, "t":-3, "i":1, "d":-1},
+        "arms":  {"f":0, "w":2, "t":-3, "i":1, "d":-1},
+        "waist": {"f":0, "w":2, "t":-3, "i":1, "d":-1},
+        "legs":  {"f":0, "w":2, "t":-3, "i":1, "d":-1}
+    }
+},
+"h47": {
+    "tier": "hr",
+    "rarity": 6,
+    "setName": "Rathalos S",
+
+    "prefix": "Rathalos",
+    "naming_scheme": "scheme_3",
+    "suffix": "S",
+
+    "pieces": {
+        "head":  [[1,1], {"attack_boost": 1, "partbreaker": 1                }],
+        "chest": [[1  ], {"attack_boost": 1, "partbreaker": 1, "windproof": 1}],
+        "arms":  [[2  ], {"attack_boost": 2                                  }],
+        "waist": [[2  ], {"attack_boost": 2, "windproof"  : 1                }],
+        "legs":  [[1,1], {"attack_boost": 1, "partbreaker": 1                }]
+    },
+    "defenses": {
+        "head":  {"f":3, "w":1, "t":-2, "i":1, "d":-3},
+        "chest": {"f":3, "w":1, "t":-2, "i":1, "d":-3},
+        "arms":  {"f":3, "w":1, "t":-2, "i":1, "d":-3},
+        "waist": {"f":3, "w":1, "t":-2, "i":1, "d":-3},
+        "legs":  {"f":3, "w":1, "t":-2, "i":1, "d":-3}
+    }
+},
+"h48": {
+    "tier": "hr",
+    "rarity": 6,
+    "setName": "Zinogre S",
+
+    "prefix": "Zinogre",
+    "naming_scheme": "scheme_3",
+    "suffix": "S",
+
+    "pieces": {
+        "head":  [[1  ], {"latent_power": 1, "weakness_exploit": 1}],
+        "chest": [[1  ], {"latent_power": 1, "weakness_exploit": 1}],
+        "arms":  [[2  ], {"latent_power": 1, "constitution"    : 1}],
+        "waist": [[3,1], {"latent_power": 1                       }],
+        "legs":  [[1  ], {"latent_power": 1, "constitution"    : 2}]
+    },
+    "defenses": {
+        "head":  {"f":0, "w":-1, "t":4, "i":-4, "d":1},
+        "chest": {"f":0, "w":-1, "t":4, "i":-4, "d":1},
+        "arms":  {"f":0, "w":-1, "t":4, "i":-4, "d":1},
+        "waist": {"f":0, "w":-1, "t":4, "i":-4, "d":1},
+        "legs":  {"f":0, "w":-1, "t":4, "i":-4, "d":1}
+    }
+},
+"h49": {
+    "tier": "hr",
+    "rarity": 6,
+    "setName": "Rhopessa S",
+
+    "prefix": "Rhopessa",
+    "naming_scheme": "rhopessa",
+    "suffix": "S",
+
+    "pieces": {
+        "head":  [[1  ], {"critical_element": 2                                        }],
+        "chest": [[1  ], {"critical_element": 1, "critical_eye" : 2, "dragon_attack": 1}],
+        "arms":  [[3  ], {"evade_window"    : 1                                        }],
+        "waist": [[1  ], {"dragon_attack"   : 3                                        }],
+        "legs":  [[1,1], {"critical_eye"    : 2, "dragon_attack": 1                    }]
+    },
+    "defenses": {
+        "head":  {"f":-2, "w":0, "t":3, "i":-2, "d":2},
+        "chest": {"f":-2, "w":0, "t":3, "i":-2, "d":2},
+        "arms":  {"f":-2, "w":0, "t":3, "i":-2, "d":2},
+        "waist": {"f":-2, "w":0, "t":3, "i":-2, "d":2},
+        "legs":  {"f":-2, "w":0, "t":3, "i":-2, "d":2}
+    }
+},
+"h50": {
+    "tier": "hr",
+    "rarity": 6,
+    "setName": "Jelly S",
+
+    "prefix": "Jelly",
+    "naming_scheme": "jelly",
+    "suffix": "S",
+
+    "pieces": {
+        "head":  [[3  ], {"partbreaker"    : 1, "divine_blessing": 1}],
+        "chest": [[2,1], {"blast_attack"   : 2                      }],
+        "arms":  [[1,1], {"divine_blessing": 2                      }],
+        "waist": [[2,1], {"partbreaker"    : 2                      }],
+        "legs":  [[3,1], {"blast_attack"   : 1                      }]
+    },
+    "defenses": {
+        "head":  {"f":1, "w":3, "t":0, "i":2, "d":0},
+        "chest": {"f":1, "w":3, "t":0, "i":2, "d":0},
+        "arms":  {"f":1, "w":3, "t":0, "i":2, "d":0},
+        "waist": {"f":1, "w":3, "t":0, "i":2, "d":0},
+        "legs":  {"f":1, "w":3, "t":0, "i":2, "d":0}
+    }
+},
+"h51": {
+    "tier": "hr",
+    "rarity": 6,
+    "setName": "Gargwa Mask S",
+
+    "prefix": "Gargwa",
+    "naming_scheme": "mask",
+    "suffix": "S",
+
+    "pieces": {
+        "head":  [[], {"leap_of_faith": 1, "good_luck": 1}],
+        "chest": null,
+        "arms":  null,
+        "waist": null,
+        "legs":  null
+    },
+    "defenses": {
+        "head":  {"f":-3, "w":-2, "t":-2, "i":1, "d":0},
+        "chest": null,
+        "arms":  null,
+        "waist": null,
+        "legs":  null
+    }
+},
+"h52": {
+    "tier": "hr",
+    "rarity": 6,
+    "setName": "Sinister S",
+
+    "prefix": "Sinister",
+    "naming_scheme": "sinister",
+    "suffix": "S",
+
+    "pieces": {
+        "head":  [[2  ], {"resentment"    : 1, "handicraft": 1, "flinch_free": 1}],
+        "chest": [[2  ], {"hellfire_cloak": 1, "resentment": 1                  }],
+        "arms":  [[2  ], {"hellfire_cloak": 1, "handicraft": 2                  }],
+        "waist": [[3  ], {"hellfire_cloak": 1                                   }],
+        "legs":  [[1,1], {"hellfire_cloak": 1, "resentment": 1, "flinch_free": 1}]
+    },
+    "defenses": {
+        "head":  {"f":3, "w":-3, "t":-2, "i":1, "d":1},
+        "chest": {"f":3, "w":-3, "t":-2, "i":1, "d":1},
+        "arms":  {"f":3, "w":-3, "t":-2, "i":1, "d":1},
+        "waist": {"f":3, "w":-3, "t":-2, "i":1, "d":1},
+        "legs":  {"f":3, "w":-3, "t":-2, "i":1, "d":1}
+    }
+},
+"h53": {
+    "tier": "hr",
+    "rarity": 6,
+    "setName": "Goss Harag S",
+
+    "prefix": "Goss Harag",
+    "naming_scheme": "scheme_3",
+    "suffix": "S",
+
+    "pieces": {
+        "head":  [[1,1], {"critical_draw" : 1, "agitator"      : 1}],
+        "chest": [[2,1], {"critical_draw" : 1, "resentment"    : 1}],
+        "arms":  [[2  ], {"critical_draw" : 1, "punishing_draw": 1}],
+        "waist": [[2,1], {"punishing_draw": 1, "resentment"    : 1}],
+        "legs":  [[1  ], {"punishing_draw": 1, "agitator"      : 3}]
+    },
+    "defenses": {
+        "head":  {"f":-4, "w":1, "t":-1, "i":4, "d":0},
+        "chest": {"f":-4, "w":1, "t":-1, "i":4, "d":0},
+        "arms":  {"f":-4, "w":1, "t":-1, "i":4, "d":0},
+        "waist": {"f":-4, "w":1, "t":-1, "i":4, "d":0},
+        "legs":  {"f":-4, "w":1, "t":-1, "i":4, "d":0}
+    }
+},
+"h54": {
+    "tier": "hr",
+    "rarity": 6,
+    "setName": "Almudron S",
+
+    "prefix": "Almudron",
+    "naming_scheme": "scheme_2",
+    "suffix": "S",
+
+    "pieces": {
+        "head":  [[2,2], {"rapid_morph" : 2                      }],
+        "chest": [[1  ], {"razor_sharp" : 2, "power_prolonger": 1}],
+        "arms":  [[1,1], {"rapid_morph" : 1, "evade_window"   : 2}],
+        "waist": [[2,1], {"evade_window": 1, "power_prolonger": 1}],
+        "legs":  [[3,1], {"razor_sharp" : 1                      }]
+    },
+    "defenses": {
+        "head":  {"f":-4, "w":3, "t":3, "i":-2, "d":-2},
+        "chest": {"f":-4, "w":3, "t":3, "i":-2, "d":-2},
+        "arms":  {"f":-4, "w":3, "t":3, "i":-2, "d":-2},
+        "waist": {"f":-4, "w":3, "t":3, "i":-2, "d":-2},
+        "legs":  {"f":-4, "w":3, "t":3, "i":-2, "d":-2}
+    }
+},
+"h55": {
+    "tier": "hr",
+    "rarity": 6,
+    "setName": "Tigrex S",
+
+    "prefix": "Tigrex",
+    "naming_scheme": "scheme_3",
+    "suffix": "S",
+
+    "pieces": {
+        "head":  [[2,1], {"earplugs"    : 1, "speed_eating": 1}],
+        "chest": [[1,1], {"earplugs"    : 2, "bludgeoner"  : 1}],
+        "arms":  [[3  ], {"bludgeoner"  : 2, "minds_eye"   : 1}],
+        "waist": [[2,1], {"earplugs"    : 2                   }],
+        "legs":  [[1  ], {"speed_eating": 2, "minds_eye"   : 1}]
+    },
+    "defenses": {
+        "head":  {"f":2, "w":0, "t":-3, "i":0, "d":-2},
+        "chest": {"f":2, "w":0, "t":-3, "i":0, "d":-2},
+        "arms":  {"f":2, "w":0, "t":-3, "i":0, "d":-2},
+        "waist": {"f":2, "w":0, "t":-3, "i":0, "d":-2},
+        "legs":  {"f":2, "w":0, "t":-3, "i":0, "d":-2}
+    }
+},
+"h56": {
+    "tier": "hr",
+    "rarity": 6,
+    "setName": "Diablos S",
+
+    "prefix": "Diablos",
+    "naming_scheme": "scheme_2",
+    "suffix": "S",
+
+    "pieces": {
+        "head":  [[2  ], {"guard"          : 1, "stamina_surge"  : 1}],
+        "chest": [[1  ], {"guard"          : 2, "offensive_guard": 1}],
+        "arms":  [[2,1], {"offensive_guard": 1                      }],
+        "waist": [[1,1], {"guard"          : 1, "stamina_surge"  : 1}],
+        "legs":  [[2  ], {"guard"          : 1, "offensive_guard": 1}]
+    },
+    "defenses": {
+        "head":  {"f":3, "w":-1, "t":-1, "i":-3, "d":-1},
+        "chest": {"f":3, "w":-1, "t":-1, "i":-3, "d":-1},
+        "arms":  {"f":3, "w":-1, "t":-1, "i":-3, "d":-1},
+        "waist": {"f":3, "w":-1, "t":-1, "i":-3, "d":-1},
+        "legs":  {"f":3, "w":-1, "t":-1, "i":-3, "d":-1}
+    }
+},
+"h57": {
+    "tier": "hr",
+    "rarity": 6,
+    "setName": "Rakna-Kadaki",
+
+    "prefix": "Rakna",
+    "naming_scheme": "rakna_kadaki",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[1,1], {"spread_up"   : 1, "reload_speed" : 1}],
+        "chest": [[2,1], {"spread_up"   : 1, "reload_speed" : 1}],
+        "arms":  [[2  ], {"constitution": 2, "stamina_surge": 1}],
+        "waist": [[2,2], {"spread_up"   : 1                    }],
+        "legs":  [[1  ], {"constitution": 2, "stamina_surge": 2}]
+    },
+    "defenses": {
+        "head":  {"f":4, "w":-2, "t":-1, "i":-3, "d":1},
+        "chest": {"f":4, "w":-2, "t":-1, "i":-3, "d":1},
+        "arms":  {"f":4, "w":-2, "t":-1, "i":-3, "d":1},
+        "waist": {"f":4, "w":-2, "t":-1, "i":-3, "d":1},
+        "legs":  {"f":4, "w":-2, "t":-1, "i":-3, "d":1}
+    }
+},
+"h58": {
+    "tier": "hr",
+    "rarity": 7,
+    "setName": "Golden",
+
+    "prefix": "Golden",
+    "naming_scheme": "golden",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[2,1], {"heroics"       : 2, "maximum_might" : 1                    }],
+        "chest": [[2  ], {"heroics"       : 1, "maximum_might" : 1, "latent_power" : 1}],
+        "arms":  [[3,1], {"heroics"       : 1, "latent_power"  : 1                    }],
+        "waist": [[1  ], {"heroics"       : 1, "critical_boost": 1, "maximum_might": 1}],
+        "legs":  [[1,1], {"critical_boost": 2, "latent_power"  : 1                    }]
+    },
+    "defenses": {
+        "head":  {"f":2, "w":1, "t":3, "i":-5, "d":2},
+        "chest": {"f":2, "w":1, "t":3, "i":-5, "d":2},
+        "arms":  {"f":2, "w":1, "t":3, "i":-5, "d":2},
+        "waist": {"f":2, "w":1, "t":3, "i":-5, "d":2},
+        "legs":  {"f":2, "w":1, "t":3, "i":-5, "d":2}
+    }
+},
+"h59": {
+    "tier": "hr",
+    "rarity": 7,
+    "setName": "Damascus",
+
+    "prefix": "Damascus",
+    "naming_scheme": "scheme_2",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[   ], {"tremor_resistance": 2, "earplugs"  : 2}],
+        "chest": [[1,1], {"tremor_resistance": 1, "handicraft": 1}],
+        "arms":  [[2,1], {"earplugs"         : 1                 }],
+        "waist": [[1  ], {"earplugs"         : 1, "handicraft": 1}],
+        "legs":  [[1  ], {"handicraft"       : 2                 }]
+    },
+    "defenses": {
+        "head":  {"f":-1, "w":2, "t":-3, "i":1, "d":-1},
+        "chest": {"f":-1, "w":2, "t":-3, "i":1, "d":-1},
+        "arms":  {"f":-1, "w":2, "t":-3, "i":1, "d":-1},
+        "waist": {"f":-1, "w":2, "t":-3, "i":1, "d":-1},
+        "legs":  {"f":-1, "w":2, "t":-3, "i":1, "d":-1}
+    }
+},
+"h60": {
+    "tier": "hr",
+    "rarity": 7,
+    "setName": "Flame Seal",
+
+    "prefix": "Flame",
+    "naming_scheme": "flame_seal",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[], {"critical_eye": 4}],
+        "chest": null,
+        "arms":  null,
+        "waist": null,
+        "legs":  null
+    },
+    "defenses": {
+        "head":  {"f":3, "w":0, "t":0, "i":0, "d":0},
+        "chest": null,
+        "arms":  null,
+        "waist": null,
+        "legs":  null
+    }
+},
+"h61": {
+    "tier": "hr",
+    "rarity": 7,
+    "setName": "Kushala",
+
+    "prefix": "Kushala",
+    "naming_scheme": "kushala",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[1], {"handicraft"      : 2, "normal_rapid_up": 2                                 }],
+        "chest": [[2], {"kushala_blessing": 1, "recovery_speed" : 1, "diversion" : 1                }],
+        "arms":  [[1], {"kushala_blessing": 1, "recovery_speed" : 1, "agitator"  : 2                }],
+        "waist": [[1], {"kushala_blessing": 1, "recovery_speed" : 1, "handicraft": 1, "pierce_up": 1}],
+        "legs":  [[1], {"kushala_blessing": 1, "handicraft"     : 1, "pierce_up" : 1                }]
+    },
+    "defenses": {
+        "head":  {"f":-1, "w":2, "t":-2, "i":3, "d":-3},
+        "chest": {"f":-1, "w":2, "t":-2, "i":3, "d":-3},
+        "arms":  {"f":-1, "w":2, "t":-2, "i":3, "d":-3},
+        "waist": {"f":-1, "w":2, "t":-2, "i":3, "d":-3},
+        "legs":  {"f":-1, "w":2, "t":-2, "i":3, "d":-3}
+    }
+},
+"h62": {
+    "tier": "hr",
+    "rarity": 7,
+    "setName": "Mizuha",
+
+    "prefix": "Mizuha",
+    "naming_scheme": "mizuha",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[1], {"minds_eye"         : 2, "ballistics"   : 2, "evade_window"    : 2                 }],
+        "chest": [[1], {"chameleos_blessing": 1, "poison_attack": 1, "minds_eye"       : 1, "ballistics": 1}],
+        "arms":  [[1], {"chameleos_blessing": 1, "poison_attack": 1, "evade_window"    : 1                 }],
+        "waist": [[1], {"chameleos_blessing": 1, "poison_attack": 1, "peak_performance": 2                 }],
+        "legs":  [[2], {"chameleos_blessing": 1, "evade_window" : 1                                        }]
+    },
+    "defenses": {
+        "head":  {"f":-5, "w":1, "t":0, "i":3, "d":-3},
+        "chest": {"f":-5, "w":1, "t":0, "i":3, "d":-3},
+        "arms":  {"f":-5, "w":1, "t":0, "i":3, "d":-3},
+        "waist": {"f":-5, "w":1, "t":0, "i":3, "d":-3},
+        "legs":  {"f":-5, "w":1, "t":0, "i":3, "d":-3}
+    }
+},
+"h63": {
+    "tier": "hr",
+    "rarity": 7,
+    "setName": "Kaiser",
+
+    "prefix": "Kaiser",
+    "naming_scheme": "kaiser",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[1], {"critical_eye"    : 3, "critical_boost": 1                     }],
+        "chest": [[1], {"teostra_blessing": 1, "critical_eye"  : 1, "masters_touch" : 1}],
+        "arms":  [[2], {"teostra_blessing": 1, "critical_eye"  : 1, "critical_boost": 1}],
+        "waist": [[3], {"teostra_blessing": 1, "critical_eye"  : 1                     }],
+        "legs":  [[1], {"teostra_blessing": 1, "masters_touch" : 1                     }]
+    },
+    "defenses": {
+        "head":  {"f":4, "w":-4, "t":1, "i":-1, "d":-3},
+        "chest": {"f":4, "w":-4, "t":1, "i":-1, "d":-3},
+        "arms":  {"f":4, "w":-4, "t":1, "i":-1, "d":-3},
+        "waist": {"f":4, "w":-4, "t":1, "i":-1, "d":-3},
+        "legs":  {"f":4, "w":-4, "t":1, "i":-1, "d":-3}
+    }
+},
+"h64": {
+    "tier": "hr",
+    "rarity": 7,
+    "setName": "Bazel",
+
+    "prefix": "Bazelgeuse",
+    "naming_scheme": "scheme_3",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[2  ], {"artillery"  : 1, "guard"   : 1}],
+        "chest": [[1,1], {"guard_up"   : 2, "agitator": 1}],
+        "arms":  [[2,2], {"load_shells": 1, "guard_up": 1}],
+        "waist": [[2,2], {"load_shells": 1, "guard"   : 1}],
+        "legs":  [[3  ], {"artillery"  : 2, "guard"   : 1}]
+    },
+    "defenses": {
+        "head":  {"f":3, "w":1, "t":-4, "i":-2, "d":-2},
+        "chest": {"f":3, "w":1, "t":-4, "i":-2, "d":-2},
+        "arms":  {"f":3, "w":1, "t":-4, "i":-2, "d":-2},
+        "waist": {"f":3, "w":1, "t":-4, "i":-2, "d":-2},
+        "legs":  {"f":3, "w":1, "t":-4, "i":-2, "d":-2}
+    }
+},
+"h65": {
+    "tier": "hr",
+    "rarity": 7,
+    "setName": "Ibushi",
+
+    "prefix": "",
+    "naming_scheme": "ibushi",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[], {"wind_alignment": 1, "focus"          : 1, "evade_extender": 1}],
+        "chest": [[], {"wind_alignment": 1, "guard"          : 1, "flinch_free"   : 1}],
+        "arms":  [[], {"wind_alignment": 1, "constitution"   : 1, "stamina_surge" : 1}],
+        "waist": [[], {"wind_alignment": 1, "power_prolonger": 1, "evade_window"  : 1}],
+        "legs":  [[], {"wind_alignment": 1, "slugger"        : 1, "guard_up"      : 1}]
+    },
+    "defenses": {
+        "head":  {"f":-1, "w":0, "t":0, "i":0, "d":-2},
+        "chest": {"f":-1, "w":0, "t":0, "i":0, "d":-2},
+        "arms":  {"f":-1, "w":0, "t":0, "i":0, "d":-2},
+        "waist": {"f":-1, "w":0, "t":0, "i":0, "d":-2},
+        "legs":  {"f":-1, "w":0, "t":0, "i":0, "d":-2}
+    }
+},
+"h66": {
+    "tier": "hr",
+    "rarity": 7,
+    "setName": "Narwa",
+
+    "prefix": "",
+    "naming_scheme": "narwa",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[], {"thunder_alignment": 1, "rapid_morph" : 1, "offensive_guard": 1}],
+        "chest": [[], {"thunder_alignment": 1, "constitution": 1, "critical_draw"  : 1}],
+        "arms":  [[], {"thunder_alignment": 1, "guard"       : 1, "partbreaker"    : 1}],
+        "waist": [[], {"thunder_alignment": 1, "guard"       : 1, "artillery"      : 1}],
+        "legs":  [[], {"thunder_alignment": 1, "evade_window": 1, "marathon_runner": 1}]
+    },
+    "defenses": {
+        "head":  {"f":2, "w":1, "t":4, "i":-3, "d":-4},
+        "chest": {"f":2, "w":1, "t":4, "i":-3, "d":-4},
+        "arms":  {"f":2, "w":1, "t":4, "i":-3, "d":-4},
+        "waist": {"f":2, "w":1, "t":4, "i":-3, "d":-4},
+        "legs":  {"f":2, "w":1, "t":4, "i":-3, "d":-4}
+    }
+},
+"h67": {
+    "tier": "hr",
+    "rarity": 7,
+    "setName": "Crimson Valstrax",
+
+    "prefix": "Valstrax",
+    "naming_scheme": "scheme_3",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[2,1], {"dragonheart": 1, "weakness_exploit": 1                 }],
+        "chest": [[3,1], {"dragonheart": 1, "resuscitate"     : 2                 }],
+        "arms":  [[2  ], {"dragonheart": 1, "weakness_exploit": 2                 }],
+        "waist": [[2  ], {"dragonheart": 1, "resuscitate"     : 1, "resentment": 2}],
+        "legs":  [[3,1], {"dragonheart": 1, "resentment"      : 1                 }]
+    },
+    "defenses": {
+        "head":  {"f":-2, "w":-2, "t":-2, "i":-2, "d":3},
+        "chest": {"f":-2, "w":-2, "t":-2, "i":-2, "d":3},
+        "arms":  {"f":-2, "w":-2, "t":-2, "i":-2, "d":3},
+        "waist": {"f":-2, "w":-2, "t":-2, "i":-2, "d":3},
+        "legs":  {"f":-2, "w":-2, "t":-2, "i":-2, "d":3}
+    }
+}
+
+
+
+}
+

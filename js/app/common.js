@@ -21,14 +21,19 @@ export function setUnion(setA, setB) {
     return _union
 }
 
-export function strHasOnlyLowercaseUnderscore(s) {
+export function strHasOnlyLowerUnder(s) {
     check.isStr(s);
     const match = s.match(/^[a-z_]+$/g);
     return (match !== null);
 }
-export function strHasOnlyLowercaseNumeral(s) {
+export function strHasOnlyLowerNumeral(s) {
     check.isStr(s);
     const match = s.match(/^[a-z0-9]+$/g);
+    return (match !== null);
+}
+export function strHasOnlyLowerNumeralUnder(s) {
+    check.isStr(s);
+    const match = s.match(/^[a-z0-9_]+$/g);
     return (match !== null);
 }
 
@@ -52,6 +57,11 @@ const weaponCategoryStrs = new Set([
 ]);
 export function isWeaponCategoryStr(obj) {
     return weaponCategoryStrs.has(obj);
+}
+
+const tierStrs = new Set(["lr", "hr"]);
+export function isTierStr(obj) {
+    return tierStrs.has(obj);
 }
 
 const weaponEndlineTagStrs = new Set(["", "hr"]);
