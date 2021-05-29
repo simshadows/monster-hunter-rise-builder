@@ -71,6 +71,12 @@ class Build {
     }
 
     // THIS WILL ONLY SUCCEED IF this._weaponRO IS NOT NULL
+    getWeaponObjRO() {
+        this._validateWeaponNotNull();
+        return this._weaponRO;
+    }
+
+    // THIS WILL ONLY SUCCEED IF this._weaponRO IS NOT NULL
     getRenderingProps(db) {
         assert(isObj(db));
         assert(isMap(db.readonly.weapons.greatsword)); // Spot check for structure

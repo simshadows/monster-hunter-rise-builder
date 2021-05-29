@@ -213,6 +213,7 @@ class MHRBuilderAppContainer extends React.Component {
                 element(WeaponSelectView,
                     {
                     ref: this.myRefs.weaponSelectView,
+                    currentSelectedWeapon: this.state.build.getWeaponObjRO(),
                     handleSelectWeapon: (weaponRO) => {this.handleSelectWeapon(weaponRO)},
                     },
                     null,

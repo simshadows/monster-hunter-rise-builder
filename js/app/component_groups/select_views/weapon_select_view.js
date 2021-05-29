@@ -144,6 +144,7 @@ class WeaponSelectView extends React.Component {
             return "Error: You shouldn't be able to see this screen before the data is loaded.";
         }
         check.isStr(this.state.filterByName);
+        check.isObj(this.props.currentSelectedWeapon);
         check.isFunction(this.props.handleSelectWeapon);
 
         const filteredWeaponsArray = this._getFilteredWeaponsArray();
@@ -183,6 +184,7 @@ class WeaponSelectView extends React.Component {
             element(SelectionTable,
                 {
                 dataArray: filteredWeaponsArray,
+                currentSelectedWeapon: this.props.currentSelectedWeapon,
                 handleRowClick: (weaponRO) => {this.handleSelectWeapon(weaponRO)},
                 },
                 null,

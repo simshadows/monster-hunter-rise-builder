@@ -98,6 +98,10 @@ div.selection-table-wrap-box {
     background: white;
     cursor: pointer;
 }
+.selection-table-body-row-highlighted {
+    background: lightgreen;
+    cursor: pointer;
+}
 .selection-table-body-row:hover {
     background: lightgrey;
 }

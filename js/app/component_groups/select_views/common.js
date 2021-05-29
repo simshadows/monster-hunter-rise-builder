@@ -109,12 +109,12 @@ class SelectionTable extends React.Component {
     }
 
     // Logically static
-    _renderRow(weaponData) {
+    _renderRow(weaponData, isHighlighted) {
         const specialMechStr = (weaponData.maxSharpness === undefined) ? "" : "MaxSharpness: " + weaponData.maxSharpness.toString();
 
         return element("tr",
             {
-            className: "selection-table-body-row",
+            className: (isHighlighted) ? "selection-table-body-row-highlighted" : "selection-table-body-row",
             onClick: (e) => {this.handleRowClick(e, weaponData)},
             },
             this._renderCell(
@@ -154,6 +154,7 @@ class SelectionTable extends React.Component {
 
     render() {
         check.isObj(this.props.dataArray);
+        check.isObj(this.props.currentSelectedWeapon);
         check.isFunction(this.props.handleRowClick);
 
         const headerRow = element("tr",
@@ -173,7 +174,7 @@ class SelectionTable extends React.Component {
         const bodyRows = [];
         for (const weaponData of this.props.dataArray) {
             // TODO: Verify data structure?
-            bodyRows.push(this._renderRow(weaponData));
+            bodyRows.push(this._renderRow(weaponData, (this.props.currentSelectedWeapon == weaponData)));
         }
 
         return element("div",
