@@ -170,6 +170,9 @@ function EquipWeaponInfoBox(props) {
         }
     }
 
+    const eleStatTypeStr = (weaponRO.eleStatType == "none") ? "---" : eleStatStrToEmoji(weaponRO.eleStatType) + " ";
+    const eleStatValueStr = (weaponRO.eleStatValue == 0) ? "" : (" " + parseInt(weaponRO.eleStatValue));
+
     return element("div",
         {
         className: "equip-weapon-info-box",
@@ -190,7 +193,7 @@ function EquipWeaponInfoBox(props) {
                 },
                 statBox("\u2694\ufe0f ", parseInt(weaponRO.attack)),
                 statBox("\ud83d\udca2 ", parseInt(weaponRO.affinity) + "%"),
-                statBox(eleStatStrToEmoji(weaponRO.eleStatType) + " ", parseInt(weaponRO.eleStatValue)),
+                statBox(eleStatTypeStr, eleStatValueStr),
                 statBox("\ud83d\udee1\ufe0f ", parseInt(weaponRO.defense)),
             ),
             element("div",

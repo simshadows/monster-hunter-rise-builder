@@ -21,6 +21,23 @@ const assert = console.assert;
 
 class WeaponSelectView extends React.Component {
 
+    static _weaponCategoryToIconMap = new Map([
+            ["greatsword"    , "./images/placeholders/weapon_small_greatsword.webp"    ],
+            ["longsword"     , "./images/placeholders/weapon_small_longsword.webp"     ],
+            ["swordandshield", "./images/placeholders/weapon_small_swordandshield.webp"],
+            ["dualblades"    , "./images/placeholders/weapon_small_dualblades.webp"    ],
+            ["switchaxe"     , "./images/placeholders/weapon_small_switchaxe.webp"     ],
+            ["chargeblade"   , "./images/placeholders/weapon_small_chargeblade.webp"   ],
+            ["hammer"        , "./images/placeholders/weapon_small_hammer.webp"        ],
+            ["huntinghorn"   , "./images/placeholders/weapon_small_huntinghorn.webp"   ],
+            ["lance"         , "./images/placeholders/weapon_small_lance.webp"         ],
+            ["gunlance"      , "./images/placeholders/weapon_small_gunlance.webp"      ],
+            ["insectglaive"  , "./images/placeholders/weapon_small_insectglaive.webp"  ],
+            ["bow"           , "./images/placeholders/weapon_small_bow.webp"           ],
+            ["lightbowgun"   , "./images/placeholders/weapon_small_lightbowgun.webp"   ],
+            ["heavybowgun"   , "./images/placeholders/weapon_small_heavybowgun.webp"   ],
+        ]);
+
     constructor(props) {
         super(props);
         this.state = {
@@ -83,10 +100,10 @@ class WeaponSelectView extends React.Component {
         return this.state.allWeapons.filter(op);
     }
 
-    _renderCategoryFilterButton(weaponCategory, iconImg) {
+    _renderCategoryFilterButton(weaponCategory) {
         return element(TypeFilterButton,
             {
-            iconImg: iconImg,
+            iconImg: this.constructor._weaponCategoryToIconMap.get(weaponCategory),
             isSelected: (this.state.filterByCategory == weaponCategory),
             onClick: () => {this.handleCategoryFilterButton(weaponCategory)},
             },
@@ -147,20 +164,20 @@ class WeaponSelectView extends React.Component {
                 className: "select-view-type-filter-box",
                 },
                 this._renderEndlineFilterBox(),
-                this._renderCategoryFilterButton("greatsword", "./images/placeholders/weapon_small_greatsword.webp"),
-                this._renderCategoryFilterButton("longsword", "./images/placeholders/weapon_small_longsword.webp"),
-                this._renderCategoryFilterButton("swordandshield", "./images/placeholders/weapon_small_swordandshield.webp"),
-                this._renderCategoryFilterButton("dualblades", "./images/placeholders/weapon_small_dualblades.webp"),
-                this._renderCategoryFilterButton("lance", "./images/placeholders/weapon_small_lance.webp"),
-                this._renderCategoryFilterButton("gunlance", "./images/placeholders/weapon_small_gunlance.webp"),
-                this._renderCategoryFilterButton("hammer", "./images/placeholders/weapon_small_hammer.webp"),
-                this._renderCategoryFilterButton("huntinghorn", "./images/placeholders/weapon_small_huntinghorn.webp"),
-                this._renderCategoryFilterButton("switchaxe", "./images/placeholders/weapon_small_switchaxe.webp"),
-                this._renderCategoryFilterButton("chargeblade", "./images/placeholders/weapon_small_chargeblade.webp"),
-                this._renderCategoryFilterButton("insectglaive", "./images/placeholders/weapon_small_insectglaive.webp"),
-                this._renderCategoryFilterButton("lightbowgun", "./images/placeholders/weapon_small_lightbowgun.webp"),
-                this._renderCategoryFilterButton("heavybowgun", "./images/placeholders/weapon_small_heavybowgun.webp"),
-                this._renderCategoryFilterButton("bow", "./images/placeholders/weapon_small_bow.webp"),
+                this._renderCategoryFilterButton("greatsword"    ),
+                this._renderCategoryFilterButton("longsword"     ),
+                this._renderCategoryFilterButton("swordandshield"),
+                this._renderCategoryFilterButton("dualblades"    ),
+                this._renderCategoryFilterButton("lance"         ),
+                this._renderCategoryFilterButton("gunlance"      ),
+                this._renderCategoryFilterButton("hammer"        ),
+                this._renderCategoryFilterButton("huntinghorn"   ),
+                this._renderCategoryFilterButton("switchaxe"     ),
+                this._renderCategoryFilterButton("chargeblade"   ),
+                this._renderCategoryFilterButton("insectglaive"  ),
+                this._renderCategoryFilterButton("lightbowgun"   ),
+                this._renderCategoryFilterButton("heavybowgun"   ),
+                this._renderCategoryFilterButton("bow"           ),
                 this._renderEmptyEndlineFilterBox(),
             ),
             element(SelectionTable,

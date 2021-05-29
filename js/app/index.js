@@ -16,10 +16,7 @@ import {Build} from "./model/build.js";
 
 import Modal from "./component_groups/modal.js";
 
-import SkillsResultsBox from "./component_groups/main_view/skill_results_box.js";
-import EquipmentSelectionsBox from "./component_groups/main_view/equipment_selections_box.js";
-import CalculationResultsBox from "./component_groups/main_view/calculation_results_box.js";
-import UtilBox from "./component_groups/main_view/util_box.js";
+import {MainView} from "./component_groups/main_view/index.js";
 
 import {WeaponSelectView} from "./component_groups/select_views/weapon_select_view.js";
 import {WeaponCustomizeView} from "./component_groups/select_views/weapon_customize_view.js";
@@ -31,95 +28,6 @@ import {DecorationSelectView} from "./component_groups/select_views/decoration_s
 
 const element = React.createElement;
 const assert = console.assert;
-
-function Footer(props) {
-    return element("footer",
-        {
-        id: "footer",
-        },
-        element("p",
-            null,
-            element("b", null, "This project is currently in very early development."),
-            " Full source code available ",
-            element("a",
-                {
-                href: "https://github.com/simshadows/monster-hunter-rise-builder",
-                target: "_blank",
-                },
-                "here"
-            ),
-            "."
-        )
-    );
-}
-
-class MainView extends React.Component {
-
-    render() {
-        check.isObj(this.props.buildRenderingProps);
-        check.isArr(this.props.buildRenderingProps.weaponRO.rampSkillSelectionsArray); // Spot check for structure
-
-        check.isFunction(this.props.handleClickBuffsSelect);
-        check.isFunction(this.props.handleClickWeaponSelect);
-        check.isFunction(this.props.handleClickWeaponCustomize);
-        check.isFunction(this.props.handleClickArmourSelect);
-        check.isFunction(this.props.handleClickTalismanSelect);
-        check.isFunction(this.props.handleClickPetalaceSelect);
-        check.isFunction(this.props.handleClickDecorationSelect);
-
-        return element("div",
-            {
-            className: "body-outer-box",
-            },
-            element("div",
-                {
-                id: "app-inner-box",
-                className: "body-inner-box",
-                },
-                element(UtilBox,
-                    null,
-                    null,
-                ),
-                element("div",
-                    {
-                    id: "mhr-builder-app-main-view",
-                    },
-                    element("div",
-                        {
-                        className: "main-view-inner-box",
-                        },
-                        element(SkillsResultsBox,
-                            null,
-                            null,
-                        ),
-                        element(EquipmentSelectionsBox,
-                            {
-                            buildRenderingProps:        this.props.buildRenderingProps,
-                            handleClickBuffsSelect:     ()       => {this.props.handleClickBuffsSelect();},
-                            handleClickWeaponSelect:    ()       => {this.props.handleClickWeaponSelect();},
-                            handleClickWeaponCustomize: ()       => {this.props.handleClickWeaponCustomize();},
-                            handleClickArmourSelect:    (slotID) => {this.props.handleClickArmourSelect(slotID);},
-                            handleClickTalismanSelect:  ()       => {this.props.handleClickTalismanSelect();},
-                            handleClickPetalaceSelect:  ()       => {this.props.handleClickPetalaceSelect();},
-                            handleClickDecorationSelect: (slotID, decoSlotID) => {this.props.handleClickDecorationSelect(slotID, decoSlotID)},
-                            },
-                            null,
-                        ),
-                        element(CalculationResultsBox,
-                            null,
-                            null,
-                        ),
-                    ),
-                ),
-            ),
-            element(Footer,
-                null,
-                null,
-            ),
-        );
-
-    }
-}
 
 class MHRBuilderAppContainer extends React.Component {
 
