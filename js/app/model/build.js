@@ -52,7 +52,6 @@ class Build {
         assert(isMap(db.readonly.weapons.greatsword)); // Spot check for structure
 
         this._weaponRO = weaponObj;
-        this._petalaceRO = null;
         this._validateWeaponNotNull();
         this._weaponRampSkillSelections = this._initWeaponRampSkillSelections();
         return this;

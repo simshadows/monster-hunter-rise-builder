@@ -134,6 +134,8 @@ div.equip-icon-box > img {
 }
 
 div.equip-info-box {
+    flex: 1 0 0;
+
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -142,13 +144,15 @@ div.equip-info-box {
     padding: 0 2px 0 4px;
     width: 320px;
 }
-
 div.equip-name-box {
     box-sizing: border-box;
     width: 100%;
     padding: 0 4px 0 6px;
 }
-
+div.equip-info-content-box {
+    height: 52px;
+    width: 100%;
+}
 div.equip-skills-wrap-box {
     display: flex;
     flex-wrap: wrap;
@@ -159,8 +163,34 @@ div.equip-skills-wrap-box {
     box-sizing: border-box;
     margin: 0;
     padding: 3px 5px 5px 4px;
-    height: 52px;
+}
+div.equip-info-petalace-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+div.equip-info-petalace-stat-row-box {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 4px;
+
+    box-sizing: border-box;
+    padding: 3px;
+    height: 28px;
     width: 100%;
+}
+div.equip-info-petalace-stat-cell-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+    height: 100%;
+    width: 140px;
+    padding: 0 4px 0 4px;
+    font-size: 14px;
+    background: darkgrey;
 }
 
 div.equip-skills-box {

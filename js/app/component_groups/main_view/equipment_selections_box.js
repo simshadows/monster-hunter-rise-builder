@@ -56,7 +56,24 @@ function EquipIcon(props) {
             null,
         ),
     );
+}
 
+function EquipInfoBox(props) {
+    check.isStr(props.eqName);
+    assert(props.eqName.length > 0);
+
+    return element("div",
+        {
+        className: "equip-info-box",
+        },
+        element("div",
+            {
+            className: "equip-name-box clipsafe",
+            },
+            clipsafeP(element("b", null, props.eqName)),
+        ),
+        React.Children.toArray(props.children),
+    )
 }
 
 /*** Buffs and State ***/
@@ -277,19 +294,13 @@ function EquipArmourInfoBox(props) {
         );
     }
 
-    return element("div",
+    return element(EquipInfoBox,
         {
-        className: "equip-info-box",
+        eqName: props.eqName,
         },
         element("div",
             {
-            className: "equip-name-box clipsafe",
-            },
-            clipsafeP(element("b", null, props.eqName)),
-        ),
-        element("div",
-            {
-            className: "equip-skills-wrap-box",
+            className: "equip-info-content-box equip-skills-wrap-box",
             },
             ...skillBoxes
         ),
@@ -483,7 +494,7 @@ class ArmourSelection extends React.Component {
     }
 }
 
-/*** Others ***/
+/*** Talisman ***/
 
 function TalismanSelection(props) {
     check.isStr(props.eqName); // Validate later
@@ -530,6 +541,8 @@ function TalismanSelection(props) {
     );
 }
 
+/*** Petalace ***/
+
 function PetalaceSelection(props) {
     check.isObj(props.petalaceRORenderingProps);
     if (props.petalaceRORenderingProps.originalPetalaceObj != null) { // Allowed to be null
@@ -537,22 +550,58 @@ function PetalaceSelection(props) {
     }
     check.isFunction(props.handleClickPetalaceSelect);
 
+    const petalaceRO = props.petalaceRORenderingProps.originalPetalaceObj;
+
+    function renderInfo(content) {
+        return element("div",
+            {
+            className: "equip-info-petalace-stat-cell-box",
+            },
+            content,
+        );
+    }
+
     const infoBox = (()=>{
-            if (props.petalaceRORenderingProps.originalPetalaceObj == null) {
-                return element(EquipArmourInfoBox,
+            if (petalaceRO == null) {
+                return element(EquipInfoBox,
                     {
-                        eqName: "None",
-                        skillsArray: [],
+                    eqName: "None",
                     },
-                    null,
+                    element("div",
+                        {
+                        className: "equip-info-content-box equip-info-petalace-box",
+                        },
+                        null,
+                    ),
                 );
             } else {
-                return element(EquipArmourInfoBox,
+                return element(EquipInfoBox,
                     {
-                        eqName: props.petalaceRORenderingProps.originalPetalaceObj.name,
-                        skillsArray: [],
+                    eqName: petalaceRO.name,
                     },
-                    null,
+                    element("div",
+                        {
+                        className: "equip-info-content-box equip-info-petalace-box",
+                        },
+                        element("div",
+                            {
+                            className: "equip-info-petalace-stat-row-box",
+                            },
+                            renderInfo("Health Up: " + parseInt(petalaceRO.healthUp)),
+                            renderInfo("Stamina Up: " + parseInt(petalaceRO.staminaUp)),
+                            renderInfo("Attack Up: " + parseInt(petalaceRO.attackUp)),
+                            renderInfo("Defense Up: " + parseInt(petalaceRO.defenseUp)),
+                        ),
+                        element("div",
+                            {
+                            className: "equip-info-petalace-stat-row-box",
+                            },
+                            renderInfo("Health Gain: " + parseInt(petalaceRO.healthGain)),
+                            renderInfo("Stamina Gain: " + parseInt(petalaceRO.staminaGain)),
+                            renderInfo("Attack Gain: " + parseInt(petalaceRO.attackGain)),
+                            renderInfo("Defense Gain: " + parseInt(petalaceRO.defenseGain)),
+                        ),
+                    ),
                 );
             }
         })();
@@ -573,10 +622,6 @@ function PetalaceSelection(props) {
                 null,
             ),
             infoBox,
-            element(EquipDefensesBoxEmpty,
-                null,
-                null,
-            ),
         ),
     );
 }
