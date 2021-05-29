@@ -18,8 +18,16 @@ import {
     isEleStatStr,
     toNameFilterString,
 } from "../common.js";
-import {RampageSkillsData} from "./hardcoded_data/rampage_skills.js";
-import {petalaceMap} from "./hardcoded_data/petalace_data.js";
+import {
+    skillMap,
+    skillMapShortIds,
+} from "./hardcoded_data/skills.js";
+import {
+    RampageSkillsData,
+} from "./hardcoded_data/rampage_skills.js";
+import {
+    petalaceMap,
+} from "./hardcoded_data/petalace_data.js";
 
 /*** Downloading and Validating Weapon Data (without referential integrity checking) ***/
 
@@ -220,6 +228,10 @@ class GameData {
         // Return Data
         const obj = new GameData("hello smish");
         obj.readonly = {
+            skills: {
+                longIds: skillMap,
+                shortIds: skillMapShortIds,
+            },
             weaponRampSkills: rampSkillsData,
             weapons:          weaponData,
             petalaces:        petalaceMap,

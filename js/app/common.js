@@ -21,6 +21,17 @@ export function setUnion(setA, setB) {
     return _union
 }
 
+export function strHasOnlyLowercaseUnderscore(s) {
+    check.isStr(s);
+    const match = s.match(/^[a-z_]+$/g);
+    return (match !== null);
+}
+export function strHasOnlyLowercaseNumeral(s) {
+    check.isStr(s);
+    const match = s.match(/^[a-z0-9]+$/g);
+    return (match !== null);
+}
+
 /*** Enums Verification ***/
 
 const weaponCategoryStrs = new Set([

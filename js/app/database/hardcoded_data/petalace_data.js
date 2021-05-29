@@ -7,9 +7,11 @@ import {
     isObj,
     isInt,
     isStr,
+    isNonEmptyStr,
     assert,
 } from "../../check.js";
 import {
+    isWeaponEndlineTagStr,
     toNameFilterString,
 } from "../../common.js";
 
@@ -93,9 +95,32 @@ for (const [petalaceID, petalaceObj] of petalaceMap.entries()) {
     petalaceObj.id = petalaceID;
     petalaceObj.filterHelpers = {};
     petalaceObj.filterHelpers.nameLower = toNameFilterString(petalaceObj.name);
-}
 
-// TODO: Verify data validity?
+    //
+    // Validate
+    //
+
+    assert(isNonEmptyStr(petalaceObj.id), "Petalaces must have IDs.");
+    assert(isNonEmptyStr(petalaceObj.endlineTag), "Petalaces must have endline tags.");
+    assert(isNonEmptyStr(petalaceObj.name), "Petalaces must have names.");
+    assert(isInt(petalaceObj.healthUp), "Petalaces must have a health up value.");
+    assert(isInt(petalaceObj.healthGain), "Petalaces must have a health gain value.");
+    assert(isInt(petalaceObj.staminaUp), "Petalaces must have a stamina up value.");
+    assert(isInt(petalaceObj.staminaGain), "Petalaces must have a stamina gain value.");
+    assert(isInt(petalaceObj.attackUp), "Petalaces must have a attack up value.");
+    assert(isInt(petalaceObj.attackGain), "Petalaces must have a attack gain value.");
+    assert(isInt(petalaceObj.defenseUp), "Petalaces must have a defense up value.");
+    assert(isInt(petalaceObj.defenseGain), "Petalaces must have a defense gain value.");
+
+    assert(isWeaponEndlineTagStr(petalaceObj.endlineTag), "Wrong endline tag format. Petalace ID: " + petalaceObj.id);
+    assert(
+        (petalaceObj.healthGain  > 0) && (petalaceObj.healthUp  > petalaceObj.healthGain ) && (petalaceObj.healthUp  <= 100) &&
+        (petalaceObj.staminaGain > 0) && (petalaceObj.staminaUp > petalaceObj.staminaGain) && (petalaceObj.staminaUp <= 100) &&
+        (petalaceObj.attackGain  > 0) && (petalaceObj.attackUp  > petalaceObj.attackGain ) && (petalaceObj.attackUp  <= 100) &&
+        (petalaceObj.defenseGain > 0) && (petalaceObj.defenseUp > petalaceObj.defenseGain) && (petalaceObj.defenseUp <= 100),
+        "Invalid numerical value(s). Petalace ID: " + petalaceObj.id,
+    );
+}
 
 export {petalaceMap};
 
