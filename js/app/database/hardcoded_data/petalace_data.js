@@ -9,6 +9,9 @@ import {
     isStr,
     assert,
 } from "../../check.js";
+import {
+    toNameFilterString,
+} from "../../common.js";
 
 const petalaceMap = new Map([
     ["h3", {
@@ -85,9 +88,11 @@ const petalaceMap = new Map([
     }],
 ]);
 
-// For convenience, we also attach IDs to each object
+// For convenience, we also attach IDs and filter helpers to each object
 for (const [petalaceID, petalaceObj] of petalaceMap.entries()) {
     petalaceObj.id = petalaceID;
+    petalaceObj.filterHelpers = {};
+    petalaceObj.filterHelpers.nameLower = toNameFilterString(petalaceObj.name);
 }
 
 // TODO: Verify data validity?

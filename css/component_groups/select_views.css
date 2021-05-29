@@ -109,19 +109,34 @@ div.selection-table-wrap-box {
     border: thin solid black;
 }
 
-/*** Weapon Customize View ***/
+/*** Control Buttons ***/
 
-div.weapon-customize-view-select-box {
-    background: lightgrey;
-    padding: 5px;
+div.select-view-control-box {
+    padding: 14px 0 0 0;
 }
-div.weapon-customize-view-select-heading-box {
-    padding: 2px;
+
+div.select-view-control-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 30px;
+    width: 240px;
+    border: medium solid black;
+    cursor: pointer;
+
+    font-size: 16px;
     font-weight: bold;
 }
-div.weapon-customize-view-select-content-box {
-    padding: 2px;
+
+div.select-view-control-button-clearfn {
+    background: rgb(255,129,123);
 }
+div.select-view-control-button-clearfn:hover {
+    background: rgb(255,57,46);
+}
+
+/*** Weapon Selection View ***/
 
 .weapon-selection-table-head-cell-category {
     width: 150px;
@@ -137,5 +152,27 @@ div.weapon-customize-view-select-content-box {
 }
 .weapon-selection-table-head-cell-specialmech {
     width: auto;
+}
+
+/*** Weapon Customize View ***/
+
+div.weapon-customize-view-select-box {
+    background: lightgrey;
+    padding: 5px;
+}
+div.weapon-customize-view-select-heading-box {
+    padding: 2px;
+    font-weight: bold;
+}
+div.weapon-customize-view-select-content-box {
+    padding: 2px;
+}
+
+/*** Petalace Selection View ***/
+
+.petalace-selection-table-head-cell-name {
+}
+.petalace-selection-table-head-cell-numeric {
+    width: 70px;
 }
 

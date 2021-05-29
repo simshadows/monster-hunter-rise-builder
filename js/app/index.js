@@ -55,7 +55,6 @@ class MHRBuilderAppContainer extends React.Component {
 
                 build: new Build(null),
             };
-        console.log(this.state);
 
         this.myRefs = {
                 weaponSelectView:   React.createRef(),
@@ -117,21 +116,30 @@ class MHRBuilderAppContainer extends React.Component {
     }
 
     handleSelectWeapon(weaponRO) {
-        assert(check.isInt(weaponRO.affinity)); // Spot check for structure
+        check.isInt(weaponRO.affinity); // Spot check for structure
         this.setState({
                 view: "main", // Return back to main view
                 build: this.state.build.setWeapon(this.state.rawData, weaponRO)
             });
-        console.log(this.state);
     }
     handleSelectRampSkill(position, rampSkillID) {
-        assert(check.isInt(position));
-        assert(check.isStrOrNull(rampSkillID));
+        check.isInt(position);
+        check.isStrOrNull(rampSkillID);
 
         this.setState({
                 build: this.state.build.setRampageSkill(this.state.rawData, position, rampSkillID),
             });
-        console.log(this.state);
+    }
+
+    handleSelectPetalace(petalaceRO) {
+        if (petalaceRO != null) { // petalaceRO allowed to be null
+            check.isInt(petalaceRO.healthGain); // Spot check for structure
+            check.isInt(petalaceRO.staminaUp); // Spot check for structure
+        }
+        this.setState({
+                view: "main", // Return back to main view
+                build: this.state.build.setPetalace(this.state.rawData, petalaceRO)
+            });
     }
 
     /* Inherited Methods */
@@ -147,8 +155,6 @@ class MHRBuilderAppContainer extends React.Component {
             });
         this.myRefs.weaponSelectView.current.populateWithData(rawData.getWeaponsArray());
         this.myRefs.petalaceSelectView.current.populateWithData(rawData.getPetalacesArray());
-
-        console.log(this.state);
     }
     componentWillUnmount() {
         // TODO: Verify event removal matching?
@@ -163,6 +169,7 @@ class MHRBuilderAppContainer extends React.Component {
         if (this.state.rawData === null) {
             return "Loading app... Loading data...";
         }
+        console.log(this.state);
 
         const selectionViewIsVisible = {
                 buffs:       (this.state.view == "buffs_select_view" ),
@@ -268,6 +275,8 @@ class MHRBuilderAppContainer extends React.Component {
                 element(PetalaceSelectView,
                     {
                     ref: this.myRefs.petalaceSelectView,
+                    currentSelectedPetalace: this.state.build.getPetalaceObjRO(),
+                    handleSelectPetalace: (petalaceRO) => {this.handleSelectPetalace(petalaceRO)},
                     },
                     null,
                 ),

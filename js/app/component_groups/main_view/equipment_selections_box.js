@@ -531,8 +531,31 @@ function TalismanSelection(props) {
 }
 
 function PetalaceSelection(props) {
-    check.isStr(props.eqName); // Validate later
+    check.isObj(props.petalaceRORenderingProps);
+    if (props.petalaceRORenderingProps.originalPetalaceObj != null) { // Allowed to be null
+        check.isStr(props.petalaceRORenderingProps.originalPetalaceObj.name); // Spot check for structure
+    }
     check.isFunction(props.handleClickPetalaceSelect);
+
+    const infoBox = (()=>{
+            if (props.petalaceRORenderingProps.originalPetalaceObj == null) {
+                return element(EquipArmourInfoBox,
+                    {
+                        eqName: "None",
+                        skillsArray: [],
+                    },
+                    null,
+                );
+            } else {
+                return element(EquipArmourInfoBox,
+                    {
+                        eqName: props.petalaceRORenderingProps.originalPetalaceObj.name,
+                        skillsArray: [],
+                    },
+                    null,
+                );
+            }
+        })();
 
     return element("div",
         {
@@ -549,13 +572,7 @@ function PetalaceSelection(props) {
                 },
                 null,
             ),
-            element(EquipArmourInfoBox,
-                {
-                    eqName: props.eqName,
-                    skillsArray: [],
-                },
-                null,
-            ),
+            infoBox,
             element(EquipDefensesBoxEmpty,
                 null,
                 null,
@@ -605,9 +622,6 @@ class EquipmentSelectionsBox extends React.Component {
         check.isFunction(this.props.handleClickTalismanSelect);
         check.isFunction(this.props.handleClickPetalaceSelect);
         check.isFunction(this.props.handleClickDecorationSelect);
-
-        // Convenience aliases
-        const propWeapon = this.props.buildRenderingProps.weapon;
 
         return element("div",
             {
@@ -736,7 +750,7 @@ class EquipmentSelectionsBox extends React.Component {
             ),
             element(PetalaceSelection,
                 {
-                eqName: "Demon Petalace III",
+                petalaceRORenderingProps: this.props.buildRenderingProps.petalaceRO,
                 handleClickPetalaceSelect: () => {this.handleClickPetalaceSelect();},
                 },
                 null,

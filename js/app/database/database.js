@@ -50,7 +50,7 @@ function validateWeaponData(weaponData) {
 
     assert(isNonEmptyStr(weaponData.treeName), "Tree name must be a non-empty string.");
     
-    assert(isObj(weaponData.filterHelpers), "Filter helpers must be a non-empty string.");
+    assert(isObj(weaponData.filterHelpers), "Filter helpers must be an Object.");
     // Not going to further test the structure of this.
 
     assert(isInt(weaponData.attack) && (weaponData.attack > 0), "Attack must be an integer >0.");

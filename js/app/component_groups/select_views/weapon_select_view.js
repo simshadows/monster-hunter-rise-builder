@@ -36,33 +36,33 @@ class WeaponSelectionTable extends React.Component {
         ];
 
     // Logically Static
-    _cspecGetRowContent(weaponData) {
-        const specialMechStr = (weaponData.maxSharpness === undefined)
+    _cspecGetRowContent(weaponRO) {
+        const specialMechStr = (weaponRO.maxSharpness === undefined)
                                ? ""
-                               : "MaxSharpness: " + weaponData.maxSharpness.toString();
+                               : "MaxSharpness: " + weaponRO.maxSharpness.toString();
         return [
-            weaponCategoryToName(weaponData.category),
-            weaponData.name,
-            parseInt(weaponData.attack),
-            parseInt(weaponData.affinity) + "%",
-            parseInt(weaponData.defense),
-            parseInt(weaponData.eleStatValue) + " " + eleStatStrToEmoji(weaponData.eleStatType),
-            weaponData.decoSlots.toString(),
+            weaponCategoryToName(weaponRO.category),
+            weaponRO.name,
+            parseInt(weaponRO.attack),
+            parseInt(weaponRO.affinity) + "%",
+            parseInt(weaponRO.defense),
+            parseInt(weaponRO.eleStatValue) + " " + eleStatStrToEmoji(weaponRO.eleStatType),
+            weaponRO.decoSlots.toString(),
             specialMechStr,
         ];
     }
 
-    _cspecHighlightConditionFn(weaponData) {
-        return weaponData == this.props.currentSelectedWeapon;
+    _cspecHighlightConditionFn(weaponRO) {
+        return weaponRO == this.props.currentSelectedWeapon;
     }
 
     handleRowClick(weaponRO) {
-        assert(check.isInt(weaponRO.affinity)); // Spot check for structure
+        check.isInt(weaponRO.affinity); // Spot check for structure
         this.props.handleRowClick(weaponRO);
     }
 
     render() {
-        check.isObj(this.props.dataArray);
+        check.isArr(this.props.dataArray);
         check.isObj(this.props.currentSelectedWeapon);
         check.isFunction(this.props.handleRowClick);
 

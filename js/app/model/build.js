@@ -41,6 +41,8 @@ class Build {
         this._weaponRO = weaponObj; // Object from the databasea, or null
         this._weaponRampSkillSelections = null; // Initialize later
 
+        this._petalaceRO = null;
+
         this._validateState();
     }
 
@@ -50,8 +52,19 @@ class Build {
         assert(isMap(db.readonly.weapons.greatsword)); // Spot check for structure
 
         this._weaponRO = weaponObj;
+        this._petalaceRO = null;
         this._validateWeaponNotNull();
         this._weaponRampSkillSelections = this._initWeaponRampSkillSelections();
+        return this;
+    }
+
+    // Usefully returns self for use in React state transitions.
+    setPetalace(db, petalaceObj) {
+        assert(isObj(db));
+        assert(isMap(db.readonly.weapons.greatsword)); // Spot check for structure
+
+        this._validateWeaponNotNull();
+        this._petalaceRO = petalaceObj;
         return this;
     }
 
@@ -77,6 +90,12 @@ class Build {
     }
 
     // THIS WILL ONLY SUCCEED IF this._weaponRO IS NOT NULL
+    getPetalaceObjRO() {
+        this._validateWeaponNotNull();
+        return this._petalaceRO;
+    }
+
+    // THIS WILL ONLY SUCCEED IF this._weaponRO IS NOT NULL
     getRenderingProps(db) {
         assert(isObj(db));
         assert(isMap(db.readonly.weapons.greatsword)); // Spot check for structure
@@ -85,17 +104,20 @@ class Build {
 
         return {
                 weaponRO: {
-                    name:                     this._weaponRO.name,
-                    attack:                   this._weaponRO.attack,
-                    affinity:                 this._weaponRO.affinity,
-                    defense:                  this._weaponRO.defense,
-                    eleStatType:              this._weaponRO.eleStatType,
-                    eleStatValue:             this._weaponRO.eleStatValue,
-                    rampSkillSelectionsArray: this._getRampSkillSelectionsArray(db),
-                    rampSkillOptionsArray:    this._weaponRO.rampSkills,
-                    decosArray: [[2, "Charger Jewel 2"],
-                                 [1, "~~NOTREAL~~"]],
-                },
+                        name:                     this._weaponRO.name,
+                        attack:                   this._weaponRO.attack,
+                        affinity:                 this._weaponRO.affinity,
+                        defense:                  this._weaponRO.defense,
+                        eleStatType:              this._weaponRO.eleStatType,
+                        eleStatValue:             this._weaponRO.eleStatValue,
+                        rampSkillSelectionsArray: this._getRampSkillSelectionsArray(db),
+                        rampSkillOptionsArray:    this._weaponRO.rampSkills,
+                        decosArray: [[2, "Charger Jewel 2"],
+                                     [1, "~~NOTREAL~~"]],
+                    },
+                petalaceRO: {
+                        originalPetalaceObj: this._petalaceRO, // I'm lazy
+                    },
             };
     }
 
