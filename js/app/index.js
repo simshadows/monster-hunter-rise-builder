@@ -58,9 +58,10 @@ class MHRBuilderAppContainer extends React.Component {
         console.log(this.state);
 
         this.myRefs = {
-                weaponSelectView: React.createRef(),
-                armourSelectView: React.createRef(),
-                decoSelectView: React.createRef(),
+                weaponSelectView:   React.createRef(),
+                armourSelectView:   React.createRef(),
+                petalaceSelectView: React.createRef(),
+                decoSelectView:     React.createRef(),
             };
 
         // TODO: Ugh, the fact that we don't do this consistently is weird. Change it later?
@@ -145,6 +146,7 @@ class MHRBuilderAppContainer extends React.Component {
                 build: this.state.build.setWeapon(rawData, rawData.getDefaultWeapon()),
             });
         this.myRefs.weaponSelectView.current.populateWithData(rawData.getWeaponsArray());
+        this.myRefs.petalaceSelectView.current.populateWithData(rawData.getPetalacesArray());
 
         console.log(this.state);
     }
@@ -264,7 +266,9 @@ class MHRBuilderAppContainer extends React.Component {
                 handleCloseModal: () => {this.handleReturnToMainView();},
                 },
                 element(PetalaceSelectView,
-                    null,
+                    {
+                    ref: this.myRefs.petalaceSelectView,
+                    },
                     null,
                 ),
             ),

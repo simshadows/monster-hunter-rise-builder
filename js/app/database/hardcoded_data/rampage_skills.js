@@ -150,27 +150,29 @@ const hardcodedRampageSkillsMap = new Map([
 
 ]);
 
+// TODO: Verify no ID collisons?
+const rampageSkillsMap = new Map([
+    ...hardcodedRampageSkillsMap,
+    ...generateEleMap("fir", "Fire"),
+    ...generateEleMap("wat", "Water"),
+    ...generateEleMap("thu", "Thunder"),
+    ...generateEleMap("ice", "Ice"),
+    ...generateEleMap("dra", "Dragon"),
+    ...generateStatMap("poi", "Poison"),
+    ...generateStatMap("par", "Paralysis"),
+    ...generateStatMap("sle", "Sleep"),
+    ...generateStatMap("bla", "Blast"),
+]);
+// For convenience, we also attach IDs to each object
+for (const [rampSkillID, rampSkillObj] of rampageSkillsMap.entries()) {
+    rampSkillObj.id = rampSkillID;
+}
+
+// TODO: Instead of an object, just export the map directly.
 class RampageSkillsData {
 
     constructor() {
-        // TODO: Verify no ID collisons?
-        this._dataRO = new Map([
-                ...hardcodedRampageSkillsMap,
-                ...generateEleMap("fir", "Fire"),
-                ...generateEleMap("wat", "Water"),
-                ...generateEleMap("thu", "Thunder"),
-                ...generateEleMap("ice", "Ice"),
-                ...generateEleMap("dra", "Dragon"),
-                ...generateStatMap("poi", "Poison"),
-                ...generateStatMap("par", "Paralysis"),
-                ...generateStatMap("sle", "Sleep"),
-                ...generateStatMap("bla", "Blast"),
-            ]);
-
-        // For convenience, we also attach IDs to each object
-        for (const [rampSkillID, rampSkillObj] of this._dataRO.entries()) {
-            rampSkillObj.id = rampSkillID;
-        }
+        this._dataRO = rampageSkillsMap;
     }
 
     isValidRampSkillID(rampSkillID) {

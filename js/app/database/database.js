@@ -18,9 +18,8 @@ import {
     isEleStatStr,
     toNameFilterString,
 } from "../common.js";
-import {
-    RampageSkillsData,
-} from "./hardcoded_data/rampage_skills.js";
+import {RampageSkillsData} from "./hardcoded_data/rampage_skills.js";
+import {petalaceMap} from "./hardcoded_data/petalace_data.js";
 
 /*** Downloading and Validating Weapon Data (without referential integrity checking) ***/
 
@@ -223,6 +222,7 @@ class GameData {
         obj.readonly = {
             weaponRampSkills: rampSkillsData,
             weapons:          weaponData,
+            petalaces:        petalaceMap,
         };
 
         return obj;
@@ -244,6 +244,10 @@ class GameData {
     }
     getDefaultWeapon() {
         return this.readonly.weapons.greatsword.get("1a");
+    }
+
+    getPetalacesArray() {
+        return Array.from(this.readonly.petalaces.values());
     }
 }
 

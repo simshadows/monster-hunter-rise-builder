@@ -11,6 +11,28 @@ const element = React.createElement;
 const assert = console.assert;
 
 class PetalaceSelectView extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+                allPetalaces: null,
+            };
+    }
+
+    populateWithData(allPetalaces) {
+        // Verify incoming data
+        check.isArr(allPetalaces);
+        check.isInt(allPetalaces[0].healthGain); // Spot check structure
+        check.isInt(allPetalaces[0].staminaUp); // Spot check structure
+
+        // State should be empty of data
+        assert(this.state.allPetalaces === null);
+
+        // Now, we add the data
+        this.setState({allPetalaces: allPetalaces});
+        console.log(this.state);
+    }
+
     render() {
         return element("div",
             {

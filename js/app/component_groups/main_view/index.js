@@ -31,7 +31,15 @@ function Footer(props) {
                 },
                 "here"
             ),
-            "."
+            ". Submit bugs and feature requests ",
+            element("a",
+                {
+                href: "https://github.com/simshadows/monster-hunter-rise-builder/issues",
+                target: "_blank",
+                },
+                "here"
+            ),
+            ".",
         )
     );
 }
