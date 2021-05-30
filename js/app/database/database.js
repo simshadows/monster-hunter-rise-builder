@@ -442,6 +442,10 @@ class GameData {
         }
     }
 
+    getSkillsArray() {
+        return Array.from(this.readonly.skills.longIds.values());
+    }
+
     getWeaponsArray() {
         let ret = [];
         for (const [category, dataMap] of Object.entries(this.readonly.weapons)) {

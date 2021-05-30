@@ -48,7 +48,7 @@ class MHRBuilderAppContainer extends React.Component {
         this.state = {
                 // All possible states are in _viewEnumValues
                 view: "main", // Always start with the main view
-                //view: "weapon_select_view", // Useful for debugging
+                //view: "talisman_select_view", // Useful for debugging
 
                 // Two states: Either it's null, or it's a fully-constructed raw data object. Don't modify it once it's built.
                 rawData: null,
@@ -59,6 +59,7 @@ class MHRBuilderAppContainer extends React.Component {
         this.myRefs = {
                 weaponSelectView:   React.createRef(),
                 armourSelectView:   React.createRef(),
+                talismanSelectView: React.createRef(),
                 petalaceSelectView: React.createRef(),
                 decoSelectView:     React.createRef(),
             };
@@ -141,6 +142,17 @@ class MHRBuilderAppContainer extends React.Component {
             });
     }
 
+    handleSelectTalismanDecoSlotSize(decoSlotIndex, decoSlotSize) {
+        check.isInt(decoSlotIndex);
+        assert((decoSlotIndex >= 0) && (decoSlotIndex <= 2));
+        check.isInt(decoSlotSize);
+        assert((decoSlotSize >= 0) && (decoSlotSize <= 3));
+
+        this.setState({
+                build: this.state.build.setTalismanDecoSlot(this.state.rawData, decoSlotIndex, decoSlotSize),
+            });
+    }
+
     handleSelectPetalace(petalaceRO) {
         if (petalaceRO != null) { // petalaceRO allowed to be null
             check.isInt(petalaceRO.healthGain); // Spot check for structure
@@ -165,6 +177,7 @@ class MHRBuilderAppContainer extends React.Component {
             });
         this.myRefs.weaponSelectView.current.populateWithData(rawData.getWeaponsArray());
         this.myRefs.armourSelectView.current.populateWithData(rawData.getArmourArrays());
+        this.myRefs.talismanSelectView.current.populateWithData(rawData.getSkillsArray());
         this.myRefs.petalaceSelectView.current.populateWithData(rawData.getPetalacesArray());
     }
     componentWillUnmount() {
@@ -275,7 +288,11 @@ class MHRBuilderAppContainer extends React.Component {
                 handleCloseModal: () => {this.handleReturnToMainView();},
                 },
                 element(TalismanSelectView,
-                    null,
+                    {
+                    ref: this.myRefs.talismanSelectView,
+                    currentDecoSlots: this.state.build.getTalismanDecoSlots(),
+                    handleSelectDecoSlotSize: (decoSlotIndex, decoSlotSize) => {this.handleSelectTalismanDecoSlotSize(decoSlotIndex, decoSlotSize)},
+                    },
                     null,
                 ),
             ),

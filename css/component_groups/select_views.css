@@ -186,6 +186,21 @@ div.weapon-customize-view-select-content-box {
     width: auto;
 }
 
+/*** Talisman Customize View ***/
+
+div.talisman-customize-view-select-box {
+    background: lightgrey;
+    padding: 5px;
+    margin: 0 0 15px 0;
+}
+div.talisman-customize-view-select-heading-box {
+    padding: 2px;
+    font-weight: bold;
+}
+div.talisman-customize-view-select-content-box {
+    padding: 2px;
+}
+
 /*** Petalace Selection View ***/
 
 .petalace-selection-table-head-cell-name {

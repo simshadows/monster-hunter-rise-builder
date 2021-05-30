@@ -3,6 +3,12 @@
  * License: GNU Affero General Public License v3 (AGPL-3.0)
  */
 
+export function isDefined(obj) {
+    const res = (typeof obj !== undefined);
+    console.assert(res, "Unexpected undefined object.", obj);
+    return res;
+}
+
 export function isObj(obj) {
     const res = (typeof obj === "object");
     console.assert(res, "Expected an Object type. Instead got:", obj);

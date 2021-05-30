@@ -6,62 +6,12 @@
  */
 
 import * as check from "../../check.js";
+import {
+    DropdownSelectWithNull,
+} from "./common.js";
 
 const element = React.createElement;
 const assert = console.assert;
-
-class SelectRampageSkill extends React.Component {
-
-    handleOnChange(e) {
-        const newRampSkillID = e.target.value;
-        if (newRampSkillID == "") {
-            this.props.handleSelectRampageSkill(null)
-        } else {
-            this.props.handleSelectRampageSkill(newRampSkillID)
-        }
-    }
-
-    _renderNullOption() {
-        return element("option",
-            {
-            value: "",
-            },
-            "---",
-        );
-    }
-
-    _renderOption(rampSkillObj) {
-        check.isObj(rampSkillObj);
-        check.isStr(rampSkillObj.id);
-        check.isStr(rampSkillObj.name);
-
-        return element("option",
-            {
-            value: rampSkillObj.id,
-            },
-            rampSkillObj.name,
-        );
-    }
-
-    render() {
-        check.isObjOrNull(this.props.rampSkillSelection);
-        check.isArr(this.props.rampSkillOptionsSubArray);
-        check.isFunction(this.props.handleSelectRampageSkill);
-
-        const optionsElements = [this._renderNullOption()];
-        for (const rampSkillObj of this.props.rampSkillOptionsSubArray) {
-            optionsElements.push(this._renderOption(rampSkillObj));
-        }
-        
-        return element("select",
-            {
-            value: (this.props.rampSkillSelection == null) ? ("") : (this.props.rampSkillSelection.id),
-            onChange: (e) => {this.handleOnChange(e);},
-            },
-            ...optionsElements,
-        );
-    }
-}
 
 class WeaponCustomizeView extends React.Component {
 
@@ -70,11 +20,13 @@ class WeaponCustomizeView extends React.Component {
     }
 
     _renderRampSelection(positionID, rampSkillSelection, rampSkillOptions) {
-        return element(SelectRampageSkill,
+        return element(DropdownSelectWithNull,
             {
-            rampSkillSelection: rampSkillSelection,
-            rampSkillOptionsSubArray: rampSkillOptions,
-            handleSelectRampageSkill: (newRampSkillID) => {this.handleSelectRampageSkill(positionID, newRampSkillID)},
+            currentlySelected: rampSkillSelection,
+            optionsArray: rampSkillOptions,
+            handleOnChange: (newRampSkillID) => {this.handleSelectRampageSkill(positionID, newRampSkillID)},
+            cspecGetOptionValue: (rampSkillRO) => {return rampSkillRO.id},
+            cspecGetOptionName: (rampSkillRO) => {return rampSkillRO.name},
             },
             null,
         );

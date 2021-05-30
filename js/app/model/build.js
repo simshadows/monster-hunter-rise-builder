@@ -63,6 +63,14 @@ class Build {
                 legs:  null,
             };
 
+        this._talisman = {
+                skills: [ // Only two skills for now
+                    {skillRO: null, skillLevel: null},
+                    {skillRO: null, skillLevel: null},
+                ],
+                decoSlots: [0,0,0],
+            };
+
         this._petalaceRO = null;
 
         this._validateState();
@@ -72,6 +80,7 @@ class Build {
     setWeapon(db, weaponObj) {
         assert(isObj(db));
         assert(isMap(db.readonly.weapons.greatsword)); // Spot check for structure
+        // weaponObj validity will be checked by verifying overall state
 
         this._weaponRO = weaponObj;
         this._validateWeaponNotNull();
@@ -85,6 +94,10 @@ class Build {
     setArmourPiece(db, armourPieceObj) {
         assert(isObj(db));
         assert(isMap(db.readonly.weapons.greatsword)); // Spot check for structure
+        // armourPieceObj validity will be checked by verifying overall state
+
+        // TODO: We don't handle null yet.
+        if (armourPieceObj == null) console.log("Not yet implemented armour removal.");
 
         this._validateWeaponNotNull();
         this._armourRO[armourPieceObj.slotID] = armourPieceObj;
@@ -94,9 +107,41 @@ class Build {
     }
 
     // Usefully returns self for use in React state transitions.
+    setTalismanSkill(db, skillIndex, skillRO, skillLevel) {
+        assert(isObj(db));
+        assert(isInt(skillIndex) && (skillIndex >= 0) && (skillIndex <= 1));
+        if (skillRO == null) {
+            assert(isIntOrNull(skillLevel)); // Basically allowed to be anything
+        } else {
+            assert(isObj(skillRO));
+            assert(isInt(skillRO.maxLevels)); // Spot check for structure
+            assert(isInt(skillLevel) && (skillLevel >= 0) && (skillLevel <= 10)); // Unlikely to be a huge number
+        }
+
+        console.log(skillIndex);
+        console.log(skillRO);
+        console.log(skillLevel);
+
+        this._validateState();
+        return this;
+    }
+    // Usefully returns self for use in React state transitions.
+    setTalismanDecoSlot(db, decoSlotIndex, decoSlotSize) {
+        assert(isObj(db));
+        assert(isInt(decoSlotIndex) && (decoSlotIndex >= 0) && (decoSlotIndex <= 2));
+        assert(isInt(decoSlotSize) && (decoSlotSize >= 0) && (decoSlotSize <= 3));
+
+        this._talisman.decoSlots[decoSlotIndex] = decoSlotSize
+
+        this._validateState();
+        return this;
+    }
+
+    // Usefully returns self for use in React state transitions.
     setPetalace(db, petalaceObj) {
         assert(isObj(db));
         assert(isMap(db.readonly.weapons.greatsword)); // Spot check for structure
+        // petalaceObj validity will be checked by verifying overall state
 
         this._validateWeaponNotNull();
         this._petalaceRO = petalaceObj;
@@ -135,6 +180,13 @@ class Build {
     }
 
     // THIS WILL ONLY SUCCEED IF this._weaponRO IS NOT NULL
+    getTalismanDecoSlots() {
+        this._validateWeaponNotNull();
+        //return this._talisman.decoSlots.filter((slotSize) => {return slotSize != 0});
+        return this._talisman.decoSlots;
+    }
+
+    // THIS WILL ONLY SUCCEED IF this._weaponRO IS NOT NULL
     getPetalaceObjRO() {
         this._validateWeaponNotNull();
         return this._petalaceRO;
@@ -152,7 +204,7 @@ class Build {
         for (const [skillLongID, [skillRO, skillLevel]] of calculatedTotalSkills.entries()) {
             calculatedTotalSkillsRenderingProps.push({
                     name: skillRO.name,
-                    level: skillLevel,
+                    level: (skillLevel > skillRO.maxLevels) ? skillRO.maxLevels : skillLevel,
                     maxLevel: skillRO.maxLevels,
                 });
         }
@@ -217,6 +269,10 @@ class Build {
                         arms:  makeArmourRenderingProps("arms"),
                         waist: makeArmourRenderingProps("waist"),
                         legs:  makeArmourRenderingProps("legs"),
+                    },
+                talismanRO: {
+                        decosArray: [[2, "Charger Jewel 2"],
+                                     [1, "~~NOTREAL~~"]],
                     },
                 petalaceRO: {
                         originalPetalaceObj: this._petalaceRO, // I'm lazy
