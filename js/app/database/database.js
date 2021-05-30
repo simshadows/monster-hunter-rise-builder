@@ -257,6 +257,9 @@ function validateFinalArmourPieceObject(armourPieceObj) {
     // Set ID should already be validated by now.
     // Slot ID should also be valid.
 
+    assert(isNonEmptyStr(armourPieceObj.tierID), errorIDString);
+    assert(isTierStr(armourPieceObj.tierID), "Tier value must be valid. " + armourPieceObj.setID);
+
     assert(isNonEmptyStr(armourPieceObj.setName), errorIDString);
     assert(isNonEmptyStr(armourPieceObj.name), errorIDString);
 
@@ -275,6 +278,9 @@ function validateFinalArmourPieceObject(armourPieceObj) {
         assert(isInt(skillLevel), errorIDString);
         assert(skillLevel > 0, "Skill level must be positive non-zero. Armour set ID: " + armourPieceObj.setID);
     }
+
+    assert(isInt(armourPieceObj.defenseAtLevel1), errorIDString);
+    assert(armourPieceObj.defenseAtLevel1 > 0, errorIDString);
 
     assert(isInt(armourPieceObj.fireRes), errorIDString);
     assert(isInt(armourPieceObj.waterRes), errorIDString);
@@ -296,7 +302,7 @@ async function downloadAllRawArmourData() {
 
     const finalData = new Map(); // This is a two-layer map: {set ID string: {piece ID string: data object}}
     for (const [armourSetID, armourRawDataObj] of Object.entries(armourRawData)) {
-        const namingScheme = namingSchemesRawData[armourRawDataObj.naming_scheme];
+        const namingScheme = namingSchemesRawData[armourRawDataObj.namingScheme];
         const errorIDString = "Error with armour set ID: " + armourSetID;
 
         assert(isNonEmptyStr(armourSetID), errorIDString);
@@ -318,7 +324,7 @@ async function downloadAllRawArmourData() {
             assert(isStr(armourRawDataObj.prefix), errorIDString);
         }
         assert(isStr(armourRawDataObj.suffix), errorIDString);
-        assert(isNonEmptyStr(armourRawDataObj.naming_scheme), errorIDString);
+        assert(isNonEmptyStr(armourRawDataObj.namingScheme), errorIDString);
 
         assert(isObj(armourRawDataObj.pieces), errorIDString);
         assert(isObj(armourRawDataObj.defenses), errorIDString);
@@ -327,7 +333,7 @@ async function downloadAllRawArmourData() {
 
         assert((armourRawDataObj.rarity > 0) && (armourRawDataObj.rarity <= 7), "Invalid rarity. Armour set ID: " + armourSetID);
         assert(Object.keys(armourRawDataObj.pieces).length === 5, "Pieces key must have 5 elements. Armour set ID: " + armourSetID);
-        assert(Object.keys(armourRawDataObj.defenses).length === 5, "Defenses key must have 5 elements. Armour set ID: " + armourSetID);
+        assert(Object.keys(armourRawDataObj.defenses).length === 6, "Unexpected object size. Armour set ID: " + armourSetID);
 
         if (!finalData.has(armourSetID)) {
             finalData.set(armourSetID, new Map());
@@ -335,42 +341,37 @@ async function downloadAllRawArmourData() {
 
         for (const [i, slotID] of expectedSlotIDs.entries()) {
             const p = armourRawDataObj.pieces[slotID];
-            const d = armourRawDataObj.defenses[slotID];
-            if ((p !== null) && (d !== null)) {
+            if (p !== null) {
                 assert(isArr(p), errorIDString);
-                assert(isObj(d), errorIDString);
                 assert(p.length === 2, "Array must be length 2. Armour set ID: " + armourSetID);
-                assert(Object.keys(d).length === 5, "Dict must be length 5. Armour set ID: " + armourSetID);
 
                 let prefix = (armourRawDataObj.prefix instanceof Array) ? armourRawDataObj.prefix[i] : armourRawDataObj.prefix;
                 prefix = (prefix.length == 0) ? "" : prefix + " ";
 
+                const suffix = (armourRawDataObj.suffix == "") ? "" : " " + armourRawDataObj.suffix;
+
                 // We verify whatever's in newPiece after building it.
                 const newPiece = {
+                    tierID: armourRawDataObj.tier,
                     setID: armourSetID,
                     setName: armourRawDataObj.setName,
                     slotID: slotID,
-                    name: prefix + namingScheme[i],
+                    name: prefix + namingScheme[i] + suffix,
                     decorationSlots: p[0],
                     skills: p[1],
-                    fireRes: d["f"],
-                    waterRes: d["w"],
-                    thunderRes: d["t"],
-                    iceRes: d["i"],
-                    dragonRes: d["d"],
+
+                    defenseAtLevel1: armourRawDataObj.defenses["defLvl1"],
+
+                    fireRes: armourRawDataObj.defenses["f"],
+                    waterRes: armourRawDataObj.defenses["w"],
+                    thunderRes: armourRawDataObj.defenses["t"],
+                    iceRes: armourRawDataObj.defenses["i"],
+                    dragonRes: armourRawDataObj.defenses["d"],
                 };
-                if (armourRawDataObj.suffix.length > 0) {
-                    newPiece.pieceName = newPiece.pieceName + " " + armourRawDataObj.suffix;
-                }
 
                 validateFinalArmourPieceObject(newPiece);
 
                 finalData.get(armourSetID).set(slotID, newPiece);
-
-            } else if ((p === null) && (d === null)) {
-                continue; // Ok to ignore
-            } else {
-                throw new Error("Slot " + slotID + " of armour set ID " + armourSetID + " is inconsistent.");
             }
         }
 
@@ -440,13 +441,26 @@ class GameData {
     getWeaponsArray() {
         let ret = [];
         for (const [category, dataMap] of Object.entries(this.readonly.weapons)) {
-            assert(isWeaponCategoryStr(category));
+            console.assert(isWeaponCategoryStr(category));
             ret = ret.concat(Array.from(dataMap.values()));
         }
         return ret;
     }
     getDefaultWeapon() {
         return this.readonly.weapons.greatsword.get("1a");
+    }
+
+    // Returns an object of arrays: { head": array of head pieces, chest: array of chest pieces, ...}
+    getArmourArrays() {
+        const ret = { head:[], chest:[], arms:[], waist:[], legs:[] };
+        for (const [armourSetID, armourSetData] of this.readonly.armour.entries()) {
+            console.assert(isStr(armourSetID));
+            console.assert(isMap(armourSetData));
+            for (const [armourSlotID, armourPieceData] of armourSetData.entries()) {
+                ret[armourSlotID].push(armourPieceData);
+            }
+        }
+        return ret;
     }
 
     getPetalacesArray() {

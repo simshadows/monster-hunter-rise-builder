@@ -154,6 +154,7 @@ class MHRBuilderAppContainer extends React.Component {
                 build: this.state.build.setWeapon(rawData, rawData.getDefaultWeapon()),
             });
         this.myRefs.weaponSelectView.current.populateWithData(rawData.getWeaponsArray());
+        this.myRefs.armourSelectView.current.populateWithData(rawData.getArmourArrays());
         this.myRefs.petalaceSelectView.current.populateWithData(rawData.getPetalacesArray());
     }
     componentWillUnmount() {
