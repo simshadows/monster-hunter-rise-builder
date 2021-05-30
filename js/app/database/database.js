@@ -350,7 +350,7 @@ async function downloadAllRawArmourData() {
 
                 const suffix = (armourRawDataObj.suffix == "") ? "" : " " + armourRawDataObj.suffix;
 
-                // We verify whatever's in newPiece after building it.
+                // Create the final data object without verifying first
                 const newPiece = {
                     tierID: armourRawDataObj.tier,
                     setID: armourSetID,
@@ -367,8 +367,12 @@ async function downloadAllRawArmourData() {
                     thunderRes: armourRawDataObj.defenses["t"],
                     iceRes: armourRawDataObj.defenses["i"],
                     dragonRes: armourRawDataObj.defenses["d"],
-                };
 
+                    filterHelpers: {}, // Populate after
+                };
+                newPiece.filterHelpers.nameLower = toNameFilterString(newPiece.name);
+
+                // Now, we verify the structure
                 validateFinalArmourPieceObject(newPiece);
 
                 finalData.get(armourSetID).set(slotID, newPiece);

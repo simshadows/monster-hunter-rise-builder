@@ -91,6 +91,14 @@ export function isEquipSlotStr(obj) {
 
 /*** Maps ***/
 
+const tierIDToAbbrevMap = {
+    lr: "LR",
+    hr: "HR",
+}
+export function tierIDToAbbrev(obj) {
+    return tierIDToAbbrevMap[obj];
+}
+
 const weaponCategoryToNameMap = {
     greatsword: "Greatsword",
     longsword: "Longsword",
@@ -109,6 +117,17 @@ const weaponCategoryToNameMap = {
 }
 export function weaponCategoryToName(obj) {
     return weaponCategoryToNameMap[obj];
+}
+
+const equipmentSlotToNameMap = {
+    head:  "Head",
+    chest: "Chest",
+    arms:  "Arms",
+    waist: "Waist",
+    legs:  "Legs",
+}
+export function equipmentSlotToName(obj) {
+    return equipmentSlotToNameMap[obj];
 }
 
 const eleStatStrToEmojiMap = {

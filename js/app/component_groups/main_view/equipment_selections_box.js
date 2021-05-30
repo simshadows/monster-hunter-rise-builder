@@ -444,12 +444,41 @@ class ArmourSelection extends React.Component {
         this.props.handleClickDecorationSelect(decoSlotID);
     }
 
+    _renderDefensesBox() {
+        // Convenience Alias
+        const armourPieceRO = this.props.armourPieceRORenderingProps;
+
+        if (armourPieceRO === null) {
+            return element(EquipDefensesBoxEmpty,
+                null,
+                null,
+            );
+        } else {
+            return element(EquipDefensesBox,
+                {
+                defenses: {
+                        defense:    armourPieceRO.defense,
+                        fireRes:    armourPieceRO.fireRes,
+                        waterRes:   armourPieceRO.waterRes,
+                        thunderRes: armourPieceRO.thunderRes,
+                        iceRes:     armourPieceRO.iceRes,
+                        dragonRes:  armourPieceRO.dragonRes
+                    },
+                },
+                null,
+            );
+        }
+    }
+
     render() {
+        // Convenience Alias
+        const armourPieceRO = this.props.armourPieceRORenderingProps;
+
         assert(isArmourSlotStr(this.props.slotID));
-        check.isStr(this.props.eqName); // Validate later
-        check.isArr(this.props.skillsArray); // Validate later
-        check.isArr(this.props.decosArray); // Validate later
-        check.isObj(this.props.defenses); // Validate later
+        if (armourPieceRO !== null) { // Allowed to be null
+            check.isObj(armourPieceRO);
+            check.isArr(armourPieceRO.decosArray); // Spot check for structure
+        }
 
         check.isFunction(this.props.handleClickArmourSelect);
         check.isFunction(this.props.handleClickDecorationSelect);
@@ -471,21 +500,16 @@ class ArmourSelection extends React.Component {
                 ),
                 element(EquipArmourInfoBox,
                     {
-                        eqName: this.props.eqName,
-                        skillsArray: this.props.skillsArray,
-                    },
-                    null,
-                ),
-                element(EquipDefensesBox,
-                    {
-                    defenses: this.props.defenses,
+                        eqName: (armourPieceRO !== null) ? armourPieceRO.name : "None",
+                        skillsArray: (armourPieceRO !== null) ? armourPieceRO.skills : [],
                     },
                     null,
                 ),
             ),
+            this._renderDefensesBox(),
             element(EquipDecosWrapBox,
                 {
-                    decosArray: this.props.decosArray,
+                    decosArray: (armourPieceRO !== null) ? armourPieceRO.decosArray : [],
                     handleClickSelect: (decoSlotID) => {this.handleClickDecorationSelect(decoSlotID);},
                 },
                 null,
@@ -692,16 +716,8 @@ class EquipmentSelectionsBox extends React.Component {
             element(ArmourSelection,
                 {
                 slotID: "head",
-                eqName: "Kaiser Crown",
-                skillsArray: [["Critical Eye"  , 3],
-                              ["Critical Boost", 1]],
-                decosArray: [[1, null]],
-                defenses: {defense: 74,
-                           fireRes: 4,
-                           waterRes: -4,
-                           thunderRes: 1,
-                           iceRes: -1,
-                           dragonRes: -3},
+                armourPieceRORenderingProps:this.props.buildRenderingProps.armourRO.head,
+
                 handleClickArmourSelect: (slotID) => {this.handleClickArmourSelect(slotID);},
                 handleClickDecorationSelect: (decoSlotID) => {this.handleClickDecorationSelect("head", decoSlotID);},
                 },
@@ -710,16 +726,8 @@ class EquipmentSelectionsBox extends React.Component {
             element(ArmourSelection,
                 {
                 slotID: "chest",
-                eqName: "Tobi-Kadachi Mail S",
-                skillsArray: [["Mind's Eye"  , 1],
-                              ["Critical Eye", 1]],
-                decosArray: [[3, "Charger Jewel 2"]],
-                defenses: {defense: 58,
-                           fireRes: 0,
-                           waterRes: -3,
-                           thunderRes: 3,
-                           iceRes: 0,
-                           dragonRes: 0},
+                armourPieceRORenderingProps:this.props.buildRenderingProps.armourRO.chest,
+
                 handleClickArmourSelect: (slotID) => {this.handleClickArmourSelect(slotID);},
                 handleClickDecorationSelect: (decoSlotID) => {this.handleClickDecorationSelect("chest", decoSlotID);},
                 },
@@ -728,18 +736,8 @@ class EquipmentSelectionsBox extends React.Component {
             element(ArmourSelection,
                 {
                 slotID: "arms",
-                eqName: "Kaiser Vambraces",
-                skillsArray: [["Teostra Blessing" , 1],
-                              ["Critical Eye"     , 1],
-                              ["Critical Boost"   , 1],
-                              ["~~NOTREAL~~", 9]],
-                decosArray: [[2, "Tenderizer Jewel 2"]],
-                defenses: {defense: 74,
-                           fireRes: 4,
-                           waterRes: -4,
-                           thunderRes: 1,
-                           iceRes: -1,
-                           dragonRes: -3},
+                armourPieceRORenderingProps:this.props.buildRenderingProps.armourRO.arms,
+
                 handleClickArmourSelect: (slotID) => {this.handleClickArmourSelect(slotID);},
                 handleClickDecorationSelect: (decoSlotID) => {this.handleClickDecorationSelect("arms", decoSlotID);},
                 },
@@ -748,17 +746,8 @@ class EquipmentSelectionsBox extends React.Component {
             element(ArmourSelection,
                 {
                 slotID: "waist",
-                eqName: "Anjanath Coil S",
-                skillsArray: [["Attack Boost", 2]],
-                decosArray: [[2, "Charger Jewel 2"],
-                             [1, "Steadfast Jewel 1"],
-                             [1, "Steadfast Jewel 1"]],
-                defenses: {defense: 60,
-                           fireRes: 3,
-                           waterRes: -3,
-                           thunderRes: -1,
-                           iceRes: -1,
-                           dragonRes: 0},
+                armourPieceRORenderingProps:this.props.buildRenderingProps.armourRO.waist,
+
                 handleClickArmourSelect: (slotID) => {this.handleClickArmourSelect(slotID);},
                 handleClickDecorationSelect: (decoSlotID) => {this.handleClickDecorationSelect("waist", decoSlotID);},
                 },
@@ -767,17 +756,8 @@ class EquipmentSelectionsBox extends React.Component {
             element(ArmourSelection,
                 {
                 slotID: "legs",
-                eqName: "Ingot Greaves S",
-                skillsArray: [["Attack Boost"     , 2],
-                              ["Critical Eye"     , 2],
-                              ["~~NOTREAL~~", 3]],
-                decosArray: [[1, "Steadfast Jewel 1"]],
-                defenses: {defense: 40,
-                           fireRes: -1,
-                           waterRes: -1,
-                           thunderRes: 1,
-                           iceRes: 0,
-                           dragonRes: 0},
+                armourPieceRORenderingProps:this.props.buildRenderingProps.armourRO.legs,
+
                 handleClickArmourSelect: (slotID) => {this.handleClickArmourSelect(slotID);},
                 handleClickDecorationSelect: (decoSlotID) => {this.handleClickDecorationSelect("legs", decoSlotID);},
                 },

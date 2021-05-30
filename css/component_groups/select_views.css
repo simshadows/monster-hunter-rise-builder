@@ -168,6 +168,24 @@ div.weapon-customize-view-select-content-box {
     padding: 2px;
 }
 
+/*** Armour Selection View ***/
+
+.armour-selection-table-head-cell-category {
+    width: 100px;
+}
+.armour-selection-table-head-cell-name {
+    width: 240px;
+}
+.armour-selection-table-head-cell-numeric {
+    width: 40px;
+}
+.armour-selection-table-head-cell-deco {
+    width: 80px;
+}
+.armour-selection-table-head-cell-skills {
+    width: auto;
+}
+
 /*** Petalace Selection View ***/
 
 .petalace-selection-table-head-cell-name {

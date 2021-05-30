@@ -131,6 +131,16 @@ class MHRBuilderAppContainer extends React.Component {
             });
     }
 
+    handleSelectArmourPiece(armourPieceRO) {
+        if (armourPieceRO != null) { // armourPieceRO allowed to be null
+            check.isInt(armourPieceRO.dragonRes); // Spot check for structure
+        }
+        this.setState({
+                view: "main", // Return back to main view
+                build: this.state.build.setArmourPiece(this.state.rawData, armourPieceRO)
+            });
+    }
+
     handleSelectPetalace(petalaceRO) {
         if (petalaceRO != null) { // petalaceRO allowed to be null
             check.isInt(petalaceRO.healthGain); // Spot check for structure
@@ -252,6 +262,8 @@ class MHRBuilderAppContainer extends React.Component {
                 element(ArmourSelectView,
                     {
                     ref: this.myRefs.armourSelectView,
+                    currentSelectedArmour: this.state.build.getArmourObjsRO(),
+                    handleSelectArmourPiece: (armourPieceRO) => {this.handleSelectArmourPiece(armourPieceRO)},
                     },
                     null,
                 ),

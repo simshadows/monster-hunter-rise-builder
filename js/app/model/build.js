@@ -24,6 +24,18 @@ class Build {
             assert(isObj(this._weaponRO));
             assert(isInt(this._weaponRO.affinity)); // Spot check for structure
         }
+        // TODO: What if _weaponRO is null?
+
+        for (const [slotID, armourPieceRO] of Object.entries(this._armourRO)) {
+            if (armourPieceRO != null) { // armourPieceRO allowed to be null
+                assert(isInt(armourPieceRO.dragonRes)); // Spot check for structure
+            }
+        }
+
+        if (this._petalaceRO !== null) {
+            assert(isObj(this._petalaceRO));
+            // TODO: Spot check for structure?
+        }
     }
     _validateWeaponNotNull() {
         if (this._weaponRO === null) {
@@ -41,6 +53,16 @@ class Build {
         this._weaponRO = weaponObj; // Object from the databasea, or null
         this._weaponRampSkillSelections = null; // Initialize later
 
+        // TODO: Come up with a better name for RO data objects. This is confusing since _armourRO
+        //       is actually a "map" of the actual RO data objects.
+        this._armourRO = {
+                head:  null,
+                chest: null,
+                arms:  null,
+                waist: null,
+                legs:  null,
+            };
+
         this._petalaceRO = null;
 
         this._validateState();
@@ -54,6 +76,20 @@ class Build {
         this._weaponRO = weaponObj;
         this._validateWeaponNotNull();
         this._weaponRampSkillSelections = this._initWeaponRampSkillSelections();
+
+        this._validateState();
+        return this;
+    }
+
+    // Usefully returns self for use in React state transitions.
+    setArmourPiece(db, armourPieceObj) {
+        assert(isObj(db));
+        assert(isMap(db.readonly.weapons.greatsword)); // Spot check for structure
+
+        this._validateWeaponNotNull();
+        this._armourRO[armourPieceObj.slotID] = armourPieceObj;
+
+        this._validateState();
         return this;
     }
 
@@ -64,6 +100,8 @@ class Build {
 
         this._validateWeaponNotNull();
         this._petalaceRO = petalaceObj;
+
+        this._validateState();
         return this;
     }
 
@@ -79,6 +117,8 @@ class Build {
         // TODO: Verify if the rampage skill ID is valid?
 
         this._weaponRampSkillSelections[position] = db.readonly.weaponRampSkills.getRampSkill(rampageSkillID);
+
+        this._validateState();
         return this;
     }
 
@@ -86,6 +126,12 @@ class Build {
     getWeaponObjRO() {
         this._validateWeaponNotNull();
         return this._weaponRO;
+    }
+
+    // THIS WILL ONLY SUCCEED IF this._weaponRO IS NOT NULL
+    getArmourObjsRO() {
+        this._validateWeaponNotNull();
+        return this._armourRO;
     }
 
     // THIS WILL ONLY SUCCEED IF this._weaponRO IS NOT NULL
@@ -101,6 +147,40 @@ class Build {
 
         this._validateWeaponNotNull();
 
+        const makeArmourRenderingProps = (slotID) => {
+                const armourPieceRO = this._armourRO[slotID];
+                if (armourPieceRO === null) {
+                    return null;
+                }
+
+                const skillNamesArray = [];
+                for (const [skillRO, skillLevel] of armourPieceRO.skills) {
+                    skillNamesArray.push([skillRO.name, skillLevel]);
+                }
+                
+                //// TODO
+                //const decos = [];
+                //for (const slotSize of armourPieceRO.decorationSlots) {
+
+                //}
+
+                return {
+                    name: armourPieceRO.name,
+                    skills: skillNamesArray,
+                    decosArray: [[2, "Charger Jewel 2"],
+                                 [1, "~~NOTREAL~~"    ],
+                                 [1, null             ]], // Placeholder for now
+
+                    defense:    armourPieceRO.defenseAtLevel1, // Placeholder for now
+
+                    fireRes:    armourPieceRO.fireRes,
+                    waterRes:   armourPieceRO.waterRes,
+                    thunderRes: armourPieceRO.thunderRes,
+                    iceRes:     armourPieceRO.iceRes,
+                    dragonRes:  armourPieceRO.dragonRes,
+                };
+            };
+
         return {
                 weaponRO: {
                         name:                     this._weaponRO.name,
@@ -113,6 +193,13 @@ class Build {
                         rampSkillOptionsArray:    this._weaponRO.rampSkills,
                         decosArray: [[2, "Charger Jewel 2"],
                                      [1, "~~NOTREAL~~"]],
+                    },
+                armourRO: {
+                        head:  makeArmourRenderingProps("head"),
+                        chest: makeArmourRenderingProps("chest"),
+                        arms:  makeArmourRenderingProps("arms"),
+                        waist: makeArmourRenderingProps("waist"),
+                        legs:  makeArmourRenderingProps("legs"),
                     },
                 petalaceRO: {
                         originalPetalaceObj: this._petalaceRO, // I'm lazy

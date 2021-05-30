@@ -29,7 +29,7 @@ const skillMap = new Map([
 
     ["fire_attack", {
         shortId: "1",
-        name: "fira",
+        name: "Fire Attack",
         maxLevels: 5,
     }],
     ["water_attack", {
