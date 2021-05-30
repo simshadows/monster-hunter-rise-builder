@@ -147,6 +147,23 @@ class Build {
 
         this._validateWeaponNotNull();
 
+        const calculatedTotalSkills = this._getCurrentSkills();
+        const calculatedTotalSkillsRenderingProps = [];
+        for (const [skillLongID, [skillRO, skillLevel]] of calculatedTotalSkills.entries()) {
+            calculatedTotalSkillsRenderingProps.push({
+                    name: skillRO.name,
+                    level: skillLevel,
+                    maxLevel: skillRO.maxLevels,
+                });
+        }
+        calculatedTotalSkillsRenderingProps.sort((a, b) => {
+            if (a.level == b.level) {
+                return (a.name.toUpperCase() > b.name.toUpperCase()) ? 1 : -1;
+            } else {
+                return (a.level < b.level) ? 1 : -1;
+            }
+        });
+
         const makeArmourRenderingProps = (slotID) => {
                 const armourPieceRO = this._armourRO[slotID];
                 if (armourPieceRO === null) {
@@ -204,6 +221,7 @@ class Build {
                 petalaceRO: {
                         originalPetalaceObj: this._petalaceRO, // I'm lazy
                     },
+                calculatedSkills: calculatedTotalSkillsRenderingProps,
             };
     }
 
@@ -217,6 +235,21 @@ class Build {
                 ret.push(null);
             } else {
                 ret.push(rampSkillObj);
+            }
+        }
+        return ret;
+    }
+
+    _getCurrentSkills() {
+        const ret = new Map(); // Map of arrays: {skill long ID : [skill object, skill level]}
+        for (const [slotID, armourPieceRO] of Object.entries(this._armourRO)) {
+            if (armourPieceRO == null) continue;
+            for (const [skillRO, skillLevel] of armourPieceRO.skills) {
+                if (ret.has(skillRO.id)) {
+                    ret.get(skillRO.id)[1] += skillLevel;
+                } else {
+                    ret.set(skillRO.id, [skillRO, skillLevel]);
+                }
             }
         }
         return ret;

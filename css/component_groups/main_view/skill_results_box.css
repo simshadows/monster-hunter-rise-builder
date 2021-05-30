@@ -3,10 +3,11 @@ div.skill-box {
     flex-direction: row;
     align-items: center;
 
+    box-sizing: border-box;
     border: none;
     background: lightgrey;
     height: 34px;
-    width: 160px;
+    width: 100%;
     padding: 2px 6px 2px 6px;
     font-size: 14px;
 }

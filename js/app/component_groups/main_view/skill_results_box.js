@@ -43,28 +43,34 @@ function SkillResult(props) {
     );
 }
 
-function SkillsResultsBox() {
+function SkillsResultsBox(props) {
+    check.isObj(props.buildRenderingProps);
+    check.isArr(props.buildRenderingProps.calculatedSkills); // Spot check for structure
+
+    const elements = [];
+    if (props.buildRenderingProps.calculatedSkills.length == 0) {
+        elements.push("No Skills");
+    } else {
+        for (const skillProps of props.buildRenderingProps.calculatedSkills) {
+            elements.push(
+                element(SkillResult,
+                    {
+                    skillName: skillProps.name,
+                    skillLevel: skillProps.level,
+                    skillLevelMax: skillProps.maxLevel,
+                    },
+                    null,
+                ),
+            );
+        }
+    }
+
     return element("div",
         {
         id: "skillsresultsbox",
         className: "sub-box",
         },
-        element(SkillResult,
-            {
-            skillName: "Attack Boost",
-            skillLevel: 7,
-            skillLevelMax: 7,
-            },
-            null,
-        ),
-        element(SkillResult,
-            {
-            skillName: "Weakness Exploit",
-            skillLevel: 2,
-            skillLevelMax: 3,
-            },
-            null,
-        ),
+        ...elements,
     );
 }
 

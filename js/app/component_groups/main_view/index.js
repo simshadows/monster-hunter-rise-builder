@@ -80,7 +80,9 @@ class MainView extends React.Component {
                         className: "main-view-inner-box",
                         },
                         element(SkillsResultsBox,
-                            null,
+                            {
+                            buildRenderingProps: this.props.buildRenderingProps,
+                            },
                             null,
                         ),
                         element(EquipmentSelectionsBox,
