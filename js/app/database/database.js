@@ -445,6 +445,9 @@ class GameData {
     getSkillsArray() {
         return Array.from(this.readonly.skills.longIds.values());
     }
+    getSkillsMapLongIds() {
+        return this.readonly.skills.longIds;
+    }
 
     getWeaponsArray() {
         let ret = [];

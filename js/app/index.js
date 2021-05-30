@@ -142,6 +142,17 @@ class MHRBuilderAppContainer extends React.Component {
             });
     }
 
+    handleSelectTalismanSkill(skillIndex, skillRO, skillLevel) {
+        // We check the arguments in more detail in the Build method call
+        check.isInt(skillIndex);
+        assert((skillIndex >= 0) && (skillIndex <= 1));
+        check.isObjOrNull(skillRO);
+        //check.isIntOrNull(skillLevel);
+
+        this.setState({
+                build: this.state.build.setTalismanSkill(this.state.rawData, skillIndex, skillRO, skillLevel),
+            });
+    }
     handleSelectTalismanDecoSlotSize(decoSlotIndex, decoSlotSize) {
         check.isInt(decoSlotIndex);
         assert((decoSlotIndex >= 0) && (decoSlotIndex <= 2));
@@ -177,7 +188,7 @@ class MHRBuilderAppContainer extends React.Component {
             });
         this.myRefs.weaponSelectView.current.populateWithData(rawData.getWeaponsArray());
         this.myRefs.armourSelectView.current.populateWithData(rawData.getArmourArrays());
-        this.myRefs.talismanSelectView.current.populateWithData(rawData.getSkillsArray());
+        this.myRefs.talismanSelectView.current.populateWithData(rawData.getSkillsArray(), rawData.getSkillsMapLongIds());
         this.myRefs.petalaceSelectView.current.populateWithData(rawData.getPetalacesArray());
     }
     componentWillUnmount() {
@@ -290,8 +301,10 @@ class MHRBuilderAppContainer extends React.Component {
                 element(TalismanSelectView,
                     {
                     ref: this.myRefs.talismanSelectView,
+                    currentSkills: this.state.build.getTalismanSkills(),
                     currentDecoSlots: this.state.build.getTalismanDecoSlots(),
-                    handleSelectDecoSlotSize: (decoSlotIndex, decoSlotSize) => {this.handleSelectTalismanDecoSlotSize(decoSlotIndex, decoSlotSize)},
+                    handleSelectSkill: (...args) => {this.handleSelectTalismanSkill(...args)},
+                    handleSelectDecoSlotSize: (...args) => {this.handleSelectTalismanDecoSlotSize(...args)},
                     },
                     null,
                 ),

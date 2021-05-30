@@ -521,12 +521,12 @@ class ArmourSelection extends React.Component {
 /*** Talisman ***/
 
 function TalismanSelection(props) {
-    check.isStr(props.eqName); // Validate later
-    check.isArr(props.skillsArray); // Validate later
-    check.isArr(props.decosArray); // Validate later
+    check.isObj(props.talismanRORenderingProps);
 
     check.isFunction(props.handleClickTalismanSelect);
     check.isFunction(props.handleClickDecorationSelect);
+
+    const talismanRO = props.talismanRORenderingProps;
 
     return element("div",
         {
@@ -545,8 +545,8 @@ function TalismanSelection(props) {
             ),
             element(EquipArmourInfoBox,
                 {
-                    eqName: props.eqName,
-                    skillsArray: props.skillsArray,
+                    eqName: talismanRO.name,
+                    skillsArray: talismanRO.skills,
                 },
                 null,
             ),
@@ -557,7 +557,7 @@ function TalismanSelection(props) {
         ),
         element(EquipDecosWrapBox,
             {
-                decosArray: props.decosArray,
+                decosArray: talismanRO.decosArray,
                 handleClickSelect: (decoSlotID) => {props.handleClickDecorationSelect(decoSlotID);},
             },
             null,
@@ -765,9 +765,8 @@ class EquipmentSelectionsBox extends React.Component {
             ),
             element(TalismanSelection,
                 {
-                eqName: "Talisman",
-                skillsArray: [["Weakness Exploit", 1]],
-                decosArray: [[2, "Tenderizer Jewel 2"]],
+                talismanRORenderingProps:this.props.buildRenderingProps.talismanRO,
+
                 handleClickTalismanSelect: () => {this.handleClickTalismanSelect();},
                 handleClickDecorationSelect: (decoSlotID) => {this.handleClickDecorationSelect("talisman", decoSlotID);},
                 },

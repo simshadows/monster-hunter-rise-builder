@@ -97,7 +97,7 @@ class Build {
         // armourPieceObj validity will be checked by verifying overall state
 
         // TODO: We don't handle null yet.
-        if (armourPieceObj == null) console.log("Not yet implemented armour removal.");
+        if (armourPieceObj === null) console.log("Not yet implemented armour removal.");
 
         this._validateWeaponNotNull();
         this._armourRO[armourPieceObj.slotID] = armourPieceObj;
@@ -110,17 +110,21 @@ class Build {
     setTalismanSkill(db, skillIndex, skillRO, skillLevel) {
         assert(isObj(db));
         assert(isInt(skillIndex) && (skillIndex >= 0) && (skillIndex <= 1));
-        if (skillRO == null) {
-            assert(isIntOrNull(skillLevel)); // Basically allowed to be anything
+        if (skillRO === null) {
+            //assert(isIntOrNull(skillLevel)); // Basically allowed to be anything
         } else {
             assert(isObj(skillRO));
             assert(isInt(skillRO.maxLevels)); // Spot check for structure
-            assert(isInt(skillLevel) && (skillLevel >= 0) && (skillLevel <= 10)); // Unlikely to be a huge number
+            assert(isInt(skillLevel) && (skillLevel > 0) && (skillLevel <= 10)); // Unlikely to be a huge number
         }
 
-        console.log(skillIndex);
-        console.log(skillRO);
-        console.log(skillLevel);
+        if (skillRO === null) {
+            this._talisman.skills[skillIndex].skillRO = null;
+            this._talisman.skills[skillIndex].skillLevel = null;
+        } else {
+            this._talisman.skills[skillIndex].skillRO = skillRO;
+            this._talisman.skills[skillIndex].skillLevel = skillLevel;
+        }
 
         this._validateState();
         return this;
@@ -179,6 +183,11 @@ class Build {
         return this._armourRO;
     }
 
+    // THIS WILL ONLY SUCCEED IF this._weaponRO IS NOT NULL
+    getTalismanSkills() {
+        this._validateWeaponNotNull();
+        return this._talisman.skills;
+    }
     // THIS WILL ONLY SUCCEED IF this._weaponRO IS NOT NULL
     getTalismanDecoSlots() {
         this._validateWeaponNotNull();
@@ -250,6 +259,20 @@ class Build {
                 };
             };
 
+        const decoSkillNamesArray = [];
+        for (const obj of this._talisman.skills) {
+            if (obj.skillRO !== null) {
+                decoSkillNamesArray.push([obj.skillRO.name, obj.skillLevel]);
+            }
+        }
+        const renderNoneTalisman = (
+                (this._talisman.skills[0].skillRO === null)
+                && (this._talisman.skills[1].skillRO === null)
+                && (this._talisman.decoSlots[0] === 0)
+                && (this._talisman.decoSlots[1] === 0)
+                && (this._talisman.decoSlots[2] === 0)
+            );
+
         return {
                 weaponRO: {
                         name:                     this._weaponRO.name,
@@ -271,8 +294,10 @@ class Build {
                         legs:  makeArmourRenderingProps("legs"),
                     },
                 talismanRO: {
-                        decosArray: [[2, "Charger Jewel 2"],
-                                     [1, "~~NOTREAL~~"]],
+                        name: (renderNoneTalisman) ? "None" : "Talisman",
+                        skills: decoSkillNamesArray,
+                        decosArray: (renderNoneTalisman) ? [] : [[2, "Charger Jewel 2"],
+                                                                 [1, "~~NOTREAL~~"]],
                     },
                 petalaceRO: {
                         originalPetalaceObj: this._petalaceRO, // I'm lazy
@@ -298,9 +323,22 @@ class Build {
 
     _getCurrentSkills() {
         const ret = new Map(); // Map of arrays: {skill long ID : [skill object, skill level]}
+        // First add armour skills
         for (const [slotID, armourPieceRO] of Object.entries(this._armourRO)) {
             if (armourPieceRO == null) continue;
             for (const [skillRO, skillLevel] of armourPieceRO.skills) {
+                if (ret.has(skillRO.id)) {
+                    ret.get(skillRO.id)[1] += skillLevel;
+                } else {
+                    ret.set(skillRO.id, [skillRO, skillLevel]);
+                }
+            }
+        }
+        // Then now we add talisman skills
+        for (const obj of this._talisman.skills) {
+            const skillRO = obj.skillRO;
+            const skillLevel = obj.skillLevel;
+            if (skillRO !== null) {
                 if (ret.has(skillRO.id)) {
                     ret.get(skillRO.id)[1] += skillLevel;
                 } else {
