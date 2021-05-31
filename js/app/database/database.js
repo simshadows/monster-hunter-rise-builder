@@ -52,6 +52,8 @@ const WEAPON_BOW_PATH = "../../../../data/weapons_bow.json";
 const ARMOUR_PATH = "../../../../data/armour.json";
 const ARMOUR_NAMING_SCHEMES_PATH = "../../../../data/armour_naming_schemes.json";
 
+const DECORATIONS_PATH = "../../../../data/decorations.json";
+
 
 /* WEAPONS ******************************************************************************/
 
@@ -402,6 +404,58 @@ function joinSkillObjsToArmourData(armourData, skillDataLongIdMap) {
 }
 
 
+/* DECORATIONS **************************************************************************/
+
+
+async function downloadAllRawDecorationsData() {
+    const res = await fetch(DECORATIONS_PATH);
+    const rawData = await res.json();
+
+    assert(isObj(rawData));
+
+    const ret = new Map();
+    for (const [decoID, decoObj] of Object.entries(rawData)) {
+        assert(isNonEmptyStr(decoID) && strHasOnlyLowerNumeral(decoID));
+        assert(isObj(decoObj));
+        
+        assert(isNonEmptyStr(decoObj.name));
+        assert(isInt(decoObj.slotSize) && (decoObj.slotSize > 0) && (decoObj.slotSize <= 3));
+        assert(isInt(decoObj.rarity) && (decoObj.rarity >= 4) && (decoObj.rarity <= 7));
+        assert(isObj(decoObj.skills));
+
+        for (const [skillLongID, skillLevel] of Object.entries(decoObj.skills)) {
+            assert(isNonEmptyStr(skillLongID) && strHasOnlyLowerNumeralUnder(skillLongID));
+            assert(skillLevel === 1);
+        }
+
+        const finalDecoObj = {
+                id: decoID,
+                name: decoObj.name + " Jewel " + parseInt(decoObj.slotSize),
+                slotSize: decoObj.slotSize,
+                rarity: decoObj.rarity,
+                skills: decoObj.skills,
+            };
+        ret.set(decoID, finalDecoObj);
+    }
+
+    return ret;
+}
+
+/*** Joining Data ***/
+
+function joinSkillObjsToDecoData(decoData, skillDataLongIdMap) {
+    assert(isMap(decoData));
+    assert(isMap(skillDataLongIdMap));
+    for (const [decoID, decoItemData] of decoData.entries()) {
+        const newSkillsArray = [];
+        for (const [skillLongID, skillLevel] of Object.entries(decoItemData.skills)) {
+            newSkillsArray.push([skillDataLongIdMap.get(skillLongID), skillLevel]);
+        }
+        decoItemData.skills = newSkillsArray;
+    }
+}
+
+
 /* GameData CLASS ***********************************************************************/
 
 
@@ -415,6 +469,7 @@ class GameData {
         // Also verify data, except we verify referential integrity later.
         const weaponDataFut = downloadAllRawWeaponData();
         const armourDataFut = downloadAllRawArmourData();
+        const decorationsDataFut = downloadAllRawDecorationsData();
 
         const obj = new GameData("hello smish");
         obj.readonly = {
@@ -426,12 +481,15 @@ class GameData {
             weapons:          await weaponDataFut,
             armour:           await armourDataFut,
             petalaces:        petalaceMap,
+            decorations:      await decorationsDataFut,
         };
 
         // Replace all weapon ramp skill IDs with ramp skill objects
         joinRampSkillObjsToWeaponData(obj.readonly.weapons, obj.readonly.weaponRampSkills);
         // Replace all armour skill long IDs with skill objects
         joinSkillObjsToArmourData(obj.readonly.armour, obj.readonly.skills.longIds);
+        // Replace all decoration skill long IDs with skill objects
+        joinSkillObjsToDecoData(obj.readonly.decorations, obj.readonly.skills.longIds);
 
         return obj;
     }
