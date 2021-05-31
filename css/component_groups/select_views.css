@@ -209,3 +209,15 @@ div.talisman-customize-view-select-content-box {
     width: 70px;
 }
 
+/*** Decoration Selection View ***/
+
+.deco-selection-table-head-cell-name {
+    width: 280px;
+}
+.deco-selection-table-head-cell-numeric {
+    width: 100px;
+}
+.deco-selection-table-head-cell-skills {
+    width: auto;
+}
+

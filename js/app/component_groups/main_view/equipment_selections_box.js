@@ -264,7 +264,7 @@ function WeaponSelection(props) {
         element(EquipDecosWrapBox,
             {
                 decosArray: props.weaponRORenderingProps.decosArray,
-                handleClickSelect: (decoSlotID) => {props.handleClickDecorationSelect(decoSlotID);},
+                handleClickSelect: (...args) => {props.handleClickDecorationSelect(...args);},
             },
             null,
         ),
@@ -360,8 +360,8 @@ function EquipDefensesBox(props) {
 
 class EquipDecosWrapBox extends React.Component {
 
-    handleClickSelect(decoSlotID) {
-        this.props.handleClickSelect(decoSlotID);
+    handleClickSelect(decoSlotID, maxDecoSize) {
+        this.props.handleClickSelect(decoSlotID, maxDecoSize);
     }
 
     render() {
@@ -371,11 +371,18 @@ class EquipDecosWrapBox extends React.Component {
         check.isFunction(this.props.handleClickSelect);
 
         const decoBoxes = [];
-        for (let [decoSlotID, [slotSize, slotText]] of this.props.decosArray.entries()) {
-            check.isInt(slotSize);
-            assert((slotSize > 0) && (slotSize <= 3));
-            assert(slotText != "None"); // Should be set to null if no deco in slot
-            check.isStrOrNull(slotText);
+        for (let [decoSlotID, decoPropsRO] of this.props.decosArray.entries()) {
+            check.isInt(decoPropsRO.slotSize);
+            assert((decoPropsRO.slotSize > 0) && (decoPropsRO.slotSize <= 3));
+            if (decoPropsRO.deco !== null) {
+                check.isStr(decoPropsRO.deco.name);
+                check.isInt(decoPropsRO.deco.slotSize);
+                assert((decoPropsRO.deco.slotSize > 0) && (decoPropsRO.deco.slotSize <= decoPropsRO.slotSize));
+            }
+
+            // Needed for closure
+            const slotSize = decoPropsRO.slotSize;
+            // TODO: It's confusing having two slot sizes: one for the slot, another for the deco size itself. Fix this.
 
             const iconImg = "./images/placeholders/" + (()=>{
                 if (slotSize == 1) return "deco_slot_1.png";
@@ -404,12 +411,12 @@ class EquipDecosWrapBox extends React.Component {
                         {
                         className: "equip-deco-name-box clipsafe",
                         },
-                        clipsafeP(((slotText === null) ? "None" : slotText)),
+                        clipsafeP(((decoPropsRO.deco === null) ? "None" : decoPropsRO.deco.name)),
                     ),
                     element("div",
                         {
                         className: "highlight-equip-deco-box stackinner",
-                        onClick: () => {this.props.handleClickSelect(decoSlotID);},
+                        onClick: () => {this.props.handleClickSelect(decoSlotID, slotSize);},
                         },
                         null,
                     ),
@@ -440,8 +447,8 @@ class ArmourSelection extends React.Component {
         this.props.handleClickArmourSelect(this.props.slotID);
     }
 
-    handleClickDecorationSelect(decoSlotID) {
-        this.props.handleClickDecorationSelect(decoSlotID);
+    handleClickDecorationSelect(decoSlotID, maxDecoSize) {
+        this.props.handleClickDecorationSelect(decoSlotID, maxDecoSize);
     }
 
     _renderDefensesBox() {
@@ -510,7 +517,7 @@ class ArmourSelection extends React.Component {
             element(EquipDecosWrapBox,
                 {
                     decosArray: (armourPieceRO !== null) ? armourPieceRO.decosArray : [],
-                    handleClickSelect: (decoSlotID) => {this.handleClickDecorationSelect(decoSlotID);},
+                    handleClickSelect: (...args) => {this.handleClickDecorationSelect(...args);},
                 },
                 null,
             ),
@@ -558,7 +565,7 @@ function TalismanSelection(props) {
         element(EquipDecosWrapBox,
             {
                 decosArray: talismanRO.decosArray,
-                handleClickSelect: (decoSlotID) => {props.handleClickDecorationSelect(decoSlotID);},
+                handleClickSelect: (...args) => {props.handleClickDecorationSelect(...args);},
             },
             null,
         ),
@@ -672,12 +679,13 @@ class EquipmentSelectionsBox extends React.Component {
     handleClickPetalaceSelect() {
         this.props.handleClickPetalaceSelect();
     }
-    handleClickDecorationSelect(slotID, decoSlotID) {
+    handleClickDecorationSelect(slotID, decoSlotID, maxDecoSlotSize) {
         assert(isDecoEquippableSlotStr(slotID));
         check.isInt(decoSlotID);
         assert((decoSlotID >= 0) && (decoSlotID < 3));
+        check.isInt(maxDecoSlotSize);
 
-        this.props.handleClickDecorationSelect(slotID, decoSlotID);
+        this.props.handleClickDecorationSelect(slotID, decoSlotID, maxDecoSlotSize);
     }
 
     render() {
@@ -709,7 +717,7 @@ class EquipmentSelectionsBox extends React.Component {
                 weaponRORenderingProps: this.props.buildRenderingProps.weaponRO,
                 handleClickWeaponSelect:     () => {this.handleClickWeaponSelect();},
                 handleClickWeaponCustomize:  () => {this.handleClickWeaponCustomize();},
-                handleClickDecorationSelect: (decoSlotID) => {this.handleClickDecorationSelect("weapon", decoSlotID);},
+                handleClickDecorationSelect: (decoSlotID, maxDecoSlotSize) => {this.handleClickDecorationSelect("weapon", decoSlotID, maxDecoSlotSize);},
                 },
                 null,
             ),
@@ -719,7 +727,7 @@ class EquipmentSelectionsBox extends React.Component {
                 armourPieceRORenderingProps:this.props.buildRenderingProps.armourRO.head,
 
                 handleClickArmourSelect: (slotID) => {this.handleClickArmourSelect(slotID);},
-                handleClickDecorationSelect: (decoSlotID) => {this.handleClickDecorationSelect("head", decoSlotID);},
+                handleClickDecorationSelect: (decoSlotID, maxDecoSlotSize) => {this.handleClickDecorationSelect("head", decoSlotID, maxDecoSlotSize);},
                 },
                 null,
             ),
@@ -729,7 +737,7 @@ class EquipmentSelectionsBox extends React.Component {
                 armourPieceRORenderingProps:this.props.buildRenderingProps.armourRO.chest,
 
                 handleClickArmourSelect: (slotID) => {this.handleClickArmourSelect(slotID);},
-                handleClickDecorationSelect: (decoSlotID) => {this.handleClickDecorationSelect("chest", decoSlotID);},
+                handleClickDecorationSelect: (decoSlotID, maxDecoSlotSize) => {this.handleClickDecorationSelect("chest", decoSlotID, maxDecoSlotSize);},
                 },
                 null,
             ),
@@ -739,7 +747,7 @@ class EquipmentSelectionsBox extends React.Component {
                 armourPieceRORenderingProps:this.props.buildRenderingProps.armourRO.arms,
 
                 handleClickArmourSelect: (slotID) => {this.handleClickArmourSelect(slotID);},
-                handleClickDecorationSelect: (decoSlotID) => {this.handleClickDecorationSelect("arms", decoSlotID);},
+                handleClickDecorationSelect: (decoSlotID, maxDecoSlotSize) => {this.handleClickDecorationSelect("arms", decoSlotID, maxDecoSlotSize);},
                 },
                 null,
             ),
@@ -749,7 +757,7 @@ class EquipmentSelectionsBox extends React.Component {
                 armourPieceRORenderingProps:this.props.buildRenderingProps.armourRO.waist,
 
                 handleClickArmourSelect: (slotID) => {this.handleClickArmourSelect(slotID);},
-                handleClickDecorationSelect: (decoSlotID) => {this.handleClickDecorationSelect("waist", decoSlotID);},
+                handleClickDecorationSelect: (decoSlotID, maxDecoSlotSize) => {this.handleClickDecorationSelect("waist", decoSlotID, maxDecoSlotSize);},
                 },
                 null,
             ),
@@ -759,7 +767,7 @@ class EquipmentSelectionsBox extends React.Component {
                 armourPieceRORenderingProps:this.props.buildRenderingProps.armourRO.legs,
 
                 handleClickArmourSelect: (slotID) => {this.handleClickArmourSelect(slotID);},
-                handleClickDecorationSelect: (decoSlotID) => {this.handleClickDecorationSelect("legs", decoSlotID);},
+                handleClickDecorationSelect: (decoSlotID, maxDecoSlotSize) => {this.handleClickDecorationSelect("legs", decoSlotID, maxDecoSlotSize);},
                 },
                 null,
             ),
@@ -768,7 +776,7 @@ class EquipmentSelectionsBox extends React.Component {
                 talismanRORenderingProps:this.props.buildRenderingProps.talismanRO,
 
                 handleClickTalismanSelect: () => {this.handleClickTalismanSelect();},
-                handleClickDecorationSelect: (decoSlotID) => {this.handleClickDecorationSelect("talisman", decoSlotID);},
+                handleClickDecorationSelect: (decoSlotID, maxDecoSlotSize) => {this.handleClickDecorationSelect("talisman", decoSlotID, maxDecoSlotSize);},
                 },
                 null,
             ),

@@ -434,7 +434,11 @@ async function downloadAllRawDecorationsData() {
                 slotSize: decoObj.slotSize,
                 rarity: decoObj.rarity,
                 skills: decoObj.skills,
+
+                filterHelpers: {}, // Populate after
             };
+        finalDecoObj.filterHelpers.nameLower = toNameFilterString(decoObj.name);
+
         ret.set(decoID, finalDecoObj);
     }
 
@@ -449,6 +453,7 @@ function joinSkillObjsToDecoData(decoData, skillDataLongIdMap) {
     for (const [decoID, decoItemData] of decoData.entries()) {
         const newSkillsArray = [];
         for (const [skillLongID, skillLevel] of Object.entries(decoItemData.skills)) {
+            assert(skillDataLongIdMap.has(skillLongID), "Missing skill long ID: " + skillLongID);
             newSkillsArray.push([skillDataLongIdMap.get(skillLongID), skillLevel]);
         }
         decoItemData.skills = newSkillsArray;
@@ -534,6 +539,10 @@ class GameData {
 
     getPetalacesArray() {
         return Array.from(this.readonly.petalaces.values());
+    }
+
+    getDecorationsArray() {
+        return Array.from(this.readonly.decorations.values());
     }
 }
 

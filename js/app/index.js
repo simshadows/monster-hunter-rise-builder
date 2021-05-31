@@ -53,7 +53,7 @@ class MHRBuilderAppContainer extends React.Component {
                 // Two states: Either it's null, or it's a fully-constructed raw data object. Don't modify it once it's built.
                 rawData: null,
 
-                build: new Build(null),
+                build: new Build(),
             };
 
         this.myRefs = {
@@ -102,12 +102,13 @@ class MHRBuilderAppContainer extends React.Component {
         assert(this.state.view == "main");
         this.setState({view: "petalace_select_view"});
     }
-    handleSwitchToDecorationSelect(slotID, decoSlotID) {
+    handleSwitchToDecorationSelect(slotID, decoSlotID, maxDecoSlotSize) {
         assert(isDecoEquippableSlotStr(slotID));
         check.isInt(decoSlotID);
         assert((decoSlotID >= 0) && (decoSlotID < 3));
+        check.isInt(maxDecoSlotSize);
         assert(this.state.view == "main");
-        this.myRefs.decoSelectView.current.reinitialize(slotID, decoSlotID);
+        this.myRefs.decoSelectView.current.reinitialize(slotID, decoSlotID, maxDecoSlotSize);
         this.setState({view: "decoration_select_view"});
     }
 
@@ -174,6 +175,21 @@ class MHRBuilderAppContainer extends React.Component {
                 build: this.state.build.setPetalace(this.state.rawData, petalaceRO)
             });
     }
+    
+    handleSelectDecoration(decoRO, slotID, decoSlotID) {
+        if (decoRO === null) {
+            check.isObj(decoRO);
+            check.isInt(decoRO.slotSize); // Spot check for structure
+        }
+        check.isNonEmptyStr(slotID);
+        check.isInt(decoSlotID);
+        assert((decoSlotID >= 0) && (decoSlotID <= 2));
+
+        this.setState({
+                view: "main", // Return back to main view
+                build: this.state.build.setDecoration(this.state.rawData, decoRO, slotID, decoSlotID),
+            });
+    }
 
     /* Inherited Methods */
 
@@ -190,6 +206,7 @@ class MHRBuilderAppContainer extends React.Component {
         this.myRefs.armourSelectView.current.populateWithData(rawData.getArmourArrays());
         this.myRefs.talismanSelectView.current.populateWithData(rawData.getSkillsArray(), rawData.getSkillsMapLongIds());
         this.myRefs.petalaceSelectView.current.populateWithData(rawData.getPetalacesArray());
+        this.myRefs.decoSelectView.current.populateWithData(rawData.getDecorationsArray());
     }
     componentWillUnmount() {
         // TODO: Verify event removal matching?
@@ -227,13 +244,13 @@ class MHRBuilderAppContainer extends React.Component {
             element(MainView,
                 {
                 buildRenderingProps:         buildRenderingProps,
-                handleClickBuffsSelect:      ()       => {this.handleSwitchToBuffsSelect();},
-                handleClickWeaponSelect:     ()       => {this.handleSwitchToWeaponSelect();},
-                handleClickWeaponCustomize:  ()       => {this.handleSwitchToWeaponCustomize();},
-                handleClickArmourSelect:     (slotID) => {this.handleSwitchToArmourSelect(slotID);},
-                handleClickTalismanSelect:   ()       => {this.handleSwitchToTalismanSelect();},
-                handleClickPetalaceSelect:   ()       => {this.handleSwitchToPetalaceSelect();},
-                handleClickDecorationSelect: (slotID, decoSlotID) => {this.handleSwitchToDecorationSelect(slotID, decoSlotID);},
+                handleClickBuffsSelect:      ()        => {this.handleSwitchToBuffsSelect();},
+                handleClickWeaponSelect:     ()        => {this.handleSwitchToWeaponSelect();},
+                handleClickWeaponCustomize:  ()        => {this.handleSwitchToWeaponCustomize();},
+                handleClickArmourSelect:     (...args) => {this.handleSwitchToArmourSelect(...args);},
+                handleClickTalismanSelect:   ()        => {this.handleSwitchToTalismanSelect();},
+                handleClickPetalaceSelect:   ()        => {this.handleSwitchToPetalaceSelect();},
+                handleClickDecorationSelect: (...args) => {this.handleSwitchToDecorationSelect(...args);},
                 },
                 null,
             ),
@@ -333,6 +350,7 @@ class MHRBuilderAppContainer extends React.Component {
                 element(DecorationSelectView,
                     {
                     ref: this.myRefs.decoSelectView,
+                    handleSelectDecoration: (...args) => {this.handleSelectDecoration(...args)},
                     },
                     null,
                 ),

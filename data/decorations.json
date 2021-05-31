@@ -450,7 +450,7 @@
     "name": "Slider",
     "slotSize": 1,
     "rarity": 4,
-    "skills": {"affinity_slider": 1}
+    "skills": {"affinity_sliding": 1}
 },
 "760": {
     "name": "Bomber",
