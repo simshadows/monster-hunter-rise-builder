@@ -702,7 +702,7 @@ class EquipmentSelectionsBox extends React.Component {
 
         return element("div",
             {
-            id: "equipmentselectionsbox",
+            id: "equipment-selections-box",
             className: "sub-box",
             },
             element(BuffsSelection,

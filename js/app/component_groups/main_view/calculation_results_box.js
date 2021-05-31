@@ -10,7 +10,7 @@ const element = React.createElement;
 function CalculationResultsBox() {
     return element("div",
         {
-        id: "calculationresultsbox",
+        id: "calculation-results-box",
         className: "sub-box",
         },
         "Calculation results (such as EFR) go here,",

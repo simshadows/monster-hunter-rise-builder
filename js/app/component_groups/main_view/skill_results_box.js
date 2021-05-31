@@ -10,6 +10,15 @@ import * as check from "../../check.js";
 const assert = console.assert;
 const element = React.createElement;
 
+function NoSkills() {
+    return element("div",
+        {
+        className: "skill-box",
+        },
+        element("b", null, "No Skills"),
+    );
+}
+
 function SkillResult(props) {
     check.isStr(props.skillName);
     check.isInt(props.skillLevel);
@@ -49,7 +58,12 @@ function SkillsResultsBox(props) {
 
     const elements = [];
     if (props.buildRenderingProps.calculatedSkills.length == 0) {
-        elements.push("No Skills");
+        elements.push(
+            element(NoSkills,
+                null,
+                null,
+            )
+        );
     } else {
         for (const skillProps of props.buildRenderingProps.calculatedSkills) {
             elements.push(
@@ -67,7 +81,7 @@ function SkillsResultsBox(props) {
 
     return element("div",
         {
-        id: "skillsresultsbox",
+        id: "skills-results-box",
         className: "sub-box",
         },
         ...elements,
