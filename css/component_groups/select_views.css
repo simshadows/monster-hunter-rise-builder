@@ -123,6 +123,16 @@ div.selection-table-icon-box > img {
     width: 100%;
 }
 
+.selection-table-wrap-box::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background-color: var(--color-select-table--scrollbar-background) !important;
+}
+.selection-table-wrap-box::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: var(--color-select-table--scrollbar);
+}
+
 /*** Control Buttons ***/
 
 div.select-view-control-box {

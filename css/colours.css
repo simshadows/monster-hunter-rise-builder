@@ -20,6 +20,9 @@
     --color-background-1: var(--color-solarized-dark--base03);
     --color-background-2: var(--color-solarized-dark--base02);
 
+    --color--scrollbar-background: var(--color-solarized-dark--base03);
+    --color--scrollbar: var(--color-solarized-dark--base01);
+
     --color-modal--background: rgba(0, 0, 0, 0.4);
     --color-modal--foreground: var(--color-solarized-dark--base03);
     --color-modal--border: var(--color-solarized-dark--base01);
@@ -49,6 +52,8 @@
     --color-select-table--background: var(--color-solarized-dark--base02);
     --color-select-table--head-row: var(--color-solarized-dark--base02);
     --color-select-table--body-row: var(--color-solarized-dark--base03);
+    --color-select-table--scrollbar-background: var(--color-solarized-dark--base03);
+    --color-select-table--scrollbar: var(--color-solarized-dark--base0);
     --color-select-control--clear-button: rgb(255,129,123);
     --color-select-control--clear-button-hover: var(--color-solarized-dark--red);
 }

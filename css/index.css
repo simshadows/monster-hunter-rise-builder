@@ -23,6 +23,16 @@ span, p, div {
     color: var(--color-text);
 }
 
+body::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background-color: var(--color--scrollbar-background) !important;
+}
+body::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: var(--color--scrollbar);
+}
+
 /*** ***/
 
 #app-container {
