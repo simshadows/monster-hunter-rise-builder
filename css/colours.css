@@ -1,10 +1,11 @@
 :root {
-    --color-scheme--dark1: #202225;
-    --color-scheme--dark2: #2f3136;
-    --color-scheme--dark3: #32353b;
-    --color-scheme--dark4: #36393f;
-    --color-scheme--dark5: #40444b;
-    --color-scheme--dark6: #4f545c;
+    --color-scheme--dark1: #141517;
+    --color-scheme--dark2: #202225;
+    --color-scheme--dark3: #2f3136;
+    --color-scheme--dark4: #32353b;
+    --color-scheme--dark5: #36393f;
+    --color-scheme--dark6: #40444b;
+    --color-scheme--dark7: #4f545c;
 
     --color-scheme--bright0: #ffffff;
     --color-scheme--bright1: #dcddde;
@@ -18,7 +19,7 @@
 
     /******/
 
-    --color-text: var(--color-scheme--bright2);
+    --color-text: var(--color-scheme--bright3);
     --color-text2: var(--color-scheme--dark1);
 
     --color-background-1: var(--color-scheme--dark1);
@@ -30,27 +31,27 @@
     --color-modal--background: rgba(0, 0, 0, 0.4);
     --color-modal--foreground: var(--color-scheme--dark1);
     --color-modal--border: var(--color-scheme--dark3);
-    --color-modal--utility-bar: var(--color-scheme--dark2);
+    --color-modal--utility-bar: var(--color-scheme--dark3);
     --color-modal--close-button: var(--color-scheme--red-inactive);
     --color-modal--close-button-hover: var(--color-scheme--red-active);
 
     /******/
 
-    --color-calculated-skills--wrap-box: var(--color-scheme--dark1);
-    --color-calculated-skills--icon-box: var(--color-scheme--dark1);
+    --color-calculated-skills--wrap-box: var(--color-scheme--dark3);
+    --color-calculated-skills--icon-box: var(--color-scheme--dark3);
 
     --color-equip--icon-box: var(--color-scheme--dark1);
     --color-equip-buffs--icon-box: var(--color-scheme--dark1);
     --color-equip-weapon--stat-box: var(--color-scheme--dark1);
-    --color-equip-weapon--ramp-box: var(--color-scheme--dark1);
-    --color-equip-defenses--box: var(--color-scheme--dark1);
-    --color-equip-skills--box: var(--color-scheme--dark1);
-    --color-equip-deco--box: var(--color-scheme--dark1);
+    --color-equip-weapon--ramp-box: var(--color-scheme--dark3);
+    --color-equip-defenses--box: var(--color-scheme--dark3);
+    --color-equip-skills--box: var(--color-scheme--dark3);
+    --color-equip-deco--box: var(--color-scheme--dark3);
 
-    --color-select--text-field: var(--color-scheme--dark2);
+    --color-select--text-field: var(--color-scheme--dark3);
     --color-select--icon-button-box: var(--color-scheme--dark3);
     --color-select--icon-button-box-selected: var(--color-scheme--red-dim);
-    --color-select--section: var(--color-scheme--dark2);
+    --color-select--section: var(--color-scheme--dark3);
     --color-select--dropdown-menu: var(--color-scheme--dark3);
 
     --color-select-table--background: var(--color-scheme--dark2);

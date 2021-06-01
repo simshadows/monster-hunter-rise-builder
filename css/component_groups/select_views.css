@@ -12,8 +12,8 @@ div.select-view-wrap-box > * {
 
 .select-view-dropdown {
     background-color: var(--color-select--dropdown-menu);
+    color: var(--color-text);
 }
-
 
 /*** Name Filter Text Field ***/
 
@@ -25,6 +25,7 @@ div.select-view-name-filter-box {
     width: 100%;
     border: none;
     background: var(--color-select--text-field);
+    color: var(--color-text);
     font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
