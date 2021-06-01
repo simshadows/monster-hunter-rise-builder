@@ -10,7 +10,6 @@ import * as check from "../../check.js";
 import SkillsResultsBox from "./skill_results_box.js";
 import EquipmentSelectionsBox from "./equipment_selections_box.js";
 import CalculationResultsBox from "./calculation_results_box.js";
-import UtilBox from "./util_box.js";
 
 const element = React.createElement;
 const assert = console.assert;
@@ -67,10 +66,6 @@ class MainView extends React.Component {
                 id: "app-inner-box",
                 className: "body-inner-box",
                 },
-                element(UtilBox,
-                    null,
-                    null,
-                ),
                 element("div",
                     {
                     id: "mhr-builder-app-main-view",
