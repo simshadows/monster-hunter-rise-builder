@@ -26,20 +26,35 @@ import {
 const element = React.createElement;
 const assert = console.assert;
 
+function headRowIconElement(iconImgID) {
+    return element("div",
+        {
+        className: "selection-table-icon-box",
+        },
+        element("img",
+            {
+            src: getImgPath(iconImgID),
+            alt: "icon",
+            },
+            null,
+        ),
+    );
+}
+
 class ArmourSelectionTable extends React.Component {
 
     static _cspecHeadRowFormat = [
             // [Markup Class, Content]
-            ["armour-selection-table-head-cell-category", "Category"                  ],
-            ["armour-selection-table-head-cell-name",     "Name"                      ],
-            ["armour-selection-table-head-cell-numeric",  "\ud83d\udee1\ufe0f"        ],
-            ["armour-selection-table-head-cell-numeric",  eleStatStrToEmoji("fire")   ],
-            ["armour-selection-table-head-cell-numeric",  eleStatStrToEmoji("water")  ],
-            ["armour-selection-table-head-cell-numeric",  eleStatStrToEmoji("thunder")],
-            ["armour-selection-table-head-cell-numeric",  eleStatStrToEmoji("ice")    ],
-            ["armour-selection-table-head-cell-numeric",  eleStatStrToEmoji("dragon") ],
-            ["armour-selection-table-head-cell-deco",     "Slots"                     ],
-            ["armour-selection-table-head-cell-skills",   "Skills"                    ],
+            ["armour-selection-table-head-cell-category", "Category"                               ],
+            ["armour-selection-table-head-cell-name",     "Name"                                   ],
+            ["armour-selection-table-head-cell-numeric",  headRowIconElement("defense_icon")       ],
+            ["armour-selection-table-head-cell-numeric",  headRowIconElement("eleres_fire_icon")   ],
+            ["armour-selection-table-head-cell-numeric",  headRowIconElement("eleres_water_icon")  ],
+            ["armour-selection-table-head-cell-numeric",  headRowIconElement("eleres_thunder_icon")],
+            ["armour-selection-table-head-cell-numeric",  headRowIconElement("eleres_ice_icon")    ],
+            ["armour-selection-table-head-cell-numeric",  headRowIconElement("eleres_dragon_icon") ],
+            ["armour-selection-table-head-cell-deco",     "Slots"                                  ],
+            ["armour-selection-table-head-cell-skills",   "Skills"                                 ],
         ];
 
     // Logically Static

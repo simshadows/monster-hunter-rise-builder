@@ -103,7 +103,7 @@ div.equip-main-box {
     display: flex;
     align-items: flex-start;
 
-    padding: 4px;
+    padding: 4px 0 4px 4px;
 }
 div.highlight-equip-main-box:hover {
     background: rgba(0, 0, 0, 0.5);;
@@ -193,22 +193,76 @@ div.equip-skills-box {
     height: 49%; /* TODO: Same here, figure out why 50% doesn't work. */
 }
 
-div.equip-defenses-wrap-box {
+div.equip-defenses-box {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    row-gap: 4px;
+
+    border: none;
+    height: 100%;
+    width: 110px;
+    padding: 4px 0 4px 0;
+    font-size: 13px;
+}
+
+div.equip-defenses-row-box {
+    flex: 1 0 0;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 4px;
 
     border: none;
     /*border-right: 2px solid darkgrey;*/
     /*border: thin solid black;*/
-    height: 100%;
-    width: 90px;
-    font-size: 13px;
+    width: 100%;
+    font-size: 28px;
 }
 
-div.equip-defenses-wrap-box > table {
-    /*border: thin solid black;*/
-    border-collapse: collapse;
+div.equip-defenses-cell-box {
+    flex: 1 0 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    font-size: 13px;
+    background: var(--color-equip-defenses--box);
+    height: 100%;
+}
+
+div.equip-defenses-icon-box-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    width: 23px;
+}
+div.equip-defenses-icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 18px;
+    width: 18px;
+}
+div.equip-defenses-icon-box > img {
+    width: 100%;
+    height: 100%;
+}
+
+div.equip-defenses-content-box {
+    flex: 1 0 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
 }
 
 div.equip-decos-wrap-box {

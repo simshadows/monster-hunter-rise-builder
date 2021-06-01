@@ -109,6 +109,20 @@ div.selection-table-wrap-box {
 .selection-table-body-cell {
 }
 
+div.selection-table-icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 24px;
+    width: 24px;
+    margin: auto;
+}
+div.selection-table-icon-box > img {
+    height: 100%;
+    width: 100%;
+}
+
 /*** Control Buttons ***/
 
 div.select-view-control-box {

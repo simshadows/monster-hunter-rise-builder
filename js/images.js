@@ -19,6 +19,13 @@ const imgPathMap = new Map([
     ["waist_white", "./images/derived/armour_waist_white.png"],
     ["legs_white" , "./images/derived/armour_legs_white.png" ],
 
+    ["defense_icon"       , "./images/derived/mhw_screenshot_defense_icon_v3.png" ],
+    ["eleres_fire_icon"   , "./images/elementalres_fire_icon_inkscapesourcefile.svg" ],
+    ["eleres_water_icon"  , "./images/elementalres_water_icon_inkscapesourcefile.svg"],
+    ["eleres_thunder_icon", "./images/elementalres_thunder_icon_inkscapesourcefile.svg"],
+    ["eleres_ice_icon"    , "./images/elementalres_ice_icon_inkscapesourcefile.svg"],
+    ["eleres_dragon_icon" , "./images/elementalres_dragon_icon_inkscapesourcefile.svg"],
+
     ["skill_icon_blue"     , "./images/skill_icon_blue.svg"     ],
     ["skill_icon_brown"    , "./images/skill_icon_brown.svg"    ],
     ["skill_icon_darkblue" , "./images/skill_icon_darkblue.svg" ],
