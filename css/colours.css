@@ -1,60 +1,66 @@
 :root {
-    /* ************************************************ */
-    /* Solarized Dark Colour Scheme
-     * By: Ethan Schoonover
-     * <https://ethanschoonover.com/solarized/>
-     * <https://github.com/altercation/solarized>
-     */
-    --color-solarized-dark--base03: #002b36;
-    --color-solarized-dark--base02: #073642;
-    --color-solarized-dark--base01: #586e75;
-    --color-solarized-dark--base00: #657b83;
-    --color-solarized-dark--base0 : #839496;
-    --color-solarized-dark--base1 : #93a1a1;
-    --color-solarized-dark--red:    #dc322f;
-    /* ************************************************ */
+    --color-scheme--dark1: #202225;
+    --color-scheme--dark2: #2f3136;
+    --color-scheme--dark3: #32353b;
+    --color-scheme--dark4: #36393f;
+    --color-scheme--dark5: #40444b;
+    --color-scheme--dark6: #4f545c;
 
-    --color-text: var(--color-solarized-dark--base0);
-    --color-text2: var(--color-solarized-dark--base03);
+    --color-scheme--bright0: #ffffff;
+    --color-scheme--bright1: #dcddde;
+    --color-scheme--bright2: #b9bbbe;
+    --color-scheme--bright3: #8e9297;
+    --color-scheme--bright4: #72767d;
 
-    --color-background-1: var(--color-solarized-dark--base03);
-    --color-background-2: var(--color-solarized-dark--base02);
-
-    --color--scrollbar-background: var(--color-solarized-dark--base03);
-    --color--scrollbar: var(--color-solarized-dark--base01);
-
-    --color-modal--background: rgba(0, 0, 0, 0.4);
-    --color-modal--foreground: var(--color-solarized-dark--base03);
-    --color-modal--border: var(--color-solarized-dark--base01);
-    --color-modal--utility-bar: var(--color-solarized-dark--base02);
-    --color-modal--close-button: rgb(255,129,123);
-    --color-modal--close-button-hover: var(--color-solarized-dark--red);
+    --color-scheme--red-dim: #7b3333;
+    --color-scheme--red-inactive: #a02929;
+    --color-scheme--red-active: #cc1111;
 
     /******/
 
-    --color-calculated-skills--wrap-box: var(--color-solarized-dark--base03);
-    --color-calculated-skills--icon-box: var(--color-solarized-dark--base03);
+    --color-text: var(--color-scheme--bright2);
+    --color-text2: var(--color-scheme--dark1);
 
-    --color-equip--icon-box: var(--color-solarized-dark--base03);
-    --color-equip-buffs--icon-box: var(--color-solarized-dark--base03);
-    --color-equip-weapon--stat-box: var(--color-solarized-dark--base03);
-    --color-equip-weapon--ramp-box: var(--color-solarized-dark--base03);
-    --color-equip-defenses--box: var(--color-solarized-dark--base03);
-    --color-equip-skills--box: var(--color-solarized-dark--base03);
-    --color-equip-deco--box: var(--color-solarized-dark--base03);
+    --color-background-1: var(--color-scheme--dark1);
+    --color-background-2: var(--color-scheme--dark2);
 
-    --color-select--text-field: var(--color-solarized-dark--base02);
-    --color-select--icon-button-box: var(--color-solarized-dark--base01);
-    --color-select--icon-button-box-selected: var(--color-solarized-dark--red);
-    --color-select--section: var(--color-solarized-dark--base02);
-    --color-select--dropdown-menu: var(--color-solarized-dark--base01);
+    --color--scrollbar-background: var(--color-scheme--dark1);
+    --color--scrollbar: var(--color-scheme--dark3);
 
-    --color-select-table--background: var(--color-solarized-dark--base02);
-    --color-select-table--head-row: var(--color-solarized-dark--base02);
-    --color-select-table--body-row: var(--color-solarized-dark--base03);
-    --color-select-table--scrollbar-background: var(--color-solarized-dark--base03);
-    --color-select-table--scrollbar: var(--color-solarized-dark--base0);
-    --color-select-control--clear-button: rgb(255,129,123);
-    --color-select-control--clear-button-hover: var(--color-solarized-dark--red);
+    --color-modal--background: rgba(0, 0, 0, 0.4);
+    --color-modal--foreground: var(--color-scheme--dark1);
+    --color-modal--border: var(--color-scheme--dark3);
+    --color-modal--utility-bar: var(--color-scheme--dark2);
+    --color-modal--close-button: var(--color-scheme--red-inactive);
+    --color-modal--close-button-hover: var(--color-scheme--red-active);
+
+    /******/
+
+    --color-calculated-skills--wrap-box: var(--color-scheme--dark1);
+    --color-calculated-skills--icon-box: var(--color-scheme--dark1);
+
+    --color-equip--icon-box: var(--color-scheme--dark1);
+    --color-equip-buffs--icon-box: var(--color-scheme--dark1);
+    --color-equip-weapon--stat-box: var(--color-scheme--dark1);
+    --color-equip-weapon--ramp-box: var(--color-scheme--dark1);
+    --color-equip-defenses--box: var(--color-scheme--dark1);
+    --color-equip-skills--box: var(--color-scheme--dark1);
+    --color-equip-deco--box: var(--color-scheme--dark1);
+
+    --color-select--text-field: var(--color-scheme--dark2);
+    --color-select--icon-button-box: var(--color-scheme--dark3);
+    --color-select--icon-button-box-selected: var(--color-scheme--red-dim);
+    --color-select--section: var(--color-scheme--dark2);
+    --color-select--dropdown-menu: var(--color-scheme--dark3);
+
+    --color-select-table--background: var(--color-scheme--dark2);
+    --color-select-table--head-row: var(--color-scheme--dark2);
+    --color-select-table--body-row: var(--color-scheme--dark1);
+    --color-select-table--body-row-hover: var(--color-scheme--dark2);
+    --color-select-table--body-row-highlighted: #3b5b3f;
+    --color-select-table--scrollbar-background: var(--color-scheme--dark1);
+    --color-select-table--scrollbar: var(--color-scheme--bright2);
+    --color-select-control--clear-button: var(--color-scheme--red-inactive);
+    --color-select-control--clear-button-hover: var(--color-scheme--red-active);
 }
 

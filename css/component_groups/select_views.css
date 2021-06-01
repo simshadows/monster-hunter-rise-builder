@@ -100,11 +100,11 @@ div.selection-table-wrap-box {
     cursor: pointer;
 }
 .selection-table-body-row-highlighted {
-    background: lightgreen;
+    background: var(--color-select-table--body-row-highlighted);
     cursor: pointer;
 }
 .selection-table-body-row:hover {
-    background: lightgrey;
+    background: var(--color-select-table--body-row-hover);
 }
 .selection-table-body-cell {
 }

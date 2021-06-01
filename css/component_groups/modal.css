@@ -14,7 +14,7 @@ div.modal-foreground {
     background: var(--color-modal--foreground);
     margin: 10px 40px 40px 40px;
     padding: 0;
-    border: medium solid var(--color-modal--border);
+    border: 3px solid var(--color-modal--border);
 
     /* min-height: 640px; */ /* TODO: Make it so the modal UI can stretch vertically. */
     height: 720px; /* Temporary static height */
@@ -24,7 +24,7 @@ div.modal-utility-bar {
     display: flex;
 
     margin: 0;
-    padding: 4px;
+    padding: 0 0 3px 4px;
     background: var(--color-modal--utility-bar);
 }
 
