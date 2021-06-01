@@ -23,8 +23,8 @@ div.skill-icon-box {
     width: 25px;
 }
 div.skill-icon-box > img {
-    height: 85%;
-    width: 85%;
+    height: 100%;
+    width: 100%;
 }
 
 div.skill-detail-box {

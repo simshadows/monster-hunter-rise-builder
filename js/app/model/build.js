@@ -289,6 +289,8 @@ class Build {
                     name: skillRO.name,
                     level: (skillLevel > skillRO.maxLevels) ? skillRO.maxLevels : skillLevel,
                     maxLevel: skillRO.maxLevels,
+
+                    iconImgPath: skillRO.iconImgPath,
                 });
         }
         calculatedTotalSkillsRenderingProps.sort((a, b) => {
@@ -331,10 +333,10 @@ class Build {
                 };
             };
 
-        const decoSkillNamesArray = [];
+        const talismanSkillNamesArray = [];
         for (const obj of this._talisman.skills) {
             if (obj.skillRO !== null) {
-                decoSkillNamesArray.push([obj.skillRO.name, obj.skillLevel]);
+                talismanSkillNamesArray.push([obj.skillRO.name, obj.skillLevel]);
             }
         }
         const renderNoneTalisman = (
@@ -366,7 +368,7 @@ class Build {
                     },
                 talismanRO: {
                         name: (renderNoneTalisman) ? "None" : "Talisman",
-                        skills: decoSkillNamesArray,
+                        skills: talismanSkillNamesArray,
                         decosArray: this._getDecoArrayRenderingProp("talisman"),
                     },
                 petalaceRO: {

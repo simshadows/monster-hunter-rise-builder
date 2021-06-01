@@ -6,6 +6,7 @@
  */
 
 import * as check from "../../check.js";
+import {getImgPath} from "../../images.js";
 import {
     isEleStatStr,
     isArmourSlotStr,
@@ -85,7 +86,7 @@ function PlaceholderBuffIcon() {
         },
         element("img",
             {
-            src: "./images/placeholders/buff.png",
+            src: getImgPath("placeholder_buff"),
             alt: "icon",
             },
             null,
@@ -248,7 +249,7 @@ function WeaponSelection(props) {
             },
             element(EquipIcon,
                 {
-                iconImg: "./images/placeholders/weapon.png",
+                iconImg: getImgPath("placeholder_weapon"),
                 onClick: () => {props.handleClickWeaponSelect()},
                 },
                 null,
@@ -384,10 +385,11 @@ class EquipDecosWrapBox extends React.Component {
             const slotSize = decoPropsRO.slotSize;
             // TODO: It's confusing having two slot sizes: one for the slot, another for the deco size itself. Fix this.
 
-            const iconImg = "./images/placeholders/" + (()=>{
-                if (slotSize == 1) return "deco_slot_1.png";
-                if (slotSize == 2) return "deco_slot_2.png";
-                if (slotSize == 3) return "deco_slot_3.png";
+            const iconImg = (()=>{
+                if (slotSize == 1) return getImgPath("placeholder_deco_size_1");
+                else if (slotSize == 2) return getImgPath("placeholder_deco_size_2");
+                else if (slotSize == 3) return getImgPath("placeholder_deco_size_3");
+                throw new Error("Unexpected slot size.");
             })();
 
             decoBoxes.push(
@@ -436,11 +438,11 @@ class EquipDecosWrapBox extends React.Component {
 class ArmourSelection extends React.Component {
 
     static _slotNameToIconImgPath = new Map([
-            ["head" , "./images/placeholders/head.png" ],
-            ["chest", "./images/placeholders/chest.png"],
-            ["arms" , "./images/placeholders/arms.png" ],
-            ["waist", "./images/placeholders/waist.png"],
-            ["legs" , "./images/placeholders/legs.png" ],
+            ["head" , getImgPath("head_white")],
+            ["chest", getImgPath("chest_white")],
+            ["arms" , getImgPath("arms_white")],
+            ["waist", getImgPath("waist_white")],
+            ["legs" , getImgPath("legs_white")],
         ]);
 
     handleClickArmourSelect() {
@@ -545,7 +547,7 @@ function TalismanSelection(props) {
             },
             element(EquipIcon,
                 {
-                iconImg: "./images/placeholders/talisman.png",
+                iconImg: getImgPath("placeholder_talisman"),
                 onClick: () => {props.handleClickTalismanSelect()},
                 },
                 null,
@@ -647,7 +649,7 @@ function PetalaceSelection(props) {
             },
             element(EquipIcon,
                 {
-                iconImg: "./images/placeholders/talisman.png",
+                iconImg: getImgPath("placeholder_petalace"),
                 onClick: () => {props.handleClickPetalaceSelect()},
                 },
                 null,

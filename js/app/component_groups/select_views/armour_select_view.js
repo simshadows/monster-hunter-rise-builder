@@ -6,6 +6,7 @@
  */
 
 import * as check from "../../check.js";
+import {getImgPath} from "../../images.js";
 import {
     isArmourSlotStr,
     tierIDToAbbrev,
@@ -97,11 +98,11 @@ class ArmourSelectionTable extends React.Component {
 class ArmourSelectView extends React.Component {
 
     static _armourSlotIDToIconMap = new Map([
-            ["head" , "./images/placeholders/head.png" ],
-            ["chest", "./images/placeholders/chest.png"],
-            ["arms" , "./images/placeholders/arms.png" ],
-            ["waist", "./images/placeholders/waist.png"],
-            ["legs" , "./images/placeholders/legs.png" ],
+            ["head" , getImgPath("head_white") ],
+            ["chest", getImgPath("chest_white")],
+            ["arms" , getImgPath("arms_white") ],
+            ["waist", getImgPath("waist_white")],
+            ["legs" , getImgPath("legs_white") ],
         ]);
 
     constructor(props) {

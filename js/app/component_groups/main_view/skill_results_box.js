@@ -24,6 +24,7 @@ function SkillResult(props) {
     check.isInt(props.skillLevel);
     check.isInt(props.skillLevelMax);
     assert((props.skillLevel <= props.skillLevelMax) && (props.skillLevel > 0));
+    check.isStr(props.skillIconImgPath);
 
     return element("div",
         {
@@ -35,7 +36,7 @@ function SkillResult(props) {
             },
             element("img",
                 {
-                src: "./images/placeholders/skill.png",
+                src: props.skillIconImgPath,
                 alt: "icon",
                 },
                 null,
@@ -72,6 +73,7 @@ function SkillsResultsBox(props) {
                     skillName: skillProps.name,
                     skillLevel: skillProps.level,
                     skillLevelMax: skillProps.maxLevel,
+                    skillIconImgPath: skillProps.iconImgPath,
                     },
                     null,
                 ),
