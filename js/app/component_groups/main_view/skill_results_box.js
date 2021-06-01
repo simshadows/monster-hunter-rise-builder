@@ -6,6 +6,9 @@
  */
 
 import * as check from "../../check.js";
+import {
+    clipsafeSpan,
+} from "../../common.js";
 
 const assert = console.assert;
 const element = React.createElement;
@@ -15,7 +18,7 @@ function NoSkills() {
         {
         className: "skill-box",
         },
-        element("b", null, "No Skills"),
+        clipsafeSpan(element("b", null, "No Skills")),
     );
 }
 
@@ -46,9 +49,8 @@ function SkillResult(props) {
             {
             className: "skill-detail-box",
             },
-            element("b", null, props.skillName),
-            //element("br", null, null),
-            "Level " + parseInt(props.skillLevel) + " / " + parseInt(props.skillLevelMax),
+            clipsafeSpan(element("b", null, props.skillName)),
+            clipsafeSpan("Level " + parseInt(props.skillLevel) + " / " + parseInt(props.skillLevelMax)),
         ),
     );
 }

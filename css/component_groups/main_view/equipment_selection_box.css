@@ -10,7 +10,7 @@ div.equip-buff-icon-box {
     align-items: center;
     justify-content: center;
 
-    background: black;
+    background: var(--color-equip-buffs--icon-background);
     height: 30px;
     width: 30px;
 }
@@ -60,7 +60,7 @@ div.equip-weapon-stat-box {
     width: 70px;
     padding: 0 4px 0 4px;
     font-size: 14px;
-    background: darkgrey;
+    background: var(--color-equip-weapon--stat-box);
 }
 
 div.equip-weapon-ramps-group-box {
@@ -83,7 +83,7 @@ div.equip-weapon-ramp-box {
     height: 100%;
     width: 50px;
     font-size: 14px;
-    background: white;
+    background: var(--color-equip-weapon--ramp-box);
 }
 div.equip-weapon-unused-ramp-box {
     color: lightgrey;
@@ -94,7 +94,7 @@ div.equip-box {
     align-items: flex-start;
 
     border: none;
-    background: lightgrey;
+    background: var(--color-background-2);
 }
 
 div.equip-main-box {
@@ -107,7 +107,6 @@ div.equip-main-box {
 }
 div.highlight-equip-main-box:hover {
     background: rgba(0, 0, 0, 0.5);;
-    /* border: thin solid white; */
     cursor: pointer;
 }
 
@@ -116,8 +115,7 @@ div.equip-icon-box {
     align-items: center;
     justify-content: center;
 
-    border: thin solid black;
-    background: black;
+    background: var(--color-equip--icon-box);
     height: 50px;
     width: 50px;
 }
@@ -189,7 +187,7 @@ div.equip-skills-box {
     align-items: center;
     justify-content: center;
 
-    background: white;
+    background: var(--color-equip-skills--box);
     padding: 4px;
     font-size: 14px;
     height: 49%; /* TODO: Same here, figure out why 50% doesn't work. */
@@ -232,7 +230,7 @@ div.equip-deco-box {
     flex-direction: row;
     align-items: center;
 
-    background: white;
+    background: var(--color-equip-deco--box);
     width: 100%;
     padding: 0 0 0 4px;
     margin: 0;

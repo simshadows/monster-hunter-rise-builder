@@ -14,9 +14,16 @@ body {
     min-height: -moz-fit-content;
     margin: 0;
     padding: 0;
+    background: var(--color-background-1);
 
     font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
+
+span, p, div {
+    color: var(--color-text);
+}
+
+/*** ***/
 
 #app-container {
     flex: 1 0 0;
@@ -108,7 +115,7 @@ div.sub-box {
     row-gap: 4px;
     
     width: 200px;
-    background: lightgrey;
+    background: var(--color-background-2);
     padding: 4px;
 }
 
@@ -124,7 +131,7 @@ div.sub-box {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: lightgrey;
+    background: var(--color-background-2);
     padding: 6px;
 }
 

@@ -5,7 +5,7 @@ div.skill-box {
     justify-content: center;
 
     border: none;
-    background: darkgrey;
+    background: var(--color-calculated-skills--wrap-box);
     height: 34px;
     width: 100%;
     padding: 2px 6px 2px 6px;
@@ -17,8 +17,7 @@ div.skill-icon-box {
     align-items: center;
     justify-content: center;
 
-    border: thin solid black;
-    background: black;
+    background: var(--color-calculated-skills--icon-box);
     height: 25px;
     width: 25px;
 }

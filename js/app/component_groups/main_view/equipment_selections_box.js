@@ -12,18 +12,11 @@ import {
     isArmourSlotStr,
     isDecoEquippableSlotStr,
     eleStatStrToEmoji,
+    clipsafeSpan,
 } from "../../common.js";
 
 const assert = console.assert;
 const element = React.createElement;
-
-/*********************************************************************
- * Utility ***********************************************************
- *********************************************************************/
-
-function clipsafeP(...children) {
-    return element("p", {className: "clipsafe"}, ...children);
-}
 
 /*********************************************************************
  * Components ********************************************************
@@ -71,7 +64,7 @@ function EquipInfoBox(props) {
             {
             className: "equip-name-box clipsafe",
             },
-            clipsafeP(element("b", null, props.eqName)),
+            clipsafeSpan(element("b", null, props.eqName)),
         ),
         React.Children.toArray(props.children),
     )
@@ -159,7 +152,7 @@ function EquipWeaponInfoBox(props) {
     function statBox(text, value) {
         return element("div",
             {className: "equip-weapon-stat-box clipsafe"},
-            clipsafeP(text + value),
+            clipsafeSpan(text + value),
         );
     }
 
@@ -173,7 +166,7 @@ function EquipWeaponInfoBox(props) {
                     {
                     className: "equip-weapon-ramp-box equip-weapon-unused-ramp-box clipsafe",
                     },
-                    clipsafeP("No Ramp Skill"),
+                    clipsafeSpan("No Ramp Skill"),
                 )
             );
         } else {
@@ -182,7 +175,7 @@ function EquipWeaponInfoBox(props) {
                     {
                     className: "equip-weapon-ramp-box clipsafe",
                     },
-                    clipsafeP(rampageSkillObj.name),
+                    clipsafeSpan(rampageSkillObj.name),
                 )
             );
         }
@@ -199,7 +192,7 @@ function EquipWeaponInfoBox(props) {
             {
             className: "equip-name-box clipsafe",
             },
-            clipsafeP(element("b", null, weaponRO.name)),
+            clipsafeSpan(element("b", null, weaponRO.name)),
         ),
         element("div",
             {
@@ -290,7 +283,7 @@ function EquipArmourInfoBox(props) {
                 {
                 className: "equip-skills-box clipsafe",
                 },
-                clipsafeP(skillName + " +" + parseInt(skillLevel)),
+                clipsafeSpan(skillName + " +" + parseInt(skillLevel)),
             )
         );
     }
@@ -413,7 +406,7 @@ class EquipDecosWrapBox extends React.Component {
                         {
                         className: "equip-deco-name-box clipsafe",
                         },
-                        clipsafeP(((decoPropsRO.deco === null) ? "None" : decoPropsRO.deco.name)),
+                        clipsafeSpan(((decoPropsRO.deco === null) ? "None" : decoPropsRO.deco.name)),
                     ),
                     element("div",
                         {

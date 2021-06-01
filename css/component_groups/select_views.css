@@ -10,6 +10,10 @@ div.select-view-wrap-box {
 div.select-view-wrap-box > * {
 }
 
+.select-view-dropdown {
+    background-color: var(--color-select--dropdown-menu);
+}
+
 
 /*** Name Filter Text Field ***/
 
@@ -19,6 +23,8 @@ div.select-view-name-filter-box {
 }
 .select-view-name-filter-field {
     width: 100%;
+    border: none;
+    background: var(--color-select--text-field);
     font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -39,7 +45,7 @@ div.select-view-type-filter-icon-box {
 
     width: 35px;
     height: 35px;
-    background: lightgray;
+    background: var(--color-select--icon-button-box);
 }
 div.select-view-type-filter-icon-box > img {
     height: 90%;
@@ -51,7 +57,7 @@ div.highlight-select-view-type-filter-icon-box:hover { /* Oh lawdy I need better
     cursor: pointer;
 }
 div.selected-select-view-type-filter-icon-box { /* Oh lawdy I need better names */
-    border: thick solid rgba(255, 0, 0, 0.5);
+    background: var(--color-select--icon-button-box-selected);
 }
 
 div.select-view-endline-filter-box {
@@ -69,9 +75,8 @@ div.select-view-endline-filter-box > label {
 
 div.selection-table-wrap-box {
     flex: 1 0 0;
-    border: thin solid black;
     margin: 8px 0 0 0;
-    background: darkgrey;
+    background: var(--color-select-table--background);
     overflow-y: scroll;
 }
 
@@ -87,12 +92,11 @@ div.selection-table-wrap-box {
 .selection-table-head-cell {
     position: sticky;
     top: 0;
-    background: darkgrey;
-    border: thin solid black;
+    background: var(--color-select-table--head-row);
 }
 
 .selection-table-body-row {
-    background: white;
+    background: var(--color-select-table--body-row);
     cursor: pointer;
 }
 .selection-table-body-row-highlighted {
@@ -103,7 +107,6 @@ div.selection-table-wrap-box {
     background: lightgrey;
 }
 .selection-table-body-cell {
-    border: thin solid black;
 }
 
 /*** Control Buttons ***/
@@ -119,7 +122,6 @@ div.select-view-control-button {
 
     height: 30px;
     width: 240px;
-    border: medium solid black;
     cursor: pointer;
 
     font-size: 16px;
@@ -127,10 +129,11 @@ div.select-view-control-button {
 }
 
 div.select-view-control-button-clearfn {
-    background: rgb(255,129,123);
+    background: var(--color-select-control--clear-button);
+    color: var(--color-text2);
 }
 div.select-view-control-button-clearfn:hover {
-    background: rgb(255,57,46);
+    background: var(--color-select-control--clear-button-hover);
 }
 
 /*** Weapon Selection View ***/
@@ -154,7 +157,7 @@ div.select-view-control-button-clearfn:hover {
 /*** Weapon Customize View ***/
 
 div.weapon-customize-view-select-box {
-    background: lightgrey;
+    background: var(--color-select--section);
     padding: 5px;
 }
 div.weapon-customize-view-select-heading-box {
@@ -186,7 +189,7 @@ div.weapon-customize-view-select-content-box {
 /*** Talisman Customize View ***/
 
 div.talisman-customize-view-select-box {
-    background: lightgrey;
+    background: var(--color-select--section);
     padding: 5px;
     margin: 0 0 15px 0;
 }

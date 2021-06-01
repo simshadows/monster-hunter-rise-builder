@@ -1,0 +1,54 @@
+:root {
+    /* ************************************************ */
+    /* Solarized Dark Colour Scheme
+     * By: Ethan Schoonover
+     * <https://ethanschoonover.com/solarized/>
+     * <https://github.com/altercation/solarized>
+     */
+    --color-solarized-dark--base03: #002b36;
+    --color-solarized-dark--base02: #073642;
+    --color-solarized-dark--base01: #586e75;
+    --color-solarized-dark--base00: #657b83;
+    --color-solarized-dark--base0 : #839496;
+    --color-solarized-dark--base1 : #93a1a1;
+    --color-solarized-dark--red:    #dc322f;
+    /* ************************************************ */
+
+    --color-text: var(--color-solarized-dark--base0);
+    --color-text2: var(--color-solarized-dark--base03);
+
+    --color-background-1: var(--color-solarized-dark--base03);
+    --color-background-2: var(--color-solarized-dark--base02);
+
+    --color-modal--background: rgba(0, 0, 0, 0.4);
+    --color-modal--foreground: var(--color-solarized-dark--base03);
+    --color-modal--border: var(--color-solarized-dark--base01);
+    --color-modal--utility-bar: var(--color-solarized-dark--base02);
+    --color-modal--close-button: rgb(255,129,123);
+    --color-modal--close-button-hover: var(--color-solarized-dark--red);
+
+    /******/
+
+    --color-calculated-skills--wrap-box: var(--color-solarized-dark--base03);
+    --color-calculated-skills--icon-box: var(--color-solarized-dark--base03);
+
+    --color-equip--icon-box: var(--color-solarized-dark--base03);
+    --color-equip-buffs--icon-box: var(--color-solarized-dark--base03);
+    --color-equip-weapon--stat-box: var(--color-solarized-dark--base03);
+    --color-equip-weapon--ramp-box: var(--color-solarized-dark--base03);
+    --color-equip-skills--box: var(--color-solarized-dark--base03);
+    --color-equip-deco--box: var(--color-solarized-dark--base03);
+
+    --color-select--text-field: var(--color-solarized-dark--base02);
+    --color-select--icon-button-box: var(--color-solarized-dark--base01);
+    --color-select--icon-button-box-selected: var(--color-solarized-dark--red);
+    --color-select--section: var(--color-solarized-dark--base02);
+    --color-select--dropdown-menu: var(--color-solarized-dark--base01);
+
+    --color-select-table--background: var(--color-solarized-dark--base02);
+    --color-select-table--head-row: var(--color-solarized-dark--base02);
+    --color-select-table--body-row: var(--color-solarized-dark--base03);
+    --color-select-control--clear-button: rgb(255,129,123);
+    --color-select-control--clear-button-hover: var(--color-solarized-dark--red);
+}
+

@@ -54,19 +54,19 @@ class TypeFilterButton extends React.Component {
         check.isFunction(this.props.onClick);
 
         const highlightBox = (()=>{
-                const c = (this.props.isSelected) ? " selected-select-view-type-filter-icon-box" : "";
                 return element("div",
                         {
-                        className: "highlight-select-view-type-filter-icon-box stackinner" + c,
+                        className: "highlight-select-view-type-filter-icon-box stackinner",
                         onClick: (e) => {this.handleOnClick(e)},
                         },
                         null,
                     );
             })();
 
+        const c = (this.props.isSelected) ? " selected-select-view-type-filter-icon-box" : "";
         return element("div",
             {
-            className: "select-view-type-filter-icon-box stackouter",
+            className: "select-view-type-filter-icon-box stackouter" + c,
             },
             element("img",
                 {
@@ -195,6 +195,7 @@ class DropdownSelect extends React.Component {
         
         return element("select",
             {
+            className: "select-view-dropdown",
             value: this.props.cspecGetOptionValue(this.props.currentlySelected),
             onChange: (e) => {this.handleOnChange(e);},
             },
@@ -247,6 +248,7 @@ class DropdownSelectWithNull extends React.Component {
         
         return element("select",
             {
+            className: "select-view-dropdown",
             value: (this.props.currentlySelected === null) ? ("") : this.props.cspecGetOptionValue(this.props.currentlySelected),
             onChange: (e) => {this.handleOnChange(e);},
             },

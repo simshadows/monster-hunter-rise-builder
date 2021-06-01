@@ -153,6 +153,10 @@ export function br() {
     return element("br", null, null);
 }
 
+export function clipsafeSpan(...children) {
+    return element("span", {className: "clipsafe"}, ...children);
+}
+
 /*** Others ***/
 
 export function toNameFilterString(s) {

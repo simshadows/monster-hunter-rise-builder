@@ -2,7 +2,7 @@ div.modal-background {
     display: flex;
     justify-content: center;
 
-    background: rgba(0, 0, 0, 0.6);;
+    background: var(--color-modal--background);
 
     visibility: visible;
 }
@@ -11,10 +11,10 @@ div.modal-foreground {
     display: flex;
     flex-direction: column;
 
-    background: white;
+    background: var(--color-modal--foreground);
     margin: 10px 40px 40px 40px;
     padding: 0;
-    border: medium solid black;
+    border: medium solid var(--color-modal--border);
 
     /* min-height: 640px; */ /* TODO: Make it so the modal UI can stretch vertically. */
     height: 720px; /* Temporary static height */
@@ -25,7 +25,7 @@ div.modal-utility-bar {
 
     margin: 0;
     padding: 4px;
-    background: lightgrey;
+    background: var(--color-modal--utility-bar);
 }
 
 div.modal-utility-bar-title {
@@ -44,16 +44,15 @@ div.modal-utility-bar-close-button {
     justify-content: center;
 
     height: 28px;
-    min-width: 28px;
-    border: medium solid black;
-    font-color: white;
+    width: 28px;
+    color: var(--color-text2);
     font-size: 26px;
     font-weight: bold;
-    background: rgb(255,129,123);
+    background: var(--color-modal--close-button);
     cursor: pointer;
 }
 div.modal-utility-bar-close-button:hover {
-    background: rgb(255,57,46);
+    background: var(--color-modal--close-button-hover);
 }
 
 div.modal-content {
