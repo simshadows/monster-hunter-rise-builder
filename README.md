@@ -23,6 +23,14 @@ python3 -m http.server
 
 Unfortunately, I might just have to leave special accessibility and localization features for last. Also, I'll probably need to port my codebase to a build system before then.
 
+## Error Handling
+
+Good error handling is currently severely lacking. Only render errors are caught, and that wipes the screen to display an error.
+
+Errors in event handlers will silently fail. This is especially bad.
+
+Errors in script imports will also silently fail, and the only way a user will know is if they're stuck on the loading screen for too long, or if they look at the browser developer tools.
+
 ## License
 
 All original source code is licensed under the [*GNU Affero General Public License v3.0 (AGPLv3)*](https://www.gnu.org/licenses/agpl-3.0.en.html).
