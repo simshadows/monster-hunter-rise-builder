@@ -64,7 +64,7 @@ function EquipInfoBox(props) {
             {
             className: "equip-name-box clipsafe",
             },
-            clipsafeSpan(element("b", null, props.eqName)),
+            clipsafeSpan(props.eqName),
         ),
         React.Children.toArray(props.children),
     )
@@ -192,7 +192,7 @@ function EquipWeaponInfoBox(props) {
             {
             className: "equip-name-box clipsafe",
             },
-            clipsafeSpan(element("b", null, weaponRO.name)),
+            clipsafeSpan(weaponRO.name),
         ),
         element("div",
             {

@@ -59,7 +59,7 @@ div.equip-weapon-stat-box {
     height: 100%;
     width: 70px;
     padding: 0 4px 0 4px;
-    font-size: 14px;
+    font: var(--font-equip-weapon--stat);
     background: var(--color-equip-weapon--stat-box);
 }
 
@@ -82,7 +82,7 @@ div.equip-weapon-ramp-box {
 
     height: 100%;
     width: 50px;
-    font-size: 14px;
+    font: var(--font-equip-weapon--ramp);
     background: var(--color-equip-weapon--ramp-box);
 }
 div.equip-weapon-unused-ramp-box {
@@ -138,6 +138,7 @@ div.equip-info-box {
 div.equip-name-box {
     width: 100%;
     padding: 0 4px 0 6px;
+    font: var(--font-equip--name);
 }
 div.equip-info-content-box {
     height: 52px;
@@ -152,6 +153,7 @@ div.equip-skills-wrap-box {
 
     margin: 0;
     padding: 3px 5px 5px 4px;
+    font: var(--font-equip--skill-name);
 }
 div.equip-info-petalace-box {
     display: flex;
@@ -176,8 +178,8 @@ div.equip-info-petalace-stat-cell-box {
     height: 100%;
     width: 140px;
     padding: 0 4px 0 4px;
-    font-size: 14px;
-    background: darkgrey;
+    background: var(--color-equip-petalace--stat-box);
+    font: var(--font-equip-petalace--stat);
 }
 
 div.equip-skills-box {
@@ -189,7 +191,6 @@ div.equip-skills-box {
 
     background: var(--color-equip-skills--box);
     padding: 4px;
-    font-size: 14px;
     height: 49%; /* TODO: Same here, figure out why 50% doesn't work. */
 }
 
@@ -204,7 +205,6 @@ div.equip-defenses-box {
     height: 100%;
     width: 110px;
     padding: 4px 0 4px 0;
-    font-size: 13px;
 }
 
 div.equip-defenses-row-box {
@@ -218,7 +218,6 @@ div.equip-defenses-row-box {
 
     border: none;
     width: 100%;
-    font-size: 28px;
 }
 
 div.equip-defenses-cell-box {
@@ -228,9 +227,9 @@ div.equip-defenses-cell-box {
     align-items: center;
     justify-content: flex-start;
 
-    font-size: 13px;
-    background: var(--color-equip-defenses--box);
     height: 100%;
+    background: var(--color-equip-defenses--box);
+    font: var(--font-equip--defense);
 }
 
 div.equip-defenses-icon-box-wrap {
@@ -287,7 +286,7 @@ div.equip-deco-box {
     padding: 0 0 0 4px;
     margin: 0;
     text-align: center;
-    font-size: 14px;
+    font: var(--font-equip--deco);
     height: 23px;
 }
 div.highlight-equip-deco-box:hover {

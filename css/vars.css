@@ -1,4 +1,34 @@
 :root {
+
+    /*** Fonts ***/
+
+    --font-scheme--family1: "Arial";
+    --font-scheme--family2: "Arial";
+    --font-scheme--family3: "Arial";
+
+    /****/
+
+    --font-body: normal normal 16px var(--font-scheme--family1);
+
+    --font-modal--title: bold normal 18px var(--font-scheme--family3);
+
+    --font-calculated-skills--misc:   normal normal 12px var(--font-scheme--family2);
+    --font-calculated-skills--name:   bold   normal 14px var(--font-scheme--family2);
+    --font-calculated-skills--detail: normal normal 14px var(--font-scheme--family2);
+
+    --font-equip--name:          bold   normal 18px var(--font-scheme--family3);
+    --font-equip--skill-name:    normal normal 14px var(--font-scheme--family2);
+    --font-equip--defense:       bold   normal 15px var(--font-scheme--family2);
+    --font-equip--deco:          bold   normal 14px var(--font-scheme--family2);
+    --font-equip-weapon--stat:   bold   normal 15px var(--font-scheme--family2);
+    --font-equip-weapon--ramp:   normal normal 14px var(--font-scheme--family2);
+    --font-equip-petalace--stat: normal normal 14px var(--font-scheme--family2);
+
+    --font-select-table--head-row: bold   normal 16px var(--font-scheme--family2);
+    --font-select-table--body-row: normal normal 16px var(--font-scheme--family2);
+
+    /*** Colours ***/
+
     --color-scheme--dark0: #141517;
     --color-scheme--dark1: #191a1d;
     --color-scheme--dark2: #202225;
@@ -18,10 +48,11 @@
     --color-scheme--red-inactive: #a02929;
     --color-scheme--red-active: #cc1111;
 
-    /******/
+    /****/
 
     --color-text: var(--color-scheme--bright3);
     --color-text2: var(--color-scheme--dark1);
+    --color-text-link: #00b0f4;
 
     --color-background-1: var(--color-scheme--dark1);
     --color-background-2: var(--color-scheme--dark2);
@@ -36,7 +67,7 @@
     --color-modal--close-button: var(--color-scheme--red-inactive);
     --color-modal--close-button-hover: var(--color-scheme--red-active);
 
-    /******/
+    /****/
 
     --color-calculated-skills--wrap-box: var(--color-scheme--dark3);
     --color-calculated-skills--icon-box: var(--color-scheme--dark3);
@@ -45,6 +76,7 @@
     --color-equip-buffs--icon-box: var(--color-scheme--dark1);
     --color-equip-weapon--stat-box: var(--color-scheme--dark1);
     --color-equip-weapon--ramp-box: var(--color-scheme--dark3);
+    --color-equip-petalace--stat-box: var(--color-scheme--dark3);
     --color-equip-defenses--box: var(--color-scheme--dark5);
     --color-equip-skills--box: var(--color-scheme--dark3);
     --color-equip-deco--box: var(--color-scheme--dark3);

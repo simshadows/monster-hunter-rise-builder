@@ -49,8 +49,22 @@ function SkillResult(props) {
             {
             className: "skill-detail-box",
             },
-            clipsafeSpan(element("b", null, props.skillName)),
-            clipsafeSpan("Level " + parseInt(props.skillLevel) + " / " + parseInt(props.skillLevelMax)),
+            clipsafeSpan(
+                element("span", 
+                    {
+                    className: "skill-name",
+                    },
+                    props.skillName,
+                )
+            ),
+            clipsafeSpan(
+                element("span", 
+                    {
+                    className: "skill-detail",
+                    },
+                    "Level " + parseInt(props.skillLevel) + " / " + parseInt(props.skillLevelMax),
+                )
+            ),
         ),
     );
 }

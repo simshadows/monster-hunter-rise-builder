@@ -16,11 +16,32 @@ body {
     padding: 0;
     background: var(--color-background-1);
 
-    font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+    font: var(--font-body), Arial, sans-serif;
 }
 
 span, p, div {
     color: var(--color-text);
+}
+
+a:link {
+    color: var(--color-text-link);
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: var(--color-text-link);
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: var(--color-text-link);
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color: var(--color-text-link);
+    background-color: transparent;
+    text-decoration: underline;
 }
 
 body::-webkit-scrollbar {

@@ -33,8 +33,7 @@ div.modal-utility-bar-title {
 
     display: flex;
     align-items: center;
-    font-size: 18px;
-    font-weight: bold;
+    font: var(--font-modal--title);
     padding: 0 0 0 5px;
 }
 
