@@ -84,20 +84,20 @@ class WeaponSelectionTable extends React.Component {
 class WeaponSelectView extends React.Component {
 
     static _weaponCategoryToIconMap = new Map([
-            ["greatsword"    , getImgPath("weapon_greatsword_white"    )],
-            ["longsword"     , getImgPath("weapon_longsword_white"     )],
-            ["swordandshield", getImgPath("weapon_swordandshield_white")],
-            ["dualblades"    , getImgPath("weapon_dualblades_white"    )],
-            ["switchaxe"     , getImgPath("weapon_switchaxe_white"     )],
-            ["chargeblade"   , getImgPath("weapon_chargeblade_white"   )],
-            ["hammer"        , getImgPath("weapon_hammer_white"        )],
-            ["huntinghorn"   , getImgPath("weapon_huntinghorn_white"   )],
-            ["lance"         , getImgPath("weapon_lance_white"         )],
-            ["gunlance"      , getImgPath("weapon_gunlance_white"      )],
-            ["insectglaive"  , getImgPath("weapon_insectglaive_white"  )],
-            ["bow"           , getImgPath("weapon_bow_white"           )],
-            ["lightbowgun"   , getImgPath("weapon_lightbowgun_white"   )],
-            ["heavybowgun"   , getImgPath("weapon_heavybowgun_white"   )],
+            ["greatsword"    , getImgPath("weapon_greatsword_r1"    )],
+            ["longsword"     , getImgPath("weapon_longsword_r1"     )],
+            ["swordandshield", getImgPath("weapon_swordandshield_r1")],
+            ["dualblades"    , getImgPath("weapon_dualblades_r1"    )],
+            ["switchaxe"     , getImgPath("weapon_switchaxe_r1"     )],
+            ["chargeblade"   , getImgPath("weapon_chargeblade_r1"   )],
+            ["hammer"        , getImgPath("weapon_hammer_r1"        )],
+            ["huntinghorn"   , getImgPath("weapon_huntinghorn_r1"   )],
+            ["lance"         , getImgPath("weapon_lance_r1"         )],
+            ["gunlance"      , getImgPath("weapon_gunlance_r1"      )],
+            ["insectglaive"  , getImgPath("weapon_insectglaive_r1"  )],
+            ["bow"           , getImgPath("weapon_bow_r1"           )],
+            ["lightbowgun"   , getImgPath("weapon_lightbowgun_r1"   )],
+            ["heavybowgun"   , getImgPath("weapon_heavybowgun_r1"   )],
         ]);
 
     constructor(props) {

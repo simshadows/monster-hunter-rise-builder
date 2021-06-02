@@ -106,6 +106,7 @@ class MHRBuilderApp extends React.Component {
                     element("div", null, "Loading data..."),
                 );
             } else {
+                console.log(this.state);
                 return element(MHRBuilderAppInner,
                     {
                     rawDataRO: this.state.rawData,

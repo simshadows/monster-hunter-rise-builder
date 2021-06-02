@@ -19,6 +19,7 @@ import {
     strHasOnlyLowerNumeralUnder,
     isWeaponCategoryStr,
     isTierStr,
+    isArmourSlotStr,
     isWeaponEndlineTagStr,
     isEleStatStr,
     toNameFilterString,
@@ -62,8 +63,7 @@ const DECORATIONS_PATH = "../../../../data/decorations.json";
 function weaponAndRarityToIconImgPath(weaponType, rarity) {
     assert(isWeaponCategoryStr(weaponType));
     assert(isInt(rarity) && (rarity > 0) && (rarity <= 7));
-    
-    return "./images/derived/weapon_" + weaponType + "_white.png";
+    return getImgPath("weapon_" + weaponType + "_r" + parseInt(rarity));
 }
 
 /*** Downloading and Validating Weapon Data (without referential integrity checking) ***/
@@ -237,6 +237,11 @@ function joinRampSkillObjsToWeaponData(weaponData) {
 
 /* ARMOUR *******************************************************************************/
 
+function armourSlotAndRarityToIconImgPath(armourSlot, rarity) {
+    assert(isArmourSlotStr(armourSlot));
+    assert(isInt(rarity) && (rarity > 0) && (rarity <= 7));
+    return getImgPath(armourSlot + "_r" + parseInt(rarity));
+}
 
 function validateArmourNamingSchemes(namingSchemesData) {
     for (const [armourNamingSchemeID, armourNamingSchemeObj] of Object.entries(namingSchemesData)) {
@@ -365,6 +370,7 @@ async function downloadAllRawArmourData() {
 
                 // Create the final data object without verifying first
                 const newPiece = {
+                    rarity: armourRawDataObj.rarity,
                     tierID: armourRawDataObj.tier,
                     setID: armourSetID,
                     setName: armourRawDataObj.setName,
@@ -382,6 +388,8 @@ async function downloadAllRawArmourData() {
                     dragonRes: armourRawDataObj.defenses["d"],
 
                     filterHelpers: {}, // Populate after
+
+                    iconImgPath: armourSlotAndRarityToIconImgPath(slotID, armourRawDataObj.rarity),
                 };
                 newPiece.filterHelpers.nameLower = toNameFilterString(newPiece.name);
 

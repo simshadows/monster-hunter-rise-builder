@@ -481,6 +481,19 @@ class EquipDecosWrapBox extends React.Component {
                 )
             );
         }
+        // We'll need to add missing space
+        const numMissingBoxes = 3 - decoBoxes.length;
+        for (let i = 0; i < numMissingBoxes; ++i) {
+            decoBoxes.push(
+                element("div",
+                    {
+                    className: "equip-deco-box",
+                    style: {visibility: "hidden"},
+                    },
+                    null,
+                )
+            );
+        }
 
         return element("div",
             {
@@ -494,11 +507,11 @@ class EquipDecosWrapBox extends React.Component {
 class ArmourSelection extends React.Component {
 
     static _slotNameToIconImgPath = new Map([
-            ["head" , getImgPath("head_white")],
-            ["chest", getImgPath("chest_white")],
-            ["arms" , getImgPath("arms_white")],
-            ["waist", getImgPath("waist_white")],
-            ["legs" , getImgPath("legs_white")],
+            ["head" , getImgPath("head_r1")],
+            ["chest", getImgPath("chest_r1")],
+            ["arms" , getImgPath("arms_r1")],
+            ["waist", getImgPath("waist_r1")],
+            ["legs" , getImgPath("legs_r1")],
         ]);
 
     handleClickArmourSelect() {
@@ -558,7 +571,7 @@ class ArmourSelection extends React.Component {
                 },
                 element(EquipIcon,
                     {
-                    iconImg: this.constructor._slotNameToIconImgPath.get(this.props.slotID),
+                    iconImg: (armourPieceRO !== null) ? armourPieceRO.iconImgPath : this.constructor._slotNameToIconImgPath.get(this.props.slotID),
                     onClick: () => {this.handleClickArmourSelect()},
                     },
                     null,

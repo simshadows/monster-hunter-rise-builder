@@ -19,7 +19,7 @@
     --font-equip--name:          bold   normal 18px var(--font-scheme--family3);
     --font-equip--skill-name:    normal normal 14px var(--font-scheme--family2);
     --font-equip--defense:       bold   normal 15px var(--font-scheme--family2);
-    --font-equip--deco:          bold   normal 14px var(--font-scheme--family2);
+    --font-equip--deco:          normal normal 14px var(--font-scheme--family2);
     --font-equip-weapon--stat:   bold   normal 15px var(--font-scheme--family2);
     --font-equip-weapon--ramp:   normal normal 14px var(--font-scheme--family2);
     --font-equip-petalace--stat: normal normal 14px var(--font-scheme--family2);

@@ -39,7 +39,7 @@ export function strHasOnlyLowerNumeralUnder(s) {
 
 /*** Enums Verification ***/
 
-const weaponCategoryStrs = new Set([
+export const weaponCategoryStrs = new Set([
     "greatsword",
     "longsword",
     "swordandshield",

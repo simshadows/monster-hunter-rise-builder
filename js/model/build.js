@@ -306,6 +306,8 @@ class Build {
                     thunderRes: armourPieceRO.thunderRes,
                     iceRes:     armourPieceRO.iceRes,
                     dragonRes:  armourPieceRO.dragonRes,
+
+                    iconImgPath: armourPieceRO.iconImgPath,
                 };
             };
 

@@ -113,11 +113,11 @@ class ArmourSelectionTable extends React.Component {
 class ArmourSelectView extends React.Component {
 
     static _armourSlotIDToIconMap = new Map([
-            ["head" , getImgPath("head_white") ],
-            ["chest", getImgPath("chest_white")],
-            ["arms" , getImgPath("arms_white") ],
-            ["waist", getImgPath("waist_white")],
-            ["legs" , getImgPath("legs_white") ],
+            ["head" , getImgPath("head_r1") ],
+            ["chest", getImgPath("chest_r1")],
+            ["arms" , getImgPath("arms_r1") ],
+            ["waist", getImgPath("waist_r1")],
+            ["legs" , getImgPath("legs_r1") ],
         ]);
 
     constructor(props) {
