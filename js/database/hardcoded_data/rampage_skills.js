@@ -169,24 +169,5 @@ for (const [rampSkillID, rampSkillObj] of rampageSkillsMap.entries()) {
     rampSkillObj.id = rampSkillID;
 }
 
-// TODO: Instead of an object, just export the map directly.
-class RampageSkillsData {
-
-    constructor() {
-        this._dataRO = rampageSkillsMap;
-    }
-
-    isValidRampSkillID(rampSkillID) {
-        isStr(rampSkillID);
-        return this._dataRO.has(rampSkillID);
-    }
-
-    getRampSkill(rampSkillID) {
-        isStr(rampSkillID);
-        return this._dataRO.get(rampSkillID);
-    }
-
-}
-
-export {RampageSkillsData};
+export {rampageSkillsMap};
 

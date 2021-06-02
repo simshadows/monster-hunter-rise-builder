@@ -132,7 +132,7 @@ class Build {
     // Usefully returns self for use in React state transitions.
     setWeapon(db, weaponObj) {
         assert(isObj(db));
-        assert(isMap(db.readonly.weapons.greatsword)); // Spot check for structure
+        assert(isMap(db.readonly.weapons.map.greatsword)); // Spot check for structure
         // weaponObj validity will be checked by verifying overall state
 
         this._weaponRO = weaponObj;
@@ -146,7 +146,7 @@ class Build {
     // Usefully returns self for use in React state transitions.
     setRampageSkill(db, position, rampageSkillID) {
         assert(isObj(db));
-        assert(isMap(db.readonly.weapons.greatsword)); // Spot check for structure
+        assert(isMap(db.readonly.weapons.map.greatsword)); // Spot check for structure
         assert(isInt(position));
         assert(isStrOrNull(rampageSkillID));
         this._validateWeaponNotNull();
@@ -154,7 +154,8 @@ class Build {
         assert((position >= 0) && (position < this._weaponRampSkillSelections.length));
         // TODO: Verify if the rampage skill ID is valid?
 
-        this._weaponRampSkillSelections[position] = db.readonly.weaponRampSkills.getRampSkill(rampageSkillID);
+        assert(db.readonly.weaponRampSkills.map.has(rampageSkillID));
+        this._weaponRampSkillSelections[position] = db.readonly.weaponRampSkills.map.get(rampageSkillID);
 
         this._validateState();
         return this;
@@ -163,7 +164,7 @@ class Build {
     // Usefully returns self for use in React state transitions.
     setArmourPiece(db, armourPieceObj) {
         assert(isObj(db));
-        assert(isMap(db.readonly.weapons.greatsword)); // Spot check for structure
+        assert(isMap(db.readonly.weapons.map.greatsword)); // Spot check for structure
         // armourPieceObj validity will be checked by verifying overall state
 
         // TODO: We don't handle null yet.
@@ -172,7 +173,6 @@ class Build {
         this._validateWeaponNotNull();
         this._armourRO[armourPieceObj.slotID] = armourPieceObj;
         this._decorationsRO[armourPieceObj.slotID] = this._generateEmptyDecoObj(armourPieceObj.decorationSlots);
-        console.log(this);
 
         this._validateState();
         return this;
@@ -217,7 +217,7 @@ class Build {
     // Usefully returns self for use in React state transitions.
     setPetalace(db, petalaceObj) {
         assert(isObj(db));
-        assert(isMap(db.readonly.weapons.greatsword)); // Spot check for structure
+        assert(isMap(db.readonly.weapons.map.greatsword)); // Spot check for structure
         // petalaceObj validity will be checked by verifying overall state
 
         this._validateWeaponNotNull();
@@ -278,7 +278,7 @@ class Build {
     // THIS WILL ONLY SUCCEED IF this._weaponRO IS NOT NULL
     getRenderingProps(db) {
         assert(isObj(db));
-        assert(isMap(db.readonly.weapons.greatsword)); // Spot check for structure
+        assert(isMap(db.readonly.weapons.map.greatsword)); // Spot check for structure
 
         this._validateWeaponNotNull();
 
@@ -401,7 +401,7 @@ class Build {
 
     _getRampSkillSelectionsArray(db) {
         assert(isObj(db));
-        assert(isMap(db.readonly.weapons.greatsword)); // Spot check for structure
+        assert(isMap(db.readonly.weapons.map.greatsword)); // Spot check for structure
 
         const ret = [];
         for (const rampSkillObj of this._weaponRampSkillSelections) {

@@ -28,7 +28,7 @@ import {
     skillMapShortIds,
 } from "./hardcoded_data/skills.js";
 import {
-    RampageSkillsData,
+    rampageSkillsMap,
 } from "./hardcoded_data/rampage_skills.js";
 import {
     petalaceMap,
@@ -201,9 +201,9 @@ async function downloadAllRawWeaponData() {
 
 /*** Joining Data ***/
 
-function joinRampSkillObjsToWeaponData(weaponData, rampSkillsData) {
+function joinRampSkillObjsToWeaponData(weaponData) {
     assert(isObj(weaponData));
-    assert(rampSkillsData instanceof RampageSkillsData);
+    assert(isMap(rampageSkillsMap));
     for (const [categoryID, weaponDataMap] of Object.entries(weaponData)) {
         for (const [weaponID, weaponDataObj] of weaponDataMap.entries()) {
             const newRampArray = [];
@@ -211,10 +211,10 @@ function joinRampSkillObjsToWeaponData(weaponData, rampSkillsData) {
                 const newRampSubArray = [];
                 for (const rampSkillID of rampSkillRampArray) {
                     assert(
-                        rampSkillsData.isValidRampSkillID(rampSkillID),
+                        rampageSkillsMap.has(rampSkillID),
                         "Invalid rampage skill ID '" + rampSkillID + "' from " + categoryID + " " + weaponID
                     );
-                    newRampSubArray.push(rampSkillsData.getRampSkill(rampSkillID));
+                    newRampSubArray.push(rampageSkillsMap.get(rampSkillID));
                 }
                 newRampArray.push(newRampSubArray);
             }
@@ -466,6 +466,29 @@ function joinSkillObjsToDecoData(decoData, skillDataLongIdMap) {
 
 class GameData {
 
+    static _makeWeaponsArray(weaponsMap) {
+        let ret = [];
+        for (const [category, dataMap] of Object.entries(weaponsMap)) {
+            console.assert(isWeaponCategoryStr(category));
+            ret = ret.concat(Array.from(dataMap.values()));
+        }
+        return ret;
+    }
+
+    // Returns an object of arrays: { head": array of head pieces, chest: array of chest pieces, ...}
+    static _makeArmourArrays(armourMap) {
+        const ret = { head:[], chest:[], arms:[], waist:[], legs:[] };
+        for (const [armourSetID, armourSetData] of armourMap.entries()) {
+            console.assert(isStr(armourSetID));
+            console.assert(isMap(armourSetData));
+            for (const [armourSlotID, armourPieceData] of armourSetData.entries()) {
+                ret[armourSlotID].push(armourPieceData);
+            }
+        }
+        return ret;
+    }
+
+
     // Builder Function
     static async downloadRawData() {
         //await sleep(3000); // For testing
@@ -474,27 +497,46 @@ class GameData {
         // Also verify data, except we verify referential integrity later.
         const weaponDataFut = downloadAllRawWeaponData();
         const armourDataFut = downloadAllRawArmourData();
-        const decorationsDataFut = downloadAllRawDecorationsData();
+        const decosDataFut = downloadAllRawDecorationsData();
+
+        const weaponsMap = await weaponDataFut;
+        const armourMap = await armourDataFut;
+        const decosMap = await decosDataFut;
 
         const obj = new GameData("hello smish");
         obj.readonly = {
             skills: {
-                longIds: skillMap,
-                shortIds: skillMapShortIds,
+                array: Array.from(skillMap.values()),
+                longIdsMap: skillMap,
+                shortIdsMap: skillMapShortIds,
             },
-            weaponRampSkills: new RampageSkillsData(),
-            weapons:          await weaponDataFut,
-            armour:           await armourDataFut,
-            petalaces:        petalaceMap,
-            decorations:      await decorationsDataFut,
+            weaponRampSkills: {
+                map: rampageSkillsMap,
+            },
+            weapons: {
+                array: GameData._makeWeaponsArray(weaponsMap),
+                map: weaponsMap,
+            },
+            armour: {
+                arrays: GameData._makeArmourArrays(armourMap),
+                map: armourMap,
+            },
+            petalaces: {
+                array: Array.from(petalaceMap.values()),
+                map: petalaceMap,
+            },
+            decorations: {
+                array: Array.from(decosMap.values()),
+                map: decosMap,
+            },
         };
 
         // Replace all weapon ramp skill IDs with ramp skill objects
-        joinRampSkillObjsToWeaponData(obj.readonly.weapons, obj.readonly.weaponRampSkills);
+        joinRampSkillObjsToWeaponData(weaponsMap);
         // Replace all armour skill long IDs with skill objects
-        joinSkillObjsToArmourData(obj.readonly.armour, obj.readonly.skills.longIds);
+        joinSkillObjsToArmourData(armourMap, obj.readonly.skills.longIdsMap);
         // Replace all decoration skill long IDs with skill objects
-        joinSkillObjsToDecoData(obj.readonly.decorations, obj.readonly.skills.longIds);
+        joinSkillObjsToDecoData(decosMap, obj.readonly.skills.longIdsMap);
 
         return obj;
     }
@@ -505,44 +547,8 @@ class GameData {
         }
     }
 
-    getSkillsArray() {
-        return Array.from(this.readonly.skills.longIds.values());
-    }
-    getSkillsMapLongIds() {
-        return this.readonly.skills.longIds;
-    }
-
-    getWeaponsArray() {
-        let ret = [];
-        for (const [category, dataMap] of Object.entries(this.readonly.weapons)) {
-            console.assert(isWeaponCategoryStr(category));
-            ret = ret.concat(Array.from(dataMap.values()));
-        }
-        return ret;
-    }
     getDefaultWeapon() {
-        return this.readonly.weapons.greatsword.get("1a");
-    }
-
-    // Returns an object of arrays: { head": array of head pieces, chest: array of chest pieces, ...}
-    getArmourArrays() {
-        const ret = { head:[], chest:[], arms:[], waist:[], legs:[] };
-        for (const [armourSetID, armourSetData] of this.readonly.armour.entries()) {
-            console.assert(isStr(armourSetID));
-            console.assert(isMap(armourSetData));
-            for (const [armourSlotID, armourPieceData] of armourSetData.entries()) {
-                ret[armourSlotID].push(armourPieceData);
-            }
-        }
-        return ret;
-    }
-
-    getPetalacesArray() {
-        return Array.from(this.readonly.petalaces.values());
-    }
-
-    getDecorationsArray() {
-        return Array.from(this.readonly.decorations.values());
+        return this.readonly.weapons.map.greatsword.get("1a");
     }
 }
 
