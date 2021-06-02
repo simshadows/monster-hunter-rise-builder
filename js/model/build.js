@@ -334,6 +334,8 @@ class Build {
                         rampSkillSelectionsArray: this._getRampSkillSelectionsArray(db),
                         rampSkillOptionsArray:    this._weaponRO.rampSkills,
                         decosArray:               this._getDecoArrayRenderingProp("weapon"),
+
+                        iconImgPath: this._weaponRO.iconImgPath,
                     },
                 armourRO: {
                         head:  makeArmourRenderingProps("head"),

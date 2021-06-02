@@ -227,6 +227,7 @@ function EquipWeaponInfoBox(props) {
 function WeaponSelection(props) {
     check.isObj(props.weaponRORenderingProps);
     check.isArr(props.weaponRORenderingProps.rampSkillSelectionsArray); // Spot check for structure
+    check.isNonEmptyStr(props.weaponRORenderingProps.iconImgPath);
 
     check.isFunction(props.handleClickWeaponSelect);
     check.isFunction(props.handleClickWeaponCustomize);
@@ -242,7 +243,7 @@ function WeaponSelection(props) {
             },
             element(EquipIcon,
                 {
-                iconImg: getImgPath("placeholder_weapon"),
+                iconImg: props.weaponRORenderingProps.iconImgPath,
                 onClick: () => {props.handleClickWeaponSelect()},
                 },
                 null,

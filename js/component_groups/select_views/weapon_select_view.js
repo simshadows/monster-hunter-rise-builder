@@ -6,6 +6,7 @@
  */
 
 import * as check from "../../check.js";
+import {getImgPath} from "../../images.js";
 import {
     isWeaponCategoryStr,
     weaponCategoryToName,
@@ -83,20 +84,20 @@ class WeaponSelectionTable extends React.Component {
 class WeaponSelectView extends React.Component {
 
     static _weaponCategoryToIconMap = new Map([
-            ["greatsword"    , "./images/placeholders/weapon_small_greatsword.webp"    ],
-            ["longsword"     , "./images/placeholders/weapon_small_longsword.webp"     ],
-            ["swordandshield", "./images/placeholders/weapon_small_swordandshield.webp"],
-            ["dualblades"    , "./images/placeholders/weapon_small_dualblades.webp"    ],
-            ["switchaxe"     , "./images/placeholders/weapon_small_switchaxe.webp"     ],
-            ["chargeblade"   , "./images/placeholders/weapon_small_chargeblade.webp"   ],
-            ["hammer"        , "./images/placeholders/weapon_small_hammer.webp"        ],
-            ["huntinghorn"   , "./images/placeholders/weapon_small_huntinghorn.webp"   ],
-            ["lance"         , "./images/placeholders/weapon_small_lance.webp"         ],
-            ["gunlance"      , "./images/placeholders/weapon_small_gunlance.webp"      ],
-            ["insectglaive"  , "./images/placeholders/weapon_small_insectglaive.webp"  ],
-            ["bow"           , "./images/placeholders/weapon_small_bow.webp"           ],
-            ["lightbowgun"   , "./images/placeholders/weapon_small_lightbowgun.webp"   ],
-            ["heavybowgun"   , "./images/placeholders/weapon_small_heavybowgun.webp"   ],
+            ["greatsword"    , getImgPath("weapon_greatsword_white"    )],
+            ["longsword"     , getImgPath("weapon_longsword_white"     )],
+            ["swordandshield", getImgPath("weapon_swordandshield_white")],
+            ["dualblades"    , getImgPath("weapon_dualblades_white"    )],
+            ["switchaxe"     , getImgPath("weapon_switchaxe_white"     )],
+            ["chargeblade"   , getImgPath("weapon_chargeblade_white"   )],
+            ["hammer"        , getImgPath("weapon_hammer_white"        )],
+            ["huntinghorn"   , getImgPath("weapon_huntinghorn_white"   )],
+            ["lance"         , getImgPath("weapon_lance_white"         )],
+            ["gunlance"      , getImgPath("weapon_gunlance_white"      )],
+            ["insectglaive"  , getImgPath("weapon_insectglaive_white"  )],
+            ["bow"           , getImgPath("weapon_bow_white"           )],
+            ["lightbowgun"   , getImgPath("weapon_lightbowgun_white"   )],
+            ["heavybowgun"   , getImgPath("weapon_heavybowgun_white"   )],
         ]);
 
     constructor(props) {

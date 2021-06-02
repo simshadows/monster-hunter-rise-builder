@@ -50,7 +50,7 @@
 
     /****/
 
-    --color-text: var(--color-scheme--bright3);
+    --color-text: var(--color-scheme--bright2);
     --color-text2: var(--color-scheme--dark1);
     --color-text-link: #00b0f4;
 
@@ -72,13 +72,14 @@
     --color-calculated-skills--wrap-box: var(--color-scheme--dark3);
     --color-calculated-skills--icon-box: var(--color-scheme--dark3);
 
-    --color-equip--icon-box: var(--color-scheme--dark1);
-    --color-equip-buffs--icon-box: var(--color-scheme--dark1);
-    --color-equip-weapon--stat-box: var(--color-scheme--dark1);
-    --color-equip-weapon--ramp-box: var(--color-scheme--dark3);
+    --color-equip--icon-box: var(--color-scheme--dark0);
+    --color-equip--icon-box-border-hover: var(--color-scheme--bright4);
+    --color-equip-buffs--icon-box: var(--color-scheme--dark0);
+    --color-equip-weapon--stat-box: var(--color-scheme--dark4);
+    --color-equip-weapon--ramp-box: var(--color-scheme--dark4);
     --color-equip-petalace--stat-box: var(--color-scheme--dark3);
     --color-equip-defenses--box: var(--color-scheme--dark5);
-    --color-equip-skills--box: var(--color-scheme--dark3);
+    --color-equip-skills--box: var(--color-scheme--dark4);
     --color-equip-deco--box: var(--color-scheme--dark3);
 
     --color-select--text-field: var(--color-scheme--dark3);

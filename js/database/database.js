@@ -23,6 +23,8 @@ import {
     isEleStatStr,
     toNameFilterString,
 } from "../common.js";
+
+import {getImgPath} from "../images.js";
 import {
     skillMap,
     skillMapShortIds,
@@ -57,52 +59,60 @@ const DECORATIONS_PATH = "../../../../data/decorations.json";
 
 /* WEAPONS ******************************************************************************/
 
+function weaponAndRarityToIconImgPath(weaponType, rarity) {
+    assert(isWeaponCategoryStr(weaponType));
+    assert(isInt(rarity) && (rarity > 0) && (rarity <= 7));
+    
+    return "./images/derived/weapon_" + weaponType + "_white.png";
+}
 
 /*** Downloading and Validating Weapon Data (without referential integrity checking) ***/
 
 // Common stuff
 function validateWeaponData(weaponData) {
-    assert(isWeaponCategoryStr(weaponData.category), "Category must be valid.");
+    assert(isWeaponCategoryStr(weaponData.category));
 
-    assert(isInt(weaponData.rarity), "Rarity must be an integer.");
+    assert(isInt(weaponData.rarity));
 
-    assert(isWeaponEndlineTagStr(weaponData.endlineTag), "Endline tag must be valid.");
+    assert(isWeaponEndlineTagStr(weaponData.endlineTag));
 
-    assert(isNonEmptyStr(weaponData.name), "Name must be a non-empty string.");
+    assert(isNonEmptyStr(weaponData.name));
 
-    assert(isNonEmptyStr(weaponData.treeName), "Tree name must be a non-empty string.");
+    assert(isNonEmptyStr(weaponData.treeName));
+
+    assert(isNonEmptyStr(weaponData.iconImgPath));
     
-    assert(isObj(weaponData.filterHelpers), "Filter helpers must be an Object.");
+    assert(isObj(weaponData.filterHelpers));
     // Not going to further test the structure of this.
 
-    assert(isInt(weaponData.attack) && (weaponData.attack > 0), "Attack must be an integer >0.");
+    assert(isInt(weaponData.attack) && (weaponData.attack > 0));
 
-    assert(isInt(weaponData.affinity), "Affinity must be an integer.");
-    assert((weaponData.affinity >= -100) && (weaponData.affinity <= 100), "Affinity must be <=100 and >=-100.");
+    assert(isInt(weaponData.affinity));
+    assert((weaponData.affinity >= -100) && (weaponData.affinity <= 100));
 
-    assert(isInt(weaponData.defense) && (weaponData.defense >= 0), "Defense must be an integer >=0.");
+    assert(isInt(weaponData.defense) && (weaponData.defense >= 0));
 
-    assert(isArr(weaponData.decoSlots), "Deco slots must be an Array.");
-    assert((weaponData.decoSlots.length <= 3), "Must not have more than 3 deco slots.");
+    assert(isArr(weaponData.decoSlots));
+    assert((weaponData.decoSlots.length <= 3));
     for (const slotSize of weaponData.decoSlots) {
-        assert(isInt(slotSize), "Deco slot size must be an integer.");
-        assert((slotSize > 0 && slotSize <= 3), "Deco slot size must be 1, 2, or 3.");
+        assert(isInt(slotSize));
+        assert((slotSize > 0 && slotSize <= 3));
     }
 
-    assert(isEleStatStr(weaponData.eleStatType), "Must be a valid element or stat type, or none.");
+    assert(isEleStatStr(weaponData.eleStatType));
     if (weaponData.eleStatType === "none") {
-        assert((weaponData.eleStatValue == 0), "None-type element/status must have a value of 0.");
+        assert(weaponData.eleStatValue == 0);
     } else {
-        assert((weaponData.eleStatValue > 0), "Element/status must have a value >0.");
+        assert(weaponData.eleStatValue > 0);
     }
 
     assert(isArr(weaponData.rampSkills), "Ramp skills must be an Array of Arrays.");
-    assert((weaponData.rampSkills.length <= 3), "Must not have more than 3 ramp skill slots.");
+    assert((weaponData.rampSkills.length <= 3));
     for (const possibleRampSkills of weaponData.rampSkills) {
-        assert(isArr(possibleRampSkills), "Possible ramp skills must be an Array.");
+        assert(isArr(possibleRampSkills));
         assert((possibleRampSkills.length > 1), "Must have at least two possible ramp skills."); // Or three?
         for (const rampID of possibleRampSkills) {
-            assert(isNonEmptyStr(rampID), "Ramp skill ID must be a non-empty string.");
+            assert(isNonEmptyStr(rampID));
             // TODO: Include a check that a ramp ID is valid, and probably also a check for duplicate IDs.
         }
     }
@@ -141,6 +151,7 @@ async function downloadCategoryRawWeaponData(category, path, op) {
             weaponData.category = category;
             weaponData.id = weaponID;
             weaponData.treeName = treeName;
+            weaponData.iconImgPath = weaponAndRarityToIconImgPath(category, weaponData.rarity);
             // Merge in helper strings for filter functions
             weaponData.filterHelpers = {};
             weaponData.filterHelpers.nameLower = toNameFilterString(weaponData.name);

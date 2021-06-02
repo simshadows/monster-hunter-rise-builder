@@ -106,7 +106,7 @@ div.equip-main-box {
     padding: 4px 0 4px 4px;
 }
 div.highlight-equip-main-box:hover {
-    background: rgba(0, 0, 0, 0.5);;
+    border: 2px solid var(--color-equip--icon-box-border-hover);
     cursor: pointer;
 }
 
@@ -290,8 +290,7 @@ div.equip-deco-box {
     height: 23px;
 }
 div.highlight-equip-deco-box:hover {
-    background: black;
-    opacity: 0.5;
+    border: 2px solid var(--color-equip--icon-box-border-hover);
     cursor: pointer;
 }
 
