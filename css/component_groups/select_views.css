@@ -26,7 +26,7 @@ div.select-view-name-filter-box {
     border: none;
     background: var(--color-select--text-field);
     color: var(--color-text);
-    font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+    font: 16px Arial, sans-serif;
 }
 
 /*** Type Filter Box and Endline Filter Checkbox ***/

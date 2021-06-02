@@ -19,6 +19,10 @@ cd monster-hunter-rise-builder
 python3 -m http.server
 ```
 
+## Accessibity and Localization
+
+Unfortunately, I might just have to leave special accessibility and localization features for last. Also, I'll probably need to port my codebase to a build system before then.
+
 ## License
 
 All original source code is licensed under the [*GNU Affero General Public License v3.0 (AGPLv3)*](https://www.gnu.org/licenses/agpl-3.0.en.html).
