@@ -6,6 +6,11 @@
  */
 
 import * as check from "./check.js";
+import {removeElementByID} from "./utils.js";
+import {
+    br,
+} from "./common.js";
+
 import {downloadRawData} from "./database/database.js";
 import {MHRBuilderAppInner} from "./app.js";
 
@@ -24,13 +29,30 @@ class MHRBuilderApp extends React.Component {
     async componentDidMount() {
         const rawData = await downloadRawData();
         this.setState({rawData: rawData});
+        removeElementByID("loading-spinner");
     }
+
+    // Nice idea, but not useful yet.
+    //_renderLoadingMessageLine(message, isDone) {
+    //    const tailMsg = " Done!";
+    //    const tailElement = (isDone) ? tailMsg : element("span", {style: {visibility: "hidden"}}, tailMsg);
+    //    return element("div",
+    //        null,
+    //        message,
+    //        tailElement,
+    //    );
+    //}
 
     render() {
         if (this.state.rawData === null) {
-            // Don't load UI until all data is loaded.
-            // TODO: Consider making a proper loading screen.
-            return "Loading app... Loading data...";
+            // Don't render actual app until all data is loaded.
+            return element("div",
+                {
+                id: "loading-messages-wrap-box",
+                },
+                element("div", null, "Loading app... Done!"),
+                element("div", null, "Loading data..."),
+            );
         } else {
             return element(MHRBuilderAppInner,
                 {
@@ -44,6 +66,6 @@ class MHRBuilderApp extends React.Component {
 
 ReactDOM.render(
     element(MHRBuilderApp, null),
-    document.getElementById("app-container")
+    document.getElementById("app-mount")
 );
 
