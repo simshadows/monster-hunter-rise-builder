@@ -102,23 +102,10 @@ class WeaponSelectView extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-                allWeapons: null,
                 filterByName: "", // Empty string by default
                 filterByCategory: "", // Empty string, or a weapon category string
                 filterByEndlineTag: "", // Empty string, or a weapon endline tag string
             };
-    }
-
-    populateWithData(allWeapons) {
-        // Verify incoming data
-        check.isArr(allWeapons);
-        check.isInt(allWeapons[0].affinity); // Spot check structure
-
-        // State should be empty of data
-        assert(this.state.allWeapons === null);
-
-        // Now, we add the data
-        this.setState({allWeapons: allWeapons});
     }
 
     handleSelectWeapon(weaponRO) {
@@ -158,7 +145,7 @@ class WeaponSelectView extends React.Component {
                     && ((this.state.filterByCategory == "") || (element.category == this.state.filterByCategory))
                 );
             };
-        return this.state.allWeapons.filter(op);
+        return this.props.allWeaponsArray.filter(op);
     }
 
     _renderCategoryFilterButton(weaponCategory) {
@@ -201,10 +188,8 @@ class WeaponSelectView extends React.Component {
     }
 
     render() {
-        if (this.state.allWeapons === null) {
-            return "Error: You shouldn't be able to see this screen before the data is loaded.";
-        }
         check.isStr(this.state.filterByName);
+        check.isObj(this.props.allWeaponsArray);
         check.isObj(this.props.currentSelectedWeapon);
         check.isFunction(this.props.handleSelectWeapon);
 

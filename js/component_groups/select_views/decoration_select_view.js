@@ -83,21 +83,8 @@ class DecorationSelectView extends React.Component {
                 queryDecoSlotID: 0,
                 queryMaxDecoSlotSize: 0,
 
-                allDecorations: null,
                 filterByName: "", // Empty string by default
             };
-    }
-
-    populateWithData(allDecorations) {
-        // Verify incoming data
-        check.isObj(allDecorations);
-        check.isInt(allDecorations[0].slotSize); // Spot check structure
-
-        // State should be empty of data
-        assert(this.state.allDecorations === null);
-
-        // Now, we add the data
-        this.setState({allDecorations: allDecorations});
     }
 
     reinitialize(slotID, decoSlotID, maxDecoSlotSize) {
@@ -125,16 +112,14 @@ class DecorationSelectView extends React.Component {
                     && (element.slotSize <= this.state.queryMaxDecoSlotSize)
                 );
             };
-        return this.state.allDecorations.filter(op);
+        return this.props.allDecosArray.filter(op);
     }
 
     render() {
-        if (this.state.allDecorations === null) {
-            return "Error: You shouldn't be able to see this screen before the data is loaded.";
-        }
         assert(isDecoEquippableSlotStr(this.state.querySlotID));
         check.isInt(this.state.queryDecoSlotID);
         assert((this.state.queryDecoSlotID >= 0) && (this.state.queryDecoSlotID < 3));
+        check.isObj(this.props.allDecosArray);
         check.isFunction(this.props.handleSelectDecoration);
 
         const filteredDecosArray = this._getFilteredDecosArray();

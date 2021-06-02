@@ -123,22 +123,9 @@ class ArmourSelectView extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-                allArmour: null,
                 filterByName: "", // Empty string by default
                 filterBySlotID: "head", // Empty string, or an armour slot
             };
-    }
-
-    populateWithData(allArmour) {
-        // Verify incoming data
-        check.isObj(allArmour);
-        check.isInt(allArmour.waist[0].dragonRes); // Spot check structure
-
-        // State should be empty of data
-        assert(this.state.allArmour === null);
-
-        // Now, we add the data
-        this.setState({allArmour: allArmour});
     }
 
     reinitialize(slotID) {
@@ -170,7 +157,7 @@ class ArmourSelectView extends React.Component {
             };
 
         const arrays = [];
-        for (const [armourSlotID, armourPieceData] of Object.entries(this.state.allArmour)) {
+        for (const [armourSlotID, armourPieceData] of Object.entries(this.props.allArmourArrays)) {
             if ((this.state.filterBySlotID == armourSlotID) || (this.state.filterBySlotID == "")) {
                 arrays.push(armourPieceData.filter(filterFn));
             }
@@ -199,10 +186,8 @@ class ArmourSelectView extends React.Component {
     }
 
     render() {
-        if (this.state.allArmour === null) {
-            return "Error: You shouldn't be able to see this screen before the data is loaded.";
-        }
         check.isStr(this.state.filterByName);
+        check.isObj(this.props.allArmourArrays);
         check.isObj(this.props.currentSelectedArmour);
         check.isFunction(this.props.handleSelectArmourPiece);
 

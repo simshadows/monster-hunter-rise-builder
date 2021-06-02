@@ -23,11 +23,8 @@ const assert = console.assert;
 class Build {
 
     _validateState() {
-        if (this._weaponRO !== null) {
-            assert(isObj(this._weaponRO));
-            assert(isInt(this._weaponRO.affinity)); // Spot check for structure
-        }
-        // TODO: What if _weaponRO is null?
+        assert(isObj(this._weaponRO)); // Weapon cannot be null!!!
+        assert(isInt(this._weaponRO.affinity)); // Spot check for structure
 
         for (const [slotID, armourPieceRO] of Object.entries(this._armourRO)) {
             if (armourPieceRO != null) { // armourPieceRO allowed to be null
@@ -43,7 +40,6 @@ class Build {
         if (this._weaponRO !== null) {
             this._validateDecorations();
         }
-        // TODO: What if _weaponRO is null?
     }
 
     _validateDecorations() {
@@ -76,21 +72,15 @@ class Build {
         }
     }
 
-    _validateWeaponNotNull() {
-        if (this._weaponRO === null) {
-            throw new Error("Cannot call this method when weapon is null.");
-        }
-    }
-
     _initWeaponRampSkillSelections() {
         const numSlots = this._weaponRO.rampSkills.length;
         return new Array(numSlots).fill(null); // Array of nulls
     }
 
-    constructor() {
+    constructor(db, weaponRO) {
         // Equipment Selections
         this._weaponRO = null;
-        this._weaponRampSkillSelections = null; // Initialize later
+        this._weaponRampSkillSelections = null;
 
         // TODO: Come up with a better name for RO data objects. This is confusing since _armourRO
         //       is actually a "map" of the actual RO data objects.
@@ -126,20 +116,22 @@ class Build {
                 talisman: this._generateEmptyDecoObj([]),
             };
 
+        this._setWeaponNoCheck(db, weaponRO);
         this._validateState();
     }
 
     // Usefully returns self for use in React state transitions.
-    setWeapon(db, weaponObj) {
+    _setWeaponNoCheck(db, weaponObj) {
         assert(isObj(db));
         assert(isMap(db.readonly.weapons.map.greatsword)); // Spot check for structure
         // weaponObj validity will be checked by verifying overall state
 
         this._weaponRO = weaponObj;
-        this._validateWeaponNotNull();
         this._weaponRampSkillSelections = this._initWeaponRampSkillSelections();
         this._decorationsRO.weapon = this._generateEmptyDecoObj(weaponObj.decoSlots);
-
+    }
+    setWeapon(...args) {
+        this._setWeaponNoCheck(...args);
         this._validateState();
         return this;
     }
@@ -149,7 +141,6 @@ class Build {
         assert(isMap(db.readonly.weapons.map.greatsword)); // Spot check for structure
         assert(isInt(position));
         assert(isStrOrNull(rampageSkillID));
-        this._validateWeaponNotNull();
 
         assert((position >= 0) && (position < this._weaponRampSkillSelections.length));
         // TODO: Verify if the rampage skill ID is valid?
@@ -170,7 +161,6 @@ class Build {
         // TODO: We don't handle null yet.
         if (armourPieceObj === null) throw new Error("Not yet implemented armour removal.");
 
-        this._validateWeaponNotNull();
         this._armourRO[armourPieceObj.slotID] = armourPieceObj;
         this._decorationsRO[armourPieceObj.slotID] = this._generateEmptyDecoObj(armourPieceObj.decorationSlots);
 
@@ -208,7 +198,7 @@ class Build {
         assert(isInt(decoSlotSize) && (decoSlotSize >= 0) && (decoSlotSize <= 3));
 
         this._talisman.decoSlots[decoSlotIndex] = decoSlotSize
-        this._decorationsRO.weapon = this._generateEmptyDecoObj(this._getAdjustedTalismanDecoSlots());
+        this._decorationsRO.talisman = this._generateEmptyDecoObj(this._getAdjustedTalismanDecoSlots());
 
         this._validateState();
         return this;
@@ -220,7 +210,6 @@ class Build {
         assert(isMap(db.readonly.weapons.map.greatsword)); // Spot check for structure
         // petalaceObj validity will be checked by verifying overall state
 
-        this._validateWeaponNotNull();
         this._petalaceRO = petalaceObj;
 
         this._validateState();
@@ -245,42 +234,29 @@ class Build {
         return this;
     }
 
-    // THIS WILL ONLY SUCCEED IF this._weaponRO IS NOT NULL
     getWeaponObjRO() {
-        this._validateWeaponNotNull();
         return this._weaponRO;
     }
 
-    // THIS WILL ONLY SUCCEED IF this._weaponRO IS NOT NULL
     getArmourObjsRO() {
-        this._validateWeaponNotNull();
         return this._armourRO;
     }
 
-    // THIS WILL ONLY SUCCEED IF this._weaponRO IS NOT NULL
     getTalismanSkills() {
-        this._validateWeaponNotNull();
         return this._talisman.skills;
     }
-    // THIS WILL ONLY SUCCEED IF this._weaponRO IS NOT NULL
     getTalismanDecoSlots() {
-        this._validateWeaponNotNull();
         //return this._talisman.decoSlots.filter((slotSize) => {return slotSize != 0});
         return this._talisman.decoSlots;
     }
 
-    // THIS WILL ONLY SUCCEED IF this._weaponRO IS NOT NULL
     getPetalaceObjRO() {
-        this._validateWeaponNotNull();
         return this._petalaceRO;
     }
 
-    // THIS WILL ONLY SUCCEED IF this._weaponRO IS NOT NULL
     getRenderingProps(db) {
         assert(isObj(db));
         assert(isMap(db.readonly.weapons.map.greatsword)); // Spot check for structure
-
-        this._validateWeaponNotNull();
 
         const calculatedTotalSkills = this._getCurrentSkills();
         const calculatedTotalSkillsRenderingProps = [];

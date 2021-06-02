@@ -7,12 +7,12 @@
 
 import * as check from "./check.js";
 import {downloadRawData} from "./database/database.js";
-import {MHRBuilderApp} from "./app.js";
+import {MHRBuilderAppInner} from "./app.js";
 
 const element = React.createElement;
 const assert = console.assert;
 
-class MHRBuilderAppContainer extends React.Component {
+class MHRBuilderApp extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -32,7 +32,7 @@ class MHRBuilderAppContainer extends React.Component {
             // TODO: Consider making a proper loading screen.
             return "Loading app... Loading data...";
         } else {
-            return element(MHRBuilderApp,
+            return element(MHRBuilderAppInner,
                 {
                 rawDataRO: this.state.rawData,
                 },
@@ -43,7 +43,7 @@ class MHRBuilderAppContainer extends React.Component {
 }
 
 ReactDOM.render(
-    element(MHRBuilderAppContainer, null),
+    element(MHRBuilderApp, null),
     document.getElementById("app-container")
 );
 

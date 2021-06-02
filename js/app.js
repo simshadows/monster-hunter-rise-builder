@@ -6,7 +6,7 @@
  */
 
 import * as check from "./check.js";
-import {downloadRawData} from "./database/database.js";
+import {GameData} from "./database/database.js";
 import {
     isArmourSlotStr,
     isDecoEquippableSlotStr,
@@ -29,7 +29,7 @@ import {DecorationSelectView} from "./component_groups/select_views/decoration_s
 const element = React.createElement;
 const assert = console.assert;
 
-class MHRBuilderApp extends React.Component {
+class MHRBuilderAppInner extends React.Component {
 
     static _viewEnumValues = new Set([
             "main",
@@ -50,10 +50,7 @@ class MHRBuilderApp extends React.Component {
                 view: "main", // Always start with the main view
                 //view: "talisman_select_view", // Useful for debugging
 
-                // Two states: Either it's null, or it's a fully-constructed raw data object. Don't modify it once it's built.
-                rawData: null,
-
-                build: new Build(),
+                build: new Build(this.props.rawDataRO, this.props.rawDataRO.getDefaultWeapon()),
             };
 
         this.myRefs = {
@@ -121,7 +118,7 @@ class MHRBuilderApp extends React.Component {
         check.isInt(weaponRO.affinity); // Spot check for structure
         this.setState({
                 view: "main", // Return back to main view
-                build: this.state.build.setWeapon(this.state.rawData, weaponRO)
+                build: this.state.build.setWeapon(this.props.rawDataRO, weaponRO)
             });
     }
     handleSelectRampSkill(position, rampSkillID) {
@@ -129,7 +126,7 @@ class MHRBuilderApp extends React.Component {
         check.isStrOrNull(rampSkillID);
 
         this.setState({
-                build: this.state.build.setRampageSkill(this.state.rawData, position, rampSkillID),
+                build: this.state.build.setRampageSkill(this.props.rawDataRO, position, rampSkillID),
             });
     }
 
@@ -139,7 +136,7 @@ class MHRBuilderApp extends React.Component {
         }
         this.setState({
                 view: "main", // Return back to main view
-                build: this.state.build.setArmourPiece(this.state.rawData, armourPieceRO)
+                build: this.state.build.setArmourPiece(this.props.rawDataRO, armourPieceRO)
             });
     }
 
@@ -151,7 +148,7 @@ class MHRBuilderApp extends React.Component {
         //check.isIntOrNull(skillLevel);
 
         this.setState({
-                build: this.state.build.setTalismanSkill(this.state.rawData, skillIndex, skillRO, skillLevel),
+                build: this.state.build.setTalismanSkill(this.props.rawDataRO, skillIndex, skillRO, skillLevel),
             });
     }
     handleSelectTalismanDecoSlotSize(decoSlotIndex, decoSlotSize) {
@@ -161,7 +158,7 @@ class MHRBuilderApp extends React.Component {
         assert((decoSlotSize >= 0) && (decoSlotSize <= 3));
 
         this.setState({
-                build: this.state.build.setTalismanDecoSlot(this.state.rawData, decoSlotIndex, decoSlotSize),
+                build: this.state.build.setTalismanDecoSlot(this.props.rawDataRO, decoSlotIndex, decoSlotSize),
             });
     }
 
@@ -172,7 +169,7 @@ class MHRBuilderApp extends React.Component {
         }
         this.setState({
                 view: "main", // Return back to main view
-                build: this.state.build.setPetalace(this.state.rawData, petalaceRO)
+                build: this.state.build.setPetalace(this.props.rawDataRO, petalaceRO)
             });
     }
     
@@ -187,7 +184,7 @@ class MHRBuilderApp extends React.Component {
 
         this.setState({
                 view: "main", // Return back to main view
-                build: this.state.build.setDecoration(this.state.rawData, decoRO, slotID, decoSlotID),
+                build: this.state.build.setDecoration(this.props.rawDataRO, decoRO, slotID, decoSlotID),
             });
     }
 
@@ -195,18 +192,6 @@ class MHRBuilderApp extends React.Component {
 
     async componentDidMount() {
         document.addEventListener("keydown", this.handleKeypress);
-
-        const rawData = await downloadRawData();
-
-        this.setState({
-                rawData: rawData,
-                build: this.state.build.setWeapon(rawData, rawData.getDefaultWeapon()),
-            });
-        this.myRefs.weaponSelectView.current.populateWithData(rawData.readonly.weapons.array);
-        this.myRefs.armourSelectView.current.populateWithData(rawData.readonly.armour.arrays);
-        this.myRefs.talismanSelectView.current.populateWithData(rawData.readonly.skills.array, rawData.readonly.skills.longIdsMap);
-        this.myRefs.petalaceSelectView.current.populateWithData(rawData.readonly.petalaces.array);
-        this.myRefs.decoSelectView.current.populateWithData(rawData.readonly.decorations.array);
     }
     componentWillUnmount() {
         // TODO: Verify event removal matching?
@@ -214,14 +199,12 @@ class MHRBuilderApp extends React.Component {
     }
 
     render() {
+        assert(this.props.rawDataRO instanceof GameData);
         assert(this.constructor._viewEnumValues.has(this.state.view));
 
-        // Don't load UI until all data is loaded.
-        // TODO: Consider making a proper loading screen.
-        if (this.state.rawData === null) {
-            return "Loading app... Loading data...";
-        }
         console.log(this.state);
+
+        const rawData = this.props.rawDataRO;
 
         const selectionViewIsVisible = {
                 buffs:       (this.state.view == "buffs_select_view" ),
@@ -234,7 +217,7 @@ class MHRBuilderApp extends React.Component {
             };
 
 
-        const buildRenderingProps = this.state.build.getRenderingProps(this.state.rawData);
+        const buildRenderingProps = this.state.build.getRenderingProps(this.props.rawDataRO);
 
         return element("div",
             {
@@ -274,6 +257,7 @@ class MHRBuilderApp extends React.Component {
                 element(WeaponSelectView,
                     {
                     ref: this.myRefs.weaponSelectView,
+                    allWeaponsArray: rawData.readonly.weapons.array,
                     currentSelectedWeapon: this.state.build.getWeaponObjRO(),
                     handleSelectWeapon: (weaponRO) => {this.handleSelectWeapon(weaponRO)},
                     },
@@ -303,6 +287,7 @@ class MHRBuilderApp extends React.Component {
                 element(ArmourSelectView,
                     {
                     ref: this.myRefs.armourSelectView,
+                    allArmourArrays: rawData.readonly.armour.arrays,
                     currentSelectedArmour: this.state.build.getArmourObjsRO(),
                     handleSelectArmourPiece: (armourPieceRO) => {this.handleSelectArmourPiece(armourPieceRO)},
                     },
@@ -318,6 +303,8 @@ class MHRBuilderApp extends React.Component {
                 element(TalismanSelectView,
                     {
                     ref: this.myRefs.talismanSelectView,
+                    allSkillsArray: rawData.readonly.skills.array,
+                    allSkillsMapLongIds: rawData.readonly.skills.longIdsMap,
                     currentSkills: this.state.build.getTalismanSkills(),
                     currentDecoSlots: this.state.build.getTalismanDecoSlots(),
                     handleSelectSkill: (...args) => {this.handleSelectTalismanSkill(...args)},
@@ -335,6 +322,7 @@ class MHRBuilderApp extends React.Component {
                 element(PetalaceSelectView,
                     {
                     ref: this.myRefs.petalaceSelectView,
+                    allPetalacesArray: rawData.readonly.petalaces.array,
                     currentSelectedPetalace: this.state.build.getPetalaceObjRO(),
                     handleSelectPetalace: (petalaceRO) => {this.handleSelectPetalace(petalaceRO)},
                     },
@@ -350,6 +338,7 @@ class MHRBuilderApp extends React.Component {
                 element(DecorationSelectView,
                     {
                     ref: this.myRefs.decoSelectView,
+                    allDecosArray: rawData.readonly.decorations.array,
                     handleSelectDecoration: (...args) => {this.handleSelectDecoration(...args)},
                     },
                     null,
@@ -359,5 +348,5 @@ class MHRBuilderApp extends React.Component {
     }
 }
 
-export {MHRBuilderApp};
+export {MHRBuilderAppInner};
 

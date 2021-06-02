@@ -16,30 +16,8 @@ const assert = console.assert;
 
 class TalismanSelectView extends React.Component {
 
-    constructor(props) {
-        super(props);
-        this.state = {
-                allSkills: null,
-                allSkillsMapLongIds: null,
-            };
-    }
-
-    populateWithData(allSkillsArray, allSkillsMapLongIds) {
-        // Verify incoming data
-        check.isArr(allSkillsArray);
-        check.isInt(allSkillsArray[0].maxLevels); // Spot check structure
-        check.isMap(allSkillsMapLongIds);
-
-        // State should be empty of data
-        assert(this.state.allSkills === null);
-        assert(this.state.allSkillsMapLongIds === null);
-
-        // Now, we add the data
-        this.setState({allSkills: allSkillsArray, allSkillsMapLongIds: allSkillsMapLongIds});
-    }
-
     handleSelectSkill(skillIndex, skillID, skillLevel) {
-        this.props.handleSelectSkill(skillIndex, this.state.allSkillsMapLongIds.get(skillID), skillLevel);
+        this.props.handleSelectSkill(skillIndex, this.props.allSkillsMapLongIds.get(skillID), skillLevel);
     }
 
     handleSelectDecoSlotSize(decoSlotIndex, slotSizeWrongType) {
@@ -86,7 +64,7 @@ class TalismanSelectView extends React.Component {
                 element(DropdownSelectWithNull,
                     {
                     currentlySelected: skillRO,
-                    optionsArray: this.state.allSkills,
+                    optionsArray: this.props.allSkillsArray,
                     handleOnChange: (_skillID) => {this.handleSelectSkill(skillIndex, _skillID, 1)},
                     cspecGetOptionValue: (_skillRO) => {return _skillRO.id},
                     cspecGetOptionName: (_skillRO) => {return _skillRO.name},
@@ -130,9 +108,9 @@ class TalismanSelectView extends React.Component {
     }
 
     render() {
-        if (this.state.allSkills === null) {
-            return "Error: You shouldn't be able to see this screen before the data is loaded.";
-        }
+        check.isObj(this.props.allSkillsArray);
+        check.isObj(this.props.allSkillsMapLongIds);
+
         check.isArr(this.props.currentSkills);
         assert(this.props.currentSkills.length == 2);
 

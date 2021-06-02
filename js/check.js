@@ -10,7 +10,7 @@ export function isDefined(obj) {
 }
 
 export function isObj(obj) {
-    const res = (typeof obj === "object");
+    const res = (typeof obj === "object") && (obj !== null);
     console.assert(res, "Expected an Object type. Instead got:", obj);
     return res;
 }

@@ -83,22 +83,8 @@ class PetalaceSelectView extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-                allPetalaces: null,
                 filterByName: "", // Empty string by default
             };
-    }
-
-    populateWithData(allPetalaces) {
-        // Verify incoming data
-        check.isArr(allPetalaces);
-        check.isInt(allPetalaces[0].healthGain); // Spot check structure
-        check.isInt(allPetalaces[0].staminaUp); // Spot check structure
-
-        // State should be empty of data
-        assert(this.state.allPetalaces === null);
-
-        // Now, we add the data
-        this.setState({allPetalaces: allPetalaces});
     }
 
     handleNameFilterTextChange(newText) {
@@ -114,14 +100,12 @@ class PetalaceSelectView extends React.Component {
         const op = (element) => {
                 return element.filterHelpers.nameLower.includes(this.state.filterByName);
             };
-        return this.state.allPetalaces.filter(op);
+        return this.props.allPetalacesArray.filter(op);
     }
 
     render() {
-        if (this.state.allPetalaces === null) {
-            return "Error: You shouldn't be able to see this screen before the data is loaded.";
-        }
-        check.isObj(this.props.currentSelectedPetalace);
+        check.isObj(this.props.allPetalacesArray);
+        check.isObjOrNull(this.props.currentSelectedPetalace);
         if (this.props.currentSelectedPetalace != null) { // Allowed to be null
             check.isInt(this.props.currentSelectedPetalace.healthGain); // Spot check structure
             check.isInt(this.props.currentSelectedPetalace.staminaUp); // Spot check structure
