@@ -6,6 +6,7 @@
     "tier": "lr",
     "rarity": 1,
     "setName": "Kamura",
+    "searchHint": "",
 
     "prefix": "Kamura",
     "namingScheme": "kamura",
@@ -24,6 +25,7 @@
     "tier": "lr",
     "rarity": 1,
     "setName": "Leather",
+    "searchHint": "",
 
     "prefix": "Leather",
     "namingScheme": "scheme_1",
@@ -42,6 +44,7 @@
     "tier": "lr",
     "rarity": 1,
     "setName": "Chainmail",
+    "searchHint": "",
 
     "prefix": "Chainmail",
     "namingScheme": "scheme_1",
@@ -60,6 +63,7 @@
     "tier": "lr",
     "rarity": 1,
     "setName": "Hunter",
+    "searchHint": "",
 
     "prefix": "Hunter's",
     "namingScheme": "scheme_2",
@@ -78,6 +82,7 @@
     "tier": "lr",
     "rarity": 1,
     "setName": "Izuchi",
+    "searchHint": "Great Izuchi",
 
     "prefix": "Izuchi",
     "namingScheme": "scheme_3",
@@ -96,6 +101,7 @@
     "tier": "lr",
     "rarity": 1,
     "setName": "Baggi",
+    "searchHint": "Great Baggi",
 
     "prefix": "Baggi",
     "namingScheme": "scheme_2",
@@ -114,6 +120,7 @@
     "tier": "lr",
     "rarity": 1,
     "setName": "Arzuros",
+    "searchHint": "",
 
     "prefix": "Arzuros",
     "namingScheme": "scheme_2",
@@ -132,6 +139,7 @@
     "tier": "lr",
     "rarity": 1,
     "setName": "Lagombi",
+    "searchHint": "",
 
     "prefix": "Lagombi",
     "namingScheme": "scheme_2",
@@ -150,6 +158,7 @@
     "tier": "lr",
     "rarity": 2,
     "setName": "Alloy",
+    "searchHint": "",
 
     "prefix": "Alloy",
     "namingScheme": "scheme_2",
@@ -168,6 +177,7 @@
     "tier": "lr",
     "rarity": 2,
     "setName": "Bone",
+    "searchHint": "",
 
     "prefix": "Bone",
     "namingScheme": "scheme_2",
@@ -186,6 +196,7 @@
     "tier": "lr",
     "rarity": 2,
     "setName": "Edel",
+    "searchHint": "",
 
     "prefix": "Edel",
     "namingScheme": "scheme_4",
@@ -204,6 +215,7 @@
     "tier": "lr",
     "rarity": 2,
     "setName": "Shell-Studded",
+    "searchHint": "",
 
     "prefix": [
         "S. Studded",
@@ -228,6 +240,7 @@
     "tier": "lr",
     "rarity": 2,
     "setName": "Rhenoplos",
+    "searchHint": "",
 
     "prefix": "Rhenoplos",
     "namingScheme": "scheme_3",
@@ -246,6 +259,7 @@
     "tier": "lr",
     "rarity": 2,
     "setName": "Droth",
+    "searchHint": "",
 
     "prefix": "Droth",
     "namingScheme": "scheme_2",
@@ -264,6 +278,7 @@
     "tier": "lr",
     "rarity": 2,
     "setName": "Bnahabra",
+    "searchHint": "",
 
     "prefix": "Bnahabra",
     "namingScheme": "bnahabra",
@@ -282,6 +297,7 @@
     "tier": "lr",
     "rarity": 2,
     "setName": "Jaggi",
+    "searchHint": "",
 
     "prefix": "Jaggi",
     "namingScheme": "jaggi",
@@ -300,6 +316,7 @@
     "tier": "lr",
     "rarity": 2,
     "setName": "Kulu",
+    "searchHint": "Kulu-Ya-Ku",
 
     "prefix": "Kulu-Ya-Ku",
     "namingScheme": "scheme_3",
@@ -318,6 +335,7 @@
     "tier": "lr",
     "rarity": 2,
     "setName": "Wroggi",
+    "searchHint": "Great Wroggi",
 
     "prefix": "Wroggi",
     "namingScheme": "scheme_2",
@@ -336,6 +354,7 @@
     "tier": "lr",
     "rarity": 2,
     "setName": "Aknosom",
+    "searchHint": "",
 
     "prefix": "Aknosom",
     "namingScheme": "scheme_3",
@@ -354,6 +373,7 @@
     "tier": "lr",
     "rarity": 2,
     "setName": "Ludroth",
+    "searchHint": "Royal Ludroth",
 
     "prefix": "Ludroth",
     "namingScheme": "scheme_3",
@@ -372,6 +392,7 @@
     "tier": "lr",
     "rarity": 2,
     "setName": "Barroth",
+    "searchHint": "",
 
     "prefix": "Barroth",
     "namingScheme": "scheme_2",
@@ -390,6 +411,7 @@
     "tier": "lr",
     "rarity": 2,
     "setName": "Khezu",
+    "searchHint": "",
 
     "prefix": "Khezu",
     "namingScheme": "scheme_2",
@@ -408,6 +430,7 @@
     "tier": "lr",
     "rarity": 2,
     "setName": "Tetranadon",
+    "searchHint": "",
 
     "prefix": "Tetranadon",
     "namingScheme": "scheme_3",
@@ -426,6 +449,7 @@
     "tier": "lr",
     "rarity": 2,
     "setName": "Ingot",
+    "searchHint": "",
 
     "prefix": "Ingot",
     "namingScheme": "scheme_2",
@@ -444,6 +468,7 @@
     "tier": "lr",
     "rarity": 2,
     "setName": "Death Stench",
+    "searchHint": "",
 
     "prefix": "Death Stench",
     "namingScheme": "death_stench",
@@ -462,6 +487,7 @@
     "tier": "lr",
     "rarity": 2,
     "setName": "Mosgharl",
+    "searchHint": "",
 
     "prefix": "Mosgharl",
     "namingScheme": "scheme_4",
@@ -480,6 +506,7 @@
     "tier": "lr",
     "rarity": 2,
     "setName": "Gargwa Mask",
+    "searchHint": "",
 
     "prefix": "Gargwa",
     "namingScheme": "mask",
@@ -498,6 +525,7 @@
     "tier": "lr",
     "rarity": 2,
     "setName": "Bullfango Mask",
+    "searchHint": "",
 
     "prefix": "Bullfango",
     "namingScheme": "mask",
@@ -516,6 +544,7 @@
     "tier": "lr",
     "rarity": 2,
     "setName": "Uroktor",
+    "searchHint": "",
 
     "prefix": "Uroktor",
     "namingScheme": "uroktor",
@@ -534,6 +563,7 @@
     "tier": "lr",
     "rarity": 2,
     "setName": "Remobra",
+    "searchHint": "",
 
     "prefix": "Remobra",
     "namingScheme": "remobra",
@@ -552,6 +582,7 @@
     "tier": "lr",
     "rarity": 2,
     "setName": "Jaggi Mask",
+    "searchHint": "",
 
     "prefix": "Jaggi",
     "namingScheme": "mask",
@@ -570,6 +601,7 @@
     "tier": "lr",
     "rarity": 2,
     "setName": "Volvidon",
+    "searchHint": "",
 
     "prefix": "Volvidon",
     "namingScheme": "scheme_2",
@@ -588,6 +620,7 @@
     "tier": "lr",
     "rarity": 2,
     "setName": "Bishaten",
+    "searchHint": "",
 
     "prefix": "Bishaten",
     "namingScheme": "scheme_2",
@@ -606,6 +639,7 @@
     "tier": "lr",
     "rarity": 2,
     "setName": "Pukei",
+    "searchHint": "Pukei-Pukei",
 
     "prefix": [
         "Pukei-Pukei",
@@ -630,6 +664,7 @@
     "tier": "lr",
     "rarity": 2,
     "setName": "Basarios",
+    "searchHint": "",
 
     "prefix": "Basarios",
     "namingScheme": "scheme_2",
@@ -648,6 +683,7 @@
     "tier": "lr",
     "rarity": 2,
     "setName": "Somnacanth",
+    "searchHint": "",
 
     "prefix": "Somnacanth",
     "namingScheme": "scheme_3",
@@ -666,6 +702,7 @@
     "tier": "lr",
     "rarity": 2,
     "setName": "Rathian",
+    "searchHint": "",
 
     "prefix": "Rathian",
     "namingScheme": "scheme_3",
@@ -684,6 +721,7 @@
     "tier": "lr",
     "rarity": 2,
     "setName": "Barioth",
+    "searchHint": "",
 
     "prefix": "Barioth",
     "namingScheme": "scheme_2",
@@ -702,6 +740,7 @@
     "tier": "lr",
     "rarity": 2,
     "setName": "Kadachi",
+    "searchHint": "Tobi-Kadachi",
 
     "prefix": [
         "Kadachi",
@@ -726,6 +765,7 @@
     "tier": "lr",
     "rarity": 3,
     "setName": "Rhopessa",
+    "searchHint": "",
 
     "prefix": "Rhopessa",
     "namingScheme": "rhopessa",
@@ -744,6 +784,7 @@
     "tier": "lr",
     "rarity": 3,
     "setName": "Jelly",
+    "searchHint": "",
 
     "prefix": "Jelly",
     "namingScheme": "jelly",
@@ -762,6 +803,7 @@
     "tier": "lr",
     "rarity": 3,
     "setName": "Medium",
+    "searchHint": "",
 
     "prefix": "Medium's",
     "namingScheme": "medium",
@@ -780,6 +822,7 @@
     "tier": "lr",
     "rarity": 3,
     "setName": "Channeler",
+    "searchHint": "",
 
     "prefix": "Channeler's",
     "namingScheme": "channeler",
@@ -798,6 +841,7 @@
     "tier": "lr",
     "rarity": 3,
     "setName": "Sinister",
+    "searchHint": "Magnamalo",
 
     "prefix": "Sinister",
     "namingScheme": "sinister",
@@ -816,6 +860,7 @@
     "tier": "lr",
     "rarity": 3,
     "setName": "Anja",
+    "searchHint": "Anjanath",
 
     "prefix": "Anjanath",
     "namingScheme": "scheme_2",
@@ -834,6 +879,7 @@
     "tier": "lr",
     "rarity": 3,
     "setName": "Nargacuga",
+    "searchHint": "",
 
     "prefix": "Nargacuga",
     "namingScheme": "scheme_3",
@@ -852,6 +898,7 @@
     "tier": "lr",
     "rarity": 3,
     "setName": "Mizutsune",
+    "searchHint": "",
 
     "prefix": "Mizutsune",
     "namingScheme": "scheme_3",
@@ -870,6 +917,7 @@
     "tier": "lr",
     "rarity": 3,
     "setName": "Rathalos",
+    "searchHint": "",
 
     "prefix": "Rathalos",
     "namingScheme": "scheme_3",
@@ -888,6 +936,7 @@
     "tier": "lr",
     "rarity": 3,
     "setName": "Zinogre",
+    "searchHint": "",
 
     "prefix": "Zinogre",
     "namingScheme": "scheme_3",
@@ -906,6 +955,7 @@
     "tier": "lr",
     "rarity": 3,
     "setName": "Skull",
+    "searchHint": "",
 
     "prefix": "Skull",
     "namingScheme": "visage",
@@ -924,6 +974,7 @@
     "tier": "lr",
     "rarity": 3,
     "setName": "Goss Harag",
+    "searchHint": "",
 
     "prefix": "Goss Harag",
     "namingScheme": "scheme_3",
@@ -942,6 +993,7 @@
     "tier": "lr",
     "rarity": 3,
     "setName": "Almudron",
+    "searchHint": "",
 
     "prefix": "Almudron",
     "namingScheme": "scheme_2",
@@ -960,6 +1012,7 @@
     "tier": "lr",
     "rarity": 3,
     "setName": "Tigrex",
+    "searchHint": "",
 
     "prefix": "Tigrex",
     "namingScheme": "scheme_3",
@@ -978,6 +1031,7 @@
     "tier": "lr",
     "rarity": 3,
     "setName": "Diablos",
+    "searchHint": "",
 
     "prefix": "Diablos",
     "namingScheme": "scheme_2",
@@ -999,6 +1053,7 @@
     "tier": "hr",
     "rarity": 4,
     "setName": "Kamura S",
+    "searchHint": "",
 
     "prefix": "Kamura",
     "namingScheme": "kamura",
@@ -1017,6 +1072,7 @@
     "tier": "hr",
     "rarity": 4,
     "setName": "Leather S",
+    "searchHint": "",
 
     "prefix": "Leather",
     "namingScheme": "scheme_1",
@@ -1035,6 +1091,7 @@
     "tier": "hr",
     "rarity": 4,
     "setName": "Chainmail S",
+    "searchHint": "",
 
     "prefix": "Chainmail",
     "namingScheme": "scheme_1",
@@ -1053,6 +1110,7 @@
     "tier": "hr",
     "rarity": 4,
     "setName": "Hunter S",
+    "searchHint": "",
 
     "prefix": "Hunter's",
     "namingScheme": "scheme_2",
@@ -1071,6 +1129,7 @@
     "tier": "hr",
     "rarity": 4,
     "setName": "Alloy S",
+    "searchHint": "",
 
     "prefix": "Alloy",
     "namingScheme": "scheme_2",
@@ -1089,6 +1148,7 @@
     "tier": "hr",
     "rarity": 4,
     "setName": "Bone S",
+    "searchHint": "",
 
     "prefix": "Bone",
     "namingScheme": "scheme_2",
@@ -1107,6 +1167,7 @@
     "tier": "hr",
     "rarity": 4,
     "setName": "Bnahabra S",
+    "searchHint": "",
 
     "prefix": "Bnahabra",
     "namingScheme": "bnahabra",
@@ -1125,6 +1186,7 @@
     "tier": "hr",
     "rarity": 4,
     "setName": "Izuchi S",
+    "searchHint": "Great Izuchi",
 
     "prefix": "Izuchi",
     "namingScheme": "scheme_3",
@@ -1143,6 +1205,7 @@
     "tier": "hr",
     "rarity": 4,
     "setName": "Baggi S",
+    "searchHint": "Great Baggi",
 
     "prefix": "Baggi",
     "namingScheme": "scheme_2",
@@ -1161,6 +1224,7 @@
     "tier": "hr",
     "rarity": 4,
     "setName": "Kulu S",
+    "searchHint": "Kulu-Ya-Ku",
 
     "prefix": "Kulu-Ya-Ku",
     "namingScheme": "scheme_3",
@@ -1179,6 +1243,7 @@
     "tier": "hr",
     "rarity": 4,
     "setName": "Wroggi S",
+    "searchHint": "Great Wroggi",
 
     "prefix": "Wroggi",
     "namingScheme": "scheme_2",
@@ -1197,6 +1262,7 @@
     "tier": "hr",
     "rarity": 4,
     "setName": "Arzuros S",
+    "searchHint": "",
 
     "prefix": "Arzuros",
     "namingScheme": "scheme_2",
@@ -1215,6 +1281,7 @@
     "tier": "hr",
     "rarity": 4,
     "setName": "Lagombi S",
+    "searchHint": "",
 
     "prefix": "Lagombi",
     "namingScheme": "scheme_2",
@@ -1233,6 +1300,7 @@
     "tier": "hr",
     "rarity": 4,
     "setName": "Aknosom S",
+    "searchHint": "",
 
     "prefix": "Aknosom",
     "namingScheme": "scheme_3",
@@ -1251,6 +1319,7 @@
     "tier": "hr",
     "rarity": 4,
     "setName": "Khezu S",
+    "searchHint": "",
 
     "prefix": "Khezu",
     "namingScheme": "scheme_2",
@@ -1269,6 +1338,7 @@
     "tier": "hr",
     "rarity": 4,
     "setName": "Tetranadon S",
+    "searchHint": "",
 
     "prefix": "Tetranadon",
     "namingScheme": "scheme_3",
@@ -1287,6 +1357,7 @@
     "tier": "hr",
     "rarity": 4,
     "setName": "Ingot S",
+    "searchHint": "",
 
     "prefix": "Ingot",
     "namingScheme": "scheme_2",
@@ -1305,6 +1376,7 @@
     "tier": "hr",
     "rarity": 4,
     "setName": "Edel S",
+    "searchHint": "",
 
     "prefix": "Edel",
     "namingScheme": "scheme_4",
@@ -1323,6 +1395,7 @@
     "tier": "hr",
     "rarity": 4,
     "setName": "Slagtoth S",
+    "searchHint": "",
 
     "prefix": "Slagtoth",
     "namingScheme": "slagtoth",
@@ -1341,6 +1414,7 @@
     "tier": "hr",
     "rarity": 4,
     "setName": "Rhenoplos S",
+    "searchHint": "",
 
     "prefix": "Rhenoplos",
     "namingScheme": "scheme_3",
@@ -1359,6 +1433,7 @@
     "tier": "hr",
     "rarity": 4,
     "setName": "Bullfango Mask S",
+    "searchHint": "",
 
     "prefix": "Bullfango",
     "namingScheme": "mask",
@@ -1377,6 +1452,7 @@
     "tier": "hr",
     "rarity": 4,
     "setName": "Droth S",
+    "searchHint": "",
 
     "prefix": "Droth",
     "namingScheme": "scheme_2",
@@ -1395,6 +1471,7 @@
     "tier": "hr",
     "rarity": 4,
     "setName": "Jaggi S",
+    "searchHint": "",
 
     "prefix": "Jaggi",
     "namingScheme": "jaggi",
@@ -1413,6 +1490,7 @@
     "tier": "hr",
     "rarity": 4,
     "setName": "Jaggi Mask S",
+    "searchHint": "",
 
     "prefix": "Jaggi",
     "namingScheme": "mask",
@@ -1431,6 +1509,7 @@
     "tier": "hr",
     "rarity": 4,
     "setName": "Ludroth S",
+    "searchHint": "Royal Ludroth",
 
     "prefix": "Ludroth",
     "namingScheme": "scheme_3",
@@ -1449,6 +1528,7 @@
     "tier": "hr",
     "rarity": 4,
     "setName": "Barroth S",
+    "searchHint": "",
 
     "prefix": "Barroth",
     "namingScheme": "scheme_2",
@@ -1467,6 +1547,7 @@
     "tier": "hr",
     "rarity": 5,
     "setName": "Bishaten S",
+    "searchHint": "",
 
     "prefix": "Bishaten",
     "namingScheme": "scheme_2",
@@ -1485,6 +1566,7 @@
     "tier": "hr",
     "rarity": 5,
     "setName": "Pukei S",
+    "searchHint": "Pukei-Pukei",
 
     "prefix": [
         "Pukei-Pukei",
@@ -1509,6 +1591,7 @@
     "tier": "hr",
     "rarity": 5,
     "setName": "Jyura",
+    "searchHint": "Jyuratodus",
 
     "prefix": "Jyuratodus",
     "namingScheme": "scheme_2",
@@ -1527,6 +1610,7 @@
     "tier": "hr",
     "rarity": 5,
     "setName": "Basarios S",
+    "searchHint": "",
 
     "prefix": "Basarios",
     "namingScheme": "scheme_2",
@@ -1545,6 +1629,7 @@
     "tier": "hr",
     "rarity": 5,
     "setName": "Rathian S",
+    "searchHint": "",
 
     "prefix": "Rathian",
     "namingScheme": "scheme_3",
@@ -1563,6 +1648,7 @@
     "tier": "hr",
     "rarity": 5,
     "setName": "Skull S",
+    "searchHint": "",
 
     "prefix": "Skull",
     "namingScheme": "visage",
@@ -1581,6 +1667,7 @@
     "tier": "hr",
     "rarity": 5,
     "setName": "Chrome Metal",
+    "searchHint": "",
 
     "prefix": "Chrome Metal",
     "namingScheme": "chrome_metal",
@@ -1599,6 +1686,7 @@
     "tier": "hr",
     "rarity": 5,
     "setName": "Dober",
+    "searchHint": "",
 
     "prefix": "Dober",
     "namingScheme": "scheme_2",
@@ -1617,6 +1705,7 @@
     "tier": "hr",
     "rarity": 5,
     "setName": "Shell-Studded S",
+    "searchHint": "",
 
     "prefix": [
         "S. Studded",
@@ -1641,6 +1730,7 @@
     "tier": "hr",
     "rarity": 5,
     "setName": "Death Stench S",
+    "searchHint": "",
 
     "prefix": "Death Stench",
     "namingScheme": "death_stench",
@@ -1659,6 +1749,7 @@
     "tier": "hr",
     "rarity": 5,
     "setName": "Mosgharl S",
+    "searchHint": "",
 
     "prefix": "Mosgharl",
     "namingScheme": "scheme_4",
@@ -1677,6 +1768,7 @@
     "tier": "hr",
     "rarity": 5,
     "setName": "Medium S",
+    "searchHint": "",
 
     "prefix": "Medium's",
     "namingScheme": "medium",
@@ -1695,6 +1787,7 @@
     "tier": "hr",
     "rarity": 5,
     "setName": "Channeler S",
+    "searchHint": "",
 
     "prefix": "Channeler's",
     "namingScheme": "channeler",
@@ -1713,6 +1806,7 @@
     "tier": "hr",
     "rarity": 4,
     "setName": "Uroktor S",
+    "searchHint": "",
 
     "prefix": "Uroktor",
     "namingScheme": "uroktor",
@@ -1731,6 +1825,7 @@
     "tier": "hr",
     "rarity": 5,
     "setName": "Remobra S",
+    "searchHint": "",
 
     "prefix": "Remobra",
     "namingScheme": "remobra",
@@ -1749,6 +1844,7 @@
     "tier": "hr",
     "rarity": 5,
     "setName": "Somnacanth S",
+    "searchHint": "",
 
     "prefix": "Somnacanth",
     "namingScheme": "scheme_3",
@@ -1767,6 +1863,7 @@
     "tier": "hr",
     "rarity": 5,
     "setName": "Barioth S",
+    "searchHint": "",
 
     "prefix": "Barioth",
     "namingScheme": "scheme_2",
@@ -1785,6 +1882,7 @@
     "tier": "hr",
     "rarity": 5,
     "setName": "Kadachi S",
+    "searchHint": "Tobi-Kadachi",
 
     "prefix": [
         "Kadachi",
@@ -1809,6 +1907,7 @@
     "tier": "hr",
     "rarity": 6,
     "setName": "Anja S",
+    "searchHint": "Anjanath",
 
     "prefix": "Anjanath",
     "namingScheme": "scheme_2",
@@ -1827,6 +1926,7 @@
     "tier": "hr",
     "rarity": 6,
     "setName": "Nargacuga S",
+    "searchHint": "",
 
     "prefix": "Nargacuga",
     "namingScheme": "scheme_3",
@@ -1845,6 +1945,7 @@
     "tier": "hr",
     "rarity": 6,
     "setName": "Mizutsune S",
+    "searchHint": "",
 
     "prefix": "Mizutsune",
     "namingScheme": "scheme_3",
@@ -1863,6 +1964,7 @@
     "tier": "hr",
     "rarity": 6,
     "setName": "Rathalos S",
+    "searchHint": "",
 
     "prefix": "Rathalos",
     "namingScheme": "scheme_3",
@@ -1881,6 +1983,7 @@
     "tier": "hr",
     "rarity": 6,
     "setName": "Zinogre S",
+    "searchHint": "",
 
     "prefix": "Zinogre",
     "namingScheme": "scheme_3",
@@ -1899,6 +2002,7 @@
     "tier": "hr",
     "rarity": 6,
     "setName": "Rhopessa S",
+    "searchHint": "",
 
     "prefix": "Rhopessa",
     "namingScheme": "rhopessa",
@@ -1917,6 +2021,7 @@
     "tier": "hr",
     "rarity": 6,
     "setName": "Jelly S",
+    "searchHint": "",
 
     "prefix": "Jelly",
     "namingScheme": "jelly",
@@ -1935,6 +2040,7 @@
     "tier": "hr",
     "rarity": 6,
     "setName": "Gargwa Mask S",
+    "searchHint": "",
 
     "prefix": "Gargwa",
     "namingScheme": "mask",
@@ -1953,6 +2059,7 @@
     "tier": "hr",
     "rarity": 6,
     "setName": "Sinister S",
+    "searchHint": "Magnamalo",
 
     "prefix": "Sinister",
     "namingScheme": "sinister",
@@ -1971,6 +2078,7 @@
     "tier": "hr",
     "rarity": 6,
     "setName": "Goss Harag S",
+    "searchHint": "",
 
     "prefix": "Goss Harag",
     "namingScheme": "scheme_3",
@@ -1989,6 +2097,7 @@
     "tier": "hr",
     "rarity": 6,
     "setName": "Almudron S",
+    "searchHint": "",
 
     "prefix": "Almudron",
     "namingScheme": "scheme_2",
@@ -2007,6 +2116,7 @@
     "tier": "hr",
     "rarity": 6,
     "setName": "Tigrex S",
+    "searchHint": "",
 
     "prefix": "Tigrex",
     "namingScheme": "scheme_3",
@@ -2025,6 +2135,7 @@
     "tier": "hr",
     "rarity": 6,
     "setName": "Diablos S",
+    "searchHint": "",
 
     "prefix": "Diablos",
     "namingScheme": "scheme_2",
@@ -2043,6 +2154,7 @@
     "tier": "hr",
     "rarity": 6,
     "setName": "Rakna-Kadaki",
+    "searchHint": "",
 
     "prefix": "Rakna",
     "namingScheme": "rakna_kadaki",
@@ -2061,6 +2173,7 @@
     "tier": "hr",
     "rarity": 7,
     "setName": "Golden",
+    "searchHint": "Rajang",
 
     "prefix": "Golden",
     "namingScheme": "golden",
@@ -2079,6 +2192,7 @@
     "tier": "hr",
     "rarity": 7,
     "setName": "Damascus",
+    "searchHint": "",
 
     "prefix": "Damascus",
     "namingScheme": "scheme_2",
@@ -2097,6 +2211,7 @@
     "tier": "hr",
     "rarity": 7,
     "setName": "Flame Seal",
+    "searchHint": "",
 
     "prefix": "Flame",
     "namingScheme": "flame_seal",
@@ -2115,6 +2230,7 @@
     "tier": "hr",
     "rarity": 7,
     "setName": "Kushala",
+    "searchHint": "",
 
     "prefix": "Kushala",
     "namingScheme": "kushala",
@@ -2133,6 +2249,7 @@
     "tier": "hr",
     "rarity": 7,
     "setName": "Mizuha",
+    "searchHint": "Chameleos",
 
     "prefix": "Mizuha",
     "namingScheme": "mizuha",
@@ -2151,6 +2268,7 @@
     "tier": "hr",
     "rarity": 7,
     "setName": "Kaiser",
+    "searchHint": "Teostra",
 
     "prefix": "Kaiser",
     "namingScheme": "kaiser",
@@ -2169,6 +2287,7 @@
     "tier": "hr",
     "rarity": 7,
     "setName": "Bazel",
+    "searchHint": "Bazelgeuse",
 
     "prefix": "Bazelgeuse",
     "namingScheme": "scheme_3",
@@ -2187,6 +2306,7 @@
     "tier": "hr",
     "rarity": 7,
     "setName": "Ibushi",
+    "searchHint": "",
 
     "prefix": "",
     "namingScheme": "ibushi",
@@ -2205,6 +2325,7 @@
     "tier": "hr",
     "rarity": 7,
     "setName": "Narwa",
+    "searchHint": "",
 
     "prefix": "",
     "namingScheme": "narwa",
@@ -2223,6 +2344,7 @@
     "tier": "hr",
     "rarity": 7,
     "setName": "Crimson Valstrax",
+    "searchHint": "",
 
     "prefix": "Valstrax",
     "namingScheme": "scheme_3",

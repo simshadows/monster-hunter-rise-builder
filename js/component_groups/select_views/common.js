@@ -21,6 +21,7 @@ class NameFilterTextField extends React.Component {
     }
 
     render() {
+        check.isStr(this.props.placeholderText);
         check.isFunction(this.props.onChange);
 
         return element("div",
@@ -31,6 +32,7 @@ class NameFilterTextField extends React.Component {
                 {
                 type: "text",
                 className: "select-view-name-filter-field",
+                placeholder: this.props.placeholderText,
                 onChange: (e) => {this.handleChange(e);},
                 },
                 null,

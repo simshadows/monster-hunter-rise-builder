@@ -107,8 +107,19 @@ class DecorationSelectView extends React.Component {
 
     _getFilteredDecosArray() {
         const op = (element) => {
+                let matchesASkillName = false;
+                for (const [skillRO, skillLevel] of element.skills) {
+                    if (skillRO.filterHelpers.nameLower.includes(this.state.filterByName)) {
+                        matchesASkillName = true;
+                        break;
+                    }
+                }
+
                 return (
-                    element.filterHelpers.nameLower.includes(this.state.filterByName)
+                    (
+                        element.filterHelpers.nameLower.includes(this.state.filterByName)
+                        || matchesASkillName
+                    )
                     && (element.slotSize <= this.state.queryMaxDecoSlotSize)
                 );
             };
@@ -132,6 +143,7 @@ class DecorationSelectView extends React.Component {
             "Selecting for: " + this.state.querySlotID + ", slot " + parseInt(this.state.queryDecoSlotID + 1) + ", size " + parseInt(this.state.queryMaxDecoSlotSize),
             element(NameFilterTextField,
                 {
+                placeholderText: "Filter by decoration or skill name",
                 onChange: (newText) => {this.handleNameFilterTextChange(newText)},
                 },
                 null,

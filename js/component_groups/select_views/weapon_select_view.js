@@ -203,6 +203,7 @@ class WeaponSelectView extends React.Component {
             },
             element(NameFilterTextField,
                 {
+                placeholderText: "Filter by weapon or tree name",
                 onChange: (newText) => {this.handleNameFilterTextChange(newText)},
                 },
                 null,

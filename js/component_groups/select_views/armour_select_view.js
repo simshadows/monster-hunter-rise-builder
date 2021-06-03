@@ -125,6 +125,7 @@ class ArmourSelectView extends React.Component {
         this.state = {
                 filterByName: "", // Empty string by default
                 filterBySlotID: "head", // Empty string, or an armour slot
+                filterByTier: "hr", // Empty string, or a Tier tag
             };
     }
 
@@ -151,9 +152,33 @@ class ArmourSelectView extends React.Component {
         }
     }
 
+    handleTierFilterCheckboxChange(e) {
+        if (this.state.filterByTier == "hr") {
+            this.setState({filterByTier: ""});
+        } else {
+            this.setState({filterByTier: "hr"});
+        }
+    }
+
     _getFilteredArmourArray() {
         const filterFn = (element) => {
-                return element.filterHelpers.nameLower.includes(this.state.filterByName);
+                let matchesASkillName = false;
+                for (const [skillRO, skillLevel] of element.skills) {
+                    if (skillRO.filterHelpers.nameLower.includes(this.state.filterByName)) {
+                        matchesASkillName = true;
+                        break;
+                    }
+                }
+
+                return (
+                    (
+                        element.filterHelpers.nameLower.includes(this.state.filterByName)
+                        || element.filterHelpers.setNameLower.includes(this.state.filterByName)
+                        || element.filterHelpers.hintStrLower.includes(this.state.filterByName)
+                        || matchesASkillName
+                    )
+                    && ((this.state.filterByTier == "") || (element.tierID == this.state.filterByTier))
+                );
             };
 
         const arrays = [];
@@ -176,7 +201,26 @@ class ArmourSelectView extends React.Component {
         );
     }
 
-    _renderEmptyEndlineFilterBox() {
+    _renderTierFilterBox() {
+        return element("div",
+            {
+            className: "select-view-endline-filter-box",
+            },
+            element("label",
+                null,
+                element("input",
+                    {
+                    type: "checkbox",
+                    checked: (this.state.filterByTier == "hr"),
+                    onChange: (e) => {this.handleTierFilterCheckboxChange(e)},
+                    },
+                    null,
+                ),
+                "HR Only",
+            ),
+        );
+    }
+    _renderEmptyTierFilterBox() {
         return element("div",
             {
             className: "select-view-endline-filter-box",
@@ -200,6 +244,7 @@ class ArmourSelectView extends React.Component {
             },
             element(NameFilterTextField,
                 {
+                placeholderText: "Filter by piece, set, monster, or skill name",
                 onChange: (newText) => {this.handleNameFilterTextChange(newText)},
                 },
                 null,
@@ -208,14 +253,13 @@ class ArmourSelectView extends React.Component {
                 {
                 className: "select-view-type-filter-box",
                 },
-                //this._renderEndlineFilterBox(),
-                this._renderEmptyEndlineFilterBox(),
+                this._renderTierFilterBox(),
                 this._renderCategoryFilterButton("head"),
                 this._renderCategoryFilterButton("chest"),
                 this._renderCategoryFilterButton("arms"),
                 this._renderCategoryFilterButton("waist"),
                 this._renderCategoryFilterButton("legs"),
-                this._renderEmptyEndlineFilterBox(),
+                this._renderEmptyTierFilterBox(),
             ),
             element(ArmourSelectionTable,
                 {

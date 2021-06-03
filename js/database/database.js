@@ -329,6 +329,7 @@ async function downloadAllRawArmourData() {
         assert(isTierStr(armourRawDataObj.tier), "Armour set tier must be a valid string. Armour set ID: " + armourSetID);
         assert(isInt(armourRawDataObj.rarity), errorIDString);
         assert(isNonEmptyStr(armourRawDataObj.setName), errorIDString);
+        assert(isStr(armourRawDataObj.searchHint), errorIDString); // Can be empty string
 
         if (armourRawDataObj.prefix instanceof Array) {
             assert(
@@ -392,6 +393,8 @@ async function downloadAllRawArmourData() {
                     iconImgPath: armourSlotAndRarityToIconImgPath(slotID, armourRawDataObj.rarity),
                 };
                 newPiece.filterHelpers.nameLower = toNameFilterString(newPiece.name);
+                newPiece.filterHelpers.setNameLower = toNameFilterString(newPiece.setName);
+                newPiece.filterHelpers.hintStrLower = toNameFilterString(armourRawDataObj.searchHint);
 
                 // Now, we verify the structure
                 validateFinalArmourPieceObject(newPiece);
