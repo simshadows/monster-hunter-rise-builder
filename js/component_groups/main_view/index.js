@@ -51,6 +51,7 @@ class MainView extends React.Component {
 
         check.isMap(this.props.calcStateSpecification);
         check.isMap(this.props.calcStateCurrValues);
+        check.isObj(this.props.buildPerformanceValues);
 
         check.isFunction(this.props.handleClickBuffsSelect);
         check.isFunction(this.props.handleClickWeaponSelect);
@@ -104,7 +105,9 @@ class MainView extends React.Component {
                             null,
                         ),
                         element(CalculationResultsBox,
-                            null,
+                            {
+                            buildPerformanceValues: this.props.buildPerformanceValues,
+                            },
                             null,
                         ),
                     ),

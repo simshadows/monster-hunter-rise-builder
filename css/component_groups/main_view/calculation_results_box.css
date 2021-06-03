@@ -1,1 +1,42 @@
+#calculation-results-box {
+    flex: 1 0 0;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    row-gap: 6px;
+
+    background: var(--color-background-2);
+    padding: 6px;
+}
+
+div.calculation-stat-box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+
+    background: var(--color-calculated-values--wrap-box);
+    font: var(--font-calculated-values--text);
+    height: 30px;
+    width: 100%;
+    padding: 0 10px 0 10px;
+}
+
+div.calculation-stat-content-box {
+    height: 100%;
+}
+div.calculation-stat-label-box {
+    flex: 1 0 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+div.calculation-stat-value-box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
 

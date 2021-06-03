@@ -1,3 +1,13 @@
+#skills-results-box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+    
+    width: 200px;
+    background: var(--color-background-2);
+    padding: 4px;
+}
+
 div.skill-box {
     display: flex;
     flex-direction: row;

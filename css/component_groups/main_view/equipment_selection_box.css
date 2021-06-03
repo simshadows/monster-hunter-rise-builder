@@ -1,3 +1,9 @@
+#equipment-selections-box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
 div.equip-buffs-main-box {
     display: flex;
     column-gap: 4px;

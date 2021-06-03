@@ -25,6 +25,8 @@
     --font-equip-weapon--ramp:   normal normal 14px var(--font-scheme--family2);
     --font-equip-petalace--stat: normal normal 14px var(--font-scheme--family2);
 
+    --font-calculated-values--text: bold   normal 14px var(--font-scheme--family2);
+
     --font-select-buff--group-heading: bold   normal 18px var(--font-scheme--family2);
     --font-select-table--head-row:     bold   normal 16px var(--font-scheme--family2);
     --font-select-table--body-row:     normal normal 16px var(--font-scheme--family2);
@@ -93,6 +95,7 @@
     --color-equip-skills--box: var(--color-scheme--dark4);
     --color-equip-deco--box: var(--color-scheme--dark3);
 
+    --color-calculated-values--wrap-box: var(--color-scheme--dark3);
 
     --color-select--text-field: var(--color-scheme--dark3);
     --color-select--icon-button-box: var(--color-scheme--dark3);

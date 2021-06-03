@@ -190,30 +190,3 @@ div.sub-box {
     height: auto;
 }
 
-#skills-results-box {
-    display: flex;
-    flex-direction: column;
-    row-gap: 4px;
-    
-    width: 200px;
-    background: var(--color-background-2);
-    padding: 4px;
-}
-
-#equipment-selections-box {
-    display: flex;
-    flex-direction: column;
-    row-gap: 8px;
-}
-
-#calculation-results-box {
-    flex: 1 0 0;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--color-background-2);
-    padding: 6px;
-}
-
-

@@ -14,6 +14,7 @@ import {
 } from "./common.js";
 import {Build} from "./model/build.js";
 import {CalcState} from "./model/calc_state.js";
+import {calculateBuildPerformance} from "./model/calculate.js";
 
 import Modal from "./component_groups/modal.js";
 
@@ -251,6 +252,8 @@ class MHRBuilderAppInner extends React.Component {
         const calcStateSpecification = this.state.calcState.getSpecification();
         const calcStateCurrValues = this.state.calcState.getCurrState();
 
+        const buildPerformanceValues = calculateBuildPerformance(this.state.build, this.state.calcState);
+
         return element("div",
             {
             id: "app",
@@ -261,6 +264,7 @@ class MHRBuilderAppInner extends React.Component {
                 buildRenderingProps:    buildRenderingProps,
                 calcStateSpecification: calcStateSpecification,
                 calcStateCurrValues:    calcStateCurrValues,
+                buildPerformanceValues: buildPerformanceValues,
 
                 handleClickBuffsSelect:      ()        => {this.handleSwitchToBuffsSelect();},
                 handleClickWeaponSelect:     ()        => {this.handleSwitchToWeaponSelect();},
