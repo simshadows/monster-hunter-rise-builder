@@ -20,6 +20,7 @@
     --font-equip--skill-name:    normal normal 14px var(--font-scheme--family2);
     --font-equip--defense:       bold   normal 15px var(--font-scheme--family2);
     --font-equip--deco:          normal normal 14px var(--font-scheme--family2);
+    --font-equip--remove-button: bold   normal 12px var(--font-scheme--family2);
     --font-equip-weapon--stat:   bold   normal 15px var(--font-scheme--family2);
     --font-equip-weapon--ramp:   normal normal 14px var(--font-scheme--family2);
     --font-equip-petalace--stat: normal normal 14px var(--font-scheme--family2);
@@ -60,6 +61,9 @@
     --color--scrollbar-background: var(--color-scheme--dark1);
     --color--scrollbar: var(--color-scheme--dark3);
 
+    --color-button-common--border: var(--color-scheme--bright4);
+    --color-button-common--border-hover: var(--color-scheme--bright1);
+
     --color-modal--background: rgba(0, 0, 0, 0.4);
     --color-modal--foreground: var(--color-scheme--dark1);
     --color-modal--border: var(--color-scheme--dark3);
@@ -74,6 +78,8 @@
 
     --color-equip--icon-box: var(--color-scheme--dark0);
     --color-equip--icon-box-border-hover: var(--color-scheme--bright4);
+    --color-equip--remove-button: var(--color-scheme--red-dim);
+    --color-equip--remove-button-text: var(--color-scheme--bright1);
     --color-equip-buffs--icon-box: var(--color-scheme--dark0);
     --color-equip-weapon--stat-box: var(--color-scheme--dark4);
     --color-equip-weapon--ramp-box: var(--color-scheme--dark4);
@@ -95,7 +101,5 @@
     --color-select-table--body-row-highlighted: #3b5b3f;
     --color-select-table--scrollbar-background: var(--color-scheme--dark1);
     --color-select-table--scrollbar: var(--color-scheme--bright2);
-    --color-select-control--clear-button: var(--color-scheme--red-inactive);
-    --color-select-control--clear-button-hover: var(--color-scheme--red-active);
 }
 

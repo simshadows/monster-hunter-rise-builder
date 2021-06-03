@@ -15,7 +15,7 @@ export function isObj(obj) {
     return res;
 }
 export function isObjOrNull(obj) {
-    const res = (typeof obj === "object") || (obj == null);
+    const res = (typeof obj === "object") || (obj === null);
     console.assert(res, "Expected an Object type or null. Instead got:", obj);
     return res;
 }
@@ -23,6 +23,11 @@ export function isObjOrNull(obj) {
 export function isFunction(obj) {
     const res = (typeof obj === "function");
     console.assert(res, "Expected a function type. Instead got:", obj);
+    return res;
+}
+export function isFunctionOrUndef(obj) {
+    const res = (typeof obj === "function") || (obj === undefined);
+    console.assert(res, "Expected a function type or undefined. Instead got:", obj);
     return res;
 }
 

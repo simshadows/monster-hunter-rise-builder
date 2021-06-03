@@ -22,34 +22,60 @@ const element = React.createElement;
  * Components ********************************************************
  *********************************************************************/
 
-function EquipIcon(props) {
-    check.isNonEmptyStr(props.iconImg);
-    check.isFunction(props.onClick);
+class EquipIcon extends React.Component {
 
-    return element("div",
-        {
-        className: "stackouter",
-        },
-        element("div",
+    handleSelectButton(e) {
+        this.props.handleSelectButton();
+    }
+
+    handleRemoveButton(e) {
+        this.props.handleRemoveButton(); // Allowed to be undefined. If so, it throws an error.
+    }
+
+    render() {
+        check.isNonEmptyStr(this.props.iconImg);
+        check.isBool(this.props.showRemoveButton);
+        check.isFunction(this.props.handleSelectButton);
+        check.isFunctionOrUndef(this.props.handleRemoveButton);
+
+        return element("div",
             {
-            className: "equip-icon-box",
+            className: "equip-icon-wrap-box",
             },
-            element("img",
+            element("div",
                 {
-                src: props.iconImg,
-                alt: "icon",
+                className: "stackouter",
                 },
-                null,
+                element("div",
+                    {
+                    className: "equip-icon-box",
+                    },
+                    element("img",
+                        {
+                        src: this.props.iconImg,
+                        alt: "icon",
+                        },
+                        null,
+                    ),
+                ),
+                element("div",
+                    {
+                    className: "highlight-equip-main-box stackinner",
+                    onClick: (e) => {this.handleSelectButton(e)},
+                    },
+                    null,
+                ),
             ),
-        ),
-        element("div",
-            {
-            className: "highlight-equip-main-box stackinner",
-            onClick: (e) => {props.onClick(e)},
-            },
-            null,
-        ),
-    );
+            element("div",
+                {
+                className: "equip-remove-button button-common",
+                style: {visibility: (this.props.showRemoveButton) ? "visible" : "hidden"},
+                onClick: (e) => {this.handleRemoveButton(e)},
+                },
+                "remove",
+            ),
+        );
+    }
 }
 
 function EquipInfoBox(props) {
@@ -237,17 +263,18 @@ function WeaponSelection(props) {
         {
         className: "equip-box",
         },
+        element(EquipIcon,
+            {
+            iconImg: props.weaponRORenderingProps.iconImgPath,
+            showRemoveButton: false,
+            handleSelectButton: () => {props.handleClickWeaponSelect()},
+            },
+            null,
+        ),
         element("div",
             {
             className: "equip-main-box",
             },
-            element(EquipIcon,
-                {
-                iconImg: props.weaponRORenderingProps.iconImgPath,
-                onClick: () => {props.handleClickWeaponSelect()},
-                },
-                null,
-            ),
             element(EquipWeaponInfoBox,
                 {
                     weaponRORenderingProps: props.weaponRORenderingProps,
@@ -522,6 +549,10 @@ class ArmourSelection extends React.Component {
         this.props.handleClickDecorationSelect(decoSlotID, maxDecoSize);
     }
 
+    handleClickRemovePiece() {
+        this.props.handleClickRemovePiece(this.props.slotID);
+    }
+
     _renderDefensesBox() {
         // Convenience Alias
         const armourPieceRO = this.props.armourPieceRORenderingProps;
@@ -565,17 +596,19 @@ class ArmourSelection extends React.Component {
             {
             className: "equip-box",
             },
+            element(EquipIcon,
+                {
+                iconImg: (armourPieceRO !== null) ? armourPieceRO.iconImgPath : this.constructor._slotNameToIconImgPath.get(this.props.slotID),
+                showRemoveButton: true,
+                handleSelectButton: () => {this.handleClickArmourSelect();},
+                handleRemoveButton: () => {this.handleClickRemovePiece();},
+                },
+                null,
+            ),
             element("div",
                 {
                 className: "equip-main-box",
                 },
-                element(EquipIcon,
-                    {
-                    iconImg: (armourPieceRO !== null) ? armourPieceRO.iconImgPath : this.constructor._slotNameToIconImgPath.get(this.props.slotID),
-                    onClick: () => {this.handleClickArmourSelect()},
-                    },
-                    null,
-                ),
                 element(EquipArmourInfoBox,
                     {
                         eqName: (armourPieceRO !== null) ? armourPieceRO.name : "None",
@@ -603,6 +636,7 @@ function TalismanSelection(props) {
 
     check.isFunction(props.handleClickTalismanSelect);
     check.isFunction(props.handleClickDecorationSelect);
+    check.isFunction(props.handleClickRemovePiece);
 
     const talismanRO = props.talismanRORenderingProps;
 
@@ -610,17 +644,19 @@ function TalismanSelection(props) {
         {
         className: "equip-box",
         },
+        element(EquipIcon,
+            {
+            iconImg: getImgPath("placeholder_talisman"),
+            showRemoveButton: true,
+            handleSelectButton: () => {props.handleClickTalismanSelect()},
+            handleRemoveButton: () => {props.handleClickRemovePiece();},
+            },
+            null,
+        ),
         element("div",
             {
             className: "equip-main-box",
             },
-            element(EquipIcon,
-                {
-                iconImg: getImgPath("placeholder_talisman"),
-                onClick: () => {props.handleClickTalismanSelect()},
-                },
-                null,
-            ),
             element(EquipArmourInfoBox,
                 {
                     eqName: talismanRO.name,
@@ -651,6 +687,7 @@ function PetalaceSelection(props) {
         check.isStr(props.petalaceRORenderingProps.originalPetalaceObj.name); // Spot check for structure
     }
     check.isFunction(props.handleClickPetalaceSelect);
+    check.isFunction(props.handleClickRemovePiece);
 
     const petalaceRO = props.petalaceRORenderingProps.originalPetalaceObj;
 
@@ -712,17 +749,19 @@ function PetalaceSelection(props) {
         {
         className: "equip-box",
         },
+        element(EquipIcon,
+            {
+            iconImg: getImgPath("placeholder_petalace"),
+            showRemoveButton: true,
+            handleSelectButton: () => {props.handleClickPetalaceSelect()},
+            handleRemoveButton: () => {props.handleClickRemovePiece();},
+            },
+            null,
+        ),
         element("div",
             {
             className: "equip-main-box",
             },
-            element(EquipIcon,
-                {
-                iconImg: getImgPath("placeholder_petalace"),
-                onClick: () => {props.handleClickPetalaceSelect()},
-                },
-                null,
-            ),
             infoBox,
         ),
     );
@@ -759,6 +798,10 @@ class EquipmentSelectionsBox extends React.Component {
         this.props.handleClickDecorationSelect(slotID, decoSlotID, maxDecoSlotSize);
     }
 
+    handleRemovePiece(slotID) {
+        this.props.handleRemovePiece(slotID);
+    }
+
     render() {
         check.isObj(this.props.buildRenderingProps);
         check.isArr(this.props.buildRenderingProps.weaponRO.rampSkillSelectionsArray); // Spot check for structure
@@ -770,6 +813,8 @@ class EquipmentSelectionsBox extends React.Component {
         check.isFunction(this.props.handleClickTalismanSelect);
         check.isFunction(this.props.handleClickPetalaceSelect);
         check.isFunction(this.props.handleClickDecorationSelect);
+
+        check.isFunction(this.props.handleRemovePiece);
 
         return element("div",
             {
@@ -799,6 +844,7 @@ class EquipmentSelectionsBox extends React.Component {
 
                 handleClickArmourSelect: (slotID) => {this.handleClickArmourSelect(slotID);},
                 handleClickDecorationSelect: (decoSlotID, maxDecoSlotSize) => {this.handleClickDecorationSelect("head", decoSlotID, maxDecoSlotSize);},
+                handleClickRemovePiece: (slotID) => {this.handleRemovePiece(slotID);},
                 },
                 null,
             ),
@@ -809,6 +855,7 @@ class EquipmentSelectionsBox extends React.Component {
 
                 handleClickArmourSelect: (slotID) => {this.handleClickArmourSelect(slotID);},
                 handleClickDecorationSelect: (decoSlotID, maxDecoSlotSize) => {this.handleClickDecorationSelect("chest", decoSlotID, maxDecoSlotSize);},
+                handleClickRemovePiece: (slotID) => {this.handleRemovePiece(slotID);},
                 },
                 null,
             ),
@@ -819,6 +866,7 @@ class EquipmentSelectionsBox extends React.Component {
 
                 handleClickArmourSelect: (slotID) => {this.handleClickArmourSelect(slotID);},
                 handleClickDecorationSelect: (decoSlotID, maxDecoSlotSize) => {this.handleClickDecorationSelect("arms", decoSlotID, maxDecoSlotSize);},
+                handleClickRemovePiece: (slotID) => {this.handleRemovePiece(slotID);},
                 },
                 null,
             ),
@@ -829,6 +877,7 @@ class EquipmentSelectionsBox extends React.Component {
 
                 handleClickArmourSelect: (slotID) => {this.handleClickArmourSelect(slotID);},
                 handleClickDecorationSelect: (decoSlotID, maxDecoSlotSize) => {this.handleClickDecorationSelect("waist", decoSlotID, maxDecoSlotSize);},
+                handleClickRemovePiece: (slotID) => {this.handleRemovePiece(slotID);},
                 },
                 null,
             ),
@@ -839,6 +888,7 @@ class EquipmentSelectionsBox extends React.Component {
 
                 handleClickArmourSelect: (slotID) => {this.handleClickArmourSelect(slotID);},
                 handleClickDecorationSelect: (decoSlotID, maxDecoSlotSize) => {this.handleClickDecorationSelect("legs", decoSlotID, maxDecoSlotSize);},
+                handleClickRemovePiece: (slotID) => {this.handleRemovePiece(slotID);},
                 },
                 null,
             ),
@@ -848,6 +898,7 @@ class EquipmentSelectionsBox extends React.Component {
 
                 handleClickTalismanSelect: () => {this.handleClickTalismanSelect();},
                 handleClickDecorationSelect: (decoSlotID, maxDecoSlotSize) => {this.handleClickDecorationSelect("talisman", decoSlotID, maxDecoSlotSize);},
+                handleClickRemovePiece: (slotID) => {this.handleRemovePiece("talisman");},
                 },
                 null,
             ),
@@ -855,6 +906,7 @@ class EquipmentSelectionsBox extends React.Component {
                 {
                 petalaceRORenderingProps: this.props.buildRenderingProps.petalaceRO,
                 handleClickPetalaceSelect: () => {this.handleClickPetalaceSelect();},
+                handleClickRemovePiece: (slotID) => {this.handleRemovePiece("petalace");},
                 },
                 null,
             ),

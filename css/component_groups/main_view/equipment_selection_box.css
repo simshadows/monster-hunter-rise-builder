@@ -103,11 +103,22 @@ div.equip-main-box {
     display: flex;
     align-items: flex-start;
 
-    padding: 4px 0 4px 4px;
+    padding: 4px 0 4px 0;
 }
 div.highlight-equip-main-box:hover {
     border: 2px solid var(--color-equip--icon-box-border-hover);
     cursor: pointer;
+}
+
+div.equip-icon-wrap-box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 5px;
+
+    height: 100%;
+    padding: 4px 0 4px 4px;
 }
 
 div.equip-icon-box {
@@ -124,6 +135,14 @@ div.equip-icon-box > img {
     width: 90%;
 }
 
+div.equip-remove-button {
+    background: var(--color-equip--remove-button);
+    height: 100%;
+    width: 100%;
+    font: var(--font-equip--remove-button);
+    color: var(--color-equip--remove-button-text);
+}
+
 div.equip-info-box {
     flex: 1 0 0;
 
@@ -133,7 +152,7 @@ div.equip-info-box {
     justify-content: flex-start;
 
     padding: 0 0 0 4px;
-    width: 320px;
+    width: 360px;
 }
 div.equip-name-box {
     width: 100%;

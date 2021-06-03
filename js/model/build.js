@@ -15,6 +15,7 @@ import {
     isDecoEquippableSlotStr,
     isWeaponCategoryStr,
     isEleStatStr,
+    isArmourSlotStr,
     toNameFilterString,
 } from "../common.js";
 
@@ -153,16 +154,21 @@ class Build {
     }
 
     // Usefully returns self for use in React state transitions.
-    setArmourPiece(db, armourPieceObj) {
+    setArmourPiece(db, slotID, armourPieceObj) {
         assert(isObj(db));
         assert(isMap(db.readonly.weapons.map.greatsword)); // Spot check for structure
+        assert(isArmourSlotStr(slotID));
         // armourPieceObj validity will be checked by verifying overall state
+        if (armourPieceObj !== null) {
+            assert(slotID === armourPieceObj.slotID);
+        }
 
-        // TODO: We don't handle null yet.
-        if (armourPieceObj === null) throw new Error("Not yet implemented armour removal.");
-
-        this._armourRO[armourPieceObj.slotID] = armourPieceObj;
-        this._decorationsRO[armourPieceObj.slotID] = this._generateEmptyDecoObj(armourPieceObj.decorationSlots);
+        this._armourRO[slotID] = armourPieceObj;
+        if (armourPieceObj === null) {
+            this._decorationsRO[slotID] = this._generateEmptyDecoObj([]);
+        } else {
+            this._decorationsRO[slotID] = this._generateEmptyDecoObj(armourPieceObj.decorationSlots);
+        }
 
         this._validateState();
         return this;
@@ -199,6 +205,18 @@ class Build {
 
         this._talisman.decoSlots[decoSlotIndex] = decoSlotSize
         this._decorationsRO.talisman = this._generateEmptyDecoObj(this._getAdjustedTalismanDecoSlots());
+
+        this._validateState();
+        return this;
+    }
+
+    resetTalisman() {
+        this._talisman.decoSlots = [0,0,0];
+        this._talisman.skills = [
+                {skillRO: null, skillLevel: null}, // TODO: Reset this more cleanly than rewriting the whole data structure
+                {skillRO: null, skillLevel: null},
+            ];
+        this._decorationsRO.talisman = this._generateEmptyDecoObj([]);
 
         this._validateState();
         return this;

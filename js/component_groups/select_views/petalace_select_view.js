@@ -9,8 +9,6 @@ import * as check from "../../check.js";
 import {
     NameFilterTextField,
     SelectionTable,
-    SelectionControlClearButton,
-    SelectionControlButtonsBox,
 } from "./common.js";
 import {
     toNameFilterString,
@@ -83,24 +81,25 @@ class PetalaceSelectView extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-                filterByName: "", // Empty string by default
+                //filterByName: "", // Empty string by default
             };
     }
 
-    handleNameFilterTextChange(newText) {
-        check.isStr(newText);
-        this.setState({filterByName: toNameFilterString(newText)});
-    }
+    //handleNameFilterTextChange(newText) {
+    //    check.isStr(newText);
+    //    this.setState({filterByName: toNameFilterString(newText)});
+    //}
 
     handleSelectPetalace(petalaceRO) {
         this.props.handleSelectPetalace(petalaceRO);
     }
 
     _getFilteredPetalacesArray() {
-        const op = (element) => {
-                return element.filterHelpers.nameLower.includes(this.state.filterByName);
-            };
-        return this.props.allPetalacesArray.filter(op);
+        //const op = (element) => {
+        //        return element.filterHelpers.nameLower.includes(this.state.filterByName);
+        //    };
+        //return this.props.allPetalacesArray.filter(op);
+        return this.props.allPetalacesArray;
     }
 
     render() {
@@ -119,12 +118,12 @@ class PetalaceSelectView extends React.Component {
             className: "select-view-wrap-box",
             id: "mhr-builder-app-petalace-select-view",
             },
-            element(NameFilterTextField,
-                {
-                onChange: (newText) => {this.handleNameFilterTextChange(newText)},
-                },
-                null,
-            ),
+            //element(NameFilterTextField,
+            //    {
+            //    onChange: (newText) => {this.handleNameFilterTextChange(newText)},
+            //    },
+            //    null,
+            //),
             element(PetalaceSelectionTable,
                 {
                 dataArray: filteredPetalacesArray,
@@ -132,15 +131,6 @@ class PetalaceSelectView extends React.Component {
                 handleRowClick: (petalaceRO) => {this.handleSelectPetalace(petalaceRO)},
                 },
                 null,
-            ),
-            element(SelectionControlButtonsBox,
-                null,
-                element(SelectionControlClearButton,
-                    {
-                    handleOnClick: () => {this.handleSelectPetalace(null);},
-                    },
-                    "Remove Current Selection",
-                ),
             ),
         );
     }

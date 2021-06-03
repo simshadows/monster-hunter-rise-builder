@@ -136,33 +136,6 @@ div.selection-table-icon-box > img {
     background-color: var(--color-select-table--scrollbar);
 }
 
-/*** Control Buttons ***/
-
-div.select-view-control-box {
-    padding: 14px 0 0 0;
-}
-
-div.select-view-control-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    height: 30px;
-    width: 240px;
-    cursor: pointer;
-
-    font-size: 16px;
-    font-weight: bold;
-}
-
-div.select-view-control-button-clearfn {
-    background: var(--color-select-control--clear-button);
-    color: var(--color-text2);
-}
-div.select-view-control-button-clearfn:hover {
-    background: var(--color-select-control--clear-button-hover);
-}
-
 /*** Weapon Selection View ***/
 
 .weapon-selection-table-head-cell-category {

@@ -257,43 +257,11 @@ class DropdownSelectWithNull extends React.Component {
     }
 }
 
-/*** Common Components: Remove or Don't Save Buttons ***/
-
-class SelectionControlClearButton extends React.Component {
-
-    handleOnClick(e) {
-        e.stopPropagation();
-        this.props.handleOnClick();
-    }
-
-    render() {
-        return element("div",
-            {
-            className: "select-view-control-button select-view-control-button-clearfn",
-            onClick: (e) => {this.handleOnClick(e)},
-            },
-            ...React.Children.toArray(this.props.children),
-        );
-    }
-}
-
-function SelectionControlButtonsBox(props) {
-    return element("div",
-        {
-        className: "select-view-control-box",
-        },
-        ...React.Children.toArray(props.children),
-    );
-}
-
-
 export {
     NameFilterTextField,
     TypeFilterButton,
     SelectionTable,
     DropdownSelect,
     DropdownSelectWithNull,
-    SelectionControlClearButton,
-    SelectionControlButtonsBox,
 };
 

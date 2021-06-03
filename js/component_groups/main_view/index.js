@@ -57,6 +57,8 @@ class MainView extends React.Component {
         check.isFunction(this.props.handleClickPetalaceSelect);
         check.isFunction(this.props.handleClickDecorationSelect);
 
+        check.isFunction(this.props.handleRemovePiece);
+
         return element("div",
             {
             className: "body-outer-box",
@@ -90,6 +92,8 @@ class MainView extends React.Component {
                             handleClickTalismanSelect:   ()       => {this.props.handleClickTalismanSelect();},
                             handleClickPetalaceSelect:   ()       => {this.props.handleClickPetalaceSelect();},
                             handleClickDecorationSelect: (...args) => {this.props.handleClickDecorationSelect(...args)},
+
+                            handleRemovePiece: (slotID) => {this.props.handleRemovePiece(slotID);},
                             },
                             null,
                         ),

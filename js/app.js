@@ -136,7 +136,7 @@ class MHRBuilderAppInner extends React.Component {
         }
         this.setState({
                 view: "main", // Return back to main view
-                build: this.state.build.setArmourPiece(this.props.rawDataRO, armourPieceRO)
+                build: this.state.build.setArmourPiece(this.props.rawDataRO, armourPieceRO.slotID, armourPieceRO)
             });
     }
 
@@ -188,6 +188,24 @@ class MHRBuilderAppInner extends React.Component {
             });
     }
 
+    // TODO: Merge with handleSelectArmourPiece().
+    handleRemovePiece(slotID) {
+        if (slotID === "talisman") {
+            this.setState({
+                    build: this.state.build.resetTalisman(),
+                });
+        } else if (slotID === "petalace") {
+            this.setState({
+                build: this.state.build.setPetalace(this.props.rawDataRO, null)
+                });
+        } else {
+            assert(isArmourSlotStr(slotID));
+            this.setState({
+                    build: this.state.build.setArmourPiece(this.props.rawDataRO, slotID, null)
+                });
+        }
+    }
+
     /* Inherited Methods */
 
     async componentDidMount() {
@@ -234,6 +252,8 @@ class MHRBuilderAppInner extends React.Component {
                 handleClickTalismanSelect:   ()        => {this.handleSwitchToTalismanSelect();},
                 handleClickPetalaceSelect:   ()        => {this.handleSwitchToPetalaceSelect();},
                 handleClickDecorationSelect: (...args) => {this.handleSwitchToDecorationSelect(...args);},
+
+                handleRemovePiece: (slotID) => {this.handleRemovePiece(slotID);},
                 },
                 null,
             ),
