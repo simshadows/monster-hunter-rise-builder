@@ -13,9 +13,9 @@ function CalculationResultsBox() {
         id: "calculation-results-box",
         className: "sub-box",
         },
-        "Calculation results (such as EFR) go here,",
+        "Calculations aren't",
         element("br", null, null),
-        "but I haven't made a layout for it yet.",
+        "implemented yet :(",
     );
 }
 

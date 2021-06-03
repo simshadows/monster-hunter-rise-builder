@@ -144,6 +144,37 @@ div.selection-table-icon-box > img {
     background-color: var(--color-select-table--scrollbar);
 }
 
+/*** Buffs Selection View ***/
+
+#mhr-builder-app-buffs-select-view {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    column-gap: 50px;
+    padding: 35px;
+}
+
+div.buff-selection-group-box {
+    flex: 1 0 0;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    row-gap: 10px;
+
+    background: var(--color-select--section);
+    height: 100%;
+    padding: 20px;
+}
+
+div.buff-selection-group-heading-box {
+    color: var(--color-select-buff--group-heading);
+    font: var(--font-select-buff--group-heading);
+    padding: 0 0 10px 0;
+}
+
 /*** Weapon Selection View ***/
 
 .weapon-selection-table-head-cell-category {

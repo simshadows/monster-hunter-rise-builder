@@ -116,6 +116,16 @@ class MHRBuilderAppInner extends React.Component {
         this.setState({view: "main"});
     }
 
+    handleChangeCalcState(groupName, stateName, newValue) {
+        check.isNonEmptyStr(groupName);
+        check.isNonEmptyStr(stateName);
+        check.isInt(newValue);
+
+        this.setState({
+                calcState: this.state.calcState.setState(groupName, stateName, newValue),
+            });
+    }
+
     handleSelectWeapon(weaponRO) {
         check.isInt(weaponRO.affinity); // Spot check for structure
         this.setState({
@@ -238,6 +248,8 @@ class MHRBuilderAppInner extends React.Component {
 
 
         const buildRenderingProps = this.state.build.getRenderingProps(this.props.rawDataRO);
+        const calcStateSpecification = this.state.calcState.getSpecification();
+        const calcStateCurrValues = this.state.calcState.getCurrState();
 
         return element("div",
             {
@@ -247,8 +259,8 @@ class MHRBuilderAppInner extends React.Component {
             element(MainView,
                 {
                 buildRenderingProps:    buildRenderingProps,
-                calcStateSpecification: this.state.calcState.getSpecification(),
-                calcStateCurrValues:    this.state.calcState.getCurrState(),
+                calcStateSpecification: calcStateSpecification,
+                calcStateCurrValues:    calcStateCurrValues,
 
                 handleClickBuffsSelect:      ()        => {this.handleSwitchToBuffsSelect();},
                 handleClickWeaponSelect:     ()        => {this.handleSwitchToWeaponSelect();},
@@ -269,7 +281,11 @@ class MHRBuilderAppInner extends React.Component {
                 handleCloseModal: () => {this.handleReturnToMainView();},
                 },
                 element(BuffsSelectView,
-                    null,
+                    {
+                    calcStateSpecification: calcStateSpecification,
+                    calcStateCurrValues:    calcStateCurrValues,
+                    handleChangeCalcState: (...args) => {this.handleChangeCalcState(...args)},
+                    },
                     null,
                 ),
             ),

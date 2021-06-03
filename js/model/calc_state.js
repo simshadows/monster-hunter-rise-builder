@@ -175,6 +175,15 @@ class CalcState {
         return this._state
     }
 
+    // Usefully returns self for use in React state transitions.
+    setState(groupName, stateName, newValue) {
+        const subMap = this._state.get(groupName);
+        subMap.set(stateName, newValue);
+
+        this._validateState();
+        return this;
+    }
+
 }
 
 export {CalcState};
