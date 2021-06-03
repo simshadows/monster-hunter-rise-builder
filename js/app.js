@@ -13,6 +13,7 @@ import {
     br,
 } from "./common.js";
 import {Build} from "./model/build.js";
+import {CalcState} from "./model/calc_state.js";
 
 import Modal from "./component_groups/modal.js";
 
@@ -51,6 +52,7 @@ class MHRBuilderAppInner extends React.Component {
                 //view: "talisman_select_view", // Useful for debugging
 
                 build: new Build(this.props.rawDataRO, this.props.rawDataRO.getDefaultWeapon()),
+                calcState: new CalcState(),
             };
 
         this.myRefs = {
@@ -244,7 +246,10 @@ class MHRBuilderAppInner extends React.Component {
             },
             element(MainView,
                 {
-                buildRenderingProps:         buildRenderingProps,
+                buildRenderingProps:    buildRenderingProps,
+                calcStateSpecification: this.state.calcState.getSpecification(),
+                calcStateCurrValues:    this.state.calcState.getCurrState(),
+
                 handleClickBuffsSelect:      ()        => {this.handleSwitchToBuffsSelect();},
                 handleClickWeaponSelect:     ()        => {this.handleSwitchToWeaponSelect();},
                 handleClickWeaponCustomize:  ()        => {this.handleSwitchToWeaponCustomize();},

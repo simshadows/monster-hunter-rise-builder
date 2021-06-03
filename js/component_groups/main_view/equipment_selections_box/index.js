@@ -5,15 +5,17 @@
  * Requires React and ReactDOM to be imported in HTML.
  */
 
-import * as check from "../../check.js";
-import {getImgPath} from "../../images.js";
+import * as check from "../../../check.js";
+import {getImgPath} from "../../../images.js";
 import {
     isEleStatStr,
     isArmourSlotStr,
     isDecoEquippableSlotStr,
     eleStatStrToEmoji,
     clipsafeSpan,
-} from "../../common.js";
+} from "../../../common.js";
+
+import {BuffsSelection} from "./buffs.js";
 
 const assert = console.assert;
 const element = React.createElement;
@@ -94,71 +96,6 @@ function EquipInfoBox(props) {
         ),
         React.Children.toArray(props.children),
     )
-}
-
-/*** Buffs and State ***/
-
-function PlaceholderBuffIcon(props) {
-    check.isNonEmptyStr(props.iconImgPath);
-
-    return element("div",
-        {
-        className: "equip-buff-icon-box",
-        },
-        element("img",
-            {
-            src: props.iconImgPath,
-            alt: "icon",
-            },
-            null,
-        ),
-    );
-}
-
-function BuffsSelection(props) {
-    check.isFunction(props.handleClickBuffsSelect);
-
-    return element("div",
-        {
-        className: "equip-box",
-        },
-        element("div",
-            {
-            className: "equip-main-box equip-buffs-main-box stackouter",
-            },
-            element(PlaceholderBuffIcon,
-                {
-                iconImgPath: getImgPath("itembox_powercharm"),
-                },
-                null,
-            ),
-            element(PlaceholderBuffIcon,
-                {
-                iconImgPath: getImgPath("itembox_powertalon"),
-                },
-                null,
-            ),
-            element(PlaceholderBuffIcon,
-                {
-                iconImgPath: getImgPath("itembox_armorcharm"),
-                },
-                null,
-            ),
-            element(PlaceholderBuffIcon,
-                {
-                iconImgPath: getImgPath("itembox_armortalon"),
-                },
-                null,
-            ),
-            element("div",
-                {
-                className: "highlight-equip-main-box stackinner",
-                onClick: () => {props.handleClickBuffsSelect()},
-                },
-                null,
-            ),
-        ),
-    );
 }
 
 /*** Weapon ***/
@@ -818,6 +755,9 @@ class EquipmentSelectionsBox extends React.Component {
         check.isObj(this.props.buildRenderingProps);
         check.isArr(this.props.buildRenderingProps.weaponRO.rampSkillSelectionsArray); // Spot check for structure
 
+        check.isMap(this.props.calcStateSpecification);
+        check.isMap(this.props.calcStateCurrValues);
+
         check.isFunction(this.props.handleClickBuffsSelect);
         check.isFunction(this.props.handleClickWeaponSelect);
         check.isFunction(this.props.handleClickWeaponCustomize);
@@ -835,6 +775,9 @@ class EquipmentSelectionsBox extends React.Component {
             },
             element(BuffsSelection,
                 {
+                calcStateSpecification: this.props.calcStateSpecification,
+                calcStateCurrValues:    this.props.calcStateCurrValues,
+
                 handleClickBuffsSelect: () => {this.handleClickBuffsSelect();},
                 },
                 null,

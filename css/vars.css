@@ -28,6 +28,10 @@
     --font-select-table--head-row: bold   normal 16px var(--font-scheme--family2);
     --font-select-table--body-row: normal normal 16px var(--font-scheme--family2);
 
+    /* These are special in that we specify only individual properties */
+    --font-equip--buff-abbrev--size: 16px;
+    --font-equip--buff-abbrev--weight: bold;
+
     /*** Colours ***/
 
     --color-scheme--dark0: #141517;

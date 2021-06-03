@@ -8,7 +8,7 @@
 import * as check from "../../check.js";
 
 import SkillsResultsBox from "./skill_results_box.js";
-import EquipmentSelectionsBox from "./equipment_selections_box.js";
+import EquipmentSelectionsBox from "./equipment_selections_box/index.js";
 import CalculationResultsBox from "./calculation_results_box.js";
 
 const element = React.createElement;
@@ -49,6 +49,9 @@ class MainView extends React.Component {
         check.isObj(this.props.buildRenderingProps);
         check.isArr(this.props.buildRenderingProps.weaponRO.rampSkillSelectionsArray); // Spot check for structure
 
+        check.isMap(this.props.calcStateSpecification);
+        check.isMap(this.props.calcStateCurrValues);
+
         check.isFunction(this.props.handleClickBuffsSelect);
         check.isFunction(this.props.handleClickWeaponSelect);
         check.isFunction(this.props.handleClickWeaponCustomize);
@@ -84,7 +87,10 @@ class MainView extends React.Component {
                         ),
                         element(EquipmentSelectionsBox,
                             {
-                            buildRenderingProps:         this.props.buildRenderingProps,
+                            buildRenderingProps:    this.props.buildRenderingProps,
+                            calcStateSpecification: this.props.calcStateSpecification,
+                            calcStateCurrValues:    this.props.calcStateCurrValues,
+
                             handleClickBuffsSelect:      ()       => {this.props.handleClickBuffsSelect();},
                             handleClickWeaponSelect:     ()       => {this.props.handleClickWeaponSelect();},
                             handleClickWeaponCustomize:  ()       => {this.props.handleClickWeaponCustomize();},

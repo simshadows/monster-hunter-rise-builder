@@ -5,7 +5,7 @@ div.equip-buffs-main-box {
     height: 38px;
 }
 
-div.equip-buff-icon-box {
+div.equip-buff-img-icon-box {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,9 +14,24 @@ div.equip-buff-icon-box {
     height: 30px;
     width: 30px;
 }
-div.equip-buff-icon-box > img {
+div.equip-buff-img-icon-box > img {
     height: 100%;
     width: 100%;
+}
+
+div.equip-buff-abbrev-icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-width: 3px;
+
+    font-size: var(--font-equip--buff-abbrev--size);
+    font-weight: var(--font-equip--buff-abbrev--weight);
+
+    background: var(--color-equip-buffs--icon-box);
+    height: 30px;
+    width: 50px;
 }
 
 div.equip-weapon-info-box {
