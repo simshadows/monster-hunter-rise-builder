@@ -24,6 +24,11 @@ div.calculation-stat-box {
     padding: 0 10px 0 10px;
 }
 
+div.calculation-stat-spacer-box {
+    height: 15px;
+    width: 100%;
+}
+
 div.calculation-stat-content-box {
     height: 100%;
 }

@@ -34,6 +34,16 @@ class CalculationResultsBox extends React.Component {
         );
     }
 
+    // Not the most elegant way to do this, but it works for now
+    _renderSpace() {
+        return element("div",
+            {
+            className: "calculation-stat-spacer-box",
+            },
+            null,
+        );
+    }
+
     render() {
         // This is the only prop
         const perf = this.props.buildPerformanceValues;
@@ -45,8 +55,15 @@ class CalculationResultsBox extends React.Component {
             id: "calculation-results-box",
             className: "sub-box",
             },
-            this._renderStat("Effective Raw (EFR)", perf.efr.toFixed(3)),
+            this._renderStat("Effective Raw (EFR)", perf.effectiveRaw.toFixed(2)),
             this._renderStat("Affinity", String(perf.affinity) + "%"),
+            this._renderSpace(),
+            this._renderStat("Crit Damage Multiplier", perf.critDmgMultiplier.toFixed(2)),
+            this._renderStat("Crit Modifier", perf.critModifier.toFixed(4)),
+            this._renderSpace(),
+            this._renderStat("Sharpness Bar", String(perf.realSharpnessBar)),
+            this._renderStat("Raw Sharpness Modifier", perf.rawSharpnessModifier.toFixed(4)),
+            this._renderStat("Elemental Sharpness Modifier", perf.elementalSharpnessModifier.toFixed(4)),
         );
     }
 }
