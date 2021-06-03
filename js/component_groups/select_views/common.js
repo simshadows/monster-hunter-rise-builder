@@ -98,11 +98,12 @@ class SelectionTable extends React.Component {
         check.isArr(rowContent);
 
         const cellElements = [];
-        for (const cellContent of rowContent) {
+        for (const [i, cellContent] of rowContent.entries()) {
+            const c = (this.props.cspecBodyRowFormat[i].length > 0) ? " " + this.props.cspecBodyRowFormat[i] : "";
             cellElements.push(
                 element("th",
                     {
-                    className: "selection-table-body-cell",
+                    className: "selection-table-body-cell" + c,
                     },
                     cellContent,
                 ),
@@ -123,6 +124,7 @@ class SelectionTable extends React.Component {
         check.isObj(this.props.dataArray);
         check.isFunction(this.props.handleRowClick);
         check.isArr(this.props.cspecHeadRowFormat);
+        check.isArr(this.props.cspecBodyRowFormat);
         check.isFunction(this.props.cspecGetRowContent);
         check.isFunction(this.props.cspecHighlightConditionFn);
 

@@ -31,6 +31,12 @@ class DecorationSelectionTable extends React.Component {
             ["deco-selection-table-head-cell-numeric", "Slot Size"],
             ["deco-selection-table-head-cell-skills",  "Skills"   ],
         ];
+    static _cspecBodyRowFormat = [
+            // Markup Class
+            "selection-table-cell-justify-right",
+            "",
+            "",
+        ];
 
     // Logically Static
     _cspecGetRowContent(decoRO) {
@@ -65,6 +71,7 @@ class DecorationSelectionTable extends React.Component {
             dataArray:                 this.props.dataArray,
             handleRowClick:            (_decoRO) => {this.handleRowClick(_decoRO);},
             cspecHeadRowFormat:        this.constructor._cspecHeadRowFormat,
+            cspecBodyRowFormat:        this.constructor._cspecBodyRowFormat,
             cspecGetRowContent:        (_decoRO) => {return this._cspecGetRowContent(_decoRO);},
             cspecHighlightConditionFn: (_decoRO) => {return this._cspecHighlightConditionFn(_decoRO);},
             },

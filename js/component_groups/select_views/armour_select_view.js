@@ -45,7 +45,7 @@ class ArmourSelectionTable extends React.Component {
 
     static _cspecHeadRowFormat = [
             // [Markup Class, Content]
-            ["armour-selection-table-head-cell-category", "Category"                               ],
+            ["armour-selection-table-head-cell-category", ""                                       ],
             ["armour-selection-table-head-cell-name",     "Name"                                   ],
             ["armour-selection-table-head-cell-numeric",  headRowIconElement("defense_icon")       ],
             ["armour-selection-table-head-cell-numeric",  headRowIconElement("eleres_fire_icon")   ],
@@ -56,6 +56,19 @@ class ArmourSelectionTable extends React.Component {
             ["armour-selection-table-head-cell-deco",     "Slots"                                  ],
             ["armour-selection-table-head-cell-skills",   "Skills"                                 ],
         ];
+    static _cspecBodyRowFormat = [
+            // Markup Class
+            "",
+            "selection-table-cell-justify-right",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+        ];
 
     // Logically Static
     _cspecGetRowContent(armourPieceRO) {
@@ -65,7 +78,7 @@ class ArmourSelectionTable extends React.Component {
         }
 
         return [
-            tierIDToAbbrev(armourPieceRO.tierID) + " " + equipmentSlotToName(armourPieceRO.slotID),
+            this._renderPieceIcon(armourPieceRO.iconImgPath),
             armourPieceRO.name,
             parseInt(armourPieceRO.defenseAtLevel1),
             parseInt(armourPieceRO.fireRes),
@@ -91,6 +104,21 @@ class ArmourSelectionTable extends React.Component {
         this.props.handleRowClick(armourPieceRO);
     }
 
+    _renderPieceIcon(iconImgPath) {
+        return element("div",
+            {
+            className: "selection-table-icon-box",
+            },
+            element("img",
+                {
+                src: iconImgPath,
+                alt: "icon",
+                },
+                null,
+            ),
+        );
+    }
+
     render() {
         check.isArr(this.props.dataArray);
         check.isObj(this.props.currentSelectedPieces);
@@ -101,6 +129,7 @@ class ArmourSelectionTable extends React.Component {
             dataArray:                 this.props.dataArray,
             handleRowClick:            (armourPieceRO) => {this.handleRowClick(armourPieceRO);},
             cspecHeadRowFormat:        this.constructor._cspecHeadRowFormat,
+            cspecBodyRowFormat:        this.constructor._cspecBodyRowFormat,
             cspecGetRowContent:        (weaponData) => {return this._cspecGetRowContent(weaponData);},
             cspecHighlightConditionFn: (weaponData) => {return this._cspecHighlightConditionFn(weaponData);},
             },

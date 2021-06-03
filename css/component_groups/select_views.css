@@ -110,6 +110,7 @@ div.selection-table-wrap-box {
 }
 .selection-table-body-cell {
     font: var(--font-select-table--body-row);
+    padding: 0 6px 0 6px;
 }
 
 div.selection-table-icon-box {
@@ -126,6 +127,13 @@ div.selection-table-icon-box > img {
     width: 100%;
 }
 
+.selection-table-cell-justify-left {
+    text-align: left;
+}
+.selection-table-cell-justify-right {
+    text-align: right;
+}
+
 .selection-table-wrap-box::-webkit-scrollbar {
     width: 10px;
     height: 10px;
@@ -139,7 +147,7 @@ div.selection-table-icon-box > img {
 /*** Weapon Selection View ***/
 
 .weapon-selection-table-head-cell-category {
-    width: 150px;
+    width: 30px;
 }
 .weapon-selection-table-head-cell-name {
     width: 280px;
@@ -171,10 +179,10 @@ div.weapon-customize-view-select-content-box {
 /*** Armour Selection View ***/
 
 .armour-selection-table-head-cell-category {
-    width: 100px;
+    width: 30px;
 }
 .armour-selection-table-head-cell-name {
-    width: 240px;
+    width: 220px;
 }
 .armour-selection-table-head-cell-numeric {
     width: 40px;

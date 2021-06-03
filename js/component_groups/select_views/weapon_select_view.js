@@ -26,7 +26,7 @@ class WeaponSelectionTable extends React.Component {
 
     static _cspecHeadRowFormat = [
             // [Markup Class, Content]
-            ["weapon-selection-table-head-cell-category",    "Category"          ],
+            ["weapon-selection-table-head-cell-category",    ""                  ],
             ["weapon-selection-table-head-cell-name",        "Name"              ],
             ["weapon-selection-table-head-cell-numeric",     "Attack"            ],
             ["weapon-selection-table-head-cell-numeric",     "Affinity"          ],
@@ -35,6 +35,18 @@ class WeaponSelectionTable extends React.Component {
             ["weapon-selection-table-head-cell-deco",        "Slots"             ],
             ["weapon-selection-table-head-cell-specialmech", "Special Mechanics" ],
         ];
+    static _cspecBodyRowFormat = [
+            // Markup Class
+            "",
+            "selection-table-cell-justify-right",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+        ];
+
 
     // Logically Static
     _cspecGetRowContent(weaponRO) {
@@ -42,7 +54,7 @@ class WeaponSelectionTable extends React.Component {
                                ? ""
                                : "MaxSharpness: " + weaponRO.maxSharpness.toString();
         return [
-            weaponCategoryToName(weaponRO.category),
+            this._renderPieceIcon(weaponRO.iconImgPath),
             weaponRO.name,
             parseInt(weaponRO.attack),
             parseInt(weaponRO.affinity) + "%",
@@ -62,6 +74,21 @@ class WeaponSelectionTable extends React.Component {
         this.props.handleRowClick(weaponRO);
     }
 
+    _renderPieceIcon(iconImgPath) {
+        return element("div",
+            {
+            className: "selection-table-icon-box",
+            },
+            element("img",
+                {
+                src: iconImgPath,
+                alt: "icon",
+                },
+                null,
+            ),
+        );
+    }
+
     render() {
         check.isArr(this.props.dataArray);
         check.isObj(this.props.currentSelectedWeapon);
@@ -72,6 +99,7 @@ class WeaponSelectionTable extends React.Component {
             dataArray:                 this.props.dataArray,
             handleRowClick:            (weaponRO) => {this.handleRowClick(weaponRO);},
             cspecHeadRowFormat:        this.constructor._cspecHeadRowFormat,
+            cspecBodyRowFormat:        this.constructor._cspecBodyRowFormat,
             cspecGetRowContent:        (weaponData) => {return this._cspecGetRowContent(weaponData);},
             cspecHighlightConditionFn: (weaponData) => {return this._cspecHighlightConditionFn(weaponData);},
             },
@@ -105,7 +133,7 @@ class WeaponSelectView extends React.Component {
         this.state = {
                 filterByName: "", // Empty string by default
                 filterByCategory: "", // Empty string, or a weapon category string
-                filterByEndlineTag: "", // Empty string, or a weapon endline tag string
+                filterByEndlineTag: "hr", // Empty string, or a weapon endline tag string
             };
     }
 

@@ -31,6 +31,19 @@ class PetalaceSelectionTable extends React.Component {
             ["petalace-selection-table-head-cell-numeric", "Defense Up"],
             ["petalace-selection-table-head-cell-numeric", "Defense Gain"],
         ];
+    static _cspecBodyRowFormat = [
+            // Markup Class
+            "selection-table-cell-justify-right",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+        ];
+
 
     // Logically Static
     _cspecGetRowContent(petalaceRO) {
@@ -67,6 +80,7 @@ class PetalaceSelectionTable extends React.Component {
             dataArray:                 this.props.dataArray,
             handleRowClick:            (petalaceRO) => {this.handleRowClick(petalaceRO);},
             cspecHeadRowFormat:        this.constructor._cspecHeadRowFormat,
+            cspecBodyRowFormat:        this.constructor._cspecBodyRowFormat,
             cspecGetRowContent:        (petalaceRO) => {return this._cspecGetRowContent(petalaceRO);},
             cspecHighlightConditionFn: (petalaceRO) => {return this._cspecHighlightConditionFn(petalaceRO);},
             },
