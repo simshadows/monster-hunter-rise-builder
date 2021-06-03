@@ -252,7 +252,7 @@ class MHRBuilderAppInner extends React.Component {
         const calcStateSpecification = this.state.calcState.getSpecification();
         const calcStateCurrValues = this.state.calcState.getCurrState();
 
-        const buildPerformanceValues = calculateBuildPerformance(this.state.build, this.state.calcState);
+        const buildPerformanceValues = calculateBuildPerformance(rawData, this.state.build, this.state.calcState);
 
         return element("div",
             {
@@ -333,7 +333,7 @@ class MHRBuilderAppInner extends React.Component {
                     {
                     ref: this.myRefs.armourSelectView,
                     allArmourArrays: rawData.readonly.armour.arrays,
-                    currentSelectedArmour: this.state.build.getArmourObjsRO(),
+                    currentSelectedArmour: this.state.build.getArmourROs(),
                     handleSelectArmourPiece: (armourPieceRO) => {this.handleSelectArmourPiece(armourPieceRO)},
                     },
                     null,

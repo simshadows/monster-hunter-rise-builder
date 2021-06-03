@@ -255,8 +255,11 @@ class Build {
     getWeaponObjRO() {
         return this._weaponRO;
     }
+    getRampSkills(db) {
+        return this._getRampSkillSelectionsArray(db).filter((element) => {return (element !== null)});
+    }
 
-    getArmourObjsRO() {
+    getArmourROs() {
         return this._armourRO;
     }
 
@@ -272,11 +275,63 @@ class Build {
         return this._petalaceRO;
     }
 
+    _getAllDecosAsFlatArray() {
+        const ret = [];
+        for (const [slotID, subArray] of Object.entries(this._decorationsRO)) {
+            for (const obj of subArray) {
+                if (obj.decoRO !== null) {
+                    ret.push(obj.decoRO);
+                }
+            }
+        }
+        return ret;
+    }
+
+    getCurrentSkills() {
+        const ret = new Map(); // Map of arrays: {skill long ID : [skill object, skill level]}
+        // First add armour skills
+        for (const [slotID, armourPieceRO] of Object.entries(this._armourRO)) {
+            if (armourPieceRO === null) continue;
+            for (const [skillRO, skillLevel] of armourPieceRO.skills) {
+                if (ret.has(skillRO.id)) {
+                    ret.get(skillRO.id)[1] += skillLevel;
+                } else {
+                    ret.set(skillRO.id, [skillRO, skillLevel]);
+                }
+            }
+        }
+        // Then now we add talisman skills
+        for (const obj of this._talisman.skills) {
+            const skillRO = obj.skillRO;
+            const skillLevel = obj.skillLevel;
+            if (skillRO !== null) {
+                if (ret.has(skillRO.id)) {
+                    ret.get(skillRO.id)[1] += skillLevel;
+                } else {
+                    ret.set(skillRO.id, [skillRO, skillLevel]);
+                }
+            }
+        }
+        // And finally, we add decoration skills
+        for (const decoRO of this._getAllDecosAsFlatArray()) {
+            for (const [skillRO, skillLevel] of decoRO.skills) {
+                if (ret.has(skillRO.id)) {
+                    ret.get(skillRO.id)[1] += skillLevel;
+                } else {
+                    ret.set(skillRO.id, [skillRO, skillLevel]);
+                }
+            }
+        }
+        return ret;
+    }
+
     getRenderingProps(db) {
         assert(isObj(db));
         assert(isMap(db.readonly.weapons.map.greatsword)); // Spot check for structure
 
-        const calculatedTotalSkills = this._getCurrentSkills();
+        // TODO: This is called again for calculating the build. Maybe avoid that?
+        const calculatedTotalSkills = this.getCurrentSkills();
+
         const calculatedTotalSkillsRenderingProps = [];
         for (const [skillLongID, [skillRO, skillLevel]] of calculatedTotalSkills.entries()) {
             calculatedTotalSkillsRenderingProps.push({
@@ -407,47 +462,6 @@ class Build {
                 ret.push(null);
             } else {
                 ret.push(rampSkillObj);
-            }
-        }
-        return ret;
-    }
-
-    _getCurrentSkills() {
-        const ret = new Map(); // Map of arrays: {skill long ID : [skill object, skill level]}
-        // First add armour skills
-        for (const [slotID, armourPieceRO] of Object.entries(this._armourRO)) {
-            if (armourPieceRO === null) continue;
-            for (const [skillRO, skillLevel] of armourPieceRO.skills) {
-                if (ret.has(skillRO.id)) {
-                    ret.get(skillRO.id)[1] += skillLevel;
-                } else {
-                    ret.set(skillRO.id, [skillRO, skillLevel]);
-                }
-            }
-        }
-        // Then now we add talisman skills
-        for (const obj of this._talisman.skills) {
-            const skillRO = obj.skillRO;
-            const skillLevel = obj.skillLevel;
-            if (skillRO !== null) {
-                if (ret.has(skillRO.id)) {
-                    ret.get(skillRO.id)[1] += skillLevel;
-                } else {
-                    ret.set(skillRO.id, [skillRO, skillLevel]);
-                }
-            }
-        }
-        // And finally, we add decoration skills
-        for (const [slotID, decosArray] of Object.entries(this._decorationsRO)) {
-            for (const decoEquipObj of decosArray) {
-                if (decoEquipObj.decoRO === null) continue;
-                for (const [skillRO, skillLevel] of decoEquipObj.decoRO.skills) {
-                    if (ret.has(skillRO.id)) {
-                        ret.get(skillRO.id)[1] += skillLevel;
-                    } else {
-                        ret.set(skillRO.id, [skillRO, skillLevel]);
-                    }
-                }
             }
         }
         return ret;

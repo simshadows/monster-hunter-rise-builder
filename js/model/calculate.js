@@ -24,13 +24,33 @@ import {
 
 const assert = console.assert;
 
-function calculateBuildPerformance(build, calcState) {
+function calculateBuildPerformance(db, build, calcState) {
+    assert(isObj(db));
+    assert(isMap(db.readonly.weapons.map.greatsword)); // Spot check for structure
+
     assert(build instanceof Build);
     assert(calcState instanceof CalcState);
 
+    // We first gather all the information we need from the build.
+
+    const weaponRO = build.getWeaponObjRO();
+    const allSkills = build.getCurrentSkills();
+    const allRampSkills = build.getRampSkills(db);
+
+    const state = calcState.getCurrState(); // TODO: This overloading of the term "state" is annoying.
+
+    console.log(weaponRO);
+    console.log(allSkills);
+    console.log(allRampSkills);
+    console.log(state);
+
+    // Placeholder implementation
+
+    // TODO: Continue this!
+
     return {
-        efr: 42,
-        affinity: 20,
+        efr: weaponRO.attack,
+        affinity: weaponRO.affinity,
     };
 }
 
