@@ -15,8 +15,8 @@ div.equip-buff-icon-box {
     width: 30px;
 }
 div.equip-buff-icon-box > img {
-    height: 90%;
-    width: 90%;
+    height: 100%;
+    width: 100%;
 }
 
 div.equip-weapon-info-box {

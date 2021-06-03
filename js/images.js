@@ -32,6 +32,11 @@ const imgPathMap = new Map([
     ["skill_icon_red"      , "./images/skill_icon_red.svg"      ],
     ["skill_icon_white"    , "./images/skill_icon_white.svg"    ],
     ["skill_icon_yellow"   , "./images/skill_icon_yellow.svg"   ],
+
+    ["itembox_powercharm", "./images/itembox_powercharm_inkscapesourcefile.svg"],
+    ["itembox_powertalon", "./images/itembox_powertalon_inkscapesourcefile.svg"],
+    ["itembox_armorcharm", "./images/itembox_armorcharm_inkscapesourcefile.svg"],
+    ["itembox_armortalon", "./images/itembox_armortalon_inkscapesourcefile.svg"],
 ]);
 
 // Now we add a few procedurally generated IDs.

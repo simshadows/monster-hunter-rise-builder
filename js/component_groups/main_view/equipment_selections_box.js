@@ -98,14 +98,16 @@ function EquipInfoBox(props) {
 
 /*** Buffs and State ***/
 
-function PlaceholderBuffIcon() {
+function PlaceholderBuffIcon(props) {
+    check.isNonEmptyStr(props.iconImgPath);
+
     return element("div",
         {
         className: "equip-buff-icon-box",
         },
         element("img",
             {
-            src: getImgPath("placeholder_buff"),
+            src: props.iconImgPath,
             alt: "icon",
             },
             null,
@@ -125,19 +127,27 @@ function BuffsSelection(props) {
             className: "equip-main-box equip-buffs-main-box stackouter",
             },
             element(PlaceholderBuffIcon,
-                null,
-                null,
-            ),
-            element(PlaceholderBuffIcon,
-                null,
+                {
+                iconImgPath: getImgPath("itembox_powercharm"),
+                },
                 null,
             ),
             element(PlaceholderBuffIcon,
-                null,
+                {
+                iconImgPath: getImgPath("itembox_powertalon"),
+                },
                 null,
             ),
             element(PlaceholderBuffIcon,
+                {
+                iconImgPath: getImgPath("itembox_armorcharm"),
+                },
                 null,
+            ),
+            element(PlaceholderBuffIcon,
+                {
+                iconImgPath: getImgPath("itembox_armortalon"),
+                },
                 null,
             ),
             element("div",
@@ -599,7 +609,7 @@ class ArmourSelection extends React.Component {
             element(EquipIcon,
                 {
                 iconImg: (armourPieceRO !== null) ? armourPieceRO.iconImgPath : this.constructor._slotNameToIconImgPath.get(this.props.slotID),
-                showRemoveButton: true,
+                showRemoveButton: (armourPieceRO !== null),
                 handleSelectButton: () => {this.handleClickArmourSelect();},
                 handleRemoveButton: () => {this.handleClickRemovePiece();},
                 },
@@ -633,6 +643,8 @@ class ArmourSelection extends React.Component {
 
 function TalismanSelection(props) {
     check.isObj(props.talismanRORenderingProps);
+    check.isArr(props.talismanRORenderingProps.skills); // Spot check for structure
+    check.isArr(props.talismanRORenderingProps.decosArray); // Spot check for structure
 
     check.isFunction(props.handleClickTalismanSelect);
     check.isFunction(props.handleClickDecorationSelect);
@@ -647,7 +659,7 @@ function TalismanSelection(props) {
         element(EquipIcon,
             {
             iconImg: getImgPath("placeholder_talisman"),
-            showRemoveButton: true,
+            showRemoveButton: ((talismanRO.skills.length !== 0) || (talismanRO.decosArray.length !== 0)),
             handleSelectButton: () => {props.handleClickTalismanSelect()},
             handleRemoveButton: () => {props.handleClickRemovePiece();},
             },
@@ -752,7 +764,7 @@ function PetalaceSelection(props) {
         element(EquipIcon,
             {
             iconImg: getImgPath("placeholder_petalace"),
-            showRemoveButton: true,
+            showRemoveButton: (petalaceRO !== null),
             handleSelectButton: () => {props.handleClickPetalaceSelect()},
             handleRemoveButton: () => {props.handleClickRemovePiece();},
             },
