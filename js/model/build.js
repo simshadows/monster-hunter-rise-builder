@@ -275,6 +275,10 @@ class Build {
         return this._petalaceRO;
     }
 
+    //getAllDecos() {
+    //    return this._decorationsRO;
+    //}
+
     _getAllDecosAsFlatArray() {
         const ret = [];
         for (const [slotID, subArray] of Object.entries(this._decorationsRO)) {

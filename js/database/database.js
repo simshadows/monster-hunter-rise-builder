@@ -570,7 +570,7 @@ class GameData {
     }
 
     getDefaultWeapon() {
-        return this.readonly.weapons.map.greatsword.get("1a");
+        return this.readonly.weapons.map.greatsword.get("1f");
     }
 }
 

@@ -6,6 +6,11 @@
  */
 
 import * as check from "./check.js";
+import {
+    getBuildFromQueryString,
+    writeBuildToQueryString,
+} from "./query_strings.js";
+
 import {GameData} from "./database/database.js";
 import {
     isArmourSlotStr,
@@ -31,6 +36,7 @@ import {DecorationSelectView} from "./component_groups/select_views/decoration_s
 const element = React.createElement;
 const assert = console.assert;
 
+
 class MHRBuilderAppInner extends React.Component {
 
     static _viewEnumValues = new Set([
@@ -50,9 +56,8 @@ class MHRBuilderAppInner extends React.Component {
         this.state = {
                 // All possible states are in _viewEnumValues
                 view: "main", // Always start with the main view
-                //view: "talisman_select_view", // Useful for debugging
 
-                build: new Build(this.props.rawDataRO, this.props.rawDataRO.getDefaultWeapon()),
+                build: getBuildFromQueryString(this.props.rawDataRO, this.props.rawDataRO.getDefaultWeapon()),
                 calcState: new CalcState(),
             };
 
@@ -66,6 +71,18 @@ class MHRBuilderAppInner extends React.Component {
 
         // TODO: Ugh, the fact that we don't do this consistently is weird. Change it later?
         this.handleKeypress = this.handleKeypress.bind(this);
+        this.handlePopState = this.handlePopState.bind(this);
+
+        writeBuildToQueryString(this.state.build);
+    }
+
+    // i.e. when the user presses the back-button on the browser
+    handlePopState(e) {
+        console.log("handlePopState() called. Updating build.");
+        this.setState({
+                view: "main", // Reset to main view
+                build: getBuildFromQueryString(this.props.rawDataRO, this.props.rawDataRO.getDefaultWeapon()),
+            });
     }
 
     handleKeypress(e) {
@@ -125,6 +142,7 @@ class MHRBuilderAppInner extends React.Component {
         this.setState({
                 calcState: this.state.calcState.setState(groupName, stateName, newValue),
             });
+        writeBuildToQueryString(this.state.build);
     }
 
     handleSelectWeapon(weaponRO) {
@@ -133,6 +151,7 @@ class MHRBuilderAppInner extends React.Component {
                 view: "main", // Return back to main view
                 build: this.state.build.setWeapon(this.props.rawDataRO, weaponRO)
             });
+        writeBuildToQueryString(this.state.build);
     }
     handleSelectRampSkill(position, rampSkillID) {
         check.isInt(position);
@@ -141,6 +160,7 @@ class MHRBuilderAppInner extends React.Component {
         this.setState({
                 build: this.state.build.setRampageSkill(this.props.rawDataRO, position, rampSkillID),
             });
+        writeBuildToQueryString(this.state.build);
     }
 
     handleSelectArmourPiece(armourPieceRO) {
@@ -151,6 +171,7 @@ class MHRBuilderAppInner extends React.Component {
                 view: "main", // Return back to main view
                 build: this.state.build.setArmourPiece(this.props.rawDataRO, armourPieceRO.slotID, armourPieceRO)
             });
+        writeBuildToQueryString(this.state.build);
     }
 
     handleSelectTalismanSkill(skillIndex, skillRO, skillLevel) {
@@ -163,6 +184,7 @@ class MHRBuilderAppInner extends React.Component {
         this.setState({
                 build: this.state.build.setTalismanSkill(this.props.rawDataRO, skillIndex, skillRO, skillLevel),
             });
+        writeBuildToQueryString(this.state.build);
     }
     handleSelectTalismanDecoSlotSize(decoSlotIndex, decoSlotSize) {
         check.isInt(decoSlotIndex);
@@ -173,6 +195,7 @@ class MHRBuilderAppInner extends React.Component {
         this.setState({
                 build: this.state.build.setTalismanDecoSlot(this.props.rawDataRO, decoSlotIndex, decoSlotSize),
             });
+        writeBuildToQueryString(this.state.build);
     }
 
     handleSelectPetalace(petalaceRO) {
@@ -184,6 +207,7 @@ class MHRBuilderAppInner extends React.Component {
                 view: "main", // Return back to main view
                 build: this.state.build.setPetalace(this.props.rawDataRO, petalaceRO)
             });
+        writeBuildToQueryString(this.state.build);
     }
     
     handleSelectDecoration(decoRO, slotID, decoSlotID) {
@@ -199,6 +223,7 @@ class MHRBuilderAppInner extends React.Component {
                 view: "main", // Return back to main view
                 build: this.state.build.setDecoration(this.props.rawDataRO, decoRO, slotID, decoSlotID),
             });
+        writeBuildToQueryString(this.state.build);
     }
 
     // TODO: Merge with handleSelectArmourPiece().
@@ -217,16 +242,20 @@ class MHRBuilderAppInner extends React.Component {
                     build: this.state.build.setArmourPiece(this.props.rawDataRO, slotID, null)
                 });
         }
+        writeBuildToQueryString(this.state.build);
     }
 
     /* Inherited Methods */
 
     async componentDidMount() {
         document.addEventListener("keydown", this.handleKeypress);
+        window.addEventListener("popstate", this.handlePopState);
+
     }
     componentWillUnmount() {
         // TODO: Verify event removal matching?
         document.removeEventListener("keydown", this.handleKeypress);
+        window.removeEventListener("popstate", this.handlePopState);
     }
 
     render() {
