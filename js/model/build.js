@@ -146,8 +146,12 @@ class Build {
         assert((position >= 0) && (position < this._weaponRampSkillSelections.length));
         // TODO: Verify if the rampage skill ID is valid?
 
-        assert(db.readonly.weaponRampSkills.map.has(rampageSkillID));
-        this._weaponRampSkillSelections[position] = db.readonly.weaponRampSkills.map.get(rampageSkillID);
+        if (rampageSkillID === null) {
+            this._weaponRampSkillSelections[position] = null;
+        } else {
+            assert(db.readonly.weaponRampSkills.map.has(rampageSkillID));
+            this._weaponRampSkillSelections[position] = db.readonly.weaponRampSkills.map.get(rampageSkillID);
+        }
 
         this._validateState();
         return this;
