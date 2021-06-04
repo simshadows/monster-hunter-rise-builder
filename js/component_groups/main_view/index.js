@@ -45,7 +45,12 @@ function UtilityButtonExternalLink(props) {
 class UtilityBar extends React.Component {
 
     handleMakeBuildCard(e) {
-        html2canvas(document.getElementById("main-view")).then(function(canvas) {
+        console.log();
+        const options = {
+                backgroundColor: "#191a1d",
+                scale: 4,
+            };
+        html2canvas(document.getElementById("main-view"), options).then(function(canvas) {
             canvas.toBlob(function(blob) {
                 window.saveAs(blob, "build_card.png");
             });
@@ -118,6 +123,7 @@ class MainView extends React.Component {
             },
             element("div",
                 {
+                id: "app-inner-box",
                 className: "body-inner-box",
                 },
                 element(UtilityBar,

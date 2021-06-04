@@ -64,6 +64,7 @@
 
     --color-background-1: var(--color-scheme--dark1);
     --color-background-2: var(--color-scheme--dark2);
+    /* NOTE: If we change --color-background-1 here, we must also change the build card background manually. */
 
     --color--scrollbar-background: var(--color-scheme--dark1);
     --color--scrollbar: var(--color-scheme--dark3);
