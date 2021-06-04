@@ -1,6 +1,8 @@
 /*
  * Author:  simshadows <contact@simshadows.com>
  * License: GNU Affero General Public License v3 (AGPL-3.0)
+ *
+ * Requires React and ReactDOM to be imported in HTML.
  */
 
 const imgPathMap = new Map([
@@ -86,5 +88,36 @@ function getImgPath(id) {
     return imgPathMap.get(id);
 }
 
-export {getImgPath};
+function getSimpleImgElement(id) {
+    return React.createElement("img",
+        {
+        src: getImgPath(id),
+        alt: id, // TODO: Better alt texts?
+        },
+        null,
+    );
+}
+
+function FontAwesomeSprite(props) {
+    let {style, fragment, ...otherProps} = props;
+
+    if (typeof style !== "string") {
+        style = "solid"; // Default
+    }
+    console.assert(style.length > 0);
+
+    console.assert((typeof fragment === "string") && (fragment.length > 0));
+
+    return React.createElement("svg",
+        otherProps,
+        React.createElement("use",
+            {
+            href: "./images/fontawesome-free-web/sprites/" + style + ".svg#" + fragment,
+            },
+            null,
+        ),
+    );
+}
+
+export {getImgPath, getSimpleImgElement, FontAwesomeSprite};
 

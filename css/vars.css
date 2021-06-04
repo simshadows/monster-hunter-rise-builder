@@ -68,6 +68,9 @@
     --color--scrollbar-background: var(--color-scheme--dark1);
     --color--scrollbar: var(--color-scheme--dark3);
 
+    --color-utility-bar: var(--color-scheme--dark3);
+    --color-utility-button--background: var(--color-scheme--dark1);
+    --color-utility-button--icon: var(--color-scheme--bright2);
     --color-button-common--border: var(--color-scheme--bright4);
     --color-button-common--border-hover: var(--color-scheme--bright1);
 
@@ -87,6 +90,7 @@
     --color-equip--icon-box-border-hover: var(--color-scheme--bright4);
     --color-equip--remove-button: var(--color-scheme--red-dim);
     --color-equip--remove-button-text: var(--color-scheme--bright1);
+    --color-equip--remove-button-text-hover: white;
     --color-equip-buffs--icon-box: var(--color-scheme--dark0);
     --color-equip-weapon--stat-box: var(--color-scheme--dark4);
     --color-equip-weapon--ramp-box: var(--color-scheme--dark4);
