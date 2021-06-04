@@ -37,23 +37,24 @@ function updateQueryKeys(map) {
 export function getBuildFromQueryString(db) {
     const build = new Build(db, db.getDefaultWeapon());
 
-    // If the basic equips string is valid, we process it.
-    const basicEquipsStr = getQueryValue("a");
-    if (typeof basicEquipsStr === "string") {
-        const decomp = basicEquipsStr.split(SPLIT_CHAR);
-        if (decomp.length === 8) {
-            readDecomposedBasicEquipsStr(decomp, db, build);
+    function processIfQueryIsValid(queryStringValue, expectedLength, processingFunction) {
+        if (typeof queryStringValue === "string") {
+            const decomp = queryStringValue.split(SPLIT_CHAR);
+            if (decomp.length === expectedLength) {
+                processingFunction(decomp, db, build);
+            }
         }
     }
 
-    // If the talisman string is valid, we process it.
+    const basicEquipsStr = getQueryValue("a");
+    processIfQueryIsValid(basicEquipsStr, 8, readDecomposedBasicEquipsStr);
+
+    // IMPORTANT: Parsing rampage skills is dependent on first parsing the weapon.
+    const rampSkillsStr = getQueryValue("b");
+    processIfQueryIsValid(rampSkillsStr, 3, readDecomposedRampSkillsStr);
+
     const taliStr = getQueryValue("c");
-    if (typeof taliStr === "string") {
-        const decomp = taliStr.split(SPLIT_CHAR);
-        if (decomp.length === 7) {
-            readDecomposedTalismanStr(decomp, db, build);
-        }
-    }
+    processIfQueryIsValid(taliStr, 7, readDecomposedTalismanStr);
 
     return build;
 }
@@ -62,13 +63,13 @@ function readDecomposedBasicEquipsStr(arr, db, build) {
     const weaponCategory = arr[0];
     const weaponID       = arr[1];
     const armourIDs = {
-            head:  arr[2],
-            chest: arr[3],
-            arms:  arr[4],
-            waist: arr[5],
-            legs:  arr[6],
+            head         : arr[2],
+            chest        : arr[3],
+            arms         : arr[4],
+            waist        : arr[5],
+            legs         : arr[6],
         };
-    const petalaceID = arr[7];
+    const petalaceID     = arr[7];
 
     const weaponCategoryMap = db.readonly.weapons.map[weaponCategory];
     if (weaponCategoryMap !== undefined) {
@@ -128,6 +129,31 @@ function readDecomposedTalismanStr(arr, db, build) {
     op2(2, decoSlot2);
 }
 
+function readDecomposedRampSkillsStr(arr, db, build) {
+    const rampSkill0ID = arr[0];
+    const rampSkill1ID = arr[1];
+    const rampSkill2ID = arr[2];
+
+    const weaponRO = build.getWeaponObjRO();
+
+    function op(rampSkillID, position) {
+        const optionsSubArray = weaponRO.rampSkills[position];
+        if (optionsSubArray !== undefined) {
+            assert((optionsSubArray instanceof Array) && (optionsSubArray.length > 0));
+            for (const rampSkillRO of optionsSubArray) {
+                if (rampSkillID === rampSkillRO.id) {
+                    // TODO: It's weird that we need the query the database again for the rampage skill.
+                    build.setRampageSkill(db, position, rampSkillRO.id);
+                }
+            }
+        }
+    }
+
+    op(rampSkill0ID, 0);
+    op(rampSkill1ID, 1);
+    op(rampSkill2ID, 2);
+}
+
 /****************************************************************************************/
 /*** BUILD SERIALIZATION ****************************************************************/
 /****************************************************************************************/
@@ -138,6 +164,10 @@ export function writeBuildToQueryString(build) {
     const weaponRO = build.getWeaponObjRO();
     const armourROs = build.getArmourROs();
     const petalaceRO = build.getPetalaceObjRO();
+
+    const rampSkill0 = build.getRampSkill(0);
+    const rampSkill1 = build.getRampSkill(1);
+    const rampSkill2 = build.getRampSkill(2);
 
     const talismanSkillsRO = build.getTalismanSkills();
     const talismanSlotsRO = build.getTalismanDecoSlots();
@@ -164,24 +194,28 @@ export function writeBuildToQueryString(build) {
             ((petalaceRO      === null) ? "0" : petalaceRO.id        ),
         ].join(SPLIT_CHAR);
     
-    const rampSkillsStr = "NOT YET IMPLEMENTED";
+    const rampSkillsStr = [
+            ((rampSkill0 === null) ? "" : rampSkill0.id),
+            ((rampSkill1 === null) ? "" : rampSkill1.id),
+            ((rampSkill2 === null) ? "" : rampSkill2.id),
+        ].join(SPLIT_CHAR);
 
     const taliStr = [
             // Talisman skills
-            ((talismanSkillsRO[0].skillRO === null) ? "0" : talismanSkillsRO[0].skillRO.shortId),
-            ((talismanSkillsRO[1].skillRO === null) ? "0" : talismanSkillsRO[1].skillRO.shortId),
+            ((talismanSkillsRO[0].skillRO === null) ? "" : talismanSkillsRO[0].skillRO.shortId),
+            ((talismanSkillsRO[1].skillRO === null) ? "" : talismanSkillsRO[1].skillRO.shortId),
             // Talisman skill levels
-            ((talismanSkillsRO[0].skillLevel === null) ? "0" : talismanSkillsRO[0].skillLevel),
-            ((talismanSkillsRO[1].skillLevel === null) ? "0" : talismanSkillsRO[1].skillLevel),
+            ((talismanSkillsRO[0].skillLevel === null) ? "" : talismanSkillsRO[0].skillLevel),
+            ((talismanSkillsRO[1].skillLevel === null) ? "" : talismanSkillsRO[1].skillLevel),
             // Talisman decoration slots
-            (talismanSlotsRO[0]),
-            (talismanSlotsRO[1]),
-            (talismanSlotsRO[2]),
+            ((talismanSlotsRO[0] === 0) ? "" : talismanSlotsRO[0]),
+            ((talismanSlotsRO[1] === 0) ? "" : talismanSlotsRO[1]),
+            ((talismanSlotsRO[2] === 0) ? "" : talismanSlotsRO[2]),
         ].join(SPLIT_CHAR);
 
     updateQueryKeys(new Map([
         ["a", basicEquipsStr],
-        //["b", rampSkillsStr], // TODO
+        ["b", rampSkillsStr],
         ["c", taliStr],
 
         // Terrible.

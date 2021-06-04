@@ -58,12 +58,12 @@ class CalculationResultsBox extends React.Component {
             this._renderStat("Effective Raw (EFR)", perf.effectiveRaw.toFixed(2)),
             this._renderStat("Affinity", String(perf.affinity) + "%"),
             this._renderSpace(),
-            this._renderStat("Crit Damage Multiplier", perf.critDmgMultiplier.toFixed(2)),
-            this._renderStat("Crit Modifier", perf.critModifier.toFixed(4)),
+            this._renderStat("Crit Damage Multiplier", perf.critDmgMultiplier.toFixed(2) + "x"),
+            this._renderStat("Crit Modifier", perf.critModifier.toFixed(4) + "x"),
             this._renderSpace(),
             this._renderStat("Sharpness Bar", String(perf.realSharpnessBar)),
-            this._renderStat("Raw Sharpness Modifier", perf.rawSharpnessModifier.toFixed(4)),
-            this._renderStat("Elemental Sharpness Modifier", perf.elementalSharpnessModifier.toFixed(4)),
+            this._renderStat("Raw Sharpness Modifier", perf.rawSharpnessModifier.toFixed(4) + "x"),
+            this._renderStat("Elemental Sharpness Modifier", perf.elementalSharpnessModifier.toFixed(4) + "x"),
         );
     }
 }

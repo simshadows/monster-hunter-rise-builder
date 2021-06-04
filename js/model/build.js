@@ -235,17 +235,17 @@ class Build {
     }
 
     // Usefully returns self for use in React state transitions.
-    setDecoration(db, decoRO, slotID, decoSlotID) {
+    setDecoration(db, decoRO, slotID, position) {
         if (decoRO === null) {
             check.isObj(decoRO);
             check.isInt(decoRO.slotSize); // Spot check for structure
         }
         isNonEmptyStr(slotID);
         assert(isDecoEquippableSlotStr(slotID));
-        isInt(decoSlotID);
-        assert((decoSlotID >= 0) && (decoSlotID <= 2));
+        isInt(position);
+        assert((position >= 0) && (position <= 2));
 
-        this._decorationsRO[slotID][decoSlotID].decoRO = decoRO;
+        this._decorationsRO[slotID][position].decoRO = decoRO;
         // TODO: We don't actually need the database here... get rid of the parameter?
 
         this._validateState();
@@ -254,6 +254,16 @@ class Build {
 
     getWeaponObjRO() {
         return this._weaponRO;
+    }
+    getRampSkill(rampSkillIndex) {
+        assert(isInt(rampSkillIndex));
+        const rampSkillRO = this._weaponRampSkillSelections[rampSkillIndex];
+        if ((rampSkillRO === undefined) || (rampSkillRO === null)) {
+            return null;
+        } else {
+            assert(isObj(rampSkillRO));
+            return rampSkillRO;
+        }
     }
     getRampSkills(db) {
         return this._getRampSkillSelectionsArray(db).filter((element) => {return (element !== null)});
