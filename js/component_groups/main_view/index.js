@@ -170,6 +170,12 @@ class MainView extends React.Component {
                         ),
                     ),
                 ),
+                //element("div",
+                //    {
+                //    id: "footer-spacing-box",
+                //    },
+                //    null,
+                //),
             ),
         );
 

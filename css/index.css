@@ -143,11 +143,6 @@ body::-webkit-scrollbar-thumb {
     /* padding: 0 0 80px 0; */
 }
 
-#app-inner-box {
-    display: flex;
-    flex-direction: column;
-}
-
 #body-outer-box {
     display: flex;
     align-items: center;
@@ -161,8 +156,21 @@ div.body-inner-box {
     flex-direction: column;
 
     margin: 0 auto 0 auto;
-    padding: 0 0 80px 0;
+    /* padding: 0 0 50px 0; */ /* Makes the app feel more aligned, but it feels weird if the window is small */
 }
+
+
+#app-inner-box {
+    display: flex;
+    flex-direction: column;
+}
+
+/* An alternative idea to adding 50px to the bottom-padding of body-inner-box but idk how to do it
+#footer-spacing-box {
+    min-height: 0;
+    max-height: 40px;
+}
+*/
 
 /*** Main View ***/
 
@@ -178,7 +186,7 @@ div.body-inner-box {
 #main-view-inner-box {
     display: flex;
     flex-direction: row;
-    column-gap: 8px;
+    column-gap: 10px;
 
     min-height: 600px;
 }
@@ -188,7 +196,7 @@ div.sub-box {
 }
 
 #utility-bar-box-wrap {
-    padding: 10px 10px 30px 10px;
+    padding: 10px 10px 0 10px;
     width: 100%;
 }
 #utility-bar-box {
