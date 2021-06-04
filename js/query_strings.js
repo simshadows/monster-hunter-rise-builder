@@ -10,6 +10,8 @@ import {Build} from "./model/build.js";
 
 const assert = console.assert;
 
+const SPLIT_CHAR = " ";
+
 
 function getQueryValue(key) {
     const q = new URLSearchParams(window.location.search);
@@ -28,47 +30,56 @@ function updateQueryKeys(map) {
     history.pushState(null, null, newQueryStr);
 }
 
-/*** ***/
+/****************************************************************************************/
+/*** BUILD DESERIALIZATION **************************************************************/
+/****************************************************************************************/
 
-function getBuildFromQueryString(db, defaultWeapon) {
-    const build = new Build(db, defaultWeapon);
+export function getBuildFromQueryString(db) {
+    const build = new Build(db, db.getDefaultWeapon());
 
-    const weaponQ = {
-        category: getQueryValue("a"),
-        id:       getQueryValue("b"),
-    };
-    
-    const armourQ = {
-        head:  getQueryValue("c"),
-        chest: getQueryValue("d"),
-        arms:  getQueryValue("e"),
-        waist: getQueryValue("f"),
-        legs:  getQueryValue("g"),
-    };
+    // If the basic equips string is valid, we process it.
+    const basicEquipsStr = getQueryValue("a");
+    if (typeof basicEquipsStr === "string") {
+        const decomp = basicEquipsStr.split(SPLIT_CHAR);
+        if (decomp.length === 8) {
+            readDecomposedBasicEquipsStr(decomp, db, build);
+        }
+    }
 
-    const petalaceQ = getQueryValue("h");
+    // If the talisman string is valid, we process it.
+    const taliStr = getQueryValue("c");
+    if (typeof taliStr === "string") {
+        const decomp = taliStr.split(SPLIT_CHAR);
+        if (decomp.length === 7) {
+            readDecomposedTalismanStr(decomp, db, build);
+        }
+    }
 
-    const talismanQ = {
-        skillID0: getQueryValue("i"), // Short IDs
-        skillID1: getQueryValue("j"),
-        skillLevel0: getQueryValue("il"),
-        skillLevel1: getQueryValue("jl"),
-        
-        slot0: getQueryValue("o"), // Integers
-        slot1: getQueryValue("p"),
-        slot2: getQueryValue("q"),
-    };
+    return build;
+}
 
-    const weaponCategoryMap = db.readonly.weapons.map[weaponQ.category];
+function readDecomposedBasicEquipsStr(arr, db, build) {
+    const weaponCategory = arr[0];
+    const weaponID       = arr[1];
+    const armourIDs = {
+            head:  arr[2],
+            chest: arr[3],
+            arms:  arr[4],
+            waist: arr[5],
+            legs:  arr[6],
+        };
+    const petalaceID = arr[7];
+
+    const weaponCategoryMap = db.readonly.weapons.map[weaponCategory];
     if (weaponCategoryMap !== undefined) {
-        const weaponRO = weaponCategoryMap.get(weaponQ.id);
+        const weaponRO = weaponCategoryMap.get(weaponID);
         if (weaponRO !== undefined) {
             build.setWeapon(db, weaponRO);
         }
     }
 
     const armourMap = db.readonly.armour.map;
-    for (const [slotID, queryValue] of Object.entries(armourQ)) {
+    for (const [slotID, queryValue] of Object.entries(armourIDs)) {
         const subMap = armourMap.get(queryValue);
         if (subMap !== undefined) {
             const armourRO = subMap.get(slotID);
@@ -78,12 +89,23 @@ function getBuildFromQueryString(db, defaultWeapon) {
         }
     }
 
-    const petalaceRO = db.readonly.petalaces.map.get(petalaceQ);
+    const petalaceRO = db.readonly.petalaces.map.get(petalaceID);
     if (petalaceRO !== undefined) {
         build.setPetalace(db, petalaceRO);
     }
+}
+
+function readDecomposedTalismanStr(arr, db, build) {
+    const skill0ShortID = arr[0];
+    const skill1ShortID = arr[1];
+    const skill0Lvl     = arr[2];
+    const skill1Lvl     = arr[3];
+    const decoSlot0     = arr[4];
+    const decoSlot1     = arr[5];
+    const decoSlot2     = arr[6];
 
     const skillMap = db.readonly.skills.shortIdsMap;
+
     function op1(_skillIndex, _skillID, _skillLevel) {
         const skillRO = skillMap.get(_skillID);
         const parsedLevel = parseInt(_skillLevel);
@@ -91,22 +113,26 @@ function getBuildFromQueryString(db, defaultWeapon) {
             build.setTalismanSkill(db, _skillIndex, skillRO, parsedLevel);
         }
     }
-    op1(0, talismanQ.skillID0, talismanQ.skillLevel0);
-    op1(1, talismanQ.skillID1, talismanQ.skillLevel1);
     function op2(_decoIndex, _slotSize) {
         const parsedSize = parseInt(_slotSize);
         if ((parsedSize >= 0) && (parsedSize <= 3)) {
             build.setTalismanDecoSlot(db, _decoIndex, parsedSize);
         }
     }
-    op2(0, talismanQ.slot0);
-    op2(1, talismanQ.slot1);
-    op2(2, talismanQ.slot2);
 
-    return build;
+    op1(0, skill0ShortID, skill0Lvl);
+    op1(1, skill1ShortID, skill1Lvl);
+
+    op2(0, decoSlot0);
+    op2(1, decoSlot1);
+    op2(2, decoSlot2);
 }
 
-function writeBuildToQueryString(build) {
+/****************************************************************************************/
+/*** BUILD SERIALIZATION ****************************************************************/
+/****************************************************************************************/
+
+export function writeBuildToQueryString(build) {
     assert(build instanceof Build);
 
     const weaponRO = build.getWeaponObjRO();
@@ -127,30 +153,36 @@ function writeBuildToQueryString(build) {
     //    }
     //}
 
+    const basicEquipsStr = [
+            weaponRO.category,
+            weaponRO.id,
+            ((armourROs.head  === null) ? "0" : armourROs.head.setID ),
+            ((armourROs.chest === null) ? "0" : armourROs.chest.setID),
+            ((armourROs.arms  === null) ? "0" : armourROs.arms.setID ),
+            ((armourROs.waist === null) ? "0" : armourROs.waist.setID),
+            ((armourROs.legs  === null) ? "0" : armourROs.legs.setID ),
+            ((petalaceRO      === null) ? "0" : petalaceRO.id        ),
+        ].join(SPLIT_CHAR);
+    
+    const rampSkillsStr = "NOT YET IMPLEMENTED";
+
+    const taliStr = [
+            // Talisman skills
+            ((talismanSkillsRO[0].skillRO === null) ? "0" : talismanSkillsRO[0].skillRO.shortId),
+            ((talismanSkillsRO[1].skillRO === null) ? "0" : talismanSkillsRO[1].skillRO.shortId),
+            // Talisman skill levels
+            ((talismanSkillsRO[0].skillLevel === null) ? "0" : talismanSkillsRO[0].skillLevel),
+            ((talismanSkillsRO[1].skillLevel === null) ? "0" : talismanSkillsRO[1].skillLevel),
+            // Talisman decoration slots
+            (talismanSlotsRO[0]),
+            (talismanSlotsRO[1]),
+            (talismanSlotsRO[2]),
+        ].join(SPLIT_CHAR);
+
     updateQueryKeys(new Map([
-
-        ["a", weaponRO.category],
-        ["b", weaponRO.id      ],
-
-        ["c", (armourROs.head  === null) ? "0" : armourROs.head.setID ],
-        ["d", (armourROs.chest === null) ? "0" : armourROs.chest.setID],
-        ["e", (armourROs.arms  === null) ? "0" : armourROs.arms.setID ],
-        ["f", (armourROs.waist === null) ? "0" : armourROs.waist.setID],
-        ["g", (armourROs.legs  === null) ? "0" : armourROs.legs.setID ],
-
-        ["h", (petalaceRO === null) ? "0" : petalaceRO.id],
-
-        // Talisman skills
-        ["i", (talismanSkillsRO[0].skillRO === null) ? "0" : talismanSkillsRO[0].skillRO.shortId],
-        ["j", (talismanSkillsRO[1].skillRO === null) ? "0" : talismanSkillsRO[1].skillRO.shortId],
-        // Talisman skill levels
-        ["il", (talismanSkillsRO[0].skillLevel === null) ? "0" : talismanSkillsRO[0].skillLevel],
-        ["jl", (talismanSkillsRO[1].skillLevel === null) ? "0" : talismanSkillsRO[1].skillLevel],
-        // Intentionally skip letters
-        // Talisman decoration slots
-        ["o", talismanSlotsRO[0]],
-        ["p", talismanSlotsRO[1]],
-        ["q", talismanSlotsRO[2]],
+        ["a", basicEquipsStr],
+        //["b", rampSkillsStr], // TODO
+        ["c", taliStr],
 
         // Terrible.
         //["raa", decoVal("weapon", 0)],
@@ -173,9 +205,4 @@ function writeBuildToQueryString(build) {
         //["rfc", decoVal("talisman", 2)],
     ]));
 }
-
-export {
-    getBuildFromQueryString,
-    writeBuildToQueryString,
-};
 

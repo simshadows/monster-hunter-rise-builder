@@ -57,7 +57,7 @@ class MHRBuilderAppInner extends React.Component {
                 // All possible states are in _viewEnumValues
                 view: "main", // Always start with the main view
 
-                build: getBuildFromQueryString(this.props.rawDataRO, this.props.rawDataRO.getDefaultWeapon()),
+                build: getBuildFromQueryString(this.props.rawDataRO),
                 calcState: new CalcState(),
             };
 
@@ -81,7 +81,7 @@ class MHRBuilderAppInner extends React.Component {
         console.log("handlePopState() called. Updating build.");
         this.setState({
                 view: "main", // Reset to main view
-                build: getBuildFromQueryString(this.props.rawDataRO, this.props.rawDataRO.getDefaultWeapon()),
+                build: getBuildFromQueryString(this.props.rawDataRO),
             });
     }
 
