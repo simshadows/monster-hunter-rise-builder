@@ -43,42 +43,50 @@ function UtilityButtonExternalLink(props) {
 }
 
 class UtilityBar extends React.Component {
+
+    handleMakeBuildCard(e) {
+        html2canvas(document.getElementById("main-view")).then(function(canvas) {
+            canvas.toBlob(function(blob) {
+                window.saveAs(blob, "build_card.png");
+            });
+        });
+    }
+
     render() {
         return element("div",
             {
-            className: "utility-bar-box",
+            id: "utility-bar-box-wrap",
             },
             element("div",
                 {
-                className: "utility-button",
-                style: {
-                        border: "none",
-                        background: "none",
-                        cursor: "auto"
+                id: "utility-bar-box",
+                },
+                element("div",
+                    {
+                    className: "utility-button",
+                    onClick: (e) => {this.handleMakeBuildCard(e);},
                     },
-                },
-                null,
-                // This will be used for the build card feature!
-                //element(FontAwesomeSprite,
-                //    {
-                //    fragment: "camera",
-                //    },
-                //    null,
-                //),
-            ),
-            element("div",
-                {
-                className: "utility-bar-spacer-box",
-                },
-                "This project is currently very early in development. The math is incomplete. Build URLs are subject to change.",
-            ),
-            element(UtilityButtonExternalLink,
-                {
-                linkURL: "https://github.com/simshadows/monster-hunter-rise-builder",
-                faStyle: "brands",
-                faFragment: "github",
-                },
-                null,
+                    element(FontAwesomeSprite,
+                        {
+                        fragment: "camera",
+                        },
+                        null,
+                    ),
+                ),
+                element("div",
+                    {
+                    id: "utility-bar-spacer-box",
+                    },
+                    "This project is currently very early in development. The math is incomplete. Build URLs are subject to change.",
+                ),
+                element(UtilityButtonExternalLink,
+                    {
+                    linkURL: "https://github.com/simshadows/monster-hunter-rise-builder",
+                    faStyle: "brands",
+                    faFragment: "github",
+                    },
+                    null,
+                ),
             ),
         );
     }
@@ -106,11 +114,10 @@ class MainView extends React.Component {
 
         return element("div",
             {
-            className: "body-outer-box",
+            id: "body-outer-box",
             },
             element("div",
                 {
-                id: "app-inner-box",
                 className: "body-inner-box",
                 },
                 element(UtilityBar,
@@ -119,11 +126,11 @@ class MainView extends React.Component {
                 ),
                 element("div",
                     {
-                    id: "mhr-builder-app-main-view",
+                    id: "main-view",
                     },
                     element("div",
                         {
-                        className: "main-view-inner-box",
+                        id: "main-view-inner-box",
                         },
                         element(SkillsResultsBox,
                             {

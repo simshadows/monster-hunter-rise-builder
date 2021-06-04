@@ -31,6 +31,12 @@ Errors in event handlers will silently fail. This is especially bad.
 
 Errors in script imports will also silently fail, and the only way a user will know is if they're stuck on the loading screen for too long, or if they look at the browser developer tools.
 
+## Contributing
+
+I am not accepting code contributions and pull requests at this time, but I am happily accepting feedback. Feel free to [open an issue](https://github.com/simshadows/monster-hunter-rise-builder/issues)!
+
+Or, feel free to fork and improve, or use this as a template for a builder program for other games! My only request is to maintain the AGPL licensing and include appropriate attribution.
+
 ## License
 
 All original source code is licensed under the [*GNU Affero General Public License v3.0 (AGPLv3)*](https://www.gnu.org/licenses/agpl-3.0.en.html).

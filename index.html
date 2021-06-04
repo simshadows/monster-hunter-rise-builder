@@ -32,7 +32,6 @@
     <link rel="stylesheet" type="text/css" href="./css/component_groups/main_view/skill_results_box.css">
     <link rel="stylesheet" type="text/css" href="./css/component_groups/main_view/equipment_selection_box.css">
     <link rel="stylesheet" type="text/css" href="./css/component_groups/main_view/calculation_results_box.css">
-    <link rel="stylesheet" type="text/css" href="./css/component_groups/main_view/util_box.css">
     <link rel="stylesheet" type="text/css" href="./css/component_groups/select_views.css">
 </head>
 
@@ -56,6 +55,24 @@
     if (typeof ReactDOM == 'undefined') {
         document.write(unescape(
             "%3Cscript src='./js/dependencies/react-dom.development.js' type='text/javascript' crossorigin%3E%3C/script%3E"
+        ));
+    }
+    </script>
+
+    <script src="https://unpkg.com/html2canvas@1.0.0-rc.7/dist/html2canvas.js"></script>
+    <script type="text/javascript">
+    if (typeof html2canvas == 'undefined') {
+        document.write(unescape(
+            "%3Cscript src='./js/dependencies/html2canvas.js' type='text/javascript'%3E%3C/script%3E"
+        ));
+    }
+    </script>
+
+    <script src="https://unpkg.com/file-saver@2/dist/FileSaver.js"></script>
+    <script type="text/javascript">
+    if (typeof FileSaver == 'undefined') {
+        document.write(unescape(
+            "%3Cscript src='./js/dependencies/FileSaver.js' type='text/javascript'%3E%3C/script%3E"
         ));
     }
     </script>
