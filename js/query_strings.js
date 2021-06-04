@@ -56,6 +56,10 @@ export function getBuildFromQueryString(db) {
     const taliStr = getQueryValue("c");
     processIfQueryIsValid(taliStr, 7, readDecomposedTalismanStr);
 
+    // IMPORTANT: Parsing decorations must be done last due to dependence on everything else.
+    const decosStr = getQueryValue("d");
+    processIfQueryIsValid(decosStr, (7 * 3), readDecomposedDecosStr); // 7 gear slots * 3 deco slots each
+
     return build;
 }
 
@@ -154,6 +158,35 @@ function readDecomposedRampSkillsStr(arr, db, build) {
     op(rampSkill2ID, 2);
 }
 
+function readDecomposedDecosStr(arr, db, build) {
+
+    const decoMap = db.readonly.decorations.map;
+
+    const weaponRO = build.getWeaponObjRO();
+
+    function readGearSlotDecos(slotID, startingIndex) {
+        for (let position = 0; position < 3; ++position) {
+            const decoID = arr[startingIndex + position];
+            const decoRO = decoMap.get(decoID);
+            if (decoRO === undefined) continue;
+
+            const slotSize = build.getDecoSlotSize(slotID, position);
+            if (decoRO.slotSize > slotSize) continue;
+
+            build.setDecoration(db, decoRO, slotID, position);
+        }
+    }
+
+    readGearSlotDecos("weapon"  , 3 * 0);
+    readGearSlotDecos("head"    , 3 * 1);
+    readGearSlotDecos("chest"   , 3 * 2);
+    readGearSlotDecos("arms"    , 3 * 3);
+    readGearSlotDecos("waist"   , 3 * 4);
+    readGearSlotDecos("legs"    , 3 * 5);
+    readGearSlotDecos("talisman", 3 * 6);
+}
+
+
 /****************************************************************************************/
 /*** BUILD SERIALIZATION ****************************************************************/
 /****************************************************************************************/
@@ -172,16 +205,9 @@ export function writeBuildToQueryString(build) {
     const talismanSkillsRO = build.getTalismanSkills();
     const talismanSlotsRO = build.getTalismanDecoSlots();
 
-    //const decosRO = build.getAllDecos();
+    //const decosRO = ???; // We read decos later.
 
-    //function decoVal(_slotID, _decoSlotID) {
-    //    const decoSlotData = decosRO[_slotID][_decoSlotID];
-    //    if ((decoSlotData !== undefined) && (decoSlotData.decoRO !== null)) {
-    //        return decoSlotData.decoRO.id;
-    //    } else {
-    //        return "0";
-    //    }
-    //}
+    /*** ***/
 
     const basicEquipsStr = [
             weaponRO.category,
@@ -213,30 +239,32 @@ export function writeBuildToQueryString(build) {
             ((talismanSlotsRO[2] === 0) ? "" : talismanSlotsRO[2]),
         ].join(SPLIT_CHAR);
 
+    function generateDecoElements(slotID) {
+        const ret = [
+                build.getDeco(slotID, 0),
+                build.getDeco(slotID, 1),
+                build.getDeco(slotID, 2),
+            ];
+        for (let i = 0; i < ret.length; ++i) {
+            ret[i] = ((ret[i] === null) || (ret[i] === undefined)) ? "" : ret[i].id;
+        }
+        return ret;
+    }
+    const decosStr = [
+            ...generateDecoElements("weapon"  ),
+            ...generateDecoElements("head"    ),
+            ...generateDecoElements("chest"   ),
+            ...generateDecoElements("arms"    ),
+            ...generateDecoElements("waist"   ),
+            ...generateDecoElements("legs"    ),
+            ...generateDecoElements("talisman"),
+        ].join(SPLIT_CHAR);
+
     updateQueryKeys(new Map([
         ["a", basicEquipsStr],
         ["b", rampSkillsStr],
         ["c", taliStr],
-
-        // Terrible.
-        //["raa", decoVal("weapon", 0)],
-        //["rab", decoVal("weapon", 1)],
-        //["rac", decoVal("weapon", 2)],
-        //["rba", decoVal("head", 0)],
-        //["rbb", decoVal("head", 1)],
-        //["rbc", decoVal("head", 2)],
-        //["rca", decoVal("chest", 0)],
-        //["rcb", decoVal("chest", 1)],
-        //["rcc", decoVal("chest", 2)],
-        //["rda", decoVal("waist", 0)],
-        //["rdb", decoVal("waist", 1)],
-        //["rdc", decoVal("waist", 2)],
-        //["rea", decoVal("legs", 0)],
-        //["reb", decoVal("legs", 1)],
-        //["rec", decoVal("legs", 2)],
-        //["rfa", decoVal("talisman", 0)],
-        //["rfb", decoVal("talisman", 1)],
-        //["rfc", decoVal("talisman", 2)],
+        ["d", decosStr],
     ]));
 }
 

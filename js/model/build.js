@@ -67,7 +67,7 @@ class Build {
                 assert(isObj(obj));
                 assert(decoSlots[i] === obj.slotSize);
                 if (obj.decoRO !== null) {
-                    assert(obj.decoRO.slotSize === obj.slotSize);
+                    assert(obj.decoRO.slotSize <= obj.slotSize);
                 }
             }
         }
@@ -285,9 +285,28 @@ class Build {
         return this._petalaceRO;
     }
 
-    //getAllDecos() {
-    //    return this._decorationsRO;
-    //}
+    getDecoSlotSize(slotID, position) {
+        const arr = this._decorationsRO[slotID];
+        if (arr === undefined) return 0;
+
+        const obj = arr[position];
+        if (obj === undefined) return 0;
+
+        assert(isInt(obj.slotSize) && (obj.slotSize > 0) && (obj.slotSize <= 3));
+        return obj.slotSize;
+    }
+    getDeco(slotID, position) {
+        const arr = this._decorationsRO[slotID];
+        if (arr === undefined) return null;
+
+        const obj = arr[position];
+        if (obj === undefined) return null;
+
+        if (obj.decoRO !== null) {
+            assert(isInt(obj.decoRO.slotSize)); // Spot check for structure
+        }
+        return obj.decoRO;
+    }
 
     _getAllDecosAsFlatArray() {
         const ret = [];
