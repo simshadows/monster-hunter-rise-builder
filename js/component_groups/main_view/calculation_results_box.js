@@ -63,7 +63,7 @@ class CalculationResultsBox extends React.Component {
             this._renderSpace(),
             this._renderStat("Sharpness Bar", String(perf.realSharpnessBar)),
             this._renderStat("Raw Sharpness Modifier", perf.rawSharpnessModifier.toFixed(4) + "x"),
-            this._renderStat("Elemental Sharpness Modifier", perf.elementalSharpnessModifier.toFixed(4) + "x"),
+            this._renderStat("Elemental Sharp. Mod.", perf.elementalSharpnessModifier.toFixed(4) + "x"),
         );
     }
 }

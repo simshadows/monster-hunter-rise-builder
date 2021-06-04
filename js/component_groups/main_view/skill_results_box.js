@@ -22,11 +22,38 @@ function NoSkills() {
     );
 }
 
+function SkillPips(props) {
+    check.isInt(props.skillLevel);
+    check.isInt(props.skillLevelMax);
+
+    const elements = [];
+
+    for (let i = 0; i < props.skillLevelMax; ++i) {
+        const inner = (i < props.skillLevel) ? element("div", {className: "skill-pip"}, null) : null;
+        elements.push(
+            element("div",
+                {
+                className: "skill-pip-outer",
+                },
+                inner
+            ),
+        );
+    }
+
+    return element("div",
+        {
+            className: "skill-pips-wrapper",
+        },
+        ...elements,
+    );
+}
+
 function SkillResult(props) {
     check.isStr(props.skillName);
     check.isInt(props.skillLevel);
     check.isInt(props.skillLevelMax);
     assert((props.skillLevel <= props.skillLevelMax) && (props.skillLevel > 0));
+    check.isBool(props.isOverlevelled);
     check.isStr(props.skillIconImgPath);
 
     return element("div",
@@ -57,13 +84,25 @@ function SkillResult(props) {
                     props.skillName,
                 )
             ),
-            clipsafeSpan(
-                element("span", 
+            element("div",
+                {
+                className: "skill-bottom-row-box",
+                },
+                element(SkillPips,
                     {
-                    className: "skill-detail",
+                    skillLevel: props.skillLevel,
+                    skillLevelMax: props.skillLevelMax,
                     },
-                    "Level " + parseInt(props.skillLevel) + " / " + parseInt(props.skillLevelMax),
-                )
+                    null,
+                ),
+                clipsafeSpan(
+                    element("span", 
+                        {
+                        className: "skill-detail" + ((props.isOverlevelled) ? " skill-detail-overlevelled" : ""),
+                        },
+                        "Level " + parseInt(props.skillLevel), // + " / " + parseInt(props.skillLevelMax),
+                    )
+                ),
             ),
         ),
     );
@@ -89,6 +128,7 @@ function SkillsResultsBox(props) {
                     skillName: skillProps.name,
                     skillLevel: skillProps.level,
                     skillLevelMax: skillProps.maxLevel,
+                    isOverlevelled: skillProps.isOverlevelled,
                     skillIconImgPath: skillProps.iconImgPath,
                     },
                     null,

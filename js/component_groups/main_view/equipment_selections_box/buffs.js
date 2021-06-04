@@ -86,7 +86,7 @@ class BuffsSelection extends React.Component {
             },
             element("div",
                 {
-                className: "equip-main-box equip-buffs-main-box stackouter",
+                className: "equip-buffs-main-box stackouter",
                 },
                 ...elements,
                 element("div",

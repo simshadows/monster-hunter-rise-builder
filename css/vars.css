@@ -86,6 +86,9 @@
 
     --color-calculated-skills--wrap-box: var(--color-scheme--dark3);
     --color-calculated-skills--icon-box: var(--color-scheme--dark3);
+    --color-calculated-skills--pip-outer: var(--color-scheme--dark7);
+    --color-calculated-skills--pip-inner: #3da7fc; /* from the game */
+    --color-calculated-skills--overlevelled-text: #ff5858;
 
     --color-equip--icon-box: var(--color-scheme--dark0);
     --color-equip--icon-box-border-hover: var(--color-scheme--bright4);

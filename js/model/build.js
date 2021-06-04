@@ -375,6 +375,7 @@ class Build {
                     name: skillRO.name,
                     level: (skillLevel > skillRO.maxLevels) ? skillRO.maxLevels : skillLevel,
                     maxLevel: skillRO.maxLevels,
+                    isOverlevelled: (skillLevel > skillRO.maxLevels),
 
                     iconImgPath: skillRO.iconImgPath,
                 });

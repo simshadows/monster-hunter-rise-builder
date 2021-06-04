@@ -17,7 +17,8 @@ div.modal-foreground {
     border: 3px solid var(--color-modal--border);
 
     /* min-height: 640px; */ /* TODO: Make it so the modal UI can stretch vertically. */
-    height: 720px; /* Temporary static height */
+    height: 760px; /* Temporary static height */
+    width: 1150px;
 }
 
 div.modal-utility-bar {
