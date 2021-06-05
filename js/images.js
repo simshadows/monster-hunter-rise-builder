@@ -20,6 +20,11 @@ const imgPathMap = new Map([
     ["eleres_thunder_icon", "./images/elementalres_thunder_icon_inkscapesourcefile.svg"],
     ["eleres_ice_icon"    , "./images/elementalres_ice_icon_inkscapesourcefile.svg"],
     ["eleres_dragon_icon" , "./images/elementalres_dragon_icon_inkscapesourcefile.svg"],
+    
+    ["status_poison_icon"    , "./images/status_poison_icon_inkscapesourcefile.svg"   ],
+    ["status_paralysis_icon" , "./images/status_paralysis_icon_inkscapesourcefile.svg"],
+    ["status_sleep_icon"     , "./images/status_sleep_icon_inkscapesourcefile.svg"    ],
+    ["status_blast_icon"     , "./images/status_blast_icon_inkscapesourcefile.svg"    ],
 
     ["skill_icon_blue"     , "./images/skill_icon_blue.svg"     ],
     ["skill_icon_brown"    , "./images/skill_icon_brown.svg"    ],

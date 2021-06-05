@@ -133,20 +133,41 @@ const hardcodedRampageSkillsMap = new Map([
         name: "Affinity Surge",
     }],
 
-    ["neb", {
-        name: "Non-elemental Boost",
+    ["anta", {
+        name: "Anti-Aquatic Species",
     }],
-    ["mr", {
-        name: "Master Rider",
-    }],
-    ["bs", {
-        name: "Brutal Strike",
+
+    ["fbe", {
+        name: "Fireblight Exploit",
     }],
     ["wbe", {
         name: "Waterblight Exploit",
     }],
+
+    ["teos", {
+        name: "Teostra Soul",
+    }],
+
+    ["br", {
+        name: "Buddy Rally",
+    }],
+    ["bs", {
+        name: "Brutal Strike",
+    }],
+    ["ds", {
+        name: "Dulling Strike",
+    }],
     ["las", {
         name: "Lasting Arc Shot",
+    }],
+    ["mr", {
+        name: "Master Rider",
+    }],
+    ["neb", {
+        name: "Non-elemental Boost",
+    }],
+    ["sbd", {
+        name: "Spiribird Doubled",
     }],
 
 ]);

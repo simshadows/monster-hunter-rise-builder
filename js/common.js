@@ -4,6 +4,7 @@
  */
 
 import * as check from "./check.js";
+import {getImgPath} from "./images.js";
 
 const element = React.createElement;
 
@@ -69,7 +70,7 @@ export function isWeaponEndlineTagStr(obj) {
     return weaponEndlineTagStrs.has(obj);
 }
 
-const eleStatStrs = new Set(["none", "fire", "water", "thunder", "ice", "dragon", "paralysis", "sleep", "blast"]);
+const eleStatStrs = new Set(["none", "fire", "water", "thunder", "ice", "dragon", "poison", "paralysis", "sleep", "blast"]);
 export function isEleStatStr(obj) {
     return eleStatStrs.has(obj);
 }
@@ -130,6 +131,24 @@ export function equipmentSlotToName(obj) {
     return equipmentSlotToNameMap[obj];
 }
 
+const eleStatStrToImgPathMap = {
+    none: null,
+
+    fire:    getImgPath("eleres_fire_icon"   ),
+    water:   getImgPath("eleres_water_icon"  ),
+    thunder: getImgPath("eleres_thunder_icon"),
+    ice:     getImgPath("eleres_ice_icon"    ),
+    dragon:  getImgPath("eleres_dragon_icon" ),
+
+    poison:    getImgPath("status_poison_icon"   ),
+    paralysis: getImgPath("status_paralysis_icon"),
+    sleep:     getImgPath("status_sleep_icon"    ),
+    blast:     getImgPath("status_blast_icon"    ),
+}
+export function eleStatStrToImgPath(obj) {
+    return eleStatStrToImgPathMap[obj];
+}
+
 const eleStatStrToEmojiMap = {
     none: "-",
 
@@ -139,6 +158,7 @@ const eleStatStrToEmojiMap = {
     ice: "\u2744\ufe0f",
     dragon: "\ud83d\udc32",
 
+    poison: "\ud83e\udd2e",
     paralysis: "\ud83e\udda0",
     sleep: "\ud83d\udca4",
     blast: "\ud83d\udca5",

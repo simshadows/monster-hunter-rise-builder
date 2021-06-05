@@ -10,6 +10,7 @@ import {getImgPath} from "../../images.js";
 import {
     isWeaponCategoryStr,
     weaponCategoryToName,
+    eleStatStrToImgPath,
     eleStatStrToEmoji,
     toNameFilterString,
 } from "../../common.js";
@@ -31,7 +32,7 @@ class WeaponSelectionTable extends React.Component {
             ["weapon-selection-table-head-cell-numeric",     "Attack"            ],
             ["weapon-selection-table-head-cell-numeric",     "Affinity"          ],
             ["weapon-selection-table-head-cell-numeric",     "Defense"           ],
-            ["weapon-selection-table-head-cell-numeric",     "Ele/Stat"          ],
+            ["weapon-selection-table-head-cell-elestat",     "Ele/Stat"          ],
             ["weapon-selection-table-head-cell-deco",        "Slots"             ],
             ["weapon-selection-table-head-cell-specialmech", "Special Mechanics" ],
         ];
@@ -59,7 +60,7 @@ class WeaponSelectionTable extends React.Component {
             parseInt(weaponRO.attack),
             parseInt(weaponRO.affinity) + "%",
             parseInt(weaponRO.defense),
-            parseInt(weaponRO.eleStatValue) + " " + eleStatStrToEmoji(weaponRO.eleStatType),
+            this._renderEleStatContents(weaponRO.eleStatType, weaponRO.eleStatValue),
             weaponRO.decoSlots.toString(),
             specialMechStr,
         ];
@@ -87,6 +88,29 @@ class WeaponSelectionTable extends React.Component {
                 null,
             ),
         );
+    }
+
+    _renderEleStatContents(eleStatType, value) {
+        const iconImgPath = eleStatStrToImgPath(eleStatType);
+        assert(iconImgPath !== undefined); // Not relying on undefined values
+
+        if (iconImgPath === null) {
+            assert(value === 0);
+            return "none";
+        } else {
+            return element("div",
+                {
+                className: "weapon-selection-table-elestat-contents",
+                },
+                this._renderPieceIcon(iconImgPath),
+                element("div",
+                    {
+                    className: "weapon-selection-table-elestat-text",
+                    },
+                    String(value),
+                ),
+            );
+        }
     }
 
     render() {

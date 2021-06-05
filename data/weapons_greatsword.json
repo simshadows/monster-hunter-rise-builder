@@ -225,8 +225,88 @@
             "maxSharpness": [60, 40, 120, 10, 30, 0]
         }
     },
+    "Teostra Tree": {
+        "34c": {
+            "rarity": 7,
+            "endlineTag": "hr",
+
+            "name": "King Teostra Blade",
+            "attack": 190,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "blast",
+            "eleStatValue": 45,
+
+            "rampSkills": [
+                ["attb3", "fbe", "teos"]
+            ],
+
+            "maxSharpness": [160, 50, 30, 90, 40, 30]
+        }
+    },
+    "Chaos Tree": {
+        "37c": {
+            "rarity": 5,
+            "endlineTag": "hr",
+
+            "name": "Roguish Deathcap",
+            "attack": 210,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "poison",
+            "eleStatValue": 35,
+
+            "rampSkills": [
+                ["poib1", "ds", "sbd"]
+            ],
+
+            "maxSharpness": [30, 30, 170, 50, 20, 0]
+        }
+    },
+    "Shell-Studded Tree": {
+        "38c": {
+            "rarity": 5,
+            "endlineTag": "hr",
+
+            "name": "Soporific Shellblade",
+            "attack": 180,
+            "affinity": 0,
+            "defense": 20,
+            "decoSlots": [3,1],
+            "eleStatType": "sleep",
+            "eleStatValue": 15,
+
+            "rampSkills": [
+                ["defb3", "sleb2", "anta"]
+            ],
+
+            "maxSharpness": [50, 70, 130, 70, 30, 0]
+        }
+    },
+    "Felyne Tree": {
+        "41c": {
+            "rarity": 6,
+            "endlineTag": "hr",
+
+            "name": "Cat's Curse",
+            "attack": 150,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [3],
+            "eleStatType": "paralysis",
+            "eleStatValue": 45,
+
+            "rampSkills": [
+                ["attb4", "ds", "br"]
+            ],
+
+            "maxSharpness": [40, 60, 80, 90, 30, 0]
+        }
+    },
     "Rampage Tree": {
-        "41e": {
+        "42e": {
             "rarity": 6,
             "endlineTag": "hr",
 

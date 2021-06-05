@@ -120,7 +120,6 @@ div.selection-table-icon-box {
 
     height: 24px;
     width: 24px;
-    margin: auto;
 }
 div.selection-table-icon-box > img {
     height: 100%;
@@ -181,16 +180,36 @@ div.buff-selection-group-heading-box {
     width: 30px;
 }
 .weapon-selection-table-head-cell-name {
-    width: 280px;
+    width: 260px;
 }
 .weapon-selection-table-head-cell-numeric {
     width: 60px;
+}
+.weapon-selection-table-head-cell-elestat {
+    width: 70px;
 }
 .weapon-selection-table-head-cell-deco {
     width: 80px;
 }
 .weapon-selection-table-head-cell-specialmech {
     width: auto;
+}
+
+div.weapon-selection-table-elestat-contents {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    column-gap: 3px;
+    width: 100%;
+    padding: 0 2px 0 2px;
+}
+div.weapon-selection-table-elestat-text {
+    flex: 1 0 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /*** Weapon Customize View ***/
