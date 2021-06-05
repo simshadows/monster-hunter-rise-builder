@@ -80,10 +80,39 @@ div.equip-weapon-stat-box {
     display: flex;
     align-items: center;
     justify-content: center;
+    column-gap: 4px;
 
     height: 100%;
     width: 70px;
-    padding: 0 4px 0 4px;
+    /* padding: 0 8px 0 7px; */
+    font: var(--font-equip-weapon--stat);
+    background: var(--color-equip-weapon--stat-box);
+}
+div.equip-weapon-stat-box-attack-stat {
+    /* Special case because the icon is really thin horizontally, so it looks weird with the default gap */
+    column-gap: 2px;
+}
+
+div.equip-weapon-stat-icon-wrap-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 21px;
+    width: 21px;
+}
+div.equip-weapon-stat-icon-wrap-box > img {
+    height: 100%;
+    width: 100%;
+}
+
+div.equip-weapon-stat-content-wrap-box {
+    /* flex: 1 0 0; */
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     font: var(--font-equip-weapon--stat);
     background: var(--color-equip-weapon--stat-box);
 }

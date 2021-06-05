@@ -6,12 +6,13 @@
  */
 
 import * as check from "../../check.js";
-import {getImgPath} from "../../images.js";
+import {
+    getImgPath,
+    eleStatStrToImgPath,
+} from "../../images.js";
 import {
     isWeaponCategoryStr,
     weaponCategoryToName,
-    eleStatStrToImgPath,
-    eleStatStrToEmoji,
     toNameFilterString,
 } from "../../common.js";
 import {
@@ -91,13 +92,13 @@ class WeaponSelectionTable extends React.Component {
     }
 
     _renderEleStatContents(eleStatType, value) {
-        const iconImgPath = eleStatStrToImgPath(eleStatType);
-        assert(iconImgPath !== undefined); // Not relying on undefined values
-
-        if (iconImgPath === null) {
+        if (eleStatType === "none") {
             assert(value === 0);
             return "none";
         } else {
+            const iconImgPath = eleStatStrToImgPath(eleStatType);
+            assert(iconImgPath !== undefined); // Not relying on undefined values
+
             return element("div",
                 {
                 className: "weapon-selection-table-elestat-contents",

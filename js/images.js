@@ -5,6 +5,9 @@
  * Requires React and ReactDOM to be imported in HTML.
  */
 
+const element = React.createElement;
+const assert = console.assert;
+
 const imgPathMap = new Map([
     ["placeholder_buff"    , "./images/placeholders/buff.png"           ],
     ["placeholder_talisman", "./images/placeholders/talisman.png"       ],
@@ -14,7 +17,10 @@ const imgPathMap = new Map([
     ["placeholder_deco_size_2", "./images/placeholders/deco_slot_2.png"],
     ["placeholder_deco_size_3", "./images/placeholders/deco_slot_3.png"],
     
-    ["defense_icon"       , "./images/derived/mhw_screenshot_defense_icon_v3.png" ],
+    ["attack_icon"  , "./images/mhw_attack_icon_inkscapesourcefile.svg"    ],
+    ["affinity_icon", "./images/mhw_affinity_icon_inkscapesourcefile.svg"  ],
+    ["defense_icon" , "./images/derived/mhw_screenshot_defense_icon_v3.png"],
+
     ["eleres_fire_icon"   , "./images/elementalres_fire_icon_inkscapesourcefile.svg" ],
     ["eleres_water_icon"  , "./images/elementalres_water_icon_inkscapesourcefile.svg"],
     ["eleres_thunder_icon", "./images/elementalres_thunder_icon_inkscapesourcefile.svg"],
@@ -84,7 +90,7 @@ for (let rarity = 1; rarity <= 7 ; ++rarity) {
     }
 }
 
-/*** ***/
+/*** General Functions ***/
 
 function getImgPath(id) {
     if (!imgPathMap.has(id)) {
@@ -94,7 +100,7 @@ function getImgPath(id) {
 }
 
 function getSimpleImgElement(id) {
-    return React.createElement("img",
+    return element("img",
         {
         src: getImgPath(id),
         alt: id, // TODO: Better alt texts?
@@ -113,9 +119,9 @@ function FontAwesomeSprite(props) {
 
     console.assert((typeof fragment === "string") && (fragment.length > 0));
 
-    return React.createElement("svg",
+    return element("svg",
         otherProps,
-        React.createElement("use",
+        element("use",
             {
             href: "./images/fontawesome-free-web/sprites/" + style + ".svg#" + fragment,
             },
@@ -124,5 +130,51 @@ function FontAwesomeSprite(props) {
     );
 }
 
-export {getImgPath, getSimpleImgElement, FontAwesomeSprite};
+/*** Usage-specific Functions ***/
+
+const eleStatStrToImgPathMap = {
+    fire:    getImgPath("eleres_fire_icon"   ),
+    water:   getImgPath("eleres_water_icon"  ),
+    thunder: getImgPath("eleres_thunder_icon"),
+    ice:     getImgPath("eleres_ice_icon"    ),
+    dragon:  getImgPath("eleres_dragon_icon" ),
+
+    poison:    getImgPath("status_poison_icon"   ),
+    paralysis: getImgPath("status_paralysis_icon"),
+    sleep:     getImgPath("status_sleep_icon"    ),
+    blast:     getImgPath("status_blast_icon"    ),
+}
+function eleStatStrToImgPath(obj) {
+    assert(obj !== null, "Passing null to eleStatStrToImgPath will return undefined. This is probably not desired.");
+    assert(obj !== "none", "Passing 'none' to eleStatStrToImgPath will return undefined. This is probably not desired.");
+    return eleStatStrToImgPathMap[obj];
+}
+
+const eleStatStrToImgIdMap = {
+    fire:    "eleres_fire_icon",
+    water:   "eleres_water_icon",
+    thunder: "eleres_thunder_icon",
+    ice:     "eleres_ice_icon",
+    dragon:  "eleres_dragon_icon",
+
+    poison:    "status_poison_icon",
+    paralysis: "status_paralysis_icon",
+    sleep:     "status_sleep_icon",
+    blast:     "status_blast_icon",
+}
+function eleStatStrToImgId(obj) {
+    assert(obj !== null, "Passing null to eleStatStrToImgPath will return undefined. This is probably not desired.");
+    assert(obj !== "none", "Passing 'none' to eleStatStrToImgPath will return undefined. This is probably not desired.");
+    return eleStatStrToImgIdMap[obj];
+}
+
+/*** ***/
+
+export {
+    getImgPath,
+    getSimpleImgElement,
+    FontAwesomeSprite,
+    eleStatStrToImgPath,
+    eleStatStrToImgId,
+};
 

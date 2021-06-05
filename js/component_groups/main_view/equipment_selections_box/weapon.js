@@ -6,12 +6,15 @@
  */
 
 import * as check from "../../../check.js";
-import {getImgPath} from "../../../images.js";
+import {
+    getSimpleImgElement,
+    eleStatStrToImgPath,
+    eleStatStrToImgId,
+} from "../../../images.js";
 import {
     isEleStatStr,
     isArmourSlotStr,
     isDecoEquippableSlotStr,
-    eleStatStrToEmoji,
     clipsafeSpan,
 } from "../../../common.js";
 
@@ -45,10 +48,33 @@ function EquipWeaponInfoBox(props) {
     check.isArr(weaponRO.rampSkillSelectionsArray);
     // TODO: Sharpness?
 
-    function statBox(text, value) {
+    function statBoxEmpty() {
         return element("div",
-            {className: "equip-weapon-stat-box clipsafe"},
-            clipsafeSpan(text + value),
+            {
+            className: "equip-weapon-stat-box"
+            },
+            clipsafeSpan("\u2014"), // Unicode long-dash
+        );
+    }
+
+    function statBox(iconImgID, value, isWeapon) {
+        const c = (isWeapon) ? " equip-weapon-stat-box-attack-stat" : "";
+        return element("div",
+            {
+            className: "equip-weapon-stat-box" + c,
+            },
+            element("div",
+                {
+                className: "equip-weapon-stat-icon-wrap-box",
+                },
+                getSimpleImgElement(iconImgID),
+            ),
+            element("div",
+                {
+                className: "equip-weapon-stat-content-wrap-box clipsafe",
+                },
+                clipsafeSpan(value),
+            ),
         );
     }
 
@@ -77,8 +103,14 @@ function EquipWeaponInfoBox(props) {
         }
     }
 
-    const eleStatTypeStr = (weaponRO.eleStatType == "none") ? "---" : eleStatStrToEmoji(weaponRO.eleStatType) + " ";
-    const eleStatValueStr = (weaponRO.eleStatValue == 0) ? "" : (" " + parseInt(weaponRO.eleStatValue));
+    const eleStatBox = (()=>{
+            assert((weaponRO.eleStatType !== null) && (weaponRO.eleStatType !== undefined));
+            if (weaponRO.eleStatType === "none") {
+                return statBoxEmpty();
+            } else {
+                return statBox(eleStatStrToImgId(weaponRO.eleStatType), weaponRO.eleStatValue, false);
+            }
+        })();
 
     return element("div",
         {
@@ -98,10 +130,10 @@ function EquipWeaponInfoBox(props) {
                 {
                 className: "equip-weapon-stats-group-box",
                 },
-                statBox("\u2694\ufe0f ", parseInt(weaponRO.attack)),
-                statBox("\ud83d\udca2 ", parseInt(weaponRO.affinity) + "%"),
-                statBox(eleStatTypeStr, eleStatValueStr),
-                statBox("\ud83d\udee1\ufe0f ", parseInt(weaponRO.defense)),
+                statBox("attack_icon", parseInt(weaponRO.attack), true),
+                statBox("affinity_icon", parseInt(weaponRO.affinity) + "%", true),
+                eleStatBox,
+                statBox("defense_icon", parseInt(weaponRO.defense), false),
             ),
             element("div",
                 {

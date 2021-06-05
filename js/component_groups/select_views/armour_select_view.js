@@ -11,7 +11,6 @@ import {
     isArmourSlotStr,
     tierIDToAbbrev,
     equipmentSlotToName,
-    eleStatStrToEmoji,
     br,
     toNameFilterString,
 } from "../../common.js";

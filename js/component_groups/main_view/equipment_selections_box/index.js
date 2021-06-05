@@ -11,7 +11,6 @@ import {
     isEleStatStr,
     isArmourSlotStr,
     isDecoEquippableSlotStr,
-    eleStatStrToEmoji,
     clipsafeSpan,
 } from "../../../common.js";
 
