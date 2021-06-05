@@ -146,5 +146,5 @@ function SkillsResultsBox(props) {
     );
 }
 
-export default SkillsResultsBox;
+export {SkillsResultsBox};
 

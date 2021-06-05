@@ -8,9 +8,9 @@
 import * as check from "../../check.js";
 import {FontAwesomeSprite} from "../../images.js";
 
-import SkillsResultsBox from "./skill_results_box.js";
-import EquipmentSelectionsBox from "./equipment_selections_box/index.js";
-import CalculationResultsBox from "./calculation_results_box.js";
+import {SkillsResultsBox} from "./skill_results_box.js";
+import {EquipmentSelectionsBox} from "./equipment_selections_box/index.js";
+import {CalculationResultsBox} from "./calculation_results_box.js";
 
 const element = React.createElement;
 const assert = console.assert;

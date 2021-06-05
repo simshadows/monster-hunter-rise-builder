@@ -68,5 +68,5 @@ class CalculationResultsBox extends React.Component {
     }
 }
 
-export default CalculationResultsBox;
+export {CalculationResultsBox};
 
