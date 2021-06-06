@@ -34,7 +34,7 @@ const iconsToImageID = new Map([
     ["yellow"   , "skill_icon_yellow"   ],
 ]);
 
-const skillMap = new Map([
+const hardcodedSkills = [
 
     // TODO: Prune skills that don't actually exist in-game. I sorta just pulled this from the wiki.
 
@@ -806,11 +806,12 @@ const skillMap = new Map([
 
         icon: "lightblue",
     }],
-]);
+];
 
+const skillMap = new Map();
 const skillMapShortIds = new Map();
 
-for (const [skillID, skillObj] of skillMap.entries()) {
+for (const [skillID, skillObj] of hardcodedSkills) {
     // For convenience, we also attach IDs and filter helpers to each object
     skillObj.id = skillID;
     skillObj.filterHelpers = {};
@@ -835,8 +836,12 @@ for (const [skillID, skillObj] of skillMap.entries()) {
     assert(skillObj.maxLevels > 0, "Skill must have a positive non-zero maximum level. Skill ID: " + skillObj.id);
     assert(skillObj.maxLevels < 8, "Skill must have a maximum level below 8. Skill ID: " + skillObj.id); // Change if needed
     
-    // Check for duplicates then add
+    // And now, we check for duplicates and add
+
+    assert(!(skillMap.has(skillObj.id)), "Duplicate skill ID: " + skillObj.id);
     assert(!(skillMapShortIds.has(skillObj.shortId)), "Duplicate skill short ID: " + skillObj.shortId);
+
+    skillMap.set(skillObj.id, skillObj);
     skillMapShortIds.set(skillObj.shortId, skillObj);
 }
 

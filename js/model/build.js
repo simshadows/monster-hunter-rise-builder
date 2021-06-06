@@ -149,8 +149,8 @@ class Build {
         if (rampageSkillID === null) {
             this._weaponRampSkillSelections[position] = null;
         } else {
-            assert(db.readonly.weaponRampSkills.map.has(rampageSkillID));
-            this._weaponRampSkillSelections[position] = db.readonly.weaponRampSkills.map.get(rampageSkillID);
+            assert(db.readonly.weaponRampSkills.longIdsMap.has(rampageSkillID));
+            this._weaponRampSkillSelections[position] = db.readonly.weaponRampSkills.longIdsMap.get(rampageSkillID);
         }
 
         this._validateState();

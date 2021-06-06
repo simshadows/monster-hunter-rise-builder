@@ -15,7 +15,7 @@ import {
     toNameFilterString,
 } from "../../common.js";
 
-const petalaceMap = new Map([
+const hardcodedPetalaceData = [
     ["h3", {
         endlineTag: "hr",
         name: "Hunting Petalace III",
@@ -88,10 +88,12 @@ const petalaceMap = new Map([
         defenseUp:   50,
         defenseGain: 5,
     }],
-]);
+];
+
+const petalaceMap = new Map();
 
 // For convenience, we also attach IDs and filter helpers to each object
-for (const [petalaceID, petalaceObj] of petalaceMap.entries()) {
+for (const [petalaceID, petalaceObj] of hardcodedPetalaceData) {
     petalaceObj.id = petalaceID;
     petalaceObj.filterHelpers = {};
     petalaceObj.filterHelpers.nameLower = toNameFilterString(petalaceObj.name);
@@ -120,6 +122,11 @@ for (const [petalaceID, petalaceObj] of petalaceMap.entries()) {
         (petalaceObj.defenseGain > 0) && (petalaceObj.defenseUp > petalaceObj.defenseGain) && (petalaceObj.defenseUp <= 100),
         "Invalid numerical value(s). Petalace ID: " + petalaceObj.id,
     );
+
+    // And now, we check for duplicates and add
+
+    assert(!(petalaceMap.has(petalaceObj.id)), "Duplicate petalace ID: " + petalaceObj.id);
+    petalaceMap.set(petalaceObj.id, petalaceObj);
 }
 
 export {petalaceMap};

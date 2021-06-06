@@ -32,6 +32,7 @@ import {
 } from "./hardcoded_data/skills.js";
 import {
     rampageSkillsMap,
+    rampageSkillsMapShortIds,
 } from "./hardcoded_data/rampage_skills.js";
 import {
     petalaceMap,
@@ -533,7 +534,8 @@ class GameData {
                 shortIdsMap: skillMapShortIds,
             },
             weaponRampSkills: {
-                map: rampageSkillsMap,
+                longIdsMap: rampageSkillsMap,
+                shortIdsMap: rampageSkillsMapShortIds,
             },
             weapons: {
                 array: GameData._makeWeaponsArray(weaponsMap),

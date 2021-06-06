@@ -140,15 +140,15 @@ function readDecomposedRampSkillsStr(arr, db, build) {
 
     const weaponRO = build.getWeaponObjRO();
 
-    function op(rampSkillID, position) {
+    function op(rampSkillShortID, position) {
         const optionsSubArray = weaponRO.rampSkills[position];
-        if (optionsSubArray !== undefined) {
-            assert((optionsSubArray instanceof Array) && (optionsSubArray.length > 0));
-            for (const rampSkillRO of optionsSubArray) {
-                if (rampSkillID === rampSkillRO.id) {
-                    // TODO: It's weird that we need the query the database again for the rampage skill.
-                    build.setRampageSkill(db, position, rampSkillRO.id);
-                }
+        if (optionsSubArray === undefined) return;
+
+        assert((optionsSubArray instanceof Array) && (optionsSubArray.length > 0));
+        for (const rampSkillRO of optionsSubArray) {
+            if (rampSkillShortID === rampSkillRO.shortId) {
+                // TODO: It's weird that we need the query the database again for the rampage skill.
+                build.setRampageSkill(db, position, rampSkillRO.id);
             }
         }
     }
@@ -221,9 +221,9 @@ export function writeBuildToQueryString(build) {
         ].join(SPLIT_CHAR);
     
     const rampSkillsStr = [
-            ((rampSkill0 === null) ? "" : rampSkill0.id),
-            ((rampSkill1 === null) ? "" : rampSkill1.id),
-            ((rampSkill2 === null) ? "" : rampSkill2.id),
+            ((rampSkill0 === null) ? "" : rampSkill0.shortId),
+            ((rampSkill1 === null) ? "" : rampSkill1.shortId),
+            ((rampSkill2 === null) ? "" : rampSkill2.shortId),
         ].join(SPLIT_CHAR);
 
     const taliStr = [

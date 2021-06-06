@@ -7,13 +7,14 @@ import {
     isObj,
     isInt,
     isStr,
+    isNonEmptyStr,
     assert,
 } from "../../check.js";
 
 
-function generateEleMap(name, shortIdPrefix) {
+function generateEle(name, shortIdPrefix) {
     const idPrefix = name.toLowerCase();
-    return new Map([
+    return [
         [idPrefix + "_boost_1", {
             shortId: shortIdPrefix + "b1",
             name: name + " Boost I",
@@ -47,12 +48,12 @@ function generateEleMap(name, shortIdPrefix) {
             shortId: shortIdPrefix + "x4",
             name: name + " IV",
         }],
-    ]);
+    ];
 }
 
-function generateStatMap(name, shortIdPrefix) {
+function generateStat(name, shortIdPrefix) {
     const idPrefix = name.toLowerCase();
-    return new Map([
+    return [
         [idPrefix + "_boost_1", {
             shortId: shortIdPrefix + "b1",
             name: name + " Boost I",
@@ -78,10 +79,10 @@ function generateStatMap(name, shortIdPrefix) {
             shortId: shortIdPrefix + "x3",
             name: name + " III",
         }],
-    ]);
+    ];
 }
 
-const hardcodedRampageSkillsMap = new Map([
+const hardcodedRampageSkills = [
 
     ["attack_boost_1", {
         shortId: "10",
@@ -222,25 +223,54 @@ const hardcodedRampageSkillsMap = new Map([
         name: "Spiribird Doubled",
     }],
 
-]);
+];
 
 // TODO: Verify no ID collisons?
-const rampageSkillsMap = new Map([
-    ...hardcodedRampageSkillsMap,
-    ...generateEleMap("Fire"      , "fi"),
-    ...generateEleMap("Water"     , "wa"),
-    ...generateEleMap("Thunder"   , "th"),
-    ...generateEleMap("Ice"       , "ic"),
-    ...generateEleMap("Dragon"    , "dr"),
-    ...generateStatMap("Poison"   , "po"),
-    ...generateStatMap("Paralysis", "pa"),
-    ...generateStatMap("Sleep"    , "sl"),
-    ...generateStatMap("Blast"    , "bl"),
-]);
+const tmpArray = [
+    ...hardcodedRampageSkills,
+    ...generateEle("Fire"      , "fi"),
+    ...generateEle("Water"     , "wa"),
+    ...generateEle("Thunder"   , "th"),
+    ...generateEle("Ice"       , "ic"),
+    ...generateEle("Dragon"    , "dr"),
+    ...generateStat("Poison"   , "po"),
+    ...generateStat("Paralysis", "pa"),
+    ...generateStat("Sleep"    , "sl"),
+    ...generateStat("Blast"    , "bl"),
+];
+
+// Now, we populate these maps.
+const rampageSkillsMap = new Map();
+const rampageSkillsMapShortIds = new Map();
+//const rampageSkillsShortToLongIds = new Map();
+
 // For convenience, we also attach IDs to each object
-for (const [rampSkillID, rampSkillObj] of rampageSkillsMap.entries()) {
+for (const [rampSkillID, rampSkillObj] of tmpArray) {
     rampSkillObj.id = rampSkillID;
+
+    //
+    // Validate
+    //
+
+    assert(isNonEmptyStr(rampSkillObj.id),      "Ramp skills must have IDs.");
+    assert(isNonEmptyStr(rampSkillObj.shortId), "Ramp skills must have alternative short IDs. Skill ID: " + rampSkillObj.id);
+    assert(isNonEmptyStr(rampSkillObj.name),    "Ramp skills must have names. Skill ID: " + rampSkillObj.id);
+
+    // And now, we check for duplicates and add
+
+    assert(!(rampageSkillsMap.has(rampSkillObj.id)), "Duplicate ramp skill ID: " + rampSkillObj.id);
+    assert(!(rampageSkillsMapShortIds.has(rampSkillObj.ShortId)), "Duplicate ramp skill short ID: " + rampSkillObj.id);
+
+    rampageSkillsMap.set(rampSkillObj.id, rampSkillObj);
+    rampageSkillsMapShortIds.set(rampSkillObj.shortId, rampSkillObj);
+
+    //rampageSkillsShortToLongIds.set(rampSkillObj.shortId, rampSkillObj.id);
 }
 
-export {rampageSkillsMap};
+
+export {
+    rampageSkillsMap,
+    rampageSkillsMapShortIds,
+    //rampageSkillsShortToLongIds,
+};
 
