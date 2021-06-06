@@ -40,9 +40,7 @@ function EquipWeaponInfoBox(props) {
     assert(weaponRO.attack > 0);
     check.isInt(weaponRO.affinity);
     assert((weaponRO.affinity >= -100) && (weaponRO.affinity <= 100));
-    assert(isEleStatStr(weaponRO.eleStatType));
-    check.isInt(weaponRO.eleStatValue);
-    assert(weaponRO.eleStatValue >= 0);
+    assert(check.isMap(weaponRO.eleStat));
     check.isInt(weaponRO.defense);
     assert(weaponRO.defense >= 0);
     check.isArr(weaponRO.rampSkillSelectionsArray);
@@ -103,14 +101,17 @@ function EquipWeaponInfoBox(props) {
         }
     }
 
-    const eleStatBox = (()=>{
-            assert((weaponRO.eleStatType !== null) && (weaponRO.eleStatType !== undefined));
-            if (weaponRO.eleStatType === "none") {
-                return statBoxEmpty();
-            } else {
-                return statBox(eleStatStrToImgId(weaponRO.eleStatType), weaponRO.eleStatValue, false);
-            }
-        })();
+    const eleStatBoxes = [];
+    if (weaponRO.eleStat.size === 0) {
+        eleStatBoxes.push(statBoxEmpty());
+    } else {
+        for (const [eleStatType, eleStatValue] of weaponRO.eleStat.entries()) {
+            assert(isEleStatStr(eleStatType));
+            assert((eleStatType !== null) && (eleStatType !== undefined) && (eleStatType !== "none"));
+            assert(check.isInt(eleStatValue) && (eleStatValue > 0));
+            eleStatBoxes.push(statBox(eleStatStrToImgId(eleStatType), eleStatValue, false));
+        }
+    }
 
     return element("div",
         {
@@ -132,8 +133,8 @@ function EquipWeaponInfoBox(props) {
                 },
                 statBox("attack_icon", parseInt(weaponRO.attack), true),
                 statBox("affinity_icon", parseInt(weaponRO.affinity) + "%", true),
-                eleStatBox,
                 statBox("defense_icon", parseInt(weaponRO.defense), false),
+                ...eleStatBoxes,
             ),
             element("div",
                 {

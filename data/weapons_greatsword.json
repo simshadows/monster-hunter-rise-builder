@@ -9,8 +9,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "none",
-            "eleStatValue": 0,
+            "eleStat": {},
 
             "rampSkills": [
                 ["attack_boost_1", "affinity_boost_2", "defense_boost_1"]
@@ -27,8 +26,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "none",
-            "eleStatValue": 0,
+            "eleStat": {},
 
             "rampSkills": [
                 ["attack_boost_1", "affinity_boost_2", "defense_boost_1"]
@@ -45,8 +43,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "none",
-            "eleStatValue": 0,
+            "eleStat": {},
 
             "rampSkills": [
                 ["attack_boost_1", "affinity_boost_2", "defense_boost_2"]
@@ -63,8 +60,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "none",
-            "eleStatValue": 0,
+            "eleStat": {},
 
             "rampSkills": [
                 ["attack_boost_2", "affinity_boost_2", "defense_boost_2"]
@@ -81,8 +77,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [2],
-            "eleStatType": "none",
-            "eleStatValue": 0,
+            "eleStat": {},
 
             "rampSkills": [
                 ["affinity_boost_3", "defense_boost_2", "master_rider"]
@@ -99,8 +94,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [2,1],
-            "eleStatType": "none",
-            "eleStatValue": 0,
+            "eleStat": {},
 
             "rampSkills": [
                 ["affinity_boost_4", "defense_boost_2", "master_rider"]
@@ -119,8 +113,7 @@
             "affinity": -15,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "ice",
-            "eleStatValue": 15,
+            "eleStat": {"ice": 15},
 
             "rampSkills": [
                 ["affinity_boost_1", "ice_boost_1", "brutal_strike"]
@@ -137,8 +130,7 @@
             "affinity": -15,
             "defense": 0,
             "decoSlots": [2],
-            "eleStatType": "ice",
-            "eleStatValue": 17,
+            "eleStat": {"ice": 17},
 
             "rampSkills": [
                 ["affinity_boost_1", "ice_boost_2", "brutal_strike"]
@@ -155,8 +147,7 @@
             "affinity": -15,
             "defense": 0,
             "decoSlots": [2],
-            "eleStatType": "ice",
-            "eleStatValue": 20,
+            "eleStat": {"ice": 20},
 
             "rampSkills": [
                 ["affinity_boost_1", "ice_boost_3", "brutal_strike"]
@@ -175,8 +166,7 @@
             "affinity": 10,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "water",
-            "eleStatValue": 20,
+            "eleStat": {"water": 20},
 
             "rampSkills": [
                 ["attack_boost_2", "affinity_boost_1", "water_boost_1"]
@@ -193,8 +183,7 @@
             "affinity": 10,
             "defense": 0,
             "decoSlots": [1],
-            "eleStatType": "water",
-            "eleStatValue": 25,
+            "eleStat": {"water": 25},
 
             "rampSkills": [
                 ["attack_boost_2", "affinity_boost_2", "water_boost_2"]
@@ -211,8 +200,7 @@
             "affinity": 15,
             "defense": 0,
             "decoSlots": [1],
-            "eleStatType": "water",
-            "eleStatValue": 30,
+            "eleStat": {"water": 30},
 
             "rampSkills": [
                 ["attack_boost_3", "affinity_boost_2", "water_boost_2"]
@@ -231,8 +219,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "none",
-            "eleStatValue": 0,
+            "eleStat": {},
 
             "rampSkills": [
                 ["defense_boost_2", "dulling_strike", "defense_grinder_1"]
@@ -249,8 +236,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "none",
-            "eleStatValue": 0,
+            "eleStat": {},
 
             "rampSkills": [
                 ["defense_boost_2", "dulling_strike", "defense_grinder_1"]
@@ -267,8 +253,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [1,1,1],
-            "eleStatType": "none",
-            "eleStatValue": 0,
+            "eleStat": {},
 
             "rampSkills": [
                 ["defense_boost_3", "dulling_strike", "defense_grinder_1"]
@@ -287,8 +272,7 @@
             "affinity": -20,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "none",
-            "eleStatValue": 0,
+            "eleStat": {},
 
             "rampSkills": [
                 ["affinity_boost_1", "defense_boost_1", "brutal_strike"]
@@ -305,8 +289,7 @@
             "affinity": -20,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "none",
-            "eleStatValue": 0,
+            "eleStat": {},
 
             "rampSkills": [
                 ["affinity_boost_1", "defense_boost_2", "brutal_strike"]
@@ -323,8 +306,7 @@
             "affinity": -20,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "none",
-            "eleStatValue": 0,
+            "eleStat": {},
 
             "rampSkills": [
                 ["affinity_boost_2", "defense_boost_2", "brutal_strike"]
@@ -343,8 +325,7 @@
             "affinity": -15,
             "defense": 0,
             "decoSlots": [1],
-            "eleStatType": "none",
-            "eleStatValue": 0,
+            "eleStat": {},
 
             "rampSkills": [
                 ["attack_boost_3", "affinity_boost_2", "brutal_strike"]
@@ -363,8 +344,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "thunder",
-            "eleStatValue": 30,
+            "eleStat": {"thunder": 30},
 
             "rampSkills": [
                 ["attack_boost_2", "thunder_boost_1", "thunderblight_exploit"]
@@ -381,8 +361,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "thunder",
-            "eleStatValue": 35,
+            "eleStat": {"thunder": 35},
 
             "rampSkills": [
                 ["attack_boost_3", "thunder_boost_1", "thunderblight_exploit"]
@@ -399,8 +378,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [2],
-            "eleStatType": "thunder",
-            "eleStatValue": 40,
+            "eleStat": {"thunder": 40},
 
             "rampSkills": [
                 ["attack_boost_4", "thunder_boost_2", "thunderblight_exploit"]
@@ -419,8 +397,7 @@
             "affinity": 10,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "none",
-            "eleStatValue": 0,
+            "eleStat": {},
 
             "rampSkills": [
                 ["affinity_boost_1", "small_monster_exploit", "buddy_rally"]
@@ -437,8 +414,7 @@
             "affinity": 12,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "none",
-            "eleStatValue": 0,
+            "eleStat": {},
 
             "rampSkills": [
                 ["affinity_boost_2", "small_monster_exploit", "buddy_rally"]
@@ -455,8 +431,7 @@
             "affinity": 15,
             "defense": 0,
             "decoSlots": [2,1],
-            "eleStatType": "none",
-            "eleStatValue": 0,
+            "eleStat": {},
 
             "rampSkills": [
                 ["affinity_boost_3", "small_monster_exploit", "buddy_rally"]
@@ -475,8 +450,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "poison",
-            "eleStatValue": 40,
+            "eleStat": {"poison": 40},
 
             "rampSkills": [
                 ["attack_boost_2", "poison_boost_1", "dulling_strike"]
@@ -493,8 +467,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "poison",
-            "eleStatValue": 42,
+            "eleStat": {"poison": 42},
 
             "rampSkills": [
                 ["attack_boost_3", "poison_boost_1", "dulling_strike"]
@@ -511,8 +484,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [2,1,1],
-            "eleStatType": "poison",
-            "eleStatValue": 45,
+            "eleStat": {"poison": 45},
 
             "rampSkills": [
                 ["attack_boost_4", "poison_boost_1", "dulling_strike"]
@@ -531,8 +503,7 @@
             "affinity": 30,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "none",
-            "eleStatValue": 0,
+            "eleStat": {},
 
             "rampSkills": [
                 ["attack_boost_2", "affinity_boost_1", "master_rider"]
@@ -549,8 +520,7 @@
             "affinity": 30,
             "defense": 0,
             "decoSlots": [2],
-            "eleStatType": "none",
-            "eleStatValue": 0,
+            "eleStat": {},
 
             "rampSkills": [
                 ["attack_boost_3", "affinity_boost_1", "master_rider"]
@@ -567,8 +537,7 @@
             "affinity": 35,
             "defense": 0,
             "decoSlots": [2],
-            "eleStatType": "none",
-            "eleStatValue": 0,
+            "eleStat": {},
 
             "rampSkills": [
                 ["attack_boost_3", "affinity_boost_2", "master_rider"]
@@ -587,8 +556,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "sleep",
-            "eleStatValue": 16,
+            "eleStat": {"sleep": 16},
 
             "rampSkills": [
                 ["attack_boost_1", "sleep_boost_1", "dulling_strike"]
@@ -605,8 +573,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [1,1],
-            "eleStatType": "sleep",
-            "eleStatValue": 19,
+            "eleStat": {"sleep": 19},
 
             "rampSkills": [
                 ["attack_boost_2", "sleep_boost_1", "dulling_strike"]
@@ -623,8 +590,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [2,1],
-            "eleStatType": "sleep",
-            "eleStatValue": 22,
+            "eleStat": {"sleep": 22},
 
             "rampSkills": [
                 ["attack_boost_3", "sleep_boost_1", "dulling_strike"]
@@ -643,8 +609,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "none",
-            "eleStatValue": 0,
+            "eleStat": {},
 
             "rampSkills": [
                 ["attack_boost_1", "affinity_boost_1", "defense_boost_2"]
@@ -661,8 +626,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "none",
-            "eleStatValue": 0,
+            "eleStat": {},
 
             "rampSkills": [
                 ["attack_boost_1", "affinity_boost_1", "defense_boost_2"]
@@ -679,8 +643,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "none",
-            "eleStatValue": 0,
+            "eleStat": {},
 
             "rampSkills": [
                 ["attack_boost_2", "affinity_boost_1", "defense_boost_2"]
@@ -697,8 +660,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "none",
-            "eleStatValue": 0,
+            "eleStat": {},
 
             "rampSkills": [
                 ["attack_boost_2", "defense_boost_2", "silkbind_boost"]
@@ -715,8 +677,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [1,1],
-            "eleStatType": "poison",
-            "eleStatValue": 35,
+            "eleStat": {"poison": 35},
 
             "rampSkills": [
                 ["attack_boost_2", "poison_boost_1", "silkbind_boost"]
@@ -733,8 +694,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [1,1],
-            "eleStatType": "poison",
-            "eleStatValue": 40,
+            "eleStat": {"poison": 40},
 
             "rampSkills": [
                 ["attack_boost_3", "poison_boost_1", "silkbind_boost"]
@@ -753,8 +713,7 @@
             "affinity": 0,
             "defense": 10,
             "decoSlots": [],
-            "eleStatType": "fire",
-            "eleStatValue": 40,
+            "eleStat": {"fire": 40},
 
             "rampSkills": [
                 ["attack_boost_3", "defense_boost_2", "defense_grinder_1"]
@@ -771,8 +730,7 @@
             "affinity": 0,
             "defense": 15,
             "decoSlots": [],
-            "eleStatType": "fire",
-            "eleStatValue": 42,
+            "eleStat": {"fire": 42},
 
             "rampSkills": [
                 ["attack_boost_3", "defense_boost_2", "defense_grinder_1"]
@@ -789,8 +747,7 @@
             "affinity": 0,
             "defense": 20,
             "decoSlots": [2,1],
-            "eleStatType": "fire",
-            "eleStatValue": 45,
+            "eleStat": {"fire": 45},
 
             "rampSkills": [
                 ["attack_boost_4", "defense_boost_2", "defense_grinder_2"]
@@ -809,8 +766,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "poison",
-            "eleStatValue": 24,
+            "eleStat": {"poison": 24},
 
             "rampSkills": [
                 ["attack_boost_2", "defense_boost_1", "poison_boost_1"]
@@ -827,8 +783,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "poison",
-            "eleStatValue": 30,
+            "eleStat": {"poison": 30},
 
             "rampSkills": [
                 ["attack_boost_3", "defense_boost_1", "poison_boost_1"]
@@ -845,8 +800,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [2,1],
-            "eleStatType": "poison",
-            "eleStatValue": 36,
+            "eleStat": {"poison": 36},
 
             "rampSkills": [
                 ["attack_boost_3", "defense_boost_1", "poison_boost_2"]
@@ -865,8 +819,7 @@
             "affinity": 30,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "ice",
-            "eleStatValue": 30,
+            "eleStat": {"ice": 30},
 
             "rampSkills": [
                 ["attack_boost_2", "affinity_boost_2", "iceblight_exploit"]
@@ -883,8 +836,7 @@
             "affinity": 30,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "ice",
-            "eleStatValue": 34,
+            "eleStat": {"ice": 34},
 
             "rampSkills": [
                 ["attack_boost_3", "affinity_boost_2", "iceblight_exploit"]
@@ -901,8 +853,7 @@
             "affinity": 35,
             "defense": 0,
             "decoSlots": [2],
-            "eleStatType": "ice",
-            "eleStatValue": 38,
+            "eleStat": {"ice": 38},
 
             "rampSkills": [
                 ["attack_boost_4", "affinity_boost_2", "iceblight_exploit"]
@@ -921,8 +872,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "fire",
-            "eleStatValue": 20,
+            "eleStat": {"fire": 20},
 
             "rampSkills": [
                 ["attack_boost_1", "fire_boost_1", "fireblight_exploit"]
@@ -939,8 +889,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "fire",
-            "eleStatValue": 23,
+            "eleStat": {"fire": 23},
 
             "rampSkills": [
                 ["attack_boost_2", "fire_boost_1", "fireblight_exploit"]
@@ -957,8 +906,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [2],
-            "eleStatType": "fire",
-            "eleStatValue": 27,
+            "eleStat": {"fire": 27},
 
             "rampSkills": [
                 ["attack_boost_2", "fire_boost_2", "fireblight_exploit"]
@@ -977,8 +925,7 @@
             "affinity": 0,
             "defense": 10,
             "decoSlots": [],
-            "eleStatType": "water",
-            "eleStatValue": 18,
+            "eleStat": {"water": 18},
 
             "rampSkills": [
                 ["defense_boost_1", "water_boost_1", "dulling_strike"]
@@ -995,8 +942,7 @@
             "affinity": 0,
             "defense": 15,
             "decoSlots": [],
-            "eleStatType": "water",
-            "eleStatValue": 20,
+            "eleStat": {"water": 20},
 
             "rampSkills": [
                 ["defense_boost_1", "water_boost_2", "dulling_strike"]
@@ -1013,8 +959,7 @@
             "affinity": 0,
             "defense": 20,
             "decoSlots": [2],
-            "eleStatType": "water",
-            "eleStatValue": 24,
+            "eleStat": {"water": 24},
 
             "rampSkills": [
                 ["defense_boost_1", "water_boost_3", "dulling_strike"]
@@ -1033,8 +978,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "none",
-            "eleStatValue": 0,
+            "eleStat": {},
 
             "rampSkills": [
                 ["attack_boost_2", "affinity_boost_1", "defense_boost_1"]
@@ -1051,8 +995,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "none",
-            "eleStatValue": 0,
+            "eleStat": {},
 
             "rampSkills": [
                 ["attack_boost_2", "affinity_boost_1", "defense_boost_1"]
@@ -1069,8 +1012,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "none",
-            "eleStatValue": 0,
+            "eleStat": {},
 
             "rampSkills": [
                 ["attack_boost_2", "affinity_boost_2", "defense_boost_1"]
@@ -1087,8 +1029,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "none",
-            "eleStatValue": 0,
+            "eleStat": {},
 
             "rampSkills": [
                 ["attack_boost_2", "affinity_boost_2", "dulling_strike"]
@@ -1105,8 +1046,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "dragon",
-            "eleStatValue": 27,
+            "eleStat": {"dragon": 27},
 
             "rampSkills": [
                 ["attack_boost_3", "dragon_boost_1", "dulling_strike"]
@@ -1123,8 +1063,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [1,1],
-            "eleStatType": "dragon",
-            "eleStatValue": 30,
+            "eleStat": {"dragon": 30},
 
             "rampSkills": [
                 ["attack_boost_4", "dragon_boost_1", "dulling_strike"]
@@ -1143,8 +1082,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "none",
-            "eleStatValue": 0,
+            "eleStat": {},
 
             "rampSkills": [
                 ["affinity_boost_2", "defense_boost_2", "silkbind_boost"]
@@ -1161,8 +1099,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "none",
-            "eleStatValue": 0,
+            "eleStat": {},
 
             "rampSkills": [
                 ["affinity_boost_3", "defense_boost_2", "silkbind_boost"]
@@ -1181,8 +1118,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "poison",
-            "eleStatValue": 22,
+            "eleStat": {"poison": 22},
 
             "rampSkills": [
                 ["attack_boost_1", "poison_boost_1", "small_monster_exploit"]
@@ -1199,8 +1135,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "poison",
-            "eleStatValue": 25,
+            "eleStat": {"poison": 25},
 
             "rampSkills": [
                 ["attack_boost_2", "poison_boost_1", "small_monster_exploit"]
@@ -1217,8 +1152,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "poison",
-            "eleStatValue": 28,
+            "eleStat": {"poison": 28},
 
             "rampSkills": [
                 ["attack_boost_2", "poison_boost_1", "small_monster_exploit"]
@@ -1237,8 +1171,7 @@
             "affinity": -10,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "water",
-            "eleStatValue": 15,
+            "eleStat": {"water": 15},
 
             "rampSkills": [
                 ["affinity_boost_1", "water_boost_1", "brutal_strike"]
@@ -1255,8 +1188,7 @@
             "affinity": -10,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "water",
-            "eleStatValue": 17,
+            "eleStat": {"water": 17},
 
             "rampSkills": [
                 ["affinity_boost_1", "water_boost_2", "brutal_strike"]
@@ -1273,8 +1205,7 @@
             "affinity": -10,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "water",
-            "eleStatValue": 20,
+            "eleStat": {"water": 20},
 
             "rampSkills": [
                 ["affinity_boost_2", "water_boost_2", "brutal_strike"]
@@ -1293,8 +1224,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [1],
-            "eleStatType": "fire",
-            "eleStatValue": 36,
+            "eleStat": {"fire": 36},
 
             "rampSkills": [
                 ["attack_boost_2", "fire_boost_1", "element_exploit"]
@@ -1311,8 +1241,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [1],
-            "eleStatType": "fire",
-            "eleStatValue": 38,
+            "eleStat": {"fire": 38},
 
             "rampSkills": [
                 ["attack_boost_2", "fire_boost_1", "element_exploit"]
@@ -1329,8 +1258,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [1],
-            "eleStatType": "fire",
-            "eleStatValue": 40,
+            "eleStat": {"fire": 40},
 
             "rampSkills": [
                 ["attack_boost_3", "fire_boost_1", "element_exploit"]
@@ -1349,8 +1277,7 @@
             "affinity": -25,
             "defense": 8,
             "decoSlots": [],
-            "eleStatType": "none",
-            "eleStatValue": 0,
+            "eleStat": {},
 
             "rampSkills": [
                 ["affinity_boost_1", "defense_boost_1", "dulling_strike"]
@@ -1367,8 +1294,7 @@
             "affinity": -25,
             "defense": 12,
             "decoSlots": [],
-            "eleStatType": "none",
-            "eleStatValue": 0,
+            "eleStat": {},
 
             "rampSkills": [
                 ["affinity_boost_2", "defense_boost_1", "defense_grinder_1"]
@@ -1385,8 +1311,7 @@
             "affinity": -25,
             "defense": 16,
             "decoSlots": [],
-            "eleStatType": "none",
-            "eleStatValue": 0,
+            "eleStat": {},
 
             "rampSkills": [
                 ["affinity_boost_3", "defense_boost_2", "defense_grinder_1"]
@@ -1405,8 +1330,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "none",
-            "eleStatValue": 0,
+            "eleStat": {},
 
             "rampSkills": [
                 ["defense_boost_1", "dulling_strike", "small_monster_exploit"]
@@ -1423,8 +1347,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "none",
-            "eleStatValue": 0,
+            "eleStat": {},
 
             "rampSkills": [
                 ["defense_boost_2", "dulling_strike", "small_monster_exploit"]
@@ -1441,8 +1364,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "none",
-            "eleStatValue": 0,
+            "eleStat": {},
 
             "rampSkills": [
                 ["defense_boost_2", "dulling_strike", "defense_grinder_1"]
@@ -1461,8 +1383,7 @@
             "affinity": -20,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "fire",
-            "eleStatValue": 20,
+            "eleStat": {"fire": 20},
 
             "rampSkills": [
                 ["affinity_boost_1", "fire_boost_1", "brutal_strike"]
@@ -1479,8 +1400,7 @@
             "affinity": -20,
             "defense": 0,
             "decoSlots": [3],
-            "eleStatType": "fire",
-            "eleStatValue": 24,
+            "eleStat": {"fire": 24},
 
             "rampSkills": [
                 ["affinity_boost_1", "fire_boost_2", "brutal_strike"]
@@ -1497,8 +1417,7 @@
             "affinity": -20,
             "defense": 0,
             "decoSlots": [3],
-            "eleStatType": "fire",
-            "eleStatValue": 26,
+            "eleStat": {"fire": 24},
 
             "rampSkills": [
                 ["affinity_boost_2", "fire_boost_3", "brutal_strike"]
@@ -1517,8 +1436,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "thunder",
-            "eleStatValue": 30,
+            "eleStat": {"thunder": 30},
 
             "rampSkills": [
                 ["attack_boost_1", "thunder_boost_1", "anti_aquatic_species"]
@@ -1535,8 +1453,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [1],
-            "eleStatType": "thunder",
-            "eleStatValue": 35,
+            "eleStat": {"thunder": 35},
 
             "rampSkills": [
                 ["attack_boost_2", "thunder_boost_1", "anti_aquatic_species"]
@@ -1553,8 +1470,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [1,1],
-            "eleStatType": "thunder",
-            "eleStatValue": 38,
+            "eleStat": {"thunder": 38},
 
             "rampSkills": [
                 ["attack_boost_2", "thunder_boost_2", "anti_aquatic_species"]
@@ -1573,8 +1489,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "water",
-            "eleStatValue": 30,
+            "eleStat": {"water": 30},
 
             "rampSkills": [
                 ["attack_boost_2", "water_boost_1", "waterblight_exploit"]
@@ -1591,8 +1506,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "water",
-            "eleStatValue": 32,
+            "eleStat": {"water": 32},
 
             "rampSkills": [
                 ["attack_boost_2", "water_boost_1", "waterblight_exploit"]
@@ -1609,8 +1523,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [2,1,1],
-            "eleStatType": "water",
-            "eleStatValue": 35,
+            "eleStat": {"water": 35},
 
             "rampSkills": [
                 ["attack_boost_3", "water_boost_2", "waterblight_exploit"]
@@ -1629,8 +1542,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "ice",
-            "eleStatValue": 20,
+            "eleStat": {"ice": 20},
 
             "rampSkills": [
                 ["attack_boost_1", "ice_boost_1", "small_monster_exploit"]
@@ -1647,8 +1559,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "ice",
-            "eleStatValue": 25,
+            "eleStat": {"ice": 25},
 
             "rampSkills": [
                 ["attack_boost_1", "ice_boost_2", "small_monster_exploit"]
@@ -1665,8 +1576,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [1,1],
-            "eleStatType": "ice",
-            "eleStatValue": 35,
+            "eleStat": {"ice": 35},
 
             "rampSkills": [
                 ["attack_boost_2", "ice_boost_2", "small_monster_exploit"]
@@ -1685,8 +1595,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "blast",
-            "eleStatValue": 15,
+            "eleStat": {"blast": 15},
 
             "rampSkills": [
                 ["attack_boost_2", "blast_boost_1", "magnamalo_soul"]
@@ -1703,8 +1612,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "blast",
-            "eleStatValue": 18,
+            "eleStat": {"blast": 18},
 
             "rampSkills": [
                 ["attack_boost_3", "blast_boost_1", "magnamalo_soul"]
@@ -1721,8 +1629,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [2,1],
-            "eleStatType": "blast",
-            "eleStatValue": 25,
+            "eleStat": {"blast": 25},
 
             "rampSkills": [
                 ["attack_boost_3", "blast_boost_2", "magnamalo_soul"]
@@ -1741,8 +1648,7 @@
             "affinity": 10,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "thunder",
-            "eleStatValue": 20,
+            "eleStat": {"thunder": 20},
 
             "rampSkills": [
                 ["affinity_boost_1", "thunder_boost_1", "dulling_strike"]
@@ -1759,8 +1665,7 @@
             "affinity": 10,
             "defense": 0,
             "decoSlots": [3],
-            "eleStatType": "thunder",
-            "eleStatValue": 24,
+            "eleStat": {"thunder": 24},
 
             "rampSkills": [
                 ["affinity_boost_1", "thunder_boost_2", "dulling_strike"]
@@ -1777,8 +1682,7 @@
             "affinity": 10,
             "defense": 0,
             "decoSlots": [3],
-            "eleStatType": "thunder",
-            "eleStatValue": 26,
+            "eleStat": {"thunder": 26},
 
             "rampSkills": [
                 ["affinity_boost_2", "thunder_boost_2", "dulling_strike"]
@@ -1797,8 +1701,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "dragon",
-            "eleStatValue": 10,
+            "eleStat": {"dragon": 10},
 
             "rampSkills": [
                 ["dragon_boost_3", "anti_aerial_species", "defense_boost_1"]
@@ -1815,8 +1718,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "dragon",
-            "eleStatValue": 12,
+            "eleStat": {"dragon": 12},
 
             "rampSkills": [
                 ["dragon_boost_3", "anti_aerial_species", "ibushi_soul"]
@@ -1833,8 +1735,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "dragon",
-            "eleStatValue": 15,
+            "eleStat": {"dragon": 15},
 
             "rampSkills": [
                 ["dragon_boost_4", "anti_aerial_species", "ibushi_soul"]
@@ -1853,8 +1754,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "thunder",
-            "eleStatValue": 46,
+            "eleStat": {"thunder": 46},
 
             "rampSkills": [
                 ["attack_boost_2", "anti_aerial_species", "narwa_soul"]
@@ -1871,8 +1771,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "thunder",
-            "eleStatValue": 50,
+            "eleStat": {"thunder": 50},
 
             "rampSkills": [
                 ["attack_boost_3", "anti_aerial_species", "narwa_soul"]
@@ -1891,8 +1790,7 @@
             "affinity": 10,
             "defense": 0,
             "decoSlots": [1],
-            "eleStatType": "ice",
-            "eleStatValue": 40,
+            "eleStat": {"ice": 40},
 
             "rampSkills": [
                 ["attack_boost_2", "affinity_boost_2", "kushala_daora_soul"]
@@ -1909,8 +1807,7 @@
             "affinity": 10,
             "defense": 0,
             "decoSlots": [1],
-            "eleStatType": "ice",
-            "eleStatValue": 45,
+            "eleStat": {"ice": 45},
 
             "rampSkills": [
                 ["attack_boost_3", "affinity_boost_3", "kushala_daora_soul"]
@@ -1929,8 +1826,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "blast",
-            "eleStatValue": 38,
+            "eleStat": {"blast": 38},
 
             "rampSkills": [
                 ["attack_boost_2", "fireblight_exploit", "teostra_soul"]
@@ -1947,8 +1843,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "blast",
-            "eleStatValue": 45,
+            "eleStat": {"blast": 45},
 
             "rampSkills": [
                 ["attack_boost_3", "fireblight_exploit", "teostra_soul"]
@@ -1967,8 +1862,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [2,1,1],
-            "eleStatType": "none",
-            "eleStatValue": 0,
+            "eleStat": {},
 
             "rampSkills": [
                 ["attack_boost_2", "defense_boost_3", "chameleos_soul"]
@@ -1985,8 +1879,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [2,1,1],
-            "eleStatType": "poison",
-            "eleStatValue": 66,
+            "eleStat": {"poison": 66},
 
             "rampSkills": [
                 ["attack_boost_3", "defense_boost_3", "chameleos_soul"]
@@ -2005,8 +1898,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [2],
-            "eleStatType": "dragon",
-            "eleStatValue": 42,
+            "eleStat": {"dragon": 42},
 
             "rampSkills": [
                 ["attack_boost_3", "wyvern_exploit", "valstrax_soul"]
@@ -2023,8 +1915,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [2],
-            "eleStatType": "dragon",
-            "eleStatValue": 45,
+            "eleStat": {"dragon": 45},
 
             "rampSkills": [
                 ["attack_boost_3", "wyvern_exploit", "valstrax_soul"]
@@ -2043,8 +1934,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "poison",
-            "eleStatValue": 30,
+            "eleStat": {"poison": 30},
 
             "rampSkills": [
                 ["poison_boost_1", "dulling_strike", "spiribird_doubled"]
@@ -2061,8 +1951,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "poison",
-            "eleStatValue": 32,
+            "eleStat": {"poison": 32},
 
             "rampSkills": [
                 ["poison_boost_1", "dulling_strike", "spiribird_doubled"]
@@ -2079,8 +1968,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "poison",
-            "eleStatValue": 35,
+            "eleStat": {"poison": 35},
 
             "rampSkills": [
                 ["poison_boost_1", "dulling_strike", "spiribird_doubled"]
@@ -2099,8 +1987,7 @@
             "affinity": 0,
             "defense": 15,
             "decoSlots": [],
-            "eleStatType": "sleep",
-            "eleStatValue": 8,
+            "eleStat": {"sleep": 8},
 
             "rampSkills": [
                 ["defense_boost_1", "sleep_boost_1", "anti_aquatic_species"]
@@ -2117,8 +2004,7 @@
             "affinity": 0,
             "defense": 17,
             "decoSlots": [],
-            "eleStatType": "sleep",
-            "eleStatValue": 10,
+            "eleStat": {"sleep": 10},
 
             "rampSkills": [
                 ["defense_boost_2", "sleep_boost_1", "anti_aquatic_species"]
@@ -2135,8 +2021,7 @@
             "affinity": 0,
             "defense": 20,
             "decoSlots": [3,1],
-            "eleStatType": "sleep",
-            "eleStatValue": 15,
+            "eleStat": {"sleep": 15},
 
             "rampSkills": [
                 ["defense_boost_3", "sleep_boost_2", "anti_aquatic_species"]
@@ -2155,8 +2040,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "ice",
-            "eleStatValue": 50,
+            "eleStat": {"ice": 50},
 
             "rampSkills": [
                 ["attack_boost_3", "element_exploit", "iceblight_exploit"]
@@ -2173,8 +2057,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "ice",
-            "eleStatValue": 60,
+            "eleStat": {"ice": 60},
 
             "rampSkills": [
                 ["attack_boost_3", "element_exploit", "iceblight_exploit"]
@@ -2191,8 +2074,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "ice",
-            "eleStatValue": 70,
+            "eleStat": {"ice": 70},
 
             "rampSkills": [
                 ["attack_boost_4", "element_exploit", "iceblight_exploit"]
@@ -2211,8 +2093,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "dragon",
-            "eleStatValue": 20,
+            "eleStat": {"dragon": 20},
 
             "rampSkills": [
                 ["defense_boost_2", "dragon_boost_2", "wyvern_exploit"]
@@ -2229,8 +2110,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [1,1,1],
-            "eleStatType": "dragon",
-            "eleStatValue": 22,
+            "eleStat": {"dragon": 22},
 
             "rampSkills": [
                 ["defense_boost_3", "dragon_boost_2", "wyvern_exploit"]
@@ -2247,8 +2127,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [2,1,1],
-            "eleStatType": "dragon",
-            "eleStatValue": 25,
+            "eleStat": {"dragon": 25},
 
             "rampSkills": [
                 ["defense_boost_3", "dragon_boost_3", "wyvern_exploit"]
@@ -2267,8 +2146,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [2],
-            "eleStatType": "paralysis",
-            "eleStatValue": 36,
+            "eleStat": {"paralysis": 36},
 
             "rampSkills": [
                 ["attack_boost_3", "dulling_strike", "buddy_rally"]
@@ -2285,8 +2163,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [2],
-            "eleStatType": "paralysis",
-            "eleStatValue": 40,
+            "eleStat": {"paralysis": 40},
 
             "rampSkills": [
                 ["attack_boost_3", "dulling_strike", "buddy_rally"]
@@ -2303,8 +2180,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [3],
-            "eleStatType": "paralysis",
-            "eleStatValue": 45,
+            "eleStat": {"paralysis": 45},
 
             "rampSkills": [
                 ["attack_boost_4", "dulling_strike", "buddy_rally"]
@@ -2323,8 +2199,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "none",
-            "eleStatValue": 0,
+            "eleStat": {},
 
             "rampSkills": [
                 [
@@ -2354,8 +2229,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "none",
-            "eleStatValue": 0,
+            "eleStat": {},
 
             "rampSkills": [
                 [
@@ -2389,8 +2263,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "none",
-            "eleStatValue": 0,
+            "eleStat": {},
 
             "rampSkills": [
                 [
@@ -2429,8 +2302,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "none",
-            "eleStatValue": 0,
+            "eleStat": {},
 
             "rampSkills": [
                 [
@@ -2470,8 +2342,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "none",
-            "eleStatValue": 0,
+            "eleStat": {},
 
             "rampSkills": [
                 [
@@ -2513,8 +2384,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [],
-            "eleStatType": "none",
-            "eleStatValue": 0,
+            "eleStat": {},
 
             "rampSkills": [
                 [

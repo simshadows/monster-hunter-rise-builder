@@ -1,4 +1,23 @@
 {
+    "Khezu Tree": {
+        "6c": {
+            "rarity": 4,
+            "endlineTag": "hr",
+
+            "name": "Khezu Skards",
+            "attack": 150,
+            "affinity": 10,
+            "defense": 0,
+            "decoSlots": [2,1,1],
+            "eleStat": {"thunder": 28, "paralysis": 14},
+
+            "rampSkills": [
+               ["attack_boost_4", "thunder_boost_2", "paralysis_boost_2"]
+            ],
+
+            "maxSharpness": [70, 40, 100, 90, 70, 30]
+        }
+    },
     "Nargacuga Tree": {
         "13c": {
             "rarity": 6,
@@ -9,8 +28,7 @@
             "affinity": 40,
             "defense": 0,
             "decoSlots": [2],
-            "eleStatType": "none",
-            "eleStatValue": 0,
+            "eleStat": {},
 
             "rampSkills": [
                ["attack_boost_3", "affinity_boost_2", "master_rider"]

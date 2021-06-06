@@ -9,8 +9,7 @@
             "affinity": 0,
             "defense": 0,
             "decoSlots": [2,1],
-            "eleStatType": "none",
-            "eleStatValue": 0,
+            "eleStat": {},
 
             "rampSkills": [
                 ["attack_boost_4", "defense_boost_3", "master_rider"]
@@ -28,8 +27,7 @@
             "affinity": 40,
             "defense": 0,
             "decoSlots": [2],
-            "eleStatType": "none",
-            "eleStatValue": 0,
+            "eleStat": {},
 
             "rampSkills": [
                 ["attack_boost_3", "affinity_boost_2", "master_rider"]

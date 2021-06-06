@@ -100,11 +100,11 @@ function validateWeaponData(weaponData) {
         assert((slotSize > 0 && slotSize <= 3));
     }
 
-    assert(isEleStatStr(weaponData.eleStatType));
-    if (weaponData.eleStatType === "none") {
-        assert(weaponData.eleStatValue == 0);
-    } else {
-        assert(weaponData.eleStatValue > 0);
+    assert(isObj(weaponData.eleStat));
+    for (const [eleStatType, eleStatValue] of Object.entries(weaponData.eleStat)) {
+        assert(isEleStatStr(eleStatType));
+        assert(eleStatType !== "none");
+        assert(eleStatValue > 0);
     }
 
     assert(isArr(weaponData.rampSkills), "Ramp skills must be an Array of Arrays.");
@@ -157,6 +157,9 @@ async function downloadCategoryRawWeaponData(category, path, op) {
             weaponData.filterHelpers = {};
             weaponData.filterHelpers.nameLower = toNameFilterString(weaponData.name);
             weaponData.filterHelpers.treeNameLower = toNameFilterString(treeName);
+
+            // Convert the eleStat object to a map because it's easier to work with
+            weaponData.eleStat = new Map(Object.entries(weaponData.eleStat));
 
             // Validate Common Data
             validateWeaponData(weaponData);

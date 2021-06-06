@@ -181,13 +181,13 @@ div.buff-selection-group-heading-box {
     width: 30px;
 }
 .weapon-selection-table-head-cell-name {
-    width: 260px;
+    width: 220px;
 }
 .weapon-selection-table-head-cell-numeric {
-    width: 60px;
+    width: 65px;
 }
 .weapon-selection-table-head-cell-elestat {
-    width: 70px;
+    width: 150px;
 }
 .weapon-selection-table-head-cell-deco {
     width: 80px;
@@ -201,9 +201,15 @@ div.weapon-selection-table-elestat-contents {
     align-items: center;
     justify-content: center;
     flex-direction: row;
+}
+div.weapon-selection-table-elestat-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
     column-gap: 3px;
-    width: 100%;
-    padding: 0 2px 0 2px;
+    padding: 0 6px 0 6px;
+    width: 50%;
 }
 div.weapon-selection-table-elestat-text {
     flex: 1 0 0;
