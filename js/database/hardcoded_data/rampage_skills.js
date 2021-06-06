@@ -85,141 +85,201 @@ function generateStat(name, shortIdPrefix) {
 const hardcodedRampageSkills = [
 
     ["attack_boost_1", {
-        shortId: "10",
+        shortId: "atb1",
         name: "Attack Boost I",
     }],
     ["attack_boost_2", {
-        shortId: "20",
+        shortId: "atb2",
         name: "Attack Boost II",
     }],
     ["attack_boost_3", {
-        shortId: "30",
+        shortId: "atb3",
         name: "Attack Boost III",
     }],
     ["attack_boost_4", {
-        shortId: "40",
+        shortId: "atb4",
         name: "Attack Boost IV",
     }],
 
     ["affinity_boost_1", {
-        shortId: "50",
+        shortId: "afb1",
         name: "Affinity Boost I",
     }],
     ["affinity_boost_2", {
-        shortId: "60",
+        shortId: "afb2",
         name: "Affinity Boost II",
     }],
     ["affinity_boost_3", {
-        shortId: "70",
+        shortId: "afb3",
         name: "Affinity Boost III",
     }],
     ["affinity_boost_4", {
-        shortId: "80",
+        shortId: "afb4",
         name: "Affinity Boost IV",
     }],
 
     ["elemental_boost_1", {
-        shortId: "90",
+        shortId: "elb1",
         name: "Elemental Boost I",
     }],
     ["elemental_boost_2", {
-        shortId: "100",
+        shortId: "elb2",
         name: "Elemental Boost II",
     }],
     ["elemental_boost_3", {
-        shortId: "110",
+        shortId: "elb3",
         name: "Elemental Boost III",
     }],
 
     ["defense_boost_1", {
-        shortId: "120",
+        shortId: "deb1",
         name: "Defense Boost I",
     }],
     ["defense_boost_2", {
-        shortId: "130",
+        shortId: "deb2",
         name: "Defense Boost II",
     }],
     ["defense_boost_3", {
-        shortId: "140",
+        shortId: "deb3",
         name: "Defense Boost III",
     }],
 
     ["sharpness_type_1", {
-        shortId: "150",
+        shortId: "sht1",
         name: "Sharpness Type I",
     }],
     ["sharpness_type_2", {
-        shortId: "160",
+        shortId: "sht2",
         name: "Sharpness Type II",
     }],
     ["sharpness_type_3", {
-        shortId: "170",
+        shortId: "sht3",
         name: "Sharpness Type III",
+    }],
+    ["sharpness_type_4", {
+        shortId: "sht4",
+        name: "Sharpness Type IV",
     }],
 
     ["defense_grinder_1", {
-        shortId: "180",
+        shortId: "deg1",
         name: "Defense Grinder I",
+    }],
+    ["defense_grinder_2", {
+        shortId: "deg2",
+        name: "Defense Grinder II",
     }],
 
     ["attack_surge", {
-        shortId: "190",
+        shortId: "atsu",
         name: "Attack Surge",
     }],
     ["elemental_surge", {
-        shortId: "200",
+        shortId: "elsu",
         name: "Elemental Surge",
     }],
     ["affinity_surge", {
-        shortId: "210",
+        shortId: "afsu",
         name: "Affinity Surge",
     }],
 
+    ["anti_aerial_species", {
+        shortId: "anae",
+        name: "Anti-Aerial Species",
+    }],
     ["anti_aquatic_species", {
-        shortId: "220",
+        shortId: "anaq",
         name: "Anti-Aquatic Species",
     }],
 
+    ["element_exploit", {
+        shortId: "xele",
+        name: "Element Exploit",
+    }],
     ["fireblight_exploit", {
-        shortId: "230",
+        shortId: "xfib",
         name: "Fireblight Exploit",
     }],
+    ["iceblight_exploit", {
+        shortId: "xicb",
+        name: "Iceblight Exploit",
+    }],
+    ["small_monster_exploit", {
+        shortId: "xsm",
+        name: "Small Monster Exploit",
+    }],
+    ["thunderblight_exploit", {
+        shortId: "xthb",
+        name: "Thunderblight Exploit",
+    }],
     ["waterblight_exploit", {
-        shortId: "240",
+        shortId: "xwab",
         name: "Waterblight Exploit",
     }],
+    ["wyvern_exploit", {
+        shortId: "xwyv",
+        name: "Wyvern Exploit",
+    }],
 
+    ["chameleos_soul", {
+        shortId: "chas",
+        name: "Chameleos Soul",
+    }],
+    ["ibushi_soul", {
+        shortId: "ibus",
+        name: "Magnamalo Soul",
+    }],
+    ["kushala_daora_soul", {
+        shortId: "kuss",
+        name: "Kushala Daora Soul",
+    }],
+    ["magnamalo_soul", {
+        shortId: "mags",
+        name: "Magnamalo Soul",
+    }],
+    ["narwa_soul", {
+        shortId: "nars",
+        name: "Narwa Soul",
+    }],
     ["teostra_soul", {
-        shortId: "250",
+        shortId: "teos",
         name: "Teostra Soul",
+    }],
+    ["valstrax_soul", {
+        shortId: "vals",
+        name: "Valstrax Soul",
     }],
 
     ["buddy_rally", {
-        shortId: "260",
+        shortId: "10",
         name: "Buddy Rally",
     }],
     ["brutal_strike", {
-        shortId: "270",
+        shortId: "20",
         name: "Brutal Strike",
     }],
     ["dulling_strike", {
-        shortId: "280",
+        shortId: "30",
         name: "Dulling Strike",
     }],
     ["lasting_arc_shot", {
-        shortId: "290",
+        shortId: "40",
         name: "Lasting Arc Shot",
     }],
     ["master_rider", {
-        shortId: "300",
+        shortId: "50",
         name: "Master Rider",
     }],
     ["non_elemental_boost", {
-        shortId: "310",
+        shortId: "60",
         name: "Non-elemental Boost",
     }],
+    ["silkbind_boost", {
+        shortId: "70",
+        name: "Silkbind Boost",
+    }],
     ["spiribird_doubled", {
-        shortId: "320",
+        shortId: "90",
         name: "Spiribird Doubled",
     }],
 

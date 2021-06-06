@@ -100,6 +100,7 @@ div.selection-table-wrap-box {
 .selection-table-body-row {
     background: var(--color-select-table--body-row);
     cursor: pointer;
+    height: 26px;
 }
 .selection-table-body-row-highlighted {
     background: var(--color-select-table--body-row-highlighted);

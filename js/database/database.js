@@ -111,7 +111,7 @@ function validateWeaponData(weaponData) {
     assert((weaponData.rampSkills.length <= 3));
     for (const possibleRampSkills of weaponData.rampSkills) {
         assert(isArr(possibleRampSkills));
-        assert((possibleRampSkills.length > 1), "Must have at least two possible ramp skills."); // Or three?
+        assert((possibleRampSkills.length > 0), "Must have at least one possible ramp skill.");
         for (const rampID of possibleRampSkills) {
             assert(isNonEmptyStr(rampID));
             // TODO: Include a check that a ramp ID is valid, and probably also a check for duplicate IDs.
@@ -122,7 +122,7 @@ function validateWeaponData(weaponData) {
 // Only weapons with sharpness bars
 function validateWeaponDataSharpness(weaponData) {
     assert(isArr(weaponData.maxSharpness), "Maximum sharpness must be an Array.");
-    assert((weaponData.maxSharpness.length == 6), "Maximum sharpness must have 6 numbers (each corresponding to a colour).");
+    assert((weaponData.maxSharpness.length == 6), "Maximum sharpness must have 6 numbers (each corresponding to a colour). " + weaponData.category + " " + weaponData.id);
     // First element is red sharpness. Last element is white sharpness.
 
     let hitSum = 0;

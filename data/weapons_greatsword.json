@@ -277,6 +277,62 @@
             "maxSharpness": [110, 100, 50, 70, 20, 0]
         }
     },
+    "Barroth Tree": {
+        "5a": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Carapace Sword I",
+            "attack": 120,
+            "affinity": -20,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "none",
+            "eleStatValue": 0,
+
+            "rampSkills": [
+                ["affinity_boost_1", "defense_boost_1", "brutal_strike"]
+            ],
+
+            "maxSharpness": [50, 60, 120, 70, 0, 0]
+        },
+        "5b": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Carapace Sword II",
+            "attack": 130,
+            "affinity": -20,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "none",
+            "eleStatValue": 0,
+
+            "rampSkills": [
+                ["affinity_boost_1", "defense_boost_2", "brutal_strike"]
+            ],
+
+            "maxSharpness": [50, 60, 110, 70, 10, 0]
+        },
+        "5c": {
+            "rarity": 5,
+            "endlineTag": "hr",
+
+            "name": "Carapace Blade",
+            "attack": 200,
+            "affinity": -20,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "none",
+            "eleStatValue": 0,
+
+            "rampSkills": [
+                ["affinity_boost_2", "defense_boost_2", "brutal_strike"]
+            ],
+
+            "maxSharpness": [60, 40, 190, 50, 40, 20]
+        }
+    },
     "Tigrex Tree": {
         "6c": {
             "rarity": 6,
@@ -297,7 +353,211 @@
             "maxSharpness": [50, 40, 120, 120, 50, 20]
         }
     },
+    "Khezu Tree": {
+        "7a": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Khezu Shock Sword I",
+            "attack": 90,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "thunder",
+            "eleStatValue": 30,
+
+            "rampSkills": [
+                ["attack_boost_2", "thunder_boost_1", "thunderblight_exploit"]
+            ],
+
+            "maxSharpness": [70, 50, 50, 80, 0, 0]
+        },
+        "7b": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Khezu Shock Sword II",
+            "attack": 110,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "thunder",
+            "eleStatValue": 35,
+
+            "rampSkills": [
+                ["attack_boost_3", "thunder_boost_1", "thunderblight_exploit"]
+            ],
+
+            "maxSharpness": [70, 70, 70, 90, 0, 0]
+        },
+        "7c": {
+            "rarity": 4,
+            "endlineTag": "hr",
+
+            "name": "Khezu Shock Blade",
+            "attack": 140,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2],
+            "eleStatType": "thunder",
+            "eleStatValue": 40,
+
+            "rampSkills": [
+                ["attack_boost_4", "thunder_boost_2", "thunderblight_exploit"]
+            ],
+
+            "maxSharpness": [100, 40, 70, 70, 50, 20]
+        }
+    },
+    "Izuchi Tree": {
+        "8a": {
+            "rarity": 1,
+            "endlineTag": "",
+
+            "name": "Izuchi Blade I",
+            "attack": 60,
+            "affinity": 10,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "none",
+            "eleStatValue": 0,
+
+            "rampSkills": [
+                ["affinity_boost_1", "small_monster_exploit", "buddy_rally"]
+            ],
+
+            "maxSharpness": [30, 70, 140, 10, 0, 0]
+        },
+        "8b": {
+            "rarity": 1,
+            "endlineTag": "",
+
+            "name": "Izuchi Blade II",
+            "attack": 80,
+            "affinity": 12,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "none",
+            "eleStatValue": 0,
+
+            "rampSkills": [
+                ["affinity_boost_2", "small_monster_exploit", "buddy_rally"]
+            ],
+
+            "maxSharpness": [30, 70, 70, 808, 0, 0]
+        },
+        "8c": {
+            "rarity": 4,
+            "endlineTag": "hr",
+
+            "name": "Snapper Blade",
+            "attack": 150,
+            "affinity": 15,
+            "defense": 0,
+            "decoSlots": [2,1],
+            "eleStatType": "none",
+            "eleStatValue": 0,
+
+            "rampSkills": [
+                ["affinity_boost_3", "small_monster_exploit", "buddy_rally"]
+            ],
+
+            "maxSharpness": [50, 90, 70, 70, 70, 0]
+        }
+    },
+    "Remobra Tree": {
+        "9a": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Deadly Serpentblade I",
+            "attack": 90,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "poison",
+            "eleStatValue": 40,
+
+            "rampSkills": [
+                ["attack_boost_2", "poison_boost_1", "dulling_strike"]
+            ],
+
+            "maxSharpness": [40, 60, 80, 70, 0, 0]
+        },
+        "9b": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Deadly Serpentblade II",
+            "attack": 100,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "poison",
+            "eleStatValue": 42,
+
+            "rampSkills": [
+                ["attack_boost_3", "poison_boost_1", "dulling_strike"]
+            ],
+
+            "maxSharpness": [60, 40, 50, 100, 0, 0]
+        },
+        "9c": {
+            "rarity": 5,
+            "endlineTag": "hr",
+
+            "name": "Poison Serpentblade",
+            "attack": 160,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2,1,1],
+            "eleStatType": "poison",
+            "eleStatValue": 45,
+
+            "rampSkills": [
+                ["attack_boost_4", "poison_boost_1", "dulling_strike"]
+            ],
+
+            "maxSharpness": [130, 20, 70, 70, 50, 10]
+        }
+    },
     "Nargacuga Tree": {
+        "10a": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Hidden Blade I",
+            "attack": 110,
+            "affinity": 30,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "none",
+            "eleStatValue": 0,
+
+            "rampSkills": [
+                ["attack_boost_2", "affinity_boost_1", "master_rider"]
+            ],
+
+            "maxSharpness": [50, 70, 80, 100, 50, 0]
+        },
+        "10b": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Hidden Blade II",
+            "attack": 160,
+            "affinity": 30,
+            "defense": 0,
+            "decoSlots": [2],
+            "eleStatType": "none",
+            "eleStatValue": 0,
+
+            "rampSkills": [
+                ["attack_boost_3", "affinity_boost_1", "master_rider"]
+            ],
+
+            "maxSharpness": [100, 30, 70, 100, 80, 20]
+        },
         "10c": {
             "rarity": 6,
             "endlineTag": "hr",
@@ -317,7 +577,1029 @@
             "maxSharpness": [70, 40, 120, 90, 60, 20]
         }
     },
+    "Somnacanth Tree": {
+        "11a": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Frilled Blade I",
+            "attack": 90,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "sleep",
+            "eleStatValue": 16,
+
+            "rampSkills": [
+                ["attack_boost_1", "sleep_boost_1", "dulling_strike"]
+            ],
+
+            "maxSharpness": [50, 50, 120, 80, 0, 0]
+        },
+        "11b": {
+            "rarity": 4,
+            "endlineTag": "",
+
+            "name": "Frilled Blade II",
+            "attack": 120,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [1,1],
+            "eleStatType": "sleep",
+            "eleStatValue": 19,
+
+            "rampSkills": [
+                ["attack_boost_2", "sleep_boost_1", "dulling_strike"]
+            ],
+
+            "maxSharpness": [40, 60, 110, 90, 0, 0]
+        },
+        "11c": {
+            "rarity": 5,
+            "endlineTag": "hr",
+
+            "name": "Illusory Frilled Blade",
+            "attack": 160,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2,1],
+            "eleStatType": "sleep",
+            "eleStatValue": 22,
+
+            "rampSkills": [
+                ["attack_boost_3", "sleep_boost_1", "dulling_strike"]
+            ],
+
+            "maxSharpness": [50, 90, 120, 120, 20, 0]
+        }
+    },
+    "Ore Tree": {
+        "12a": {
+            "rarity": 1,
+            "endlineTag": "",
+
+            "name": "Iron Sword I",
+            "attack": 80,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "none",
+            "eleStatValue": 0,
+
+            "rampSkills": [
+                ["attack_boost_1", "affinity_boost_1", "defense_boost_2"]
+            ],
+
+            "maxSharpness": [80, 70, 100, 0, 0, 0]
+        },
+        "12b": {
+            "rarity": 1,
+            "endlineTag": "",
+
+            "name": "Steel Sword",
+            "attack": 100,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "none",
+            "eleStatValue": 0,
+
+            "rampSkills": [
+                ["attack_boost_1", "affinity_boost_1", "defense_boost_2"]
+            ],
+
+            "maxSharpness": [70, 60, 120, 0, 0, 0]
+        },
+        "12c": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Buster Sword I",
+            "attack": 110,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "none",
+            "eleStatValue": 0,
+
+            "rampSkills": [
+                ["attack_boost_2", "affinity_boost_1", "defense_boost_2"]
+            ],
+
+            "maxSharpness": [60, 60, 60, 70, 0, 0]
+        },
+        "12d": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Buster Blade",
+            "attack": 140,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "none",
+            "eleStatValue": 0,
+
+            "rampSkills": [
+                ["attack_boost_2", "defense_boost_2", "silkbind_boost"]
+            ],
+
+            "maxSharpness": [70, 60, 70, 100, 0, 0]
+        },
+        "12e": {
+            "rarity": 4,
+            "endlineTag": "",
+
+            "name": "Chrome Razor I",
+            "attack": 160,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [1,1],
+            "eleStatType": "poison",
+            "eleStatValue": 35,
+
+            "rampSkills": [
+                ["attack_boost_2", "poison_boost_1", "silkbind_boost"]
+            ],
+
+            "maxSharpness": [60, 70, 100, 100, 20, 0]
+        },
+        "12f": {
+            "rarity": 5,
+            "endlineTag": "hr",
+
+            "name": "Chrome Quietus",
+            "attack": 180,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [1,1],
+            "eleStatType": "poison",
+            "eleStatValue": 40,
+
+            "rampSkills": [
+                ["attack_boost_3", "poison_boost_1", "silkbind_boost"]
+            ],
+
+            "maxSharpness": [80, 40, 90, 70, 50, 20]
+        }
+    },
+    "Fire Tree": {
+        "13a": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Barbaroi Blade I",
+            "attack": 100,
+            "affinity": 0,
+            "defense": 10,
+            "decoSlots": [],
+            "eleStatType": "fire",
+            "eleStatValue": 40,
+
+            "rampSkills": [
+                ["attack_boost_3", "defense_boost_2", "defense_grinder_1"]
+            ],
+
+            "maxSharpness": [70, 40, 120, 70, 0, 0]
+        },
+        "13b": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Barbaroi Blade II",
+            "attack": 130,
+            "affinity": 0,
+            "defense": 15,
+            "decoSlots": [],
+            "eleStatType": "fire",
+            "eleStatValue": 42,
+
+            "rampSkills": [
+                ["attack_boost_3", "defense_boost_2", "defense_grinder_1"]
+            ],
+
+            "maxSharpness": [60, 50, 110, 80, 0, 0]
+        },
+        "13c": {
+            "rarity": 5,
+            "endlineTag": "hr",
+
+            "name": "Crimson Goat",
+            "attack": 160,
+            "affinity": 0,
+            "defense": 20,
+            "decoSlots": [2,1],
+            "eleStatType": "fire",
+            "eleStatValue": 45,
+
+            "rampSkills": [
+                ["attack_boost_4", "defense_boost_2", "defense_grinder_2"]
+            ],
+
+            "maxSharpness": [50, 60, 150, 30, 60, 0]
+        }
+    },
+    "Pukei-Pukei Tree": {
+        "14a": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Pukei Edge I",
+            "attack": 100,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "poison",
+            "eleStatValue": 24,
+
+            "rampSkills": [
+                ["attack_boost_2", "defense_boost_1", "poison_boost_1"]
+            ],
+
+            "maxSharpness": [60, 70, 30, 90, 0, 0]
+        },
+        "14b": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Pukei Edge II",
+            "attack": 130,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "poison",
+            "eleStatValue": 30,
+
+            "rampSkills": [
+                ["attack_boost_3", "defense_boost_1", "poison_boost_1"]
+            ],
+
+            "maxSharpness": [60, 90, 40, 110, 0, 0]
+        },
+        "14c": {
+            "rarity": 5,
+            "endlineTag": "hr",
+
+            "name": "Datura Cleaver",
+            "attack": 170,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2,1],
+            "eleStatType": "poison",
+            "eleStatValue": 36,
+
+            "rampSkills": [
+                ["attack_boost_3", "defense_boost_1", "poison_boost_2"]
+            ],
+
+            "maxSharpness": [60, 60, 50, 90, 90, 0]
+        }
+    },
+    "Barioth Tree": {
+        "15a": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Icicle Fang I",
+            "attack": 100,
+            "affinity": 30,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "ice",
+            "eleStatValue": 30,
+
+            "rampSkills": [
+                ["attack_boost_2", "affinity_boost_2", "iceblight_exploit"]
+            ],
+
+            "maxSharpness": [50, 60, 70, 100, 20, 0]
+        },
+        "15b": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Icicle Fang II",
+            "attack": 120,
+            "affinity": 30,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "ice",
+            "eleStatValue": 34,
+
+            "rampSkills": [
+                ["attack_boost_3", "affinity_boost_2", "iceblight_exploit"]
+            ],
+
+            "maxSharpness": [40, 70, 70, 100, 70, 0]
+        },
+        "15c": {
+            "rarity": 5,
+            "endlineTag": "hr",
+
+            "name": "Paladire",
+            "attack": 160,
+            "affinity": 35,
+            "defense": 0,
+            "decoSlots": [2],
+            "eleStatType": "ice",
+            "eleStatValue": 38,
+
+            "rampSkills": [
+                ["attack_boost_4", "affinity_boost_2", "iceblight_exploit"]
+            ],
+
+            "maxSharpness": [50, 70, 80, 100, 70, 30]
+        }
+    },
+    "Aknosom Tree": {
+        "16a": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Aknosom Blade I",
+            "attack": 100,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "fire",
+            "eleStatValue": 20,
+
+            "rampSkills": [
+                ["attack_boost_1", "fire_boost_1", "fireblight_exploit"]
+            ],
+
+            "maxSharpness": [30, 50, 80, 90, 0, 0]
+        },
+        "16b": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Aknosom Blade II",
+            "attack": 130,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "fire",
+            "eleStatValue": 23,
+
+            "rampSkills": [
+                ["attack_boost_2", "fire_boost_1", "fireblight_exploit"]
+            ],
+
+            "maxSharpness": [30, 50, 90, 130, 0, 0]
+        },
+        "16c": {
+            "rarity": 4,
+            "endlineTag": "hr",
+
+            "name": "Daybreak Cleaver",
+            "attack": 160,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2],
+            "eleStatType": "fire",
+            "eleStatValue": 27,
+
+            "rampSkills": [
+                ["attack_boost_2", "fire_boost_2", "fireblight_exploit"]
+            ],
+
+            "maxSharpness": [30, 50, 80, 130, 40, 20]
+        }
+    },
+    "Tetranadon Tree": {
+        "17a": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Tetranadon Edge I",
+            "attack": 110,
+            "affinity": 0,
+            "defense": 10,
+            "decoSlots": [],
+            "eleStatType": "water",
+            "eleStatValue": 18,
+
+            "rampSkills": [
+                ["defense_boost_1", "water_boost_1", "dulling_strike"]
+            ],
+
+            "maxSharpness": [30, 60, 90, 70, 0, 0]
+        },
+        "17b": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Tetranadon Edge II",
+            "attack": 130,
+            "affinity": 0,
+            "defense": 15,
+            "decoSlots": [],
+            "eleStatType": "water",
+            "eleStatValue": 20,
+
+            "rampSkills": [
+                ["defense_boost_1", "water_boost_2", "dulling_strike"]
+            ],
+
+            "maxSharpness": [30, 90, 100, 80, 0, 0]
+        },
+        "17c": {
+            "rarity": 4,
+            "endlineTag": "hr",
+
+            "name": "Tetranadon Cutter",
+            "attack": 160,
+            "affinity": 0,
+            "defense": 20,
+            "decoSlots": [2],
+            "eleStatType": "water",
+            "eleStatValue": 24,
+
+            "rampSkills": [
+                ["defense_boost_1", "water_boost_3", "dulling_strike"]
+            ],
+
+            "maxSharpness": [40, 90, 110, 100, 10, 0]
+        }
+    },
+    "Bone Tree": {
+        "18a": {
+            "rarity": 1,
+            "endlineTag": "",
+
+            "name": "Bone Blade I",
+            "attack": 90,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "none",
+            "eleStatValue": 0,
+
+            "rampSkills": [
+                ["attack_boost_2", "affinity_boost_1", "defense_boost_1"]
+            ],
+
+            "maxSharpness": [70, 90, 90, 0, 0, 0]
+        },
+        "18b": {
+            "rarity": 1,
+            "endlineTag": "",
+
+            "name": "Bone Slasher",
+            "attack": 110,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "none",
+            "eleStatValue": 0,
+
+            "rampSkills": [
+                ["attack_boost_2", "affinity_boost_1", "defense_boost_1"]
+            ],
+
+            "maxSharpness": [80, 70, 100, 0, 0, 0]
+        },
+        "18c": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Jawblade I",
+            "attack": 120,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "none",
+            "eleStatValue": 0,
+
+            "rampSkills": [
+                ["attack_boost_2", "affinity_boost_2", "defense_boost_1"]
+            ],
+
+            "maxSharpness": [100, 40, 110, 0, 0, 0]
+        },
+        "18d": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Giant Jawblade",
+            "attack": 130,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "none",
+            "eleStatValue": 0,
+
+            "rampSkills": [
+                ["attack_boost_2", "affinity_boost_2", "dulling_strike"]
+            ],
+
+            "maxSharpness": [90, 90, 110, 10, 0, 0]
+        },
+        "18e": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Wyvern Fang I",
+            "attack": 150,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "dragon",
+            "eleStatValue": 27,
+
+            "rampSkills": [
+                ["attack_boost_3", "dragon_boost_1", "dulling_strike"]
+            ],
+
+            "maxSharpness": [90, 30, 110, 70, 0, 0]
+        },
+        "18f": {
+            "rarity": 5,
+            "endlineTag": "hr",
+
+            "name": "Great Wyvern Fang",
+            "attack": 180,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [1,1],
+            "eleStatType": "dragon",
+            "eleStatValue": 30,
+
+            "rampSkills": [
+                ["attack_boost_4", "dragon_boost_1", "dulling_strike"]
+            ],
+
+            "maxSharpness": [90, 50, 120, 70, 20, 0]
+        }
+    },
+    "Bone Tree 2": {
+        "19a": {
+            "rarity": 4,
+            "endlineTag": "",
+
+            "name": "Golem Blade I",
+            "attack": 180,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "none",
+            "eleStatValue": 0,
+
+            "rampSkills": [
+                ["affinity_boost_2", "defense_boost_2", "silkbind_boost"]
+            ],
+
+            "maxSharpness": [110, 60, 70, 40, 70, 0]
+        },
+        "19b": {
+            "rarity": 5,
+            "endlineTag": "hr",
+
+            "name": "Blade of Talos",
+            "attack": 200,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "none",
+            "eleStatValue": 0,
+
+            "rampSkills": [
+                ["affinity_boost_3", "defense_boost_2", "silkbind_boost"]
+            ],
+
+            "maxSharpness": [90, 70, 80, 80, 60, 20]
+        }
+    },
+    "Rathian Tree": {
+        "20a": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Valkyrie Blade I",
+            "attack": 170,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "poison",
+            "eleStatValue": 22,
+
+            "rampSkills": [
+                ["attack_boost_1", "poison_boost_1", "small_monster_exploit"]
+            ],
+
+            "maxSharpness": [60, 70, 90, 100, 30, 0]
+        },
+        "20b": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Valkyrie Blade II",
+            "attack": 180,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "poison",
+            "eleStatValue": 25,
+
+            "rampSkills": [
+                ["attack_boost_2", "poison_boost_1", "small_monster_exploit"]
+            ],
+
+            "maxSharpness": [60, 60, 100, 110, 70, 0]
+        },
+        "20c": {
+            "rarity": 6,
+            "endlineTag": "hr",
+
+            "name": "Sieglinde",
+            "attack": 210,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "poison",
+            "eleStatValue": 28,
+
+            "rampSkills": [
+                ["attack_boost_2", "poison_boost_1", "small_monster_exploit"]
+            ],
+
+            "maxSharpness": [90, 40, 110, 70, 70, 20]
+        }
+    },
+    "Jyuratodus Tree": {
+        "21a": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Jyura Mudblade I",
+            "attack": 190,
+            "affinity": -10,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "water",
+            "eleStatValue": 15,
+
+            "rampSkills": [
+                ["affinity_boost_1", "water_boost_1", "brutal_strike"]
+            ],
+
+            "maxSharpness": [130, 90, 30, 90, 60, 0]
+        },
+        "21b": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Jyura Mudblade II",
+            "attack": 200,
+            "affinity": -10,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "water",
+            "eleStatValue": 17,
+
+            "rampSkills": [
+                ["affinity_boost_1", "water_boost_2", "brutal_strike"]
+            ],
+
+            "maxSharpness": [130, 70, 30, 90, 60, 20]
+        },
+        "21c": {
+            "rarity": 6,
+            "endlineTag": "hr",
+
+            "name": "Terracutter",
+            "attack": 210,
+            "affinity": -10,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "water",
+            "eleStatValue": 20,
+
+            "rampSkills": [
+                ["affinity_boost_2", "water_boost_2", "brutal_strike"]
+            ],
+
+            "maxSharpness": [120, 70, 30, 80, 80, 20]
+        }
+    },
+    "Rathalos Tree": {
+        "22a": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Red Wing I",
+            "attack": 180,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [1],
+            "eleStatType": "fire",
+            "eleStatValue": 36,
+
+            "rampSkills": [
+                ["attack_boost_2", "fire_boost_1", "element_exploit"]
+            ],
+
+            "maxSharpness": [70, 80, 80, 110, 50, 10]
+        },
+        "22b": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Red Wing II",
+            "attack": 190,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [1],
+            "eleStatType": "fire",
+            "eleStatValue": 38,
+
+            "rampSkills": [
+                ["attack_boost_2", "fire_boost_1", "element_exploit"]
+            ],
+
+            "maxSharpness": [50, 40, 120, 120, 50, 20]
+        },
+        "22c": {
+            "rarity": 6,
+            "endlineTag": "hr",
+
+            "name": "Rathalos Firesword",
+            "attack": 210,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [1],
+            "eleStatType": "fire",
+            "eleStatValue": 40,
+
+            "rampSkills": [
+                ["attack_boost_3", "fire_boost_1", "element_exploit"]
+            ],
+
+            "maxSharpness": [50, 40, 110, 120, 60, 20]
+        }
+    },
+    "Diablos Tree": {
+        "23a": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Quarrel Hornsword I",
+            "attack": 170,
+            "affinity": -25,
+            "defense": 8,
+            "decoSlots": [],
+            "eleStatType": "none",
+            "eleStatValue": 0,
+
+            "rampSkills": [
+                ["affinity_boost_1", "defense_boost_1", "dulling_strike"]
+            ],
+
+            "maxSharpness": [60, 40, 50, 110, 40, 0]
+        },
+        "23b": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Quarrel Hornsword II",
+            "attack": 210,
+            "affinity": -25,
+            "defense": 12,
+            "decoSlots": [],
+            "eleStatType": "none",
+            "eleStatValue": 0,
+
+            "rampSkills": [
+                ["affinity_boost_2", "defense_boost_1", "defense_grinder_1"]
+            ],
+
+            "maxSharpness": [100, 70, 30, 120, 70, 10]
+        },
+        "23c": {
+            "rarity": 6,
+            "endlineTag": "hr",
+
+            "name": "Feud Hornsword",
+            "attack": 230,
+            "affinity": -25,
+            "defense": 16,
+            "decoSlots": [],
+            "eleStatType": "none",
+            "eleStatValue": 0,
+
+            "rampSkills": [
+                ["affinity_boost_3", "defense_boost_2", "defense_grinder_1"]
+            ],
+
+            "maxSharpness": [40, 60, 80, 120, 80, 20]
+        }
+    },
+    "Jaggi & Jaggia Tree": {
+        "24a": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Hack Blade I",
+            "attack": 100,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "none",
+            "eleStatValue": 0,
+
+            "rampSkills": [
+                ["defense_boost_1", "dulling_strike", "small_monster_exploit"]
+            ],
+
+            "maxSharpness": [40, 110, 30, 70, 0, 0]
+        },
+        "24b": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Hack Blade II",
+            "attack": 110,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "none",
+            "eleStatValue": 0,
+
+            "rampSkills": [
+                ["defense_boost_2", "dulling_strike", "small_monster_exploit"]
+            ],
+
+            "maxSharpness": [50, 140, 30, 80, 0, 0]
+        },
+        "24c": {
+            "rarity": 5,
+            "endlineTag": "hr",
+
+            "name": "Jaggi Greatblade",
+            "attack": 180,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "none",
+            "eleStatValue": 0,
+
+            "rampSkills": [
+                ["defense_boost_2", "dulling_strike", "defense_grinder_1"]
+            ],
+
+            "maxSharpness": [50, 160, 30, 30, 50, 30]
+        }
+    },
+    "Anjanath Tree": {
+        "25a": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Flammenzahn I",
+            "attack": 140,
+            "affinity": -20,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "fire",
+            "eleStatValue": 20,
+
+            "rampSkills": [
+                ["affinity_boost_1", "fire_boost_1", "brutal_strike"]
+            ],
+
+            "maxSharpness": [120, 70, 30, 80, 0, 0]
+        },
+        "25b": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Flammenzahn II",
+            "attack": 200,
+            "affinity": -20,
+            "defense": 0,
+            "decoSlots": [3],
+            "eleStatType": "fire",
+            "eleStatValue": 24,
+
+            "rampSkills": [
+                ["affinity_boost_1", "fire_boost_2", "brutal_strike"]
+            ],
+
+            "maxSharpness": [120, 100, 30, 90, 10, 0]
+        },
+        "25c": {
+            "rarity": 6,
+            "endlineTag": "hr",
+
+            "name": "Gnashing Flammenzahn",
+            "attack": 220,
+            "affinity": -20,
+            "defense": 0,
+            "decoSlots": [3],
+            "eleStatType": "fire",
+            "eleStatValue": 26,
+
+            "rampSkills": [
+                ["affinity_boost_2", "fire_boost_3", "brutal_strike"]
+            ],
+
+            "maxSharpness": [130, 120, 40, 50, 60, 0]
+        }
+    },
+    "Zinogre Tree": {
+        "26a": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Usurper's Storm I",
+            "attack": 120,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "thunder",
+            "eleStatValue": 30,
+
+            "rampSkills": [
+                ["attack_boost_1", "thunder_boost_1", "anti_aquatic_species"]
+            ],
+
+            "maxSharpness": [70, 40, 50, 140, 0, 0]
+        },
+        "26b": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Usurper's Storm II",
+            "attack": 170,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [1],
+            "eleStatType": "thunder",
+            "eleStatValue": 35,
+
+            "rampSkills": [
+                ["attack_boost_2", "thunder_boost_1", "anti_aquatic_species"]
+            ],
+
+            "maxSharpness": [60, 30, 100, 100, 60, 0]
+        },
+        "26c": {
+            "rarity": 6,
+            "endlineTag": "hr",
+
+            "name": "Despot's Blackstorm",
+            "attack": 200,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [1,1],
+            "eleStatType": "thunder",
+            "eleStatValue": 38,
+
+            "rampSkills": [
+                ["attack_boost_2", "thunder_boost_2", "anti_aquatic_species"]
+            ],
+
+            "maxSharpness": [60, 40, 120, 100, 40, 40]
+        }
+    },
     "Royal Ludroth Tree": {
+        "27a": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Cataclysm Sword I",
+            "attack": 90,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "water",
+            "eleStatValue": 30,
+
+            "rampSkills": [
+                ["attack_boost_2", "water_boost_1", "waterblight_exploit"]
+            ],
+
+            "maxSharpness": [40, 70, 50, 90, 0, 0]
+        },
+        "27b": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Cataclysm Sword II",
+            "attack": 100,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "water",
+            "eleStatValue": 32,
+
+            "rampSkills": [
+                ["attack_boost_2", "water_boost_1", "waterblight_exploit"]
+            ],
+
+            "maxSharpness": [50, 70, 80, 100, 0, 0]
+        },
         "27c": {
             "rarity": 5,
             "endlineTag": "hr",
@@ -337,8 +1619,326 @@
             "maxSharpness": [60, 40, 120, 10, 30, 0]
         }
     },
+    "Lagombi Tree": {
+        "28a": {
+            "rarity": 1,
+            "endlineTag": "",
+
+            "name": "Snowclad I",
+            "attack": 90,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "ice",
+            "eleStatValue": 20,
+
+            "rampSkills": [
+                ["attack_boost_1", "ice_boost_1", "small_monster_exploit"]
+            ],
+
+            "maxSharpness": [70, 80, 100, 0, 0, 0]
+        },
+        "28b": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Snowclad II",
+            "attack": 100,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "ice",
+            "eleStatValue": 25,
+
+            "rampSkills": [
+                ["attack_boost_1", "ice_boost_2", "small_monster_exploit"]
+            ],
+
+            "maxSharpness": [70, 60, 40, 80, 0, 0]
+        },
+        "28c": {
+            "rarity": 4,
+            "endlineTag": "hr",
+
+            "name": "Lagombi Charlotte",
+            "attack": 150,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [1,1],
+            "eleStatType": "ice",
+            "eleStatValue": 35,
+
+            "rampSkills": [
+                ["attack_boost_2", "ice_boost_2", "small_monster_exploit"]
+            ],
+
+            "maxSharpness": [60, 30, 100, 100, 40, 20]
+        }
+    },
+    "Magnamalo Tree": {
+        "29a": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Sinister Blade I",
+            "attack": 130,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "blast",
+            "eleStatValue": 15,
+
+            "rampSkills": [
+                ["attack_boost_2", "blast_boost_1", "magnamalo_soul"]
+            ],
+
+            "maxSharpness": [160, 20, 40, 110, 20, 0]
+        },
+        "29b": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Sinister Blade II",
+            "attack": 146,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "blast",
+            "eleStatValue": 18,
+
+            "rampSkills": [
+                ["attack_boost_3", "blast_boost_1", "magnamalo_soul"]
+            ],
+
+            "maxSharpness": [170, 20, 20, 110, 30, 0]
+        },
+        "29c": {
+            "rarity": 6,
+            "endlineTag": "hr",
+
+            "name": "Sinister Shadowblade",
+            "attack": 200,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2,1],
+            "eleStatType": "blast",
+            "eleStatValue": 25,
+
+            "rampSkills": [
+                ["attack_boost_3", "blast_boost_2", "magnamalo_soul"]
+            ],
+
+            "maxSharpness": [190, 10, 20, 90, 60, 30]
+        }
+    },
+    "Rajang Tree": {
+        "30a": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Demon Rod I",
+            "attack": 180,
+            "affinity": 10,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "thunder",
+            "eleStatValue": 20,
+
+            "rampSkills": [
+                ["affinity_boost_1", "thunder_boost_1", "dulling_strike"]
+            ],
+
+            "maxSharpness": [50, 20, 100, 130, 0, 0]
+        },
+        "30b": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Demon Rod II",
+            "attack": 190,
+            "affinity": 10,
+            "defense": 0,
+            "decoSlots": [3],
+            "eleStatType": "thunder",
+            "eleStatValue": 24,
+
+            "rampSkills": [
+                ["affinity_boost_1", "thunder_boost_2", "dulling_strike"]
+            ],
+
+            "maxSharpness": [20, 40, 100, 130, 10, 0]
+        },
+        "30c": {
+            "rarity": 7,
+            "endlineTag": "hr",
+
+            "name": "Great Demon Rod",
+            "attack": 210,
+            "affinity": 10,
+            "defense": 0,
+            "decoSlots": [3],
+            "eleStatType": "thunder",
+            "eleStatValue": 26,
+
+            "rampSkills": [
+                ["affinity_boost_2", "thunder_boost_2", "dulling_strike"]
+            ],
+
+            "maxSharpness": [50, 60, 80, 100, 50, 10]
+        }
+    },
+    "Ibushi Tree": {
+        "31a": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Azure Elder Great Sword I",
+            "attack": 180,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "dragon",
+            "eleStatValue": 10,
+
+            "rampSkills": [
+                ["dragon_boost_3", "anti_aerial_species", "defense_boost_1"]
+            ],
+
+            "maxSharpness": [20, 20, 20, 40, 150, 0]
+        },
+        "31b": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Azure Elder Great Sword II",
+            "attack": 200,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "dragon",
+            "eleStatValue": 12,
+
+            "rampSkills": [
+                ["dragon_boost_3", "anti_aerial_species", "ibushi_soul"]
+            ],
+
+            "maxSharpness": [20, 20, 50, 50, 150, 10]
+        },
+        "31c": {
+            "rarity": 7,
+            "endlineTag": "hr",
+
+            "name": "Abyssal Galeblade",
+            "attack": 210,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "dragon",
+            "eleStatValue": 15,
+
+            "rampSkills": [
+                ["dragon_boost_4", "anti_aerial_species", "ibushi_soul"]
+            ],
+
+            "maxSharpness": [20, 20, 80, 60, 150, 20]
+        }
+    },
+    "Narwa Tree": {
+        "32a": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Thunderbolt Great Sword I",
+            "attack": 180,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "thunder",
+            "eleStatValue": 46,
+
+            "rampSkills": [
+                ["attack_boost_2", "anti_aerial_species", "narwa_soul"]
+            ],
+
+            "maxSharpness": [20, 20, 190, 40, 50, 30]
+        },
+        "32b": {
+            "rarity": 7,
+            "endlineTag": "hr",
+
+            "name": "Abyssal Storm Cleaver",
+            "attack": 190,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "thunder",
+            "eleStatValue": 50,
+
+            "rampSkills": [
+                ["attack_boost_3", "anti_aerial_species", "narwa_soul"]
+            ],
+
+            "maxSharpness": [10, 20, 220, 40, 70, 40]
+        }
+    },
+    "Kushala Daora Tree": {
+        "33a": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Icesteel Edge I",
+            "attack": 180,
+            "affinity": 10,
+            "defense": 0,
+            "decoSlots": [1],
+            "eleStatType": "ice",
+            "eleStatValue": 40,
+
+            "rampSkills": [
+                ["attack_boost_2", "affinity_boost_2", "kushala_daora_soul"]
+            ],
+
+            "maxSharpness": [70, 40, 120, 90, 60, 20]
+        },
+        "33b": {
+            "rarity": 7,
+            "endlineTag": "hr",
+
+            "name": "Daora's Decimator",
+            "attack": 190,
+            "affinity": 10,
+            "defense": 0,
+            "decoSlots": [1],
+            "eleStatType": "ice",
+            "eleStatValue": 45,
+
+            "rampSkills": [
+                ["attack_boost_3", "affinity_boost_3", "kushala_daora_soul"]
+            ],
+
+            "maxSharpness": [80, 120, 70, 40, 30, 60]
+        }
+    },
     "Teostra Tree": {
-        "34c": {
+        "34a": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Teostra Blade I",
+            "attack": 180,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "blast",
+            "eleStatValue": 38,
+
+            "rampSkills": [
+                ["attack_boost_2", "fireblight_exploit", "teostra_soul"]
+            ],
+
+            "maxSharpness": [150, 20, 80, 90, 40, 20]
+        },
+        "34b": {
             "rarity": 7,
             "endlineTag": "hr",
 
@@ -357,7 +1957,119 @@
             "maxSharpness": [160, 50, 30, 90, 40, 30]
         }
     },
+    "Chameleos Tree": {
+        "35a": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Grand Shamshir I",
+            "attack": 180,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2,1,1],
+            "eleStatType": "none",
+            "eleStatValue": 0,
+
+            "rampSkills": [
+                ["attack_boost_2", "defense_boost_3", "chameleos_soul"]
+            ],
+
+            "maxSharpness": [100, 30, 80, 90, 50, 50]
+        },
+        "35b": {
+            "rarity": 7,
+            "endlineTag": "hr",
+
+            "name": "Foreboding Shamshir",
+            "attack": 190,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2,1,1],
+            "eleStatType": "poison",
+            "eleStatValue": 66,
+
+            "rampSkills": [
+                ["attack_boost_3", "defense_boost_3", "chameleos_soul"]
+            ],
+
+            "maxSharpness": [50, 30, 100, 90, 80, 50]
+        }
+    },
+    "Valstrax Tree": {
+        "36a": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Redwing Claymore I",
+            "attack": 170,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2],
+            "eleStatType": "dragon",
+            "eleStatValue": 42,
+
+            "rampSkills": [
+                ["attack_boost_3", "wyvern_exploit", "valstrax_soul"]
+            ],
+
+            "maxSharpness": [180, 120, 0, 0, 0, 0]
+        },
+        "36b": {
+            "rarity": 7,
+            "endlineTag": "hr",
+
+            "name": "Reddnaught Claymore",
+            "attack": 180,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2],
+            "eleStatType": "dragon",
+            "eleStatValue": 45,
+
+            "rampSkills": [
+                ["attack_boost_3", "wyvern_exploit", "valstrax_soul"]
+            ],
+
+            "maxSharpness": [60, 140, 0, 0, 0, 0]
+        }
+    },
     "Chaos Tree": {
+        "37a": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Wyvern's Perch I",
+            "attack": 100,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "poison",
+            "eleStatValue": 30,
+
+            "rampSkills": [
+                ["poison_boost_1", "dulling_strike", "spiribird_doubled"]
+            ],
+
+            "maxSharpness": [20, 30, 200, 0, 0, 0]
+        },
+        "37b": {
+            "rarity": 4,
+            "endlineTag": "",
+
+            "name": "Wyvern's Perch II",
+            "attack": 180,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "poison",
+            "eleStatValue": 32,
+
+            "rampSkills": [
+                ["poison_boost_1", "dulling_strike", "spiribird_doubled"]
+            ],
+
+            "maxSharpness": [30, 40, 170, 50, 10, 0]
+        },
         "37c": {
             "rarity": 5,
             "endlineTag": "hr",
@@ -378,6 +2090,42 @@
         }
     },
     "Shell-Studded Tree": {
+        "38a": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Sleepy Shellblade I",
+            "attack": 100,
+            "affinity": 0,
+            "defense": 15,
+            "decoSlots": [],
+            "eleStatType": "sleep",
+            "eleStatValue": 8,
+
+            "rampSkills": [
+                ["defense_boost_1", "sleep_boost_1", "anti_aquatic_species"]
+            ],
+
+            "maxSharpness": [50, 50, 90, 60, 0, 0]
+        },
+        "38b": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Sleepy Shellblade II",
+            "attack": 120,
+            "affinity": 0,
+            "defense": 17,
+            "decoSlots": [],
+            "eleStatType": "sleep",
+            "eleStatValue": 10,
+
+            "rampSkills": [
+                ["defense_boost_2", "sleep_boost_1", "anti_aquatic_species"]
+            ],
+
+            "maxSharpness": [40, 90, 100, 60, 10, 0]
+        },
         "38c": {
             "rarity": 5,
             "endlineTag": "hr",
@@ -397,7 +2145,155 @@
             "maxSharpness": [50, 70, 130, 70, 30, 0]
         }
     },
+    "Speartuna Tree": {
+        "39a": {
+            "rarity": 4,
+            "endlineTag": "",
+
+            "name": "Frozen Speartuna I",
+            "attack": 130,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "ice",
+            "eleStatValue": 50,
+
+            "rampSkills": [
+                ["attack_boost_3", "element_exploit", "iceblight_exploit"]
+            ],
+
+            "maxSharpness": [80, 40, 110, 100, 20, 0]
+        },
+        "39b": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Frozen Speartuna II",
+            "attack": 140,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "ice",
+            "eleStatValue": 60,
+
+            "rampSkills": [
+                ["attack_boost_3", "element_exploit", "iceblight_exploit"]
+            ],
+
+            "maxSharpness": [80, 40, 110, 100, 70, 0]
+        },
+        "39c": {
+            "rarity": 6,
+            "endlineTag": "hr",
+
+            "name": "Freezer Speartuna",
+            "attack": 150,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "ice",
+            "eleStatValue": 70,
+
+            "rampSkills": [
+                ["attack_boost_4", "element_exploit", "iceblight_exploit"]
+            ],
+
+            "maxSharpness": [50, 70, 90, 110, 70, 10]
+        }
+    },
+    "Smithy Tree": {
+        "40a": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Ninja Parasol I",
+            "attack": 160,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "dragon",
+            "eleStatValue": 20,
+
+            "rampSkills": [
+                ["defense_boost_2", "dragon_boost_2", "wyvern_exploit"]
+            ],
+
+            "maxSharpness": [120, 110, 50, 50, 20, 0]
+        },
+        "40b": {
+            "rarity": 4,
+            "endlineTag": "",
+
+            "name": "Ninja Parasol II",
+            "attack": 170,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [1,1,1],
+            "eleStatType": "dragon",
+            "eleStatValue": 22,
+
+            "rampSkills": [
+                ["defense_boost_3", "dragon_boost_2", "wyvern_exploit"]
+            ],
+
+            "maxSharpness": [110, 110, 50, 40, 40, 0]
+        },
+        "40c": {
+            "rarity": 5,
+            "endlineTag": "hr",
+
+            "name": "Dragonslayer Parasol",
+            "attack": 190,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2,1,1],
+            "eleStatType": "dragon",
+            "eleStatValue": 25,
+
+            "rampSkills": [
+                ["defense_boost_3", "dragon_boost_3", "wyvern_exploit"]
+            ],
+
+            "maxSharpness": [80, 100, 60, 60, 50, 0]
+        }
+    },
     "Felyne Tree": {
+        "41a": {
+            "rarity": 4,
+            "endlineTag": "",
+
+            "name": "Cat's Soul I",
+            "attack": 100,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2],
+            "eleStatType": "paralysis",
+            "eleStatValue": 36,
+
+            "rampSkills": [
+                ["attack_boost_3", "dulling_strike", "buddy_rally"]
+            ],
+
+            "maxSharpness": [70, 40, 50, 90, 0, 0]
+        },
+        "41b": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Cat's Soul II",
+            "attack": 130,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2],
+            "eleStatType": "paralysis",
+            "eleStatValue": 40,
+
+            "rampSkills": [
+                ["attack_boost_3", "dulling_strike", "buddy_rally"]
+            ],
+
+            "maxSharpness": [50, 70, 80, 90, 10, 0]
+        },
         "41c": {
             "rarity": 6,
             "endlineTag": "hr",
@@ -418,9 +2314,156 @@
         }
     },
     "Rampage Tree": {
-        "42e": {
+        "ra": {
+            "rarity": 4,
+            "endlineTag": "",
+
+            "name": "Rampage Cleaver I",
+            "attack": 150,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "none",
+            "eleStatValue": 0,
+
+            "rampSkills": [
+                [
+                    "attack_boost_1",
+                    "affinity_boost_1",
+                    "defense_boost_1"
+                ],
+                [
+                    "fire_1",
+                    "water_1",
+                    "thunder_1",
+                    "ice_1"
+                ],
+                [
+                    "attack_surge"
+                ]
+            ],
+
+            "maxSharpness": [70, 70, 90, 70, 0, 0]
+        },
+        "rb": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Rampage Cleaver II",
+            "attack": 170,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "none",
+            "eleStatValue": 0,
+
+            "rampSkills": [
+                [
+                    "attack_boost_1",
+                    "elemental_boost_1",
+                    "affinity_boost_1",
+                    "defense_boost_1"
+                ],
+                [
+                    "non_elemental_boost",
+                    "fire_1",
+                    "water_1",
+                    "thunder_1",
+                    "ice_1",
+                    "dragon_1",
+                    "poison_1"
+                ],
+                [
+                    "attack_surge"
+                ]
+            ],
+
+            "maxSharpness": [60, 70, 80, 90, 0, 0]
+        },
+        "rc": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Rampage Cleaver III",
+            "attack": 180,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "none",
+            "eleStatValue": 0,
+
+            "rampSkills": [
+                [
+                    "attack_boost_2",
+                    "elemental_boost_1",
+                    "affinity_boost_2",
+                    "defense_boost_2",
+                    "sharpness_type_1"
+                ],
+                [
+                    "non_elemental_boost",
+                    "fire_2",
+                    "water_2",
+                    "thunder_2",
+                    "ice_2",
+                    "dragon_2",
+                    "poison_1",
+                    "paralysis_1",
+                    "sleep_1",
+                    "blast_1"
+                ],
+                [
+                    "attack_surge",
+                    "affinity_surge"
+                ]
+            ],
+
+            "maxSharpness": [50, 70, 80, 30, 70, 0]
+        },
+        "rd": {
             "rarity": 6,
-            "endlineTag": "hr",
+            "endlineTag": "",
+
+            "name": "Rampage Cleaver IV",
+            "attack": 190,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "none",
+            "eleStatValue": 0,
+
+            "rampSkills": [
+                [
+                    "attack_boost_2",
+                    "elemental_boost_2",
+                    "affinity_boost_2",
+                    "defense_boost_2",
+                    "sharpness_type_1",
+                    "sharpness_type_2"
+                ],
+                [
+                    "non_elemental_boost",
+                    "fire_2",
+                    "water_2",
+                    "thunder_2",
+                    "ice_2",
+                    "dragon_2",
+                    "poison_2",
+                    "paralysis_2",
+                    "sleep_2",
+                    "blast_2"
+                ],
+                [
+                    "attack_surge",
+                    "affinity_surge"
+                ]
+            ],
+
+            "maxSharpness": [50, 70, 70, 30, 80, 0]
+        },
+        "re": {
+            "rarity": 6,
+            "endlineTag": "",
 
             "name": "Rampage Cleaver V",
             "attack": 200,
@@ -460,6 +2503,50 @@
             ],
 
             "maxSharpness": [50, 70, 50, 50, 70, 10]
+        },
+        "rf": {
+            "rarity": 7,
+            "endlineTag": "hr",
+
+            "name": "Rampage Cleaver S",
+            "attack": 210,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "none",
+            "eleStatValue": 0,
+
+            "rampSkills": [
+                [
+                    "attack_boost_4",
+                    "elemental_boost_3",
+                    "affinity_boost_4",
+                    "defense_boost_3",
+                    "sharpness_type_1",
+                    "sharpness_type_2",
+                    "sharpness_type_3",
+                    "sharpness_type_4"
+                ],
+                [
+                    "non_elemental_boost",
+                    "fire_4",
+                    "water_4",
+                    "thunder_4",
+                    "ice_4",
+                    "dragon_4",
+                    "poison_3",
+                    "paralysis_3",
+                    "sleep_3",
+                    "blast_3"
+                ],
+                [
+                    "attack_surge",
+                    "elemental_surge",
+                    "affinity_surge"
+                ]
+            ],
+
+            "maxSharpness": [50, 70, 30, 60, 70, 20]
         }
     }
 }
