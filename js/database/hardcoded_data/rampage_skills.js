@@ -11,55 +11,71 @@ import {
 } from "../../check.js";
 
 
-function generateEleMap(idPrefix, name) {
+function generateEleMap(name, shortIdPrefix) {
+    const idPrefix = name.toLowerCase();
     return new Map([
-        [idPrefix + "b1", {
+        [idPrefix + "_boost_1", {
+            shortId: shortIdPrefix + "b1",
             name: name + " Boost I",
         }],
-        [idPrefix + "b2", {
+        [idPrefix + "_boost_2", {
+            shortId: shortIdPrefix + "b2",
             name: name + " Boost II",
         }],
-        [idPrefix + "b3", {
+        [idPrefix + "_boost_3", {
+            shortId: shortIdPrefix + "b3",
             name: name + " Boost III",
         }],
-        [idPrefix + "b4", {
+        [idPrefix + "_boost_4", {
+            shortId: shortIdPrefix + "b4",
             name: name + " Boost IV",
         }],
 
-        [idPrefix + "x1", {
+        [idPrefix + "_1", {
+            shortId: shortIdPrefix + "x1",
             name: name + " I",
         }],
-        [idPrefix + "x2", {
+        [idPrefix + "_2", {
+            shortId: shortIdPrefix + "x2",
             name: name + " II",
         }],
-        [idPrefix + "x3", {
+        [idPrefix + "_3", {
+            shortId: shortIdPrefix + "x3",
             name: name + " III",
         }],
-        [idPrefix + "x4", {
+        [idPrefix + "_4", {
+            shortId: shortIdPrefix + "x4",
             name: name + " IV",
         }],
     ]);
 }
 
-function generateStatMap(idPrefix, name) {
+function generateStatMap(name, shortIdPrefix) {
+    const idPrefix = name.toLowerCase();
     return new Map([
-        [idPrefix + "b1", {
+        [idPrefix + "_boost_1", {
+            shortId: shortIdPrefix + "b1",
             name: name + " Boost I",
         }],
-        [idPrefix + "b2", {
+        [idPrefix + "_boost_2", {
+            shortId: shortIdPrefix + "b2",
             name: name + " Boost II",
         }],
-        [idPrefix + "b3", {
+        [idPrefix + "_boost_3", {
+            shortId: shortIdPrefix + "b3",
             name: name + " Boost III",
         }],
 
-        [idPrefix + "x1", {
+        [idPrefix + "_1", {
+            shortId: shortIdPrefix + "x1",
             name: name + " I",
         }],
-        [idPrefix + "x2", {
+        [idPrefix + "_2", {
+            shortId: shortIdPrefix + "x2",
             name: name + " II",
         }],
-        [idPrefix + "x3", {
+        [idPrefix + "_3", {
+            shortId: shortIdPrefix + "x3",
             name: name + " III",
         }],
     ]);
@@ -67,106 +83,142 @@ function generateStatMap(idPrefix, name) {
 
 const hardcodedRampageSkillsMap = new Map([
 
-    ["attb1", {
+    ["attack_boost_1", {
+        shortId: "10",
         name: "Attack Boost I",
     }],
-    ["attb2", {
+    ["attack_boost_2", {
+        shortId: "20",
         name: "Attack Boost II",
     }],
-    ["attb3", {
+    ["attack_boost_3", {
+        shortId: "30",
         name: "Attack Boost III",
     }],
-    ["attb4", {
+    ["attack_boost_4", {
+        shortId: "40",
         name: "Attack Boost IV",
     }],
 
-    ["affb1", {
+    ["affinity_boost_1", {
+        shortId: "50",
         name: "Affinity Boost I",
     }],
-    ["affb2", {
+    ["affinity_boost_2", {
+        shortId: "60",
         name: "Affinity Boost II",
     }],
-    ["affb3", {
+    ["affinity_boost_3", {
+        shortId: "70",
         name: "Affinity Boost III",
     }],
-    ["affb4", {
+    ["affinity_boost_4", {
+        shortId: "80",
         name: "Affinity Boost IV",
     }],
 
-    ["eleb1", {
+    ["elemental_boost_1", {
+        shortId: "90",
         name: "Elemental Boost I",
     }],
-    ["eleb2", {
+    ["elemental_boost_2", {
+        shortId: "100",
         name: "Elemental Boost II",
     }],
-    ["eleb3", {
+    ["elemental_boost_3", {
+        shortId: "110",
         name: "Elemental Boost III",
     }],
 
-    ["defb1", {
+    ["defense_boost_1", {
+        shortId: "120",
         name: "Defense Boost I",
     }],
-    ["defb2", {
+    ["defense_boost_2", {
+        shortId: "130",
         name: "Defense Boost II",
     }],
-    ["defb3", {
+    ["defense_boost_3", {
+        shortId: "140",
         name: "Defense Boost III",
     }],
 
-    ["sht1", {
+    ["sharpness_type_1", {
+        shortId: "150",
         name: "Sharpness Type I",
     }],
-    ["sht2", {
+    ["sharpness_type_2", {
+        shortId: "160",
         name: "Sharpness Type II",
     }],
-    ["sht3", {
+    ["sharpness_type_3", {
+        shortId: "170",
         name: "Sharpness Type III",
     }],
 
-    ["attsu", {
+    ["defense_grinder_1", {
+        shortId: "180",
+        name: "Defense Grinder I",
+    }],
+
+    ["attack_surge", {
+        shortId: "190",
         name: "Attack Surge",
     }],
-    ["elesu", {
+    ["elemental_surge", {
+        shortId: "200",
         name: "Elemental Surge",
     }],
-    ["affsu", {
+    ["affinity_surge", {
+        shortId: "210",
         name: "Affinity Surge",
     }],
 
-    ["anta", {
+    ["anti_aquatic_species", {
+        shortId: "220",
         name: "Anti-Aquatic Species",
     }],
 
-    ["fbe", {
+    ["fireblight_exploit", {
+        shortId: "230",
         name: "Fireblight Exploit",
     }],
-    ["wbe", {
+    ["waterblight_exploit", {
+        shortId: "240",
         name: "Waterblight Exploit",
     }],
 
-    ["teos", {
+    ["teostra_soul", {
+        shortId: "250",
         name: "Teostra Soul",
     }],
 
-    ["br", {
+    ["buddy_rally", {
+        shortId: "260",
         name: "Buddy Rally",
     }],
-    ["bs", {
+    ["brutal_strike", {
+        shortId: "270",
         name: "Brutal Strike",
     }],
-    ["ds", {
+    ["dulling_strike", {
+        shortId: "280",
         name: "Dulling Strike",
     }],
-    ["las", {
+    ["lasting_arc_shot", {
+        shortId: "290",
         name: "Lasting Arc Shot",
     }],
-    ["mr", {
+    ["master_rider", {
+        shortId: "300",
         name: "Master Rider",
     }],
-    ["neb", {
+    ["non_elemental_boost", {
+        shortId: "310",
         name: "Non-elemental Boost",
     }],
-    ["sbd", {
+    ["spiribird_doubled", {
+        shortId: "320",
         name: "Spiribird Doubled",
     }],
 
@@ -175,15 +227,15 @@ const hardcodedRampageSkillsMap = new Map([
 // TODO: Verify no ID collisons?
 const rampageSkillsMap = new Map([
     ...hardcodedRampageSkillsMap,
-    ...generateEleMap("fir", "Fire"),
-    ...generateEleMap("wat", "Water"),
-    ...generateEleMap("thu", "Thunder"),
-    ...generateEleMap("ice", "Ice"),
-    ...generateEleMap("dra", "Dragon"),
-    ...generateStatMap("poi", "Poison"),
-    ...generateStatMap("par", "Paralysis"),
-    ...generateStatMap("sle", "Sleep"),
-    ...generateStatMap("bla", "Blast"),
+    ...generateEleMap("Fire"      , "fi"),
+    ...generateEleMap("Water"     , "wa"),
+    ...generateEleMap("Thunder"   , "th"),
+    ...generateEleMap("Ice"       , "ic"),
+    ...generateEleMap("Dragon"    , "dr"),
+    ...generateStatMap("Poison"   , "po"),
+    ...generateStatMap("Paralysis", "pa"),
+    ...generateStatMap("Sleep"    , "sl"),
+    ...generateStatMap("Blast"    , "bl"),
 ]);
 // For convenience, we also attach IDs to each object
 for (const [rampSkillID, rampSkillObj] of rampageSkillsMap.entries()) {

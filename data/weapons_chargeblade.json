@@ -13,7 +13,7 @@
             "eleStatValue": 0,
 
             "rampSkills": [
-                ["attb3", "affb2", "mr"]
+                ["attack_boost_3", "affinity_boost_2", "master_rider"]
             ],
 
             "maxSharpness": [70, 40, 100, 90, 80, 20]

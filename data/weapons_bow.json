@@ -13,7 +13,7 @@
             "eleStatValue": 0,
 
             "rampSkills": [
-                ["attb3", "affb2", "las"]
+                ["attack_boost_3", "affinity_boost_2", "lasting_arc_shot"]
             ]
         }
     }

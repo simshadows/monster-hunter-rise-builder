@@ -13,7 +13,8 @@
             "eleStatValue": 0,
 
             "rampSkills": [
-                ["affb4", "defb2", "mr"]
+                ["attack_boost_4", "defense_boost_3", "master_rider"]
+
             ]
         }
     },
@@ -31,7 +32,7 @@
             "eleStatValue": 0,
 
             "rampSkills": [
-                ["attb3", "affb2", "mr"]
+                ["attack_boost_3", "affinity_boost_2", "master_rider"]
             ]
         }
     }

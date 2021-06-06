@@ -13,7 +13,7 @@
             "eleStatValue": 0,
 
             "rampSkills": [
-                ["attb1", "affb2", "defb1"]
+                ["attack_boost_1", "affinity_boost_2", "defense_boost_1"]
             ],
 
             "maxSharpness": [50, 90, 100, 10, 0, 0]
@@ -31,7 +31,7 @@
             "eleStatValue": 0,
 
             "rampSkills": [
-                ["attb1", "affb2", "defb1"]
+                ["attack_boost_1", "affinity_boost_2", "defense_boost_1"]
             ],
 
             "maxSharpness": [60, 70, 110, 10, 0, 0]
@@ -49,7 +49,7 @@
             "eleStatValue": 0,
 
             "rampSkills": [
-                ["attb1", "affb2", "defb2"]
+                ["attack_boost_1", "affinity_boost_2", "defense_boost_2"]
             ],
 
             "maxSharpness": [70, 70, 90, 70, 0, 0]
@@ -67,7 +67,7 @@
             "eleStatValue": 0,
 
             "rampSkills": [
-                ["attb2", "affb2", "defb2"]
+                ["attack_boost_2", "affinity_boost_2", "defense_boost_2"]
             ],
 
             "maxSharpness": [60, 80, 80, 20, 60, 0]
@@ -85,7 +85,7 @@
             "eleStatValue": 0,
 
             "rampSkills": [
-                ["affb3", "defb2", "mr"]
+                ["affinity_boost_3", "defense_boost_2", "master_rider"]
             ],
 
             "maxSharpness": [60, 80, 90, 40, 70, 10]
@@ -103,7 +103,7 @@
             "eleStatValue": 0,
 
             "rampSkills": [
-                ["affb4", "defb2", "mr"]
+                ["affinity_boost_4", "defense_boost_2", "master_rider"]
             ],
 
             "maxSharpness": [40, 90, 60, 60, 80, 20]
@@ -123,7 +123,7 @@
             "eleStatValue": 15,
 
             "rampSkills": [
-                ["affb1", "iceb1", "bs"]
+                ["affinity_boost_1", "ice_boost_1", "brutal_strike"]
             ],
 
             "maxSharpness": [100, 30, 90, 70, 10, 0]
@@ -141,7 +141,7 @@
             "eleStatValue": 17,
 
             "rampSkills": [
-                ["affb1", "iceb2", "bs"]
+                ["affinity_boost_1", "ice_boost_2", "brutal_strike"]
             ],
 
             "maxSharpness": [100, 30, 110, 40, 70, 0]
@@ -159,10 +159,122 @@
             "eleStatValue": 20,
 
             "rampSkills": [
-                ["affb1", "iceb3", "bs"]
+                ["affinity_boost_1", "ice_boost_3", "brutal_strike"]
             ],
 
             "maxSharpness": [100, 30, 100, 40, 70, 10]
+        }
+    },
+    "Mizutsune Tree": {
+        "3a": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Hanayako Yohino I",
+            "attack": 110,
+            "affinity": 10,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "water",
+            "eleStatValue": 20,
+
+            "rampSkills": [
+                ["attack_boost_2", "affinity_boost_1", "water_boost_1"]
+            ],
+
+            "maxSharpness": [70, 50, 40, 60, 30, 0]
+        },
+        "3b": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Hanayako Yohino II",
+            "attack": 160,
+            "affinity": 10,
+            "defense": 0,
+            "decoSlots": [1],
+            "eleStatType": "water",
+            "eleStatValue": 25,
+
+            "rampSkills": [
+                ["attack_boost_2", "affinity_boost_2", "water_boost_2"]
+            ],
+
+            "maxSharpness": [110, 100, 80, 30, 60, 20]
+        },
+        "3c": {
+            "rarity": 6,
+            "endlineTag": "hr",
+
+            "name": "Akanesasu",
+            "attack": 190,
+            "affinity": 15,
+            "defense": 0,
+            "decoSlots": [1],
+            "eleStatType": "water",
+            "eleStatValue": 30,
+
+            "rampSkills": [
+                ["attack_boost_3", "affinity_boost_2", "water_boost_2"]
+            ],
+
+            "maxSharpness": [100, 70, 90, 50, 40, 50]
+        }
+    },
+    "Great Sword Tree": {
+        "4a": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Axeblade I",
+            "attack": 120,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "none",
+            "eleStatValue": 0,
+
+            "rampSkills": [
+                ["defense_boost_2", "dulling_strike", "defense_grinder_1"]
+            ],
+
+            "maxSharpness": [100, 60, 80, 60, 0, 0]
+        },
+        "4b": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Axeblade II",
+            "attack": 150,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStatType": "none",
+            "eleStatValue": 0,
+
+            "rampSkills": [
+                ["defense_boost_2", "dulling_strike", "defense_grinder_1"]
+            ],
+
+            "maxSharpness": [70, 80, 80, 70, 0, 0]
+        },
+        "4c": {
+            "rarity": 4,
+            "endlineTag": "hr",
+
+            "name": "Colossal Axeblade",
+            "attack": 180,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [1,1,1],
+            "eleStatType": "none",
+            "eleStatValue": 0,
+
+            "rampSkills": [
+                ["defense_boost_3", "dulling_strike", "defense_grinder_1"]
+            ],
+
+            "maxSharpness": [110, 100, 50, 70, 20, 0]
         }
     },
     "Tigrex Tree": {
@@ -179,7 +291,7 @@
             "eleStatValue": 0,
 
             "rampSkills": [
-                ["attb3", "affb2", "bs"]
+                ["attack_boost_3", "affinity_boost_2", "brutal_strike"]
             ],
 
             "maxSharpness": [50, 40, 120, 120, 50, 20]
@@ -199,7 +311,7 @@
             "eleStatValue": 0,
 
             "rampSkills": [
-                ["attb3", "affb2", "mr"]
+                ["attack_boost_3", "affinity_boost_2", "master_rider"]
             ],
 
             "maxSharpness": [70, 40, 120, 90, 60, 20]
@@ -219,7 +331,7 @@
             "eleStatValue": 35,
 
             "rampSkills": [
-                ["attb3", "watb2", "wbe"]
+                ["attack_boost_3", "water_boost_2", "waterblight_exploit"]
             ],
 
             "maxSharpness": [60, 40, 120, 10, 30, 0]
@@ -239,7 +351,7 @@
             "eleStatValue": 45,
 
             "rampSkills": [
-                ["attb3", "fbe", "teos"]
+                ["attack_boost_3", "fireblight_exploit", "teostra_soul"]
             ],
 
             "maxSharpness": [160, 50, 30, 90, 40, 30]
@@ -259,7 +371,7 @@
             "eleStatValue": 35,
 
             "rampSkills": [
-                ["poib1", "ds", "sbd"]
+                ["poison_boost_1", "dulling_strike", "spiribird_doubled"]
             ],
 
             "maxSharpness": [30, 30, 170, 50, 20, 0]
@@ -279,7 +391,7 @@
             "eleStatValue": 15,
 
             "rampSkills": [
-                ["defb3", "sleb2", "anta"]
+                ["defense_boost_3", "sleep_boost_2", "anti_aquatic_species"]
             ],
 
             "maxSharpness": [50, 70, 130, 70, 30, 0]
@@ -299,7 +411,7 @@
             "eleStatValue": 45,
 
             "rampSkills": [
-                ["attb4", "ds", "br"]
+                ["attack_boost_4", "dulling_strike", "buddy_rally"]
             ],
 
             "maxSharpness": [40, 60, 80, 90, 30, 0]
@@ -319,9 +431,32 @@
             "eleStatValue": 0,
 
             "rampSkills": [
-                ["attb3", "eleb2", "affb3", "defb3", "sht1", "sht2", "sht3"],
-                ["neb", "firx3", "watx3", "thux3", "icex3", "drax3", "poix2", "parx2", "slex2", "blax2"],
-                ["attsu", "elesu", "affsu"]
+                [
+                    "attack_boost_3",
+                    "elemental_boost_2",
+                    "affinity_boost_3",
+                    "defense_boost_3",
+                    "sharpness_type_1",
+                    "sharpness_type_2",
+                    "sharpness_type_3"
+                ],
+                [
+                    "non_elemental_boost",
+                    "fire_3",
+                    "water_3",
+                    "thunder_3",
+                    "ice_3",
+                    "dragon_3",
+                    "poison_2",
+                    "paralysis_2",
+                    "sleep_2",
+                    "blast_2"
+                ],
+                [
+                    "attack_surge",
+                    "elemental_surge",
+                    "affinity_surge"
+                ]
             ],
 
             "maxSharpness": [50, 70, 50, 50, 70, 10]
