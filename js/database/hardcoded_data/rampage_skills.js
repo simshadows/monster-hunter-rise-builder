@@ -205,6 +205,43 @@ const hardcodedRampageSkills = [
         name: "Anti-Aquatic Species",
     }],
 
+    ["shelling_normal_1", {
+        shortId: "shn1",
+        name: "Shelling: Normal I",
+    }],
+    ["shelling_normal_2", {
+        shortId: "shn2",
+        name: "Shelling: Normal II",
+    }],
+    ["shelling_normal_3", {
+        shortId: "shn3",
+        name: "Shelling: Normal III",
+    }],
+    ["shelling_long_1", {
+        shortId: "shl1",
+        name: "Shelling: Long I",
+    }],
+    ["shelling_long_2", {
+        shortId: "shl2",
+        name: "Shelling: Long II",
+    }],
+    ["shelling_long_3", {
+        shortId: "shl3",
+        name: "Shelling: Long III",
+    }],
+    ["shelling_wide_1", {
+        shortId: "shw1",
+        name: "Shelling: Wide I",
+    }],
+    ["shelling_wide_2", {
+        shortId: "shw2",
+        name: "Shelling: Wide II",
+    }],
+    ["shelling_wide_3", {
+        shortId: "shw3",
+        name: "Shelling: Wide III",
+    }],
+
     ["element_exploit", {
         shortId: "xele",
         name: "Element Exploit",
@@ -298,6 +335,10 @@ const hardcodedRampageSkills = [
     ["spiribird_doubled", {
         shortId: "90",
         name: "Spiribird Doubled",
+    }],
+    ["wyrmstake_boost", {
+        shortId: "100",
+        name: "Wyrmstake Boost",
     }],
 
 ];

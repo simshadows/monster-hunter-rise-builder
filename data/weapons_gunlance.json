@@ -1,5 +1,1180 @@
 {
+    "Kamura Tree": {
+        "1a": {
+            "rarity": 1,
+            "endlineTag": "",
+
+            "name": "Kamura Gunlance I",
+            "attack": 50,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_1", "affinity_boost_2", "defense_boost_1"]
+            ],
+
+            "maxSharpness": [50,90,100,10,0,0]
+        },
+        "1b": {
+            "rarity": 1,
+            "endlineTag": "",
+
+            "name": "Kamura Gunlance II",
+            "attack": 60,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_1", "affinity_boost_2", "defense_boost_1"]
+            ],
+
+            "maxSharpness": [60,70,110,10,0,0]
+        },
+        "1c": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Kamura Gunlance III",
+            "attack": 90,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_1", "affinity_boost_2", "defense_boost_2"]
+            ],
+
+            "maxSharpness": [60,70,90,80,0,0]
+        },
+        "1d": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Kamura Gunlance IV",
+            "attack": 140,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "affinity_boost_2", "defense_boost_2"]
+            ],
+
+            "maxSharpness": [50,70,80,30,70,0]
+        },
+        "1e": {
+            "rarity": 4,
+            "endlineTag": "",
+
+            "name": "Kamura Gunlance V",
+            "attack": 150,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["affinity_boost_3", "defense_boost_2", "master_rider"]
+            ],
+
+            "maxSharpness": [60,80,90,40,70,10]
+        },
+        "1f": {
+            "rarity": 5,
+            "endlineTag": "hr",
+
+            "name": "Kamura Ninja Gunlance",
+            "attack": 190,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2,1],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["affinity_boost_4", "defense_boost_2", "master_rider"]
+            ],
+
+            "maxSharpness": [40,90,60,60,80,20]
+        }
+    },
+    "Mizutsune Tree": {
+        "2a": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Ukiyo no Yamiwo I",
+            "attack": 120,
+            "affinity": 10,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"water": 15},
+
+            "rampSkills": [
+                ["attack_boost_2", "affinity_boost_1", "water_boost_1"]
+            ],
+
+            "maxSharpness": [90,40,50,90,30,0]
+        },
+        "2b": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Ukiyo no Yamiwo II",
+            "attack": 190,
+            "affinity": 10,
+            "defense": 0,
+            "decoSlots": [1],
+            "eleStat": {"water": 20},
+
+            "rampSkills": [
+                ["attack_boost_2", "affinity_boost_2", "water_boost_2"]
+            ],
+
+            "maxSharpness": [90,80,70,80,60,20]
+        },
+        "2c": {
+            "rarity": 6,
+            "endlineTag": "hr",
+
+            "name": "Mizumori",
+            "attack": 210,
+            "affinity": 15,
+            "defense": 0,
+            "decoSlots": [1],
+            "eleStat": {"water": 24},
+
+            "rampSkills": [
+                ["attack_boost_3", "affinity_boost_2", "water_boost_2"]
+            ],
+
+            "maxSharpness": [90,70,70,80,40,50]
+        }
+    },
+    "Rathian Tree": {
+        "3a": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Princess Panoply I",
+            "attack": 100,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"poison": 18},
+
+            "rampSkills": [
+                ["attack_boost_1", "poison_boost_1", "small_monster_exploit"]
+            ],
+
+            "maxSharpness": [80,30,70,120,0,0]
+        },
+        "3b": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Princess Panoply II",
+            "attack": 180,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"poison": 21},
+
+            "rampSkills": [
+                ["attack_boost_1", "poison_boost_1", "small_monster_exploit"]
+            ],
+
+            "maxSharpness": [80,30,60,130,50,0]
+        },
+        "3c": {
+            "rarity": 6,
+            "endlineTag": "hr",
+
+            "name": "Ortlinde",
+            "attack": 200,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"poison": 26},
+
+            "rampSkills": [
+                ["attack_boost_2", "poison_boost_1", "small_monster_exploit"]
+            ],
+
+            "maxSharpness": [80,30,80,140,40,30]
+        }
+    },
+    "Rathalos Tree": {
+        "4a": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Red Rook I",
+            "attack": 190,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"fire": 33},
+
+            "rampSkills": [
+                ["attack_boost_2", "fire_boost_1", "element_exploit"]
+            ],
+
+            "maxSharpness": [70,80,90,100,50,10]
+        },
+        "4b": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Red Rook II",
+            "attack": 200,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"fire": 35},
+
+            "rampSkills": [
+                ["attack_boost_2", "fire_boost_1", "element_exploit"]
+            ],
+
+            "maxSharpness": [70,80,70,110,50,20]
+        },
+        "4c": {
+            "rarity": 6,
+            "endlineTag": "hr",
+
+            "name": "Crimson Rook",
+            "attack": 210,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"fire": 37},
+
+            "rampSkills": [
+                ["attack_boost_3", "fire_boost_1", "element_exploit"]
+            ],
+
+            "maxSharpness": [70,80,50,120,50,30]
+        }
+    },
+    "Delex Tree": {
+        "5a": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Delex Harpoon I",
+            "attack": 100,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"water": 12},
+
+            "rampSkills": [
+                ["affinity_boost_1", "defense_boost_1", "small_monster_exploit"]
+            ],
+
+            "maxSharpness": [50,80,50,70,0,0]
+        },
+        "5b": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Delex Harpoon II",
+            "attack": 110,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"water": 14},
+
+            "rampSkills": [
+                ["affinity_boost_2", "defense_boost_1", "small_monster_exploit"]
+            ],
+
+            "maxSharpness": [40,110,70,80,0,0]
+        },
+        "5c": {
+            "rarity": 5,
+            "endlineTag": "hr",
+
+            "name": "Sand Blaster Gunlance",
+            "attack": 190,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [3],
+            "eleStat": {"water": 18},
+
+            "rampSkills": [
+                ["affinity_boost_3", "defense_boost_2", "small_monster_exploit"]
+            ],
+
+            "maxSharpness": [30,110,80,50,70,10]
+        }
+    },
+    "Zinogre Tree": {
+        "6a": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Usurper's Roar I",
+            "attack": 120,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"thunder": 28},
+
+            "rampSkills": [
+                ["attack_boost_1", "thunder_boost_1", "anti_aquatic_species"]
+            ],
+
+            "maxSharpness": [80,70,50,100,0,0]
+        },
+        "6b": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Usurper's Roar II",
+            "attack": 180,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [1,1],
+            "eleStat": {"thunder": 30},
+
+            "rampSkills": [
+                ["attack_boost_2", "thunder_boost_1", "anti_aquatic_species"]
+            ],
+
+            "maxSharpness": [60,60,100,50,70,10]
+        },
+        "6c": {
+            "rarity": 6,
+            "endlineTag": "hr",
+
+            "name": "Despot's Phlogiston",
+            "attack": 210,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [1,1],
+            "eleStat": {"thunder": 32},
+
+            "rampSkills": [
+                ["attack_boost_2", "thunder_boost_2", "anti_aquatic_species"]
+            ],
+
+            "maxSharpness": [60,90,120,50,50,30]
+        }
+    },
+    "Barioth Tree": {
+        "7a": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Twinfang I",
+            "attack": 80,
+            "affinity": 30,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"ice": 22},
+
+            "rampSkills": [
+                ["attack_boost_2", "affinity_boost_2", "iceblight_exploit"]
+            ],
+
+            "maxSharpness": [50,60,70,100,20,0]
+        },
+        "7b": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Twinfang II",
+            "attack": 160,
+            "affinity": 35,
+            "defense": 0,
+            "decoSlots": [1,1],
+            "eleStat": {"ice": 24},
+
+            "rampSkills": [
+                ["attack_boost_4", "affinity_boost_2", "iceblight_exploit"]
+            ],
+
+            "maxSharpness": [50,70,80,100,70,30]
+        },
+        "7c": {
+            "rarity": 6,
+            "endlineTag": "hr",
+
+            "name": "Ambermarch",
+            "attack": 190,
+            "affinity": 40,
+            "defense": 0,
+            "decoSlots": [1,1],
+            "eleStat": {"ice": 26},
+
+            "rampSkills": [
+                ["attack_boost_4", "affinity_boost_3", "iceblight_exploit"]
+            ],
+
+            "maxSharpness": [50,70,80,90,60,50]
+        }
+    },
+    "Ore Tree": {
+        "8a": {
+            "rarity": 1,
+            "endlineTag": "",
+
+            "name": "Iron Gunlance I",
+            "attack": 80,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_1", "affinity_boost_1", "defense_boost_2"]
+            ],
+
+            "maxSharpness": [80,70,90,10,0,0]
+        },
+        "8b": {
+            "rarity": 1,
+            "endlineTag": "",
+
+            "name": "Iron Gunlance II",
+            "attack": 100,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_1", "affinity_boost_1", "defense_boost_2"]
+            ],
+
+            "maxSharpness": [70,60,70,50,0,0]
+        },
+        "8c": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Eizenlitter",
+            "attack": 120,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "affinity_boost_1", "defense_boost_2"]
+            ],
+
+            "maxSharpness": [80,80,50,90,0,0]
+        },
+        "8d": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Striker's Gunlance I",
+            "attack": 130,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "defense_boost_2", "silkbind_boost"]
+            ],
+
+            "maxSharpness": [90,70,40,80,20,0]
+        },
+        "8e": {
+            "rarity": 4,
+            "endlineTag": "",
+
+            "name": "Striker's Gunlance II",
+            "attack": 160,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [1],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "defense_boost_3", "silkbind_boost"]
+            ],
+
+            "maxSharpness": [90,80,60,50,50,20]
+        },
+        "8f": {
+            "rarity": 4,
+            "endlineTag": "hr",
+
+            "name": "Imperial Guardlance",
+            "attack": 190,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [1],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_3", "defense_boost_3", "silkbind_boost"]
+            ],
+
+            "maxSharpness": [90,80,50,50,50,30]
+        }
+    },
+    "Ore Tree 2": {
+        "9a": {
+            "rarity": 4,
+            "endlineTag": "",
+
+            "name": "General's Arbalance I",
+            "attack": 150,
+            "affinity": 10,
+            "defense": 0,
+            "decoSlots": [2,1,1],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_3", "wyvern_exploit", "wyrmstake_boost"]
+            ],
+
+            "maxSharpness": [80,70,70,50,80,0]
+        },
+        "9b": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "General's Arbalance II",
+            "attack": 170,
+            "affinity": 10,
+            "defense": 0,
+            "decoSlots": [2,1,1],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_3", "wyvern_exploit", "wyrmstake_boost"]
+            ],
+
+            "maxSharpness": [60,70,70,60,80,10]
+        },
+        "9c": {
+            "rarity": 6,
+            "endlineTag": "hr",
+
+            "name": "Admiral's Arbalance",
+            "attack": 210,
+            "affinity": 10,
+            "defense": 0,
+            "decoSlots": [2,1,1],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_4", "wyvern_exploit", "wyrmstake_boost"]
+            ],
+
+            "maxSharpness": [90,70,70,70,70,30]
+        }
+    },
+    "Pukei-Pukei Tree": {
+        "10a": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Pukei Gunlance I",
+            "attack": 160,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [1,1],
+            "eleStat": {"poison": 34},
+
+            "rampSkills": [
+                ["attack_boost_3", "defense_boost_1", "poison_boost_2"]
+            ],
+
+            "maxSharpness": [60,70,90,70,60,0]
+        },
+        "10b": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Pukei Gunlance II",
+            "attack": 170,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2,1],
+            "eleStat": {"poison": 40},
+
+            "rampSkills": [
+                ["attack_boost_3", "defense_boost_2", "poison_boost_2"]
+            ],
+
+            "maxSharpness": [80,70,90,90,60,10]
+        },
+        "10c": {
+            "rarity": 6,
+            "endlineTag": "hr",
+
+            "name": "Datura Gunlance",
+            "attack": 190,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2,1],
+            "eleStat": {"poison": 45},
+
+            "rampSkills": [
+                ["attack_boost_4", "defense_boost_3", "poison_boost_3"]
+            ],
+
+            "maxSharpness": [70,70,90,80,70,20]
+        }
+    },
+    "Diablos Tree": {
+        "11a": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Diablos Gunlance I",
+            "attack": 160,
+            "affinity": -10,
+            "defense": 10,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["affinity_boost_1", "defense_boost_1", "dulling_strike"]
+            ],
+
+            "maxSharpness": [60,60,60,80,40,0]
+        },
+        "11b": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Diablos Gunlance II",
+            "attack": 240,
+            "affinity": -10,
+            "defense": 10,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["affinity_boost_2", "defense_boost_1", "dulling_strike"]
+            ],
+
+            "maxSharpness": [90,80,80,100,50,0]
+        },
+        "11c": {
+            "rarity": 6,
+            "endlineTag": "hr",
+
+            "name": "Diablos Cannon",
+            "attack": 250,
+            "affinity": -10,
+            "defense": 10,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["affinity_boost_3", "defense_boost_2", "dulling_strike"]
+            ],
+
+            "maxSharpness": [90,60,80,120,30,20]
+        }
+    },
+    "Aknosom Tree": {
+        "12a": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Aknosom Gunlance I",
+            "attack": 90,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"fire": 20},
+
+            "rampSkills": [
+                ["attack_boost_1", "fire_boost_1", "fireblight_exploit"]
+            ],
+
+            "maxSharpness": [30,50,80,90,0,0]
+        },
+        "12b": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Aknosom Gunlance II",
+            "attack": 100,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"fire": 23},
+
+            "rampSkills": [
+                ["attack_boost_1", "fire_boost_1", "fireblight_exploit"]
+            ],
+
+            "maxSharpness": [40,60,100,100,0,0]
+        },
+        "12c": {
+            "rarity": 4,
+            "endlineTag": "",
+
+            "name": "Aknosom Gunlance III",
+            "attack": 150,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2],
+            "eleStat": {"fire": 27},
+
+            "rampSkills": [
+                ["attack_boost_2", "fire_boost_2", "fireblight_exploit"]
+            ],
+
+            "maxSharpness": [50,60,110,60,50,20]
+        },
+        "12d": {
+            "rarity": 5,
+            "endlineTag": "hr",
+
+            "name": "Dawnbreaker Gunlance",
+            "attack": 170,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2],
+            "eleStat": {"fire": 29},
+
+            "rampSkills": [
+                ["attack_boost_2", "fire_boost_2", "fireblight_exploit"]
+            ],
+
+            "maxSharpness": [50,60,100,60,50,30]
+        }
+    },
+    "Almudron Tree": {
+        "13a": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Almudron Gunlance I",
+            "attack": 120,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"water": 40},
+
+            "rampSkills": [
+                ["attack_boost_2", "water_boost_1", "element_exploit"]
+            ],
+
+            "maxSharpness": [50,50,100,80,20,0]
+        },
+        "13b": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Almudron Gunlance II",
+            "attack": 160,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2,1],
+            "eleStat": {"water": 45},
+
+            "rampSkills": [
+                ["attack_boost_3", "water_boost_1", "element_exploit"]
+            ],
+
+            "maxSharpness": [60,60,80,60,90,0]
+        },
+        "13c": {
+            "rarity": 6,
+            "endlineTag": "hr",
+
+            "name": "Doombringer Gunlance",
+            "attack": 170,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2,1],
+            "eleStat": {"water": 46},
+
+            "rampSkills": [
+                ["attack_boost_3", "water_boost_2", "element_exploit"]
+            ],
+
+            "maxSharpness": [60,60,80,100,100,0]
+        }
+    },
+    "Khezu Tree": {
+        "14a": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Full Voltage I",
+            "attack": 100,
+            "affinity": 10,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"thunder": 13},
+
+            "rampSkills": [
+                ["attack_boost_2", "thunder_boost_1", "thunderblight_exploit"]
+            ],
+
+            "maxSharpness": [40,90,40,80,0,0]
+        },
+        "14b": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Full Voltage II",
+            "attack": 150,
+            "affinity": 10,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"thunder": 15},
+
+            "rampSkills": [
+                ["attack_boost_3", "thunder_boost_1", "thunderblight_exploit"]
+            ],
+
+            "maxSharpness": [40,100,70,40,50,0]
+        },
+        "14c": {
+            "rarity": 4,
+            "endlineTag": "hr",
+
+            "name": "High Volt Gunlance",
+            "attack": 170,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2],
+            "eleStat": {"thunder": 17},
+
+            "rampSkills": [
+                ["attack_boost_4", "thunder_boost_2", "thunderblight_exploit"]
+            ],
+
+            "maxSharpness": [40,100,80,50,30,50]
+        }
+    },
+    "Volvidon Tree": {
+        "15a": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Shattershot I",
+            "attack": 100,
+            "affinity": -10,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"paralysis": 24},
+
+            "rampSkills": [
+                ["attack_boost_3", "defense_boost_1", "dulling_strike"]
+            ],
+
+            "maxSharpness": [130,40,50,80,0,0]
+        },
+        "15b": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Shattershot II",
+            "attack": 160,
+            "affinity": -10,
+            "defense": 0,
+            "decoSlots": [2],
+            "eleStat": {"paralysis": 26},
+
+            "rampSkills": [
+                ["attack_boost_4", "defense_boost_2", "dulling_strike"]
+            ],
+
+            "maxSharpness": [140,40,50,70,50,0]
+        },
+        "15c": {
+            "rarity": 6,
+            "endlineTag": "hr",
+
+            "name": "Shatter God",
+            "attack": 180,
+            "affinity": -10,
+            "defense": 0,
+            "decoSlots": [2],
+            "eleStat": {"paralysis": 28},
+
+            "rampSkills": [
+                ["attack_boost_4", "defense_boost_3", "dulling_strike"]
+            ],
+
+            "maxSharpness": [160,50,50,70,60,10]
+        }
+    },
+    "Baggi Tree": {
+        "16a": {
+            "rarity": 1,
+            "endlineTag": "",
+
+            "name": "Baggi Gunlance I",
+            "attack": 80,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"sleep": 20},
+
+            "rampSkills": [
+                ["affinity_boost_1", "sleep_boost_1", "buddy_rally"]
+            ],
+
+            "maxSharpness": [100,30,50,70,0,0]
+        },
+        "16b": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Baggi Gunlance II",
+            "attack": 100,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"sleep": 22},
+
+            "rampSkills": [
+                ["affinity_boost_2", "sleep_boost_1", "buddy_rally"]
+            ],
+
+            "maxSharpness": [100,60,50,90,0,0]
+        },
+        "16c": {
+            "rarity": 4,
+            "endlineTag": "",
+
+            "name": "Baggi Gunlance III",
+            "attack": 140,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [1,1],
+            "eleStat": {"sleep": 25},
+
+            "rampSkills": [
+                ["affinity_boost_2", "sleep_boost_2", "buddy_rally"]
+            ],
+
+            "maxSharpness": [100,70,60,70,50,0]
+        },
+        "16d": {
+            "rarity": 5,
+            "endlineTag": "hr",
+
+            "name": "Lullabyte Sleeplance",
+            "attack": 180,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [1,1],
+            "eleStat": {"sleep": 27},
+
+            "rampSkills": [
+                ["affinity_boost_3", "sleep_boost_2", "buddy_rally"]
+            ],
+
+            "maxSharpness": [90,90,80,60,60,20]
+        }
+    },
+    "Tobi-Kadachi Tree": {
+        "17a": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Kadachi Striker I",
+            "attack": 100,
+            "affinity": 15,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"thunder": 19},
+
+            "rampSkills": [
+                ["attack_boost_1", "affinity_boost_1", "thunder_boost_2"]
+            ],
+
+            "maxSharpness": [120,50,40,80,10,0]
+        },
+        "17b": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Kadachi Striker II",
+            "attack": 180,
+            "affinity": 15,
+            "defense": 0,
+            "decoSlots": [2],
+            "eleStat": {"thunder": 24},
+
+            "rampSkills": [
+                ["attack_boost_2", "affinity_boost_3", "thunder_boost_3"]
+            ],
+
+            "maxSharpness": [120,80,50,80,60,10]
+        },
+        "17c": {
+            "rarity": 6,
+            "endlineTag": "hr",
+
+            "name": "Mythic Kadachi Striker",
+            "attack": 200,
+            "affinity": 20,
+            "defense": 0,
+            "decoSlots": [2],
+            "eleStat": {"thunder": 27},
+
+            "rampSkills": [
+                ["attack_boost_3", "affinity_boost_3", "thunder_boost_3"]
+            ],
+
+            "maxSharpness": [110,80,30,100,50,30]
+        }
+    },
+    "Bone Tree": {
+        "18a": {
+            "rarity": 1,
+            "endlineTag": "",
+
+            "name": "Bone Gunlance I",
+            "attack": 90,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "affinity_boost_1", "defense_boost_1"]
+            ],
+
+            "maxSharpness": [70,90,90,0,0,0]
+        },
+        "18b": {
+            "rarity": 1,
+            "endlineTag": "",
+
+            "name": "Bone Gunlance II",
+            "attack": 110,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "affinity_boost_1", "defense_boost_1"]
+            ],
+
+            "maxSharpness": [80,70,100,0,0,0]
+        },
+        "18c": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Wyvern Bone Gunlance",
+            "attack": 120,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "affinity_boost_2", "defense_boost_1"]
+            ],
+
+            "maxSharpness": [90,50,110,0,0,0]
+        },
+        "18d": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Golem Gunlance I",
+            "attack": 150,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "affinity_boost_2", "dulling_strike"]
+            ],
+
+            "maxSharpness": [100,80,60,60,0,0]
+        },
+        "18e": {
+            "rarity": 4,
+            "endlineTag": "",
+
+            "name": "Golem Gunlance II",
+            "attack": 180,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_3", "affinity_boost_2", "dulling_strike"]
+            ],
+
+            "maxSharpness": [80,70,60,80,10,0]
+        },
+        "18f": {
+            "rarity": 5,
+            "endlineTag": "hr",
+
+            "name": "Behemoth Gunlance",
+            "attack": 200,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_4", "affinity_boost_2", "dulling_strike"]
+            ],
+
+            "maxSharpness": [80,70,80,100,20,0]
+        }
+    },
     "Nargacuga Tree": {
+        "19a": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Hidden Gunlance I",
+            "attack": 160,
+            "affinity": 40,
+            "defense": 0,
+            "decoSlots": [2],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_3", "affinity_boost_1", "master_rider"]
+            ],
+
+            "maxSharpness": [50,70,100,80,90,10]
+        },
+        "19b": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Hidden Gunlance II",
+            "attack": 170,
+            "affinity": 40,
+            "defense": 0,
+            "decoSlots": [2],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_3", "affinity_boost_1", "master_rider"]
+            ],
+
+            "maxSharpness": [50,70,90,80,90,20]
+        },
         "19c": {
             "rarity": 6,
             "endlineTag": "hr",
@@ -15,8 +1190,1348 @@
                 ["attack_boost_3", "affinity_boost_2", "master_rider"]
             ],
 
-            "maxSharpness": [50, 70, 100, 90, 70, 20]
+            "maxSharpness": [50,70,100,90,70,20]
+        }
+    },
+    "Anjanath Tree": {
+        "20a": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Flaming Gunlance I",
+            "attack": 140,
+            "affinity": -20,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"fire": 15},
+
+            "rampSkills": [
+                ["affinity_boost_1", "fire_boost_1", "brutal_strike"]
+            ],
+
+            "maxSharpness": [100,90,30,80,0,0]
+        },
+        "20b": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Flaming Gunlance II",
+            "attack": 160,
+            "affinity": -20,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"fire": 17},
+
+            "rampSkills": [
+                ["affinity_boost_1", "fire_boost_1", "brutal_strike"]
+            ],
+
+            "maxSharpness": [100,70,30,100,0,0]
+        },
+        "20c": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Flaming Gunlance III",
+            "attack": 210,
+            "affinity": -15,
+            "defense": 0,
+            "decoSlots": [2,1],
+            "eleStat": {"fire": 21},
+
+            "rampSkills": [
+                ["affinity_boost_1", "fire_boost_2", "brutal_strike"]
+            ],
+
+            "maxSharpness": [150,60,20,90,30,0]
+        },
+        "20d": {
+            "rarity": 6,
+            "endlineTag": "hr",
+
+            "name": "Barbarous Firelance",
+            "attack": 230,
+            "affinity": -15,
+            "defense": 0,
+            "decoSlots": [2,1],
+            "eleStat": {"fire": 24},
+
+            "rampSkills": [
+                ["affinity_boost_2", "fire_boost_3", "brutal_strike"]
+            ],
+
+            "maxSharpness": [180,60,20,90,50,0]
+        }
+    },
+    "Barroth Tree": {
+        "21a": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Barroth Loader I",
+            "attack": 130,
+            "affinity": -20,
+            "defense": 15,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["affinity_boost_1", "defense_boost_1", "brutal_strike"]
+            ],
+
+            "maxSharpness": [50,60,140,50,0,0]
+        },
+        "21b": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Barroth Loader II",
+            "attack": 140,
+            "affinity": -20,
+            "defense": 15,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["affinity_boost_1", "defense_boost_2", "brutal_strike"]
+            ],
+
+            "maxSharpness": [50,60,130,50,10,0]
+        },
+        "21c": {
+            "rarity": 5,
+            "endlineTag": "hr",
+
+            "name": "Rugged Loader",
+            "attack": 200,
+            "affinity": -20,
+            "defense": 20,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["affinity_boost_2", "defense_boost_2", "brutal_strike"]
+            ],
+
+            "maxSharpness": [60,40,190,50,40,20]
+        }
+    },
+    "Tigrex Tree": {
+        "22a": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Tiger Blast I",
+            "attack": 150,
+            "affinity": -20,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "affinity_boost_1", "brutal_strike"]
+            ],
+
+            "maxSharpness": [70,30,100,90,60,0]
+        },
+        "22b": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Tiger Blast II",
+            "attack": 220,
+            "affinity": -15,
+            "defense": 0,
+            "decoSlots": [1],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "affinity_boost_2", "brutal_strike"]
+            ],
+
+            "maxSharpness": [50,30,130,100,70,20]
+        },
+        "22c": {
+            "rarity": 6,
+            "endlineTag": "hr",
+
+            "name": "Tigrex Gunlance",
+            "attack": 230,
+            "affinity": -15,
+            "defense": 0,
+            "decoSlots": [1],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_3", "affinity_boost_2", "brutal_strike"]
+            ],
+
+            "maxSharpness": [50,40,120,120,40,30]
+        }
+    },
+    "Lagombi Tree": {
+        "23a": {
+            "rarity": 1,
+            "endlineTag": "",
+
+            "name": "Lagomberator I",
+            "attack": 80,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"ice": 23},
+
+            "rampSkills": [
+                ["attack_boost_1", "ice_boost_1", "small_monster_exploit"]
+            ],
+
+            "maxSharpness": [60,70,50,70,0,0]
+        },
+        "23b": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Lagomberator II",
+            "attack": 120,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"ice": 25},
+
+            "rampSkills": [
+                ["attack_boost_1", "ice_boost_2", "small_monster_exploit"]
+            ],
+
+            "maxSharpness": [60,80,60,100,0,0]
+        },
+        "23c": {
+            "rarity": 4,
+            "endlineTag": "",
+
+            "name": "Lagomberator III",
+            "attack": 150,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2],
+            "eleStat": {"ice": 27},
+
+            "rampSkills": [
+                ["attack_boost_2", "ice_boost_2", "small_monster_exploit"]
+            ],
+
+            "maxSharpness": [60,80,70,80,50,10]
+        },
+        "23d": {
+            "rarity": 6,
+            "endlineTag": "hr",
+
+            "name": "Lagomberatrix",
+            "attack": 210,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2],
+            "eleStat": {"ice": 29},
+
+            "rampSkills": [
+                ["attack_boost_3", "ice_boost_3", "small_monster_exploit"]
+            ],
+
+            "maxSharpness": [60,80,90,90,60,20]
+        }
+    },
+    "Royal Ludroth Tree": {
+        "24a": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Ludroth Harpoon I",
+            "attack": 80,
+            "affinity": 0,
+            "defense": 10,
+            "decoSlots": [],
+            "eleStat": {"water": 24},
+
+            "rampSkills": [
+                ["attack_boost_2", "water_boost_1", "waterblight_exploit"]
+            ],
+
+            "maxSharpness": [50,60,100,90,0,0]
+        },
+        "24b": {
+            "rarity": 4,
+            "endlineTag": "",
+
+            "name": "Ludroth Harpoon II",
+            "attack": 140,
+            "affinity": 0,
+            "defense": 10,
+            "decoSlots": [1,1,1],
+            "eleStat": {"water": 33},
+
+            "rampSkills": [
+                ["attack_boost_2", "water_boost_2", "waterblight_exploit"]
+            ],
+
+            "maxSharpness": [60,60,120,40,70,0]
+        },
+        "24c": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Ludroth Harpoon III",
+            "attack": 160,
+            "affinity": 0,
+            "defense": 15,
+            "decoSlots": [2,1,1],
+            "eleStat": {"water": 35},
+
+            "rampSkills": [
+                ["attack_boost_3", "water_boost_2", "waterblight_exploit"]
+            ],
+
+            "maxSharpness": [60,60,100,50,70,10]
+        },
+        "24d": {
+            "rarity": 6,
+            "endlineTag": "hr",
+
+            "name": "Ludroth Shellbreaker",
+            "attack": 180,
+            "affinity": 0,
+            "defense": 15,
+            "decoSlots": [2,1,1],
+            "eleStat": {"water": 37},
+
+            "rampSkills": [
+                ["attack_boost_3", "water_boost_3", "waterblight_exploit"]
+            ],
+
+            "maxSharpness": [60,60,130,60,60,30]
+        }
+    },
+    "Bnahabra Tree": {
+        "25a": {
+            "rarity": 1,
+            "endlineTag": "",
+
+            "name": "Fiore Nulo I",
+            "attack": 80,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_1", "affinity_boost_1", "master_rider"]
+            ],
+
+            "maxSharpness": [100,50,40,60,0,0]
+        },
+        "25b": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Fiore Nulo II",
+            "attack": 110,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "defense_boost_1", "master_rider"]
+            ],
+
+            "maxSharpness": [140,20,20,60,60,0]
+        },
+        "25c": {
+            "rarity": 4,
+            "endlineTag": "hr",
+
+            "name": "Fiore Unu",
+            "attack": 150,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2,1,1],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_3", "wyvern_exploit", "master_rider"]
+            ],
+
+            "maxSharpness": [150,30,30,50,50,40]
+        }
+    },
+    "Rakna-Kadaki Tree": {
+        "26a": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Rakna Gunlance I",
+            "attack": 150,
+            "affinity": 25,
+            "defense": 0,
+            "decoSlots": [2,1,1],
+            "eleStat": {"fire": 22},
+
+            "rampSkills": [
+                ["attack_boost_3", "fire_boost_1", "silkbind_boost"]
+            ],
+
+            "maxSharpness": [190,40,40,30,50,50]
+        },
+        "26b": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Rakna Gunlance II",
+            "attack": 160,
+            "affinity": 25,
+            "defense": 0,
+            "decoSlots": [2,1,1],
+            "eleStat": {"fire": 25},
+
+            "rampSkills": [
+                ["attack_boost_3", "fire_boost_2", "silkbind_boost"]
+            ],
+
+            "maxSharpness": [190,40,40,30,40,60]
+        },
+        "26c": {
+            "rarity": 7,
+            "endlineTag": "hr",
+
+            "name": "Araknalance",
+            "attack": 170,
+            "affinity": 25,
+            "defense": 0,
+            "decoSlots": [2,1,1],
+            "eleStat": {"fire": 27},
+
+            "rampSkills": [
+                ["attack_boost_4", "fire_boost_2", "silkbind_boost"]
+            ],
+
+            "maxSharpness": [190,30,40,30,40,70]
+        }
+    },
+    "Bnahabra (Dragon)": {
+        "27a": {
+            "rarity": 4,
+            "endlineTag": "",
+
+            "name": "Fiore Nulo Black I",
+            "attack": 150,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [3,1],
+            "eleStat": {"dragon": 21},
+
+            "rampSkills": [
+                ["affinity_boost_2", "defense_boost_2", "element_exploit"]
+            ],
+
+            "maxSharpness": [150,30,30,60,70,10]
+        },
+        "27b": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Fiore Nulo Black II",
+            "attack": 180,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [3,1],
+            "eleStat": {"dragon": 23},
+
+            "rampSkills": [
+                ["affinity_boost_2", "defense_boost_3", "element_exploit"]
+            ],
+
+            "maxSharpness": [140,20,20,80,70,20]
+        },
+        "27c": {
+            "rarity": 6,
+            "endlineTag": "hr",
+
+            "name": "Fiore Unu Black",
+            "attack": 200,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [3,1],
+            "eleStat": {"dragon": 26},
+
+            "rampSkills": [
+                ["affinity_boost_3", "defense_boost_3", "element_exploit"]
+            ],
+
+            "maxSharpness": [160,20,20,90,70,40]
+        }
+    },
+    "Bnahabra (Ice)": {
+        "28a": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Fiore Nulo White I",
+            "attack": 90,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"ice": 15},
+
+            "rampSkills": [
+                ["defense_boost_1", "element_exploit", "silkbind_boost"]
+            ],
+
+            "maxSharpness": [100,20,30,100,0,0]
+        },
+        "28b": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Fiore Nulo White II",
+            "attack": 130,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"ice": 17},
+
+            "rampSkills": [
+                ["defense_boost_2", "element_exploit", "silkbind_boost"]
+            ],
+
+            "maxSharpness": [140,20,20,60,60,0]
+        },
+        "28c": {
+            "rarity": 5,
+            "endlineTag": "hr",
+
+            "name": "Fiore Unu White",
+            "attack": 180,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [3],
+            "eleStat": {"ice": 20},
+
+            "rampSkills": [
+                ["defense_boost_3", "element_exploit", "silkbind_boost"]
+            ],
+
+            "maxSharpness": [140,20,20,80,70,20]
+        }
+    },
+    "Bnahabra (Paralysis)": {
+        "29a": {
+            "rarity": 1,
+            "endlineTag": "",
+
+            "name": "Fiore Nulo Green I",
+            "attack": 80,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"paralysis": 12},
+
+            "rampSkills": [
+                ["affinity_boost_1", "paralysis_boost_1", "anti_aerial_species"]
+            ],
+
+            "maxSharpness": [100,30,30,90,0,0]
+        },
+        "29b": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Fiore Nulo Green II",
+            "attack": 130,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"paralysis": 18},
+
+            "rampSkills": [
+                ["affinity_boost_2", "paralysis_boost_1", "anti_aerial_species"]
+            ],
+
+            "maxSharpness": [140,20,20,70,50,0]
+        },
+        "29c": {
+            "rarity": 4,
+            "endlineTag": "hr",
+
+            "name": "Fiore Unu Green",
+            "attack": 140,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [1,1,1],
+            "eleStat": {"paralysis": 19},
+
+            "rampSkills": [
+                ["affinity_boost_3", "paralysis_boost_2", "anti_aerial_species"]
+            ],
+
+            "maxSharpness": [160,30,30,60,60,10]
+        }
+    },
+    "Magnamalo Tree": {
+        "30a": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Sinister Gunlance I",
+            "attack": 130,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"blast": 25},
+
+            "rampSkills": [
+                ["attack_boost_2", "blast_boost_1", "magnamalo_soul"]
+            ],
+
+            "maxSharpness": [160,20,40,110,20,0]
+        },
+        "30b": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Sinister Gunlance II",
+            "attack": 140,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"blast": 29},
+
+            "rampSkills": [
+                ["attack_boost_3", "blast_boost_1", "magnamalo_soul"]
+            ],
+
+            "maxSharpness": [170,20,20,110,30,0]
+        },
+        "30c": {
+            "rarity": 6,
+            "endlineTag": "hr",
+
+            "name": "Sinister Shadowshot",
+            "attack": 200,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2,1],
+            "eleStat": {"blast": 33},
+
+            "rampSkills": [
+                ["attack_boost_3", "blast_boost_2", "magnamalo_soul"]
+            ],
+
+            "maxSharpness": [190,10,20,90,60,30]
+        }
+    },
+    "Rajang Tree": {
+        "31a": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Demon Gunlance I",
+            "attack": 200,
+            "affinity": -10,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"thunder": 16},
+
+            "rampSkills": [
+                ["affinity_boost_1", "thunder_boost_1", "dulling_strike"]
+            ],
+
+            "maxSharpness": [50,20,100,80,40,10]
+        },
+        "31b": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Demon Gunlance II",
+            "attack": 210,
+            "affinity": -10,
+            "defense": 0,
+            "decoSlots": [3],
+            "eleStat": {"thunder": 18},
+
+            "rampSkills": [
+                ["affinity_boost_1", "thunder_boost_2", "dulling_strike"]
+            ],
+
+            "maxSharpness": [40,20,100,90,30,20]
+        },
+        "31c": {
+            "rarity": 7,
+            "endlineTag": "hr",
+
+            "name": "Great Demon Gunlance",
+            "attack": 220,
+            "affinity": -10,
+            "defense": 0,
+            "decoSlots": [3],
+            "eleStat": {"thunder": 20},
+
+            "rampSkills": [
+                ["affinity_boost_2", "thunder_boost_2", "dulling_strike"]
+            ],
+
+            "maxSharpness": [40,20,120,120,10,40]
+        }
+    },
+    "Ibushi Tree": {
+        "32a": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Azure Elder Gunlance I",
+            "attack": 180,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"dragon": 11},
+
+            "rampSkills": [
+                ["dragon_boost_3", "anti_aerial_species", "defense_boost_1"]
+            ],
+
+            "maxSharpness": [20,20,20,40,150,0]
+        },
+        "32b": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Azure Elder Gunlance II",
+            "attack": 200,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"dragon": 13},
+
+            "rampSkills": [
+                ["dragon_boost_3", "anti_aerial_species", "ibushi_soul"]
+            ],
+
+            "maxSharpness": [20,20,50,50,150,10]
+        },
+        "32c": {
+            "rarity": 7,
+            "endlineTag": "hr",
+
+            "name": "Abyssal Gale Gunlance",
+            "attack": 210,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"dragon": 15},
+
+            "rampSkills": [
+                ["dragon_boost_4", "anti_aerial_species", "ibushi_soul"]
+            ],
+
+            "maxSharpness": [20,20,80,60,150,20]
+        }
+    },
+    "Bazelgeuse Tree": {
+        "34a": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Bazel Buster I",
+            "attack": 190,
+            "affinity": -10,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"blast": 12},
+
+            "rampSkills": [
+                ["defense_boost_1", "blast_boost_2", "wyrmstake_boost"]
+            ],
+
+            "maxSharpness": [60,90,60,90,50,0]
+        },
+        "34b": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Bazel Buster II",
+            "attack": 210,
+            "affinity": -10,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"blast": 14},
+
+            "rampSkills": [
+                ["defense_boost_1", "blast_boost_2", "wyrmstake_boost"]
+            ],
+
+            "maxSharpness": [60,110,90,80,30,30]
+        },
+        "34c": {
+            "rarity": 7,
+            "endlineTag": "hr",
+
+            "name": "Bazel Destroyer",
+            "attack": 220,
+            "affinity": -10,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"blast": 16},
+
+            "rampSkills": [
+                ["defense_boost_2", "blast_boost_3", "wyrmstake_boost"]
+            ],
+
+            "maxSharpness": [60,110,80,70,30,50]
+        }
+    },
+    "Narwa Tree": {
+        "33a": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Thunderbolt Gunlance I",
+            "attack": 180,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"thunder": 35},
+
+            "rampSkills": [
+                ["attack_boost_2", "anti_aerial_species", "narwa_soul"]
+            ],
+
+            "maxSharpness": [20,20,190,40,50,30]
+        },
+        "33b": {
+            "rarity": 7,
+            "endlineTag": "hr",
+
+            "name": "Abyssal Storm Gunlance",
+            "attack": 190,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"thunder": 41},
+
+            "rampSkills": [
+                ["attack_boost_3", "anti_aerial_species", "narwa_soul"]
+            ],
+
+            "maxSharpness": [10,20,220,40,70,40]
+        }
+    },
+    "Kushala Daora Tree": {
+        "35a": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Icesteel Gunlance I",
+            "attack": 160,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [1],
+            "eleStat": {"ice": 42},
+
+            "rampSkills": [
+                ["attack_boost_2", "affinity_boost_2", "kushala_daora_soul"]
+            ],
+
+            "maxSharpness": [100,80,90,40,60,30]
+        },
+        "35b": {
+            "rarity": 7,
+            "endlineTag": "hr",
+
+            "name": "Daora's Brigia",
+            "attack": 170,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [1],
+            "eleStat": {"ice": 44},
+
+            "rampSkills": [
+                ["attack_boost_3", "affinity_boost_3", "kushala_daora_soul"]
+            ],
+
+            "maxSharpness": [80,80,90,50,40,60]
+        }
+    },
+    "Chameleos Tree": {
+        "36a": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Venomous Cologne I",
+            "attack": 220,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [3],
+            "eleStat": {"poison": 27},
+
+            "rampSkills": [
+                ["attack_boost_2", "defense_boost_3", "chameleos_soul"]
+            ],
+
+            "maxSharpness": [50,60,130,70,70,20]
+        },
+        "36b": {
+            "rarity": 7,
+            "endlineTag": "hr",
+
+            "name": "Venomous Attar",
+            "attack": 230,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [3],
+            "eleStat": {"poison": 31},
+
+            "rampSkills": [
+                ["attack_boost_3", "defense_boost_3", "chameleos_soul"]
+            ],
+
+            "maxSharpness": [60,60,110,70,60,40]
+        }
+    },
+    "Valstrax Tree": {
+        "37a": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Redwing Gunlance I",
+            "attack": 170,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2],
+            "eleStat": {"dragon": 35},
+
+            "rampSkills": [
+                ["attack_boost_3", "wyvern_exploit", "valstrax_soul"]
+            ],
+
+            "maxSharpness": [180,120,0,0,0,0]
+        },
+        "37b": {
+            "rarity": 7,
+            "endlineTag": "hr",
+
+            "name": "Reddnaught Gunlance",
+            "attack": 180,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2],
+            "eleStat": {"dragon": 38},
+
+            "rampSkills": [
+                ["attack_boost_3", "wyvern_exploit", "valstrax_soul"]
+            ],
+
+            "maxSharpness": [60,140,0,0,0,0]
+        }
+    },
+    "Canyne Tree": {
+        "38a": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Canyne Cannon I",
+            "attack": 130,
+            "affinity": 0,
+            "defense": 5,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["defense_boost_2", "wyrmstake_boost", "buddy_rally"]
+            ],
+
+            "maxSharpness": [70,100,60,80,40,0]
+        },
+        "38b": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Canyne Cannon II",
+            "attack": 140,
+            "affinity": 0,
+            "defense": 5,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["defense_boost_3", "wyrmstake_boost", "buddy_rally"]
+            ],
+
+            "maxSharpness": [80,120,60,80,60,0]
+        },
+        "38c": {
+            "rarity": 5,
+            "endlineTag": "hr",
+
+            "name": "Howlitzer",
+            "attack": 180,
+            "affinity": 0,
+            "defense": 10,
+            "decoSlots": [1],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["affinity_boost_3", "defense_boost_3", "buddy_rally"]
+            ],
+
+            "maxSharpness": [80,120,60,70,50,20]
+        }
+    },
+    "Guild Tree": {
+        "39a": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Cornpopper I",
+            "attack": 160,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [1],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["wyrmstake_boost", "anti_aquatic_species", "spiribird_doubled"]
+            ],
+
+            "maxSharpness": [50,40,140,110,10,0]
+        },
+        "39b": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Cornpopper II",
+            "attack": 170,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [1],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["wyrmstake_boost", "anti_aquatic_species", "spiribird_doubled"]
+            ],
+
+            "maxSharpness": [50,60,160,110,20,0]
+        },
+        "39c": {
+            "rarity": 6,
+            "endlineTag": "hr",
+
+            "name": "Mighty Cornpopper",
+            "attack": 180,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [1],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["affinity_boost_3", "anti_aquatic_species", "spiribird_doubled"]
+            ],
+
+            "maxSharpness": [40,40,180,110,30,0]
+        }
+    },
+    "Shell-Studded Tree": {
+        "40a": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Sleepy Shellgun I",
+            "attack": 100,
+            "affinity": 0,
+            "defense": 15,
+            "decoSlots": [],
+            "eleStat": {"sleep": 13},
+
+            "rampSkills": [
+                ["defense_boost_1", "sleep_boost_1", "anti_aquatic_species"]
+            ],
+
+            "maxSharpness": [50,60,140,0,0,0]
+        },
+        "40b": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Sleepy Shellgun II",
+            "attack": 130,
+            "affinity": 0,
+            "defense": 15,
+            "decoSlots": [],
+            "eleStat": {"sleep": 17},
+
+            "rampSkills": [
+                ["defense_boost_2", "sleep_boost_1", "anti_aquatic_species"]
+            ],
+
+            "maxSharpness": [50,90,80,70,10,0]
+        },
+        "40c": {
+            "rarity": 5,
+            "endlineTag": "hr",
+
+            "name": "Soporific Shellgun",
+            "attack": 190,
+            "affinity": 0,
+            "defense": 20,
+            "decoSlots": [3],
+            "eleStat": {"sleep": 20},
+
+            "rampSkills": [
+                ["defense_boost_3", "sleep_boost_2", "anti_aquatic_species"]
+            ],
+
+            "maxSharpness": [60,90,100,60,40,0]
+        }
+    },
+    "Rampage Tree": {
+        "41a": {
+            "rarity": 4,
+            "endlineTag": "",
+
+            "name": "Rampage Gunlance I",
+            "attack": 150,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                [
+                    "attack_boost_1",
+                    "affinity_boost_1",
+                    "defense_boost_1"
+                ],
+                [
+                    "fire_1",
+                    "water_1",
+                    "thunder_1",
+                    "ice_1"
+                ],
+                [
+                    "attack_surge"
+                ]
+            ],
+
+            "maxSharpness": [70,70,90,70,0,0]
+        },
+        "41b": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Rampage Gunlance II",
+            "attack": 170,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                [
+                    "attack_boost_1",
+                    "elemental_boost_1",
+                    "affinity_boost_1",
+                    "defense_boost_1"
+                ],
+                [
+                    "non_elemental_boost",
+                    "fire_1",
+                    "water_1",
+                    "thunder_1",
+                    "ice_1",
+                    "dragon_1",
+                    "poison_1"
+                ],
+                [
+                    "attack_surge",
+                    "shelling_normal_1",
+                    "shelling_long_1",
+                    "shelling_wide_1"
+                ]
+            ],
+
+            "maxSharpness": [60,70,80,90,0,0]
+        },
+        "41c": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Rampage Gunlance III",
+            "attack": 180,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                [
+                    "attack_boost_2",
+                    "elemental_boost_1",
+                    "affinity_boost_2",
+                    "defense_boost_2",
+                    "sharpness_type_1"
+                ],
+                [
+                    "non_elemental_boost",
+                    "fire_2",
+                    "water_2",
+                    "thunder_2",
+                    "ice_2",
+                    "dragon_2",
+                    "poison_1",
+                    "paralysis_1",
+                    "sleep_1",
+                    "blast_1"
+                ],
+                [
+                    "attack_surge",
+                    "affinity_surge",
+                    "shelling_normal_1",
+                    "shelling_long_1",
+                    "shelling_wide_1"
+                ]
+            ],
+
+            "maxSharpness": [50,70,80,30,70,0]
+        },
+        "41d": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Rampage Gunlance IV",
+            "attack": 190,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                [
+                    "attack_boost_2",
+                    "elemental_boost_2",
+                    "affinity_boost_2",
+                    "defense_boost_2",
+                    "sharpness_type_1",
+                    "sharpness_type_2"
+                ],
+                [
+                    "non_elemental_boost",
+                    "fire_2",
+                    "water_2",
+                    "thunder_2",
+                    "ice_2",
+                    "dragon_2",
+                    "poison_2",
+                    "paralysis_2",
+                    "sleep_2",
+                    "blast_2"
+                ],
+                [
+                    "attack_surge",
+                    "affinity_surge",
+                    "shelling_normal_2",
+                    "shelling_long_2",
+                    "shelling_wide_2"
+                ]
+            ],
+
+            "maxSharpness": [50,70,70,30,80,0]
+        },
+        "41e": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Rampage Gunlance V",
+            "attack": 200,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                [
+                    "attack_boost_3",
+                    "elemental_boost_2",
+                    "affinity_boost_3",
+                    "defense_boost_3",
+                    "sharpness_type_1",
+                    "sharpness_type_2",
+                    "sharpness_type_3"
+                ],
+                [
+                    "non_elemental_boost",
+                    "fire_3",
+                    "water_3",
+                    "thunder_3",
+                    "ice_3",
+                    "dragon_3",
+                    "poison_2",
+                    "paralysis_2",
+                    "sleep_2",
+                    "blast_2"
+                ],
+                [
+                    "attack_surge",
+                    "elemental_surge",
+                    "affinity_surge",
+                    "shelling_normal_2",
+                    "shelling_long_2",
+                    "shelling_wide_2"
+                ]
+            ],
+
+            "maxSharpness": [50,70,50,50,70,10]
+        },
+        "41f": {
+            "rarity": 7,
+            "endlineTag": "hr",
+
+            "name": "Rampage Gunlance S",
+            "attack": 210,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                [
+                    "attack_boost_4",
+                    "elemental_boost_3",
+                    "affinity_boost_4",
+                    "defense_boost_3",
+                    "sharpness_type_1",
+                    "sharpness_type_2",
+                    "sharpness_type_3",
+                    "sharpness_type_4"
+                ],
+                [
+                    "non_elemental_boost",
+                    "fire_4",
+                    "water_4",
+                    "thunder_4",
+                    "ice_4",
+                    "dragon_4",
+                    "poison_3",
+                    "paralysis_3",
+                    "sleep_3",
+                    "blast_3"
+                ],
+                [
+                    "attack_surge",
+                    "elemental_surge",
+                    "affinity_surge",
+                    "shelling_normal_3",
+                    "shelling_long_3",
+                    "shelling_wide_3"
+                ]
+            ],
+
+            "maxSharpness": [50,70,30,60,70,20]
         }
     }
 }
-
