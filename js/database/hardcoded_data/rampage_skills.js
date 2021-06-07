@@ -48,6 +48,19 @@ function generateEle(name, shortIdPrefix) {
             shortId: shortIdPrefix + "x4",
             name: name + " IV",
         }],
+
+        ["secondary_" + idPrefix + "_1", {
+            shortId: shortIdPrefix + "s1",
+            name: "Secondary " + name + " I",
+        }],
+        ["secondary_" + idPrefix + "_2", {
+            shortId: shortIdPrefix + "s2",
+            name: "Secondary " + name + " II",
+        }],
+        ["secondary_" + idPrefix + "_3", {
+            shortId: shortIdPrefix + "s3",
+            name: "Secondary " + name + " III",
+        }],
     ];
 }
 
@@ -262,20 +275,24 @@ const hardcodedRampageSkills = [
         shortId: "30",
         name: "Dulling Strike",
     }],
-    ["lasting_arc_shot", {
+    ["hellion_mode", {
         shortId: "40",
+        name: "Hellion Mode",
+    }],
+    ["lasting_arc_shot", {
+        shortId: "50",
         name: "Lasting Arc Shot",
     }],
     ["master_rider", {
-        shortId: "50",
+        shortId: "60",
         name: "Master Rider",
     }],
     ["non_elemental_boost", {
-        shortId: "60",
+        shortId: "70",
         name: "Non-elemental Boost",
     }],
     ["silkbind_boost", {
-        shortId: "70",
+        shortId: "80",
         name: "Silkbind Boost",
     }],
     ["spiribird_doubled", {
