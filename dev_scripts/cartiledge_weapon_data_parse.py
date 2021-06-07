@@ -38,29 +38,33 @@ from collections import defaultdict
 
 from cartiledge_weapon_data_hardcoded_support.greatsword import HARDCODED_GS_SPEC, HARDCODED_RAMP_SKILLS_GS
 from cartiledge_weapon_data_hardcoded_support.longsword import HARDCODED_LS_SPEC, HARDCODED_RAMP_SKILLS_LS
+from cartiledge_weapon_data_hardcoded_support.swordandshield import HARDCODED_SNS_SPEC, HARDCODED_RAMP_SKILLS_SNS
 from cartiledge_weapon_data_hardcoded_support.dualblades import HARDCODED_DB_SPEC, HARDCODED_RAMP_SKILLS_DB
 
 DATABASE_DIR = "../data/"
 SRC_DIR = "./cartiledge_weapon_data/"
 
 FILE_MAP = [
-    ("greatsword", "./MHR v3.0 - Weapon Statuses - GS.csv"),
-    ("longsword" , "./MHR v3.0 - Weapon Statuses - LS.csv"),
-    ("dualblades", "./MHR v3.0 - Weapon Statuses - DB.csv"),
+    ("greatsword"    , "./MHR v3.0 - Weapon Statuses - GS.csv" ),
+    ("longsword"     , "./MHR v3.0 - Weapon Statuses - LS.csv" ),
+    ("swordandshield", "./MHR v3.0 - Weapon Statuses - SnS.csv"),
+    ("dualblades"    , "./MHR v3.0 - Weapon Statuses - DB.csv" ),
 ]
 
 # Specification to build the data
 # {category: [(tree name, [(name, id, rarity), ...]), ...]}
 DATA_SPEC_HARDCODED = {
-    "greatsword": HARDCODED_GS_SPEC,
-    "longsword": HARDCODED_LS_SPEC,
-    "dualblades": HARDCODED_DB_SPEC,
+    "greatsword"    : HARDCODED_GS_SPEC,
+    "longsword"     : HARDCODED_LS_SPEC,
+    "swordandshield": HARDCODED_SNS_SPEC,
+    "dualblades"    : HARDCODED_DB_SPEC,
 }
 
 HARDCODED_RAMP_SKILLS = {
-    "greatsword": HARDCODED_RAMP_SKILLS_GS,
-    "longsword": HARDCODED_RAMP_SKILLS_LS,
-    "dualblades": HARDCODED_RAMP_SKILLS_DB,
+    "greatsword"    : HARDCODED_RAMP_SKILLS_GS,
+    "longsword"     : HARDCODED_RAMP_SKILLS_LS,
+    "swordandshield": HARDCODED_RAMP_SKILLS_SNS,
+    "dualblades"    : HARDCODED_RAMP_SKILLS_DB,
 }
 
 module_dir_abs = os.path.dirname(os.path.abspath(__file__))
