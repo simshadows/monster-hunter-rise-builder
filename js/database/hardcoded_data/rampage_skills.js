@@ -183,28 +183,6 @@ const hardcodedRampageSkills = [
         name: "Defense Grinder II",
     }],
 
-    ["attack_surge", {
-        shortId: "atsu",
-        name: "Attack Surge",
-    }],
-    ["elemental_surge", {
-        shortId: "elsu",
-        name: "Elemental Surge",
-    }],
-    ["affinity_surge", {
-        shortId: "afsu",
-        name: "Affinity Surge",
-    }],
-
-    ["anti_aerial_species", {
-        shortId: "anae",
-        name: "Anti-Aerial Species",
-    }],
-    ["anti_aquatic_species", {
-        shortId: "anaq",
-        name: "Anti-Aquatic Species",
-    }],
-
     ["shelling_normal_1", {
         shortId: "shn1",
         name: "Shelling: Normal I",
@@ -240,6 +218,61 @@ const hardcodedRampageSkills = [
     ["shelling_wide_3", {
         shortId: "shw3",
         name: "Shelling: Wide III",
+    }],
+
+    ["attack_melody_1", {
+        shortId: "mea1",
+        name: "Attack Melody I",
+    }],
+    ["attack_melody_2", {
+        shortId: "mea2",
+        name: "Attack Melody II",
+    }],
+    ["defensive_melody_1", {
+        shortId: "med1",
+        name: "Defensive Melody I",
+    }],
+    ["defensive_melody_2", {
+        shortId: "med2",
+        name: "Defensive Melody II",
+    }],
+    ["healing_melody_1", {
+        shortId: "meh1",
+        name: "Healing Melody I",
+    }],
+    ["healing_melody_2", {
+        shortId: "meh2",
+        name: "Healing Melody II",
+    }],
+    ["resilient_melody_1", {
+        shortId: "mer1",
+        name: "Resilient Melody I",
+    }],
+    ["resilient_melody_2", {
+        shortId: "mer2",
+        name: "Resilient Melody II",
+    }],
+
+    ["attack_surge", {
+        shortId: "atsu",
+        name: "Attack Surge",
+    }],
+    ["elemental_surge", {
+        shortId: "elsu",
+        name: "Elemental Surge",
+    }],
+    ["affinity_surge", {
+        shortId: "afsu",
+        name: "Affinity Surge",
+    }],
+
+    ["anti_aerial_species", {
+        shortId: "anae",
+        name: "Anti-Aerial Species",
+    }],
+    ["anti_aquatic_species", {
+        shortId: "anaq",
+        name: "Anti-Aquatic Species",
     }],
 
     ["element_exploit", {
@@ -324,20 +357,24 @@ const hardcodedRampageSkills = [
         shortId: "60",
         name: "Master Rider",
     }],
-    ["non_elemental_boost", {
+    ["maximum_volume", {
         shortId: "70",
+        name: "Maximum Volume",
+    }],
+    ["non_elemental_boost", {
+        shortId: "80",
         name: "Non-elemental Boost",
     }],
     ["silkbind_boost", {
-        shortId: "80",
+        shortId: "90",
         name: "Silkbind Boost",
     }],
     ["spiribird_doubled", {
-        shortId: "90",
+        shortId: "100",
         name: "Spiribird Doubled",
     }],
     ["wyrmstake_boost", {
-        shortId: "100",
+        shortId: "110",
         name: "Wyrmstake Boost",
     }],
 

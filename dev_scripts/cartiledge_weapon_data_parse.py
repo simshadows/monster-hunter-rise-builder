@@ -17,9 +17,12 @@ I'll just rely on CSV exports.)
 !!!!!!!!!!!!!!!!!!!!!!
 
 There are some duplicate weapon names. These aren't mistakes and will just need to be fixed in the final output manually.
-
 All known duplicates:
     Dual Blades: Flammenschild
+
+Special characters (like accents) aren't handled well right now, which will also need to be adjusted manually.
+Known cases:
+    Hunting Horn: Teostra's Orph\u00e9e
 
 Also, the data set is limited in not having info in specific rampage skill slots, so the script will just output a single
 big list, which will then be separated out manually. We're just going to have to fix those up manually.
@@ -43,6 +46,7 @@ from cartiledge_weapon_data_hardcoded_support.dualblades import HARDCODED_DB_SPE
 from cartiledge_weapon_data_hardcoded_support.lance import HARDCODED_L_SPEC, HARDCODED_RAMP_SKILLS_L
 from cartiledge_weapon_data_hardcoded_support.gunlance import HARDCODED_GL_SPEC, HARDCODED_RAMP_SKILLS_GL
 from cartiledge_weapon_data_hardcoded_support.hammer import HARDCODED_H_SPEC, HARDCODED_RAMP_SKILLS_H
+from cartiledge_weapon_data_hardcoded_support.huntinghorn import HARDCODED_HH_SPEC, HARDCODED_RAMP_SKILLS_HH
 
 DATABASE_DIR = "../data/"
 SRC_DIR = "./cartiledge_weapon_data/"
@@ -55,6 +59,7 @@ FILE_MAP = [
     ("lance"         , "./MHR v3.0 - Weapon Statuses - Lance.csv" ),
     ("gunlance"      , "./MHR v3.0 - Weapon Statuses - GL.csv"    ),
     ("hammer"        , "./MHR v3.0 - Weapon Statuses - Hammer.csv"),
+    ("huntinghorn"   , "./MHR v3.0 - Weapon Statuses - HH.csv"    ),
 ]
 
 # Specification to build the data
@@ -67,6 +72,7 @@ DATA_SPEC_HARDCODED = {
     "lance"         : HARDCODED_L_SPEC,
     "gunlance"      : HARDCODED_GL_SPEC,
     "hammer"        : HARDCODED_H_SPEC,
+    "huntinghorn"   : HARDCODED_HH_SPEC,
 }
 
 HARDCODED_RAMP_SKILLS = {
@@ -77,6 +83,7 @@ HARDCODED_RAMP_SKILLS = {
     "lance"         : HARDCODED_RAMP_SKILLS_L,
     "gunlance"      : HARDCODED_RAMP_SKILLS_GL,
     "hammer"        : HARDCODED_RAMP_SKILLS_H,
+    "huntinghorn"   : HARDCODED_RAMP_SKILLS_HH,
 }
 
 module_dir_abs = os.path.dirname(os.path.abspath(__file__))
