@@ -1,5 +1,1746 @@
 {
+    "Kamura Tree": {
+        "1a": {
+            "rarity": 1,
+            "endlineTag": "",
+
+            "name": "Kamura Hammer I",
+            "attack": 50,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_1", "affinity_boost_2", "defense_boost_1"]
+            ],
+
+            "maxSharpness": [50,90,100,10,0,0]
+        },
+        "1b": {
+            "rarity": 1,
+            "endlineTag": "",
+
+            "name": "Kamura Hammer II",
+            "attack": 60,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_1", "affinity_boost_2", "defense_boost_1"]
+            ],
+
+            "maxSharpness": [60,70,110,10,0,0]
+        },
+        "1c": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Kamura Hammer III",
+            "attack": 90,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_1", "affinity_boost_2", "defense_boost_2"]
+            ],
+
+            "maxSharpness": [70,70,90,70,0,0]
+        },
+        "1d": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Kamura Hammer IV",
+            "attack": 140,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "affinity_boost_2", "defense_boost_2"]
+            ],
+
+            "maxSharpness": [60,80,80,20,60,0]
+        },
+        "1e": {
+            "rarity": 4,
+            "endlineTag": "",
+
+            "name": "Kamura Hammer V",
+            "attack": 150,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["affinity_boost_3", "defense_boost_2", "master_rider"]
+            ],
+
+            "maxSharpness": [60,80,90,40,70,10]
+        },
+        "1f": {
+            "rarity": 5,
+            "endlineTag": "hr",
+
+            "name": "Kamura Ninja Hammer",
+            "attack": 190,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2,1],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["affinity_boost_4", "defense_boost_2", "master_rider"]
+            ],
+
+            "maxSharpness": [40,90,60,60,80,20]
+        }
+    },
+    "Mizutsune Tree": {
+        "2a": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Purity Hammer I",
+            "attack": 120,
+            "affinity": 15,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"water": 21},
+
+            "rampSkills": [
+                ["attack_boost_2", "affinity_boost_2", "water_boost_1"]
+            ],
+
+            "maxSharpness": [80,50,80,60,30,0]
+        },
+        "2b": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Purity Hammer II",
+            "attack": 170,
+            "affinity": 15,
+            "defense": 0,
+            "decoSlots": [1],
+            "eleStat": {"water": 26},
+
+            "rampSkills": [
+                ["attack_boost_2", "affinity_boost_2", "water_boost_2"]
+            ],
+
+            "maxSharpness": [110,100,80,30,60,20]
+        },
+        "2c": {
+            "rarity": 6,
+            "endlineTag": "hr",
+
+            "name": "Sinter Hammer",
+            "attack": 200,
+            "affinity": 20,
+            "defense": 0,
+            "decoSlots": [1],
+            "eleStat": {"water": 31},
+
+            "rampSkills": [
+                ["attack_boost_3", "affinity_boost_2", "water_boost_2"]
+            ],
+
+            "maxSharpness": [100,70,90,40,50,50]
+        }
+    },
+    "Volvidon Tree": {
+        "3a": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Binding Bludgeon I",
+            "attack": 90,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"paralysis": 23},
+
+            "rampSkills": [
+                ["attack_boost_2", "defense_boost_2", "dulling_strike"]
+            ],
+
+            "maxSharpness": [140,40,40,80,0,0]
+        },
+        "3b": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Binding Bludgeon II",
+            "attack": 160,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [1],
+            "eleStat": {"paralysis": 27},
+
+            "rampSkills": [
+                ["attack_boost_3", "defense_boost_2", "dulling_strike"]
+            ],
+
+            "maxSharpness": [150,40,40,70,50,0]
+        },
+        "3c": {
+            "rarity": 5,
+            "endlineTag": "hr",
+
+            "name": "Armored Gogue",
+            "attack": 170,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [1],
+            "eleStat": {"paralysis": 30},
+
+            "rampSkills": [
+                ["attack_boost_4", "defense_boost_3", "dulling_strike"]
+            ],
+
+            "maxSharpness": [160,50,50,70,70,0]
+        }
+    },
+    "Almudron Tree": {
+        "4a": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Almudron Hammer I",
+            "attack": 130,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"water": 40},
+
+            "rampSkills": [
+                ["attack_boost_2", "water_boost_1", "element_exploit"]
+            ],
+
+            "maxSharpness": [50,50,100,80,20,0]
+        },
+        "4b": {
+            "rarity": 4,
+            "endlineTag": "",
+
+            "name": "Almudron Hammer II",
+            "attack": 140,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2,1],
+            "eleStat": {"water": 48},
+
+            "rampSkills": [
+                ["attack_boost_2", "water_boost_1", "element_exploit"]
+            ],
+
+            "maxSharpness": [60,60,100,60,70,0]
+        },
+        "4c": {
+            "rarity": 6,
+            "endlineTag": "hr",
+
+            "name": "Doom Bringer Hammer",
+            "attack": 190,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2,1],
+            "eleStat": {"water": 51},
+
+            "rampSkills": [
+                ["attack_boost_3", "water_boost_2", "element_exploit"]
+            ],
+
+            "maxSharpness": [60,60,130,60,90,0]
+        }
+    },
+    "Bishaten Tree": {
+        "5a": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Five-Pronged Hammer I",
+            "attack": 120,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_1", "anti_aerial_species", "silkbind_boost"]
+            ],
+
+            "maxSharpness": [30,120,50,90,10,0]
+        },
+        "5b": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Five-Pronged Hammer II",
+            "attack": 180,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [3],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "anti_aerial_species", "silkbind_boost"]
+            ],
+
+            "maxSharpness": [30,140,60,50,30,40]
+        },
+        "5c": {
+            "rarity": 6,
+            "endlineTag": "hr",
+
+            "name": "Great Pronged Hammer",
+            "attack": 190,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [3],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "anti_aerial_species", "silkbind_boost"]
+            ],
+
+            "maxSharpness": [30,160,80,50,30,50]
+        }
+    },
+    "Wroggi Tree": {
+        "6a": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Wroggi Hammer I",
+            "attack": 90,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"poison": 27},
+
+            "rampSkills": [
+                ["affinity_boost_1", "poison_boost_1", "buddy_rally"]
+            ],
+
+            "maxSharpness": [90,50,40,70,0,0]
+        },
+        "6b": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Wroggi Hammer II",
+            "attack": 130,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"poison": 31},
+
+            "rampSkills": [
+                ["affinity_boost_2", "poison_boost_1", "buddy_rally"]
+            ],
+
+            "maxSharpness": [90,40,90,70,10,0]
+        },
+        "6c": {
+            "rarity": 4,
+            "endlineTag": "hr",
+
+            "name": "Dirty Hammer",
+            "attack": 140,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [1,1,1],
+            "eleStat": {"poison": 36},
+
+            "rampSkills": [
+                ["affinity_boost_2", "poison_boost_2", "buddy_rally"]
+            ],
+
+            "maxSharpness": [100,50,100,70,30,0]
+        }
+    },
+    "Fire Tree": {
+        "7a": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Gun Hammer I",
+            "attack": 90,
+            "affinity": 0,
+            "defense": 4,
+            "decoSlots": [],
+            "eleStat": {"fire": 37},
+
+            "rampSkills": [
+                ["attack_boost_2", "fireblight_exploit", "small_monster_exploit"]
+            ],
+
+            "maxSharpness": [80,50,50,70,0,0]
+        },
+        "7b": {
+            "rarity": 4,
+            "endlineTag": "",
+
+            "name": "Gun Hammer II",
+            "attack": 150,
+            "affinity": 0,
+            "defense": 8,
+            "decoSlots": [1,1,1],
+            "eleStat": {"fire": 45},
+
+            "rampSkills": [
+                ["attack_boost_3", "fireblight_exploit", "small_monster_exploit"]
+            ],
+
+            "maxSharpness": [90,90,80,50,40,0]
+        },
+        "7c": {
+            "rarity": 5,
+            "endlineTag": "hr",
+
+            "name": "Deadeye Revolver",
+            "attack": 160,
+            "affinity": 0,
+            "defense": 10,
+            "decoSlots": [1,1,1],
+            "eleStat": {"fire": 50},
+
+            "rampSkills": [
+                ["attack_boost_4", "fireblight_exploit", "small_monster_exploit"]
+            ],
+
+            "maxSharpness": [100,100,30,50,50,20]
+        }
+    },
+    "Ore Tree": {
+        "8a": {
+            "rarity": 1,
+            "endlineTag": "",
+
+            "name": "Iron Hammer I",
+            "attack": 80,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_1", "affinity_boost_1", "defense_boost_2"]
+            ],
+
+            "maxSharpness": [90,60,100,0,0,0]
+        },
+        "8b": {
+            "rarity": 1,
+            "endlineTag": "",
+
+            "name": "Iron Devil",
+            "attack": 100,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_1", "affinity_boost_1", "defense_boost_2"]
+            ],
+
+            "maxSharpness": [70,60,120,0,0,0]
+        },
+        "8c": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "War Hammer I",
+            "attack": 110,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "affinity_boost_1", "defense_boost_2"]
+            ],
+
+            "maxSharpness": [60,60,70,60,0,0]
+        },
+        "8d": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "War Mace",
+            "attack": 140,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "defense_boost_2", "silkbind_boost"]
+            ],
+
+            "maxSharpness": [90,70,40,80,20,0]
+        },
+        "8e": {
+            "rarity": 4,
+            "endlineTag": "",
+
+            "name": "War Stamp I",
+            "attack": 160,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [1],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "defense_boost_3", "silkbind_boost"]
+            ],
+
+            "maxSharpness": [70,80,80,50,50,20]
+        },
+        "8f": {
+            "rarity": 5,
+            "endlineTag": "hr",
+
+            "name": "War Basher",
+            "attack": 180,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [1],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_3", "defense_boost_3", "silkbind_boost"]
+            ],
+
+            "maxSharpness": [50,50,110,50,60,30]
+        }
+    },
+    "Thunder Tree": {
+        "9a": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Great Nova I",
+            "attack": 160,
+            "affinity": 0,
+            "defense": 5,
+            "decoSlots": [1,1,1],
+            "eleStat": {"thunder": 35},
+
+            "rampSkills": [
+                ["defense_boost_3", "wyvern_exploit", "element_exploit"]
+            ],
+
+            "maxSharpness": [100,40,90,60,60,0]
+        },
+        "9b": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Great Nova II",
+            "attack": 180,
+            "affinity": 0,
+            "defense": 5,
+            "decoSlots": [1,1,1],
+            "eleStat": {"thunder": 37},
+
+            "rampSkills": [
+                ["defense_boost_3", "wyvern_exploit", "element_exploit"]
+            ],
+
+            "maxSharpness": [100,50,120,60,60,10]
+        },
+        "9c": {
+            "rarity": 6,
+            "endlineTag": "hr",
+
+            "name": "Super Nova",
+            "attack": 200,
+            "affinity": 0,
+            "defense": 5,
+            "decoSlots": [1,1,1],
+            "eleStat": {"thunder": 40},
+
+            "rampSkills": [
+                ["defense_boost_3", "wyvern_exploit", "element_exploit"]
+            ],
+
+            "maxSharpness": [100,60,90,70,50,30]
+        }
+    },
+    "Tigrex Tree": {
+        "10a": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Striped Striker I",
+            "attack": 150,
+            "affinity": -20,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "affinity_boost_1", "brutal_strike"]
+            ],
+
+            "maxSharpness": [70,30,100,90,60,0]
+        },
+        "10b": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Striped Striker II",
+            "attack": 210,
+            "affinity": -20,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "affinity_boost_2", "brutal_strike"]
+            ],
+
+            "maxSharpness": [50,30,130,100,70,20]
+        },
+        "10c": {
+            "rarity": 6,
+            "endlineTag": "hr",
+
+            "name": "Tigrex Hammer",
+            "attack": 220,
+            "affinity": -20,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_3", "affinity_boost_2", "brutal_strike"]
+            ],
+
+            "maxSharpness": [50,40,120,120,50,20]
+        }
+    },
+    "Anjanath Tree": {
+        "11a": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Flaming Fury I",
+            "attack": 140,
+            "affinity": -20,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"fire": 17},
+
+            "rampSkills": [
+                ["affinity_boost_1", "fire_boost_1", "brutal_strike"]
+            ],
+
+            "maxSharpness": [120,70,30,80,0,0]
+        },
+        "11b": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Flaming Fury II",
+            "attack": 210,
+            "affinity": -20,
+            "defense": 0,
+            "decoSlots": [2,1],
+            "eleStat": {"fire": 20},
+
+            "rampSkills": [
+                ["affinity_boost_1", "fire_boost_2", "brutal_strike"]
+            ],
+
+            "maxSharpness": [120,100,30,40,60,0]
+        },
+        "11c": {
+            "rarity": 6,
+            "endlineTag": "hr",
+
+            "name": "Phoenix Fury",
+            "attack": 230,
+            "affinity": -20,
+            "defense": 0,
+            "decoSlots": [2,1],
+            "eleStat": {"fire": 22},
+
+            "rampSkills": [
+                ["affinity_boost_2", "fire_boost_3", "brutal_strike"]
+            ],
+
+            "maxSharpness": [130,120,30,50,70,0]
+        }
+    },
+    "Barioth Tree": {
+        "12a": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Glacial Bash I",
+            "attack": 90,
+            "affinity": 30,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"ice": 21},
+
+            "rampSkills": [
+                ["attack_boost_2", "affinity_boost_2", "iceblight_exploit"]
+            ],
+
+            "maxSharpness": [50,60,70,100,20,0]
+        },
+        "12b": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Glacial Bash II",
+            "attack": 100,
+            "affinity": 30,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"ice": 23},
+
+            "rampSkills": [
+                ["attack_boost_3", "affinity_boost_2", "iceblight_exploit"]
+            ],
+
+            "maxSharpness": [50,70,80,80,60,10]
+        },
+        "12c": {
+            "rarity": 5,
+            "endlineTag": "hr",
+
+            "name": "Glacial Crunch",
+            "attack": 160,
+            "affinity": 35,
+            "defense": 0,
+            "decoSlots": [1,1],
+            "eleStat": {"ice": 27},
+
+            "rampSkills": [
+                ["attack_boost_4", "affinity_boost_2", "iceblight_exploit"]
+            ],
+
+            "maxSharpness": [50,70,80,100,60,40]
+        }
+    },
+    "Kulu-Ya-Ku Tree": {
+        "13a": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Kulu Bludgeon I",
+            "attack": 100,
+            "affinity": 10,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["affinity_boost_2", "small_monster_exploit", "spiribird_doubled"]
+            ],
+
+            "maxSharpness": [70,50,40,90,0,0]
+        },
+        "13b": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Kulu Bludgeon II",
+            "attack": 110,
+            "affinity": 10,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["affinity_boost_2", "small_monster_exploit", "spiribird_doubled"]
+            ],
+
+            "maxSharpness": [80,70,50,90,10,0]
+        },
+        "13c": {
+            "rarity": 4,
+            "endlineTag": "hr",
+
+            "name": "Kulu Crusher",
+            "attack": 160,
+            "affinity": 20,
+            "defense": 0,
+            "decoSlots": [1,1,1],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["affinity_boost_3", "small_monster_exploit", "spiribird_doubled"]
+            ],
+
+            "maxSharpness": [80,80,70,60,60,0]
+        }
+    },
+    "Paralysis Tree": {
+        "14a": {
+            "rarity": 4,
+            "endlineTag": "",
+
+            "name": "Devil Masher I",
+            "attack": 160,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [1,1],
+            "eleStat": {"paralysis": 10},
+
+            "rampSkills": [
+                ["affinity_boost_3", "paralysis_boost_1", "anti_aquatic_species"]
+            ],
+
+            "maxSharpness": [30,30,200,70,20,0]
+        },
+        "14b": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Devil Masher II",
+            "attack": 180,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [1,1],
+            "eleStat": {"paralysis": 14},
+
+            "rampSkills": [
+                ["affinity_boost_3", "paralysis_boost_2", "anti_aquatic_species"]
+            ],
+
+            "maxSharpness": [20,20,200,70,40,0]
+        },
+        "14c": {
+            "rarity": 6,
+            "endlineTag": "hr",
+
+            "name": "Iron Devil's Soul",
+            "attack": 220,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [1,1],
+            "eleStat": {"paralysis": 17},
+
+            "rampSkills": [
+                ["affinity_boost_4", "paralysis_boost_3", "anti_aquatic_species"]
+            ],
+
+            "maxSharpness": [30,30,200,90,50,0]
+        }
+    },
+    "Arzuros Tree": {
+        "15a": {
+            "rarity": 1,
+            "endlineTag": "",
+
+            "name": "Unbearable Hammer I",
+            "attack": 120,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_1", "defense_boost_2", "small_monster_exploit"]
+            ],
+
+            "maxSharpness": [140,30,60,20,0,0]
+        },
+        "15b": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Unbearable Hammer II",
+            "attack": 130,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "defense_boost_2", "small_monster_exploit"]
+            ],
+
+            "maxSharpness": [110,40,50,50,0,0]
+        },
+        "15c": {
+            "rarity": 4,
+            "endlineTag": "hr",
+
+            "name": "Barbearic Hammer",
+            "attack": 180,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_3", "defense_boost_2", "small_monster_exploit"]
+            ],
+
+            "maxSharpness": [130,30,80,60,50,0]
+        }
+    },
+    "Somnacanth Tree": {
+        "16a": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Frilled Blow I",
+            "attack": 90,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"sleep": 18},
+
+            "rampSkills": [
+                ["attack_boost_2", "sleep_boost_1", "dulling_strike"]
+            ],
+
+            "maxSharpness": [50,50,120,80,0,0]
+        },
+        "16b": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Frilled Blow II",
+            "attack": 120,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"sleep": 21},
+
+            "rampSkills": [
+                ["attack_boost_2", "sleep_boost_1", "dulling_strike"]
+            ],
+
+            "maxSharpness": [40,40,120,80,20,0]
+        },
+        "16c": {
+            "rarity": 5,
+            "endlineTag": "hr",
+
+            "name": "Illusory Frilled Blow",
+            "attack": 180,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [1,1],
+            "eleStat": {"sleep": 26},
+
+            "rampSkills": [
+                ["attack_boost_3", "sleep_boost_1", "dulling_strike"]
+            ],
+
+            "maxSharpness": [50,90,120,100,40,0]
+        }
+    },
+    "Khezu Tree": {
+        "17a": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Bag o' Horrors I",
+            "attack": 80,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"thunder": 42},
+
+            "rampSkills": [
+                ["attack_boost_2", "thunder_boost_1", "thunderblight_exploit"]
+            ],
+
+            "maxSharpness": [70,60,40,80,0,0]
+        },
+        "17b": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Bag o' Horrors II",
+            "attack": 90,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"thunder": 43},
+
+            "rampSkills": [
+                ["attack_boost_2", "thunder_boost_1", "thunderblight_exploit"]
+            ],
+
+            "maxSharpness": [100,60,50,80,10,0]
+        },
+        "17c": {
+            "rarity": 4,
+            "endlineTag": "hr",
+
+            "name": "Bag o' Thunder",
+            "attack": 140,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2],
+            "eleStat": {"thunder": 46},
+
+            "rampSkills": [
+                ["attack_boost_4", "thunder_boost_2", "thunderblight_exploit"]
+            ],
+
+            "maxSharpness": [100,40,70,70,50,20]
+        }
+    },
+    "Ice Tree": {
+        "18a": {
+            "rarity": 1,
+            "endlineTag": "",
+
+            "name": "Frozen Core I",
+            "attack": 90,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"ice": 20},
+
+            "rampSkills": [
+                ["defense_boost_2", "ice_boost_1", "buddy_rally"]
+            ],
+
+            "maxSharpness": [90,50,90,20,0,0]
+        },
+        "18b": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Frozen Core II",
+            "attack": 100,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"ice": 22},
+
+            "rampSkills": [
+                ["defense_boost_2", "ice_boost_1", "buddy_rally"]
+            ],
+
+            "maxSharpness": [70,50,60,70,0,0]
+        },
+        "18c": {
+            "rarity": 4,
+            "endlineTag": "hr",
+
+            "name": "Cocytus",
+            "attack": 150,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2,1,1],
+            "eleStat": {"ice": 32},
+
+            "rampSkills": [
+                ["defense_boost_3", "element_exploit", "buddy_rally"]
+            ],
+
+            "maxSharpness": [100,60,80,40,60,10]
+        }
+    },
+    "Bone Tree": {
+        "19a": {
+            "rarity": 1,
+            "endlineTag": "",
+
+            "name": "Bone Hammer I",
+            "attack": 90,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "affinity_boost_1", "defense_boost_1"]
+            ],
+
+            "maxSharpness": [70,90,90,0,0,0]
+        },
+        "19b": {
+            "rarity": 1,
+            "endlineTag": "",
+
+            "name": "Bone Hammer II",
+            "attack": 110,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "affinity_boost_1", "defense_boost_1"]
+            ],
+
+            "maxSharpness": [80,70,100,0,0,0]
+        },
+        "19c": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Hard Bone Hammer",
+            "attack": 130,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "affinity_boost_2", "defense_boost_1"]
+            ],
+
+            "maxSharpness": [90,90,110,10,0,0]
+        },
+        "19d": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Bone Bludgeon I",
+            "attack": 150,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "affinity_boost_2", "dulling_strike"]
+            ],
+
+            "maxSharpness": [100,70,80,50,0,0]
+        },
+        "19e": {
+            "rarity": 4,
+            "endlineTag": "",
+
+            "name": "Bone Bludgeon II",
+            "attack": 170,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_3", "affinity_boost_2", "dulling_strike"]
+            ],
+
+            "maxSharpness": [80,70,110,80,10,0]
+        },
+        "19f": {
+            "rarity": 5,
+            "endlineTag": "hr",
+
+            "name": "Heavy Bone Bludgeon",
+            "attack": 190,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_4", "affinity_boost_2", "dulling_strike"]
+            ],
+
+            "maxSharpness": [80,70,80,100,20,0]
+        }
+    },
+    "Diablos Tree": {
+        "20a": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Diablos Hammer I",
+            "attack": 220,
+            "affinity": -25,
+            "defense": 10,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["affinity_boost_2", "defense_boost_1", "brutal_strike"]
+            ],
+
+            "maxSharpness": [50,160,30,100,60,0]
+        },
+        "20b": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Diablos Hammer II",
+            "attack": 230,
+            "affinity": -25,
+            "defense": 10,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["affinity_boost_2", "defense_boost_2", "brutal_strike"]
+            ],
+
+            "maxSharpness": [50,160,20,100,70,0]
+        },
+        "20c": {
+            "rarity": 7,
+            "endlineTag": "hr",
+
+            "name": "Diablos Tail",
+            "attack": 240,
+            "affinity": -25,
+            "defense": 15,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["affinity_boost_3", "defense_boost_2", "brutal_strike"]
+            ],
+
+            "maxSharpness": [50,160,10,100,70,10]
+        }
+    },
+    "Bone Tree 2": {
+        "21a": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Cyclo-Hammer I",
+            "attack": 160,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["defense_boost_2", "master_rider", "spiribird_doubled"]
+            ],
+
+            "maxSharpness": [80,70,50,100,0,0]
+        },
+        "21b": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Cyclo-Hammer II",
+            "attack": 220,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["defense_boost_3", "master_rider", "spiribird_doubled"]
+            ],
+
+            "maxSharpness": [80,70,50,130,20,0]
+        },
+        "21c": {
+            "rarity": 6,
+            "endlineTag": "hr",
+
+            "name": "Atlas Hammer",
+            "attack": 230,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [3],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["defense_boost_3", "master_rider", "spiribird_doubled"]
+            ],
+
+            "maxSharpness": [80,70,50,160,40,0]
+        }
+    },
+    "Pukei-Pukei Tree": {
+        "22a": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Pukei Hammer I",
+            "attack": 160,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [1,1],
+            "eleStat": {"poison": 40},
+
+            "rampSkills": [
+                ["attack_boost_3", "defense_boost_2", "poison_boost_2"]
+            ],
+
+            "maxSharpness": [60,70,90,100,30,0]
+        },
+        "22b": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Pukei Hammer II",
+            "attack": 180,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2,1],
+            "eleStat": {"poison": 47},
+
+            "rampSkills": [
+                ["attack_boost_3", "defense_boost_2", "poison_boost_2"]
+            ],
+
+            "maxSharpness": [80,70,90,120,40,0]
+        },
+        "22c": {
+            "rarity": 6,
+            "endlineTag": "hr",
+
+            "name": "Datura Club",
+            "attack": 190,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2,1],
+            "eleStat": {"poison": 54},
+
+            "rampSkills": [
+                ["attack_boost_4", "defense_boost_3", "poison_boost_2"]
+            ],
+
+            "maxSharpness": [80,120,40,70,90,0]
+        }
+    },
+    "Basarios Tree": {
+        "23a": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Basarios Blow I",
+            "attack": 120,
+            "affinity": 0,
+            "defense": 15,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["defense_boost_1", "attack_boost_2", "dulling_strike"]
+            ],
+
+            "maxSharpness": [40,140,50,70,0,0]
+        },
+        "23b": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Basarios Blow II",
+            "attack": 160,
+            "affinity": 0,
+            "defense": 15,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["defense_boost_1", "attack_boost_3", "dulling_strike"]
+            ],
+
+            "maxSharpness": [40,130,50,70,10,0]
+        },
+        "23c": {
+            "rarity": 5,
+            "endlineTag": "hr",
+
+            "name": "Basarios Bash",
+            "attack": 190,
+            "affinity": 0,
+            "defense": 20,
+            "decoSlots": [1],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["defense_boost_2", "attack_boost_3", "dulling_strike"]
+            ],
+
+            "maxSharpness": [40,130,70,50,50,10]
+        }
+    },
+    "Rathalos Tree": {
+        "24a": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Red Bludgeon I",
+            "attack": 190,
+            "affinity": 5,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"fire": 27},
+
+            "rampSkills": [
+                ["attack_boost_2", "fire_boost_1", "element_exploit"]
+            ],
+
+            "maxSharpness": [240,10,10,70,70,0]
+        },
+        "24b": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Red Bludgeon II",
+            "attack": 200,
+            "affinity": 5,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"fire": 31},
+
+            "rampSkills": [
+                ["attack_boost_2", "fire_boost_1", "element_exploit"]
+            ],
+
+            "maxSharpness": [230,10,10,70,70,10]
+        },
+        "24c": {
+            "rarity": 6,
+            "endlineTag": "hr",
+
+            "name": "Huracan Hammer",
+            "attack": 210,
+            "affinity": 5,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"fire": 34},
+
+            "rampSkills": [
+                ["attack_boost_3", "fire_boost_1", "element_exploit"]
+            ],
+
+            "maxSharpness": [220,10,10,70,70,20]
+        }
+    },
+    "Goss Harag Tree": {
+        "25a": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Yeti Hammer I",
+            "attack": 170,
+            "affinity": -15,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"ice": 13},
+
+            "rampSkills": [
+                ["affinity_boost_1", "ice_boost_1", "brutal_strike"]
+            ],
+
+            "maxSharpness": [100,30,90,70,10,0]
+        },
+        "25b": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Yeti Hammer II",
+            "attack": 190,
+            "affinity": -15,
+            "defense": 0,
+            "decoSlots": [2],
+            "eleStat": {"ice": 15},
+
+            "rampSkills": [
+                ["affinity_boost_1", "ice_boost_2", "brutal_strike"]
+            ],
+
+            "maxSharpness": [100,30,110,40,70,0]
+        },
+        "25c": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Yeti Hammer III",
+            "attack": 220,
+            "affinity": -15,
+            "defense": 0,
+            "decoSlots": [2],
+            "eleStat": {"ice": 17},
+
+            "rampSkills": [
+                ["affinity_boost_1", "ice_boost_2", "brutal_strike"]
+            ],
+
+            "maxSharpness": [100,30,100,40,80,0]
+        },
+        "25d": {
+            "rarity": 6,
+            "endlineTag": "hr",
+
+            "name": "Abominable Hammer",
+            "attack": 230,
+            "affinity": -15,
+            "defense": 0,
+            "decoSlots": [2],
+            "eleStat": {"ice": 20},
+
+            "rampSkills": [
+                ["affinity_boost_1", "ice_boost_3", "brutal_strike"]
+            ],
+
+            "maxSharpness": [100,30,90,50,70,10]
+        }
+    },
+    "Zinogre Tree": {
+        "26a": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Usurper's Thunder I",
+            "attack": 120,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"thunder": 25},
+
+            "rampSkills": [
+                ["attack_boost_1", "thunder_boost_1", "anti_aquatic_species"]
+            ],
+
+            "maxSharpness": [70,40,90,100,0,0]
+        },
+        "26b": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Usurper's Thunder II",
+            "attack": 190,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [1,1],
+            "eleStat": {"thunder": 28},
+
+            "rampSkills": [
+                ["attack_boost_2", "thunder_boost_1", "anti_aquatic_species"]
+            ],
+
+            "maxSharpness": [70,40,70,90,80,0]
+        },
+        "26c": {
+            "rarity": 6,
+            "endlineTag": "hr",
+
+            "name": "Despot's Crackle",
+            "attack": 210,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [1,1],
+            "eleStat": {"thunder": 33},
+
+            "rampSkills": [
+                ["attack_boost_2", "thunder_boost_2", "anti_aquatic_species"]
+            ],
+
+            "maxSharpness": [70,40,100,100,50,40]
+        }
+    },
+    "Remobra Tree": {
+        "27a": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Calamitous Portent I",
+            "attack": 110,
+            "affinity": 5,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"poison": 12},
+
+            "rampSkills": [
+                ["attack_boost_2", "poison_boost_1", "dulling_strike"]
+            ],
+
+            "maxSharpness": [90,60,80,70,0,0]
+        },
+        "27b": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Calamitous Portent II",
+            "attack": 120,
+            "affinity": 5,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"poison": 14},
+
+            "rampSkills": [
+                ["attack_boost_3", "poison_boost_1", "dulling_strike"]
+            ],
+
+            "maxSharpness": [120,50,50,70,10,0]
+        },
+        "27c": {
+            "rarity": 4,
+            "endlineTag": "hr",
+
+            "name": "Catastrophic Portent",
+            "attack": 170,
+            "affinity": 10,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"poison": 16},
+
+            "rampSkills": [
+                ["attack_boost_3", "poison_boost_2", "dulling_strike"]
+            ],
+
+            "maxSharpness": [130,60,50,50,40,20]
+        }
+    },
+    "Royal Ludroth Tree": {
+        "28a": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Droth Splashhammer I",
+            "attack": 100,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"water": 25},
+
+            "rampSkills": [
+                ["attack_boost_2", "water_boost_1", "waterblight_exploit"]
+            ],
+
+            "maxSharpness": [40,40,90,80,0,0]
+        },
+        "28b": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Droth Splashhammer II",
+            "attack": 100,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"water": 31},
+
+            "rampSkills": [
+                ["attack_boost_2", "water_boost_1", "waterblight_exploit"]
+            ],
+
+            "maxSharpness": [50,60,100,90,0,0]
+        },
+        "28c": {
+            "rarity": 5,
+            "endlineTag": "hr",
+
+            "name": "Ludroth Dousehammer",
+            "attack": 170,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2,1,1],
+            "eleStat": {"water": 37},
+
+            "rampSkills": [
+                ["attack_boost_3", "water_boost_2", "waterblight_exploit"]
+            ],
+
+            "maxSharpness": [60,40,120,60,50,20]
+        }
+    },
+    "Izuchi Tree": {
+        "29a": {
+            "rarity": 1,
+            "endlineTag": "",
+
+            "name": "Izuchi Hammer I",
+            "attack": 70,
+            "affinity": 10,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["affinity_boost_1", "small_monster_exploit", "buddy_rally"]
+            ],
+
+            "maxSharpness": [30,70,140,10,0,0]
+        },
+        "29b": {
+            "rarity": 1,
+            "endlineTag": "",
+
+            "name": "Izuchi Hammer II",
+            "attack": 90,
+            "affinity": 12,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["affinity_boost_2", "small_monster_exploit", "buddy_rally"]
+            ],
+
+            "maxSharpness": [30,60,80,80,0,0]
+        },
+        "29c": {
+            "rarity": 4,
+            "endlineTag": "hr",
+
+            "name": "Snapper Hammer",
+            "attack": 160,
+            "affinity": 15,
+            "defense": 0,
+            "decoSlots": [2,1],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["affinity_boost_3", "small_monster_exploit", "buddy_rally"]
+            ],
+
+            "maxSharpness": [30,80,50,70,70,0]
+        }
+    },
     "Nargacuga Tree": {
+        "30a": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Hidden Breaker I",
+            "attack": 130,
+            "affinity": 40,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "affinity_boost_1", "master_rider"]
+            ],
+
+            "maxSharpness": [50,70,80,100,50,0]
+        },
+        "30b": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Hidden Breaker II",
+            "attack": 170,
+            "affinity": 40,
+            "defense": 0,
+            "decoSlots": [2],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_3", "affinity_boost_1", "master_rider"]
+            ],
+
+            "maxSharpness": [100,30,70,100,80,20]
+        },
         "30c": {
             "rarity": 6,
             "endlineTag": "hr",
@@ -15,8 +1756,858 @@
                 ["attack_boost_3", "affinity_boost_2", "master_rider"]
             ],
 
-            "maxSharpness": [70, 40, 120, 90, 60, 20]
+            "maxSharpness": [70,40,120,90,60,20]
+        }
+    },
+    "Barroth Tree": {
+        "31a": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Carapace Hammer I",
+            "attack": 120,
+            "affinity": -10,
+            "defense": 5,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["affinity_boost_1", "defense_boost_1", "dulling_strike"]
+            ],
+
+            "maxSharpness": [50,60,140,50,0,0]
+        },
+        "31b": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Carapace Hammer II",
+            "attack": 150,
+            "affinity": -10,
+            "defense": 8,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["affinity_boost_1", "defense_boost_2", "dulling_strike"]
+            ],
+
+            "maxSharpness": [60,60,160,60,10,0]
+        },
+        "31c": {
+            "rarity": 5,
+            "endlineTag": "hr",
+
+            "name": "Barroth Hammer",
+            "attack": 200,
+            "affinity": -5,
+            "defense": 10,
+            "decoSlots": [1],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["affinity_boost_2", "defense_boost_2", "dulling_strike"]
+            ],
+
+            "maxSharpness": [60,60,180,50,30,20]
+        }
+    },
+    "Magnamalo Tree": {
+        "32a": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Sinister Hammer I",
+            "attack": 130,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"blast": 15},
+
+            "rampSkills": [
+                ["attack_boost_2", "blast_boost_1", "magnamalo_soul"]
+            ],
+
+            "maxSharpness": [160,20,40,110,20,0]
+        },
+        "32b": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Sinister Hammer II",
+            "attack": 140,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"blast": 18},
+
+            "rampSkills": [
+                ["attack_boost_3", "blast_boost_1", "magnamalo_soul"]
+            ],
+
+            "maxSharpness": [170,20,20,110,30,0]
+        },
+        "32c": {
+            "rarity": 6,
+            "endlineTag": "hr",
+
+            "name": "Sinister Shade Hammer",
+            "attack": 200,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2,1],
+            "eleStat": {"blast": 25},
+
+            "rampSkills": [
+                ["attack_boost_3", "blast_boost_2", "magnamalo_soul"]
+            ],
+
+            "maxSharpness": [190,10,20,90,60,30]
+        }
+    },
+    "Gargwa Tree": {
+        "33a": {
+            "rarity": 4,
+            "endlineTag": "",
+
+            "name": "Egg Hammer I",
+            "attack": 200,
+            "affinity": -30,
+            "defense": 0,
+            "decoSlots": [1,1,1],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["wyvern_exploit", "anti_aerial_species", "anti_aquatic_species"]
+            ],
+
+            "maxSharpness": [50,100,140,10,0,0]
+        },
+        "33b": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Egg Hammer II",
+            "attack": 240,
+            "affinity": -30,
+            "defense": 0,
+            "decoSlots": [1,1,1],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["wyvern_exploit", "anti_aerial_species", "anti_aquatic_species"]
+            ],
+
+            "maxSharpness": [50,100,180,20,0,0]
+        },
+        "33c": {
+            "rarity": 6,
+            "endlineTag": "hr",
+
+            "name": "Gargwa Hammer",
+            "attack": 260,
+            "affinity": -30,
+            "defense": 0,
+            "decoSlots": [1,1,1],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["wyvern_exploit", "anti_aerial_species", "anti_aquatic_species"]
+            ],
+
+            "maxSharpness": [50,100,230,10,10,0]
+        }
+    },
+    "Rajang Tree": {
+        "34a": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Mane Malice I",
+            "attack": 190,
+            "affinity": -20,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"thunder": 11},
+
+            "rampSkills": [
+                ["affinity_boost_1", "thunder_boost_1", "dulling_strike"]
+            ],
+
+            "maxSharpness": [50,20,100,130,0,0]
+        },
+        "34b": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Mane Malice II",
+            "attack": 220,
+            "affinity": -15,
+            "defense": 0,
+            "decoSlots": [3],
+            "eleStat": {"thunder": 13},
+
+            "rampSkills": [
+                ["affinity_boost_1", "thunder_boost_2", "dulling_strike"]
+            ],
+
+            "maxSharpness": [50,50,100,100,50,0]
+        },
+        "34c": {
+            "rarity": 7,
+            "endlineTag": "hr",
+
+            "name": "Mane Malice Rajang",
+            "attack": 230,
+            "affinity": -10,
+            "defense": 0,
+            "decoSlots": [3],
+            "eleStat": {"thunder": 16},
+
+            "rampSkills": [
+                ["affinity_boost_2", "thunder_boost_2", "dulling_strike"]
+            ],
+
+            "maxSharpness": [50,50,80,120,30,20]
+        }
+    },
+    "Ibushi Tree": {
+        "35a": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Azure Elder Hammer I",
+            "attack": 180,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"dragon": 15},
+
+            "rampSkills": [
+                ["dragon_boost_3", "anti_aerial_species", "defense_boost_1"]
+            ],
+
+            "maxSharpness": [20,20,20,40,150,0]
+        },
+        "35b": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Azure Elder Hammer II",
+            "attack": 200,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"dragon": 16},
+
+            "rampSkills": [
+                ["dragon_boost_3", "anti_aerial_species", "ibushi_soul"]
+            ],
+
+            "maxSharpness": [20,20,50,50,150,10]
+        },
+        "35c": {
+            "rarity": 7,
+            "endlineTag": "hr",
+
+            "name": "Abyssal Gale Mauler",
+            "attack": 210,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"dragon": 17},
+
+            "rampSkills": [
+                ["dragon_boost_4", "anti_aerial_species", "ibushi_soul"]
+            ],
+
+            "maxSharpness": [20,20,80,60,150,20]
+        }
+    },
+    "Narwa Tree": {
+        "36a": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Thunderbolt Hammer I",
+            "attack": 190,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"thunder": 47},
+
+            "rampSkills": [
+                ["attack_boost_2", "anti_aerial_species", "narwa_soul"]
+            ],
+
+            "maxSharpness": [20,20,190,40,50,30]
+        },
+        "36b": {
+            "rarity": 7,
+            "endlineTag": "hr",
+
+            "name": "Abyssal Storm Mauler",
+            "attack": 200,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"thunder": 49},
+
+            "rampSkills": [
+                ["attack_boost_3", "anti_aerial_species", "narwa_soul"]
+            ],
+
+            "maxSharpness": [10,20,220,40,70,40]
+        }
+    },
+    "Kushala Daora Tree": {
+        "37a": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Icesteel Hammer I",
+            "attack": 180,
+            "affinity": 10,
+            "defense": 0,
+            "decoSlots": [1],
+            "eleStat": {"ice": 36},
+
+            "rampSkills": [
+                ["attack_boost_2", "affinity_boost_2", "kushala_daora_soul"]
+            ],
+
+            "maxSharpness": [70,40,110,90,60,30]
+        },
+        "37b": {
+            "rarity": 7,
+            "endlineTag": "hr",
+
+            "name": "Daora's Colossus",
+            "attack": 190,
+            "affinity": 10,
+            "defense": 0,
+            "decoSlots": [1],
+            "eleStat": {"ice": 42},
+
+            "rampSkills": [
+                ["attack_boost_3", "affinity_boost_3", "kushala_daora_soul"]
+            ],
+
+            "maxSharpness": [80,110,70,40,40,60]
+        }
+    },
+    "Teostra Tree": {
+        "38a": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Teostra Cratermaker I",
+            "attack": 180,
+            "affinity": 5,
+            "defense": 0,
+            "decoSlots": [1,1],
+            "eleStat": {"blast": 40},
+
+            "rampSkills": [
+                ["attack_boost_2", "fireblight_exploit", "teostra_soul"]
+            ],
+
+            "maxSharpness": [150,20,50,90,80,10]
+        },
+        "38b": {
+            "rarity": 7,
+            "endlineTag": "hr",
+
+            "name": "Teostra Cratergouger",
+            "attack": 190,
+            "affinity": 5,
+            "defense": 0,
+            "decoSlots": [1,1],
+            "eleStat": {"blast": 46},
+
+            "rampSkills": [
+                ["attack_boost_3", "fireblight_exploit", "teostra_soul"]
+            ],
+
+            "maxSharpness": [160,20,30,90,80,20]
+        }
+    },
+    "Chameleos Tree": {
+        "39a": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Genie's Expanse I",
+            "attack": 190,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [1],
+            "eleStat": {"poison": 28},
+
+            "rampSkills": [
+                ["attack_boost_2", "defense_boost_3", "chameleos_soul"]
+            ],
+
+            "maxSharpness": [100,30,80,90,50,50]
+        },
+        "39b": {
+            "rarity": 7,
+            "endlineTag": "hr",
+
+            "name": "Diamalto's Dream",
+            "attack": 200,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [1],
+            "eleStat": {"poison": 32},
+
+            "rampSkills": [
+                ["attack_boost_3", "defense_boost_3", "chameleos_soul"]
+            ],
+
+            "maxSharpness": [70,30,100,90,50,60]
+        }
+    },
+    "Valstrax Tree": {
+        "40a": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Redwing Drill I",
+            "attack": 170,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2],
+            "eleStat": {"dragon": 40},
+
+            "rampSkills": [
+                ["attack_boost_3", "wyvern_exploit", "valstrax_soul"]
+            ],
+
+            "maxSharpness": [180,120,0,0,0,0]
+        },
+        "40b": {
+            "rarity": 7,
+            "endlineTag": "hr",
+
+            "name": "Reddnaught Hammer",
+            "attack": 180,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2],
+            "eleStat": {"dragon": 43},
+
+            "rampSkills": [
+                ["attack_boost_3", "wyvern_exploit", "valstrax_soul"]
+            ],
+
+            "maxSharpness": [60,140,0,0,0,0]
+        }
+    },
+    "Guild Tree": {
+        "41a": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Teddybear I",
+            "attack": 110,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"sleep": 30},
+
+            "rampSkills": [
+                ["affinity_boost_2", "defense_boost_2", "silkbind_boost"]
+            ],
+
+            "maxSharpness": [50,20,120,110,0,0]
+        },
+        "41b": {
+            "rarity": 4,
+            "endlineTag": "",
+
+            "name": "Teddybear II",
+            "attack": 120,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2],
+            "eleStat": {"sleep": 34},
+
+            "rampSkills": [
+                ["affinity_boost_3", "defense_boost_2", "silkbind_boost"]
+            ],
+
+            "maxSharpness": [50,20,130,60,90,0]
+        },
+        "41c": {
+            "rarity": 5,
+            "endlineTag": "hr",
+
+            "name": "Sleepy Bear",
+            "attack": 130,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2],
+            "eleStat": {"sleep": 38},
+
+            "rampSkills": [
+                ["affinity_boost_4", "defense_boost_3", "silkbind_boost"]
+            ],
+
+            "maxSharpness": [50,20,190,60,40,40]
+        }
+    },
+    "Death Stench Tree": {
+        "42a": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Graceful Death I",
+            "attack": 110,
+            "affinity": 0,
+            "defense": 3,
+            "decoSlots": [],
+            "eleStat": {"dragon": 18},
+
+            "rampSkills": [
+                ["attack_boost_2", "dragon_boost_1", "wyvern_exploit"]
+            ],
+
+            "maxSharpness": [50,70,70,110,0,0]
+        },
+        "42b": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Graceful Death II",
+            "attack": 140,
+            "affinity": 0,
+            "defense": 5,
+            "decoSlots": [],
+            "eleStat": {"dragon": 22},
+
+            "rampSkills": [
+                ["attack_boost_3", "dragon_boost_1", "wyvern_exploit"]
+            ],
+
+            "maxSharpness": [30,70,80,120,0,0]
+        },
+        "42c": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Graceful Death III",
+            "attack": 170,
+            "affinity": 0,
+            "defense": 8,
+            "decoSlots": [2,2],
+            "eleStat": {"dragon": 29},
+
+            "rampSkills": [
+                ["attack_boost_3", "dragon_boost_2", "wyvern_exploit"]
+            ],
+
+            "maxSharpness": [20,100,100,80,50,0]
+        },
+        "42d": {
+            "rarity": 6,
+            "endlineTag": "hr",
+
+            "name": "Yadora Morte",
+            "attack": 180,
+            "affinity": 0,
+            "defense": 10,
+            "decoSlots": [2,2],
+            "eleStat": {"dragon": 34},
+
+            "rampSkills": [
+                ["attack_boost_4", "dragon_boost_2", "wyvern_exploit"]
+            ],
+
+            "maxSharpness": [200,20,20,100,50,10]
+        }
+    },
+    "Mosgharl Tree": {
+        "43a": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Pumpking I",
+            "attack": 120,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"fire": 8},
+
+            "rampSkills": [
+                ["defense_boost_2", "master_rider", "spiribird_doubled"]
+            ],
+
+            "maxSharpness": [80,100,30,90,0,0]
+        },
+        "43b": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Pumpking II",
+            "attack": 150,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"fire": 11},
+
+            "rampSkills": [
+                ["defense_boost_2", "master_rider", "spiribird_doubled"]
+            ],
+
+            "maxSharpness": [80,100,20,80,20,0]
+        },
+        "43c": {
+            "rarity": 5,
+            "endlineTag": "hr",
+
+            "name": "Jack-'o-lantern King",
+            "attack": 190,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [3,1],
+            "eleStat": {"fire": 14},
+
+            "rampSkills": [
+                ["defense_boost_3", "master_rider", "spiribird_doubled"]
+            ],
+
+            "maxSharpness": [80,100,40,60,60,10]
+        }
+    },
+    "Rampage Tree": {
+        "44a": {
+            "rarity": 4,
+            "endlineTag": "",
+
+            "name": "Rampage Hammer I",
+            "attack": 150,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                [
+                    "attack_boost_1",
+                    "affinity_boost_1",
+                    "defense_boost_1"
+                ],
+                [
+                    "fire_1",
+                    "water_1",
+                    "thunder_1",
+                    "ice_1"
+                ],
+                [
+                    "attack_surge"
+                ]
+            ],
+
+            "maxSharpness": [70,70,90,70,0,0]
+        },
+        "44b": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Rampage Hammer II",
+            "attack": 170,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                [
+                    "attack_boost_1",
+                    "elemental_boost_1",
+                    "affinity_boost_1",
+                    "defense_boost_1"
+                ],
+                [
+                    "non_elemental_boost",
+                    "fire_1",
+                    "water_1",
+                    "thunder_1",
+                    "ice_1",
+                    "dragon_1",
+                    "poison_1"
+                ],
+                [
+                    "attack_surge"
+                ]
+            ],
+
+            "maxSharpness": [60,70,80,90,0,0]
+        },
+        "44c": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Rampage Hammer III",
+            "attack": 180,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                [
+                    "attack_boost_2",
+                    "elemental_boost_1",
+                    "affinity_boost_2",
+                    "defense_boost_2",
+                    "sharpness_type_1"
+                ],
+                [
+                    "non_elemental_boost",
+                    "fire_2",
+                    "water_2",
+                    "thunder_2",
+                    "ice_2",
+                    "dragon_2",
+                    "poison_1",
+                    "paralysis_1",
+                    "sleep_1",
+                    "blast_1"
+                ],
+                [
+                    "attack_surge",
+                    "affinity_surge"
+                ]
+            ],
+
+            "maxSharpness": [50,70,80,30,70,0]
+        },
+        "44d": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Rampage Hammer IV",
+            "attack": 190,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                [
+                    "attack_boost_2",
+                    "elemental_boost_2",
+                    "affinity_boost_2",
+                    "defense_boost_2",
+                    "sharpness_type_1",
+                    "sharpness_type_2"
+                ],
+                [
+                    "non_elemental_boost",
+                    "fire_2",
+                    "water_2",
+                    "thunder_2",
+                    "ice_2",
+                    "dragon_2",
+                    "poison_2",
+                    "paralysis_2",
+                    "sleep_2",
+                    "blast_2"
+                ],
+                [
+                    "attack_surge",
+                    "affinity_surge"
+                ]
+            ],
+
+            "maxSharpness": [50,70,70,30,80,0]
+        },
+        "44e": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Rampage Hammer V",
+            "attack": 200,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                [
+                    "attack_boost_3",
+                    "elemental_boost_2",
+                    "affinity_boost_3",
+                    "defense_boost_3",
+                    "sharpness_type_1",
+                    "sharpness_type_2",
+                    "sharpness_type_3"
+                ],
+                [
+                    "non_elemental_boost",
+                    "fire_3",
+                    "water_3",
+                    "thunder_3",
+                    "ice_3",
+                    "dragon_3",
+                    "poison_2",
+                    "paralysis_2",
+                    "sleep_2",
+                    "blast_2"
+                ],
+                [
+                    "attack_surge",
+                    "elemental_surge",
+                    "affinity_surge"
+                ]
+            ],
+
+            "maxSharpness": [50,70,50,50,70,10]
+        },
+        "44f": {
+            "rarity": 7,
+            "endlineTag": "hr",
+
+            "name": "Rampage Hammer S",
+            "attack": 210,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                [
+                    "attack_boost_4",
+                    "elemental_boost_3",
+                    "affinity_boost_4",
+                    "defense_boost_3",
+                    "sharpness_type_1",
+                    "sharpness_type_2",
+                    "sharpness_type_3",
+                    "sharpness_type_4"
+                ],
+                [
+                    "non_elemental_boost",
+                    "fire_4",
+                    "water_4",
+                    "thunder_4",
+                    "ice_4",
+                    "dragon_4",
+                    "poison_3",
+                    "paralysis_3",
+                    "sleep_3",
+                    "blast_3"
+                ],
+                [
+                    "attack_surge",
+                    "elemental_surge",
+                    "affinity_surge"
+                ]
+            ],
+
+            "maxSharpness": [50,70,30,60,70,20]
         }
     }
 }
-
