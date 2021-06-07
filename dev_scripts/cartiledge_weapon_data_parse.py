@@ -40,15 +40,17 @@ from cartiledge_weapon_data_hardcoded_support.greatsword import HARDCODED_GS_SPE
 from cartiledge_weapon_data_hardcoded_support.longsword import HARDCODED_LS_SPEC, HARDCODED_RAMP_SKILLS_LS
 from cartiledge_weapon_data_hardcoded_support.swordandshield import HARDCODED_SNS_SPEC, HARDCODED_RAMP_SKILLS_SNS
 from cartiledge_weapon_data_hardcoded_support.dualblades import HARDCODED_DB_SPEC, HARDCODED_RAMP_SKILLS_DB
+from cartiledge_weapon_data_hardcoded_support.lance import HARDCODED_L_SPEC, HARDCODED_RAMP_SKILLS_L
 
 DATABASE_DIR = "../data/"
 SRC_DIR = "./cartiledge_weapon_data/"
 
 FILE_MAP = [
-    ("greatsword"    , "./MHR v3.0 - Weapon Statuses - GS.csv" ),
-    ("longsword"     , "./MHR v3.0 - Weapon Statuses - LS.csv" ),
-    ("swordandshield", "./MHR v3.0 - Weapon Statuses - SnS.csv"),
-    ("dualblades"    , "./MHR v3.0 - Weapon Statuses - DB.csv" ),
+    ("greatsword"    , "./MHR v3.0 - Weapon Statuses - GS.csv"    ),
+    ("longsword"     , "./MHR v3.0 - Weapon Statuses - LS.csv"    ),
+    ("swordandshield", "./MHR v3.0 - Weapon Statuses - SnS.csv"   ),
+    ("dualblades"    , "./MHR v3.0 - Weapon Statuses - DB.csv"    ),
+    ("lance"         , "./MHR v3.0 - Weapon Statuses - Lance.csv" ),
 ]
 
 # Specification to build the data
@@ -58,6 +60,7 @@ DATA_SPEC_HARDCODED = {
     "longsword"     : HARDCODED_LS_SPEC,
     "swordandshield": HARDCODED_SNS_SPEC,
     "dualblades"    : HARDCODED_DB_SPEC,
+    "lance"         : HARDCODED_L_SPEC,
 }
 
 HARDCODED_RAMP_SKILLS = {
@@ -65,6 +68,7 @@ HARDCODED_RAMP_SKILLS = {
     "longsword"     : HARDCODED_RAMP_SKILLS_LS,
     "swordandshield": HARDCODED_RAMP_SKILLS_SNS,
     "dualblades"    : HARDCODED_RAMP_SKILLS_DB,
+    "lance"         : HARDCODED_RAMP_SKILLS_L,
 }
 
 module_dir_abs = os.path.dirname(os.path.abspath(__file__))
