@@ -6,6 +6,7 @@
  */
 
 import * as check from "../check.js";
+import {FontAwesomeSprite} from "../images.js";
 
 const element = React.createElement;
 const assert = console.assert;
@@ -62,7 +63,13 @@ class Modal extends React.Component {
                             className: "modal-utility-bar-close-button",
                             onClick: (e) => {this.handleXButton(e);},
                             },
-                            "\u00d7",
+                            element(FontAwesomeSprite,
+                                {
+                                style: "solid",
+                                fragment: "times",
+                                },
+                                null,
+                            ),
                         ),
                     ),
                     element("div",

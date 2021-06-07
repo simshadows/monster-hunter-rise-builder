@@ -81,6 +81,8 @@
     --color-modal--utility-bar: var(--color-scheme--dark3);
     --color-modal--close-button: var(--color-scheme--red-inactive);
     --color-modal--close-button-hover: var(--color-scheme--red-active);
+    --color-modal--close-symbol: var(--color-scheme--dark1);
+    --color-modal--close-symbol-hover: var(--color-scheme--dark4);
 
     /****/
 

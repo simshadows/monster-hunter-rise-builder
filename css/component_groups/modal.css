@@ -27,6 +27,7 @@ div.modal-utility-bar {
     margin: 0;
     padding: 0 0 3px 4px;
     background: var(--color-modal--utility-bar);
+    height: 30px;
 }
 
 div.modal-utility-bar-title {
@@ -43,16 +44,24 @@ div.modal-utility-bar-close-button {
     align-items: center;
     justify-content: center;
 
-    height: 28px;
-    width: 28px;
+    height: 26px;
+    width: 26px;
     color: var(--color-text2);
     font-size: 26px;
     font-weight: bold;
     background: var(--color-modal--close-button);
     cursor: pointer;
 }
+div.modal-utility-bar-close-button > svg {
+    fill: var(--color-modal--close-symbol);
+    height: 80%;
+    width: 80%;
+}
 div.modal-utility-bar-close-button:hover {
     background: var(--color-modal--close-button-hover);
+}
+div.modal-utility-bar-close-button:hover > svg {
+    fill: var(--color-modal--close-symbol-hover);
 }
 
 div.modal-content {
