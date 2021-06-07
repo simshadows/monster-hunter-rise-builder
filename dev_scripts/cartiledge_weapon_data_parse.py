@@ -36,24 +36,27 @@ import csv
 from itertools import chain, zip_longest
 from collections import defaultdict
 
-from cartiledge_weapon_data_hardcoded_support.dualblades import HARDCODED_DUALBLADES_SPEC, HARDCODED_RAMP_SKILLS_DUALBLADES
+from cartiledge_weapon_data_hardcoded_support.dualblades import HARDCODED_DB_SPEC, HARDCODED_RAMP_SKILLS_DB
+from cartiledge_weapon_data_hardcoded_support.greatsword import HARDCODED_GS_SPEC, HARDCODED_RAMP_SKILLS_GS
 
 DATABASE_DIR = "../data/"
 SRC_DIR = "./cartiledge_weapon_data/"
 
 FILE_MAP = [
-    #("greatsword", "./MHR v3.0 - Weapon Statuses - GS.csv"), # We're not gonna parse this one since we've already done it
+    ("greatsword", "./MHR v3.0 - Weapon Statuses - GS.csv"),
     ("dualblades", "./MHR v3.0 - Weapon Statuses - DB.csv"),
 ]
 
 # Specification to build the data
 # {category: [(tree name, [(name, id, rarity), ...]), ...]}
 DATA_SPEC_HARDCODED = {
-    "dualblades": HARDCODED_DUALBLADES_SPEC,
+    "greatsword": HARDCODED_GS_SPEC,
+    "dualblades": HARDCODED_DB_SPEC,
 }
 
 HARDCODED_RAMP_SKILLS = {
-    "dualblades": HARDCODED_RAMP_SKILLS_DUALBLADES,
+    "greatsword": HARDCODED_RAMP_SKILLS_GS,
+    "dualblades": HARDCODED_RAMP_SKILLS_DB,
 }
 
 module_dir_abs = os.path.dirname(os.path.abspath(__file__))
@@ -71,7 +74,7 @@ for (weapon_category, weapon_trees) in DATA_SPEC_HARDCODED.items():
         for (i, (weapon_name, weapon_id, rarity)) in enumerate(weapons_array):
 
             if weapon_id in ids_seen:
-                raise ValueError("IDs must be unique within each weapon category.")
+                raise ValueError("IDs must be unique within each weapon category. Bad ID: " + weapon_id)
             ids_seen.add(weapon_id)
 
             submap[weapon_name] = {
@@ -105,10 +108,10 @@ for (weapon_category, src_file_name) in FILE_MAP:
             endline_tag = spec_subdict[name]["endline_tag"]
 
             deco_slots = []
-            for i in ["1", "2", "3"]:
-                slot_size = int(row["Gem Slot " + i])
-                assert (slot_size >= 0) and (slot_size <=3)
-                if slot_size > 0:
+            for slot_size in [3, 2, 1]:
+                to_add = int(row["Gem Slot " + str(slot_size)])
+                assert (to_add >= 0) and (to_add <=3)
+                for _ in range(to_add):
                     deco_slots.append(slot_size)
 
             elestat = {}

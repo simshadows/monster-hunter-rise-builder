@@ -2,12 +2,12 @@
 Filename: dualblades.py
 Author:   simshadows <contact@simshadows.com>
 
-Hardcoded parts for dualblade data
+Hardcoded parts for Dual Blades data
 """
 
 # Specification to build the data
 # {category: [(tree name, [(name, id, rarity), ...]), ...]}
-HARDCODED_DUALBLADES_SPEC = [
+HARDCODED_DB_SPEC = [
     ("Kamura Tree", [
         ("Kamura Glintblades I"  , "1a", 1),
         ("Kamura Glintblades II" , "1b", 1),
@@ -227,7 +227,7 @@ HARDCODED_DUALBLADES_SPEC = [
     ]),
 ]
 
-HARDCODED_RAMP_SKILLS_DUALBLADES = {
+HARDCODED_RAMP_SKILLS_DB = {
     "Rampage Twinblades I": [
         [
             "attack_boost_1",
