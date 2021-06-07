@@ -22,7 +22,7 @@ All known duplicates:
     Dual Blades: Flammenschild
 
 Also, the data set is limited in not having info in specific rampage skill slots, so the script will just output a single
-big list. We're just going to have to fix those up manually.
+big list, which will then be separated out manually. We're just going to have to fix those up manually.
 
 !!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!
@@ -36,14 +36,16 @@ import csv
 from itertools import chain, zip_longest
 from collections import defaultdict
 
-from cartiledge_weapon_data_hardcoded_support.dualblades import HARDCODED_DB_SPEC, HARDCODED_RAMP_SKILLS_DB
 from cartiledge_weapon_data_hardcoded_support.greatsword import HARDCODED_GS_SPEC, HARDCODED_RAMP_SKILLS_GS
+from cartiledge_weapon_data_hardcoded_support.longsword import HARDCODED_LS_SPEC, HARDCODED_RAMP_SKILLS_LS
+from cartiledge_weapon_data_hardcoded_support.dualblades import HARDCODED_DB_SPEC, HARDCODED_RAMP_SKILLS_DB
 
 DATABASE_DIR = "../data/"
 SRC_DIR = "./cartiledge_weapon_data/"
 
 FILE_MAP = [
     ("greatsword", "./MHR v3.0 - Weapon Statuses - GS.csv"),
+    ("longsword" , "./MHR v3.0 - Weapon Statuses - LS.csv"),
     ("dualblades", "./MHR v3.0 - Weapon Statuses - DB.csv"),
 ]
 
@@ -51,11 +53,13 @@ FILE_MAP = [
 # {category: [(tree name, [(name, id, rarity), ...]), ...]}
 DATA_SPEC_HARDCODED = {
     "greatsword": HARDCODED_GS_SPEC,
+    "longsword": HARDCODED_LS_SPEC,
     "dualblades": HARDCODED_DB_SPEC,
 }
 
 HARDCODED_RAMP_SKILLS = {
     "greatsword": HARDCODED_RAMP_SKILLS_GS,
+    "longsword": HARDCODED_RAMP_SKILLS_LS,
     "dualblades": HARDCODED_RAMP_SKILLS_DB,
 }
 
