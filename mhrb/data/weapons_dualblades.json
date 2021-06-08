@@ -325,7 +325,7 @@
             "affinity": 10,
             "defense": 0,
             "decoSlots": [],
-            "eleStat": {"thunder": 20, "paralysis": 8},
+            "eleStat": {"paralysis": 8, "thunder": 20},
 
             "rampSkills": [
                 ["attack_boost_2", "thunder_boost_1", "paralysis_boost_1"]
@@ -342,7 +342,7 @@
             "affinity": 10,
             "defense": 0,
             "decoSlots": [],
-            "eleStat": {"thunder": 24, "paralysis": 10},
+            "eleStat": {"paralysis": 10, "thunder": 24},
 
             "rampSkills": [
                 ["attack_boost_3", "thunder_boost_2", "paralysis_boost_1"]
@@ -359,7 +359,7 @@
             "affinity": 10,
             "defense": 0,
             "decoSlots": [2,1,1],
-            "eleStat": {"thunder": 28, "paralysis": 14},
+            "eleStat": {"paralysis": 14, "thunder": 28},
 
             "rampSkills": [
                 ["attack_boost_4", "thunder_boost_2", "paralysis_boost_2"]
@@ -879,7 +879,7 @@
             "maxSharpness": [60,70,20,70,30,0]
         },
         "15c": {
-            "rarity": 3,
+            "rarity": 5,
             "endlineTag": "hr",
 
             "name": "Dual Cleavers",
@@ -1824,7 +1824,7 @@
             "affinity": 10,
             "defense": 0,
             "decoSlots": [2],
-            "eleStat": {"ice": 36, "blast": 24},
+            "eleStat": {"blast": 24, "ice": 36},
 
             "rampSkills": [
                 ["attack_boost_2", "blast_boost_2", "teostra_soul"]
@@ -1841,7 +1841,7 @@
             "affinity": 10,
             "defense": 0,
             "decoSlots": [2],
-            "eleStat": {"ice": 48, "blast": 36},
+            "eleStat": {"blast": 36, "ice": 48},
 
             "rampSkills": [
                 ["attack_boost_3", "blast_boost_2", "teostra_soul"]
@@ -1902,7 +1902,7 @@
                 ["attack_boost_3", "wyvern_exploit", "valstrax_soul"]
             ],
 
-            "maxSharpness": [180,120,0,0,0,0]
+            "maxSharpness": [180,0,0,0,0,120]
         },
         "35b": {
             "rarity": 7,
@@ -1919,7 +1919,7 @@
                 ["attack_boost_3", "wyvern_exploit", "valstrax_soul"]
             ],
 
-            "maxSharpness": [60,140,0,0,0,0]
+            "maxSharpness": [60,0,0,0,0,140]
         }
     },
     "Felyne Tree": {
@@ -2153,7 +2153,7 @@
             "maxSharpness": [110,60,30,30,70,0]
         },
         "40b": {
-            "rarity": 4,
+            "rarity": 5,
             "endlineTag": "",
 
             "name": "Altair II",

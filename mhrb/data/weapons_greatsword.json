@@ -1938,7 +1938,7 @@
                 ["attack_boost_3", "wyvern_exploit", "valstrax_soul"]
             ],
 
-            "maxSharpness": [180,120,0,0,0,0]
+            "maxSharpness": [180,0,0,0,0,120]
         },
         "36b": {
             "rarity": 7,
@@ -1955,7 +1955,7 @@
                 ["attack_boost_3", "wyvern_exploit", "valstrax_soul"]
             ],
 
-            "maxSharpness": [60,140,0,0,0,0]
+            "maxSharpness": [60,0,0,0,0,140]
         }
     },
     "Chaos Tree": {

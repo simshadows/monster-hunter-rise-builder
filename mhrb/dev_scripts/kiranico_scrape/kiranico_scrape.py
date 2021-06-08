@@ -75,7 +75,7 @@ def scrape_weapon_page(url, name, category, tagset):
     assert len(c) == 1
     c = c[0]
 
-    rarity = int(c.contents[2].contents[1].contents[0].strip())
+    rarity = int(c.contents[2].contents[1].contents[0].strip()) + 1
     attack = int(c.contents[6].contents[1].contents[0].strip())
     affinity = int(c.contents[7].contents[1].contents[0].strip())
     defense = int(c.contents[8].contents[1].contents[0].strip())

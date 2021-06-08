@@ -508,7 +508,7 @@
             "maxSharpness": [90,80,60,50,50,20]
         },
         "8f": {
-            "rarity": 4,
+            "rarity": 5,
             "endlineTag": "hr",
 
             "name": "Imperial Guardlance",
@@ -2110,7 +2110,7 @@
                 ["attack_boost_3", "wyvern_exploit", "valstrax_soul"]
             ],
 
-            "maxSharpness": [180,120,0,0,0,0]
+            "maxSharpness": [180,0,0,0,0,120]
         },
         "37b": {
             "rarity": 7,
@@ -2127,7 +2127,7 @@
                 ["attack_boost_3", "wyvern_exploit", "valstrax_soul"]
             ],
 
-            "maxSharpness": [60,140,0,0,0,0]
+            "maxSharpness": [60,0,0,0,0,140]
         }
     },
     "Canyne Tree": {

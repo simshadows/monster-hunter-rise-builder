@@ -129,7 +129,7 @@ function validateWeaponDataSharpness(weaponData) {
     let prevHits = 1;
     for (const hits of weaponData.maxSharpness) {
         assert(isInt(hits) && (hits >= 0), "Hits must be an integer >= 0.");
-        assert((hits == 0) || (prevHits > 0), "Hits must not skip a colour."); // If this is wrong, remove this check.
+        //assert((hits == 0) || (prevHits > 0), "Hits must not skip a colour."); // This check is wrong.
         hitSum += hits;
         prevHits = hits;
     }

@@ -1651,7 +1651,7 @@
             "maxSharpness": [70,40,160,60,70,0]
         },
         "27c": {
-            "rarity": 5,
+            "rarity": 6,
             "endlineTag": "hr",
 
             "name": "Despot's Cloudburst",
@@ -2110,7 +2110,7 @@
                 ["attack_boost_3", "wyvern_exploit", "valstrax_soul"]
             ],
 
-            "maxSharpness": [180,120,0,0,0,0]
+            "maxSharpness": [180,0,0,0,0,120]
         },
         "37b": {
             "rarity": 7,
@@ -2127,7 +2127,7 @@
                 ["attack_boost_3", "wyvern_exploit", "valstrax_soul"]
             ],
 
-            "maxSharpness": [60,140,0,0,0,0]
+            "maxSharpness": [60,0,0,0,0,140]
         }
     },
     "Smithy Tree": {
