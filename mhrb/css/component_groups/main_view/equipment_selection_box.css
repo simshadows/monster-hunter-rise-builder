@@ -63,7 +63,6 @@ div.equip-weapon-detail-box {
 
     padding: 0;
     width: 100%;
-    height: 52px;
 }
 
 div.equip-weapon-stats-group-box {
@@ -141,6 +140,16 @@ div.equip-weapon-ramp-box {
 }
 div.equip-weapon-unused-ramp-box {
     color: lightgrey;
+}
+
+div.equip-weapon-special-mech-group-box {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+
+    height: 25px;
+    width: 100%;
+    padding: 3px;
 }
 
 div.equip-box {
@@ -275,7 +284,7 @@ div.equip-defenses-box {
     row-gap: 4px;
 
     border: none;
-    height: 100%;
+    height: 80px;
     width: 110px;
     padding: 4px 0 4px 0;
 }
@@ -343,7 +352,7 @@ div.equip-decos-wrap-box {
     row-gap: 2px;
 
     padding: 2px 2px 2px 6px;
-    height: 100%;
+    height: 80px;
     width: 190px;
 }
 
@@ -358,7 +367,7 @@ div.equip-deco-box {
     margin: 0;
     text-align: center;
     font: var(--font-equip--deco);
-    height: 23px;
+    height: 24px; /* TODO: This shouldn't be a hardcoded value, but I can't figure out a better way right now. */
 }
 div.highlight-equip-deco-box:hover {
     border: 2px solid var(--color-equip--icon-box-border-hover);

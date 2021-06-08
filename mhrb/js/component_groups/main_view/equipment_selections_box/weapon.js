@@ -149,6 +149,12 @@ function EquipWeaponInfoBox(props) {
                 },
                 ...rampageSkillBoxes
             ),
+            //element("div",
+            //    {
+            //    className: "equip-weapon-special-mech-group-box",
+            //    },
+            //    null,
+            //),
             element("div",
                 {
                 className: "highlight-equip-main-box stackinner",
