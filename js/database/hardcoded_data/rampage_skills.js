@@ -310,6 +310,27 @@ const hardcodedRampageSkills = [
         name: "Phial: Exhaust III",
     }],
 
+    ["kinsect_level_boost", {
+        shortId: "klb",
+        name: "Kinsect Level Boost",
+    }],
+    ["kinsect_level_boost_1", {
+        shortId: "klb1",
+        name: "Kinsect Level Boost I",
+    }],
+    ["kinsect_level_boost_2", {
+        shortId: "klb2",
+        name: "Kinsect Level Boost II",
+    }],
+    ["kinsect_level_boost_3", {
+        shortId: "klb3",
+        name: "Kinsect Level Boost III",
+    }],
+    ["kinsect_level_boost_4", {
+        shortId: "klb4",
+        name: "Kinsect Level Boost IV",
+    }],
+
     ["attack_surge", {
         shortId: "atsu",
         name: "Attack Surge",

@@ -51,6 +51,7 @@ from cartiledge_weapon_data_hardcoded_support.hammer import HARDCODED_H_SPEC, HA
 from cartiledge_weapon_data_hardcoded_support.huntinghorn import HARDCODED_HH_SPEC, HARDCODED_RAMP_SKILLS_HH
 from cartiledge_weapon_data_hardcoded_support.switchaxe import HARDCODED_SA_SPEC, HARDCODED_RAMP_SKILLS_SA
 from cartiledge_weapon_data_hardcoded_support.chargeblade import HARDCODED_CB_SPEC, HARDCODED_RAMP_SKILLS_CB
+from cartiledge_weapon_data_hardcoded_support.insectglaive import HARDCODED_IG_SPEC, HARDCODED_RAMP_SKILLS_IG
 
 DATABASE_DIR = "../data/"
 SRC_DIR = "./cartiledge_weapon_data/"
@@ -66,6 +67,7 @@ FILE_MAP = [
     ("huntinghorn"   , "./MHR v3.0 - Weapon Statuses - HH.csv"    ),
     ("switchaxe"     , "./MHR v3.0 - Weapon Statuses - SA.csv"    ),
     ("chargeblade"   , "./MHR v3.0 - Weapon Statuses - CB.csv"    ),
+    ("insectglaive"  , "./MHR v3.0 - Weapon Statuses - IG.csv"    ),
 ]
 
 # Specification to build the data
@@ -81,6 +83,7 @@ DATA_SPEC_HARDCODED = {
     "huntinghorn"   : HARDCODED_HH_SPEC,
     "switchaxe"     : HARDCODED_SA_SPEC,
     "chargeblade"   : HARDCODED_CB_SPEC,
+    "insectglaive"  : HARDCODED_IG_SPEC,
 }
 
 HARDCODED_RAMP_SKILLS = {
@@ -94,6 +97,7 @@ HARDCODED_RAMP_SKILLS = {
     "huntinghorn"   : HARDCODED_RAMP_SKILLS_HH,
     "switchaxe"     : HARDCODED_RAMP_SKILLS_SA,
     "chargeblade"   : HARDCODED_RAMP_SKILLS_CB,
+    "insectglaive"  : HARDCODED_RAMP_SKILLS_IG,
 }
 
 module_dir_abs = os.path.dirname(os.path.abspath(__file__))
