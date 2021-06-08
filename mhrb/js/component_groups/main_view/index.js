@@ -149,6 +149,7 @@ class MainView extends React.Component {
                             buildRenderingProps:    this.props.buildRenderingProps,
                             calcStateSpecification: this.props.calcStateSpecification,
                             calcStateCurrValues:    this.props.calcStateCurrValues,
+                            buildPerformanceValues: this.props.buildPerformanceValues,
 
                             handleClickBuffsSelect:      ()       => {this.props.handleClickBuffsSelect();},
                             handleClickWeaponSelect:     ()       => {this.props.handleClickWeaponSelect();},

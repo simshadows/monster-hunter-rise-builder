@@ -117,8 +117,7 @@ function calculateBuildPerformance(db, build, calcState) {
 
     const weaponRaw          = weaponRO.attack;
     const weaponAffinity     = weaponRO.affinity;
-    const weaponEleStatType  = weaponRO.eleStatType;
-    const weaponEleStatValue = weaponRO.eleStatValue;
+    const weaponEleStat      = weaponRO.eleStat;
     const weaponMaxSharpness = weaponRO.maxSharpness;
 
     const weaponDefense = weaponRO.defense;
@@ -165,6 +164,16 @@ function calculateBuildPerformance(db, build, calcState) {
 
 
     const ret = {
+
+        // This part goes to the equips section
+
+        weaponAttack:   weaponRaw,
+        weaponAffinity: weaponAffinity,
+        weaponDefense:  weaponDefense,
+        weaponEleStat:  weaponEleStat,
+
+        // The rest goes to the calculated values section
+
         effectiveRaw: effectiveRaw,
         affinity:     baseAffinity,
 

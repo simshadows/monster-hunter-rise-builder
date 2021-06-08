@@ -439,10 +439,6 @@ class Build {
         return {
                 weaponRO: {
                         name:                     this._weaponRO.name,
-                        attack:                   this._weaponRO.attack,
-                        affinity:                 this._weaponRO.affinity,
-                        defense:                  this._weaponRO.defense,
-                        eleStat:                  this._weaponRO.eleStat,
                         rampSkillSelectionsArray: this._getRampSkillSelectionsArray(db),
                         rampSkillOptionsArray:    this._weaponRO.rampSkills,
                         decosArray:               this._getDecoArrayRenderingProp("weapon"),

@@ -71,6 +71,8 @@ class EquipmentSelectionsBox extends React.Component {
         check.isMap(this.props.calcStateSpecification);
         check.isMap(this.props.calcStateCurrValues);
 
+        check.isObj(this.props.buildPerformanceValues);
+
         check.isFunction(this.props.handleClickBuffsSelect);
         check.isFunction(this.props.handleClickWeaponSelect);
         check.isFunction(this.props.handleClickWeaponCustomize);
@@ -99,6 +101,7 @@ class EquipmentSelectionsBox extends React.Component {
             element(WeaponSelection,
                 {
                 weaponRORenderingProps: this.props.buildRenderingProps.weaponRO,
+                buildPerformanceValues: this.props.buildPerformanceValues,
                 handleClickWeaponSelect:     () => {this.handleClickWeaponSelect();},
                 handleClickWeaponCustomize:  () => {this.handleClickWeaponCustomize();},
                 handleClickDecorationSelect: (decoSlotID, maxDecoSlotSize) => {this.handleClickDecorationSelect("weapon", decoSlotID, maxDecoSlotSize);},

@@ -29,22 +29,25 @@ const element = React.createElement;
 function EquipWeaponInfoBox(props) {
     // Convenience Alias
     const weaponRO = props.weaponRORenderingProps;
+    const perf = props.buildPerformanceValues;
 
     check.isObj(props.weaponRORenderingProps);
+    check.isObj(props.buildPerformanceValues);
     check.isFunction(props.onClick);
 
     // Check structure of props.weaponRORenderingProps
     check.isStr(weaponRO.name);
     assert(weaponRO.name.length > 0);
-    check.isInt(weaponRO.attack);
-    assert(weaponRO.attack > 0);
-    check.isInt(weaponRO.affinity);
-    assert((weaponRO.affinity >= -100) && (weaponRO.affinity <= 100));
-    assert(check.isMap(weaponRO.eleStat));
-    check.isInt(weaponRO.defense);
-    assert(weaponRO.defense >= 0);
     check.isArr(weaponRO.rampSkillSelectionsArray);
     // TODO: Sharpness?
+
+    check.isInt(perf.weaponAttack);
+    assert(perf.weaponAttack > 0);
+    check.isInt(perf.weaponAffinity);
+    assert((perf.weaponAffinity >= -100) && (perf.weaponAffinity <= 100));
+    check.isInt(perf.weaponDefense);
+    assert(perf.weaponDefense >= 0);
+    assert(check.isMap(perf.weaponEleStat));
 
     function statBoxEmpty() {
         return element("div",
@@ -101,15 +104,20 @@ function EquipWeaponInfoBox(props) {
         }
     }
 
-    const eleStatBoxes = [];
-    if (weaponRO.eleStat.size === 0) {
-        eleStatBoxes.push(statBoxEmpty());
+    const otherStatBoxes = [];
+
+    if (perf.weaponDefense != 0) {
+        otherStatBoxes.push(statBox("defense_icon", parseInt(perf.weaponDefense), false));
+    }
+
+    if (perf.weaponEleStat.size === 0) {
+        otherStatBoxes.push(statBoxEmpty());
     } else {
-        for (const [eleStatType, eleStatValue] of weaponRO.eleStat.entries()) {
+        for (const [eleStatType, eleStatValue] of perf.weaponEleStat.entries()) {
             assert(isEleStatStr(eleStatType));
             assert((eleStatType !== null) && (eleStatType !== undefined) && (eleStatType !== "none"));
             assert(check.isInt(eleStatValue) && (eleStatValue > 0));
-            eleStatBoxes.push(statBox(eleStatStrToImgId(eleStatType), eleStatValue, false));
+            otherStatBoxes.push(statBox(eleStatStrToImgId(eleStatType), eleStatValue, false));
         }
     }
 
@@ -131,10 +139,9 @@ function EquipWeaponInfoBox(props) {
                 {
                 className: "equip-weapon-stats-group-box",
                 },
-                statBox("attack_icon", parseInt(weaponRO.attack), true),
-                statBox("affinity_icon", parseInt(weaponRO.affinity) + "%", true),
-                statBox("defense_icon", parseInt(weaponRO.defense), false),
-                ...eleStatBoxes,
+                statBox("attack_icon", parseInt(perf.weaponAttack), true),
+                statBox("affinity_icon", parseInt(perf.weaponAffinity) + "%", true),
+                ...otherStatBoxes,
             ),
             element("div",
                 {
@@ -157,6 +164,9 @@ function WeaponSelection(props) {
     check.isObj(props.weaponRORenderingProps);
     check.isArr(props.weaponRORenderingProps.rampSkillSelectionsArray); // Spot check for structure
     check.isNonEmptyStr(props.weaponRORenderingProps.iconImgPath);
+
+    check.isObj(props.buildPerformanceValues);
+    check.isInt(props.buildPerformanceValues.weaponAttack); // Spot check for structure
 
     check.isFunction(props.handleClickWeaponSelect);
     check.isFunction(props.handleClickWeaponCustomize);
@@ -181,6 +191,7 @@ function WeaponSelection(props) {
             element(EquipWeaponInfoBox,
                 {
                     weaponRORenderingProps: props.weaponRORenderingProps,
+                    buildPerformanceValues: props.buildPerformanceValues,
                     onClick: (e) => {props.handleClickWeaponCustomize(e)},
                 },
                 null,
