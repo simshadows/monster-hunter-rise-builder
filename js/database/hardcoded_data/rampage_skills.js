@@ -253,6 +253,63 @@ const hardcodedRampageSkills = [
         name: "Resilient Melody II",
     }],
 
+    //["phial_power", {
+    //    shortId: "phpow",
+    //    name: "Phial: Power",
+    //}],
+    ["phial_element", {
+        shortId: "phele",
+        name: "Phial: Element",
+    }],
+    ["phial_poison_1", {
+        shortId: "phpo1",
+        name: "Phial: Poison I",
+    }],
+    ["phial_poison_2", {
+        shortId: "phpo2",
+        name: "Phial: Poison II",
+    }],
+    ["phial_poison_3", {
+        shortId: "phpo3",
+        name: "Phial: Poison III",
+    }],
+    ["phial_paralysis_1", {
+        shortId: "phpa1",
+        name: "Phial: Paralysis I",
+    }],
+    ["phial_paralysis_2", {
+        shortId: "phpa2",
+        name: "Phial: Paralysis II",
+    }],
+    ["phial_paralysis_3", {
+        shortId: "phpa3",
+        name: "Phial: Paralysis III",
+    }],
+    ["phial_dragon_1", {
+        shortId: "phdr1",
+        name: "Phial: Dragon I",
+    }],
+    ["phial_dragon_2", {
+        shortId: "phdr2",
+        name: "Phial: Dragon II",
+    }],
+    ["phial_dragon_3", {
+        shortId: "phdr3",
+        name: "Phial: Dragon III",
+    }],
+    ["phial_exhaust_1", {
+        shortId: "phex1",
+        name: "Phial: Exhaust I",
+    }],
+    ["phial_exhaust_2", {
+        shortId: "phex2",
+        name: "Phial: Exhaust II",
+    }],
+    ["phial_exhaust_3", {
+        shortId: "phex3",
+        name: "Phial: Exhaust III",
+    }],
+
     ["attack_surge", {
         shortId: "atsu",
         name: "Attack Surge",
@@ -333,48 +390,56 @@ const hardcodedRampageSkills = [
         name: "Valstrax Soul",
     }],
 
-    ["buddy_rally", {
+    ["boost_equipped_coating", {
         shortId: "10",
-        name: "Buddy Rally",
+        name: "Boost Equipped Coating",
     }],
     ["brutal_strike", {
         shortId: "20",
         name: "Brutal Strike",
     }],
-    ["dulling_strike", {
+    ["buddy_rally", {
         shortId: "30",
+        name: "Buddy Rally",
+    }],
+    ["coating_switch_boost", {
+        shortId: "40",
+        name: "Coating Switch Boost",
+    }],
+    ["dulling_strike", {
+        shortId: "50",
         name: "Dulling Strike",
     }],
     ["hellion_mode", {
-        shortId: "40",
+        shortId: "60",
         name: "Hellion Mode",
     }],
     ["lasting_arc_shot", {
-        shortId: "50",
+        shortId: "70",
         name: "Lasting Arc Shot",
     }],
     ["master_rider", {
-        shortId: "60",
+        shortId: "80",
         name: "Master Rider",
     }],
     ["maximum_volume", {
-        shortId: "70",
+        shortId: "90",
         name: "Maximum Volume",
     }],
     ["non_elemental_boost", {
-        shortId: "80",
+        shortId: "100",
         name: "Non-elemental Boost",
     }],
     ["silkbind_boost", {
-        shortId: "90",
+        shortId: "110",
         name: "Silkbind Boost",
     }],
     ["spiribird_doubled", {
-        shortId: "100",
+        shortId: "120",
         name: "Spiribird Doubled",
     }],
     ["wyrmstake_boost", {
-        shortId: "110",
+        shortId: "130",
         name: "Wyrmstake Boost",
     }],
 

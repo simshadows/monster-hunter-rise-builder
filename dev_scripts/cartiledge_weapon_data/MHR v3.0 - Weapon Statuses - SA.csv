@@ -39,7 +39,7 @@ Weapon ID,Weapon Name,Rampage Skill IDs,Rampage Skill Names,Defense Bonus,Raw,Af
 2101387349,Luto Ascia,"408054401, 243411229, 536119234","Affinity Boost II, Water Boost II, Brutal Strike",0,230,-15,0,25,0,0,0,0,0,0,0,0,0,0,20,20,14,16,0,0,0,20,20,14,16,8,2,0,Element Phial
 2115637322,Dragonmaiden Axe I,"366824395, 1061551948, 54728377","Attack Boost I, Poison Boost I, Small Monster Exploit",0,170,0,0,0,0,0,0,19,0,0,0,0,0,0,12,14,18,16,0,0,0,12,14,18,20,6,0,0,Element Phial
 2029207659,Dragonmaiden Axe II,"381074408, 1061551948, 54728377","Attack Boost II, Poison Boost I, Small Monster Exploit",0,190,0,0,0,0,0,0,22,0,0,0,0,0,0,12,12,20,22,4,0,0,12,12,20,22,14,0,0,Element Phial
-2043981832,Gríðr's Landmaker,"381074408, 1061551948, 54728377","Attack Boost II, Poison Boost I, Small Monster Exploit",0,210,0,0,0,0,0,0,25,0,0,0,0,0,0,18,8,22,14,8,0,0,18,8,22,14,14,4,0,Element Phial
+2043981832,Grior's Landmaker,"381074408, 1061551948, 54728377","Attack Boost II, Poison Boost I, Small Monster Exploit",0,210,0,0,0,0,0,0,25,0,0,0,0,0,0,18,8,22,14,8,0,0,18,8,22,14,14,4,0,Element Phial
 516676262,General's Strongaxe I,"528038624, 412366096, 430385024","Affinity Boost I, Boost Equipped Coating, Silkbind Boost",10,150,0,0,0,0,0,0,0,0,0,0,0,0,3,16,16,14,8,6,0,0,16,16,14,8,16,0,0,Exhaust Phial 25
 531434055,General's Strongaxe II,"408054401, 412366096, 430385024","Affinity Boost II, Boost Equipped Coating, Silkbind Boost",10,170,0,0,0,0,0,0,0,0,0,0,0,0,3,14,14,14,10,8,0,0,14,14,14,10,16,2,0,Exhaust Phial 28
 411466340,Conqueress,"422304422, 412366096, 430385024","Affinity Boost III, Boost Equipped Coating, Silkbind Boost",10,210,0,0,0,0,0,0,0,0,0,0,0,0,3,16,16,16,12,10,0,0,16,16,16,12,16,4,0,Exhaust Phial 30
