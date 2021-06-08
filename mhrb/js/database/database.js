@@ -38,25 +38,25 @@ import {
     petalaceMap,
 } from "./hardcoded_data/petalace_data.js";
 
-const WEAPON_GS_PATH  = "../../../../data/weapons_greatsword.json";
-const WEAPON_LS_PATH  = "../../../../data/weapons_longsword.json";
-const WEAPON_SNS_PATH = "../../../../data/weapons_swordandshield.json";
-const WEAPON_DB_PATH  = "../../../../data/weapons_dualblades.json";
-const WEAPON_L_PATH   = "../../../../data/weapons_lance.json";
-const WEAPON_GL_PATH  = "../../../../data/weapons_gunlance.json";
-const WEAPON_H_PATH   = "../../../../data/weapons_hammer.json";
-const WEAPON_HH_PATH  = "../../../../data/weapons_huntinghorn.json";
-const WEAPON_SA_PATH  = "../../../../data/weapons_switchaxe.json";
-const WEAPON_CB_PATH  = "../../../../data/weapons_chargeblade.json";
-const WEAPON_IG_PATH  = "../../../../data/weapons_insectglaive.json";
-const WEAPON_LBG_PATH = "../../../../data/weapons_lightbowgun.json";
-const WEAPON_HBG_PATH = "../../../../data/weapons_heavybowgun.json";
-const WEAPON_BOW_PATH = "../../../../data/weapons_bow.json";
+const WEAPON_GS_PATH  = "./data/weapons_greatsword.json";
+const WEAPON_LS_PATH  = "./data/weapons_longsword.json";
+const WEAPON_SNS_PATH = "./data/weapons_swordandshield.json";
+const WEAPON_DB_PATH  = "./data/weapons_dualblades.json";
+const WEAPON_L_PATH   = "./data/weapons_lance.json";
+const WEAPON_GL_PATH  = "./data/weapons_gunlance.json";
+const WEAPON_H_PATH   = "./data/weapons_hammer.json";
+const WEAPON_HH_PATH  = "./data/weapons_huntinghorn.json";
+const WEAPON_SA_PATH  = "./data/weapons_switchaxe.json";
+const WEAPON_CB_PATH  = "./data/weapons_chargeblade.json";
+const WEAPON_IG_PATH  = "./data/weapons_insectglaive.json";
+const WEAPON_LBG_PATH = "./data/weapons_lightbowgun.json";
+const WEAPON_HBG_PATH = "./data/weapons_heavybowgun.json";
+const WEAPON_BOW_PATH = "./data/weapons_bow.json";
 
-const ARMOUR_PATH = "../../../../data/armour.json";
-const ARMOUR_NAMING_SCHEMES_PATH = "../../../../data/armour_naming_schemes.json";
+const ARMOUR_PATH = "./data/armour.json";
+const ARMOUR_NAMING_SCHEMES_PATH = "./data/armour_naming_schemes.json";
 
-const DECORATIONS_PATH = "../../../../data/decorations.json";
+const DECORATIONS_PATH = "./data/decorations.json";
 
 
 /* WEAPONS ******************************************************************************/
