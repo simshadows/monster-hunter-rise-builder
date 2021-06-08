@@ -33,7 +33,7 @@ Weapon ID,Weapon Name,Rampage Skill IDs,Rampage Skill Names,Defense Bonus,Raw,Af
 1821018959,Kaiser Blade,"395307913, 124406235, 430385024","Attack Boost III, Defense Boost III, Silkbind Boost",0,190,0,0,0,0,0,0,0,0,0,0,0,0,1,18,18,8,10,6,0,0,18,18,8,10,10,6,0,Impact Phial
 1835268972,K. Captain's Blade I,"366824395, 152451312, 265741852","Attack Boost I, Thunder Boost I, Thunderblight Exploit",0,150,15,0,0,29,0,0,0,0,0,0,1,0,0,22,14,12,10,2,0,0,22,14,12,10,12,0,0,Element Phial
 1850026765,K. Captain's Blade II,"381074408, 152451312, 265741852","Attack Boost II, Thunder Boost I, Thunderblight Exploit",0,160,20,0,0,33,0,0,0,0,0,0,1,0,0,20,14,10,10,6,0,0,20,14,10,10,14,2,0,Element Phial
-1864276770,Die Walküre,"395307913, 152451312, 265741852","Attack Boost III, Thunder Boost I, Thunderblight Exploit",0,170,20,0,0,37,0,0,0,0,0,0,1,0,0,20,16,14,12,8,0,0,20,16,14,12,14,4,0,Element Phial
+1864276770,Die Walkure,"395307913, 152451312, 265741852","Attack Boost III, Thunder Boost I, Thunderblight Exploit",0,170,20,0,0,37,0,0,0,0,0,0,1,0,0,20,16,14,12,8,0,0,20,16,14,12,14,4,0,Element Phial
 562576592,Biting Edge I,"395307913, 4438520, 430385024","Attack Boost III, Fire Boost I, Silkbind Boost",0,150,25,29,0,0,0,0,0,0,0,0,0,1,2,40,8,8,6,8,0,0,40,8,8,6,8,10,0,Element Phial
 576810225,Biting Edge II,"395307913, 19196313, 430385024","Attack Boost III, Fire Boost II, Silkbind Boost",0,160,25,31,0,0,0,0,0,0,0,0,0,1,2,40,8,8,6,6,2,0,40,8,8,6,6,12,0,Element Phial
 591060118,Araknablade,"274815918, 19196313, 430385024","Attack Boost IV, Fire Boost II, Silkbind Boost",0,170,30,34,0,0,0,0,0,0,0,0,0,1,2,40,6,8,6,6,4,0,40,6,8,6,6,14,0,Element Phial

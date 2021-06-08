@@ -24,6 +24,7 @@ Special characters (like accents) aren't handled well right now, which will also
 Known cases:
     Hunting Horn: Teostra's Orph\u00e9e
     Switch Axe: Gr\u00ed\u00f0r's Landmaker
+    Charge Blade: Die Walk\u00fcre
 
 Also, the data set is limited in not having info in specific rampage skill slots, so the script will just output a single
 big list, which will then be separated out manually. We're just going to have to fix those up manually.
@@ -49,6 +50,7 @@ from cartiledge_weapon_data_hardcoded_support.gunlance import HARDCODED_GL_SPEC,
 from cartiledge_weapon_data_hardcoded_support.hammer import HARDCODED_H_SPEC, HARDCODED_RAMP_SKILLS_H
 from cartiledge_weapon_data_hardcoded_support.huntinghorn import HARDCODED_HH_SPEC, HARDCODED_RAMP_SKILLS_HH
 from cartiledge_weapon_data_hardcoded_support.switchaxe import HARDCODED_SA_SPEC, HARDCODED_RAMP_SKILLS_SA
+from cartiledge_weapon_data_hardcoded_support.chargeblade import HARDCODED_CB_SPEC, HARDCODED_RAMP_SKILLS_CB
 
 DATABASE_DIR = "../data/"
 SRC_DIR = "./cartiledge_weapon_data/"
@@ -63,6 +65,7 @@ FILE_MAP = [
     ("hammer"        , "./MHR v3.0 - Weapon Statuses - Hammer.csv"),
     ("huntinghorn"   , "./MHR v3.0 - Weapon Statuses - HH.csv"    ),
     ("switchaxe"     , "./MHR v3.0 - Weapon Statuses - SA.csv"    ),
+    ("chargeblade"   , "./MHR v3.0 - Weapon Statuses - CB.csv"    ),
 ]
 
 # Specification to build the data
@@ -77,6 +80,7 @@ DATA_SPEC_HARDCODED = {
     "hammer"        : HARDCODED_H_SPEC,
     "huntinghorn"   : HARDCODED_HH_SPEC,
     "switchaxe"     : HARDCODED_SA_SPEC,
+    "chargeblade"   : HARDCODED_CB_SPEC,
 }
 
 HARDCODED_RAMP_SKILLS = {
@@ -89,6 +93,7 @@ HARDCODED_RAMP_SKILLS = {
     "hammer"        : HARDCODED_RAMP_SKILLS_H,
     "huntinghorn"   : HARDCODED_RAMP_SKILLS_HH,
     "switchaxe"     : HARDCODED_RAMP_SKILLS_SA,
+    "chargeblade"   : HARDCODED_RAMP_SKILLS_CB,
 }
 
 module_dir_abs = os.path.dirname(os.path.abspath(__file__))
