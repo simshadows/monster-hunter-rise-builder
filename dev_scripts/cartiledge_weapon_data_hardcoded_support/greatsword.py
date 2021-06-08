@@ -73,7 +73,6 @@ HARDCODED_GS_SPEC = [
         ("Buster Blade", "12d", 3),
         ("Chrome Razor I", "12e", 4),
         ("Chrome Quietus", "12f", 5),
-        ("Chrome Quietus", "12g", 5),
     ]),
     ("Fire Tree", [
         ("Barbaroi Blade I", "13a", 2),
@@ -90,7 +89,7 @@ HARDCODED_GS_SPEC = [
         ("Icicle Fang II", "15b", 3),
         ("Paladire", "15c", 5),
     ]),
-    ("Barioth Tree", [
+    ("Aknosom Tree", [
         ("Aknosom Blade I", "16a", 2),
         ("Aknosom Blade II", "16b", 3),
         ("Daybreak Cleaver", "16c", 4),

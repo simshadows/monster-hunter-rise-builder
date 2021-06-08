@@ -1933,6 +1933,42 @@
             "maxSharpness": [20,20,80,60,150,20]
         }
     },
+    "Narwa Tree": {
+        "33a": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Thunderbolt Gunlance I",
+            "attack": 180,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"thunder": 35},
+
+            "rampSkills": [
+                ["attack_boost_2", "anti_aerial_species", "narwa_soul"]
+            ],
+
+            "maxSharpness": [20,20,190,40,50,30]
+        },
+        "33b": {
+            "rarity": 7,
+            "endlineTag": "hr",
+
+            "name": "Abyssal Storm Gunlance",
+            "attack": 190,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"thunder": 41},
+
+            "rampSkills": [
+                ["attack_boost_3", "anti_aerial_species", "narwa_soul"]
+            ],
+
+            "maxSharpness": [10,20,220,40,70,40]
+        }
+    },
     "Bazelgeuse Tree": {
         "34a": {
             "rarity": 6,
@@ -1984,42 +2020,6 @@
             ],
 
             "maxSharpness": [60,110,80,70,30,50]
-        }
-    },
-    "Narwa Tree": {
-        "33a": {
-            "rarity": 6,
-            "endlineTag": "",
-
-            "name": "Thunderbolt Gunlance I",
-            "attack": 180,
-            "affinity": 0,
-            "defense": 0,
-            "decoSlots": [],
-            "eleStat": {"thunder": 35},
-
-            "rampSkills": [
-                ["attack_boost_2", "anti_aerial_species", "narwa_soul"]
-            ],
-
-            "maxSharpness": [20,20,190,40,50,30]
-        },
-        "33b": {
-            "rarity": 7,
-            "endlineTag": "hr",
-
-            "name": "Abyssal Storm Gunlance",
-            "attack": 190,
-            "affinity": 0,
-            "defense": 0,
-            "decoSlots": [],
-            "eleStat": {"thunder": 41},
-
-            "rampSkills": [
-                ["attack_boost_3", "anti_aerial_species", "narwa_soul"]
-            ],
-
-            "maxSharpness": [10,20,220,40,70,40]
         }
     },
     "Kushala Daora Tree": {

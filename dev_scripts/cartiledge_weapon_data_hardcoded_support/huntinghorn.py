@@ -149,7 +149,7 @@ HARDCODED_HH_SPEC = [
         ("Vicello Nulo Green II", "26b", 5),
         ("Vicello Unu Green", "26c", 6),
     ]),
-    ("Bnahabra (Paralysis)", [
+    ("Bnahabra (Ice)", [
         ("Vicello Nulo White I", "27a", 1),
         ("Vicello Nulo White II", "27b", 3),
         ("Vicello Unu White", "27c", 5),

@@ -1562,7 +1562,9 @@
             ],
 
             "maxSharpness": [150,40,20,90,70,30]
-        },
+        }
+    },
+    "Bnahabra (Ice)": {
         "27a": {
             "rarity": 1,
             "endlineTag": "",
@@ -1774,6 +1776,42 @@
             "maxSharpness": [20,20,80,60,150,20]
         }
     },
+    "Narwa Tree": {
+        "31a": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Thunderbolt Horn I",
+            "attack": 180,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"thunder": 34},
+
+            "rampSkills": [
+                ["attack_boost_2", "anti_aerial_species", "narwa_soul"]
+            ],
+
+            "maxSharpness": [20,20,190,40,50,30]
+        },
+        "31b": {
+            "rarity": 7,
+            "endlineTag": "hr",
+
+            "name": "Abyssal Storm Horn",
+            "attack": 190,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"thunder": 41},
+
+            "rampSkills": [
+                ["attack_boost_3", "anti_aerial_species", "narwa_soul"]
+            ],
+
+            "maxSharpness": [10,20,220,40,70,40]
+        }
+    },
     "Bazelgeuse Tree": {
         "32a": {
             "rarity": 6,
@@ -1825,42 +1863,6 @@
             ],
 
             "maxSharpness": [60,110,80,80,30,40]
-        }
-    },
-    "Narwa Tree": {
-        "31a": {
-            "rarity": 6,
-            "endlineTag": "",
-
-            "name": "Thunderbolt Horn I",
-            "attack": 180,
-            "affinity": 0,
-            "defense": 0,
-            "decoSlots": [],
-            "eleStat": {"thunder": 34},
-
-            "rampSkills": [
-                ["attack_boost_2", "anti_aerial_species", "narwa_soul"]
-            ],
-
-            "maxSharpness": [20,20,190,40,50,30]
-        },
-        "31b": {
-            "rarity": 7,
-            "endlineTag": "hr",
-
-            "name": "Abyssal Storm Horn",
-            "attack": 190,
-            "affinity": 0,
-            "defense": 0,
-            "decoSlots": [],
-            "eleStat": {"thunder": 41},
-
-            "rampSkills": [
-                ["attack_boost_3", "anti_aerial_species", "narwa_soul"]
-            ],
-
-            "maxSharpness": [10,20,220,40,70,40]
         }
     },
     "Kushala Daora Tree": {

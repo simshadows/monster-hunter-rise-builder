@@ -95,8 +95,8 @@ HARDCODED_DB_SPEC = [
         ("Ashigara Axes"   , "16c", 6),
     ]),
     ("Anjanath Tree", [
-        ("Flammenschild"         , "17a", 3),
-        ("Flammenschild"         , "17b", 5), # what the fuck :/
+        ("Flammenschild I"       , "17a", 3), # Real name: "Flammenschild"
+        ("Flammenschild II"      , "17b", 5), # Real name: "Flammenschild"
         ("Gnashing Flammenschild", "17c", 6),
     ]),
     ("Bone Tree", [

@@ -19,15 +19,14 @@ I'll just rely on CSV exports.)
 There are some duplicate weapon names. These aren't mistakes and will just need to be fixed in the final output manually.
 Known duplicates:
     Dual Blades: Flammenschild
+        For now, both downloaded data is modified to include "I" and "II" to distinguish them, but the final data
+        must be manually modified to change them back to simply "Flammenschild".
 
-Special characters (like accents) aren't handled well right now, which will also need to be adjusted manually.
-Known cases:
-    Hunting Horn: Teostra's Orph\u00e9e
-    Switch Axe: Gr\u00ed\u00f0r's Landmaker
-    Charge Blade: Die Walk\u00fcre
+Special characters (like accents) aren't handled well right now.
+Fix them in the downloaded data, then add these names to UNICODE_NAME_MAP.
 
-Also, the data set is limited in not having info in specific rampage skill slots, so the script will just output a single
-big list, which will then be separated out manually. We're just going to have to fix those up manually.
+The data set is limited in not having info in specific rampage skill slots, so the script will just output a single
+big list, which will then be separated out manually and added to each file's map.
 
 !!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!
@@ -39,7 +38,7 @@ import os
 import re
 import csv
 from itertools import chain, zip_longest
-from collections import defaultdict
+from collections import defaultdict, OrderedDict
 
 from cartiledge_weapon_data_hardcoded_support.greatsword import HARDCODED_GS_SPEC, HARDCODED_RAMP_SKILLS_GS
 from cartiledge_weapon_data_hardcoded_support.longsword import HARDCODED_LS_SPEC, HARDCODED_RAMP_SKILLS_LS
@@ -98,6 +97,12 @@ HARDCODED_RAMP_SKILLS = {
     "switchaxe"     : HARDCODED_RAMP_SKILLS_SA,
     "chargeblade"   : HARDCODED_RAMP_SKILLS_CB,
     "insectglaive"  : HARDCODED_RAMP_SKILLS_IG,
+}
+
+UNICODE_NAME_MAP = {
+    "huntinghorn": {"Teostra's Orphee": "Teostra's Orph\\u00e9e"},
+    "switchaxe":   {"Grior's Landmaker": "Gr\\u00ed\\u00f0r's Landmaker"},
+    "chargeblade": {"Die Walkure": "Die Walk\\u00fcre"},
 }
 
 module_dir_abs = os.path.dirname(os.path.abspath(__file__))
@@ -194,7 +199,44 @@ for (weapon_category, src_file_name) in FILE_MAP:
                 }
 
 #
-# STAGE 3: Produce Output
+# STAGE 3: Rearrange to match spec ordering.
+#          Also, we check for weapons present in the spec but not in the data.
+#          Also, we check for duplicate keys in the spec.
+#          Also, we convert unicode names.
+#
+
+# {category: {tree name: {id: {weapon data}, ...}, ...}, ...}
+tmp_data = {}
+for (weapon_category, category_spec) in DATA_SPEC_HARDCODED.items():
+    submap = tmp_data[weapon_category] = OrderedDict()
+    for (tree_name, tree_data) in category_spec:
+
+        if tree_name in submap:
+            raise ValueError("Duplicate tree name: " + weapon_category + " " + tree_name)
+
+        subsubmap = submap[tree_name] = OrderedDict()
+        submap.move_to_end(tree_name, last=True)
+        for (weapon_name, weapon_id, _) in tree_data:
+
+            if weapon_id in subsubmap:
+                raise ValueError("Duplicate weapon id: " + weapon_category + " " + tree_name + " " + weapon_id)
+
+            try:
+                subsubmap[weapon_id] = data[weapon_category][tree_name][weapon_id] # Throws exception if data is missing
+            except KeyError:
+                raise KeyError("Missing in data: " + weapon_category + " " + tree_name + " " + weapon_name + " " + weapon_id)
+            subsubmap.move_to_end(weapon_id, last=True)
+
+            if subsubmap[weapon_id]["name"] != weapon_name:
+                raise ValueError("Something went wrong here.")
+
+            actual_name = UNICODE_NAME_MAP.get(weapon_category, {}).get(weapon_name, None)
+            if actual_name is not None:
+                subsubmap[weapon_id]["name"] = actual_name
+data = tmp_data
+
+#
+# STAGE 4: Produce Output
 #
 
 outer_fmt = """\
@@ -259,7 +301,8 @@ def process_ramp_skills(weapon_name, weapon_category, ramp_skill_id_list):
 
 
 for (weapon_category, _) in FILE_MAP:
-    dst_file_name = "TODO.weapons_" + weapon_category + ".json"
+    #dst_file_name = "TODO.weapons_" + weapon_category + ".json"
+    dst_file_name = "weapons_" + weapon_category + ".json"
     dst_file_path = os.path.join(module_dir_abs, DATABASE_DIR, dst_file_name)
 
     spec_subdict = data_spec[weapon_category]

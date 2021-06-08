@@ -1988,6 +1988,42 @@
             "maxSharpness": [20,20,80,60,150,20]
         }
     },
+    "Narwa Tree": {
+        "35a": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Thunderbolt Long Sword I",
+            "attack": 180,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"thunder": 38},
+
+            "rampSkills": [
+                ["attack_boost_2", "anti_aerial_species", "narwa_soul"]
+            ],
+
+            "maxSharpness": [20,20,190,40,50,30]
+        },
+        "35b": {
+            "rarity": 7,
+            "endlineTag": "hr",
+
+            "name": "Abyssal Storm Sword",
+            "attack": 190,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {"thunder": 42},
+
+            "rampSkills": [
+                ["attack_boost_3", "anti_aerial_species", "narwa_soul"]
+            ],
+
+            "maxSharpness": [10,20,220,40,70,40]
+        }
+    },
     "Bazelgeuse Tree": {
         "36a": {
             "rarity": 6,
@@ -2039,78 +2075,6 @@
             ],
 
             "maxSharpness": [90,80,80,60,80,10]
-        }
-    },
-    "Narwa Tree": {
-        "35a": {
-            "rarity": 6,
-            "endlineTag": "",
-
-            "name": "Thunderbolt Long Sword I",
-            "attack": 180,
-            "affinity": 0,
-            "defense": 0,
-            "decoSlots": [],
-            "eleStat": {"thunder": 38},
-
-            "rampSkills": [
-                ["attack_boost_2", "anti_aerial_species", "narwa_soul"]
-            ],
-
-            "maxSharpness": [20,20,190,40,50,30]
-        },
-        "35b": {
-            "rarity": 7,
-            "endlineTag": "hr",
-
-            "name": "Abyssal Storm Sword",
-            "attack": 190,
-            "affinity": 0,
-            "defense": 0,
-            "decoSlots": [],
-            "eleStat": {"thunder": 42},
-
-            "rampSkills": [
-                ["attack_boost_3", "anti_aerial_species", "narwa_soul"]
-            ],
-
-            "maxSharpness": [10,20,220,40,70,40]
-        }
-    },
-    "Valstrax Tree": {
-        "40a": {
-            "rarity": 6,
-            "endlineTag": "",
-
-            "name": "Redwing Long Sword I",
-            "attack": 170,
-            "affinity": 0,
-            "defense": 0,
-            "decoSlots": [2],
-            "eleStat": {"dragon": 35},
-
-            "rampSkills": [
-                ["attack_boost_3", "wyvern_exploit", "valstrax_soul"]
-            ],
-
-            "maxSharpness": [180,120,0,0,0,0]
-        },
-        "40b": {
-            "rarity": 7,
-            "endlineTag": "hr",
-
-            "name": "Reddnaught Blade",
-            "attack": 180,
-            "affinity": 0,
-            "defense": 0,
-            "decoSlots": [2],
-            "eleStat": {"dragon": 39},
-
-            "rampSkills": [
-                ["attack_boost_3", "wyvern_exploit", "valstrax_soul"]
-            ],
-
-            "maxSharpness": [60,140,0,0,0,0]
         }
     },
     "Kushala Daora Tree": {
@@ -2219,6 +2183,42 @@
             ],
 
             "maxSharpness": [100,100,50,60,40,50]
+        }
+    },
+    "Valstrax Tree": {
+        "40a": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Redwing Long Sword I",
+            "attack": 170,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2],
+            "eleStat": {"dragon": 35},
+
+            "rampSkills": [
+                ["attack_boost_3", "wyvern_exploit", "valstrax_soul"]
+            ],
+
+            "maxSharpness": [180,120,0,0,0,0]
+        },
+        "40b": {
+            "rarity": 7,
+            "endlineTag": "hr",
+
+            "name": "Reddnaught Blade",
+            "attack": 180,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2],
+            "eleStat": {"dragon": 39},
+
+            "rampSkills": [
+                ["attack_boost_3", "wyvern_exploit", "valstrax_soul"]
+            ],
+
+            "maxSharpness": [60,140,0,0,0,0]
         }
     },
     "Death Stench Tree": {
