@@ -469,6 +469,14 @@ const hardcodedRampageSkills = [
         shortId: "stes",
         name: "Steadiness Surge",
     }],
+    ["special_wyvernheart", {
+        shortId: "spwh",
+        name: "Special: Wyvernheart",
+    }],
+    ["special_wyvernsnipe", {
+        shortId: "spws",
+        name: "Special: Wyvernsnipe",
+    }],
 
     ["attack_surge", {
         shortId: "atsu",
