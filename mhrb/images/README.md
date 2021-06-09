@@ -114,7 +114,7 @@ White: 191 193 200
 Blue:       64  124 124
 Brown:      112 88  57
 Dark Blue:  50  81  195
-Gold:       27  169 116
+Gold:       186 131 59
 Green:      25  167 112
 Grey:       127 130 131
 Light Blue: 116 151 189

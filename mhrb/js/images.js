@@ -16,12 +16,6 @@ const imgPathMap = new Map([
     ["deco_slot1_empty", "./images/deco_slot1.svg"],
     ["deco_slot2_empty", "./images/deco_slot2.svg"],
     ["deco_slot3_empty", "./images/deco_slot3.svg"],
-    ["deco_slot1_size1_white", "./images/deco_slot1_size1_white.svg"],
-    ["deco_slot2_size1_white", "./images/deco_slot2_size1_white.svg"],
-    ["deco_slot2_size2_white", "./images/deco_slot2_size2_white.svg"],
-    ["deco_slot3_size1_white", "./images/deco_slot3_size1_white.svg"],
-    ["deco_slot3_size2_white", "./images/deco_slot3_size2_white.svg"],
-    ["deco_slot3_size3_white", "./images/deco_slot3_size3_white.svg"],
     
     ["attack_icon"  , "./images/mhw_attack_icon_inkscapesourcefile.svg"    ],
     ["affinity_icon", "./images/mhw_affinity_icon_inkscapesourcefile.svg"  ],
@@ -94,6 +88,30 @@ for (let rarity = 1; rarity <= 7 ; ++rarity) {
         const imgPath = "./images/derived/armour_" + armourSlotStr + "_r" + parseInt(rarity) +".png";
         imgPathMap.set(imgID, imgPath);
     }
+}
+
+const decoIconColours = [
+    "blue",
+    "brown",
+    "darkblue",
+    "gold",
+    "green",
+    "grey",
+    "lightblue",
+    "orange",
+    "pink",
+    "purple",
+    "red",
+    "white",
+    "yellow",
+];
+for (const decoIconColour of decoIconColours) {
+    imgPathMap.set("deco_slot1_size1_" + decoIconColour, "./images/deco_slot1_size1_" + decoIconColour + ".svg");
+    imgPathMap.set("deco_slot2_size1_" + decoIconColour, "./images/deco_slot2_size1_" + decoIconColour + ".svg");
+    imgPathMap.set("deco_slot2_size2_" + decoIconColour, "./images/deco_slot2_size2_" + decoIconColour + ".svg");
+    imgPathMap.set("deco_slot3_size1_" + decoIconColour, "./images/deco_slot3_size1_" + decoIconColour + ".svg");
+    imgPathMap.set("deco_slot3_size2_" + decoIconColour, "./images/deco_slot3_size2_" + decoIconColour + ".svg");
+    imgPathMap.set("deco_slot3_size3_" + decoIconColour, "./images/deco_slot3_size3_" + decoIconColour + ".svg");
 }
 
 /*** General Functions ***/
