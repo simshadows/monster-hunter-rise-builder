@@ -478,6 +478,95 @@ const hardcodedRampageSkills = [
         name: "Special: Wyvernsnipe",
     }],
 
+    ["poison_coating_boost", {
+        shortId: "cbpo",
+        name: "Poison Coating Boost",
+    }],
+    ["paralysis_coating_boost", {
+        shortId: "cbpa",
+        name: "Paralysis Coating Boost",
+    }],
+    ["sleep_coating_boost", {
+        shortId: "cbsl",
+        name: "Sleep Coating Boost",
+    }],
+    ["close_range_coating_boost", {
+        shortId: "clcb",
+        name: "Close-range Coating Boost",
+    }],
+    ["use_power_coating", {
+        shortId: "upc",
+        name: "Use Power Coating",
+    }],
+    ["use_poison_coating_1", {
+        shortId: "upoc1",
+        name: "Use Poison Coating I",
+    }],
+    ["use_poison_coating_2", {
+        shortId: "upoc2",
+        name: "Use Poison Coating II",
+    }],
+    ["use_para_coating_1", {
+        shortId: "upac1",
+        name: "Use Para Coating I",
+    }],
+    ["use_para_coating_2", {
+        shortId: "upac2",
+        name: "Use Para Coating II",
+    }],
+    ["use_sleep_coating_1", {
+        shortId: "uslc1",
+        name: "Use Sleep Coating I",
+    }],
+    ["use_sleep_coating_2", {
+        shortId: "uslc2",
+        name: "Use Sleep Coating II",
+    }],
+    ["use_blast_coating", {
+        shortId: "ublc",
+        name: "Use Blast Coating",
+    }],
+    ["use_exhaust_coating", {
+        shortId: "uexc",
+        name: "Use Exhaust Coating",
+    }],
+    ["lasting_arc_shot", {
+        shortId: "arla",
+        name: "Lasting Arc Shot",
+    }],
+    ["arc_shot_recovery", {
+        shortId: "arre",
+        name: "Arc Shot: Recovery",
+    }],
+    ["arc_shot_affinity", {
+        shortId: "araf",
+        name: "Arc Shot: Affinity",
+    }],
+    ["arc_shot_anti_shock", {
+        shortId: "aras",
+        name: "Arc Shot: Anti-shock",
+    }],
+    ["firing_rapid", {
+        shortId: "frap",
+        name: "Firing: Rapid",
+    }],
+    ["firing_pierce", {
+        shortId: "fpie",
+        name: "Firing: Pierce",
+    }],
+    ["firing_spread", {
+        shortId: "fspr",
+        name: "Firing: Spread",
+    }],
+    ["firing_charge", {
+        shortId: "fcha",
+        name: "Firing: Charge",
+    }],
+    ["firing_swift", {
+        shortId: "fswi",
+        name: "Firing: Swift",
+    }],
+
     ["attack_surge", {
         shortId: "atsu",
         name: "Attack Surge",
@@ -581,10 +670,6 @@ const hardcodedRampageSkills = [
     ["hellion_mode", {
         shortId: "60",
         name: "Hellion Mode",
-    }],
-    ["lasting_arc_shot", {
-        shortId: "70",
-        name: "Lasting Arc Shot",
     }],
     ["master_rider", {
         shortId: "80",

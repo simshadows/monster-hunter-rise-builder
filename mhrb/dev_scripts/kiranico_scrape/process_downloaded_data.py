@@ -41,6 +41,7 @@ from hardcoded_data.chargeblade    import HARDCODED_CB_SPEC
 from hardcoded_data.insectglaive   import HARDCODED_IG_SPEC
 from hardcoded_data.lightbowgun    import HARDCODED_LBG_SPEC
 from hardcoded_data.heavybowgun    import HARDCODED_HBG_SPEC
+from hardcoded_data.bow            import HARDCODED_B_SPEC
 
 DATABASE_DIR = "../../data/"
 SRC_FILE_PATH = "./downloaded_data/downloaded_data.json"
@@ -61,6 +62,7 @@ DATA_SPEC_HARDCODED = {
     "insectglaive"  : (HARDCODED_IG_SPEC , {"melee"}),
     "lightbowgun"   : (HARDCODED_LBG_SPEC, set()),
     "heavybowgun"   : (HARDCODED_HBG_SPEC, set()),
+    "bow"           : (HARDCODED_B_SPEC  , set()),
 }
 
 module_dir_abs = os.path.dirname(os.path.abspath(__file__))
