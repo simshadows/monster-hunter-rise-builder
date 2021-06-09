@@ -6,7 +6,7 @@
  */
 
 import * as check from "../../../check.js";
-import {getImgPath} from "../../../images.js";
+import {getImgPath, getSimpleImgElement} from "../../../images.js";
 import {
     clipsafeSpan,
 } from "../../../common.js";
@@ -90,6 +90,14 @@ function EquipInfoBox(props) {
 
 class EquipDecosWrapBox extends React.Component {
 
+    // Logically static
+    _iconsToImageID(icon, decoSize, slotSize) {
+        assert(check.isNonEmptyStr(icon));
+        assert(check.isInt(decoSize) && (decoSize > 0) && (decoSize <= 3));
+        assert(check.isInt(slotSize) && (slotSize > 0) && (slotSize <= 3));
+        return "deco_slot" + slotSize + "_size" + decoSize + "_" + icon;
+    }
+
     handleClickSelect(decoSlotID, maxDecoSize) {
         this.props.handleClickSelect(decoSlotID, maxDecoSize);
     }
@@ -114,11 +122,15 @@ class EquipDecosWrapBox extends React.Component {
             const slotSize = decoPropsRO.slotSize;
             // TODO: It's confusing having two slot sizes: one for the slot, another for the deco size itself. Fix this.
 
-            const iconImg = (()=>{
-                if (slotSize == 1) return getImgPath("placeholder_deco_size_1");
-                else if (slotSize == 2) return getImgPath("placeholder_deco_size_2");
-                else if (slotSize == 3) return getImgPath("placeholder_deco_size_3");
-                throw new Error("Unexpected slot size.");
+            const iconImgPath = (()=>{
+                if (decoPropsRO.deco === null) {
+                    if (slotSize == 1) return "deco_slot1_empty";
+                    else if (slotSize == 2) return "deco_slot2_empty";
+                    else if (slotSize == 3) return "deco_slot3_empty";
+                    throw new Error("Unexpected slot size.");
+                } else {
+                    return this._iconsToImageID(decoPropsRO.deco.icon, decoPropsRO.deco.slotSize, slotSize);
+                }
             })();
 
             decoBoxes.push(
@@ -130,13 +142,7 @@ class EquipDecosWrapBox extends React.Component {
                         {
                         className: "equip-deco-icon-box",
                         },
-                        element("img",
-                            {
-                            src: iconImg,
-                            alt: "icon",
-                            },
-                            null,
-                        ),
+                        getSimpleImgElement(iconImgPath),
                     ),
                     element("div",
                         {

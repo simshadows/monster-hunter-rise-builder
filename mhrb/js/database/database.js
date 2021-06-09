@@ -449,6 +449,8 @@ async function downloadAllRawDecorationsData() {
         assert(isInt(decoObj.rarity) && (decoObj.rarity >= 4) && (decoObj.rarity <= 7));
         assert(isObj(decoObj.skills));
 
+        assert(isNonEmptyStr(decoObj.icon));
+
         for (const [skillLongID, skillLevel] of Object.entries(decoObj.skills)) {
             assert(isNonEmptyStr(skillLongID) && strHasOnlyLowerNumeralUnder(skillLongID));
             assert(skillLevel === 1);
@@ -460,6 +462,8 @@ async function downloadAllRawDecorationsData() {
                 slotSize: decoObj.slotSize,
                 rarity: decoObj.rarity,
                 skills: decoObj.skills,
+
+                icon: decoObj.icon,
 
                 filterHelpers: {}, // Populate after
             };

@@ -8,12 +8,14 @@
    version="1.1"
    id="svg5"
    inkscape:version="1.1 (c68e22c387, 2021-05-23)"
-   sodipodi:docname="deco_size2_inkscapesource.svg"
+   sodipodi:docname="deco_slot2_inkscapesource.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#">
   <sodipodi:namedview
      id="namedview7"
      pagecolor="#505050"
@@ -26,7 +28,7 @@
      showgrid="false"
      width="100mm"
      inkscape:zoom="1.9439065"
-     inkscape:cx="181.33588"
+     inkscape:cx="181.5931"
      inkscape:cy="139.66721"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
@@ -474,7 +476,7 @@
      inkscape:groupmode="layer"
      id="layer4"
      inkscape:label="gem_bottomright"
-     style="display:inline">
+     style="display:none">
     <path
        id="rect4630-7-6"
        style="display:inline;fill:#bfc1c8;fill-opacity:1;stroke:none;stroke-width:1.8;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -512,7 +514,7 @@
      inkscape:groupmode="layer"
      id="g1171"
      inkscape:label="gem_bottomleft"
-     style="display:inline">
+     style="display:none">
     <path
        id="path1161"
        style="display:inline;fill:#bfc1c8;fill-opacity:1;stroke:none;stroke-width:1.8;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -550,7 +552,7 @@
      inkscape:groupmode="layer"
      id="layer5"
      inkscape:label="gem_size1"
-     style="display:inline">
+     style="display:none">
     <path
        id="path835"
        style="display:inline;fill:#bfc1c8;fill-opacity:1;stroke:none;stroke-width:2.2;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -564,7 +566,7 @@
      inkscape:groupmode="layer"
      id="g2091"
      inkscape:label="gem_size2"
-     style="display:inline">
+     style="display:none">
     <path
        id="path2089"
        style="display:inline;fill:#bfc1c8;fill-opacity:1;stroke:none;stroke-width:2.2;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -627,4 +629,29 @@
        sodipodi:nodetypes="ccccscsc"
        transform="translate(0,-1.0583333)" />
   </g>
+  <metadata
+     id="metadata879">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
 </svg>

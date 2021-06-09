@@ -6,607 +6,809 @@
     "name": "Mastery",
     "slotSize": 2,
     "rarity": 7,
-    "skills": {"masters_touch": 1}
+    "skills": {"masters_touch": 1},
+
+    "icon": "white"
 },
 "20": {
     "name": "Handicraft",
     "slotSize": 3,
     "rarity": 7,
-    "skills": {"handicraft": 1}
+    "skills": {"handicraft": 1},
+
+    "icon": "white"
 },
 "30": {
     "name": "Fate",
     "slotSize": 3,
     "rarity": 7,
-    "skills": {"good_luck": 1}
+    "skills": {"good_luck": 1},
+
+    "icon": "white"
 },
 "40": {
     "name": "Hellfire",
     "slotSize": 3,
     "rarity": 6,
-    "skills": {"hellfire_cloak": 1}
+    "skills": {"hellfire_cloak": 1},
+
+    "icon": "white"
 },
 "50": {
     "name": "Leap",
     "slotSize": 3,
     "rarity": 7,
-    "skills": {"jump_master": 1}
+    "skills": {"jump_master": 1},
+
+    "icon": "white"
 },
 "60": {
     "name": "Salvo",
     "slotSize": 3,
     "rarity": 7,
-    "skills": {"rapid_fire_up": 1}
+    "skills": {"rapid_fire_up": 1},
+
+    "icon": "white"
 },
 "70": {
     "name": "Thrift",
     "slotSize": 2,
     "rarity": 6,
-    "skills": {"spare_shot": 1}
+    "skills": {"spare_shot": 1},
+
+    "icon": "white"
 },
 "80": {
     "name": "Razor",
     "slotSize": 2,
     "rarity": 6,
-    "skills": {"razor_sharp": 1}
+    "skills": {"razor_sharp": 1},
+
+    "icon": "white"
 },
 "90": {
     "name": "Spread",
     "slotSize": 3,
     "rarity": 7,
-    "skills": {"spread_up": 1}
+    "skills": {"spread_up": 1},
+
+    "icon": "white"
 },
 "100": {
     "name": "Pierce",
     "slotSize": 3,
     "rarity": 7,
-    "skills": {"pierce_up": 1}
+    "skills": {"pierce_up": 1},
+
+    "icon": "white"
 },
 "110": {
     "name": "Forceshot",
     "slotSize": 3,
     "rarity": 6,
-    "skills": {"normal_rapid_up": 1}
+    "skills": {"normal_rapid_up": 1},
+
+    "icon": "white"
 },
 "120": {
     "name": "Sharp",
     "slotSize": 2,
     "rarity": 6,
-    "skills": {"protective_polish": 1}
+    "skills": {"protective_polish": 1},
+
+    "icon": "white"
 },
 "130": {
     "name": "Blast",
     "slotSize": 2,
     "rarity": 6,
-    "skills": {"blast_attack": 1}
+    "skills": {"blast_attack": 1},
+
+    "icon": "white"
 },
 "140": {
     "name": "Sleep",
     "slotSize": 2,
     "rarity": 6,
-    "skills": {"sleep_attack": 1}
+    "skills": {"sleep_attack": 1},
+
+    "icon": "white"
 },
 "150": {
     "name": "Paralyzer",
     "slotSize": 2,
     "rarity": 6,
-    "skills": {"paralysis_attack": 1}
+    "skills": {"paralysis_attack": 1},
+
+    "icon": "white"
 },
 "160": {
     "name": "Throttle",
     "slotSize": 2,
     "rarity": 6,
-    "skills": {"latent_power": 1}
+    "skills": {"latent_power": 1},
+
+    "icon": "white"
 },
 "170": {
     "name": "Crisis",
     "slotSize": 2,
     "rarity": 6,
-    "skills": {"resuscitate": 1}
+    "skills": {"resuscitate": 1},
+
+    "icon": "white"
 },
 "180": {
     "name": "Furor",
     "slotSize": 2,
     "rarity": 6,
-    "skills": {"resentment": 1}
+    "skills": {"resentment": 1},
+
+    "icon": "white"
 },
 "190": {
     "name": "Flawless",
     "slotSize": 2,
     "rarity": 6,
-    "skills": {"peak_performance": 1}
+    "skills": {"peak_performance": 1},
+
+    "icon": "white"
 },
 "200": {
     "name": "Challenger",
     "slotSize": 2,
     "rarity": 6,
-    "skills": {"agitator": 1}
+    "skills": {"agitator": 1},
+
+    "icon": "white"
 },
 "210": {
     "name": "Tenderizer",
     "slotSize": 2,
     "rarity": 6,
-    "skills": {"weakness_exploit": 1}
+    "skills": {"weakness_exploit": 1},
+
+    "icon": "white"
 },
 "220": {
     "name": "Critical",
     "slotSize": 2,
     "rarity": 7,
-    "skills": {"critical_boost": 1}
+    "skills": {"critical_boost": 1},
+
+    "icon": "white"
 },
 "230": {
     "name": "Capacity",
     "slotSize": 3,
     "rarity": 7,
-    "skills": {"ammo_up": 1}
+    "skills": {"ammo_up": 1},
+
+    "icon": "white"
 },
 "240": {
     "name": "Guardian",
     "slotSize": 3,
     "rarity": 7,
-    "skills": {"offensive_guard": 1}
+    "skills": {"offensive_guard": 1},
+
+    "icon": "white"
 },
 "250": {
     "name": "Fungiform",
     "slotSize": 3,
     "rarity": 7,
-    "skills": {"mushroomancer": 1}
+    "skills": {"mushroomancer": 1},
+
+    "icon": "white"
 },
 "260": {
     "name": "Draw",
     "slotSize": 3,
     "rarity": 7,
-    "skills": {"critical_draw": 1}
+    "skills": {"critical_draw": 1},
+
+    "icon": "white"
 },
 "270": {
     "name": "Precise",
     "slotSize": 2,
     "rarity": 6,
-    "skills": {"ballistics": 1}
+    "skills": {"ballistics": 1},
+
+    "icon": "white"
 },
 "280": {
     "name": "Crit Element",
     "slotSize": 2,
     "rarity": 6,
-    "skills": {"critical_element": 1}
+    "skills": {"critical_element": 1},
+
+    "icon": "white"
 },
 "290": {
     "name": "Artillery",
     "slotSize": 2,
     "rarity": 7,
-    "skills": {"artillery": 1}
+    "skills": {"artillery": 1},
+
+    "icon": "white"
 },
 "300": {
     "name": "Sprinter",
     "slotSize": 2,
     "rarity": 7,
-    "skills": {"marathon_runner": 1}
+    "skills": {"marathon_runner": 1},
+
+    "icon": "white"
 },
 "310": {
     "name": "Charger",
     "slotSize": 2,
     "rarity": 7,
-    "skills": {"focus": 1}
+    "skills": {"focus": 1},
+
+    "icon": "white"
 },
 "320": {
     "name": "Mind's Eye",
     "slotSize": 2,
     "rarity": 7,
-    "skills": {"minds_eye": 1}
+    "skills": {"minds_eye": 1},
+
+    "icon": "white"
 },
 "330": {
     "name": "Potential",
     "slotSize": 2,
     "rarity": 6,
-    "skills": {"heroics": 1}
+    "skills": {"heroics": 1},
+
+    "icon": "white"
 },
 "340": {
     "name": "Trueshot",
     "slotSize": 2,
     "rarity": 6,
-    "skills": {"special_ammo_boost": 1}
+    "skills": {"special_ammo_boost": 1},
+
+    "icon": "white"
 },
 "350": {
     "name": "Magazine",
     "slotSize": 2,
     "rarity": 6,
-    "skills": {"load_shells": 1}
+    "skills": {"load_shells": 1},
+
+    "icon": "white"
 },
 "360": {
     "name": "Shield",
     "slotSize": 2,
     "rarity": 6,
-    "skills": {"guard_up": 1}
+    "skills": {"guard_up": 1},
+
+    "icon": "white"
 },
 "370": {
     "name": "Ironwall",
     "slotSize": 2,
     "rarity": 6,
-    "skills": {"guard": 1}
+    "skills": {"guard": 1},
+
+    "icon": "white"
 },
 "380": {
     "name": "Refresh",
     "slotSize": 2,
     "rarity": 6,
-    "skills": {"stamina_surge": 1}
+    "skills": {"stamina_surge": 1},
+
+    "icon": "white"
 },
 "390": {
     "name": "Enhancer",
     "slotSize": 2,
     "rarity": 6,
-    "skills": {"power_prolonger": 1}
+    "skills": {"power_prolonger": 1},
+
+    "icon": "white"
 },
 "400": {
     "name": "Mighty",
     "slotSize": 2,
     "rarity": 6,
-    "skills": {"maximum_might": 1}
+    "skills": {"maximum_might": 1},
+
+    "icon": "white"
 },
 "410": {
     "name": "Attack",
     "slotSize": 2,
     "rarity": 6,
-    "skills": {"attack_boost": 1}
+    "skills": {"attack_boost": 1},
+
+    "icon": "white"
 },
 "420": {
     "name": "Expert",
     "slotSize": 2,
     "rarity": 6,
-    "skills": {"critical_eye": 1}
+    "skills": {"critical_eye": 1},
+
+    "icon": "white"
 },
 "430": {
     "name": "Quickswitch",
     "slotSize": 2,
     "rarity": 5,
-    "skills": {"rapid_morph": 1}
+    "skills": {"rapid_morph": 1},
+
+    "icon": "white"
 },
 "440": {
     "name": "Absorber",
     "slotSize": 1,
     "rarity": 5,
-    "skills": {"recoil_down": 1}
+    "skills": {"recoil_down": 1},
+
+    "icon": "white"
 },
 "450": {
     "name": "Blunt",
     "slotSize": 2,
     "rarity": 5,
-    "skills": {"bludgeoner": 1}
+    "skills": {"bludgeoner": 1},
+
+    "icon": "white"
 },
 "460": {
     "name": "Quickload",
     "slotSize": 1,
     "rarity": 5,
-    "skills": {"reload_speed": 1}
+    "skills": {"reload_speed": 1},
+
+    "icon": "white"
 },
 "470": {
     "name": "Steadfast",
     "slotSize": 1,
     "rarity": 5,
-    "skills": {"stun_resistance": 1}
+    "skills": {"stun_resistance": 1},
+
+    "icon": "white"
 },
 "480": {
     "name": "Footing",
     "slotSize": 2,
     "rarity": 5,
-    "skills": {"tremor_resistance": 1}
+    "skills": {"tremor_resistance": 1},
+
+    "icon": "white"
 },
 "490": {
     "name": "Earplug",
     "slotSize": 3,
     "rarity": 5,
-    "skills": {"earplugs": 1}
+    "skills": {"earplugs": 1},
+
+    "icon": "white"
 },
 "500": {
     "name": "Counter",
     "slotSize": 2,
     "rarity": 5,
-    "skills": {"counterstrike": 1}
+    "skills": {"counterstrike": 1},
+
+    "icon": "white"
 },
 "510": {
     "name": "Bubble",
     "slotSize": 2,
     "rarity": 5,
-    "skills": {"bubbly_dance": 1}
+    "skills": {"bubbly_dance": 1},
+
+    "icon": "white"
 },
 "520": {
     "name": "Sniper",
     "slotSize": 1,
     "rarity": 5,
-    "skills": {"steadiness": 1}
+    "skills": {"steadiness": 1},
+
+    "icon": "white"
 },
 "530": {
     "name": "Gambit",
     "slotSize": 2,
     "rarity": 5,
-    "skills": {"punishing_draw": 1}
+    "skills": {"punishing_draw": 1},
+
+    "icon": "white"
 },
 "540": {
     "name": "Jumping",
     "slotSize": 2,
     "rarity": 5,
-    "skills": {"evade_extender": 1}
+    "skills": {"evade_extender": 1},
+
+    "icon": "white"
 },
 "550": {
     "name": "Evasion",
     "slotSize": 2,
     "rarity": 5,
-    "skills": {"evade_window": 1}
+    "skills": {"evade_window": 1},
+
+    "icon": "white"
 },
 "560": {
     "name": "Brace",
     "slotSize": 1,
     "rarity": 5,
-    "skills": {"flinch_free": 1}
+    "skills": {"flinch_free": 1},
+
+    "icon": "white"
 },
 "570": {
     "name": "Sheath",
     "slotSize": 2,
     "rarity": 5,
-    "skills": {"quick_sheath": 1}
+    "skills": {"quick_sheath": 1},
+
+    "icon": "white"
 },
 "580": {
     "name": "Wind Res",
     "slotSize": 1,
     "rarity": 5,
-    "skills": {"windproof": 1}
+    "skills": {"windproof": 1},
+
+    "icon": "white"
 },
 "590": {
     "name": "KO",
     "slotSize": 2,
     "rarity": 5,
-    "skills": {"slugger": 1}
+    "skills": {"slugger": 1},
+
+    "icon": "white"
 },
 "600": {
     "name": "Friendship",
     "slotSize": 2,
     "rarity": 5,
-    "skills": {"wide_range": 1}
+    "skills": {"wide_range": 1},
+
+    "icon": "white"
 },
 "610": {
     "name": "Destroyer",
     "slotSize": 2,
     "rarity": 5,
-    "skills": {"partbreaker": 1}
+    "skills": {"partbreaker": 1},
+
+    "icon": "white"
 },
 "620": {
     "name": "Resistor",
     "slotSize": 2,
     "rarity": 5,
-    "skills": {"blight_resistance": 1}
+    "skills": {"blight_resistance": 1},
+
+    "icon": "white"
 },
 "630": {
     "name": "Gobbler",
     "slotSize": 2,
     "rarity": 5,
-    "skills": {"speed_eating": 1}
+    "skills": {"speed_eating": 1},
+
+    "icon": "white"
 },
 "640": {
     "name": "Protection",
     "slotSize": 2,
     "rarity": 5,
-    "skills": {"divine_blessing": 1}
+    "skills": {"divine_blessing": 1},
+
+    "icon": "white"
 },
 "650": {
     "name": "Wall Run",
     "slotSize": 2,
     "rarity": 4,
-    "skills": {"wall_runner": 1}
+    "skills": {"wall_runner": 1},
+
+    "icon": "white"
 },
 "660": {
     "name": "Wirebug",
     "slotSize": 2,
     "rarity": 4,
-    "skills": {"wirebug_whisperer": 1}
+    "skills": {"wirebug_whisperer": 1},
+
+    "icon": "white"
 },
 "670": {
     "name": "Grinder",
     "slotSize": 1,
     "rarity": 5,
-    "skills": {"speed_sharpening": 1}
+    "skills": {"speed_sharpening": 1},
+
+    "icon": "white"
 },
 "680": {
     "name": "Enduring",
     "slotSize": 2,
     "rarity": 4,
-    "skills": {"item_prolonger": 1}
+    "skills": {"item_prolonger": 1},
+
+    "icon": "white"
 },
 "690": {
     "name": "Recovery",
     "slotSize": 1,
     "rarity": 4,
-    "skills": {"recovery_speed": 1}
+    "skills": {"recovery_speed": 1},
+
+    "icon": "white"
 },
 "700": {
     "name": "Medicine",
     "slotSize": 2,
     "rarity": 4,
-    "skills": {"recovery_up": 1}
+    "skills": {"recovery_up": 1},
+
+    "icon": "white"
 },
 "710": {
     "name": "Sonorous",
     "slotSize": 1,
     "rarity": 4,
-    "skills": {"horn_maestro": 1}
+    "skills": {"horn_maestro": 1},
+
+    "icon": "white"
 },
 "720": {
     "name": "Drain",
     "slotSize": 1,
     "rarity": 4,
-    "skills": {"stamina_thief": 1}
+    "skills": {"stamina_thief": 1},
+
+    "icon": "white"
 },
 "730": {
     "name": "Physique",
     "slotSize": 2,
     "rarity": 4,
-    "skills": {"constitution": 1}
+    "skills": {"constitution": 1},
+
+    "icon": "white"
 },
 "740": {
     "name": "Venom",
     "slotSize": 1,
     "rarity": 5,
-    "skills": {"poison_attack": 1}
+    "skills": {"poison_attack": 1},
+
+    "icon": "white"
 },
 "750": {
     "name": "Slider",
     "slotSize": 1,
     "rarity": 4,
-    "skills": {"affinity_sliding": 1}
+    "skills": {"affinity_sliding": 1},
+
+    "icon": "white"
 },
 "760": {
     "name": "Bomber",
     "slotSize": 1,
     "rarity": 4,
-    "skills": {"bombardier": 1}
+    "skills": {"bombardier": 1},
+
+    "icon": "white"
 },
 "770": {
     "name": "Blaze",
     "slotSize": 1,
     "rarity": 5,
-    "skills": {"fire_attack": 1}
+    "skills": {"fire_attack": 1},
+
+    "icon": "white"
 },
 "780": {
     "name": "Stream",
     "slotSize": 1,
     "rarity": 5,
-    "skills": {"water_attack": 1}
+    "skills": {"water_attack": 1},
+
+    "icon": "white"
 },
 "790": {
     "name": "Bolt",
     "slotSize": 1,
     "rarity": 5,
-    "skills": {"thunder_attack": 1}
+    "skills": {"thunder_attack": 1},
+
+    "icon": "white"
 },
 "800": {
     "name": "Frost",
     "slotSize": 1,
     "rarity": 5,
-    "skills": {"ice_attack": 1}
+    "skills": {"ice_attack": 1},
+
+    "icon": "white"
 },
 "810": {
     "name": "Dragon",
     "slotSize": 1,
     "rarity": 5,
-    "skills": {"dragon_attack": 1}
+    "skills": {"dragon_attack": 1},
+
+    "icon": "white"
 },
 "820": {
     "name": "Defense",
     "slotSize": 1,
     "rarity": 5,
-    "skills": {"defense_boost": 1}
+    "skills": {"defense_boost": 1},
+
+    "icon": "white"
 },
 "830": {
     "name": "Carver",
     "slotSize": 1,
     "rarity": 4,
-    "skills": {"carving_pro": 1}
+    "skills": {"carving_pro": 1},
+
+    "icon": "white"
 },
 "840": {
     "name": "Rodeo",
     "slotSize": 2,
     "rarity": 4,
-    "skills": {"master_mounter": 1}
+    "skills": {"master_mounter": 1},
+
+    "icon": "white"
 },
 "850": {
     "name": "Hungerless",
     "slotSize": 1,
     "rarity": 4,
-    "skills": {"hunger_resistance": 1}
+    "skills": {"hunger_resistance": 1},
+
+    "icon": "white"
 },
 "860": {
     "name": "Satiated",
     "slotSize": 1,
     "rarity": 4,
-    "skills": {"free_meal": 1}
+    "skills": {"free_meal": 1},
+
+    "icon": "white"
 },
 "870": {
     "name": "Muck",
     "slotSize": 1,
     "rarity": 4,
-    "skills": {"muck_resistance": 1}
+    "skills": {"muck_resistance": 1},
+
+    "icon": "white"
 },
 "880": {
     "name": "Diversion",
     "slotSize": 1,
     "rarity": 4,
-    "skills": {"diversion": 1}
+    "skills": {"diversion": 1},
+
+    "icon": "white"
 },
 "890": {
     "name": "Dive",
     "slotSize": 1,
     "rarity": 4,
-    "skills": {"leap_of_faith": 1}
+    "skills": {"leap_of_faith": 1},
+
+    "icon": "white"
 },
 "900": {
     "name": "Fortitude",
     "slotSize": 2,
     "rarity": 4,
-    "skills": {"fortify": 1}
+    "skills": {"fortify": 1},
+
+    "icon": "white"
 },
 "910": {
     "name": "Geology",
     "slotSize": 1,
     "rarity": 4,
-    "skills": {"geologist": 1}
+    "skills": {"geologist": 1},
+
+    "icon": "white"
 },
 "920": {
     "name": "Botany",
     "slotSize": 1,
     "rarity": 4,
-    "skills": {"botanist": 1}
+    "skills": {"botanist": 1},
+
+    "icon": "white"
 },
 "930": {
     "name": "Antiblast",
     "slotSize": 1,
     "rarity": 4,
-    "skills": {"blast_resistance": 1}
+    "skills": {"blast_resistance": 1},
+
+    "icon": "white"
 },
 "940": {
     "name": "Pep",
     "slotSize": 1,
     "rarity": 4,
-    "skills": {"sleep_resistance": 1}
+    "skills": {"sleep_resistance": 1},
+
+    "icon": "white"
 },
 "950": {
     "name": "Antipara",
     "slotSize": 1,
     "rarity": 4,
-    "skills": {"paralysis_resistance": 1}
+    "skills": {"paralysis_resistance": 1},
+
+    "icon": "white"
 },
 "960": {
     "name": "Antidote",
     "slotSize": 1,
     "rarity": 4,
-    "skills": {"poison_resistance": 1}
+    "skills": {"poison_resistance": 1},
+
+    "icon": "white"
 },
 "970": {
     "name": "Fire Res",
     "slotSize": 1,
     "rarity": 4,
-    "skills": {"fire_resistance": 1}
+    "skills": {"fire_resistance": 1},
+
+    "icon": "white"
 },
 "980": {
     "name": "Water Res",
     "slotSize": 1,
     "rarity": 4,
-    "skills": {"water_resistance": 1}
+    "skills": {"water_resistance": 1},
+
+    "icon": "white"
 },
 "990": {
     "name": "Thunder Res",
     "slotSize": 1,
     "rarity": 4,
-    "skills": {"thunder_resistance": 1}
+    "skills": {"thunder_resistance": 1},
+
+    "icon": "white"
 },
 "1000": {
     "name": "Ice Res",
     "slotSize": 1,
     "rarity": 4,
-    "skills": {"ice_resistance": 1}
+    "skills": {"ice_resistance": 1},
+
+    "icon": "white"
 },
 "1010": {
     "name": "Dragon Res",
     "slotSize": 1,
     "rarity": 4,
-    "skills": {"dragon_resistance": 1}
+    "skills": {"dragon_resistance": 1},
+
+    "icon": "white"
 }
 
 

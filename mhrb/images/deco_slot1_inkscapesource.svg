@@ -8,12 +8,14 @@
    version="1.1"
    id="svg5"
    inkscape:version="1.1 (c68e22c387, 2021-05-23)"
-   sodipodi:docname="deco_size1_inkscapesource.svg"
+   sodipodi:docname="deco_slot1_inkscapesource.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#">
   <sodipodi:namedview
      id="namedview7"
      pagecolor="#505050"
@@ -27,10 +29,10 @@
      width="100mm"
      inkscape:zoom="1.4743584"
      inkscape:cx="-158.71311"
-     inkscape:cy="156.3392"
+     inkscape:cy="156.33919"
      inkscape:window-width="1920"
-     inkscape:window-height="1057"
-     inkscape:window-x="1912"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer4" />
@@ -203,7 +205,7 @@
     <path
        id="rect4630-7"
        style="display:inline;fill:#bfc1c8;fill-opacity:1;stroke:none;stroke-width:1.8;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 59.988281,19.898438 c -0.843607,0.04356 -4.412437,6.63446 -4.908203,7.390624 -0.482411,0.735798 -0.202868,1.246094 0.466797,1.246094 h 4.480469 4.480468 c 0.669665,0 0.951161,-0.510297 0.46875,-1.246094 -0.495765,-0.756164 -4.066549,-7.347068 -4.910156,-7.390624 -0.0128,-6.61e-4 -0.02617,-7.44e-4 -0.03906,0 -0.01289,-7.44e-4 -0.02626,-6.61e-4 -0.03906,0 z"
+       d="m 59.988281,19.898438 c -0.843607,0.04356 -4.412437,6.63446 -4.908203,7.390624 -0.482411,0.735798 -0.202868,1.246094 0.466797,1.246094 h 4.480469 4.480468 c 0.669665,0 0.951161,-0.510297 0.46875,-1.246094 -0.495766,-0.756164 -4.066549,-7.347068 -4.910156,-7.390624 -0.0128,-6.61e-4 -0.02617,-7.43e-4 -0.03906,0 -0.01289,-7.43e-4 -0.02627,-6.61e-4 -0.03906,0 z"
        sodipodi:nodetypes="scsss"
        inkscape:path-effect="#path-effect12355"
        inkscape:original-d="m 59.989189,19.898544 c 1.195651,-0.06173 2.80664,6.054437 4.04056,8.636816 h -8.482166 c -0.669665,0 -0.950393,-0.510514 -0.467982,-1.246311 0.495766,-0.756165 4.065981,-7.346948 4.909588,-7.390505 z"
@@ -238,4 +240,29 @@
        sodipodi:nodetypes="ccccscsc"
        transform="translate(0,-1.0583333)" />
   </g>
+  <metadata
+     id="metadata842">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
 </svg>

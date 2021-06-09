@@ -13,9 +13,15 @@ const imgPathMap = new Map([
     ["placeholder_talisman", "./images/placeholders/talisman.png"       ],
     ["placeholder_petalace", "./images/placeholders/talisman.png"       ],
 
-    ["placeholder_deco_size_1", "./images/deco_size1_inkscapesource.svg"], // 41:35 ratio
-    ["placeholder_deco_size_2", "./images/deco_size2_inkscapesource.svg"],
-    ["placeholder_deco_size_3", "./images/deco_size3_inkscapesource.svg"],
+    ["deco_slot1_empty", "./images/deco_slot1.svg"],
+    ["deco_slot2_empty", "./images/deco_slot2.svg"],
+    ["deco_slot3_empty", "./images/deco_slot3.svg"],
+    ["deco_slot1_size1_white", "./images/deco_slot1_size1_white.svg"],
+    ["deco_slot2_size1_white", "./images/deco_slot2_size1_white.svg"],
+    ["deco_slot2_size2_white", "./images/deco_slot2_size2_white.svg"],
+    ["deco_slot3_size1_white", "./images/deco_slot3_size1_white.svg"],
+    ["deco_slot3_size2_white", "./images/deco_slot3_size2_white.svg"],
+    ["deco_slot3_size3_white", "./images/deco_slot3_size3_white.svg"],
     
     ["attack_icon"  , "./images/mhw_attack_icon_inkscapesourcefile.svg"    ],
     ["affinity_icon", "./images/mhw_affinity_icon_inkscapesourcefile.svg"  ],

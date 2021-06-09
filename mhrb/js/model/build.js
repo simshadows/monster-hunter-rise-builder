@@ -473,6 +473,7 @@ class Build {
                 deco: (obj.decoRO === null) ? null : {
                     name: obj.decoRO.name,
                     slotSize: obj.decoRO.slotSize,
+                    icon: obj.decoRO.icon,
                 },
             });
         }
