@@ -381,7 +381,7 @@ div.equip-deco-icon-box {
     justify-content: center;
 
     height: 23px;
-    width: 23px;
+    width: 29.6px; /* 41:33 ratio */
 }
 div.equip-deco-icon-box > img {
     width: 100%;

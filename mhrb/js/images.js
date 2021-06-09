@@ -13,9 +13,9 @@ const imgPathMap = new Map([
     ["placeholder_talisman", "./images/placeholders/talisman.png"       ],
     ["placeholder_petalace", "./images/placeholders/talisman.png"       ],
 
-    ["placeholder_deco_size_1", "./images/placeholders/deco_slot_1.png"],
-    ["placeholder_deco_size_2", "./images/placeholders/deco_slot_2.png"],
-    ["placeholder_deco_size_3", "./images/placeholders/deco_slot_3.png"],
+    ["placeholder_deco_size_1", "./images/deco_size1_inkscapesource.svg"], // 41:35 ratio
+    ["placeholder_deco_size_2", "./images/deco_size2_inkscapesource.svg"],
+    ["placeholder_deco_size_3", "./images/deco_size3_inkscapesource.svg"],
     
     ["attack_icon"  , "./images/mhw_attack_icon_inkscapesourcefile.svg"    ],
     ["affinity_icon", "./images/mhw_affinity_icon_inkscapesourcefile.svg"  ],

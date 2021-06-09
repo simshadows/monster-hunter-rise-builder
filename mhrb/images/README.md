@@ -6,8 +6,6 @@ Insect glaive, switch axe, and charge blade icons: [monsterhunter.fandom.com](ht
 
 Charm placeholder icon: [Honey's MHW Builder](https://honeyhunterworld.com/mhwbi/)
 
-Decoration placeholder icons: [monsterhunterrise.wiki.fextralife.com](https://monsterhunterrise.wiki.fextralife.com/Monster+Hunter+Rise+Wiki) ([size 1](https://monsterhunterrise.wiki.fextralife.com/file/Monster-Hunter-Rise/gem_level_1_icon_monster_hunter_rise_wiki_guide_24px.png), [size 2](https://monsterhunterrise.wiki.fextralife.com/file/Monster-Hunter-Rise/gem_level_2_icon_monster_hunter_rise_wiki_guide_24px.png), [size 3](https://monsterhunterrise.wiki.fextralife.com/file/Monster-Hunter-Rise/gem_level_3_icon_monster_hunter_rise_wiki_guide_24px.png))
-
 # Steps for reproducing weapon and armour recolourings
 
 The original files are the white ones.
