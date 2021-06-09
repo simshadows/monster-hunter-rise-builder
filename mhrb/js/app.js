@@ -19,7 +19,7 @@ import {
 } from "./common.js";
 import {Build} from "./model/build.js";
 import {CalcState} from "./model/calc_state.js";
-import {calculateBuildPerformance} from "./model/calculate.js";
+import {calculateBuildPerformance} from "./model/calculate/index.js";
 
 import Modal from "./component_groups/modal.js";
 
