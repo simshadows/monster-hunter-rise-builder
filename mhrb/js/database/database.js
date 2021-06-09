@@ -108,7 +108,7 @@ function validateWeaponData(weaponData) {
     }
 
     assert(isArr(weaponData.rampSkills), "Ramp skills must be an Array of Arrays.");
-    assert((weaponData.rampSkills.length <= 3));
+    assert((weaponData.rampSkills.length <= 6));
     for (const possibleRampSkills of weaponData.rampSkills) {
         assert(isArr(possibleRampSkills));
         assert((possibleRampSkills.length > 0), "Must have at least one possible ramp skill.");

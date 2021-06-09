@@ -100,6 +100,8 @@
     --color-equip-buffs--icon-box: var(--color-scheme--dark0);
     --color-equip-weapon--stat-box: var(--color-scheme--dark4);
     --color-equip-weapon--ramp-box: var(--color-scheme--dark4);
+    --color-equip-weapon--ramp-text: var(--color-scheme--bright2);
+    --color-equip-weapon--ramp-unused-text: var(--color-scheme--bright2); /* Find a more comfortable colour? */
     --color-equip-petalace--stat-box: var(--color-scheme--dark3);
     --color-equip-defenses--box: var(--color-scheme--dark5);
     --color-equip-skills--box: var(--color-scheme--dark4);

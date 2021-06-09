@@ -50,6 +50,16 @@ class CalculationResultsBox extends React.Component {
 
         assert(isObj(this.props.buildPerformanceValues));
 
+        let sharpnessRenderings = []
+        if (perf.realSharpnessBar !== null) {
+            sharpnessRenderings = [
+                    this._renderSpace(),
+                    this._renderStat("Sharpness Bar", String(perf.realSharpnessBar)),
+                    this._renderStat("Raw Sharpness Modifier", perf.rawSharpnessModifier.toFixed(4) + "x"),
+                    this._renderStat("Elemental Sharp. Mod.", perf.elementalSharpnessModifier.toFixed(4) + "x"),
+                ];
+        }
+
         return element("div",
             {
             id: "calculation-results-box",
@@ -60,10 +70,7 @@ class CalculationResultsBox extends React.Component {
             this._renderSpace(),
             this._renderStat("Crit Damage Multiplier", perf.critDmgMultiplier.toFixed(2) + "x"),
             this._renderStat("Crit Modifier", perf.critModifier.toFixed(4) + "x"),
-            this._renderSpace(),
-            this._renderStat("Sharpness Bar", String(perf.realSharpnessBar)),
-            this._renderStat("Raw Sharpness Modifier", perf.rawSharpnessModifier.toFixed(4) + "x"),
-            this._renderStat("Elemental Sharp. Mod.", perf.elementalSharpnessModifier.toFixed(4) + "x"),
+            ...sharpnessRenderings,
         );
     }
 }

@@ -131,6 +131,26 @@ export function equipmentSlotToName(obj) {
     return equipmentSlotToNameMap[obj];
 }
 
+const weaponTagsMap = {
+    greatsword    : new Set(["melee"]),
+    longsword     : new Set(["melee"]),
+    swordandshield: new Set(["melee"]),
+    dualblades    : new Set(["melee"]),
+    switchaxe     : new Set(["melee"]),
+    chargeblade   : new Set(["melee"]),
+    hammer        : new Set(["melee"]),
+    huntinghorn   : new Set(["melee"]),
+    lance         : new Set(["melee"]),
+    gunlance      : new Set(["melee"]),
+    insectglaive  : new Set(["melee"]),
+    bow           : new Set(),
+    lightbowgun   : new Set(),
+    heavybowgun   : new Set(),
+}
+export function getWeaponTags(obj) {
+    return weaponTagsMap[obj];
+}
+
 /*** Common React Components ***/
 
 export function br() {

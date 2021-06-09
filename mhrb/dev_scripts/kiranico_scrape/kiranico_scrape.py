@@ -15,8 +15,6 @@ Dependencies:
 
 NOTE: To avoid server-side request limits, we intentionally don't download pages aggressively.
       This script will take a while to run.
-
-NOTE2: The script is AGPL-licensed, but the data is not.
 """
 
 import os
@@ -28,20 +26,20 @@ import multiprocessing as mp
 from bs4 import BeautifulSoup
 
 WEAPON_URLS = [
-    ("greatsword", "https://mhrise.kiranico.com/data/weapons?scope=wp&value=0", {"elestat", "melee"}),
-    ("longsword", "https://mhrise.kiranico.com/data/weapons?scope=wp&value=3", {"elestat", "melee"}),
-    ("swordandshield", "https://mhrise.kiranico.com/data/weapons?scope=wp&value=1", {"elestat", "melee"}),
-    ("dualblades", "https://mhrise.kiranico.com/data/weapons?scope=wp&value=2", {"elestat", "melee"}),
-    ("lance", "https://mhrise.kiranico.com/data/weapons?scope=wp&value=6", {"elestat", "melee"}),
-    ("gunlance", "https://mhrise.kiranico.com/data/weapons?scope=wp&value=7", {"elestat", "melee"}),
-    ("hammer", "https://mhrise.kiranico.com/data/weapons?scope=wp&value=4", {"elestat", "melee"}),
-    ("huntinghorn", "https://mhrise.kiranico.com/data/weapons?scope=wp&value=5", {"elestat", "melee"}),
-    ("switchaxe", "https://mhrise.kiranico.com/data/weapons?scope=wp&value=8", {"elestat", "melee"}),
-    ("chargeblade", "https://mhrise.kiranico.com/data/weapons?scope=wp&value=9", {"elestat", "melee"}),
-    ("insectglaive", "https://mhrise.kiranico.com/data/weapons?scope=wp&value=10", {"elestat", "melee"}),
-    ("lightbowgun", "https://mhrise.kiranico.com/data/weapons?scope=wp&value=13", set()),
-    ("heavybowgun", "https://mhrise.kiranico.com/data/weapons?scope=wp&value=12", set()),
-    ("bow", "https://mhrise.kiranico.com/data/weapons?scope=wp&value=11", {"elestat"}),
+    ("greatsword"    , "https://mhrise.kiranico.com/data/weapons?scope=wp&value=0" , {"elestat", "melee"}),
+    ("longsword"     , "https://mhrise.kiranico.com/data/weapons?scope=wp&value=3" , {"elestat", "melee"}),
+    ("swordandshield", "https://mhrise.kiranico.com/data/weapons?scope=wp&value=1" , {"elestat", "melee"}),
+    ("dualblades"    , "https://mhrise.kiranico.com/data/weapons?scope=wp&value=2" , {"elestat", "melee"}),
+    ("lance"         , "https://mhrise.kiranico.com/data/weapons?scope=wp&value=6" , {"elestat", "melee"}),
+    ("gunlance"      , "https://mhrise.kiranico.com/data/weapons?scope=wp&value=7" , {"elestat", "melee"}),
+    ("hammer"        , "https://mhrise.kiranico.com/data/weapons?scope=wp&value=4" , {"elestat", "melee"}),
+    ("huntinghorn"   , "https://mhrise.kiranico.com/data/weapons?scope=wp&value=5" , {"elestat", "melee"}),
+    ("switchaxe"     , "https://mhrise.kiranico.com/data/weapons?scope=wp&value=8" , {"elestat", "melee"}),
+    ("chargeblade"   , "https://mhrise.kiranico.com/data/weapons?scope=wp&value=9" , {"elestat", "melee"}),
+    ("insectglaive"  , "https://mhrise.kiranico.com/data/weapons?scope=wp&value=10", {"elestat", "melee"}),
+    ("lightbowgun"   , "https://mhrise.kiranico.com/data/weapons?scope=wp&value=13", set()),
+    ("heavybowgun"   , "https://mhrise.kiranico.com/data/weapons?scope=wp&value=12", set()),
+    ("bow"           , "https://mhrise.kiranico.com/data/weapons?scope=wp&value=11", {"elestat"}),
 ]
 
 module_dir_abs = os.path.dirname(os.path.abspath(__file__))
@@ -125,7 +123,7 @@ def scrape_weapon_category_page(weapon_category, url, tagset):
         weapon_name = c2.contents[1].contents[0].contents[0].contents[0]
         weapon_page_url = c2.contents[1].contents[0].contents[0]["href"]
         decos = []
-        elestat = None
+        elestat = {}
         base_sharpness = None
         max_sharpness = None
 
@@ -142,8 +140,6 @@ def scrape_weapon_category_page(weapon_category, url, tagset):
         decos.sort(reverse=True)
 
         if "elestat" in tagset:
-            elestat = {}
-
             for c3 in c2.contents[4].contents:
                 if (len(c3.contents) == 2) and (c3.contents[0].name == "svg"):
                     icon = c3.contents[0].contents[0]["src"]
@@ -194,8 +190,7 @@ def scrape_weapon_category_page(weapon_category, url, tagset):
 
         data["name"] = str(weapon_name)
         data["decos"] = decos
-        if elestat is not None:
-            data["elestat"] = elestat
+        data["elestat"] = elestat
         if base_sharpness is not None:
             data["base_sharpness"] = base_sharpness
         if max_sharpness is not None:

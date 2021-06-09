@@ -1,5 +1,80 @@
 {
     "Kamura Tree": {
+        "1a": {
+            "rarity": 1,
+            "endlineTag": "",
+
+            "name": "Kamura L. Bowgun I",
+            "attack": 50,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_1", "affinity_boost_2", "defense_boost_1"]
+            ]
+        },
+        "1b": {
+            "rarity": 1,
+            "endlineTag": "",
+
+            "name": "Kamura L. Bowgun II",
+            "attack": 60,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_1", "affinity_boost_2", "defense_boost_1"]
+            ]
+        },
+        "1c": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Kamura L. Bowgun III",
+            "attack": 90,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_1", "affinity_boost_2", "defense_boost_2"]
+            ]
+        },
+        "1d": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Kamura L. Bowgun IV",
+            "attack": 130,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "affinity_boost_2", "defense_boost_2"]
+            ]
+        },
+        "1e": {
+            "rarity": 4,
+            "endlineTag": "",
+
+            "name": "Kamura L. Bowgun V",
+            "attack": 150,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["affinity_boost_3", "defense_boost_2", "master_rider"]
+            ]
+        },
         "1f": {
             "rarity": 5,
             "endlineTag": "hr",
@@ -12,12 +87,41 @@
             "eleStat": {},
 
             "rampSkills": [
-                ["attack_boost_4", "defense_boost_3", "master_rider"]
-
+                ["affinity_boost_4", "defense_boost_2", "master_rider"]
             ]
         }
     },
     "Nargacuga Tree": {
+        "2a": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Hidden Eye I",
+            "attack": 100,
+            "affinity": 35,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "affinity_boost_1", "master_rider"]
+            ]
+        },
+        "2b": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Hidden Eye II",
+            "attack": 160,
+            "affinity": 35,
+            "defense": 0,
+            "decoSlots": [2],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_3", "affinity_boost_1", "master_rider"]
+            ]
+        },
         "2c": {
             "rarity": 6,
             "endlineTag": "hr",
@@ -33,6 +137,1899 @@
                 ["attack_boost_3", "affinity_boost_2", "master_rider"]
             ]
         }
+    },
+    "Rakna-Kadaki Tree": {
+        "3a": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Lumier Bowgun I",
+            "attack": 160,
+            "affinity": 30,
+            "defense": 0,
+            "decoSlots": [2,1,1],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_3", "spread_effect_2", "silkbind_boost"]
+            ]
+        },
+        "3b": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Lumier Bowgun II",
+            "attack": 170,
+            "affinity": 30,
+            "defense": 0,
+            "decoSlots": [2,1,1],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_3", "spread_effect_2", "silkbind_boost"]
+            ]
+        },
+        "3c": {
+            "rarity": 7,
+            "endlineTag": "hr",
+
+            "name": "Araknabolt",
+            "attack": 180,
+            "affinity": 35,
+            "defense": 0,
+            "decoSlots": [2,1,1],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_4", "spread_effect_2", "silkbind_boost"]
+            ]
+        }
+    },
+    "Bishaten Tree": {
+        "4a": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Lotus Bowgun I",
+            "attack": 100,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_1", "shrapnel_effect_1", "silkbind_boost"]
+            ]
+        },
+        "4b": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Lotus Bowgun II",
+            "attack": 170,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [3],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "shrapnel_effect_1", "silkbind_boost"]
+            ]
+        },
+        "4c": {
+            "rarity": 5,
+            "endlineTag": "hr",
+
+            "name": "Great Lotus Bowgun",
+            "attack": 180,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [3],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "shrapnel_effect_2", "silkbind_boost"]
+            ]
+        }
+    },
+    "Khezu Tree": {
+        "5a": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Khezu Syringe I",
+            "attack": 80,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "spread_effect_1", "thunderblight_exploit"]
+            ]
+        },
+        "5b": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Khezu Syringe II",
+            "attack": 90,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_3", "spread_effect_1", "thunderblight_exploit"]
+            ]
+        },
+        "5c": {
+            "rarity": 4,
+            "endlineTag": "",
+
+            "name": "Khezu Syringe III",
+            "attack": 140,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [1,1],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_3", "spread_effect_2", "thunderblight_exploit"]
+            ]
+        },
+        "5d": {
+            "rarity": 5,
+            "endlineTag": "hr",
+
+            "name": "Khezu Hypo",
+            "attack": 160,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [1,1],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_4", "spread_effect_2", "thunderblight_exploit"]
+            ]
+        }
+    },
+    "Remobra Tree": {
+        "6a": {
+            "rarity": 1,
+            "endlineTag": "",
+
+            "name": "Shotgun (Viper) I",
+            "attack": 70,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_1", "affinity_boost_1", "defense_boost_1"]
+            ]
+        },
+        "6b": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Shotgun (Viper) II",
+            "attack": 80,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "defense_boost_1", "spread_effect_1"]
+            ]
+        },
+        "6c": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Shotgun (Viper) III",
+            "attack": 130,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_3", "defense_boost_2", "spread_effect_1"]
+            ]
+        },
+        "6d": {
+            "rarity": 4,
+            "endlineTag": "hr",
+
+            "name": "Bullet Rain (Viper)",
+            "attack": 140,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2,1,1],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_4", "defense_boost_3", "spread_effect_2"]
+            ]
+        }
+    },
+    "Barroth Tree": {
+        "7a": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Barro Barrel I",
+            "attack": 100,
+            "affinity": 0,
+            "defense": 10,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["affinity_boost_1", "defense_boost_1", "pierce_effect_1"]
+            ]
+        },
+        "7b": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Barro Barrel II",
+            "attack": 130,
+            "affinity": 0,
+            "defense": 10,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["affinity_boost_1", "defense_boost_2", "pierce_effect_1"]
+            ]
+        },
+        "7c": {
+            "rarity": 5,
+            "endlineTag": "hr",
+
+            "name": "Barro Blaster",
+            "attack": 180,
+            "affinity": 0,
+            "defense": 15,
+            "decoSlots": [1,1],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["affinity_boost_2", "defense_boost_2", "pierce_effect_1"]
+            ]
+        }
+    },
+    "Goss Harag Tree": {
+        "8a": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Gossgun I",
+            "attack": 160,
+            "affinity": -15,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["affinity_boost_1", "pierce_effect_1", "brutal_strike"]
+            ]
+        },
+        "8b": {
+            "rarity": 4,
+            "endlineTag": "",
+
+            "name": "Gossgun II",
+            "attack": 170,
+            "affinity": -15,
+            "defense": 0,
+            "decoSlots": [2],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["affinity_boost_1", "pierce_effect_1", "brutal_strike"]
+            ]
+        },
+        "8c": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Gossgun III",
+            "attack": 190,
+            "affinity": -15,
+            "defense": 0,
+            "decoSlots": [2],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["affinity_boost_1", "pierce_effect_2", "brutal_strike"]
+            ]
+        },
+        "8d": {
+            "rarity": 6,
+            "endlineTag": "hr",
+
+            "name": "Abominable Bowgun",
+            "attack": 220,
+            "affinity": -15,
+            "defense": 0,
+            "decoSlots": [2],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["affinity_boost_1", "pierce_effect_2", "brutal_strike"]
+            ]
+        }
+    },
+    "Ore Tree": {
+        "9a": {
+            "rarity": 1,
+            "endlineTag": "",
+
+            "name": "Hunter's Rifle I",
+            "attack": 70,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_1", "affinity_boost_1", "defense_boost_2"]
+            ]
+        },
+        "9b": {
+            "rarity": 1,
+            "endlineTag": "",
+
+            "name": "Hunter's Rifle II",
+            "attack": 90,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_1", "affinity_boost_1", "defense_boost_2"]
+            ]
+        },
+        "9c": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Sniper Shot",
+            "attack": 110,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "affinity_boost_1", "defense_boost_2"]
+            ]
+        },
+        "9d": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Jaeger I",
+            "attack": 120,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "defense_boost_2", "wyvern_exploit"]
+            ]
+        },
+        "9e": {
+            "rarity": 4,
+            "endlineTag": "",
+
+            "name": "Jaeger II",
+            "attack": 150,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [1],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "defense_boost_3", "wyvern_exploit"]
+            ]
+        },
+        "9f": {
+            "rarity": 5,
+            "endlineTag": "hr",
+
+            "name": "Jaeger Prime",
+            "attack": 170,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [1],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_3", "defense_boost_3", "wyvern_exploit"]
+            ]
+        }
+    },
+    "Zinogre Tree": {
+        "10a": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Usurper's Crime I",
+            "attack": 120,
+            "affinity": 10,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_1", "affinity_boost_1", "anti_aquatic_species"]
+            ]
+        },
+        "10b": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Usurper's Crime II",
+            "attack": 170,
+            "affinity": 10,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "pierce_effect_1", "anti_aquatic_species"]
+            ]
+        },
+        "10c": {
+            "rarity": 6,
+            "endlineTag": "hr",
+
+            "name": "Despot's Wildfire",
+            "attack": 190,
+            "affinity": 10,
+            "defense": 0,
+            "decoSlots": [2],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "pierce_effect_2", "anti_aquatic_species"]
+            ]
+        }
+    },
+    "Almudron Tree": {
+        "11a": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Almudron Bowgun I",
+            "attack": 140,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "normal_effect_2", "element_exploit"]
+            ]
+        },
+        "11b": {
+            "rarity": 4,
+            "endlineTag": "",
+
+            "name": "Almudron Bowgun II",
+            "attack": 150,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2,1],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_3", "normal_effect_2", "element_exploit"]
+            ]
+        },
+        "11c": {
+            "rarity": 6,
+            "endlineTag": "hr",
+
+            "name": "Doom Bringer Bowgun",
+            "attack": 180,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2,1],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_3", "normal_effect_2", "element_exploit"]
+            ]
+        }
+    },
+    "Uroktor Tree": {
+        "12a": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Scale Tornado I",
+            "attack": 110,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["affinity_boost_1", "pierce_effect_1", "fireblight_exploit"]
+            ]
+        },
+        "12b": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Scale Tornado II",
+            "attack": 150,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["affinity_boost_2", "pierce_effect_1", "fireblight_exploit"]
+            ]
+        },
+        "12c": {
+            "rarity": 5,
+            "endlineTag": "hr",
+
+            "name": "Uroktor Vortex",
+            "attack": 190,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["affinity_boost_2", "pierce_effect_1", "fireblight_exploit"]
+            ]
+        }
+    },
+    "Mizutsune Tree": {
+        "13a": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Desolate Mist I",
+            "attack": 110,
+            "affinity": 10,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "affinity_boost_1", "sticky_effect_1"]
+            ]
+        },
+        "13b": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Desolate Mist II",
+            "attack": 160,
+            "affinity": 10,
+            "defense": 0,
+            "decoSlots": [1],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "affinity_boost_2", "sticky_effect_1"]
+            ]
+        },
+        "13c": {
+            "rarity": 6,
+            "endlineTag": "hr",
+
+            "name": "Nifl Mist",
+            "attack": 170,
+            "affinity": 10,
+            "defense": 0,
+            "decoSlots": [1],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_3", "affinity_boost_2", "sticky_effect_1"]
+            ]
+        }
+    },
+    "Izuchi Tree": {
+        "14a": {
+            "rarity": 1,
+            "endlineTag": "",
+
+            "name": "Wind Thief L. Bowgun I",
+            "attack": 70,
+            "affinity": 10,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["affinity_boost_1", "small_monster_exploit", "buddy_rally"]
+            ]
+        },
+        "14b": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Wind Thief L. Bowgun II",
+            "attack": 80,
+            "affinity": 10,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["affinity_boost_2", "small_monster_exploit", "buddy_rally"]
+            ]
+        },
+        "14c": {
+            "rarity": 4,
+            "endlineTag": "",
+
+            "name": "Wind Thief L. Bowgun III",
+            "attack": 140,
+            "affinity": 15,
+            "defense": 0,
+            "decoSlots": [2,1],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["affinity_boost_2", "small_monster_exploit", "buddy_rally"]
+            ]
+        },
+        "14d": {
+            "rarity": 5,
+            "endlineTag": "hr",
+
+            "name": "Gale Bowgun",
+            "attack": 160,
+            "affinity": 15,
+            "defense": 0,
+            "decoSlots": [2,1],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["affinity_boost_3", "small_monster_exploit", "buddy_rally"]
+            ]
+        }
+    },
+    "Anjanath Tree": {
+        "15a": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Flammenkanone I",
+            "attack": 200,
+            "affinity": -30,
+            "defense": 0,
+            "decoSlots": [2,1],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["affinity_boost_1", "cluster_effect_1", "brutal_strike"]
+            ]
+        },
+        "15b": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Flammenkanone II",
+            "attack": 220,
+            "affinity": -30,
+            "defense": 0,
+            "decoSlots": [2,1],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["affinity_boost_1", "cluster_effect_1", "brutal_strike"]
+            ]
+        },
+        "15c": {
+            "rarity": 6,
+            "endlineTag": "hr",
+
+            "name": "Furious Flammenkanone",
+            "attack": 230,
+            "affinity": -30,
+            "defense": 0,
+            "decoSlots": [2,1],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["affinity_boost_2", "cluster_effect_1", "brutal_strike"]
+            ]
+        }
+    },
+    "Rathian Tree": {
+        "16a": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Valkyrie Fire I",
+            "attack": 100,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_1", "pierce_effect_1", "small_monster_exploit"]
+            ]
+        },
+        "16b": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Valkyrie Fire II",
+            "attack": 180,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "pierce_effect_1", "small_monster_exploit"]
+            ]
+        },
+        "16c": {
+            "rarity": 6,
+            "endlineTag": "hr",
+
+            "name": "Valkyrie Blaze",
+            "attack": 190,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "pierce_effect_1", "small_monster_exploit"]
+            ]
+        }
+    },
+    "Bone Tree": {
+        "17a": {
+            "rarity": 1,
+            "endlineTag": "",
+
+            "name": "Cross Bowgun I",
+            "attack": 80,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "affinity_boost_1", "defense_boost_1"]
+            ]
+        },
+        "17b": {
+            "rarity": 1,
+            "endlineTag": "",
+
+            "name": "Cross Bowgun II",
+            "attack": 100,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "affinity_boost_1", "defense_boost_1"]
+            ]
+        },
+        "17c": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Cross Blitz",
+            "attack": 110,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "affinity_boost_2", "defense_boost_1"]
+            ]
+        },
+        "17d": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Yakt Shooter I",
+            "attack": 110,
+            "affinity": 10,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "affinity_boost_2", "silkbind_boost"]
+            ]
+        },
+        "17e": {
+            "rarity": 4,
+            "endlineTag": "",
+
+            "name": "Yakt Shooter II",
+            "attack": 150,
+            "affinity": 10,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_3", "affinity_boost_2", "silkbind_boost"]
+            ]
+        },
+        "17f": {
+            "rarity": 5,
+            "endlineTag": "hr",
+
+            "name": "Wyvern Chaser",
+            "attack": 170,
+            "affinity": 10,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_4", "affinity_boost_2", "silkbind_boost"]
+            ]
+        }
+    },
+    "Jyuratodus Tree": {
+        "18a": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Wishing Star I",
+            "attack": 170,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["affinity_boost_1", "defense_boost_2", "normal_effect_1"]
+            ]
+        },
+        "18b": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Wishing Star II",
+            "attack": 180,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["affinity_boost_1", "defense_boost_3", "normal_effect_2"]
+            ]
+        },
+        "18c": {
+            "rarity": 6,
+            "endlineTag": "hr",
+
+            "name": "Comet Bolt",
+            "attack": 200,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["affinity_boost_2", "defense_boost_3", "normal_effect_2"]
+            ]
+        }
+    },
+    "Rathalos Tree": {
+        "19a": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Rathling Gun I",
+            "attack": 120,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "shrapnel_effect_1", "element_exploit"]
+            ]
+        },
+        "19b": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Rathling Gun II",
+            "attack": 180,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [1],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "shrapnel_effect_1", "element_exploit"]
+            ]
+        },
+        "19c": {
+            "rarity": 6,
+            "endlineTag": "hr",
+
+            "name": "Rathling Phoenix",
+            "attack": 190,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [1],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_3", "shrapnel_effect_1", "element_exploit"]
+            ]
+        }
+    },
+    "Barioth Tree": {
+        "20a": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Blizzard Cannon I",
+            "attack": 80,
+            "affinity": 15,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "affinity_boost_2", "iceblight_exploit"]
+            ]
+        },
+        "20b": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Blizzard Cannon II",
+            "attack": 150,
+            "affinity": 20,
+            "defense": 0,
+            "decoSlots": [1,1,1],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_3", "affinity_boost_2", "iceblight_exploit"]
+            ]
+        },
+        "20c": {
+            "rarity": 6,
+            "endlineTag": "hr",
+
+            "name": "Blizzard Volley",
+            "attack": 170,
+            "affinity": 25,
+            "defense": 0,
+            "decoSlots": [1,1,1],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_4", "affinity_boost_2", "iceblight_exploit"]
+            ]
+        }
+    },
+    "Basarios Tree": {
+        "21a": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Grenade Launcher I",
+            "attack": 90,
+            "affinity": 0,
+            "defense": 15,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "affinity_boost_1", "defense_boost_1"]
+            ]
+        },
+        "21b": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Grenade Launcher II",
+            "attack": 130,
+            "affinity": 0,
+            "defense": 15,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "affinity_boost_1", "defense_boost_1"]
+            ]
+        },
+        "21c": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Grenade Launcher III",
+            "attack": 160,
+            "affinity": 0,
+            "defense": 20,
+            "decoSlots": [1],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "affinity_boost_1", "defense_boost_2"]
+            ]
+        },
+        "21d": {
+            "rarity": 6,
+            "endlineTag": "hr",
+
+            "name": "Grenade Revolver",
+            "attack": 190,
+            "affinity": 0,
+            "defense": 20,
+            "decoSlots": [1],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_3", "defense_boost_2", "cluster_effect_1"]
+            ]
+        }
+    },
+    "Tigrex Tree": {
+        "22a": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Tigrex Tank I",
+            "attack": 200,
+            "affinity": -20,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "affinity_boost_1", "brutal_strike"]
+            ]
+        },
+        "22b": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Tigrex Tank II",
+            "attack": 210,
+            "affinity": -20,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "affinity_boost_2", "brutal_strike"]
+            ]
+        },
+        "22c": {
+            "rarity": 7,
+            "endlineTag": "hr",
+
+            "name": "Tigrex Wargun",
+            "attack": 220,
+            "affinity": -20,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_3", "affinity_boost_2", "brutal_strike"]
+            ]
+        }
+    },
+    "Royal Ludroth Tree": {
+        "23a": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Royal Launcher I",
+            "attack": 100,
+            "affinity": 0,
+            "defense": 10,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "spread_effect_1", "waterblight_exploit"]
+            ]
+        },
+        "23b": {
+            "rarity": 2,
+            "endlineTag": "",
+
+            "name": "Royal Launcher II",
+            "attack": 110,
+            "affinity": 0,
+            "defense": 10,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "spread_effect_1", "waterblight_exploit"]
+            ]
+        },
+        "23c": {
+            "rarity": 5,
+            "endlineTag": "hr",
+
+            "name": "Royal Torrent",
+            "attack": 170,
+            "affinity": 0,
+            "defense": 10,
+            "decoSlots": [3],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_3", "spread_effect_2", "waterblight_exploit"]
+            ]
+        }
+    },
+    "Magnamalo Tree": {
+        "24a": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Sinister Bowgun I",
+            "attack": 120,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "cluster_effect_1", "magnamalo_soul"]
+            ]
+        },
+        "24b": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Sinister Bowgun II",
+            "attack": 130,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_3", "cluster_effect_1", "magnamalo_soul"]
+            ]
+        },
+        "24c": {
+            "rarity": 6,
+            "endlineTag": "hr",
+
+            "name": "Sinister Shadow Bolt",
+            "attack": 190,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2,1],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_3", "cluster_effect_1", "magnamalo_soul"]
+            ]
+        }
+    },
+    "Rajang Tree": {
+        "25a": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Rajang Barrage I",
+            "attack": 180,
+            "affinity": -15,
+            "defense": 0,
+            "decoSlots": [3],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["affinity_boost_1", "brutal_strike", "master_rider"]
+            ]
+        },
+        "25b": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Rajang Barrage II",
+            "attack": 190,
+            "affinity": -15,
+            "defense": 0,
+            "decoSlots": [3],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["affinity_boost_1", "brutal_strike", "master_rider"]
+            ]
+        },
+        "25c": {
+            "rarity": 7,
+            "endlineTag": "hr",
+
+            "name": "Ten Thousand Volts",
+            "attack": 210,
+            "affinity": -15,
+            "defense": 0,
+            "decoSlots": [3],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["affinity_boost_2", "brutal_strike", "master_rider"]
+            ]
+        }
+    },
+    "Ibushi Tree": {
+        "26a": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Azure Elder Bowgun I",
+            "attack": 170,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["normal_effect_1", "anti_aerial_species", "defense_boost_1"]
+            ]
+        },
+        "26b": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Azure Elder Bowgun II",
+            "attack": 180,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["normal_effect_2", "anti_aerial_species", "ibushi_soul"]
+            ]
+        },
+        "26c": {
+            "rarity": 7,
+            "endlineTag": "hr",
+
+            "name": "Abyssal Gale Bolt",
+            "attack": 190,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["normal_effect_2", "anti_aerial_species", "ibushi_soul"]
+            ]
+        }
+    },
+    "Narwa Tree": {
+        "27a": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Thunderbolt Bowgun I",
+            "attack": 170,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "anti_aerial_species", "narwa_soul"]
+            ]
+        },
+        "27b": {
+            "rarity": 7,
+            "endlineTag": "hr",
+
+            "name": "Abyssal Storm Bolt",
+            "attack": 180,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_3", "anti_aerial_species", "narwa_soul"]
+            ]
+        }
+    },
+    "Bazelgeuse Tree": {
+        "28a": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Rookslayer Bowgun I",
+            "attack": 190,
+            "affinity": -10,
+            "defense": 0,
+            "decoSlots": [1,1],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["defense_boost_1", "shrapnel_effect_1", "brutal_strike"]
+            ]
+        },
+        "28b": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Rookslayer Bowgun II",
+            "attack": 200,
+            "affinity": -10,
+            "defense": 0,
+            "decoSlots": [1,1],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["defense_boost_1", "shrapnel_effect_1", "brutal_strike"]
+            ]
+        },
+        "28c": {
+            "rarity": 7,
+            "endlineTag": "hr",
+
+            "name": "Bazelfetter Rookslayer",
+            "attack": 210,
+            "affinity": -10,
+            "defense": 0,
+            "decoSlots": [1,1],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["defense_boost_2", "shrapnel_effect_2", "brutal_strike"]
+            ]
+        }
+    },
+    "Kushala Daora Tree": {
+        "29a": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Icesteel Wasp I",
+            "attack": 190,
+            "affinity": 10,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "affinity_boost_2", "kushala_daora_soul"]
+            ]
+        },
+        "29b": {
+            "rarity": 7,
+            "endlineTag": "hr",
+
+            "name": "Daora's Hornet",
+            "attack": 200,
+            "affinity": 10,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_3", "affinity_boost_3", "kushala_daora_soul"]
+            ]
+        }
+    },
+    "Teostra Tree": {
+        "30a": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Teostra's Dart I",
+            "attack": 190,
+            "affinity": 5,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "fireblight_exploit", "teostra_soul"]
+            ]
+        },
+        "30b": {
+            "rarity": 7,
+            "endlineTag": "hr",
+
+            "name": "Teostra's Flamebolt",
+            "attack": 200,
+            "affinity": 5,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_3", "fireblight_exploit", "teostra_soul"]
+            ]
+        }
+    },
+    "Chameleos Tree": {
+        "31a": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Blessed Lamp I",
+            "attack": 180,
+            "affinity": 20,
+            "defense": 0,
+            "decoSlots": [3,1],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "defense_boost_3", "chameleos_soul"]
+            ]
+        },
+        "31b": {
+            "rarity": 7,
+            "endlineTag": "hr",
+
+            "name": "Cursed Lamp",
+            "attack": 190,
+            "affinity": 20,
+            "defense": 0,
+            "decoSlots": [3,1],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_3", "defense_boost_3", "chameleos_soul"]
+            ]
+        }
+    },
+    "Valstrax Tree": {
+        "32a": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Redwing Shooter I",
+            "attack": 160,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_3", "wyvern_exploit", "valstrax_soul"]
+            ]
+        },
+        "32b": {
+            "rarity": 7,
+            "endlineTag": "hr",
+
+            "name": "Reddnaught Bowgun",
+            "attack": 170,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_3", "wyvern_exploit", "valstrax_soul"]
+            ]
+        }
+    },
+    "Canyne Tree": {
+        "33a": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Wooden Dog Bowgun I",
+            "attack": 130,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_1", "master_rider", "buddy_rally"]
+            ]
+        },
+        "33b": {
+            "rarity": 4,
+            "endlineTag": "",
+
+            "name": "Wooden Dog Bowgun II",
+            "attack": 140,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2,2],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_1", "master_rider", "buddy_rally"]
+            ]
+        },
+        "33c": {
+            "rarity": 6,
+            "endlineTag": "hr",
+
+            "name": "Watchdog's Howl",
+            "attack": 170,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [2,2],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["attack_boost_2", "master_rider", "buddy_rally"]
+            ]
+        }
+    },
+    "Makluva Tree": {
+        "34a": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Springnight Shot I",
+            "attack": 110,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["affinity_boost_1", "anti_aquatic_species", "small_monster_exploit"]
+            ]
+        },
+        "34b": {
+            "rarity": 3,
+            "endlineTag": "",
+
+            "name": "Springnight Shot II",
+            "attack": 130,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["affinity_boost_2", "anti_aquatic_species", "small_monster_exploit"]
+            ]
+        },
+        "34c": {
+            "rarity": 5,
+            "endlineTag": "hr",
+
+            "name": "Springnight Spawn",
+            "attack": 160,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [1,1,1],
+            "eleStat": {},
+
+            "rampSkills": [
+                ["affinity_boost_3", "anti_aquatic_species", "small_monster_exploit"]
+            ]
+        }
+    },
+    "Rampage Tree": {
+        "35a": {
+            "rarity": 4,
+            "endlineTag": "",
+
+            "name": "Rampage L. Bowgun I",
+            "attack": 140,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                [
+                    "attack_boost_1",
+                    "affinity_boost_1",
+                    "defense_boost_1"
+                ],
+                [
+                    "attack_surge"
+                ],
+                [
+                    "add_normal_ammo_1",
+                    "pierce_effect_1",
+                    "spread_effect_1",
+                    "shrapnel_effect_1"
+                ],
+                [
+                    "fire_effect_1",
+                    "water_effect_1",
+                    "thunder_effect_1",
+                    "ice_effect_1"
+                ],
+                [
+                    "rapid_fire_normal"
+                ]
+            ]
+        },
+        "35b": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Rampage L. Bowgun II",
+            "attack": 150,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                [
+                    "attack_boost_1",
+                    "affinity_boost_1",
+                    "defense_boost_1",
+                    "recoil_down_boost",
+                    "reload_speed_boost",
+                    "steadiness_boost"
+                ],
+                [
+                    "attack_surge"
+                ],
+                [
+                    "add_normal_ammo_1",
+                    "pierce_effect_1",
+                    "spread_effect_1",
+                    "shrapnel_effect_1",
+                    "stickycluster_effect_1"
+                ],
+                [
+                    "fire_effect_1",
+                    "water_effect_1",
+                    "thunder_effect_1",
+                    "ice_effect_1",
+                    "dragon_effect_1",
+                    "poison_effect_1",
+                    "exhaust_effect_1"
+                ],
+                [
+                    "rapid_fire_normal",
+                    "rapid_fire_piercing",
+                    "rapid_fire_spread",
+                    "rapid_fire_shrapnel"
+                ]
+            ]
+        },
+        "35c": {
+            "rarity": 5,
+            "endlineTag": "",
+
+            "name": "Rampage L. Bowgun III",
+            "attack": 160,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                [
+                    "attack_boost_2",
+                    "affinity_boost_2",
+                    "defense_boost_2",
+                    "recoil_down_boost",
+                    "reload_speed_boost",
+                    "steadiness_boost"
+                ],
+                [
+                    "attack_surge",
+                    "affinity_surge"
+                ],
+                [
+                    "add_normal_ammo_1",
+                    "pierce_effect_1",
+                    "spread_effect_1",
+                    "shrapnel_effect_1",
+                    "stickycluster_effect_1"
+                ],
+                [
+                    "fire_effect_1",
+                    "water_effect_1",
+                    "thunder_effect_1",
+                    "ice_effect_1",
+                    "dragon_effect_1",
+                    "poison_effect_1",
+                    "paralysis_effect_1",
+                    "sleep_effect_1",
+                    "exhaust_effect_1"
+                ],
+                [
+                    "rapid_fire_normal",
+                    "rapid_fire_piercing",
+                    "rapid_fire_spread",
+                    "rapid_fire_shrapnel"
+                ]
+            ]
+        },
+        "35d": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Rampage L. Bowgun IV",
+            "attack": 170,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                [
+                    "attack_boost_2",
+                    "affinity_boost_2",
+                    "defense_boost_2",
+                    "recoil_down_boost",
+                    "reload_speed_boost",
+                    "steadiness_boost"
+                ],
+                [
+                    "attack_surge",
+                    "affinity_surge"
+                ],
+                [
+                    "add_normal_ammo_2",
+                    "pierce_effect_2",
+                    "spread_effect_2",
+                    "shrapnel_effect_2",
+                    "stickycluster_effect_1"
+                ],
+                [
+                    "fire_effect_1",
+                    "water_effect_1",
+                    "thunder_effect_1",
+                    "ice_effect_1",
+                    "dragon_effect_1",
+                    "poison_effect_1",
+                    "paralysis_effect_1",
+                    "sleep_effect_1",
+                    "exhaust_effect_1"
+                ],
+                [
+                    "rapid_fire_normal",
+                    "rapid_fire_piercing",
+                    "rapid_fire_spread",
+                    "rapid_fire_shrapnel",
+                    "rapid_fire_sticky"
+                ]
+            ]
+        },
+        "35e": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Rampage L. Bowgun V",
+            "attack": 180,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                [
+                    "attack_boost_3",
+                    "affinity_boost_3",
+                    "defense_boost_3",
+                    "recoil_down_boost",
+                    "reload_speed_boost",
+                    "steadiness_boost"
+                ],
+                [
+                    "attack_surge",
+                    "affinity_surge",
+                    "recoil_down_surge",
+                    "reload_speed_surge",
+                    "steadiness_surge"
+                ],
+                [
+                    "add_normal_ammo_2",
+                    "pierce_effect_2",
+                    "spread_effect_2",
+                    "shrapnel_effect_2",
+                    "stickycluster_effect_1"
+                ],
+                [
+                    "fire_effect_2",
+                    "water_effect_2",
+                    "thunder_effect_2",
+                    "ice_effect_2",
+                    "dragon_effect_2",
+                    "poison_effect_1",
+                    "paralysis_effect_1",
+                    "sleep_effect_1",
+                    "exhaust_effect_1"
+                ],
+                [
+                    "rapid_fire_normal",
+                    "rapid_fire_piercing",
+                    "rapid_fire_spread",
+                    "rapid_fire_shrapnel",
+                    "rapid_fire_sticky"
+                ]
+            ]
+        },
+        "35f": {
+            "rarity": 7,
+            "endlineTag": "hr",
+
+            "name": "Rampage L. Bowgun S",
+            "attack": 190,
+            "affinity": 0,
+            "defense": 0,
+            "decoSlots": [],
+            "eleStat": {},
+
+            "rampSkills": [
+                [
+                    "attack_boost_4",
+                    "affinity_boost_4",
+                    "defense_boost_3",
+                    "recoil_down_boost",
+                    "reload_speed_boost",
+                    "steadiness_boost"
+                ],
+                [
+                    "attack_surge",
+                    "affinity_surge",
+                    "recoil_down_surge",
+                    "reload_speed_surge",
+                    "steadiness_surge"
+                ],
+                [
+                    "add_normal_ammo_2",
+                    "pierce_effect_2",
+                    "spread_effect_2",
+                    "shrapnel_effect_2",
+                    "stickycluster_effect_1"
+                ],
+                [
+                    "fire_effect_2",
+                    "water_effect_2",
+                    "thunder_effect_2",
+                    "ice_effect_2",
+                    "dragon_effect_2",
+                    "poison_effect_2",
+                    "paralysis_effect_2",
+                    "sleep_effect_2",
+                    "exhaust_effect_2"
+                ],
+                [
+                    "rapid_fire_normal",
+                    "rapid_fire_piercing",
+                    "rapid_fire_spread",
+                    "rapid_fire_shrapnel",
+                    "rapid_fire_sticky",
+                    "rapid_fire_fire",
+                    "rapid_fire_water",
+                    "rapid_fire_thunder",
+                    "rapid_fire_ice",
+                    "rapid_fire_dragon"
+                ]
+            ]
+        }
     }
 }
-

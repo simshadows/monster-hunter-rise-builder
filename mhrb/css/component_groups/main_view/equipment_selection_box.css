@@ -137,9 +137,10 @@ div.equip-weapon-ramp-box {
     width: 50px;
     font: var(--font-equip-weapon--ramp);
     background: var(--color-equip-weapon--ramp-box);
+    color: var(--color-equip-weapon--ramp-text);
 }
-div.equip-weapon-unused-ramp-box {
-    color: lightgrey;
+div.equip-weapon-unused-ramp-box > span { /* TODO: We shouldn't need to select inner span */
+    color: var(--color-equip-weapon--ramp-unused-text);
 }
 
 div.equip-weapon-special-mech-group-box {

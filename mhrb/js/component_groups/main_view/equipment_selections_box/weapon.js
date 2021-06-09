@@ -79,31 +79,6 @@ function EquipWeaponInfoBox(props) {
         );
     }
 
-    const rampageSkillBoxes = [];
-    for (let rampageSkillObj of weaponRO.rampSkillSelectionsArray) {
-        check.isObjOrNull(rampageSkillObj);
-
-        if (rampageSkillObj === null) {
-            rampageSkillBoxes.push(
-                element("div",
-                    {
-                    className: "equip-weapon-ramp-box equip-weapon-unused-ramp-box clipsafe",
-                    },
-                    clipsafeSpan("No Ramp Skill"),
-                )
-            );
-        } else {
-            rampageSkillBoxes.push(
-                element("div",
-                    {
-                    className: "equip-weapon-ramp-box clipsafe",
-                    },
-                    clipsafeSpan(rampageSkillObj.name),
-                )
-            );
-        }
-    }
-
     const otherStatBoxes = [];
 
     if (perf.weaponDefense != 0) {
@@ -119,6 +94,48 @@ function EquipWeaponInfoBox(props) {
             assert(check.isInt(eleStatValue) && (eleStatValue > 0));
             otherStatBoxes.push(statBox(eleStatStrToImgId(eleStatType), eleStatValue, false));
         }
+    }
+
+    // TODO: Consider making more generalized code.
+    const rampageSkillBoxes = [[], []]; // A sublist for each row
+    for (let rampageSkillObj of weaponRO.rampSkillSelectionsArray) {
+        check.isObjOrNull(rampageSkillObj);
+
+        const e = (()=>{
+                if (rampageSkillObj === null) {
+                    return element("div",
+                        {
+                        className: "equip-weapon-ramp-box equip-weapon-unused-ramp-box clipsafe",
+                        },
+                        clipsafeSpan("No Ramp Skill"),
+                    );
+                } else {
+                    return element("div",
+                        {
+                        className: "equip-weapon-ramp-box clipsafe",
+                        },
+                        clipsafeSpan(rampageSkillObj.name),
+                    );
+                }
+            })();
+        if (rampageSkillBoxes[0].length < 3) {
+            rampageSkillBoxes[0].push(e)
+        } else {
+            rampageSkillBoxes[1].push(e)
+        }
+    }
+
+    const extraGroupElements = [];
+    for (const groupElements of rampageSkillBoxes) {
+        if (groupElements.length == 0) continue;
+        extraGroupElements.push(
+            element("div",
+                {
+                className: "equip-weapon-ramps-group-box",
+                },
+                ...groupElements
+            ),
+        );
     }
 
     return element("div",
@@ -143,12 +160,7 @@ function EquipWeaponInfoBox(props) {
                 statBox("affinity_icon", parseInt(perf.weaponAffinity) + "%", true),
                 ...otherStatBoxes,
             ),
-            element("div",
-                {
-                className: "equip-weapon-ramps-group-box",
-                },
-                ...rampageSkillBoxes
-            ),
+            ...extraGroupElements,
             //element("div",
             //    {
             //    className: "equip-weapon-special-mech-group-box",

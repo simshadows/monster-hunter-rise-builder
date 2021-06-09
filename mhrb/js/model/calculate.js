@@ -19,6 +19,7 @@ import {
     isWeaponCategoryStr,
     isEleStatStr,
     isArmourSlotStr,
+    getWeaponTags,
     toNameFilterString,
 } from "../common.js";
 
@@ -115,6 +116,8 @@ function calculateBuildPerformance(db, build, calcState) {
     // STAGE 1: We get all the variables we need.
     //
 
+    const tagset = getWeaponTags(weaponRO.category);
+
     const weaponRaw          = weaponRO.attack;
     const weaponAffinity     = weaponRO.affinity;
     const weaponEleStat      = weaponRO.eleStat;
@@ -133,10 +136,15 @@ function calculateBuildPerformance(db, build, calcState) {
     // STAGE 3: Find Sharpness Modifiers
     //
 
-    const s = getSharpnessValues(weaponMaxSharpness, skillLevel("handicraft"))
-    const realSharpnessBar = s.realSharpnessBar;
-    const rawSharpnessModifier = s.rawSharpnessModifier;
-    const elementalSharpnessModifier = s.elementalSharpnessModifier;
+    let realSharpnessBar           = null;
+    let rawSharpnessModifier       = null;
+    let elementalSharpnessModifier = null;
+    if (tagset.has("melee")) {
+        const s = getSharpnessValues(weaponMaxSharpness, skillLevel("handicraft"))
+        realSharpnessBar           = s.realSharpnessBar;
+        rawSharpnessModifier       = s.rawSharpnessModifier;
+        elementalSharpnessModifier = s.elementalSharpnessModifier;
+    }
 
     //
     // STAGE 4: Find and Apply Crit Modifiers
@@ -160,8 +168,13 @@ function calculateBuildPerformance(db, build, calcState) {
     // STAGE 5: We finally calculate effective raw!
     //
 
-    const effectiveRaw = baseRaw * rawSharpnessModifier * critModifier;
-
+    const effectiveRaw = (()=>{
+            if (tagset.has("melee")) {
+                return baseRaw * rawSharpnessModifier * critModifier;
+            } else {
+                return baseRaw * critModifier;
+            }
+        })();
 
     const ret = {
 

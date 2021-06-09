@@ -39,6 +39,7 @@ from hardcoded_data.huntinghorn    import HARDCODED_HH_SPEC
 from hardcoded_data.switchaxe      import HARDCODED_SA_SPEC
 from hardcoded_data.chargeblade    import HARDCODED_CB_SPEC
 from hardcoded_data.insectglaive   import HARDCODED_IG_SPEC
+from hardcoded_data.lightbowgun    import HARDCODED_LBG_SPEC
 
 DATABASE_DIR = "../../data/"
 SRC_FILE_PATH = "./downloaded_data/downloaded_data.json"
@@ -46,17 +47,18 @@ SRC_FILE_PATH = "./downloaded_data/downloaded_data.json"
 # Specification to build the data
 # {category: [(tree name, [(name, id, rarity), ...]), ...]}
 DATA_SPEC_HARDCODED = {
-    "greatsword"    : HARDCODED_GS_SPEC,
-    "longsword"     : HARDCODED_LS_SPEC,
-    "swordandshield": HARDCODED_SNS_SPEC,
-    "dualblades"    : HARDCODED_DB_SPEC,
-    "lance"         : HARDCODED_L_SPEC,
-    "gunlance"      : HARDCODED_GL_SPEC,
-    "hammer"        : HARDCODED_H_SPEC,
-    "huntinghorn"   : HARDCODED_HH_SPEC,
-    "switchaxe"     : HARDCODED_SA_SPEC,
-    "chargeblade"   : HARDCODED_CB_SPEC,
-    "insectglaive"  : HARDCODED_IG_SPEC,
+    "greatsword"    : (HARDCODED_GS_SPEC , {"melee"}),
+    "longsword"     : (HARDCODED_LS_SPEC , {"melee"}),
+    "swordandshield": (HARDCODED_SNS_SPEC, {"melee"}),
+    "dualblades"    : (HARDCODED_DB_SPEC , {"melee"}),
+    "lance"         : (HARDCODED_L_SPEC  , {"melee"}),
+    "gunlance"      : (HARDCODED_GL_SPEC , {"melee"}),
+    "hammer"        : (HARDCODED_H_SPEC  , {"melee"}),
+    "huntinghorn"   : (HARDCODED_HH_SPEC , {"melee"}),
+    "switchaxe"     : (HARDCODED_SA_SPEC , {"melee"}),
+    "chargeblade"   : (HARDCODED_CB_SPEC , {"melee"}),
+    "insectglaive"  : (HARDCODED_IG_SPEC , {"melee"}),
+    "lightbowgun"   : (HARDCODED_LBG_SPEC, set()),
 }
 
 module_dir_abs = os.path.dirname(os.path.abspath(__file__))
@@ -67,7 +69,7 @@ module_dir_abs = os.path.dirname(os.path.abspath(__file__))
 
 data_spec = {}
 
-for (weapon_category, weapon_trees) in DATA_SPEC_HARDCODED.items():
+for (weapon_category, (weapon_trees, tagset)) in DATA_SPEC_HARDCODED.items():
     submap = data_spec[weapon_category] = {}
     ids_seen = set()
     for (tree_name, weapons_array) in weapon_trees:
@@ -81,6 +83,7 @@ for (weapon_category, weapon_trees) in DATA_SPEC_HARDCODED.items():
                     "id":        weapon_id,
                     "tree_name": tree_name,
                     "endline_tag": ("hr" if (i == (len(weapons_array) - 1)) else ""),
+                    "tagset": tagset,
                 }
 
 #
@@ -112,13 +115,16 @@ for (weapon_category, spec_subdict) in data_spec.items():
             deco_slots = obj["decos"]
             elestat = obj["elestat"]
 
-            max_sharpness = obj["max_sharpness"][:-1] # Remove the last sharpness level
+            max_sharpness = None
+            if "melee" in spec_subdict[name]["tagset"]:
+                max_sharpness = obj["max_sharpness"][:-1] # Remove the last sharpness level
+
             ramp_skills = obj["ramps"]
 
             # Filter out empty ramp option lists
             ramp_skills = [x for x in ramp_skills if (len(x) > 0)]
 
-            data[weapon_category][tree_name][weapon_id] = {
+            d = {
                     "rarity":      rarity,
                     "endline_tag": endline_tag,
 
@@ -130,9 +136,10 @@ for (weapon_category, spec_subdict) in data_spec.items():
                     "elestat":    elestat,
 
                     "ramp_skills": ramp_skills,
-
-                    "max_sharpness": max_sharpness,
                 }
+            if max_sharpness is not None:
+                d["max_sharpness"] = max_sharpness
+            data[weapon_category][tree_name][weapon_id] = d
 
 #
 # STAGE 3: Rearrange to match spec ordering.
@@ -143,7 +150,7 @@ for (weapon_category, spec_subdict) in data_spec.items():
 
 # {category: {tree name: {id: {weapon data}, ...}, ...}, ...}
 tmp_data = {}
-for (weapon_category, category_spec) in DATA_SPEC_HARDCODED.items():
+for (weapon_category, (category_spec, _)) in DATA_SPEC_HARDCODED.items():
     submap = tmp_data[weapon_category] = OrderedDict()
     for (tree_name, tree_data) in category_spec:
 
@@ -199,10 +206,13 @@ weapon_fmt = """\
 
             "rampSkills": [
 {ramp_skills}
-            ],
-
-            "maxSharpness": [{max_sharpness}]
+            ]{special_mechanics}
         }}\
+"""
+
+max_sharpness_fmt = """,
+
+            "maxSharpness": [{max_sharpness}]\
 """
 
 ramp_fmt = """\
@@ -243,6 +253,11 @@ for (weapon_category, _) in data_spec.items():
 
         weapon_strs = []
         for (weapon_id, weapon_data) in tree_data.items():
+            special_mechanics = ""
+            
+            if "max_sharpness" in weapon_data:
+                special_mechanics += max_sharpness_fmt.format(max_sharpness=",".join(str(x) for x in weapon_data["max_sharpness"]))
+
             weapon_strs.append(weapon_fmt.format(
                     weapon_id=weapon_id,
 
@@ -258,7 +273,7 @@ for (weapon_category, _) in data_spec.items():
                     
                     ramp_skills=process_ramp_skills(weapon_data["ramp_skills"]),
 
-                    max_sharpness=",".join(str(x) for x in weapon_data["max_sharpness"]),
+                    special_mechanics=special_mechanics,
                 ))
 
         tree_strs.append(tree_fmt.format(

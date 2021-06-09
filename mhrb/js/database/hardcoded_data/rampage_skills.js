@@ -61,6 +61,19 @@ function generateEle(name, shortIdPrefix) {
             shortId: shortIdPrefix + "s3",
             name: "Secondary " + name + " III",
         }],
+
+        [idPrefix + "_effect_1", {
+            shortId: shortIdPrefix + "e1",
+            name: name + " Effect I",
+        }],
+        [idPrefix + "_effect_2", {
+            shortId: shortIdPrefix + "e2",
+            name: name + " Effect II",
+        }],
+        ["rapid_fire_" + idPrefix, {
+            shortId: shortIdPrefix + "r1",
+            name: "Rapid Fire (" + name + ")",
+        }],
     ];
 }
 
@@ -91,6 +104,15 @@ function generateStat(name, shortIdPrefix) {
         [idPrefix + "_3", {
             shortId: shortIdPrefix + "x3",
             name: name + " III",
+        }],
+
+        [idPrefix + "_effect_1", {
+            shortId: shortIdPrefix + "e1",
+            name: name + " Effect I",
+        }],
+        [idPrefix + "_effect_2", {
+            shortId: shortIdPrefix + "e2",
+            name: name + " Effect II",
         }],
     ];
 }
@@ -329,6 +351,123 @@ const hardcodedRampageSkills = [
     ["kinsect_level_boost_4", {
         shortId: "klb4",
         name: "Kinsect Level Boost IV",
+    }],
+
+    ["spread_effect_1", {
+        shortId: "spe1",
+        name: "Spread Effect I",
+    }],
+    ["spread_effect_2", {
+        shortId: "spe2",
+        name: "Spread Effect II",
+    }],
+    ["shrapnel_effect_1", {
+        shortId: "she1",
+        name: "Shrapnel Effect I",
+    }],
+    ["shrapnel_effect_2", {
+        shortId: "she2",
+        name: "Shrapnel Effect II",
+    }],
+    ["pierce_effect_1", {
+        shortId: "pie1",
+        name: "Pierce Effect I",
+    }],
+    ["pierce_effect_2", {
+        shortId: "pie2",
+        name: "Pierce Effect II",
+    }],
+    ["normal_effect_1", {
+        shortId: "noe1",
+        name: "Normal Effect I",
+    }],
+    ["normal_effect_2", {
+        shortId: "noe2",
+        name: "Normal Effect II",
+    }],
+    ["sticky_effect_1", {
+        shortId: "ste1",
+        name: "Sticky Effect I",
+    }],
+    ["sticky_effect_2", {
+        shortId: "ste2",
+        name: "Sticky Effect II",
+    }],
+    ["cluster_effect_1", {
+        shortId: "cle1",
+        name: "Cluster Effect I",
+    }],
+    ["cluster_effect_2", {
+        shortId: "cle2",
+        name: "Cluster Effect II",
+    }],
+    ["stickycluster_effect_1", {
+        shortId: "sce1",
+        name: "Sticky/Cluster Effect I",
+    }],
+    ["stickycluster_effect_2", {
+        shortId: "sce2",
+        name: "Sticky/Cluster Effect II",
+    }],
+    ["exhaust_effect_1", {
+        shortId: "exe1",
+        name: "Exhaust Effect I",
+    }],
+    ["exhaust_effect_2", {
+        shortId: "exe2",
+        name: "Exhaust Effect II",
+    }],
+    ["add_normal_ammo_1", {
+        shortId: "anoa1",
+        name: "Add: Normal Ammo I",
+    }],
+    ["add_normal_ammo_2", {
+        shortId: "anoa2",
+        name: "Add: Normal Ammo II",
+    }],
+    ["rapid_fire_normal", {
+        shortId: "rfno",
+        name: "Rapid Fire (Normal)",
+    }],
+    ["rapid_fire_piercing", {
+        shortId: "rfpi",
+        name: "Rapid Fire (Piercing)",
+    }],
+    ["rapid_fire_spread", {
+        shortId: "rfsp",
+        name: "Rapid Fire (Spread)",
+    }],
+    ["rapid_fire_shrapnel", {
+        shortId: "rfsh",
+        name: "Rapid Fire (Shrapnel)",
+    }],
+    ["rapid_fire_sticky", {
+        shortId: "rfst",
+        name: "Rapid Fire (Sticky)",
+    }],
+    ["recoil_down_boost", {
+        shortId: "rdb",
+        name: "Recoil Down Boost",
+    }],
+    ["recoil_down_surge", {
+        shortId: "rds",
+        name: "Recoil Down Surge",
+    }],
+    ["reload_speed_boost", {
+        shortId: "rsb",
+        name: "Reload Speed Boost",
+    }],
+    ["reload_speed_surge", {
+        shortId: "rss",
+        name: "Reload Speed Surge",
+    }],
+    ["steadiness_boost", {
+        shortId: "steb",
+        name: "Steadiness Boost",
+    }],
+    ["steadiness_surge", {
+        shortId: "stes",
+        name: "Steadiness Surge",
     }],
 
     ["attack_surge", {

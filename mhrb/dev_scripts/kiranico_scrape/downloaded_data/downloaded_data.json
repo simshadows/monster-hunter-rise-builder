@@ -31487,6 +31487,7 @@
             "attack": 60,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Kamura H. Bowgun I",
             "ramps": [
                 [
@@ -31507,6 +31508,7 @@
             "attack": 70,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Kamura H. Bowgun II",
             "ramps": [
                 [
@@ -31527,6 +31529,7 @@
             "attack": 100,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Kamura H. Bowgun III",
             "ramps": [
                 [
@@ -31547,6 +31550,7 @@
             "attack": 140,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Kamura H. Bowgun IV",
             "ramps": [
                 [
@@ -31569,6 +31573,7 @@
                 2
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Kamura H. Bowgun V",
             "ramps": [
                 [
@@ -31592,6 +31597,7 @@
                 1
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Kamura Ninja H. Bowgun",
             "ramps": [
                 [
@@ -31612,6 +31618,7 @@
             "attack": 160,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Tigrex Howl I",
             "ramps": [
                 [
@@ -31632,6 +31639,7 @@
             "attack": 230,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Tigrex Howl II",
             "ramps": [
                 [
@@ -31654,6 +31662,7 @@
                 1
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Tigrex Skull",
             "ramps": [
                 [
@@ -31674,6 +31683,7 @@
             "attack": 130,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Cirrus Blaster I",
             "ramps": [
                 [
@@ -31696,6 +31706,7 @@
                 1
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Cirrus Blaster II",
             "ramps": [
                 [
@@ -31718,6 +31729,7 @@
                 1
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Mountainous Roar",
             "ramps": [
                 [
@@ -31738,6 +31750,7 @@
             "attack": 110,
             "decos": [],
             "defense": 10,
+            "elestat": {},
             "name": "Reversal Shot I",
             "ramps": [
                 [
@@ -31760,6 +31773,7 @@
                 2
             ],
             "defense": 15,
+            "elestat": {},
             "name": "Reversal Shot II",
             "ramps": [
                 [
@@ -31782,6 +31796,7 @@
                 2
             ],
             "defense": 17,
+            "elestat": {},
             "name": "Reversal Shot III",
             "ramps": [
                 [
@@ -31804,6 +31819,7 @@
                 2
             ],
             "defense": 20,
+            "elestat": {},
             "name": "Reversal Barrage",
             "ramps": [
                 [
@@ -31824,6 +31840,7 @@
             "attack": 120,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Queen's Longfire I",
             "ramps": [
                 [
@@ -31844,6 +31861,7 @@
             "attack": 190,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Queen's Longfire II",
             "ramps": [
                 [
@@ -31864,6 +31882,7 @@
             "attack": 210,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Queen's Farflier",
             "ramps": [
                 [
@@ -31886,6 +31905,7 @@
                 2
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Guerrera Cannon I",
             "ramps": [
                 [
@@ -31908,6 +31928,7 @@
                 2
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Guerrera Cannon II",
             "ramps": [
                 [
@@ -31930,6 +31951,7 @@
                 2
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Thorn Cannon",
             "ramps": [
                 [
@@ -31950,6 +31972,7 @@
             "attack": 100,
             "decos": [],
             "defense": 15,
+            "elestat": {},
             "name": "Arzuros Gun I",
             "ramps": [
                 [
@@ -31970,6 +31993,7 @@
             "attack": 120,
             "decos": [],
             "defense": 15,
+            "elestat": {},
             "name": "Arzuros Gun II",
             "ramps": [
                 [
@@ -31992,6 +32016,7 @@
                 2
             ],
             "defense": 15,
+            "elestat": {},
             "name": "Arzuros Fishergun",
             "ramps": [
                 [
@@ -32012,6 +32037,7 @@
             "attack": 140,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Usurper's Tremor I",
             "ramps": [
                 [
@@ -32034,6 +32060,7 @@
                 2
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Usurper's Tremor II",
             "ramps": [
                 [
@@ -32056,6 +32083,7 @@
                 2
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Despot's Paroxysm",
             "ramps": [
                 [
@@ -32076,6 +32104,7 @@
             "attack": 80,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Iron Assault I",
             "ramps": [
                 [
@@ -32096,6 +32125,7 @@
             "attack": 100,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Iron Assault II",
             "ramps": [
                 [
@@ -32116,6 +32146,7 @@
             "attack": 140,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Steel Assault",
             "ramps": [
                 [
@@ -32138,6 +32169,7 @@
                 1
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Striker's Bowgun I",
             "ramps": [
                 [
@@ -32160,6 +32192,7 @@
                 1
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Striker's Bowgun II",
             "ramps": [
                 [
@@ -32182,6 +32215,7 @@
                 1
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Elite Bowgun",
             "ramps": [
                 [
@@ -32205,6 +32239,7 @@
                 1
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Flammenkanone I",
             "ramps": [
                 [
@@ -32228,6 +32263,7 @@
                 1
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Flammenkanone II",
             "ramps": [
                 [
@@ -32251,6 +32287,7 @@
                 1
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Gnashing Flammenkanone",
             "ramps": [
                 [
@@ -32271,6 +32308,7 @@
             "attack": 110,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Meteor Bazooka I",
             "ramps": [
                 [
@@ -32295,6 +32333,7 @@
                 1
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Meteor Bazooka II",
             "ramps": [
                 [
@@ -32319,6 +32358,7 @@
                 1
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Meteor Cannon",
             "ramps": [
                 [
@@ -32339,6 +32379,7 @@
             "attack": 110,
             "decos": [],
             "defense": 10,
+            "elestat": {},
             "name": "Rock Eater I",
             "ramps": [
                 [
@@ -32359,6 +32400,7 @@
             "attack": 150,
             "decos": [],
             "defense": 10,
+            "elestat": {},
             "name": "Rock Eater II",
             "ramps": [
                 [
@@ -32381,6 +32423,7 @@
                 2
             ],
             "defense": 10,
+            "elestat": {},
             "name": "Earth Eater",
             "ramps": [
                 [
@@ -32401,6 +32444,7 @@
             "attack": 80,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Marino Burst I",
             "ramps": [
                 [
@@ -32421,6 +32465,7 @@
             "attack": 90,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Marino Burst II",
             "ramps": [
                 [
@@ -32444,6 +32489,7 @@
                 2
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Marino Cannon",
             "ramps": [
                 [
@@ -32464,6 +32510,7 @@
             "attack": 130,
             "decos": [],
             "defense": 20,
+            "elestat": {},
             "name": "Carom Shot I",
             "ramps": [
                 [
@@ -32484,6 +32531,7 @@
             "attack": 160,
             "decos": [],
             "defense": 20,
+            "elestat": {},
             "name": "Carom Shot II",
             "ramps": [
                 [
@@ -32507,6 +32555,7 @@
                 1
             ],
             "defense": 20,
+            "elestat": {},
             "name": "Rebound Shot",
             "ramps": [
                 [
@@ -32527,6 +32576,7 @@
             "attack": 80,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Wind Thief Crossbow I",
             "ramps": [
                 [
@@ -32547,6 +32597,7 @@
             "attack": 90,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Wind Thief Crossbow II",
             "ramps": [
                 [
@@ -32570,6 +32621,7 @@
                 1
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Wind Thief Crossbow III",
             "ramps": [
                 [
@@ -32593,6 +32645,7 @@
                 1
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Gale Crossbow",
             "ramps": [
                 [
@@ -32617,6 +32670,7 @@
                 1
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Fulgent Shot I",
             "ramps": [
                 [
@@ -32641,6 +32695,7 @@
                 1
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Fulgent Shot II",
             "ramps": [
                 [
@@ -32665,6 +32720,7 @@
                 1
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Araknamortar",
             "ramps": [
                 [
@@ -32685,6 +32741,7 @@
             "attack": 90,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Bone Shooter I",
             "ramps": [
                 [
@@ -32705,6 +32762,7 @@
             "attack": 120,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Bone Shooter II",
             "ramps": [
                 [
@@ -32725,6 +32783,7 @@
             "attack": 170,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Bone Buster",
             "ramps": [
                 [
@@ -32748,6 +32807,7 @@
                 1
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Pukei Launcher I",
             "ramps": [
                 [
@@ -32771,6 +32831,7 @@
                 1
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Pukei Launcher II",
             "ramps": [
                 [
@@ -32794,6 +32855,7 @@
                 1
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Venomhail",
             "ramps": [
                 [
@@ -32814,6 +32876,7 @@
             "attack": 150,
             "decos": [],
             "defense": 10,
+            "elestat": {},
             "name": "Anteka Burst I",
             "ramps": [
                 [
@@ -32838,6 +32901,7 @@
                 1
             ],
             "defense": 10,
+            "elestat": {},
             "name": "Anteka Burst II",
             "ramps": [
                 [
@@ -32862,6 +32926,7 @@
                 1
             ],
             "defense": 10,
+            "elestat": {},
             "name": "Anteka Blaster",
             "ramps": [
                 [
@@ -32882,6 +32947,7 @@
             "attack": 220,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Dual Threat I",
             "ramps": [
                 [
@@ -32902,6 +32968,7 @@
             "attack": 240,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Dual Threat II",
             "ramps": [
                 [
@@ -32922,6 +32989,7 @@
             "attack": 250,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Diablazooka",
             "ramps": [
                 [
@@ -32942,6 +33010,7 @@
             "attack": 120,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Kadachi Cannon I",
             "ramps": [
                 [
@@ -32964,6 +33033,7 @@
                 1
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Kadachi Cannon II",
             "ramps": [
                 [
@@ -32986,6 +33056,7 @@
                 1
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Kadachi Raijodo",
             "ramps": [
                 [
@@ -33006,6 +33077,7 @@
             "attack": 90,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Rapidcaster I",
             "ramps": [
                 [
@@ -33026,6 +33098,7 @@
             "attack": 100,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Rapidcaster II",
             "ramps": [
                 [
@@ -33049,6 +33122,7 @@
                 1
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Cyclecaster",
             "ramps": [
                 [
@@ -33069,6 +33143,7 @@
             "attack": 110,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Hidden Gambit I",
             "ramps": [
                 [
@@ -33091,6 +33166,7 @@
                 2
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Hidden Gambit II",
             "ramps": [
                 [
@@ -33113,6 +33189,7 @@
                 2
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Baleful Night",
             "ramps": [
                 [
@@ -33133,6 +33210,7 @@
             "attack": 110,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Highpriest Bowgun I",
             "ramps": [
                 [
@@ -33153,6 +33231,7 @@
             "attack": 150,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Highpriest Bowgun II",
             "ramps": [
                 [
@@ -33175,6 +33254,7 @@
                 3
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Bishaten's Grace",
             "ramps": [
                 [
@@ -33195,6 +33275,7 @@
             "attack": 100,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Spheniscine Slayer I",
             "ramps": [
                 [
@@ -33215,6 +33296,7 @@
             "attack": 120,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Spheniscine Slayer II",
             "ramps": [
                 [
@@ -33238,6 +33320,7 @@
                 1
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Spheniscine Ruler",
             "ramps": [
                 [
@@ -33258,6 +33341,7 @@
             "attack": 130,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Sinister Volley I",
             "ramps": [
                 [
@@ -33278,6 +33362,7 @@
             "attack": 150,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Sinister Volley II",
             "ramps": [
                 [
@@ -33301,6 +33386,7 @@
                 1
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Sinister Dreadvolley",
             "ramps": [
                 [
@@ -33321,6 +33407,7 @@
             "attack": 190,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Rajang Shooter I",
             "ramps": [
                 [
@@ -33343,6 +33430,7 @@
                 3
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Rajang Shooter II",
             "ramps": [
                 [
@@ -33365,6 +33453,7 @@
                 3
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Rajang's Rage",
             "ramps": [
                 [
@@ -33385,6 +33474,7 @@
             "attack": 190,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Azure Elder Cannon I",
             "ramps": [
                 [
@@ -33405,6 +33495,7 @@
             "attack": 200,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Azure Elder Cannon II",
             "ramps": [
                 [
@@ -33425,6 +33516,7 @@
             "attack": 210,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Abyssal Gale Barrage",
             "ramps": [
                 [
@@ -33445,6 +33537,7 @@
             "attack": 180,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Thunderbolt Cannon I",
             "ramps": [
                 [
@@ -33465,6 +33558,7 @@
             "attack": 200,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Abyssal Storm Barrage",
             "ramps": [
                 [
@@ -33487,6 +33581,7 @@
                 1
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Daora's Delphinidae I",
             "ramps": [
                 [
@@ -33509,6 +33604,7 @@
                 1
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Daora Grande",
             "ramps": [
                 [
@@ -33529,6 +33625,7 @@
             "attack": 210,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Teostra's Artillery I",
             "ramps": [
                 [
@@ -33549,6 +33646,7 @@
             "attack": 230,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Teostra's Flames",
             "ramps": [
                 [
@@ -33573,6 +33671,7 @@
                 1
             ],
             "defense": 30,
+            "elestat": {},
             "name": "Kamaeleon I",
             "ramps": [
                 [
@@ -33597,6 +33696,7 @@
                 1
             ],
             "defense": 30,
+            "elestat": {},
             "name": "Veiled Kamaeleon",
             "ramps": [
                 [
@@ -33619,6 +33719,7 @@
                 2
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Redwing Cannon I",
             "ramps": [
                 [
@@ -33641,6 +33742,7 @@
                 2
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Diabolica",
             "ramps": [
                 [
@@ -33661,6 +33763,7 @@
             "attack": 100,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Carrozza Bazooka I",
             "ramps": [
                 [
@@ -33681,6 +33784,7 @@
             "attack": 120,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Carrozza Bazooka II",
             "ramps": [
                 [
@@ -33704,6 +33808,7 @@
                 2
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Cendrillon",
             "ramps": [
                 [
@@ -33724,6 +33829,7 @@
             "attack": 120,
             "decos": [],
             "defense": 10,
+            "elestat": {},
             "name": "Journey Jelly I",
             "ramps": [
                 [
@@ -33747,6 +33853,7 @@
                 1
             ],
             "defense": 10,
+            "elestat": {},
             "name": "Journey Jelly II",
             "ramps": [
                 [
@@ -33770,6 +33877,7 @@
                 1
             ],
             "defense": 10,
+            "elestat": {},
             "name": "Guiding Light",
             "ramps": [
                 [
@@ -33792,6 +33900,7 @@
                 3
             ],
             "defense": 20,
+            "elestat": {},
             "name": "Ladybug Cannon I",
             "ramps": [
                 [
@@ -33814,6 +33923,7 @@
                 3
             ],
             "defense": 20,
+            "elestat": {},
             "name": "Ladybug Cannon II",
             "ramps": [
                 [
@@ -33836,6 +33946,7 @@
                 3
             ],
             "defense": 20,
+            "elestat": {},
             "name": "Ladybug Mortar",
             "ramps": [
                 [
@@ -33860,6 +33971,7 @@
                 1
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Felyne Bowgun I",
             "ramps": [
                 [
@@ -33884,6 +33996,7 @@
                 1
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Felyne Bowgun II",
             "ramps": [
                 [
@@ -33908,6 +34021,7 @@
                 1
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Felyne Cannon",
             "ramps": [
                 [
@@ -33928,6 +34042,7 @@
             "attack": 150,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Rampage H. Bowgun I",
             "ramps": [
                 [
@@ -33963,6 +34078,7 @@
             "attack": 170,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Rampage H. Bowgun II",
             "ramps": [
                 [
@@ -34005,6 +34121,7 @@
             "attack": 180,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Rampage H. Bowgun III",
             "ramps": [
                 [
@@ -34050,6 +34167,7 @@
             "attack": 190,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Rampage H. Bowgun IV",
             "ramps": [
                 [
@@ -34095,6 +34213,7 @@
             "attack": 200,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Rampage H. Bowgun V",
             "ramps": [
                 [
@@ -34143,6 +34262,7 @@
             "attack": 210,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Rampage H. Bowgun S",
             "ramps": [
                 [
@@ -50911,6 +51031,7 @@
             "attack": 50,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Kamura L. Bowgun I",
             "ramps": [
                 [
@@ -50931,6 +51052,7 @@
             "attack": 60,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Kamura L. Bowgun II",
             "ramps": [
                 [
@@ -50951,6 +51073,7 @@
             "attack": 90,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Kamura L. Bowgun III",
             "ramps": [
                 [
@@ -50971,6 +51094,7 @@
             "attack": 130,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Kamura L. Bowgun IV",
             "ramps": [
                 [
@@ -50993,6 +51117,7 @@
                 2
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Kamura L. Bowgun V",
             "ramps": [
                 [
@@ -51016,6 +51141,7 @@
                 1
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Kamura Ninja L. Bowgun",
             "ramps": [
                 [
@@ -51036,6 +51162,7 @@
             "attack": 100,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Hidden Eye I",
             "ramps": [
                 [
@@ -51058,6 +51185,7 @@
                 2
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Hidden Eye II",
             "ramps": [
                 [
@@ -51080,6 +51208,7 @@
                 2
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Night Owl",
             "ramps": [
                 [
@@ -51104,6 +51233,7 @@
                 1
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Lumier Bowgun I",
             "ramps": [
                 [
@@ -51128,6 +51258,7 @@
                 1
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Lumier Bowgun II",
             "ramps": [
                 [
@@ -51152,6 +51283,7 @@
                 1
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Araknabolt",
             "ramps": [
                 [
@@ -51172,6 +51304,7 @@
             "attack": 100,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Lotus Bowgun I",
             "ramps": [
                 [
@@ -51194,6 +51327,7 @@
                 3
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Lotus Bowgun II",
             "ramps": [
                 [
@@ -51216,6 +51350,7 @@
                 3
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Great Lotus Bowgun",
             "ramps": [
                 [
@@ -51236,6 +51371,7 @@
             "attack": 80,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Khezu Syringe I",
             "ramps": [
                 [
@@ -51256,6 +51392,7 @@
             "attack": 90,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Khezu Syringe II",
             "ramps": [
                 [
@@ -51279,6 +51416,7 @@
                 1
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Khezu Syringe III",
             "ramps": [
                 [
@@ -51302,6 +51440,7 @@
                 1
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Khezu Hypo",
             "ramps": [
                 [
@@ -51322,6 +51461,7 @@
             "attack": 70,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Shotgun (Viper) I",
             "ramps": [
                 [
@@ -51342,6 +51482,7 @@
             "attack": 80,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Shotgun (Viper) II",
             "ramps": [
                 [
@@ -51362,6 +51503,7 @@
             "attack": 130,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Shotgun (Viper) III",
             "ramps": [
                 [
@@ -51386,6 +51528,7 @@
                 1
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Bullet Rain (Viper)",
             "ramps": [
                 [
@@ -51406,6 +51549,7 @@
             "attack": 100,
             "decos": [],
             "defense": 10,
+            "elestat": {},
             "name": "Barro Barrel I",
             "ramps": [
                 [
@@ -51426,6 +51570,7 @@
             "attack": 130,
             "decos": [],
             "defense": 10,
+            "elestat": {},
             "name": "Barro Barrel II",
             "ramps": [
                 [
@@ -51449,6 +51594,7 @@
                 1
             ],
             "defense": 15,
+            "elestat": {},
             "name": "Barro Blaster",
             "ramps": [
                 [
@@ -51469,6 +51615,7 @@
             "attack": 160,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Gossgun I",
             "ramps": [
                 [
@@ -51491,6 +51638,7 @@
                 2
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Gossgun II",
             "ramps": [
                 [
@@ -51513,6 +51661,7 @@
                 2
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Gossgun III",
             "ramps": [
                 [
@@ -51535,6 +51684,7 @@
                 2
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Abominable Bowgun",
             "ramps": [
                 [
@@ -51555,6 +51705,7 @@
             "attack": 70,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Hunter's Rifle I",
             "ramps": [
                 [
@@ -51575,6 +51726,7 @@
             "attack": 90,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Hunter's Rifle II",
             "ramps": [
                 [
@@ -51595,6 +51747,7 @@
             "attack": 110,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Sniper Shot",
             "ramps": [
                 [
@@ -51615,6 +51768,7 @@
             "attack": 120,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Jaeger I",
             "ramps": [
                 [
@@ -51637,6 +51791,7 @@
                 1
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Jaeger II",
             "ramps": [
                 [
@@ -51659,6 +51814,7 @@
                 1
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Jaeger Prime",
             "ramps": [
                 [
@@ -51679,6 +51835,7 @@
             "attack": 120,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Usurper's Crime I",
             "ramps": [
                 [
@@ -51699,6 +51856,7 @@
             "attack": 170,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Usurper's Crime II",
             "ramps": [
                 [
@@ -51721,6 +51879,7 @@
                 2
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Despot's Wildfire",
             "ramps": [
                 [
@@ -51741,6 +51900,7 @@
             "attack": 140,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Almudron Bowgun I",
             "ramps": [
                 [
@@ -51764,6 +51924,7 @@
                 1
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Almudron Bowgun II",
             "ramps": [
                 [
@@ -51787,6 +51948,7 @@
                 1
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Doom Bringer Bowgun",
             "ramps": [
                 [
@@ -51807,6 +51969,7 @@
             "attack": 110,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Scale Tornado I",
             "ramps": [
                 [
@@ -51827,6 +51990,7 @@
             "attack": 150,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Scale Tornado II",
             "ramps": [
                 [
@@ -51849,6 +52013,7 @@
                 2
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Uroktor Vortex",
             "ramps": [
                 [
@@ -51869,6 +52034,7 @@
             "attack": 110,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Desolate Mist I",
             "ramps": [
                 [
@@ -51891,6 +52057,7 @@
                 1
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Desolate Mist II",
             "ramps": [
                 [
@@ -51913,6 +52080,7 @@
                 1
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Nifl Mist",
             "ramps": [
                 [
@@ -51933,6 +52101,7 @@
             "attack": 70,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Wind Thief L. Bowgun I",
             "ramps": [
                 [
@@ -51953,6 +52122,7 @@
             "attack": 80,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Wind Thief L. Bowgun II",
             "ramps": [
                 [
@@ -51976,6 +52146,7 @@
                 1
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Wind Thief L. Bowgun III",
             "ramps": [
                 [
@@ -51999,6 +52170,7 @@
                 1
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Gale Bowgun",
             "ramps": [
                 [
@@ -52022,6 +52194,7 @@
                 1
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Flammenkanone I",
             "ramps": [
                 [
@@ -52045,6 +52218,7 @@
                 1
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Flammenkanone II",
             "ramps": [
                 [
@@ -52068,6 +52242,7 @@
                 1
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Furious Flammenkanone",
             "ramps": [
                 [
@@ -52088,6 +52263,7 @@
             "attack": 100,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Valkyrie Fire I",
             "ramps": [
                 [
@@ -52108,6 +52284,7 @@
             "attack": 180,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Valkyrie Fire II",
             "ramps": [
                 [
@@ -52128,6 +52305,7 @@
             "attack": 190,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Valkyrie Blaze",
             "ramps": [
                 [
@@ -52148,6 +52326,7 @@
             "attack": 80,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Cross Bowgun I",
             "ramps": [
                 [
@@ -52168,6 +52347,7 @@
             "attack": 100,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Cross Bowgun II",
             "ramps": [
                 [
@@ -52188,6 +52368,7 @@
             "attack": 110,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Cross Blitz",
             "ramps": [
                 [
@@ -52208,6 +52389,7 @@
             "attack": 110,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Yakt Shooter I",
             "ramps": [
                 [
@@ -52228,6 +52410,7 @@
             "attack": 150,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Yakt Shooter II",
             "ramps": [
                 [
@@ -52248,6 +52431,7 @@
             "attack": 170,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Wyvern Chaser",
             "ramps": [
                 [
@@ -52268,6 +52452,7 @@
             "attack": 170,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Wishing Star I",
             "ramps": [
                 [
@@ -52288,6 +52473,7 @@
             "attack": 180,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Wishing Star II",
             "ramps": [
                 [
@@ -52308,6 +52494,7 @@
             "attack": 200,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Comet Bolt",
             "ramps": [
                 [
@@ -52328,6 +52515,7 @@
             "attack": 120,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Rathling Gun I",
             "ramps": [
                 [
@@ -52350,6 +52538,7 @@
                 1
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Rathling Gun II",
             "ramps": [
                 [
@@ -52372,6 +52561,7 @@
                 1
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Rathling Phoenix",
             "ramps": [
                 [
@@ -52392,6 +52582,7 @@
             "attack": 80,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Blizzard Cannon I",
             "ramps": [
                 [
@@ -52416,6 +52607,7 @@
                 1
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Blizzard Cannon II",
             "ramps": [
                 [
@@ -52440,6 +52632,7 @@
                 1
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Blizzard Volley",
             "ramps": [
                 [
@@ -52460,6 +52653,7 @@
             "attack": 90,
             "decos": [],
             "defense": 15,
+            "elestat": {},
             "name": "Grenade Launcher I",
             "ramps": [
                 [
@@ -52480,6 +52674,7 @@
             "attack": 130,
             "decos": [],
             "defense": 15,
+            "elestat": {},
             "name": "Grenade Launcher II",
             "ramps": [
                 [
@@ -52502,6 +52697,7 @@
                 1
             ],
             "defense": 20,
+            "elestat": {},
             "name": "Grenade Launcher III",
             "ramps": [
                 [
@@ -52524,6 +52720,7 @@
                 1
             ],
             "defense": 20,
+            "elestat": {},
             "name": "Grenade Revolver",
             "ramps": [
                 [
@@ -52544,6 +52741,7 @@
             "attack": 200,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Tigrex Tank I",
             "ramps": [
                 [
@@ -52564,6 +52762,7 @@
             "attack": 210,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Tigrex Tank II",
             "ramps": [
                 [
@@ -52584,6 +52783,7 @@
             "attack": 220,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Tigrex Wargun",
             "ramps": [
                 [
@@ -52604,6 +52804,7 @@
             "attack": 100,
             "decos": [],
             "defense": 10,
+            "elestat": {},
             "name": "Royal Launcher I",
             "ramps": [
                 [
@@ -52624,6 +52825,7 @@
             "attack": 110,
             "decos": [],
             "defense": 10,
+            "elestat": {},
             "name": "Royal Launcher II",
             "ramps": [
                 [
@@ -52646,6 +52848,7 @@
                 3
             ],
             "defense": 10,
+            "elestat": {},
             "name": "Royal Torrent",
             "ramps": [
                 [
@@ -52666,6 +52869,7 @@
             "attack": 120,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Sinister Bowgun I",
             "ramps": [
                 [
@@ -52686,6 +52890,7 @@
             "attack": 130,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Sinister Bowgun II",
             "ramps": [
                 [
@@ -52709,6 +52914,7 @@
                 1
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Sinister Shadow Bolt",
             "ramps": [
                 [
@@ -52731,6 +52937,7 @@
                 3
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Rajang Barrage I",
             "ramps": [
                 [
@@ -52753,6 +52960,7 @@
                 3
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Rajang Barrage II",
             "ramps": [
                 [
@@ -52775,6 +52983,7 @@
                 3
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Ten Thousand Volts",
             "ramps": [
                 [
@@ -52795,6 +53004,7 @@
             "attack": 170,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Azure Elder Bowgun I",
             "ramps": [
                 [
@@ -52815,6 +53025,7 @@
             "attack": 180,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Azure Elder Bowgun II",
             "ramps": [
                 [
@@ -52835,6 +53046,7 @@
             "attack": 190,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Abyssal Gale Bolt",
             "ramps": [
                 [
@@ -52858,6 +53070,7 @@
                 1
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Rookslayer Bowgun I",
             "ramps": [
                 [
@@ -52881,6 +53094,7 @@
                 1
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Rookslayer Bowgun II",
             "ramps": [
                 [
@@ -52904,6 +53118,7 @@
                 1
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Bazelfetter Rookslayer",
             "ramps": [
                 [
@@ -52924,6 +53139,7 @@
             "attack": 170,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Thunderbolt Bowgun I",
             "ramps": [
                 [
@@ -52944,6 +53160,7 @@
             "attack": 180,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Abyssal Storm Bolt",
             "ramps": [
                 [
@@ -52964,6 +53181,7 @@
             "attack": 190,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Teostra's Dart I",
             "ramps": [
                 [
@@ -52984,6 +53202,7 @@
             "attack": 200,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Teostra's Flamebolt",
             "ramps": [
                 [
@@ -53004,6 +53223,7 @@
             "attack": 190,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Icesteel Wasp I",
             "ramps": [
                 [
@@ -53024,6 +53244,7 @@
             "attack": 200,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Daora's Hornet",
             "ramps": [
                 [
@@ -53047,6 +53268,7 @@
                 1
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Blessed Lamp I",
             "ramps": [
                 [
@@ -53070,6 +53292,7 @@
                 1
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Cursed Lamp",
             "ramps": [
                 [
@@ -53092,6 +53315,7 @@
                 2
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Redwing Shooter I",
             "ramps": [
                 [
@@ -53114,6 +53338,7 @@
                 2
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Reddnaught Bowgun",
             "ramps": [
                 [
@@ -53134,6 +53359,7 @@
             "attack": 130,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Wooden Dog Bowgun I",
             "ramps": [
                 [
@@ -53157,6 +53383,7 @@
                 2
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Wooden Dog Bowgun II",
             "ramps": [
                 [
@@ -53180,6 +53407,7 @@
                 2
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Watchdog's Howl",
             "ramps": [
                 [
@@ -53200,6 +53428,7 @@
             "attack": 110,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Springnight Shot I",
             "ramps": [
                 [
@@ -53220,6 +53449,7 @@
             "attack": 130,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Springnight Shot II",
             "ramps": [
                 [
@@ -53244,6 +53474,7 @@
                 1
             ],
             "defense": 0,
+            "elestat": {},
             "name": "Springnight Spawn",
             "ramps": [
                 [
@@ -53264,6 +53495,7 @@
             "attack": 140,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Rampage L. Bowgun I",
             "ramps": [
                 [
@@ -53298,6 +53530,7 @@
             "attack": 150,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Rampage L. Bowgun II",
             "ramps": [
                 [
@@ -53342,6 +53575,7 @@
             "attack": 160,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Rampage L. Bowgun III",
             "ramps": [
                 [
@@ -53389,6 +53623,7 @@
             "attack": 170,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Rampage L. Bowgun IV",
             "ramps": [
                 [
@@ -53437,6 +53672,7 @@
             "attack": 180,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Rampage L. Bowgun V",
             "ramps": [
                 [
@@ -53488,6 +53724,7 @@
             "attack": 190,
             "decos": [],
             "defense": 0,
+            "elestat": {},
             "name": "Rampage L. Bowgun S",
             "ramps": [
                 [
