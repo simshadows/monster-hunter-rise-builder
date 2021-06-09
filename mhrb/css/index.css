@@ -205,6 +205,7 @@ div.sub-box {
     align-items: center;
     justify-content: flex-start;
     flex-direction: row;
+    column-gap: 4px;
 
     background: var(--color-utility-bar);
     width: 100%;
@@ -247,6 +248,10 @@ div.utility-button > svg {
 }
 div.utility-button:hover > svg {
     fill: var(--color-button-common--border-hover);
+}
+div.phantom-utility-button {
+    height: 100%;
+    width: 32px;
 }
 
 div.utility-button-push {

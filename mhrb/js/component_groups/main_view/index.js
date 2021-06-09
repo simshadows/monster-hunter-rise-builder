@@ -80,9 +80,23 @@ class UtilityBar extends React.Component {
                 ),
                 element("div",
                     {
+                    className: "phantom-utility-button",
+                    },
+                    null
+                ),
+                element("div",
+                    {
                     id: "utility-bar-spacer-box",
                     },
-                    "This project is currently very early in development. The math is incomplete. Build URLs are subject to change.",
+                    "Currently very early in development. The math is incomplete. Build URLs are subject to change. Back up your builds with screenshots!",
+                ),
+                element(UtilityButtonExternalLink,
+                    {
+                    linkURL: "https://www.patreon.com/simshadows",
+                    faStyle: "brands",
+                    faFragment: "patreon",
+                    },
+                    null,
                 ),
                 element(UtilityButtonExternalLink,
                     {
