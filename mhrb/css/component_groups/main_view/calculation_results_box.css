@@ -45,3 +45,58 @@ div.calculation-stat-value-box {
     justify-content: flex-start;
 }
 
+#calculation-sharpness-bar-box {
+    width: 100%;
+    background: var(--color-calculated-values--wrap-box);
+    font: var(--font-calculated-values--text);
+    padding: 6px 6px 6px 6px;
+}
+div.calculation-sharpness-bar-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    /*
+    padding-left: 10px;
+    padding-right: 10px;
+    */
+}
+/*
+#calculation-sharpness-bar-title-row {
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+*/
+#calculation-sharpness-bar-stat-row {
+    column-gap: 5px;
+
+    padding-bottom: 2px;
+}
+#calculation-sharpness-bar-visual-row {
+    padding-top: 2px;
+}
+
+div.calculation-sharpness-bar-stat {
+    flex: 1 0 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 20px;
+    border: 2px solid var(--color-sharpness--border);
+    border-radius: 3px;
+}
+#calculation-sharpness-bar-wrap-outer {
+    padding: 10px 0 0 0;
+}
+#calculation-sharpness-bar-wrap {
+    border: 2px solid var(--color-sharpness--border);
+    border-radius: 3px;
+    width: 100%;
+    padding: 3px;
+}
+#calculation-sharpness-bar-wrap > div {
+    height: 18px;
+}
+

@@ -7,6 +7,7 @@ import * as check from "./check.js";
 import {getImgPath} from "./images.js";
 
 const element = React.createElement;
+const assert = console.assert;
 
 export function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -160,6 +161,55 @@ export function br() {
 export function clipsafeSpan(...children) {
     return element("span", {className: "clipsafe"}, ...children);
 }
+
+const MAX_TOTAL_SHARPNESS = 400;
+const SHARPNESS_LEVELS = [
+    ["red"   , "var(--color-sharpness--red)"   ],
+    ["orange", "var(--color-sharpness--orange)"],
+    ["yellow", "var(--color-sharpness--yellow)"],
+    ["green" , "var(--color-sharpness--green)" ],
+    ["blue"  , "var(--color-sharpness--blue)"  ],
+    ["white" , "var(--color-sharpness--white)" ],
+]
+export function SharpnessBar(props) {
+    assert(check.isArr(props.baseSharpness));
+    assert(check.isArr(props.maxSharpness));
+
+    function renderSection(values) {
+        const elements = [];
+        for (const [i, [levelName, backgroundColour]] of SHARPNESS_LEVELS.entries()) {
+            // levelName not used yet
+            const width = ((values[i] / MAX_TOTAL_SHARPNESS) * 100).toFixed(4) + "%";
+            elements.push(
+                element("div",
+                    {
+                    style: {
+                            background: backgroundColour,
+                            width: width,
+                            height: "100%",
+                        },
+                    },
+                )
+            );
+        }
+        return element("div",
+            {
+            className: "sharpness-bar-section",
+            },
+            ...elements,
+        );
+    }
+
+    return element("div",
+        {
+        className: "sharpness-bar",
+        },
+        renderSection(props.baseSharpness),
+        renderSection(props.maxSharpness),
+    );
+}
+
+
 
 /*** Others ***/
 

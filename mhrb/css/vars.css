@@ -124,5 +124,13 @@
     --color-select-table--scrollbar: var(--color-scheme--bright2);
 
     --color-select-buff--group-heading: var(--color-scheme--bright2);
+
+    --color-sharpness--red:    #d70000;
+    --color-sharpness--orange: #d75f00;
+    --color-sharpness--yellow: #af8700;
+    --color-sharpness--green:  #5f8700;
+    --color-sharpness--blue:   #0087ff;
+    --color-sharpness--white:  var(--color-scheme--bright2);
+    --color-sharpness--border: var(--color-scheme--dark7);
 }
 
