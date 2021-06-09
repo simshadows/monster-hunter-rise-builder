@@ -119,8 +119,10 @@ for (weapon_category, spec_subdict) in data_spec.items():
             deco_slots = obj["decos"]
             elestat = obj["elestat"]
 
+            base_sharpness = None
             max_sharpness = None
             if "melee" in spec_subdict[name]["tagset"]:
+                base_sharpness = obj["base_sharpness"][:-1] # Remove the last sharpness level
                 max_sharpness = obj["max_sharpness"][:-1] # Remove the last sharpness level
 
             ramp_skills = obj["ramps"]
@@ -142,6 +144,7 @@ for (weapon_category, spec_subdict) in data_spec.items():
                     "ramp_skills": ramp_skills,
                 }
             if max_sharpness is not None:
+                d["base_sharpness"] = base_sharpness
                 d["max_sharpness"] = max_sharpness
             data[weapon_category][tree_name][weapon_id] = d
 
@@ -214,8 +217,9 @@ weapon_fmt = """\
         }}\
 """
 
-max_sharpness_fmt = """,
+sharpness_fmt = """,
 
+            "baseSharpness": [{base_sharpness}],
             "maxSharpness": [{max_sharpness}]\
 """
 
@@ -260,7 +264,10 @@ for (weapon_category, _) in data_spec.items():
             special_mechanics = ""
             
             if "max_sharpness" in weapon_data:
-                special_mechanics += max_sharpness_fmt.format(max_sharpness=",".join(str(x) for x in weapon_data["max_sharpness"]))
+                special_mechanics += sharpness_fmt.format(
+                        base_sharpness=",".join(str(x) for x in weapon_data["base_sharpness"]),
+                        max_sharpness=",".join(str(x) for x in weapon_data["max_sharpness"])
+                    )
 
             weapon_strs.append(weapon_fmt.format(
                     weapon_id=weapon_id,

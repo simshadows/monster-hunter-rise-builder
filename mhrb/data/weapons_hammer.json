@@ -15,6 +15,7 @@
                 ["attack_boost_1", "affinity_boost_2", "defense_boost_1"]
             ],
 
+            "baseSharpness": [50,90,60,0,0,0],
             "maxSharpness": [50,90,100,10,0,0]
         },
         "1b": {
@@ -32,6 +33,7 @@
                 ["attack_boost_1", "affinity_boost_2", "defense_boost_1"]
             ],
 
+            "baseSharpness": [60,70,70,0,0,0],
             "maxSharpness": [60,70,110,10,0,0]
         },
         "1c": {
@@ -49,6 +51,7 @@
                 ["attack_boost_1", "affinity_boost_2", "defense_boost_2"]
             ],
 
+            "baseSharpness": [70,70,90,20,0,0],
             "maxSharpness": [70,70,90,70,0,0]
         },
         "1d": {
@@ -66,6 +69,7 @@
                 ["attack_boost_2", "affinity_boost_2", "defense_boost_2"]
             ],
 
+            "baseSharpness": [60,80,80,20,10,0],
             "maxSharpness": [60,80,80,20,60,0]
         },
         "1e": {
@@ -83,6 +87,7 @@
                 ["affinity_boost_3", "defense_boost_2", "master_rider"]
             ],
 
+            "baseSharpness": [60,80,90,40,30,0],
             "maxSharpness": [60,80,90,40,70,10]
         },
         "1f": {
@@ -100,6 +105,7 @@
                 ["affinity_boost_4", "defense_boost_2", "master_rider"]
             ],
 
+            "baseSharpness": [40,90,60,60,50,0],
             "maxSharpness": [40,90,60,60,80,20]
         }
     },
@@ -119,6 +125,7 @@
                 ["attack_boost_2", "affinity_boost_2", "water_boost_1"]
             ],
 
+            "baseSharpness": [80,50,80,40,0,0],
             "maxSharpness": [80,50,80,60,30,0]
         },
         "2b": {
@@ -136,6 +143,7 @@
                 ["attack_boost_2", "affinity_boost_2", "water_boost_2"]
             ],
 
+            "baseSharpness": [110,100,80,30,30,0],
             "maxSharpness": [110,100,80,30,60,20]
         },
         "2c": {
@@ -153,6 +161,7 @@
                 ["attack_boost_3", "affinity_boost_2", "water_boost_2"]
             ],
 
+            "baseSharpness": [100,70,90,40,50,0],
             "maxSharpness": [100,70,90,40,50,50]
         }
     },
@@ -172,6 +181,7 @@
                 ["attack_boost_2", "defense_boost_2", "dulling_strike"]
             ],
 
+            "baseSharpness": [140,40,40,30,0,0],
             "maxSharpness": [140,40,40,80,0,0]
         },
         "3b": {
@@ -189,6 +199,7 @@
                 ["attack_boost_3", "defense_boost_2", "dulling_strike"]
             ],
 
+            "baseSharpness": [150,40,40,70,0,0],
             "maxSharpness": [150,40,40,70,50,0]
         },
         "3c": {
@@ -206,6 +217,7 @@
                 ["attack_boost_4", "defense_boost_3", "dulling_strike"]
             ],
 
+            "baseSharpness": [160,50,50,70,20,0],
             "maxSharpness": [160,50,50,70,70,0]
         }
     },
@@ -225,6 +237,7 @@
                 ["attack_boost_2", "water_boost_1", "element_exploit"]
             ],
 
+            "baseSharpness": [50,50,100,50,0,0],
             "maxSharpness": [50,50,100,80,20,0]
         },
         "4b": {
@@ -242,6 +255,7 @@
                 ["attack_boost_2", "water_boost_1", "element_exploit"]
             ],
 
+            "baseSharpness": [60,60,100,60,20,0],
             "maxSharpness": [60,60,100,60,70,0]
         },
         "4c": {
@@ -259,6 +273,7 @@
                 ["attack_boost_3", "water_boost_2", "element_exploit"]
             ],
 
+            "baseSharpness": [60,60,130,60,40,0],
             "maxSharpness": [60,60,130,60,90,0]
         }
     },
@@ -278,6 +293,7 @@
                 ["attack_boost_1", "anti_aerial_species", "silkbind_boost"]
             ],
 
+            "baseSharpness": [30,120,50,50,0,0],
             "maxSharpness": [30,120,50,90,10,0]
         },
         "5b": {
@@ -295,6 +311,7 @@
                 ["attack_boost_2", "anti_aerial_species", "silkbind_boost"]
             ],
 
+            "baseSharpness": [30,140,60,50,20,0],
             "maxSharpness": [30,140,60,50,30,40]
         },
         "5c": {
@@ -312,6 +329,7 @@
                 ["attack_boost_2", "anti_aerial_species", "silkbind_boost"]
             ],
 
+            "baseSharpness": [30,160,80,50,30,0],
             "maxSharpness": [30,160,80,50,30,50]
         }
     },
@@ -331,6 +349,7 @@
                 ["affinity_boost_1", "poison_boost_1", "buddy_rally"]
             ],
 
+            "baseSharpness": [90,50,40,20,0,0],
             "maxSharpness": [90,50,40,70,0,0]
         },
         "6b": {
@@ -348,6 +367,7 @@
                 ["affinity_boost_2", "poison_boost_1", "buddy_rally"]
             ],
 
+            "baseSharpness": [90,40,90,30,0,0],
             "maxSharpness": [90,40,90,70,10,0]
         },
         "6c": {
@@ -365,6 +385,7 @@
                 ["affinity_boost_2", "poison_boost_2", "buddy_rally"]
             ],
 
+            "baseSharpness": [100,50,100,50,0,0],
             "maxSharpness": [100,50,100,70,30,0]
         }
     },
@@ -384,6 +405,7 @@
                 ["attack_boost_2", "fireblight_exploit", "small_monster_exploit"]
             ],
 
+            "baseSharpness": [80,50,50,20,0,0],
             "maxSharpness": [80,50,50,70,0,0]
         },
         "7b": {
@@ -401,6 +423,7 @@
                 ["attack_boost_3", "fireblight_exploit", "small_monster_exploit"]
             ],
 
+            "baseSharpness": [90,90,80,40,0,0],
             "maxSharpness": [90,90,80,50,40,0]
         },
         "7c": {
@@ -418,6 +441,7 @@
                 ["attack_boost_4", "fireblight_exploit", "small_monster_exploit"]
             ],
 
+            "baseSharpness": [100,100,30,50,20,0],
             "maxSharpness": [100,100,30,50,50,20]
         }
     },
@@ -437,6 +461,7 @@
                 ["attack_boost_1", "affinity_boost_1", "defense_boost_2"]
             ],
 
+            "baseSharpness": [90,60,50,0,0,0],
             "maxSharpness": [90,60,100,0,0,0]
         },
         "8b": {
@@ -454,6 +479,7 @@
                 ["attack_boost_1", "affinity_boost_1", "defense_boost_2"]
             ],
 
+            "baseSharpness": [70,60,70,0,0,0],
             "maxSharpness": [70,60,120,0,0,0]
         },
         "8c": {
@@ -471,6 +497,7 @@
                 ["attack_boost_2", "affinity_boost_1", "defense_boost_2"]
             ],
 
+            "baseSharpness": [60,60,70,10,0,0],
             "maxSharpness": [60,60,70,60,0,0]
         },
         "8d": {
@@ -488,6 +515,7 @@
                 ["attack_boost_2", "defense_boost_2", "silkbind_boost"]
             ],
 
+            "baseSharpness": [90,70,40,50,0,0],
             "maxSharpness": [90,70,40,80,20,0]
         },
         "8e": {
@@ -505,6 +533,7 @@
                 ["attack_boost_2", "defense_boost_3", "silkbind_boost"]
             ],
 
+            "baseSharpness": [70,80,80,50,20,0],
             "maxSharpness": [70,80,80,50,50,20]
         },
         "8f": {
@@ -522,6 +551,7 @@
                 ["attack_boost_3", "defense_boost_3", "silkbind_boost"]
             ],
 
+            "baseSharpness": [50,50,110,50,40,0],
             "maxSharpness": [50,50,110,50,60,30]
         }
     },
@@ -541,6 +571,7 @@
                 ["defense_boost_3", "wyvern_exploit", "element_exploit"]
             ],
 
+            "baseSharpness": [100,40,90,60,10,0],
             "maxSharpness": [100,40,90,60,60,0]
         },
         "9b": {
@@ -558,6 +589,7 @@
                 ["defense_boost_3", "wyvern_exploit", "element_exploit"]
             ],
 
+            "baseSharpness": [100,50,120,60,20,0],
             "maxSharpness": [100,50,120,60,60,10]
         },
         "9c": {
@@ -575,6 +607,7 @@
                 ["defense_boost_3", "wyvern_exploit", "element_exploit"]
             ],
 
+            "baseSharpness": [100,60,90,70,30,0],
             "maxSharpness": [100,60,90,70,50,30]
         }
     },
@@ -594,6 +627,7 @@
                 ["attack_boost_2", "affinity_boost_1", "brutal_strike"]
             ],
 
+            "baseSharpness": [70,30,100,90,10,0],
             "maxSharpness": [70,30,100,90,60,0]
         },
         "10b": {
@@ -611,6 +645,7 @@
                 ["attack_boost_2", "affinity_boost_2", "brutal_strike"]
             ],
 
+            "baseSharpness": [50,30,130,100,40,0],
             "maxSharpness": [50,30,130,100,70,20]
         },
         "10c": {
@@ -628,6 +663,7 @@
                 ["attack_boost_3", "affinity_boost_2", "brutal_strike"]
             ],
 
+            "baseSharpness": [50,40,120,120,50,20],
             "maxSharpness": [50,40,120,120,50,20]
         }
     },
@@ -647,6 +683,7 @@
                 ["affinity_boost_1", "fire_boost_1", "brutal_strike"]
             ],
 
+            "baseSharpness": [120,70,30,30,0,0],
             "maxSharpness": [120,70,30,80,0,0]
         },
         "11b": {
@@ -664,6 +701,7 @@
                 ["affinity_boost_1", "fire_boost_2", "brutal_strike"]
             ],
 
+            "baseSharpness": [120,100,30,40,10,0],
             "maxSharpness": [120,100,30,40,60,0]
         },
         "11c": {
@@ -681,6 +719,7 @@
                 ["affinity_boost_2", "fire_boost_3", "brutal_strike"]
             ],
 
+            "baseSharpness": [130,120,30,50,20,0],
             "maxSharpness": [130,120,30,50,70,0]
         }
     },
@@ -700,6 +739,7 @@
                 ["attack_boost_2", "affinity_boost_2", "iceblight_exploit"]
             ],
 
+            "baseSharpness": [50,60,70,70,0,0],
             "maxSharpness": [50,60,70,100,20,0]
         },
         "12b": {
@@ -717,6 +757,7 @@
                 ["attack_boost_3", "affinity_boost_2", "iceblight_exploit"]
             ],
 
+            "baseSharpness": [50,70,80,80,20,0],
             "maxSharpness": [50,70,80,80,60,10]
         },
         "12c": {
@@ -734,6 +775,7 @@
                 ["attack_boost_4", "affinity_boost_2", "iceblight_exploit"]
             ],
 
+            "baseSharpness": [50,70,80,100,50,0],
             "maxSharpness": [50,70,80,100,60,40]
         }
     },
@@ -753,6 +795,7 @@
                 ["affinity_boost_2", "small_monster_exploit", "spiribird_doubled"]
             ],
 
+            "baseSharpness": [70,50,40,40,0,0],
             "maxSharpness": [70,50,40,90,0,0]
         },
         "13b": {
@@ -770,6 +813,7 @@
                 ["affinity_boost_2", "small_monster_exploit", "spiribird_doubled"]
             ],
 
+            "baseSharpness": [80,70,50,50,0,0],
             "maxSharpness": [80,70,50,90,10,0]
         },
         "13c": {
@@ -787,6 +831,7 @@
                 ["affinity_boost_3", "small_monster_exploit", "spiribird_doubled"]
             ],
 
+            "baseSharpness": [80,80,70,60,10,0],
             "maxSharpness": [80,80,70,60,60,0]
         }
     },
@@ -806,6 +851,7 @@
                 ["affinity_boost_3", "paralysis_boost_1", "anti_aquatic_species"]
             ],
 
+            "baseSharpness": [30,30,200,40,0,0],
             "maxSharpness": [30,30,200,70,20,0]
         },
         "14b": {
@@ -823,6 +869,7 @@
                 ["affinity_boost_3", "paralysis_boost_2", "anti_aquatic_species"]
             ],
 
+            "baseSharpness": [20,20,200,60,0,0],
             "maxSharpness": [20,20,200,70,40,0]
         },
         "14c": {
@@ -840,6 +887,7 @@
                 ["affinity_boost_4", "paralysis_boost_3", "anti_aquatic_species"]
             ],
 
+            "baseSharpness": [30,30,200,90,0,0],
             "maxSharpness": [30,30,200,90,50,0]
         }
     },
@@ -859,6 +907,7 @@
                 ["attack_boost_1", "defense_boost_2", "small_monster_exploit"]
             ],
 
+            "baseSharpness": [140,30,30,0,0,0],
             "maxSharpness": [140,30,60,20,0,0]
         },
         "15b": {
@@ -876,6 +925,7 @@
                 ["attack_boost_2", "defense_boost_2", "small_monster_exploit"]
             ],
 
+            "baseSharpness": [110,40,50,0,0,0],
             "maxSharpness": [110,40,50,50,0,0]
         },
         "15c": {
@@ -893,6 +943,7 @@
                 ["attack_boost_3", "defense_boost_2", "small_monster_exploit"]
             ],
 
+            "baseSharpness": [130,30,80,60,0,0],
             "maxSharpness": [130,30,80,60,50,0]
         }
     },
@@ -912,6 +963,7 @@
                 ["attack_boost_2", "sleep_boost_1", "dulling_strike"]
             ],
 
+            "baseSharpness": [50,50,120,30,0,0],
             "maxSharpness": [50,50,120,80,0,0]
         },
         "16b": {
@@ -929,6 +981,7 @@
                 ["attack_boost_2", "sleep_boost_1", "dulling_strike"]
             ],
 
+            "baseSharpness": [40,40,120,50,0,0],
             "maxSharpness": [40,40,120,80,20,0]
         },
         "16c": {
@@ -946,6 +999,7 @@
                 ["attack_boost_3", "sleep_boost_1", "dulling_strike"]
             ],
 
+            "baseSharpness": [50,90,120,90,0,0],
             "maxSharpness": [50,90,120,100,40,0]
         }
     },
@@ -965,6 +1019,7 @@
                 ["attack_boost_2", "thunder_boost_1", "thunderblight_exploit"]
             ],
 
+            "baseSharpness": [70,60,40,30,0,0],
             "maxSharpness": [70,60,40,80,0,0]
         },
         "17b": {
@@ -982,6 +1037,7 @@
                 ["attack_boost_2", "thunder_boost_1", "thunderblight_exploit"]
             ],
 
+            "baseSharpness": [100,60,50,40,0,0],
             "maxSharpness": [100,60,50,80,10,0]
         },
         "17c": {
@@ -999,6 +1055,7 @@
                 ["attack_boost_4", "thunder_boost_2", "thunderblight_exploit"]
             ],
 
+            "baseSharpness": [100,40,70,70,20,0],
             "maxSharpness": [100,40,70,70,50,20]
         }
     },
@@ -1018,6 +1075,7 @@
                 ["defense_boost_2", "ice_boost_1", "buddy_rally"]
             ],
 
+            "baseSharpness": [90,50,60,0,0,0],
             "maxSharpness": [90,50,90,20,0,0]
         },
         "18b": {
@@ -1035,6 +1093,7 @@
                 ["defense_boost_2", "ice_boost_1", "buddy_rally"]
             ],
 
+            "baseSharpness": [70,50,60,20,0,0],
             "maxSharpness": [70,50,60,70,0,0]
         },
         "18c": {
@@ -1052,6 +1111,7 @@
                 ["defense_boost_3", "element_exploit", "buddy_rally"]
             ],
 
+            "baseSharpness": [100,60,80,40,20,0],
             "maxSharpness": [100,60,80,40,60,10]
         }
     },
@@ -1071,6 +1131,7 @@
                 ["attack_boost_2", "affinity_boost_1", "defense_boost_1"]
             ],
 
+            "baseSharpness": [70,90,40,0,0,0],
             "maxSharpness": [70,90,90,0,0,0]
         },
         "19b": {
@@ -1088,6 +1149,7 @@
                 ["attack_boost_2", "affinity_boost_1", "defense_boost_1"]
             ],
 
+            "baseSharpness": [80,70,50,0,0,0],
             "maxSharpness": [80,70,100,0,0,0]
         },
         "19c": {
@@ -1105,6 +1167,7 @@
                 ["attack_boost_2", "affinity_boost_2", "defense_boost_1"]
             ],
 
+            "baseSharpness": [90,90,70,0,0,0],
             "maxSharpness": [90,90,110,10,0,0]
         },
         "19d": {
@@ -1122,6 +1185,7 @@
                 ["attack_boost_2", "affinity_boost_2", "dulling_strike"]
             ],
 
+            "baseSharpness": [100,70,80,0,0,0],
             "maxSharpness": [100,70,80,50,0,0]
         },
         "19e": {
@@ -1139,6 +1203,7 @@
                 ["attack_boost_3", "affinity_boost_2", "dulling_strike"]
             ],
 
+            "baseSharpness": [80,70,110,40,0,0],
             "maxSharpness": [80,70,110,80,10,0]
         },
         "19f": {
@@ -1156,6 +1221,7 @@
                 ["attack_boost_4", "affinity_boost_2", "dulling_strike"]
             ],
 
+            "baseSharpness": [80,70,80,70,0,0],
             "maxSharpness": [80,70,80,100,20,0]
         }
     },
@@ -1175,6 +1241,7 @@
                 ["affinity_boost_2", "defense_boost_1", "brutal_strike"]
             ],
 
+            "baseSharpness": [50,160,30,100,10,0],
             "maxSharpness": [50,160,30,100,60,0]
         },
         "20b": {
@@ -1192,6 +1259,7 @@
                 ["affinity_boost_2", "defense_boost_2", "brutal_strike"]
             ],
 
+            "baseSharpness": [50,160,20,100,20,0],
             "maxSharpness": [50,160,20,100,70,0]
         },
         "20c": {
@@ -1209,6 +1277,7 @@
                 ["affinity_boost_3", "defense_boost_2", "brutal_strike"]
             ],
 
+            "baseSharpness": [50,160,10,100,30,0],
             "maxSharpness": [50,160,10,100,70,10]
         }
     },
@@ -1228,6 +1297,7 @@
                 ["defense_boost_2", "master_rider", "spiribird_doubled"]
             ],
 
+            "baseSharpness": [80,70,50,50,0,0],
             "maxSharpness": [80,70,50,100,0,0]
         },
         "21b": {
@@ -1245,6 +1315,7 @@
                 ["defense_boost_3", "master_rider", "spiribird_doubled"]
             ],
 
+            "baseSharpness": [80,70,50,100,0,0],
             "maxSharpness": [80,70,50,130,20,0]
         },
         "21c": {
@@ -1262,6 +1333,7 @@
                 ["defense_boost_3", "master_rider", "spiribird_doubled"]
             ],
 
+            "baseSharpness": [80,70,50,150,0,0],
             "maxSharpness": [80,70,50,160,40,0]
         }
     },
@@ -1281,6 +1353,7 @@
                 ["attack_boost_3", "defense_boost_2", "poison_boost_2"]
             ],
 
+            "baseSharpness": [60,70,90,80,0,0],
             "maxSharpness": [60,70,90,100,30,0]
         },
         "22b": {
@@ -1298,6 +1371,7 @@
                 ["attack_boost_3", "defense_boost_2", "poison_boost_2"]
             ],
 
+            "baseSharpness": [80,70,90,110,0,0],
             "maxSharpness": [80,70,90,120,40,0]
         },
         "22c": {
@@ -1315,6 +1389,7 @@
                 ["attack_boost_4", "defense_boost_3", "poison_boost_2"]
             ],
 
+            "baseSharpness": [80,120,40,70,40,0],
             "maxSharpness": [80,120,40,70,90,0]
         }
     },
@@ -1334,6 +1409,7 @@
                 ["defense_boost_1", "attack_boost_2", "dulling_strike"]
             ],
 
+            "baseSharpness": [40,140,50,20,0,0],
             "maxSharpness": [40,140,50,70,0,0]
         },
         "23b": {
@@ -1351,6 +1427,7 @@
                 ["defense_boost_1", "attack_boost_3", "dulling_strike"]
             ],
 
+            "baseSharpness": [40,130,50,30,0,0],
             "maxSharpness": [40,130,50,70,10,0]
         },
         "23c": {
@@ -1368,6 +1445,7 @@
                 ["defense_boost_2", "attack_boost_3", "dulling_strike"]
             ],
 
+            "baseSharpness": [40,130,70,50,10,0],
             "maxSharpness": [40,130,70,50,50,10]
         }
     },
@@ -1387,6 +1465,7 @@
                 ["attack_boost_2", "fire_boost_1", "element_exploit"]
             ],
 
+            "baseSharpness": [240,10,10,70,20,0],
             "maxSharpness": [240,10,10,70,70,0]
         },
         "24b": {
@@ -1404,6 +1483,7 @@
                 ["attack_boost_2", "fire_boost_1", "element_exploit"]
             ],
 
+            "baseSharpness": [230,10,10,70,30,0],
             "maxSharpness": [230,10,10,70,70,10]
         },
         "24c": {
@@ -1421,6 +1501,7 @@
                 ["attack_boost_3", "fire_boost_1", "element_exploit"]
             ],
 
+            "baseSharpness": [220,10,10,70,40,0],
             "maxSharpness": [220,10,10,70,70,20]
         }
     },
@@ -1440,6 +1521,7 @@
                 ["affinity_boost_1", "ice_boost_1", "brutal_strike"]
             ],
 
+            "baseSharpness": [100,30,90,30,0,0],
             "maxSharpness": [100,30,90,70,10,0]
         },
         "25b": {
@@ -1457,6 +1539,7 @@
                 ["affinity_boost_1", "ice_boost_2", "brutal_strike"]
             ],
 
+            "baseSharpness": [100,30,110,40,20,0],
             "maxSharpness": [100,30,110,40,70,0]
         },
         "25c": {
@@ -1474,6 +1557,7 @@
                 ["affinity_boost_1", "ice_boost_2", "brutal_strike"]
             ],
 
+            "baseSharpness": [100,30,100,40,30,0],
             "maxSharpness": [100,30,100,40,80,0]
         },
         "25d": {
@@ -1491,6 +1575,7 @@
                 ["affinity_boost_1", "ice_boost_3", "brutal_strike"]
             ],
 
+            "baseSharpness": [100,30,90,50,30,0],
             "maxSharpness": [100,30,90,50,70,10]
         }
     },
@@ -1510,6 +1595,7 @@
                 ["attack_boost_1", "thunder_boost_1", "anti_aquatic_species"]
             ],
 
+            "baseSharpness": [70,40,90,50,0,0],
             "maxSharpness": [70,40,90,100,0,0]
         },
         "26b": {
@@ -1527,6 +1613,7 @@
                 ["attack_boost_2", "thunder_boost_1", "anti_aquatic_species"]
             ],
 
+            "baseSharpness": [70,40,70,90,30,0],
             "maxSharpness": [70,40,70,90,80,0]
         },
         "26c": {
@@ -1544,6 +1631,7 @@
                 ["attack_boost_2", "thunder_boost_2", "anti_aquatic_species"]
             ],
 
+            "baseSharpness": [70,40,100,100,40,0],
             "maxSharpness": [70,40,100,100,50,40]
         }
     },
@@ -1563,6 +1651,7 @@
                 ["attack_boost_2", "poison_boost_1", "dulling_strike"]
             ],
 
+            "baseSharpness": [90,60,80,20,0,0],
             "maxSharpness": [90,60,80,70,0,0]
         },
         "27b": {
@@ -1580,6 +1669,7 @@
                 ["attack_boost_3", "poison_boost_1", "dulling_strike"]
             ],
 
+            "baseSharpness": [120,50,50,30,0,0],
             "maxSharpness": [120,50,50,70,10,0]
         },
         "27c": {
@@ -1597,6 +1687,7 @@
                 ["attack_boost_3", "poison_boost_2", "dulling_strike"]
             ],
 
+            "baseSharpness": [130,60,50,50,10,0],
             "maxSharpness": [130,60,50,50,40,20]
         }
     },
@@ -1616,6 +1707,7 @@
                 ["attack_boost_2", "water_boost_1", "waterblight_exploit"]
             ],
 
+            "baseSharpness": [40,40,90,30,0,0],
             "maxSharpness": [40,40,90,80,0,0]
         },
         "28b": {
@@ -1633,6 +1725,7 @@
                 ["attack_boost_2", "water_boost_1", "waterblight_exploit"]
             ],
 
+            "baseSharpness": [50,60,100,40,0,0],
             "maxSharpness": [50,60,100,90,0,0]
         },
         "28c": {
@@ -1650,6 +1743,7 @@
                 ["attack_boost_3", "water_boost_2", "waterblight_exploit"]
             ],
 
+            "baseSharpness": [60,40,120,60,20,0],
             "maxSharpness": [60,40,120,60,50,20]
         }
     },
@@ -1669,6 +1763,7 @@
                 ["affinity_boost_1", "small_monster_exploit", "buddy_rally"]
             ],
 
+            "baseSharpness": [30,70,100,0,0,0],
             "maxSharpness": [30,70,140,10,0,0]
         },
         "29b": {
@@ -1686,6 +1781,7 @@
                 ["affinity_boost_2", "small_monster_exploit", "buddy_rally"]
             ],
 
+            "baseSharpness": [30,60,80,30,0,0],
             "maxSharpness": [30,60,80,80,0,0]
         },
         "29c": {
@@ -1703,6 +1799,7 @@
                 ["affinity_boost_3", "small_monster_exploit", "buddy_rally"]
             ],
 
+            "baseSharpness": [30,80,50,70,20,0],
             "maxSharpness": [30,80,50,70,70,0]
         }
     },
@@ -1722,6 +1819,7 @@
                 ["attack_boost_2", "affinity_boost_1", "master_rider"]
             ],
 
+            "baseSharpness": [50,70,80,100,0,0],
             "maxSharpness": [50,70,80,100,50,0]
         },
         "30b": {
@@ -1739,6 +1837,7 @@
                 ["attack_boost_3", "affinity_boost_1", "master_rider"]
             ],
 
+            "baseSharpness": [100,30,70,100,50,0],
             "maxSharpness": [100,30,70,100,80,20]
         },
         "30c": {
@@ -1756,6 +1855,7 @@
                 ["attack_boost_3", "affinity_boost_2", "master_rider"]
             ],
 
+            "baseSharpness": [70,40,120,90,60,20],
             "maxSharpness": [70,40,120,90,60,20]
         }
     },
@@ -1775,6 +1875,7 @@
                 ["affinity_boost_1", "defense_boost_1", "dulling_strike"]
             ],
 
+            "baseSharpness": [50,60,140,0,0,0],
             "maxSharpness": [50,60,140,50,0,0]
         },
         "31b": {
@@ -1792,6 +1893,7 @@
                 ["affinity_boost_1", "defense_boost_2", "dulling_strike"]
             ],
 
+            "baseSharpness": [60,60,160,20,0,0],
             "maxSharpness": [60,60,160,60,10,0]
         },
         "31c": {
@@ -1809,6 +1911,7 @@
                 ["affinity_boost_2", "defense_boost_2", "dulling_strike"]
             ],
 
+            "baseSharpness": [60,60,180,50,0,0],
             "maxSharpness": [60,60,180,50,30,20]
         }
     },
@@ -1828,6 +1931,7 @@
                 ["attack_boost_2", "blast_boost_1", "magnamalo_soul"]
             ],
 
+            "baseSharpness": [160,20,40,80,0,0],
             "maxSharpness": [160,20,40,110,20,0]
         },
         "32b": {
@@ -1845,6 +1949,7 @@
                 ["attack_boost_3", "blast_boost_1", "magnamalo_soul"]
             ],
 
+            "baseSharpness": [170,20,20,90,0,0],
             "maxSharpness": [170,20,20,110,30,0]
         },
         "32c": {
@@ -1862,6 +1967,7 @@
                 ["attack_boost_3", "blast_boost_2", "magnamalo_soul"]
             ],
 
+            "baseSharpness": [190,10,20,90,40,0],
             "maxSharpness": [190,10,20,90,60,30]
         }
     },
@@ -1881,6 +1987,7 @@
                 ["wyvern_exploit", "anti_aerial_species", "anti_aquatic_species"]
             ],
 
+            "baseSharpness": [50,100,100,0,0,0],
             "maxSharpness": [50,100,140,10,0,0]
         },
         "33b": {
@@ -1898,6 +2005,7 @@
                 ["wyvern_exploit", "anti_aerial_species", "anti_aquatic_species"]
             ],
 
+            "baseSharpness": [50,100,150,0,0,0],
             "maxSharpness": [50,100,180,20,0,0]
         },
         "33c": {
@@ -1915,6 +2023,7 @@
                 ["wyvern_exploit", "anti_aerial_species", "anti_aquatic_species"]
             ],
 
+            "baseSharpness": [50,100,200,0,0,0],
             "maxSharpness": [50,100,230,10,10,0]
         }
     },
@@ -1934,6 +2043,7 @@
                 ["affinity_boost_1", "thunder_boost_1", "dulling_strike"]
             ],
 
+            "baseSharpness": [50,20,100,80,0,0],
             "maxSharpness": [50,20,100,130,0,0]
         },
         "34b": {
@@ -1951,6 +2061,7 @@
                 ["affinity_boost_1", "thunder_boost_2", "dulling_strike"]
             ],
 
+            "baseSharpness": [50,50,100,100,0,0],
             "maxSharpness": [50,50,100,100,50,0]
         },
         "34c": {
@@ -1968,6 +2079,7 @@
                 ["affinity_boost_2", "thunder_boost_2", "dulling_strike"]
             ],
 
+            "baseSharpness": [50,50,80,120,0,0],
             "maxSharpness": [50,50,80,120,30,20]
         }
     },
@@ -1987,6 +2099,7 @@
                 ["dragon_boost_3", "anti_aerial_species", "defense_boost_1"]
             ],
 
+            "baseSharpness": [20,20,20,40,100,0],
             "maxSharpness": [20,20,20,40,150,0]
         },
         "35b": {
@@ -2004,6 +2117,7 @@
                 ["dragon_boost_3", "anti_aerial_species", "ibushi_soul"]
             ],
 
+            "baseSharpness": [20,20,50,50,110,0],
             "maxSharpness": [20,20,50,50,150,10]
         },
         "35c": {
@@ -2021,6 +2135,7 @@
                 ["dragon_boost_4", "anti_aerial_species", "ibushi_soul"]
             ],
 
+            "baseSharpness": [20,20,80,60,120,0],
             "maxSharpness": [20,20,80,60,150,20]
         }
     },
@@ -2040,6 +2155,7 @@
                 ["attack_boost_2", "anti_aerial_species", "narwa_soul"]
             ],
 
+            "baseSharpness": [20,20,190,40,30,0],
             "maxSharpness": [20,20,190,40,50,30]
         },
         "36b": {
@@ -2057,6 +2173,7 @@
                 ["attack_boost_3", "anti_aerial_species", "narwa_soul"]
             ],
 
+            "baseSharpness": [10,20,220,40,60,0],
             "maxSharpness": [10,20,220,40,70,40]
         }
     },
@@ -2076,6 +2193,7 @@
                 ["attack_boost_2", "affinity_boost_2", "kushala_daora_soul"]
             ],
 
+            "baseSharpness": [70,40,110,90,40,0],
             "maxSharpness": [70,40,110,90,60,30]
         },
         "37b": {
@@ -2093,6 +2211,7 @@
                 ["attack_boost_3", "affinity_boost_3", "kushala_daora_soul"]
             ],
 
+            "baseSharpness": [80,110,70,40,40,10],
             "maxSharpness": [80,110,70,40,40,60]
         }
     },
@@ -2112,6 +2231,7 @@
                 ["attack_boost_2", "fireblight_exploit", "teostra_soul"]
             ],
 
+            "baseSharpness": [150,20,50,90,40,0],
             "maxSharpness": [150,20,50,90,80,10]
         },
         "38b": {
@@ -2129,6 +2249,7 @@
                 ["attack_boost_3", "fireblight_exploit", "teostra_soul"]
             ],
 
+            "baseSharpness": [160,20,30,90,50,0],
             "maxSharpness": [160,20,30,90,80,20]
         }
     },
@@ -2148,6 +2269,7 @@
                 ["attack_boost_2", "defense_boost_3", "chameleos_soul"]
             ],
 
+            "baseSharpness": [100,30,80,90,50,0],
             "maxSharpness": [100,30,80,90,50,50]
         },
         "39b": {
@@ -2165,6 +2287,7 @@
                 ["attack_boost_3", "defense_boost_3", "chameleos_soul"]
             ],
 
+            "baseSharpness": [70,30,100,90,50,10],
             "maxSharpness": [70,30,100,90,50,60]
         }
     },
@@ -2184,6 +2307,7 @@
                 ["attack_boost_3", "wyvern_exploit", "valstrax_soul"]
             ],
 
+            "baseSharpness": [180,0,0,0,0,70],
             "maxSharpness": [180,0,0,0,0,120]
         },
         "40b": {
@@ -2201,6 +2325,7 @@
                 ["attack_boost_3", "wyvern_exploit", "valstrax_soul"]
             ],
 
+            "baseSharpness": [60,0,0,0,0,90],
             "maxSharpness": [60,0,0,0,0,140]
         }
     },
@@ -2220,6 +2345,7 @@
                 ["affinity_boost_2", "defense_boost_2", "silkbind_boost"]
             ],
 
+            "baseSharpness": [50,20,120,60,0,0],
             "maxSharpness": [50,20,120,110,0,0]
         },
         "41b": {
@@ -2237,6 +2363,7 @@
                 ["affinity_boost_3", "defense_boost_2", "silkbind_boost"]
             ],
 
+            "baseSharpness": [50,20,130,60,40,0],
             "maxSharpness": [50,20,130,60,90,0]
         },
         "41c": {
@@ -2254,6 +2381,7 @@
                 ["affinity_boost_4", "defense_boost_3", "silkbind_boost"]
             ],
 
+            "baseSharpness": [50,20,190,60,40,40],
             "maxSharpness": [50,20,190,60,40,40]
         }
     },
@@ -2273,6 +2401,7 @@
                 ["attack_boost_2", "dragon_boost_1", "wyvern_exploit"]
             ],
 
+            "baseSharpness": [50,70,70,60,0,0],
             "maxSharpness": [50,70,70,110,0,0]
         },
         "42b": {
@@ -2290,6 +2419,7 @@
                 ["attack_boost_3", "dragon_boost_1", "wyvern_exploit"]
             ],
 
+            "baseSharpness": [30,70,80,70,0,0],
             "maxSharpness": [30,70,80,120,0,0]
         },
         "42c": {
@@ -2307,6 +2437,7 @@
                 ["attack_boost_3", "dragon_boost_2", "wyvern_exploit"]
             ],
 
+            "baseSharpness": [20,100,100,80,0,0],
             "maxSharpness": [20,100,100,80,50,0]
         },
         "42d": {
@@ -2324,6 +2455,7 @@
                 ["attack_boost_4", "dragon_boost_2", "wyvern_exploit"]
             ],
 
+            "baseSharpness": [200,20,20,100,10,0],
             "maxSharpness": [200,20,20,100,50,10]
         }
     },
@@ -2343,6 +2475,7 @@
                 ["defense_boost_2", "master_rider", "spiribird_doubled"]
             ],
 
+            "baseSharpness": [80,100,30,40,0,0],
             "maxSharpness": [80,100,30,90,0,0]
         },
         "43b": {
@@ -2360,6 +2493,7 @@
                 ["defense_boost_2", "master_rider", "spiribird_doubled"]
             ],
 
+            "baseSharpness": [80,100,20,50,0,0],
             "maxSharpness": [80,100,20,80,20,0]
         },
         "43c": {
@@ -2377,6 +2511,7 @@
                 ["defense_boost_3", "master_rider", "spiribird_doubled"]
             ],
 
+            "baseSharpness": [80,100,40,60,20,0],
             "maxSharpness": [80,100,40,60,60,10]
         }
     },
@@ -2409,6 +2544,7 @@
                 ]
             ],
 
+            "baseSharpness": [70,70,90,20,0,0],
             "maxSharpness": [70,70,90,70,0,0]
         },
         "44b": {
@@ -2443,6 +2579,7 @@
                 ]
             ],
 
+            "baseSharpness": [60,70,80,40,0,0],
             "maxSharpness": [60,70,80,90,0,0]
         },
         "44c": {
@@ -2482,6 +2619,7 @@
                 ]
             ],
 
+            "baseSharpness": [50,70,80,30,20,0],
             "maxSharpness": [50,70,80,30,70,0]
         },
         "44d": {
@@ -2522,6 +2660,7 @@
                 ]
             ],
 
+            "baseSharpness": [50,70,70,30,30,0],
             "maxSharpness": [50,70,70,30,80,0]
         },
         "44e": {
@@ -2564,6 +2703,7 @@
                 ]
             ],
 
+            "baseSharpness": [50,70,50,50,30,0],
             "maxSharpness": [50,70,50,50,70,10]
         },
         "44f": {
@@ -2607,6 +2747,7 @@
                 ]
             ],
 
+            "baseSharpness": [50,70,30,60,40,0],
             "maxSharpness": [50,70,30,60,70,20]
         }
     }

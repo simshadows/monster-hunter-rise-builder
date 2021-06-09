@@ -119,21 +119,25 @@ function validateWeaponData(weaponData) {
     }
 }
 
-// Only weapons with sharpness bars
 function validateWeaponDataSharpness(weaponData) {
-    assert(isArr(weaponData.maxSharpness), "Maximum sharpness must be an Array.");
-    assert((weaponData.maxSharpness.length == 6), "Maximum sharpness must have 6 numbers (each corresponding to a colour). " + weaponData.category + " " + weaponData.id);
-    // First element is red sharpness. Last element is white sharpness.
+    // Only weapons with sharpness bars
+    function op(values) {
+        assert(isArr(values), "Maximum sharpness must be an Array.");
+        assert((values.length == 6), "Maximum sharpness must have 6 numbers (each corresponding to a colour). " + weaponData.category + " " + weaponData.id);
+        // First element is red sharpness. Last element is white sharpness.
 
-    let hitSum = 0;
-    let prevHits = 1;
-    for (const hits of weaponData.maxSharpness) {
-        assert(isInt(hits) && (hits >= 0), "Hits must be an integer >= 0.");
-        //assert((hits == 0) || (prevHits > 0), "Hits must not skip a colour."); // This check is wrong.
-        hitSum += hits;
-        prevHits = hits;
+        let hitSum = 0;
+        let prevHits = 1;
+        for (const hits of values) {
+            assert(isInt(hits) && (hits >= 0), "Hits must be an integer >= 0.");
+            //assert((hits == 0) || (prevHits > 0), "Hits must not skip a colour."); // This check is wrong.
+            hitSum += hits;
+            prevHits = hits;
+        }
+        assert((hitSum > 100), "Hits must add up to at least 100."); // If we find cases where this is wrong, remove this check.
     }
-    assert((hitSum > 100), "Hits must add up to at least 100."); // If we find cases where this is wrong, remove this check.
+    op(weaponData.baseSharpness);
+    op(weaponData.maxSharpness);
 }
 
 async function downloadCategoryRawWeaponData(category, path, op) {

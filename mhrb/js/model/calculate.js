@@ -13,6 +13,7 @@ import {
     isStrOrNull,
     isArr,
     isMap,
+    isSet,
 } from "../check.js";
 import {
     isDecoEquippableSlotStr,
@@ -22,6 +23,9 @@ import {
     getWeaponTags,
     toNameFilterString,
 } from "../common.js";
+import {
+    sum,
+} from "../utils.js";
 
 const assert = console.assert;
 
@@ -77,8 +81,17 @@ function calculateBuildPerformance(db, build, calcState) {
     assert(calcState instanceof CalcState);
 
     const weaponRO = build.getWeaponObjRO();
+
     const allCurrentSkills = build.getCurrentSkills();
-    const allCurrentRampSkills = build.getRampSkills(db);
+    assert(isMap(allCurrentSkills));
+
+    const allCurrentRampSkills = (()=>{
+            const x = build.getRampSkills(db);
+            assert(isArr(x));
+            return new Set(x);
+        })();
+    assert(isSet(allCurrentRampSkills));
+
     const allCalcStateSpec = calcState.getSpecification();
     const allCalcState = calcState.getCurrState();
 
@@ -112,25 +125,34 @@ function calculateBuildPerformance(db, build, calcState) {
         return (stateValue === 1);
     }
 
+    // Defined for code readability
+    function sumHits(sharpnessValues) {
+        return sharpnessValues.reduce(sum);
+    }
+
     //
     // STAGE 1: We get all the variables we need.
+    //
+    // We consider "weapon values to be the values before rampage skills are applied.
     //
 
     const tagset = getWeaponTags(weaponRO.category);
 
-    const weaponRaw          = weaponRO.attack;
-    const weaponAffinity     = weaponRO.affinity;
-    const weaponEleStat      = weaponRO.eleStat;
-    const weaponMaxSharpness = weaponRO.maxSharpness;
-
+    const weaponRaw           = weaponRO.attack;
+    const weaponAffinity      = weaponRO.affinity;
+    const weaponEleStat       = weaponRO.eleStat;
+    const weaponBaseSharpness = weaponRO.baseSharpness;
+    const weaponMaxSharpness  = weaponRO.maxSharpness;
     const weaponDefense = weaponRO.defense;
 
     //
-    // STAGE 2
+    // STAGE 2: Calculating base values.
+    //
+    // We consider "base values" to be the weapon's values after rampage skills are applied.
     //
 
-    const baseRaw      = weaponRaw;
-    const baseAffinity = weaponAffinity;
+    let baseRaw      = weaponRaw;
+    let baseAffinity = weaponAffinity;
 
     //
     // STAGE 3: Find Sharpness Modifiers
@@ -139,8 +161,29 @@ function calculateBuildPerformance(db, build, calcState) {
     let realSharpnessBar           = null;
     let rawSharpnessModifier       = null;
     let elementalSharpnessModifier = null;
+
     if (tagset.has("melee")) {
-        const s = getSharpnessValues(weaponMaxSharpness, skillLevel("handicraft"))
+        
+        // We first determine if the sharpness bar is full.
+
+        const baseSharpnessTotalHits = sumHits(weaponBaseSharpness);
+        const maxSharpnessTotalHits = sumHits(weaponMaxSharpness);
+
+        const barIsFull = (()=>{
+                if (baseSharpnessTotalHits === maxSharpnessTotalHits) {
+                    return true;
+                } else {
+                    // TODO: Do this check again during database initialization.
+                    assert(baseSharpnessTotalHits + 50 === maxSharpnessTotalHits);
+                    return false;
+                }
+            })();
+
+        // If the bar is full, we consider handicraft to be max for this calculation.
+        const effectiveHandicraftLevel = (barIsFull) ? 5 : skillLevel("handicraft");
+
+        // Now, we apply this effective handicraft level.
+        const s = getSharpnessValues(weaponMaxSharpness, effectiveHandicraftLevel);
         realSharpnessBar           = s.realSharpnessBar;
         rawSharpnessModifier       = s.rawSharpnessModifier;
         elementalSharpnessModifier = s.elementalSharpnessModifier;
@@ -150,9 +193,9 @@ function calculateBuildPerformance(db, build, calcState) {
     // STAGE 4: Find and Apply Crit Modifiers
     //
 
-    const critDamageMultiplier = criticalBoostDamageMultipliers[skillLevel("critical_boost")];
+    const rawCritDamageMultiplier = criticalBoostDamageMultipliers[skillLevel("critical_boost")];
 
-    const critModifier = (()=>{
+    const rawCritModifier = (()=>{
             if (baseAffinity < 0) {
                 // Negative affinity causes chance for "blunder"
                 const blunderChance = (baseAffinity < -100) ? -1 : -(baseAffinity / 100)
@@ -160,7 +203,7 @@ function calculateBuildPerformance(db, build, calcState) {
             } else {
                 // Positive affinity causes chance for extra damage
                 const critChance = (baseAffinity > 100) ? 1 : (baseAffinity / 100)
-                return (critDamageMultiplier * critChance) + (1 - critChance);
+                return (rawCritDamageMultiplier * critChance) + (1 - critChance);
             }
         })();
 
@@ -168,13 +211,11 @@ function calculateBuildPerformance(db, build, calcState) {
     // STAGE 5: We finally calculate effective raw!
     //
 
-    const effectiveRaw = (()=>{
-            if (tagset.has("melee")) {
-                return baseRaw * rawSharpnessModifier * critModifier;
-            } else {
-                return baseRaw * critModifier;
-            }
-        })();
+    let effectiveRaw = baseRaw * rawCritModifier;
+
+    if (tagset.has("melee")) {
+        effectiveRaw = effectiveRaw * rawSharpnessModifier;
+    }
 
     const ret = {
 
@@ -190,8 +231,8 @@ function calculateBuildPerformance(db, build, calcState) {
         effectiveRaw: effectiveRaw,
         affinity:     baseAffinity,
 
-        critDmgMultiplier: critDamageMultiplier,
-        critModifier:      critModifier,
+        rawCritDmgMultiplier: rawCritDamageMultiplier,
+        rawCritModifier:      rawCritModifier,
 
         realSharpnessBar:           realSharpnessBar,
         rawSharpnessModifier:       rawSharpnessModifier,

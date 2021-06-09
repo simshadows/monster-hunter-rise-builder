@@ -132,7 +132,7 @@ class CalculationResultsBox extends React.Component {
             sharpnessRenderingBottom = [
                     this._renderSpace(),
                     this._renderStat("Raw Sharpness Modifier", perf.rawSharpnessModifier.toFixed(4) + "x"),
-                    this._renderStat("Elemental Sharp. Mod.", perf.elementalSharpnessModifier.toFixed(4) + "x"),
+                    this._renderStat("Elem. Sharpness Modifier", perf.elementalSharpnessModifier.toFixed(4) + "x"),
                 ];
         }
 
@@ -145,8 +145,8 @@ class CalculationResultsBox extends React.Component {
             this._renderStat("Affinity", String(perf.affinity) + "%"),
             sharpnessRenderingTop,
             this._renderSpace(),
-            this._renderStat("Crit Damage Multiplier", perf.critDmgMultiplier.toFixed(2) + "x"),
-            this._renderStat("Crit Modifier", perf.critModifier.toFixed(4) + "x"),
+            this._renderStat("Raw Crit Damage Multiplier", perf.rawCritDmgMultiplier.toFixed(2) + "x"),
+            this._renderStat("Raw Crit Modifier", perf.rawCritModifier.toFixed(4) + "x"),
             ...sharpnessRenderingBottom,
         );
     }
