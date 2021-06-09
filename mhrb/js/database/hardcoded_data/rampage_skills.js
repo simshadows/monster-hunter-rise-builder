@@ -179,6 +179,19 @@ const hardcodedRampageSkills = [
         name: "Defense Boost III",
     }],
 
+    ["attack_surge", {
+        shortId: "atsu",
+        name: "Attack Surge",
+    }],
+    ["elemental_surge", {
+        shortId: "elsu",
+        name: "Elemental Surge",
+    }],
+    ["affinity_surge", {
+        shortId: "afsu",
+        name: "Affinity Surge",
+    }],
+
     ["sharpness_type_1", {
         shortId: "sht1",
         name: "Sharpness Type I",
@@ -565,19 +578,6 @@ const hardcodedRampageSkills = [
     ["firing_swift", {
         shortId: "fswi",
         name: "Firing: Swift",
-    }],
-
-    ["attack_surge", {
-        shortId: "atsu",
-        name: "Attack Surge",
-    }],
-    ["elemental_surge", {
-        shortId: "elsu",
-        name: "Elemental Surge",
-    }],
-    ["affinity_surge", {
-        shortId: "afsu",
-        name: "Affinity Surge",
     }],
 
     ["anti_aerial_species", {
