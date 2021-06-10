@@ -91,6 +91,25 @@ class CalculationSharpnessBarBox extends React.Component {
 }
 
 
+function CalculationResultsGroupBox(props) {
+    return element("div",
+        {
+        className: "calculation-results-group-box",
+        },
+        ...React.Children.toArray(props.children),
+    );
+}
+
+function CalculationResultsSpacerBox(props) {
+    return element("div",
+        {
+        className: "calculation-results-group-box calculation-results-spacer-box",
+        },
+        null,
+    );
+}
+
+
 class CalculationResultsBox extends React.Component {
 
     _renderStat(iconImgID, label, ...values) {
@@ -127,16 +146,6 @@ class CalculationResultsBox extends React.Component {
         );
     }
 
-    // Not the most elegant way to do this, but it works for now
-    _renderSpace() {
-        return element("div",
-            {
-            className: "calculation-stat-spacer-box",
-            },
-            null,
-        );
-    }
-
     render() {
         // This is the only prop
         const perf = this.props.buildPerformanceValues;
@@ -170,23 +179,19 @@ class CalculationResultsBox extends React.Component {
                 return this._renderStat("affinity_icon", "Affinity", ...v);
             })();
 
-        const sharpnessRenderingTop = (()=>{
-                if (perf.realSharpnessBar === null) return null;
-                return element(CalculationSharpnessBarBox,
+        let sharpnessRendering = null;
+        if (perf.realSharpnessBar !== null) {
+            sharpnessRendering = element(CalculationResultsGroupBox,
+                null,
+                element(CalculationSharpnessBarBox,
                     {
                     realSharpness: perf.realSharpnessBar,
                     },
                     null
-                );
-            })();
-
-        let sharpnessRenderingBottom = []
-        if (perf.realSharpnessBar !== null) {
-            sharpnessRenderingBottom = [
-                    this._renderSpace(),
-                    this._renderStat(null, "Raw Sharpness Modifier", perf.rawSharpnessModifier.toFixed(4) + "x"),
-                    this._renderStat(null, "Elem. Sharpness Modifier", perf.elementalSharpnessModifier.toFixed(4) + "x"),
-                ];
+                ),
+                this._renderStat(null, "Raw Sharpness Modifier", perf.rawSharpnessModifier.toFixed(4) + "x"),
+                this._renderStat(null, "Elem. Sharpness Modifier", perf.elementalSharpnessModifier.toFixed(4) + "x"),
+            );
         }
 
         return element("div",
@@ -194,16 +199,24 @@ class CalculationResultsBox extends React.Component {
             id: "calculation-results-box",
             className: "sub-box",
             },
-            this._renderStat("attack_icon", "Effective Raw", perf.effectiveRaw.toFixed(2)),
-            ...effectiveEleStatRendering,
-            affinityRendering,
-            sharpnessRenderingTop,
-            this._renderSpace(),
-            this._renderStat(null, "Raw Crit Damage Multiplier", perf.rawCritDmgMultiplier.toFixed(2) + "x"),
-            this._renderStat(null, "Elem. Crit Damage Multiplier", perf.elementalCritDmgMultiplier.toFixed(2) + "x"),
-            this._renderStat(null, "Raw Crit Modifier", perf.rawCritModifier.toFixed(4) + "x"),
-            this._renderStat(null, "Elem. Crit Modifier", perf.elementalCritModifier.toFixed(4) + "x"),
-            ...sharpnessRenderingBottom,
+            element(CalculationResultsGroupBox,
+                null,
+                this._renderStat("attack_icon", "Effective Raw", perf.effectiveRaw.toFixed(2)),
+                ...effectiveEleStatRendering,
+                affinityRendering,
+            ),
+            sharpnessRendering,
+            element(CalculationResultsGroupBox,
+                null,
+                this._renderStat(null, "Raw Crit Damage Multiplier", perf.rawCritDmgMultiplier.toFixed(2) + "x"),
+                this._renderStat(null, "Elem. Crit Damage Multiplier", perf.elementalCritDmgMultiplier.toFixed(2) + "x"),
+                this._renderStat(null, "Raw Crit Modifier", perf.rawCritModifier.toFixed(4) + "x"),
+                this._renderStat(null, "Elem. Crit Modifier", perf.elementalCritModifier.toFixed(4) + "x"),
+            ),
+            element(CalculationResultsSpacerBox,
+                null,
+                null,
+            ),
         );
     }
 }

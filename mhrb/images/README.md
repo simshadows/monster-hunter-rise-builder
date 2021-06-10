@@ -1,6 +1,6 @@
 # Image Asset Acknowledgements
 
-Weapon/Head/Chest/Arms/Waist/Legs and Buff placeholder icons: [/u/TheOolongNinja](https://www.reddit.com/r/MonsterHunter/comments/2thxoz/here_i_compiled_a_set_of_higher_resolution_icons/) ([direct link](http://www.mediafire.com/file/12ksq7kxc01oogd/Monster_Hunter_Vector_Icons.zip/file))
+Weapon/Head/Chest/Arms/Waist/Legs icons: [/u/TheOolongNinja](https://www.reddit.com/r/MonsterHunter/comments/2thxoz/here_i_compiled_a_set_of_higher_resolution_icons/) ([direct link](http://www.mediafire.com/file/12ksq7kxc01oogd/Monster_Hunter_Vector_Icons.zip/file))
 
 Insect glaive, switch axe, and charge blade icons: [monsterhunter.fandom.com](https://monsterhunter.fandom.com/wiki/Monster_Hunter_Wiki)
 

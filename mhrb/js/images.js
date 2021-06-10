@@ -9,9 +9,8 @@ const element = React.createElement;
 const assert = console.assert;
 
 const imgPathMap = new Map([
-    ["placeholder_buff"    , "./images/placeholders/buff.png"           ],
-    ["placeholder_talisman", "./images/placeholders/talisman.png"       ],
-    ["placeholder_petalace", "./images/placeholders/talisman.png"       ],
+    ["placeholder_talisman", "./images/placeholders/talisman.png"],
+    ["placeholder_petalace", "./images/placeholders/talisman.png"],
 
     ["deco_slot1_empty", "./images/deco_slot1.svg"],
     ["deco_slot2_empty", "./images/deco_slot2.svg"],

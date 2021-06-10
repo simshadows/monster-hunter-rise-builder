@@ -5,10 +5,22 @@
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
+    row-gap: 10px;
+}
+
+div.calculation-results-group-box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
     row-gap: 6px;
 
     background: var(--color-background-2);
     padding: 6px;
+    width: 100%;
+}
+div.calculation-results-spacer-box {
+    flex: 1 0 0;
 }
 
 div.calculation-stat-box {
@@ -22,11 +34,6 @@ div.calculation-stat-box {
     height: 30px;
     width: 100%;
     padding: 0 10px 0 10px;
-}
-
-div.calculation-stat-spacer-box {
-    height: 15px;
-    width: 100%;
 }
 
 div.calculation-stat-content-box {
