@@ -54,8 +54,8 @@ function getBaseValues(db, build, calcState) {
 
     let baseEleStat = new Map(weaponRO.eleStat);
 
-    let minSharpness = weaponRO.baseSharpness; // TODO: Another weird naming thing. Fix this!
-    let maxSharpness = weaponRO.maxSharpness;
+    let minSharpness = (tagset.has("melee")) ? weaponRO.baseSharpness : null; // TODO: Another weird naming thing. Fix this!
+    let maxSharpness = (tagset.has("melee")) ? weaponRO.maxSharpness  : null;
 
     let baseDefense = weaponRO.defense;
 

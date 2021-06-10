@@ -22,6 +22,12 @@ import {getImgPath} from "../images.js";
 
 const assert = console.assert;
 
+const COLOUR = {
+    orange: "#fa7317",
+    pink:   "#eb73b5",
+    red:    "#fb4a0c",
+}
+
 class CalcState {
 
     static _statesSpecification = new Map([
@@ -91,20 +97,20 @@ class CalcState {
             }],
         ])],
         ["Skill Trigger Conditions", new Map([
-            ["Weakness Exploit", {
-                initialState: 1,
+            ["Affinity Sliding (AFS)", {
+                initialState: 0,
                 presentations: [
                     null,
                     {
                         name: "Active",
                         type: "abbreviation",
-                        abbreviation: "WEX",
-                        color:       "#eb73b5",
-                        borderColor: "#eb73b5",
+                        abbreviation: "AFS",
+                        color:       COLOUR.pink,
+                        borderColor: COLOUR.pink,
                     },
                 ],
             }],
-            ["Agitator", {
+            ["Agitator (AGI)", {
                 initialState: 0,
                 presentations: [
                     null,
@@ -112,8 +118,86 @@ class CalcState {
                         name: "Active",
                         type: "abbreviation",
                         abbreviation: "AGI",
-                        color:       "#fb4a0c",
-                        borderColor: "#fb4a0c",
+                        color:       COLOUR.red,
+                        borderColor: COLOUR.red,
+                    },
+                ],
+            }],
+            ["Critical Draw (CDR)", {
+                initialState: 0,
+                presentations: [
+                    null,
+                    {
+                        name: "Active",
+                        type: "abbreviation",
+                        abbreviation: "CDR",
+                        color:       COLOUR.pink,
+                        borderColor: COLOUR.pink,
+                    },
+                ],
+            }],
+            ["Dragonheart (DH)", {
+                initialState: 0,
+                presentations: [
+                    null,
+                    {
+                        name: "Active",
+                        type: "abbreviation",
+                        abbreviation: "DH",
+                        color:       COLOUR.orange,
+                        borderColor: COLOUR.orange,
+                    },
+                ],
+            }],
+            ["Peak Performance (PP)", {
+                initialState: 0,
+                presentations: [
+                    null,
+                    {
+                        name: "Active",
+                        type: "abbreviation",
+                        abbreviation: "PP",
+                        color:       COLOUR.red,
+                        borderColor: COLOUR.red,
+                    },
+                ],
+            }],
+            ["Resentment (RES)", {
+                initialState: 0,
+                presentations: [
+                    null,
+                    {
+                        name: "Active",
+                        type: "abbreviation",
+                        abbreviation: "RES",
+                        color:       COLOUR.orange,
+                        borderColor: COLOUR.orange,
+                    },
+                ],
+            }],
+            ["Resuscitate (RSC)", {
+                initialState: 0,
+                presentations: [
+                    null,
+                    {
+                        name: "Active",
+                        type: "abbreviation",
+                        abbreviation: "RSC",
+                        color:       COLOUR.orange,
+                        borderColor: COLOUR.orange,
+                    },
+                ],
+            }],
+            ["Weakness Exploit (WEX)", {
+                initialState: 1,
+                presentations: [
+                    null,
+                    {
+                        name: "Active",
+                        type: "abbreviation",
+                        abbreviation: "WEX",
+                        color:       COLOUR.pink,
+                        borderColor: COLOUR.pink,
                     },
                 ],
             }],

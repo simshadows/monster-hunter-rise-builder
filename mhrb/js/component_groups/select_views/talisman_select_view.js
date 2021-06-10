@@ -32,7 +32,7 @@ class TalismanSelectView extends React.Component {
         const skillLevelElement = (()=>{
                 if (skillRO === null) return null;
                 const skillLevelOptions = [];
-                for (let i = 1; i < skillRO.maxLevels; ++i) {
+                for (let i = 1; i <= skillRO.maxLevels; ++i) {
                     skillLevelOptions.push(i);
                 }
                 return element(DropdownSelect,

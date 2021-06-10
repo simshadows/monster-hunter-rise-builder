@@ -19,6 +19,8 @@ const assert = console.assert;
 
 class CalculationSharpnessBarBox extends React.Component {
     _renderStat(colour, value) {
+        assert(value >= 0);
+        const s = (value > 999) ? "999+" : String(value);
         return element("div",
             {
             className: "calculation-sharpness-bar-stat",
@@ -26,7 +28,7 @@ class CalculationSharpnessBarBox extends React.Component {
                     color: colour,
                 },
             },
-            String(value),
+            s,
         );
     }
 
@@ -81,7 +83,7 @@ class CalculationSharpnessBarBox extends React.Component {
 
 class CalculationResultsBox extends React.Component {
 
-    _renderStat(label, value) {
+    _renderStat(label, ...values) {
         return element("div",
             {
             className: "calculation-stat-box",
@@ -96,7 +98,7 @@ class CalculationResultsBox extends React.Component {
                 {
                 className: "calculation-stat-content-box calculation-stat-value-box",
                 },
-                value,
+                ...values,
             ),
         );
     }
@@ -116,6 +118,22 @@ class CalculationResultsBox extends React.Component {
         const perf = this.props.buildPerformanceValues;
 
         assert(isObj(this.props.buildPerformanceValues));
+
+        const affinityRendering = (()=>{
+                let v = null;
+                if (perf.affinity > 100) {
+                    //const striked = element("s", null, String(perf.affinity) + "%");
+                    //return this._renderStat("Affinity", striked, " 100%");
+                    v = ["100% (" + String(perf.affinity) + "%)"];
+                } else if (perf.affinity < -100) {
+                    //const striked = element("s", null, String(perf.affinity) + "%");
+                    //return this._renderStat("Affinity", striked, " -100%");
+                    v = ["-100% (" + String(perf.affinity) + "%)"];
+                } else {
+                    v = [String(perf.affinity) + "%"];
+                }
+                return this._renderStat("Affinity", ...v);
+            })();
 
         const sharpnessRenderingTop = (()=>{
                 if (perf.realSharpnessBar === null) return null;
@@ -141,12 +159,14 @@ class CalculationResultsBox extends React.Component {
             id: "calculation-results-box",
             className: "sub-box",
             },
-            this._renderStat("Effective Raw (EFR)", perf.effectiveRaw.toFixed(2)),
-            this._renderStat("Affinity", String(perf.affinity) + "%"),
+            this._renderStat("Effective Raw", perf.effectiveRaw.toFixed(2)),
+            affinityRendering,
             sharpnessRenderingTop,
             this._renderSpace(),
             this._renderStat("Raw Crit Damage Multiplier", perf.rawCritDmgMultiplier.toFixed(2) + "x"),
+            this._renderStat("Elem. Crit Damage Multiplier", perf.elementalCritDmgMultiplier.toFixed(2) + "x"),
             this._renderStat("Raw Crit Modifier", perf.rawCritModifier.toFixed(4) + "x"),
+            this._renderStat("Elem. Crit Modifier", perf.elementalCritModifier.toFixed(4) + "x"),
             ...sharpnessRenderingBottom,
         );
     }

@@ -33,7 +33,6 @@ const assert = console.assert;
 /*  Data  *******************************************************************************/
 /****************************************************************************************/
 
-/*** Sharpness ***/
 
 const rawSharpnessModifiers = [
     0.50, // 1: Red
@@ -55,18 +54,6 @@ const elementalSharpnessModifiers = [
 ];
 
 
-/*** Critical Hits ***/
-
-const blunderDamageMultiplier = 0.75;
-
-const criticalBoostDamageMultipliers = [
-    1.25, // Level 0
-    1.30, // Level 1
-    1.35, // Level 2
-    1.40, // Level 3
-];
-
-
 /****************************************************************************************/
 /*  Main Formula  ***********************************************************************/
 /****************************************************************************************/
@@ -85,44 +72,36 @@ function calculateBuildPerformance(db, build, calcState) {
     const allCalcStateSpec = calcState.getSpecification();
     const allCalcState = calcState.getCurrState();
 
-    console.log(build.getCurrentSkills());
-
     //
-    // STAGE 1: Calculating base values.
+    // STAGE 1: Calculating base values and skill contributions.
     //
     // We obtain base values by getting the weapon's original values, then applying all rampage skills.
     //
 
-    const baseValues = getBaseValues(db, build, calcState);
+    const b = getBaseValues(db, build, calcState);
+    assert(b.baseRaw      !== undefined);
+    assert(b.baseAffinity !== undefined);
+    assert(b.baseEleStat  !== undefined);
+    assert(b.minSharpness !== undefined);
+    assert(b.maxSharpness !== undefined);
+    assert(b.baseDefense  !== undefined);
 
-    // Make sure we're not missing anything
-    assert(Object.keys(baseValues).length === 6);
-
-    // Raw
-    const baseRaw      = baseValues.baseRaw;
-    const baseAffinity = baseValues.baseAffinity;
-    // Elemental
-    const baseEleStat  = baseValues.baseEleStat;
-    // Sharpness
-    const minSharpness = baseValues.minSharpness;
-    const maxSharpness = baseValues.maxSharpness;
-    // Defense
-    const baseDefense  = baseValues.baseDefense;
+    const s = getSkillContributions(db, build, calcState);
+    assert(s.rawAdd                  !== undefined);
+    assert(s.rawMul                  !== undefined);
+    assert(s.affinityAdd             !== undefined);
+    assert(s.rawBlunderDamage        !== undefined);
+    assert(s.rawCriticalDamage       !== undefined);
+    assert(s.elementalBlunderDamage  !== undefined);
+    assert(s.elementalCriticalDamage !== undefined);
+    assert(s.handicraftLevel         !== undefined);
 
     //
-    // STAGE 2: Gathering skill contribution values
+    // STAGE 2: Calculate post-base values
     //
 
-    const skillContribution = getSkillContributions(db, build, calcState);
-
-    // Make sure we're not missing anything
-    assert(Object.keys(skillContribution).length === 4);
-
-    const addRaw      = skillContribution.addRaw;
-    const multiplyRaw = skillContribution.multiplyRaw;
-
-    const handicraftLevel    = skillContribution.handicraftLevel;
-    const criticalBoostLevel = skillContribution.criticalBoostLevel;
+    const postbaseRaw      = Math.trunc(b.baseRaw * s.rawMul) + s.rawAdd;
+    const postbaseAffinity = b.baseAffinity + s.affinityAdd;
 
     //
     // STAGE 3: Find Sharpness Modifiers
@@ -136,8 +115,8 @@ function calculateBuildPerformance(db, build, calcState) {
         
         // We first determine if the sharpness bar is full.
 
-        const minSharpnessTotalHits = minSharpness.reduce(sum);
-        const maxSharpnessTotalHits = maxSharpness.reduce(sum);
+        const minSharpnessTotalHits = b.minSharpness.reduce(sum);
+        const maxSharpnessTotalHits = b.maxSharpness.reduce(sum);
 
         const barIsFull = (()=>{
                 if (minSharpnessTotalHits === maxSharpnessTotalHits) {
@@ -150,38 +129,38 @@ function calculateBuildPerformance(db, build, calcState) {
             })();
 
         // If the bar is full, we consider handicraft to be max for this calculation.
-        const effectiveHandicraftLevel = (barIsFull) ? 5 : handicraftLevel;
+        const effectiveHandicraftLevel = (barIsFull) ? 5 : s.handicraftLevel;
 
         // Now, we apply this effective handicraft level.
-        const s = getSharpnessValues(maxSharpness, effectiveHandicraftLevel);
-        realSharpnessBar           = s.realSharpnessBar;
-        rawSharpnessModifier       = s.rawSharpnessModifier;
-        elementalSharpnessModifier = s.elementalSharpnessModifier;
+        const sharpnessValues = getSharpnessValues(b.maxSharpness, effectiveHandicraftLevel);
+        realSharpnessBar           = sharpnessValues.realSharpnessBar;
+        rawSharpnessModifier       = sharpnessValues.rawSharpnessModifier;
+        elementalSharpnessModifier = sharpnessValues.elementalSharpnessModifier;
     }
 
     //
     // STAGE 4: Find and Apply Crit Modifiers
     //
 
-    const rawCritDamageMultiplier = criticalBoostDamageMultipliers[criticalBoostLevel];
-
-    const rawCritModifier = (()=>{
-            if (baseAffinity < 0) {
-                // Negative affinity causes chance for "blunder"
-                const blunderChance = (baseAffinity < -100) ? -1 : -(baseAffinity / 100)
-                return (blunderDamageMultiplier * blunderChance) + (1 - blunderChance);
-            } else {
-                // Positive affinity causes chance for extra damage
-                const critChance = (baseAffinity > 100) ? 1 : (baseAffinity / 100)
-                return (rawCritDamageMultiplier * critChance) + (1 - critChance);
-            }
-        })();
+    function getCritModifier(critDamage, blunderDamage) {
+        if (postbaseAffinity < 0) {
+            // Negative affinity causes chance for "blunder"
+            const blunderChance = -(Math.max(postbaseAffinity, -100) / 100); // Clip and convert to probability
+            return (blunderDamage * blunderChance) + (1 - blunderChance);
+        } else {
+            // Positive affinity causes chance for extra damage
+            const critChance = Math.min(postbaseAffinity, 100) / 100; // Clip and convert to probability
+            return (critDamage * critChance) + (1 - critChance);
+        }
+    }
+    const rawCritModifier = getCritModifier(s.rawCriticalDamage, s.rawBlunderDamage);
+    const elementalCritModifier = getCritModifier(s.elementalCriticalDamage, s.elementalBlunderDamage);
 
     //
     // STAGE 5: We finally calculate effective raw!
     //
 
-    let effectiveRaw = baseRaw * rawCritModifier;
+    let effectiveRaw = postbaseRaw * rawCritModifier;
 
     if (tagset.has("melee")) {
         effectiveRaw = effectiveRaw * rawSharpnessModifier;
@@ -192,18 +171,20 @@ function calculateBuildPerformance(db, build, calcState) {
         // This part goes to the equips section
         // TODO: Rename it to baseAttack, etc.
 
-        weaponAttack:   baseRaw,
-        weaponAffinity: baseAffinity,
-        weaponDefense:  baseDefense,
-        weaponEleStat:  baseEleStat,
+        weaponAttack:   b.baseRaw,
+        weaponAffinity: b.baseAffinity,
+        weaponDefense:  b.baseDefense,
+        weaponEleStat:  b.baseEleStat,
 
         // The rest goes to the calculated values section
 
         effectiveRaw: effectiveRaw,
-        affinity:     baseAffinity,
+        affinity:     postbaseAffinity,
 
-        rawCritDmgMultiplier: rawCritDamageMultiplier,
-        rawCritModifier:      rawCritModifier,
+        rawCritDmgMultiplier:       s.rawCriticalDamage,
+        rawCritModifier:            rawCritModifier,
+        elementalCritDmgMultiplier: s.elementalCriticalDamage,
+        elementalCritModifier:      elementalCritModifier,
 
         realSharpnessBar:           realSharpnessBar,
         rawSharpnessModifier:       rawSharpnessModifier,
