@@ -30,7 +30,8 @@ class CalculationSharpnessBarBox extends React.Component {
     
     _renderStat(colour, value) {
         assert(value >= 0);
-        const s = (value > 999) ? "999+" : String(value);
+        const v = Math.trunc(value);
+        const s = (v > 999) ? "999+" : String(v);
         return element("div",
             {
             className: "calculation-sharpness-bar-stat",
@@ -44,6 +45,7 @@ class CalculationSharpnessBarBox extends React.Component {
 
     render(props) {
         assert(isArr(this.props.realSharpness));
+        assert(this.props.hitsMultiplier >= 1);
 
         return element("div",
             {
@@ -61,12 +63,12 @@ class CalculationSharpnessBarBox extends React.Component {
                 id: "calculation-sharpness-bar-stat-row",
                 className: "calculation-sharpness-bar-row",
                 },
-                this._renderStat("var(--color-sharpness--red)"   , this.props.realSharpness[0]),
-                this._renderStat("var(--color-sharpness--orange)", this.props.realSharpness[1]),
-                this._renderStat("var(--color-sharpness--yellow)", this.props.realSharpness[2]),
-                this._renderStat("var(--color-sharpness--green)" , this.props.realSharpness[3]),
-                this._renderStat("var(--color-sharpness--blue)"  , this.props.realSharpness[4]),
-                this._renderStat("var(--color-sharpness--white)" , this.props.realSharpness[5]),
+                this._renderStat("var(--color-sharpness--red)"   , this.props.realSharpness[0] * this.props.hitsMultiplier),
+                this._renderStat("var(--color-sharpness--orange)", this.props.realSharpness[1] * this.props.hitsMultiplier),
+                this._renderStat("var(--color-sharpness--yellow)", this.props.realSharpness[2] * this.props.hitsMultiplier),
+                this._renderStat("var(--color-sharpness--green)" , this.props.realSharpness[3] * this.props.hitsMultiplier),
+                this._renderStat("var(--color-sharpness--blue)"  , this.props.realSharpness[4] * this.props.hitsMultiplier),
+                this._renderStat("var(--color-sharpness--white)" , this.props.realSharpness[5] * this.props.hitsMultiplier),
             ),
             element("div",
                 {
@@ -186,9 +188,11 @@ class CalculationResultsBox extends React.Component {
                 element(CalculationSharpnessBarBox,
                     {
                     realSharpness: perf.realSharpnessBar,
+                    hitsMultiplier: perf.hitsMultiplier,
                     },
                     null
                 ),
+                this._renderStat(null, "Hits Multiplier", perf.hitsMultiplier.toFixed(1) + "x"),
                 this._renderStat(null, "Raw Sharpness Modifier", perf.rawSharpnessModifier.toFixed(4) + "x"),
                 this._renderStat(null, "Elem. Sharpness Modifier", perf.elementalSharpnessModifier.toFixed(4) + "x"),
             );

@@ -92,6 +92,8 @@ function getSkillContributions(db, build, calcState) {
     let elementalCriticalDamage = CRITICAL_ELEMENT_DAMAGE_MULTIPLIERS[0];
 
     let handicraftLevel = 0;
+    let mastersTouchLevel = 0; // Affects sharpness bar hits. Calculate later.
+    let razorSharpLevel = 0; // Affects sharpness bar hits. Calculate later.
 
     // Define what all skills do
 
@@ -199,6 +201,10 @@ function getSkillContributions(db, build, calcState) {
             handicraftLevel = lvl;
         }],
 
+        ["masters_touch", (lid, lvl)=>{
+            mastersTouchLevel = lvl;
+        }],
+
         ["peak_performance", (lid, lvl)=>{
             if (!skillActive("Peak Performance (PP)")) return;
             switch (lvl) {
@@ -208,6 +214,10 @@ function getSkillContributions(db, build, calcState) {
                 default:
                     invalidLevel(lid);
             }
+        }],
+
+        ["razor_sharp", (lid, lvl)=>{
+            razorSharpLevel = lvl;
         }],
 
         ["resentment", (lid, lvl)=>{
@@ -274,6 +284,8 @@ function getSkillContributions(db, build, calcState) {
         elementalCriticalDamage,
 
         handicraftLevel,
+        mastersTouchLevel,
+        razorSharpLevel,
     };
     return ret;
 }

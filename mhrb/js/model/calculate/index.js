@@ -98,6 +98,8 @@ function calculateBuildPerformance(db, build, calcState) {
     assert(s.elementalBlunderDamage  !== undefined);
     assert(s.elementalCriticalDamage !== undefined);
     assert(s.handicraftLevel         !== undefined);
+    assert(s.mastersTouchLevel       !== undefined);
+    assert(s.razorSharpLevel         !== undefined);
 
     const m = getMiscBuffContributions(db, build, calcState);
     assert(m.rawAdd  !== undefined);
@@ -112,13 +114,15 @@ function calculateBuildPerformance(db, build, calcState) {
 
     const postbaseEleStat = b.baseEleStat;
 
+    let hitsMultiplier = 1; // To be accumulated over later
+
     //
     // STAGE 3: Find Sharpness Modifiers
     //
 
-    let realSharpnessBar           = null;
-    let rawSharpnessModifier       = null;
-    let elementalSharpnessModifier = null;
+    let realSharpnessBar              = null;
+    let rawSharpnessModifier          = null;
+    let elementalSharpnessModifier    = null;
 
     if (tagset.has("melee")) {
         
@@ -151,14 +155,15 @@ function calculateBuildPerformance(db, build, calcState) {
     // STAGE 4: Find and Apply Crit Modifiers
     //
 
+    const critChance = Math.min(postbaseAffinity, 100) / 100; // Clip values to 1 or less
+
     function getCritModifier(critDamage, blunderDamage) {
-        if (postbaseAffinity < 0) {
+        if (critChance < 0) {
             // Negative affinity causes chance for "blunder"
-            const blunderChance = -(Math.max(postbaseAffinity, -100) / 100); // Clip and convert to probability
+            const blunderChance = -Math.max(critChance, -1); // Clip values to 1 or above, then convert to positive probability
             return (blunderDamage * blunderChance) + (1 - blunderChance);
         } else {
             // Positive affinity causes chance for extra damage
-            const critChance = Math.min(postbaseAffinity, 100) / 100; // Clip and convert to probability
             return (critDamage * critChance) + (1 - critChance);
         }
     }
@@ -166,7 +171,40 @@ function calculateBuildPerformance(db, build, calcState) {
     const elementalCritModifier = getCritModifier(s.elementalCriticalDamage, s.elementalBlunderDamage);
 
     //
-    // STAGE 5: We finally calculate effective raw!
+    // STAGE 5: Apply Master's Touch and Razor Sharp to the sharpness bar
+    //
+
+    if (s.razorSharpLevel > 0) {
+        const chanceOfNoSharpnessLoss = (()=>{
+                switch (s.razorSharpLevel) {
+                    case 1: return 0.10;
+                    case 2: return 0.25;
+                    case 3: return 0.50;
+                    default:
+                        console.warn("Unexpected Razor Sharp level: " + String(s.razorSharpLevel));
+                        return 0;
+                }
+            })();
+        hitsMultiplier *= 1 / (1 - chanceOfNoSharpnessLoss)
+    }
+
+    if ((s.mastersTouchLevel > 0) && (critChance > 0)) {
+        const chanceOfNoSharpnessLossOnCrit = (()=>{
+                switch (s.mastersTouchLevel) {
+                    case 1: return 0.2;
+                    case 2: return 0.4;
+                    case 3: return 0.8;
+                    default:
+                        console.warn("Unexpected Master's Touch level: " + String(s.mastersTouchLevel));
+                        return 0;
+                }
+            })();
+        const chanceOfNoSharpnessLoss = chanceOfNoSharpnessLossOnCrit * critChance;
+        hitsMultiplier *= 1 / (1 - chanceOfNoSharpnessLoss)
+    }
+
+    //
+    // STAGE 6: We finally calculate effective raw!
     //
 
     let effectiveRaw     = postbaseRaw * rawCritModifier;
@@ -198,9 +236,9 @@ function calculateBuildPerformance(db, build, calcState) {
         elementalCritModifier:      elementalCritModifier,
 
         realSharpnessBar:           realSharpnessBar,
+        hitsMultiplier:             hitsMultiplier,
         rawSharpnessModifier:       rawSharpnessModifier,
         elementalSharpnessModifier: elementalSharpnessModifier
-
     };
     return ret;
 }
