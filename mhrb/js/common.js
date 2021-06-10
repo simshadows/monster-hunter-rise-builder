@@ -233,4 +233,29 @@ export function toNameFilterString(s) {
     return s.toLowerCase().replace(/\s/g, "");
 }
 
+const eleStatOrdering = {
+    fire: 0,
+    water: 1,
+    thunder: 2,
+    ice: 3,
+    dragon: 4,
+    poison: 5,
+    paralysis: 6,
+    sleep: 7,
+    blast: 8,
+}
+export function iterateEleStatMapInLogicalOrder(eleStatMap) {
+    assert(check.isMap(eleStatMap));
+    const ret = [];
+    for (const [eleStatType, v] of eleStatMap.entries()) {
+        ret.push([eleStatType, v]);
+    }
+    ret.sort((a, b) => {
+            const av = eleStatOrdering[a[0]];
+            const bv = eleStatOrdering[b[0]];
+            if (av === bv) return 0;
+            return (av > bv) ? 1 : -1;
+        });
+    return ret;
+}
 

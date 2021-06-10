@@ -16,6 +16,7 @@ import {
     isArmourSlotStr,
     isDecoEquippableSlotStr,
     clipsafeSpan,
+    iterateEleStatMapInLogicalOrder,
 } from "../../../common.js";
 
 import {
@@ -88,7 +89,7 @@ function EquipWeaponInfoBox(props) {
     if (perf.weaponEleStat.size === 0) {
         otherStatBoxes.push(statBoxEmpty());
     } else {
-        for (const [eleStatType, eleStatValue] of perf.weaponEleStat.entries()) {
+        for (const [eleStatType, eleStatValue] of iterateEleStatMapInLogicalOrder(perf.weaponEleStat)) {
             assert(isEleStatStr(eleStatType));
             assert((eleStatType !== null) && (eleStatType !== undefined) && (eleStatType !== "none"));
             assert(check.isInt(eleStatValue) && (eleStatValue > 0));

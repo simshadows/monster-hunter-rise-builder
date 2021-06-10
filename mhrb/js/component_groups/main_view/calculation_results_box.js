@@ -15,6 +15,7 @@ import {
     SharpnessBar,
     isEleStatStr,
     eleStatIdToName,
+    iterateEleStatMapInLogicalOrder,
 } from "../../common.js";
 import {
     getSimpleImgElement,
@@ -144,7 +145,7 @@ class CalculationResultsBox extends React.Component {
 
         const effectiveEleStatRendering = (()=>{
                 const v = [];
-                for (const [eleStatType, effectiveEleStatValue] of perf.effectiveEleStat.entries()) {
+                for (const [eleStatType, effectiveEleStatValue] of iterateEleStatMapInLogicalOrder(perf.effectiveEleStat)) {
                     assert(isEleStatStr(eleStatType));
                     assert(effectiveEleStatValue > 0);
                     const eleStatName = eleStatIdToName(eleStatType);

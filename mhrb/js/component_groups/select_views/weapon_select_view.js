@@ -14,6 +14,7 @@ import {
     isWeaponCategoryStr,
     weaponCategoryToName,
     toNameFilterString,
+    iterateEleStatMapInLogicalOrder,
 } from "../../common.js";
 import {
     NameFilterTextField,
@@ -97,6 +98,9 @@ class WeaponSelectionTable extends React.Component {
             return "none";
         } else {
             const elements = [];
+            // Sorting it is really slow
+            //for (const [eleStatType, eleStatValue] of iterateEleStatMapInLogicalOrder(eleStatData)) {
+
             for (const [eleStatType, eleStatValue] of eleStatData.entries()) {
                 const iconImgPath = eleStatStrToImgPath(eleStatType);
                 assert(iconImgPath !== undefined); // Not relying on undefined values
