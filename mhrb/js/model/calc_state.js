@@ -95,6 +95,50 @@ class CalcState {
                     },
                 ],
             }],
+            ["Might Seed", {
+                initialState: 1,
+                presentations: [
+                    null,
+                    {
+                        name: "Active",
+                        type: "icon",
+                        iconImgPath: getImgPath("itembox_mightseed"),
+                    },
+                ],
+            }],
+            ["Demon Powder", {
+                initialState: 1,
+                presentations: [
+                    null,
+                    {
+                        name: "Active",
+                        type: "icon",
+                        iconImgPath: getImgPath("itembox_demonpowder"),
+                    },
+                ],
+            }],
+            ["Adamant Seed", {
+                initialState: 0,
+                presentations: [
+                    null,
+                    {
+                        name: "Active",
+                        type: "icon",
+                        iconImgPath: getImgPath("itembox_adamantseed"),
+                    },
+                ],
+            }],
+            ["Hardshell Powder", {
+                initialState: 0,
+                presentations: [
+                    null,
+                    {
+                        name: "Active",
+                        type: "icon",
+                        iconImgPath: getImgPath("itembox_hardshellpowder"),
+                    },
+                ],
+            }],
         ])],
         ["Skill States", new Map([
             ["Affinity Sliding (AFS)", {

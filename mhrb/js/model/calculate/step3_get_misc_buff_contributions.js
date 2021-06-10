@@ -55,6 +55,20 @@ function getMiscBuffContributions(db, build, calcState) {
         defense += 18;
     }
 
+    if (buffActive("Might Seed")) {
+        rawAdd += 10;
+    }
+    if (buffActive("Demon Powder")) {
+        rawAdd += 10;
+    }
+
+    if (buffActive("Adamant Seed")) {
+        defense += 20;
+    }
+    if (buffActive("Hardshell Powder")) {
+        defense += 20;
+    }
+
     const ret = {
         rawAdd,
         defense,
