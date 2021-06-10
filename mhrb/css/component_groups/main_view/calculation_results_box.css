@@ -43,6 +43,16 @@ div.calculation-stat-value-box {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    column-gap: 6px;
+}
+
+div.calculation-stat-icon-box {
+    height: 21px;
+    width: 21px;
+}
+div.calculation-stat-icon-box > img {
+    height: 100%;
+    width: 100%;
 }
 
 #calculation-sharpness-bar-box {

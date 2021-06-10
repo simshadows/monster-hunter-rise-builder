@@ -132,6 +132,21 @@ export function equipmentSlotToName(obj) {
     return equipmentSlotToNameMap[obj];
 }
 
+const eleStatIdToNameMap = {
+    fire:      "Fire",
+    water:     "Water",
+    thunder:   "Thunder",
+    ice:       "Ice",
+    dragon:    "Dragon",
+    poison:    "Poison",
+    paralysis: "Paralysis",
+    sleep:     "Sleep",
+    blast:     "Blast",
+}
+export function eleStatIdToName(obj) {
+    return eleStatIdToNameMap[obj];
+}
+
 const weaponTagsMap = {
     greatsword    : new Set(["melee"]),
     longsword     : new Set(["melee"]),

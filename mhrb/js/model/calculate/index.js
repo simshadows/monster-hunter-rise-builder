@@ -8,6 +8,7 @@ import {CalcState} from "../calc_state.js";
 
 import {getBaseValues} from "./step1_get_base_values.js";
 import {getSkillContributions} from "./step2_get_skill_contributions.js";
+import {getMiscBuffContributions} from "./step3_get_misc_buff_contributions.js";
 
 import {
     isObj,
@@ -96,12 +97,18 @@ function calculateBuildPerformance(db, build, calcState) {
     assert(s.elementalCriticalDamage !== undefined);
     assert(s.handicraftLevel         !== undefined);
 
+    const m = getMiscBuffContributions(db, build, calcState);
+    assert(m.rawAdd  !== undefined);
+    assert(m.defense !== undefined);
+
     //
     // STAGE 2: Calculate post-base values
     //
 
-    const postbaseRaw      = Math.trunc(b.baseRaw * s.rawMul) + s.rawAdd;
+    const postbaseRaw      = Math.trunc(b.baseRaw * s.rawMul) + s.rawAdd + m.rawAdd;
     const postbaseAffinity = b.baseAffinity + s.affinityAdd;
+
+    const postbaseEleStat = b.baseEleStat;
 
     //
     // STAGE 3: Find Sharpness Modifiers
@@ -160,7 +167,8 @@ function calculateBuildPerformance(db, build, calcState) {
     // STAGE 5: We finally calculate effective raw!
     //
 
-    let effectiveRaw = postbaseRaw * rawCritModifier;
+    let effectiveRaw     = postbaseRaw * rawCritModifier;
+    let effectiveEleStat = postbaseEleStat;
 
     if (tagset.has("melee")) {
         effectiveRaw = effectiveRaw * rawSharpnessModifier;
@@ -178,8 +186,9 @@ function calculateBuildPerformance(db, build, calcState) {
 
         // The rest goes to the calculated values section
 
-        effectiveRaw: effectiveRaw,
-        affinity:     postbaseAffinity,
+        effectiveRaw:     effectiveRaw,
+        effectiveEleStat: effectiveEleStat,
+        affinity:         postbaseAffinity,
 
         rawCritDmgMultiplier:       s.rawCriticalDamage,
         rawCritModifier:            rawCritModifier,
