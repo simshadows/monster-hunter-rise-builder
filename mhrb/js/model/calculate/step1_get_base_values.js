@@ -208,10 +208,38 @@ function getBaseValues(db, build, calcState) {
         ["affinity_surge" , ()=>{ baseRaw += -10;
                                   baseAffinity += 30; }],
 
-        ["sharpness_type_1", ()=>{ console.warn("NOT IMPLEMENTED"); }],
-        ["sharpness_type_2", ()=>{ console.warn("NOT IMPLEMENTED"); }],
-        ["sharpness_type_3", ()=>{ console.warn("NOT IMPLEMENTED"); }],
-        ["sharpness_type_4", ()=>{ console.warn("NOT IMPLEMENTED"); }],
+        ["sharpness_type_1", ()=>{
+            if (!tagset.has("melee")) {
+                console.warn("Attempted to apply Sharpness Type I on a ranged weapon.");
+                return;
+            }
+            minSharpness = [100,150,50,20,30,0];
+            maxSharpness = [100,150,50,20,30,50];
+        }],
+        ["sharpness_type_2", ()=>{
+            if (!tagset.has("melee")) {
+                console.warn("Attempted to apply Sharpness Type II on a ranged weapon.");
+                return;
+            }
+            minSharpness = [20,80,150,100,0,0];
+            maxSharpness = [20,80,150,100,40,10];
+        }],
+        ["sharpness_type_3", ()=>{
+            if (!tagset.has("melee")) {
+                console.warn("Attempted to apply Sharpness Type III on a ranged weapon.");
+                return;
+            }
+            minSharpness = [70,70,30,30,100,0];
+            maxSharpness = [70,70,30,30,150,0];
+        }],
+        ["sharpness_type_4", ()=>{
+            if (!tagset.has("melee")) {
+                console.warn("Attempted to apply Sharpness Type IV on a ranged weapon.");
+                return;
+            }
+            minSharpness = [50,80,70,160,10,30]; // Full bar
+            maxSharpness = [50,80,70,160,10,30];
+        }],
 
         ["anti_aerial_species", ()=>{
             if (!rampSkillActive("Anti-Aerial Species (AAE)")) return;
