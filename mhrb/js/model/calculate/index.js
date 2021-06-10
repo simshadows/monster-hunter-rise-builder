@@ -87,6 +87,8 @@ function calculateBuildPerformance(db, build, calcState) {
     assert(b.maxSharpness !== undefined);
     assert(b.baseDefense  !== undefined);
 
+    assert(b.rawPostTruncMul !== undefined);
+
     const s = getSkillContributions(db, build, calcState);
     assert(s.rawAdd                  !== undefined);
     assert(s.rawMul                  !== undefined);
@@ -105,7 +107,7 @@ function calculateBuildPerformance(db, build, calcState) {
     // STAGE 2: Calculate post-base values
     //
 
-    const postbaseRaw      = Math.trunc(b.baseRaw * s.rawMul) + s.rawAdd + m.rawAdd;
+    const postbaseRaw      = (Math.trunc(b.baseRaw * s.rawMul) + s.rawAdd + m.rawAdd) * b.rawPostTruncMul;
     const postbaseAffinity = b.baseAffinity + s.affinityAdd;
 
     const postbaseEleStat = b.baseEleStat;

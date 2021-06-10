@@ -125,11 +125,11 @@
 
     --color-select-buff--group-heading: var(--color-scheme--bright2);
 
-    --color-sharpness--red:    #d70000;
-    --color-sharpness--orange: #d75f00;
-    --color-sharpness--yellow: #af8700;
-    --color-sharpness--green:  #5f8700;
-    --color-sharpness--blue:   #0087ff;
+    --color-sharpness--red:    #c50f3a;
+    --color-sharpness--orange: #e85218;
+    --color-sharpness--yellow: #f3c832;
+    --color-sharpness--green:  #5ed300;
+    --color-sharpness--blue:   #3068ee;
     --color-sharpness--white:  var(--color-scheme--bright2);
     --color-sharpness--border: var(--color-scheme--dark7);
 }

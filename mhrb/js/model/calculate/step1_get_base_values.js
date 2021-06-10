@@ -40,11 +40,11 @@ function getBaseValues(db, build, calcState) {
     const allCalcState = calcState.getCurrState();
 
     // Defined for code readability. Returns whether a binary state is "on" or "off".
-    function skillActive(stateLabel) {
-        const presentations = allCalcStateSpec.get("Skill Trigger Conditions").get(stateLabel).presentations;
+    function rampSkillActive(stateLabel) {
+        const presentations = allCalcStateSpec.get("Rampage Skill States").get(stateLabel).presentations;
         const numPossibleStates = presentations.length;
         assert(numPossibleStates === 2);
-        const stateValue = allCalcState.get("Skill Trigger Conditions").get(stateLabel);
+        const stateValue = allCalcState.get("Rampage Skill States").get(stateLabel);
         assert(isInt(stateValue) && (stateValue >= 0) && (stateValue < 2));
         return (stateValue === 1);
     }
@@ -58,6 +58,8 @@ function getBaseValues(db, build, calcState) {
     let maxSharpness = (tagset.has("melee")) ? weaponRO.maxSharpness  : null;
 
     let baseDefense = weaponRO.defense;
+
+    let rawPostTruncMul = 1;
 
     // Deferred operations go here
     const rDeferArr = [];
@@ -78,9 +80,11 @@ function getBaseValues(db, build, calcState) {
 
             // We first add to the primary element
             assert(baseEleStat.size === 1);
+            const tmp = new Map();
             for (const [primaryEleType, primaryEleValue] of baseEleStat.entries()) {
-                baseEleStat.set(primaryEleType, primaryEleValue + addToPrimaryElement);
+                tmp.set(primaryEleType, primaryEleValue + addToPrimaryElement);
             }
+            baseEleStat = tmp;
 
             // Now, we add the secondary element
             baseEleStat.set(eleType, eleValue);
@@ -209,15 +213,28 @@ function getBaseValues(db, build, calcState) {
         ["sharpness_type_3", ()=>{ console.warn("NOT IMPLEMENTED"); }],
         ["sharpness_type_4", ()=>{ console.warn("NOT IMPLEMENTED"); }],
 
-        ["anti_aerial_species"  , ()=>{ console.warn("NOT IMPLEMENTED"); }],
-        ["anti_aquatic_species" , ()=>{ console.warn("NOT IMPLEMENTED"); }],
+        ["anti_aerial_species", ()=>{
+            if (!rampSkillActive("Anti-Aerial Species (AAE)")) return;
+            rawPostTruncMul *= 1.05;
+            // TODO: Is there an elemental multiplier?
+        }],
+        ["anti_aquatic_species", ()=>{
+            if (!rampSkillActive("Anti-Aquatic Species (AAQ)")) return;
+            rawPostTruncMul *= 1.10;
+            // TODO: Is there an elemental multiplier?
+        }],
+        ["wyvern_exploit", ()=>{
+            if (!rampSkillActive("Wyvern Exploit (WYX)")) return;
+            rawPostTruncMul *= 1.05;
+            // TODO: Is there an elemental multiplier?
+        }],
+
         ["element_exploit"      , ()=>{ console.warn("NOT IMPLEMENTED"); }],
         ["fireblight_exploit"   , ()=>{ console.warn("NOT IMPLEMENTED"); }],
         ["iceblight_exploit"    , ()=>{ console.warn("NOT IMPLEMENTED"); }],
         ["small_monster_exploit", ()=>{ console.warn("NOT IMPLEMENTED"); }],
         ["thunderblight_exploit", ()=>{ console.warn("NOT IMPLEMENTED"); }],
         ["waterblight_exploit"  , ()=>{ console.warn("NOT IMPLEMENTED"); }],
-        ["wyvern_exploit"       , ()=>{ console.warn("NOT IMPLEMENTED"); }],
 
         ["non_elemental_boost", ()=>{ rDeferArr.push(()=>{ if (baseEleStat.size === 0) baseRaw += 10; }); }],
 
@@ -253,6 +270,8 @@ function getBaseValues(db, build, calcState) {
         maxSharpness,
 
         baseDefense,
+
+        rawPostTruncMul,
     };
     return ret;
 }

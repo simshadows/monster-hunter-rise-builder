@@ -71,10 +71,10 @@ function getSkillContributions(db, build, calcState) {
 
     // Defined for code readability. Returns whether a binary state is "on" or "off".
     function skillActive(stateLabel) {
-        const presentations = allCalcStateSpec.get("Skill Trigger Conditions").get(stateLabel).presentations;
+        const presentations = allCalcStateSpec.get("Skill States").get(stateLabel).presentations;
         const numPossibleStates = presentations.length;
         assert(numPossibleStates === 2);
-        const stateValue = allCalcState.get("Skill Trigger Conditions").get(stateLabel);
+        const stateValue = allCalcState.get("Skill States").get(stateLabel);
         assert(isInt(stateValue) && (stateValue >= 0) && (stateValue < 2));
         return (stateValue === 1);
     }

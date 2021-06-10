@@ -96,7 +96,7 @@ class CalcState {
                 ],
             }],
         ])],
-        ["Skill Trigger Conditions", new Map([
+        ["Skill States", new Map([
             ["Affinity Sliding (AFS)", {
                 initialState: 0,
                 presentations: [
@@ -201,6 +201,60 @@ class CalcState {
                     },
                 ],
             }],
+        ])],
+        ["Rampage Skill States", new Map([
+            ["Wyvern Exploit (WYX)", {
+                initialState: 0,
+                presentations: [
+                    null,
+                    {
+                        name: "Active",
+                        type: "abbreviation",
+                        abbreviation: "WYX",
+                        color:       "#5f8700",
+                        borderColor: "#5f8700",
+                    },
+                ],
+            }],
+            ["Anti-Aerial Species (AAE)", {
+                initialState: 0,
+                presentations: [
+                    null,
+                    {
+                        name: "Active",
+                        type: "abbreviation",
+                        abbreviation: "AAQ",
+                        color:       "#5f8700",
+                        borderColor: "#5f8700",
+                    },
+                ],
+            }],
+            ["Anti-Aquatic Species (AAQ)", {
+                initialState: 0,
+                presentations: [
+                    null,
+                    {
+                        name: "Active",
+                        type: "abbreviation",
+                        abbreviation: "AAQ",
+                        color:       "#5f8700",
+                        borderColor: "#5f8700",
+                    },
+                ],
+            }],
+            //["Element Exploit (ELX)", {
+            //    initialState: 0,
+            //    presentations: [
+            //        null,
+            //        {
+            //            name: "Active",
+            //            type: "abbreviation",
+            //            abbreviation: "ELX",
+            //            color:       "#5f8700",
+            //            borderColor: "#5f8700",
+            //        },
+            //    ],
+            //}],
         ])],
     ]);
 

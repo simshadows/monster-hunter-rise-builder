@@ -151,8 +151,8 @@ div.selection-table-icon-box > img {
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    column-gap: 50px;
-    padding: 35px;
+    column-gap: 30px;
+    padding: 25px;
 }
 
 div.buff-selection-group-box {
