@@ -71,9 +71,13 @@ export function isWeaponEndlineTagStr(obj) {
     return weaponEndlineTagStrs.has(obj);
 }
 
-const eleStatStrs = new Set(["none", "fire", "water", "thunder", "ice", "dragon", "poison", "paralysis", "sleep", "blast"]);
+export const eleStatStrs = new Set(["none", "fire", "water", "thunder", "ice", "dragon", "poison", "paralysis", "sleep", "blast"]);
 export function isEleStatStr(obj) {
     return eleStatStrs.has(obj);
+}
+export const eleStrs = new Set(["fire", "water", "thunder", "ice", "dragon"]);
+export function isEleStr(obj) {
+    return eleStrs.has(obj);
 }
 
 const armourSlotStrs = new Set(["head", "chest", "arms", "waist", "legs"]);

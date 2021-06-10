@@ -17,6 +17,8 @@ import {
     isFunction,
 } from "../../check.js";
 import {
+    eleStrs,
+    isEleStr,
     getWeaponTags,
 } from "../../common.js";
 
@@ -62,9 +64,21 @@ function getBaseValues(db, build, calcState) {
     let rawPostTruncMul = 1;
 
     // Deferred operations go here
-    const rDeferArr = [];
+    const deferredOps1 = [];
+    const deferredOps2 = [];
 
     // Define what all rampage skills do
+    function rampElementalBoost(eleValueToAdd) {
+        function op() {
+            assert(isInt(eleValueToAdd));
+            for (const eleID of eleStrs) {
+                const eleValue = baseEleStat.get(eleID);
+                if (eleValue === undefined) continue;
+                baseEleStat.set(eleID, eleValue + eleValueToAdd);
+            }
+        }
+        deferredOps2.push(op); // Defer to last
+    }
     function rampBoostEleStat(eleType, eleValue) {
         const originalValue = baseEleStat.get(eleType)
         assert(originalValue !== undefined);
@@ -77,12 +91,15 @@ function getBaseValues(db, build, calcState) {
     function rampSecondaryEle(eleType, eleValue, addToPrimaryElement) {
         function op() {
             if (baseEleStat.has(eleType)) return; // We ignore the rampage skill if the weapon already has the element.
+            assert(isInt(eleValue));
+            assert(isInt(addToPrimaryElement));
 
             // We first add to the primary element
-            assert(baseEleStat.size === 1);
+            assert(baseEleStat.size === 1); // We only expect one element or status, which is the primary
             const tmp = new Map();
-            for (const [primaryEleType, primaryEleValue] of baseEleStat.entries()) {
-                tmp.set(primaryEleType, primaryEleValue + addToPrimaryElement);
+            for (const [eleStatType, eleStatValue] of baseEleStat.entries()) {
+                if (!isEleStr(eleStatType)) continue; // Ensure it's element
+                tmp.set(eleStatType, eleStatValue + addToPrimaryElement);
             }
             baseEleStat = tmp;
 
@@ -90,7 +107,7 @@ function getBaseValues(db, build, calcState) {
             baseEleStat.set(eleType, eleValue);
             assert(baseEleStat.size === 2);
         }
-        rDeferArr.push(op); // Defer to last
+        deferredOps1.push(op); // Defer
     }
     const rampSkillOps = new Map([
 
@@ -194,9 +211,9 @@ function getBaseValues(db, build, calcState) {
         ["affinity_boost_3", ()=>{ baseAffinity += 8;  }],
         ["affinity_boost_4", ()=>{ baseAffinity += 10; }],
 
-        ["elemental_boost_1", ()=>{ console.warn("NOT IMPLEMENTED"); }], /* I don't know exactly how this works. */
-        ["elemental_boost_2", ()=>{ console.warn("NOT IMPLEMENTED"); }], /* Will it increase all elements? */
-        ["elemental_boost_3", ()=>{ console.warn("NOT IMPLEMENTED"); }],
+        ["elemental_boost_1", ()=>{ rampElementalBoost(5);  }],
+        ["elemental_boost_2", ()=>{ rampElementalBoost(7);  }],
+        ["elemental_boost_3", ()=>{ rampElementalBoost(10); }],
 
         ["defense_boost_1", ()=>{ baseDefense += 10; }],
         ["defense_boost_2", ()=>{ baseDefense += 20; }],
@@ -204,7 +221,20 @@ function getBaseValues(db, build, calcState) {
 
         ["attack_surge"   , ()=>{ baseRaw += 20;
                                   baseAffinity += -30; }],
-        ["elemental_surge", ()=>{ console.warn("NOT IMPLEMENTED"); }],
+        ["elemental_surge", ()=>{ 
+            function op() {
+                assert(baseEleStat.size === 1); // We only expect one element
+                const tmp = new Map();
+                for (const [eleStatType, eleStatValue] of baseEleStat.entries()) {
+                    if (!isEleStr(eleStatType)) continue;
+                    tmp.set(eleStatType, eleStatValue + 10);
+                }
+                baseEleStat = tmp;
+
+                baseRaw += -15;
+            }
+            deferredOps2.push(op); // Defer to last
+        }],
         ["affinity_surge" , ()=>{ baseRaw += -10;
                                   baseAffinity += 30; }],
 
@@ -264,7 +294,7 @@ function getBaseValues(db, build, calcState) {
         ["thunderblight_exploit", ()=>{ console.warn("NOT IMPLEMENTED"); }],
         ["waterblight_exploit"  , ()=>{ console.warn("NOT IMPLEMENTED"); }],
 
-        ["non_elemental_boost", ()=>{ rDeferArr.push(()=>{ if (baseEleStat.size === 0) baseRaw += 10; }); }],
+        ["non_elemental_boost", ()=>{ deferredOps2.push(()=>{ if (baseEleStat.size === 0) baseRaw += 10; }); }],
 
         // MANY OTHER RAMPAGE SKILLS NOT YET IMPLEMENTED
     ]);
@@ -279,14 +309,11 @@ function getBaseValues(db, build, calcState) {
     // Process all rampage skills in the build
     for (const rampSkillRO of allCurrentRampSkills) {
         const op = rampSkillOps.get(rampSkillRO.id);
-        if (op !== undefined) {
-            op();
-        }
+        if (op !== undefined) op();
     }
     // Process deferred operations
-    for (const op of rDeferArr) {
-        op();
-    }
+    for (const op of deferredOps1) op();
+    for (const op of deferredOps2) op();
 
     const ret = {
         baseRaw,
