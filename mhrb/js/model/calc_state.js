@@ -117,6 +117,28 @@ class CalcState {
                     },
                 ],
             }],
+            ["Demondrug", {
+                initialState: 0,
+                presentations: [
+                    null,
+                    {
+                        name: "Active",
+                        type: "icon",
+                        iconImgPath: getImgPath("itembox_demondrug"),
+                    },
+                ],
+            }],
+            ["Mega Demondrug", {
+                initialState: 1,
+                presentations: [
+                    null,
+                    {
+                        name: "Active",
+                        type: "icon",
+                        iconImgPath: getImgPath("itembox_megademondrug"),
+                    },
+                ],
+            }],
             ["Adamant Seed", {
                 initialState: 0,
                 presentations: [
@@ -136,6 +158,28 @@ class CalcState {
                         name: "Active",
                         type: "icon",
                         iconImgPath: getImgPath("itembox_hardshellpowder"),
+                    },
+                ],
+            }],
+            ["Armorskin", {
+                initialState: 0,
+                presentations: [
+                    null,
+                    {
+                        name: "Active",
+                        type: "icon",
+                        iconImgPath: getImgPath("itembox_armorskin"),
+                    },
+                ],
+            }],
+            ["Mega Armorskin", {
+                initialState: 0,
+                presentations: [
+                    null,
+                    {
+                        name: "Active",
+                        type: "icon",
+                        iconImgPath: getImgPath("itembox_megaarmorskin"),
                     },
                 ],
             }],
@@ -357,9 +401,34 @@ class CalcState {
         return this._state
     }
 
+    //_getIndividualSpec(groupName, stateName) {
+    //    const subMap = this.constructor._statesSpecification.get(groupName);
+    //    if (subMap === undefined) return undefined:
+    //    return subMap.get(stateName);
+    //}
+    //_getIndividualState(groupName, stateName) {
+    //    const subMap = this._state.get(groupName);
+    //    if (subMap === undefined) return undefined:
+    //    return subMap.get(stateName);
+    //}
+
     // Usefully returns self for use in React state transitions.
     setState(groupName, stateName, newValue) {
         const subMap = this._state.get(groupName);
+        assert(subMap !== undefined);
+
+        // Handle mutually exclusive states
+        if ((newValue === 1) && (groupName === "Item Box")) {
+            switch (stateName) {
+                case "Demondrug":      subMap.set("Mega Demondrug", 0); break;
+                case "Mega Demondrug": subMap.set("Demondrug"     , 0); break;
+                case "Armorskin":      subMap.set("Mega Armorskin", 0); break;
+                case "Mega Armorskin": subMap.set("Armorskin"     , 0); break;
+                default:
+                    /* Fallthrough */
+            }
+        }
+
         subMap.set(stateName, newValue);
 
         this._validateState();

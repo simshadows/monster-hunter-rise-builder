@@ -61,12 +61,24 @@ function getMiscBuffContributions(db, build, calcState) {
     if (buffActive("Demon Powder")) {
         rawAdd += 10;
     }
+    if (buffActive("Demondrug")) {
+        rawAdd += 5;
+    }
+    if (buffActive("Mega Demondrug")) {
+        rawAdd += 7;
+    }
 
     if (buffActive("Adamant Seed")) {
         defense += 20;
     }
     if (buffActive("Hardshell Powder")) {
         defense += 20;
+    }
+    if (buffActive("Armorskin")) {
+        defense += 15;
+    }
+    if (buffActive("Mega Armorskin")) {
+        defense += 25;
     }
 
     const ret = {
