@@ -152,7 +152,7 @@ div.selection-table-icon-box > img {
     justify-content: center;
     flex-direction: row;
     column-gap: 30px;
-    padding: 25px;
+    padding: 12px;
 }
 
 div.buff-selection-group-box {
@@ -166,7 +166,7 @@ div.buff-selection-group-box {
 
     background: var(--color-select--section);
     height: 100%;
-    padding: 20px;
+    padding: 15px;
 }
 
 div.buff-selection-group-heading-box {

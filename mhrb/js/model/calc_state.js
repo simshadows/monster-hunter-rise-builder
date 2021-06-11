@@ -184,6 +184,19 @@ class CalcState {
                 ],
             }],
         ])],
+        ["Misc.", new Map([
+            ["Dango Booster", {
+                initialState: 1,
+                presentations: [
+                    null,
+                    {
+                        name: "Active",
+                        type: "icon",
+                        iconImgPath: getImgPath("dango_booster"),
+                    },
+                ],
+            }],
+        ])],
         ["Skill States", new Map([
             ["Affinity Sliding (AFS)", {
                 initialState: 0,
@@ -304,14 +317,14 @@ class CalcState {
                     },
                 ],
             }],
-            ["Anti-Aerial Species (AAE)", {
+            ["Anti-Aerial Species (AA)", {
                 initialState: 0,
                 presentations: [
                     null,
                     {
                         name: "Active",
                         type: "abbreviation",
-                        abbreviation: "AAQ",
+                        abbreviation: "AA",
                         color:       "#5f8700",
                         borderColor: "#5f8700",
                     },

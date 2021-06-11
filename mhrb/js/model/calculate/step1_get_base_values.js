@@ -272,7 +272,7 @@ function getBaseValues(db, build, calcState) {
         }],
 
         ["anti_aerial_species", ()=>{
-            if (!rampSkillActive("Anti-Aerial Species (AAE)")) return;
+            if (!rampSkillActive("Anti-Aerial Species (AA)")) return;
             rawPostTruncMul *= 1.05;
             // TODO: Is there an elemental multiplier?
         }],

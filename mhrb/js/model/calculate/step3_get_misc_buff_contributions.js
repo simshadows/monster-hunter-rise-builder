@@ -30,55 +30,66 @@ function getMiscBuffContributions(db, build, calcState) {
     const allCalcState = calcState.getCurrState();
 
     // Defined for code readability. Returns whether a binary state is "on" or "off".
-    function buffActive(stateLabel) {
-        const presentations = allCalcStateSpec.get("Item Box").get(stateLabel).presentations;
+    function buffActive(groupName, stateName) {
+        const presentations = allCalcStateSpec.get(groupName).get(stateName).presentations;
         const numPossibleStates = presentations.length;
         assert(numPossibleStates === 2);
-        const stateValue = allCalcState.get("Item Box").get(stateLabel);
+        const stateValue = allCalcState.get(groupName).get(stateName);
         assert(isInt(stateValue) && (stateValue >= 0) && (stateValue < 2));
         return (stateValue === 1);
+    }
+    function itemBoxBuffActive(stateName) {
+        return buffActive("Item Box", stateName);
+    }
+    function miscBuffActive(stateName) {
+        return buffActive("Misc.", stateName);
     }
 
     let rawAdd = 0;
     let defense = 0;
 
-    if (buffActive("Powercharm")) {
+    if (itemBoxBuffActive("Powercharm")) {
         rawAdd += 6;
     }
-    if (buffActive("Powertalon")) {
+    if (itemBoxBuffActive("Powertalon")) {
         rawAdd += 9;
     }
-    if (buffActive("Armorcharm")) {
+    if (itemBoxBuffActive("Armorcharm")) {
         defense += 12;
     }
-    if (buffActive("Armortalon")) {
+    if (itemBoxBuffActive("Armortalon")) {
         defense += 18;
     }
 
-    if (buffActive("Might Seed")) {
+    if (itemBoxBuffActive("Might Seed")) {
         rawAdd += 10;
     }
-    if (buffActive("Demon Powder")) {
+    if (itemBoxBuffActive("Demon Powder")) {
         rawAdd += 10;
     }
-    if (buffActive("Demondrug")) {
+    if (itemBoxBuffActive("Demondrug")) {
         rawAdd += 5;
     }
-    if (buffActive("Mega Demondrug")) {
+    if (itemBoxBuffActive("Mega Demondrug")) {
         rawAdd += 7;
     }
 
-    if (buffActive("Adamant Seed")) {
+    if (itemBoxBuffActive("Adamant Seed")) {
         defense += 20;
     }
-    if (buffActive("Hardshell Powder")) {
+    if (itemBoxBuffActive("Hardshell Powder")) {
         defense += 20;
     }
-    if (buffActive("Armorskin")) {
+    if (itemBoxBuffActive("Armorskin")) {
         defense += 15;
     }
-    if (buffActive("Mega Armorskin")) {
+    if (itemBoxBuffActive("Mega Armorskin")) {
         defense += 25;
+    }
+
+    if (miscBuffActive("Dango Booster")) {
+        rawAdd += 9;
+        defense += 15;
     }
 
     const ret = {
