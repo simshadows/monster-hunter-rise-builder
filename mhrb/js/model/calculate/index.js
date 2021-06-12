@@ -106,6 +106,8 @@ function calculateBuildPerformance(db, build, calcState) {
     assert(s.defenseAdd              !== undefined);
     assert(s.eleResAdd               !== undefined);
 
+    assert(s.rawPostTruncMul !== undefined);
+
     const m = getMiscBuffContributions(db, build, calcState);
     assert(m.rawAdd  !== undefined);
     assert(m.defense !== undefined);
@@ -114,7 +116,7 @@ function calculateBuildPerformance(db, build, calcState) {
     // STAGE 2: Calculate post-base values
     //
 
-    const postbaseRaw      = (Math.trunc(b.baseRaw * s.rawMul) + s.rawAdd + m.rawAdd) * b.rawPostTruncMul;
+    const postbaseRaw      = (Math.trunc(b.baseRaw * s.rawMul) + s.rawAdd + m.rawAdd) * b.rawPostTruncMul * s.rawPostTruncMul;
     const postbaseAffinity = b.baseAffinity + s.affinityAdd;
 
     const postbaseEleStat = new Map();

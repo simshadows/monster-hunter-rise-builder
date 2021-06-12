@@ -25,7 +25,10 @@ const assert = console.assert;
 const COLOUR = {
     orange: "#fa7317",
     pink:   "#eb73b5",
+    purple: "#a340db",
     red:    "#fb4a0c",
+    white:  "var(--color-scheme--bright1)",
+    yellow: "#fdff74",
 }
 
 class CalcState {
@@ -223,14 +226,27 @@ class CalcState {
                     },
                 ],
             }],
-            ["Critical Draw (CDR)", {
+            ["Counterstrike (CS)", {
                 initialState: 0,
                 presentations: [
                     null,
                     {
                         name: "Active",
                         type: "abbreviation",
-                        abbreviation: "CDR",
+                        abbreviation: "CS",
+                        color:       COLOUR.red,
+                        borderColor: COLOUR.red,
+                    },
+                ],
+            }],
+            ["Critical Draw (CD)", {
+                initialState: 0,
+                presentations: [
+                    null,
+                    {
+                        name: "Active",
+                        type: "abbreviation",
+                        abbreviation: "CD",
                         color:       COLOUR.pink,
                         borderColor: COLOUR.pink,
                     },
@@ -269,6 +285,71 @@ class CalcState {
                     },
                 ],
             }],
+            ["Heroics (HER)", {
+                initialState: 0,
+                presentations: [
+                    null,
+                    {
+                        name: "Active",
+                        type: "abbreviation",
+                        abbreviation: "HER",
+                        color:       COLOUR.red,
+                        borderColor: COLOUR.red,
+                    },
+                ],
+            }],
+            ["Latent Power (LP)", {
+                initialState: 0,
+                presentations: [
+                    null,
+                    {
+                        name: "Active",
+                        type: "abbreviation",
+                        abbreviation: "LP",
+                        color:       COLOUR.pink,
+                        borderColor: COLOUR.pink,
+                    },
+                ],
+            }],
+            ["Maximum Might (MM)", {
+                initialState: 0,
+                presentations: [
+                    null,
+                    {
+                        name: "Active",
+                        type: "abbreviation",
+                        abbreviation: "MM",
+                        color:       COLOUR.pink,
+                        borderColor: COLOUR.pink,
+                    },
+                ],
+            }],
+            ["Mind's Eye (ME)", {
+                initialState: 0,
+                presentations: [
+                    null,
+                    {
+                        name: "Active",
+                        type: "abbreviation",
+                        abbreviation: "ME",
+                        color:       COLOUR.white,
+                        borderColor: COLOUR.white,
+                    },
+                ],
+            }],
+            ["Offensive Guard (OFG)", {
+                initialState: 0,
+                presentations: [
+                    null,
+                    {
+                        name: "Active",
+                        type: "abbreviation",
+                        abbreviation: "OFG",
+                        color:       COLOUR.purple,
+                        borderColor: COLOUR.purple,
+                    },
+                ],
+            }],
             ["Peak Performance (PP)", {
                 initialState: 0,
                 presentations: [
@@ -279,6 +360,19 @@ class CalcState {
                         abbreviation: "PP",
                         color:       COLOUR.red,
                         borderColor: COLOUR.red,
+                    },
+                ],
+            }],
+            ["Punishing Draw (PD)", {
+                initialState: 0,
+                presentations: [
+                    null,
+                    {
+                        name: "Active",
+                        type: "abbreviation",
+                        abbreviation: "PD",
+                        color:       COLOUR.yellow,
+                        borderColor: COLOUR.yellow,
                     },
                 ],
             }],
@@ -450,12 +544,20 @@ class CalcState {
         assert(subMap !== undefined);
 
         // Handle mutually exclusive states
-        if ((newValue === 1) && (groupName === "Item Box")) {
+        if ((groupName === "Item Box") && (newValue === 1)) {
             switch (stateName) {
                 case "Demondrug":      subMap.set("Mega Demondrug", 0); break;
                 case "Mega Demondrug": subMap.set("Demondrug"     , 0); break;
                 case "Armorskin":      subMap.set("Mega Armorskin", 0); break;
                 case "Mega Armorskin": subMap.set("Armorskin"     , 0); break;
+                default:
+                    /* Fallthrough */
+            }
+        } else if (groupName === "Skill States") {
+            switch (stateName) {
+                // Critical Draw and Punishing Draw must happen together, or not happen at all
+                case "Critical Draw (CD)":  subMap.set("Punishing Draw (PD)", newValue); break;
+                case "Punishing Draw (PD)": subMap.set("Critical Draw (CD)" , newValue); break;
                 default:
                     /* Fallthrough */
             }

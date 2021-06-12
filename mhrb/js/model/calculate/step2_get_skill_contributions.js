@@ -92,6 +92,7 @@ function getSkillContributions(db, build, calcState) {
 
     let rawAdd = 0;
     let rawMul = 1;
+    let rawPostTruncMul = 1;
 
     let affinityAdd = 0;
 
@@ -186,8 +187,17 @@ function getSkillContributions(db, build, calcState) {
                     }
                 }],
             );
+            genOps.push(
+                [statID + "_resistance", (lid, lvl)=>{nop();}],
+            );
         }
         return genOps;
+    }
+
+    // No operation
+    // (All skills that intentionally do not have any operations attached to them will use this function.)
+    function nop() {
+        return () => {}; // Do nothing
     }
 
     const skillOps = new Map([
@@ -240,6 +250,24 @@ function getSkillContributions(db, build, calcState) {
             }
         }],
 
+        ["blight_resistance", (lid, lvl)=>{nop();}],
+        ["botanist", (lid, lvl)=>{nop();}],
+        ["bubbly_dance", (lid, lvl)=>{nop();}],
+        ["capture_master", (lid, lvl)=>{nop();}],
+        ["carving_pro", (lid, lvl)=>{nop();}],
+        ["constitution", (lid, lvl)=>{nop();}],
+        
+        ["counterstrike", (lid, lvl)=>{
+            if (!skillActive("Counterstrike (CS)")) return;
+            switch (lid, lvl) {
+                case 1: rawAdd += 10; break;
+                case 2: rawAdd += 15; break;
+                case 3: rawAdd += 25; break;
+                default:
+                    invalidLevel(lid);
+            }
+        }],
+
         ["critical_boost", (lid, lvl)=>{
             switch (lvl) {
                 case 1: /* Fallthrough */
@@ -251,7 +279,7 @@ function getSkillContributions(db, build, calcState) {
         }],
 
         ["critical_draw", (lid, lvl)=>{
-            if (!skillActive("Critical Draw (CDR)")) return;
+            if (!skillActive("Critical Draw (CD)")) return;
             switch (lvl) {
                 case 1: affinityAdd += 10; break;
                 case 2: affinityAdd += 20; break;
@@ -285,6 +313,8 @@ function getSkillContributions(db, build, calcState) {
             }
         }],
 
+        ["diversion", (lid, lvl)=>{nop();}],
+
         ["dragonheart", (lid, lvl)=>{
             if (!skillActive("Dragonheart (DH)")) return;
             switch (lvl) {
@@ -300,6 +330,13 @@ function getSkillContributions(db, build, calcState) {
             // TODO: Should Resuscitate also be active?
         }],
 
+        ["earplugs", (lid, lvl)=>{nop();}],
+        ["evade_extender", (lid, lvl)=>{nop();}],
+        ["evade_window", (lid, lvl)=>{nop();}],
+        ["flinch_free", (lid, lvl)=>{nop();}],
+        ["focus", (lid, lvl)=>{nop();}],
+        ["free_meal", (lid, lvl)=>{nop();}],
+
         ["fortify", (lid, lvl)=>{
             assert(lvl === 1); // Binary skill
             const fortifyState = skillState("Fortify (FRT)");
@@ -313,13 +350,101 @@ function getSkillContributions(db, build, calcState) {
             }
         }],
 
+        ["geologist", (lid, lvl)=>{nop();}],
+        ["good_luck", (lid, lvl)=>{nop();}],
+        ["guard", (lid, lvl)=>{nop();}],
+        ["guard_up", (lid, lvl)=>{nop();}],
+
         ["handicraft", (lid, lvl)=>{
             handicraftLevel = lvl;
         }],
 
+        ["heroics", (lid, lvl)=>{
+            if (!skillActive("Heroics (HER)")) return;
+            switch (lvl) {
+                case 1: defenseAdd +=  50;                 break;
+                case 2: defenseAdd +=  50; rawMul *= 1.05; break;
+                case 3: defenseAdd += 100; rawMul *= 1.05; break;
+                case 4: defenseAdd += 100; rawMul *= 1.10; break;
+                case 5: rawMul *= 1.30; break; // TODO: "defense-increasing effects are negated." I'll need to implement this.
+                default:
+                    invalidLevel(lid);
+            }
+        }],
+
+        ["hunger_resistance", (lid, lvl)=>{nop();}],
+        ["item_prolonger", (lid, lvl)=>{nop();}],
+        ["jump_master", (lid, lvl)=>{nop();}],
+        ["leap_of_faith", (lid, lvl)=>{nop();}],
+
+        ["kushala_blessing", (lid, lvl)=>{
+            switch (lvl) {
+                case 1: eleStatMul["water"] *= 1.05; eleStatMul["ice"] *= 1.05; break;
+                case 2: /* Fallthrough */
+                case 3: /* Fallthrough */
+                case 4: eleStatMul["water"] *= 1.10; eleStatMul["ice"] *= 1.10; break;
+                default:
+                    invalidLevel(lid);
+            }
+        }],
+
+        ["latent_power", (lid, lvl)=>{
+            if (!skillActive("Latent Power (LP)")) return;
+            switch (lvl) {
+                case 1: affinityAdd += 10; break;
+                case 2: affinityAdd += 20; break;
+                case 3: affinityAdd += 30; break;
+                case 4: affinityAdd += 40; break;
+                case 5: affinityAdd += 50; break;
+                default:
+                    invalidLevel(lid);
+            }
+        }],
+
+        ["marathon_runner", (lid, lvl)=>{nop();}],
+        ["master_mounter", (lid, lvl)=>{nop();}],
+
         ["masters_touch", (lid, lvl)=>{
             mastersTouchLevel = lvl;
         }],
+
+        ["maximum_might", (lid, lvl)=>{
+            if (!skillActive("Maximum Might (MM)")) return;
+            switch (lvl) {
+                case 1: affinityAdd += 10; break;
+                case 2: affinityAdd += 20; break;
+                case 3: affinityAdd += 30; break;
+                default:
+                    invalidLevel(lid);
+            }
+        }],
+        
+        ["minds_eye", (lid, lvl)=>{
+            if (!skillActive("Mind's Eye (ME)")) return;
+            switch (lvl) {
+                case 1: rawPostTruncMul *= 1.10; break;
+                case 2: rawPostTruncMul *= 1.15; break;
+                case 3: rawPostTruncMul *= 1.30; break;
+                default:
+                    invalidLevel(lid);
+            }
+        }],
+
+        ["muck_resistance", (lid, lvl)=>{nop();}],
+        ["mushroomancer", (lid, lvl)=>{nop();}],
+
+        ["offensive_guard", (lid, lvl)=>{
+            if (!skillActive("Offensive Guard (OFG)")) return;
+            switch (lid, lvl) {
+                case 1: rawMul *= 1.05; break;
+                case 2: rawMul *= 1.10; break;
+                case 3: rawMul *= 1.15; break;
+                default:
+                    invalidLevel(lid);
+            }
+        }],
+
+        ["partbreaker", (lid, lvl)=>{nop();}],
 
         ["peak_performance", (lid, lvl)=>{
             if (!skillActive("Peak Performance (PP)")) return;
@@ -332,9 +457,27 @@ function getSkillContributions(db, build, calcState) {
             }
         }],
 
+        ["protective_polish", (lid, lvl)=>{nop();}],
+
+        ["punishing_draw", (lid, lvl)=>{
+            if (!skillActive("Punishing Draw (PD)")) return;
+            switch (lvl) {
+                case 1: rawAdd += 2; break; // TODO: Also factor in extra stun damage?
+                case 2: rawAdd += 5; break;
+                case 3: rawAdd += 7; break;
+                default:
+                    invalidLevel(lid);
+            }
+        }],
+
+        ["quick_sheath", (lid, lvl)=>{nop();}],
+
         ["razor_sharp", (lid, lvl)=>{
             razorSharpLevel = lvl;
         }],
+
+        ["recovery_speed", (lid, lvl)=>{nop();}],
+        ["recovery_up", (lid, lvl)=>{nop();}],
 
         ["resentment", (lid, lvl)=>{
             if (!skillActive("Resentment (RES)")) return;
@@ -360,6 +503,24 @@ function getSkillContributions(db, build, calcState) {
             }
         }],
 
+        ["speed_eating", (lid, lvl)=>{nop();}],
+        ["speed_sharpening", (lid, lvl)=>{nop();}],
+        ["stamina_surge", (lid, lvl)=>{nop();}],
+        ["stun_resistance", (lid, lvl)=>{nop();}],
+
+        ["teostra_blessing", (lid, lvl)=>{
+            switch (lvl) {
+                case 1: eleStatMul["fire"] *= 1.05; eleStatMul["blast"] *= 1.05; break;
+                case 2: /* Fallthrough */
+                case 3: /* Fallthrough */
+                case 4: eleStatMul["fire"] *= 1.10; eleStatMul["blast"] *= 1.10; break;
+                default:
+                    invalidLevel(lid);
+            }
+        }],
+
+        ["tremor_resistance", (lid, lvl)=>{nop();}],
+
         ["weakness_exploit", (lid, lvl)=>{
             if (!skillActive("Weakness Exploit (WEX)")) return;
             switch (lvl) {
@@ -371,6 +532,9 @@ function getSkillContributions(db, build, calcState) {
             }
         }],
 
+        ["wide_range", (lid, lvl)=>{nop();}],
+        ["windproof", (lid, lvl)=>{nop();}],
+        ["wirebug_whisperer", (lid, lvl)=>{nop();}],
     ]);
 
     // Warn if any skill IDs are incorrect
@@ -398,6 +562,7 @@ function getSkillContributions(db, build, calcState) {
     const ret = {
         rawAdd,
         rawMul,
+        rawPostTruncMul,
         
         affinityAdd,
 

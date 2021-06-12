@@ -19,7 +19,7 @@ cd monster-hunter-rise-builder
 python3 -m http.server
 ```
 
-## Accessibity and Localization
+## Accessibility and Localization
 
 Unfortunately, I might just have to leave special accessibility and localization features for last. Also, I'll probably need to port my codebase to a build system before then.
 
