@@ -110,15 +110,18 @@ function calculateBuildPerformance(db, build, calcState) {
     assert(s.rawPostTruncMul !== undefined);
 
     const m = getMiscBuffContributions(db, build, calcState);
-    assert(m.rawAdd  !== undefined);
-    assert(m.defense !== undefined);
+    assert(m.rawAdd      !== undefined);
+    assert(m.rawMul      !== undefined);
+    assert(m.affinityAdd !== undefined);
+    assert(m.defenseAdd  !== undefined);
+    assert(m.defenseMul  !== undefined);
 
     //
     // STAGE 2: Calculate post-base values
     //
 
-    const postbaseRaw      = (Math.trunc(b.baseRaw * s.rawMul) + s.rawAdd + m.rawAdd) * b.rawPostTruncMul * s.rawPostTruncMul;
-    const postbaseAffinity = b.baseAffinity + s.affinityAdd;
+    const postbaseRaw = (Math.trunc(b.baseRaw * s.rawMul * m.rawMul) + s.rawAdd + m.rawAdd) * b.rawPostTruncMul * s.rawPostTruncMul;
+    const postbaseAffinity = b.baseAffinity + s.affinityAdd + m.affinityAdd;
 
     const postbaseEleStat = new Map();
     for (const [eleStatID, baseEleStatValue] of b.baseEleStat.entries()) {

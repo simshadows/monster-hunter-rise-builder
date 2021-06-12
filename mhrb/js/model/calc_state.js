@@ -198,6 +198,28 @@ class CalcState {
                     },
                 ],
             }],
+            ["Palico: Rousing Roar", {
+                initialState: 0,
+                presentations: [
+                    null,
+                    {
+                        name: "Active",
+                        type: "icon",
+                        iconImgPath: getImgPath("palico_rousingroar"),
+                    },
+                ],
+            }],
+            ["Palico: Power Drum", {
+                initialState: 0,
+                presentations: [
+                    null,
+                    {
+                        name: "Active",
+                        type: "icon",
+                        iconImgPath: getImgPath("palico_powerdrum"),
+                    },
+                ],
+            }],
         ])],
         ["Skill States", new Map([
             ["Affinity Sliding (AFS)", {
@@ -554,12 +576,12 @@ class CalcState {
                     /* Fallthrough */
             }
         } else if (groupName === "Skill States") {
-            switch (stateName) {
-                // Critical Draw and Punishing Draw must happen together, or not happen at all
-                case "Critical Draw (CD)":  subMap.set("Punishing Draw (PD)", newValue); break;
-                case "Punishing Draw (PD)": subMap.set("Critical Draw (CD)" , newValue); break;
-                default:
-                    /* Fallthrough */
+            if ((stateName === "Punishing Draw (PD)") && (newValue === 1)) {
+                // We force Crit Draw if enabling Punishing Draw, but not the other way around
+                subMap.set("Critical Draw (CD)" , 1);
+            } else if ((stateName === "Critical Draw (CD)") && (newValue === 0)) {
+                // We disallow Punishing Draw if disabling Crit Draw, but not the other way around
+                subMap.set("Punishing Draw (PD)" , 0);
             }
         }
 

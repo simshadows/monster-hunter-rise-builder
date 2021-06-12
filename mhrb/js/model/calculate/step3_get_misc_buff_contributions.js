@@ -46,7 +46,10 @@ function getMiscBuffContributions(db, build, calcState) {
     }
 
     let rawAdd = 0;
-    let defense = 0;
+    let rawMul = 1;
+    let affinityAdd = 0;
+    let defenseAdd = 0;
+    let defenseMul = 1;
 
     if (itemBoxBuffActive("Powercharm")) {
         rawAdd += 6;
@@ -55,10 +58,10 @@ function getMiscBuffContributions(db, build, calcState) {
         rawAdd += 9;
     }
     if (itemBoxBuffActive("Armorcharm")) {
-        defense += 12;
+        defenseAdd += 12;
     }
     if (itemBoxBuffActive("Armortalon")) {
-        defense += 18;
+        defenseAdd += 18;
     }
 
     if (itemBoxBuffActive("Might Seed")) {
@@ -75,26 +78,37 @@ function getMiscBuffContributions(db, build, calcState) {
     }
 
     if (itemBoxBuffActive("Adamant Seed")) {
-        defense += 20;
+        defenseAdd += 20;
     }
     if (itemBoxBuffActive("Hardshell Powder")) {
-        defense += 20;
+        defenseAdd += 20;
     }
     if (itemBoxBuffActive("Armorskin")) {
-        defense += 15;
+        defenseAdd += 15;
     }
     if (itemBoxBuffActive("Mega Armorskin")) {
-        defense += 25;
+        defenseAdd += 25;
     }
 
     if (miscBuffActive("Dango Booster")) {
         rawAdd += 9;
-        defense += 15;
+        defenseAdd += 15;
+    }
+
+    if (miscBuffActive("Palico: Rousing Roar")) {
+        affinityAdd += 30;
+    }
+    if (miscBuffActive("Palico: Power Drum")) {
+        rawMul *= 1.05;
+        defenseMul *= 1.20;
     }
 
     const ret = {
         rawAdd,
-        defense,
+        rawMul,
+        affinityAdd,
+        defenseAdd,
+        defenseMul,
     };
     return ret;
 }
