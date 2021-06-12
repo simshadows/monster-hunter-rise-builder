@@ -104,6 +104,7 @@ function calculateBuildPerformance(db, build, calcState) {
     assert(s.mastersTouchLevel       !== undefined);
     assert(s.razorSharpLevel         !== undefined);
     assert(s.defenseAdd              !== undefined);
+    assert(s.defenseMul              !== undefined);
     assert(s.eleResAdd               !== undefined);
 
     assert(s.rawPostTruncMul !== undefined);

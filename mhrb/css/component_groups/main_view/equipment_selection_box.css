@@ -9,9 +9,10 @@ div.equip-buffs-main-box {
 
     display: flex;
     align-items: flex-start;
+    flex-wrap: wrap;
     column-gap: 4px;
+    row-gap: 4px;
 
-    height: 38px;
     padding: 4px;
 }
 
@@ -159,6 +160,7 @@ div.equip-box {
 
     border: none;
     background: var(--color-background-2);
+    width: 714px;
 }
 
 div.equip-main-box {

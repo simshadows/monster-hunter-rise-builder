@@ -131,6 +131,7 @@ function getSkillContributions(db, build, calcState) {
     let razorSharpLevel = 0; // Affects sharpness bar hits. Calculate later.
 
     let defenseAdd = 0;
+    let defenseMul = 1;
     let eleResAdd = {
             fire:      0,
             water:     0,
@@ -142,6 +143,14 @@ function getSkillContributions(db, build, calcState) {
     // Define what all skills do
 
     // TODO: Verify skill state labels?
+
+    function addToAllEleRes(x) {
+        const newEleResAdd = {};
+        for (const [eleType, eleResValue] of Object.entries(eleResAdd)) {
+            newEleResAdd[eleType] = eleResValue + x;
+        }
+        eleResAdd = newEleResAdd;
+    }
 
     function generateElementalOps() {
         const genOps = [];
@@ -313,6 +322,20 @@ function getSkillContributions(db, build, calcState) {
             }
         }],
 
+        ["defense_boost", (lid, lvl)=>{
+            switch (lvl) {
+                case 1: defenseAdd +=  5; break;
+                case 2: defenseAdd += 10; break;
+                case 3: defenseAdd += 10; defenseMul += 1.05; break;
+                case 4: defenseAdd += 20; defenseMul += 1.05; addToAllEleRes(3); break;
+                case 5: defenseAdd += 20; defenseMul += 1.08; addToAllEleRes(3); break;
+                case 6: defenseAdd += 35; defenseMul += 1.08; addToAllEleRes(5); break;
+                case 7: defenseAdd += 35; defenseMul += 1.10; addToAllEleRes(5); break;
+                default:
+                    invalidLevel(lid);
+            }
+        }],
+
         ["diversion", (lid, lvl)=>{nop();}],
 
         ["dragonheart", (lid, lvl)=>{
@@ -339,14 +362,14 @@ function getSkillContributions(db, build, calcState) {
 
         ["fortify", (lid, lvl)=>{
             assert(lvl === 1); // Binary skill
-            const fortifyState = skillState("Fortify (FRT)");
+            const fortifyState = skillState("Fortify (FOR)");
             assert(fortifyState >= 0); // Non-binary state
             switch (fortifyState) {
                 case 0: /* No Operation */ break;
-                case 1: rawMul *= 1.10;    break; // TODO: There's also a +15% defense increase, but idk how this is applied.
-                case 2: rawMul *= 1.20;    break; // TODO: There's also a +30% defense increase, but idk how this is applied.
+                case 1: rawMul *= 1.10; defenseMul *= 1.15; break;
+                case 2: rawMul *= 1.20; defenseMul *= 1.30; break;
                 default:
-                    invalidState("Fortify (FRT)");
+                    invalidState("Fortify (FOR)");
             }
         }],
 
@@ -579,6 +602,7 @@ function getSkillContributions(db, build, calcState) {
         razorSharpLevel,
 
         defenseAdd,
+        defenseMul,
         eleResAdd,
     };
     return ret;

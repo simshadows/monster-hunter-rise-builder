@@ -265,21 +265,21 @@ class CalcState {
                     },
                 ],
             }],
-            ["Fortify (FRT)", {
+            ["Fortify (FOR)", {
                 initialState: 0,
                 presentations: [
                     null,
                     {
                         name: "1 Stack",
                         type: "abbreviation",
-                        abbreviation: "FRT1",
+                        abbreviation: "FOR1",
                         color:       COLOUR.orange,
                         borderColor: COLOUR.orange,
                     },
                     {
                         name: "2 Stacks",
                         type: "abbreviation",
-                        abbreviation: "FRT2",
+                        abbreviation: "FOR2",
                         color:       COLOUR.orange,
                         borderColor: COLOUR.orange,
                     },
