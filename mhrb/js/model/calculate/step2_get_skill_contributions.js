@@ -78,6 +78,15 @@ function getSkillContributions(db, build, calcState) {
         assert(isInt(stateValue) && (stateValue >= 0) && (stateValue < 2));
         return (stateValue === 1);
     }
+    // Returns the value of a state, not necessarily of a binary state.
+    function skillState(stateLabel) {
+        const presentations = allCalcStateSpec.get("Skill States").get(stateLabel).presentations;
+        const numPossibleStates = presentations.length;
+        assert(numPossibleStates >= 2);
+        const stateValue = allCalcState.get("Skill States").get(stateLabel);
+        assert(isInt(stateValue) && (stateValue >= 0) && (stateValue < numPossibleStates));
+        return stateValue;
+    }
 
     // Define variables we want to find
 
@@ -291,6 +300,19 @@ function getSkillContributions(db, build, calcState) {
             // TODO: Should Resuscitate also be active?
         }],
 
+        ["fortify", (lid, lvl)=>{
+            assert(lvl === 1); // Binary skill
+            const fortifyState = skillState("Fortify (FRT)");
+            assert(fortifyState >= 0); // Non-binary state
+            switch (fortifyState) {
+                case 0: /* No Operation */ break;
+                case 1: rawMul *= 1.10;    break; // TODO: There's also a +15% defense increase, but idk how this is applied.
+                case 2: rawMul *= 1.20;    break; // TODO: There's also a +30% defense increase, but idk how this is applied.
+                default:
+                    invalidState("Fortify (FRT)");
+            }
+        }],
+
         ["handicraft", (lid, lvl)=>{
             handicraftLevel = lvl;
         }],
@@ -399,7 +421,10 @@ function getSkillContributions(db, build, calcState) {
 
 
 function invalidLevel(skillID) {
-    console.log("Invalid level for " + skillID);
+    console.warn("Invalid level for " + skillID);
+}
+function invalidState(stateName) {
+    console.warn("Invalid state for " + stateName);
 }
 
 

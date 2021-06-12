@@ -8,7 +8,7 @@
 import * as check from "../../check.js";
 import {
     DropdownSelectWithNull,
-} from "./common.js";
+} from "../../common.js";
 
 const element = React.createElement;
 const assert = console.assert;

@@ -41,8 +41,7 @@ class CalcState {
                 // presentations = [A list of presentations, one for each state.]
                 // For a binary state, we expect two elements.
                 presentations: [
-                    // We always start the list with null.
-                    // (This is for a possible implementation of binary states that aren't just on-off.)
+                    // We may start the list with null for the "inactive" state.
                     null,
 
                     // Remaining elements must be non-null.
@@ -245,6 +244,26 @@ class CalcState {
                         name: "Active",
                         type: "abbreviation",
                         abbreviation: "DH",
+                        color:       COLOUR.orange,
+                        borderColor: COLOUR.orange,
+                    },
+                ],
+            }],
+            ["Fortify (FRT)", {
+                initialState: 0,
+                presentations: [
+                    null,
+                    {
+                        name: "1 Stack",
+                        type: "abbreviation",
+                        abbreviation: "FRT1",
+                        color:       COLOUR.orange,
+                        borderColor: COLOUR.orange,
+                    },
+                    {
+                        name: "2 Stacks",
+                        type: "abbreviation",
+                        abbreviation: "FRT2",
                         color:       COLOUR.orange,
                         borderColor: COLOUR.orange,
                     },
