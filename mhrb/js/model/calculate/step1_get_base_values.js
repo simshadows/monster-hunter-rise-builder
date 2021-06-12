@@ -243,6 +243,7 @@ function getBaseValues(db, build, calcState) {
                 console.warn("Attempted to apply Sharpness Type I on a ranged weapon.");
                 return;
             }
+            // TODO: Check if the sharpness bars are rampage weapon default bars?
             minSharpness = [100,150,50,20,30,0];
             maxSharpness = [100,150,50,20,30,50];
         }],
@@ -251,6 +252,7 @@ function getBaseValues(db, build, calcState) {
                 console.warn("Attempted to apply Sharpness Type II on a ranged weapon.");
                 return;
             }
+            // TODO: Check if the sharpness bars are rampage weapon default bars?
             minSharpness = [20,80,150,100,0,0];
             maxSharpness = [20,80,150,100,40,10];
         }],
@@ -259,6 +261,7 @@ function getBaseValues(db, build, calcState) {
                 console.warn("Attempted to apply Sharpness Type III on a ranged weapon.");
                 return;
             }
+            // TODO: Check if the sharpness bars are rampage weapon default bars?
             minSharpness = [70,70,30,30,100,0];
             maxSharpness = [70,70,30,30,150,0];
         }],
@@ -267,6 +270,7 @@ function getBaseValues(db, build, calcState) {
                 console.warn("Attempted to apply Sharpness Type IV on a ranged weapon.");
                 return;
             }
+            // TODO: Check if the sharpness bars are rampage weapon default bars?
             minSharpness = [50,80,70,160,10,30]; // Full bar
             maxSharpness = [50,80,70,160,10,30];
         }],
@@ -305,6 +309,13 @@ function getBaseValues(db, build, calcState) {
             console.warn("Rampage skill ID " + rampSkillID + " not present in the database.");
         }
     }
+    // Warn if any rampage skill IDs are not implemented.
+    // (Uncomment when you need to check what skills aren't implemented. Recomment where possible because it's noisy.)
+    //for (const rampSkillID of db.readonly.weaponRampSkills.longIdsMap.keys()) {
+    //    if (!rampSkillOps.has(rampSkillID)) {
+    //        console.warn("Rampage skill ID " + rampSkillID + " not implmeneted in calculation.");
+    //    }
+    //}
 
     // Process all rampage skills in the build
     for (const rampSkillRO of allCurrentRampSkills) {

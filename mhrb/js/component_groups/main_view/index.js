@@ -88,7 +88,7 @@ class UtilityBar extends React.Component {
                     {
                     id: "utility-bar-spacer-box",
                     },
-                    "Currently very early in development. The math is incomplete. Build URLs are subject to change. Back up your builds with screenshots!",
+                    "Currently very early in development. The math is incomplete and needs review. Build URLs are subject to change. Back up your builds with screenshots!",
                 ),
                 element(UtilityButtonExternalLink,
                     {

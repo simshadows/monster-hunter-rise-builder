@@ -86,6 +86,31 @@ function getSkillContributions(db, build, calcState) {
 
     let affinityAdd = 0;
 
+    let eleStatAdd = {
+            fire:      0,
+            water:     0,
+            thunder:   0,
+            ice:       0,
+            dragon:    0,
+
+            poison:    0,
+            paralysis: 0,
+            sleep:     0,
+            blast:     0,
+        };
+    let eleStatMul = {
+            fire:      1,
+            water:     1,
+            thunder:   1,
+            ice:       1,
+            dragon:    1,
+
+            poison:    1,
+            paralysis: 1,
+            sleep:     1,
+            blast:     1,
+        };
+
     let rawBlunderDamage  = RAW_BLUNDER_DAMAGE_MULTIPLIER;
     let rawCriticalDamage = CRITICAL_BOOST_DAMAGE_MULTIPLIERS[0];
     let elementalBlunderDamage  = ELEMENTAL_BLUNDER_DAMAGE_MULTIPLIER;
@@ -95,11 +120,80 @@ function getSkillContributions(db, build, calcState) {
     let mastersTouchLevel = 0; // Affects sharpness bar hits. Calculate later.
     let razorSharpLevel = 0; // Affects sharpness bar hits. Calculate later.
 
+    let defenseAdd = 0;
+    let eleResAdd = {
+            fire:      0,
+            water:     0,
+            thunder:   0,
+            ice:       0,
+            dragon:    0,
+        };
+
     // Define what all skills do
 
     // TODO: Verify skill state labels?
 
+    function generateElementalOps() {
+        const genOps = [];
+        for (const eleID of ["fire", "water", "thunder", "ice", "dragon"]) {
+            genOps.push(
+                [eleID + "_attack", (lid, lvl)=>{
+                    switch (lvl) {
+                        case 1: eleStatAdd[eleID] += 2; break;
+                        case 2: eleStatAdd[eleID] += 3; break;
+                        case 3: eleStatAdd[eleID] += 4; eleStatMul[eleID] *= 1.05; break;
+                        case 4: eleStatAdd[eleID] += 4; eleStatMul[eleID] *= 1.10; break;
+                        case 5: eleStatAdd[eleID] += 4; eleStatMul[eleID] *= 1.20; break;
+                        default:
+                            invalidLevel(lid);
+                    }
+                }],
+            );
+            genOps.push(
+                [eleID + "_resistance", (lid, lvl)=>{
+                    switch (lvl) {
+                        case 1: eleResAdd[eleID] += 6; break;
+                        case 2: eleResAdd[eleID] += 12; break;
+                        case 3: eleResAdd[eleID] += 20; defenseAdd += 10; break;
+                        default:
+                            invalidLevel(lid);
+                    }
+                }],
+            );
+        }
+        return genOps;
+    }
+    function generateStatusOps() {
+        const genOps = [];
+        for (const statID of ["poison", "paralysis", "sleep", "blast"]) {
+            genOps.push(
+                [statID + "_attack", (lid, lvl)=>{
+                    switch (lvl) {
+                        case 1: eleStatAdd[statID] += 1; eleStatMul[statID] *= 1.05; break;
+                        case 2: eleStatAdd[statID] += 2; eleStatMul[statID] *= 1.10; break;
+                        case 3: eleStatAdd[statID] += 5; eleStatMul[statID] *= 1.20; break;
+                        default:
+                            invalidLevel(lid);
+                    }
+                }],
+            );
+        }
+        return genOps;
+    }
+
     const skillOps = new Map([
+
+        //
+        // COMMON ELEMENTAL/STATUS SKILLS
+        // (X Attack and X Resistance)
+        //
+        
+        ...generateElementalOps(),
+        ...generateStatusOps(),
+
+        //
+        // EVERYTHING ELSE
+        //
 
         ["affinity_sliding", (lid, lvl)=>{
             if (!skillActive("Affinity Sliding (AFS)")) return;
@@ -263,6 +357,13 @@ function getSkillContributions(db, build, calcState) {
             console.warn("Skill ID " + skillLongID + " not present in the database.");
         }
     }
+    // Warn if any skill IDs are not implemented.
+    // (Uncomment when you need to check what skills aren't implemented. Recomment where possible because it's noisy.)
+    //for (const skillLongID of db.readonly.skills.longIdsMap.keys()) {
+    //    if (!skillOps.has(skillLongID)) {
+    //        console.warn("Skill ID " + skillLongID + " not implemented in calculation.");
+    //    }
+    //}
 
     // Process all rampage skills in the build
     for (const [skillLongID, [skillRO, skillLevel]] of allCurrentSkills.entries()) {
@@ -278,6 +379,9 @@ function getSkillContributions(db, build, calcState) {
         
         affinityAdd,
 
+        eleStatAdd,
+        eleStatMul,
+
         rawBlunderDamage,
         rawCriticalDamage,
         elementalBlunderDamage,
@@ -286,6 +390,9 @@ function getSkillContributions(db, build, calcState) {
         handicraftLevel,
         mastersTouchLevel,
         razorSharpLevel,
+
+        defenseAdd,
+        eleResAdd,
     };
     return ret;
 }

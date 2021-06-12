@@ -21,6 +21,7 @@ import {
     isFunction,
 } from "../../check.js";
 import {
+    isEleStr,
     getWeaponTags,
 } from "../../common.js";
 import {
@@ -93,6 +94,8 @@ function calculateBuildPerformance(db, build, calcState) {
     assert(s.rawAdd                  !== undefined);
     assert(s.rawMul                  !== undefined);
     assert(s.affinityAdd             !== undefined);
+    assert(s.eleStatAdd              !== undefined);
+    assert(s.eleStatMul              !== undefined);
     assert(s.rawBlunderDamage        !== undefined);
     assert(s.rawCriticalDamage       !== undefined);
     assert(s.elementalBlunderDamage  !== undefined);
@@ -100,6 +103,8 @@ function calculateBuildPerformance(db, build, calcState) {
     assert(s.handicraftLevel         !== undefined);
     assert(s.mastersTouchLevel       !== undefined);
     assert(s.razorSharpLevel         !== undefined);
+    assert(s.defenseAdd              !== undefined);
+    assert(s.eleResAdd               !== undefined);
 
     const m = getMiscBuffContributions(db, build, calcState);
     assert(m.rawAdd  !== undefined);
@@ -112,7 +117,11 @@ function calculateBuildPerformance(db, build, calcState) {
     const postbaseRaw      = (Math.trunc(b.baseRaw * s.rawMul) + s.rawAdd + m.rawAdd) * b.rawPostTruncMul;
     const postbaseAffinity = b.baseAffinity + s.affinityAdd;
 
-    const postbaseEleStat = b.baseEleStat;
+    const postbaseEleStat = new Map();
+    for (const [eleStatID, baseEleStatValue] of b.baseEleStat.entries()) {
+        const postbaseEleStatValue = Math.trunc(baseEleStatValue * s.eleStatMul[eleStatID]) + s.eleStatAdd[eleStatID];
+        postbaseEleStat.set(eleStatID, postbaseEleStatValue);
+    }
 
     let hitsMultiplier = 1; // To be accumulated over later
 
@@ -207,11 +216,21 @@ function calculateBuildPerformance(db, build, calcState) {
     // STAGE 6: We finally calculate effective raw!
     //
 
-    let effectiveRaw     = postbaseRaw * rawCritModifier;
-    let effectiveEleStat = postbaseEleStat;
-
+    let effectiveRaw = postbaseRaw * rawCritModifier;
     if (tagset.has("melee")) {
-        effectiveRaw = effectiveRaw * rawSharpnessModifier;
+        effectiveRaw *= rawSharpnessModifier;
+    }
+
+    let effectiveEleStat = new Map();
+    for (const [eleStatID, postbaseEleStatValue] of postbaseEleStat.entries()) {
+        let effectiveEleStatValue = postbaseEleStatValue;
+        if (isEleStr(eleStatID)) {
+            effectiveEleStatValue *= elementalCritModifier;
+            if (tagset.has("melee")) {
+                effectiveEleStatValue *= elementalSharpnessModifier;
+            }
+        }
+        effectiveEleStat.set(eleStatID, effectiveEleStatValue);
     }
 
     const ret = {
