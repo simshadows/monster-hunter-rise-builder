@@ -244,6 +244,17 @@ class MHRBuilderAppInner extends React.Component {
         }
         writeBuildToQueryString(this.state.build);
     }
+    
+    handleRemoveDeco(slotID, decoSlotID) {
+        check.isNonEmptyStr(slotID);
+        check.isInt(decoSlotID);
+        assert((decoSlotID >= 0) && (decoSlotID <= 2));
+
+        this.setState({
+                build: this.state.build.setDecoration(this.props.rawDataRO, null, slotID, decoSlotID),
+            });
+        writeBuildToQueryString(this.state.build);
+    }
 
     /* Inherited Methods */
 
@@ -304,6 +315,7 @@ class MHRBuilderAppInner extends React.Component {
                 handleClickDecorationSelect: (...args) => {this.handleSwitchToDecorationSelect(...args);},
 
                 handleRemovePiece: (slotID) => {this.handleRemovePiece(slotID);},
+                handleRemoveDeco: (slotID, decoSlotID) => {this.handleRemoveDeco(slotID, decoSlotID);},
                 },
                 null,
             ),

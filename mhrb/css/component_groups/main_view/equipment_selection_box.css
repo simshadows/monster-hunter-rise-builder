@@ -372,9 +372,27 @@ div.equip-deco-box {
     font: var(--font-equip--deco);
     height: 24px; /* TODO: This shouldn't be a hardcoded value, but I can't figure out a better way right now. */
 }
+div.highlight-equip-deco-box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    padding: 2px;
+}
 div.highlight-equip-deco-box:hover {
     border: 2px solid var(--color-equip--icon-box-border-hover);
     cursor: pointer;
+}
+div.deco-box-remove-button {
+    height: 16px;
+    width: 16px;
+    background: var(--color-equip--remove-button);
+    color: var(--color-equip--remove-button-text);
+}
+div.deco-box-remove-button > svg {
+    fill: var(--color-equip--remove-button-text);
+    height: 100%;
+    width: 100%;
 }
 
 div.equip-deco-icon-box {

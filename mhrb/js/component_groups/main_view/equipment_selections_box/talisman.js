@@ -62,6 +62,7 @@ function TalismanSelection(props) {
             {
                 decosArray: talismanRO.decosArray,
                 handleClickSelect: (...args) => {props.handleClickDecorationSelect(...args);},
+                handleClickRemove: (...args) => {props.handleClickDecorationRemove(...args);},
             },
             null,
         ),

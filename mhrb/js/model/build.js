@@ -240,9 +240,9 @@ class Build {
 
     // Usefully returns self for use in React state transitions.
     setDecoration(db, decoRO, slotID, position) {
-        if (decoRO === null) {
-            check.isObj(decoRO);
-            check.isInt(decoRO.slotSize); // Spot check for structure
+        if (decoRO !== null) {
+            assert(isObj(decoRO));
+            assert(isInt(decoRO.slotSize)); // Spot check for structure
         }
         isNonEmptyStr(slotID);
         assert(isDecoEquippableSlotStr(slotID));

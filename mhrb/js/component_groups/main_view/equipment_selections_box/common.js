@@ -6,7 +6,11 @@
  */
 
 import * as check from "../../../check.js";
-import {getImgPath, getSimpleImgElement} from "../../../images.js";
+import {
+    getImgPath,
+    getSimpleImgElement,
+    FontAwesomeSprite,
+} from "../../../images.js";
 import {
     clipsafeSpan,
 } from "../../../common.js";
@@ -88,7 +92,7 @@ function EquipInfoBox(props) {
     )
 }
 
-class EquipDecosWrapBox extends React.Component {
+class EquipDecoBox extends React.Component {
 
     // Logically static
     _iconsToImageID(icon, decoSize, slotSize) {
@@ -98,8 +102,106 @@ class EquipDecosWrapBox extends React.Component {
         return "deco_slot" + slotSize + "_size" + decoSize + "_" + icon;
     }
 
+    constructor(props) {
+        super(props);
+        this.state = {
+                visibleRemoveButton: false,
+            };
+    }
+
+    handleClickSelect() {
+        this.props.handleClickSelect(this.props.decoSlotID, this.props.slotSize);
+    }
+    handleClickRemove(e) {
+        e.stopPropagation();
+        this.props.handleClickRemove(this.props.decoSlotID);
+    }
+
+    handleMouseEnter() {
+        this.setState({visibleRemoveButton: true});
+    }
+    handleMouseLeave() {
+        this.setState({visibleRemoveButton: false});
+    }
+
+    _renderRemoveButton() {
+        if (this.state.visibleRemoveButton) {
+            return element("div",
+                {
+                className: "deco-box-remove-button button-common",
+                onClick: (e) => {this.handleClickRemove(e)},
+                },
+                element(FontAwesomeSprite,
+                    {
+                    style: "solid",
+                    fragment: "times",
+                    },
+                    null,
+                ),
+            );
+        } else {
+            return null;
+        }
+    }
+
+    render() {
+        assert((this.props.decoSlotID >= 0) && (this.props.decoSlotID < 3));
+
+        // TODO: It's confusing having two slot sizes: one for the slot, another for the deco size itself. Fix this.
+        assert((this.props.slotSize > 0) && (this.props.slotSize <= 3));
+
+        assert(this.props.decoPropsRO !== undefined);
+        assert(check.isFunction(this.props.handleClickSelect));
+
+        const decoPropsRO = this.props.decoPropsRO;
+
+        const iconImgID = (()=>{
+            if (decoPropsRO.deco === null) {
+                if (this.props.slotSize == 1) return "deco_slot1_empty";
+                else if (this.props.slotSize == 2) return "deco_slot2_empty";
+                else if (this.props.slotSize == 3) return "deco_slot3_empty";
+                throw new Error("Unexpected slot size.");
+            } else {
+                return this._iconsToImageID(decoPropsRO.deco.icon, decoPropsRO.deco.slotSize, this.props.slotSize);
+            }
+        })();
+
+        return element("div",
+            {
+            className: "equip-deco-box stackouter",
+            },
+            element("div",
+                {
+                className: "equip-deco-icon-box",
+                },
+                getSimpleImgElement(iconImgID),
+            ),
+            element("div",
+                {
+                className: "equip-deco-name-box clipsafe",
+                },
+                clipsafeSpan(((decoPropsRO.deco === null) ? "None" : decoPropsRO.deco.name)),
+            ),
+            element("div",
+                {
+                className: "highlight-equip-deco-box stackinner",
+                onClick: () => {this.handleClickSelect();},
+                onMouseEnter: () => {this.handleMouseEnter();},
+                onMouseLeave: () => {this.handleMouseLeave();},
+                },
+                this._renderRemoveButton(),
+            ),
+        );
+    }
+}
+
+class EquipDecosWrapBox extends React.Component {
+
     handleClickSelect(decoSlotID, maxDecoSize) {
         this.props.handleClickSelect(decoSlotID, maxDecoSize);
+    }
+    handleClickRemove(decoSlotID) {
+        this.props.handleClickRemove(decoSlotID);
     }
 
     render() {
@@ -107,6 +209,7 @@ class EquipDecosWrapBox extends React.Component {
         assert(this.props.decosArray.length <= 3);
 
         check.isFunction(this.props.handleClickSelect);
+        check.isFunction(this.props.handleClickRemove);
 
         const decoBoxes = [];
         for (let [decoSlotID, decoPropsRO] of this.props.decosArray.entries()) {
@@ -118,45 +221,16 @@ class EquipDecosWrapBox extends React.Component {
                 assert((decoPropsRO.deco.slotSize > 0) && (decoPropsRO.deco.slotSize <= decoPropsRO.slotSize));
             }
 
-            // Needed for closure
-            const slotSize = decoPropsRO.slotSize;
-            // TODO: It's confusing having two slot sizes: one for the slot, another for the deco size itself. Fix this.
-
-            const iconImgPath = (()=>{
-                if (decoPropsRO.deco === null) {
-                    if (slotSize == 1) return "deco_slot1_empty";
-                    else if (slotSize == 2) return "deco_slot2_empty";
-                    else if (slotSize == 3) return "deco_slot3_empty";
-                    throw new Error("Unexpected slot size.");
-                } else {
-                    return this._iconsToImageID(decoPropsRO.deco.icon, decoPropsRO.deco.slotSize, slotSize);
-                }
-            })();
-
             decoBoxes.push(
-                element("div",
+                element(EquipDecoBox,
                     {
-                    className: "equip-deco-box stackouter",
+                    decoSlotID: decoSlotID,
+                    slotSize: decoPropsRO.slotSize,
+                    decoPropsRO: decoPropsRO,
+                    handleClickSelect: (..._args) => {this.handleClickSelect(..._args);},
+                    handleClickRemove: (..._args) => {this.handleClickRemove(..._args);},
                     },
-                    element("div",
-                        {
-                        className: "equip-deco-icon-box",
-                        },
-                        getSimpleImgElement(iconImgPath),
-                    ),
-                    element("div",
-                        {
-                        className: "equip-deco-name-box clipsafe",
-                        },
-                        clipsafeSpan(((decoPropsRO.deco === null) ? "None" : decoPropsRO.deco.name)),
-                    ),
-                    element("div",
-                        {
-                        className: "highlight-equip-deco-box stackinner",
-                        onClick: () => {this.props.handleClickSelect(decoSlotID, slotSize);},
-                        },
-                        null,
-                    ),
+                    null,
                 )
             );
         }

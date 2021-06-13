@@ -130,6 +130,7 @@ class MainView extends React.Component {
         check.isFunction(this.props.handleClickDecorationSelect);
 
         check.isFunction(this.props.handleRemovePiece);
+        check.isFunction(this.props.handleRemoveDeco);
 
         return element("div",
             {
@@ -174,6 +175,7 @@ class MainView extends React.Component {
                             handleClickDecorationSelect: (...args) => {this.props.handleClickDecorationSelect(...args)},
 
                             handleRemovePiece: (slotID) => {this.props.handleRemovePiece(slotID);},
+                            handleRemoveDeco: (slotID, decoSlotID) => {this.props.handleRemoveDeco(slotID, decoSlotID);},
                             },
                             null,
                         ),

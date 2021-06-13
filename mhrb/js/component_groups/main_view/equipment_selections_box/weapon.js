@@ -220,6 +220,7 @@ function WeaponSelection(props) {
             {
                 decosArray: props.weaponRORenderingProps.decosArray,
                 handleClickSelect: (...args) => {props.handleClickDecorationSelect(...args);},
+                handleClickRemove: (...args) => {props.handleClickDecorationRemove(...args);},
             },
             null,
         ),

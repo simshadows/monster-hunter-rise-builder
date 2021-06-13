@@ -39,6 +39,9 @@ class ArmourSelection extends React.Component {
     handleClickDecorationSelect(decoSlotID, maxDecoSize) {
         this.props.handleClickDecorationSelect(decoSlotID, maxDecoSize);
     }
+    handleClickDecorationRemove(decoSlotID) {
+        this.props.handleClickDecorationRemove(decoSlotID);
+    }
 
     handleClickRemovePiece() {
         this.props.handleClickRemovePiece(this.props.slotID);
@@ -82,6 +85,7 @@ class ArmourSelection extends React.Component {
 
         check.isFunction(this.props.handleClickArmourSelect);
         check.isFunction(this.props.handleClickDecorationSelect);
+        check.isFunction(this.props.handleClickDecorationRemove);
 
         return element("div",
             {
@@ -113,6 +117,7 @@ class ArmourSelection extends React.Component {
                 {
                     decosArray: (armourPieceRO !== null) ? armourPieceRO.decosArray : [],
                     handleClickSelect: (...args) => {this.handleClickDecorationSelect(...args);},
+                    handleClickRemove: (...args) => {this.handleClickDecorationRemove(...args);},
                 },
                 null,
             ),

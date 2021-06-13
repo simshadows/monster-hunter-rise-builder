@@ -82,6 +82,7 @@ class EquipmentSelectionsBox extends React.Component {
         check.isFunction(this.props.handleClickDecorationSelect);
 
         check.isFunction(this.props.handleRemovePiece);
+        check.isFunction(this.props.handleRemoveDeco);
 
         return element("div",
             {
@@ -105,6 +106,7 @@ class EquipmentSelectionsBox extends React.Component {
                 handleClickWeaponSelect:     () => {this.handleClickWeaponSelect();},
                 handleClickWeaponCustomize:  () => {this.handleClickWeaponCustomize();},
                 handleClickDecorationSelect: (decoSlotID, maxDecoSlotSize) => {this.handleClickDecorationSelect("weapon", decoSlotID, maxDecoSlotSize);},
+                handleClickDecorationRemove: (decoSlotID) => {this.props.handleRemoveDeco("weapon", decoSlotID);},
                 },
                 null,
             ),
@@ -115,6 +117,7 @@ class EquipmentSelectionsBox extends React.Component {
 
                 handleClickArmourSelect: (slotID) => {this.handleClickArmourSelect(slotID);},
                 handleClickDecorationSelect: (decoSlotID, maxDecoSlotSize) => {this.handleClickDecorationSelect("head", decoSlotID, maxDecoSlotSize);},
+                handleClickDecorationRemove: (decoSlotID) => {this.props.handleRemoveDeco("head", decoSlotID);},
                 handleClickRemovePiece: (slotID) => {this.handleRemovePiece(slotID);},
                 },
                 null,
@@ -126,6 +129,7 @@ class EquipmentSelectionsBox extends React.Component {
 
                 handleClickArmourSelect: (slotID) => {this.handleClickArmourSelect(slotID);},
                 handleClickDecorationSelect: (decoSlotID, maxDecoSlotSize) => {this.handleClickDecorationSelect("chest", decoSlotID, maxDecoSlotSize);},
+                handleClickDecorationRemove: (decoSlotID) => {this.props.handleRemoveDeco("chest", decoSlotID);},
                 handleClickRemovePiece: (slotID) => {this.handleRemovePiece(slotID);},
                 },
                 null,
@@ -137,6 +141,7 @@ class EquipmentSelectionsBox extends React.Component {
 
                 handleClickArmourSelect: (slotID) => {this.handleClickArmourSelect(slotID);},
                 handleClickDecorationSelect: (decoSlotID, maxDecoSlotSize) => {this.handleClickDecorationSelect("arms", decoSlotID, maxDecoSlotSize);},
+                handleClickDecorationRemove: (decoSlotID) => {this.props.handleRemoveDeco("arms", decoSlotID);},
                 handleClickRemovePiece: (slotID) => {this.handleRemovePiece(slotID);},
                 },
                 null,
@@ -148,6 +153,7 @@ class EquipmentSelectionsBox extends React.Component {
 
                 handleClickArmourSelect: (slotID) => {this.handleClickArmourSelect(slotID);},
                 handleClickDecorationSelect: (decoSlotID, maxDecoSlotSize) => {this.handleClickDecorationSelect("waist", decoSlotID, maxDecoSlotSize);},
+                handleClickDecorationRemove: (decoSlotID) => {this.props.handleRemoveDeco("waist", decoSlotID);},
                 handleClickRemovePiece: (slotID) => {this.handleRemovePiece(slotID);},
                 },
                 null,
@@ -159,6 +165,7 @@ class EquipmentSelectionsBox extends React.Component {
 
                 handleClickArmourSelect: (slotID) => {this.handleClickArmourSelect(slotID);},
                 handleClickDecorationSelect: (decoSlotID, maxDecoSlotSize) => {this.handleClickDecorationSelect("legs", decoSlotID, maxDecoSlotSize);},
+                handleClickDecorationRemove: (decoSlotID) => {this.props.handleRemoveDeco("legs", decoSlotID);},
                 handleClickRemovePiece: (slotID) => {this.handleRemovePiece(slotID);},
                 },
                 null,
@@ -169,6 +176,7 @@ class EquipmentSelectionsBox extends React.Component {
 
                 handleClickTalismanSelect: () => {this.handleClickTalismanSelect();},
                 handleClickDecorationSelect: (decoSlotID, maxDecoSlotSize) => {this.handleClickDecorationSelect("talisman", decoSlotID, maxDecoSlotSize);},
+                handleClickDecorationRemove: (decoSlotID) => {this.props.handleRemoveDeco("talisman", decoSlotID);},
                 handleClickRemovePiece: (slotID) => {this.handleRemovePiece("talisman");},
                 },
                 null,
