@@ -9,7 +9,7 @@ const element = React.createElement;
 const assert = console.assert;
 
 const imgPathMap = new Map([
-    ["placeholder_talisman", "./images/placeholders/talisman.png"],
+    ["placeholder_talisman", "./images/talisman_r7_inkscapesourcefile.svg"],
     ["placeholder_petalace", "./images/petalace_r6_inkscapesourcefile.svg"],
 
     ["deco_slot1_empty", "./images/deco_slot1.svg"],
