@@ -10,7 +10,7 @@ const assert = console.assert;
 
 const imgPathMap = new Map([
     ["placeholder_talisman", "./images/placeholders/talisman.png"],
-    ["placeholder_petalace", "./images/placeholders/talisman.png"],
+    ["placeholder_petalace", "./images/petalace_r6_inkscapesourcefile.svg"],
 
     ["deco_slot1_empty", "./images/deco_slot1.svg"],
     ["deco_slot2_empty", "./images/deco_slot2.svg"],
