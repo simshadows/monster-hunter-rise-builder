@@ -85,7 +85,7 @@ function PetalaceSelection(props) {
         },
         element(EquipIcon,
             {
-            iconImg: getImgPath("placeholder_petalace"),
+            iconImg: (petalaceRO !== null) ? petalaceRO.iconImgPath : getImgPath("petalace_r1"),
             showRemoveButton: (petalaceRO !== null),
             handleSelectButton: () => {props.handleClickPetalaceSelect()},
             handleRemoveButton: () => {props.handleClickRemovePiece();},

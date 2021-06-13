@@ -14,10 +14,12 @@ import {
     isWeaponEndlineTagStr,
     toNameFilterString,
 } from "../../common.js";
+import {getImgPath} from "../../images.js";
 
 const hardcodedPetalaceData = [
     ["h3", {
         endlineTag: "hr",
+        rarity: 6,
         name: "Hunting Petalace III",
         healthUp:    70,
         healthGain:  8,
@@ -30,6 +32,7 @@ const hardcodedPetalaceData = [
     }],
     ["s3", {
         endlineTag: "hr",
+        rarity: 6,
         name: "Strength Petalace III",
         healthUp:    100,
         healthGain:  9,
@@ -42,6 +45,7 @@ const hardcodedPetalaceData = [
     }],
     ["f3", {
         endlineTag: "hr",
+        rarity: 6,
         name: "Fortitude Petalace III",
         healthUp:    50,
         healthGain:  8,
@@ -54,6 +58,7 @@ const hardcodedPetalaceData = [
     }],
     ["d3", {
         endlineTag: "hr",
+        rarity: 6,
         name: "Demon Petalace III",
         healthUp:    50,
         healthGain:  5,
@@ -66,6 +71,7 @@ const hardcodedPetalaceData = [
     }],
     ["a", {
         endlineTag: "hr",
+        rarity: 7,
         name: "Absolute Petalace",
         healthUp:    100,
         healthGain:  10,
@@ -78,6 +84,7 @@ const hardcodedPetalaceData = [
     }],
     ["u", {
         endlineTag: "hr",
+        rarity: 7,
         name: "Underworld Petalace",
         healthUp:    70,
         healthGain:  10,
@@ -92,9 +99,15 @@ const hardcodedPetalaceData = [
 
 const petalaceMap = new Map();
 
+function petalaceRarityToIconImgPath(rarity) {
+    assert(isInt(rarity) && (rarity > 0) && (rarity <= 7));
+    return getImgPath("petalace_r" + String(rarity));
+}
+
 // For convenience, we also attach IDs and filter helpers to each object
 for (const [petalaceID, petalaceObj] of hardcodedPetalaceData) {
     petalaceObj.id = petalaceID;
+    petalaceObj.iconImgPath = petalaceRarityToIconImgPath(petalaceObj.rarity);
     petalaceObj.filterHelpers = {};
     petalaceObj.filterHelpers.nameLower = toNameFilterString(petalaceObj.name);
 
@@ -102,19 +115,19 @@ for (const [petalaceID, petalaceObj] of hardcodedPetalaceData) {
     // Validate
     //
 
-    assert(isNonEmptyStr(petalaceObj.id), "Petalaces must have IDs.");
-    assert(isNonEmptyStr(petalaceObj.endlineTag), "Petalaces must have endline tags.");
-    assert(isNonEmptyStr(petalaceObj.name), "Petalaces must have names.");
-    assert(isInt(petalaceObj.healthUp), "Petalaces must have a health up value.");
-    assert(isInt(petalaceObj.healthGain), "Petalaces must have a health gain value.");
-    assert(isInt(petalaceObj.staminaUp), "Petalaces must have a stamina up value.");
-    assert(isInt(petalaceObj.staminaGain), "Petalaces must have a stamina gain value.");
-    assert(isInt(petalaceObj.attackUp), "Petalaces must have a attack up value.");
-    assert(isInt(petalaceObj.attackGain), "Petalaces must have a attack gain value.");
-    assert(isInt(petalaceObj.defenseUp), "Petalaces must have a defense up value.");
-    assert(isInt(petalaceObj.defenseGain), "Petalaces must have a defense gain value.");
+    assert(isNonEmptyStr(petalaceObj.id));
+    assert(isWeaponEndlineTagStr(petalaceObj.endlineTag));
+    assert(isInt(petalaceObj.rarity) && (petalaceObj.rarity > 0) && (petalaceObj.rarity <= 7));
+    assert(isNonEmptyStr(petalaceObj.name));
+    assert(isInt(petalaceObj.healthUp));
+    assert(isInt(petalaceObj.healthGain));
+    assert(isInt(petalaceObj.staminaUp));
+    assert(isInt(petalaceObj.staminaGain));
+    assert(isInt(petalaceObj.attackUp));
+    assert(isInt(petalaceObj.attackGain));
+    assert(isInt(petalaceObj.defenseUp));
+    assert(isInt(petalaceObj.defenseGain));
 
-    assert(isWeaponEndlineTagStr(petalaceObj.endlineTag), "Wrong endline tag format. Petalace ID: " + petalaceObj.id);
     assert(
         (petalaceObj.healthGain  > 0) && (petalaceObj.healthUp  > petalaceObj.healthGain ) && (petalaceObj.healthUp  <= 100) &&
         (petalaceObj.staminaGain > 0) && (petalaceObj.staminaUp > petalaceObj.staminaGain) && (petalaceObj.staminaUp <= 100) &&

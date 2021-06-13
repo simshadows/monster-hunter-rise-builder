@@ -268,6 +268,9 @@ div.talisman-customize-view-select-content-box {
 
 /*** Petalace Selection View ***/
 
+.petalace-selection-table-head-cell-category {
+    width: 30px;
+}
 .petalace-selection-table-head-cell-name {
 }
 .petalace-selection-table-head-cell-numeric {

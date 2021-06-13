@@ -21,18 +21,20 @@ class PetalaceSelectionTable extends React.Component {
 
     static _cspecHeadRowFormat = [
             // [Markup Class, Content]
-            ["petalace-selection-table-head-cell-name", "Name"],
-            ["petalace-selection-table-head-cell-numeric", "Health Up"],
-            ["petalace-selection-table-head-cell-numeric", "Health Gain"],
-            ["petalace-selection-table-head-cell-numeric", "Stamina Up"],
-            ["petalace-selection-table-head-cell-numeric", "Stamina Gain"],
-            ["petalace-selection-table-head-cell-numeric", "Attack Up"],
-            ["petalace-selection-table-head-cell-numeric", "Attack Gain"],
-            ["petalace-selection-table-head-cell-numeric", "Defense Up"],
-            ["petalace-selection-table-head-cell-numeric", "Defense Gain"],
+            ["petalace-selection-table-head-cell-category", ""],
+            ["petalace-selection-table-head-cell-name"    , "Name"],
+            ["petalace-selection-table-head-cell-numeric" , "Health Up"],
+            ["petalace-selection-table-head-cell-numeric" , "Health Gain"],
+            ["petalace-selection-table-head-cell-numeric" , "Stamina Up"],
+            ["petalace-selection-table-head-cell-numeric" , "Stamina Gain"],
+            ["petalace-selection-table-head-cell-numeric" , "Attack Up"],
+            ["petalace-selection-table-head-cell-numeric" , "Attack Gain"],
+            ["petalace-selection-table-head-cell-numeric" , "Defense Up"],
+            ["petalace-selection-table-head-cell-numeric" , "Defense Gain"],
         ];
     static _cspecBodyRowFormat = [
             // Markup Class
+            "",
             "selection-table-cell-justify-right",
             "",
             "",
@@ -48,6 +50,7 @@ class PetalaceSelectionTable extends React.Component {
     // Logically Static
     _cspecGetRowContent(petalaceRO) {
         return [
+            this._renderPieceIcon(petalaceRO.iconImgPath),
             petalaceRO.name,
             parseInt(petalaceRO.healthUp),
             parseInt(petalaceRO.healthGain),
@@ -68,6 +71,21 @@ class PetalaceSelectionTable extends React.Component {
         check.isInt(petalaceRO.healthGain); // Spot check structure
         check.isInt(petalaceRO.staminaUp); // Spot check structure
         this.props.handleRowClick(petalaceRO);
+    }
+
+    _renderPieceIcon(iconImgPath) {
+        return element("div",
+            {
+            className: "selection-table-icon-box",
+            },
+            element("img",
+                {
+                src: iconImgPath,
+                alt: "icon",
+                },
+                null,
+            ),
+        );
     }
 
     render() {

@@ -27,6 +27,7 @@ function TalismanSelection(props) {
     check.isFunction(props.handleClickRemovePiece);
 
     const talismanRO = props.talismanRORenderingProps;
+    const talismanIsEquipped = (talismanRO.skills.length !== 0) || (talismanRO.decosArray.length !== 0);
 
     return element("div",
         {
@@ -34,8 +35,8 @@ function TalismanSelection(props) {
         },
         element(EquipIcon,
             {
-            iconImg: getImgPath("placeholder_talisman"),
-            showRemoveButton: ((talismanRO.skills.length !== 0) || (talismanRO.decosArray.length !== 0)),
+            iconImg: getImgPath((talismanIsEquipped) ? "talisman_equipped" : "talisman_unequipped"),
+            showRemoveButton: talismanIsEquipped,
             handleSelectButton: () => {props.handleClickTalismanSelect()},
             handleRemoveButton: () => {props.handleClickRemovePiece();},
             },

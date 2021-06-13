@@ -24,15 +24,15 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="1.4142136"
-     inkscape:cx="16.970563"
-     inkscape:cy="306.53079"
+     inkscape:zoom="2.0000001"
+     inkscape:cx="48.999998"
+     inkscape:cy="190.74999"
      inkscape:window-width="1920"
-     inkscape:window-height="1017"
-     inkscape:window-x="-8"
+     inkscape:window-height="1057"
+     inkscape:window-x="3832"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g37015" />
+     inkscape:current-layer="g32716" />
   <defs
      id="defs2">
     <inkscape:path-effect
@@ -274,9 +274,9 @@
     <path
        id="path32714"
        style="fill:#e95a46;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:4.19528;stroke-opacity:1"
-       d="m 37.609375,78.832031 -9.919922,12.087891 h 9.919922 9.919922 z"
+       d="m 37.609375,80.230469 -8.820313,10.689453 h 8.820313 8.820313 z"
        inkscape:path-effect="#path-effect32720"
-       inkscape:original-d="M 43.834788,89.433062 37.609863,78.831 27.69,90.919 h 9.919866 z"
+       inkscape:original-d="M 43.834788,89.433062 37.609863,80.231 28.79,90.919 h 8.819866 z"
        sodipodi:nodetypes="ccccc" />
   </g>
   <g
