@@ -187,6 +187,17 @@ class CalcState {
             }],
         ])],
         ["Misc.", new Map([
+            ["Petalace Attack (Max)", {
+                initialState: 0,
+                presentations: [
+                    null,
+                    {
+                        name: "Active",
+                        type: "icon",
+                        iconImgPath: getImgPath("petalace_attack"),
+                    },
+                ],
+            }],
             ["Dango Booster", {
                 initialState: 1,
                 presentations: [
@@ -359,14 +370,14 @@ class CalcState {
                     },
                 ],
             }],
-            ["Offensive Guard (OFG)", {
+            ["Offensive Guard (OG)", {
                 initialState: 0,
                 presentations: [
                     null,
                     {
                         name: "Active",
                         type: "abbreviation",
-                        abbreviation: "OFG",
+                        abbreviation: "OG",
                         color:       COLOUR.purple,
                         borderColor: COLOUR.purple,
                     },

@@ -29,6 +29,8 @@ function getMiscBuffContributions(db, build, calcState) {
     const allCalcStateSpec = calcState.getSpecification();
     const allCalcState = calcState.getCurrState();
 
+    const petalaceRO = build.getPetalaceObjRO();
+
     // Defined for code readability. Returns whether a binary state is "on" or "off".
     function buffActive(groupName, stateName) {
         const presentations = allCalcStateSpec.get(groupName).get(stateName).presentations;
@@ -88,6 +90,13 @@ function getMiscBuffContributions(db, build, calcState) {
     }
     if (itemBoxBuffActive("Mega Armorskin")) {
         defenseAdd += 25;
+    }
+
+    if (miscBuffActive("Petalace Attack (Max)")) {
+        // TODO: Allow setting different levels of petalace buffs instead of just max.
+        if (petalaceRO !== null) {
+            rawAdd += petalaceRO.attackUp;
+        }
     }
 
     if (miscBuffActive("Dango Booster")) {

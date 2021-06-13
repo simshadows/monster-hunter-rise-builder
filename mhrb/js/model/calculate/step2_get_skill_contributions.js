@@ -457,7 +457,7 @@ function getSkillContributions(db, build, calcState) {
         ["mushroomancer", (lid, lvl)=>{nop();}],
 
         ["offensive_guard", (lid, lvl)=>{
-            if (!skillActive("Offensive Guard (OFG)")) return;
+            if (!skillActive("Offensive Guard (OG)")) return;
             switch (lid, lvl) {
                 case 1: rawMul *= 1.05; break;
                 case 2: rawMul *= 1.10; break;

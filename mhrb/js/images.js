@@ -59,6 +59,8 @@ const imgPathMap = new Map([
     ["itembox_armorskin"      , "./images/itembox_armorskin_inkscapesourcefile.svg"  ],
     ["itembox_megaarmorskin"  , "./images/itembox_armorskin_with_star_closer_inkscapesourcefile.svg"],
 
+    ["petalace_attack", "./images/petalace_attack_inkscapesourcefile.svg"],
+
     ["dango_booster", "./images/dango_booster_inkscapesourcefile.svg"],
     
     ["palico_powerdrum", "./images/palico_powerdrum_inkscapesourcefile.svg"],
