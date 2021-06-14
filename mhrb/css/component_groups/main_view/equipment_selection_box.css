@@ -14,6 +14,10 @@ div.equip-buffs-main-box {
     row-gap: 4px;
 
     padding: 4px;
+    cursor: pointer;
+}
+div.equip-buffs-main-box:hover {
+    background: var(--color-equip-buffs--box-hover);
 }
 
 div.equip-buff-img-icon-box {
@@ -195,6 +199,10 @@ div.equip-icon-box {
     background: var(--color-equip--icon-box);
     height: 50px;
     width: 50px;
+    cursor: pointer;
+}
+div.equip-icon-box:hover{
+    background: var(--color-equip--icon-box-hover);
 }
 div.equip-icon-box > img {
     height: 90%;
@@ -287,7 +295,7 @@ div.equip-defenses-box {
     row-gap: 4px;
 
     border: none;
-    height: 80px;
+    height: 81px;
     width: 110px;
     padding: 4px 0 4px 0;
 }
@@ -355,7 +363,7 @@ div.equip-decos-wrap-box {
     row-gap: 2px;
 
     padding: 2px 2px 2px 6px;
-    height: 80px;
+    height: 81px;
     width: 190px;
 }
 
@@ -371,21 +379,22 @@ div.equip-deco-box {
     text-align: center;
     font: var(--font-equip--deco);
     height: 24px; /* TODO: This shouldn't be a hardcoded value, but I can't figure out a better way right now. */
+    cursor: pointer;
+}
+div.equip-deco-box:hover {
+    background: var(--color-equip-deco--box-hover);
+    color: var(--color-text-hover);
 }
 div.highlight-equip-deco-box {
     display: flex;
     align-items: center;
     justify-content: flex-end;
 
-    padding: 2px;
-}
-div.highlight-equip-deco-box:hover {
-    border: 2px solid var(--color-equip--icon-box-border-hover);
-    cursor: pointer;
+    padding: 4px;
 }
 div.deco-box-remove-button {
-    height: 16px;
-    width: 16px;
+    height: 18px;
+    width: 18px;
     background: var(--color-equip--remove-button);
     color: var(--color-equip--remove-button-text);
 }

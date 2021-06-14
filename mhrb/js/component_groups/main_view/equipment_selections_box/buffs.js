@@ -86,16 +86,10 @@ class BuffsSelection extends React.Component {
             },
             element("div",
                 {
-                className: "equip-buffs-main-box stackouter",
+                className: "equip-buffs-main-box",
+                onClick: () => {this.props.handleClickBuffsSelect()},
                 },
                 ...elements,
-                element("div",
-                    {
-                    className: "highlight-equip-main-box stackinner",
-                    onClick: () => {this.props.handleClickBuffsSelect()},
-                    },
-                    null,
-                ),
             ),
         );
     }

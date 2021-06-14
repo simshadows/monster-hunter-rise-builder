@@ -17,6 +17,7 @@ body {
     background: var(--color-background-1);
 
     font: var(--font-body), Arial, sans-serif;
+    cursor: default;
 }
 
 span, p, div {

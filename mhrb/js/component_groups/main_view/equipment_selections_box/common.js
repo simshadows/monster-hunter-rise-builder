@@ -40,7 +40,7 @@ class EquipIcon extends React.Component {
             },
             element("div",
                 {
-                className: "stackouter",
+                onClick: (e) => {this.handleSelectButton(e)},
                 },
                 element("div",
                     {
@@ -53,13 +53,6 @@ class EquipIcon extends React.Component {
                         },
                         null,
                     ),
-                ),
-                element("div",
-                    {
-                    className: "highlight-equip-main-box stackinner",
-                    onClick: (e) => {this.handleSelectButton(e)},
-                    },
-                    null,
                 ),
             ),
             element("div",
@@ -169,6 +162,7 @@ class EquipDecoBox extends React.Component {
         return element("div",
             {
             className: "equip-deco-box stackouter",
+            onClick: () => {this.handleClickSelect();},
             },
             element("div",
                 {
@@ -185,7 +179,6 @@ class EquipDecoBox extends React.Component {
             element("div",
                 {
                 className: "highlight-equip-deco-box stackinner",
-                onClick: () => {this.handleClickSelect();},
                 onMouseEnter: () => {this.handleMouseEnter();},
                 onMouseLeave: () => {this.handleMouseLeave();},
                 },
