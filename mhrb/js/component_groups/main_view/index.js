@@ -45,10 +45,11 @@ function UtilityButtonExternalLink(props) {
 class UtilityBar extends React.Component {
 
     handleMakeBuildCard(e) {
-        console.log();
         const options = {
                 backgroundColor: "#191a1d",
                 scale: 4,
+                // TODO: This ignoreElements function may not be entirely robust, though it doesn't matter if it works
+                ignoreElements: (element) => String(element.className).split(" ").includes("hide-from-buildcard"),
             };
         html2canvas(document.getElementById("main-view"), options).then(function(canvas) {
             canvas.toBlob(function(blob) {

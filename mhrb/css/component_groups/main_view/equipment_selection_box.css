@@ -209,12 +209,16 @@ div.equip-icon-box > img {
     width: 90%;
 }
 
-div.equip-remove-button {
-    background: var(--color-equip--remove-button);
+div.equip-remove-button-wrap {
     height: 100%;
     width: 100%;
+}
+div.equip-remove-button {
+    background: var(--color-equip--remove-button);
     font: var(--font-equip--remove-button);
     color: var(--color-equip--remove-button-text);
+    height: 100%;
+    width: 100%;
 }
 
 div.equip-info-box {

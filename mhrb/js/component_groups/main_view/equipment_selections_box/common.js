@@ -28,6 +28,29 @@ class EquipIcon extends React.Component {
         this.props.handleRemoveButton(); // Allowed to be undefined. If so, it throws an error.
     }
 
+    _renderRemoveButton() {
+        const buttonElement = (()=>{
+                if (this.props.showRemoveButton) {
+                    return element("div",
+                        {
+                        className: "equip-remove-button button-common hide-from-buildcard",
+                        onClick: (e) => {this.handleRemoveButton(e)},
+                        },
+                        "remove",
+                    );
+                } else {
+                    return null;
+                }
+            })();
+
+        return element("div",
+            {
+            className: "equip-remove-button-wrap",
+            },
+            buttonElement,
+        );
+    }
+
     render() {
         check.isNonEmptyStr(this.props.iconImg);
         check.isBool(this.props.showRemoveButton);
@@ -55,14 +78,7 @@ class EquipIcon extends React.Component {
                     ),
                 ),
             ),
-            element("div",
-                {
-                className: "equip-remove-button button-common",
-                style: {visibility: (this.props.showRemoveButton) ? "visible" : "hidden"},
-                onClick: (e) => {this.handleRemoveButton(e)},
-                },
-                "remove",
-            ),
+            this._renderRemoveButton(),
         );
     }
 }
@@ -121,7 +137,7 @@ class EquipDecoBox extends React.Component {
         if (this.state.visibleRemoveButton) {
             return element("div",
                 {
-                className: "deco-box-remove-button button-common",
+                className: "deco-box-remove-button button-common hide-from-buildcard",
                 onClick: (e) => {this.handleClickRemove(e)},
                 },
                 element(FontAwesomeSprite,
