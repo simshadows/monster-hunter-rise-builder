@@ -25,7 +25,7 @@ div.calculation-results-spacer-box {
 
 div.calculation-stat-box {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
     flex-direction: row;
 
@@ -115,5 +115,19 @@ div.calculation-sharpness-bar-stat {
 }
 #calculation-sharpness-bar-wrap > div {
     height: 18px;
+}
+
+div.calculation-song-box {
+    column-gap: 5px;
+
+    padding: 0 5px 0 5px;
+}
+div.calculation-song-icon-box {
+    width: 38.78px;
+    height: 30px;
+}
+div.calculation-song-icon-box > img {
+    width: 100%;
+    height: 100%;
 }
 

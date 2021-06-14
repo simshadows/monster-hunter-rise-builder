@@ -148,6 +148,26 @@ class CalculationResultsBox extends React.Component {
         );
     }
 
+    _renderHuntingHornSong(iconImgID, songName) {
+        return element("div",
+            {
+            className: "calculation-stat-box calculation-song-box",
+            },
+            element("div",
+                {
+                className: "calculation-song-icon-box",
+                },
+                getSimpleImgElement(iconImgID),
+            ),
+            element("div",
+                {
+                className: "calculation-stat-content-box calculation-stat-label-box",
+                },
+                songName,
+            ),
+        );
+    }
+
     render() {
         // This is the only prop
         const perf = this.props.buildPerformanceValues;
@@ -204,9 +224,9 @@ class CalculationResultsBox extends React.Component {
             specialMechanicRenderings.push(
                 element(CalculationResultsGroupBox,
                     null,
-                    this._renderStat(null, "Song 1", perf.huntingHornSongs.get("x").name),
-                    this._renderStat(null, "Song 2", perf.huntingHornSongs.get("a").name),
-                    this._renderStat(null, "Song 3", perf.huntingHornSongs.get("xa").name),
+                    this._renderHuntingHornSong("huntinghorn_song_x", perf.huntingHornSongs.get("x").name),
+                    this._renderHuntingHornSong("huntinghorn_song_a", perf.huntingHornSongs.get("a").name),
+                    this._renderHuntingHornSong("huntinghorn_song_xa", perf.huntingHornSongs.get("xa").name),
                 ),
             );
         }
