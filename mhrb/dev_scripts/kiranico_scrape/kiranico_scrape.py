@@ -62,6 +62,12 @@ def process_ramp_skill(s):
     a = [(m[x] if (x in m) else x.lower()) for x in s] # Convert roman numerals and force to all-lowercase
     return "_".join(re.sub("[^a-z0-9]+", "", x) for x in a) # Filter out non-alphanumeric
 
+def process_huntinghorn_song(s):
+    s = s.strip().replace("-", " ").replace("+", "plus").split()
+    m = {"I": "1", "II": "2", "III": "3", "IV": "4", "V": "5", "VI": "6"}
+    a = [(m[x] if (x in m) else x.lower()) for x in s] # Convert roman numerals and force to all-lowercase
+    return "_".join(re.sub("[^a-z0-9]+", "", x) for x in a) # Filter out non-alphanumeric
+
 #
 # SCRAPER
 #
@@ -127,6 +133,8 @@ def scrape_weapon_category_page(weapon_category, url, tagset):
         base_sharpness = None
         max_sharpness = None
 
+        huntinghorn_songs = None
+
         num_decos = len(c2.contents[1].contents) - 1
         assert (num_decos >= 0) and (num_decos <= 3)
         for i in range(num_decos):
@@ -184,6 +192,12 @@ def scrape_weapon_category_page(weapon_category, url, tagset):
             for c3 in v2b.contents:
                 sharpness_value = int(c3["style"][7:-28]) * 5
                 max_sharpness.append(sharpness_value)
+
+        if weapon_category == "huntinghorn":
+            huntinghorn_songs = {}
+            huntinghorn_songs["x_x"] = process_huntinghorn_song(str(c2.contents[6].contents[0].contents[0]))
+            huntinghorn_songs["a_a"] = process_huntinghorn_song(str(c2.contents[6].contents[1].contents[0]))
+            huntinghorn_songs["xa_xa"] = process_huntinghorn_song(str(c2.contents[6].contents[2].contents[0]))
             
         #data = {}
         data = scrape_weapon_page(weapon_page_url, weapon_name, weapon_category, tagset)
@@ -195,6 +209,8 @@ def scrape_weapon_category_page(weapon_category, url, tagset):
             data["base_sharpness"] = base_sharpness
         if max_sharpness is not None:
             data["max_sharpness"] = max_sharpness
+        if huntinghorn_songs is not None:
+            data["huntinghorn_songs"] = huntinghorn_songs
 
         ret.append(data)
     return ret

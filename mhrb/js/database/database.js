@@ -24,6 +24,9 @@ import {
     isEleStatStr,
     toNameFilterString,
 } from "../common.js";
+import {
+    setDifference,
+} from "../utils.js";
 
 import {getImgPath} from "../images.js";
 import {
@@ -37,6 +40,9 @@ import {
 import {
     petalaceMap,
 } from "./hardcoded_data/petalace_data.js";
+import {
+    huntingHornSongsMap,
+} from "./hardcoded_data/special_weapon_mechanics.js";
 
 const WEAPON_GS_PATH  = "./data/weapons_greatsword.json";
 const WEAPON_LS_PATH  = "./data/weapons_longsword.json";
@@ -140,6 +146,13 @@ function validateWeaponDataSharpness(weaponData) {
     op(weaponData.maxSharpness);
 }
 
+function validateWeaponDataHuntingHorn(weaponData) {
+    assert(isObj(weaponData.huntinghornSongs));
+    //assert(isNonEmptyStr(weaponData.huntinghornSongs.x_x));
+    //assert(isNonEmptyStr(weaponData.huntinghornSongs.a_a));
+    //assert(isNonEmptyStr(weaponData.huntinghornSongs.xa_xa));
+}
+
 async function downloadCategoryRawWeaponData(category, path, op) {
     console.assert(isWeaponCategoryStr(category));
     isNonEmptyStr(path);
@@ -147,6 +160,9 @@ async function downloadCategoryRawWeaponData(category, path, op) {
 
     const res = await fetch(path);
     const rawData = await res.json();
+
+    // Used for issuing useful warnings
+    const huntingHornSeenSongs = new Set();
 
     const finalData = new Map();
     for (const [treeName, treeData] of Object.entries(rawData)) {
@@ -165,6 +181,24 @@ async function downloadCategoryRawWeaponData(category, path, op) {
             // Convert the eleStat object to a map because it's easier to work with
             weaponData.eleStat = new Map(Object.entries(weaponData.eleStat));
 
+            // Add Hunting Horn mechanics
+            if (weaponData.category === "huntinghorn") {
+                function getSong(songID) {
+                    const _ret = huntingHornSongsMap.get(songID);
+                    assert(_ret !== undefined, "Unknown song ID: " + String(songID));
+                    return _ret;
+                }
+                const tmp = new Map([
+                    ["x", getSong(weaponData.huntinghornSongs["x_x"])],
+                    ["a", getSong(weaponData.huntinghornSongs["a_a"])],
+                    ["xa", getSong(weaponData.huntinghornSongs["xa_xa"])],
+                ]);
+                huntingHornSeenSongs.add(tmp.get("x").id);
+                huntingHornSeenSongs.add(tmp.get("a").id);
+                huntingHornSeenSongs.add(tmp.get("xa").id);
+                weaponData.huntinghornSongs = tmp;
+            }
+
             // Validate Common Data
             validateWeaponData(weaponData);
             // Validate Specific Data
@@ -179,11 +213,25 @@ async function downloadCategoryRawWeaponData(category, path, op) {
         }
     }
 
+    if (category === "huntinghorn") {
+        assert(huntingHornSeenSongs.size <= huntingHornSongsMap.size);
+        const unseenSongs = setDifference(new Set(huntingHornSongsMap.keys()), huntingHornSeenSongs);
+        if (unseenSongs.size !== 0) {
+            for (const songID of unseenSongs) {
+                console.warn("Song ID present in database but not used on a weapon: " + String(songID));
+            }
+        }
+    } else {
+        assert(huntingHornSeenSongs.size === 0);
+    }
+
     return finalData;
 }
 
 async function downloadAllRawWeaponData() {
     const validateSimpleMelee  = (weaponData) => {validateWeaponDataSharpness(weaponData);};
+    const validateHH           = (weaponData) => {validateWeaponDataSharpness(weaponData);
+                                                  validateWeaponDataHuntingHorn(weaponData);};
     const validateSimpleRanged = (weaponData) => {};
 
     const gsDataFut  = downloadCategoryRawWeaponData("greatsword",     WEAPON_GS_PATH,  validateSimpleMelee);
@@ -193,7 +241,7 @@ async function downloadAllRawWeaponData() {
     const lDataFut   = downloadCategoryRawWeaponData("lance",          WEAPON_L_PATH,   validateSimpleMelee);
     const glDataFut  = downloadCategoryRawWeaponData("gunlance",       WEAPON_GL_PATH,  validateSimpleMelee);
     const hDataFut   = downloadCategoryRawWeaponData("hammer",         WEAPON_H_PATH,   validateSimpleMelee);
-    const hhDataFut  = downloadCategoryRawWeaponData("huntinghorn",    WEAPON_HH_PATH,  validateSimpleMelee);
+    const hhDataFut  = downloadCategoryRawWeaponData("huntinghorn",    WEAPON_HH_PATH,  validateHH         );
     const saDataFut  = downloadCategoryRawWeaponData("switchaxe",      WEAPON_SA_PATH,  validateSimpleMelee);
     const cbDataFut  = downloadCategoryRawWeaponData("chargeblade",    WEAPON_CB_PATH,  validateSimpleMelee);
     const igDataFut  = downloadCategoryRawWeaponData("insectglaive",   WEAPON_IG_PATH,  validateSimpleMelee);
@@ -563,6 +611,9 @@ class GameData {
             decorations: {
                 array: Array.from(decosMap.values()),
                 map: decosMap,
+            },
+            huntingHornSongs: {
+                map: huntingHornSongsMap,
             },
         };
 

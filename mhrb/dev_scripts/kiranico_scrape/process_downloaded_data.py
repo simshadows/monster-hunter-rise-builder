@@ -116,20 +116,6 @@ for (weapon_category, spec_subdict) in data_spec.items():
             tree_name = spec_subdict[name]["tree_name"]
             endline_tag = spec_subdict[name]["endline_tag"]
 
-            deco_slots = obj["decos"]
-            elestat = obj["elestat"]
-
-            base_sharpness = None
-            max_sharpness = None
-            if "melee" in spec_subdict[name]["tagset"]:
-                base_sharpness = obj["base_sharpness"][:-1] # Remove the last sharpness level
-                max_sharpness = obj["max_sharpness"][:-1] # Remove the last sharpness level
-
-            ramp_skills = obj["ramps"]
-
-            # Filter out empty ramp option lists
-            ramp_skills = [x for x in ramp_skills if (len(x) > 0)]
-
             d = {
                     "rarity":      rarity,
                     "endline_tag": endline_tag,
@@ -138,14 +124,16 @@ for (weapon_category, spec_subdict) in data_spec.items():
                     "attack":     int(obj["attack"]),
                     "affinity":   int(obj["affinity"]),
                     "defense":    int(obj["defense"]),
-                    "deco_slots": deco_slots,
-                    "elestat":    elestat,
+                    "deco_slots": obj["decos"],
+                    "elestat":    obj["elestat"],
 
-                    "ramp_skills": ramp_skills,
+                    "ramp_skills": [x for x in obj["ramps"] if (len(x) > 0)], # Filter out empty ramp option lists
                 }
-            if max_sharpness is not None:
-                d["base_sharpness"] = base_sharpness
-                d["max_sharpness"] = max_sharpness
+            if "melee" in spec_subdict[name]["tagset"]:
+                d["base_sharpness"] = obj["base_sharpness"][:-1] # Remove the last sharpness level
+                d["max_sharpness"] = obj["max_sharpness"][:-1] # Remove the last sharpness level
+            if weapon_category == "huntinghorn":
+                d["huntinghorn_songs"] = obj["huntinghorn_songs"]
             data[weapon_category][tree_name][weapon_id] = d
 
 #
@@ -236,6 +224,11 @@ ramp_fmt2_subfmt = """\
                     "{ramp_skill}"\
 """
 
+huntinghorn_songs_fmt = """,
+
+            "huntinghornSongs": {{{songs}}}\
+"""
+
 
 def process_ramp_skills(lst):
     if (len(lst) == 1) and (len(lst[0]) < 4):
@@ -266,7 +259,12 @@ for (weapon_category, _) in data_spec.items():
             if "max_sharpness" in weapon_data:
                 special_mechanics += sharpness_fmt.format(
                         base_sharpness=",".join(str(x) for x in weapon_data["base_sharpness"]),
-                        max_sharpness=",".join(str(x) for x in weapon_data["max_sharpness"])
+                        max_sharpness=",".join(str(x) for x in weapon_data["max_sharpness"]),
+                    )
+
+            if "huntinghorn_songs" in weapon_data:
+                special_mechanics += huntinghorn_songs_fmt.format(
+                        songs=", ".join(f"\"{k}\":\"{v}\"" for (k, v) in weapon_data["huntinghorn_songs"].items()),
                     )
 
             weapon_strs.append(weapon_fmt.format(

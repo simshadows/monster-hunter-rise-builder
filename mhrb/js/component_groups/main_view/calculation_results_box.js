@@ -198,6 +198,19 @@ class CalculationResultsBox extends React.Component {
             );
         }
 
+        const specialMechanicRenderings = [];
+
+        if (perf.huntingHornSongs !== null) {
+            specialMechanicRenderings.push(
+                element(CalculationResultsGroupBox,
+                    null,
+                    this._renderStat(null, "Song 1", perf.huntingHornSongs.get("x").name),
+                    this._renderStat(null, "Song 2", perf.huntingHornSongs.get("a").name),
+                    this._renderStat(null, "Song 3", perf.huntingHornSongs.get("xa").name),
+                ),
+            );
+        }
+
         return element("div",
             {
             id: "calculation-results-box",
@@ -217,6 +230,7 @@ class CalculationResultsBox extends React.Component {
                 this._renderStat(null, "Raw Crit Modifier", perf.rawCritModifier.toFixed(4) + "x"),
                 this._renderStat(null, "Elem. Crit Modifier", perf.elementalCritModifier.toFixed(4) + "x"),
             ),
+            ...specialMechanicRenderings,
             element(CalculationResultsSpacerBox,
                 null,
                 null,

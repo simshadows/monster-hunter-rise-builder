@@ -34323,6 +34323,11 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "huntinghorn_songs": {
+                "a_a": "attack_up",
+                "x_x": "defense_up",
+                "xa_xa": "health_recovery_s"
+            },
             "max_sharpness": [
                 50,
                 90,
@@ -34362,6 +34367,11 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "huntinghorn_songs": {
+                "a_a": "attack_up",
+                "x_x": "defense_up",
+                "xa_xa": "health_recovery_s"
+            },
             "max_sharpness": [
                 60,
                 70,
@@ -34401,6 +34411,11 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "huntinghorn_songs": {
+                "a_a": "attack_up",
+                "x_x": "defense_up",
+                "xa_xa": "health_recovery_s"
+            },
             "max_sharpness": [
                 70,
                 70,
@@ -34440,6 +34455,11 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "huntinghorn_songs": {
+                "a_a": "attack_up",
+                "x_x": "defense_up",
+                "xa_xa": "health_recovery_s"
+            },
             "max_sharpness": [
                 60,
                 80,
@@ -34481,6 +34501,11 @@
             ],
             "defense": 0,
             "elestat": {},
+            "huntinghorn_songs": {
+                "a_a": "attack_up",
+                "x_x": "defense_up",
+                "xa_xa": "health_recovery_s_plus_antidote"
+            },
             "max_sharpness": [
                 60,
                 80,
@@ -34523,6 +34548,11 @@
             ],
             "defense": 0,
             "elestat": {},
+            "huntinghorn_songs": {
+                "a_a": "attack_up",
+                "x_x": "defense_up",
+                "xa_xa": "health_recovery_s_plus_antidote"
+            },
             "max_sharpness": [
                 40,
                 90,
@@ -34563,6 +34593,11 @@
             "defense": 0,
             "elestat": {
                 "water": 20
+            },
+            "huntinghorn_songs": {
+                "a_a": "blight_negated",
+                "x_x": "health_recovery_s",
+                "xa_xa": "stamina_use_reduced"
             },
             "max_sharpness": [
                 60,
@@ -34607,6 +34642,11 @@
             "elestat": {
                 "water": 24
             },
+            "huntinghorn_songs": {
+                "a_a": "blight_negated",
+                "x_x": "health_recovery_s",
+                "xa_xa": "stamina_use_reduced"
+            },
             "max_sharpness": [
                 60,
                 80,
@@ -34649,6 +34689,11 @@
             "defense": 0,
             "elestat": {
                 "water": 28
+            },
+            "huntinghorn_songs": {
+                "a_a": "blight_negated",
+                "x_x": "health_recovery_s",
+                "xa_xa": "stamina_use_reduced"
             },
             "max_sharpness": [
                 60,
@@ -34695,6 +34740,11 @@
             "elestat": {
                 "fire": 24
             },
+            "huntinghorn_songs": {
+                "a_a": "elemental_attack_boost",
+                "x_x": "blight_negated",
+                "xa_xa": "knockbacks_negated"
+            },
             "max_sharpness": [
                 190,
                 40,
@@ -34739,6 +34789,11 @@
             "defense": 0,
             "elestat": {
                 "fire": 26
+            },
+            "huntinghorn_songs": {
+                "a_a": "elemental_attack_boost",
+                "x_x": "blight_negated",
+                "xa_xa": "knockbacks_negated"
             },
             "max_sharpness": [
                 190,
@@ -34785,6 +34840,11 @@
             "elestat": {
                 "fire": 29
             },
+            "huntinghorn_songs": {
+                "a_a": "elemental_attack_boost",
+                "x_x": "blight_negated",
+                "xa_xa": "knockbacks_negated"
+            },
             "max_sharpness": [
                 190,
                 30,
@@ -34826,6 +34886,11 @@
             "elestat": {
                 "fire": 10
             },
+            "huntinghorn_songs": {
+                "a_a": "sonic_barrier",
+                "x_x": "tremors_negated",
+                "xa_xa": "stamina_use_reduced"
+            },
             "max_sharpness": [
                 20,
                 20,
@@ -34866,6 +34931,11 @@
             "defense": 15,
             "elestat": {
                 "fire": 12
+            },
+            "huntinghorn_songs": {
+                "a_a": "sonic_barrier",
+                "x_x": "tremors_negated",
+                "xa_xa": "stamina_use_reduced"
             },
             "max_sharpness": [
                 20,
@@ -34910,6 +34980,11 @@
             "elestat": {
                 "fire": 15
             },
+            "huntinghorn_songs": {
+                "a_a": "sonic_barrier",
+                "x_x": "tremors_negated",
+                "xa_xa": "stamina_use_reduced"
+            },
             "max_sharpness": [
                 20,
                 30,
@@ -34951,6 +35026,11 @@
             "elestat": {
                 "thunder": 20
             },
+            "huntinghorn_songs": {
+                "a_a": "attack_up",
+                "x_x": "stun_negated",
+                "xa_xa": "knockbacks_negated"
+            },
             "max_sharpness": [
                 60,
                 40,
@@ -34991,6 +35071,11 @@
             "defense": 0,
             "elestat": {
                 "thunder": 24
+            },
+            "huntinghorn_songs": {
+                "a_a": "attack_up",
+                "x_x": "stun_negated",
+                "xa_xa": "knockbacks_negated"
             },
             "max_sharpness": [
                 60,
@@ -35036,6 +35121,11 @@
             "elestat": {
                 "thunder": 28
             },
+            "huntinghorn_songs": {
+                "a_a": "attack_up",
+                "x_x": "stun_negated",
+                "xa_xa": "knockbacks_negated"
+            },
             "max_sharpness": [
                 60,
                 40,
@@ -35075,6 +35165,11 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "huntinghorn_songs": {
+                "a_a": "defense_up",
+                "x_x": "attack_up",
+                "xa_xa": "sonic_barrier"
+            },
             "max_sharpness": [
                 140,
                 20,
@@ -35114,6 +35209,11 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "huntinghorn_songs": {
+                "a_a": "defense_up",
+                "x_x": "attack_up",
+                "xa_xa": "sonic_barrier"
+            },
             "max_sharpness": [
                 140,
                 30,
@@ -35155,6 +35255,11 @@
             ],
             "defense": 0,
             "elestat": {},
+            "huntinghorn_songs": {
+                "a_a": "defense_up",
+                "x_x": "attack_up",
+                "xa_xa": "sonic_barrier"
+            },
             "max_sharpness": [
                 20,
                 50,
@@ -35194,6 +35299,11 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "huntinghorn_songs": {
+                "a_a": "attack_up",
+                "x_x": "earplugs_s",
+                "xa_xa": "sonic_wave"
+            },
             "max_sharpness": [
                 70,
                 30,
@@ -35233,6 +35343,11 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "huntinghorn_songs": {
+                "a_a": "attack_up",
+                "x_x": "earplugs_s",
+                "xa_xa": "sonic_wave"
+            },
             "max_sharpness": [
                 50,
                 40,
@@ -35272,6 +35387,11 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "huntinghorn_songs": {
+                "a_a": "attack_up",
+                "x_x": "earplugs_s",
+                "xa_xa": "sonic_wave"
+            },
             "max_sharpness": [
                 50,
                 50,
@@ -35312,6 +35432,11 @@
             "defense": 0,
             "elestat": {
                 "ice": 15
+            },
+            "huntinghorn_songs": {
+                "a_a": "health_recovery_s",
+                "x_x": "stamina_recovery_up",
+                "xa_xa": "affinity_up"
             },
             "max_sharpness": [
                 50,
@@ -35355,6 +35480,11 @@
             "defense": 0,
             "elestat": {
                 "ice": 18
+            },
+            "huntinghorn_songs": {
+                "a_a": "health_recovery_s",
+                "x_x": "stamina_recovery_up",
+                "xa_xa": "affinity_up"
             },
             "max_sharpness": [
                 50,
@@ -35400,6 +35530,11 @@
             "elestat": {
                 "ice": 20
             },
+            "huntinghorn_songs": {
+                "a_a": "health_recovery_s",
+                "x_x": "stamina_recovery_up",
+                "xa_xa": "affinity_up"
+            },
             "max_sharpness": [
                 50,
                 70,
@@ -35441,6 +35576,11 @@
             "elestat": {
                 "sleep": 12
             },
+            "huntinghorn_songs": {
+                "a_a": "earplugs_s",
+                "x_x": "attack_up",
+                "xa_xa": "defense_up"
+            },
             "max_sharpness": [
                 50,
                 50,
@@ -35481,6 +35621,11 @@
             "defense": 0,
             "elestat": {
                 "sleep": 15
+            },
+            "huntinghorn_songs": {
+                "a_a": "earplugs_s",
+                "x_x": "attack_up",
+                "xa_xa": "defense_up"
             },
             "max_sharpness": [
                 40,
@@ -35526,6 +35671,11 @@
             "elestat": {
                 "sleep": 19
             },
+            "huntinghorn_songs": {
+                "a_a": "earplugs_s",
+                "x_x": "attack_up",
+                "xa_xa": "defense_up"
+            },
             "max_sharpness": [
                 50,
                 90,
@@ -35565,6 +35715,11 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "huntinghorn_songs": {
+                "a_a": "stamina_recovery_up",
+                "x_x": "sonic_wave",
+                "xa_xa": "defense_up"
+            },
             "max_sharpness": [
                 80,
                 70,
@@ -35604,6 +35759,11 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "huntinghorn_songs": {
+                "a_a": "stamina_recovery_up",
+                "x_x": "sonic_wave",
+                "xa_xa": "defense_up"
+            },
             "max_sharpness": [
                 70,
                 60,
@@ -35643,6 +35803,11 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "huntinghorn_songs": {
+                "a_a": "stamina_recovery_up",
+                "x_x": "sonic_wave",
+                "xa_xa": "defense_up"
+            },
             "max_sharpness": [
                 60,
                 60,
@@ -35682,6 +35847,11 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "huntinghorn_songs": {
+                "a_a": "stamina_recovery_up",
+                "x_x": "sonic_wave",
+                "xa_xa": "defense_up"
+            },
             "max_sharpness": [
                 70,
                 60,
@@ -35723,6 +35893,11 @@
             ],
             "defense": 12,
             "elestat": {},
+            "huntinghorn_songs": {
+                "a_a": "stamina_recovery_up",
+                "x_x": "sonic_wave",
+                "xa_xa": "attack_up"
+            },
             "max_sharpness": [
                 100,
                 90,
@@ -35764,6 +35939,11 @@
             ],
             "defense": 15,
             "elestat": {},
+            "huntinghorn_songs": {
+                "a_a": "stamina_recovery_up",
+                "x_x": "sonic_wave",
+                "xa_xa": "attack_up"
+            },
             "max_sharpness": [
                 90,
                 90,
@@ -35805,6 +35985,11 @@
             ],
             "defense": 0,
             "elestat": {},
+            "huntinghorn_songs": {
+                "a_a": "attack_up",
+                "x_x": "stamina_recovery_up",
+                "xa_xa": "affinity_up"
+            },
             "max_sharpness": [
                 100,
                 30,
@@ -35846,6 +36031,11 @@
             ],
             "defense": 0,
             "elestat": {},
+            "huntinghorn_songs": {
+                "a_a": "attack_up",
+                "x_x": "stamina_recovery_up",
+                "xa_xa": "affinity_up"
+            },
             "max_sharpness": [
                 70,
                 40,
@@ -35887,6 +36077,11 @@
             ],
             "defense": 0,
             "elestat": {},
+            "huntinghorn_songs": {
+                "a_a": "attack_up",
+                "x_x": "stamina_recovery_up",
+                "xa_xa": "affinity_up"
+            },
             "max_sharpness": [
                 70,
                 40,
@@ -35927,6 +36122,11 @@
             "defense": 0,
             "elestat": {
                 "poison": 18
+            },
+            "huntinghorn_songs": {
+                "a_a": "stamina_recovery_up",
+                "x_x": "elemental_attack_boost",
+                "xa_xa": "health_regeneration"
             },
             "max_sharpness": [
                 60,
@@ -35972,6 +36172,11 @@
             "elestat": {
                 "poison": 24
             },
+            "huntinghorn_songs": {
+                "a_a": "stamina_recovery_up",
+                "x_x": "elemental_attack_boost",
+                "xa_xa": "health_regeneration"
+            },
             "max_sharpness": [
                 60,
                 60,
@@ -36015,6 +36220,11 @@
             "defense": 0,
             "elestat": {
                 "poison": 27
+            },
+            "huntinghorn_songs": {
+                "a_a": "stamina_recovery_up",
+                "x_x": "elemental_attack_boost",
+                "xa_xa": "health_regeneration"
             },
             "max_sharpness": [
                 60,
@@ -36060,6 +36270,11 @@
             "elestat": {
                 "fire": 18
             },
+            "huntinghorn_songs": {
+                "a_a": "health_recovery_s",
+                "x_x": "stamina_recovery_up",
+                "xa_xa": "attack_up"
+            },
             "max_sharpness": [
                 140,
                 120,
@@ -36103,6 +36318,11 @@
             "defense": 0,
             "elestat": {
                 "fire": 20
+            },
+            "huntinghorn_songs": {
+                "a_a": "health_recovery_s",
+                "x_x": "stamina_recovery_up",
+                "xa_xa": "attack_up"
             },
             "max_sharpness": [
                 130,
@@ -36148,6 +36368,11 @@
             "elestat": {
                 "fire": 22
             },
+            "huntinghorn_songs": {
+                "a_a": "health_recovery_s",
+                "x_x": "stamina_recovery_up",
+                "xa_xa": "attack_up"
+            },
             "max_sharpness": [
                 120,
                 120,
@@ -36189,6 +36414,11 @@
             "elestat": {
                 "fire": 16
             },
+            "huntinghorn_songs": {
+                "a_a": "stamina_use_reduced",
+                "x_x": "defense_up",
+                "xa_xa": "divine_protection"
+            },
             "max_sharpness": [
                 50,
                 50,
@@ -36229,6 +36459,11 @@
             "defense": 0,
             "elestat": {
                 "fire": 18
+            },
+            "huntinghorn_songs": {
+                "a_a": "stamina_use_reduced",
+                "x_x": "defense_up",
+                "xa_xa": "divine_protection"
             },
             "max_sharpness": [
                 40,
@@ -36273,6 +36508,11 @@
             "elestat": {
                 "fire": 22
             },
+            "huntinghorn_songs": {
+                "a_a": "stamina_use_reduced",
+                "x_x": "defense_up",
+                "xa_xa": "divine_protection"
+            },
             "max_sharpness": [
                 40,
                 60,
@@ -36312,6 +36552,11 @@
             "decos": [],
             "defense": 8,
             "elestat": {},
+            "huntinghorn_songs": {
+                "a_a": "sonic_wave",
+                "x_x": "defense_up",
+                "xa_xa": "stamina_use_reduced"
+            },
             "max_sharpness": [
                 60,
                 60,
@@ -36351,6 +36596,11 @@
             "decos": [],
             "defense": 8,
             "elestat": {},
+            "huntinghorn_songs": {
+                "a_a": "sonic_wave",
+                "x_x": "defense_up",
+                "xa_xa": "stamina_use_reduced"
+            },
             "max_sharpness": [
                 70,
                 70,
@@ -36390,6 +36640,11 @@
             "decos": [],
             "defense": 10,
             "elestat": {},
+            "huntinghorn_songs": {
+                "a_a": "sonic_wave",
+                "x_x": "defense_up",
+                "xa_xa": "stamina_use_reduced"
+            },
             "max_sharpness": [
                 60,
                 70,
@@ -36430,6 +36685,11 @@
             "defense": 10,
             "elestat": {
                 "water": 12
+            },
+            "huntinghorn_songs": {
+                "a_a": "attack_up",
+                "x_x": "health_recovery_s",
+                "xa_xa": "tremors_negated"
             },
             "max_sharpness": [
                 30,
@@ -36474,6 +36734,11 @@
             "elestat": {
                 "water": 16
             },
+            "huntinghorn_songs": {
+                "a_a": "attack_up",
+                "x_x": "health_recovery_s",
+                "xa_xa": "tremors_negated"
+            },
             "max_sharpness": [
                 40,
                 90,
@@ -36517,6 +36782,11 @@
             "elestat": {
                 "water": 18
             },
+            "huntinghorn_songs": {
+                "a_a": "attack_up",
+                "x_x": "health_recovery_s",
+                "xa_xa": "tremors_negated"
+            },
             "max_sharpness": [
                 40,
                 90,
@@ -36556,6 +36826,11 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "huntinghorn_songs": {
+                "a_a": "affinity_up",
+                "x_x": "stamina_recovery_up",
+                "xa_xa": "health_recovery_s"
+            },
             "max_sharpness": [
                 70,
                 50,
@@ -36595,6 +36870,11 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "huntinghorn_songs": {
+                "a_a": "affinity_up",
+                "x_x": "stamina_recovery_up",
+                "xa_xa": "health_recovery_s"
+            },
             "max_sharpness": [
                 80,
                 50,
@@ -36637,6 +36917,11 @@
             ],
             "defense": 0,
             "elestat": {},
+            "huntinghorn_songs": {
+                "a_a": "affinity_up",
+                "x_x": "stamina_recovery_up",
+                "xa_xa": "health_recovery_s"
+            },
             "max_sharpness": [
                 80,
                 70,
@@ -36678,6 +36963,11 @@
             "elestat": {
                 "water": 30
             },
+            "huntinghorn_songs": {
+                "a_a": "defense_up",
+                "x_x": "blight_negated",
+                "xa_xa": "sonic_wave"
+            },
             "max_sharpness": [
                 50,
                 40,
@@ -36718,6 +37008,11 @@
             "defense": 0,
             "elestat": {
                 "water": 32
+            },
+            "huntinghorn_songs": {
+                "a_a": "defense_up",
+                "x_x": "blight_negated",
+                "xa_xa": "sonic_wave"
             },
             "max_sharpness": [
                 60,
@@ -36764,6 +37059,11 @@
             "elestat": {
                 "water": 35
             },
+            "huntinghorn_songs": {
+                "a_a": "defense_up",
+                "x_x": "blight_negated",
+                "xa_xa": "sonic_wave"
+            },
             "max_sharpness": [
                 60,
                 50,
@@ -36803,6 +37103,11 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "huntinghorn_songs": {
+                "a_a": "defense_up",
+                "x_x": "environment_damage_negated",
+                "xa_xa": "attack_up"
+            },
             "max_sharpness": [
                 70,
                 90,
@@ -36842,6 +37147,11 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "huntinghorn_songs": {
+                "a_a": "defense_up",
+                "x_x": "environment_damage_negated",
+                "xa_xa": "attack_up"
+            },
             "max_sharpness": [
                 80,
                 70,
@@ -36881,6 +37191,11 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "huntinghorn_songs": {
+                "a_a": "defense_up",
+                "x_x": "environment_damage_negated",
+                "xa_xa": "attack_up"
+            },
             "max_sharpness": [
                 100,
                 70,
@@ -36920,6 +37235,11 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "huntinghorn_songs": {
+                "a_a": "divine_protection",
+                "x_x": "environment_damage_negated",
+                "xa_xa": "attack_up"
+            },
             "max_sharpness": [
                 80,
                 70,
@@ -36959,6 +37279,11 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "huntinghorn_songs": {
+                "a_a": "divine_protection",
+                "x_x": "environment_damage_negated",
+                "xa_xa": "attack_up"
+            },
             "max_sharpness": [
                 150,
                 120,
@@ -36998,6 +37323,11 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "huntinghorn_songs": {
+                "a_a": "stamina_use_reduced",
+                "x_x": "defense_up",
+                "xa_xa": "earplugs_l"
+            },
             "max_sharpness": [
                 90,
                 80,
@@ -37037,6 +37367,11 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "huntinghorn_songs": {
+                "a_a": "stamina_use_reduced",
+                "x_x": "defense_up",
+                "xa_xa": "earplugs_l"
+            },
             "max_sharpness": [
                 90,
                 60,
@@ -37076,6 +37411,11 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "huntinghorn_songs": {
+                "a_a": "stamina_use_reduced",
+                "x_x": "defense_up",
+                "xa_xa": "earplugs_l"
+            },
             "max_sharpness": [
                 80,
                 60,
@@ -37115,6 +37455,11 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "huntinghorn_songs": {
+                "a_a": "knockbacks_negated",
+                "x_x": "divine_protection",
+                "xa_xa": "stun_negated"
+            },
             "max_sharpness": [
                 70,
                 90,
@@ -37154,6 +37499,11 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "huntinghorn_songs": {
+                "a_a": "knockbacks_negated",
+                "x_x": "divine_protection",
+                "xa_xa": "stun_negated"
+            },
             "max_sharpness": [
                 70,
                 80,
@@ -37193,6 +37543,11 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "huntinghorn_songs": {
+                "a_a": "knockbacks_negated",
+                "x_x": "divine_protection",
+                "xa_xa": "stun_negated"
+            },
             "max_sharpness": [
                 80,
                 90,
@@ -37233,6 +37588,11 @@
             "defense": 0,
             "elestat": {
                 "fire": 25
+            },
+            "huntinghorn_songs": {
+                "a_a": "sonic_wave",
+                "x_x": "elemental_attack_boost",
+                "xa_xa": "stamina_recovery_up"
             },
             "max_sharpness": [
                 50,
@@ -37277,6 +37637,11 @@
             "elestat": {
                 "fire": 32
             },
+            "huntinghorn_songs": {
+                "a_a": "sonic_wave",
+                "x_x": "elemental_attack_boost",
+                "xa_xa": "stamina_recovery_up"
+            },
             "max_sharpness": [
                 70,
                 90,
@@ -37320,6 +37685,11 @@
             "elestat": {
                 "fire": 35
             },
+            "huntinghorn_songs": {
+                "a_a": "sonic_wave",
+                "x_x": "elemental_attack_boost",
+                "xa_xa": "stamina_recovery_up"
+            },
             "max_sharpness": [
                 70,
                 70,
@@ -37359,6 +37729,11 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "huntinghorn_songs": {
+                "a_a": "stamina_recovery_up",
+                "x_x": "defense_up",
+                "xa_xa": "stun_negated"
+            },
             "max_sharpness": [
                 60,
                 60,
@@ -37398,6 +37773,11 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "huntinghorn_songs": {
+                "a_a": "stamina_recovery_up",
+                "x_x": "defense_up",
+                "xa_xa": "stun_negated"
+            },
             "max_sharpness": [
                 70,
                 70,
@@ -37441,6 +37821,11 @@
             ],
             "defense": 0,
             "elestat": {},
+            "huntinghorn_songs": {
+                "a_a": "stamina_recovery_up",
+                "x_x": "defense_up",
+                "xa_xa": "stun_negated"
+            },
             "max_sharpness": [
                 70,
                 60,
@@ -37482,6 +37867,11 @@
             "elestat": {
                 "thunder": 20
             },
+            "huntinghorn_songs": {
+                "a_a": "health_regeneration",
+                "x_x": "earplugs_s",
+                "xa_xa": "elemental_attack_boost"
+            },
             "max_sharpness": [
                 40,
                 30,
@@ -37522,6 +37912,11 @@
             "defense": 0,
             "elestat": {
                 "thunder": 24
+            },
+            "huntinghorn_songs": {
+                "a_a": "health_regeneration",
+                "x_x": "earplugs_s",
+                "xa_xa": "elemental_attack_boost"
             },
             "max_sharpness": [
                 50,
@@ -37566,6 +37961,11 @@
             "elestat": {
                 "thunder": 32
             },
+            "huntinghorn_songs": {
+                "a_a": "health_regeneration",
+                "x_x": "earplugs_s",
+                "xa_xa": "elemental_attack_boost"
+            },
             "max_sharpness": [
                 60,
                 40,
@@ -37605,6 +38005,11 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "huntinghorn_songs": {
+                "a_a": "stamina_use_reduced",
+                "x_x": "health_recovery_s",
+                "xa_xa": "earplugs_s"
+            },
             "max_sharpness": [
                 110,
                 20,
@@ -37644,6 +38049,11 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "huntinghorn_songs": {
+                "a_a": "stamina_use_reduced",
+                "x_x": "health_recovery_s",
+                "xa_xa": "earplugs_s"
+            },
             "max_sharpness": [
                 110,
                 20,
@@ -37683,6 +38093,11 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "huntinghorn_songs": {
+                "a_a": "stamina_use_reduced",
+                "x_x": "health_recovery_s",
+                "xa_xa": "earplugs_s"
+            },
             "max_sharpness": [
                 130,
                 20,
@@ -37726,6 +38141,11 @@
             "defense": 0,
             "elestat": {
                 "dragon": 15
+            },
+            "huntinghorn_songs": {
+                "a_a": "stamina_use_reduced",
+                "x_x": "health_recovery_s",
+                "xa_xa": "earplugs_l"
             },
             "max_sharpness": [
                 150,
@@ -37771,6 +38191,11 @@
             "elestat": {
                 "dragon": 17
             },
+            "huntinghorn_songs": {
+                "a_a": "stamina_use_reduced",
+                "x_x": "health_recovery_s",
+                "xa_xa": "earplugs_l"
+            },
             "max_sharpness": [
                 140,
                 20,
@@ -37815,6 +38240,11 @@
             "elestat": {
                 "dragon": 20
             },
+            "huntinghorn_songs": {
+                "a_a": "stamina_use_reduced",
+                "x_x": "health_recovery_s",
+                "xa_xa": "earplugs_l"
+            },
             "max_sharpness": [
                 160,
                 20,
@@ -37855,6 +38285,11 @@
             "defense": 0,
             "elestat": {
                 "paralysis": 15
+            },
+            "huntinghorn_songs": {
+                "a_a": "tremors_negated",
+                "x_x": "defense_up",
+                "xa_xa": "health_recovery_s"
             },
             "max_sharpness": [
                 150,
@@ -37901,6 +38336,11 @@
             "elestat": {
                 "paralysis": 18
             },
+            "huntinghorn_songs": {
+                "a_a": "tremors_negated",
+                "x_x": "defense_up",
+                "xa_xa": "health_recovery_s"
+            },
             "max_sharpness": [
                 140,
                 20,
@@ -37946,6 +38386,11 @@
             "elestat": {
                 "paralysis": 21
             },
+            "huntinghorn_songs": {
+                "a_a": "tremors_negated",
+                "x_x": "defense_up",
+                "xa_xa": "health_recovery_s"
+            },
             "max_sharpness": [
                 150,
                 40,
@@ -37987,6 +38432,11 @@
             "elestat": {
                 "ice": 8
             },
+            "huntinghorn_songs": {
+                "a_a": "stamina_use_reduced",
+                "x_x": "health_regeneration",
+                "xa_xa": "sonic_wave"
+            },
             "max_sharpness": [
                 140,
                 10,
@@ -38027,6 +38477,11 @@
             "defense": 0,
             "elestat": {
                 "ice": 10
+            },
+            "huntinghorn_songs": {
+                "a_a": "stamina_use_reduced",
+                "x_x": "health_regeneration",
+                "xa_xa": "sonic_wave"
             },
             "max_sharpness": [
                 130,
@@ -38073,6 +38528,11 @@
             "elestat": {
                 "ice": 13
             },
+            "huntinghorn_songs": {
+                "a_a": "stamina_use_reduced",
+                "x_x": "health_regeneration",
+                "xa_xa": "sonic_wave"
+            },
             "max_sharpness": [
                 140,
                 20,
@@ -38114,6 +38574,11 @@
             "elestat": {
                 "blast": 13
             },
+            "huntinghorn_songs": {
+                "a_a": "attack_and_defense_up",
+                "x_x": "sonic_barrier",
+                "xa_xa": "health_regeneration"
+            },
             "max_sharpness": [
                 160,
                 20,
@@ -38154,6 +38619,11 @@
             "defense": 0,
             "elestat": {
                 "blast": 16
+            },
+            "huntinghorn_songs": {
+                "a_a": "attack_and_defense_up",
+                "x_x": "sonic_barrier",
+                "xa_xa": "health_regeneration"
             },
             "max_sharpness": [
                 170,
@@ -38199,6 +38669,11 @@
             "elestat": {
                 "blast": 23
             },
+            "huntinghorn_songs": {
+                "a_a": "attack_and_defense_up",
+                "x_x": "sonic_barrier",
+                "xa_xa": "health_regeneration"
+            },
             "max_sharpness": [
                 190,
                 10,
@@ -38239,6 +38714,11 @@
             "defense": 0,
             "elestat": {
                 "thunder": 15
+            },
+            "huntinghorn_songs": {
+                "a_a": "environment_damage_negated",
+                "x_x": "attack_and_defense_up",
+                "xa_xa": "tremors_negated"
             },
             "max_sharpness": [
                 30,
@@ -38283,6 +38763,11 @@
             "elestat": {
                 "thunder": 17
             },
+            "huntinghorn_songs": {
+                "a_a": "environment_damage_negated",
+                "x_x": "attack_and_defense_up",
+                "xa_xa": "tremors_negated"
+            },
             "max_sharpness": [
                 30,
                 50,
@@ -38326,6 +38811,11 @@
             "elestat": {
                 "thunder": 20
             },
+            "huntinghorn_songs": {
+                "a_a": "environment_damage_negated",
+                "x_x": "attack_and_defense_up",
+                "xa_xa": "tremors_negated"
+            },
             "max_sharpness": [
                 30,
                 50,
@@ -38366,6 +38856,11 @@
             "defense": 0,
             "elestat": {
                 "dragon": 9
+            },
+            "huntinghorn_songs": {
+                "a_a": "divine_protection",
+                "x_x": "stamina_use_reduced",
+                "xa_xa": "sonic_barrier"
             },
             "max_sharpness": [
                 20,
@@ -38408,6 +38903,11 @@
             "elestat": {
                 "dragon": 11
             },
+            "huntinghorn_songs": {
+                "a_a": "divine_protection",
+                "x_x": "stamina_use_reduced",
+                "xa_xa": "sonic_barrier"
+            },
             "max_sharpness": [
                 20,
                 20,
@@ -38448,6 +38948,11 @@
             "defense": 0,
             "elestat": {
                 "dragon": 14
+            },
+            "huntinghorn_songs": {
+                "a_a": "divine_protection",
+                "x_x": "stamina_use_reduced",
+                "xa_xa": "sonic_barrier"
             },
             "max_sharpness": [
                 20,
@@ -38490,6 +38995,11 @@
             "elestat": {
                 "blast": 15
             },
+            "huntinghorn_songs": {
+                "a_a": "attack_up",
+                "x_x": "earplugs_s",
+                "xa_xa": "health_recovery_l"
+            },
             "max_sharpness": [
                 60,
                 90,
@@ -38530,6 +39040,11 @@
             "defense": 0,
             "elestat": {
                 "blast": 16
+            },
+            "huntinghorn_songs": {
+                "a_a": "attack_up",
+                "x_x": "earplugs_s",
+                "xa_xa": "health_recovery_l"
             },
             "max_sharpness": [
                 60,
@@ -38572,6 +39087,11 @@
             "elestat": {
                 "blast": 18
             },
+            "huntinghorn_songs": {
+                "a_a": "attack_up",
+                "x_x": "earplugs_s",
+                "xa_xa": "health_recovery_l"
+            },
             "max_sharpness": [
                 60,
                 110,
@@ -38613,6 +39133,11 @@
             "elestat": {
                 "thunder": 34
             },
+            "huntinghorn_songs": {
+                "a_a": "health_recovery_l",
+                "x_x": "stun_negated",
+                "xa_xa": "health_regeneration"
+            },
             "max_sharpness": [
                 20,
                 20,
@@ -38653,6 +39178,11 @@
             "defense": 0,
             "elestat": {
                 "thunder": 41
+            },
+            "huntinghorn_songs": {
+                "a_a": "health_recovery_l",
+                "x_x": "stun_negated",
+                "xa_xa": "health_regeneration"
             },
             "max_sharpness": [
                 10,
@@ -38697,6 +39227,11 @@
             "elestat": {
                 "ice": 32
             },
+            "huntinghorn_songs": {
+                "a_a": "stamina_use_reduced",
+                "x_x": "environment_damage_negated",
+                "xa_xa": "sharpness_loss_reduced"
+            },
             "max_sharpness": [
                 50,
                 60,
@@ -38740,6 +39275,11 @@
             "elestat": {
                 "ice": 35
             },
+            "huntinghorn_songs": {
+                "a_a": "stamina_use_reduced",
+                "x_x": "environment_damage_negated",
+                "xa_xa": "sharpness_loss_reduced"
+            },
             "max_sharpness": [
                 50,
                 70,
@@ -38781,6 +39321,11 @@
             "elestat": {
                 "blast": 40
             },
+            "huntinghorn_songs": {
+                "a_a": "health_recovery_s_plus_antidote",
+                "x_x": "health_regeneration",
+                "xa_xa": "attack_and_defense_up"
+            },
             "max_sharpness": [
                 60,
                 70,
@@ -38821,6 +39366,11 @@
             "defense": 0,
             "elestat": {
                 "blast": 42
+            },
+            "huntinghorn_songs": {
+                "a_a": "health_recovery_s_plus_antidote",
+                "x_x": "health_regeneration",
+                "xa_xa": "attack_and_defense_up"
             },
             "max_sharpness": [
                 60,
@@ -38867,6 +39417,11 @@
             "elestat": {
                 "poison": 37
             },
+            "huntinghorn_songs": {
+                "a_a": "wind_pressure_negated",
+                "x_x": "earplugs_l",
+                "xa_xa": "elemental_attack_boost"
+            },
             "max_sharpness": [
                 170,
                 30,
@@ -38912,6 +39467,11 @@
             "elestat": {
                 "poison": 40
             },
+            "huntinghorn_songs": {
+                "a_a": "wind_pressure_negated",
+                "x_x": "earplugs_l",
+                "xa_xa": "elemental_attack_boost"
+            },
             "max_sharpness": [
                 170,
                 30,
@@ -38954,6 +39514,11 @@
             "defense": 0,
             "elestat": {
                 "dragon": 32
+            },
+            "huntinghorn_songs": {
+                "a_a": "attack_and_affinity_up",
+                "x_x": "elemental_attack_boost",
+                "xa_xa": "sonic_wave"
             },
             "max_sharpness": [
                 180,
@@ -38998,6 +39563,11 @@
             "elestat": {
                 "dragon": 37
             },
+            "huntinghorn_songs": {
+                "a_a": "attack_and_affinity_up",
+                "x_x": "elemental_attack_boost",
+                "xa_xa": "sonic_wave"
+            },
             "max_sharpness": [
                 60,
                 0,
@@ -39038,6 +39608,11 @@
             "defense": 0,
             "elestat": {
                 "poison": 30
+            },
+            "huntinghorn_songs": {
+                "a_a": "health_recovery_s",
+                "x_x": "stamina_use_reduced",
+                "xa_xa": "defense_up"
             },
             "max_sharpness": [
                 40,
@@ -39080,6 +39655,11 @@
             "elestat": {
                 "poison": 32
             },
+            "huntinghorn_songs": {
+                "a_a": "health_recovery_s",
+                "x_x": "stamina_use_reduced",
+                "xa_xa": "defense_up"
+            },
             "max_sharpness": [
                 40,
                 60,
@@ -39120,6 +39700,11 @@
             "defense": 0,
             "elestat": {
                 "poison": 35
+            },
+            "huntinghorn_songs": {
+                "a_a": "health_recovery_s",
+                "x_x": "stamina_use_reduced",
+                "xa_xa": "defense_up"
             },
             "max_sharpness": [
                 30,
@@ -39162,6 +39747,11 @@
             "elestat": {
                 "ice": 12
             },
+            "huntinghorn_songs": {
+                "a_a": "sonic_barrier",
+                "x_x": "health_recovery_s",
+                "xa_xa": "health_recovery_s_plus_antidote"
+            },
             "max_sharpness": [
                 50,
                 30,
@@ -39202,6 +39792,11 @@
             "defense": 0,
             "elestat": {
                 "ice": 14
+            },
+            "huntinghorn_songs": {
+                "a_a": "sonic_barrier",
+                "x_x": "health_recovery_s",
+                "xa_xa": "health_recovery_s_plus_antidote"
             },
             "max_sharpness": [
                 50,
@@ -39246,6 +39841,11 @@
             "elestat": {
                 "ice": 16
             },
+            "huntinghorn_songs": {
+                "a_a": "sonic_barrier",
+                "x_x": "health_recovery_s",
+                "xa_xa": "health_recovery_s_plus_antidote"
+            },
             "max_sharpness": [
                 50,
                 60,
@@ -39289,6 +39889,11 @@
             "elestat": {
                 "ice": 20
             },
+            "huntinghorn_songs": {
+                "a_a": "sonic_barrier",
+                "x_x": "health_recovery_s",
+                "xa_xa": "health_recovery_s_plus_antidote"
+            },
             "max_sharpness": [
                 50,
                 60,
@@ -39330,6 +39935,11 @@
             "elestat": {
                 "paralysis": 10
             },
+            "huntinghorn_songs": {
+                "a_a": "defense_up",
+                "x_x": "health_recovery_s_plus_antidote",
+                "xa_xa": "affinity_up"
+            },
             "max_sharpness": [
                 50,
                 40,
@@ -39370,6 +39980,11 @@
             "defense": 10,
             "elestat": {
                 "paralysis": 12
+            },
+            "huntinghorn_songs": {
+                "a_a": "defense_up",
+                "x_x": "health_recovery_s_plus_antidote",
+                "xa_xa": "affinity_up"
             },
             "max_sharpness": [
                 40,
@@ -39414,6 +40029,11 @@
             "elestat": {
                 "paralysis": 15
             },
+            "huntinghorn_songs": {
+                "a_a": "defense_up",
+                "x_x": "health_recovery_s_plus_antidote",
+                "xa_xa": "affinity_up"
+            },
             "max_sharpness": [
                 40,
                 50,
@@ -39454,6 +40074,11 @@
             "defense": 0,
             "elestat": {
                 "blast": 10
+            },
+            "huntinghorn_songs": {
+                "a_a": "health_regeneration",
+                "x_x": "wind_pressure_negated",
+                "xa_xa": "sonic_barrier"
             },
             "max_sharpness": [
                 90,
@@ -39498,6 +40123,11 @@
             "elestat": {
                 "blast": 12
             },
+            "huntinghorn_songs": {
+                "a_a": "health_regeneration",
+                "x_x": "wind_pressure_negated",
+                "xa_xa": "sonic_barrier"
+            },
             "max_sharpness": [
                 90,
                 60,
@@ -39541,6 +40171,11 @@
             "elestat": {
                 "blast": 15
             },
+            "huntinghorn_songs": {
+                "a_a": "health_regeneration",
+                "x_x": "wind_pressure_negated",
+                "xa_xa": "sonic_barrier"
+            },
             "max_sharpness": [
                 90,
                 60,
@@ -39580,6 +40215,11 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "huntinghorn_songs": {
+                "a_a": "health_recovery_s",
+                "x_x": "earplugs_s",
+                "xa_xa": "sonic_wave"
+            },
             "max_sharpness": [
                 70,
                 70,
@@ -39626,6 +40266,11 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "huntinghorn_songs": {
+                "a_a": "health_recovery_s",
+                "x_x": "earplugs_s",
+                "xa_xa": "sonic_wave"
+            },
             "max_sharpness": [
                 60,
                 70,
@@ -39680,6 +40325,11 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "huntinghorn_songs": {
+                "a_a": "health_recovery_s",
+                "x_x": "earplugs_s",
+                "xa_xa": "sonic_wave"
+            },
             "max_sharpness": [
                 50,
                 70,
@@ -39739,6 +40389,11 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "huntinghorn_songs": {
+                "a_a": "health_recovery_s",
+                "x_x": "earplugs_s",
+                "xa_xa": "sonic_wave"
+            },
             "max_sharpness": [
                 50,
                 70,
@@ -39799,6 +40454,11 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "huntinghorn_songs": {
+                "a_a": "health_recovery_s",
+                "x_x": "earplugs_s",
+                "xa_xa": "sonic_wave"
+            },
             "max_sharpness": [
                 50,
                 70,
@@ -39861,6 +40521,11 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "huntinghorn_songs": {
+                "a_a": "health_recovery_s",
+                "x_x": "earplugs_s",
+                "xa_xa": "sonic_wave"
+            },
             "max_sharpness": [
                 50,
                 70,

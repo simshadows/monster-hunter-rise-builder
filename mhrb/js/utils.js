@@ -11,3 +11,10 @@ export function sum(a, b) {
     return a + b;
 }
 
+// Left minus Right
+export function setDifference(setA, setB) {
+    console.assert(setA instanceof Set);
+    console.assert(setB instanceof Set);
+    return new Set([...setA].filter(x => !setB.has(x)));
+}
+

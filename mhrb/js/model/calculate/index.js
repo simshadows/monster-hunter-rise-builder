@@ -90,6 +90,8 @@ function calculateBuildPerformance(db, build, calcState) {
 
     assert(b.rawPostTruncMul !== undefined);
 
+    assert(b.huntingHornSongs !== undefined);
+
     const s = getSkillContributions(db, build, calcState);
     assert(s.rawAdd                  !== undefined);
     assert(s.rawMul                  !== undefined);
@@ -239,6 +241,18 @@ function calculateBuildPerformance(db, build, calcState) {
         effectiveEleStat.set(eleStatID, effectiveEleStatValue);
     }
 
+    //
+    // STAGE 7: Special Mechanics
+    //
+
+    let huntingHornSongs = b.huntingHornSongs;
+    // We don't really do anything, but we may as well check for null
+    if (weaponRO.category === "huntinghorn") {
+        assert(huntingHornSongs !== null);
+    } else {
+        assert(huntingHornSongs === null);
+    }
+
     const ret = {
 
         // This part goes to the equips section
@@ -263,7 +277,9 @@ function calculateBuildPerformance(db, build, calcState) {
         realSharpnessBar:           realSharpnessBar,
         hitsMultiplier:             hitsMultiplier,
         rawSharpnessModifier:       rawSharpnessModifier,
-        elementalSharpnessModifier: elementalSharpnessModifier
+        elementalSharpnessModifier: elementalSharpnessModifier,
+
+        huntingHornSongs: huntingHornSongs,
     };
     return ret;
 }

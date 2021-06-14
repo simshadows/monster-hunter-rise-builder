@@ -16,7 +16,9 @@
             ],
 
             "baseSharpness": [50,90,60,0,0,0],
-            "maxSharpness": [50,90,100,10,0,0]
+            "maxSharpness": [50,90,100,10,0,0],
+
+            "huntinghornSongs": {"a_a":"attack_up", "x_x":"defense_up", "xa_xa":"health_recovery_s"}
         },
         "1b": {
             "rarity": 1,
@@ -34,7 +36,9 @@
             ],
 
             "baseSharpness": [60,70,70,0,0,0],
-            "maxSharpness": [60,70,110,10,0,0]
+            "maxSharpness": [60,70,110,10,0,0],
+
+            "huntinghornSongs": {"a_a":"attack_up", "x_x":"defense_up", "xa_xa":"health_recovery_s"}
         },
         "1c": {
             "rarity": 2,
@@ -52,7 +56,9 @@
             ],
 
             "baseSharpness": [70,70,90,20,0,0],
-            "maxSharpness": [70,70,90,70,0,0]
+            "maxSharpness": [70,70,90,70,0,0],
+
+            "huntinghornSongs": {"a_a":"attack_up", "x_x":"defense_up", "xa_xa":"health_recovery_s"}
         },
         "1d": {
             "rarity": 3,
@@ -70,7 +76,9 @@
             ],
 
             "baseSharpness": [60,80,80,20,10,0],
-            "maxSharpness": [60,80,80,20,60,0]
+            "maxSharpness": [60,80,80,20,60,0],
+
+            "huntinghornSongs": {"a_a":"attack_up", "x_x":"defense_up", "xa_xa":"health_recovery_s"}
         },
         "1e": {
             "rarity": 4,
@@ -88,7 +96,9 @@
             ],
 
             "baseSharpness": [60,80,90,40,30,0],
-            "maxSharpness": [60,80,90,40,70,10]
+            "maxSharpness": [60,80,90,40,70,10],
+
+            "huntinghornSongs": {"a_a":"attack_up", "x_x":"defense_up", "xa_xa":"health_recovery_s_plus_antidote"}
         },
         "1f": {
             "rarity": 5,
@@ -106,7 +116,9 @@
             ],
 
             "baseSharpness": [40,90,60,60,50,0],
-            "maxSharpness": [40,90,60,60,80,20]
+            "maxSharpness": [40,90,60,60,80,20],
+
+            "huntinghornSongs": {"a_a":"attack_up", "x_x":"defense_up", "xa_xa":"health_recovery_s_plus_antidote"}
         }
     },
     "Mizutsune Tree": {
@@ -126,7 +138,9 @@
             ],
 
             "baseSharpness": [60,40,90,60,0,0],
-            "maxSharpness": [60,40,90,90,20,0]
+            "maxSharpness": [60,40,90,90,20,0],
+
+            "huntinghornSongs": {"a_a":"blight_negated", "x_x":"health_recovery_s", "xa_xa":"stamina_use_reduced"}
         },
         "2b": {
             "rarity": 5,
@@ -144,7 +158,9 @@
             ],
 
             "baseSharpness": [60,80,100,80,30,0],
-            "maxSharpness": [60,80,100,80,60,20]
+            "maxSharpness": [60,80,100,80,60,20],
+
+            "huntinghornSongs": {"a_a":"blight_negated", "x_x":"health_recovery_s", "xa_xa":"stamina_use_reduced"}
         },
         "2c": {
             "rarity": 6,
@@ -162,7 +178,9 @@
             ],
 
             "baseSharpness": [60,40,120,90,40,0],
-            "maxSharpness": [60,40,120,90,40,50]
+            "maxSharpness": [60,40,120,90,40,50],
+
+            "huntinghornSongs": {"a_a":"blight_negated", "x_x":"health_recovery_s", "xa_xa":"stamina_use_reduced"}
         }
     },
     "Rakna-Kadaki Tree": {
@@ -182,7 +200,9 @@
             ],
 
             "baseSharpness": [190,40,40,30,50,0],
-            "maxSharpness": [190,40,40,30,50,50]
+            "maxSharpness": [190,40,40,30,50,50],
+
+            "huntinghornSongs": {"a_a":"elemental_attack_boost", "x_x":"blight_negated", "xa_xa":"knockbacks_negated"}
         },
         "3b": {
             "rarity": 6,
@@ -200,7 +220,9 @@
             ],
 
             "baseSharpness": [190,40,40,30,40,10],
-            "maxSharpness": [190,40,40,30,40,60]
+            "maxSharpness": [190,40,40,30,40,60],
+
+            "huntinghornSongs": {"a_a":"elemental_attack_boost", "x_x":"blight_negated", "xa_xa":"knockbacks_negated"}
         },
         "3c": {
             "rarity": 7,
@@ -218,7 +240,9 @@
             ],
 
             "baseSharpness": [190,30,40,30,40,20],
-            "maxSharpness": [190,30,40,30,40,70]
+            "maxSharpness": [190,30,40,30,40,70],
+
+            "huntinghornSongs": {"a_a":"elemental_attack_boost", "x_x":"blight_negated", "xa_xa":"knockbacks_negated"}
         }
     },
     "Basarios Tree": {
@@ -238,7 +262,9 @@
             ],
 
             "baseSharpness": [20,20,180,30,0,0],
-            "maxSharpness": [20,20,180,80,0,0]
+            "maxSharpness": [20,20,180,80,0,0],
+
+            "huntinghornSongs": {"a_a":"sonic_barrier", "x_x":"tremors_negated", "xa_xa":"stamina_use_reduced"}
         },
         "4b": {
             "rarity": 3,
@@ -256,7 +282,9 @@
             ],
 
             "baseSharpness": [20,10,180,40,0,0],
-            "maxSharpness": [20,10,180,80,10,0]
+            "maxSharpness": [20,10,180,80,10,0],
+
+            "huntinghornSongs": {"a_a":"sonic_barrier", "x_x":"tremors_negated", "xa_xa":"stamina_use_reduced"}
         },
         "4c": {
             "rarity": 5,
@@ -274,7 +302,9 @@
             ],
 
             "baseSharpness": [20,30,180,70,0,0],
-            "maxSharpness": [20,30,180,80,40,0]
+            "maxSharpness": [20,30,180,80,40,0],
+
+            "huntinghornSongs": {"a_a":"sonic_barrier", "x_x":"tremors_negated", "xa_xa":"stamina_use_reduced"}
         }
     },
     "Zinogre Tree": {
@@ -294,7 +324,9 @@
             ],
 
             "baseSharpness": [60,40,50,100,0,0],
-            "maxSharpness": [60,40,50,150,0,0]
+            "maxSharpness": [60,40,50,150,0,0],
+
+            "huntinghornSongs": {"a_a":"attack_up", "x_x":"stun_negated", "xa_xa":"knockbacks_negated"}
         },
         "5b": {
             "rarity": 5,
@@ -312,7 +344,9 @@
             ],
 
             "baseSharpness": [60,30,100,90,20,0],
-            "maxSharpness": [60,30,100,90,70,0]
+            "maxSharpness": [60,30,100,90,70,0],
+
+            "huntinghornSongs": {"a_a":"attack_up", "x_x":"stun_negated", "xa_xa":"knockbacks_negated"}
         },
         "5c": {
             "rarity": 6,
@@ -330,7 +364,9 @@
             ],
 
             "baseSharpness": [60,40,120,100,30,0],
-            "maxSharpness": [60,40,120,100,50,30]
+            "maxSharpness": [60,40,120,100,50,30],
+
+            "huntinghornSongs": {"a_a":"attack_up", "x_x":"stun_negated", "xa_xa":"knockbacks_negated"}
         }
     },
     "Arzuros Tree": {
@@ -350,7 +386,9 @@
             ],
 
             "baseSharpness": [140,20,40,0,0,0],
-            "maxSharpness": [140,20,70,20,0,0]
+            "maxSharpness": [140,20,70,20,0,0],
+
+            "huntinghornSongs": {"a_a":"defense_up", "x_x":"attack_up", "xa_xa":"sonic_barrier"}
         },
         "6b": {
             "rarity": 2,
@@ -368,7 +406,9 @@
             ],
 
             "baseSharpness": [140,30,50,30,0,0],
-            "maxSharpness": [140,30,50,80,0,0]
+            "maxSharpness": [140,30,50,80,0,0],
+
+            "huntinghornSongs": {"a_a":"defense_up", "x_x":"attack_up", "xa_xa":"sonic_barrier"}
         },
         "6c": {
             "rarity": 4,
@@ -386,7 +426,9 @@
             ],
 
             "baseSharpness": [20,50,150,80,0,0],
-            "maxSharpness": [20,50,150,100,30,0]
+            "maxSharpness": [20,50,150,100,30,0],
+
+            "huntinghornSongs": {"a_a":"defense_up", "x_x":"attack_up", "xa_xa":"sonic_barrier"}
         }
     },
     "Tigrex Tree": {
@@ -406,7 +448,9 @@
             ],
 
             "baseSharpness": [70,30,100,90,10,0],
-            "maxSharpness": [70,30,100,90,60,0]
+            "maxSharpness": [70,30,100,90,60,0],
+
+            "huntinghornSongs": {"a_a":"attack_up", "x_x":"earplugs_s", "xa_xa":"sonic_wave"}
         },
         "7b": {
             "rarity": 6,
@@ -424,7 +468,9 @@
             ],
 
             "baseSharpness": [50,40,130,100,30,0],
-            "maxSharpness": [50,40,130,100,50,30]
+            "maxSharpness": [50,40,130,100,50,30],
+
+            "huntinghornSongs": {"a_a":"attack_up", "x_x":"earplugs_s", "xa_xa":"sonic_wave"}
         },
         "7c": {
             "rarity": 6,
@@ -442,7 +488,9 @@
             ],
 
             "baseSharpness": [50,50,120,120,30,30],
-            "maxSharpness": [50,50,120,120,30,30]
+            "maxSharpness": [50,50,120,120,30,30],
+
+            "huntinghornSongs": {"a_a":"attack_up", "x_x":"earplugs_s", "xa_xa":"sonic_wave"}
         }
     },
     "Barioth Tree": {
@@ -462,7 +510,9 @@
             ],
 
             "baseSharpness": [50,50,80,70,0,0],
-            "maxSharpness": [50,50,80,100,20,0]
+            "maxSharpness": [50,50,80,100,20,0],
+
+            "huntinghornSongs": {"a_a":"health_recovery_s", "x_x":"stamina_recovery_up", "xa_xa":"affinity_up"}
         },
         "8b": {
             "rarity": 5,
@@ -480,7 +530,9 @@
             ],
 
             "baseSharpness": [50,30,130,100,40,0],
-            "maxSharpness": [50,30,130,100,80,10]
+            "maxSharpness": [50,30,130,100,80,10],
+
+            "huntinghornSongs": {"a_a":"health_recovery_s", "x_x":"stamina_recovery_up", "xa_xa":"affinity_up"}
         },
         "8c": {
             "rarity": 6,
@@ -498,7 +550,9 @@
             ],
 
             "baseSharpness": [50,70,80,100,50,0],
-            "maxSharpness": [50,70,80,100,80,20]
+            "maxSharpness": [50,70,80,100,80,20],
+
+            "huntinghornSongs": {"a_a":"health_recovery_s", "x_x":"stamina_recovery_up", "xa_xa":"affinity_up"}
         }
     },
     "Somnacanth Tree": {
@@ -518,7 +572,9 @@
             ],
 
             "baseSharpness": [50,50,120,30,0,0],
-            "maxSharpness": [50,50,120,80,0,0]
+            "maxSharpness": [50,50,120,80,0,0],
+
+            "huntinghornSongs": {"a_a":"earplugs_s", "x_x":"attack_up", "xa_xa":"defense_up"}
         },
         "9b": {
             "rarity": 3,
@@ -536,7 +592,9 @@
             ],
 
             "baseSharpness": [40,60,110,40,0,0],
-            "maxSharpness": [40,60,110,90,0,0]
+            "maxSharpness": [40,60,110,90,0,0],
+
+            "huntinghornSongs": {"a_a":"earplugs_s", "x_x":"attack_up", "xa_xa":"defense_up"}
         },
         "9c": {
             "rarity": 5,
@@ -554,7 +612,9 @@
             ],
 
             "baseSharpness": [50,90,120,90,0,0],
-            "maxSharpness": [50,90,120,110,30,0]
+            "maxSharpness": [50,90,120,110,30,0],
+
+            "huntinghornSongs": {"a_a":"earplugs_s", "x_x":"attack_up", "xa_xa":"defense_up"}
         }
     },
     "Ore Tree": {
@@ -574,7 +634,9 @@
             ],
 
             "baseSharpness": [80,70,50,0,0,0],
-            "maxSharpness": [80,70,90,10,0,0]
+            "maxSharpness": [80,70,90,10,0,0],
+
+            "huntinghornSongs": {"a_a":"stamina_recovery_up", "x_x":"sonic_wave", "xa_xa":"defense_up"}
         },
         "10b": {
             "rarity": 1,
@@ -592,7 +654,9 @@
             ],
 
             "baseSharpness": [70,60,70,0,0,0],
-            "maxSharpness": [70,60,110,10,0,0]
+            "maxSharpness": [70,60,110,10,0,0],
+
+            "huntinghornSongs": {"a_a":"stamina_recovery_up", "x_x":"sonic_wave", "xa_xa":"defense_up"}
         },
         "10c": {
             "rarity": 2,
@@ -610,7 +674,9 @@
             ],
 
             "baseSharpness": [60,60,60,20,0,0],
-            "maxSharpness": [60,60,60,70,0,0]
+            "maxSharpness": [60,60,60,70,0,0],
+
+            "huntinghornSongs": {"a_a":"stamina_recovery_up", "x_x":"sonic_wave", "xa_xa":"defense_up"}
         },
         "10d": {
             "rarity": 3,
@@ -628,7 +694,9 @@
             ],
 
             "baseSharpness": [70,60,70,50,0,0],
-            "maxSharpness": [70,60,70,100,0,0]
+            "maxSharpness": [70,60,70,100,0,0],
+
+            "huntinghornSongs": {"a_a":"stamina_recovery_up", "x_x":"sonic_wave", "xa_xa":"defense_up"}
         },
         "10e": {
             "rarity": 4,
@@ -646,7 +714,9 @@
             ],
 
             "baseSharpness": [100,90,90,50,20,0],
-            "maxSharpness": [100,90,90,50,50,20]
+            "maxSharpness": [100,90,90,50,50,20],
+
+            "huntinghornSongs": {"a_a":"stamina_recovery_up", "x_x":"sonic_wave", "xa_xa":"attack_up"}
         },
         "10f": {
             "rarity": 5,
@@ -664,7 +734,9 @@
             ],
 
             "baseSharpness": [90,90,90,50,30,0],
-            "maxSharpness": [90,90,90,50,50,30]
+            "maxSharpness": [90,90,90,50,50,30],
+
+            "huntinghornSongs": {"a_a":"stamina_recovery_up", "x_x":"sonic_wave", "xa_xa":"attack_up"}
         }
     },
     "Nargacuga Tree": {
@@ -684,7 +756,9 @@
             ],
 
             "baseSharpness": [100,30,70,100,50,0],
-            "maxSharpness": [100,30,70,100,80,20]
+            "maxSharpness": [100,30,70,100,80,20],
+
+            "huntinghornSongs": {"a_a":"attack_up", "x_x":"stamina_recovery_up", "xa_xa":"affinity_up"}
         },
         "11b": {
             "rarity": 6,
@@ -702,7 +776,9 @@
             ],
 
             "baseSharpness": [70,40,120,90,60,20],
-            "maxSharpness": [70,40,120,90,60,20]
+            "maxSharpness": [70,40,120,90,60,20],
+
+            "huntinghornSongs": {"a_a":"attack_up", "x_x":"stamina_recovery_up", "xa_xa":"affinity_up"}
         },
         "11c": {
             "rarity": 6,
@@ -720,7 +796,9 @@
             ],
 
             "baseSharpness": [70,40,100,90,70,30],
-            "maxSharpness": [70,40,100,90,70,30]
+            "maxSharpness": [70,40,100,90,70,30],
+
+            "huntinghornSongs": {"a_a":"attack_up", "x_x":"stamina_recovery_up", "xa_xa":"affinity_up"}
         }
     },
     "Pukei-Pukei Tree": {
@@ -740,7 +818,9 @@
             ],
 
             "baseSharpness": [60,70,20,50,0,0],
-            "maxSharpness": [60,70,20,100,0,0]
+            "maxSharpness": [60,70,20,100,0,0],
+
+            "huntinghornSongs": {"a_a":"stamina_recovery_up", "x_x":"elemental_attack_boost", "xa_xa":"health_regeneration"}
         },
         "12b": {
             "rarity": 5,
@@ -758,7 +838,9 @@
             ],
 
             "baseSharpness": [60,60,70,90,20,0],
-            "maxSharpness": [60,60,70,90,70,0]
+            "maxSharpness": [60,60,70,90,70,0],
+
+            "huntinghornSongs": {"a_a":"stamina_recovery_up", "x_x":"elemental_attack_boost", "xa_xa":"health_regeneration"}
         },
         "12c": {
             "rarity": 6,
@@ -776,7 +858,9 @@
             ],
 
             "baseSharpness": [60,60,100,100,30,0],
-            "maxSharpness": [60,60,100,100,70,10]
+            "maxSharpness": [60,60,100,100,70,10],
+
+            "huntinghornSongs": {"a_a":"stamina_recovery_up", "x_x":"elemental_attack_boost", "xa_xa":"health_regeneration"}
         }
     },
     "Anjanath Tree": {
@@ -796,7 +880,9 @@
             ],
 
             "baseSharpness": [140,120,30,60,0,0],
-            "maxSharpness": [140,120,30,90,20,0]
+            "maxSharpness": [140,120,30,90,20,0],
+
+            "huntinghornSongs": {"a_a":"health_recovery_s", "x_x":"stamina_recovery_up", "xa_xa":"attack_up"}
         },
         "13b": {
             "rarity": 6,
@@ -814,7 +900,9 @@
             ],
 
             "baseSharpness": [130,120,20,80,0,0],
-            "maxSharpness": [130,120,20,100,30,0]
+            "maxSharpness": [130,120,20,100,30,0],
+
+            "huntinghornSongs": {"a_a":"health_recovery_s", "x_x":"stamina_recovery_up", "xa_xa":"attack_up"}
         },
         "13c": {
             "rarity": 6,
@@ -832,7 +920,9 @@
             ],
 
             "baseSharpness": [120,120,30,60,20,0],
-            "maxSharpness": [120,120,30,60,70,0]
+            "maxSharpness": [120,120,30,60,70,0],
+
+            "huntinghornSongs": {"a_a":"health_recovery_s", "x_x":"stamina_recovery_up", "xa_xa":"attack_up"}
         }
     },
     "Rathian Tree": {
@@ -852,7 +942,9 @@
             ],
 
             "baseSharpness": [50,50,100,50,0,0],
-            "maxSharpness": [50,50,100,100,0,0]
+            "maxSharpness": [50,50,100,100,0,0],
+
+            "huntinghornSongs": {"a_a":"stamina_use_reduced", "x_x":"defense_up", "xa_xa":"divine_protection"}
         },
         "14b": {
             "rarity": 3,
@@ -870,7 +962,9 @@
             ],
 
             "baseSharpness": [40,50,90,70,0,0],
-            "maxSharpness": [40,50,90,120,0,0]
+            "maxSharpness": [40,50,90,120,0,0],
+
+            "huntinghornSongs": {"a_a":"stamina_use_reduced", "x_x":"defense_up", "xa_xa":"divine_protection"}
         },
         "14c": {
             "rarity": 5,
@@ -888,7 +982,9 @@
             ],
 
             "baseSharpness": [40,60,90,90,20,0],
-            "maxSharpness": [40,60,90,90,50,20]
+            "maxSharpness": [40,60,90,90,50,20],
+
+            "huntinghornSongs": {"a_a":"stamina_use_reduced", "x_x":"defense_up", "xa_xa":"divine_protection"}
         }
     },
     "Barroth Tree": {
@@ -908,7 +1004,9 @@
             ],
 
             "baseSharpness": [60,60,130,0,0,0],
-            "maxSharpness": [60,60,140,40,0,0]
+            "maxSharpness": [60,60,140,40,0,0],
+
+            "huntinghornSongs": {"a_a":"sonic_wave", "x_x":"defense_up", "xa_xa":"stamina_use_reduced"}
         },
         "15b": {
             "rarity": 3,
@@ -926,7 +1024,9 @@
             ],
 
             "baseSharpness": [70,70,120,40,0,0],
-            "maxSharpness": [70,70,120,80,10,0]
+            "maxSharpness": [70,70,120,80,10,0],
+
+            "huntinghornSongs": {"a_a":"sonic_wave", "x_x":"defense_up", "xa_xa":"stamina_use_reduced"}
         },
         "15c": {
             "rarity": 5,
@@ -944,7 +1044,9 @@
             ],
 
             "baseSharpness": [60,70,130,90,0,0],
-            "maxSharpness": [60,70,130,110,10,20]
+            "maxSharpness": [60,70,130,110,10,20],
+
+            "huntinghornSongs": {"a_a":"sonic_wave", "x_x":"defense_up", "xa_xa":"stamina_use_reduced"}
         }
     },
     "Tetranadon Tree": {
@@ -964,7 +1066,9 @@
             ],
 
             "baseSharpness": [30,70,80,20,0,0],
-            "maxSharpness": [30,70,80,70,0,0]
+            "maxSharpness": [30,70,80,70,0,0],
+
+            "huntinghornSongs": {"a_a":"attack_up", "x_x":"health_recovery_s", "xa_xa":"tremors_negated"}
         },
         "16b": {
             "rarity": 4,
@@ -982,7 +1086,9 @@
             ],
 
             "baseSharpness": [40,90,110,60,0,0],
-            "maxSharpness": [40,90,110,100,10,0]
+            "maxSharpness": [40,90,110,100,10,0],
+
+            "huntinghornSongs": {"a_a":"attack_up", "x_x":"health_recovery_s", "xa_xa":"tremors_negated"}
         },
         "16c": {
             "rarity": 6,
@@ -1000,7 +1106,9 @@
             ],
 
             "baseSharpness": [40,90,110,110,0,0],
-            "maxSharpness": [40,90,110,130,30,0]
+            "maxSharpness": [40,90,110,130,30,0],
+
+            "huntinghornSongs": {"a_a":"attack_up", "x_x":"health_recovery_s", "xa_xa":"tremors_negated"}
         }
     },
     "Izuchi Tree": {
@@ -1020,7 +1128,9 @@
             ],
 
             "baseSharpness": [70,50,50,30,0,0],
-            "maxSharpness": [70,50,50,80,0,0]
+            "maxSharpness": [70,50,50,80,0,0],
+
+            "huntinghornSongs": {"a_a":"affinity_up", "x_x":"stamina_recovery_up", "xa_xa":"health_recovery_s"}
         },
         "17b": {
             "rarity": 2,
@@ -1038,7 +1148,9 @@
             ],
 
             "baseSharpness": [80,50,70,50,0,0],
-            "maxSharpness": [80,50,70,50,50,0]
+            "maxSharpness": [80,50,70,50,50,0],
+
+            "huntinghornSongs": {"a_a":"affinity_up", "x_x":"stamina_recovery_up", "xa_xa":"health_recovery_s"}
         },
         "17c": {
             "rarity": 4,
@@ -1056,7 +1168,9 @@
             ],
 
             "baseSharpness": [80,70,30,70,50,0],
-            "maxSharpness": [80,70,30,70,50,50]
+            "maxSharpness": [80,70,30,70,50,50],
+
+            "huntinghornSongs": {"a_a":"affinity_up", "x_x":"stamina_recovery_up", "xa_xa":"health_recovery_s"}
         }
     },
     "Royal Ludroth Tree": {
@@ -1076,7 +1190,9 @@
             ],
 
             "baseSharpness": [50,40,70,40,0,0],
-            "maxSharpness": [50,40,70,90,0,0]
+            "maxSharpness": [50,40,70,90,0,0],
+
+            "huntinghornSongs": {"a_a":"defense_up", "x_x":"blight_negated", "xa_xa":"sonic_wave"}
         },
         "18b": {
             "rarity": 2,
@@ -1094,7 +1210,9 @@
             ],
 
             "baseSharpness": [60,60,80,50,0,0],
-            "maxSharpness": [60,60,80,100,0,0]
+            "maxSharpness": [60,60,80,100,0,0],
+
+            "huntinghornSongs": {"a_a":"defense_up", "x_x":"blight_negated", "xa_xa":"sonic_wave"}
         },
         "18c": {
             "rarity": 5,
@@ -1112,7 +1230,9 @@
             ],
 
             "baseSharpness": [60,50,70,90,30,0],
-            "maxSharpness": [60,50,70,90,60,20]
+            "maxSharpness": [60,50,70,90,60,20],
+
+            "huntinghornSongs": {"a_a":"defense_up", "x_x":"blight_negated", "xa_xa":"sonic_wave"}
         }
     },
     "Bone Tree": {
@@ -1132,7 +1252,9 @@
             ],
 
             "baseSharpness": [70,90,40,0,0,0],
-            "maxSharpness": [70,90,90,0,0,0]
+            "maxSharpness": [70,90,90,0,0,0],
+
+            "huntinghornSongs": {"a_a":"defense_up", "x_x":"environment_damage_negated", "xa_xa":"attack_up"}
         },
         "19b": {
             "rarity": 1,
@@ -1150,7 +1272,9 @@
             ],
 
             "baseSharpness": [80,70,50,0,0,0],
-            "maxSharpness": [80,70,100,0,0,0]
+            "maxSharpness": [80,70,100,0,0,0],
+
+            "huntinghornSongs": {"a_a":"defense_up", "x_x":"environment_damage_negated", "xa_xa":"attack_up"}
         },
         "19c": {
             "rarity": 3,
@@ -1168,7 +1292,9 @@
             ],
 
             "baseSharpness": [100,70,70,10,0,0],
-            "maxSharpness": [100,70,70,60,0,0]
+            "maxSharpness": [100,70,70,60,0,0],
+
+            "huntinghornSongs": {"a_a":"defense_up", "x_x":"environment_damage_negated", "xa_xa":"attack_up"}
         },
         "19d": {
             "rarity": 4,
@@ -1186,7 +1312,9 @@
             ],
 
             "baseSharpness": [80,70,60,40,0,0],
-            "maxSharpness": [80,70,60,80,10,0]
+            "maxSharpness": [80,70,60,80,10,0],
+
+            "huntinghornSongs": {"a_a":"divine_protection", "x_x":"environment_damage_negated", "xa_xa":"attack_up"}
         },
         "19e": {
             "rarity": 5,
@@ -1204,7 +1332,9 @@
             ],
 
             "baseSharpness": [150,120,20,60,0,0],
-            "maxSharpness": [150,120,20,60,50,0]
+            "maxSharpness": [150,120,20,60,50,0],
+
+            "huntinghornSongs": {"a_a":"divine_protection", "x_x":"environment_damage_negated", "xa_xa":"attack_up"}
         }
     },
     "Diablos Tree": {
@@ -1224,7 +1354,9 @@
             ],
 
             "baseSharpness": [90,80,80,100,0,0],
-            "maxSharpness": [90,80,80,130,20,0]
+            "maxSharpness": [90,80,80,130,20,0],
+
+            "huntinghornSongs": {"a_a":"stamina_use_reduced", "x_x":"defense_up", "xa_xa":"earplugs_l"}
         },
         "20b": {
             "rarity": 6,
@@ -1242,7 +1374,9 @@
             ],
 
             "baseSharpness": [90,60,80,120,0,0],
-            "maxSharpness": [90,60,80,140,30,0]
+            "maxSharpness": [90,60,80,140,30,0],
+
+            "huntinghornSongs": {"a_a":"stamina_use_reduced", "x_x":"defense_up", "xa_xa":"earplugs_l"}
         },
         "20c": {
             "rarity": 7,
@@ -1260,7 +1394,9 @@
             ],
 
             "baseSharpness": [80,60,80,120,10,0],
-            "maxSharpness": [80,60,80,120,50,10]
+            "maxSharpness": [80,60,80,120,50,10],
+
+            "huntinghornSongs": {"a_a":"stamina_use_reduced", "x_x":"defense_up", "xa_xa":"earplugs_l"}
         }
     },
     "Bullfango Tree": {
@@ -1280,7 +1416,9 @@
             ],
 
             "baseSharpness": [70,90,110,20,10,0],
-            "maxSharpness": [70,90,110,20,50,10]
+            "maxSharpness": [70,90,110,20,50,10],
+
+            "huntinghornSongs": {"a_a":"knockbacks_negated", "x_x":"divine_protection", "xa_xa":"stun_negated"}
         },
         "21b": {
             "rarity": 5,
@@ -1298,7 +1436,9 @@
             ],
 
             "baseSharpness": [70,80,90,50,10,0],
-            "maxSharpness": [70,80,90,50,40,20]
+            "maxSharpness": [70,80,90,50,40,20],
+
+            "huntinghornSongs": {"a_a":"knockbacks_negated", "x_x":"divine_protection", "xa_xa":"stun_negated"}
         },
         "21c": {
             "rarity": 6,
@@ -1316,7 +1456,9 @@
             ],
 
             "baseSharpness": [80,90,110,60,10,0],
-            "maxSharpness": [80,90,110,60,20,40]
+            "maxSharpness": [80,90,110,60,20,40],
+
+            "huntinghornSongs": {"a_a":"knockbacks_negated", "x_x":"divine_protection", "xa_xa":"stun_negated"}
         }
     },
     "Rathalos Tree": {
@@ -1336,7 +1478,9 @@
             ],
 
             "baseSharpness": [50,80,70,50,0,0],
-            "maxSharpness": [50,80,70,80,20,0]
+            "maxSharpness": [50,80,70,80,20,0],
+
+            "huntinghornSongs": {"a_a":"sonic_wave", "x_x":"elemental_attack_boost", "xa_xa":"stamina_recovery_up"}
         },
         "22b": {
             "rarity": 5,
@@ -1354,7 +1498,9 @@
             ],
 
             "baseSharpness": [70,90,80,90,20,0],
-            "maxSharpness": [70,90,80,90,60,10]
+            "maxSharpness": [70,90,80,90,60,10],
+
+            "huntinghornSongs": {"a_a":"sonic_wave", "x_x":"elemental_attack_boost", "xa_xa":"stamina_recovery_up"}
         },
         "22c": {
             "rarity": 6,
@@ -1372,7 +1518,9 @@
             ],
 
             "baseSharpness": [70,70,80,90,40,0],
-            "maxSharpness": [70,70,80,90,70,20]
+            "maxSharpness": [70,70,80,90,70,20],
+
+            "huntinghornSongs": {"a_a":"sonic_wave", "x_x":"elemental_attack_boost", "xa_xa":"stamina_recovery_up"}
         }
     },
     "Kulu-Ya-Ku Tree": {
@@ -1392,7 +1540,9 @@
             ],
 
             "baseSharpness": [60,60,40,40,0,0],
-            "maxSharpness": [60,60,40,90,0,0]
+            "maxSharpness": [60,60,40,90,0,0],
+
+            "huntinghornSongs": {"a_a":"stamina_recovery_up", "x_x":"defense_up", "xa_xa":"stun_negated"}
         },
         "23b": {
             "rarity": 3,
@@ -1410,7 +1560,9 @@
             ],
 
             "baseSharpness": [70,70,40,70,0,0],
-            "maxSharpness": [70,70,40,120,0,0]
+            "maxSharpness": [70,70,40,120,0,0],
+
+            "huntinghornSongs": {"a_a":"stamina_recovery_up", "x_x":"defense_up", "xa_xa":"stun_negated"}
         },
         "23c": {
             "rarity": 4,
@@ -1428,7 +1580,9 @@
             ],
 
             "baseSharpness": [70,60,50,90,30,0],
-            "maxSharpness": [70,60,50,90,80,0]
+            "maxSharpness": [70,60,50,90,80,0],
+
+            "huntinghornSongs": {"a_a":"stamina_recovery_up", "x_x":"defense_up", "xa_xa":"stun_negated"}
         }
     },
     "Khezu Tree": {
@@ -1448,7 +1602,9 @@
             ],
 
             "baseSharpness": [40,30,110,20,0,0],
-            "maxSharpness": [40,30,110,70,0,0]
+            "maxSharpness": [40,30,110,70,0,0],
+
+            "huntinghornSongs": {"a_a":"health_regeneration", "x_x":"earplugs_s", "xa_xa":"elemental_attack_boost"}
         },
         "24b": {
             "rarity": 2,
@@ -1466,7 +1622,9 @@
             ],
 
             "baseSharpness": [50,40,120,40,0,0],
-            "maxSharpness": [50,40,120,90,0,0]
+            "maxSharpness": [50,40,120,90,0,0],
+
+            "huntinghornSongs": {"a_a":"health_regeneration", "x_x":"earplugs_s", "xa_xa":"elemental_attack_boost"}
         },
         "24c": {
             "rarity": 4,
@@ -1484,7 +1642,9 @@
             ],
 
             "baseSharpness": [60,40,110,70,20,0],
-            "maxSharpness": [60,40,110,70,50,20]
+            "maxSharpness": [60,40,110,70,50,20],
+
+            "huntinghornSongs": {"a_a":"health_regeneration", "x_x":"earplugs_s", "xa_xa":"elemental_attack_boost"}
         }
     },
     "Bnahabra Tree": {
@@ -1504,7 +1664,9 @@
             ],
 
             "baseSharpness": [110,20,70,0,0,0],
-            "maxSharpness": [110,20,70,50,0,0]
+            "maxSharpness": [110,20,70,50,0,0],
+
+            "huntinghornSongs": {"a_a":"stamina_use_reduced", "x_x":"health_recovery_s", "xa_xa":"earplugs_s"}
         },
         "25b": {
             "rarity": 1,
@@ -1522,7 +1684,9 @@
             ],
 
             "baseSharpness": [110,20,30,40,0,0],
-            "maxSharpness": [110,20,30,90,0,0]
+            "maxSharpness": [110,20,30,90,0,0],
+
+            "huntinghornSongs": {"a_a":"stamina_use_reduced", "x_x":"health_recovery_s", "xa_xa":"earplugs_s"}
         },
         "25c": {
             "rarity": 3,
@@ -1540,7 +1704,9 @@
             ],
 
             "baseSharpness": [130,20,30,70,0,0],
-            "maxSharpness": [130,20,30,120,0,0]
+            "maxSharpness": [130,20,30,120,0,0],
+
+            "huntinghornSongs": {"a_a":"stamina_use_reduced", "x_x":"health_recovery_s", "xa_xa":"earplugs_s"}
         },
         "25d": {
             "rarity": 4,
@@ -1558,7 +1724,9 @@
             ],
 
             "baseSharpness": [150,30,30,60,30,0],
-            "maxSharpness": [150,30,30,60,70,10]
+            "maxSharpness": [150,30,30,60,70,10],
+
+            "huntinghornSongs": {"a_a":"stamina_use_reduced", "x_x":"health_recovery_s", "xa_xa":"earplugs_l"}
         },
         "25e": {
             "rarity": 5,
@@ -1576,7 +1744,9 @@
             ],
 
             "baseSharpness": [140,20,20,80,40,0],
-            "maxSharpness": [140,20,20,80,70,20]
+            "maxSharpness": [140,20,20,80,70,20],
+
+            "huntinghornSongs": {"a_a":"stamina_use_reduced", "x_x":"health_recovery_s", "xa_xa":"earplugs_l"}
         },
         "25f": {
             "rarity": 6,
@@ -1594,7 +1764,9 @@
             ],
 
             "baseSharpness": [160,20,20,90,60,0],
-            "maxSharpness": [160,20,20,90,70,40]
+            "maxSharpness": [160,20,20,90,70,40],
+
+            "huntinghornSongs": {"a_a":"stamina_use_reduced", "x_x":"health_recovery_s", "xa_xa":"earplugs_l"}
         }
     },
     "Bnahabra (Paralysis)": {
@@ -1614,7 +1786,9 @@
             ],
 
             "baseSharpness": [150,40,30,30,0,0],
-            "maxSharpness": [150,40,30,80,0,0]
+            "maxSharpness": [150,40,30,80,0,0],
+
+            "huntinghornSongs": {"a_a":"tremors_negated", "x_x":"defense_up", "xa_xa":"health_recovery_s"}
         },
         "26b": {
             "rarity": 5,
@@ -1632,7 +1806,9 @@
             ],
 
             "baseSharpness": [140,20,20,80,40,0],
-            "maxSharpness": [140,20,20,80,70,20]
+            "maxSharpness": [140,20,20,80,70,20],
+
+            "huntinghornSongs": {"a_a":"tremors_negated", "x_x":"defense_up", "xa_xa":"health_recovery_s"}
         },
         "26c": {
             "rarity": 6,
@@ -1650,7 +1826,9 @@
             ],
 
             "baseSharpness": [150,40,20,90,50,0],
-            "maxSharpness": [150,40,20,90,70,30]
+            "maxSharpness": [150,40,20,90,70,30],
+
+            "huntinghornSongs": {"a_a":"tremors_negated", "x_x":"defense_up", "xa_xa":"health_recovery_s"}
         }
     },
     "Bnahabra (Ice)": {
@@ -1670,7 +1848,9 @@
             ],
 
             "baseSharpness": [140,10,20,30,0,0],
-            "maxSharpness": [140,10,20,80,0,0]
+            "maxSharpness": [140,10,20,80,0,0],
+
+            "huntinghornSongs": {"a_a":"stamina_use_reduced", "x_x":"health_regeneration", "xa_xa":"sonic_wave"}
         },
         "27b": {
             "rarity": 3,
@@ -1688,7 +1868,9 @@
             ],
 
             "baseSharpness": [130,20,30,70,0,0],
-            "maxSharpness": [130,20,30,120,0,0]
+            "maxSharpness": [130,20,30,120,0,0],
+
+            "huntinghornSongs": {"a_a":"stamina_use_reduced", "x_x":"health_regeneration", "xa_xa":"sonic_wave"}
         },
         "27c": {
             "rarity": 5,
@@ -1706,7 +1888,9 @@
             ],
 
             "baseSharpness": [140,20,20,80,40,0],
-            "maxSharpness": [140,20,20,80,70,20]
+            "maxSharpness": [140,20,20,80,70,20],
+
+            "huntinghornSongs": {"a_a":"stamina_use_reduced", "x_x":"health_regeneration", "xa_xa":"sonic_wave"}
         }
     },
     "Magnamalo Tree": {
@@ -1726,7 +1910,9 @@
             ],
 
             "baseSharpness": [160,20,40,80,0,0],
-            "maxSharpness": [160,20,40,110,20,0]
+            "maxSharpness": [160,20,40,110,20,0],
+
+            "huntinghornSongs": {"a_a":"attack_and_defense_up", "x_x":"sonic_barrier", "xa_xa":"health_regeneration"}
         },
         "28b": {
             "rarity": 3,
@@ -1744,7 +1930,9 @@
             ],
 
             "baseSharpness": [170,20,20,90,0,0],
-            "maxSharpness": [170,20,20,110,30,0]
+            "maxSharpness": [170,20,20,110,30,0],
+
+            "huntinghornSongs": {"a_a":"attack_and_defense_up", "x_x":"sonic_barrier", "xa_xa":"health_regeneration"}
         },
         "28c": {
             "rarity": 6,
@@ -1762,7 +1950,9 @@
             ],
 
             "baseSharpness": [190,10,20,90,40,0],
-            "maxSharpness": [190,10,20,90,50,40]
+            "maxSharpness": [190,10,20,90,50,40],
+
+            "huntinghornSongs": {"a_a":"attack_and_defense_up", "x_x":"sonic_barrier", "xa_xa":"health_regeneration"}
         }
     },
     "Rajang Tree": {
@@ -1782,7 +1972,9 @@
             ],
 
             "baseSharpness": [30,40,150,80,0,0],
-            "maxSharpness": [30,40,150,130,0,0]
+            "maxSharpness": [30,40,150,130,0,0],
+
+            "huntinghornSongs": {"a_a":"environment_damage_negated", "x_x":"attack_and_defense_up", "xa_xa":"tremors_negated"}
         },
         "29b": {
             "rarity": 6,
@@ -1800,7 +1992,9 @@
             ],
 
             "baseSharpness": [30,50,180,80,10,0],
-            "maxSharpness": [30,50,180,80,60,0]
+            "maxSharpness": [30,50,180,80,60,0],
+
+            "huntinghornSongs": {"a_a":"environment_damage_negated", "x_x":"attack_and_defense_up", "xa_xa":"tremors_negated"}
         },
         "29c": {
             "rarity": 7,
@@ -1818,7 +2012,9 @@
             ],
 
             "baseSharpness": [30,50,170,80,20,0],
-            "maxSharpness": [30,50,170,80,60,10]
+            "maxSharpness": [30,50,170,80,60,10],
+
+            "huntinghornSongs": {"a_a":"environment_damage_negated", "x_x":"attack_and_defense_up", "xa_xa":"tremors_negated"}
         }
     },
     "Ibushi Tree": {
@@ -1838,7 +2034,9 @@
             ],
 
             "baseSharpness": [20,20,20,40,100,0],
-            "maxSharpness": [20,20,20,40,150,0]
+            "maxSharpness": [20,20,20,40,150,0],
+
+            "huntinghornSongs": {"a_a":"divine_protection", "x_x":"stamina_use_reduced", "xa_xa":"sonic_barrier"}
         },
         "30b": {
             "rarity": 6,
@@ -1856,7 +2054,9 @@
             ],
 
             "baseSharpness": [20,20,50,50,110,0],
-            "maxSharpness": [20,20,50,50,150,10]
+            "maxSharpness": [20,20,50,50,150,10],
+
+            "huntinghornSongs": {"a_a":"divine_protection", "x_x":"stamina_use_reduced", "xa_xa":"sonic_barrier"}
         },
         "30c": {
             "rarity": 7,
@@ -1874,7 +2074,9 @@
             ],
 
             "baseSharpness": [20,20,80,60,120,0],
-            "maxSharpness": [20,20,80,60,150,20]
+            "maxSharpness": [20,20,80,60,150,20],
+
+            "huntinghornSongs": {"a_a":"divine_protection", "x_x":"stamina_use_reduced", "xa_xa":"sonic_barrier"}
         }
     },
     "Narwa Tree": {
@@ -1894,7 +2096,9 @@
             ],
 
             "baseSharpness": [20,20,190,40,30,0],
-            "maxSharpness": [20,20,190,40,50,30]
+            "maxSharpness": [20,20,190,40,50,30],
+
+            "huntinghornSongs": {"a_a":"health_recovery_l", "x_x":"stun_negated", "xa_xa":"health_regeneration"}
         },
         "31b": {
             "rarity": 7,
@@ -1912,7 +2116,9 @@
             ],
 
             "baseSharpness": [10,20,220,40,60,0],
-            "maxSharpness": [10,20,220,40,70,40]
+            "maxSharpness": [10,20,220,40,70,40],
+
+            "huntinghornSongs": {"a_a":"health_recovery_l", "x_x":"stun_negated", "xa_xa":"health_regeneration"}
         }
     },
     "Bazelgeuse Tree": {
@@ -1932,7 +2138,9 @@
             ],
 
             "baseSharpness": [60,90,60,90,0,0],
-            "maxSharpness": [60,90,60,90,50,0]
+            "maxSharpness": [60,90,60,90,50,0],
+
+            "huntinghornSongs": {"a_a":"attack_up", "x_x":"earplugs_s", "xa_xa":"health_recovery_l"}
         },
         "32b": {
             "rarity": 6,
@@ -1950,7 +2158,9 @@
             ],
 
             "baseSharpness": [60,110,90,80,10,0],
-            "maxSharpness": [60,110,90,80,30,30]
+            "maxSharpness": [60,110,90,80,30,30],
+
+            "huntinghornSongs": {"a_a":"attack_up", "x_x":"earplugs_s", "xa_xa":"health_recovery_l"}
         },
         "32c": {
             "rarity": 7,
@@ -1968,7 +2178,9 @@
             ],
 
             "baseSharpness": [60,110,80,80,20,0],
-            "maxSharpness": [60,110,80,80,30,40]
+            "maxSharpness": [60,110,80,80,30,40],
+
+            "huntinghornSongs": {"a_a":"attack_up", "x_x":"earplugs_s", "xa_xa":"health_recovery_l"}
         }
     },
     "Kushala Daora Tree": {
@@ -1988,7 +2200,9 @@
             ],
 
             "baseSharpness": [50,60,130,70,40,0],
-            "maxSharpness": [50,60,130,70,60,30]
+            "maxSharpness": [50,60,130,70,60,30],
+
+            "huntinghornSongs": {"a_a":"stamina_use_reduced", "x_x":"environment_damage_negated", "xa_xa":"sharpness_loss_reduced"}
         },
         "33b": {
             "rarity": 7,
@@ -2006,7 +2220,9 @@
             ],
 
             "baseSharpness": [50,70,130,50,40,10],
-            "maxSharpness": [50,70,130,50,40,60]
+            "maxSharpness": [50,70,130,50,40,60],
+
+            "huntinghornSongs": {"a_a":"stamina_use_reduced", "x_x":"environment_damage_negated", "xa_xa":"sharpness_loss_reduced"}
         }
     },
     "Teostra Tree": {
@@ -2026,7 +2242,9 @@
             ],
 
             "baseSharpness": [60,70,80,130,10,0],
-            "maxSharpness": [60,70,80,130,50,10]
+            "maxSharpness": [60,70,80,130,50,10],
+
+            "huntinghornSongs": {"a_a":"health_recovery_s_plus_antidote", "x_x":"health_regeneration", "xa_xa":"attack_and_defense_up"}
         },
         "34b": {
             "rarity": 7,
@@ -2044,7 +2262,9 @@
             ],
 
             "baseSharpness": [60,70,70,110,40,0],
-            "maxSharpness": [60,70,70,110,70,20]
+            "maxSharpness": [60,70,70,110,70,20],
+
+            "huntinghornSongs": {"a_a":"health_recovery_s_plus_antidote", "x_x":"health_regeneration", "xa_xa":"attack_and_defense_up"}
         }
     },
     "Chameleos Tree": {
@@ -2064,7 +2284,9 @@
             ],
 
             "baseSharpness": [170,30,60,70,20,0],
-            "maxSharpness": [170,30,60,70,40,30]
+            "maxSharpness": [170,30,60,70,40,30],
+
+            "huntinghornSongs": {"a_a":"wind_pressure_negated", "x_x":"earplugs_l", "xa_xa":"elemental_attack_boost"}
         },
         "35b": {
             "rarity": 7,
@@ -2082,7 +2304,9 @@
             ],
 
             "baseSharpness": [170,30,60,50,40,0],
-            "maxSharpness": [170,30,60,50,40,50]
+            "maxSharpness": [170,30,60,50,40,50],
+
+            "huntinghornSongs": {"a_a":"wind_pressure_negated", "x_x":"earplugs_l", "xa_xa":"elemental_attack_boost"}
         }
     },
     "Valstrax Tree": {
@@ -2102,7 +2326,9 @@
             ],
 
             "baseSharpness": [180,0,0,0,0,70],
-            "maxSharpness": [180,0,0,0,0,120]
+            "maxSharpness": [180,0,0,0,0,120],
+
+            "huntinghornSongs": {"a_a":"attack_and_affinity_up", "x_x":"elemental_attack_boost", "xa_xa":"sonic_wave"}
         },
         "36b": {
             "rarity": 7,
@@ -2120,7 +2346,9 @@
             ],
 
             "baseSharpness": [60,0,0,0,0,90],
-            "maxSharpness": [60,0,0,0,0,140]
+            "maxSharpness": [60,0,0,0,0,140],
+
+            "huntinghornSongs": {"a_a":"attack_and_affinity_up", "x_x":"elemental_attack_boost", "xa_xa":"sonic_wave"}
         }
     },
     "Chaos Tree": {
@@ -2140,7 +2368,9 @@
             ],
 
             "baseSharpness": [40,60,150,0,0,0],
-            "maxSharpness": [40,60,200,0,0,0]
+            "maxSharpness": [40,60,200,0,0,0],
+
+            "huntinghornSongs": {"a_a":"health_recovery_s", "x_x":"stamina_use_reduced", "xa_xa":"defense_up"}
         },
         "37b": {
             "rarity": 3,
@@ -2158,7 +2388,9 @@
             ],
 
             "baseSharpness": [40,60,170,30,0,0],
-            "maxSharpness": [40,60,170,80,0,0]
+            "maxSharpness": [40,60,170,80,0,0],
+
+            "huntinghornSongs": {"a_a":"health_recovery_s", "x_x":"stamina_use_reduced", "xa_xa":"defense_up"}
         },
         "37c": {
             "rarity": 4,
@@ -2176,7 +2408,9 @@
             ],
 
             "baseSharpness": [30,70,140,60,0,0],
-            "maxSharpness": [30,70,140,80,30,0]
+            "maxSharpness": [30,70,140,80,30,0],
+
+            "huntinghornSongs": {"a_a":"health_recovery_s", "x_x":"stamina_use_reduced", "xa_xa":"defense_up"}
         }
     },
     "Magia Tree": {
@@ -2196,7 +2430,9 @@
             ],
 
             "baseSharpness": [50,30,110,10,0,0],
-            "maxSharpness": [50,30,110,60,0,0]
+            "maxSharpness": [50,30,110,60,0,0],
+
+            "huntinghornSongs": {"a_a":"sonic_barrier", "x_x":"health_recovery_s", "xa_xa":"health_recovery_s_plus_antidote"}
         },
         "38b": {
             "rarity": 3,
@@ -2214,7 +2450,9 @@
             ],
 
             "baseSharpness": [50,60,110,30,0,0],
-            "maxSharpness": [50,60,110,80,0,0]
+            "maxSharpness": [50,60,110,80,0,0],
+
+            "huntinghornSongs": {"a_a":"sonic_barrier", "x_x":"health_recovery_s", "xa_xa":"health_recovery_s_plus_antidote"}
         },
         "38c": {
             "rarity": 4,
@@ -2232,7 +2470,9 @@
             ],
 
             "baseSharpness": [50,60,110,80,0,0],
-            "maxSharpness": [50,60,110,120,10,0]
+            "maxSharpness": [50,60,110,120,10,0],
+
+            "huntinghornSongs": {"a_a":"sonic_barrier", "x_x":"health_recovery_s", "xa_xa":"health_recovery_s_plus_antidote"}
         },
         "38d": {
             "rarity": 6,
@@ -2250,7 +2490,9 @@
             ],
 
             "baseSharpness": [50,60,110,120,10,0],
-            "maxSharpness": [50,60,110,120,60,0]
+            "maxSharpness": [50,60,110,120,60,0],
+
+            "huntinghornSongs": {"a_a":"sonic_barrier", "x_x":"health_recovery_s", "xa_xa":"health_recovery_s_plus_antidote"}
         }
     },
     "Spio Tree": {
@@ -2270,7 +2512,9 @@
             ],
 
             "baseSharpness": [50,40,100,60,0,0],
-            "maxSharpness": [50,40,100,100,10,0]
+            "maxSharpness": [50,40,100,100,10,0],
+
+            "huntinghornSongs": {"a_a":"defense_up", "x_x":"health_recovery_s_plus_antidote", "xa_xa":"affinity_up"}
         },
         "39b": {
             "rarity": 3,
@@ -2288,7 +2532,9 @@
             ],
 
             "baseSharpness": [40,30,100,80,0,0],
-            "maxSharpness": [40,30,100,100,30,0]
+            "maxSharpness": [40,30,100,100,30,0],
+
+            "huntinghornSongs": {"a_a":"defense_up", "x_x":"health_recovery_s_plus_antidote", "xa_xa":"affinity_up"}
         },
         "39c": {
             "rarity": 5,
@@ -2306,7 +2552,9 @@
             ],
 
             "baseSharpness": [40,50,90,100,20,0],
-            "maxSharpness": [40,50,90,100,50,20]
+            "maxSharpness": [40,50,90,100,50,20],
+
+            "huntinghornSongs": {"a_a":"defense_up", "x_x":"health_recovery_s_plus_antidote", "xa_xa":"affinity_up"}
         }
     },
     "Bombadgy Tree": {
@@ -2326,7 +2574,9 @@
             ],
 
             "baseSharpness": [90,60,80,20,0,0],
-            "maxSharpness": [90,60,80,70,0,0]
+            "maxSharpness": [90,60,80,70,0,0],
+
+            "huntinghornSongs": {"a_a":"health_regeneration", "x_x":"wind_pressure_negated", "xa_xa":"sonic_barrier"}
         },
         "40b": {
             "rarity": 4,
@@ -2344,7 +2594,9 @@
             ],
 
             "baseSharpness": [90,60,60,90,0,0],
-            "maxSharpness": [90,60,60,130,10,0]
+            "maxSharpness": [90,60,60,130,10,0],
+
+            "huntinghornSongs": {"a_a":"health_regeneration", "x_x":"wind_pressure_negated", "xa_xa":"sonic_barrier"}
         },
         "40c": {
             "rarity": 5,
@@ -2362,7 +2614,9 @@
             ],
 
             "baseSharpness": [90,60,60,130,10,0],
-            "maxSharpness": [90,60,60,130,60,0]
+            "maxSharpness": [90,60,60,130,60,0],
+
+            "huntinghornSongs": {"a_a":"health_regeneration", "x_x":"wind_pressure_negated", "xa_xa":"sonic_barrier"}
         }
     },
     "Rampage Tree": {
@@ -2395,7 +2649,9 @@
             ],
 
             "baseSharpness": [70,70,90,20,0,0],
-            "maxSharpness": [70,70,90,70,0,0]
+            "maxSharpness": [70,70,90,70,0,0],
+
+            "huntinghornSongs": {"a_a":"health_recovery_s", "x_x":"earplugs_s", "xa_xa":"sonic_wave"}
         },
         "41b": {
             "rarity": 5,
@@ -2434,7 +2690,9 @@
             ],
 
             "baseSharpness": [60,70,80,40,0,0],
-            "maxSharpness": [60,70,80,90,0,0]
+            "maxSharpness": [60,70,80,90,0,0],
+
+            "huntinghornSongs": {"a_a":"health_recovery_s", "x_x":"earplugs_s", "xa_xa":"sonic_wave"}
         },
         "41c": {
             "rarity": 5,
@@ -2478,7 +2736,9 @@
             ],
 
             "baseSharpness": [50,70,80,30,20,0],
-            "maxSharpness": [50,70,80,30,70,0]
+            "maxSharpness": [50,70,80,30,70,0],
+
+            "huntinghornSongs": {"a_a":"health_recovery_s", "x_x":"earplugs_s", "xa_xa":"sonic_wave"}
         },
         "41d": {
             "rarity": 6,
@@ -2523,7 +2783,9 @@
             ],
 
             "baseSharpness": [50,70,70,30,30,0],
-            "maxSharpness": [50,70,70,30,80,0]
+            "maxSharpness": [50,70,70,30,80,0],
+
+            "huntinghornSongs": {"a_a":"health_recovery_s", "x_x":"earplugs_s", "xa_xa":"sonic_wave"}
         },
         "41e": {
             "rarity": 6,
@@ -2570,7 +2832,9 @@
             ],
 
             "baseSharpness": [50,70,50,50,30,0],
-            "maxSharpness": [50,70,50,50,70,10]
+            "maxSharpness": [50,70,50,50,70,10],
+
+            "huntinghornSongs": {"a_a":"health_recovery_s", "x_x":"earplugs_s", "xa_xa":"sonic_wave"}
         },
         "41f": {
             "rarity": 7,
@@ -2618,7 +2882,9 @@
             ],
 
             "baseSharpness": [50,70,30,60,40,0],
-            "maxSharpness": [50,70,30,60,70,20]
+            "maxSharpness": [50,70,30,60,70,20],
+
+            "huntinghornSongs": {"a_a":"health_recovery_s", "x_x":"earplugs_s", "xa_xa":"sonic_wave"}
         }
     }
 }

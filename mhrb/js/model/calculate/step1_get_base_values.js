@@ -63,6 +63,8 @@ function getBaseValues(db, build, calcState) {
 
     let rawPostTruncMul = 1;
 
+    let huntingHornSongs = (weaponRO.category === "huntinghorn") ? weaponRO.huntinghornSongs : null;
+
     // Deferred operations go here
     const deferredOps1 = [];
     const deferredOps2 = [];
@@ -108,6 +110,17 @@ function getBaseValues(db, build, calcState) {
             assert(baseEleStat.size === 2);
         }
         deferredOps1.push(op); // Defer
+    }
+    function rampMelody(songX, songA, songXA) {
+        assert(isMap(huntingHornSongs)); // We expect that it's an existing song set
+        huntingHornSongs = new Map([
+            ["x", db.readonly.huntingHornSongs.map.get(songX)],
+            ["a", db.readonly.huntingHornSongs.map.get(songA)],
+            ["xa", db.readonly.huntingHornSongs.map.get(songXA)],
+        ]);
+        for (const songObj of huntingHornSongs.values()) {
+            assert(isNonEmptyStr(songObj.name)); // Spot check for structure
+        }
     }
     const rampSkillOps = new Map([
 
@@ -300,6 +313,67 @@ function getBaseValues(db, build, calcState) {
 
         ["non_elemental_boost", ()=>{ deferredOps2.push(()=>{ if (baseEleStat.size === 0) baseRaw += 10; }); }],
 
+        //
+        // Hunting Horn
+        //
+
+        ["attack_melody_1", ()=>{
+            rampMelody(
+                "attack_up",
+                "elemental_attack_boost",
+                "affinity_up",
+            );
+        }],
+        ["attack_melody_2", ()=>{
+            rampMelody(
+                "attack_and_affinity_up",
+                "tremors_negated",
+                "sonic_wave",
+            );
+        }],
+        ["defensive_melody_1", ()=>{
+            rampMelody(
+                "defense_up",
+                "divine_protection",
+                "wind_pressure_negated",
+            );
+        }],
+        ["defensive_melody_2", ()=>{
+            rampMelody(
+                "attack_and_defense_up",
+                "stamina_use_reduced",
+                "knockbacks_negated",
+            );
+        }],
+        ["healing_melody_1", ()=>{
+            rampMelody(
+                "health_recovery_s",
+                "health_recovery_s_plus_antidote",
+                "earplugs_s",
+            );
+        }],
+        ["healing_melody_2", ()=>{
+            rampMelody(
+                "health_recovery_l",
+                "health_regeneration",
+                "earplugs_l",
+            );
+        }],
+        ["resilient_melody_1", ()=>{
+            rampMelody(
+                "environment_damage_negated",
+                "sharpness_loss_reduced",
+                "blight_negated",
+            );
+        }],
+        ["resilient_melody_2", ()=>{
+            rampMelody(
+                "stamina_recovery_up",
+                "sonic_barrier",
+                "stun_negated",
+            );
+        }],
+
         // MANY OTHER RAMPAGE SKILLS NOT YET IMPLEMENTED
     ]);
 
@@ -338,6 +412,8 @@ function getBaseValues(db, build, calcState) {
         baseDefense,
 
         rawPostTruncMul,
+
+        huntingHornSongs,
     };
     return ret;
 }
