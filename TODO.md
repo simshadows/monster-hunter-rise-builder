@@ -43,24 +43,6 @@ Aelucanth Crura
 
 ```
 [LR] [rarity 3]
-Utsushi Mask (V)
-Utsushi Chest (V)
-Utsushi Braces (V)
-Utsushi Tassets (V)
-Utsushi Greaves (V)
-```
-
-```
-[LR] [rarity 3]
-Utsushi Mask (H)
-Utsushi Chest (H)
-Utsushi Braces (H)
-Utsushi Tassets (H)
-Utsushi Greaves (H)
-```
-
-```
-[LR] [rarity 3]
 Kamurai Hat
 Kamurai Garb
 Kamurai Braces
@@ -125,24 +107,6 @@ Makluva Cover S
 Makluva Sleeves S
 Makluva Coil S
 Makluva Pants S
-```
-
-```
-[HR] [rarity 5]
-Utsushi Mask (V) S
-Utsushi Chest (V) S
-Utsushi Braces (V) S
-Utsushi Tassets (V) S
-Utsushi Greaves (V) S
-```
-
-```
-[HR] [rarity 5]
-Utsushi Mask (H) S
-Utsushi Chest (H) S
-Utsushi Braces (H) S
-Utsushi Tassets (H) S
-Utsushi Greaves (H) S
 ```
 
 ```

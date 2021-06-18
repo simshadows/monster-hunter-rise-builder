@@ -878,6 +878,25 @@
 [46, {
     "tier": "lr",
     "rarity": 3,
+    "setName": "Utsushi (Visible)",
+    "searchHint": "",
+
+    "prefix": "Utsushi",
+    "namingScheme": "utsushi",
+    "suffix": "(V)",
+
+    "pieces": {
+        "head":  [[], {"speed_eating": 1, "free_meal": 1}],
+        "chest": [[], {"wide_range"  : 1                }],
+        "arms":  [[], {"wide_range"  : 1                }],
+        "waist": [[], {"speed_eating": 1                }],
+        "legs":  [[], {"wide_range"  : 1                }]
+    },
+    "defenses": {"defLvl1": 24, "f":3, "w":0, "t":0, "i":0, "d":0}
+}],
+[47, {
+    "tier": "lr",
+    "rarity": 3,
     "setName": "Medium",
     "searchHint": "",
 
@@ -894,7 +913,26 @@
     },
     "defenses": {"defLvl1": 24, "f":3, "w":0, "t":0, "i":0, "d":0}
 }],
-[47, {
+[48, {
+    "tier": "lr",
+    "rarity": 3,
+    "setName": "Utsushi (Hidden)",
+    "searchHint": "",
+
+    "prefix": "Utsushi",
+    "namingScheme": "utsushi",
+    "suffix": "(H)",
+
+    "pieces": {
+        "head":  [[], {"razor_sharp" : 1, "spare_shot"       : 1}],
+        "chest": [[], {"razor_sharp" : 1, "spare_shot"       : 1}],
+        "arms":  [[], {"evade_window": 1, "wirebug_whisperer": 1}],
+        "waist": [[], {"agitator"    : 1                        }],
+        "legs":  [[], {"evade_window": 1, "agitator"         : 1}]
+    },
+    "defenses": {"defLvl1": 24, "f":3, "w":0, "t":0, "i":0, "d":0}
+}],
+[49, {
     "tier": "lr",
     "rarity": 3,
     "setName": "Channeler",
@@ -905,15 +943,15 @@
     "suffix": "",
 
     "pieces": {
-        "head":  [[], {"razor_sharp" : 1, "spare_shot": 1       }],
-        "chest": [[], {"razor_sharp" : 1, "spare_shot": 1       }],
+        "head":  [[], {"razor_sharp" : 1, "spare_shot"       : 1}],
+        "chest": [[], {"razor_sharp" : 1, "spare_shot"       : 1}],
         "arms":  [[], {"evade_window": 1, "wirebug_whisperer": 1}],
         "waist": [[], {"agitator"    : 1                        }],
-        "legs":  [[], {"evade_window": 1, "agitator": 1         }]
+        "legs":  [[], {"evade_window": 1, "agitator"         : 1}]
     },
     "defenses": {"defLvl1": 24, "f":3, "w":0, "t":0, "i":0, "d":0}
 }],
-[48, {
+[50, {
     "tier": "lr",
     "rarity": 3,
     "setName": "Brigade",
@@ -932,7 +970,7 @@
     },
     "defenses": {"defLvl1": 26, "f":1, "w":0, "t":2, "i":0, "d":2}
 }],
-[49, {
+[51, {
     "tier": "lr",
     "rarity": 3,
     "setName": "Sinister",
@@ -951,7 +989,7 @@
     },
     "defenses": {"defLvl1": 28, "f":3, "w":-3, "t":-2, "i":1, "d":1}
 }],
-[50, {
+[52, {
     "tier": "lr",
     "rarity": 3,
     "setName": "Anja",
@@ -970,7 +1008,7 @@
     },
     "defenses": {"defLvl1": 26, "f":3, "w":-3, "t":-1, "i":-1, "d":0}
 }],
-[51, {
+[53, {
     "tier": "lr",
     "rarity": 3,
     "setName": "Nargacuga",
@@ -989,7 +1027,7 @@
     },
     "defenses": {"defLvl1": 26, "f":-2, "w":1, "t":-3, "i":1, "d":1}
 }],
-[52, {
+[54, {
     "tier": "lr",
     "rarity": 3,
     "setName": "Mizutsune",
@@ -1008,7 +1046,7 @@
     },
     "defenses": {"defLvl1": 26, "f":0, "w":2, "t":-3, "i":1, "d":-1}
 }],
-[53, {
+[55, {
     "tier": "lr",
     "rarity": 3,
     "setName": "Rathalos",
@@ -1027,7 +1065,7 @@
     },
     "defenses": {"defLvl1": 28, "f":4, "w":0, "t":-2, "i":0, "d":-4}
 }],
-[54, {
+[56, {
     "tier": "lr",
     "rarity": 3,
     "setName": "Zinogre",
@@ -1046,7 +1084,7 @@
     },
     "defenses": {"defLvl1": 28, "f":0, "w":-1, "t":4, "i":-4, "d":1}
 }],
-[55, {
+[57, {
     "tier": "lr",
     "rarity": 3,
     "setName": "Skull",
@@ -1065,7 +1103,7 @@
     },
     "defenses": {"defLvl1": 28, "f":-3, "w":-3, "t":-3, "i":-3, "d":4}
 }],
-[56, {
+[58, {
     "tier": "lr",
     "rarity": 3,
     "setName": "Goss Harag",
@@ -1084,7 +1122,7 @@
     },
     "defenses": {"defLvl1": 30, "f":-4, "w":1, "t":-1, "i":4, "d":0}
 }],
-[57, {
+[59, {
     "tier": "lr",
     "rarity": 3,
     "setName": "Almudron",
@@ -1103,7 +1141,7 @@
     },
     "defenses": {"defLvl1": 30, "f":-4, "w":3, "t":3, "i":-2, "d":-2}
 }],
-[58, {
+[60, {
     "tier": "lr",
     "rarity": 3,
     "setName": "Tigrex",
@@ -1122,7 +1160,7 @@
     },
     "defenses": {"defLvl1": 30, "f":2, "w":0, "t":-3, "i":0, "d":-2}
 }],
-[59, {
+[61, {
     "tier": "lr",
     "rarity": 3,
     "setName": "Diablos",
@@ -1919,6 +1957,25 @@
 [111, {
     "tier": "hr",
     "rarity": 5,
+    "setName": "Utsushi (Visible) S",
+    "searchHint": "",
+
+    "prefix": "Utsushi",
+    "namingScheme": "utsushi",
+    "suffix": "(V) S",
+
+    "pieces": {
+        "head":  [[1  ], {"speed_eating": 1, "free_meal": 1, "good_luck": 1}],
+        "chest": [[1,1], {"wide_range"  : 1, "good_luck": 1                }],
+        "arms":  [[3  ], {"wide_range"  : 1                                }],
+        "waist": [[2  ], {"speed_eating": 1, "free_meal": 1                }],
+        "legs":  [[1  ], {"wide_range"  : 1, "free_meal": 1, "good_luck": 1}]
+    },
+    "defenses": {"defLvl1": 52, "f":3, "w":0, "t":0, "i":0, "d":0}
+}],
+[112, {
+    "tier": "hr",
+    "rarity": 5,
     "setName": "Medium S",
     "searchHint": "",
 
@@ -1935,7 +1992,26 @@
     },
     "defenses": {"defLvl1": 52, "f":3, "w":0, "t":0, "i":0, "d":0}
 }],
-[112, {
+[113, {
+    "tier": "hr",
+    "rarity": 5,
+    "setName": "Utsushi (Hidden) S",
+    "searchHint": "",
+
+    "prefix": "Utsushi",
+    "namingScheme": "utsushi",
+    "suffix": "(H) S",
+
+    "pieces": {
+        "head":  [[1  ], {"razor_sharp" : 2, "spare_shot"       : 2, "wirebug_whisperer": 1               }],
+        "chest": [[1  ], {"razor_sharp" : 1, "spare_shot"       : 1, "evade_window"     : 1, "agitator": 1}],
+        "arms":  [[2  ], {"evade_window": 1, "wirebug_whisperer": 1                                       }],
+        "waist": [[1  ], {"agitator"    : 2, "wirebug_whisperer": 1                                       }],
+        "legs":  [[1,1], {"evade_window": 1, "agitator"         : 1                                       }]
+    },
+    "defenses": {"defLvl1": 52, "f":3, "w":0, "t":0, "i":0, "d":0}
+}],
+[114, {
     "tier": "hr",
     "rarity": 5,
     "setName": "Channeler S",
@@ -1954,7 +2030,7 @@
     },
     "defenses": {"defLvl1": 52, "f":3, "w":0, "t":0, "i":0, "d":0}
 }],
-[113, {
+[115, {
     "tier": "hr",
     "rarity": 5,
     "setName": "Uroktor S",
@@ -1973,7 +2049,7 @@
     },
     "defenses": {"defLvl1": 52, "f":4, "w":-2, "t":0, "i":-1, "d":0}
 }],
-[114, {
+[116, {
     "tier": "hr",
     "rarity": 5,
     "setName": "Remobra S",
@@ -1992,7 +2068,7 @@
     },
     "defenses": {"defLvl1": 52, "f":1, "w":1, "t":1, "i":1, "d":3}
 }],
-[115, {
+[117, {
     "tier": "hr",
     "rarity": 5,
     "setName": "Somnacanth S",
@@ -2011,7 +2087,7 @@
     },
     "defenses": {"defLvl1": 58, "f":-1, "w":2, "t":-3, "i":0, "d":1}
 }],
-[116, {
+[118, {
     "tier": "hr",
     "rarity": 5,
     "setName": "Barioth S",
@@ -2030,7 +2106,7 @@
     },
     "defenses": {"defLvl1": 58, "f":-3, "w":0, "t":-1, "i":3, "d":0}
 }],
-[117, {
+[119, {
     "tier": "hr",
     "rarity": 5,
     "setName": "Kadachi S",
@@ -2055,7 +2131,7 @@
     },
     "defenses": {"defLvl1": 58, "f":0, "w":-3, "t":3, "i":0, "d":0}
 }],
-[118, {
+[120, {
     "tier": "hr",
     "rarity": 6,
     "setName": "Anja S",
@@ -2074,7 +2150,7 @@
     },
     "defenses": {"defLvl1": 60, "f":3, "w":-3, "t":-1, "i":-1, "d":0}
 }],
-[119, {
+[121, {
     "tier": "hr",
     "rarity": 6,
     "setName": "Nargacuga S",
@@ -2093,7 +2169,7 @@
     },
     "defenses": {"defLvl1": 60, "f":-2, "w":1, "t":-3, "i":1, "d":1}
 }],
-[120, {
+[122, {
     "tier": "hr",
     "rarity": 6,
     "setName": "Mizutsune S",
@@ -2112,7 +2188,7 @@
     },
     "defenses": {"defLvl1": 60, "f":0, "w":2, "t":-3, "i":1, "d":-1}
 }],
-[121, {
+[123, {
     "tier": "hr",
     "rarity": 6,
     "setName": "Rathalos S",
@@ -2131,7 +2207,7 @@
     },
     "defenses": {"defLvl1": 62, "f":3, "w":1, "t":-2, "i":1, "d":-3}
 }],
-[122, {
+[124, {
     "tier": "hr",
     "rarity": 6,
     "setName": "Zinogre S",
@@ -2150,7 +2226,7 @@
     },
     "defenses": {"defLvl1": 62, "f":0, "w":-1, "t":4, "i":-4, "d":1}
 }],
-[123, {
+[125, {
     "tier": "hr",
     "rarity": 6,
     "setName": "Rhopessa S",
@@ -2169,7 +2245,7 @@
     },
     "defenses": {"defLvl1": 62, "f":-2, "w":0, "t":3, "i":-2, "d":2}
 }],
-[124, {
+[126, {
     "tier": "hr",
     "rarity": 6,
     "setName": "Jelly S",
@@ -2188,7 +2264,7 @@
     },
     "defenses": {"defLvl1": 62, "f":1, "w":3, "t":0, "i":2, "d":0}
 }],
-[125, {
+[127, {
     "tier": "hr",
     "rarity": 6,
     "setName": "Brigade S",
@@ -2207,7 +2283,7 @@
     },
     "defenses": {"defLvl1": 62, "f":1, "w":0, "t":2, "i":0, "d":2}
 }],
-[126, {
+[128, {
     "tier": "hr",
     "rarity": 6,
     "setName": "Mighty Bow Feather",
@@ -2226,7 +2302,7 @@
     },
     "defenses": {"defLvl1": 56, "f":0, "w":0, "t":0, "i":0, "d":0}
 }],
-[127, {
+[129, {
     "tier": "hr",
     "rarity": 6,
     "setName": "Gargwa Mask S",
@@ -2245,7 +2321,7 @@
     },
     "defenses": {"defLvl1": 54, "f":-3, "w":-2, "t":-2, "i":1, "d":0}
 }],
-[128, {
+[130, {
     "tier": "hr",
     "rarity": 6,
     "setName": "Sinister S",
@@ -2264,7 +2340,7 @@
     },
     "defenses": {"defLvl1": 64, "f":3, "w":-3, "t":-2, "i":1, "d":1}
 }],
-[129, {
+[131, {
     "tier": "hr",
     "rarity": 6,
     "setName": "Goss Harag S",
@@ -2283,7 +2359,7 @@
     },
     "defenses": {"defLvl1": 64, "f":-4, "w":1, "t":-1, "i":4, "d":0}
 }],
-[130, {
+[132, {
     "tier": "hr",
     "rarity": 6,
     "setName": "Almudron S",
@@ -2302,7 +2378,7 @@
     },
     "defenses": {"defLvl1": 64, "f":-4, "w":3, "t":3, "i":-2, "d":-2}
 }],
-[131, {
+[133, {
     "tier": "hr",
     "rarity": 6,
     "setName": "Tigrex S",
@@ -2321,7 +2397,7 @@
     },
     "defenses": {"defLvl1": 64, "f":2, "w":0, "t":-3, "i":0, "d":-2}
 }],
-[132, {
+[134, {
     "tier": "hr",
     "rarity": 6,
     "setName": "Diablos S",
@@ -2340,7 +2416,7 @@
     },
     "defenses": {"defLvl1": 64, "f":3, "w":-1, "t":-1, "i":-3, "d":-1}
 }],
-[133, {
+[135, {
     "tier": "hr",
     "rarity": 6,
     "setName": "Rakna-Kadaki",
@@ -2359,7 +2435,7 @@
     },
     "defenses": {"defLvl1": 66, "f":4, "w":-2, "t":-1, "i":-3, "d":1}
 }],
-[134, {
+[136, {
     "tier": "hr",
     "rarity": 7,
     "setName": "Golden",
@@ -2378,7 +2454,7 @@
     },
     "defenses": {"defLvl1": 70, "f":2, "w":1, "t":3, "i":-5, "d":2}
 }],
-[135, {
+[137, {
     "tier": "hr",
     "rarity": 7,
     "setName": "Damascus",
@@ -2397,7 +2473,7 @@
     },
     "defenses": {"defLvl1": 68, "f":-1, "w":2, "t":-3, "i":1, "d":-1}
 }],
-[136, {
+[138, {
     "tier": "hr",
     "rarity": 7,
     "setName": "Flame Seal",
@@ -2416,7 +2492,7 @@
     },
     "defenses": {"defLvl1": 56, "f":3, "w":0, "t":0, "i":0, "d":0}
 }],
-[137, {
+[139, {
     "tier": "hr",
     "rarity": 7,
     "setName": "Kushala",
@@ -2435,7 +2511,7 @@
     },
     "defenses": {"defLvl1": 74, "f":-1, "w":2, "t":-2, "i":3, "d":-3}
 }],
-[138, {
+[140, {
     "tier": "hr",
     "rarity": 7,
     "setName": "Mizuha",
@@ -2454,7 +2530,7 @@
     },
     "defenses": {"defLvl1": 74, "f":-5, "w":1, "t":0, "i":3, "d":-3}
 }],
-[139, {
+[141, {
     "tier": "hr",
     "rarity": 7,
     "setName": "Kaiser",
@@ -2473,7 +2549,7 @@
     },
     "defenses": {"defLvl1": 74, "f":4, "w":-4, "t":1, "i":-1, "d":-3}
 }],
-[140, {
+[142, {
     "tier": "hr",
     "rarity": 7,
     "setName": "Bazel",
@@ -2492,7 +2568,7 @@
     },
     "defenses": {"defLvl1": 72, "f":3, "w":1, "t":-4, "i":-2, "d":-2}
 }],
-[141, {
+[143, {
     "tier": "hr",
     "rarity": 7,
     "setName": "Ibushi",
@@ -2511,7 +2587,7 @@
     },
     "defenses": {"defLvl1": 66, "f":-1, "w":0, "t":0, "i":0, "d":-2}
 }],
-[142, {
+[144, {
     "tier": "hr",
     "rarity": 7,
     "setName": "Narwa",
@@ -2530,7 +2606,7 @@
     },
     "defenses": {"defLvl1": 76, "f":2, "w":1, "t":4, "i":-3, "d":-4}
 }],
-[143, {
+[145, {
     "tier": "hr",
     "rarity": 7,
     "setName": "Crimson Valstrax",
