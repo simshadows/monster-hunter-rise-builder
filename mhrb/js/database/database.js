@@ -326,31 +326,31 @@ function validateArmourNamingSchemes(namingSchemesData) {
 }
 
 function validateFinalArmourPieceObject(armourPieceObj) {
-    const errorIDString = "Error with armour set ID: " + armourPieceObj.setID;
+    const errorIDString = "Error with armour set ID: " + String(armourPieceObj.setID);
 
     // Set ID should already be validated by now.
     // Slot ID should also be valid.
 
     assert(isNonEmptyStr(armourPieceObj.tierID), errorIDString);
-    assert(isTierStr(armourPieceObj.tierID), "Tier value must be valid. " + armourPieceObj.setID);
+    assert(isTierStr(armourPieceObj.tierID), errorIDString);
 
     assert(isNonEmptyStr(armourPieceObj.setName), errorIDString);
     assert(isNonEmptyStr(armourPieceObj.name), errorIDString);
 
     assert(isArr(armourPieceObj.decorationSlots), errorIDString);
-    assert(armourPieceObj.decorationSlots.length <= 3, "Can't exceed 3 deco slots. Armour set ID: " + armourPieceObj.setID);
+    assert(armourPieceObj.decorationSlots.length <= 3, errorIDString);
     for (const slotSize of armourPieceObj.decorationSlots) {
         assert(isInt(slotSize), errorIDString);
-        assert((slotSize > 0) && (slotSize <= 3), "Slot sizes must be 1, 2, or 3. Armour set ID: " + armourPieceObj.setID);
+        assert((slotSize > 0) && (slotSize <= 3), errorIDString);
     }
 
     assert(isObj(armourPieceObj.skills), errorIDString);
     for (const [skillLongID, skillLevel] of Object.entries(armourPieceObj.skills)) {
         assert(isNonEmptyStr(skillLongID), errorIDString);
-        assert(strHasOnlyLowerNumeralUnder(skillLongID), "Invalid skill long ID. Armour set ID: " + armourPieceObj.setID);
+        assert(strHasOnlyLowerNumeralUnder(skillLongID), errorIDString);
 
         assert(isInt(skillLevel), errorIDString);
-        assert(skillLevel > 0, "Skill level must be positive non-zero. Armour set ID: " + armourPieceObj.setID);
+        assert(skillLevel > 0, errorIDString);
     }
 
     assert(isInt(armourPieceObj.defenseAtLevel1), errorIDString);
@@ -370,28 +370,26 @@ async function downloadAllRawArmourData() {
     const namingSchemesRawData = await (await namingSchemesFut).json();
     const armourRawData = await (await armourFut).json();
 
+    assert(isArr(armourRawData));
     validateArmourNamingSchemes(namingSchemesRawData);
 
     const expectedSlotIDs = ["head", "chest", "arms", "waist", "legs"];
 
     const finalData = new Map(); // This is a two-layer map: {set ID string: {piece ID string: data object}}
-    for (const [armourSetID, armourRawDataObj] of Object.entries(armourRawData)) {
+    for (const [armourSetID, armourRawDataObj] of armourRawData) {
         const namingScheme = namingSchemesRawData[armourRawDataObj.namingScheme];
-        const errorIDString = "Error with armour set ID: " + armourSetID;
+        const errorIDString = "Error with armour set ID: " + String(armourSetID);
 
-        assert(isNonEmptyStr(armourSetID), errorIDString);
+        assert(isInt(armourSetID) && (armourSetID > 0), errorIDString);
         assert(isObj(armourRawDataObj), errorIDString);
 
-        assert(isTierStr(armourRawDataObj.tier), "Armour set tier must be a valid string. Armour set ID: " + armourSetID);
+        assert(isTierStr(armourRawDataObj.tier), errorIDString);
         assert(isInt(armourRawDataObj.rarity), errorIDString);
         assert(isNonEmptyStr(armourRawDataObj.setName), errorIDString);
         assert(isStr(armourRawDataObj.searchHint), errorIDString); // Can be empty string
 
         if (armourRawDataObj.prefix instanceof Array) {
-            assert(
-                armourRawDataObj.prefix.length === 5,
-                "If prefix is an Array, it must have 5 elements. Armour set ID: " + armourSetID
-            );
+            assert(armourRawDataObj.prefix.length === 5, errorIDString);
             for (const prefix of armourRawDataObj.prefix) {
                 assert(isNonEmptyStr(prefix), errorIDString);
             }
@@ -406,19 +404,20 @@ async function downloadAllRawArmourData() {
 
         //
 
-        assert((armourRawDataObj.rarity > 0) && (armourRawDataObj.rarity <= 7), "Invalid rarity. Armour set ID: " + armourSetID);
-        assert(Object.keys(armourRawDataObj.pieces).length === 5, "Pieces key must have 5 elements. Armour set ID: " + armourSetID);
-        assert(Object.keys(armourRawDataObj.defenses).length === 6, "Unexpected object size. Armour set ID: " + armourSetID);
+        assert((armourRawDataObj.rarity > 0) && (armourRawDataObj.rarity <= 7), errorIDString);
+        assert(Object.keys(armourRawDataObj.pieces).length === 5, errorIDString);
+        assert(Object.keys(armourRawDataObj.defenses).length === 6, errorIDString);
 
-        if (!finalData.has(armourSetID)) {
-            finalData.set(armourSetID, new Map());
-        }
+        // Must never be a duplicate
+        assert(!finalData.has(armourSetID), errorIDString);
+
+        finalData.set(armourSetID, new Map());
 
         for (const [i, slotID] of expectedSlotIDs.entries()) {
             const p = armourRawDataObj.pieces[slotID];
             if (p !== null) {
                 assert(isArr(p), errorIDString);
-                assert(p.length === 2, "Array must be length 2. Armour set ID: " + armourSetID);
+                assert(p.length === 2, errorIDString);
 
                 let prefix = (armourRawDataObj.prefix instanceof Array) ? armourRawDataObj.prefix[i] : armourRawDataObj.prefix;
                 prefix = (prefix.length == 0) ? "" : prefix + " ";
@@ -561,7 +560,7 @@ class GameData {
     static _makeArmourArrays(armourMap) {
         const ret = { head:[], chest:[], arms:[], waist:[], legs:[] };
         for (const [armourSetID, armourSetData] of armourMap.entries()) {
-            console.assert(isStr(armourSetID));
+            console.assert(isInt(armourSetID) && (armourSetID > 0));
             console.assert(isMap(armourSetData));
             for (const [armourSlotID, armourPieceData] of armourSetData.entries()) {
                 ret[armourSlotID].push(armourPieceData);

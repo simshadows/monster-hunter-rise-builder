@@ -17,7 +17,8 @@ const assert = console.assert;
 class TalismanSelectView extends React.Component {
 
     handleSelectSkill(skillIndex, skillID, skillLevel) {
-        this.props.handleSelectSkill(skillIndex, this.props.allSkillsMapLongIds.get(skillID), skillLevel);
+        const skillRO = (skillID === null) ? null : this.props.allSkillsMapLongIds.get(skillID);
+        this.props.handleSelectSkill(skillIndex, skillRO, skillLevel);
     }
 
     handleSelectDecoSlotSize(decoSlotIndex, slotSizeWrongType) {

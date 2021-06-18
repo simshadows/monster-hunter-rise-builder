@@ -11,6 +11,7 @@ import {Build} from "./model/build.js";
 const assert = console.assert;
 
 const SPLIT_CHAR = " ";
+const NUMBER_BASE = 36;
 
 
 function getQueryValue(key) {
@@ -85,7 +86,7 @@ function readDecomposedBasicEquipsStr(arr, db, build) {
 
     const armourMap = db.readonly.armour.map;
     for (const [slotID, queryValue] of Object.entries(armourIDs)) {
-        const subMap = armourMap.get(queryValue);
+        const subMap = armourMap.get(parseInt(queryValue, NUMBER_BASE));
         if (subMap !== undefined) {
             const armourRO = subMap.get(slotID);
             if (armourRO !== undefined) {
@@ -212,12 +213,12 @@ export function writeBuildToQueryString(build) {
     const basicEquipsStr = [
             weaponRO.category,
             weaponRO.id,
-            ((armourROs.head  === null) ? "0" : armourROs.head.setID ),
-            ((armourROs.chest === null) ? "0" : armourROs.chest.setID),
-            ((armourROs.arms  === null) ? "0" : armourROs.arms.setID ),
-            ((armourROs.waist === null) ? "0" : armourROs.waist.setID),
-            ((armourROs.legs  === null) ? "0" : armourROs.legs.setID ),
-            ((petalaceRO      === null) ? "0" : petalaceRO.id        ),
+            ((armourROs.head  === null) ? "0" : armourROs.head.setID.toString(NUMBER_BASE) ),
+            ((armourROs.chest === null) ? "0" : armourROs.chest.setID.toString(NUMBER_BASE)),
+            ((armourROs.arms  === null) ? "0" : armourROs.arms.setID.toString(NUMBER_BASE) ),
+            ((armourROs.waist === null) ? "0" : armourROs.waist.setID.toString(NUMBER_BASE)),
+            ((armourROs.legs  === null) ? "0" : armourROs.legs.setID.toString(NUMBER_BASE) ),
+            ((petalaceRO      === null) ? "0" : petalaceRO.id                              ),
         ].join(SPLIT_CHAR);
     
     const rampSkillsStr = [
