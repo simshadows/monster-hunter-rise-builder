@@ -375,7 +375,9 @@ async function downloadAllRawArmourData() {
 
     const expectedSlotIDs = ["head", "chest", "arms", "waist", "legs"];
 
-    const finalData = new Map(); // This is a two-layer map: {set ID string: {piece ID string: data object}}
+    const finalDataMap = new Map(); // This is a two-layer map: {set ID string: {piece ID string: data object}}
+    const finalDataArrays = { head:[], chest:[], arms:[], waist:[], legs:[] };
+
     for (const [armourSetID, armourRawDataObj] of armourRawData) {
         const namingScheme = namingSchemesRawData[armourRawDataObj.namingScheme];
         const errorIDString = "Error with armour set ID: " + String(armourSetID);
@@ -409,9 +411,9 @@ async function downloadAllRawArmourData() {
         assert(Object.keys(armourRawDataObj.defenses).length === 6, errorIDString);
 
         // Must never be a duplicate
-        assert(!finalData.has(armourSetID), errorIDString);
+        assert(!finalDataMap.has(armourSetID), errorIDString);
 
-        finalData.set(armourSetID, new Map());
+        finalDataMap.set(armourSetID, new Map());
 
         for (const [i, slotID] of expectedSlotIDs.entries()) {
             const p = armourRawDataObj.pieces[slotID];
@@ -454,13 +456,14 @@ async function downloadAllRawArmourData() {
                 // Now, we verify the structure
                 validateFinalArmourPieceObject(newPiece);
 
-                finalData.get(armourSetID).set(slotID, newPiece);
+                finalDataMap.get(armourSetID).set(slotID, newPiece);
+                finalDataArrays[slotID].push(newPiece);
             }
         }
 
     }
 
-    return finalData;
+    return [finalDataMap, finalDataArrays];
 }
 
 /*** Joining Data ***/
@@ -556,20 +559,6 @@ class GameData {
         return ret;
     }
 
-    // Returns an object of arrays: { head": array of head pieces, chest: array of chest pieces, ...}
-    static _makeArmourArrays(armourMap) {
-        const ret = { head:[], chest:[], arms:[], waist:[], legs:[] };
-        for (const [armourSetID, armourSetData] of armourMap.entries()) {
-            console.assert(isInt(armourSetID) && (armourSetID > 0));
-            console.assert(isMap(armourSetData));
-            for (const [armourSlotID, armourPieceData] of armourSetData.entries()) {
-                ret[armourSlotID].push(armourPieceData);
-            }
-        }
-        return ret;
-    }
-
-
     // Builder Function
     static async downloadRawData() {
         //await sleep(3000); // For testing
@@ -581,7 +570,7 @@ class GameData {
         const decosDataFut = downloadAllRawDecorationsData();
 
         const weaponsMap = await weaponDataFut;
-        const armourMap = await armourDataFut;
+        const [armourMap, armourArrays] = await armourDataFut;
         const decosMap = await decosDataFut;
 
         const obj = new GameData("hello smish");
@@ -600,7 +589,7 @@ class GameData {
                 map: weaponsMap,
             },
             armour: {
-                arrays: GameData._makeArmourArrays(armourMap),
+                arrays: armourArrays,
                 map: armourMap,
             },
             petalaces: {
