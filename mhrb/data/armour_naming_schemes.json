@@ -62,6 +62,20 @@
     "Obi",
     "Hakama"
 ],
+"chaos": [
+    "Chaoshroom",
+    "Chaos Plate",
+    "---",
+    "---",
+    "---"
+],
+"chaos2": [
+    "Archbun",
+    "Archplate",
+    "---",
+    "---",
+    "---"
+],
 "chrome_metal": [
     "---",
     "---",
@@ -69,12 +83,26 @@
     "Coil",
     "Boots"
 ],
+"cunning_specs": [
+    "Cunning Specs",
+    "---",
+    "---",
+    "---",
+    "---"
+],
 "death_stench": [
     "Brain",
     "Muscle",
     "Grip",
     "Bowels",
     "Heel"
+],
+"feather_of_mastery": [
+    "Feather of Mastery",
+    "---",
+    "---",
+    "---",
+    "---"
 ],
 "flame_seal": [
     "Seal",

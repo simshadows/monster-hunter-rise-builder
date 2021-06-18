@@ -267,547 +267,554 @@ const hardcodedSkills = [
 
         icon: "pink",
     }],
-    ["carving_pro", {
+    ["carving_master", {
         shortId: "32",
+        name: "Carving Master",
+        maxLevels: 1,
+
+        icon: "green",
+    }],
+    ["carving_pro", {
+        shortId: "33",
         name: "Carving Pro",
         maxLevels: 1,
 
         icon: "grey",
     }],
     ["chameleos_blessing", {
-        shortId: "33",
+        shortId: "34",
         name: "Chameleos Blessing",
         maxLevels: 4,
 
         icon: "purple",
     }],
     ["constitution", {
-        shortId: "34",
+        shortId: "35",
         name: "Constitution",
         maxLevels: 5,
 
         icon: "gold",
     }],
     ["counterstrike", {
-        shortId: "35",
+        shortId: "36",
         name: "Counterstrike",
         maxLevels: 3,
 
         icon: "red",
     }],
     ["critical_boost", {
-        shortId: "36",
+        shortId: "37",
         name: "Critical Boost",
         maxLevels: 3,
 
         icon: "pink",
     }],
     ["critical_draw", {
-        shortId: "37",
+        shortId: "38",
         name: "Critical Draw",
         maxLevels: 3,
 
         icon: "pink",
     }],
     ["critical_element", {
-        shortId: "38",
+        shortId: "39",
         name: "Critical Element",
         maxLevels: 3,
 
         icon: "darkblue",
     }],
     ["critical_eye", {
-        shortId: "39",
+        shortId: "40",
         name: "Critical Eye",
         maxLevels: 7,
 
         icon: "pink",
     }],
     ["defense_boost", {
-        shortId: "40",
+        shortId: "41",
         name: "Defense Boost",
         maxLevels: 7,
 
         icon: "gold",
     }],
     ["diversion", {
-        shortId: "41",
+        shortId: "42",
         name: "Diversion",
         maxLevels: 1,
 
         icon: "purple",
     }],
     ["divine_blessing", {
-        shortId: "42",
+        shortId: "43",
         name: "Divine Blessing",
         maxLevels: 3,
 
         icon: "white",
     }],
     ["dragonheart", {
-        shortId: "43",
+        shortId: "44",
         name: "Dragonheart",
         maxLevels: 5,
 
         icon: "orange",
     }],
     ["earplugs", {
-        shortId: "44",
+        shortId: "45",
         name: "Earplugs",
         maxLevels: 5,
 
         icon: "white",
     }],
     ["evade_extender", {
-        shortId: "45",
+        shortId: "46",
         name: "Evade Extender",
         maxLevels: 3,
 
         icon: "lightblue",
     }],
     ["evade_window", {
-        shortId: "46",
+        shortId: "47",
         name: "Evade Window",
         maxLevels: 5,
 
         icon: "lightblue",
     }],
     ["flinch_free", {
-        shortId: "47",
+        shortId: "48",
         name: "Flinch Free",
         maxLevels: 3,
 
         icon: "grey",
     }],
     ["focus", {
-        shortId: "48",
+        shortId: "49",
         name: "Focus",
         maxLevels: 3,
 
         icon: "white",
     }],
     ["fortify", {
-        shortId: "49",
+        shortId: "50",
         name: "Fortify",
         maxLevels: 1,
 
         icon: "orange",
     }],
     ["free_meal", {
-        shortId: "50",
+        shortId: "51",
         name: "Free Meal",
         maxLevels: 3,
 
         icon: "brown",
     }],
     ["geologist", {
-        shortId: "51",
+        shortId: "52",
         name: "Geologist",
         maxLevels: 3,
 
         icon: "brown",
     }],
     ["good_luck", {
-        shortId: "52",
+        shortId: "53",
         name: "Good Luck",
         maxLevels: 3,
 
         icon: "yellow",
     }],
     ["guard", {
-        shortId: "53",
+        shortId: "54",
         name: "Guard",
         maxLevels: 5,
 
         icon: "grey",
     }],
     ["guard_up", {
-        shortId: "54",
+        shortId: "55",
         name: "Guard Up",
         maxLevels: 3,
 
         icon: "white",
     }],
     ["handicraft", {
-        shortId: "55",
+        shortId: "56",
         name: "Handicraft",
         maxLevels: 5,
 
         icon: "darkblue",
     }],
     ["hellfire_cloak", {
-        shortId: "56",
+        shortId: "57",
         name: "Hellfire Cloak",
         maxLevels: 4,
 
         icon: "purple",
     }],
     ["heroics", {
-        shortId: "57",
+        shortId: "58",
         name: "Heroics",
         maxLevels: 5,
 
         icon: "red",
     }],
     ["horn_maestro", {
-        shortId: "58",
+        shortId: "59",
         name: "Horn Maestro",
         maxLevels: 1,
 
         icon: "green",
     }],
     ["hunger_resistance", {
-        shortId: "59",
+        shortId: "60",
         name: "Hunger Resistance",
         maxLevels: 3,
 
         icon: "gold",
     }],
     ["item_prolonger", {
-        shortId: "60",
+        shortId: "61",
         name: "Item Prolonger",
         maxLevels: 3,
 
         icon: "brown",
     }],
     ["jump_master", {
-        shortId: "61",
+        shortId: "62",
         name: "Jump Master",
         maxLevels: 1,
 
         icon: "blue",
     }],
     ["kushala_blessing", {
-        shortId: "62",
+        shortId: "63",
         name: "Kushala Blessing",
         maxLevels: 4,
 
         icon: "grey",
     }],
     ["latent_power", {
-        shortId: "63",
+        shortId: "64",
         name: "Latent Power",
         maxLevels: 5,
 
         icon: "pink",
     }],
     ["leap_of_faith", {
-        shortId: "64",
+        shortId: "65",
         name: "Leap Of Faith",
         maxLevels: 1,
 
         icon: "lightblue",
     }],
     ["load_shells", {
-        shortId: "65",
+        shortId: "66",
         name: "Load Shells",
         maxLevels: 2,
 
         icon: "grey",
     }],
     ["marathon_runner", {
-        shortId: "66",
+        shortId: "67",
         name: "Marathon Runner",
         maxLevels: 3,
 
         icon: "gold",
     }],
     ["master_mounter", {
-        shortId: "67",
+        shortId: "68",
         name: "Master Mounter",
         maxLevels: 1,
 
         icon: "blue",
     }],
     ["masters_touch", {
-        shortId: "68",
+        shortId: "69",
         name: "Master's Touch",
         maxLevels: 3,
 
         icon: "white",
     }],
     ["maximum_might", {
-        shortId: "69",
+        shortId: "70",
         name: "Maximum Might",
         maxLevels: 3,
 
         icon: "pink",
     }],
     ["minds_eye", {
-        shortId: "70",
+        shortId: "71",
         name: "Mind's Eye",
         maxLevels: 3,
 
         icon: "white",
     }],
     ["muck_resistance", {
-        shortId: "71",
+        shortId: "72",
         name: "Muck Resistance",
         maxLevels: 2,
 
         icon: "grey",
     }],
     ["mushroomancer", {
-        shortId: "72",
+        shortId: "73",
         name: "Mushroomancer",
         maxLevels: 3,
 
         icon: "purple",
     }],
     ["normal_rapid_up", {
-        shortId: "73",
+        shortId: "74",
         name: "Normal/Rapid Up",
         maxLevels: 3,
 
         icon: "white",
     }],
     ["offensive_guard", {
-        shortId: "74",
+        shortId: "75",
         name: "Offensive Guard",
         maxLevels: 3,
 
         icon: "purple",
     }],
     ["partbreaker", {
-        shortId: "75",
+        shortId: "76",
         name: "Partbreaker",
         maxLevels: 3,
 
         icon: "grey",
     }],
     ["peak_performance", {
-        shortId: "76",
+        shortId: "77",
         name: "Peak Performance",
         maxLevels: 3,
 
         icon: "red",
     }],
     ["pierce_up", {
-        shortId: "77",
+        shortId: "78",
         name: "Pierce Up",
         maxLevels: 3,
 
         icon: "blue",
     }],
     ["power_prolonger", {
-        shortId: "78",
+        shortId: "79",
         name: "Power Prolonger",
         maxLevels: 3,
 
         icon: "brown",
     }],
     ["protective_polish", {
-        shortId: "79",
+        shortId: "80",
         name: "Protective Polish",
         maxLevels: 3,
 
         icon: "yellow",
     }],
     ["punishing_draw", {
-        shortId: "80",
+        shortId: "81",
         name: "Punishing Draw",
         maxLevels: 3,
 
         icon: "yellow",
     }],
     ["quick_sheath", {
-        shortId: "81",
+        shortId: "82",
         name: "Quick Sheath",
         maxLevels: 3,
 
         icon: "brown",
     }],
     ["rapid_fire_up", {
-        shortId: "82",
+        shortId: "83",
         name: "Rapid Fire Up",
         maxLevels: 3,
 
         icon: "white",
     }],
     ["rapid_morph", {
-        shortId: "83",
+        shortId: "84",
         name: "Rapid Morph",
         maxLevels: 3,
 
         icon: "blue",
     }],
     ["razor_sharp", {
-        shortId: "84",
+        shortId: "85",
         name: "Razor Sharp",
         maxLevels: 3,
 
         icon: "yellow",
     }],
     ["recoil_down", {
-        shortId: "85",
+        shortId: "86",
         name: "Recoil Down",
         maxLevels: 3,
 
         icon: "brown",
     }],
     ["recovery_speed", {
-        shortId: "86",
+        shortId: "87",
         name: "Recovery Speed",
         maxLevels: 3,
 
         icon: "green",
     }],
     ["recovery_up", {
-        shortId: "87",
+        shortId: "88",
         name: "Recovery Up",
         maxLevels: 3,
 
         icon: "green",
     }],
     ["reload_speed", {
-        shortId: "88",
+        shortId: "89",
         name: "Reload Speed",
         maxLevels: 3,
 
         icon: "white",
     }],
     ["resentment", {
-        shortId: "89",
+        shortId: "90",
         name: "Resentment",
         maxLevels: 5,
 
         icon: "orange",
     }],
     ["resuscitate", {
-        shortId: "90",
+        shortId: "91",
         name: "Resuscitate",
         maxLevels: 3,
 
         icon: "orange",
     }],
     ["slugger", {
-        shortId: "91",
+        shortId: "92",
         name: "Slugger",
         maxLevels: 3,
 
         icon: "yellow",
     }],
     ["spare_shot", {
-        shortId: "92",
+        shortId: "93",
         name: "Spare Shot",
         maxLevels: 3,
 
         icon: "yellow",
     }],
     ["special_ammo_boost", {
-        shortId: "93",
+        shortId: "94",
         name: "Special Ammo Boost",
         maxLevels: 2,
 
         icon: "grey",
     }],
     ["speed_eating", {
-        shortId: "94",
+        shortId: "95",
         name: "Speed Eating",
         maxLevels: 3,
 
         icon: "gold",
     }],
     ["speed_sharpening", {
-        shortId: "95",
+        shortId: "96",
         name: "Speed Sharpening",
         maxLevels: 3,
 
         icon: "yellow",
     }],
     ["spread_up", {
-        shortId: "96",
+        shortId: "97",
         name: "Spread Up",
         maxLevels: 3,
 
         icon: "grey",
     }],
     ["stamina_surge", {
-        shortId: "97",
+        shortId: "98",
         name: "Stamina Surge",
         maxLevels: 3,
 
         icon: "gold",
     }],
     ["stamina_thief", {
-        shortId: "98",
+        shortId: "99",
         name: "Stamina Thief",
         maxLevels: 3,
 
         icon: "darkblue",
     }],
     ["steadiness", {
-        shortId: "99",
+        shortId: "100",
         name: "Steadiness",
         maxLevels: 2,
 
         icon: "grey",
     }],
     ["stun_resistance", {
-        shortId: "100",
+        shortId: "101",
         name: "Stun Resistance",
         maxLevels: 3,
 
         icon: "yellow",
     }],
     ["teostra_blessing", {
-        shortId: "101",
+        shortId: "102",
         name: "Teostra Blessing",
         maxLevels: 4,
 
         icon: "red",
     }],
     ["thunder_alignment", {
-        shortId: "102",
+        shortId: "103",
         name: "Thunder Alignment",
         maxLevels: 5,
 
         icon: "yellow",
     }],
     ["tremor_resistance", {
-        shortId: "103",
+        shortId: "104",
         name: "Tremor Resistance",
         maxLevels: 3,
 
         icon: "grey",
     }],
     ["wall_runner", {
-        shortId: "104",
+        shortId: "105",
         name: "Wall Runner",
         maxLevels: 3,
 
         icon: "green",
     }],
     ["weakness_exploit", {
-        shortId: "105",
+        shortId: "106",
         name: "Weakness Exploit",
         maxLevels: 3,
 
         icon: "pink",
     }],
     ["wide_range", {
-        shortId: "106",
+        shortId: "107",
         name: "Wide Range",
         maxLevels: 5,
 
         icon: "white",
     }],
     ["wind_alignment", {
-        shortId: "107",
+        shortId: "108",
         name: "Wind Alignment",
         maxLevels: 5,
 
         icon: "lightblue",
     }],
     ["windproof", {
-        shortId: "108",
+        shortId: "109",
         name: "Windproof",
         maxLevels: 3,
 
         icon: "white",
     }],
     ["wirebug_whisperer", {
-        shortId: "109",
+        shortId: "110",
         name: "Wirebug Whisperer",
         maxLevels: 3,
 

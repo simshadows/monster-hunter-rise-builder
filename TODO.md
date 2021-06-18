@@ -10,12 +10,6 @@
 
 ```
 [LR] [rarity 2]
-Chaoshroom
-Chaos Plate
-```
-
-```
-[LR] [rarity 2]
 Skalda Vertex
 Skalda Thorax
 Skalda Brachia
@@ -39,47 +33,6 @@ Aelucanth Thorax
 Aelucanth Brachia
 Aelucanth Elytra
 Aelucanth Crura
-```
-
-```
-[LR] [rarity 3]
-Kamurai Hat
-Kamurai Garb
-Kamurai Braces
-Kamurai Obi
-Kamurai Leggings
-```
-
-```
-[LR] [rarity 3]
-Sinister Seal Mask
-Sinister Seal Garb
-Sinister Seal Braces
-Sinister Seal Obi
-Sinister Seal Greaves
-```
-
-```
-[LR] [rarity 3]
-Fox Mask
-```
-
-```
-[LR] [rarity 3]
-Theater Wig
-```
-
-```
-[LR] [rarity 3]
-Swallow Shirt
-Swallow Gloves
-Swallow Boots
-```
-
-```
-[HR] [rarity 4]
-Chaos Archbun
-Chaos Archplate
 ```
 
 ```
@@ -119,25 +72,6 @@ Aelucanth Crura S
 ```
 
 ```
-[HR] [rarity 6]
-Cunning Specs
-```
-
-```
-[HR] [rarity 6]
-Canyne Mask
-```
-
-```
-[HR] [rarity 6]
-Rider Helm
-Rider Mail
-Rider Gloves
-Rider Coil
-Rider Greaves
-```
-
-```
 [HR] [rarity 7]
 Ibushi's Helm
 Ibushi's Breastplate S
@@ -153,16 +87,6 @@ Narwa's Breastplate S
 Narwa's Pauldrons
 Narwa's Fauld
 Foot of Narwa
-```
-
-```
-[HR] [rarity 7]
-Flame Seal
-```
-
-```
-[HR] [rarity 7]
-Feather of Mastery
 ```
 
 # Acknowledgements

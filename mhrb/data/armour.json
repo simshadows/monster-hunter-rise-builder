@@ -195,6 +195,25 @@
 [11, {
     "tier": "lr",
     "rarity": 2,
+    "setName": "Chaos",
+    "searchHint": "",
+
+    "prefix": "",
+    "namingScheme": "chaos",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[], {"mushroomancer" : 1}],
+        "chest": [[], {                   }],
+        "arms":  null,
+        "waist": null,
+        "legs":  null
+    },
+    "defenses": {"defLvl1": 12, "f":2, "w":-2, "t":0, "i":0, "d":0}
+}],
+[12, {
+    "tier": "lr",
+    "rarity": 2,
     "setName": "Edel",
     "searchHint": "",
 
@@ -211,7 +230,7 @@
     },
     "defenses": {"defLvl1": 12, "f":-1, "w":3, "t":-1, "i":0, "d":0}
 }],
-[12, {
+[13, {
     "tier": "lr",
     "rarity": 2,
     "setName": "Spio",
@@ -230,7 +249,7 @@
     },
     "defenses": {"defLvl1": 12, "f":3, "w":-1, "t":-1, "i":-1, "d":3}
 }],
-[13, {
+[14, {
     "tier": "lr",
     "rarity": 2,
     "setName": "Shell-Studded",
@@ -255,7 +274,7 @@
     },
     "defenses": {"defLvl1": 12, "f":0, "w":2, "t":1, "i":-1, "d":0}
 }],
-[14, {
+[15, {
     "tier": "lr",
     "rarity": 2,
     "setName": "Rhenoplos",
@@ -274,7 +293,7 @@
     },
     "defenses": {"defLvl1": 14, "f":2, "w":0, "t":0, "i":-2, "d":0}
 }],
-[15, {
+[16, {
     "tier": "lr",
     "rarity": 2,
     "setName": "Slagtoth",
@@ -293,7 +312,7 @@
     },
     "defenses": {"defLvl1": 14, "f":-2, "w":2, "t":0, "i":-1, "d":1}
 }],
-[16, {
+[17, {
     "tier": "lr",
     "rarity": 2,
     "setName": "Droth",
@@ -312,7 +331,7 @@
     },
     "defenses": {"defLvl1": 14, "f":-2, "w":4, "t":-1, "i":0, "d":0}
 }],
-[17, {
+[18, {
     "tier": "lr",
     "rarity": 2,
     "setName": "Bnahabra",
@@ -331,7 +350,7 @@
     },
     "defenses": {"defLvl1": 14, "f":-2, "w":0, "t":0, "i":0, "d":2}
 }],
-[18, {
+[19, {
     "tier": "lr",
     "rarity": 2,
     "setName": "Jaggi",
@@ -350,7 +369,7 @@
     },
     "defenses": {"defLvl1": 14, "f":0, "w":0, "t":0, "i":1, "d":0}
 }],
-[19, {
+[20, {
     "tier": "lr",
     "rarity": 2,
     "setName": "Kulu",
@@ -369,7 +388,7 @@
     },
     "defenses": {"defLvl1": 16, "f":0, "w":-3, "t":0, "i":1, "d":0}
 }],
-[20, {
+[21, {
     "tier": "lr",
     "rarity": 2,
     "setName": "Wroggi",
@@ -388,7 +407,7 @@
     },
     "defenses": {"defLvl1": 16, "f":2, "w":-2, "t":1, "i":-4, "d":0}
 }],
-[21, {
+[22, {
     "tier": "lr",
     "rarity": 2,
     "setName": "Aknosom",
@@ -407,7 +426,7 @@
     },
     "defenses": {"defLvl1": 16, "f":3, "w":-3, "t":1, "i":0, "d":0}
 }],
-[22, {
+[23, {
     "tier": "lr",
     "rarity": 2,
     "setName": "Ludroth",
@@ -426,7 +445,7 @@
     },
     "defenses": {"defLvl1": 18, "f":-3, "w":4, "t":-1, "i":0, "d":0}
 }],
-[23, {
+[24, {
     "tier": "lr",
     "rarity": 2,
     "setName": "Barroth",
@@ -445,7 +464,7 @@
     },
     "defenses": {"defLvl1": 18, "f":-3, "w":-1, "t":3, "i":-1, "d":0}
 }],
-[24, {
+[25, {
     "tier": "lr",
     "rarity": 2,
     "setName": "Khezu",
@@ -464,7 +483,7 @@
     },
     "defenses": {"defLvl1": 16, "f":-4, "w":1, "t":4, "i":2, "d":1}
 }],
-[25, {
+[26, {
     "tier": "lr",
     "rarity": 2,
     "setName": "Tetranadon",
@@ -483,7 +502,7 @@
     },
     "defenses": {"defLvl1": 18, "f":-1, "w":4, "t":-2, "i":1, "d":0}
 }],
-[26, {
+[27, {
     "tier": "lr",
     "rarity": 2,
     "setName": "Ingot",
@@ -502,7 +521,7 @@
     },
     "defenses": {"defLvl1": 18, "f":-1, "w":-1, "t":1, "i":0, "d":0}
 }],
-[27, {
+[28, {
     "tier": "lr",
     "rarity": 2,
     "setName": "Melahoa",
@@ -521,7 +540,7 @@
     },
     "defenses": {"defLvl1": 18, "f":0, "w":1, "t":3, "i":0, "d":0}
 }],
-[28, {
+[29, {
     "tier": "lr",
     "rarity": 2,
     "setName": "Death Stench",
@@ -540,7 +559,7 @@
     },
     "defenses": {"defLvl1": 18, "f":3, "w":1, "t":1, "i":-1, "d":0}
 }],
-[29, {
+[30, {
     "tier": "lr",
     "rarity": 2,
     "setName": "Mosgharl",
@@ -559,7 +578,7 @@
     },
     "defenses": {"defLvl1": 18, "f":-3, "w":1, "t":0, "i":3, "d":0}
 }],
-[30, {
+[31, {
     "tier": "lr",
     "rarity": 2,
     "setName": "Vaik",
@@ -578,7 +597,7 @@
     },
     "defenses": {"defLvl1": 18, "f":0, "w":3, "t":-2, "i":-1, "d":0}
 }],
-[31, {
+[32, {
     "tier": "lr",
     "rarity": 2,
     "setName": "Gargwa Mask",
@@ -597,7 +616,7 @@
     },
     "defenses": {"defLvl1": 14, "f":-3, "w":-2, "t":-2, "i":1, "d":0}
 }],
-[32, {
+[33, {
     "tier": "lr",
     "rarity": 2,
     "setName": "Bullfango Mask",
@@ -616,7 +635,7 @@
     },
     "defenses": {"defLvl1": 14, "f":0, "w":4, "t":-2, "i":0, "d":0}
 }],
-[33, {
+[34, {
     "tier": "lr",
     "rarity": 2,
     "setName": "Uroktor",
@@ -635,7 +654,7 @@
     },
     "defenses": {"defLvl1": 18, "f":4, "w":-2, "t":0, "i":-1, "d":0}
 }],
-[34, {
+[35, {
     "tier": "lr",
     "rarity": 2,
     "setName": "Remobra",
@@ -654,7 +673,7 @@
     },
     "defenses": {"defLvl1": 18, "f":1, "w":1, "t":1, "i":1, "d":2}
 }],
-[35, {
+[36, {
     "tier": "lr",
     "rarity": 2,
     "setName": "Jaggi Mask",
@@ -673,7 +692,7 @@
     },
     "defenses": {"defLvl1": 14, "f":0, "w":0, "t":0, "i":0, "d":0}
 }],
-[36, {
+[37, {
     "tier": "lr",
     "rarity": 2,
     "setName": "Volvidon",
@@ -692,7 +711,7 @@
     },
     "defenses": {"defLvl1": 20, "f":2, "w":-3, "t":0, "i":-1, "d":1}
 }],
-[37, {
+[38, {
     "tier": "lr",
     "rarity": 2,
     "setName": "Bishaten",
@@ -711,7 +730,7 @@
     },
     "defenses": {"defLvl1": 22, "f":-2, "w":2, "t":2, "i":-4, "d":2}
 }],
-[38, {
+[39, {
     "tier": "lr",
     "rarity": 2,
     "setName": "Pukei",
@@ -736,7 +755,7 @@
     },
     "defenses": {"defLvl1": 20, "f":0, "w":3, "t":-3, "i":0, "d":1}
 }],
-[39, {
+[40, {
     "tier": "lr",
     "rarity": 2,
     "setName": "Basarios",
@@ -755,7 +774,7 @@
     },
     "defenses": {"defLvl1": 22, "f":0, "w":-2, "t":1, "i":1, "d":-3}
 }],
-[40, {
+[41, {
     "tier": "lr",
     "rarity": 2,
     "setName": "Somnacanth",
@@ -774,7 +793,7 @@
     },
     "defenses": {"defLvl1": 22, "f":-1, "w":2, "t":-3, "i":0, "d":1}
 }],
-[41, {
+[42, {
     "tier": "lr",
     "rarity": 2,
     "setName": "Rathian",
@@ -793,7 +812,7 @@
     },
     "defenses": {"defLvl1": 22, "f":3, "w":0, "t":-2, "i":0, "d":-3}
 }],
-[42, {
+[43, {
     "tier": "lr",
     "rarity": 2,
     "setName": "Barioth",
@@ -812,7 +831,7 @@
     },
     "defenses": {"defLvl1": 20, "f":-1, "w":0, "t":-1, "i":3, "d":0}
 }],
-[43, {
+[44, {
     "tier": "lr",
     "rarity": 2,
     "setName": "Kadachi",
@@ -837,7 +856,7 @@
     },
     "defenses": {"defLvl1": 20, "f":0, "w":-3, "t":3, "i":0, "d":0}
 }],
-[44, {
+[45, {
     "tier": "lr",
     "rarity": 3,
     "setName": "Rhopessa",
@@ -856,7 +875,7 @@
     },
     "defenses": {"defLvl1": 24, "f":-2, "w":0, "t":3, "i":-2, "d":2}
 }],
-[45, {
+[46, {
     "tier": "lr",
     "rarity": 3,
     "setName": "Jelly",
@@ -875,7 +894,7 @@
     },
     "defenses": {"defLvl1": 24, "f":1, "w":3, "t":0, "i":2, "d":0}
 }],
-[46, {
+[47, {
     "tier": "lr",
     "rarity": 3,
     "setName": "Utsushi (Visible)",
@@ -894,7 +913,7 @@
     },
     "defenses": {"defLvl1": 24, "f":3, "w":0, "t":0, "i":0, "d":0}
 }],
-[47, {
+[48, {
     "tier": "lr",
     "rarity": 3,
     "setName": "Medium",
@@ -913,7 +932,7 @@
     },
     "defenses": {"defLvl1": 24, "f":3, "w":0, "t":0, "i":0, "d":0}
 }],
-[48, {
+[49, {
     "tier": "lr",
     "rarity": 3,
     "setName": "Utsushi (Hidden)",
@@ -932,7 +951,7 @@
     },
     "defenses": {"defLvl1": 24, "f":3, "w":0, "t":0, "i":0, "d":0}
 }],
-[49, {
+[50, {
     "tier": "lr",
     "rarity": 3,
     "setName": "Channeler",
@@ -951,7 +970,7 @@
     },
     "defenses": {"defLvl1": 24, "f":3, "w":0, "t":0, "i":0, "d":0}
 }],
-[50, {
+[51, {
     "tier": "lr",
     "rarity": 3,
     "setName": "Brigade",
@@ -970,7 +989,7 @@
     },
     "defenses": {"defLvl1": 26, "f":1, "w":0, "t":2, "i":0, "d":2}
 }],
-[51, {
+[52, {
     "tier": "lr",
     "rarity": 3,
     "setName": "Sinister",
@@ -989,7 +1008,7 @@
     },
     "defenses": {"defLvl1": 28, "f":3, "w":-3, "t":-2, "i":1, "d":1}
 }],
-[52, {
+[53, {
     "tier": "lr",
     "rarity": 3,
     "setName": "Anja",
@@ -1008,7 +1027,7 @@
     },
     "defenses": {"defLvl1": 26, "f":3, "w":-3, "t":-1, "i":-1, "d":0}
 }],
-[53, {
+[54, {
     "tier": "lr",
     "rarity": 3,
     "setName": "Nargacuga",
@@ -1027,7 +1046,7 @@
     },
     "defenses": {"defLvl1": 26, "f":-2, "w":1, "t":-3, "i":1, "d":1}
 }],
-[54, {
+[55, {
     "tier": "lr",
     "rarity": 3,
     "setName": "Mizutsune",
@@ -1046,7 +1065,7 @@
     },
     "defenses": {"defLvl1": 26, "f":0, "w":2, "t":-3, "i":1, "d":-1}
 }],
-[55, {
+[56, {
     "tier": "lr",
     "rarity": 3,
     "setName": "Rathalos",
@@ -1065,7 +1084,7 @@
     },
     "defenses": {"defLvl1": 28, "f":4, "w":0, "t":-2, "i":0, "d":-4}
 }],
-[56, {
+[57, {
     "tier": "lr",
     "rarity": 3,
     "setName": "Zinogre",
@@ -1084,7 +1103,7 @@
     },
     "defenses": {"defLvl1": 28, "f":0, "w":-1, "t":4, "i":-4, "d":1}
 }],
-[57, {
+[58, {
     "tier": "lr",
     "rarity": 3,
     "setName": "Skull",
@@ -1103,7 +1122,7 @@
     },
     "defenses": {"defLvl1": 28, "f":-3, "w":-3, "t":-3, "i":-3, "d":4}
 }],
-[58, {
+[59, {
     "tier": "lr",
     "rarity": 3,
     "setName": "Goss Harag",
@@ -1122,7 +1141,7 @@
     },
     "defenses": {"defLvl1": 30, "f":-4, "w":1, "t":-1, "i":4, "d":0}
 }],
-[59, {
+[60, {
     "tier": "lr",
     "rarity": 3,
     "setName": "Almudron",
@@ -1141,7 +1160,7 @@
     },
     "defenses": {"defLvl1": 30, "f":-4, "w":3, "t":3, "i":-2, "d":-2}
 }],
-[60, {
+[61, {
     "tier": "lr",
     "rarity": 3,
     "setName": "Tigrex",
@@ -1160,7 +1179,7 @@
     },
     "defenses": {"defLvl1": 30, "f":2, "w":0, "t":-3, "i":0, "d":-2}
 }],
-[61, {
+[62, {
     "tier": "lr",
     "rarity": 3,
     "setName": "Diablos",
@@ -1527,6 +1546,25 @@
 [89, {
     "tier": "hr",
     "rarity": 4,
+    "setName": "Chaos S",
+    "searchHint": "",
+
+    "prefix": "Chaos",
+    "namingScheme": "chaos2",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[1,1], {"mushroomancer": 1}],
+        "chest": [[   ], {"mushroomancer": 2}],
+        "arms":  null,
+        "waist": null,
+        "legs":  null
+    },
+    "defenses": {"defLvl1": 40, "f":2, "w":-2, "t":0, "i":0, "d":0}
+}],
+[90, {
+    "tier": "hr",
+    "rarity": 4,
     "setName": "Edel S",
     "searchHint": "",
 
@@ -1543,7 +1581,7 @@
     },
     "defenses": {"defLvl1": 40, "f":-1, "w":3, "t":-1, "i":0, "d":0}
 }],
-[90, {
+[91, {
     "tier": "hr",
     "rarity": 4,
     "setName": "Slagtoth S",
@@ -1562,7 +1600,7 @@
     },
     "defenses": {"defLvl1": 42, "f":-2, "w":2, "t":0, "i":-1, "d":1}
 }],
-[91, {
+[92, {
     "tier": "hr",
     "rarity": 4,
     "setName": "Rhenoplos S",
@@ -1581,7 +1619,7 @@
     },
     "defenses": {"defLvl1": 42, "f":2, "w":0, "t":0, "i":-2, "d":0}
 }],
-[92, {
+[93, {
     "tier": "hr",
     "rarity": 4,
     "setName": "Bullfango Mask S",
@@ -1600,7 +1638,7 @@
     },
     "defenses": {"defLvl1": 36, "f":0, "w":4, "t":-2, "i":0, "d":0}
 }],
-[93, {
+[94, {
     "tier": "hr",
     "rarity": 4,
     "setName": "Droth S",
@@ -1619,7 +1657,7 @@
     },
     "defenses": {"defLvl1": 42, "f":-2, "w":4, "t":-1, "i":0, "d":0}
 }],
-[94, {
+[95, {
     "tier": "hr",
     "rarity": 4,
     "setName": "Jaggi S",
@@ -1638,7 +1676,7 @@
     },
     "defenses": {"defLvl1": 42, "f":0, "w":0, "t":0, "i":1, "d":0}
 }],
-[95, {
+[96, {
     "tier": "hr",
     "rarity": 4,
     "setName": "Jaggi Mask S",
@@ -1657,7 +1695,7 @@
     },
     "defenses": {"defLvl1": 36, "f":0, "w":0, "t":0, "i":0, "d":0}
 }],
-[96, {
+[97, {
     "tier": "hr",
     "rarity": 4,
     "setName": "Volvidon S",
@@ -1676,7 +1714,7 @@
     },
     "defenses": {"defLvl1": 50, "f":2, "w":-3, "t":0, "i":-1, "d":1}
 }],
-[97, {
+[98, {
     "tier": "hr",
     "rarity": 4,
     "setName": "Ludroth S",
@@ -1695,7 +1733,7 @@
     },
     "defenses": {"defLvl1": 48, "f":-3, "w":4, "t":-1, "i":0, "d":0}
 }],
-[98, {
+[99, {
     "tier": "hr",
     "rarity": 4,
     "setName": "Barroth S",
@@ -1714,7 +1752,7 @@
     },
     "defenses": {"defLvl1": 50, "f":-3, "w":-1, "t":3, "i":-1, "d":0}
 }],
-[99, {
+[100, {
     "tier": "hr",
     "rarity": 5,
     "setName": "Bishaten S",
@@ -1733,7 +1771,7 @@
     },
     "defenses": {"defLvl1": 52, "f":-2, "w":2, "t":2, "i":-4, "d":2}
 }],
-[100, {
+[101, {
     "tier": "hr",
     "rarity": 5,
     "setName": "Pukei S",
@@ -1758,7 +1796,7 @@
     },
     "defenses": {"defLvl1": 50, "f":0, "w":3, "t":-3, "i":0, "d":1}
 }],
-[101, {
+[102, {
     "tier": "hr",
     "rarity": 5,
     "setName": "Jyura",
@@ -1777,7 +1815,7 @@
     },
     "defenses": {"defLvl1": 48, "f":-1, "w":2, "t":-3, "i":0, "d":0}
 }],
-[102, {
+[103, {
     "tier": "hr",
     "rarity": 5,
     "setName": "Basarios S",
@@ -1796,7 +1834,7 @@
     },
     "defenses": {"defLvl1": 52, "f":0, "w":-2, "t":1, "i":1, "d":-3}
 }],
-[103, {
+[104, {
     "tier": "hr",
     "rarity": 5,
     "setName": "Rathian S",
@@ -1815,7 +1853,7 @@
     },
     "defenses": {"defLvl1": 52, "f":3, "w":0, "t":-2, "i":0, "d":-3}
 }],
-[104, {
+[105, {
     "tier": "hr",
     "rarity": 5,
     "setName": "Skull S",
@@ -1834,7 +1872,7 @@
     },
     "defenses": {"defLvl1": 50, "f":-3, "w":-3, "t":-3, "i":-3, "d":4}
 }],
-[105, {
+[106, {
     "tier": "hr",
     "rarity": 5,
     "setName": "Chrome Metal",
@@ -1853,7 +1891,7 @@
     },
     "defenses": {"defLvl1": 46, "f":-2, "w":-2, "t":-2, "i":-2, "d":-2}
 }],
-[106, {
+[107, {
     "tier": "hr",
     "rarity": 5,
     "setName": "Dober",
@@ -1872,7 +1910,7 @@
     },
     "defenses": {"defLvl1": 52, "f":-2, "w":0, "t":0, "i":0, "d":4}
 }],
-[107, {
+[108, {
     "tier": "hr",
     "rarity": 5,
     "setName": "Shell-Studded S",
@@ -1897,7 +1935,7 @@
     },
     "defenses": {"defLvl1": 52, "f":0, "w":2, "t":1, "i":-1, "d":0}
 }],
-[108, {
+[109, {
     "tier": "hr",
     "rarity": 5,
     "setName": "Death Stench S",
@@ -1916,7 +1954,7 @@
     },
     "defenses": {"defLvl1": 52, "f":3, "w":1, "t":1, "i":-1, "d":0}
 }],
-[109, {
+[110, {
     "tier": "hr",
     "rarity": 5,
     "setName": "Mosgharl S",
@@ -1935,7 +1973,7 @@
     },
     "defenses": {"defLvl1": 52, "f":-3, "w":1, "t":0, "i":3, "d":0}
 }],
-[110, {
+[111, {
     "tier": "hr",
     "rarity": 5,
     "setName": "Vaik S",
@@ -1954,7 +1992,7 @@
     },
     "defenses": {"defLvl1": 52, "f":0, "w":3, "t":-2, "i":-1, "d":0}
 }],
-[111, {
+[112, {
     "tier": "hr",
     "rarity": 5,
     "setName": "Utsushi (Visible) S",
@@ -1973,7 +2011,7 @@
     },
     "defenses": {"defLvl1": 52, "f":3, "w":0, "t":0, "i":0, "d":0}
 }],
-[112, {
+[113, {
     "tier": "hr",
     "rarity": 5,
     "setName": "Medium S",
@@ -1992,7 +2030,7 @@
     },
     "defenses": {"defLvl1": 52, "f":3, "w":0, "t":0, "i":0, "d":0}
 }],
-[113, {
+[114, {
     "tier": "hr",
     "rarity": 5,
     "setName": "Utsushi (Hidden) S",
@@ -2011,7 +2049,7 @@
     },
     "defenses": {"defLvl1": 52, "f":3, "w":0, "t":0, "i":0, "d":0}
 }],
-[114, {
+[115, {
     "tier": "hr",
     "rarity": 5,
     "setName": "Channeler S",
@@ -2030,7 +2068,7 @@
     },
     "defenses": {"defLvl1": 52, "f":3, "w":0, "t":0, "i":0, "d":0}
 }],
-[115, {
+[116, {
     "tier": "hr",
     "rarity": 5,
     "setName": "Uroktor S",
@@ -2049,7 +2087,7 @@
     },
     "defenses": {"defLvl1": 52, "f":4, "w":-2, "t":0, "i":-1, "d":0}
 }],
-[116, {
+[117, {
     "tier": "hr",
     "rarity": 5,
     "setName": "Remobra S",
@@ -2068,7 +2106,7 @@
     },
     "defenses": {"defLvl1": 52, "f":1, "w":1, "t":1, "i":1, "d":3}
 }],
-[117, {
+[118, {
     "tier": "hr",
     "rarity": 5,
     "setName": "Somnacanth S",
@@ -2087,7 +2125,7 @@
     },
     "defenses": {"defLvl1": 58, "f":-1, "w":2, "t":-3, "i":0, "d":1}
 }],
-[118, {
+[119, {
     "tier": "hr",
     "rarity": 5,
     "setName": "Barioth S",
@@ -2106,7 +2144,7 @@
     },
     "defenses": {"defLvl1": 58, "f":-3, "w":0, "t":-1, "i":3, "d":0}
 }],
-[119, {
+[120, {
     "tier": "hr",
     "rarity": 5,
     "setName": "Kadachi S",
@@ -2131,7 +2169,7 @@
     },
     "defenses": {"defLvl1": 58, "f":0, "w":-3, "t":3, "i":0, "d":0}
 }],
-[120, {
+[121, {
     "tier": "hr",
     "rarity": 6,
     "setName": "Anja S",
@@ -2150,7 +2188,7 @@
     },
     "defenses": {"defLvl1": 60, "f":3, "w":-3, "t":-1, "i":-1, "d":0}
 }],
-[121, {
+[122, {
     "tier": "hr",
     "rarity": 6,
     "setName": "Nargacuga S",
@@ -2169,7 +2207,7 @@
     },
     "defenses": {"defLvl1": 60, "f":-2, "w":1, "t":-3, "i":1, "d":1}
 }],
-[122, {
+[123, {
     "tier": "hr",
     "rarity": 6,
     "setName": "Mizutsune S",
@@ -2188,7 +2226,7 @@
     },
     "defenses": {"defLvl1": 60, "f":0, "w":2, "t":-3, "i":1, "d":-1}
 }],
-[123, {
+[124, {
     "tier": "hr",
     "rarity": 6,
     "setName": "Rathalos S",
@@ -2207,7 +2245,7 @@
     },
     "defenses": {"defLvl1": 62, "f":3, "w":1, "t":-2, "i":1, "d":-3}
 }],
-[124, {
+[125, {
     "tier": "hr",
     "rarity": 6,
     "setName": "Zinogre S",
@@ -2226,7 +2264,7 @@
     },
     "defenses": {"defLvl1": 62, "f":0, "w":-1, "t":4, "i":-4, "d":1}
 }],
-[125, {
+[126, {
     "tier": "hr",
     "rarity": 6,
     "setName": "Rhopessa S",
@@ -2245,7 +2283,7 @@
     },
     "defenses": {"defLvl1": 62, "f":-2, "w":0, "t":3, "i":-2, "d":2}
 }],
-[126, {
+[127, {
     "tier": "hr",
     "rarity": 6,
     "setName": "Jelly S",
@@ -2264,7 +2302,7 @@
     },
     "defenses": {"defLvl1": 62, "f":1, "w":3, "t":0, "i":2, "d":0}
 }],
-[127, {
+[128, {
     "tier": "hr",
     "rarity": 6,
     "setName": "Brigade S",
@@ -2283,7 +2321,7 @@
     },
     "defenses": {"defLvl1": 62, "f":1, "w":0, "t":2, "i":0, "d":2}
 }],
-[128, {
+[129, {
     "tier": "hr",
     "rarity": 6,
     "setName": "Mighty Bow Feather",
@@ -2302,7 +2340,7 @@
     },
     "defenses": {"defLvl1": 56, "f":0, "w":0, "t":0, "i":0, "d":0}
 }],
-[129, {
+[130, {
     "tier": "hr",
     "rarity": 6,
     "setName": "Gargwa Mask S",
@@ -2321,7 +2359,7 @@
     },
     "defenses": {"defLvl1": 54, "f":-3, "w":-2, "t":-2, "i":1, "d":0}
 }],
-[130, {
+[131, {
     "tier": "hr",
     "rarity": 6,
     "setName": "Sinister S",
@@ -2340,7 +2378,7 @@
     },
     "defenses": {"defLvl1": 64, "f":3, "w":-3, "t":-2, "i":1, "d":1}
 }],
-[131, {
+[132, {
     "tier": "hr",
     "rarity": 6,
     "setName": "Goss Harag S",
@@ -2359,7 +2397,7 @@
     },
     "defenses": {"defLvl1": 64, "f":-4, "w":1, "t":-1, "i":4, "d":0}
 }],
-[132, {
+[133, {
     "tier": "hr",
     "rarity": 6,
     "setName": "Almudron S",
@@ -2378,7 +2416,7 @@
     },
     "defenses": {"defLvl1": 64, "f":-4, "w":3, "t":3, "i":-2, "d":-2}
 }],
-[133, {
+[134, {
     "tier": "hr",
     "rarity": 6,
     "setName": "Tigrex S",
@@ -2397,7 +2435,7 @@
     },
     "defenses": {"defLvl1": 64, "f":2, "w":0, "t":-3, "i":0, "d":-2}
 }],
-[134, {
+[135, {
     "tier": "hr",
     "rarity": 6,
     "setName": "Diablos S",
@@ -2416,7 +2454,7 @@
     },
     "defenses": {"defLvl1": 64, "f":3, "w":-1, "t":-1, "i":-3, "d":-1}
 }],
-[135, {
+[136, {
     "tier": "hr",
     "rarity": 6,
     "setName": "Rakna-Kadaki",
@@ -2435,7 +2473,7 @@
     },
     "defenses": {"defLvl1": 66, "f":4, "w":-2, "t":-1, "i":-3, "d":1}
 }],
-[136, {
+[137, {
     "tier": "hr",
     "rarity": 7,
     "setName": "Golden",
@@ -2454,7 +2492,7 @@
     },
     "defenses": {"defLvl1": 70, "f":2, "w":1, "t":3, "i":-5, "d":2}
 }],
-[137, {
+[138, {
     "tier": "hr",
     "rarity": 7,
     "setName": "Damascus",
@@ -2473,7 +2511,26 @@
     },
     "defenses": {"defLvl1": 68, "f":-1, "w":2, "t":-3, "i":1, "d":-1}
 }],
-[138, {
+[139, {
+    "tier": "hr",
+    "rarity": 7,
+    "setName": "Feather of Mastery",
+    "searchHint": "",
+
+    "prefix": "",
+    "namingScheme": "feather_of_mastery",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[], {"carving_master": 1}],
+        "chest": null,
+        "arms":  null,
+        "waist": null,
+        "legs":  null
+    },
+    "defenses": {"defLvl1": 56, "f":3, "w":0, "t":0, "i":0, "d":0}
+}],
+[140, {
     "tier": "hr",
     "rarity": 7,
     "setName": "Flame Seal",
@@ -2492,7 +2549,7 @@
     },
     "defenses": {"defLvl1": 56, "f":3, "w":0, "t":0, "i":0, "d":0}
 }],
-[139, {
+[141, {
     "tier": "hr",
     "rarity": 7,
     "setName": "Kushala",
@@ -2511,7 +2568,7 @@
     },
     "defenses": {"defLvl1": 74, "f":-1, "w":2, "t":-2, "i":3, "d":-3}
 }],
-[140, {
+[142, {
     "tier": "hr",
     "rarity": 7,
     "setName": "Mizuha",
@@ -2530,7 +2587,7 @@
     },
     "defenses": {"defLvl1": 74, "f":-5, "w":1, "t":0, "i":3, "d":-3}
 }],
-[141, {
+[143, {
     "tier": "hr",
     "rarity": 7,
     "setName": "Kaiser",
@@ -2549,7 +2606,7 @@
     },
     "defenses": {"defLvl1": 74, "f":4, "w":-4, "t":1, "i":-1, "d":-3}
 }],
-[142, {
+[144, {
     "tier": "hr",
     "rarity": 7,
     "setName": "Bazel",
@@ -2568,7 +2625,7 @@
     },
     "defenses": {"defLvl1": 72, "f":3, "w":1, "t":-4, "i":-2, "d":-2}
 }],
-[143, {
+[145, {
     "tier": "hr",
     "rarity": 7,
     "setName": "Ibushi",
@@ -2587,7 +2644,7 @@
     },
     "defenses": {"defLvl1": 66, "f":-1, "w":0, "t":0, "i":0, "d":-2}
 }],
-[144, {
+[146, {
     "tier": "hr",
     "rarity": 7,
     "setName": "Narwa",
@@ -2606,7 +2663,7 @@
     },
     "defenses": {"defLvl1": 76, "f":2, "w":1, "t":4, "i":-3, "d":-4}
 }],
-[145, {
+[147, {
     "tier": "hr",
     "rarity": 7,
     "setName": "Crimson Valstrax",
@@ -2624,6 +2681,28 @@
         "legs":  [[3,1], {"dragonheart": 1, "resentment"      : 1                 }]
     },
     "defenses": {"defLvl1": 80, "f":-2, "w":-2, "t":-2, "i":-2, "d":3}
+}],
+
+
+
+[148, {
+    "tier": "hr",
+    "rarity": 6,
+    "setName": "Cunning Specs",
+    "searchHint": "",
+
+    "prefix": "",
+    "namingScheme": "cunning_specs",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[2,2], {"geologist": 2}],
+        "chest": null,
+        "arms":  null,
+        "waist": null,
+        "legs":  null
+    },
+    "defenses": {"defLvl1": 60, "f":2, "w":2, "t":2, "i":2, "d":2}
 }]
 
 
