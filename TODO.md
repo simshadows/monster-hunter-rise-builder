@@ -71,24 +71,6 @@ Aelucanth Elytra S
 Aelucanth Crura S
 ```
 
-```
-[HR] [rarity 7]
-Ibushi's Helm
-Ibushi's Breastplate S
-Ibushi's Pauldrons
-Ibushi's Fauld
-Foot of Ibushi
-```
-
-```
-[HR] [rarity 7]
-Narwa's Helm
-Narwa's Breastplate S
-Narwa's Pauldrons
-Narwa's Fauld
-Foot of Narwa
-```
-
 # Acknowledgements
 
 I should try to build as complete a list of acknowledgements as possible.

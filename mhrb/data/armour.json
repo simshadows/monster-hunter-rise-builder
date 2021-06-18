@@ -2647,6 +2647,25 @@
 [146, {
     "tier": "hr",
     "rarity": 7,
+    "setName": "Ibushi",
+    "searchHint": "",
+
+    "prefix": "",
+    "namingScheme": "ibushi2",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[], {"wind_alignment": 1, "focus"          : 1, "evade_extender": 1, "stormsoul": 1}],
+        "chest": [[], {"wind_alignment": 1, "guard"          : 1, "flinch_free"   : 1, "stormsoul": 1}],
+        "arms":  [[], {"wind_alignment": 1, "constitution"   : 1, "stamina_surge" : 1, "stormsoul": 1}],
+        "waist": [[], {"wind_alignment": 1, "power_prolonger": 1, "evade_window"  : 1, "stormsoul": 1}],
+        "legs":  [[], {"wind_alignment": 1, "slugger"        : 1, "guard_up"      : 1, "stormsoul": 1}]
+    },
+    "defenses": {"defLvl1": 66, "f":-1, "w":0, "t":0, "i":0, "d":-2}
+}],
+[147, {
+    "tier": "hr",
+    "rarity": 7,
     "setName": "Narwa",
     "searchHint": "",
 
@@ -2663,7 +2682,26 @@
     },
     "defenses": {"defLvl1": 76, "f":2, "w":1, "t":4, "i":-3, "d":-4}
 }],
-[147, {
+[148, {
+    "tier": "hr",
+    "rarity": 7,
+    "setName": "Narwa",
+    "searchHint": "",
+
+    "prefix": "",
+    "namingScheme": "narwa2",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[], {"thunder_alignment": 1, "rapid_morph" : 1, "offensive_guard": 1, "stormsoul": 1}],
+        "chest": [[], {"thunder_alignment": 1, "constitution": 1, "critical_draw"  : 1, "stormsoul": 1}],
+        "arms":  [[], {"thunder_alignment": 1, "guard"       : 1, "partbreaker"    : 1, "stormsoul": 1}],
+        "waist": [[], {"thunder_alignment": 1, "guard"       : 1, "artillery"      : 1, "stormsoul": 1}],
+        "legs":  [[], {"thunder_alignment": 1, "evade_window": 1, "marathon_runner": 1, "stormsoul": 1}]
+    },
+    "defenses": {"defLvl1": 76, "f":2, "w":1, "t":4, "i":-3, "d":-4}
+}],
+[149, {
     "tier": "hr",
     "rarity": 7,
     "setName": "Crimson Valstrax",
@@ -2685,7 +2723,7 @@
 
 
 
-[148, {
+[150, {
     "tier": "hr",
     "rarity": 6,
     "setName": "Cunning Specs",

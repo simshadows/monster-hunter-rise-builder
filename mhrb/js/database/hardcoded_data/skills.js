@@ -750,71 +750,78 @@ const hardcodedSkills = [
 
         icon: "grey",
     }],
-    ["stun_resistance", {
+    ["stormsoul", {
         shortId: "101",
+        name: "Stormsoul",
+        maxLevels: 5,
+
+        icon: "orange",
+    }],
+    ["stun_resistance", {
+        shortId: "102",
         name: "Stun Resistance",
         maxLevels: 3,
 
         icon: "yellow",
     }],
     ["teostra_blessing", {
-        shortId: "102",
+        shortId: "103",
         name: "Teostra Blessing",
         maxLevels: 4,
 
         icon: "red",
     }],
     ["thunder_alignment", {
-        shortId: "103",
+        shortId: "104",
         name: "Thunder Alignment",
         maxLevels: 5,
 
         icon: "yellow",
     }],
     ["tremor_resistance", {
-        shortId: "104",
+        shortId: "105",
         name: "Tremor Resistance",
         maxLevels: 3,
 
         icon: "grey",
     }],
     ["wall_runner", {
-        shortId: "105",
+        shortId: "106",
         name: "Wall Runner",
         maxLevels: 3,
 
         icon: "green",
     }],
     ["weakness_exploit", {
-        shortId: "106",
+        shortId: "107",
         name: "Weakness Exploit",
         maxLevels: 3,
 
         icon: "pink",
     }],
     ["wide_range", {
-        shortId: "107",
+        shortId: "108",
         name: "Wide Range",
         maxLevels: 5,
 
         icon: "white",
     }],
     ["wind_alignment", {
-        shortId: "108",
+        shortId: "109",
         name: "Wind Alignment",
         maxLevels: 5,
 
         icon: "lightblue",
     }],
     ["windproof", {
-        shortId: "109",
+        shortId: "110",
         name: "Windproof",
         maxLevels: 3,
 
         icon: "white",
     }],
     ["wirebug_whisperer", {
-        shortId: "110",
+        shortId: "111",
         name: "Wirebug Whisperer",
         maxLevels: 3,
 
