@@ -30,6 +30,13 @@
     "Folia",
     "Roots"
 ],
+"scheme_5": [
+    "Vertex",
+    "Thorax",
+    "Brachia",
+    "Elytra",
+    "Crura"
+],
 
 
 
@@ -40,6 +47,14 @@
     "Coil",
     "Boots"
 ],
+"brigade": [
+    "Lobos",
+    "Suit",
+    "Vambraces",
+    "Coil",
+    "Boots"
+],
+
 "channeler": [
     "Hair-tie",
     "Robe",
@@ -131,6 +146,20 @@
     "Obi",
     "Hakama"
 ],
+"melahoa": [
+    "Hat",
+    "Jacket",
+    "Branch",
+    "Folia",
+    "Roots"
+],
+"mighty_bow_feather": [
+    "Mighty Bow Feather",
+    "---",
+    "---",
+    "---",
+    "---"
+],
 "mizuha": [
     "Cap",
     "Guards",
@@ -158,13 +187,6 @@
     "Gloves",
     "Belt",
     "Feet"
-],
-"rhopessa": [
-    "Vertex",
-    "Thorax",
-    "Brachia",
-    "Elytra",
-    "Crura"
 ],
 "shell_studded": [
     "Hat",
