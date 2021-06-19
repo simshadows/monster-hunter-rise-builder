@@ -113,7 +113,7 @@ function readDecomposedTalismanStr(arr, db, build) {
     const skillMap = db.readonly.skills.shortIdsMap;
 
     function op1(_skillIndex, _skillID, _skillLevel) {
-        const skillRO = skillMap.get(_skillID);
+        const skillRO = skillMap.get(parseInt(_skillID, NUMBER_BASE));
         const parsedLevel = parseInt(_skillLevel);
         if ((skillRO !== undefined) && (parsedLevel > 0) && (parsedLevel <= skillRO.maxLevels)) {
             build.setTalismanSkill(db, _skillIndex, skillRO, parsedLevel);
@@ -167,7 +167,7 @@ function readDecomposedDecosStr(arr, db, build) {
 
     function readGearSlotDecos(slotID, startingIndex) {
         for (let position = 0; position < 3; ++position) {
-            const decoID = arr[startingIndex + position];
+            const decoID = parseInt(arr[startingIndex + position], NUMBER_BASE);
             const decoRO = decoMap.get(decoID);
             if (decoRO === undefined) continue;
 
@@ -229,8 +229,8 @@ export function writeBuildToQueryString(build) {
 
     const taliStr = [
             // Talisman skills
-            ((talismanSkillsRO[0].skillRO === null) ? "" : talismanSkillsRO[0].skillRO.shortId),
-            ((talismanSkillsRO[1].skillRO === null) ? "" : talismanSkillsRO[1].skillRO.shortId),
+            ((talismanSkillsRO[0].skillRO === null) ? "" : talismanSkillsRO[0].skillRO.shortId.toString(NUMBER_BASE)),
+            ((talismanSkillsRO[1].skillRO === null) ? "" : talismanSkillsRO[1].skillRO.shortId.toString(NUMBER_BASE)),
             // Talisman skill levels
             ((talismanSkillsRO[0].skillLevel === null) ? "" : talismanSkillsRO[0].skillLevel),
             ((talismanSkillsRO[1].skillLevel === null) ? "" : talismanSkillsRO[1].skillLevel),
@@ -247,7 +247,7 @@ export function writeBuildToQueryString(build) {
                 build.getDeco(slotID, 2),
             ];
         for (let i = 0; i < ret.length; ++i) {
-            ret[i] = ((ret[i] === null) || (ret[i] === undefined)) ? "" : ret[i].id;
+            ret[i] = ((ret[i] === null) || (ret[i] === undefined)) ? "" : ret[i].id.toString(NUMBER_BASE);
         }
         return ret;
     }

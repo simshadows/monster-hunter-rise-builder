@@ -1,817 +1,817 @@
-{
+[
 
 
 
-"10": {
+[1, {
     "name": "Mastery",
     "slotSize": 2,
     "rarity": 7,
     "skills": {"masters_touch": 1},
 
     "icon": "white"
-},
-"20": {
+}],
+[2, {
     "name": "Handicraft",
     "slotSize": 3,
     "rarity": 7,
     "skills": {"handicraft": 1},
 
     "icon": "darkblue"
-},
-"30": {
+}],
+[3, {
     "name": "Fate",
     "slotSize": 3,
     "rarity": 7,
     "skills": {"good_luck": 1},
 
     "icon": "yellow"
-},
-"40": {
+}],
+[4, {
     "name": "Hellfire",
     "slotSize": 3,
     "rarity": 6,
     "skills": {"hellfire_cloak": 1},
 
     "icon": "purple"
-},
-"50": {
+}],
+[5, {
     "name": "Leap",
     "slotSize": 3,
     "rarity": 7,
     "skills": {"jump_master": 1},
 
     "icon": "blue"
-},
-"60": {
+}],
+[6, {
     "name": "Salvo",
     "slotSize": 3,
     "rarity": 7,
     "skills": {"rapid_fire_up": 1},
 
     "icon": "white"
-},
-"70": {
+}],
+[7, {
     "name": "Thrift",
     "slotSize": 2,
     "rarity": 6,
     "skills": {"spare_shot": 1},
 
     "icon": "yellow"
-},
-"80": {
+}],
+[8, {
     "name": "Razor",
     "slotSize": 2,
     "rarity": 6,
     "skills": {"razor_sharp": 1},
 
     "icon": "yellow"
-},
-"90": {
+}],
+[9, {
     "name": "Spread",
     "slotSize": 3,
     "rarity": 7,
     "skills": {"spread_up": 1},
 
     "icon": "grey"
-},
-"100": {
+}],
+[10, {
     "name": "Pierce",
     "slotSize": 3,
     "rarity": 7,
     "skills": {"pierce_up": 1},
 
     "icon": "blue"
-},
-"110": {
+}],
+[11, {
     "name": "Forceshot",
     "slotSize": 3,
     "rarity": 6,
     "skills": {"normal_rapid_up": 1},
 
     "icon": "white"
-},
-"120": {
+}],
+[12, {
     "name": "Sharp",
     "slotSize": 2,
     "rarity": 6,
     "skills": {"protective_polish": 1},
 
     "icon": "yellow"
-},
-"130": {
+}],
+[13, {
     "name": "Blast",
     "slotSize": 2,
     "rarity": 6,
     "skills": {"blast_attack": 1},
 
     "icon": "orange"
-},
-"140": {
+}],
+[14, {
     "name": "Sleep",
     "slotSize": 2,
     "rarity": 6,
     "skills": {"sleep_attack": 1},
 
     "icon": "lightblue"
-},
-"150": {
+}],
+[15, {
     "name": "Paralyzer",
     "slotSize": 2,
     "rarity": 6,
     "skills": {"paralysis_attack": 1},
 
     "icon": "gold"
-},
-"160": {
+}],
+[16, {
     "name": "Throttle",
     "slotSize": 2,
     "rarity": 6,
     "skills": {"latent_power": 1},
 
     "icon": "pink"
-},
-"170": {
+}],
+[17, {
     "name": "Crisis",
     "slotSize": 2,
     "rarity": 6,
     "skills": {"resuscitate": 1},
 
     "icon": "orange"
-},
-"180": {
+}],
+[18, {
     "name": "Furor",
     "slotSize": 2,
     "rarity": 6,
     "skills": {"resentment": 1},
 
     "icon": "orange"
-},
-"190": {
+}],
+[19, {
     "name": "Flawless",
     "slotSize": 2,
     "rarity": 6,
     "skills": {"peak_performance": 1},
 
     "icon": "red"
-},
-"200": {
+}],
+[20, {
     "name": "Challenger",
     "slotSize": 2,
     "rarity": 6,
     "skills": {"agitator": 1},
 
     "icon": "red"
-},
-"210": {
+}],
+[21, {
     "name": "Tenderizer",
     "slotSize": 2,
     "rarity": 6,
     "skills": {"weakness_exploit": 1},
 
     "icon": "pink"
-},
-"220": {
+}],
+[22, {
     "name": "Critical",
     "slotSize": 2,
     "rarity": 7,
     "skills": {"critical_boost": 1},
 
     "icon": "pink"
-},
-"230": {
+}],
+[23, {
     "name": "Capacity",
     "slotSize": 3,
     "rarity": 7,
     "skills": {"ammo_up": 1},
 
     "icon": "green"
-},
-"240": {
+}],
+[24, {
     "name": "Guardian",
     "slotSize": 3,
     "rarity": 7,
     "skills": {"offensive_guard": 1},
 
     "icon": "purple"
-},
-"250": {
+}],
+[25, {
     "name": "Fungiform",
     "slotSize": 3,
     "rarity": 7,
     "skills": {"mushroomancer": 1},
 
     "icon": "purple"
-},
-"260": {
+}],
+[26, {
     "name": "Draw",
     "slotSize": 3,
     "rarity": 7,
     "skills": {"critical_draw": 1},
 
     "icon": "pink"
-},
-"270": {
+}],
+[27, {
     "name": "Precise",
     "slotSize": 2,
     "rarity": 6,
     "skills": {"ballistics": 1},
 
     "icon": "white"
-},
-"280": {
+}],
+[28, {
     "name": "Crit Element",
     "slotSize": 2,
     "rarity": 6,
     "skills": {"critical_element": 1},
 
     "icon": "darkblue"
-},
-"290": {
+}],
+[29, {
     "name": "Artillery",
     "slotSize": 2,
     "rarity": 7,
     "skills": {"artillery": 1},
 
     "icon": "grey"
-},
-"300": {
+}],
+[30, {
     "name": "Sprinter",
     "slotSize": 2,
     "rarity": 7,
     "skills": {"marathon_runner": 1},
 
     "icon": "gold"
-},
-"310": {
+}],
+[31, {
     "name": "Charger",
     "slotSize": 2,
     "rarity": 7,
     "skills": {"focus": 1},
 
     "icon": "white"
-},
-"320": {
+}],
+[32, {
     "name": "Mind's Eye",
     "slotSize": 2,
     "rarity": 7,
     "skills": {"minds_eye": 1},
 
     "icon": "white"
-},
-"330": {
+}],
+[33, {
     "name": "Potential",
     "slotSize": 2,
     "rarity": 6,
     "skills": {"heroics": 1},
 
     "icon": "red"
-},
-"340": {
+}],
+[34, {
     "name": "Trueshot",
     "slotSize": 2,
     "rarity": 6,
     "skills": {"special_ammo_boost": 1},
 
     "icon": "grey"
-},
-"350": {
+}],
+[35, {
     "name": "Magazine",
     "slotSize": 2,
     "rarity": 6,
     "skills": {"load_shells": 1},
 
     "icon": "grey"
-},
-"360": {
+}],
+[36, {
     "name": "Shield",
     "slotSize": 2,
     "rarity": 6,
     "skills": {"guard_up": 1},
 
     "icon": "white"
-},
-"370": {
+}],
+[37, {
     "name": "Ironwall",
     "slotSize": 2,
     "rarity": 6,
     "skills": {"guard": 1},
 
     "icon": "grey"
-},
-"380": {
+}],
+[38, {
     "name": "Refresh",
     "slotSize": 2,
     "rarity": 6,
     "skills": {"stamina_surge": 1},
 
     "icon": "gold"
-},
-"390": {
+}],
+[39, {
     "name": "Enhancer",
     "slotSize": 2,
     "rarity": 6,
     "skills": {"power_prolonger": 1},
 
     "icon": "brown"
-},
-"400": {
+}],
+[40, {
     "name": "Mighty",
     "slotSize": 2,
     "rarity": 6,
     "skills": {"maximum_might": 1},
 
     "icon": "pink"
-},
-"410": {
+}],
+[41, {
     "name": "Attack",
     "slotSize": 2,
     "rarity": 6,
     "skills": {"attack_boost": 1},
 
     "icon": "red"
-},
-"420": {
+}],
+[42, {
     "name": "Expert",
     "slotSize": 2,
     "rarity": 6,
     "skills": {"critical_eye": 1},
 
     "icon": "pink"
-},
-"430": {
+}],
+[43, {
     "name": "Quickswitch",
     "slotSize": 2,
     "rarity": 5,
     "skills": {"rapid_morph": 1},
 
     "icon": "blue"
-},
-"440": {
+}],
+[44, {
     "name": "Absorber",
     "slotSize": 1,
     "rarity": 5,
     "skills": {"recoil_down": 1},
 
     "icon": "brown"
-},
-"450": {
+}],
+[45, {
     "name": "Blunt",
     "slotSize": 2,
     "rarity": 5,
     "skills": {"bludgeoner": 1},
 
     "icon": "grey"
-},
-"460": {
+}],
+[46, {
     "name": "Quickload",
     "slotSize": 1,
     "rarity": 5,
     "skills": {"reload_speed": 1},
 
     "icon": "white"
-},
-"470": {
+}],
+[47, {
     "name": "Steadfast",
     "slotSize": 1,
     "rarity": 5,
     "skills": {"stun_resistance": 1},
 
     "icon": "yellow"
-},
-"480": {
+}],
+[48, {
     "name": "Footing",
     "slotSize": 2,
     "rarity": 5,
     "skills": {"tremor_resistance": 1},
 
     "icon": "grey"
-},
-"490": {
+}],
+[49, {
     "name": "Earplug",
     "slotSize": 3,
     "rarity": 5,
     "skills": {"earplugs": 1},
 
     "icon": "white"
-},
-"500": {
+}],
+[50, {
     "name": "Counter",
     "slotSize": 2,
     "rarity": 5,
     "skills": {"counterstrike": 1},
 
     "icon": "red"
-},
-"510": {
+}],
+[51, {
     "name": "Bubble",
     "slotSize": 2,
     "rarity": 5,
     "skills": {"bubbly_dance": 1},
 
     "icon": "white"
-},
-"520": {
+}],
+[52, {
     "name": "Sniper",
     "slotSize": 1,
     "rarity": 5,
     "skills": {"steadiness": 1},
 
     "icon": "grey"
-},
-"530": {
+}],
+[53, {
     "name": "Gambit",
     "slotSize": 2,
     "rarity": 5,
     "skills": {"punishing_draw": 1},
 
     "icon": "yellow"
-},
-"540": {
+}],
+[54, {
     "name": "Jumping",
     "slotSize": 2,
     "rarity": 5,
     "skills": {"evade_extender": 1},
 
     "icon": "lightblue"
-},
-"550": {
+}],
+[55, {
     "name": "Evasion",
     "slotSize": 2,
     "rarity": 5,
     "skills": {"evade_window": 1},
 
     "icon": "lightblue"
-},
-"560": {
+}],
+[56, {
     "name": "Brace",
     "slotSize": 1,
     "rarity": 5,
     "skills": {"flinch_free": 1},
 
     "icon": "grey"
-},
-"570": {
+}],
+[57, {
     "name": "Sheath",
     "slotSize": 2,
     "rarity": 5,
     "skills": {"quick_sheath": 1},
 
     "icon": "brown"
-},
-"580": {
+}],
+[58, {
     "name": "Wind Res",
     "slotSize": 1,
     "rarity": 5,
     "skills": {"windproof": 1},
 
     "icon": "white"
-},
-"590": {
+}],
+[59, {
     "name": "KO",
     "slotSize": 2,
     "rarity": 5,
     "skills": {"slugger": 1},
 
     "icon": "yellow"
-},
-"600": {
+}],
+[60, {
     "name": "Friendship",
     "slotSize": 2,
     "rarity": 5,
     "skills": {"wide_range": 1},
 
     "icon": "white"
-},
-"610": {
+}],
+[61, {
     "name": "Destroyer",
     "slotSize": 2,
     "rarity": 5,
     "skills": {"partbreaker": 1},
 
     "icon": "grey"
-},
-"620": {
+}],
+[62, {
     "name": "Resistor",
     "slotSize": 2,
     "rarity": 5,
     "skills": {"blight_resistance": 1},
 
     "icon": "blue"
-},
-"630": {
+}],
+[63, {
     "name": "Gobbler",
     "slotSize": 2,
     "rarity": 5,
     "skills": {"speed_eating": 1},
 
     "icon": "gold"
-},
-"640": {
+}],
+[64, {
     "name": "Protection",
     "slotSize": 2,
     "rarity": 5,
     "skills": {"divine_blessing": 1},
 
     "icon": "white"
-},
-"650": {
+}],
+[65, {
     "name": "Wall Run",
     "slotSize": 2,
     "rarity": 4,
     "skills": {"wall_runner": 1},
 
     "icon": "green"
-},
-"660": {
+}],
+[66, {
     "name": "Wirebug",
     "slotSize": 2,
     "rarity": 4,
     "skills": {"wirebug_whisperer": 1},
 
     "icon": "lightblue"
-},
-"670": {
+}],
+[67, {
     "name": "Grinder",
     "slotSize": 1,
     "rarity": 5,
     "skills": {"speed_sharpening": 1},
 
     "icon": "yellow"
-},
-"680": {
+}],
+[68, {
     "name": "Enduring",
     "slotSize": 2,
     "rarity": 4,
     "skills": {"item_prolonger": 1},
 
     "icon": "brown"
-},
-"690": {
+}],
+[69, {
     "name": "Recovery",
     "slotSize": 1,
     "rarity": 4,
     "skills": {"recovery_speed": 1},
 
     "icon": "green"
-},
-"700": {
+}],
+[70, {
     "name": "Medicine",
     "slotSize": 2,
     "rarity": 4,
     "skills": {"recovery_up": 1},
 
     "icon": "green"
-},
-"710": {
+}],
+[71, {
     "name": "Sonorous",
     "slotSize": 1,
     "rarity": 4,
     "skills": {"horn_maestro": 1},
 
     "icon": "green"
-},
-"720": {
+}],
+[72, {
     "name": "Drain",
     "slotSize": 1,
     "rarity": 4,
     "skills": {"stamina_thief": 1},
 
     "icon": "darkblue"
-},
-"730": {
+}],
+[73, {
     "name": "Physique",
     "slotSize": 2,
     "rarity": 4,
     "skills": {"constitution": 1},
 
     "icon": "gold"
-},
-"740": {
+}],
+[74, {
     "name": "Venom",
     "slotSize": 1,
     "rarity": 5,
     "skills": {"poison_attack": 1},
 
     "icon": "purple"
-},
-"750": {
+}],
+[75, {
     "name": "Slider",
     "slotSize": 1,
     "rarity": 4,
     "skills": {"affinity_sliding": 1},
 
     "icon": "pink"
-},
-"760": {
+}],
+[76, {
     "name": "Bomber",
     "slotSize": 1,
     "rarity": 4,
     "skills": {"bombardier": 1},
 
     "icon": "orange"
-},
-"770": {
+}],
+[77, {
     "name": "Blaze",
     "slotSize": 1,
     "rarity": 5,
     "skills": {"fire_attack": 1},
 
     "icon": "red"
-},
-"780": {
+}],
+[78, {
     "name": "Stream",
     "slotSize": 1,
     "rarity": 5,
     "skills": {"water_attack": 1},
 
     "icon": "blue"
-},
-"790": {
+}],
+[79, {
     "name": "Bolt",
     "slotSize": 1,
     "rarity": 5,
     "skills": {"thunder_attack": 1},
 
     "icon": "yellow"
-},
-"800": {
+}],
+[80, {
     "name": "Frost",
     "slotSize": 1,
     "rarity": 5,
     "skills": {"ice_attack": 1},
 
     "icon": "lightblue"
-},
-"810": {
+}],
+[81, {
     "name": "Dragon",
     "slotSize": 1,
     "rarity": 5,
     "skills": {"dragon_attack": 1},
 
     "icon": "orange"
-},
-"820": {
+}],
+[82, {
     "name": "Defense",
     "slotSize": 1,
     "rarity": 5,
     "skills": {"defense_boost": 1},
 
     "icon": "gold"
-},
-"830": {
+}],
+[83, {
     "name": "Carver",
     "slotSize": 1,
     "rarity": 4,
     "skills": {"carving_pro": 1},
 
     "icon": "grey"
-},
-"840": {
+}],
+[84, {
     "name": "Rodeo",
     "slotSize": 2,
     "rarity": 4,
     "skills": {"master_mounter": 1},
 
     "icon": "blue"
-},
-"850": {
+}],
+[85, {
     "name": "Hungerless",
     "slotSize": 1,
     "rarity": 4,
     "skills": {"hunger_resistance": 1},
 
     "icon": "gold"
-},
-"860": {
+}],
+[86, {
     "name": "Satiated",
     "slotSize": 1,
     "rarity": 4,
     "skills": {"free_meal": 1},
 
     "icon": "brown"
-},
-"870": {
+}],
+[87, {
     "name": "Muck",
     "slotSize": 1,
     "rarity": 4,
     "skills": {"muck_resistance": 1},
 
     "icon": "grey"
-},
-"880": {
+}],
+[88, {
     "name": "Diversion",
     "slotSize": 1,
     "rarity": 4,
     "skills": {"diversion": 1},
 
     "icon": "purple"
-},
-"890": {
+}],
+[89, {
     "name": "Dive",
     "slotSize": 1,
     "rarity": 4,
     "skills": {"leap_of_faith": 1},
 
     "icon": "lightblue"
-},
-"900": {
+}],
+[90, {
     "name": "Fortitude",
     "slotSize": 2,
     "rarity": 4,
     "skills": {"fortify": 1},
 
     "icon": "orange"
-},
-"910": {
+}],
+[91, {
     "name": "Geology",
     "slotSize": 1,
     "rarity": 4,
     "skills": {"geologist": 1},
 
     "icon": "brown"
-},
-"920": {
+}],
+[92, {
     "name": "Botany",
     "slotSize": 1,
     "rarity": 4,
     "skills": {"botanist": 1},
 
     "icon": "green"
-},
-"930": {
+}],
+[93, {
     "name": "Antiblast",
     "slotSize": 1,
     "rarity": 4,
     "skills": {"blast_resistance": 1},
 
     "icon": "orange"
-},
-"940": {
+}],
+[94, {
     "name": "Pep",
     "slotSize": 1,
     "rarity": 4,
     "skills": {"sleep_resistance": 1},
 
     "icon": "lightblue"
-},
-"950": {
+}],
+[95, {
     "name": "Antipara",
     "slotSize": 1,
     "rarity": 4,
     "skills": {"paralysis_resistance": 1},
 
     "icon": "gold"
-},
-"960": {
+}],
+[96, {
     "name": "Antidote",
     "slotSize": 1,
     "rarity": 4,
     "skills": {"poison_resistance": 1},
 
     "icon": "purple"
-},
-"970": {
+}],
+[97, {
     "name": "Fire Res",
     "slotSize": 1,
     "rarity": 4,
     "skills": {"fire_resistance": 1},
 
     "icon": "red"
-},
-"980": {
+}],
+[98, {
     "name": "Water Res",
     "slotSize": 1,
     "rarity": 4,
     "skills": {"water_resistance": 1},
 
     "icon": "blue"
-},
-"990": {
+}],
+[99, {
     "name": "Thunder Res",
     "slotSize": 1,
     "rarity": 4,
     "skills": {"thunder_resistance": 1},
 
     "icon": "yellow"
-},
-"1000": {
+}],
+[100, {
     "name": "Ice Res",
     "slotSize": 1,
     "rarity": 4,
     "skills": {"ice_resistance": 1},
 
     "icon": "lightblue"
-},
-"1010": {
+}],
+[101, {
     "name": "Dragon Res",
     "slotSize": 1,
     "rarity": 4,
     "skills": {"dragon_resistance": 1},
 
     "icon": "orange"
-}
+}]
 
 
 
-}
+]
 

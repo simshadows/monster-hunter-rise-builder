@@ -491,11 +491,11 @@ async function downloadAllRawDecorationsData() {
     const res = await fetch(DECORATIONS_PATH);
     const rawData = await res.json();
 
-    assert(isObj(rawData));
+    assert(isArr(rawData));
 
     const ret = new Map();
-    for (const [decoID, decoObj] of Object.entries(rawData)) {
-        assert(isNonEmptyStr(decoID) && strHasOnlyLowerNumeral(decoID));
+    for (const [decoID, decoObj] of rawData) {
+        assert(isInt(decoID) && (decoID > 0));
         assert(isObj(decoObj));
         
         assert(isNonEmptyStr(decoObj.name));
@@ -523,6 +523,8 @@ async function downloadAllRawDecorationsData() {
             };
         finalDecoObj.filterHelpers.nameLower = toNameFilterString(decoObj.name);
 
+        // Check for duplicates, then add
+        assert(!ret.has(decoID));
         ret.set(decoID, finalDecoObj);
     }
 
