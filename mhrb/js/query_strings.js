@@ -46,13 +46,19 @@ export function getBuildFromQueryString(db) {
             }
         }
     }
+    function processFlexibleLength(queryStringValue, processingFunction) {
+        if (typeof queryStringValue === "string") {
+            const decomp = queryStringValue.split(SPLIT_CHAR);
+            processingFunction(decomp, db, build);
+        }
+    }
 
     const basicEquipsStr = getQueryValue("a");
     processIfQueryIsValid(basicEquipsStr, 8, readDecomposedBasicEquipsStr);
 
     // IMPORTANT: Parsing rampage skills is dependent on first parsing the weapon.
     const rampSkillsStr = getQueryValue("b");
-    processIfQueryIsValid(rampSkillsStr, 3, readDecomposedRampSkillsStr);
+    processFlexibleLength(rampSkillsStr, readDecomposedRampSkillsStr);
 
     const taliStr = getQueryValue("c");
     processIfQueryIsValid(taliStr, 7, readDecomposedTalismanStr);
@@ -135,11 +141,12 @@ function readDecomposedTalismanStr(arr, db, build) {
 }
 
 function readDecomposedRampSkillsStr(arr, db, build) {
-    const rampSkill0ID = arr[0];
-    const rampSkill1ID = arr[1];
-    const rampSkill2ID = arr[2];
-
     const weaponRO = build.getWeaponObjRO();
+
+    if (arr.length > weaponRO.rampSkills.length) {
+        console.warn("Invalid rampage skills input length.");
+        return;
+    }
 
     function op(rampSkillShortID, position) {
         const optionsSubArray = weaponRO.rampSkills[position];
@@ -154,9 +161,9 @@ function readDecomposedRampSkillsStr(arr, db, build) {
         }
     }
 
-    op(rampSkill0ID, 0);
-    op(rampSkill1ID, 1);
-    op(rampSkill2ID, 2);
+    for (const [i, rampSkillID] of arr.entries()) {
+        op(rampSkillID, i);
+    }
 }
 
 function readDecomposedDecosStr(arr, db, build) {
@@ -199,9 +206,10 @@ export function writeBuildToQueryString(build) {
     const armourROs = build.getArmourROs();
     const petalaceRO = build.getPetalaceObjRO();
 
-    const rampSkill0 = build.getRampSkill(0);
-    const rampSkill1 = build.getRampSkill(1);
-    const rampSkill2 = build.getRampSkill(2);
+    const rampSkills = [];
+    for (let i = 0; i < weaponRO.rampSkills.length; ++i) {
+        rampSkills.push(build.getRampSkill(i));
+    }
 
     const talismanSkillsRO = build.getTalismanSkills();
     const talismanSlotsRO = build.getTalismanDecoSlots();
@@ -220,13 +228,15 @@ export function writeBuildToQueryString(build) {
             ((armourROs.legs  === null) ? "0" : armourROs.legs.setID.toString(NUMBER_BASE) ),
             ((petalaceRO      === null) ? "0" : petalaceRO.id                              ),
         ].join(SPLIT_CHAR);
-    
-    const rampSkillsStr = [
-            ((rampSkill0 === null) ? "" : rampSkill0.shortId),
-            ((rampSkill1 === null) ? "" : rampSkill1.shortId),
-            ((rampSkill2 === null) ? "" : rampSkill2.shortId),
-        ].join(SPLIT_CHAR);
 
+    const rampSkillsStr = (()=>{
+            const tmp = [];
+            for (const rampSkillRO of rampSkills) {
+                tmp.push((rampSkillRO === null) ? "" : rampSkillRO.shortId);
+            }
+            return tmp.join(SPLIT_CHAR);
+        })();
+    
     const taliStr = [
             // Talisman skills
             ((talismanSkillsRO[0].skillRO === null) ? "" : talismanSkillsRO[0].skillRO.shortId.toString(NUMBER_BASE)),
