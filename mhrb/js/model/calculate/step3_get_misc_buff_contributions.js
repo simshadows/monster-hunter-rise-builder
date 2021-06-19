@@ -112,7 +112,7 @@ function getMiscBuffContributions(db, build, calcState) {
         affinityAdd += 20;
     }
     if (miscBuffActive("Song: Elem. Attack Boost")) {
-        eleMul *= 1.20;
+        eleMul *= 1.10;
     }
 
     if (miscBuffActive("Palico: Rousing Roar")) {

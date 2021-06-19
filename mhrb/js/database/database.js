@@ -118,9 +118,9 @@ function validateWeaponData(weaponData) {
     for (const possibleRampSkills of weaponData.rampSkills) {
         assert(isArr(possibleRampSkills));
         assert((possibleRampSkills.length > 0), "Must have at least one possible ramp skill.");
-        for (const rampID of possibleRampSkills) {
+        for (const [rampID, inheritedFromWeaponID] of possibleRampSkills) {
             assert(isNonEmptyStr(rampID));
-            // TODO: Include a check that a ramp ID is valid, and probably also a check for duplicate IDs.
+            assert(isStr(inheritedFromWeaponID)); // Empty string is allowed
         }
     }
 }
@@ -276,12 +276,16 @@ function joinRampSkillObjsToWeaponData(weaponData) {
             const newRampArray = [];
             for (const rampSkillRampArray of weaponDataObj.rampSkills) {
                 const newRampSubArray = [];
-                for (const rampSkillID of rampSkillRampArray) {
+                for (const [rampSkillID, inheritedFromWeaponID] of rampSkillRampArray) {
                     assert(
                         rampageSkillsMap.has(rampSkillID),
                         "Invalid rampage skill ID '" + rampSkillID + "' from " + categoryID + " " + weaponID
                     );
-                    newRampSubArray.push(rampageSkillsMap.get(rampSkillID));
+                    const newRampEntry = [
+                        rampageSkillsMap.get(rampSkillID),
+                        null, // TODO: Make this point to the correct weapon?
+                    ];
+                    newRampSubArray.push(newRampEntry);
                 }
                 newRampArray.push(newRampSubArray);
             }

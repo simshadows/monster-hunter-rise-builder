@@ -12,7 +12,11 @@
             "eleStat": {},
 
             "rampSkills": [
-                ["attack_boost_1", "affinity_boost_2", "defense_boost_1"]
+                [
+                    ["attack_boost_1", ""],
+                    ["affinity_boost_2", ""],
+                    ["defense_boost_1", ""]
+                ]
             ],
 
             "baseSharpness": [50,90,60,0,0,0],
@@ -30,7 +34,11 @@
             "eleStat": {},
 
             "rampSkills": [
-                ["attack_boost_1", "affinity_boost_2", "defense_boost_1"]
+                [
+                    ["attack_boost_1", ""],
+                    ["affinity_boost_2", ""],
+                    ["defense_boost_1", ""]
+                ]
             ],
 
             "baseSharpness": [60,70,70,0,0,0],
@@ -48,7 +56,11 @@
             "eleStat": {},
 
             "rampSkills": [
-                ["attack_boost_1", "affinity_boost_2", "defense_boost_2"]
+                [
+                    ["attack_boost_1", ""],
+                    ["affinity_boost_2", ""],
+                    ["defense_boost_2", ""]
+                ]
             ],
 
             "baseSharpness": [60,70,90,30,0,0],
@@ -66,7 +78,11 @@
             "eleStat": {},
 
             "rampSkills": [
-                ["attack_boost_2", "affinity_boost_2", "defense_boost_2"]
+                [
+                    ["attack_boost_2", ""],
+                    ["affinity_boost_2", ""],
+                    ["defense_boost_2", ""]
+                ]
             ],
 
             "baseSharpness": [50,70,80,30,20,0],
@@ -84,7 +100,11 @@
             "eleStat": {},
 
             "rampSkills": [
-                ["affinity_boost_3", "defense_boost_2", "master_rider"]
+                [
+                    ["affinity_boost_3", ""],
+                    ["defense_boost_2", ""],
+                    ["master_rider", ""]
+                ]
             ],
 
             "baseSharpness": [60,80,90,40,30,0],
@@ -102,7 +122,11 @@
             "eleStat": {},
 
             "rampSkills": [
-                ["affinity_boost_4", "defense_boost_2", "master_rider"]
+                [
+                    ["affinity_boost_4", ""],
+                    ["defense_boost_2", ""],
+                    ["master_rider", ""]
+                ]
             ],
 
             "baseSharpness": [40,90,60,60,50,0],
@@ -122,7 +146,11 @@
             "eleStat": {},
 
             "rampSkills": [
-                ["attack_boost_2", "affinity_boost_1", "master_rider"]
+                [
+                    ["attack_boost_2", ""],
+                    ["affinity_boost_1", ""],
+                    ["master_rider", ""]
+                ]
             ],
 
             "baseSharpness": [50,70,80,100,0,0],
@@ -140,7 +168,11 @@
             "eleStat": {},
 
             "rampSkills": [
-                ["attack_boost_3", "affinity_boost_1", "master_rider"]
+                [
+                    ["attack_boost_3", ""],
+                    ["affinity_boost_1", ""],
+                    ["master_rider", ""]
+                ]
             ],
 
             "baseSharpness": [100,30,70,100,50,0],
@@ -158,7 +190,11 @@
             "eleStat": {},
 
             "rampSkills": [
-                ["attack_boost_3", "affinity_boost_2", "master_rider"]
+                [
+                    ["attack_boost_3", ""],
+                    ["affinity_boost_2", ""],
+                    ["master_rider", ""]
+                ]
             ],
 
             "baseSharpness": [70,40,110,90,60,30],
@@ -178,7 +214,11 @@
             "eleStat": {"water": 15},
 
             "rampSkills": [
-                ["attack_boost_2", "affinity_boost_1", "water_boost_1"]
+                [
+                    ["attack_boost_2", ""],
+                    ["affinity_boost_1", ""],
+                    ["water_boost_1", ""]
+                ]
             ],
 
             "baseSharpness": [110,40,30,70,0,0],
@@ -196,7 +236,11 @@
             "eleStat": {"water": 17},
 
             "rampSkills": [
-                ["attack_boost_2", "affinity_boost_2", "water_boost_2"]
+                [
+                    ["attack_boost_2", ""],
+                    ["affinity_boost_2", ""],
+                    ["water_boost_2", ""]
+                ]
             ],
 
             "baseSharpness": [110,90,50,50,50,0],
@@ -214,7 +258,11 @@
             "eleStat": {"water": 19},
 
             "rampSkills": [
-                ["attack_boost_3", "affinity_boost_2", "water_boost_2"]
+                [
+                    ["attack_boost_3", ""],
+                    ["affinity_boost_2", ""],
+                    ["water_boost_2", ""]
+                ]
             ],
 
             "baseSharpness": [110,70,50,50,70,0],
@@ -234,7 +282,11 @@
             "eleStat": {},
 
             "rampSkills": [
-                ["attack_boost_1", "anti_aerial_species", "silkbind_boost"]
+                [
+                    ["attack_boost_1", ""],
+                    ["anti_aerial_species", ""],
+                    ["silkbind_boost", ""]
+                ]
             ],
 
             "baseSharpness": [30,140,40,40,0,0],
@@ -252,7 +304,11 @@
             "eleStat": {},
 
             "rampSkills": [
-                ["attack_boost_2", "anti_aerial_species", "silkbind_boost"]
+                [
+                    ["attack_boost_2", ""],
+                    ["anti_aerial_species", ""],
+                    ["silkbind_boost", ""]
+                ]
             ],
 
             "baseSharpness": [20,160,50,40,30,0],
@@ -270,7 +326,11 @@
             "eleStat": {},
 
             "rampSkills": [
-                ["attack_boost_2", "anti_aerial_species", "silkbind_boost"]
+                [
+                    ["attack_boost_2", ""],
+                    ["anti_aerial_species", ""],
+                    ["silkbind_boost", ""]
+                ]
             ],
 
             "baseSharpness": [30,170,70,40,40,0],
@@ -290,7 +350,11 @@
             "eleStat": {"thunder": 15},
 
             "rampSkills": [
-                ["attack_boost_1", "thunder_boost_1", "anti_aquatic_species"]
+                [
+                    ["attack_boost_1", ""],
+                    ["thunder_boost_1", ""],
+                    ["anti_aquatic_species", ""]
+                ]
             ],
 
             "baseSharpness": [70,40,90,50,0,0],
@@ -308,7 +372,11 @@
             "eleStat": {"thunder": 24},
 
             "rampSkills": [
-                ["attack_boost_2", "thunder_boost_1", "anti_aquatic_species"]
+                [
+                    ["attack_boost_2", ""],
+                    ["thunder_boost_1", ""],
+                    ["anti_aquatic_species", ""]
+                ]
             ],
 
             "baseSharpness": [70,40,70,80,40,0],
@@ -326,7 +394,11 @@
             "eleStat": {"thunder": 27},
 
             "rampSkills": [
-                ["attack_boost_2", "thunder_boost_2", "anti_aquatic_species"]
+                [
+                    ["attack_boost_2", ""],
+                    ["thunder_boost_2", ""],
+                    ["anti_aquatic_species", ""]
+                ]
             ],
 
             "baseSharpness": [70,40,100,90,50,0],
@@ -346,7 +418,11 @@
             "eleStat": {"poison": 17},
 
             "rampSkills": [
-                ["affinity_boost_1", "poison_boost_1", "buddy_rally"]
+                [
+                    ["affinity_boost_1", ""],
+                    ["poison_boost_1", ""],
+                    ["buddy_rally", ""]
+                ]
             ],
 
             "baseSharpness": [90,40,40,30,0,0],
@@ -364,7 +440,11 @@
             "eleStat": {"poison": 23},
 
             "rampSkills": [
-                ["affinity_boost_2", "poison_boost_1", "buddy_rally"]
+                [
+                    ["affinity_boost_2", ""],
+                    ["poison_boost_1", ""],
+                    ["buddy_rally", ""]
+                ]
             ],
 
             "baseSharpness": [130,40,40,40,0,0],
@@ -382,7 +462,11 @@
             "eleStat": {"poison": 34},
 
             "rampSkills": [
-                ["affinity_boost_2", "poison_boost_2", "buddy_rally"]
+                [
+                    ["affinity_boost_2", ""],
+                    ["poison_boost_2", ""],
+                    ["buddy_rally", ""]
+                ]
             ],
 
             "baseSharpness": [130,60,40,70,0,0],
@@ -402,7 +486,11 @@
             "eleStat": {"water": 18},
 
             "rampSkills": [
-                ["attack_boost_2", "water_boost_1", "waterblight_exploit"]
+                [
+                    ["attack_boost_2", ""],
+                    ["water_boost_1", ""],
+                    ["waterblight_exploit", ""]
+                ]
             ],
 
             "baseSharpness": [50,40,70,40,0,0],
@@ -420,7 +508,11 @@
             "eleStat": {"water": 20},
 
             "rampSkills": [
-                ["attack_boost_2", "water_boost_1", "waterblight_exploit"]
+                [
+                    ["attack_boost_2", ""],
+                    ["water_boost_1", ""],
+                    ["waterblight_exploit", ""]
+                ]
             ],
 
             "baseSharpness": [50,60,90,50,0,0],
@@ -438,7 +530,11 @@
             "eleStat": {"water": 27},
 
             "rampSkills": [
-                ["attack_boost_3", "water_boost_2", "waterblight_exploit"]
+                [
+                    ["attack_boost_3", ""],
+                    ["water_boost_2", ""],
+                    ["waterblight_exploit", ""]
+                ]
             ],
 
             "baseSharpness": [60,40,120,60,20,0],
@@ -458,7 +554,11 @@
             "eleStat": {},
 
             "rampSkills": [
-                ["attack_boost_2", "affinity_boost_1", "brutal_strike"]
+                [
+                    ["attack_boost_2", ""],
+                    ["affinity_boost_1", ""],
+                    ["brutal_strike", ""]
+                ]
             ],
 
             "baseSharpness": [70,30,100,90,10,0],
@@ -476,7 +576,11 @@
             "eleStat": {},
 
             "rampSkills": [
-                ["attack_boost_2", "affinity_boost_2", "brutal_strike"]
+                [
+                    ["attack_boost_2", ""],
+                    ["affinity_boost_2", ""],
+                    ["brutal_strike", ""]
+                ]
             ],
 
             "baseSharpness": [50,40,130,100,30,0],
@@ -494,7 +598,11 @@
             "eleStat": {},
 
             "rampSkills": [
-                ["attack_boost_3", "affinity_boost_2", "brutal_strike"]
+                [
+                    ["attack_boost_3", ""],
+                    ["affinity_boost_2", ""],
+                    ["brutal_strike", ""]
+                ]
             ],
 
             "baseSharpness": [50,40,120,120,50,20],
@@ -514,7 +622,11 @@
             "eleStat": {"ice": 18},
 
             "rampSkills": [
-                ["attack_boost_1", "dulling_strike", "element_exploit"]
+                [
+                    ["attack_boost_1", ""],
+                    ["dulling_strike", ""],
+                    ["element_exploit", ""]
+                ]
             ],
 
             "baseSharpness": [40,90,70,0,0,0],
@@ -532,7 +644,11 @@
             "eleStat": {"ice": 24},
 
             "rampSkills": [
-                ["attack_boost_1", "dulling_strike", "element_exploit"]
+                [
+                    ["attack_boost_1", ""],
+                    ["dulling_strike", ""],
+                    ["element_exploit", ""]
+                ]
             ],
 
             "baseSharpness": [30,70,70,30,0,0],
@@ -550,7 +666,11 @@
             "eleStat": {"ice": 30},
 
             "rampSkills": [
-                ["attack_boost_3", "dulling_strike", "element_exploit"]
+                [
+                    ["attack_boost_3", ""],
+                    ["dulling_strike", ""],
+                    ["element_exploit", ""]
+                ]
             ],
 
             "baseSharpness": [30,60,110,70,30,0],
@@ -570,7 +690,11 @@
             "eleStat": {},
 
             "rampSkills": [
-                ["attack_boost_1", "affinity_boost_1", "defense_boost_2"]
+                [
+                    ["attack_boost_1", ""],
+                    ["affinity_boost_1", ""],
+                    ["defense_boost_2", ""]
+                ]
             ],
 
             "baseSharpness": [80,70,50,0,0,0],
@@ -588,7 +712,11 @@
             "eleStat": {},
 
             "rampSkills": [
-                ["attack_boost_1", "affinity_boost_1", "defense_boost_2"]
+                [
+                    ["attack_boost_1", ""],
+                    ["affinity_boost_1", ""],
+                    ["defense_boost_2", ""]
+                ]
             ],
 
             "baseSharpness": [70,50,80,0,0,0],
@@ -606,7 +734,11 @@
             "eleStat": {},
 
             "rampSkills": [
-                ["attack_boost_2", "affinity_boost_1", "defense_boost_2"]
+                [
+                    ["attack_boost_2", ""],
+                    ["affinity_boost_1", ""],
+                    ["defense_boost_2", ""]
+                ]
             ],
 
             "baseSharpness": [60,60,60,20,0,0],
@@ -624,7 +756,11 @@
             "eleStat": {},
 
             "rampSkills": [
-                ["attack_boost_2", "defense_boost_2", "silkbind_boost"]
+                [
+                    ["attack_boost_2", ""],
+                    ["defense_boost_2", ""],
+                    ["silkbind_boost", ""]
+                ]
             ],
 
             "baseSharpness": [90,70,40,50,0,0],
@@ -642,7 +778,11 @@
             "eleStat": {},
 
             "rampSkills": [
-                ["attack_boost_2", "defense_boost_3", "silkbind_boost"]
+                [
+                    ["attack_boost_2", ""],
+                    ["defense_boost_3", ""],
+                    ["silkbind_boost", ""]
+                ]
             ],
 
             "baseSharpness": [70,80,80,50,20,0],
@@ -660,7 +800,11 @@
             "eleStat": {},
 
             "rampSkills": [
-                ["attack_boost_3", "defense_boost_3", "silkbind_boost"]
+                [
+                    ["attack_boost_3", ""],
+                    ["defense_boost_3", ""],
+                    ["silkbind_boost", ""]
+                ]
             ],
 
             "baseSharpness": [80,90,90,60,30,0],
@@ -680,7 +824,11 @@
             "eleStat": {},
 
             "rampSkills": [
-                ["affinity_boost_2", "defense_boost_3", "dulling_strike"]
+                [
+                    ["affinity_boost_2", ""],
+                    ["defense_boost_3", ""],
+                    ["dulling_strike", ""]
+                ]
             ],
 
             "baseSharpness": [150,50,40,60,0,0],
@@ -698,7 +846,11 @@
             "eleStat": {},
 
             "rampSkills": [
-                ["affinity_boost_2", "defense_boost_3", "dulling_strike"]
+                [
+                    ["affinity_boost_2", ""],
+                    ["defense_boost_3", ""],
+                    ["dulling_strike", ""]
+                ]
             ],
 
             "baseSharpness": [160,60,50,80,0,0],
@@ -716,7 +868,11 @@
             "eleStat": {},
 
             "rampSkills": [
-                ["affinity_boost_3", "defense_boost_3", "dulling_strike"]
+                [
+                    ["affinity_boost_3", ""],
+                    ["defense_boost_3", ""],
+                    ["dulling_strike", ""]
+                ]
             ],
 
             "baseSharpness": [160,50,50,90,0,0],
@@ -736,7 +892,11 @@
             "eleStat": {"water": 24},
 
             "rampSkills": [
-                ["defense_boost_2", "wyvern_exploit", "element_exploit"]
+                [
+                    ["defense_boost_2", ""],
+                    ["wyvern_exploit", ""],
+                    ["element_exploit", ""]
+                ]
             ],
 
             "baseSharpness": [90,90,40,60,20,0],
@@ -754,7 +914,11 @@
             "eleStat": {"water": 26},
 
             "rampSkills": [
-                ["defense_boost_2", "wyvern_exploit", "element_exploit"]
+                [
+                    ["defense_boost_2", ""],
+                    ["wyvern_exploit", ""],
+                    ["element_exploit", ""]
+                ]
             ],
 
             "baseSharpness": [90,90,40,50,30,0],
@@ -772,7 +936,11 @@
             "eleStat": {"water": 33},
 
             "rampSkills": [
-                ["defense_boost_3", "wyvern_exploit", "element_exploit"]
+                [
+                    ["defense_boost_3", ""],
+                    ["wyvern_exploit", ""],
+                    ["element_exploit", ""]
+                ]
             ],
 
             "baseSharpness": [100,100,50,60,40,0],
@@ -792,7 +960,11 @@
             "eleStat": {"poison": 15},
 
             "rampSkills": [
-                ["attack_boost_2", "defense_boost_1", "poison_boost_1"]
+                [
+                    ["attack_boost_2", ""],
+                    ["defense_boost_1", ""],
+                    ["poison_boost_1", ""]
+                ]
             ],
 
             "baseSharpness": [110,50,50,40,0,0],
@@ -810,7 +982,11 @@
             "eleStat": {"poison": 22},
 
             "rampSkills": [
-                ["attack_boost_3", "defense_boost_1", "poison_boost_2"]
+                [
+                    ["attack_boost_3", ""],
+                    ["defense_boost_1", ""],
+                    ["poison_boost_2", ""]
+                ]
             ],
 
             "baseSharpness": [60,60,70,90,20,0],
@@ -828,7 +1004,11 @@
             "eleStat": {"poison": 30},
 
             "rampSkills": [
-                ["attack_boost_3", "defense_boost_2", "poison_boost_2"]
+                [
+                    ["attack_boost_3", ""],
+                    ["defense_boost_2", ""],
+                    ["poison_boost_2", ""]
+                ]
             ],
 
             "baseSharpness": [100,60,80,80,30,0],
@@ -848,7 +1028,11 @@
             "eleStat": {"fire": 18},
 
             "rampSkills": [
-                ["attack_boost_2", "fire_boost_1", "element_exploit"]
+                [
+                    ["attack_boost_2", ""],
+                    ["fire_boost_1", ""],
+                    ["element_exploit", ""]
+                ]
             ],
 
             "baseSharpness": [30,100,60,60,0,0],
@@ -866,7 +1050,11 @@
             "eleStat": {"fire": 23},
 
             "rampSkills": [
-                ["attack_boost_2", "fire_boost_1", "element_exploit"]
+                [
+                    ["attack_boost_2", ""],
+                    ["fire_boost_1", ""],
+                    ["element_exploit", ""]
+                ]
             ],
 
             "baseSharpness": [90,80,80,60,40,0],
@@ -884,7 +1072,11 @@
             "eleStat": {"fire": 33},
 
             "rampSkills": [
-                ["attack_boost_3", "fire_boost_1", "element_exploit"]
+                [
+                    ["attack_boost_3", ""],
+                    ["fire_boost_1", ""],
+                    ["element_exploit", ""]
+                ]
             ],
 
             "baseSharpness": [50,40,110,100,50,0],
@@ -904,7 +1096,11 @@
             "eleStat": {"ice": 12},
 
             "rampSkills": [
-                ["attack_boost_2", "affinity_boost_2", "iceblight_exploit"]
+                [
+                    ["attack_boost_2", ""],
+                    ["affinity_boost_2", ""],
+                    ["iceblight_exploit", ""]
+                ]
             ],
 
             "baseSharpness": [50,60,70,70,0,0],
@@ -922,7 +1118,11 @@
             "eleStat": {"ice": 15},
 
             "rampSkills": [
-                ["attack_boost_3", "affinity_boost_2", "iceblight_exploit"]
+                [
+                    ["attack_boost_3", ""],
+                    ["affinity_boost_2", ""],
+                    ["iceblight_exploit", ""]
+                ]
             ],
 
             "baseSharpness": [40,70,70,100,20,0],
@@ -940,7 +1140,11 @@
             "eleStat": {"ice": 20},
 
             "rampSkills": [
-                ["attack_boost_4", "affinity_boost_2", "iceblight_exploit"]
+                [
+                    ["attack_boost_4", ""],
+                    ["affinity_boost_2", ""],
+                    ["iceblight_exploit", ""]
+                ]
             ],
 
             "baseSharpness": [50,70,80,80,70,0],
@@ -960,7 +1164,11 @@
             "eleStat": {"water": 8},
 
             "rampSkills": [
-                ["defense_boost_1", "water_boost_1", "dulling_strike"]
+                [
+                    ["defense_boost_1", ""],
+                    ["water_boost_1", ""],
+                    ["dulling_strike", ""]
+                ]
             ],
 
             "baseSharpness": [30,70,80,20,0,0],
@@ -978,7 +1186,11 @@
             "eleStat": {"water": 11},
 
             "rampSkills": [
-                ["defense_boost_1", "water_boost_2", "dulling_strike"]
+                [
+                    ["defense_boost_1", ""],
+                    ["water_boost_2", ""],
+                    ["dulling_strike", ""]
+                ]
             ],
 
             "baseSharpness": [30,70,100,50,0,0],
@@ -996,7 +1208,11 @@
             "eleStat": {"water": 13},
 
             "rampSkills": [
-                ["defense_boost_1", "water_boost_3", "dulling_strike"]
+                [
+                    ["defense_boost_1", ""],
+                    ["water_boost_3", ""],
+                    ["dulling_strike", ""]
+                ]
             ],
 
             "baseSharpness": [40,70,110,80,0,0],
@@ -1016,7 +1232,11 @@
             "eleStat": {"thunder": 21},
 
             "rampSkills": [
-                ["attack_boost_2", "thunder_boost_1", "thunderblight_exploit"]
+                [
+                    ["attack_boost_2", ""],
+                    ["thunder_boost_1", ""],
+                    ["thunderblight_exploit", ""]
+                ]
             ],
 
             "baseSharpness": [70,60,40,30,0,0],
@@ -1034,7 +1254,11 @@
             "eleStat": {"thunder": 22},
 
             "rampSkills": [
-                ["attack_boost_2", "thunder_boost_1", "thunderblight_exploit"]
+                [
+                    ["attack_boost_2", ""],
+                    ["thunder_boost_1", ""],
+                    ["thunderblight_exploit", ""]
+                ]
             ],
 
             "baseSharpness": [100,60,50,40,0,0],
@@ -1052,7 +1276,11 @@
             "eleStat": {"thunder": 30},
 
             "rampSkills": [
-                ["attack_boost_4", "thunder_boost_2", "thunderblight_exploit"]
+                [
+                    ["attack_boost_4", ""],
+                    ["thunder_boost_2", ""],
+                    ["thunderblight_exploit", ""]
+                ]
             ],
 
             "baseSharpness": [100,60,70,70,0,0],
@@ -1072,7 +1300,11 @@
             "eleStat": {"sleep": 17},
 
             "rampSkills": [
-                ["affinity_boost_1", "sleep_boost_1", "buddy_rally"]
+                [
+                    ["affinity_boost_1", ""],
+                    ["sleep_boost_1", ""],
+                    ["buddy_rally", ""]
+                ]
             ],
 
             "baseSharpness": [90,50,40,20,0,0],
@@ -1090,7 +1322,11 @@
             "eleStat": {"sleep": 23},
 
             "rampSkills": [
-                ["affinity_boost_2", "sleep_boost_1", "buddy_rally"]
+                [
+                    ["affinity_boost_2", ""],
+                    ["sleep_boost_1", ""],
+                    ["buddy_rally", ""]
+                ]
             ],
 
             "baseSharpness": [100,60,50,40,0,0],
@@ -1108,7 +1344,11 @@
             "eleStat": {"sleep": 26},
 
             "rampSkills": [
-                ["affinity_boost_2", "sleep_boost_2", "buddy_rally"]
+                [
+                    ["affinity_boost_2", ""],
+                    ["sleep_boost_2", ""],
+                    ["buddy_rally", ""]
+                ]
             ],
 
             "baseSharpness": [100,60,50,70,20,0],
@@ -1128,7 +1368,11 @@
             "eleStat": {},
 
             "rampSkills": [
-                ["attack_boost_2", "affinity_boost_1", "defense_boost_1"]
+                [
+                    ["attack_boost_2", ""],
+                    ["affinity_boost_1", ""],
+                    ["defense_boost_1", ""]
+                ]
             ],
 
             "baseSharpness": [70,90,40,0,0,0],
@@ -1146,7 +1390,11 @@
             "eleStat": {},
 
             "rampSkills": [
-                ["attack_boost_2", "affinity_boost_1", "defense_boost_1"]
+                [
+                    ["attack_boost_2", ""],
+                    ["affinity_boost_1", ""],
+                    ["defense_boost_1", ""]
+                ]
             ],
 
             "baseSharpness": [80,70,50,0,0,0],
@@ -1164,7 +1412,11 @@
             "eleStat": {},
 
             "rampSkills": [
-                ["attack_boost_2", "affinity_boost_2", "defense_boost_1"]
+                [
+                    ["attack_boost_2", ""],
+                    ["affinity_boost_2", ""],
+                    ["defense_boost_1", ""]
+                ]
             ],
 
             "baseSharpness": [90,90,70,0,0,0],
@@ -1182,7 +1434,11 @@
             "eleStat": {},
 
             "rampSkills": [
-                ["attack_boost_2", "affinity_boost_2", "dulling_strike"]
+                [
+                    ["attack_boost_2", ""],
+                    ["affinity_boost_2", ""],
+                    ["dulling_strike", ""]
+                ]
             ],
 
             "baseSharpness": [100,70,70,10,0,0],
@@ -1200,7 +1456,11 @@
             "eleStat": {},
 
             "rampSkills": [
-                ["attack_boost_3", "affinity_boost_2", "dulling_strike"]
+                [
+                    ["attack_boost_3", ""],
+                    ["affinity_boost_2", ""],
+                    ["dulling_strike", ""]
+                ]
             ],
 
             "baseSharpness": [110,90,60,40,0,0],
@@ -1218,7 +1478,11 @@
             "eleStat": {},
 
             "rampSkills": [
-                ["attack_boost_4", "affinity_boost_2", "dulling_strike"]
+                [
+                    ["attack_boost_4", ""],
+                    ["affinity_boost_2", ""],
+                    ["dulling_strike", ""]
+                ]
             ],
 
             "baseSharpness": [80,70,80,70,0,0],
@@ -1238,7 +1502,11 @@
             "eleStat": {"poison": 14},
 
             "rampSkills": [
-                ["attack_boost_2", "poison_boost_1", "small_monster_exploit"]
+                [
+                    ["attack_boost_2", ""],
+                    ["poison_boost_1", ""],
+                    ["small_monster_exploit", ""]
+                ]
             ],
 
             "baseSharpness": [60,70,90,80,0,0],
@@ -1256,7 +1524,11 @@
             "eleStat": {"poison": 24},
 
             "rampSkills": [
-                ["attack_boost_2", "poison_boost_1", "small_monster_exploit"]
+                [
+                    ["attack_boost_2", ""],
+                    ["poison_boost_1", ""],
+                    ["small_monster_exploit", ""]
+                ]
             ],
 
             "baseSharpness": [100,40,110,70,30,0],
@@ -1274,7 +1546,11 @@
             "eleStat": {"poison": 28},
 
             "rampSkills": [
-                ["attack_boost_2", "poison_boost_2", "small_monster_exploit"]
+                [
+                    ["attack_boost_2", ""],
+                    ["poison_boost_2", ""],
+                    ["small_monster_exploit", ""]
+                ]
             ],
 
             "baseSharpness": [90,40,110,70,40,0],
@@ -1294,7 +1570,11 @@
             "eleStat": {},
 
             "rampSkills": [
-                ["affinity_boost_2", "brutal_strike", "anti_aquatic_species"]
+                [
+                    ["affinity_boost_2", ""],
+                    ["brutal_strike", ""],
+                    ["anti_aquatic_species", ""]
+                ]
             ],
 
             "baseSharpness": [110,70,70,0,0,0],
@@ -1312,7 +1592,11 @@
             "eleStat": {},
 
             "rampSkills": [
-                ["affinity_boost_3", "brutal_strike", "anti_aquatic_species"]
+                [
+                    ["affinity_boost_3", ""],
+                    ["brutal_strike", ""],
+                    ["anti_aquatic_species", ""]
+                ]
             ],
 
             "baseSharpness": [110,90,60,40,0,0],
@@ -1330,7 +1614,11 @@
             "eleStat": {},
 
             "rampSkills": [
-                ["affinity_boost_4", "brutal_strike", "anti_aquatic_species"]
+                [
+                    ["affinity_boost_4", ""],
+                    ["brutal_strike", ""],
+                    ["anti_aquatic_species", ""]
+                ]
             ],
 
             "baseSharpness": [130,110,50,30,30,0],
@@ -1350,7 +1638,11 @@
             "eleStat": {},
 
             "rampSkills": [
-                ["affinity_boost_1", "defense_boost_1", "brutal_strike"]
+                [
+                    ["affinity_boost_1", ""],
+                    ["defense_boost_1", ""],
+                    ["brutal_strike", ""]
+                ]
             ],
 
             "baseSharpness": [50,60,140,0,0,0],
@@ -1368,7 +1660,11 @@
             "eleStat": {},
 
             "rampSkills": [
-                ["affinity_boost_1", "defense_boost_2", "brutal_strike"]
+                [
+                    ["affinity_boost_1", ""],
+                    ["defense_boost_2", ""],
+                    ["brutal_strike", ""]
+                ]
             ],
 
             "baseSharpness": [60,60,140,40,0,0],
@@ -1386,7 +1682,11 @@
             "eleStat": {},
 
             "rampSkills": [
-                ["affinity_boost_2", "defense_boost_2", "brutal_strike"]
+                [
+                    ["affinity_boost_2", ""],
+                    ["defense_boost_2", ""],
+                    ["brutal_strike", ""]
+                ]
             ],
 
             "baseSharpness": [60,40,180,50,20,0],
@@ -1406,7 +1706,11 @@
             "eleStat": {},
 
             "rampSkills": [
-                ["affinity_boost_1", "defense_boost_2", "small_monster_exploit"]
+                [
+                    ["affinity_boost_1", ""],
+                    ["defense_boost_2", ""],
+                    ["small_monster_exploit", ""]
+                ]
             ],
 
             "baseSharpness": [60,40,50,100,0,0],
@@ -1424,7 +1728,11 @@
             "eleStat": {},
 
             "rampSkills": [
-                ["affinity_boost_2", "defense_boost_2", "small_monster_exploit"]
+                [
+                    ["affinity_boost_2", ""],
+                    ["defense_boost_2", ""],
+                    ["small_monster_exploit", ""]
+                ]
             ],
 
             "baseSharpness": [70,70,80,110,20,0],
@@ -1442,7 +1750,11 @@
             "eleStat": {},
 
             "rampSkills": [
-                ["affinity_boost_3", "defense_boost_2", "small_monster_exploit"]
+                [
+                    ["affinity_boost_3", ""],
+                    ["defense_boost_2", ""],
+                    ["small_monster_exploit", ""]
+                ]
             ],
 
             "baseSharpness": [40,60,80,120,50,0],
@@ -1462,7 +1774,11 @@
             "eleStat": {},
 
             "rampSkills": [
-                ["defense_boost_1", "small_monster_exploit", "spiribird_doubled"]
+                [
+                    ["defense_boost_1", ""],
+                    ["small_monster_exploit", ""],
+                    ["spiribird_doubled", ""]
+                ]
             ],
 
             "baseSharpness": [110,30,60,0,0,0],
@@ -1480,7 +1796,11 @@
             "eleStat": {},
 
             "rampSkills": [
-                ["defense_boost_2", "small_monster_exploit", "spiribird_doubled"]
+                [
+                    ["defense_boost_2", ""],
+                    ["small_monster_exploit", ""],
+                    ["spiribird_doubled", ""]
+                ]
             ],
 
             "baseSharpness": [100,30,70,50,0,0],
@@ -1498,7 +1818,11 @@
             "eleStat": {},
 
             "rampSkills": [
-                ["defense_boost_2", "small_monster_exploit", "spiribird_doubled"]
+                [
+                    ["defense_boost_2", ""],
+                    ["small_monster_exploit", ""],
+                    ["spiribird_doubled", ""]
+                ]
             ],
 
             "baseSharpness": [140,20,60,70,10,0],
@@ -1518,7 +1842,11 @@
             "eleStat": {"fire": 15},
 
             "rampSkills": [
-                ["affinity_boost_1", "fire_boost_2", "brutal_strike"]
+                [
+                    ["affinity_boost_1", ""],
+                    ["fire_boost_2", ""],
+                    ["brutal_strike", ""]
+                ]
             ],
 
             "baseSharpness": [120,90,30,50,10,0],
@@ -1536,7 +1864,11 @@
             "eleStat": {"fire": 18},
 
             "rampSkills": [
-                ["affinity_boost_2", "fire_boost_3", "brutal_strike"]
+                [
+                    ["affinity_boost_2", ""],
+                    ["fire_boost_3", ""],
+                    ["brutal_strike", ""]
+                ]
             ],
 
             "baseSharpness": [130,110,40,50,20,0],
@@ -1554,7 +1886,11 @@
             "eleStat": {"fire": 21},
 
             "rampSkills": [
-                ["affinity_boost_3", "fire_boost_3", "brutal_strike"]
+                [
+                    ["affinity_boost_3", ""],
+                    ["fire_boost_3", ""],
+                    ["brutal_strike", ""]
+                ]
             ],
 
             "baseSharpness": [120,110,40,50,30,0],
@@ -1574,7 +1910,11 @@
             "eleStat": {"ice": 10},
 
             "rampSkills": [
-                ["affinity_boost_1", "ice_boost_1", "brutal_strike"]
+                [
+                    ["affinity_boost_1", ""],
+                    ["ice_boost_1", ""],
+                    ["brutal_strike", ""]
+                ]
             ],
 
             "baseSharpness": [100,30,90,30,0,0],
@@ -1592,7 +1932,11 @@
             "eleStat": {"ice": 11},
 
             "rampSkills": [
-                ["affinity_boost_1", "ice_boost_2", "brutal_strike"]
+                [
+                    ["affinity_boost_1", ""],
+                    ["ice_boost_2", ""],
+                    ["brutal_strike", ""]
+                ]
             ],
 
             "baseSharpness": [100,30,110,40,20,0],
@@ -1610,7 +1954,11 @@
             "eleStat": {"ice": 14},
 
             "rampSkills": [
-                ["affinity_boost_1", "ice_boost_3", "brutal_strike"]
+                [
+                    ["affinity_boost_1", ""],
+                    ["ice_boost_3", ""],
+                    ["brutal_strike", ""]
+                ]
             ],
 
             "baseSharpness": [100,30,100,40,30,0],
@@ -1630,7 +1978,11 @@
             "eleStat": {},
 
             "rampSkills": [
-                ["affinity_boost_1", "small_monster_exploit", "buddy_rally"]
+                [
+                    ["affinity_boost_1", ""],
+                    ["small_monster_exploit", ""],
+                    ["buddy_rally", ""]
+                ]
             ],
 
             "baseSharpness": [30,70,100,0,0,0],
@@ -1648,7 +2000,11 @@
             "eleStat": {},
 
             "rampSkills": [
-                ["affinity_boost_2", "small_monster_exploit", "buddy_rally"]
+                [
+                    ["affinity_boost_2", ""],
+                    ["small_monster_exploit", ""],
+                    ["buddy_rally", ""]
+                ]
             ],
 
             "baseSharpness": [30,70,60,40,0,0],
@@ -1666,7 +2022,11 @@
             "eleStat": {},
 
             "rampSkills": [
-                ["affinity_boost_3", "small_monster_exploit", "buddy_rally"]
+                [
+                    ["affinity_boost_3", ""],
+                    ["small_monster_exploit", ""],
+                    ["buddy_rally", ""]
+                ]
             ],
 
             "baseSharpness": [30,80,50,60,30,0],
@@ -1686,7 +2046,11 @@
             "eleStat": {"fire": 10},
 
             "rampSkills": [
-                ["defense_boost_2", "fireblight_exploit", "dulling_strike"]
+                [
+                    ["defense_boost_2", ""],
+                    ["fireblight_exploit", ""],
+                    ["dulling_strike", ""]
+                ]
             ],
 
             "baseSharpness": [160,30,60,0,0,0],
@@ -1704,7 +2068,11 @@
             "eleStat": {"fire": 15},
 
             "rampSkills": [
-                ["defense_boost_2", "fireblight_exploit", "dulling_strike"]
+                [
+                    ["defense_boost_2", ""],
+                    ["fireblight_exploit", ""],
+                    ["dulling_strike", ""]
+                ]
             ],
 
             "baseSharpness": [100,40,60,50,0,0],
@@ -1722,7 +2090,11 @@
             "eleStat": {"fire": 17},
 
             "rampSkills": [
-                ["defense_boost_3", "fireblight_exploit", "dulling_strike"]
+                [
+                    ["defense_boost_3", ""],
+                    ["fireblight_exploit", ""],
+                    ["dulling_strike", ""]
+                ]
             ],
 
             "baseSharpness": [40,40,70,150,0,0],
@@ -1742,7 +2114,11 @@
             "eleStat": {},
 
             "rampSkills": [
-                ["defense_boost_1", "affinity_boost_1", "small_monster_exploit"]
+                [
+                    ["defense_boost_1", ""],
+                    ["affinity_boost_1", ""],
+                    ["small_monster_exploit", ""]
+                ]
             ],
 
             "baseSharpness": [100,30,70,0,0,0],
@@ -1760,7 +2136,11 @@
             "eleStat": {},
 
             "rampSkills": [
-                ["defense_boost_1", "affinity_boost_1", "small_monster_exploit"]
+                [
+                    ["defense_boost_1", ""],
+                    ["affinity_boost_1", ""],
+                    ["small_monster_exploit", ""]
+                ]
             ],
 
             "baseSharpness": [90,20,20,70,0,0],
@@ -1778,7 +2158,11 @@
             "eleStat": {"ice": 17},
 
             "rampSkills": [
-                ["defense_boost_2", "ice_boost_2", "silkbind_boost"]
+                [
+                    ["defense_boost_2", ""],
+                    ["ice_boost_2", ""],
+                    ["silkbind_boost", ""]
+                ]
             ],
 
             "baseSharpness": [140,20,20,70,0,0],
@@ -1796,7 +2180,11 @@
             "eleStat": {"ice": 19},
 
             "rampSkills": [
-                ["defense_boost_3", "ice_boost_4", "silkbind_boost"]
+                [
+                    ["defense_boost_3", ""],
+                    ["ice_boost_4", ""],
+                    ["silkbind_boost", ""]
+                ]
             ],
 
             "baseSharpness": [150,30,20,60,40,0],
@@ -1816,7 +2204,11 @@
             "eleStat": {"dragon": 19},
 
             "rampSkills": [
-                ["affinity_boost_2", "defense_boost_2", "element_exploit"]
+                [
+                    ["affinity_boost_2", ""],
+                    ["defense_boost_2", ""],
+                    ["element_exploit", ""]
+                ]
             ],
 
             "baseSharpness": [150,30,20,60,40,0],
@@ -1834,7 +2226,11 @@
             "eleStat": {"dragon": 21},
 
             "rampSkills": [
-                ["affinity_boost_2", "defense_boost_3", "element_exploit"]
+                [
+                    ["affinity_boost_2", ""],
+                    ["defense_boost_3", ""],
+                    ["element_exploit", ""]
+                ]
             ],
 
             "baseSharpness": [140,20,20,70,50,0],
@@ -1852,7 +2248,11 @@
             "eleStat": {"dragon": 24},
 
             "rampSkills": [
-                ["affinity_boost_3", "defense_boost_3", "element_exploit"]
+                [
+                    ["affinity_boost_3", ""],
+                    ["defense_boost_3", ""],
+                    ["element_exploit", ""]
+                ]
             ],
 
             "baseSharpness": [160,20,20,90,60,0],
@@ -1872,7 +2272,11 @@
             "eleStat": {"paralysis": 14},
 
             "rampSkills": [
-                ["affinity_boost_1", "paralysis_boost_1", "anti_aerial_species"]
+                [
+                    ["affinity_boost_1", ""],
+                    ["paralysis_boost_1", ""],
+                    ["anti_aerial_species", ""]
+                ]
             ],
 
             "baseSharpness": [150,30,30,40,0,0],
@@ -1890,7 +2294,11 @@
             "eleStat": {"paralysis": 19},
 
             "rampSkills": [
-                ["affinity_boost_3", "paralysis_boost_2", "anti_aerial_species"]
+                [
+                    ["affinity_boost_3", ""],
+                    ["paralysis_boost_2", ""],
+                    ["anti_aerial_species", ""]
+                ]
             ],
 
             "baseSharpness": [140,30,30,70,30,0],
@@ -1910,7 +2318,11 @@
             "eleStat": {"thunder": 16},
 
             "rampSkills": [
-                ["defense_boost_2", "element_exploit", "silkbind_boost"]
+                [
+                    ["defense_boost_2", ""],
+                    ["element_exploit", ""],
+                    ["silkbind_boost", ""]
+                ]
             ],
 
             "baseSharpness": [140,30,30,50,0,0],
@@ -1928,7 +2340,11 @@
             "eleStat": {"thunder": 23},
 
             "rampSkills": [
-                ["defense_boost_3", "element_exploit", "silkbind_boost"]
+                [
+                    ["defense_boost_3", ""],
+                    ["element_exploit", ""],
+                    ["silkbind_boost", ""]
+                ]
             ],
 
             "baseSharpness": [160,20,20,100,50,0],
@@ -1948,7 +2364,11 @@
             "eleStat": {"fire": 11},
 
             "rampSkills": [
-                ["attack_boost_1", "fire_boost_1", "small_monster_exploit"]
+                [
+                    ["attack_boost_1", ""],
+                    ["fire_boost_1", ""],
+                    ["small_monster_exploit", ""]
+                ]
             ],
 
             "baseSharpness": [100,40,30,30,0,0],
@@ -1966,7 +2386,11 @@
             "eleStat": {"fire": 13},
 
             "rampSkills": [
-                ["attack_boost_2", "fire_boost_2", "small_monster_exploit"]
+                [
+                    ["attack_boost_2", ""],
+                    ["fire_boost_2", ""],
+                    ["small_monster_exploit", ""]
+                ]
             ],
 
             "baseSharpness": [120,40,40,50,0,0],
@@ -1984,7 +2408,11 @@
             "eleStat": {"fire": 19},
 
             "rampSkills": [
-                ["attack_boost_3", "fire_boost_3", "wyvern_exploit"]
+                [
+                    ["attack_boost_3", ""],
+                    ["fire_boost_3", ""],
+                    ["wyvern_exploit", ""]
+                ]
             ],
 
             "baseSharpness": [150,30,20,60,40,0],
@@ -2004,7 +2432,11 @@
             "eleStat": {"blast": 13},
 
             "rampSkills": [
-                ["attack_boost_2", "blast_boost_1", "magnamalo_soul"]
+                [
+                    ["attack_boost_2", ""],
+                    ["blast_boost_1", ""],
+                    ["magnamalo_soul", ""]
+                ]
             ],
 
             "baseSharpness": [160,20,40,80,0,0],
@@ -2022,7 +2454,11 @@
             "eleStat": {"blast": 18},
 
             "rampSkills": [
-                ["attack_boost_3", "blast_boost_1", "magnamalo_soul"]
+                [
+                    ["attack_boost_3", ""],
+                    ["blast_boost_1", ""],
+                    ["magnamalo_soul", ""]
+                ]
             ],
 
             "baseSharpness": [170,20,20,90,0,0],
@@ -2040,7 +2476,11 @@
             "eleStat": {"blast": 26},
 
             "rampSkills": [
-                ["attack_boost_3", "blast_boost_2", "magnamalo_soul"]
+                [
+                    ["attack_boost_3", ""],
+                    ["blast_boost_2", ""],
+                    ["magnamalo_soul", ""]
+                ]
             ],
 
             "baseSharpness": [190,10,20,90,40,0],
@@ -2060,7 +2500,11 @@
             "eleStat": {"thunder": 11},
 
             "rampSkills": [
-                ["affinity_boost_1", "thunder_boost_1", "dulling_strike"]
+                [
+                    ["affinity_boost_1", ""],
+                    ["thunder_boost_1", ""],
+                    ["dulling_strike", ""]
+                ]
             ],
 
             "baseSharpness": [50,20,100,80,0,0],
@@ -2078,7 +2522,11 @@
             "eleStat": {"thunder": 17},
 
             "rampSkills": [
-                ["affinity_boost_1", "thunder_boost_2", "dulling_strike"]
+                [
+                    ["affinity_boost_1", ""],
+                    ["thunder_boost_2", ""],
+                    ["dulling_strike", ""]
+                ]
             ],
 
             "baseSharpness": [20,40,100,90,0,0],
@@ -2096,7 +2544,11 @@
             "eleStat": {"thunder": 19},
 
             "rampSkills": [
-                ["affinity_boost_2", "thunder_boost_2", "dulling_strike"]
+                [
+                    ["affinity_boost_2", ""],
+                    ["thunder_boost_2", ""],
+                    ["dulling_strike", ""]
+                ]
             ],
 
             "baseSharpness": [50,60,80,100,10,0],
@@ -2116,7 +2568,11 @@
             "eleStat": {"dragon": 10},
 
             "rampSkills": [
-                ["dragon_boost_3", "anti_aerial_species", "defense_boost_1"]
+                [
+                    ["dragon_boost_3", ""],
+                    ["anti_aerial_species", ""],
+                    ["defense_boost_1", ""]
+                ]
             ],
 
             "baseSharpness": [20,20,20,40,100,0],
@@ -2134,7 +2590,11 @@
             "eleStat": {"dragon": 12},
 
             "rampSkills": [
-                ["dragon_boost_3", "anti_aerial_species", "ibushi_soul"]
+                [
+                    ["dragon_boost_3", ""],
+                    ["anti_aerial_species", ""],
+                    ["ibushi_soul", ""]
+                ]
             ],
 
             "baseSharpness": [20,20,50,50,110,0],
@@ -2152,7 +2612,11 @@
             "eleStat": {"dragon": 15},
 
             "rampSkills": [
-                ["dragon_boost_4", "anti_aerial_species", "ibushi_soul"]
+                [
+                    ["dragon_boost_4", ""],
+                    ["anti_aerial_species", ""],
+                    ["ibushi_soul", ""]
+                ]
             ],
 
             "baseSharpness": [20,20,80,60,120,0],
@@ -2172,7 +2636,11 @@
             "eleStat": {"thunder": 33},
 
             "rampSkills": [
-                ["attack_boost_2", "anti_aerial_species", "narwa_soul"]
+                [
+                    ["attack_boost_2", ""],
+                    ["anti_aerial_species", ""],
+                    ["narwa_soul", ""]
+                ]
             ],
 
             "baseSharpness": [20,20,180,40,40,0],
@@ -2190,7 +2658,11 @@
             "eleStat": {"thunder": 35},
 
             "rampSkills": [
-                ["attack_boost_3", "anti_aerial_species", "narwa_soul"]
+                [
+                    ["attack_boost_3", ""],
+                    ["anti_aerial_species", ""],
+                    ["narwa_soul", ""]
+                ]
             ],
 
             "baseSharpness": [20,10,220,40,60,0],
@@ -2210,7 +2682,11 @@
             "eleStat": {"ice": 31},
 
             "rampSkills": [
-                ["attack_boost_2", "affinity_boost_2", "kushala_daora_soul"]
+                [
+                    ["attack_boost_2", ""],
+                    ["affinity_boost_2", ""],
+                    ["kushala_daora_soul", ""]
+                ]
             ],
 
             "baseSharpness": [70,100,60,70,50,0],
@@ -2228,7 +2704,11 @@
             "eleStat": {"ice": 36},
 
             "rampSkills": [
-                ["attack_boost_3", "affinity_boost_3", "kushala_daora_soul"]
+                [
+                    ["attack_boost_3", ""],
+                    ["affinity_boost_3", ""],
+                    ["kushala_daora_soul", ""]
+                ]
             ],
 
             "baseSharpness": [80,120,30,50,60,10],
@@ -2248,7 +2728,11 @@
             "eleStat": {"blast": 36},
 
             "rampSkills": [
-                ["attack_boost_2", "fireblight_exploit", "teostra_soul"]
+                [
+                    ["attack_boost_2", ""],
+                    ["fireblight_exploit", ""],
+                    ["teostra_soul", ""]
+                ]
             ],
 
             "baseSharpness": [150,20,80,60,40,0],
@@ -2266,7 +2750,11 @@
             "eleStat": {"blast": 39},
 
             "rampSkills": [
-                ["attack_boost_3", "fireblight_exploit", "teostra_soul"]
+                [
+                    ["attack_boost_3", ""],
+                    ["fireblight_exploit", ""],
+                    ["teostra_soul", ""]
+                ]
             ],
 
             "baseSharpness": [160,50,30,60,50,0],
@@ -2286,7 +2774,11 @@
             "eleStat": {"dragon": 32},
 
             "rampSkills": [
-                ["attack_boost_3", "wyvern_exploit", "valstrax_soul"]
+                [
+                    ["attack_boost_3", ""],
+                    ["wyvern_exploit", ""],
+                    ["valstrax_soul", ""]
+                ]
             ],
 
             "baseSharpness": [180,0,0,0,0,70],
@@ -2304,7 +2796,11 @@
             "eleStat": {"dragon": 34},
 
             "rampSkills": [
-                ["attack_boost_3", "wyvern_exploit", "valstrax_soul"]
+                [
+                    ["attack_boost_3", ""],
+                    ["wyvern_exploit", ""],
+                    ["valstrax_soul", ""]
+                ]
             ],
 
             "baseSharpness": [60,0,0,0,0,90],
@@ -2324,7 +2820,11 @@
             "eleStat": {"sleep": 11},
 
             "rampSkills": [
-                ["defense_boost_1", "sleep_boost_1", "anti_aquatic_species"]
+                [
+                    ["defense_boost_1", ""],
+                    ["sleep_boost_1", ""],
+                    ["anti_aquatic_species", ""]
+                ]
             ],
 
             "baseSharpness": [50,60,90,0,0,0],
@@ -2342,7 +2842,11 @@
             "eleStat": {"sleep": 15},
 
             "rampSkills": [
-                ["defense_boost_2", "sleep_boost_1", "anti_aquatic_species"]
+                [
+                    ["defense_boost_2", ""],
+                    ["sleep_boost_1", ""],
+                    ["anti_aquatic_species", ""]
+                ]
             ],
 
             "baseSharpness": [50,70,100,30,0,0],
@@ -2360,7 +2864,11 @@
             "eleStat": {"sleep": 19},
 
             "rampSkills": [
-                ["defense_boost_3", "sleep_boost_2", "anti_aquatic_species"]
+                [
+                    ["defense_boost_3", ""],
+                    ["sleep_boost_2", ""],
+                    ["anti_aquatic_species", ""]
+                ]
             ],
 
             "baseSharpness": [50,50,130,70,0,0],
@@ -2380,7 +2888,11 @@
             "eleStat": {"paralysis": 15},
 
             "rampSkills": [
-                ["attack_boost_2", "master_rider", "buddy_rally"]
+                [
+                    ["attack_boost_2", ""],
+                    ["master_rider", ""],
+                    ["buddy_rally", ""]
+                ]
             ],
 
             "baseSharpness": [60,100,40,0,0,0],
@@ -2398,7 +2910,11 @@
             "eleStat": {"paralysis": 26},
 
             "rampSkills": [
-                ["attack_boost_3", "master_rider", "buddy_rally"]
+                [
+                    ["attack_boost_3", ""],
+                    ["master_rider", ""],
+                    ["buddy_rally", ""]
+                ]
             ],
 
             "baseSharpness": [60,100,80,10,0,0],
@@ -2416,7 +2932,11 @@
             "eleStat": {"paralysis": 33},
 
             "rampSkills": [
-                ["attack_boost_4", "master_rider", "buddy_rally"]
+                [
+                    ["attack_boost_4", ""],
+                    ["master_rider", ""],
+                    ["buddy_rally", ""]
+                ]
             ],
 
             "baseSharpness": [60,100,60,80,0,0],
@@ -2436,7 +2956,11 @@
             "eleStat": {},
 
             "rampSkills": [
-                ["silkbind_boost", "master_rider", "spiribird_doubled"]
+                [
+                    ["silkbind_boost", ""],
+                    ["master_rider", ""],
+                    ["spiribird_doubled", ""]
+                ]
             ],
 
             "baseSharpness": [10,20,30,190,0,0],
@@ -2454,7 +2978,11 @@
             "eleStat": {},
 
             "rampSkills": [
-                ["silkbind_boost", "master_rider", "spiribird_doubled"]
+                [
+                    ["silkbind_boost", ""],
+                    ["master_rider", ""],
+                    ["spiribird_doubled", ""]
+                ]
             ],
 
             "baseSharpness": [10,20,30,240,0,0],
@@ -2475,18 +3003,18 @@
 
             "rampSkills": [
                 [
-                    "attack_boost_1",
-                    "affinity_boost_1",
-                    "defense_boost_1"
+                    ["attack_boost_1", ""],
+                    ["affinity_boost_1", ""],
+                    ["defense_boost_1", ""]
                 ],
                 [
-                    "fire_1",
-                    "water_1",
-                    "thunder_1",
-                    "ice_1"
+                    ["fire_1", ""],
+                    ["water_1", ""],
+                    ["thunder_1", ""],
+                    ["ice_1", ""]
                 ],
                 [
-                    "attack_surge"
+                    ["attack_surge", ""]
                 ]
             ],
 
@@ -2506,21 +3034,21 @@
 
             "rampSkills": [
                 [
-                    "attack_boost_1",
-                    "affinity_boost_1",
-                    "defense_boost_1"
+                    ["attack_boost_1", ""],
+                    ["affinity_boost_1", ""],
+                    ["defense_boost_1", ""]
                 ],
                 [
-                    "non_elemental_boost",
-                    "fire_1",
-                    "water_1",
-                    "thunder_1",
-                    "ice_1",
-                    "dragon_1",
-                    "poison_1"
+                    ["non_elemental_boost", ""],
+                    ["fire_1", ""],
+                    ["water_1", ""],
+                    ["thunder_1", ""],
+                    ["ice_1", ""],
+                    ["dragon_1", ""],
+                    ["poison_1", ""]
                 ],
                 [
-                    "attack_surge"
+                    ["attack_surge", ""]
                 ]
             ],
 
@@ -2540,27 +3068,27 @@
 
             "rampSkills": [
                 [
-                    "attack_boost_2",
-                    "elemental_boost_1",
-                    "affinity_boost_2",
-                    "defense_boost_2",
-                    "sharpness_type_1"
+                    ["attack_boost_2", ""],
+                    ["elemental_boost_1", ""],
+                    ["affinity_boost_2", ""],
+                    ["defense_boost_2", ""],
+                    ["sharpness_type_1", ""]
                 ],
                 [
-                    "non_elemental_boost",
-                    "fire_1",
-                    "water_1",
-                    "thunder_1",
-                    "ice_1",
-                    "dragon_1",
-                    "poison_1",
-                    "paralysis_1",
-                    "sleep_1",
-                    "blast_1"
+                    ["non_elemental_boost", ""],
+                    ["fire_1", ""],
+                    ["water_1", ""],
+                    ["thunder_1", ""],
+                    ["ice_1", ""],
+                    ["dragon_1", ""],
+                    ["poison_1", ""],
+                    ["paralysis_1", ""],
+                    ["sleep_1", ""],
+                    ["blast_1", ""]
                 ],
                 [
-                    "attack_surge",
-                    "affinity_surge"
+                    ["attack_surge", ""],
+                    ["affinity_surge", ""]
                 ]
             ],
 
@@ -2580,28 +3108,28 @@
 
             "rampSkills": [
                 [
-                    "attack_boost_2",
-                    "elemental_boost_1",
-                    "affinity_boost_2",
-                    "defense_boost_2",
-                    "sharpness_type_1",
-                    "sharpness_type_2"
+                    ["attack_boost_2", ""],
+                    ["elemental_boost_1", ""],
+                    ["affinity_boost_2", ""],
+                    ["defense_boost_2", ""],
+                    ["sharpness_type_1", ""],
+                    ["sharpness_type_2", ""]
                 ],
                 [
-                    "non_elemental_boost",
-                    "fire_2",
-                    "water_2",
-                    "thunder_2",
-                    "ice_2",
-                    "dragon_2",
-                    "poison_1",
-                    "paralysis_1",
-                    "sleep_1",
-                    "blast_1"
+                    ["non_elemental_boost", ""],
+                    ["fire_2", ""],
+                    ["water_2", ""],
+                    ["thunder_2", ""],
+                    ["ice_2", ""],
+                    ["dragon_2", ""],
+                    ["poison_1", ""],
+                    ["paralysis_1", ""],
+                    ["sleep_1", ""],
+                    ["blast_1", ""]
                 ],
                 [
-                    "attack_surge",
-                    "affinity_surge"
+                    ["attack_surge", ""],
+                    ["affinity_surge", ""]
                 ]
             ],
 
@@ -2621,30 +3149,30 @@
 
             "rampSkills": [
                 [
-                    "attack_boost_3",
-                    "elemental_boost_1",
-                    "affinity_boost_3",
-                    "defense_boost_3",
-                    "sharpness_type_1",
-                    "sharpness_type_2",
-                    "sharpness_type_3"
+                    ["attack_boost_3", ""],
+                    ["elemental_boost_1", ""],
+                    ["affinity_boost_3", ""],
+                    ["defense_boost_3", ""],
+                    ["sharpness_type_1", ""],
+                    ["sharpness_type_2", ""],
+                    ["sharpness_type_3", ""]
                 ],
                 [
-                    "non_elemental_boost",
-                    "fire_3",
-                    "water_3",
-                    "thunder_3",
-                    "ice_3",
-                    "dragon_3",
-                    "poison_1",
-                    "paralysis_1",
-                    "sleep_1",
-                    "blast_1"
+                    ["non_elemental_boost", ""],
+                    ["fire_3", ""],
+                    ["water_3", ""],
+                    ["thunder_3", ""],
+                    ["ice_3", ""],
+                    ["dragon_3", ""],
+                    ["poison_1", ""],
+                    ["paralysis_1", ""],
+                    ["sleep_1", ""],
+                    ["blast_1", ""]
                 ],
                 [
-                    "attack_surge",
-                    "elemental_surge",
-                    "affinity_surge"
+                    ["attack_surge", ""],
+                    ["elemental_surge", ""],
+                    ["affinity_surge", ""]
                 ]
             ],
 
@@ -2664,31 +3192,31 @@
 
             "rampSkills": [
                 [
-                    "attack_boost_4",
-                    "elemental_boost_1",
-                    "affinity_boost_4",
-                    "defense_boost_3",
-                    "sharpness_type_1",
-                    "sharpness_type_2",
-                    "sharpness_type_3",
-                    "sharpness_type_4"
+                    ["attack_boost_4", ""],
+                    ["elemental_boost_1", ""],
+                    ["affinity_boost_4", ""],
+                    ["defense_boost_3", ""],
+                    ["sharpness_type_1", ""],
+                    ["sharpness_type_2", ""],
+                    ["sharpness_type_3", ""],
+                    ["sharpness_type_4", ""]
                 ],
                 [
-                    "non_elemental_boost",
-                    "fire_3",
-                    "water_3",
-                    "thunder_3",
-                    "ice_3",
-                    "dragon_3",
-                    "poison_2",
-                    "paralysis_2",
-                    "sleep_2",
-                    "blast_2"
+                    ["non_elemental_boost", ""],
+                    ["fire_3", ""],
+                    ["water_3", ""],
+                    ["thunder_3", ""],
+                    ["ice_3", ""],
+                    ["dragon_3", ""],
+                    ["poison_2", ""],
+                    ["paralysis_2", ""],
+                    ["sleep_2", ""],
+                    ["blast_2", ""]
                 ],
                 [
-                    "attack_surge",
-                    "elemental_surge",
-                    "affinity_surge"
+                    ["attack_surge", ""],
+                    ["elemental_surge", ""],
+                    ["affinity_surge", ""]
                 ]
             ],
 

@@ -212,16 +212,12 @@ sharpness_fmt = """,
 """
 
 ramp_fmt = """\
-                [{ramp_skills}]\
-"""
-
-ramp_fmt2 = """\
                 [
 {ramp_skills}
                 ]\
 """
-ramp_fmt2_subfmt = """\
-                    "{ramp_skill}"\
+ramp_fmt_subfmt = """\
+                    ["{ramp_skill}", "{inheritance_weapon_id}"]\
 """
 
 huntinghorn_songs_fmt = """,
@@ -231,14 +227,13 @@ huntinghorn_songs_fmt = """,
 
 
 def process_ramp_skills(lst):
-    if (len(lst) == 1) and (len(lst[0]) < 4):
-        return ramp_fmt.format(ramp_skills=", ".join(f"\"{x}\"" for x in lst[0]))
-    else:
-        slot_strs = []
-        for slot in lst:
-            inner = ",\n".join(ramp_fmt2_subfmt.format(ramp_skill=ramp_skill) for ramp_skill in slot)
-            slot_strs.append(ramp_fmt2.format(ramp_skills=inner))
-        return ",\n".join(slot_strs)
+    slot_strs = []
+    for slot in lst:
+        inner = []
+        for ramp_skill in slot:
+            inner.append(ramp_fmt_subfmt.format(ramp_skill=ramp_skill, inheritance_weapon_id=""))
+        slot_strs.append(ramp_fmt.format(ramp_skills=",\n".join(inner)))
+    return ",\n".join(slot_strs)
 
 
 for (weapon_category, _) in data_spec.items():

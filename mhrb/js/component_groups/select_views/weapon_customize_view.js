@@ -20,13 +20,18 @@ class WeaponCustomizeView extends React.Component {
     }
 
     _renderRampSelection(positionID, rampSkillSelection, rampSkillOptions) {
+        const cspecGetOptionValue = (_arr) => {
+                const [rampSkillRO, inheritedFromWeaponRO] = _arr;
+                return rampSkillRO.id;
+            };
+
         return element(DropdownSelectWithNull,
             {
-            currentlySelected: rampSkillSelection,
+            currentlySelected: (rampSkillSelection === null) ? null : [rampSkillSelection, null], // We fake the structure
             optionsArray: rampSkillOptions,
             handleOnChange: (newRampSkillID) => {this.handleSelectRampageSkill(positionID, newRampSkillID)},
-            cspecGetOptionValue: (rampSkillRO) => {return rampSkillRO.id},
-            cspecGetOptionName: (rampSkillRO) => {return rampSkillRO.name},
+            cspecGetOptionValue: cspecGetOptionValue,
+            cspecGetOptionName: (_arr) => {const [rampSkillRO, inheritedFromWeaponRO] = _arr; return rampSkillRO.name},
             },
             null,
         );
