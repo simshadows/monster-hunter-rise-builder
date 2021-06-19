@@ -115,6 +115,7 @@ function calculateBuildPerformance(db, build, calcState) {
     assert(m.rawAdd      !== undefined);
     assert(m.rawMul      !== undefined);
     assert(m.affinityAdd !== undefined);
+    assert(m.eleMul      !== undefined);
     assert(m.defenseAdd  !== undefined);
     assert(m.defenseMul  !== undefined);
 
@@ -127,7 +128,11 @@ function calculateBuildPerformance(db, build, calcState) {
 
     const postbaseEleStat = new Map();
     for (const [eleStatID, baseEleStatValue] of b.baseEleStat.entries()) {
-        const postbaseEleStatValue = Math.trunc(baseEleStatValue * s.eleStatMul[eleStatID]) + s.eleStatAdd[eleStatID];
+        let x = baseEleStatValue * s.eleStatMul[eleStatID];
+        if (isEleStr(eleStatID)) {
+            x *= m.eleMul;
+        }
+        const postbaseEleStatValue = Math.trunc(x) + s.eleStatAdd[eleStatID];
         postbaseEleStat.set(eleStatID, postbaseEleStatValue);
     }
 

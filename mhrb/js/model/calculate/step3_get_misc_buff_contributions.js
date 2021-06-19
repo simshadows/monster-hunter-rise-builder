@@ -50,6 +50,7 @@ function getMiscBuffContributions(db, build, calcState) {
     let rawAdd = 0;
     let rawMul = 1;
     let affinityAdd = 0;
+    let eleMul = 1;
     let defenseAdd = 0;
     let defenseMul = 1;
 
@@ -104,6 +105,16 @@ function getMiscBuffContributions(db, build, calcState) {
         defenseAdd += 15;
     }
 
+    if (miscBuffActive("Song: Attack Up")) {
+        rawMul *= 1.10;
+    }
+    if (miscBuffActive("Song: Affinity Up")) {
+        affinityAdd += 20;
+    }
+    if (miscBuffActive("Song: Elem. Attack Boost")) {
+        eleMul *= 1.20;
+    }
+
     if (miscBuffActive("Palico: Rousing Roar")) {
         affinityAdd += 30;
     }
@@ -116,6 +127,7 @@ function getMiscBuffContributions(db, build, calcState) {
         rawAdd,
         rawMul,
         affinityAdd,
+        eleMul,
         defenseAdd,
         defenseMul,
     };

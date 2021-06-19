@@ -209,6 +209,39 @@ class CalcState {
                     },
                 ],
             }],
+            ["Song: Attack Up", {
+                initialState: 0,
+                presentations: [
+                    null,
+                    {
+                        name: "Active",
+                        type: "icon",
+                        iconImgPath: getImgPath("song_attackup"),
+                    },
+                ],
+            }],
+            ["Song: Affinity Up", {
+                initialState: 0,
+                presentations: [
+                    null,
+                    {
+                        name: "Active",
+                        type: "icon",
+                        iconImgPath: getImgPath("song_affinityup"),
+                    },
+                ],
+            }],
+            ["Song: Elem. Attack Boost", {
+                initialState: 0,
+                presentations: [
+                    null,
+                    {
+                        name: "Active",
+                        type: "icon",
+                        iconImgPath: getImgPath("song_elementalattackboost"),
+                    },
+                ],
+            }],
             ["Palico: Rousing Roar", {
                 initialState: 0,
                 presentations: [
