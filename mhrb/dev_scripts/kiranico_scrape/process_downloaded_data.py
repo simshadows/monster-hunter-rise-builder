@@ -76,7 +76,8 @@ data_spec = {}
 for (weapon_category, (weapon_trees, tagset)) in DATA_SPEC_HARDCODED.items():
     submap = data_spec[weapon_category] = {}
     ids_seen = set()
-    for (tree_name, weapons_array) in weapon_trees:
+    for (tree_name, base_parent_weapon_id, weapons_array) in weapon_trees:
+        curr_parent_weapon_id = base_parent_weapon_id
         for (i, (weapon_name, weapon_id)) in enumerate(weapons_array):
 
             if weapon_id in ids_seen:
@@ -85,10 +86,13 @@ for (weapon_category, (weapon_trees, tagset)) in DATA_SPEC_HARDCODED.items():
 
             submap[weapon_name] = {
                     "id":        weapon_id,
+                    "parent_id": curr_parent_weapon_id,
                     "tree_name": tree_name,
                     "endline_tag": ("hr" if (i == (len(weapons_array) - 1)) else ""),
                     "tagset": tagset,
                 }
+
+            curr_parent_weapon_id = weapon_id
 
 #
 # STAGE 2: Read the input
@@ -96,6 +100,11 @@ for (weapon_category, (weapon_trees, tagset)) in DATA_SPEC_HARDCODED.items():
 
 # {category: {tree name: {id: {weapon data}, ...}, ...}, ...}
 data = defaultdict(lambda : defaultdict(dict))
+
+# {category: {id: {weapon data}, ...}, ...}
+# This one will be used for graph traversal.
+# Usefully, it also helps us check for duplicates.
+data_flat_per_category = defaultdict(dict)
 
 raw_data = None
 with open(SRC_FILE_PATH, encoding="utf-8", mode="r") as f:
@@ -109,7 +118,7 @@ for (weapon_category, spec_subdict) in data_spec.items():
             name = obj["name"]
 
             if name not in spec_subdict:
-                raise ValueError("Weapon " + name + " present in data file, but not in the hardcoded spec.")
+                raise ValueError(f"Weapon {name} present in data file, but not in the hardcoded spec.")
 
             weapon_id = spec_subdict[name]["id"]
             rarity = obj["rarity"]
@@ -117,6 +126,8 @@ for (weapon_category, spec_subdict) in data_spec.items():
             endline_tag = spec_subdict[name]["endline_tag"]
 
             d = {
+                    "id":          weapon_id, # This is here for convenience
+                    "parent_id":   spec_subdict[name]["parent_id"],
                     "rarity":      rarity,
                     "endline_tag": endline_tag,
 
@@ -134,10 +145,50 @@ for (weapon_category, spec_subdict) in data_spec.items():
                 d["max_sharpness"] = obj["max_sharpness"][:-1] # Remove the last sharpness level
             if weapon_category == "huntinghorn":
                 d["huntinghorn_songs"] = obj["huntinghorn_songs"]
+
             data[weapon_category][tree_name][weapon_id] = d
 
+            if weapon_id in data_flat_per_category[weapon_category]:
+                raise ValueError(f"Duplicate weapon ID: {weapon_id}")
+            data_flat_per_category[weapon_category][weapon_id] = d
+
 #
-# STAGE 3: Rearrange to match spec ordering.
+# STAGE 3: Process rampage skill inheritance
+#
+
+for (weapon_category, category_data) in data_flat_per_category.items():
+    for (weapon_id, weapon_data) in category_data.items():
+
+        if not all(all(isinstance(y, str) for y in x) for x in weapon_data["ramp_skills"]):
+            raise TypeError("Expected strings.")
+
+        ramp_skills = [[(y, "") for y in x] for x in weapon_data["ramp_skills"]] # Pre-fill with native ramp skills
+        ramp_skills_seen = [set(x) for x in weapon_data["ramp_skills"]]
+
+        def traverse(d):
+            if d["parent_id"] == None:
+                return # No parent
+            d = category_data[d["parent_id"]] # Move up to parent
+
+            if len(d["ramp_skills"]) != len(ramp_skills):
+                raise Exception("Not allowed for children to have different number of rampage skill slots (for now).")
+
+            for (i, ramp_slot_options) in enumerate(d["ramp_skills"]):
+                for ramp_skill_id in ramp_slot_options:
+
+                    if ramp_skill_id in ramp_skills_seen[i]:
+                        continue
+
+                    ramp_skills[i].append((ramp_skill_id, d["id"]))
+                    ramp_skills_seen[i].add(ramp_skill_id)
+            traverse(d)
+
+        traverse(weapon_data)
+
+        weapon_data["ramp_skills_including_inheritance"] = ramp_skills # Add new field
+
+#
+# STAGE 4: Rearrange to match spec ordering.
 #          Also, we check for weapons present in the spec but not in the data.
 #          Also, we check for duplicate keys in the spec.
 #          Also, we unicode-encode strings here.
@@ -147,7 +198,7 @@ for (weapon_category, spec_subdict) in data_spec.items():
 tmp_data = {}
 for (weapon_category, (category_spec, _)) in DATA_SPEC_HARDCODED.items():
     submap = tmp_data[weapon_category] = OrderedDict()
-    for (tree_name, tree_data) in category_spec:
+    for (tree_name, _, tree_data) in category_spec:
 
         if tree_name in submap:
             raise ValueError("Duplicate tree name: " + weapon_category + " " + tree_name)
@@ -172,7 +223,7 @@ for (weapon_category, (category_spec, _)) in DATA_SPEC_HARDCODED.items():
 data = tmp_data
 
 #
-# STAGE 4: Produce Output
+# STAGE 5: Produce Output
 #
 
 outer_fmt = """\
@@ -230,8 +281,8 @@ def process_ramp_skills(lst):
     slot_strs = []
     for slot in lst:
         inner = []
-        for ramp_skill in slot:
-            inner.append(ramp_fmt_subfmt.format(ramp_skill=ramp_skill, inheritance_weapon_id=""))
+        for (ramp_skill, inheritance_weapon_id) in slot:
+            inner.append(ramp_fmt_subfmt.format(ramp_skill=ramp_skill, inheritance_weapon_id=inheritance_weapon_id))
         slot_strs.append(ramp_fmt.format(ramp_skills=",\n".join(inner)))
     return ",\n".join(slot_strs)
 
@@ -275,7 +326,7 @@ for (weapon_category, _) in data_spec.items():
                     deco_slots=",".join(str(x) for x in weapon_data["deco_slots"]),
                     elestat=", ".join(f"\"{k}\": {v}" for (k, v) in weapon_data["elestat"].items()),
                     
-                    ramp_skills=process_ramp_skills(weapon_data["ramp_skills"]),
+                    ramp_skills=process_ramp_skills(weapon_data["ramp_skills_including_inheritance"]),
 
                     special_mechanics=special_mechanics,
                 ))

@@ -63,7 +63,8 @@
                 [
                     ["attack_boost_1", ""],
                     ["affinity_boost_2", ""],
-                    ["defense_boost_2", ""]
+                    ["defense_boost_2", ""],
+                    ["defense_boost_1", "1b"]
                 ]
             ],
 
@@ -87,7 +88,9 @@
                 [
                     ["attack_boost_2", ""],
                     ["affinity_boost_2", ""],
-                    ["defense_boost_2", ""]
+                    ["defense_boost_2", ""],
+                    ["attack_boost_1", "1c"],
+                    ["defense_boost_1", "1b"]
                 ]
             ],
 
@@ -111,7 +114,11 @@
                 [
                     ["affinity_boost_3", ""],
                     ["defense_boost_2", ""],
-                    ["master_rider", ""]
+                    ["master_rider", ""],
+                    ["attack_boost_2", "1d"],
+                    ["affinity_boost_2", "1d"],
+                    ["attack_boost_1", "1c"],
+                    ["defense_boost_1", "1b"]
                 ]
             ],
 
@@ -135,7 +142,12 @@
                 [
                     ["affinity_boost_4", ""],
                     ["defense_boost_2", ""],
-                    ["master_rider", ""]
+                    ["master_rider", ""],
+                    ["affinity_boost_3", "1e"],
+                    ["attack_boost_2", "1d"],
+                    ["affinity_boost_2", "1d"],
+                    ["attack_boost_1", "1c"],
+                    ["defense_boost_1", "1b"]
                 ]
             ],
 
@@ -161,7 +173,11 @@
                 [
                     ["attack_boost_2", ""],
                     ["affinity_boost_1", ""],
-                    ["water_boost_1", ""]
+                    ["water_boost_1", ""],
+                    ["attack_boost_1", "1c"],
+                    ["affinity_boost_2", "1c"],
+                    ["defense_boost_2", "1c"],
+                    ["defense_boost_1", "1b"]
                 ]
             ],
 
@@ -185,7 +201,12 @@
                 [
                     ["attack_boost_2", ""],
                     ["affinity_boost_2", ""],
-                    ["element_exploit", ""]
+                    ["element_exploit", ""],
+                    ["affinity_boost_1", "2a"],
+                    ["water_boost_1", "2a"],
+                    ["attack_boost_1", "1c"],
+                    ["defense_boost_2", "1c"],
+                    ["defense_boost_1", "1b"]
                 ]
             ],
 
@@ -209,7 +230,13 @@
                 [
                     ["attack_boost_2", ""],
                     ["affinity_boost_3", ""],
-                    ["element_exploit", ""]
+                    ["element_exploit", ""],
+                    ["affinity_boost_2", "2b"],
+                    ["affinity_boost_1", "2a"],
+                    ["water_boost_1", "2a"],
+                    ["attack_boost_1", "1c"],
+                    ["defense_boost_2", "1c"],
+                    ["defense_boost_1", "1b"]
                 ]
             ],
 
@@ -235,7 +262,15 @@
                 [
                     ["attack_boost_3", ""],
                     ["fire_boost_1", ""],
-                    ["silkbind_boost", ""]
+                    ["silkbind_boost", ""],
+                    ["attack_boost_2", "2b"],
+                    ["affinity_boost_2", "2b"],
+                    ["element_exploit", "2b"],
+                    ["affinity_boost_1", "2a"],
+                    ["water_boost_1", "2a"],
+                    ["attack_boost_1", "1c"],
+                    ["defense_boost_2", "1c"],
+                    ["defense_boost_1", "1b"]
                 ]
             ],
 
@@ -259,7 +294,16 @@
                 [
                     ["attack_boost_3", ""],
                     ["fire_boost_2", ""],
-                    ["silkbind_boost", ""]
+                    ["silkbind_boost", ""],
+                    ["fire_boost_1", "3a"],
+                    ["attack_boost_2", "2b"],
+                    ["affinity_boost_2", "2b"],
+                    ["element_exploit", "2b"],
+                    ["affinity_boost_1", "2a"],
+                    ["water_boost_1", "2a"],
+                    ["attack_boost_1", "1c"],
+                    ["defense_boost_2", "1c"],
+                    ["defense_boost_1", "1b"]
                 ]
             ],
 
@@ -283,7 +327,17 @@
                 [
                     ["attack_boost_4", ""],
                     ["fire_boost_2", ""],
-                    ["silkbind_boost", ""]
+                    ["silkbind_boost", ""],
+                    ["attack_boost_3", "3b"],
+                    ["fire_boost_1", "3a"],
+                    ["attack_boost_2", "2b"],
+                    ["affinity_boost_2", "2b"],
+                    ["element_exploit", "2b"],
+                    ["affinity_boost_1", "2a"],
+                    ["water_boost_1", "2a"],
+                    ["attack_boost_1", "1c"],
+                    ["defense_boost_2", "1c"],
+                    ["defense_boost_1", "1b"]
                 ]
             ],
 
@@ -309,7 +363,10 @@
                 [
                     ["defense_boost_1", ""],
                     ["fire_boost_1", ""],
-                    ["dulling_strike", ""]
+                    ["dulling_strike", ""],
+                    ["attack_boost_1", "1c"],
+                    ["affinity_boost_2", "1c"],
+                    ["defense_boost_2", "1c"]
                 ]
             ],
 
@@ -333,7 +390,11 @@
                 [
                     ["defense_boost_1", ""],
                     ["fire_boost_2", ""],
-                    ["dulling_strike", ""]
+                    ["dulling_strike", ""],
+                    ["fire_boost_1", "4a"],
+                    ["attack_boost_1", "1c"],
+                    ["affinity_boost_2", "1c"],
+                    ["defense_boost_2", "1c"]
                 ]
             ],
 
@@ -357,7 +418,12 @@
                 [
                     ["defense_boost_2", ""],
                     ["fire_boost_3", ""],
-                    ["dulling_strike", ""]
+                    ["dulling_strike", ""],
+                    ["defense_boost_1", "4b"],
+                    ["fire_boost_2", "4b"],
+                    ["fire_boost_1", "4a"],
+                    ["attack_boost_1", "1c"],
+                    ["affinity_boost_2", "1c"]
                 ]
             ],
 
@@ -383,7 +449,12 @@
                 [
                     ["attack_boost_1", ""],
                     ["thunder_boost_1", ""],
-                    ["anti_aquatic_species", ""]
+                    ["anti_aquatic_species", ""],
+                    ["defense_boost_1", "4a"],
+                    ["fire_boost_1", "4a"],
+                    ["dulling_strike", "4a"],
+                    ["affinity_boost_2", "1c"],
+                    ["defense_boost_2", "1c"]
                 ]
             ],
 
@@ -407,7 +478,13 @@
                 [
                     ["attack_boost_2", ""],
                     ["thunder_boost_1", ""],
-                    ["anti_aquatic_species", ""]
+                    ["anti_aquatic_species", ""],
+                    ["attack_boost_1", "5a"],
+                    ["defense_boost_1", "4a"],
+                    ["fire_boost_1", "4a"],
+                    ["dulling_strike", "4a"],
+                    ["affinity_boost_2", "1c"],
+                    ["defense_boost_2", "1c"]
                 ]
             ],
 
@@ -431,7 +508,14 @@
                 [
                     ["attack_boost_2", ""],
                     ["thunder_boost_2", ""],
-                    ["anti_aquatic_species", ""]
+                    ["anti_aquatic_species", ""],
+                    ["thunder_boost_1", "5b"],
+                    ["attack_boost_1", "5a"],
+                    ["defense_boost_1", "4a"],
+                    ["fire_boost_1", "4a"],
+                    ["dulling_strike", "4a"],
+                    ["affinity_boost_2", "1c"],
+                    ["defense_boost_2", "1c"]
                 ]
             ],
 
@@ -457,7 +541,8 @@
                 [
                     ["attack_boost_1", ""],
                     ["defense_boost_1", ""],
-                    ["small_monster_exploit", ""]
+                    ["small_monster_exploit", ""],
+                    ["affinity_boost_2", "1b"]
                 ]
             ],
 
@@ -481,7 +566,9 @@
                 [
                     ["attack_boost_2", ""],
                     ["defense_boost_1", ""],
-                    ["small_monster_exploit", ""]
+                    ["small_monster_exploit", ""],
+                    ["attack_boost_1", "6a"],
+                    ["affinity_boost_2", "1b"]
                 ]
             ],
 
@@ -505,7 +592,12 @@
                 [
                     ["attack_boost_3", ""],
                     ["defense_boost_2", ""],
-                    ["dulling_strike", ""]
+                    ["dulling_strike", ""],
+                    ["attack_boost_2", "6b"],
+                    ["defense_boost_1", "6b"],
+                    ["small_monster_exploit", "6b"],
+                    ["attack_boost_1", "6a"],
+                    ["affinity_boost_2", "1b"]
                 ]
             ],
 
@@ -531,7 +623,11 @@
                 [
                     ["attack_boost_2", ""],
                     ["affinity_boost_1", ""],
-                    ["maximum_volume", ""]
+                    ["maximum_volume", ""],
+                    ["defense_boost_1", "6b"],
+                    ["small_monster_exploit", "6b"],
+                    ["attack_boost_1", "6a"],
+                    ["affinity_boost_2", "1b"]
                 ]
             ],
 
@@ -555,7 +651,11 @@
                 [
                     ["attack_boost_2", ""],
                     ["affinity_boost_2", ""],
-                    ["maximum_volume", ""]
+                    ["maximum_volume", ""],
+                    ["affinity_boost_1", "7a"],
+                    ["defense_boost_1", "6b"],
+                    ["small_monster_exploit", "6b"],
+                    ["attack_boost_1", "6a"]
                 ]
             ],
 
@@ -579,7 +679,12 @@
                 [
                     ["attack_boost_2", ""],
                     ["affinity_boost_3", ""],
-                    ["maximum_volume", ""]
+                    ["maximum_volume", ""],
+                    ["affinity_boost_2", "7b"],
+                    ["affinity_boost_1", "7a"],
+                    ["defense_boost_1", "6b"],
+                    ["small_monster_exploit", "6b"],
+                    ["attack_boost_1", "6a"]
                 ]
             ],
 
@@ -605,7 +710,10 @@
                 [
                     ["attack_boost_2", ""],
                     ["affinity_boost_2", ""],
-                    ["iceblight_exploit", ""]
+                    ["iceblight_exploit", ""],
+                    ["attack_boost_1", "6a"],
+                    ["defense_boost_1", "6a"],
+                    ["small_monster_exploit", "6a"]
                 ]
             ],
 
@@ -629,7 +737,11 @@
                 [
                     ["attack_boost_3", ""],
                     ["affinity_boost_2", ""],
-                    ["iceblight_exploit", ""]
+                    ["iceblight_exploit", ""],
+                    ["attack_boost_2", "8a"],
+                    ["attack_boost_1", "6a"],
+                    ["defense_boost_1", "6a"],
+                    ["small_monster_exploit", "6a"]
                 ]
             ],
 
@@ -653,7 +765,12 @@
                 [
                     ["attack_boost_4", ""],
                     ["affinity_boost_2", ""],
-                    ["iceblight_exploit", ""]
+                    ["iceblight_exploit", ""],
+                    ["attack_boost_3", "8b"],
+                    ["attack_boost_2", "8a"],
+                    ["attack_boost_1", "6a"],
+                    ["defense_boost_1", "6a"],
+                    ["small_monster_exploit", "6a"]
                 ]
             ],
 
@@ -679,7 +796,10 @@
                 [
                     ["attack_boost_1", ""],
                     ["sleep_boost_1", ""],
-                    ["dulling_strike", ""]
+                    ["dulling_strike", ""],
+                    ["defense_boost_1", "6a"],
+                    ["small_monster_exploit", "6a"],
+                    ["affinity_boost_2", "1b"]
                 ]
             ],
 
@@ -703,7 +823,11 @@
                 [
                     ["attack_boost_2", ""],
                     ["sleep_boost_1", ""],
-                    ["dulling_strike", ""]
+                    ["dulling_strike", ""],
+                    ["attack_boost_1", "9a"],
+                    ["defense_boost_1", "6a"],
+                    ["small_monster_exploit", "6a"],
+                    ["affinity_boost_2", "1b"]
                 ]
             ],
 
@@ -727,7 +851,12 @@
                 [
                     ["attack_boost_3", ""],
                     ["sleep_boost_1", ""],
-                    ["dulling_strike", ""]
+                    ["dulling_strike", ""],
+                    ["attack_boost_2", "9b"],
+                    ["attack_boost_1", "9a"],
+                    ["defense_boost_1", "6a"],
+                    ["small_monster_exploit", "6a"],
+                    ["affinity_boost_2", "1b"]
                 ]
             ],
 
@@ -801,7 +930,8 @@
                 [
                     ["attack_boost_2", ""],
                     ["affinity_boost_1", ""],
-                    ["defense_boost_2", ""]
+                    ["defense_boost_2", ""],
+                    ["attack_boost_1", "10b"]
                 ]
             ],
 
@@ -825,7 +955,8 @@
                 [
                     ["attack_boost_2", ""],
                     ["affinity_boost_1", ""],
-                    ["defense_boost_2", ""]
+                    ["defense_boost_2", ""],
+                    ["attack_boost_1", "10b"]
                 ]
             ],
 
@@ -849,7 +980,10 @@
                 [
                     ["attack_boost_2", ""],
                     ["defense_boost_3", ""],
-                    ["silkbind_boost", ""]
+                    ["silkbind_boost", ""],
+                    ["affinity_boost_1", "10d"],
+                    ["defense_boost_2", "10d"],
+                    ["attack_boost_1", "10b"]
                 ]
             ],
 
@@ -873,7 +1007,11 @@
                 [
                     ["attack_boost_3", ""],
                     ["defense_boost_3", ""],
-                    ["silkbind_boost", ""]
+                    ["silkbind_boost", ""],
+                    ["attack_boost_2", "10e"],
+                    ["affinity_boost_1", "10d"],
+                    ["defense_boost_2", "10d"],
+                    ["attack_boost_1", "10b"]
                 ]
             ],
 
@@ -899,7 +1037,11 @@
                 [
                     ["attack_boost_2", ""],
                     ["affinity_boost_1", ""],
-                    ["master_rider", ""]
+                    ["master_rider", ""],
+                    ["defense_boost_3", "10e"],
+                    ["silkbind_boost", "10e"],
+                    ["defense_boost_2", "10d"],
+                    ["attack_boost_1", "10b"]
                 ]
             ],
 
@@ -923,7 +1065,12 @@
                 [
                     ["attack_boost_3", ""],
                     ["affinity_boost_1", ""],
-                    ["master_rider", ""]
+                    ["master_rider", ""],
+                    ["attack_boost_2", "11a"],
+                    ["defense_boost_3", "10e"],
+                    ["silkbind_boost", "10e"],
+                    ["defense_boost_2", "10d"],
+                    ["attack_boost_1", "10b"]
                 ]
             ],
 
@@ -947,7 +1094,13 @@
                 [
                     ["attack_boost_3", ""],
                     ["affinity_boost_2", ""],
-                    ["master_rider", ""]
+                    ["master_rider", ""],
+                    ["affinity_boost_1", "11b"],
+                    ["attack_boost_2", "11a"],
+                    ["defense_boost_3", "10e"],
+                    ["silkbind_boost", "10e"],
+                    ["defense_boost_2", "10d"],
+                    ["attack_boost_1", "10b"]
                 ]
             ],
 
@@ -973,7 +1126,10 @@
                 [
                     ["attack_boost_2", ""],
                     ["defense_boost_1", ""],
-                    ["poison_boost_1", ""]
+                    ["poison_boost_1", ""],
+                    ["affinity_boost_1", "10c"],
+                    ["defense_boost_2", "10c"],
+                    ["attack_boost_1", "10b"]
                 ]
             ],
 
@@ -997,7 +1153,11 @@
                 [
                     ["attack_boost_3", ""],
                     ["defense_boost_1", ""],
-                    ["poison_boost_1", ""]
+                    ["poison_boost_1", ""],
+                    ["attack_boost_2", "12a"],
+                    ["affinity_boost_1", "10c"],
+                    ["defense_boost_2", "10c"],
+                    ["attack_boost_1", "10b"]
                 ]
             ],
 
@@ -1021,7 +1181,12 @@
                 [
                     ["attack_boost_3", ""],
                     ["defense_boost_1", ""],
-                    ["poison_boost_2", ""]
+                    ["poison_boost_2", ""],
+                    ["poison_boost_1", "12b"],
+                    ["attack_boost_2", "12a"],
+                    ["affinity_boost_1", "10c"],
+                    ["defense_boost_2", "10c"],
+                    ["attack_boost_1", "10b"]
                 ]
             ],
 
@@ -1047,7 +1212,13 @@
                 [
                     ["affinity_boost_1", ""],
                     ["fire_boost_1", ""],
-                    ["brutal_strike", ""]
+                    ["brutal_strike", ""],
+                    ["attack_boost_3", "12b"],
+                    ["defense_boost_1", "12b"],
+                    ["poison_boost_1", "12b"],
+                    ["attack_boost_2", "12a"],
+                    ["defense_boost_2", "10c"],
+                    ["attack_boost_1", "10b"]
                 ]
             ],
 
@@ -1071,7 +1242,14 @@
                 [
                     ["affinity_boost_1", ""],
                     ["fire_boost_2", ""],
-                    ["brutal_strike", ""]
+                    ["brutal_strike", ""],
+                    ["fire_boost_1", "13a"],
+                    ["attack_boost_3", "12b"],
+                    ["defense_boost_1", "12b"],
+                    ["poison_boost_1", "12b"],
+                    ["attack_boost_2", "12a"],
+                    ["defense_boost_2", "10c"],
+                    ["attack_boost_1", "10b"]
                 ]
             ],
 
@@ -1095,7 +1273,16 @@
                 [
                     ["affinity_boost_2", ""],
                     ["fire_boost_3", ""],
-                    ["brutal_strike", ""]
+                    ["brutal_strike", ""],
+                    ["affinity_boost_1", "13b"],
+                    ["fire_boost_2", "13b"],
+                    ["fire_boost_1", "13a"],
+                    ["attack_boost_3", "12b"],
+                    ["defense_boost_1", "12b"],
+                    ["poison_boost_1", "12b"],
+                    ["attack_boost_2", "12a"],
+                    ["defense_boost_2", "10c"],
+                    ["attack_boost_1", "10b"]
                 ]
             ],
 
@@ -1121,7 +1308,10 @@
                 [
                     ["attack_boost_1", ""],
                     ["fire_boost_1", ""],
-                    ["small_monster_exploit", ""]
+                    ["small_monster_exploit", ""],
+                    ["attack_boost_2", "10c"],
+                    ["affinity_boost_1", "10c"],
+                    ["defense_boost_2", "10c"]
                 ]
             ],
 
@@ -1145,7 +1335,10 @@
                 [
                     ["attack_boost_2", ""],
                     ["fire_boost_1", ""],
-                    ["small_monster_exploit", ""]
+                    ["small_monster_exploit", ""],
+                    ["attack_boost_1", "14a"],
+                    ["affinity_boost_1", "10c"],
+                    ["defense_boost_2", "10c"]
                 ]
             ],
 
@@ -1169,7 +1362,11 @@
                 [
                     ["attack_boost_2", ""],
                     ["fire_boost_2", ""],
-                    ["small_monster_exploit", ""]
+                    ["small_monster_exploit", ""],
+                    ["fire_boost_1", "14b"],
+                    ["attack_boost_1", "14a"],
+                    ["affinity_boost_1", "10c"],
+                    ["defense_boost_2", "10c"]
                 ]
             ],
 
@@ -1195,7 +1392,9 @@
                 [
                     ["affinity_boost_1", ""],
                     ["defense_boost_1", ""],
-                    ["brutal_strike", ""]
+                    ["brutal_strike", ""],
+                    ["attack_boost_1", "10b"],
+                    ["defense_boost_2", "10b"]
                 ]
             ],
 
@@ -1219,7 +1418,9 @@
                 [
                     ["affinity_boost_1", ""],
                     ["defense_boost_2", ""],
-                    ["brutal_strike", ""]
+                    ["brutal_strike", ""],
+                    ["defense_boost_1", "15a"],
+                    ["attack_boost_1", "10b"]
                 ]
             ],
 
@@ -1243,7 +1444,10 @@
                 [
                     ["affinity_boost_2", ""],
                     ["defense_boost_2", ""],
-                    ["brutal_strike", ""]
+                    ["brutal_strike", ""],
+                    ["affinity_boost_1", "15b"],
+                    ["defense_boost_1", "15a"],
+                    ["attack_boost_1", "10b"]
                 ]
             ],
 
@@ -1269,7 +1473,10 @@
                 [
                     ["defense_boost_1", ""],
                     ["water_boost_1", ""],
-                    ["dulling_strike", ""]
+                    ["dulling_strike", ""],
+                    ["attack_boost_1", "10b"],
+                    ["affinity_boost_1", "10b"],
+                    ["defense_boost_2", "10b"]
                 ]
             ],
 
@@ -1293,7 +1500,11 @@
                 [
                     ["defense_boost_1", ""],
                     ["water_boost_2", ""],
-                    ["dulling_strike", ""]
+                    ["dulling_strike", ""],
+                    ["water_boost_1", "16a"],
+                    ["attack_boost_1", "10b"],
+                    ["affinity_boost_1", "10b"],
+                    ["defense_boost_2", "10b"]
                 ]
             ],
 
@@ -1317,7 +1528,12 @@
                 [
                     ["defense_boost_1", ""],
                     ["water_boost_3", ""],
-                    ["dulling_strike", ""]
+                    ["dulling_strike", ""],
+                    ["water_boost_2", "16b"],
+                    ["water_boost_1", "16a"],
+                    ["attack_boost_1", "10b"],
+                    ["affinity_boost_1", "10b"],
+                    ["defense_boost_2", "10b"]
                 ]
             ],
 
@@ -1343,7 +1559,9 @@
                 [
                     ["affinity_boost_1", ""],
                     ["small_monster_exploit", ""],
-                    ["buddy_rally", ""]
+                    ["buddy_rally", ""],
+                    ["attack_boost_1", "10a"],
+                    ["defense_boost_2", "10a"]
                 ]
             ],
 
@@ -1367,7 +1585,10 @@
                 [
                     ["affinity_boost_2", ""],
                     ["small_monster_exploit", ""],
-                    ["buddy_rally", ""]
+                    ["buddy_rally", ""],
+                    ["affinity_boost_1", "17a"],
+                    ["attack_boost_1", "10a"],
+                    ["defense_boost_2", "10a"]
                 ]
             ],
 
@@ -1391,7 +1612,11 @@
                 [
                     ["affinity_boost_3", ""],
                     ["small_monster_exploit", ""],
-                    ["buddy_rally", ""]
+                    ["buddy_rally", ""],
+                    ["affinity_boost_2", "17b"],
+                    ["affinity_boost_1", "17a"],
+                    ["attack_boost_1", "10a"],
+                    ["defense_boost_2", "10a"]
                 ]
             ],
 
@@ -1417,7 +1642,12 @@
                 [
                     ["attack_boost_2", ""],
                     ["water_boost_1", ""],
-                    ["waterblight_exploit", ""]
+                    ["waterblight_exploit", ""],
+                    ["affinity_boost_1", "17a"],
+                    ["small_monster_exploit", "17a"],
+                    ["buddy_rally", "17a"],
+                    ["attack_boost_1", "10a"],
+                    ["defense_boost_2", "10a"]
                 ]
             ],
 
@@ -1441,7 +1671,12 @@
                 [
                     ["attack_boost_2", ""],
                     ["water_boost_1", ""],
-                    ["waterblight_exploit", ""]
+                    ["waterblight_exploit", ""],
+                    ["affinity_boost_1", "17a"],
+                    ["small_monster_exploit", "17a"],
+                    ["buddy_rally", "17a"],
+                    ["attack_boost_1", "10a"],
+                    ["defense_boost_2", "10a"]
                 ]
             ],
 
@@ -1465,7 +1700,14 @@
                 [
                     ["attack_boost_3", ""],
                     ["water_boost_2", ""],
-                    ["waterblight_exploit", ""]
+                    ["waterblight_exploit", ""],
+                    ["attack_boost_2", "18b"],
+                    ["water_boost_1", "18b"],
+                    ["affinity_boost_1", "17a"],
+                    ["small_monster_exploit", "17a"],
+                    ["buddy_rally", "17a"],
+                    ["attack_boost_1", "10a"],
+                    ["defense_boost_2", "10a"]
                 ]
             ],
 
@@ -1539,7 +1781,8 @@
                 [
                     ["attack_boost_2", ""],
                     ["affinity_boost_2", ""],
-                    ["defense_boost_1", ""]
+                    ["defense_boost_1", ""],
+                    ["affinity_boost_1", "19b"]
                 ]
             ],
 
@@ -1563,7 +1806,10 @@
                 [
                     ["attack_boost_3", ""],
                     ["affinity_boost_2", ""],
-                    ["dulling_strike", ""]
+                    ["dulling_strike", ""],
+                    ["attack_boost_2", "19c"],
+                    ["defense_boost_1", "19c"],
+                    ["affinity_boost_1", "19b"]
                 ]
             ],
 
@@ -1587,7 +1833,11 @@
                 [
                     ["attack_boost_4", ""],
                     ["affinity_boost_2", ""],
-                    ["dulling_strike", ""]
+                    ["dulling_strike", ""],
+                    ["attack_boost_3", "19d"],
+                    ["attack_boost_2", "19c"],
+                    ["defense_boost_1", "19c"],
+                    ["affinity_boost_1", "19b"]
                 ]
             ],
 
@@ -1613,7 +1863,11 @@
                 [
                     ["affinity_boost_2", ""],
                     ["defense_boost_1", ""],
-                    ["brutal_strike", ""]
+                    ["brutal_strike", ""],
+                    ["attack_boost_3", "19d"],
+                    ["dulling_strike", "19d"],
+                    ["attack_boost_2", "19c"],
+                    ["affinity_boost_1", "19b"]
                 ]
             ],
 
@@ -1637,7 +1891,12 @@
                 [
                     ["affinity_boost_2", ""],
                     ["defense_boost_2", ""],
-                    ["brutal_strike", ""]
+                    ["brutal_strike", ""],
+                    ["defense_boost_1", "20a"],
+                    ["attack_boost_3", "19d"],
+                    ["dulling_strike", "19d"],
+                    ["attack_boost_2", "19c"],
+                    ["affinity_boost_1", "19b"]
                 ]
             ],
 
@@ -1661,7 +1920,13 @@
                 [
                     ["affinity_boost_3", ""],
                     ["defense_boost_2", ""],
-                    ["brutal_strike", ""]
+                    ["brutal_strike", ""],
+                    ["affinity_boost_2", "20b"],
+                    ["defense_boost_1", "20a"],
+                    ["attack_boost_3", "19d"],
+                    ["dulling_strike", "19d"],
+                    ["attack_boost_2", "19c"],
+                    ["affinity_boost_1", "19b"]
                 ]
             ],
 
@@ -1687,7 +1952,10 @@
                 [
                     ["defense_boost_1", ""],
                     ["dulling_strike", ""],
-                    ["maximum_volume", ""]
+                    ["maximum_volume", ""],
+                    ["attack_boost_2", "19c"],
+                    ["affinity_boost_2", "19c"],
+                    ["affinity_boost_1", "19b"]
                 ]
             ],
 
@@ -1711,7 +1979,11 @@
                 [
                     ["defense_boost_2", ""],
                     ["dulling_strike", ""],
-                    ["maximum_volume", ""]
+                    ["maximum_volume", ""],
+                    ["defense_boost_1", "21a"],
+                    ["attack_boost_2", "19c"],
+                    ["affinity_boost_2", "19c"],
+                    ["affinity_boost_1", "19b"]
                 ]
             ],
 
@@ -1735,7 +2007,12 @@
                 [
                     ["defense_boost_3", ""],
                     ["dulling_strike", ""],
-                    ["maximum_volume", ""]
+                    ["maximum_volume", ""],
+                    ["defense_boost_2", "21b"],
+                    ["defense_boost_1", "21a"],
+                    ["attack_boost_2", "19c"],
+                    ["affinity_boost_2", "19c"],
+                    ["affinity_boost_1", "19b"]
                 ]
             ],
 
@@ -1761,7 +2038,9 @@
                 [
                     ["attack_boost_2", ""],
                     ["fire_boost_1", ""],
-                    ["element_exploit", ""]
+                    ["element_exploit", ""],
+                    ["affinity_boost_1", "19b"],
+                    ["defense_boost_1", "19b"]
                 ]
             ],
 
@@ -1785,7 +2064,9 @@
                 [
                     ["attack_boost_2", ""],
                     ["fire_boost_1", ""],
-                    ["element_exploit", ""]
+                    ["element_exploit", ""],
+                    ["affinity_boost_1", "19b"],
+                    ["defense_boost_1", "19b"]
                 ]
             ],
 
@@ -1809,7 +2090,10 @@
                 [
                     ["attack_boost_3", ""],
                     ["fire_boost_1", ""],
-                    ["element_exploit", ""]
+                    ["element_exploit", ""],
+                    ["attack_boost_2", "22b"],
+                    ["affinity_boost_1", "19b"],
+                    ["defense_boost_1", "19b"]
                 ]
             ],
 
@@ -1835,7 +2119,10 @@
                 [
                     ["attack_boost_1", ""],
                     ["affinity_boost_2", ""],
-                    ["spiribird_doubled", ""]
+                    ["spiribird_doubled", ""],
+                    ["attack_boost_2", "19b"],
+                    ["affinity_boost_1", "19b"],
+                    ["defense_boost_1", "19b"]
                 ]
             ],
 
@@ -1859,7 +2146,10 @@
                 [
                     ["attack_boost_2", ""],
                     ["affinity_boost_2", ""],
-                    ["spiribird_doubled", ""]
+                    ["spiribird_doubled", ""],
+                    ["attack_boost_1", "23a"],
+                    ["affinity_boost_1", "19b"],
+                    ["defense_boost_1", "19b"]
                 ]
             ],
 
@@ -1883,7 +2173,11 @@
                 [
                     ["attack_boost_2", ""],
                     ["affinity_boost_3", ""],
-                    ["spiribird_doubled", ""]
+                    ["spiribird_doubled", ""],
+                    ["affinity_boost_2", "23b"],
+                    ["attack_boost_1", "23a"],
+                    ["affinity_boost_1", "19b"],
+                    ["defense_boost_1", "19b"]
                 ]
             ],
 
@@ -1909,7 +2203,9 @@
                 [
                     ["attack_boost_2", ""],
                     ["thunder_boost_1", ""],
-                    ["thunderblight_exploit", ""]
+                    ["thunderblight_exploit", ""],
+                    ["affinity_boost_1", "19b"],
+                    ["defense_boost_1", "19b"]
                 ]
             ],
 
@@ -1933,7 +2229,10 @@
                 [
                     ["attack_boost_3", ""],
                     ["thunder_boost_1", ""],
-                    ["thunderblight_exploit", ""]
+                    ["thunderblight_exploit", ""],
+                    ["attack_boost_2", "24a"],
+                    ["affinity_boost_1", "19b"],
+                    ["defense_boost_1", "19b"]
                 ]
             ],
 
@@ -1957,7 +2256,12 @@
                 [
                     ["attack_boost_4", ""],
                     ["thunder_boost_2", ""],
-                    ["thunderblight_exploit", ""]
+                    ["thunderblight_exploit", ""],
+                    ["attack_boost_3", "24b"],
+                    ["thunder_boost_1", "24b"],
+                    ["attack_boost_2", "24a"],
+                    ["affinity_boost_1", "19b"],
+                    ["defense_boost_1", "19b"]
                 ]
             ],
 
@@ -2007,7 +2311,8 @@
                 [
                     ["attack_boost_2", ""],
                     ["affinity_boost_2", ""],
-                    ["silkbind_boost", ""]
+                    ["silkbind_boost", ""],
+                    ["affinity_boost_1", "25a"]
                 ]
             ],
 
@@ -2031,7 +2336,9 @@
                 [
                     ["attack_boost_3", ""],
                     ["affinity_boost_2", ""],
-                    ["silkbind_boost", ""]
+                    ["silkbind_boost", ""],
+                    ["attack_boost_2", "25b"],
+                    ["affinity_boost_1", "25a"]
                 ]
             ],
 
@@ -2055,7 +2362,10 @@
                 [
                     ["attack_boost_3", ""],
                     ["dragon_boost_2", ""],
-                    ["silkbind_boost", ""]
+                    ["silkbind_boost", ""],
+                    ["affinity_boost_2", "25c"],
+                    ["attack_boost_2", "25b"],
+                    ["affinity_boost_1", "25a"]
                 ]
             ],
 
@@ -2079,7 +2389,11 @@
                 [
                     ["attack_boost_3", ""],
                     ["dragon_boost_3", ""],
-                    ["silkbind_boost", ""]
+                    ["silkbind_boost", ""],
+                    ["dragon_boost_2", "25d"],
+                    ["affinity_boost_2", "25c"],
+                    ["attack_boost_2", "25b"],
+                    ["affinity_boost_1", "25a"]
                 ]
             ],
 
@@ -2103,7 +2417,12 @@
                 [
                     ["attack_boost_4", ""],
                     ["dragon_boost_3", ""],
-                    ["silkbind_boost", ""]
+                    ["silkbind_boost", ""],
+                    ["attack_boost_3", "25e"],
+                    ["dragon_boost_2", "25d"],
+                    ["affinity_boost_2", "25c"],
+                    ["attack_boost_2", "25b"],
+                    ["affinity_boost_1", "25a"]
                 ]
             ],
 
@@ -2129,7 +2448,9 @@
                 [
                     ["attack_boost_2", ""],
                     ["paralysis_boost_1", ""],
-                    ["silkbind_boost", ""]
+                    ["silkbind_boost", ""],
+                    ["affinity_boost_2", "25b"],
+                    ["affinity_boost_1", "25a"]
                 ]
             ],
 
@@ -2153,7 +2474,10 @@
                 [
                     ["attack_boost_3", ""],
                     ["paralysis_boost_1", ""],
-                    ["silkbind_boost", ""]
+                    ["silkbind_boost", ""],
+                    ["attack_boost_2", "26a"],
+                    ["affinity_boost_2", "25b"],
+                    ["affinity_boost_1", "25a"]
                 ]
             ],
 
@@ -2177,7 +2501,11 @@
                 [
                     ["attack_boost_4", ""],
                     ["paralysis_boost_1", ""],
-                    ["silkbind_boost", ""]
+                    ["silkbind_boost", ""],
+                    ["attack_boost_3", "26b"],
+                    ["attack_boost_2", "26a"],
+                    ["affinity_boost_2", "25b"],
+                    ["affinity_boost_1", "25a"]
                 ]
             ],
 
@@ -2203,7 +2531,8 @@
                 [
                     ["attack_boost_2", ""],
                     ["ice_boost_1", ""],
-                    ["silkbind_boost", ""]
+                    ["silkbind_boost", ""],
+                    ["affinity_boost_1", "25a"]
                 ]
             ],
 
@@ -2227,7 +2556,10 @@
                 [
                     ["attack_boost_3", ""],
                     ["ice_boost_2", ""],
-                    ["silkbind_boost", ""]
+                    ["silkbind_boost", ""],
+                    ["attack_boost_2", "27a"],
+                    ["ice_boost_1", "27a"],
+                    ["affinity_boost_1", "25a"]
                 ]
             ],
 
@@ -2251,7 +2583,12 @@
                 [
                     ["attack_boost_4", ""],
                     ["ice_boost_3", ""],
-                    ["silkbind_boost", ""]
+                    ["silkbind_boost", ""],
+                    ["attack_boost_3", "27b"],
+                    ["ice_boost_2", "27b"],
+                    ["attack_boost_2", "27a"],
+                    ["ice_boost_1", "27a"],
+                    ["affinity_boost_1", "25a"]
                 ]
             ],
 
@@ -2301,7 +2638,8 @@
                 [
                     ["attack_boost_3", ""],
                     ["blast_boost_1", ""],
-                    ["magnamalo_soul", ""]
+                    ["magnamalo_soul", ""],
+                    ["attack_boost_2", "28a"]
                 ]
             ],
 
@@ -2325,7 +2663,9 @@
                 [
                     ["attack_boost_3", ""],
                     ["blast_boost_2", ""],
-                    ["magnamalo_soul", ""]
+                    ["magnamalo_soul", ""],
+                    ["blast_boost_1", "28b"],
+                    ["attack_boost_2", "28a"]
                 ]
             ],
 
@@ -2399,7 +2739,8 @@
                 [
                     ["thunder_boost_2", ""],
                     ["dulling_strike", ""],
-                    ["maximum_volume", ""]
+                    ["maximum_volume", ""],
+                    ["thunder_boost_1", "29b"]
                 ]
             ],
 
@@ -2449,7 +2790,8 @@
                 [
                     ["dragon_boost_3", ""],
                     ["anti_aerial_species", ""],
-                    ["ibushi_soul", ""]
+                    ["ibushi_soul", ""],
+                    ["defense_boost_1", "30a"]
                 ]
             ],
 
@@ -2473,7 +2815,9 @@
                 [
                     ["dragon_boost_4", ""],
                     ["anti_aerial_species", ""],
-                    ["ibushi_soul", ""]
+                    ["ibushi_soul", ""],
+                    ["dragon_boost_3", "30b"],
+                    ["defense_boost_1", "30a"]
                 ]
             ],
 
@@ -2523,7 +2867,8 @@
                 [
                     ["attack_boost_3", ""],
                     ["anti_aerial_species", ""],
-                    ["narwa_soul", ""]
+                    ["narwa_soul", ""],
+                    ["attack_boost_2", "31a"]
                 ]
             ],
 
@@ -2597,7 +2942,9 @@
                 [
                     ["defense_boost_2", ""],
                     ["blast_boost_3", ""],
-                    ["maximum_volume", ""]
+                    ["maximum_volume", ""],
+                    ["defense_boost_1", "32b"],
+                    ["blast_boost_2", "32b"]
                 ]
             ],
 
@@ -2647,7 +2994,9 @@
                 [
                     ["attack_boost_3", ""],
                     ["affinity_boost_3", ""],
-                    ["kushala_daora_soul", ""]
+                    ["kushala_daora_soul", ""],
+                    ["attack_boost_2", "33a"],
+                    ["affinity_boost_2", "33a"]
                 ]
             ],
 
@@ -2697,7 +3046,8 @@
                 [
                     ["attack_boost_3", ""],
                     ["fireblight_exploit", ""],
-                    ["teostra_soul", ""]
+                    ["teostra_soul", ""],
+                    ["attack_boost_2", "34a"]
                 ]
             ],
 
@@ -2747,7 +3097,8 @@
                 [
                     ["attack_boost_3", ""],
                     ["defense_boost_3", ""],
-                    ["chameleos_soul", ""]
+                    ["chameleos_soul", ""],
+                    ["attack_boost_2", "35a"]
                 ]
             ],
 
@@ -2871,7 +3222,8 @@
                 [
                     ["attack_boost_3", ""],
                     ["dulling_strike", ""],
-                    ["spiribird_doubled", ""]
+                    ["spiribird_doubled", ""],
+                    ["attack_boost_2", "37b"]
                 ]
             ],
 
@@ -2945,7 +3297,8 @@
                 [
                     ["ice_boost_2", ""],
                     ["dulling_strike", ""],
-                    ["silkbind_boost", ""]
+                    ["silkbind_boost", ""],
+                    ["ice_boost_1", "38b"]
                 ]
             ],
 
@@ -2969,7 +3322,9 @@
                 [
                     ["ice_boost_3", ""],
                     ["dulling_strike", ""],
-                    ["silkbind_boost", ""]
+                    ["silkbind_boost", ""],
+                    ["ice_boost_2", "38c"],
+                    ["ice_boost_1", "38b"]
                 ]
             ],
 
@@ -3019,7 +3374,8 @@
                 [
                     ["defense_boost_2", ""],
                     ["paralysis_boost_1", ""],
-                    ["silkbind_boost", ""]
+                    ["silkbind_boost", ""],
+                    ["defense_boost_1", "39a"]
                 ]
             ],
 
@@ -3043,7 +3399,9 @@
                 [
                     ["defense_boost_3", ""],
                     ["paralysis_boost_1", ""],
-                    ["silkbind_boost", ""]
+                    ["silkbind_boost", ""],
+                    ["defense_boost_2", "39b"],
+                    ["defense_boost_1", "39a"]
                 ]
             ],
 
@@ -3093,7 +3451,9 @@
                 [
                     ["defense_boost_2", ""],
                     ["blast_boost_2", ""],
-                    ["dulling_strike", ""]
+                    ["dulling_strike", ""],
+                    ["defense_boost_1", "40a"],
+                    ["blast_boost_1", "40a"]
                 ]
             ],
 
@@ -3117,7 +3477,10 @@
                 [
                     ["defense_boost_2", ""],
                     ["blast_boost_3", ""],
-                    ["dulling_strike", ""]
+                    ["dulling_strike", ""],
+                    ["blast_boost_2", "40b"],
+                    ["defense_boost_1", "40a"],
+                    ["blast_boost_1", "40a"]
                 ]
             ],
 
@@ -3219,7 +3582,10 @@
                     ["elemental_boost_1", ""],
                     ["affinity_boost_2", ""],
                     ["defense_boost_2", ""],
-                    ["sharpness_type_1", ""]
+                    ["sharpness_type_1", ""],
+                    ["attack_boost_1", "41b"],
+                    ["affinity_boost_1", "41b"],
+                    ["defense_boost_1", "41b"]
                 ],
                 [
                     ["non_elemental_boost", ""],
@@ -3231,7 +3597,12 @@
                     ["poison_1", ""],
                     ["paralysis_1", ""],
                     ["sleep_1", ""],
-                    ["blast_1", ""]
+                    ["blast_1", ""],
+                    ["fire_1", "41b"],
+                    ["water_1", "41b"],
+                    ["thunder_1", "41b"],
+                    ["ice_1", "41b"],
+                    ["dragon_1", "41b"]
                 ],
                 [
                     ["attack_surge", ""],
@@ -3266,7 +3637,11 @@
                     ["affinity_boost_2", ""],
                     ["defense_boost_2", ""],
                     ["sharpness_type_1", ""],
-                    ["sharpness_type_2", ""]
+                    ["sharpness_type_2", ""],
+                    ["elemental_boost_1", "41c"],
+                    ["attack_boost_1", "41b"],
+                    ["affinity_boost_1", "41b"],
+                    ["defense_boost_1", "41b"]
                 ],
                 [
                     ["non_elemental_boost", ""],
@@ -3278,7 +3653,16 @@
                     ["poison_2", ""],
                     ["paralysis_2", ""],
                     ["sleep_2", ""],
-                    ["blast_2", ""]
+                    ["blast_2", ""],
+                    ["poison_1", "41c"],
+                    ["paralysis_1", "41c"],
+                    ["sleep_1", "41c"],
+                    ["blast_1", "41c"],
+                    ["fire_1", "41b"],
+                    ["water_1", "41b"],
+                    ["thunder_1", "41b"],
+                    ["ice_1", "41b"],
+                    ["dragon_1", "41b"]
                 ],
                 [
                     ["attack_surge", ""],
@@ -3286,7 +3670,11 @@
                     ["attack_melody_2", ""],
                     ["defensive_melody_2", ""],
                     ["healing_melody_2", ""],
-                    ["resilient_melody_2", ""]
+                    ["resilient_melody_2", ""],
+                    ["attack_melody_1", "41c"],
+                    ["defensive_melody_1", "41c"],
+                    ["healing_melody_1", "41c"],
+                    ["resilient_melody_1", "41c"]
                 ]
             ],
 
@@ -3314,7 +3702,14 @@
                     ["defense_boost_3", ""],
                     ["sharpness_type_1", ""],
                     ["sharpness_type_2", ""],
-                    ["sharpness_type_3", ""]
+                    ["sharpness_type_3", ""],
+                    ["attack_boost_2", "41d"],
+                    ["affinity_boost_2", "41d"],
+                    ["defense_boost_2", "41d"],
+                    ["elemental_boost_1", "41c"],
+                    ["attack_boost_1", "41b"],
+                    ["affinity_boost_1", "41b"],
+                    ["defense_boost_1", "41b"]
                 ],
                 [
                     ["non_elemental_boost", ""],
@@ -3326,7 +3721,21 @@
                     ["poison_2", ""],
                     ["paralysis_2", ""],
                     ["sleep_2", ""],
-                    ["blast_2", ""]
+                    ["blast_2", ""],
+                    ["fire_2", "41d"],
+                    ["water_2", "41d"],
+                    ["thunder_2", "41d"],
+                    ["ice_2", "41d"],
+                    ["dragon_2", "41d"],
+                    ["poison_1", "41c"],
+                    ["paralysis_1", "41c"],
+                    ["sleep_1", "41c"],
+                    ["blast_1", "41c"],
+                    ["fire_1", "41b"],
+                    ["water_1", "41b"],
+                    ["thunder_1", "41b"],
+                    ["ice_1", "41b"],
+                    ["dragon_1", "41b"]
                 ],
                 [
                     ["attack_surge", ""],
@@ -3335,7 +3744,11 @@
                     ["attack_melody_2", ""],
                     ["defensive_melody_2", ""],
                     ["healing_melody_2", ""],
-                    ["resilient_melody_2", ""]
+                    ["resilient_melody_2", ""],
+                    ["attack_melody_1", "41c"],
+                    ["defensive_melody_1", "41c"],
+                    ["healing_melody_1", "41c"],
+                    ["resilient_melody_1", "41c"]
                 ]
             ],
 
@@ -3364,7 +3777,17 @@
                     ["sharpness_type_1", ""],
                     ["sharpness_type_2", ""],
                     ["sharpness_type_3", ""],
-                    ["sharpness_type_4", ""]
+                    ["sharpness_type_4", ""],
+                    ["attack_boost_3", "41e"],
+                    ["elemental_boost_2", "41e"],
+                    ["affinity_boost_3", "41e"],
+                    ["attack_boost_2", "41d"],
+                    ["affinity_boost_2", "41d"],
+                    ["defense_boost_2", "41d"],
+                    ["elemental_boost_1", "41c"],
+                    ["attack_boost_1", "41b"],
+                    ["affinity_boost_1", "41b"],
+                    ["defense_boost_1", "41b"]
                 ],
                 [
                     ["non_elemental_boost", ""],
@@ -3376,7 +3799,30 @@
                     ["poison_3", ""],
                     ["paralysis_3", ""],
                     ["sleep_3", ""],
-                    ["blast_3", ""]
+                    ["blast_3", ""],
+                    ["fire_3", "41e"],
+                    ["water_3", "41e"],
+                    ["thunder_3", "41e"],
+                    ["ice_3", "41e"],
+                    ["dragon_3", "41e"],
+                    ["poison_2", "41e"],
+                    ["paralysis_2", "41e"],
+                    ["sleep_2", "41e"],
+                    ["blast_2", "41e"],
+                    ["fire_2", "41d"],
+                    ["water_2", "41d"],
+                    ["thunder_2", "41d"],
+                    ["ice_2", "41d"],
+                    ["dragon_2", "41d"],
+                    ["poison_1", "41c"],
+                    ["paralysis_1", "41c"],
+                    ["sleep_1", "41c"],
+                    ["blast_1", "41c"],
+                    ["fire_1", "41b"],
+                    ["water_1", "41b"],
+                    ["thunder_1", "41b"],
+                    ["ice_1", "41b"],
+                    ["dragon_1", "41b"]
                 ],
                 [
                     ["attack_surge", ""],
@@ -3385,7 +3831,11 @@
                     ["attack_melody_2", ""],
                     ["defensive_melody_2", ""],
                     ["healing_melody_2", ""],
-                    ["resilient_melody_2", ""]
+                    ["resilient_melody_2", ""],
+                    ["attack_melody_1", "41c"],
+                    ["defensive_melody_1", "41c"],
+                    ["healing_melody_1", "41c"],
+                    ["resilient_melody_1", "41c"]
                 ]
             ],
 

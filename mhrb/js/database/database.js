@@ -281,9 +281,20 @@ function joinRampSkillObjsToWeaponData(weaponData) {
                         rampageSkillsMap.has(rampSkillID),
                         "Invalid rampage skill ID '" + rampSkillID + "' from " + categoryID + " " + weaponID
                     );
+
+                    const inheritedFromWeaponRO = (()=>{
+                            if (inheritedFromWeaponID === "") {
+                                return null;
+                            } else {
+                                const ret = weaponDataMap.get(inheritedFromWeaponID);
+                                assert(ret !== undefined);
+                                return ret;
+                            }
+                        })();
+
                     const newRampEntry = [
                         rampageSkillsMap.get(rampSkillID),
-                        null, // TODO: Make this point to the correct weapon?
+                        inheritedFromWeaponRO,
                     ];
                     newRampSubArray.push(newRampEntry);
                 }

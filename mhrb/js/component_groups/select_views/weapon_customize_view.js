@@ -24,6 +24,14 @@ class WeaponCustomizeView extends React.Component {
                 const [rampSkillRO, inheritedFromWeaponRO] = _arr;
                 return rampSkillRO.id;
             };
+        const cspecGetOptionName = (_arr) => {
+                const [rampSkillRO, inheritedFromWeaponRO] = _arr;
+                if (inheritedFromWeaponRO === null) {
+                    return rampSkillRO.name;
+                } else {
+                    return rampSkillRO.name + " (Inherited from " + inheritedFromWeaponRO.name + ")";
+                }
+            };
 
         return element(DropdownSelectWithNull,
             {
@@ -31,7 +39,7 @@ class WeaponCustomizeView extends React.Component {
             optionsArray: rampSkillOptions,
             handleOnChange: (newRampSkillID) => {this.handleSelectRampageSkill(positionID, newRampSkillID)},
             cspecGetOptionValue: cspecGetOptionValue,
-            cspecGetOptionName: (_arr) => {const [rampSkillRO, inheritedFromWeaponRO] = _arr; return rampSkillRO.name},
+            cspecGetOptionName: cspecGetOptionName,
             },
             null,
         );
