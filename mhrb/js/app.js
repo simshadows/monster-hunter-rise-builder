@@ -17,6 +17,9 @@ import {
     isDecoEquippableSlotStr,
     br,
 } from "./common.js";
+import {
+    callTtlDecr,
+} from "./utils.js";
 import {Build} from "./model/build.js";
 import {CalcState} from "./model/calc_state.js";
 import {calculateBuildPerformance} from "./model/calculate/index.js";
@@ -39,41 +42,43 @@ const assert = console.assert;
 
 class MHRBuilderAppInner extends React.Component {
 
-    static _viewEnumValues = new Set([
-            "main",
-            "buffs_select_view",
-            "armour_select_view",
-            "weapon_select_view",
-            "weapon_customize_view",
-            "talisman_select_view",
-            "petalace_select_view",
-            "decoration_select_view",
-        ]);
-
     constructor(props) {
         super(props);
 
         this.state = {
-                // All possible states are in _viewEnumValues
-                view: "main", // Always start with the main view
-
                 build: getBuildFromQueryString(this.props.rawDataRO),
                 calcState: new CalcState(),
             };
 
         this.myRefs = {
-                weaponSelectView:   React.createRef(),
-                armourSelectView:   React.createRef(),
-                talismanSelectView: React.createRef(),
-                petalaceSelectView: React.createRef(),
-                decoSelectView:     React.createRef(),
+                mainView:             React.createRef(),
+
+                buffsSelectModal:     React.createRef(),
+                buffsSelectModal:     React.createRef(),
+                weaponSelectModal:    React.createRef(),
+                weaponCustomizeModal: React.createRef(),
+                armourSelectModal:    React.createRef(),
+                talismanSelectModal:  React.createRef(),
+                petalaceSelectModal:  React.createRef(),
+                decoSelectModal:      React.createRef(),
+
+                buffsSelectView:      React.createRef(),
+                weaponSelectView:     React.createRef(),
+                weaponCustomizeView:  React.createRef(),
+                armourSelectView:     React.createRef(),
+                talismanSelectView:   React.createRef(),
+                petalaceSelectView:   React.createRef(),
+                decoSelectView:       React.createRef(),
             };
 
         // TODO: Ugh, the fact that we don't do this consistently is weird. Change it later?
-        this.handleKeypress = this.handleKeypress.bind(this);
         this.handlePopState = this.handlePopState.bind(this);
 
         writeBuildToQueryString(this.state.build);
+    }
+
+    ttlDecr(v) {
+        callTtlDecr(this.myRefs, v);
     }
 
     // i.e. when the user presses the back-button on the browser
@@ -85,53 +90,33 @@ class MHRBuilderAppInner extends React.Component {
             });
     }
 
-    handleKeypress(e) {
-        if (e.code === "Escape") {
-            if (this.state.view != "main") {
-                this.setState({view: "main"});
-            }
-        }
-    }
-
     handleSwitchToBuffsSelect() {
-        assert(this.state.view == "main");
-        this.setState({view: "buffs_select_view"});
+        this.myRefs.buffsSelectModal.current.makeVisible();
     }
     handleSwitchToWeaponSelect() {
-        assert(this.state.view == "main");
-        this.setState({view: "weapon_select_view"});
+        this.myRefs.weaponSelectModal.current.makeVisible();
     }
     handleSwitchToWeaponCustomize() {
-        assert(this.state.view == "main");
-        this.setState({view: "weapon_customize_view"});
+        this.myRefs.weaponCustomizeModal.current.makeVisible();
     }
     handleSwitchToArmourSelect(slotID) {
         assert(isArmourSlotStr(slotID));
-        assert(this.state.view == "main");
         this.myRefs.armourSelectView.current.reinitialize(slotID);
-        this.setState({view: "armour_select_view"});
+        this.myRefs.armourSelectModal.current.makeVisible();
     }
     handleSwitchToTalismanSelect() {
-        assert(this.state.view == "main");
-        this.setState({view: "talisman_select_view"});
+        this.myRefs.talismanSelectModal.current.makeVisible();
     }
     handleSwitchToPetalaceSelect() {
-        assert(this.state.view == "main");
-        this.setState({view: "petalace_select_view"});
+        this.myRefs.petalaceSelectModal.current.makeVisible();
     }
     handleSwitchToDecorationSelect(slotID, decoSlotID, maxDecoSlotSize) {
         assert(isDecoEquippableSlotStr(slotID));
         check.isInt(decoSlotID);
         assert((decoSlotID >= 0) && (decoSlotID < 3));
         check.isInt(maxDecoSlotSize);
-        assert(this.state.view == "main");
         this.myRefs.decoSelectView.current.reinitialize(slotID, decoSlotID, maxDecoSlotSize);
-        this.setState({view: "decoration_select_view"});
-    }
-
-    handleReturnToMainView() {
-        assert(this.state.view != "main");
-        this.setState({view: "main"});
+        this.myRefs.decoSelectModal.current.makeVisible();
     }
 
     handleChangeCalcState(groupName, stateName, newValue) {
@@ -148,10 +133,10 @@ class MHRBuilderAppInner extends React.Component {
     handleSelectWeapon(weaponRO) {
         check.isInt(weaponRO.affinity); // Spot check for structure
         this.setState({
-                view: "main", // Return back to main view
                 build: this.state.build.setWeapon(this.props.rawDataRO, weaponRO)
             });
         writeBuildToQueryString(this.state.build);
+        this.ttlDecr(2); // Close all modals
     }
     handleSelectRampSkill(position, rampSkillID) {
         check.isInt(position);
@@ -168,10 +153,10 @@ class MHRBuilderAppInner extends React.Component {
             check.isInt(armourPieceRO.dragonRes); // Spot check for structure
         }
         this.setState({
-                view: "main", // Return back to main view
                 build: this.state.build.setArmourPiece(this.props.rawDataRO, armourPieceRO.slotID, armourPieceRO)
             });
         writeBuildToQueryString(this.state.build);
+        this.ttlDecr(2); // Close all modals
     }
 
     handleSelectTalismanSkill(skillIndex, skillRO, skillLevel) {
@@ -204,10 +189,10 @@ class MHRBuilderAppInner extends React.Component {
             check.isInt(petalaceRO.staminaUp); // Spot check for structure
         }
         this.setState({
-                view: "main", // Return back to main view
                 build: this.state.build.setPetalace(this.props.rawDataRO, petalaceRO)
             });
         writeBuildToQueryString(this.state.build);
+        this.ttlDecr(2); // Close all modals
     }
     
     handleSelectDecoration(decoRO, slotID, decoSlotID) {
@@ -220,10 +205,10 @@ class MHRBuilderAppInner extends React.Component {
         assert((decoSlotID >= 0) && (decoSlotID <= 2));
 
         this.setState({
-                view: "main", // Return back to main view
                 build: this.state.build.setDecoration(this.props.rawDataRO, decoRO, slotID, decoSlotID),
             });
         writeBuildToQueryString(this.state.build);
+        this.ttlDecr(2); // Close all modals
     }
 
     // TODO: Merge with handleSelectArmourPiece().
@@ -259,34 +244,19 @@ class MHRBuilderAppInner extends React.Component {
     /* Inherited Methods */
 
     async componentDidMount() {
-        document.addEventListener("keydown", this.handleKeypress);
         window.addEventListener("popstate", this.handlePopState);
-
     }
     componentWillUnmount() {
         // TODO: Verify event removal matching?
-        document.removeEventListener("keydown", this.handleKeypress);
         window.removeEventListener("popstate", this.handlePopState);
     }
 
     render() {
         assert(this.props.rawDataRO instanceof GameData);
-        assert(this.constructor._viewEnumValues.has(this.state.view));
 
         console.log(this.state);
 
         const rawData = this.props.rawDataRO;
-
-        const selectionViewIsVisible = {
-                buffs:       (this.state.view == "buffs_select_view" ),
-                weapon:      (this.state.view == "weapon_select_view"),
-                weapon_cust: (this.state.view == "weapon_customize_view"),
-                armour:      (this.state.view == "armour_select_view"),
-                talisman:    (this.state.view == "talisman_select_view"),
-                petalace:    (this.state.view == "petalace_select_view"),
-                decos:       (this.state.view == "decoration_select_view"),
-            };
-
 
         const buildRenderingProps = this.state.build.getRenderingProps(this.props.rawDataRO);
         const calcStateSpecification = this.state.calcState.getSpecification();
@@ -301,6 +271,8 @@ class MHRBuilderAppInner extends React.Component {
             },
             element(MainView,
                 {
+                ref: this.myRefs.mainView,
+
                 buildRenderingProps:    buildRenderingProps,
                 calcStateSpecification: calcStateSpecification,
                 calcStateCurrValues:    calcStateCurrValues,
@@ -321,12 +293,12 @@ class MHRBuilderAppInner extends React.Component {
             ),
             element(Modal,
                 {
-                visible: selectionViewIsVisible.buffs,
+                ref: this.myRefs.buffsSelectModal,
                 title: "Select Buffs and States",
-                handleCloseModal: () => {this.handleReturnToMainView();},
                 },
                 element(BuffsSelectView,
                     {
+                    ref: this.myRefs.buffsSelectView,
                     calcStateSpecification: calcStateSpecification,
                     calcStateCurrValues:    calcStateCurrValues,
                     handleChangeCalcState: (...args) => {this.handleChangeCalcState(...args)},
@@ -336,9 +308,8 @@ class MHRBuilderAppInner extends React.Component {
             ),
             element(Modal,
                 {
-                visible: selectionViewIsVisible.weapon,
+                ref: this.myRefs.weaponSelectModal,
                 title: "Select Weapon",
-                handleCloseModal: () => {this.handleReturnToMainView();},
                 },
                 element(WeaponSelectView,
                     {
@@ -352,12 +323,12 @@ class MHRBuilderAppInner extends React.Component {
             ),
             element(Modal,
                 {
-                visible: selectionViewIsVisible.weapon_cust,
+                ref: this.myRefs.weaponCustomizeModal,
                 title: "Customize Weapon",
-                handleCloseModal: () => {this.handleReturnToMainView();},
                 },
                 element(WeaponCustomizeView,
                     {
+                    ref: this.myRefs.weaponCustomizeView,
                     buildRenderingProps: buildRenderingProps,
                     handleSelectRampageSkill: (position, rampSkillID) => {this.handleSelectRampSkill(position, rampSkillID)},
                     },
@@ -366,9 +337,8 @@ class MHRBuilderAppInner extends React.Component {
             ),
             element(Modal,
                 {
-                visible: selectionViewIsVisible.armour,
+                ref: this.myRefs.armourSelectModal,
                 title: "Select Armor",
-                handleCloseModal: () => {this.handleReturnToMainView();},
                 },
                 element(ArmourSelectView,
                     {
@@ -382,9 +352,8 @@ class MHRBuilderAppInner extends React.Component {
             ),
             element(Modal,
                 {
-                visible: selectionViewIsVisible.talisman,
+                ref: this.myRefs.talismanSelectModal,
                 title: "Set Talisman",
-                handleCloseModal: () => {this.handleReturnToMainView();},
                 },
                 element(TalismanSelectView,
                     {
@@ -401,9 +370,8 @@ class MHRBuilderAppInner extends React.Component {
             ),
             element(Modal,
                 {
-                visible: selectionViewIsVisible.petalace,
+                ref: this.myRefs.petalaceSelectModal,
                 title: "Select Petalace",
-                handleCloseModal: () => {this.handleReturnToMainView();},
                 },
                 element(PetalaceSelectView,
                     {
@@ -417,9 +385,8 @@ class MHRBuilderAppInner extends React.Component {
             ),
             element(Modal,
                 {
-                visible: selectionViewIsVisible.decos,
+                ref: this.myRefs.decoSelectModal,
                 title: "Select Decoration",
-                handleCloseModal: () => {this.handleReturnToMainView();},
                 },
                 element(DecorationSelectView,
                     {

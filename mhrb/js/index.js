@@ -39,6 +39,7 @@ class ErrorMessage extends React.Component {
                     element("br", null, null),
                     element("div", null, element("b", null, extraMessage)),
                 ),
+                element("div", null, element("h1", null, "Refresh your browser to recover your build.")),
             );
         }
     }
@@ -55,6 +56,17 @@ class MHRBuilderApp extends React.Component {
                 // Two states: Either it's null, or it's a fully-constructed raw data object. Don't modify it once it's built.
                 rawData: null,
             };
+
+        this.myRefs = {
+                appInner: React.createRef(),
+            };
+
+        this.handleKeypress = this.handleKeypress.bind(this);
+    }
+
+    ttlDecr(v) {
+        console.log("Root ttlDecr called (v = " + String(v) + ").");
+        this.myRefs.appInner.current.ttlDecr(v);
     }
 
     /*** Error Boundary Methods ***/
@@ -73,6 +85,22 @@ class MHRBuilderApp extends React.Component {
         const rawData = await downloadRawData();
         this.setState({rawData: rawData});
         removeElementByID("loading-spinner");
+
+        document.addEventListener("keydown", this.handleKeypress);
+    }
+    componentWillUnmount() {
+        // TODO: Verify event removal matching?
+        document.removeEventListener("keydown", this.handleKeypress);
+    }
+
+    handleOnClick(e) {
+        this.ttlDecr(1);
+    }
+
+    handleKeypress(e) {
+        if (e.code === "Escape") {
+            this.ttlDecr(1);
+        }
     }
 
     // Nice idea, but not useful yet.
@@ -107,11 +135,18 @@ class MHRBuilderApp extends React.Component {
                 );
             } else {
                 console.log(this.state);
-                return element(MHRBuilderAppInner,
+                return element("div",
                     {
-                    rawDataRO: this.state.rawData,
+                    id: "app-outer",
+                    onClick: (e) => {this.handleOnClick(e)},
                     },
-                    null,
+                    element(MHRBuilderAppInner,
+                        {
+                        ref: this.myRefs.appInner,
+                        rawDataRO: this.state.rawData,
+                        },
+                        null,
+                    ),
                 );
             }
         }

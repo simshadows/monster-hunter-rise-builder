@@ -134,7 +134,9 @@ class EquipDecoBox extends React.Component {
     }
 
     _renderRemoveButton() {
-        if (this.state.visibleRemoveButton) {
+        const decoPropsRO = this.props.decoPropsRO;
+
+        if ((decoPropsRO.deco !== null) && this.state.visibleRemoveButton) {
             return element("div",
                 {
                 className: "deco-box-remove-button button-common hide-from-buildcard",

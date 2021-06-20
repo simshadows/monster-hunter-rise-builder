@@ -44,6 +44,13 @@ function UtilityButtonExternalLink(props) {
 
 class UtilityBar extends React.Component {
 
+    constructor(props) {
+        super(props);
+        this.state = {
+                doError: false,
+            };
+    }
+
     handleMakeBuildCard(e) {
         const options = {
                 backgroundColor: "#191a1d",
@@ -59,6 +66,10 @@ class UtilityBar extends React.Component {
     }
 
     render() {
+        if (this.state.doError) {
+            throw Error("Intentional error.");
+        }
+
         return element("div",
             {
             id: "utility-bar-box-wrap",
@@ -79,6 +90,18 @@ class UtilityBar extends React.Component {
                         null,
                     ),
                 ),
+                //element("div",
+                //    {
+                //    className: "utility-button",
+                //    onClick: (e) => {this.setState({doError: true})},
+                //    },
+                //    element(FontAwesomeSprite,
+                //        {
+                //        fragment: "bomb",
+                //        },
+                //        null,
+                //    ),
+                //),
                 element("div",
                     {
                     className: "phantom-utility-button",

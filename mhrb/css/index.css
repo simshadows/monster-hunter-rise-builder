@@ -103,7 +103,7 @@ body::-webkit-scrollbar-thumb {
     flex-direction: column;
 }
 
-#app-mount {
+#app-mount, #app-outer {
     flex: 1 0 0;
 
     display: flex;
@@ -111,6 +111,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
 
     width: 100%;
+    height: 100%;
 }
 
 #loading-spinner {

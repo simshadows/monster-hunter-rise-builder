@@ -273,7 +273,7 @@ div.equip-info-petalace-stat-cell-box {
     justify-content: center;
 
     height: 100%;
-    width: 140px;
+    width: 25%;
     padding: 0 4px 0 4px;
     background: var(--color-equip-petalace--stat-box);
     font: var(--font-equip-petalace--stat);
