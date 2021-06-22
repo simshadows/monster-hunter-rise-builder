@@ -6,6 +6,10 @@
 import * as check from "./check.js";
 import {getImgPath} from "./images.js";
 
+import {
+    sum,
+} from "./utils.js";
+
 const element = React.createElement;
 const assert = console.assert;
 
@@ -191,23 +195,41 @@ const SHARPNESS_LEVELS = [
     ["white" , "var(--color-sharpness--white)" ],
 ]
 export function SharpnessBar(props) {
-    assert(check.isArr(props.baseSharpness));
-    assert(check.isArr(props.maxSharpness));
+    assert(check.isArr(props.baseSharpness) && (props.baseSharpness.length === 6));
+    assert(check.isArr(props.maxSharpness) && (props.maxSharpness.length === 6));
+    assert(check.isBool(props.renderMaxAsPips));
 
-    function renderSection(values) {
+    function renderSection(_values, _circles) {
         const elements = [];
         for (const [i, [levelName, backgroundColour]] of SHARPNESS_LEVELS.entries()) {
             // levelName not used yet
-            const width = ((values[i] / MAX_TOTAL_SHARPNESS) * 100).toFixed(4) + "%";
+            const width = ((_values[i] / MAX_TOTAL_SHARPNESS) * 100).toFixed(4) + "%";
             elements.push(
                 element("div",
                     {
+                    className: "sharpness-bar-level",
                     style: {
                             background: backgroundColour,
                             width: width,
-                            height: "100%",
                         },
                     },
+                )
+            );
+        }
+        for (const backgroundColour of _circles) {
+            const width = ((10 / MAX_TOTAL_SHARPNESS) * 100).toFixed(4) + "%"
+            elements.push(
+                element("div",
+                    {
+                    className: "sharpness-bar-level",
+                    style: {width: width},
+                    },
+                    element("div",
+                        {
+                        className: "sharpness-bar-level-pip",
+                        style: {background: backgroundColour},
+                        },
+                    ),
                 )
             );
         }
@@ -219,13 +241,41 @@ export function SharpnessBar(props) {
         );
     }
 
-    return element("div",
-        {
-        className: "sharpness-bar",
-        },
-        renderSection(props.baseSharpness),
-        renderSection(props.maxSharpness),
-    );
+    if (props.renderMaxAsPips) {
+
+        const maxMinusBase = [];
+        for (const [i, baseVal] of props.baseSharpness.entries()) {
+            const maxVal = props.maxSharpness[i];
+            assert(baseVal <= maxVal);
+            maxMinusBase.push(maxVal - baseVal);
+        }
+
+        const circles = [];
+        for (const [i, [levelName, backgroundColour]] of SHARPNESS_LEVELS.entries()) {
+            assert(maxMinusBase[i] % 10 === 0);
+            const numCircles = maxMinusBase[i] / 10;
+            for (let j = 0; j < numCircles; ++j) {
+                circles.push(backgroundColour);
+            }
+        }
+
+        return element("div",
+            {
+            className: "sharpness-bar",
+            },
+            renderSection(props.baseSharpness, []),
+            renderSection(props.baseSharpness, circles),
+        );
+    
+    } else {
+        return element("div",
+            {
+            className: "sharpness-bar",
+            },
+            renderSection(props.baseSharpness, []),
+            renderSection(props.maxSharpness, []),
+        );
+    }
 }
 
 export class DropdownSelect extends React.Component {

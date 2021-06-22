@@ -290,4 +290,15 @@ div.sharpness-bar-section {
     width: 100%;
     height: 50%;
 }
+div.sharpness-bar-level {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    height: 100%;
+}
+div.sharpness-bar-level-pip {
+    height: 100%;
+    width: 60%;
+}
 

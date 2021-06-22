@@ -45,6 +45,7 @@ class CalculationSharpnessBarBox extends React.Component {
 
     render(props) {
         assert(isArr(this.props.realSharpness));
+        assert(isArr(this.props.maxSharpness));
         assert(this.props.hitsMultiplier >= 1);
 
         return element("div",
@@ -82,7 +83,8 @@ class CalculationSharpnessBarBox extends React.Component {
                     element(SharpnessBar,
                         {
                         baseSharpness: this.props.realSharpness,
-                        maxSharpness: this.props.realSharpness,
+                        maxSharpness: this.props.maxSharpness,
+                        renderMaxAsPips: true,
                         },
                         null,
                     ),
@@ -207,7 +209,8 @@ class CalculationResultsBox extends React.Component {
                 null,
                 element(CalculationSharpnessBarBox,
                     {
-                    realSharpness: perf.realSharpnessBar,
+                    realSharpness:  perf.realSharpnessBar,
+                    maxSharpness:   perf.maxSharpnessBar,
                     hitsMultiplier: perf.hitsMultiplier,
                     },
                     null

@@ -143,6 +143,7 @@ function calculateBuildPerformance(db, build, calcState) {
     //
 
     let realSharpnessBar              = null;
+    let maxSharpnessBar               = null;
     let rawSharpnessModifier          = null;
     let elementalSharpnessModifier    = null;
 
@@ -169,6 +170,7 @@ function calculateBuildPerformance(db, build, calcState) {
         // Now, we apply this effective handicraft level.
         const sharpnessValues = getSharpnessValues(b.maxSharpness, effectiveHandicraftLevel);
         realSharpnessBar           = sharpnessValues.realSharpnessBar;
+        maxSharpnessBar            = b.maxSharpness;
         rawSharpnessModifier       = sharpnessValues.rawSharpnessModifier;
         elementalSharpnessModifier = sharpnessValues.elementalSharpnessModifier;
     }
@@ -280,6 +282,7 @@ function calculateBuildPerformance(db, build, calcState) {
         elementalCritModifier:      elementalCritModifier,
 
         realSharpnessBar:           realSharpnessBar,
+        maxSharpnessBar:            maxSharpnessBar,
         hitsMultiplier:             hitsMultiplier,
         rawSharpnessModifier:       rawSharpnessModifier,
         elementalSharpnessModifier: elementalSharpnessModifier,
