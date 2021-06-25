@@ -288,7 +288,6 @@ div.sharpness-bar-section {
     flex-direction: row;
 
     width: 100%;
-    height: 50%;
 }
 div.sharpness-bar-level {
     display: flex;

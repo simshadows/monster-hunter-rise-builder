@@ -199,7 +199,7 @@ export function SharpnessBar(props) {
     assert(check.isArr(props.maxSharpness) && (props.maxSharpness.length === 6));
     assert(check.isBool(props.renderMaxAsPips));
 
-    function renderSection(_values, _circles) {
+    function renderSection(_values, _height, _circles) {
         const elements = [];
         for (const [i, [levelName, backgroundColour]] of SHARPNESS_LEVELS.entries()) {
             // levelName not used yet
@@ -236,6 +236,7 @@ export function SharpnessBar(props) {
         return element("div",
             {
             className: "sharpness-bar-section",
+            style: {height: _height},
             },
             ...elements,
         );
@@ -263,8 +264,8 @@ export function SharpnessBar(props) {
             {
             className: "sharpness-bar",
             },
-            renderSection(props.baseSharpness, []),
-            renderSection(props.baseSharpness, circles),
+            renderSection(props.baseSharpness, "68%", []),
+            renderSection(props.baseSharpness, "32%", circles),
         );
     
     } else {

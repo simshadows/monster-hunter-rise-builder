@@ -153,7 +153,7 @@ function readDecomposedRampSkillsStr(arr, db, build) {
         if (optionsSubArray === undefined) return;
 
         assert((optionsSubArray instanceof Array) && (optionsSubArray.length > 0));
-        for (const rampSkillRO of optionsSubArray) {
+        for (const [rampSkillRO, inheritedFromWeaponID] of optionsSubArray) {
             if (rampSkillShortID === rampSkillRO.shortId) {
                 // TODO: It's weird that we need the query the database again for the rampage skill.
                 build.setRampageSkill(db, position, rampSkillRO.id);
