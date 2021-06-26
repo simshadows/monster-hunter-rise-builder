@@ -32,15 +32,23 @@ const assert = console.assert;
 const element = React.createElement;
 
 class EquipmentSelectionsBox extends React.Component {
+    constructor(props) {
+        super(props);
+
+        this.myRefs = {
+                weaponSelection: React.createRef(),
+            };
+    }
+
+    ttlDecr(v) {
+        this.myRefs.weaponSelection.current.ttlDecr(v);
+    }
 
     handleClickBuffsSelect(){
         this.props.handleClickBuffsSelect();
     }
     handleClickWeaponSelect() {
         this.props.handleClickWeaponSelect();
-    }
-    handleClickWeaponCustomize() {
-        this.props.handleClickWeaponCustomize();
     }
     handleClickArmourSelect(slotID) {
         this.props.handleClickArmourSelect(slotID);
@@ -75,7 +83,6 @@ class EquipmentSelectionsBox extends React.Component {
 
         check.isFunction(this.props.handleClickBuffsSelect);
         check.isFunction(this.props.handleClickWeaponSelect);
-        check.isFunction(this.props.handleClickWeaponCustomize);
         check.isFunction(this.props.handleClickArmourSelect);
         check.isFunction(this.props.handleClickTalismanSelect);
         check.isFunction(this.props.handleClickPetalaceSelect);
@@ -101,10 +108,11 @@ class EquipmentSelectionsBox extends React.Component {
             ),
             element(WeaponSelection,
                 {
+                ref: this.myRefs.weaponSelection,
+
                 weaponRORenderingProps: this.props.buildRenderingProps.weaponRO,
                 buildPerformanceValues: this.props.buildPerformanceValues,
                 handleClickWeaponSelect:     () => {this.handleClickWeaponSelect();},
-                handleClickWeaponCustomize:  () => {this.handleClickWeaponCustomize();},
                 handleClickDecorationSelect: (decoSlotID, maxDecoSlotSize) => {this.handleClickDecorationSelect("weapon", decoSlotID, maxDecoSlotSize);},
                 handleClickDecorationRemove: (decoSlotID) => {this.props.handleRemoveDeco("weapon", decoSlotID);},
                 },

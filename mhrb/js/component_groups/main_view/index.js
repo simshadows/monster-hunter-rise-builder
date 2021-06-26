@@ -136,6 +136,17 @@ class UtilityBar extends React.Component {
 }
 
 class MainView extends React.Component {
+    constructor(props) {
+        super(props);
+
+        this.myRefs = {
+                equipmentSelectionsBox: React.createRef(),
+            };
+    }
+
+    ttlDecr(v) {
+        this.myRefs.equipmentSelectionsBox.current.ttlDecr(v);
+    }
 
     render() {
         check.isObj(this.props.buildRenderingProps);
@@ -147,7 +158,6 @@ class MainView extends React.Component {
 
         check.isFunction(this.props.handleClickBuffsSelect);
         check.isFunction(this.props.handleClickWeaponSelect);
-        check.isFunction(this.props.handleClickWeaponCustomize);
         check.isFunction(this.props.handleClickArmourSelect);
         check.isFunction(this.props.handleClickTalismanSelect);
         check.isFunction(this.props.handleClickPetalaceSelect);
@@ -185,6 +195,8 @@ class MainView extends React.Component {
                         ),
                         element(EquipmentSelectionsBox,
                             {
+                            ref: this.myRefs.equipmentSelectionsBox,
+
                             buildRenderingProps:    this.props.buildRenderingProps,
                             calcStateSpecification: this.props.calcStateSpecification,
                             calcStateCurrValues:    this.props.calcStateCurrValues,
@@ -192,7 +204,6 @@ class MainView extends React.Component {
 
                             handleClickBuffsSelect:      ()       => {this.props.handleClickBuffsSelect();},
                             handleClickWeaponSelect:     ()       => {this.props.handleClickWeaponSelect();},
-                            handleClickWeaponCustomize:  ()       => {this.props.handleClickWeaponCustomize();},
                             handleClickArmourSelect:     (slotID) => {this.props.handleClickArmourSelect(slotID);},
                             handleClickTalismanSelect:   ()       => {this.props.handleClickTalismanSelect();},
                             handleClickPetalaceSelect:   ()       => {this.props.handleClickPetalaceSelect();},
@@ -211,12 +222,6 @@ class MainView extends React.Component {
                         ),
                     ),
                 ),
-                //element("div",
-                //    {
-                //    id: "footer-spacing-box",
-                //    },
-                //    null,
-                //),
             ),
         );
 

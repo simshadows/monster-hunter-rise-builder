@@ -236,7 +236,7 @@ function getBaseValues(db, build, calcState) {
                                   baseAffinity += -30; }],
         ["elemental_surge", ()=>{ 
             function op() {
-                assert(baseEleStat.size === 1); // We only expect one element
+                assert(baseEleStat.size <= 1); // We only expect one element or none
                 const tmp = new Map();
                 for (const [eleStatType, eleStatValue] of baseEleStat.entries()) {
                     if (!isEleStr(eleStatType)) continue;

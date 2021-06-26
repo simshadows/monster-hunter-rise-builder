@@ -75,6 +75,7 @@
     --color-utility-button--icon: var(--color-scheme--bright2);
     --color-button-common--border: var(--color-scheme--bright4);
     --color-button-common--border-hover: var(--color-scheme--bright1);
+    --color-contextbox-common--border: var(--color-scheme--bright4);
 
     --color-modal--background: rgba(0, 0, 0, 0.4);
     --color-modal--foreground: var(--color-scheme--dark1);
@@ -103,8 +104,10 @@
     --color-equip-buffs--box-hover: var(--color-scheme--dark6);
     --color-equip-weapon--stat-box: var(--color-scheme--dark4);
     --color-equip-weapon--ramp-box: var(--color-scheme--dark4);
+    --color-equip-weapon--ramp-selection-box: var(--color-scheme--dark4); /* I want dark6 to work */
+    --color-equip-weapon--ramp-box-hover: var(--color-scheme--dark6);
     --color-equip-weapon--ramp-text: var(--color-scheme--bright2);
-    --color-equip-weapon--ramp-unused-text: var(--color-scheme--bright2); /* Find a more comfortable colour? */
+    --color-equip-weapon--ramp-unused-text: var(--color-scheme--bright3); /* Find a more comfortable colour? */
     --color-equip-petalace--stat-box: var(--color-scheme--dark3);
     --color-equip-defenses--box: var(--color-scheme--dark5);
     --color-equip-skills--box: var(--color-scheme--dark4);
@@ -122,7 +125,7 @@
     --color-select-table--background: var(--color-scheme--dark2);
     --color-select-table--head-row: var(--color-scheme--dark2);
     --color-select-table--body-row: var(--color-scheme--dark1);
-    --color-select-table--body-row-hover: var(--color-scheme--dark2);
+    --color-select-table--body-row-hover: var(--color-scheme--dark4);
     --color-select-table--body-row-highlighted: #3b5b3f;
     --color-select-table--scrollbar-background: var(--color-scheme--dark1);
     --color-select-table--scrollbar: var(--color-scheme--bright2);

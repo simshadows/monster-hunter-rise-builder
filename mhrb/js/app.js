@@ -29,7 +29,6 @@ import Modal from "./component_groups/modal.js";
 import {MainView} from "./component_groups/main_view/index.js";
 
 import {WeaponSelectView} from "./component_groups/select_views/weapon_select_view.js";
-import {WeaponCustomizeView} from "./component_groups/select_views/weapon_customize_view.js";
 import {ArmourSelectView} from "./component_groups/select_views/armour_select_view.js";
 import {TalismanSelectView} from "./component_groups/select_views/talisman_select_view.js";
 import {BuffsSelectView} from "./component_groups/select_views/buffs_select_view.js";
@@ -56,7 +55,6 @@ class MHRBuilderAppInner extends React.Component {
                 buffsSelectModal:     React.createRef(),
                 buffsSelectModal:     React.createRef(),
                 weaponSelectModal:    React.createRef(),
-                weaponCustomizeModal: React.createRef(),
                 armourSelectModal:    React.createRef(),
                 talismanSelectModal:  React.createRef(),
                 petalaceSelectModal:  React.createRef(),
@@ -64,7 +62,6 @@ class MHRBuilderAppInner extends React.Component {
 
                 buffsSelectView:      React.createRef(),
                 weaponSelectView:     React.createRef(),
-                weaponCustomizeView:  React.createRef(),
                 armourSelectView:     React.createRef(),
                 talismanSelectView:   React.createRef(),
                 petalaceSelectView:   React.createRef(),
@@ -95,9 +92,6 @@ class MHRBuilderAppInner extends React.Component {
     }
     handleSwitchToWeaponSelect() {
         this.myRefs.weaponSelectModal.current.makeVisible();
-    }
-    handleSwitchToWeaponCustomize() {
-        this.myRefs.weaponCustomizeModal.current.makeVisible();
     }
     handleSwitchToArmourSelect(slotID) {
         assert(isArmourSlotStr(slotID));
@@ -280,7 +274,6 @@ class MHRBuilderAppInner extends React.Component {
 
                 handleClickBuffsSelect:      ()        => {this.handleSwitchToBuffsSelect();},
                 handleClickWeaponSelect:     ()        => {this.handleSwitchToWeaponSelect();},
-                handleClickWeaponCustomize:  ()        => {this.handleSwitchToWeaponCustomize();},
                 handleClickArmourSelect:     (...args) => {this.handleSwitchToArmourSelect(...args);},
                 handleClickTalismanSelect:   ()        => {this.handleSwitchToTalismanSelect();},
                 handleClickPetalaceSelect:   ()        => {this.handleSwitchToPetalaceSelect();},
@@ -317,20 +310,6 @@ class MHRBuilderAppInner extends React.Component {
                     allWeaponsArray: rawData.readonly.weapons.array,
                     currentSelectedWeapon: this.state.build.getWeaponObjRO(),
                     handleSelectWeapon: (weaponRO) => {this.handleSelectWeapon(weaponRO)},
-                    },
-                    null,
-                ),
-            ),
-            element(Modal,
-                {
-                ref: this.myRefs.weaponCustomizeModal,
-                title: "Customize Weapon",
-                },
-                element(WeaponCustomizeView,
-                    {
-                    ref: this.myRefs.weaponCustomizeView,
-                    buildRenderingProps: buildRenderingProps,
-                    handleSelectRampageSkill: (position, rampSkillID) => {this.handleSelectRampSkill(position, rampSkillID)},
                     },
                     null,
                 ),
