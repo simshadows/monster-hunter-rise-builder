@@ -24,7 +24,7 @@ import {Build} from "./model/build.js";
 import {CalcState} from "./model/calc_state.js";
 import {calculateBuildPerformance} from "./model/calculate/index.js";
 
-import Modal from "./component_groups/modal.js";
+import {Modal} from "./component_groups/modal.js";
 
 import {MainView} from "./component_groups/main_view/index.js";
 

@@ -192,7 +192,7 @@ class EquipDecoBox extends React.Component {
                 {
                 className: "equip-deco-name-box clipsafe",
                 },
-                clipsafeSpan(((decoPropsRO.deco === null) ? "None" : decoPropsRO.deco.name)),
+                clipsafeSpan(((decoPropsRO.deco === null) ? "" : decoPropsRO.deco.name)),
             ),
             element("div",
                 {

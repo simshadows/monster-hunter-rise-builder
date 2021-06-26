@@ -8,7 +8,7 @@
 import * as check from "../../check.js";
 import {
     DropdownSelect,
-} from "../../common.js";
+} from "../generic_components.js";
 
 const element = React.createElement;
 const assert = console.assert;
@@ -88,6 +88,8 @@ class BuffBox extends React.Component {
                         handleOnChange: (_stateValue) => {this.handleChangeCalcState(groupName, stateName, parseInt(_stateValue));},
                         cspecGetOptionValue: (_optionsArrayElement) => {return _optionsArrayElement.stateValue;},
                         cspecGetOptionName: (_optionsArrayElement) => {return _optionsArrayElement.presentedName;},
+
+                        implementationClassNames: {select: "select-view-dropdown"},
                         },
                         null,
                     ),

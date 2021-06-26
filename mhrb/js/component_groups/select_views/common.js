@@ -7,6 +7,8 @@
 
 import * as check from "../../check.js";
 
+import {GenericTable} from "../generic_components.js";
+
 const element = React.createElement;
 const assert = console.assert;
 
@@ -86,82 +88,26 @@ class TypeFilterButton extends React.Component {
 
 // Highly recommended to specialize this component
 class SelectionTable extends React.Component {
-
-    handleRowClick(e, unprocessedRowData) {
-        e.stopPropagation();
-        this.props.handleRowClick(unprocessedRowData);
-    }
-
-    // Logically static
-    _renderRow(unprocessedRowData) {
-        const rowContent = this.props.cspecGetRowContent(unprocessedRowData);
-        check.isArr(rowContent);
-
-        const cellElements = [];
-        for (const [i, cellContent] of rowContent.entries()) {
-            const c = (this.props.cspecBodyRowFormat[i].length > 0) ? " " + this.props.cspecBodyRowFormat[i] : "";
-            cellElements.push(
-                element("th",
-                    {
-                    className: "selection-table-body-cell" + c,
-                    },
-                    cellContent,
-                ),
-            );
-        }
-
-        const isHighlighted = this.props.cspecHighlightConditionFn(unprocessedRowData);
-        return element("tr",
-            {
-            className: (isHighlighted) ? "selection-table-body-row-highlighted" : "selection-table-body-row",
-            onClick: (e) => {this.handleRowClick(e, unprocessedRowData)},
-            },
-            ...cellElements,
-        );
-    }
-
     render() {
-        check.isObj(this.props.dataArray);
-        check.isFunction(this.props.handleRowClick);
-        check.isArr(this.props.cspecHeadRowFormat);
-        check.isArr(this.props.cspecBodyRowFormat);
-        check.isFunction(this.props.cspecGetRowContent);
-        check.isFunction(this.props.cspecHighlightConditionFn);
-
-        const headRowCells = [];
-        for (const [markupClass, content] of this.props.cspecHeadRowFormat) {
-            headRowCells.push(element("th", {className: "selection-table-head-cell " + markupClass}, content));
-        }
-
-        const bodyRows = [];
-        for (const unprocessedRowData of this.props.dataArray) {
-            bodyRows.push(this._renderRow(unprocessedRowData));
-        }
-
-        return element("div",
+        assert(this.props.implementationClassNames === undefined);
+        return element(GenericTable,
             {
-            className: "selection-table-wrap-box",
-            },
-            element("table",
-                {
-                className: "selection-table",
+            ...this.props,
+            implementationClassNames: {
+                    wrapDiv: "selection-table-wrap-box",
+                    table:   "selection-table",
+
+                    thead:      "selection-table-head",
+                    trHeadRow:  "selection-table-head-row",
+                    thHeadCell: "selection-table-head-cell",
+
+                    tbody:                "selection-table-body",
+                    trBodyRow:            "selection-table-body-row",
+                    trBodyRowHighlighted: "selection-table-body-row-highlighted",
+                    thBodyCell:           "selection-table-body-cell",
                 },
-                element("thead",
-                    {
-                    className: "selection-table-head",
-                    },
-                    element("tr",
-                        {
-                        className: "selection-table-head-row",
-                        },
-                        ...headRowCells,
-                    ),
-                ),
-                element("tbody",
-                    null,
-                    ...bodyRows
-                ),
-            ),
+            },
+            null,
         );
     }
 }

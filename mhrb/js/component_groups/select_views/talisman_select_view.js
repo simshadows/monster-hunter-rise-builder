@@ -9,7 +9,7 @@ import * as check from "../../check.js";
 import {
     DropdownSelect,
     DropdownSelectWithNull,
-} from "../../common.js";
+} from "../generic_components.js";
 
 const element = React.createElement;
 const assert = console.assert;
@@ -43,6 +43,8 @@ class TalismanSelectView extends React.Component {
                     handleOnChange: (_skillLevel) => {this.handleSelectSkill(skillIndex, skillRO.id, parseInt(_skillLevel))},
                     cspecGetOptionValue: (_skillLevel) => {return parseInt(_skillLevel)},
                     cspecGetOptionName: (_skillLevel) => {return parseInt(_skillLevel)},
+
+                    implementationClassNames: {select: "select-view-dropdown"},
                     },
                     null,
                 );
@@ -69,6 +71,8 @@ class TalismanSelectView extends React.Component {
                     handleOnChange: (_skillID) => {this.handleSelectSkill(skillIndex, _skillID, 1)},
                     cspecGetOptionValue: (_skillRO) => {return _skillRO.id},
                     cspecGetOptionName: (_skillRO) => {return _skillRO.name},
+
+                    implementationClassNames: {select: "select-view-dropdown"},
                     },
                     null,
                 ),
@@ -101,6 +105,8 @@ class TalismanSelectView extends React.Component {
                     handleOnChange: (_slotSizeWrongType) => {this.handleSelectDecoSlotSize(decoSlotIndex, _slotSizeWrongType)},
                     cspecGetOptionValue: (_slotSize) => {return _slotSize},
                     cspecGetOptionName: (_slotSize) => {return parseInt(_slotSize)},
+
+                    implementationClassNames: {select: "select-view-dropdown"},
                     },
                     null,
                 ),
