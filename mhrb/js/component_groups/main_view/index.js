@@ -148,6 +148,10 @@ class MainView extends React.Component {
         this.myRefs.equipmentSelectionsBox.current.ttlDecr(v);
     }
 
+    handleSelectRampSkill(position, rampSkillID) {
+        this.props.handleSelectRampSkill(position, rampSkillID);
+    }
+
     render() {
         check.isObj(this.props.buildRenderingProps);
         check.isArr(this.props.buildRenderingProps.weaponRO.rampSkillSelectionsArray); // Spot check for structure
@@ -162,6 +166,8 @@ class MainView extends React.Component {
         check.isFunction(this.props.handleClickTalismanSelect);
         check.isFunction(this.props.handleClickPetalaceSelect);
         check.isFunction(this.props.handleClickDecorationSelect);
+
+        check.isFunction(this.props.handleSelectRampSkill);
 
         check.isFunction(this.props.handleRemovePiece);
         check.isFunction(this.props.handleRemoveDeco);
@@ -208,6 +214,8 @@ class MainView extends React.Component {
                             handleClickTalismanSelect:   ()       => {this.props.handleClickTalismanSelect();},
                             handleClickPetalaceSelect:   ()       => {this.props.handleClickPetalaceSelect();},
                             handleClickDecorationSelect: (...args) => {this.props.handleClickDecorationSelect(...args)},
+
+                            handleSelectRampSkill: (...args) => {this.handleSelectRampSkill(...args);},
 
                             handleRemovePiece: (slotID) => {this.props.handleRemovePiece(slotID);},
                             handleRemoveDeco: (slotID, decoSlotID) => {this.props.handleRemoveDeco(slotID, decoSlotID);},

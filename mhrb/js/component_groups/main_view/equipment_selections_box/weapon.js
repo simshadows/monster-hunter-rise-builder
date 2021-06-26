@@ -28,9 +28,90 @@ import {
     callTtlDecr,
     setTtl,
 } from "../../../utils.js";
+import {
+    GenericTable,
+} from "../../generic_components.js";
 
 const assert = console.assert;
 const element = React.createElement;
+
+class RampageSkillSelectionTable extends React.Component {
+
+    static _cspecBodyRowFormat = [
+            // Markup Class
+            "",
+            "",
+        ];
+
+    // Logically Static
+    _cspecGetRowContent(rampSkillTuple) {
+        const [rampSkillRO, inheritedFromWeaponRO] = rampSkillTuple;
+
+        return [
+            element("div",
+                {
+                className: "ramp-skill-selection-table-body-cell-name",
+                },
+                (rampSkillRO === null) ? "---" : rampSkillRO.name,
+            ),
+            element("div",
+                {
+                className: "ramp-skill-selection-table-body-cell-inheritance",
+                },
+                (inheritedFromWeaponRO === null) ? "" : "Inherited from: " + String(inheritedFromWeaponRO.name),
+            ),
+        ];
+    }
+
+    _cspecHighlightConditionFn(rampSkillTuple) {
+        const [rampSkillRO, inheritedFromWeaponRO] = rampSkillTuple;
+        if ((rampSkillRO === null) || (this.props.currentSelectedRampSkillRO === null)) {
+            // return this.props.currentSelectedRampSkillRO === rampSkillRO; // Only true if both are null
+            return false; // We don't highlight the empty row ever.
+        } else {
+            return rampSkillRO.id === this.props.currentSelectedRampSkillRO.id;
+        }
+    }
+
+    handleRowClick(rampSkillTuple) {
+        const [rampSkillRO, inheritedFromWeaponRO] = rampSkillTuple;
+        const rampSkillID = (rampSkillRO === null) ? null : rampSkillRO.id;
+        this.props.handleRowClick(rampSkillID);
+    }
+
+    render() {
+        check.isArr(this.props.dataArray);
+        check.isObjOrNull(this.props.currentSelectedRampSkillRO);
+        check.isFunction(this.props.handleRowClick);
+
+        // We add the remove-rampage-skill row
+        const dataArray = [[null, null], ...this.props.dataArray];
+
+        return element(GenericTable,
+            {
+            renderHeadRow: false,
+
+            dataArray:                 dataArray,
+            handleRowClick:            (rampSkillTuple) => {this.handleRowClick(rampSkillTuple);},
+            cspecBodyRowFormat:        this.constructor._cspecBodyRowFormat,
+            cspecGetRowContent:        (rampSkillTuple) => {return this._cspecGetRowContent(rampSkillTuple);},
+            cspecHighlightConditionFn: (rampSkillTuple) => {return this._cspecHighlightConditionFn(rampSkillTuple);},
+
+            implementationClassNames: {
+                    wrapDiv: "ramp-skill-selection-table-wrap-box",
+                    table:   "ramp-skill-selection-table",
+
+                    tbody:                "ramp-skill-selection-table-body",
+                    trBodyRow:            "ramp-skill-selection-table-body-row",
+                    trBodyRowHighlighted: "ramp-skill-selection-table-body-row-highlighted",
+                    thBodyCell:           "ramp-skill-selection-table-body-cell",
+                },
+            },
+            null,
+        );
+    }
+
+}
 
 class RampageSkillSelection extends React.Component {
     constructor(props) {
@@ -48,24 +129,35 @@ class RampageSkillSelection extends React.Component {
         setTtl(this, 2);
     }
 
+    handleSelectRampSkill(rampSkillID) {
+        setTtl(this, 0);
+        this.props.handleSelectRampSkill(rampSkillID);
+    }
+
     _renderRampSelection() {
-        // TODO: Populate with data and onClick listeners.
+        check.isFunction(this.props.handleSelectRampSkill);
 
         return element("div",
             {
             className: "equip-weapon-ramp-selection-box",
             //onClick: (e) => {this.makeVisible();}, // Not needed because onClick is already listened by parent
             },
-            null,
+            element(RampageSkillSelectionTable,
+                {
+                    dataArray: this.props.rampageSkillOptions,
+                    currentSelectedRampSkillRO: this.props.selectedRampSkillRO,
+                    handleRowClick: (...args) => {this.handleSelectRampSkill(...args);},
+                },
+                null,
+            ),
         );
     }
 
     render() {
         check.isObjOrNull(this.props.selectedRampSkillRO);
         assert(check.isArr(this.props.rampageSkillOptions) && (this.props.rampageSkillOptions.length > 0));
-        
-        //console.log(this.props.selectedRampSkillRO);
-        //console.log(this.props.rampageSkillOptions);
+
+        check.isFunction(this.props.handleSelectRampSkill);
 
         const text = (this.props.selectedRampSkillRO === null) ? "" : this.props.selectedRampSkillRO.name;
 
@@ -99,6 +191,10 @@ class EquipWeaponInfoBox extends React.Component {
 
     ttlDecr(v) {
         callTtlDecr(this.myRefs, v);
+    }
+
+    handleSelectRampSkill(position, rampSkillID) {
+        this.props.handleSelectRampSkill(position, rampSkillID);
     }
 
     _renderStatBoxEmpty() {
@@ -157,6 +253,8 @@ class EquipWeaponInfoBox extends React.Component {
         assert(perf.weaponDefense >= 0);
         assert(check.isMap(perf.weaponEleStat));
 
+        check.isFunction(this.props.handleSelectRampSkill);
+
         const otherStatBoxes = [];
 
         if (perf.weaponDefense != 0) {
@@ -184,6 +282,7 @@ class EquipWeaponInfoBox extends React.Component {
                     ref: ref,
                     selectedRampSkillRO: rampageSkillObj,
                     rampageSkillOptions: weaponRO.rampSkillOptionsArray[i],
+                    handleSelectRampSkill: (...args) => {this.handleSelectRampSkill(i, ...args);},
                     },
                     null,
                 );
@@ -256,6 +355,10 @@ class WeaponSelection extends React.Component {
         this.myRefs.weaponInfoBox.current.ttlDecr(v);
     }
 
+    handleSelectRampSkill(position, rampSkillID) {
+        this.props.handleSelectRampSkill(position, rampSkillID);
+    }
+
     render() {
         check.isObj(this.props.weaponRORenderingProps);
         check.isArr(this.props.weaponRORenderingProps.rampSkillSelectionsArray); // Spot check for structure
@@ -266,6 +369,8 @@ class WeaponSelection extends React.Component {
 
         check.isFunction(this.props.handleClickWeaponSelect);
         check.isFunction(this.props.handleClickDecorationSelect);
+
+        check.isFunction(this.props.handleSelectRampSkill);
 
         return element("div",
             {
@@ -288,6 +393,7 @@ class WeaponSelection extends React.Component {
                         ref: this.myRefs.weaponInfoBox,
                         weaponRORenderingProps: this.props.weaponRORenderingProps,
                         buildPerformanceValues: this.props.buildPerformanceValues,
+                        handleSelectRampSkill: (...args) => {this.handleSelectRampSkill(...args);},
                     },
                     null,
                 ),

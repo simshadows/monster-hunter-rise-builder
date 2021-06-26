@@ -89,10 +89,14 @@ class TypeFilterButton extends React.Component {
 // Highly recommended to specialize this component
 class SelectionTable extends React.Component {
     render() {
+        assert(this.props.renderHeadRow === undefined);
         assert(this.props.implementationClassNames === undefined);
         return element(GenericTable,
             {
             ...this.props,
+
+            renderHeadRow: true,
+
             implementationClassNames: {
                     wrapDiv: "selection-table-wrap-box",
                     table:   "selection-table",

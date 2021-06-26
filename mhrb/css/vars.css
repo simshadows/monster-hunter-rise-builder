@@ -31,6 +31,8 @@
     --font-select-table--head-row:     bold   normal 16px var(--font-scheme--family2);
     --font-select-table--body-row:     normal normal 16px var(--font-scheme--family2);
 
+    --font-ramp-select-table--body-row: normal normal 14px var(--font-scheme--family2);
+
     /* These are special in that we specify only individual properties */
     --font-equip--buff-abbrev--size: 16px;
     --font-equip--buff-abbrev--weight: bold;
@@ -104,7 +106,7 @@
     --color-equip-buffs--box-hover: var(--color-scheme--dark6);
     --color-equip-weapon--stat-box: var(--color-scheme--dark4);
     --color-equip-weapon--ramp-box: var(--color-scheme--dark4);
-    --color-equip-weapon--ramp-selection-box: var(--color-scheme--dark4); /* I want dark6 to work */
+    --color-equip-weapon--ramp-selection-box: var(--color-scheme--dark2); /* I want dark6 to work */
     --color-equip-weapon--ramp-box-hover: var(--color-scheme--dark6);
     --color-equip-weapon--ramp-text: var(--color-scheme--bright2);
     --color-equip-weapon--ramp-unused-text: var(--color-scheme--bright3); /* Find a more comfortable colour? */

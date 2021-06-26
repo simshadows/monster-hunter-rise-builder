@@ -129,8 +129,8 @@ class ArmourSelectionTable extends React.Component {
             handleRowClick:            (armourPieceRO) => {this.handleRowClick(armourPieceRO);},
             cspecHeadRowFormat:        this.constructor._cspecHeadRowFormat,
             cspecBodyRowFormat:        this.constructor._cspecBodyRowFormat,
-            cspecGetRowContent:        (weaponData) => {return this._cspecGetRowContent(weaponData);},
-            cspecHighlightConditionFn: (weaponData) => {return this._cspecHighlightConditionFn(weaponData);},
+            cspecGetRowContent:        (armourPieceRO) => {return this._cspecGetRowContent(armourPieceRO);},
+            cspecHighlightConditionFn: (armourPieceRO) => {return this._cspecHighlightConditionFn(armourPieceRO);},
             },
             null,
         );

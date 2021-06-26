@@ -48,9 +48,11 @@ export class GenericTable extends React.Component {
     }
 
     render() {
+        check.isBool(this.props.renderHeadRow);
+
         check.isObj(this.props.dataArray);
         check.isFunction(this.props.handleRowClick);
-        check.isArr(this.props.cspecHeadRowFormat);
+        if (this.props.renderHeadRow) check.isArr(this.props.cspecHeadRowFormat); // Required only if head is rendered
         check.isArr(this.props.cspecBodyRowFormat);
         check.isFunction(this.props.cspecGetRowContent);
         check.isFunction(this.props.cspecHighlightConditionFn);
@@ -66,9 +68,11 @@ export class GenericTable extends React.Component {
         check.isNonEmptyStr(classNames.wrapDiv);
         check.isNonEmptyStr(classNames.table  );
 
-        check.isNonEmptyStr(classNames.thead     );
-        check.isNonEmptyStr(classNames.trHeadRow );
-        check.isNonEmptyStr(classNames.thHeadCell);
+        if (this.props.renderHeadRow) {
+            check.isNonEmptyStr(classNames.thead     );
+            check.isNonEmptyStr(classNames.trHeadRow );
+            check.isNonEmptyStr(classNames.thHeadCell);
+        }
 
         check.isNonEmptyStr(classNames.tbody               );
         check.isNonEmptyStr(classNames.trBodyRow           );
@@ -77,10 +81,26 @@ export class GenericTable extends React.Component {
 
         ////////////////////////////////
 
-        const headRowCells = [];
-        for (const [markupClass, content] of this.props.cspecHeadRowFormat) {
-            headRowCells.push(element("th", {className: classNames.thHeadCell + " " + markupClass}, content));
-        }
+        const headRow = (()=>{
+                if (!this.props.renderHeadRow) return null; // Don't render
+
+                const headRowCells = [];
+                for (const [markupClass, content] of this.props.cspecHeadRowFormat) {
+                    headRowCells.push(element("th", {className: classNames.thHeadCell + " " + markupClass}, content));
+                }
+
+                return element("thead",
+                    {
+                    className: classNames.thead,
+                    },
+                    element("tr",
+                        {
+                        className: classNames.trHeadRow,
+                        },
+                        ...headRowCells,
+                    ),
+                );
+            })();
 
         const bodyRows = [];
         for (const unprocessedRowData of this.props.dataArray) {
@@ -95,17 +115,7 @@ export class GenericTable extends React.Component {
                 {
                 className: classNames.table,
                 },
-                element("thead",
-                    {
-                    className: classNames.thead,
-                    },
-                    element("tr",
-                        {
-                        className: classNames.trHeadRow,
-                        },
-                        ...headRowCells,
-                    ),
-                ),
+                headRow,
                 element("tbody",
                     {
                     className: classNames.tbody,

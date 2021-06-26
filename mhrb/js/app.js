@@ -279,6 +279,8 @@ class MHRBuilderAppInner extends React.Component {
                 handleClickPetalaceSelect:   ()        => {this.handleSwitchToPetalaceSelect();},
                 handleClickDecorationSelect: (...args) => {this.handleSwitchToDecorationSelect(...args);},
 
+                handleSelectRampSkill: (...args) => {this.handleSelectRampSkill(...args);},
+
                 handleRemovePiece: (slotID) => {this.handleRemovePiece(slotID);},
                 handleRemoveDeco: (slotID, decoSlotID) => {this.handleRemoveDeco(slotID, decoSlotID);},
                 },

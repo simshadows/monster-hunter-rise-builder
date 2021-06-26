@@ -165,14 +165,60 @@ div.equip-weapon-unused-ramp-box > span { /* TODO: We shouldn't need to select i
 div.equip-weapon-ramp-selection-box {
     position: absolute;
     left: -1px;
-    top: 20px;
+    top: calc(100% + 2px + 2px);
+    z-index: 1000;
 
-    height: 100px;
+    min-height: 5px; /* Just in case */
     min-width: calc(100% + 2px);
 
     background: var(--color-equip-weapon--ramp-selection-box);
     border: 1px solid var(--color-contextbox-common--border);
+    padding: 4px;
 }
+
+/*** Weapon Ramp Selection Table ***/
+
+div.ramp-skill-selection-table-wrap-box {
+}
+
+.ramp-skill-selection-table {
+    table-layout: auto;
+    width: 100%;
+}
+
+.ramp-skill-selection-table-body-row {
+    cursor: pointer;
+    height: 20px;
+}
+.ramp-skill-selection-table-body-row-highlighted {
+    background: var(--color-select-table--body-row-highlighted);
+    cursor: pointer;
+}
+.ramp-skill-selection-table-body-row:hover {
+    background: var(--color-select-table--body-row-hover);
+}
+.ramp-skill-selection-table-body-cell {
+    font: var(--font-ramp-select-table--body-row);
+}
+
+.ramp-skill-selection-table-body-cell-name {
+    width: 180px;
+}
+.ramp-skill-selection-table-body-cell-inheritance {
+    white-space: nowrap;
+    text-align: left;
+}
+
+/*
+.selection-table-cell-justify-left {
+    text-align: left;
+}
+.selection-table-cell-justify-right {
+    text-align: right;
+}
+*/
+
+/*** ***/
 
 div.equip-weapon-special-mech-group-box {
     display: flex;
