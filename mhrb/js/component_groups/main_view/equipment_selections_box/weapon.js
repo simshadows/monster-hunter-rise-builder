@@ -37,15 +37,39 @@ const element = React.createElement;
 
 class RampageSkillSelectionTable extends React.Component {
 
+    constructor(props) {
+        super(props);
+        this._renderInheritanceColumn = null; // We define later
+    }
+
     static _cspecBodyRowFormat = [
             // Markup Class
             "",
+            "",
+        ];
+    static _cspecBodyRowFormatNoInheritanceCol = [
+            // Markup Class
             "",
         ];
 
     // Logically Static
     _cspecGetRowContent(rampSkillTuple) {
         const [rampSkillRO, inheritedFromWeaponRO] = rampSkillTuple;
+
+        const inheritanceCell = (()=>{
+                if (this._renderInheritanceColumn) {
+                    return [
+                        element("div",
+                            {
+                            className: "ramp-skill-selection-table-body-cell-inheritance",
+                            },
+                            (inheritedFromWeaponRO === null) ? "" : "From " + String(inheritedFromWeaponRO.name),
+                        ),
+                    ];
+                } else {
+                    return [];
+                }
+            })();
 
         return [
             element("div",
@@ -54,12 +78,7 @@ class RampageSkillSelectionTable extends React.Component {
                 },
                 (rampSkillRO === null) ? "---" : rampSkillRO.name,
             ),
-            element("div",
-                {
-                className: "ramp-skill-selection-table-body-cell-inheritance",
-                },
-                (inheritedFromWeaponRO === null) ? "" : "Inherited from: " + String(inheritedFromWeaponRO.name),
-            ),
+            ...inheritanceCell,
         ];
     }
 
@@ -84,8 +103,19 @@ class RampageSkillSelectionTable extends React.Component {
         check.isObjOrNull(this.props.currentSelectedRampSkillRO);
         check.isFunction(this.props.handleRowClick);
 
+        this._renderInheritanceColumn = (()=>{
+                for (const [rampSkillRO, inheritedFromWeaponRO] of this.props.dataArray) {
+                    if (inheritedFromWeaponRO !== null) return true;
+                }
+                return false;
+            })();
+
         // We add the remove-rampage-skill row
         const dataArray = [[null, null], ...this.props.dataArray];
+
+        const cspecBodyRowFormat = (this._renderInheritanceColumn)
+                                   ? this.constructor._cspecBodyRowFormat
+                                   : this.constructor._cspecBodyRowFormatNoInheritanceCol;
 
         return element(GenericTable,
             {

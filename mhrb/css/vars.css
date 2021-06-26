@@ -107,6 +107,7 @@
     --color-equip-weapon--stat-box: var(--color-scheme--dark4);
     --color-equip-weapon--ramp-box: var(--color-scheme--dark4);
     --color-equip-weapon--ramp-selection-box: var(--color-scheme--dark2); /* I want dark6 to work */
+    --color-equip-weapon--ramp-selection-box-scrollbar: var(--color-scheme--bright4);
     --color-equip-weapon--ramp-box-hover: var(--color-scheme--dark6);
     --color-equip-weapon--ramp-text: var(--color-scheme--bright2);
     --color-equip-weapon--ramp-unused-text: var(--color-scheme--bright3); /* Find a more comfortable colour? */

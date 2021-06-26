@@ -170,10 +170,20 @@ div.equip-weapon-ramp-selection-box {
 
     min-height: 5px; /* Just in case */
     min-width: calc(100% + 2px);
+    max-height: 600px;
 
     background: var(--color-equip-weapon--ramp-selection-box);
     border: 1px solid var(--color-contextbox-common--border);
     padding: 4px;
+
+    overflow-y: auto;
+}
+div.equip-weapon-ramp-selection-box::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+div.equip-weapon-ramp-selection-box::-webkit-scrollbar-thumb {
+    background-color: var(--color-equip-weapon--ramp-selection-box-scrollbar);
 }
 
 /*** Weapon Ramp Selection Table ***/
@@ -201,12 +211,14 @@ div.ramp-skill-selection-table-wrap-box {
     font: var(--font-ramp-select-table--body-row);
 }
 
-.ramp-skill-selection-table-body-cell-name {
+div.ramp-skill-selection-table-body-cell-name {
     width: 180px;
 }
-.ramp-skill-selection-table-body-cell-inheritance {
+div.ramp-skill-selection-table-body-cell-inheritance {
     white-space: nowrap;
-    text-align: left;
+    /* text-align: left; */
+    padding: 0 15px 0 15px;
+    width: 100%;
 }
 
 /*
