@@ -75,6 +75,11 @@ export function isWeaponEndlineTagStr(obj) {
     return weaponEndlineTagStrs.has(obj);
 }
 
+const rawTypeStrs = new Set(["severing", "blunt"]); // TODO: Add ranged if needed
+export function isRawTypeStr(obj) {
+    return rawTypeStrs.has(obj);
+}
+
 export const eleStatStrs = new Set(["none", "fire", "water", "thunder", "ice", "dragon", "poison", "paralysis", "sleep", "blast"]);
 export function isEleStatStr(obj) {
     return eleStatStrs.has(obj);

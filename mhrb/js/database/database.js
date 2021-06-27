@@ -42,6 +42,9 @@ import {
 } from "./hardcoded_data/petalace_data.js";
 import {
     huntingHornSongsMap,
+    insectGlaiveKinsectsMap,
+    insectGlaiveKinsectTypesMap,
+    insectGlaiveKinsectBonusesMap,
 } from "./hardcoded_data/special_weapon_mechanics.js";
 
 const WEAPON_GS_PATH  = "./data/weapons_greatsword.json";
@@ -626,6 +629,12 @@ class GameData {
             },
             huntingHornSongs: {
                 map: huntingHornSongsMap,
+            },
+            insectGlaiveKinsects: {
+                map: insectGlaiveKinsectsMap,
+
+                kinsectTypesMap: insectGlaiveKinsectTypesMap,
+                bonusesMap: insectGlaiveKinsectBonusesMap,
             },
         };
 

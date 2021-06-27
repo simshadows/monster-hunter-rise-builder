@@ -17,6 +17,14 @@ cd monster-hunter-rise-builder
 python3 -m http.server
 ```
 
+## Cut Features
+
+Features intentionally cut:
+
+- **Switch Skill Selection**: Switch Skills are not important in core calculations. I'll add them later after getting feedback on the first iteration of the web app.
+
+- **Kinsect Selection**: Also not important in core calculations, but I'll listen to feedback in case people want it.
+
 ## Accessibility and Localization
 
 Unfortunately, I might just have to leave special accessibility and localization features for last. Also, I'll probably need to port my codebase to a build system before then.

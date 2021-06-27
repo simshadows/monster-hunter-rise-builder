@@ -167,12 +167,12 @@ div.equip-weapon-unused-ramp-box > span { /* TODO: We shouldn't need to select i
 
 div.equip-weapon-ramp-selection-box {
     position: absolute;
-    left: -1px;
-    top: calc(100% + 2px + 2px);
+    left: 0;
+    top: calc(100% + 4px);
     z-index: 1000;
 
     min-height: 5px; /* Just in case */
-    min-width: calc(100% + 2px);
+    min-width: 100%;
     max-height: 600px;
 
     background: var(--color-equip-weapon--ramp-selection-box);
