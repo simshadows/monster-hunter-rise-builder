@@ -65,7 +65,7 @@ class MHRBuilderApp extends React.Component {
     }
 
     ttlDecr(v) {
-        console.log("Root ttlDecr called (v = " + String(v) + ").");
+        //console.log("Root ttlDecr called (v = " + String(v) + ").");
         this.myRefs.appInner.current.ttlDecr(v);
     }
 

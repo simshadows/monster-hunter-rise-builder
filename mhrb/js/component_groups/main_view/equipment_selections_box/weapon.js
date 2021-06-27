@@ -169,7 +169,7 @@ class RampageSkillSelection extends React.Component {
 
         return element("div",
             {
-            className: "equip-weapon-ramp-selection-box",
+            className: "equip-weapon-ramp-selection-box hide-from-buildcard",
             //onClick: (e) => {this.makeVisible();}, // Not needed because onClick is already listened by parent
             },
             element(RampageSkillSelectionTable,
@@ -189,15 +189,27 @@ class RampageSkillSelection extends React.Component {
 
         check.isFunction(this.props.handleSelectRampSkill);
 
-        const text = (this.props.selectedRampSkillRO === null) ? "" : this.props.selectedRampSkillRO.name;
+        const text = (this.props.selectedRampSkillRO === null) ? "None" : this.props.selectedRampSkillRO.name;
 
         if (this.state.ttl > 0) {
             return element("div",
                 {
-                className: "equip-weapon-ramp-box equip-weapon-ramp-box-selected",
+                // TODO: clipsafe doesn't work here. Might have to split clipsafe to clipsafeinner and clipsafeouter?
+                className: "equip-weapon-ramp-box equip-weapon-ramp-box-unselected stackouter",
                 onClick: (e) => {this.makeVisible();},
                 },
                 clipsafeSpan(text),
+                element("div",
+                    {
+                    className: "stackinner hide-from-buildcard",
+                    },
+                    element("div",
+                        {
+                        className: "equip-weapon-ramp-box equip-weapon-ramp-box-selected",
+                        },
+                        clipsafeSpan(text),
+                    ),
+                ),
                 this._renderRampSelection(),
             );
         } else {
@@ -334,7 +346,12 @@ class EquipWeaponInfoBox extends React.Component {
                     {
                     className: "equip-weapon-ramps-group-box",
                     },
-                    ...groupElements
+                    element("div",
+                        {
+                        className: "equip-weapon-ramps-group-box-inner",
+                        },
+                        ...groupElements
+                    ),
                 ),
             );
         }
