@@ -63,7 +63,8 @@ function getBaseValues(db, build, calcState) {
 
     let rawPostTruncMul = 1;
 
-    let huntingHornSongs = (weaponRO.category === "huntinghorn") ? weaponRO.huntinghornSongs : null;
+    let huntingHornSongs = (weaponRO.category !== "huntinghorn") ? null : weaponRO.huntinghornSongs;
+    let insectglaiveStats = (weaponRO.category !== "insectglaive") ? null : {...weaponRO.insectglaiveStats};
 
     // Deferred operations go here
     const deferredOps1 = [];
@@ -112,6 +113,7 @@ function getBaseValues(db, build, calcState) {
         deferredOps1.push(op); // Defer
     }
     function rampMelody(songX, songA, songXA) {
+        assert(weaponRO.category === "huntinghorn");
         assert(isMap(huntingHornSongs)); // We expect that it's an existing song set
         huntingHornSongs = new Map([
             ["x", db.readonly.huntingHornSongs.map.get(songX)],
@@ -374,6 +376,37 @@ function getBaseValues(db, build, calcState) {
             );
         }],
 
+        //
+        // Insect Glaive
+        //
+
+        ["kinsect_level_boost", ()=>{
+            function op() {
+                assert(weaponRO.category === "insectglaive");
+                insectglaiveStats.kinsectLevel += 1;
+            }
+            deferredOps1.push(op); // Defer
+        }],
+
+        ["kinsect_level_boost_1", ()=>{
+            assert(weaponRO.category === "insectglaive");
+            insectglaiveStats.kinsectLevel = 4;
+        }],
+        ["kinsect_level_boost_2", ()=>{
+            assert(weaponRO.category === "insectglaive");
+            insectglaiveStats.kinsectLevel = 5;
+        }],
+        ["kinsect_level_boost_3", ()=>{
+            assert(weaponRO.category === "insectglaive");
+            insectglaiveStats.kinsectLevel = 6;
+            baseRaw += -10;
+        }],
+        ["kinsect_level_boost_4", ()=>{
+            assert(weaponRO.category === "insectglaive");
+            insectglaiveStats.kinsectLevel = 7;
+            baseRaw += -20;
+        }],
+
         // MANY OTHER RAMPAGE SKILLS NOT YET IMPLEMENTED
     ]);
 
@@ -414,6 +447,7 @@ function getBaseValues(db, build, calcState) {
         rawPostTruncMul,
 
         huntingHornSongs,
+        insectglaiveStats,
     };
     return ret;
 }

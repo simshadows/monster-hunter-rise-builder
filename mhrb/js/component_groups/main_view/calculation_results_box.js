@@ -234,6 +234,15 @@ class CalculationResultsBox extends React.Component {
             );
         }
 
+        if (perf.insectglaiveStats !== null) {
+            specialMechanicRenderings.push(
+                element(CalculationResultsGroupBox,
+                    null,
+                    this._renderStat(null, "Kinsect Level", String(perf.insectglaiveStats.kinsectLevel)),
+                ),
+            );
+        }
+
         return element("div",
             {
             id: "calculation-results-box",

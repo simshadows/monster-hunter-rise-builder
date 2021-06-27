@@ -91,6 +91,7 @@ function calculateBuildPerformance(db, build, calcState) {
     assert(b.rawPostTruncMul !== undefined);
 
     assert(b.huntingHornSongs !== undefined);
+    assert(b.insectglaiveStats !== undefined);
 
     const s = getSkillContributions(db, build, calcState);
     assert(s.rawAdd                  !== undefined);
@@ -253,12 +254,10 @@ function calculateBuildPerformance(db, build, calcState) {
     //
 
     let huntingHornSongs = b.huntingHornSongs;
-    // We don't really do anything, but we may as well check for null
-    if (weaponRO.category === "huntinghorn") {
-        assert(huntingHornSongs !== null);
-    } else {
-        assert(huntingHornSongs === null);
-    }
+    assert((weaponRO.category === "huntinghorn") === (huntingHornSongs !== null));
+
+    let insectglaiveStats = b.insectglaiveStats;
+    assert((weaponRO.category === "insectglaive") === (insectglaiveStats !== null));
 
     const ret = {
 
@@ -288,6 +287,7 @@ function calculateBuildPerformance(db, build, calcState) {
         elementalSharpnessModifier: elementalSharpnessModifier,
 
         huntingHornSongs: huntingHornSongs,
+        insectglaiveStats: insectglaiveStats,
     };
     return ret;
 }
