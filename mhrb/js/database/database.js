@@ -42,6 +42,8 @@ import {
 } from "./hardcoded_data/petalace_data.js";
 import {
     huntingHornSongsMap,
+    switchAxePhialTypesMap,
+    chargeBladePhialTypesMap,
     insectGlaiveKinsectsMap,
     insectGlaiveKinsectTypesMap,
     insectGlaiveKinsectBonusesMap,
@@ -156,6 +158,11 @@ function validateWeaponDataHuntingHorn(weaponData) {
     //assert(isNonEmptyStr(weaponData.huntinghornSongs.xa_xa));
 }
 
+function validateWeaponDataChargeBlade(weaponData) {
+    const cbStats = weaponData.chargebladeStats;
+    assert(isInt(kinsectLevel) && (kinsectLevel > 0) && (kinsectLevel <= 8));
+}
+
 function validateWeaponDataInsectGlaive(weaponData) {
     const kinsectLevel = weaponData.insectglaiveStats.kinsectLevel;
     assert(isInt(kinsectLevel) && (kinsectLevel > 0) && (kinsectLevel <= 8));
@@ -205,6 +212,22 @@ async function downloadCategoryRawWeaponData(category, path, op) {
                 huntingHornSeenSongs.add(tmp.get("a").id);
                 huntingHornSeenSongs.add(tmp.get("xa").id);
                 weaponData.huntinghornSongs = tmp;
+            }
+
+            // Add Switch Axe mechanics
+            if (weaponData.category === "switchaxe") {
+                const phialTypeID = weaponData.switchaxeStats.phialType;
+                const phialTypeRO = switchAxePhialTypesMap.get(phialTypeID);
+                assert(phialTypeRO !== undefined, "Unknown phial type ID: " + String(phialTypeID));
+                weaponData.switchaxeStats.phialType = phialTypeRO;
+            }
+
+            // Add Charge Blade mechanics
+            if (weaponData.category === "chargeblade") {
+                const phialTypeID = weaponData.chargebladeStats.phialType;
+                const phialTypeRO = chargeBladePhialTypesMap.get(phialTypeID);
+                assert(phialTypeRO !== undefined, "Unknown phial type ID: " + String(phialTypeID));
+                weaponData.chargebladeStats.phialType = phialTypeRO;
             }
 
             // Validate Common Data
@@ -629,6 +652,12 @@ class GameData {
             },
             huntingHornSongs: {
                 map: huntingHornSongsMap,
+            },
+            switchAxePhialTypes: {
+                map: switchAxePhialTypesMap,
+            },
+            chargeBladePhialTypes: {
+                map: chargeBladePhialTypesMap,
             },
             insectGlaiveKinsects: {
                 map: insectGlaiveKinsectsMap,

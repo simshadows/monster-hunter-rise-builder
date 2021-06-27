@@ -3543,6 +3543,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -3582,6 +3585,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -3621,6 +3627,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -3660,6 +3669,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -3699,6 +3711,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [
                 2
             ],
@@ -3740,6 +3755,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [
                 2,
                 1
@@ -3782,6 +3800,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "element_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -3823,6 +3844,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "element_phial"
+            },
             "decos": [
                 1
             ],
@@ -3866,6 +3890,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "element_phial"
+            },
             "decos": [
                 1,
                 1
@@ -3910,6 +3937,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "element_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -3951,6 +3981,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "element_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -3992,6 +4025,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "element_phial"
+            },
             "decos": [
                 1,
                 1
@@ -4036,6 +4072,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "element_phial"
+            },
             "decos": [
                 1,
                 1,
@@ -4081,6 +4120,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "element_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -4122,6 +4164,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "element_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -4163,6 +4208,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "element_phial"
+            },
             "decos": [
                 2
             ],
@@ -4206,6 +4254,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [],
             "defense": 10,
             "elestat": {
@@ -4247,6 +4298,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [
                 1,
                 1
@@ -4291,6 +4345,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [
                 1,
                 1
@@ -4335,6 +4392,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [],
             "defense": 15,
             "elestat": {
@@ -4376,6 +4436,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [],
             "defense": 15,
             "elestat": {
@@ -4417,6 +4480,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [
                 1
             ],
@@ -4460,6 +4526,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [
                 1
             ],
@@ -4503,6 +4572,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -4544,6 +4616,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [
                 2
             ],
@@ -4587,6 +4662,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [
                 2
             ],
@@ -4630,6 +4708,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -4669,6 +4750,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -4708,6 +4792,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -4747,6 +4834,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -4786,6 +4876,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [
                 1
             ],
@@ -4827,6 +4920,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [
                 1
             ],
@@ -4868,6 +4964,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "element_phial"
+            },
             "decos": [
                 3
             ],
@@ -4911,6 +5010,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "element_phial"
+            },
             "decos": [
                 3
             ],
@@ -4954,6 +5056,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "element_phial"
+            },
             "decos": [
                 3
             ],
@@ -4997,6 +5102,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "element_phial"
+            },
             "decos": [
                 2,
                 1,
@@ -5042,6 +5150,9 @@
                 10,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "element_phial"
+            },
             "decos": [
                 2,
                 1,
@@ -5087,6 +5198,9 @@
                 20,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "element_phial"
+            },
             "decos": [
                 2,
                 1,
@@ -5132,6 +5246,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -5171,6 +5288,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [
                 1
             ],
@@ -5212,6 +5332,9 @@
                 20,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [
                 1
             ],
@@ -5253,6 +5376,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -5294,6 +5420,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [
                 1
             ],
@@ -5337,6 +5466,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [
                 1
             ],
@@ -5380,6 +5512,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -5421,6 +5556,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -5462,6 +5600,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [
                 1,
                 1
@@ -5506,6 +5647,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -5545,6 +5689,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -5584,6 +5731,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [
                 2,
                 1
@@ -5626,6 +5776,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -5665,6 +5818,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [
                 2
             ],
@@ -5706,6 +5862,9 @@
                 20,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [
                 2
             ],
@@ -5747,6 +5906,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -5786,6 +5948,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -5825,6 +5990,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -5864,6 +6032,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -5903,6 +6074,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -5942,6 +6116,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -5981,6 +6158,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "element_phial"
+            },
             "decos": [
                 1,
                 1,
@@ -6026,6 +6206,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "element_phial"
+            },
             "decos": [
                 1,
                 1,
@@ -6071,6 +6254,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "element_phial"
+            },
             "decos": [
                 1,
                 1,
@@ -6116,6 +6302,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -6157,6 +6346,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [
                 1
             ],
@@ -6200,6 +6392,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [
                 2
             ],
@@ -6243,6 +6438,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -6284,6 +6482,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -6325,6 +6526,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [
                 2,
                 1
@@ -6369,6 +6573,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -6410,6 +6617,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -6451,6 +6661,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [
                 1,
                 1
@@ -6495,6 +6708,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "element_phial"
+            },
             "decos": [
                 2
             ],
@@ -6538,6 +6754,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "element_phial"
+            },
             "decos": [
                 2,
                 1
@@ -6582,6 +6801,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "element_phial"
+            },
             "decos": [
                 2,
                 1,
@@ -6627,6 +6849,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -6666,6 +6891,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -6705,6 +6933,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -6744,6 +6975,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [],
             "defense": 10,
             "elestat": {},
@@ -6783,6 +7017,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [],
             "defense": 10,
             "elestat": {},
@@ -6822,6 +7059,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [
                 3
             ],
@@ -6863,6 +7103,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -6904,6 +7147,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [
                 1
             ],
@@ -6947,6 +7193,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [
                 1
             ],
@@ -6990,6 +7239,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -7031,6 +7283,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -7072,6 +7327,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [
                 2,
                 1
@@ -7116,6 +7374,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -7157,6 +7418,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -7198,6 +7462,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -7239,6 +7506,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -7280,6 +7550,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -7321,6 +7594,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -7362,6 +7638,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "element_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -7403,6 +7682,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "element_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -7444,6 +7726,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [
                 1
             ],
@@ -7487,6 +7772,9 @@
                 10,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [
                 1
             ],
@@ -7530,6 +7818,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -7571,6 +7862,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -7612,6 +7906,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [
                 3
             ],
@@ -7655,6 +7952,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [
                 3
             ],
@@ -7698,6 +7998,9 @@
                 70,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "element_phial"
+            },
             "decos": [
                 2
             ],
@@ -7741,6 +8044,9 @@
                 90,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "element_phial"
+            },
             "decos": [
                 2
             ],
@@ -7784,6 +8090,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [],
             "defense": 15,
             "elestat": {},
@@ -7823,6 +8132,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [
                 3
             ],
@@ -7864,6 +8176,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [
                 3
             ],
@@ -7905,6 +8220,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -7946,6 +8264,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -7987,6 +8308,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [
                 1,
                 1,
@@ -8032,6 +8356,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -8073,6 +8400,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -8114,6 +8444,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [
                 1
             ],
@@ -8157,6 +8490,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "element_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -8198,6 +8534,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "element_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -8239,6 +8578,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "element_phial"
+            },
             "decos": [
                 3,
                 1
@@ -8283,6 +8625,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -8330,6 +8675,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -8381,6 +8729,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -8437,6 +8788,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -8494,6 +8848,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -8553,6 +8910,9 @@
                 0,
                 0
             ],
+            "chargeblade_stats": {
+                "phial_type": "impact_phial"
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -60676,7 +61036,11 @@
                 [],
                 []
             ],
-            "rarity": 1
+            "rarity": 1,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -60715,7 +61079,11 @@
                 [],
                 []
             ],
-            "rarity": 1
+            "rarity": 1,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -60754,7 +61122,11 @@
                 [],
                 []
             ],
-            "rarity": 2
+            "rarity": 2,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -60793,7 +61165,11 @@
                 [],
                 []
             ],
-            "rarity": 3
+            "rarity": 3,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -60834,7 +61210,11 @@
                 [],
                 []
             ],
-            "rarity": 4
+            "rarity": 4,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -60876,7 +61256,11 @@
                 [],
                 []
             ],
-            "rarity": 5
+            "rarity": 5,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 10,
@@ -60917,7 +61301,11 @@
                 [],
                 []
             ],
-            "rarity": 3
+            "rarity": 3,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 10,
@@ -60960,7 +61348,11 @@
                 [],
                 []
             ],
-            "rarity": 5
+            "rarity": 5,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 15,
@@ -61003,7 +61395,11 @@
                 [],
                 []
             ],
-            "rarity": 6
+            "rarity": 6,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -61044,7 +61440,11 @@
                 [],
                 []
             ],
-            "rarity": 3
+            "rarity": 3,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -61085,7 +61485,11 @@
                 [],
                 []
             ],
-            "rarity": 3
+            "rarity": 3,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -61129,7 +61533,11 @@
                 [],
                 []
             ],
-            "rarity": 5
+            "rarity": 5,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -61173,7 +61581,11 @@
                 [],
                 []
             ],
-            "rarity": 6
+            "rarity": 6,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -61212,7 +61624,11 @@
                 [],
                 []
             ],
-            "rarity": 2
+            "rarity": 2,
+            "switchaxe_stats": {
+                "phial_type": "dragon_phial",
+                "phial_value": 20
+            }
         },
         {
             "affinity": 0,
@@ -61253,7 +61669,11 @@
                 [],
                 []
             ],
-            "rarity": 5
+            "rarity": 5,
+            "switchaxe_stats": {
+                "phial_type": "dragon_phial",
+                "phial_value": 23
+            }
         },
         {
             "affinity": 0,
@@ -61294,7 +61714,11 @@
                 [],
                 []
             ],
-            "rarity": 6
+            "rarity": 6,
+            "switchaxe_stats": {
+                "phial_type": "dragon_phial",
+                "phial_value": 25
+            }
         },
         {
             "affinity": 0,
@@ -61335,7 +61759,11 @@
                 [],
                 []
             ],
-            "rarity": 2
+            "rarity": 2,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -61376,7 +61804,11 @@
                 [],
                 []
             ],
-            "rarity": 3
+            "rarity": 3,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -61420,7 +61852,11 @@
                 [],
                 []
             ],
-            "rarity": 5
+            "rarity": 5,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -61461,7 +61897,11 @@
                 [],
                 []
             ],
-            "rarity": 2
+            "rarity": 2,
+            "switchaxe_stats": {
+                "phial_type": "element_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -61502,7 +61942,11 @@
                 [],
                 []
             ],
-            "rarity": 2
+            "rarity": 2,
+            "switchaxe_stats": {
+                "phial_type": "element_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -61546,7 +61990,11 @@
                 [],
                 []
             ],
-            "rarity": 4
+            "rarity": 4,
+            "switchaxe_stats": {
+                "phial_type": "element_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -61585,7 +62033,11 @@
                 [],
                 []
             ],
-            "rarity": 1
+            "rarity": 1,
+            "switchaxe_stats": {
+                "phial_type": "poison_phial",
+                "phial_value": 23
+            }
         },
         {
             "affinity": 0,
@@ -61624,7 +62076,11 @@
                 [],
                 []
             ],
-            "rarity": 2
+            "rarity": 2,
+            "switchaxe_stats": {
+                "phial_type": "poison_phial",
+                "phial_value": 26
+            }
         },
         {
             "affinity": 0,
@@ -61665,7 +62121,11 @@
                 [],
                 []
             ],
-            "rarity": 4
+            "rarity": 4,
+            "switchaxe_stats": {
+                "phial_type": "poison_phial",
+                "phial_value": 29
+            }
         },
         {
             "affinity": 20,
@@ -61706,7 +62166,11 @@
                 [],
                 []
             ],
-            "rarity": 2
+            "rarity": 2,
+            "switchaxe_stats": {
+                "phial_type": "element_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 25,
@@ -61747,7 +62211,11 @@
                 [],
                 []
             ],
-            "rarity": 3
+            "rarity": 3,
+            "switchaxe_stats": {
+                "phial_type": "element_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 30,
@@ -61790,7 +62258,11 @@
                 [],
                 []
             ],
-            "rarity": 5
+            "rarity": 5,
+            "switchaxe_stats": {
+                "phial_type": "element_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 30,
@@ -61833,7 +62305,11 @@
                 [],
                 []
             ],
-            "rarity": 6
+            "rarity": 6,
+            "switchaxe_stats": {
+                "phial_type": "element_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -61872,7 +62348,11 @@
                 [],
                 []
             ],
-            "rarity": 1
+            "rarity": 1,
+            "switchaxe_stats": {
+                "phial_type": "paralysis_phial",
+                "phial_value": 10
+            }
         },
         {
             "affinity": 0,
@@ -61911,7 +62391,11 @@
                 [],
                 []
             ],
-            "rarity": 1
+            "rarity": 1,
+            "switchaxe_stats": {
+                "phial_type": "paralysis_phial",
+                "phial_value": 12
+            }
         },
         {
             "affinity": 0,
@@ -61950,7 +62434,11 @@
                 [],
                 []
             ],
-            "rarity": 2
+            "rarity": 2,
+            "switchaxe_stats": {
+                "phial_type": "paralysis_phial",
+                "phial_value": 14
+            }
         },
         {
             "affinity": 0,
@@ -61989,7 +62477,11 @@
                 [],
                 []
             ],
-            "rarity": 3
+            "rarity": 3,
+            "switchaxe_stats": {
+                "phial_type": "paralysis_phial",
+                "phial_value": 17
+            }
         },
         {
             "affinity": 0,
@@ -62030,7 +62522,11 @@
                 [],
                 []
             ],
-            "rarity": 4
+            "rarity": 4,
+            "switchaxe_stats": {
+                "phial_type": "paralysis_phial",
+                "phial_value": 18
+            }
         },
         {
             "affinity": 0,
@@ -62071,7 +62567,11 @@
                 [],
                 []
             ],
-            "rarity": 5
+            "rarity": 5,
+            "switchaxe_stats": {
+                "phial_type": "paralysis_phial",
+                "phial_value": 22
+            }
         },
         {
             "affinity": -15,
@@ -62112,7 +62612,11 @@
                 [],
                 []
             ],
-            "rarity": 5
+            "rarity": 5,
+            "switchaxe_stats": {
+                "phial_type": "element_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": -15,
@@ -62153,7 +62657,11 @@
                 [],
                 []
             ],
-            "rarity": 5
+            "rarity": 5,
+            "switchaxe_stats": {
+                "phial_type": "element_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": -15,
@@ -62194,7 +62702,11 @@
                 [],
                 []
             ],
-            "rarity": 6
+            "rarity": 6,
+            "switchaxe_stats": {
+                "phial_type": "element_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -62235,7 +62747,11 @@
                 [],
                 []
             ],
-            "rarity": 5
+            "rarity": 5,
+            "switchaxe_stats": {
+                "phial_type": "element_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -62276,7 +62792,11 @@
                 [],
                 []
             ],
-            "rarity": 5
+            "rarity": 5,
+            "switchaxe_stats": {
+                "phial_type": "element_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -62317,7 +62837,11 @@
                 [],
                 []
             ],
-            "rarity": 6
+            "rarity": 6,
+            "switchaxe_stats": {
+                "phial_type": "element_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -62360,7 +62884,11 @@
                 [],
                 []
             ],
-            "rarity": 4
+            "rarity": 4,
+            "switchaxe_stats": {
+                "phial_type": "exhaust_phial",
+                "phial_value": 25
+            }
         },
         {
             "affinity": 0,
@@ -62403,7 +62931,11 @@
                 [],
                 []
             ],
-            "rarity": 5
+            "rarity": 5,
+            "switchaxe_stats": {
+                "phial_type": "exhaust_phial",
+                "phial_value": 28
+            }
         },
         {
             "affinity": 0,
@@ -62446,7 +62978,11 @@
                 [],
                 []
             ],
-            "rarity": 6
+            "rarity": 6,
+            "switchaxe_stats": {
+                "phial_type": "exhaust_phial",
+                "phial_value": 30
+            }
         },
         {
             "affinity": 0,
@@ -62487,7 +63023,11 @@
                 [],
                 []
             ],
-            "rarity": 3
+            "rarity": 3,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -62528,7 +63068,11 @@
                 [],
                 []
             ],
-            "rarity": 3
+            "rarity": 3,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -62571,7 +63115,11 @@
                 [],
                 []
             ],
-            "rarity": 5
+            "rarity": 5,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 5,
@@ -62614,7 +63162,11 @@
                 [],
                 []
             ],
-            "rarity": 4
+            "rarity": 4,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 5,
@@ -62657,7 +63209,11 @@
                 [],
                 []
             ],
-            "rarity": 5
+            "rarity": 5,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 5,
@@ -62700,7 +63256,11 @@
                 [],
                 []
             ],
-            "rarity": 6
+            "rarity": 6,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -62741,7 +63301,11 @@
                 [],
                 []
             ],
-            "rarity": 3
+            "rarity": 3,
+            "switchaxe_stats": {
+                "phial_type": "element_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -62785,7 +63349,11 @@
                 [],
                 []
             ],
-            "rarity": 4
+            "rarity": 4,
+            "switchaxe_stats": {
+                "phial_type": "element_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -62829,7 +63397,11 @@
                 [],
                 []
             ],
-            "rarity": 6
+            "rarity": 6,
+            "switchaxe_stats": {
+                "phial_type": "element_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -62870,7 +63442,11 @@
                 [],
                 []
             ],
-            "rarity": 2
+            "rarity": 2,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -62911,7 +63487,11 @@
                 [],
                 []
             ],
-            "rarity": 2
+            "rarity": 2,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -62954,7 +63534,11 @@
                 [],
                 []
             ],
-            "rarity": 4
+            "rarity": 4,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -62997,7 +63581,11 @@
                 [],
                 []
             ],
-            "rarity": 5
+            "rarity": 5,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": -20,
@@ -63036,7 +63624,11 @@
                 [],
                 []
             ],
-            "rarity": 2
+            "rarity": 2,
+            "switchaxe_stats": {
+                "phial_type": "paralysis_phial",
+                "phial_value": 9
+            }
         },
         {
             "affinity": -20,
@@ -63075,7 +63667,11 @@
                 [],
                 []
             ],
-            "rarity": 3
+            "rarity": 3,
+            "switchaxe_stats": {
+                "phial_type": "paralysis_phial",
+                "phial_value": 11
+            }
         },
         {
             "affinity": -20,
@@ -63114,7 +63710,11 @@
                 [],
                 []
             ],
-            "rarity": 5
+            "rarity": 5,
+            "switchaxe_stats": {
+                "phial_type": "paralysis_phial",
+                "phial_value": 15
+            }
         },
         {
             "affinity": 0,
@@ -63155,7 +63755,11 @@
                 [],
                 []
             ],
-            "rarity": 1
+            "rarity": 1,
+            "switchaxe_stats": {
+                "phial_type": "element_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -63196,7 +63800,11 @@
                 [],
                 []
             ],
-            "rarity": 2
+            "rarity": 2,
+            "switchaxe_stats": {
+                "phial_type": "element_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -63240,7 +63848,11 @@
                 [],
                 []
             ],
-            "rarity": 4
+            "rarity": 4,
+            "switchaxe_stats": {
+                "phial_type": "element_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -63284,7 +63896,11 @@
                 [],
                 []
             ],
-            "rarity": 5
+            "rarity": 5,
+            "switchaxe_stats": {
+                "phial_type": "element_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -63323,7 +63939,11 @@
                 [],
                 []
             ],
-            "rarity": 1
+            "rarity": 1,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -63362,7 +63982,11 @@
                 [],
                 []
             ],
-            "rarity": 1
+            "rarity": 1,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -63401,7 +64025,11 @@
                 [],
                 []
             ],
-            "rarity": 2
+            "rarity": 2,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -63440,7 +64068,11 @@
                 [],
                 []
             ],
-            "rarity": 3
+            "rarity": 3,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -63479,7 +64111,11 @@
                 [],
                 []
             ],
-            "rarity": 4
+            "rarity": 4,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -63518,7 +64154,11 @@
                 [],
                 []
             ],
-            "rarity": 5
+            "rarity": 5,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": -20,
@@ -63562,7 +64202,11 @@
                 [],
                 []
             ],
-            "rarity": 5
+            "rarity": 5,
+            "switchaxe_stats": {
+                "phial_type": "element_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": -20,
@@ -63606,7 +64250,11 @@
                 [],
                 []
             ],
-            "rarity": 6
+            "rarity": 6,
+            "switchaxe_stats": {
+                "phial_type": "element_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": -20,
@@ -63650,7 +64298,11 @@
                 [],
                 []
             ],
-            "rarity": 6
+            "rarity": 6,
+            "switchaxe_stats": {
+                "phial_type": "element_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": -20,
@@ -63689,7 +64341,11 @@
                 [],
                 []
             ],
-            "rarity": 3
+            "rarity": 3,
+            "switchaxe_stats": {
+                "phial_type": "exhaust_phial",
+                "phial_value": 17
+            }
         },
         {
             "affinity": -20,
@@ -63728,7 +64384,11 @@
                 [],
                 []
             ],
-            "rarity": 6
+            "rarity": 6,
+            "switchaxe_stats": {
+                "phial_type": "exhaust_phial",
+                "phial_value": 20
+            }
         },
         {
             "affinity": -20,
@@ -63767,7 +64427,11 @@
                 [],
                 []
             ],
-            "rarity": 6
+            "rarity": 6,
+            "switchaxe_stats": {
+                "phial_type": "exhaust_phial",
+                "phial_value": 24
+            }
         },
         {
             "affinity": -15,
@@ -63808,7 +64472,11 @@
                 [],
                 []
             ],
-            "rarity": 6
+            "rarity": 6,
+            "switchaxe_stats": {
+                "phial_type": "exhaust_phial",
+                "phial_value": 12
+            }
         },
         {
             "affinity": -15,
@@ -63849,7 +64517,11 @@
                 [],
                 []
             ],
-            "rarity": 6
+            "rarity": 6,
+            "switchaxe_stats": {
+                "phial_type": "exhaust_phial",
+                "phial_value": 14
+            }
         },
         {
             "affinity": -15,
@@ -63890,7 +64562,11 @@
                 [],
                 []
             ],
-            "rarity": 7
+            "rarity": 7,
+            "switchaxe_stats": {
+                "phial_type": "exhaust_phial",
+                "phial_value": 16
+            }
         },
         {
             "affinity": 0,
@@ -63931,7 +64607,11 @@
                 [],
                 []
             ],
-            "rarity": 2
+            "rarity": 2,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -63972,7 +64652,11 @@
                 [],
                 []
             ],
-            "rarity": 3
+            "rarity": 3,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -64015,7 +64699,11 @@
                 [],
                 []
             ],
-            "rarity": 4
+            "rarity": 4,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 40,
@@ -64054,7 +64742,11 @@
                 [],
                 []
             ],
-            "rarity": 3
+            "rarity": 3,
+            "switchaxe_stats": {
+                "phial_type": "poison_phial",
+                "phial_value": 12
+            }
         },
         {
             "affinity": 40,
@@ -64095,7 +64787,11 @@
                 [],
                 []
             ],
-            "rarity": 5
+            "rarity": 5,
+            "switchaxe_stats": {
+                "phial_type": "poison_phial",
+                "phial_value": 15
+            }
         },
         {
             "affinity": 40,
@@ -64136,7 +64832,11 @@
                 [],
                 []
             ],
-            "rarity": 6
+            "rarity": 6,
+            "switchaxe_stats": {
+                "phial_type": "poison_phial",
+                "phial_value": 17
+            }
         },
         {
             "affinity": 0,
@@ -64177,7 +64877,11 @@
                 [],
                 []
             ],
-            "rarity": 2
+            "rarity": 2,
+            "switchaxe_stats": {
+                "phial_type": "element_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -64218,7 +64922,11 @@
                 [],
                 []
             ],
-            "rarity": 3
+            "rarity": 3,
+            "switchaxe_stats": {
+                "phial_type": "element_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -64259,7 +64967,11 @@
                 [],
                 []
             ],
-            "rarity": 5
+            "rarity": 5,
+            "switchaxe_stats": {
+                "phial_type": "element_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -64300,7 +65012,11 @@
                 [],
                 []
             ],
-            "rarity": 6
+            "rarity": 6,
+            "switchaxe_stats": {
+                "phial_type": "element_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -64341,7 +65057,11 @@
                 [],
                 []
             ],
-            "rarity": 2
+            "rarity": 2,
+            "switchaxe_stats": {
+                "phial_type": "element_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -64382,7 +65102,11 @@
                 [],
                 []
             ],
-            "rarity": 2
+            "rarity": 2,
+            "switchaxe_stats": {
+                "phial_type": "element_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -64427,7 +65151,11 @@
                 [],
                 []
             ],
-            "rarity": 5
+            "rarity": 5,
+            "switchaxe_stats": {
+                "phial_type": "element_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -64468,7 +65196,11 @@
                 [],
                 []
             ],
-            "rarity": 3
+            "rarity": 3,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -64509,7 +65241,11 @@
                 [],
                 []
             ],
-            "rarity": 5
+            "rarity": 5,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -64553,7 +65289,11 @@
                 [],
                 []
             ],
-            "rarity": 6
+            "rarity": 6,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -64594,7 +65334,11 @@
                 [],
                 []
             ],
-            "rarity": 1
+            "rarity": 1,
+            "switchaxe_stats": {
+                "phial_type": "element_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -64635,7 +65379,11 @@
                 [],
                 []
             ],
-            "rarity": 3
+            "rarity": 3,
+            "switchaxe_stats": {
+                "phial_type": "element_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -64679,7 +65427,11 @@
                 [],
                 []
             ],
-            "rarity": 4
+            "rarity": 4,
+            "switchaxe_stats": {
+                "phial_type": "element_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -64723,7 +65475,11 @@
                 [],
                 []
             ],
-            "rarity": 5
+            "rarity": 5,
+            "switchaxe_stats": {
+                "phial_type": "element_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -64764,7 +65520,11 @@
                 [],
                 []
             ],
-            "rarity": 3
+            "rarity": 3,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -64805,7 +65565,11 @@
                 [],
                 []
             ],
-            "rarity": 3
+            "rarity": 3,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -64849,7 +65613,11 @@
                 [],
                 []
             ],
-            "rarity": 6
+            "rarity": 6,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 10,
@@ -64890,7 +65658,11 @@
                 [],
                 []
             ],
-            "rarity": 5
+            "rarity": 5,
+            "switchaxe_stats": {
+                "phial_type": "element_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 15,
@@ -64933,7 +65705,11 @@
                 [],
                 []
             ],
-            "rarity": 6
+            "rarity": 6,
+            "switchaxe_stats": {
+                "phial_type": "element_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 15,
@@ -64976,7 +65752,11 @@
                 [],
                 []
             ],
-            "rarity": 7
+            "rarity": 7,
+            "switchaxe_stats": {
+                "phial_type": "element_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -65017,7 +65797,11 @@
                 [],
                 []
             ],
-            "rarity": 5
+            "rarity": 5,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -65058,7 +65842,11 @@
                 [],
                 []
             ],
-            "rarity": 6
+            "rarity": 6,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -65099,7 +65887,11 @@
                 [],
                 []
             ],
-            "rarity": 7
+            "rarity": 7,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": -15,
@@ -65142,7 +65934,11 @@
                 [],
                 []
             ],
-            "rarity": 6
+            "rarity": 6,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": -15,
@@ -65185,7 +65981,11 @@
                 [],
                 []
             ],
-            "rarity": 6
+            "rarity": 6,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": -15,
@@ -65228,7 +66028,11 @@
                 [],
                 []
             ],
-            "rarity": 7
+            "rarity": 7,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -65269,7 +66073,11 @@
                 [],
                 []
             ],
-            "rarity": 6
+            "rarity": 6,
+            "switchaxe_stats": {
+                "phial_type": "element_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -65310,7 +66118,11 @@
                 [],
                 []
             ],
-            "rarity": 7
+            "rarity": 7,
+            "switchaxe_stats": {
+                "phial_type": "element_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -65353,7 +66165,11 @@
                 [],
                 []
             ],
-            "rarity": 6
+            "rarity": 6,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -65396,7 +66212,11 @@
                 [],
                 []
             ],
-            "rarity": 7
+            "rarity": 7,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -65439,7 +66259,11 @@
                 [],
                 []
             ],
-            "rarity": 6
+            "rarity": 6,
+            "switchaxe_stats": {
+                "phial_type": "element_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -65482,7 +66306,11 @@
                 [],
                 []
             ],
-            "rarity": 7
+            "rarity": 7,
+            "switchaxe_stats": {
+                "phial_type": "element_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -65526,7 +66354,11 @@
                 [],
                 []
             ],
-            "rarity": 6
+            "rarity": 6,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -65570,7 +66402,11 @@
                 [],
                 []
             ],
-            "rarity": 7
+            "rarity": 7,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -65613,7 +66449,11 @@
                 [],
                 []
             ],
-            "rarity": 6
+            "rarity": 6,
+            "switchaxe_stats": {
+                "phial_type": "element_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -65656,7 +66496,11 @@
                 [],
                 []
             ],
-            "rarity": 7
+            "rarity": 7,
+            "switchaxe_stats": {
+                "phial_type": "element_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -65695,7 +66539,11 @@
                 [],
                 []
             ],
-            "rarity": 3
+            "rarity": 3,
+            "switchaxe_stats": {
+                "phial_type": "dragon_phial",
+                "phial_value": 13
+            }
         },
         {
             "affinity": 0,
@@ -65737,7 +66585,11 @@
                 [],
                 []
             ],
-            "rarity": 4
+            "rarity": 4,
+            "switchaxe_stats": {
+                "phial_type": "dragon_phial",
+                "phial_value": 15
+            }
         },
         {
             "affinity": 0,
@@ -65779,7 +66631,11 @@
                 [],
                 []
             ],
-            "rarity": 5
+            "rarity": 5,
+            "switchaxe_stats": {
+                "phial_type": "dragon_phial",
+                "phial_value": 17
+            }
         },
         {
             "affinity": 0,
@@ -65823,7 +66679,11 @@
                 [],
                 []
             ],
-            "rarity": 4
+            "rarity": 4,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -65867,7 +66727,11 @@
                 [],
                 []
             ],
-            "rarity": 5
+            "rarity": 5,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -65911,7 +66775,11 @@
                 [],
                 []
             ],
-            "rarity": 6
+            "rarity": 6,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -65952,7 +66820,11 @@
                 [],
                 []
             ],
-            "rarity": 2
+            "rarity": 2,
+            "switchaxe_stats": {
+                "phial_type": "element_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -65993,7 +66865,11 @@
                 [],
                 []
             ],
-            "rarity": 3
+            "rarity": 3,
+            "switchaxe_stats": {
+                "phial_type": "element_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -66037,7 +66913,11 @@
                 [],
                 []
             ],
-            "rarity": 5
+            "rarity": 5,
+            "switchaxe_stats": {
+                "phial_type": "element_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -66078,7 +66958,11 @@
                 [],
                 []
             ],
-            "rarity": 2
+            "rarity": 2,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -66119,7 +67003,11 @@
                 [],
                 []
             ],
-            "rarity": 3
+            "rarity": 3,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -66164,7 +67052,11 @@
                 [],
                 []
             ],
-            "rarity": 5
+            "rarity": 5,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -66211,7 +67103,11 @@
                 [],
                 []
             ],
-            "rarity": 4
+            "rarity": 4,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -66266,7 +67162,11 @@
                 [],
                 []
             ],
-            "rarity": 5
+            "rarity": 5,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -66326,7 +67226,11 @@
                 [],
                 []
             ],
-            "rarity": 5
+            "rarity": 5,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -66387,7 +67291,11 @@
                 [],
                 []
             ],
-            "rarity": 6
+            "rarity": 6,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -66450,7 +67358,11 @@
                 [],
                 []
             ],
-            "rarity": 6
+            "rarity": 6,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         },
         {
             "affinity": 0,
@@ -66514,7 +67426,11 @@
                 [],
                 []
             ],
-            "rarity": 7
+            "rarity": 7,
+            "switchaxe_stats": {
+                "phial_type": "power_phial",
+                "phial_value": null
+            }
         }
     ],
     "swordandshield": [

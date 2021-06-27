@@ -145,6 +145,10 @@ for (weapon_category, spec_subdict) in data_spec.items():
                 d["max_sharpness"] = obj["max_sharpness"][:-1] # Remove the last sharpness level
             if weapon_category == "huntinghorn":
                 d["huntinghorn_songs"] = obj["huntinghorn_songs"]
+            if weapon_category == "switchaxe":
+                d["switchaxe_stats"] = obj["switchaxe_stats"]
+            if weapon_category == "chargeblade":
+                d["chargeblade_stats"] = obj["chargeblade_stats"]
             if weapon_category == "insectglaive":
                 d["insectglaive_stats"] = obj["insectglaive_stats"]
 
@@ -278,6 +282,21 @@ huntinghorn_songs_fmt = """,
             "huntinghornSongs": {{{songs}}}\
 """
 
+switchaxe_stats_fmt = """,
+
+            "switchaxeStats": {{
+                "phialType": "{phial_type}",
+                "phialValue": {phial_value}
+            }}\
+"""
+
+chargeblade_stats_fmt = """,
+
+            "chargebladeStats": {{
+                "phialType": "{phial_type}"
+            }}\
+"""
+
 insectglaive_stats_fmt = """,
 
             "insectglaiveStats": {{
@@ -320,6 +339,21 @@ for (weapon_category, _) in data_spec.items():
             if "huntinghorn_songs" in weapon_data:
                 special_mechanics += huntinghorn_songs_fmt.format(
                         songs=", ".join(f"\"{k}\":\"{v}\"" for (k, v) in weapon_data["huntinghorn_songs"].items()),
+                    )
+
+            if "switchaxe_stats" in weapon_data:
+                phial_value_str = "null"
+                if weapon_data["switchaxe_stats"]["phial_value"] != None:
+                    phial_value_str = str(weapon_data["switchaxe_stats"]["phial_value"])
+
+                special_mechanics += switchaxe_stats_fmt.format(
+                        phial_type=str(weapon_data["switchaxe_stats"]["phial_type"]),
+                        phial_value=phial_value_str,
+                    )
+
+            if "chargeblade_stats" in weapon_data:
+                special_mechanics += chargeblade_stats_fmt.format(
+                        phial_type=str(weapon_data["chargeblade_stats"]["phial_type"]),
                     )
 
             if "insectglaive_stats" in weapon_data:

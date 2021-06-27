@@ -90,6 +90,36 @@ const hardcodedHuntingHornSongs = [
     }],
 ];
 
+const hardcodedSwitchAxePhialTypes = [
+    ["power_phial", {
+        name: "Power Phial",
+    }],
+    ["element_phial", {
+        name: "Element Phial",
+    }],
+    ["poison_phial", {
+        name: "Poison Phial",
+    }],
+    ["paralysis_phial", {
+        name: "Paralysis Phial",
+    }],
+    ["dragon_phial", {
+        name: "Dragon Phial",
+    }],
+    ["exhaust_phial", {
+        name: "Exhaust Phial",
+    }],
+];
+
+const hardcodedChargeBladePhialTypes = [
+    ["impact_phial", {
+        name: "Impact Phial",
+    }],
+    ["element_phial", {
+        name: "Element Phial",
+    }],
+];
+
 const hardcodedInsectGlaiveKinsects = [
     [1, {
         rarity: 1,
@@ -327,44 +357,48 @@ const hardcodedInsectGlaiveKinsectBonuses = [
 
 const huntingHornSongsMap = new Map();
 
+const switchAxePhialTypesMap = new Map();
+
+const chargeBladePhialTypesMap = new Map();
+
 const insectGlaiveKinsectsMap = new Map();
 const insectGlaiveKinsectTypesMap = new Map();
 const insectGlaiveKinsectBonusesMap = new Map();
 
-for (const [weaponID, dataObj] of hardcodedHuntingHornSongs) {
-    dataObj.id = weaponID; // Attach IDs to each object
+function populate(hardcodedData, finalMap, additionalOps) {
+    for (const [k, dataObj] of hardcodedData) {
+        dataObj.id = k; // Attach IDs to each object
 
-    assert(isNonEmptyStr(dataObj.id));
-    assert(isNonEmptyStr(dataObj.name));
+        assert((dataObj.id !== undefined) && (dataObj.id !== null)); // We know IDs must always be defined
+        assert(isNonEmptyStr(dataObj.name)); // We know names will always need to be non-empty strings
 
-    // And now, we check for duplicates and add
-    assert(!huntingHornSongsMap.has(dataObj.id));
-    huntingHornSongsMap.set(dataObj.id, dataObj);
+        additionalOps(dataObj);
+
+        // And now, we check for duplicates and add
+        assert(!finalMap.has(dataObj.id));
+        finalMap.set(dataObj.id, dataObj);
+    }
 }
 
-for (const [typeID, dataObj] of hardcodedInsectGlaiveKinsectTypes) {
-    dataObj.id = typeID; // Attach IDs to each object
-
+populate(hardcodedHuntingHornSongs, huntingHornSongsMap, (dataObj) => {
     assert(isNonEmptyStr(dataObj.id));
-    assert(isNonEmptyStr(dataObj.name));
+});
 
-    // And now, we check for duplicates and add
-    assert(!insectGlaiveKinsectTypesMap.has(dataObj.id));
-    insectGlaiveKinsectTypesMap.set(dataObj.id, dataObj);
-}
-for (const [bonusID, dataObj] of hardcodedInsectGlaiveKinsectBonuses) {
-    dataObj.id = bonusID; // Attach IDs to each object
-
+populate(hardcodedSwitchAxePhialTypes, switchAxePhialTypesMap, (dataObj) => {
     assert(isNonEmptyStr(dataObj.id));
-    assert(isNonEmptyStr(dataObj.name));
+});
 
-    // And now, we check for duplicates and add
-    assert(!insectGlaiveKinsectBonusesMap.has(dataObj.id));
-    insectGlaiveKinsectBonusesMap.set(dataObj.id, dataObj);
-}
-for (const [kinsectID, dataObj] of hardcodedInsectGlaiveKinsects) {
-    dataObj.id = kinsectID; // Attach IDs to each object
+populate(hardcodedChargeBladePhialTypes, chargeBladePhialTypesMap, (dataObj) => {
+    assert(isNonEmptyStr(dataObj.id));
+});
 
+populate(hardcodedInsectGlaiveKinsectTypes, insectGlaiveKinsectTypesMap, (dataObj) => {
+    assert(isNonEmptyStr(dataObj.id));
+});
+populate(hardcodedInsectGlaiveKinsectBonuses, insectGlaiveKinsectBonusesMap, (dataObj) => {
+    assert(isNonEmptyStr(dataObj.id));
+});
+populate(hardcodedInsectGlaiveKinsects, insectGlaiveKinsectsMap, (dataObj) => {
     const kinsectTypeObj = insectGlaiveKinsectTypesMap.get(dataObj.kinsectType);
     assert(kinsectTypeObj !== undefined, "Invalid kinsect type ID: " + String(dataObj.kinsectType));
     dataObj.kinsectType = kinsectTypeObj;
@@ -378,19 +412,20 @@ for (const [kinsectID, dataObj] of hardcodedInsectGlaiveKinsects) {
     //
 
     assert(isInt(dataObj.id) && (dataObj.id > 0));
-    assert(isNonEmptyStr(dataObj.name));
+    // name is already checked
 
     assert(isRawTypeStr(dataObj.attackType));
     // kinsectType is already checked
     // kinsectBonus is already checked
-
-    // And now, we check for duplicates and add
-    assert(!insectGlaiveKinsectsMap.has(dataObj.id));
-    insectGlaiveKinsectsMap.set(dataObj.id, dataObj);
-}
+});
 
 export {
     huntingHornSongsMap,
+
+    switchAxePhialTypesMap,
+
+    chargeBladePhialTypesMap,
+
     insectGlaiveKinsectsMap,
     insectGlaiveKinsectTypesMap,
     insectGlaiveKinsectBonusesMap,

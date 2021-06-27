@@ -20,7 +20,12 @@
             ],
 
             "baseSharpness": [50,90,60,0,0,0],
-            "maxSharpness": [50,90,100,10,0,0]
+            "maxSharpness": [50,90,100,10,0,0],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         },
         "1b": {
             "rarity": 1,
@@ -42,7 +47,12 @@
             ],
 
             "baseSharpness": [60,70,70,0,0,0],
-            "maxSharpness": [60,70,110,10,0,0]
+            "maxSharpness": [60,70,110,10,0,0],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         },
         "1c": {
             "rarity": 2,
@@ -65,7 +75,12 @@
             ],
 
             "baseSharpness": [60,70,90,30,0,0],
-            "maxSharpness": [60,70,90,80,0,0]
+            "maxSharpness": [60,70,90,80,0,0],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         },
         "1d": {
             "rarity": 3,
@@ -89,7 +104,12 @@
             ],
 
             "baseSharpness": [50,70,80,30,20,0],
-            "maxSharpness": [50,70,80,30,70,0]
+            "maxSharpness": [50,70,80,30,70,0],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         },
         "1e": {
             "rarity": 4,
@@ -115,7 +135,12 @@
             ],
 
             "baseSharpness": [60,80,90,40,30,0],
-            "maxSharpness": [60,80,90,40,70,10]
+            "maxSharpness": [60,80,90,40,70,10],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         },
         "1f": {
             "rarity": 5,
@@ -142,7 +167,12 @@
             ],
 
             "baseSharpness": [40,90,60,60,50,0],
-            "maxSharpness": [40,90,60,60,80,20]
+            "maxSharpness": [40,90,60,60,80,20],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         }
     },
     "Mizutsune Tree": {
@@ -170,7 +200,12 @@
             ],
 
             "baseSharpness": [50,50,40,60,0,0],
-            "maxSharpness": [50,50,40,80,30,0]
+            "maxSharpness": [50,50,40,80,30,0],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         },
         "2b": {
             "rarity": 5,
@@ -197,7 +232,12 @@
             ],
 
             "baseSharpness": [90,90,80,60,30,0],
-            "maxSharpness": [90,90,80,60,60,20]
+            "maxSharpness": [90,90,80,60,60,20],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         },
         "2c": {
             "rarity": 6,
@@ -225,7 +265,12 @@
             ],
 
             "baseSharpness": [80,80,70,60,60,0],
-            "maxSharpness": [80,80,70,60,60,50]
+            "maxSharpness": [80,80,70,60,60,50],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         }
     },
     "Rathalos Tree": {
@@ -253,7 +298,12 @@
             ],
 
             "baseSharpness": [80,100,30,40,0,0],
-            "maxSharpness": [80,100,30,90,0,0]
+            "maxSharpness": [80,100,30,90,0,0],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         },
         "3b": {
             "rarity": 3,
@@ -279,7 +329,12 @@
             ],
 
             "baseSharpness": [90,80,30,50,0,0],
-            "maxSharpness": [90,80,30,90,10,0]
+            "maxSharpness": [90,80,30,90,10,0],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         },
         "3c": {
             "rarity": 5,
@@ -305,7 +360,12 @@
             ],
 
             "baseSharpness": [120,120,30,70,10,0],
-            "maxSharpness": [120,120,30,70,60,0]
+            "maxSharpness": [120,120,30,70,60,0],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         },
         "3d": {
             "rarity": 6,
@@ -332,7 +392,12 @@
             ],
 
             "baseSharpness": [100,100,30,90,30,0],
-            "maxSharpness": [100,100,30,90,60,20]
+            "maxSharpness": [100,100,30,90,60,20],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         }
     },
     "Bishaten Tree": {
@@ -359,7 +424,12 @@
             ],
 
             "baseSharpness": [30,140,40,40,0,0],
-            "maxSharpness": [30,140,40,80,10,0]
+            "maxSharpness": [30,140,40,80,10,0],
+
+            "switchaxeStats": {
+                "phialType": "dragon_phial",
+                "phialValue": 20
+            }
         },
         "4b": {
             "rarity": 5,
@@ -385,7 +455,12 @@
             ],
 
             "baseSharpness": [20,150,60,40,30,0],
-            "maxSharpness": [20,150,60,40,40,40]
+            "maxSharpness": [20,150,60,40,40,40],
+
+            "switchaxeStats": {
+                "phialType": "dragon_phial",
+                "phialValue": 23
+            }
         },
         "4c": {
             "rarity": 6,
@@ -411,7 +486,12 @@
             ],
 
             "baseSharpness": [30,150,80,50,40,0],
-            "maxSharpness": [30,150,80,50,40,50]
+            "maxSharpness": [30,150,80,50,40,50],
+
+            "switchaxeStats": {
+                "phialType": "dragon_phial",
+                "phialValue": 25
+            }
         }
     },
     "Delex Tree": {
@@ -437,7 +517,12 @@
             ],
 
             "baseSharpness": [30,90,50,30,0,0],
-            "maxSharpness": [30,90,50,70,10,0]
+            "maxSharpness": [30,90,50,70,10,0],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         },
         "5b": {
             "rarity": 3,
@@ -461,7 +546,12 @@
             ],
 
             "baseSharpness": [30,100,70,50,0,0],
-            "maxSharpness": [30,100,70,60,40,0]
+            "maxSharpness": [30,100,70,60,40,0],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         },
         "5c": {
             "rarity": 5,
@@ -487,7 +577,12 @@
             ],
 
             "baseSharpness": [30,110,80,50,30,0],
-            "maxSharpness": [30,110,80,50,70,10]
+            "maxSharpness": [30,110,80,50,70,10],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         }
     },
     "Khezu Tree": {
@@ -514,7 +609,12 @@
             ],
 
             "baseSharpness": [70,60,30,40,0,0],
-            "maxSharpness": [70,60,30,90,0,0]
+            "maxSharpness": [70,60,30,90,0,0],
+
+            "switchaxeStats": {
+                "phialType": "element_phial",
+                "phialValue": null
+            }
         },
         "6b": {
             "rarity": 2,
@@ -540,7 +640,12 @@
             ],
 
             "baseSharpness": [90,70,40,50,0,0],
-            "maxSharpness": [90,70,40,100,0,0]
+            "maxSharpness": [90,70,40,100,0,0],
+
+            "switchaxeStats": {
+                "phialType": "element_phial",
+                "phialValue": null
+            }
         },
         "6c": {
             "rarity": 4,
@@ -568,7 +673,12 @@
             ],
 
             "baseSharpness": [90,70,60,50,30,0],
-            "maxSharpness": [90,70,60,50,80,0]
+            "maxSharpness": [90,70,60,50,80,0],
+
+            "switchaxeStats": {
+                "phialType": "element_phial",
+                "phialValue": null
+            }
         }
     },
     "Arzuros Tree": {
@@ -593,7 +703,12 @@
             ],
 
             "baseSharpness": [90,60,50,0,0,0],
-            "maxSharpness": [90,60,80,20,0,0]
+            "maxSharpness": [90,60,80,20,0,0],
+
+            "switchaxeStats": {
+                "phialType": "poison_phial",
+                "phialValue": 23
+            }
         },
         "7b": {
             "rarity": 2,
@@ -617,7 +732,12 @@
             ],
 
             "baseSharpness": [80,50,70,0,0,0],
-            "maxSharpness": [80,50,70,50,0,0]
+            "maxSharpness": [80,50,70,50,0,0],
+
+            "switchaxeStats": {
+                "phialType": "poison_phial",
+                "phialValue": 26
+            }
         },
         "7c": {
             "rarity": 4,
@@ -644,7 +764,12 @@
             ],
 
             "baseSharpness": [110,40,90,60,0,0],
-            "maxSharpness": [110,40,90,60,50,0]
+            "maxSharpness": [110,40,90,60,50,0],
+
+            "switchaxeStats": {
+                "phialType": "poison_phial",
+                "phialValue": 29
+            }
         }
     },
     "Barioth Tree": {
@@ -671,7 +796,12 @@
             ],
 
             "baseSharpness": [50,50,80,70,0,0],
-            "maxSharpness": [50,50,80,100,20,0]
+            "maxSharpness": [50,50,80,100,20,0],
+
+            "switchaxeStats": {
+                "phialType": "element_phial",
+                "phialValue": null
+            }
         },
         "8b": {
             "rarity": 3,
@@ -697,7 +827,12 @@
             ],
 
             "baseSharpness": [50,40,80,70,10,0],
-            "maxSharpness": [50,40,80,70,60,0]
+            "maxSharpness": [50,40,80,70,60,0],
+
+            "switchaxeStats": {
+                "phialType": "element_phial",
+                "phialValue": null
+            }
         },
         "8c": {
             "rarity": 5,
@@ -723,7 +858,12 @@
             ],
 
             "baseSharpness": [50,70,100,100,30,0],
-            "maxSharpness": [50,70,100,100,70,10]
+            "maxSharpness": [50,70,100,100,70,10],
+
+            "switchaxeStats": {
+                "phialType": "element_phial",
+                "phialValue": null
+            }
         },
         "8d": {
             "rarity": 6,
@@ -750,7 +890,12 @@
             ],
 
             "baseSharpness": [50,70,80,100,50,0],
-            "maxSharpness": [50,70,80,100,70,30]
+            "maxSharpness": [50,70,80,100,70,30],
+
+            "switchaxeStats": {
+                "phialType": "element_phial",
+                "phialValue": null
+            }
         }
     },
     "Ore Tree": {
@@ -774,7 +919,12 @@
             ],
 
             "baseSharpness": [80,70,50,0,0,0],
-            "maxSharpness": [80,70,90,10,0,0]
+            "maxSharpness": [80,70,90,10,0,0],
+
+            "switchaxeStats": {
+                "phialType": "paralysis_phial",
+                "phialValue": 10
+            }
         },
         "9b": {
             "rarity": 1,
@@ -796,7 +946,12 @@
             ],
 
             "baseSharpness": [70,60,70,0,0,0],
-            "maxSharpness": [70,60,110,10,0,0]
+            "maxSharpness": [70,60,110,10,0,0],
+
+            "switchaxeStats": {
+                "phialType": "paralysis_phial",
+                "phialValue": 12
+            }
         },
         "9c": {
             "rarity": 2,
@@ -819,7 +974,12 @@
             ],
 
             "baseSharpness": [80,70,60,40,0,0],
-            "maxSharpness": [80,70,60,90,0,0]
+            "maxSharpness": [80,70,60,90,0,0],
+
+            "switchaxeStats": {
+                "phialType": "paralysis_phial",
+                "phialValue": 14
+            }
         },
         "9d": {
             "rarity": 3,
@@ -843,7 +1003,12 @@
             ],
 
             "baseSharpness": [80,70,50,50,0,0],
-            "maxSharpness": [80,70,50,80,20,0]
+            "maxSharpness": [80,70,50,80,20,0],
+
+            "switchaxeStats": {
+                "phialType": "paralysis_phial",
+                "phialValue": 17
+            }
         },
         "9e": {
             "rarity": 4,
@@ -868,7 +1033,12 @@
             ],
 
             "baseSharpness": [80,70,80,50,20,0],
-            "maxSharpness": [80,70,80,50,50,20]
+            "maxSharpness": [80,70,80,50,50,20],
+
+            "switchaxeStats": {
+                "phialType": "paralysis_phial",
+                "phialValue": 18
+            }
         },
         "9f": {
             "rarity": 5,
@@ -894,7 +1064,12 @@
             ],
 
             "baseSharpness": [100,90,80,50,30,0],
-            "maxSharpness": [100,90,80,50,40,40]
+            "maxSharpness": [100,90,80,50,40,40],
+
+            "switchaxeStats": {
+                "phialType": "paralysis_phial",
+                "phialValue": 22
+            }
         }
     },
     "Jyuratodus Tree": {
@@ -923,7 +1098,12 @@
             ],
 
             "baseSharpness": [100,80,70,50,0,0],
-            "maxSharpness": [100,80,70,90,10,0]
+            "maxSharpness": [100,80,70,90,10,0],
+
+            "switchaxeStats": {
+                "phialType": "element_phial",
+                "phialValue": null
+            }
         },
         "10b": {
             "rarity": 5,
@@ -951,7 +1131,12 @@
             ],
 
             "baseSharpness": [100,100,80,70,0,0],
-            "maxSharpness": [100,100,80,70,50,0]
+            "maxSharpness": [100,100,80,70,50,0],
+
+            "switchaxeStats": {
+                "phialType": "element_phial",
+                "phialValue": null
+            }
         },
         "10c": {
             "rarity": 6,
@@ -980,7 +1165,12 @@
             ],
 
             "baseSharpness": [100,100,70,80,0,0],
-            "maxSharpness": [100,100,70,80,40,10]
+            "maxSharpness": [100,100,70,80,40,10],
+
+            "switchaxeStats": {
+                "phialType": "element_phial",
+                "phialValue": null
+            }
         }
     },
     "Rathian Tree": {
@@ -1009,7 +1199,12 @@
             ],
 
             "baseSharpness": [60,70,90,80,0,0],
-            "maxSharpness": [60,70,90,100,30,0]
+            "maxSharpness": [60,70,90,100,30,0],
+
+            "switchaxeStats": {
+                "phialType": "element_phial",
+                "phialValue": null
+            }
         },
         "11b": {
             "rarity": 5,
@@ -1036,7 +1231,12 @@
             ],
 
             "baseSharpness": [60,60,100,110,20,0],
-            "maxSharpness": [60,60,100,110,70,0]
+            "maxSharpness": [60,60,100,110,70,0],
+
+            "switchaxeStats": {
+                "phialType": "element_phial",
+                "phialValue": null
+            }
         },
         "11c": {
             "rarity": 6,
@@ -1063,7 +1263,12 @@
             ],
 
             "baseSharpness": [90,40,110,70,40,0],
-            "maxSharpness": [90,40,110,70,70,20]
+            "maxSharpness": [90,40,110,70,70,20],
+
+            "switchaxeStats": {
+                "phialType": "element_phial",
+                "phialValue": null
+            }
         }
     },
     "Ore Tree 2": {
@@ -1090,7 +1295,12 @@
             ],
 
             "baseSharpness": [80,80,70,40,30,0],
-            "maxSharpness": [80,80,70,40,80,0]
+            "maxSharpness": [80,80,70,40,80,0],
+
+            "switchaxeStats": {
+                "phialType": "exhaust_phial",
+                "phialValue": 25
+            }
         },
         "12b": {
             "rarity": 5,
@@ -1116,7 +1326,12 @@
             ],
 
             "baseSharpness": [70,70,70,50,40,0],
-            "maxSharpness": [70,70,70,50,80,10]
+            "maxSharpness": [70,70,70,50,80,10],
+
+            "switchaxeStats": {
+                "phialType": "exhaust_phial",
+                "phialValue": 28
+            }
         },
         "12c": {
             "rarity": 6,
@@ -1143,7 +1358,12 @@
             ],
 
             "baseSharpness": [80,80,80,60,50,0],
-            "maxSharpness": [80,80,80,60,80,20]
+            "maxSharpness": [80,80,80,60,80,20],
+
+            "switchaxeStats": {
+                "phialType": "exhaust_phial",
+                "phialValue": 30
+            }
         }
     },
     "Thunder Tree": {
@@ -1170,7 +1390,12 @@
             ],
 
             "baseSharpness": [40,90,80,40,0,0],
-            "maxSharpness": [40,90,80,90,0,0]
+            "maxSharpness": [40,90,80,90,0,0],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         },
         "13b": {
             "rarity": 3,
@@ -1196,7 +1421,12 @@
             ],
 
             "baseSharpness": [50,70,80,50,0,0],
-            "maxSharpness": [50,70,80,90,10,0]
+            "maxSharpness": [50,70,80,90,10,0],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         },
         "13c": {
             "rarity": 5,
@@ -1223,7 +1453,12 @@
             ],
 
             "baseSharpness": [60,80,80,60,20,0],
-            "maxSharpness": [60,80,80,60,50,20]
+            "maxSharpness": [60,80,80,60,50,20],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         }
     },
     "Dragon Tree": {
@@ -1253,7 +1488,12 @@
             ],
 
             "baseSharpness": [80,80,70,50,20,0],
-            "maxSharpness": [80,80,70,50,70,0]
+            "maxSharpness": [80,80,70,50,70,0],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         },
         "14b": {
             "rarity": 5,
@@ -1281,7 +1521,12 @@
             ],
 
             "baseSharpness": [60,80,70,50,40,0],
-            "maxSharpness": [60,80,70,50,90,0]
+            "maxSharpness": [60,80,70,50,90,0],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         },
         "14c": {
             "rarity": 6,
@@ -1311,7 +1556,12 @@
             ],
 
             "baseSharpness": [60,90,80,60,60,0],
-            "maxSharpness": [60,90,80,60,80,30]
+            "maxSharpness": [60,90,80,60,80,30],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         }
     },
     "Almudron Tree": {
@@ -1340,7 +1590,12 @@
             ],
 
             "baseSharpness": [50,50,100,50,0,0],
-            "maxSharpness": [50,50,100,80,20,0]
+            "maxSharpness": [50,50,100,80,20,0],
+
+            "switchaxeStats": {
+                "phialType": "element_phial",
+                "phialValue": null
+            }
         },
         "15b": {
             "rarity": 4,
@@ -1368,7 +1623,12 @@
             ],
 
             "baseSharpness": [60,60,100,60,20,0],
-            "maxSharpness": [60,60,100,60,70,0]
+            "maxSharpness": [60,60,100,60,70,0],
+
+            "switchaxeStats": {
+                "phialType": "element_phial",
+                "phialValue": null
+            }
         },
         "15c": {
             "rarity": 6,
@@ -1397,7 +1657,12 @@
             ],
 
             "baseSharpness": [60,60,130,60,40,0],
-            "maxSharpness": [60,60,130,60,90,0]
+            "maxSharpness": [60,60,130,60,90,0],
+
+            "switchaxeStats": {
+                "phialType": "element_phial",
+                "phialValue": null
+            }
         }
     },
     "Aknosom Tree": {
@@ -1423,7 +1688,12 @@
             ],
 
             "baseSharpness": [30,60,80,30,0,0],
-            "maxSharpness": [30,60,80,80,0,0]
+            "maxSharpness": [30,60,80,80,0,0],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         },
         "16b": {
             "rarity": 2,
@@ -1447,7 +1717,12 @@
             ],
 
             "baseSharpness": [40,60,110,40,0,0],
-            "maxSharpness": [40,60,110,80,10,0]
+            "maxSharpness": [40,60,110,80,10,0],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         },
         "16c": {
             "rarity": 4,
@@ -1472,7 +1747,12 @@
             ],
 
             "baseSharpness": [40,60,120,60,20,0],
-            "maxSharpness": [40,60,120,60,60,10]
+            "maxSharpness": [40,60,120,60,60,10],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         },
         "16d": {
             "rarity": 5,
@@ -1498,7 +1778,12 @@
             ],
 
             "baseSharpness": [30,50,120,70,30,0],
-            "maxSharpness": [30,50,120,70,40,40]
+            "maxSharpness": [30,50,120,70,40,40],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         }
     },
     "Barroth Tree": {
@@ -1524,7 +1809,12 @@
             ],
 
             "baseSharpness": [60,60,130,0,0,0],
-            "maxSharpness": [60,60,130,50,0,0]
+            "maxSharpness": [60,60,130,50,0,0],
+
+            "switchaxeStats": {
+                "phialType": "paralysis_phial",
+                "phialValue": 9
+            }
         },
         "17b": {
             "rarity": 3,
@@ -1548,7 +1838,12 @@
             ],
 
             "baseSharpness": [70,60,130,40,0,0],
-            "maxSharpness": [70,60,130,80,10,0]
+            "maxSharpness": [70,60,130,80,10,0],
+
+            "switchaxeStats": {
+                "phialType": "paralysis_phial",
+                "phialValue": 11
+            }
         },
         "17c": {
             "rarity": 5,
@@ -1573,7 +1868,12 @@
             ],
 
             "baseSharpness": [60,50,130,100,10,0],
-            "maxSharpness": [60,50,130,100,40,20]
+            "maxSharpness": [60,50,130,100,40,20],
+
+            "switchaxeStats": {
+                "phialType": "paralysis_phial",
+                "phialValue": 15
+            }
         }
     },
     "Baggi Tree": {
@@ -1599,7 +1899,12 @@
             ],
 
             "baseSharpness": [100,40,40,20,0,0],
-            "maxSharpness": [100,40,40,70,0,0]
+            "maxSharpness": [100,40,40,70,0,0],
+
+            "switchaxeStats": {
+                "phialType": "element_phial",
+                "phialValue": null
+            }
         },
         "18b": {
             "rarity": 2,
@@ -1624,7 +1929,12 @@
             ],
 
             "baseSharpness": [100,60,50,40,0,0],
-            "maxSharpness": [100,60,50,90,0,0]
+            "maxSharpness": [100,60,50,90,0,0],
+
+            "switchaxeStats": {
+                "phialType": "element_phial",
+                "phialValue": null
+            }
         },
         "18c": {
             "rarity": 4,
@@ -1650,7 +1960,12 @@
             ],
 
             "baseSharpness": [100,70,60,70,0,0],
-            "maxSharpness": [100,70,60,90,30,0]
+            "maxSharpness": [100,70,60,90,30,0],
+
+            "switchaxeStats": {
+                "phialType": "element_phial",
+                "phialValue": null
+            }
         },
         "18d": {
             "rarity": 5,
@@ -1677,7 +1992,12 @@
             ],
 
             "baseSharpness": [100,90,80,60,20,0],
-            "maxSharpness": [100,90,80,60,70,0]
+            "maxSharpness": [100,90,80,60,70,0],
+
+            "switchaxeStats": {
+                "phialType": "element_phial",
+                "phialValue": null
+            }
         }
     },
     "Bone Tree": {
@@ -1701,7 +2021,12 @@
             ],
 
             "baseSharpness": [70,90,40,0,0,0],
-            "maxSharpness": [70,90,90,0,0,0]
+            "maxSharpness": [70,90,90,0,0,0],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         },
         "19b": {
             "rarity": 1,
@@ -1723,7 +2048,12 @@
             ],
 
             "baseSharpness": [80,70,50,0,0,0],
-            "maxSharpness": [80,70,100,0,0,0]
+            "maxSharpness": [80,70,100,0,0,0],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         },
         "19c": {
             "rarity": 2,
@@ -1746,7 +2076,12 @@
             ],
 
             "baseSharpness": [100,40,60,0,0,0],
-            "maxSharpness": [100,40,110,0,0,0]
+            "maxSharpness": [100,40,110,0,0,0],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         },
         "19d": {
             "rarity": 3,
@@ -1770,7 +2105,12 @@
             ],
 
             "baseSharpness": [100,70,70,10,0,0],
-            "maxSharpness": [100,70,70,60,0,0]
+            "maxSharpness": [100,70,70,60,0,0],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         },
         "19e": {
             "rarity": 4,
@@ -1795,7 +2135,12 @@
             ],
 
             "baseSharpness": [80,70,60,40,0,0],
-            "maxSharpness": [80,70,60,80,10,0]
+            "maxSharpness": [80,70,60,80,10,0],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         },
         "19f": {
             "rarity": 5,
@@ -1821,7 +2166,12 @@
             ],
 
             "baseSharpness": [80,70,80,70,0,0],
-            "maxSharpness": [80,70,80,100,20,0]
+            "maxSharpness": [80,70,80,100,20,0],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         }
     },
     "Anjanath Tree": {
@@ -1850,7 +2200,12 @@
             ],
 
             "baseSharpness": [140,120,40,50,0,0],
-            "maxSharpness": [140,120,40,80,20,0]
+            "maxSharpness": [140,120,40,80,20,0],
+
+            "switchaxeStats": {
+                "phialType": "element_phial",
+                "phialValue": null
+            }
         },
         "20b": {
             "rarity": 6,
@@ -1878,7 +2233,12 @@
             ],
 
             "baseSharpness": [130,120,40,50,10,0],
-            "maxSharpness": [130,120,40,50,60,0]
+            "maxSharpness": [130,120,40,50,60,0],
+
+            "switchaxeStats": {
+                "phialType": "element_phial",
+                "phialValue": null
+            }
         },
         "20c": {
             "rarity": 6,
@@ -1907,7 +2267,12 @@
             ],
 
             "baseSharpness": [120,120,40,50,20,0],
-            "maxSharpness": [120,120,40,50,70,0]
+            "maxSharpness": [120,120,40,50,70,0],
+
+            "switchaxeStats": {
+                "phialType": "element_phial",
+                "phialValue": null
+            }
         }
     },
     "Tigrex Tree": {
@@ -1934,7 +2299,12 @@
             ],
 
             "baseSharpness": [70,30,100,90,10,0],
-            "maxSharpness": [70,30,100,90,60,0]
+            "maxSharpness": [70,30,100,90,60,0],
+
+            "switchaxeStats": {
+                "phialType": "exhaust_phial",
+                "phialValue": 17
+            }
         },
         "21b": {
             "rarity": 6,
@@ -1959,7 +2329,12 @@
             ],
 
             "baseSharpness": [50,40,130,100,30,0],
-            "maxSharpness": [50,40,130,100,50,30]
+            "maxSharpness": [50,40,130,100,50,30],
+
+            "switchaxeStats": {
+                "phialType": "exhaust_phial",
+                "phialValue": 20
+            }
         },
         "21c": {
             "rarity": 6,
@@ -1985,7 +2360,12 @@
             ],
 
             "baseSharpness": [50,40,120,120,40,30],
-            "maxSharpness": [50,40,120,120,40,30]
+            "maxSharpness": [50,40,120,120,40,30],
+
+            "switchaxeStats": {
+                "phialType": "exhaust_phial",
+                "phialValue": 24
+            }
         }
     },
     "Diablos Tree": {
@@ -2012,7 +2392,12 @@
             ],
 
             "baseSharpness": [50,160,30,110,0,0],
-            "maxSharpness": [50,160,30,110,40,10]
+            "maxSharpness": [50,160,30,110,40,10],
+
+            "switchaxeStats": {
+                "phialType": "exhaust_phial",
+                "phialValue": 12
+            }
         },
         "22b": {
             "rarity": 6,
@@ -2037,7 +2422,12 @@
             ],
 
             "baseSharpness": [50,160,20,120,0,0],
-            "maxSharpness": [50,160,20,120,30,20]
+            "maxSharpness": [50,160,20,120,30,20],
+
+            "switchaxeStats": {
+                "phialType": "exhaust_phial",
+                "phialValue": 14
+            }
         },
         "22c": {
             "rarity": 7,
@@ -2064,7 +2454,12 @@
             ],
 
             "baseSharpness": [50,160,10,130,0,0],
-            "maxSharpness": [50,160,10,130,20,30]
+            "maxSharpness": [50,160,10,130,20,30],
+
+            "switchaxeStats": {
+                "phialType": "exhaust_phial",
+                "phialValue": 16
+            }
         }
     },
     "Remobra Tree": {
@@ -2091,7 +2486,12 @@
             ],
 
             "baseSharpness": [60,70,70,50,0,0],
-            "maxSharpness": [60,70,70,100,0,0]
+            "maxSharpness": [60,70,70,100,0,0],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         },
         "23b": {
             "rarity": 3,
@@ -2117,7 +2517,12 @@
             ],
 
             "baseSharpness": [60,60,60,70,0,0],
-            "maxSharpness": [60,60,60,120,0,0]
+            "maxSharpness": [60,60,60,120,0,0],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         },
         "23c": {
             "rarity": 4,
@@ -2145,7 +2550,12 @@
             ],
 
             "baseSharpness": [70,70,60,70,30,0],
-            "maxSharpness": [70,70,60,70,60,20]
+            "maxSharpness": [70,70,60,70,60,20],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         }
     },
     "Nargacuga Tree": {
@@ -2173,7 +2583,12 @@
             ],
 
             "baseSharpness": [50,70,80,100,0,0],
-            "maxSharpness": [50,70,80,100,50,0]
+            "maxSharpness": [50,70,80,100,50,0],
+
+            "switchaxeStats": {
+                "phialType": "poison_phial",
+                "phialValue": 12
+            }
         },
         "24b": {
             "rarity": 5,
@@ -2200,7 +2615,12 @@
             ],
 
             "baseSharpness": [50,70,80,100,50,0],
-            "maxSharpness": [50,70,80,100,80,20]
+            "maxSharpness": [50,70,80,100,80,20],
+
+            "switchaxeStats": {
+                "phialType": "poison_phial",
+                "phialValue": 15
+            }
         },
         "24c": {
             "rarity": 6,
@@ -2227,7 +2647,12 @@
             ],
 
             "baseSharpness": [50,70,100,100,60,20],
-            "maxSharpness": [50,70,100,100,60,20]
+            "maxSharpness": [50,70,100,100,60,20],
+
+            "switchaxeStats": {
+                "phialType": "poison_phial",
+                "phialValue": 17
+            }
         }
     },
     "Volvidon Tree": {
@@ -2254,7 +2679,12 @@
             ],
 
             "baseSharpness": [140,40,40,30,0,0],
-            "maxSharpness": [140,40,40,80,0,0]
+            "maxSharpness": [140,40,40,80,0,0],
+
+            "switchaxeStats": {
+                "phialType": "element_phial",
+                "phialValue": null
+            }
         },
         "25b": {
             "rarity": 3,
@@ -2279,7 +2709,12 @@
             ],
 
             "baseSharpness": [140,30,40,40,0,0],
-            "maxSharpness": [140,30,40,60,30,0]
+            "maxSharpness": [140,30,40,60,30,0],
+
+            "switchaxeStats": {
+                "phialType": "element_phial",
+                "phialValue": null
+            }
         },
         "25c": {
             "rarity": 5,
@@ -2305,7 +2740,12 @@
             ],
 
             "baseSharpness": [150,40,40,70,0,0],
-            "maxSharpness": [150,40,40,70,50,0]
+            "maxSharpness": [150,40,40,70,50,0],
+
+            "switchaxeStats": {
+                "phialType": "element_phial",
+                "phialValue": null
+            }
         },
         "25d": {
             "rarity": 6,
@@ -2332,7 +2772,12 @@
             ],
 
             "baseSharpness": [160,50,50,60,30,0],
-            "maxSharpness": [160,50,50,60,70,10]
+            "maxSharpness": [160,50,50,60,70,10],
+
+            "switchaxeStats": {
+                "phialType": "element_phial",
+                "phialValue": null
+            }
         }
     },
     "Royal Ludroth Tree": {
@@ -2358,7 +2803,12 @@
             ],
 
             "baseSharpness": [40,70,50,40,0,0],
-            "maxSharpness": [40,70,50,90,0,0]
+            "maxSharpness": [40,70,50,90,0,0],
+
+            "switchaxeStats": {
+                "phialType": "element_phial",
+                "phialValue": null
+            }
         },
         "26b": {
             "rarity": 2,
@@ -2382,7 +2832,12 @@
             ],
 
             "baseSharpness": [50,80,70,50,0,0],
-            "maxSharpness": [50,80,70,100,0,0]
+            "maxSharpness": [50,80,70,100,0,0],
+
+            "switchaxeStats": {
+                "phialType": "element_phial",
+                "phialValue": null
+            }
         },
         "26c": {
             "rarity": 5,
@@ -2408,7 +2863,12 @@
             ],
 
             "baseSharpness": [50,80,80,70,20,0],
-            "maxSharpness": [50,80,80,70,40,30]
+            "maxSharpness": [50,80,80,70,40,30],
+
+            "switchaxeStats": {
+                "phialType": "element_phial",
+                "phialValue": null
+            }
         }
     },
     "Zinogre Tree": {
@@ -2437,7 +2897,12 @@
             ],
 
             "baseSharpness": [70,40,90,50,0,0],
-            "maxSharpness": [70,40,90,80,20,0]
+            "maxSharpness": [70,40,90,80,20,0],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         },
         "27b": {
             "rarity": 5,
@@ -2464,7 +2929,12 @@
             ],
 
             "baseSharpness": [70,40,160,60,20,0],
-            "maxSharpness": [70,40,160,60,70,0]
+            "maxSharpness": [70,40,160,60,70,0],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         },
         "27c": {
             "rarity": 6,
@@ -2492,7 +2962,12 @@
             ],
 
             "baseSharpness": [70,40,120,80,40,0],
-            "maxSharpness": [70,40,120,80,50,40]
+            "maxSharpness": [70,40,120,80,50,40],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         }
     },
     "Lagombi Tree": {
@@ -2519,7 +2994,12 @@
             ],
 
             "baseSharpness": [70,60,50,20,0,0],
-            "maxSharpness": [70,60,50,70,0,0]
+            "maxSharpness": [70,60,50,70,0,0],
+
+            "switchaxeStats": {
+                "phialType": "element_phial",
+                "phialValue": null
+            }
         },
         "28b": {
             "rarity": 3,
@@ -2545,7 +3025,12 @@
             ],
 
             "baseSharpness": [70,50,90,40,0,0],
-            "maxSharpness": [70,50,90,90,0,0]
+            "maxSharpness": [70,50,90,90,0,0],
+
+            "switchaxeStats": {
+                "phialType": "element_phial",
+                "phialValue": null
+            }
         },
         "28c": {
             "rarity": 4,
@@ -2572,7 +3057,12 @@
             ],
 
             "baseSharpness": [60,30,100,100,10,0],
-            "maxSharpness": [60,30,100,100,60,0]
+            "maxSharpness": [60,30,100,100,60,0],
+
+            "switchaxeStats": {
+                "phialType": "element_phial",
+                "phialValue": null
+            }
         },
         "28d": {
             "rarity": 5,
@@ -2599,7 +3089,12 @@
             ],
 
             "baseSharpness": [40,30,100,100,30,0],
-            "maxSharpness": [40,30,100,100,60,20]
+            "maxSharpness": [40,30,100,100,60,20],
+
+            "switchaxeStats": {
+                "phialType": "element_phial",
+                "phialValue": null
+            }
         }
     },
     "Magnamalo Tree": {
@@ -2623,7 +3118,12 @@
             ],
 
             "baseSharpness": [160,20,40,80,0,0],
-            "maxSharpness": [160,20,40,110,20,0]
+            "maxSharpness": [160,20,40,110,20,0],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         },
         "29b": {
             "rarity": 3,
@@ -2646,7 +3146,12 @@
             ],
 
             "baseSharpness": [170,20,20,90,0,0],
-            "maxSharpness": [170,20,20,110,30,0]
+            "maxSharpness": [170,20,20,110,30,0],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         },
         "29c": {
             "rarity": 6,
@@ -2670,7 +3175,12 @@
             ],
 
             "baseSharpness": [190,10,20,90,40,0],
-            "maxSharpness": [190,10,20,90,60,30]
+            "maxSharpness": [190,10,20,90,60,30],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         }
     },
     "Rajang Tree": {
@@ -2694,7 +3204,12 @@
             ],
 
             "baseSharpness": [50,20,100,80,0,0],
-            "maxSharpness": [50,20,100,120,10,0]
+            "maxSharpness": [50,20,100,120,10,0],
+
+            "switchaxeStats": {
+                "phialType": "element_phial",
+                "phialValue": null
+            }
         },
         "30b": {
             "rarity": 6,
@@ -2717,7 +3232,12 @@
             ],
 
             "baseSharpness": [50,50,100,100,0,0],
-            "maxSharpness": [50,50,100,120,30,0]
+            "maxSharpness": [50,50,100,120,30,0],
+
+            "switchaxeStats": {
+                "phialType": "element_phial",
+                "phialValue": null
+            }
         },
         "30c": {
             "rarity": 7,
@@ -2741,7 +3261,12 @@
             ],
 
             "baseSharpness": [50,50,80,120,0,0],
-            "maxSharpness": [50,50,80,120,50,0]
+            "maxSharpness": [50,50,80,120,50,0],
+
+            "switchaxeStats": {
+                "phialType": "element_phial",
+                "phialValue": null
+            }
         }
     },
     "Ibushi Tree": {
@@ -2765,7 +3290,12 @@
             ],
 
             "baseSharpness": [20,20,20,40,100,0],
-            "maxSharpness": [20,20,20,40,150,0]
+            "maxSharpness": [20,20,20,40,150,0],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         },
         "31b": {
             "rarity": 6,
@@ -2788,7 +3318,12 @@
             ],
 
             "baseSharpness": [20,20,50,50,110,0],
-            "maxSharpness": [20,20,50,50,150,10]
+            "maxSharpness": [20,20,50,50,150,10],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         },
         "31c": {
             "rarity": 7,
@@ -2812,7 +3347,12 @@
             ],
 
             "baseSharpness": [20,20,80,60,120,0],
-            "maxSharpness": [20,20,80,60,150,20]
+            "maxSharpness": [20,20,80,60,150,20],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         }
     },
     "Narwa Tree": {
@@ -2836,7 +3376,12 @@
             ],
 
             "baseSharpness": [20,20,190,40,30,0],
-            "maxSharpness": [20,20,190,40,50,30]
+            "maxSharpness": [20,20,190,40,50,30],
+
+            "switchaxeStats": {
+                "phialType": "element_phial",
+                "phialValue": null
+            }
         },
         "32b": {
             "rarity": 7,
@@ -2859,7 +3404,12 @@
             ],
 
             "baseSharpness": [10,20,220,40,60,0],
-            "maxSharpness": [10,20,220,40,70,40]
+            "maxSharpness": [10,20,220,40,70,40],
+
+            "switchaxeStats": {
+                "phialType": "element_phial",
+                "phialValue": null
+            }
         }
     },
     "Bazelgeuse Tree": {
@@ -2883,7 +3433,12 @@
             ],
 
             "baseSharpness": [70,60,70,80,20,0],
-            "maxSharpness": [70,60,70,80,70,0]
+            "maxSharpness": [70,60,70,80,70,0],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         },
         "33b": {
             "rarity": 6,
@@ -2905,7 +3460,12 @@
             ],
 
             "baseSharpness": [90,80,80,70,30,0],
-            "maxSharpness": [90,80,80,70,70,10]
+            "maxSharpness": [90,80,80,70,70,10],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         },
         "33c": {
             "rarity": 7,
@@ -2929,7 +3489,12 @@
             ],
 
             "baseSharpness": [90,80,80,60,40,0],
-            "maxSharpness": [90,80,80,60,70,20]
+            "maxSharpness": [90,80,80,60,70,20],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         }
     },
     "Kushala Daora Tree": {
@@ -2953,7 +3518,12 @@
             ],
 
             "baseSharpness": [100,80,80,50,40,0],
-            "maxSharpness": [100,80,80,50,60,30]
+            "maxSharpness": [100,80,80,50,60,30],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         },
         "34b": {
             "rarity": 7,
@@ -2977,7 +3547,12 @@
             ],
 
             "baseSharpness": [100,70,80,50,40,10],
-            "maxSharpness": [100,70,80,50,40,60]
+            "maxSharpness": [100,70,80,50,40,60],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         }
     },
     "Teostra Tree": {
@@ -3001,7 +3576,12 @@
             ],
 
             "baseSharpness": [100,90,80,60,20,0],
-            "maxSharpness": [100,90,80,60,60,10]
+            "maxSharpness": [100,90,80,60,60,10],
+
+            "switchaxeStats": {
+                "phialType": "element_phial",
+                "phialValue": null
+            }
         },
         "35b": {
             "rarity": 7,
@@ -3024,7 +3604,12 @@
             ],
 
             "baseSharpness": [100,90,80,50,30,0],
-            "maxSharpness": [100,90,80,50,60,20]
+            "maxSharpness": [100,90,80,50,60,20],
+
+            "switchaxeStats": {
+                "phialType": "element_phial",
+                "phialValue": null
+            }
         }
     },
     "Chameleos Tree": {
@@ -3048,7 +3633,12 @@
             ],
 
             "baseSharpness": [80,30,80,90,70,0],
-            "maxSharpness": [80,30,80,90,70,50]
+            "maxSharpness": [80,30,80,90,70,50],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         },
         "36b": {
             "rarity": 7,
@@ -3071,7 +3661,12 @@
             ],
 
             "baseSharpness": [50,30,100,90,80,0],
-            "maxSharpness": [50,30,100,90,80,50]
+            "maxSharpness": [50,30,100,90,80,50],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         }
     },
     "Valstrax Tree": {
@@ -3095,7 +3690,12 @@
             ],
 
             "baseSharpness": [180,0,0,0,0,70],
-            "maxSharpness": [180,0,0,0,0,120]
+            "maxSharpness": [180,0,0,0,0,120],
+
+            "switchaxeStats": {
+                "phialType": "element_phial",
+                "phialValue": null
+            }
         },
         "37b": {
             "rarity": 7,
@@ -3117,7 +3717,12 @@
             ],
 
             "baseSharpness": [60,0,0,0,0,90],
-            "maxSharpness": [60,0,0,0,0,140]
+            "maxSharpness": [60,0,0,0,0,140],
+
+            "switchaxeStats": {
+                "phialType": "element_phial",
+                "phialValue": null
+            }
         }
     },
     "Smithy Tree": {
@@ -3141,7 +3746,12 @@
             ],
 
             "baseSharpness": [90,70,50,30,10,0],
-            "maxSharpness": [90,70,50,30,60,0]
+            "maxSharpness": [90,70,50,30,60,0],
+
+            "switchaxeStats": {
+                "phialType": "dragon_phial",
+                "phialValue": 13
+            }
         },
         "38b": {
             "rarity": 4,
@@ -3164,7 +3774,12 @@
             ],
 
             "baseSharpness": [110,80,60,30,20,0],
-            "maxSharpness": [110,80,60,30,70,0]
+            "maxSharpness": [110,80,60,30,70,0],
+
+            "switchaxeStats": {
+                "phialType": "dragon_phial",
+                "phialValue": 15
+            }
         },
         "38c": {
             "rarity": 5,
@@ -3188,7 +3803,12 @@
             ],
 
             "baseSharpness": [120,90,70,30,20,20],
-            "maxSharpness": [120,90,70,30,20,70]
+            "maxSharpness": [120,90,70,30,20,70],
+
+            "switchaxeStats": {
+                "phialType": "dragon_phial",
+                "phialValue": 17
+            }
         }
     },
     "Felyne Tree": {
@@ -3212,7 +3832,12 @@
             ],
 
             "baseSharpness": [50,80,90,80,0,0],
-            "maxSharpness": [50,80,90,100,30,0]
+            "maxSharpness": [50,80,90,100,30,0],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         },
         "39b": {
             "rarity": 5,
@@ -3235,7 +3860,12 @@
             ],
 
             "baseSharpness": [50,80,100,120,0,0],
-            "maxSharpness": [50,80,100,120,50,0]
+            "maxSharpness": [50,80,100,120,50,0],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         },
         "39c": {
             "rarity": 6,
@@ -3260,7 +3890,12 @@
             ],
 
             "baseSharpness": [50,80,90,120,10,0],
-            "maxSharpness": [50,80,90,120,60,0]
+            "maxSharpness": [50,80,90,120,60,0],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         }
     },
     "Death Stench Tree": {
@@ -3284,7 +3919,12 @@
             ],
 
             "baseSharpness": [150,30,30,40,0,0],
-            "maxSharpness": [150,30,30,90,0,0]
+            "maxSharpness": [150,30,30,90,0,0],
+
+            "switchaxeStats": {
+                "phialType": "element_phial",
+                "phialValue": null
+            }
         },
         "40b": {
             "rarity": 3,
@@ -3307,7 +3947,12 @@
             ],
 
             "baseSharpness": [150,20,20,60,0,0],
-            "maxSharpness": [150,20,20,90,20,0]
+            "maxSharpness": [150,20,20,90,20,0],
+
+            "switchaxeStats": {
+                "phialType": "element_phial",
+                "phialValue": null
+            }
         },
         "40c": {
             "rarity": 5,
@@ -3332,7 +3977,12 @@
             ],
 
             "baseSharpness": [160,20,20,130,20,0],
-            "maxSharpness": [160,20,20,130,60,10]
+            "maxSharpness": [160,20,20,130,60,10],
+
+            "switchaxeStats": {
+                "phialType": "element_phial",
+                "phialValue": null
+            }
         }
     },
     "Shell-Studded Tree": {
@@ -3356,7 +4006,12 @@
             ],
 
             "baseSharpness": [50,60,90,0,0,0],
-            "maxSharpness": [50,60,140,0,0,0]
+            "maxSharpness": [50,60,140,0,0,0],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         },
         "41b": {
             "rarity": 3,
@@ -3379,7 +4034,12 @@
             ],
 
             "baseSharpness": [50,90,90,20,0,0],
-            "maxSharpness": [50,90,90,60,10,0]
+            "maxSharpness": [50,90,90,60,10,0],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         },
         "41c": {
             "rarity": 5,
@@ -3404,7 +4064,12 @@
             ],
 
             "baseSharpness": [60,90,100,50,0,0],
-            "maxSharpness": [60,90,100,60,40,0]
+            "maxSharpness": [60,90,100,60,40,0],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         }
     },
     "Rampage Tree": {
@@ -3438,7 +4103,12 @@
             ],
 
             "baseSharpness": [70,70,90,20,0,0],
-            "maxSharpness": [70,70,90,70,0,0]
+            "maxSharpness": [70,70,90,70,0,0],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         },
         "42b": {
             "rarity": 5,
@@ -3478,7 +4148,12 @@
             ],
 
             "baseSharpness": [60,70,80,40,0,0],
-            "maxSharpness": [60,70,80,90,0,0]
+            "maxSharpness": [60,70,80,90,0,0],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         },
         "42c": {
             "rarity": 5,
@@ -3526,7 +4201,12 @@
             ],
 
             "baseSharpness": [50,70,80,30,20,0],
-            "maxSharpness": [50,70,80,30,70,0]
+            "maxSharpness": [50,70,80,30,70,0],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         },
         "42d": {
             "rarity": 6,
@@ -3585,7 +4265,12 @@
             ],
 
             "baseSharpness": [50,70,70,30,30,0],
-            "maxSharpness": [50,70,70,30,80,0]
+            "maxSharpness": [50,70,70,30,80,0],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         },
         "42e": {
             "rarity": 6,
@@ -3654,7 +4339,12 @@
             ],
 
             "baseSharpness": [50,70,50,50,30,0],
-            "maxSharpness": [50,70,50,50,70,10]
+            "maxSharpness": [50,70,50,50,70,10],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         },
         "42f": {
             "rarity": 7,
@@ -3734,7 +4424,12 @@
             ],
 
             "baseSharpness": [50,70,30,60,40,0],
-            "maxSharpness": [50,70,30,60,70,20]
+            "maxSharpness": [50,70,30,60,70,20],
+
+            "switchaxeStats": {
+                "phialType": "power_phial",
+                "phialValue": null
+            }
         }
     }
 }

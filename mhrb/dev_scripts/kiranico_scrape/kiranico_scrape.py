@@ -57,13 +57,7 @@ def fwrite_json(path, data=None):
         f.write(json.dumps(data, sort_keys=True, indent=4))
     return
 
-def process_ramp_skill(s):
-    s = s.strip().replace("-", " ").split() # Convert dashes to spaces, then split by space
-    m = {"I": "1", "II": "2", "III": "3", "IV": "4", "V": "5", "VI": "6"}
-    a = [(m[x] if (x in m) else x.lower()) for x in s] # Convert roman numerals and force to all-lowercase
-    return "_".join(re.sub("[^a-z0-9]+", "", x) for x in a) # Filter out non-alphanumeric
-
-def process_huntinghorn_song(s):
+def process_string_to_identifier(s):
     s = s.strip().replace("-", " ").replace("+", "plus").split()
     m = {"I": "1", "II": "2", "III": "3", "IV": "4", "V": "5", "VI": "6"}
     a = [(m[x] if (x in m) else x.lower()) for x in s] # Convert roman numerals and force to all-lowercase
@@ -100,7 +94,7 @@ def scrape_weapon_page(url, name, category, tagset):
         #    continue
 
         ramp_skill = c2.contents[1].contents[0].contents[0].strip()
-        ramp_skill = process_ramp_skill(ramp_skill)
+        ramp_skill = process_string_to_identifier(ramp_skill)
 
         rampage_skills[ramp_slot].append(str(ramp_skill))
 
@@ -135,6 +129,8 @@ def scrape_weapon_category_page(weapon_category, url, tagset):
         max_sharpness = None
 
         huntinghorn_songs = None
+        switchaxe_stats = None
+        chargeblade_stats = None
         insectglaive_stats = None
 
         num_decos = len(c2.contents[1].contents) - 1
@@ -197,9 +193,31 @@ def scrape_weapon_category_page(weapon_category, url, tagset):
 
         if weapon_category == "huntinghorn":
             huntinghorn_songs = {}
-            huntinghorn_songs["x_x"] = process_huntinghorn_song(str(c2.contents[6].contents[0].contents[0]))
-            huntinghorn_songs["a_a"] = process_huntinghorn_song(str(c2.contents[6].contents[1].contents[0]))
-            huntinghorn_songs["xa_xa"] = process_huntinghorn_song(str(c2.contents[6].contents[2].contents[0]))
+            huntinghorn_songs["x_x"] = process_string_to_identifier(str(c2.contents[6].contents[0].contents[0]))
+            huntinghorn_songs["a_a"] = process_string_to_identifier(str(c2.contents[6].contents[1].contents[0]))
+            huntinghorn_songs["xa_xa"] = process_string_to_identifier(str(c2.contents[6].contents[2].contents[0]))
+
+        if weapon_category == "switchaxe":
+            switchaxe_stats = {}
+            special_mech_str = str(c2.contents[6].contents[0].contents[0]).strip()
+
+            # We see if there's a number at the end of the string
+            substrs = special_mech_str.split()
+            phial_value = None
+            try:
+                phial_value = int(substrs[-1])
+                special_mech_str = " ".join(substrs[:-1])
+            except ValueError: # Happens if the last string isn't an int
+                pass
+
+            switchaxe_stats["phial_type"] = process_string_to_identifier(special_mech_str)
+            switchaxe_stats["phial_value"] = phial_value
+
+        if weapon_category == "chargeblade":
+            chargeblade_stats = {}
+            chargeblade_stats["phial_type"] = process_string_to_identifier(str(c2.contents[6].contents[0].contents[0]).strip())
+            print("CHARGE BLADE");
+            print(chargeblade_stats["phial_type"]);
 
         if weapon_category == "insectglaive":
             insectglaive_stats = {}
@@ -221,6 +239,10 @@ def scrape_weapon_category_page(weapon_category, url, tagset):
             data["max_sharpness"] = max_sharpness
         if huntinghorn_songs is not None:
             data["huntinghorn_songs"] = huntinghorn_songs
+        if switchaxe_stats is not None:
+            data["switchaxe_stats"] = switchaxe_stats
+        if chargeblade_stats is not None:
+            data["chargeblade_stats"] = chargeblade_stats
         if insectglaive_stats is not None:
             data["insectglaive_stats"] = insectglaive_stats
 
