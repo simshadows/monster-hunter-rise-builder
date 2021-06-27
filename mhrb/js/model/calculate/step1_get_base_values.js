@@ -63,7 +63,9 @@ function getBaseValues(db, build, calcState) {
 
     let rawPostTruncMul = 1;
 
-    let huntingHornSongs = (weaponRO.category !== "huntinghorn") ? null : weaponRO.huntinghornSongs;
+    let huntingHornSongs  = (weaponRO.category !== "huntinghorn" ) ? null : weaponRO.huntinghornSongs;
+    let switchaxeStats    = (weaponRO.category !== "switchaxe"   ) ? null : {...weaponRO.switchaxeStats};
+    let chargebladeStats  = (weaponRO.category !== "chargeblade" ) ? null : {...weaponRO.chargebladeStats};
     let insectglaiveStats = (weaponRO.category !== "insectglaive") ? null : {...weaponRO.insectglaiveStats};
 
     // Deferred operations go here
@@ -123,6 +125,12 @@ function getBaseValues(db, build, calcState) {
         for (const songObj of huntingHornSongs.values()) {
             assert(isNonEmptyStr(songObj.name)); // Spot check for structure
         }
+    }
+    function rampSwitchAxeSetPhial(phialTypeID, value) {
+        assert(weaponRO.category === "switchaxe");
+        switchaxeStats.phialType = db.readonly.switchAxePhialTypes.map.get(phialTypeID);
+        switchaxeStats.phialValue = value;
+        assert(switchaxeStats.phialType !== undefined); // Need to make sure we actually got something
     }
     const rampSkillOps = new Map([
 
@@ -377,6 +385,36 @@ function getBaseValues(db, build, calcState) {
         }],
 
         //
+        // Switch Axe and Charge Blade
+        //
+
+        ["phial_element", ()=>{
+            if (weaponRO.category === "switchaxe") {
+                switchaxeStats.phialType = db.readonly.switchAxePhialTypes.map.get("element_phial");
+            } else if (weaponRO.category === "chargeblade") {
+                chargebladeStats.phialType = db.readonly.chargeBladePhialTypes.map.get("element_phial");
+            } else {
+                console.warn("Unexpected weapon category.");
+            }
+        }],
+
+        ["phial_poison_1", ()=>{ rampSwitchAxeSetPhial("poison_phial", 20); }],
+        ["phial_poison_2", ()=>{ rampSwitchAxeSetPhial("poison_phial", 25); }],
+        ["phial_poison_3", ()=>{ rampSwitchAxeSetPhial("poison_phial", 30); }],
+
+        ["phial_paralysis_1", ()=>{ rampSwitchAxeSetPhial("paralysis_phial", 15); }],
+        ["phial_paralysis_2", ()=>{ rampSwitchAxeSetPhial("paralysis_phial", 20); }],
+        ["phial_paralysis_3", ()=>{ rampSwitchAxeSetPhial("paralysis_phial", 25); }],
+
+        ["phial_dragon_1", ()=>{ rampSwitchAxeSetPhial("dragon_phial", 20); }],
+        ["phial_dragon_2", ()=>{ rampSwitchAxeSetPhial("dragon_phial", 25); }],
+        ["phial_dragon_3", ()=>{ rampSwitchAxeSetPhial("dragon_phial", 30); }],
+
+        ["phial_exhaust_1", ()=>{ rampSwitchAxeSetPhial("exhaust_phial", 20); }],
+        ["phial_exhaust_2", ()=>{ rampSwitchAxeSetPhial("exhaust_phial", 30); }],
+        ["phial_exhaust_3", ()=>{ rampSwitchAxeSetPhial("exhaust_phial", 40); }],
+
+        //
         // Insect Glaive
         //
 
@@ -420,7 +458,7 @@ function getBaseValues(db, build, calcState) {
     // (Uncomment when you need to check what skills aren't implemented. Recomment where possible because it's noisy.)
     //for (const rampSkillID of db.readonly.weaponRampSkills.longIdsMap.keys()) {
     //    if (!rampSkillOps.has(rampSkillID)) {
-    //        console.warn("Rampage skill ID " + rampSkillID + " not implmeneted in calculation.");
+    //        console.warn("Rampage skill ID " + rampSkillID + " not implemented in calculation.");
     //    }
     //}
 
@@ -447,6 +485,8 @@ function getBaseValues(db, build, calcState) {
         rawPostTruncMul,
 
         huntingHornSongs,
+        switchaxeStats,
+        chargebladeStats,
         insectglaiveStats,
     };
     return ret;

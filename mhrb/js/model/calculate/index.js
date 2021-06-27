@@ -90,7 +90,9 @@ function calculateBuildPerformance(db, build, calcState) {
 
     assert(b.rawPostTruncMul !== undefined);
 
-    assert(b.huntingHornSongs !== undefined);
+    assert(b.huntingHornSongs  !== undefined);
+    assert(b.switchaxeStats    !== undefined);
+    assert(b.chargebladeStats  !== undefined);
     assert(b.insectglaiveStats !== undefined);
 
     const s = getSkillContributions(db, build, calcState);
@@ -256,6 +258,12 @@ function calculateBuildPerformance(db, build, calcState) {
     let huntingHornSongs = b.huntingHornSongs;
     assert((weaponRO.category === "huntinghorn") === (huntingHornSongs !== null));
 
+    let switchAxeStats = b.switchaxeStats;
+    assert((weaponRO.category === "switchaxe") === (switchAxeStats !== null));
+
+    let chargeBladeStats = b.chargebladeStats;
+    assert((weaponRO.category === "chargeblade") === (chargeBladeStats !== null));
+
     let insectglaiveStats = b.insectglaiveStats;
     assert((weaponRO.category === "insectglaive") === (insectglaiveStats !== null));
 
@@ -286,8 +294,10 @@ function calculateBuildPerformance(db, build, calcState) {
         rawSharpnessModifier:       rawSharpnessModifier,
         elementalSharpnessModifier: elementalSharpnessModifier,
 
-        huntingHornSongs: huntingHornSongs,
-        insectglaiveStats: insectglaiveStats,
+        huntingHornSongs:  huntingHornSongs,
+        switchAxeStats:    switchAxeStats,
+        chargeBladeStats:  chargeBladeStats,
+        insectGlaiveStats: insectglaiveStats,
     };
     return ret;
 }

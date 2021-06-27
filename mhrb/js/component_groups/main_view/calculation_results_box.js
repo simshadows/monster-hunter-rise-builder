@@ -234,11 +234,39 @@ class CalculationResultsBox extends React.Component {
             );
         }
 
-        if (perf.insectglaiveStats !== null) {
+        if (perf.switchAxeStats !== null) {
+            const statBoxes = [
+                    this._renderStat(null, "Phial Type", String(perf.switchAxeStats.phialType.name)),
+                ];
+            
+            if (perf.switchAxeStats.phialValue !== null) {
+                statBoxes.push(
+                    this._renderStat(null, "Phial Value", String(perf.switchAxeStats.phialValue)),
+                );
+            }
+
             specialMechanicRenderings.push(
                 element(CalculationResultsGroupBox,
                     null,
-                    this._renderStat(null, "Kinsect Level", String(perf.insectglaiveStats.kinsectLevel)),
+                    ...statBoxes,
+                ),
+            );
+        }
+
+        if (perf.chargeBladeStats !== null) {
+            specialMechanicRenderings.push(
+                element(CalculationResultsGroupBox,
+                    null,
+                    this._renderStat(null, "Phial Type", String(perf.chargeBladeStats.phialType.name)),
+                ),
+            );
+        }
+
+        if (perf.insectGlaiveStats !== null) {
+            specialMechanicRenderings.push(
+                element(CalculationResultsGroupBox,
+                    null,
+                    this._renderStat(null, "Kinsect Level", String(perf.insectGlaiveStats.kinsectLevel)),
                 ),
             );
         }
