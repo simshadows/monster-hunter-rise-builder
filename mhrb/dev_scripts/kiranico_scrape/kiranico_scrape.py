@@ -18,6 +18,7 @@ NOTE: To avoid server-side request limits, we intentionally don't download pages
 """
 
 import os
+import sys
 import re
 import json
 import requests
@@ -134,6 +135,7 @@ def scrape_weapon_category_page(weapon_category, url, tagset):
         max_sharpness = None
 
         huntinghorn_songs = None
+        insectglaive_stats = None
 
         num_decos = len(c2.contents[1].contents) - 1
         assert (num_decos >= 0) and (num_decos <= 3)
@@ -198,6 +200,14 @@ def scrape_weapon_category_page(weapon_category, url, tagset):
             huntinghorn_songs["x_x"] = process_huntinghorn_song(str(c2.contents[6].contents[0].contents[0]))
             huntinghorn_songs["a_a"] = process_huntinghorn_song(str(c2.contents[6].contents[1].contents[0]))
             huntinghorn_songs["xa_xa"] = process_huntinghorn_song(str(c2.contents[6].contents[2].contents[0]))
+
+        if weapon_category == "insectglaive":
+            insectglaive_stats = {}
+            special_mech_str = str(c2.contents[6].contents[0].contents[0]).strip()
+            if special_mech_str[:14] != "Kinsect Level ":
+                raise ValueError
+            kinsect_level = int(special_mech_str[14:])
+            insectglaive_stats["kinsect_level"] = kinsect_level
             
         #data = {}
         data = scrape_weapon_page(weapon_page_url, weapon_name, weapon_category, tagset)
@@ -211,6 +221,8 @@ def scrape_weapon_category_page(weapon_category, url, tagset):
             data["max_sharpness"] = max_sharpness
         if huntinghorn_songs is not None:
             data["huntinghorn_songs"] = huntinghorn_songs
+        if insectglaive_stats is not None:
+            data["insectglaive_stats"] = insectglaive_stats
 
         ret.append(data)
     return ret

@@ -40591,6 +40591,9 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "insectglaive_stats": {
+                "kinsect_level": 1
+            },
             "max_sharpness": [
                 50,
                 90,
@@ -40630,6 +40633,9 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "insectglaive_stats": {
+                "kinsect_level": 1
+            },
             "max_sharpness": [
                 60,
                 70,
@@ -40669,6 +40675,9 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "insectglaive_stats": {
+                "kinsect_level": 2
+            },
             "max_sharpness": [
                 60,
                 70,
@@ -40708,6 +40717,9 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "insectglaive_stats": {
+                "kinsect_level": 3
+            },
             "max_sharpness": [
                 50,
                 70,
@@ -40749,6 +40761,9 @@
             ],
             "defense": 0,
             "elestat": {},
+            "insectglaive_stats": {
+                "kinsect_level": 4
+            },
             "max_sharpness": [
                 60,
                 80,
@@ -40791,6 +40806,9 @@
             ],
             "defense": 0,
             "elestat": {},
+            "insectglaive_stats": {
+                "kinsect_level": 6
+            },
             "max_sharpness": [
                 40,
                 90,
@@ -40830,6 +40848,9 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "insectglaive_stats": {
+                "kinsect_level": 2
+            },
             "max_sharpness": [
                 50,
                 70,
@@ -40871,6 +40892,9 @@
             ],
             "defense": 0,
             "elestat": {},
+            "insectglaive_stats": {
+                "kinsect_level": 5
+            },
             "max_sharpness": [
                 100,
                 30,
@@ -40912,6 +40936,9 @@
             ],
             "defense": 0,
             "elestat": {},
+            "insectglaive_stats": {
+                "kinsect_level": 7
+            },
             "max_sharpness": [
                 70,
                 40,
@@ -40952,6 +40979,9 @@
             "defense": 0,
             "elestat": {
                 "water": 12
+            },
+            "insectglaive_stats": {
+                "kinsect_level": 2
             },
             "max_sharpness": [
                 110,
@@ -40995,6 +41025,9 @@
             "defense": 0,
             "elestat": {
                 "water": 16
+            },
+            "insectglaive_stats": {
+                "kinsect_level": 5
             },
             "max_sharpness": [
                 110,
@@ -41040,6 +41073,9 @@
             "elestat": {
                 "water": 20
             },
+            "insectglaive_stats": {
+                "kinsect_level": 7
+            },
             "max_sharpness": [
                 110,
                 70,
@@ -41081,6 +41117,9 @@
             "elestat": {
                 "sleep": 10
             },
+            "insectglaive_stats": {
+                "kinsect_level": 2
+            },
             "max_sharpness": [
                 50,
                 50,
@@ -41121,6 +41160,9 @@
             "defense": 0,
             "elestat": {
                 "sleep": 12
+            },
+            "insectglaive_stats": {
+                "kinsect_level": 3
             },
             "max_sharpness": [
                 40,
@@ -41166,6 +41208,9 @@
             "elestat": {
                 "sleep": 15
             },
+            "insectglaive_stats": {
+                "kinsect_level": 6
+            },
             "max_sharpness": [
                 50,
                 90,
@@ -41205,6 +41250,9 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "insectglaive_stats": {
+                "kinsect_level": 2
+            },
             "max_sharpness": [
                 70,
                 30,
@@ -41244,6 +41292,9 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "insectglaive_stats": {
+                "kinsect_level": 5
+            },
             "max_sharpness": [
                 50,
                 40,
@@ -41285,6 +41336,9 @@
             ],
             "defense": 0,
             "elestat": {},
+            "insectglaive_stats": {
+                "kinsect_level": 6
+            },
             "max_sharpness": [
                 50,
                 40,
@@ -41325,6 +41379,9 @@
             "defense": 10,
             "elestat": {
                 "water": 10
+            },
+            "insectglaive_stats": {
+                "kinsect_level": 2
             },
             "max_sharpness": [
                 30,
@@ -41369,6 +41426,9 @@
             "elestat": {
                 "water": 12
             },
+            "insectglaive_stats": {
+                "kinsect_level": 4
+            },
             "max_sharpness": [
                 40,
                 90,
@@ -41412,6 +41472,9 @@
             "elestat": {
                 "water": 14
             },
+            "insectglaive_stats": {
+                "kinsect_level": 7
+            },
             "max_sharpness": [
                 40,
                 90,
@@ -41451,6 +41514,9 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "insectglaive_stats": {
+                "kinsect_level": 1
+            },
             "max_sharpness": [
                 80,
                 70,
@@ -41490,6 +41556,9 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "insectglaive_stats": {
+                "kinsect_level": 1
+            },
             "max_sharpness": [
                 70,
                 60,
@@ -41529,6 +41598,9 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "insectglaive_stats": {
+                "kinsect_level": 2
+            },
             "max_sharpness": [
                 80,
                 80,
@@ -41568,6 +41640,9 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "insectglaive_stats": {
+                "kinsect_level": 2
+            },
             "max_sharpness": [
                 90,
                 70,
@@ -41609,6 +41684,9 @@
             ],
             "defense": 0,
             "elestat": {},
+            "insectglaive_stats": {
+                "kinsect_level": 3
+            },
             "max_sharpness": [
                 90,
                 80,
@@ -41650,6 +41728,9 @@
             ],
             "defense": 0,
             "elestat": {},
+            "insectglaive_stats": {
+                "kinsect_level": 5
+            },
             "max_sharpness": [
                 90,
                 80,
@@ -41692,6 +41773,9 @@
             "defense": 0,
             "elestat": {
                 "fire": 25
+            },
+            "insectglaive_stats": {
+                "kinsect_level": 4
             },
             "max_sharpness": [
                 70,
@@ -41736,6 +41820,9 @@
             "elestat": {
                 "fire": 27
             },
+            "insectglaive_stats": {
+                "kinsect_level": 6
+            },
             "max_sharpness": [
                 60,
                 30,
@@ -41778,6 +41865,9 @@
             "defense": 0,
             "elestat": {
                 "fire": 30
+            },
+            "insectglaive_stats": {
+                "kinsect_level": 7
             },
             "max_sharpness": [
                 100,
@@ -41822,6 +41912,9 @@
             "elestat": {
                 "thunder": 25
             },
+            "insectglaive_stats": {
+                "kinsect_level": 3
+            },
             "max_sharpness": [
                 70,
                 70,
@@ -41864,6 +41957,9 @@
             "defense": 0,
             "elestat": {
                 "thunder": 29
+            },
+            "insectglaive_stats": {
+                "kinsect_level": 4
             },
             "max_sharpness": [
                 60,
@@ -41909,6 +42005,9 @@
             "elestat": {
                 "thunder": 33
             },
+            "insectglaive_stats": {
+                "kinsect_level": 6
+            },
             "max_sharpness": [
                 60,
                 70,
@@ -41949,6 +42048,9 @@
             "defense": 0,
             "elestat": {
                 "poison": 19
+            },
+            "insectglaive_stats": {
+                "kinsect_level": 2
             },
             "max_sharpness": [
                 30,
@@ -41991,6 +42093,9 @@
             "elestat": {
                 "poison": 23
             },
+            "insectglaive_stats": {
+                "kinsect_level": 5
+            },
             "max_sharpness": [
                 10,
                 90,
@@ -42031,6 +42136,9 @@
             "defense": 0,
             "elestat": {
                 "poison": 25
+            },
+            "insectglaive_stats": {
+                "kinsect_level": 6
             },
             "max_sharpness": [
                 30,
@@ -42073,6 +42181,9 @@
             "elestat": {
                 "fire": 12
             },
+            "insectglaive_stats": {
+                "kinsect_level": 2
+            },
             "max_sharpness": [
                 60,
                 60,
@@ -42113,6 +42224,9 @@
             "defense": 0,
             "elestat": {
                 "fire": 15
+            },
+            "insectglaive_stats": {
+                "kinsect_level": 3
             },
             "max_sharpness": [
                 50,
@@ -42157,6 +42271,9 @@
             "elestat": {
                 "fire": 22
             },
+            "insectglaive_stats": {
+                "kinsect_level": 4
+            },
             "max_sharpness": [
                 50,
                 50,
@@ -42196,6 +42313,9 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "insectglaive_stats": {
+                "kinsect_level": 3
+            },
             "max_sharpness": [
                 60,
                 80,
@@ -42235,6 +42355,9 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "insectglaive_stats": {
+                "kinsect_level": 3
+            },
             "max_sharpness": [
                 60,
                 60,
@@ -42278,6 +42401,9 @@
             ],
             "defense": 0,
             "elestat": {},
+            "insectglaive_stats": {
+                "kinsect_level": 4
+            },
             "max_sharpness": [
                 60,
                 80,
@@ -42319,6 +42445,9 @@
             "elestat": {
                 "thunder": 12
             },
+            "insectglaive_stats": {
+                "kinsect_level": 3
+            },
             "max_sharpness": [
                 130,
                 30,
@@ -42359,6 +42488,9 @@
             "defense": 0,
             "elestat": {
                 "thunder": 15
+            },
+            "insectglaive_stats": {
+                "kinsect_level": 3
             },
             "max_sharpness": [
                 130,
@@ -42403,6 +42535,9 @@
             "elestat": {
                 "thunder": 22
             },
+            "insectglaive_stats": {
+                "kinsect_level": 6
+            },
             "max_sharpness": [
                 100,
                 90,
@@ -42443,6 +42578,9 @@
             "defense": 0,
             "elestat": {
                 "ice": 15
+            },
+            "insectglaive_stats": {
+                "kinsect_level": 2
             },
             "max_sharpness": [
                 80,
@@ -42488,6 +42626,9 @@
             "elestat": {
                 "ice": 23
             },
+            "insectglaive_stats": {
+                "kinsect_level": 4
+            },
             "max_sharpness": [
                 60,
                 40,
@@ -42532,6 +42673,9 @@
             "elestat": {
                 "ice": 26
             },
+            "insectglaive_stats": {
+                "kinsect_level": 5
+            },
             "max_sharpness": [
                 60,
                 40,
@@ -42571,6 +42715,9 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "insectglaive_stats": {
+                "kinsect_level": 2
+            },
             "max_sharpness": [
                 70,
                 90,
@@ -42610,6 +42757,9 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "insectglaive_stats": {
+                "kinsect_level": 2
+            },
             "max_sharpness": [
                 80,
                 70,
@@ -42649,6 +42799,9 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "insectglaive_stats": {
+                "kinsect_level": 3
+            },
             "max_sharpness": [
                 100,
                 40,
@@ -42688,6 +42841,9 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "insectglaive_stats": {
+                "kinsect_level": 4
+            },
             "max_sharpness": [
                 100,
                 70,
@@ -42727,6 +42883,9 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "insectglaive_stats": {
+                "kinsect_level": 5
+            },
             "max_sharpness": [
                 80,
                 70,
@@ -42766,6 +42925,9 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "insectglaive_stats": {
+                "kinsect_level": 7
+            },
             "max_sharpness": [
                 80,
                 70,
@@ -42808,6 +42970,9 @@
             "defense": 0,
             "elestat": {
                 "paralysis": 20
+            },
+            "insectglaive_stats": {
+                "kinsect_level": 4
             },
             "max_sharpness": [
                 80,
@@ -42852,6 +43017,9 @@
             "elestat": {
                 "paralysis": 22
             },
+            "insectglaive_stats": {
+                "kinsect_level": 5
+            },
             "max_sharpness": [
                 80,
                 50,
@@ -42895,6 +43063,9 @@
             "elestat": {
                 "paralysis": 25
             },
+            "insectglaive_stats": {
+                "kinsect_level": 7
+            },
             "max_sharpness": [
                 80,
                 50,
@@ -42934,6 +43105,9 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "insectglaive_stats": {
+                "kinsect_level": 4
+            },
             "max_sharpness": [
                 180,
                 30,
@@ -42973,6 +43147,9 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "insectglaive_stats": {
+                "kinsect_level": 5
+            },
             "max_sharpness": [
                 180,
                 30,
@@ -43012,6 +43189,9 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "insectglaive_stats": {
+                "kinsect_level": 6
+            },
             "max_sharpness": [
                 170,
                 30,
@@ -43052,6 +43232,9 @@
             "defense": 0,
             "elestat": {
                 "fire": 12
+            },
+            "insectglaive_stats": {
+                "kinsect_level": 2
             },
             "max_sharpness": [
                 100,
@@ -43097,6 +43280,9 @@
             "elestat": {
                 "fire": 15
             },
+            "insectglaive_stats": {
+                "kinsect_level": 6
+            },
             "max_sharpness": [
                 140,
                 70,
@@ -43141,6 +43327,9 @@
             "elestat": {
                 "fire": 18
             },
+            "insectglaive_stats": {
+                "kinsect_level": 7
+            },
             "max_sharpness": [
                 130,
                 60,
@@ -43181,6 +43370,9 @@
             "defense": 0,
             "elestat": {
                 "ice": 10
+            },
+            "insectglaive_stats": {
+                "kinsect_level": 2
             },
             "max_sharpness": [
                 90,
@@ -43225,6 +43417,9 @@
             "elestat": {
                 "ice": 12
             },
+            "insectglaive_stats": {
+                "kinsect_level": 4
+            },
             "max_sharpness": [
                 90,
                 40,
@@ -43268,6 +43463,9 @@
             "elestat": {
                 "ice": 15
             },
+            "insectglaive_stats": {
+                "kinsect_level": 5
+            },
             "max_sharpness": [
                 90,
                 40,
@@ -43308,6 +43506,9 @@
             "defense": 0,
             "elestat": {
                 "poison": 24
+            },
+            "insectglaive_stats": {
+                "kinsect_level": 3
             },
             "max_sharpness": [
                 110,
@@ -43353,6 +43554,9 @@
             "elestat": {
                 "poison": 27
             },
+            "insectglaive_stats": {
+                "kinsect_level": 4
+            },
             "max_sharpness": [
                 110,
                 80,
@@ -43397,6 +43601,9 @@
             "elestat": {
                 "poison": 30
             },
+            "insectglaive_stats": {
+                "kinsect_level": 5
+            },
             "max_sharpness": [
                 90,
                 80,
@@ -43437,6 +43644,9 @@
             "defense": 0,
             "elestat": {
                 "ice": 16
+            },
+            "insectglaive_stats": {
+                "kinsect_level": 2
             },
             "max_sharpness": [
                 50,
@@ -43483,6 +43693,9 @@
             "elestat": {
                 "ice": 22
             },
+            "insectglaive_stats": {
+                "kinsect_level": 5
+            },
             "max_sharpness": [
                 50,
                 40,
@@ -43528,6 +43741,9 @@
             "elestat": {
                 "ice": 25
             },
+            "insectglaive_stats": {
+                "kinsect_level": 6
+            },
             "max_sharpness": [
                 50,
                 70,
@@ -43569,6 +43785,9 @@
             "elestat": {
                 "water": 20
             },
+            "insectglaive_stats": {
+                "kinsect_level": 2
+            },
             "max_sharpness": [
                 50,
                 60,
@@ -43609,6 +43828,9 @@
             "defense": 0,
             "elestat": {
                 "water": 25
+            },
+            "insectglaive_stats": {
+                "kinsect_level": 3
             },
             "max_sharpness": [
                 60,
@@ -43655,6 +43877,9 @@
             "elestat": {
                 "water": 33
             },
+            "insectglaive_stats": {
+                "kinsect_level": 5
+            },
             "max_sharpness": [
                 90,
                 20,
@@ -43696,6 +43921,9 @@
             "elestat": {
                 "thunder": 20
             },
+            "insectglaive_stats": {
+                "kinsect_level": 3
+            },
             "max_sharpness": [
                 70,
                 40,
@@ -43736,6 +43964,9 @@
             "defense": 0,
             "elestat": {
                 "thunder": 23
+            },
+            "insectglaive_stats": {
+                "kinsect_level": 6
             },
             "max_sharpness": [
                 70,
@@ -43781,6 +44012,9 @@
             "elestat": {
                 "thunder": 25
             },
+            "insectglaive_stats": {
+                "kinsect_level": 8
+            },
             "max_sharpness": [
                 70,
                 40,
@@ -43820,6 +44054,9 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "insectglaive_stats": {
+                "kinsect_level": 3
+            },
             "max_sharpness": [
                 70,
                 80,
@@ -43859,6 +44096,9 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "insectglaive_stats": {
+                "kinsect_level": 4
+            },
             "max_sharpness": [
                 60,
                 60,
@@ -43902,6 +44142,9 @@
             ],
             "defense": 0,
             "elestat": {},
+            "insectglaive_stats": {
+                "kinsect_level": 5
+            },
             "max_sharpness": [
                 60,
                 80,
@@ -43941,6 +44184,9 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "insectglaive_stats": {
+                "kinsect_level": 3
+            },
             "max_sharpness": [
                 120,
                 20,
@@ -43980,6 +44226,9 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "insectglaive_stats": {
+                "kinsect_level": 4
+            },
             "max_sharpness": [
                 150,
                 20,
@@ -44019,6 +44268,9 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "insectglaive_stats": {
+                "kinsect_level": 4
+            },
             "max_sharpness": [
                 120,
                 20,
@@ -44062,6 +44314,9 @@
             "defense": 0,
             "elestat": {
                 "fire": 14
+            },
+            "insectglaive_stats": {
+                "kinsect_level": 5
             },
             "max_sharpness": [
                 150,
@@ -44107,6 +44362,9 @@
             "elestat": {
                 "fire": 16
             },
+            "insectglaive_stats": {
+                "kinsect_level": 6
+            },
             "max_sharpness": [
                 150,
                 40,
@@ -44150,6 +44408,9 @@
             "defense": 0,
             "elestat": {
                 "fire": 20
+            },
+            "insectglaive_stats": {
+                "kinsect_level": 8
             },
             "max_sharpness": [
                 160,
@@ -44195,6 +44456,9 @@
             "elestat": {
                 "dragon": 15
             },
+            "insectglaive_stats": {
+                "kinsect_level": 5
+            },
             "max_sharpness": [
                 150,
                 40,
@@ -44238,6 +44502,9 @@
             "defense": 0,
             "elestat": {
                 "dragon": 17
+            },
+            "insectglaive_stats": {
+                "kinsect_level": 6
             },
             "max_sharpness": [
                 150,
@@ -44283,6 +44550,9 @@
             "elestat": {
                 "dragon": 20
             },
+            "insectglaive_stats": {
+                "kinsect_level": 8
+            },
             "max_sharpness": [
                 160,
                 40,
@@ -44323,6 +44593,9 @@
             "defense": 0,
             "elestat": {
                 "ice": 12
+            },
+            "insectglaive_stats": {
+                "kinsect_level": 4
             },
             "max_sharpness": [
                 120,
@@ -44368,6 +44641,9 @@
             "elestat": {
                 "ice": 16
             },
+            "insectglaive_stats": {
+                "kinsect_level": 6
+            },
             "max_sharpness": [
                 150,
                 20,
@@ -44412,6 +44688,9 @@
             "elestat": {
                 "ice": 18
             },
+            "insectglaive_stats": {
+                "kinsect_level": 8
+            },
             "max_sharpness": [
                 160,
                 40,
@@ -44452,6 +44731,9 @@
             "defense": 0,
             "elestat": {
                 "paralysis": 15
+            },
+            "insectglaive_stats": {
+                "kinsect_level": 4
             },
             "max_sharpness": [
                 120,
@@ -44498,6 +44780,9 @@
             "elestat": {
                 "paralysis": 18
             },
+            "insectglaive_stats": {
+                "kinsect_level": 6
+            },
             "max_sharpness": [
                 150,
                 40,
@@ -44543,6 +44828,9 @@
             "elestat": {
                 "paralysis": 20
             },
+            "insectglaive_stats": {
+                "kinsect_level": 7
+            },
             "max_sharpness": [
                 160,
                 40,
@@ -44584,6 +44872,9 @@
             "elestat": {
                 "blast": 13
             },
+            "insectglaive_stats": {
+                "kinsect_level": 3
+            },
             "max_sharpness": [
                 160,
                 20,
@@ -44624,6 +44915,9 @@
             "defense": 0,
             "elestat": {
                 "blast": 15
+            },
+            "insectglaive_stats": {
+                "kinsect_level": 3
             },
             "max_sharpness": [
                 170,
@@ -44669,6 +44963,9 @@
             "elestat": {
                 "blast": 20
             },
+            "insectglaive_stats": {
+                "kinsect_level": 7
+            },
             "max_sharpness": [
                 190,
                 10,
@@ -44709,6 +45006,9 @@
             "defense": 0,
             "elestat": {
                 "thunder": 18
+            },
+            "insectglaive_stats": {
+                "kinsect_level": 4
             },
             "max_sharpness": [
                 60,
@@ -44753,6 +45053,9 @@
             "elestat": {
                 "thunder": 20
             },
+            "insectglaive_stats": {
+                "kinsect_level": 5
+            },
             "max_sharpness": [
                 60,
                 30,
@@ -44796,6 +45099,9 @@
             "elestat": {
                 "thunder": 22
             },
+            "insectglaive_stats": {
+                "kinsect_level": 6
+            },
             "max_sharpness": [
                 100,
                 50,
@@ -44836,6 +45142,9 @@
             "defense": 0,
             "elestat": {
                 "dragon": 10
+            },
+            "insectglaive_stats": {
+                "kinsect_level": 4
             },
             "max_sharpness": [
                 20,
@@ -44878,6 +45187,9 @@
             "elestat": {
                 "dragon": 12
             },
+            "insectglaive_stats": {
+                "kinsect_level": 5
+            },
             "max_sharpness": [
                 20,
                 20,
@@ -44918,6 +45230,9 @@
             "defense": 0,
             "elestat": {
                 "dragon": 14
+            },
+            "insectglaive_stats": {
+                "kinsect_level": 6
             },
             "max_sharpness": [
                 20,
@@ -44960,6 +45275,9 @@
             "elestat": {
                 "thunder": 36
             },
+            "insectglaive_stats": {
+                "kinsect_level": 7
+            },
             "max_sharpness": [
                 20,
                 20,
@@ -45000,6 +45318,9 @@
             "defense": 0,
             "elestat": {
                 "thunder": 38
+            },
+            "insectglaive_stats": {
+                "kinsect_level": 8
             },
             "max_sharpness": [
                 10,
@@ -45044,6 +45365,9 @@
             "elestat": {
                 "ice": 34
             },
+            "insectglaive_stats": {
+                "kinsect_level": 6
+            },
             "max_sharpness": [
                 50,
                 100,
@@ -45086,6 +45410,9 @@
             "defense": 0,
             "elestat": {
                 "ice": 36
+            },
+            "insectglaive_stats": {
+                "kinsect_level": 7
             },
             "max_sharpness": [
                 50,
@@ -45132,6 +45459,9 @@
             "elestat": {
                 "poison": 35
             },
+            "insectglaive_stats": {
+                "kinsect_level": 6
+            },
             "max_sharpness": [
                 60,
                 130,
@@ -45177,6 +45507,9 @@
             "elestat": {
                 "poison": 38
             },
+            "insectglaive_stats": {
+                "kinsect_level": 6
+            },
             "max_sharpness": [
                 30,
                 140,
@@ -45219,6 +45552,9 @@
             "defense": 0,
             "elestat": {
                 "dragon": 35
+            },
+            "insectglaive_stats": {
+                "kinsect_level": 5
             },
             "max_sharpness": [
                 180,
@@ -45263,6 +45599,9 @@
             "elestat": {
                 "dragon": 38
             },
+            "insectglaive_stats": {
+                "kinsect_level": 5
+            },
             "max_sharpness": [
                 60,
                 0,
@@ -45303,6 +45642,9 @@
             "defense": 15,
             "elestat": {
                 "dragon": 16
+            },
+            "insectglaive_stats": {
+                "kinsect_level": 4
             },
             "max_sharpness": [
                 60,
@@ -45348,6 +45690,9 @@
             "elestat": {
                 "dragon": 20
             },
+            "insectglaive_stats": {
+                "kinsect_level": 5
+            },
             "max_sharpness": [
                 90,
                 100,
@@ -45392,6 +45737,9 @@
             "elestat": {
                 "dragon": 24
             },
+            "insectglaive_stats": {
+                "kinsect_level": 7
+            },
             "max_sharpness": [
                 90,
                 100,
@@ -45433,6 +45781,9 @@
             "elestat": {
                 "blast": 20
             },
+            "insectglaive_stats": {
+                "kinsect_level": 3
+            },
             "max_sharpness": [
                 120,
                 40,
@@ -45473,6 +45824,9 @@
             "defense": 5,
             "elestat": {
                 "blast": 25
+            },
+            "insectglaive_stats": {
+                "kinsect_level": 4
             },
             "max_sharpness": [
                 120,
@@ -45519,6 +45873,9 @@
             "elestat": {
                 "blast": 29
             },
+            "insectglaive_stats": {
+                "kinsect_level": 5
+            },
             "max_sharpness": [
                 120,
                 50,
@@ -45564,6 +45921,9 @@
             "elestat": {
                 "blast": 33
             },
+            "insectglaive_stats": {
+                "kinsect_level": 8
+            },
             "max_sharpness": [
                 120,
                 60,
@@ -45606,6 +45966,9 @@
             "defense": 0,
             "elestat": {
                 "water": 8
+            },
+            "insectglaive_stats": {
+                "kinsect_level": 4
             },
             "max_sharpness": [
                 60,
@@ -45650,6 +46013,9 @@
             "elestat": {
                 "water": 9
             },
+            "insectglaive_stats": {
+                "kinsect_level": 5
+            },
             "max_sharpness": [
                 60,
                 80,
@@ -45693,6 +46059,9 @@
             "elestat": {
                 "water": 10
             },
+            "insectglaive_stats": {
+                "kinsect_level": 6
+            },
             "max_sharpness": [
                 40,
                 60,
@@ -45732,6 +46101,9 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "insectglaive_stats": {
+                "kinsect_level": 3
+            },
             "max_sharpness": [
                 70,
                 70,
@@ -45778,6 +46150,9 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "insectglaive_stats": {
+                "kinsect_level": 3
+            },
             "max_sharpness": [
                 60,
                 70,
@@ -45828,6 +46203,9 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "insectglaive_stats": {
+                "kinsect_level": 3
+            },
             "max_sharpness": [
                 50,
                 70,
@@ -45884,6 +46262,9 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "insectglaive_stats": {
+                "kinsect_level": 3
+            },
             "max_sharpness": [
                 50,
                 70,
@@ -45941,6 +46322,9 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "insectglaive_stats": {
+                "kinsect_level": 3
+            },
             "max_sharpness": [
                 50,
                 70,
@@ -46000,6 +46384,9 @@
             "decos": [],
             "defense": 0,
             "elestat": {},
+            "insectglaive_stats": {
+                "kinsect_level": 3
+            },
             "max_sharpness": [
                 50,
                 70,

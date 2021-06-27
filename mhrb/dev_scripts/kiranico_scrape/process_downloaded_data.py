@@ -145,6 +145,8 @@ for (weapon_category, spec_subdict) in data_spec.items():
                 d["max_sharpness"] = obj["max_sharpness"][:-1] # Remove the last sharpness level
             if weapon_category == "huntinghorn":
                 d["huntinghorn_songs"] = obj["huntinghorn_songs"]
+            if weapon_category == "insectglaive":
+                d["insectglaive_stats"] = obj["insectglaive_stats"]
 
             data[weapon_category][tree_name][weapon_id] = d
 
@@ -276,6 +278,13 @@ huntinghorn_songs_fmt = """,
             "huntinghornSongs": {{{songs}}}\
 """
 
+insectglaive_stats_fmt = """,
+
+            "insectglaiveStats": {{
+                "kinsectLevel": {kinsect_level}
+            }}\
+"""
+
 
 def process_ramp_skills(lst):
     slot_strs = []
@@ -311,6 +320,11 @@ for (weapon_category, _) in data_spec.items():
             if "huntinghorn_songs" in weapon_data:
                 special_mechanics += huntinghorn_songs_fmt.format(
                         songs=", ".join(f"\"{k}\":\"{v}\"" for (k, v) in weapon_data["huntinghorn_songs"].items()),
+                    )
+
+            if "insectglaive_stats" in weapon_data:
+                special_mechanics += insectglaive_stats_fmt.format(
+                        kinsect_level=str(weapon_data["insectglaive_stats"]["kinsect_level"]),
                     )
 
             weapon_strs.append(weapon_fmt.format(
