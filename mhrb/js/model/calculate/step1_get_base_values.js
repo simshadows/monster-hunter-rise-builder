@@ -132,6 +132,13 @@ function getBaseValues(db, build, calcState) {
         switchaxeStats.phialValue = value;
         assert(switchaxeStats.phialType !== undefined); // Need to make sure we actually got something
     }
+
+    // No operation
+    // (All skills that intentionally do not have any operations attached to them will use this function.)
+    function nop() {
+        // Do nothing
+    }
+
     const rampSkillOps = new Map([
 
         //
@@ -313,6 +320,9 @@ function getBaseValues(db, build, calcState) {
             rawPostTruncMul *= 1.05;
             // TODO: Is there an elemental multiplier?
         }],
+
+        ["defense_grinder_1", nop],
+        ["defense_grinder_2", nop],
 
         ["element_exploit"      , ()=>{ console.warn("NOT IMPLEMENTED"); }],
         ["fireblight_exploit"   , ()=>{ console.warn("NOT IMPLEMENTED"); }],

@@ -209,6 +209,17 @@ class CalcState {
                     },
                 ],
             }],
+            ["Song: Infernal Melody", {
+                initialState: 0,
+                presentations: [
+                    null,
+                    {
+                        name: "Active",
+                        type: "icon",
+                        iconImgPath: getImgPath("song_infernalmelody"),
+                    },
+                ],
+            }],
             ["Song: Attack Up", {
                 initialState: 0,
                 presentations: [

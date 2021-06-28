@@ -69,10 +69,11 @@ const imgPathMap = new Map([
     
     ["palico_powerdrum"              , "./images/palico_powerdrum_inkscapesourcefile.svg"  ],
     ["palico_rousingroar"            , "./images/palico_rousingroar_inkscapesourcefile.svg"],
-    ["song_attackup"                 , "./images/song_attackup.svg"                        ],
-    ["song_affinityup"               , "./images/song_affinityup.svg"                      ],
-    ["song_elementalattackboost"     , "./images/song_elementalattackboost.svg"            ],
-    ["song_defenseup"                , "./images/song_defenseup_inkscapesourcefile.svg"    ],
+    ["song_infernalmelody"           , "./images/song_white.svg"                           ],
+    ["song_attackup"                 , "./images/song_red.svg"                             ],
+    ["song_affinityup"               , "./images/song_pink.svg"                            ],
+    ["song_elementalattackboost"     , "./images/song_yellow.svg"                          ],
+    ["song_defenseup"                , "./images/song_gold_inkscapesourcefile.svg"         ],
 
     ["huntinghorn_song_x" , "./images/huntinghorn_song_x_inkscapesourcefile.svg" ],
     ["huntinghorn_song_a" , "./images/huntinghorn_song_a_inkscapesourcefile.svg" ],

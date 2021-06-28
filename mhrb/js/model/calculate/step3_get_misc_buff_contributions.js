@@ -105,8 +105,15 @@ function getMiscBuffContributions(db, build, calcState) {
         defenseAdd += 15;
     }
 
+    let infernalMelodyActive = false;
+    if (miscBuffActive("Song: Infernal Melody")) {
+        rawMul *= 1.20;
+        infernalMelodyActive = true; // We overwrite the Attack Up song
+    }
     if (miscBuffActive("Song: Attack Up")) {
-        rawMul *= 1.10;
+        if (!infernalMelodyActive) {
+            rawMul *= 1.10;
+        }
     }
     if (miscBuffActive("Song: Affinity Up")) {
         affinityAdd += 20;
