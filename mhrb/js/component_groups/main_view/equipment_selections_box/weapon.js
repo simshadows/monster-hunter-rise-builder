@@ -225,6 +225,16 @@ class RampageSkillSelection extends React.Component {
     }
 }
 
+function DummyRampageSkillSelection(props) {
+    return element("div",
+        {
+        className: "equip-weapon-ramp-box",
+        style: {visibility: "hidden"},
+        },
+        null
+    );
+}
+
 class EquipWeaponInfoBox extends React.Component {
     constructor(props) {
         super(props);
@@ -340,7 +350,19 @@ class EquipWeaponInfoBox extends React.Component {
 
         const extraGroupElements = [];
         for (const groupElements of rampageSkillBoxes) {
-            if (groupElements.length == 0) continue;
+            if (groupElements.length === 0) continue;
+
+            assert((groupElements.length > 0) && (groupElements.length <= 3));
+            const numDummies = 3 - groupElements.length;
+            for (let i = 0; i < numDummies; ++i) {
+                groupElements.push(
+                    element(DummyRampageSkillSelection,
+                        null,
+                        null,
+                    )
+                );
+            }
+
             extraGroupElements.push(
                 element("div",
                     {
