@@ -154,7 +154,7 @@ function validateWeaponDataSharpness(weaponData) {
 
 function validateWeaponDataGunlance(weaponData) {
     const shellingLevel = weaponData.gunlanceStats.shellingLevel;
-    assert(isInt(shellingLevel) && (shellingLevel > 0) && (shellingLevel <= 3));
+    assert(isInt(shellingLevel) && (shellingLevel > 0) && (shellingLevel <= 5), "Invalid shelling level: " + String(shellingLevel));
 }
 
 function validateWeaponDataHuntingHorn(weaponData) {
@@ -164,9 +164,16 @@ function validateWeaponDataHuntingHorn(weaponData) {
     //assert(isNonEmptyStr(weaponData.huntinghornSongs.xa_xa));
 }
 
+function validateWeaponDataSwitchAxe(weaponData) {
+    const phialType = weaponData.switchaxeStats.phialType;
+    const phialValue = weaponData.switchaxeStats.phialValue;
+
+    assert(isObj(phialType));
+    assert((phialValue === null) || (isInt(phialValue) && (phialValue > 0)));
+}
+
 function validateWeaponDataChargeBlade(weaponData) {
-    const cbStats = weaponData.chargebladeStats;
-    assert(isInt(kinsectLevel) && (kinsectLevel > 0) && (kinsectLevel <= 8));
+    assert(isObj(weaponData.chargebladeStats.phialType));
 }
 
 function validateWeaponDataInsectGlaive(weaponData) {
@@ -275,8 +282,14 @@ async function downloadCategoryRawWeaponData(category, path, op) {
 
 async function downloadAllRawWeaponData() {
     const validateSimpleMelee  = (weaponData) => {validateWeaponDataSharpness(weaponData);};
+    const validateGL           = (weaponData) => {validateWeaponDataSharpness(weaponData);
+                                                  validateWeaponDataGunlance(weaponData);};
     const validateHH           = (weaponData) => {validateWeaponDataSharpness(weaponData);
                                                   validateWeaponDataHuntingHorn(weaponData);};
+    const validateSA           = (weaponData) => {validateWeaponDataSharpness(weaponData);
+                                                  validateWeaponDataSwitchAxe(weaponData);};
+    const validateCB           = (weaponData) => {validateWeaponDataSharpness(weaponData);
+                                                  validateWeaponDataChargeBlade(weaponData);};
     const validateIG           = (weaponData) => {validateWeaponDataSharpness(weaponData);
                                                   validateWeaponDataInsectGlaive(weaponData);};
     const validateSimpleRanged = (weaponData) => {};
@@ -286,11 +299,11 @@ async function downloadAllRawWeaponData() {
     const snsDataFut = downloadCategoryRawWeaponData("swordandshield", WEAPON_SNS_PATH, validateSimpleMelee );
     const dbDataFut  = downloadCategoryRawWeaponData("dualblades",     WEAPON_DB_PATH,  validateSimpleMelee );
     const lDataFut   = downloadCategoryRawWeaponData("lance",          WEAPON_L_PATH,   validateSimpleMelee );
-    const glDataFut  = downloadCategoryRawWeaponData("gunlance",       WEAPON_GL_PATH,  validateSimpleMelee );
+    const glDataFut  = downloadCategoryRawWeaponData("gunlance",       WEAPON_GL_PATH,  validateGL          );
     const hDataFut   = downloadCategoryRawWeaponData("hammer",         WEAPON_H_PATH,   validateSimpleMelee );
     const hhDataFut  = downloadCategoryRawWeaponData("huntinghorn",    WEAPON_HH_PATH,  validateHH          );
-    const saDataFut  = downloadCategoryRawWeaponData("switchaxe",      WEAPON_SA_PATH,  validateSimpleMelee );
-    const cbDataFut  = downloadCategoryRawWeaponData("chargeblade",    WEAPON_CB_PATH,  validateSimpleMelee );
+    const saDataFut  = downloadCategoryRawWeaponData("switchaxe",      WEAPON_SA_PATH,  validateSA          );
+    const cbDataFut  = downloadCategoryRawWeaponData("chargeblade",    WEAPON_CB_PATH,  validateCB          );
     const igDataFut  = downloadCategoryRawWeaponData("insectglaive",   WEAPON_IG_PATH,  validateIG          );
     const lbgDataFut = downloadCategoryRawWeaponData("lightbowgun",    WEAPON_LBG_PATH, validateSimpleRanged);
     const hbgDataFut = downloadCategoryRawWeaponData("heavybowgun",    WEAPON_HBG_PATH, validateSimpleRanged);

@@ -36,6 +36,11 @@ export function isInt(obj) {
     console.assert(res, "Expected an integer. Instead got:", obj);
     return res;
 }
+export function isIntOrNull(obj) {
+    const res = ((typeof obj === "number") && (obj % 1 === 0)) || (obj === null);
+    console.assert(res, "Expected an integer or null. Instead got:", obj);
+    return res;
+}
 export function isNumber(obj) {
     const res = (typeof obj === "number");
     console.assert(res, "Expected a number. Instead got:", obj);

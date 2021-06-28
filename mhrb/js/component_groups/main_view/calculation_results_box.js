@@ -223,6 +223,16 @@ class CalculationResultsBox extends React.Component {
 
         const specialMechanicRenderings = [];
 
+        if (perf.gunlanceStats !== null) {
+            const text = String(perf.gunlanceStats.shellingType.name) + " " + String(perf.gunlanceStats.shellingLevel);
+            specialMechanicRenderings.push(
+                element(CalculationResultsGroupBox,
+                    null,
+                    this._renderStat(null, "Shelling Type", text),
+                ),
+            );
+        }
+
         if (perf.huntingHornSongs !== null) {
             specialMechanicRenderings.push(
                 element(CalculationResultsGroupBox,

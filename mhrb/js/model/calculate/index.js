@@ -90,6 +90,7 @@ function calculateBuildPerformance(db, build, calcState) {
 
     assert(b.rawPostTruncMul !== undefined);
 
+    assert(b.gunlanceStats     !== undefined);
     assert(b.huntingHornSongs  !== undefined);
     assert(b.switchaxeStats    !== undefined);
     assert(b.chargebladeStats  !== undefined);
@@ -255,6 +256,9 @@ function calculateBuildPerformance(db, build, calcState) {
     // STAGE 7: Special Mechanics
     //
 
+    let gunlanceStats = b.gunlanceStats;
+    assert((weaponRO.category === "gunlance") === (gunlanceStats !== null));
+
     let huntingHornSongs = b.huntingHornSongs;
     assert((weaponRO.category === "huntinghorn") === (huntingHornSongs !== null));
 
@@ -294,6 +298,7 @@ function calculateBuildPerformance(db, build, calcState) {
         rawSharpnessModifier:       rawSharpnessModifier,
         elementalSharpnessModifier: elementalSharpnessModifier,
 
+        gunlanceStats:     gunlanceStats,
         huntingHornSongs:  huntingHornSongs,
         switchAxeStats:    switchAxeStats,
         chargeBladeStats:  chargeBladeStats,

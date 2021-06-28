@@ -63,6 +63,7 @@ function getBaseValues(db, build, calcState) {
 
     let rawPostTruncMul = 1;
 
+    let gunlanceStats     = (weaponRO.category !== "gunlance"    ) ? null : {...weaponRO.gunlanceStats};
     let huntingHornSongs  = (weaponRO.category !== "huntinghorn" ) ? null : weaponRO.huntinghornSongs;
     let switchaxeStats    = (weaponRO.category !== "switchaxe"   ) ? null : {...weaponRO.switchaxeStats};
     let chargebladeStats  = (weaponRO.category !== "chargeblade" ) ? null : {...weaponRO.chargebladeStats};
@@ -113,6 +114,12 @@ function getBaseValues(db, build, calcState) {
             assert(baseEleStat.size === 2);
         }
         deferredOps1.push(op); // Defer
+    }
+    function rampGunlanceSetShellingType(shellingTypeID, level) {
+        assert(weaponRO.category === "gunlance");
+        gunlanceStats.shellingType = db.readonly.gunlanceShellingTypes.map.get(shellingTypeID);
+        gunlanceStats.shellingLevel = level;
+        assert(gunlanceStats.shellingType !== undefined); // Need to make sure we actually got something
     }
     function rampMelody(songX, songA, songXA) {
         assert(weaponRO.category === "huntinghorn");
@@ -334,6 +341,22 @@ function getBaseValues(db, build, calcState) {
         ["non_elemental_boost", ()=>{ deferredOps2.push(()=>{ if (baseEleStat.size === 0) baseRaw += 10; }); }],
 
         //
+        // Gunlance
+        //
+
+        ["shelling_normal_1", ()=>{ rampGunlanceSetShellingType("normal", 3); }],
+        ["shelling_normal_2", ()=>{ rampGunlanceSetShellingType("normal", 4); }],
+        ["shelling_normal_3", ()=>{ rampGunlanceSetShellingType("normal", 5); }],
+
+        ["shelling_long_1", ()=>{ rampGunlanceSetShellingType("long", 3); }],
+        ["shelling_long_2", ()=>{ rampGunlanceSetShellingType("long", 4); }],
+        ["shelling_long_3", ()=>{ rampGunlanceSetShellingType("long", 5); }],
+
+        ["shelling_wide_1", ()=>{ rampGunlanceSetShellingType("wide", 3); }],
+        ["shelling_wide_2", ()=>{ rampGunlanceSetShellingType("wide", 4); }],
+        ["shelling_wide_3", ()=>{ rampGunlanceSetShellingType("wide", 5); }],
+
+        //
         // Hunting Horn
         //
 
@@ -494,6 +517,7 @@ function getBaseValues(db, build, calcState) {
 
         rawPostTruncMul,
 
+        gunlanceStats,
         huntingHornSongs,
         switchaxeStats,
         chargebladeStats,
