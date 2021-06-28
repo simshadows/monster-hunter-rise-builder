@@ -41,6 +41,7 @@ import {
     petalaceMap,
 } from "./hardcoded_data/petalace_data.js";
 import {
+    gunlanceShellingTypesMap,
     huntingHornSongsMap,
     switchAxePhialTypesMap,
     chargeBladePhialTypesMap,
@@ -151,6 +152,11 @@ function validateWeaponDataSharpness(weaponData) {
     op(weaponData.maxSharpness);
 }
 
+function validateWeaponDataGunlance(weaponData) {
+    const shellingLevel = weaponData.gunlanceStats.shellingLevel;
+    assert(isInt(shellingLevel) && (shellingLevel > 0) && (shellingLevel <= 3));
+}
+
 function validateWeaponDataHuntingHorn(weaponData) {
     assert(isObj(weaponData.huntinghornSongs));
     //assert(isNonEmptyStr(weaponData.huntinghornSongs.x_x));
@@ -195,6 +201,14 @@ async function downloadCategoryRawWeaponData(category, path, op) {
 
             // Convert the eleStat object to a map because it's easier to work with
             weaponData.eleStat = new Map(Object.entries(weaponData.eleStat));
+
+            // Add Gunlance mechanics
+            if (weaponData.category === "gunlance") {
+                const shellingTypeID = weaponData.gunlanceStats.shellingType;
+                const shellingTypeRO = gunlanceShellingTypesMap.get(shellingTypeID);
+                assert(shellingTypeRO !== undefined, "Unknown shelling type ID: " + String(shellingTypeID));
+                weaponData.gunlanceStats.shellingType = shellingTypeRO;
+            }
 
             // Add Hunting Horn mechanics
             if (weaponData.category === "huntinghorn") {
@@ -649,6 +663,9 @@ class GameData {
             decorations: {
                 array: Array.from(decosMap.values()),
                 map: decosMap,
+            },
+            gunlanceShellingTypes: {
+                map: gunlanceShellingTypesMap,
             },
             huntingHornSongs: {
                 map: huntingHornSongsMap,

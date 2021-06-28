@@ -128,6 +128,7 @@ def scrape_weapon_category_page(weapon_category, url, tagset):
         base_sharpness = None
         max_sharpness = None
 
+        gunlance_stats = None
         huntinghorn_songs = None
         switchaxe_stats = None
         chargeblade_stats = None
@@ -191,6 +192,14 @@ def scrape_weapon_category_page(weapon_category, url, tagset):
                 sharpness_value = int(c3["style"][7:-28]) * 5
                 max_sharpness.append(sharpness_value)
 
+        if weapon_category == "gunlance":
+            gunlance_stats = {}
+            special_mech_str = str(c2.contents[6].contents[0].contents[0]).strip()
+            substrs = special_mech_str.split()
+
+            gunlance_stats["shelling_type"] = process_string_to_identifier(" ".join(substrs[:-1]))
+            gunlance_stats["shelling_level"] = int(substrs[-1])
+
         if weapon_category == "huntinghorn":
             huntinghorn_songs = {}
             huntinghorn_songs["x_x"] = process_string_to_identifier(str(c2.contents[6].contents[0].contents[0]))
@@ -216,8 +225,6 @@ def scrape_weapon_category_page(weapon_category, url, tagset):
         if weapon_category == "chargeblade":
             chargeblade_stats = {}
             chargeblade_stats["phial_type"] = process_string_to_identifier(str(c2.contents[6].contents[0].contents[0]).strip())
-            print("CHARGE BLADE");
-            print(chargeblade_stats["phial_type"]);
 
         if weapon_category == "insectglaive":
             insectglaive_stats = {}
@@ -237,6 +244,8 @@ def scrape_weapon_category_page(weapon_category, url, tagset):
             data["base_sharpness"] = base_sharpness
         if max_sharpness is not None:
             data["max_sharpness"] = max_sharpness
+        if gunlance_stats is not None:
+            data["gunlance_stats"] = gunlance_stats
         if huntinghorn_songs is not None:
             data["huntinghorn_songs"] = huntinghorn_songs
         if switchaxe_stats is not None:

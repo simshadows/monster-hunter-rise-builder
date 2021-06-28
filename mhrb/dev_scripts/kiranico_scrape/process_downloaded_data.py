@@ -143,6 +143,8 @@ for (weapon_category, spec_subdict) in data_spec.items():
             if "melee" in spec_subdict[name]["tagset"]:
                 d["base_sharpness"] = obj["base_sharpness"][:-1] # Remove the last sharpness level
                 d["max_sharpness"] = obj["max_sharpness"][:-1] # Remove the last sharpness level
+            if weapon_category == "gunlance":
+                d["gunlance_stats"] = obj["gunlance_stats"]
             if weapon_category == "huntinghorn":
                 d["huntinghorn_songs"] = obj["huntinghorn_songs"]
             if weapon_category == "switchaxe":
@@ -277,6 +279,14 @@ ramp_fmt_subfmt = """\
                     ["{ramp_skill}", "{inheritance_weapon_id}"]\
 """
 
+gunlance_stats_fmt = """,
+
+            "gunlanceStats": {{
+                "shellingType": "{shelling_type}",
+                "shellingLevel": {shelling_level}
+            }}\
+"""
+
 huntinghorn_songs_fmt = """,
 
             "huntinghornSongs": {{{songs}}}\
@@ -334,6 +344,12 @@ for (weapon_category, _) in data_spec.items():
                 special_mechanics += sharpness_fmt.format(
                         base_sharpness=",".join(str(x) for x in weapon_data["base_sharpness"]),
                         max_sharpness=",".join(str(x) for x in weapon_data["max_sharpness"]),
+                    )
+
+            if "gunlance_stats" in weapon_data:
+                special_mechanics += gunlance_stats_fmt.format(
+                        shelling_type=str(weapon_data["gunlance_stats"]["shelling_type"]),
+                        shelling_level=str(weapon_data["gunlance_stats"]["shelling_level"]),
                     )
 
             if "huntinghorn_songs" in weapon_data:

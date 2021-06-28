@@ -20,7 +20,12 @@
             ],
 
             "baseSharpness": [50,90,60,0,0,0],
-            "maxSharpness": [50,90,100,10,0,0]
+            "maxSharpness": [50,90,100,10,0,0],
+
+            "gunlanceStats": {
+                "shellingType": "normal",
+                "shellingLevel": 1
+            }
         },
         "1b": {
             "rarity": 1,
@@ -42,7 +47,12 @@
             ],
 
             "baseSharpness": [60,70,70,0,0,0],
-            "maxSharpness": [60,70,110,10,0,0]
+            "maxSharpness": [60,70,110,10,0,0],
+
+            "gunlanceStats": {
+                "shellingType": "normal",
+                "shellingLevel": 1
+            }
         },
         "1c": {
             "rarity": 2,
@@ -65,7 +75,12 @@
             ],
 
             "baseSharpness": [60,70,90,30,0,0],
-            "maxSharpness": [60,70,90,80,0,0]
+            "maxSharpness": [60,70,90,80,0,0],
+
+            "gunlanceStats": {
+                "shellingType": "normal",
+                "shellingLevel": 2
+            }
         },
         "1d": {
             "rarity": 3,
@@ -89,7 +104,12 @@
             ],
 
             "baseSharpness": [50,70,80,30,20,0],
-            "maxSharpness": [50,70,80,30,70,0]
+            "maxSharpness": [50,70,80,30,70,0],
+
+            "gunlanceStats": {
+                "shellingType": "normal",
+                "shellingLevel": 2
+            }
         },
         "1e": {
             "rarity": 4,
@@ -115,7 +135,12 @@
             ],
 
             "baseSharpness": [60,80,90,40,30,0],
-            "maxSharpness": [60,80,90,40,70,10]
+            "maxSharpness": [60,80,90,40,70,10],
+
+            "gunlanceStats": {
+                "shellingType": "normal",
+                "shellingLevel": 3
+            }
         },
         "1f": {
             "rarity": 5,
@@ -142,7 +167,12 @@
             ],
 
             "baseSharpness": [40,90,60,60,50,0],
-            "maxSharpness": [40,90,60,60,80,20]
+            "maxSharpness": [40,90,60,60,80,20],
+
+            "gunlanceStats": {
+                "shellingType": "normal",
+                "shellingLevel": 4
+            }
         }
     },
     "Mizutsune Tree": {
@@ -170,7 +200,12 @@
             ],
 
             "baseSharpness": [90,40,50,70,0,0],
-            "maxSharpness": [90,40,50,90,30,0]
+            "maxSharpness": [90,40,50,90,30,0],
+
+            "gunlanceStats": {
+                "shellingType": "long",
+                "shellingLevel": 2
+            }
         },
         "2b": {
             "rarity": 5,
@@ -197,7 +232,12 @@
             ],
 
             "baseSharpness": [90,80,70,80,30,0],
-            "maxSharpness": [90,80,70,80,60,20]
+            "maxSharpness": [90,80,70,80,60,20],
+
+            "gunlanceStats": {
+                "shellingType": "long",
+                "shellingLevel": 4
+            }
         },
         "2c": {
             "rarity": 6,
@@ -225,7 +265,12 @@
             ],
 
             "baseSharpness": [90,70,70,80,40,0],
-            "maxSharpness": [90,70,70,80,40,50]
+            "maxSharpness": [90,70,70,80,40,50],
+
+            "gunlanceStats": {
+                "shellingType": "long",
+                "shellingLevel": 4
+            }
         }
     },
     "Rathian Tree": {
@@ -252,7 +297,12 @@
             ],
 
             "baseSharpness": [80,30,70,70,0,0],
-            "maxSharpness": [80,30,70,120,0,0]
+            "maxSharpness": [80,30,70,120,0,0],
+
+            "gunlanceStats": {
+                "shellingType": "normal",
+                "shellingLevel": 2
+            }
         },
         "3b": {
             "rarity": 5,
@@ -277,7 +327,12 @@
             ],
 
             "baseSharpness": [80,30,60,130,0,0],
-            "maxSharpness": [80,30,60,130,50,0]
+            "maxSharpness": [80,30,60,130,50,0],
+
+            "gunlanceStats": {
+                "shellingType": "normal",
+                "shellingLevel": 4
+            }
         },
         "3c": {
             "rarity": 6,
@@ -303,7 +358,12 @@
             ],
 
             "baseSharpness": [80,30,80,140,20,0],
-            "maxSharpness": [80,30,80,140,40,30]
+            "maxSharpness": [80,30,80,140,40,30],
+
+            "gunlanceStats": {
+                "shellingType": "normal",
+                "shellingLevel": 5
+            }
         }
     },
     "Rathalos Tree": {
@@ -333,7 +393,12 @@
             ],
 
             "baseSharpness": [70,80,90,100,10,0],
-            "maxSharpness": [70,80,90,100,50,10]
+            "maxSharpness": [70,80,90,100,50,10],
+
+            "gunlanceStats": {
+                "shellingType": "long",
+                "shellingLevel": 3
+            }
         },
         "4b": {
             "rarity": 6,
@@ -361,7 +426,12 @@
             ],
 
             "baseSharpness": [70,80,70,110,20,0],
-            "maxSharpness": [70,80,70,110,50,20]
+            "maxSharpness": [70,80,70,110,50,20],
+
+            "gunlanceStats": {
+                "shellingType": "long",
+                "shellingLevel": 4
+            }
         },
         "4c": {
             "rarity": 6,
@@ -390,7 +460,12 @@
             ],
 
             "baseSharpness": [70,80,50,120,30,0],
-            "maxSharpness": [70,80,50,120,50,30]
+            "maxSharpness": [70,80,50,120,50,30],
+
+            "gunlanceStats": {
+                "shellingType": "long",
+                "shellingLevel": 4
+            }
         }
     },
     "Delex Tree": {
@@ -416,7 +491,12 @@
             ],
 
             "baseSharpness": [50,80,50,20,0,0],
-            "maxSharpness": [50,80,50,70,0,0]
+            "maxSharpness": [50,80,50,70,0,0],
+
+            "gunlanceStats": {
+                "shellingType": "wide",
+                "shellingLevel": 1
+            }
         },
         "5b": {
             "rarity": 2,
@@ -440,7 +520,12 @@
             ],
 
             "baseSharpness": [40,110,70,30,0,0],
-            "maxSharpness": [40,110,70,80,0,0]
+            "maxSharpness": [40,110,70,80,0,0],
+
+            "gunlanceStats": {
+                "shellingType": "wide",
+                "shellingLevel": 2
+            }
         },
         "5c": {
             "rarity": 5,
@@ -466,7 +551,12 @@
             ],
 
             "baseSharpness": [30,110,80,50,30,0],
-            "maxSharpness": [30,110,80,50,70,10]
+            "maxSharpness": [30,110,80,50,70,10],
+
+            "gunlanceStats": {
+                "shellingType": "wide",
+                "shellingLevel": 2
+            }
         }
     },
     "Zinogre Tree": {
@@ -494,7 +584,12 @@
             ],
 
             "baseSharpness": [80,70,50,50,0,0],
-            "maxSharpness": [80,70,50,100,0,0]
+            "maxSharpness": [80,70,50,100,0,0],
+
+            "gunlanceStats": {
+                "shellingType": "normal",
+                "shellingLevel": 2
+            }
         },
         "6b": {
             "rarity": 5,
@@ -521,7 +616,12 @@
             ],
 
             "baseSharpness": [60,60,100,50,30,0],
-            "maxSharpness": [60,60,100,50,70,10]
+            "maxSharpness": [60,60,100,50,70,10],
+
+            "gunlanceStats": {
+                "shellingType": "normal",
+                "shellingLevel": 3
+            }
         },
         "6c": {
             "rarity": 6,
@@ -549,7 +649,12 @@
             ],
 
             "baseSharpness": [60,90,120,50,30,0],
-            "maxSharpness": [60,90,120,50,50,30]
+            "maxSharpness": [60,90,120,50,50,30],
+
+            "gunlanceStats": {
+                "shellingType": "normal",
+                "shellingLevel": 4
+            }
         }
     },
     "Barioth Tree": {
@@ -577,7 +682,12 @@
             ],
 
             "baseSharpness": [50,60,70,70,0,0],
-            "maxSharpness": [50,60,70,100,20,0]
+            "maxSharpness": [50,60,70,100,20,0],
+
+            "gunlanceStats": {
+                "shellingType": "wide",
+                "shellingLevel": 2
+            }
         },
         "7b": {
             "rarity": 5,
@@ -604,7 +714,12 @@
             ],
 
             "baseSharpness": [50,70,80,100,50,0],
-            "maxSharpness": [50,70,80,100,70,30]
+            "maxSharpness": [50,70,80,100,70,30],
+
+            "gunlanceStats": {
+                "shellingType": "wide",
+                "shellingLevel": 4
+            }
         },
         "7c": {
             "rarity": 6,
@@ -632,7 +747,12 @@
             ],
 
             "baseSharpness": [50,70,80,90,60,0],
-            "maxSharpness": [50,70,80,90,60,50]
+            "maxSharpness": [50,70,80,90,60,50],
+
+            "gunlanceStats": {
+                "shellingType": "wide",
+                "shellingLevel": 4
+            }
         }
     },
     "Ore Tree": {
@@ -656,7 +776,12 @@
             ],
 
             "baseSharpness": [80,70,50,0,0,0],
-            "maxSharpness": [80,70,90,10,0,0]
+            "maxSharpness": [80,70,90,10,0,0],
+
+            "gunlanceStats": {
+                "shellingType": "normal",
+                "shellingLevel": 1
+            }
         },
         "8b": {
             "rarity": 1,
@@ -678,7 +803,12 @@
             ],
 
             "baseSharpness": [70,60,70,0,0,0],
-            "maxSharpness": [70,60,70,50,0,0]
+            "maxSharpness": [70,60,70,50,0,0],
+
+            "gunlanceStats": {
+                "shellingType": "normal",
+                "shellingLevel": 1
+            }
         },
         "8c": {
             "rarity": 2,
@@ -701,7 +831,12 @@
             ],
 
             "baseSharpness": [80,80,50,40,0,0],
-            "maxSharpness": [80,80,50,90,0,0]
+            "maxSharpness": [80,80,50,90,0,0],
+
+            "gunlanceStats": {
+                "shellingType": "normal",
+                "shellingLevel": 2
+            }
         },
         "8d": {
             "rarity": 3,
@@ -725,7 +860,12 @@
             ],
 
             "baseSharpness": [90,70,40,50,0,0],
-            "maxSharpness": [90,70,40,80,20,0]
+            "maxSharpness": [90,70,40,80,20,0],
+
+            "gunlanceStats": {
+                "shellingType": "normal",
+                "shellingLevel": 2
+            }
         },
         "8e": {
             "rarity": 4,
@@ -750,7 +890,12 @@
             ],
 
             "baseSharpness": [90,80,60,50,20,0],
-            "maxSharpness": [90,80,60,50,50,20]
+            "maxSharpness": [90,80,60,50,50,20],
+
+            "gunlanceStats": {
+                "shellingType": "normal",
+                "shellingLevel": 3
+            }
         },
         "8f": {
             "rarity": 5,
@@ -776,7 +921,12 @@
             ],
 
             "baseSharpness": [90,80,50,50,30,0],
-            "maxSharpness": [90,80,50,50,50,30]
+            "maxSharpness": [90,80,50,50,50,30],
+
+            "gunlanceStats": {
+                "shellingType": "normal",
+                "shellingLevel": 4
+            }
         }
     },
     "Ore Tree 2": {
@@ -805,7 +955,12 @@
             ],
 
             "baseSharpness": [80,70,70,50,30,0],
-            "maxSharpness": [80,70,70,50,80,0]
+            "maxSharpness": [80,70,70,50,80,0],
+
+            "gunlanceStats": {
+                "shellingType": "wide",
+                "shellingLevel": 3
+            }
         },
         "9b": {
             "rarity": 5,
@@ -832,7 +987,12 @@
             ],
 
             "baseSharpness": [60,70,70,60,40,0],
-            "maxSharpness": [60,70,70,60,80,10]
+            "maxSharpness": [60,70,70,60,80,10],
+
+            "gunlanceStats": {
+                "shellingType": "wide",
+                "shellingLevel": 3
+            }
         },
         "9c": {
             "rarity": 6,
@@ -860,7 +1020,12 @@
             ],
 
             "baseSharpness": [90,70,70,70,50,0],
-            "maxSharpness": [90,70,70,70,70,30]
+            "maxSharpness": [90,70,70,70,70,30],
+
+            "gunlanceStats": {
+                "shellingType": "wide",
+                "shellingLevel": 4
+            }
         }
     },
     "Pukei-Pukei Tree": {
@@ -891,7 +1056,12 @@
             ],
 
             "baseSharpness": [60,70,90,70,10,0],
-            "maxSharpness": [60,70,90,70,60,0]
+            "maxSharpness": [60,70,90,70,60,0],
+
+            "gunlanceStats": {
+                "shellingType": "wide",
+                "shellingLevel": 3
+            }
         },
         "10b": {
             "rarity": 5,
@@ -920,7 +1090,12 @@
             ],
 
             "baseSharpness": [80,70,90,90,20,0],
-            "maxSharpness": [80,70,90,90,60,10]
+            "maxSharpness": [80,70,90,90,60,10],
+
+            "gunlanceStats": {
+                "shellingType": "wide",
+                "shellingLevel": 4
+            }
         },
         "10c": {
             "rarity": 6,
@@ -952,7 +1127,12 @@
             ],
 
             "baseSharpness": [70,70,90,80,40,0],
-            "maxSharpness": [70,70,90,80,70,20]
+            "maxSharpness": [70,70,90,80,70,20],
+
+            "gunlanceStats": {
+                "shellingType": "wide",
+                "shellingLevel": 4
+            }
         }
     },
     "Diablos Tree": {
@@ -980,7 +1160,12 @@
             ],
 
             "baseSharpness": [60,60,60,70,0,0],
-            "maxSharpness": [60,60,60,80,40,0]
+            "maxSharpness": [60,60,60,80,40,0],
+
+            "gunlanceStats": {
+                "shellingType": "wide",
+                "shellingLevel": 3
+            }
         },
         "11b": {
             "rarity": 6,
@@ -1007,7 +1192,12 @@
             ],
 
             "baseSharpness": [90,80,80,100,0,0],
-            "maxSharpness": [90,80,80,100,50,0]
+            "maxSharpness": [90,80,80,100,50,0],
+
+            "gunlanceStats": {
+                "shellingType": "wide",
+                "shellingLevel": 3
+            }
         },
         "11c": {
             "rarity": 6,
@@ -1035,7 +1225,12 @@
             ],
 
             "baseSharpness": [90,60,80,120,0,0],
-            "maxSharpness": [90,60,80,120,30,20]
+            "maxSharpness": [90,60,80,120,30,20],
+
+            "gunlanceStats": {
+                "shellingType": "wide",
+                "shellingLevel": 4
+            }
         }
     },
     "Aknosom Tree": {
@@ -1061,7 +1256,12 @@
             ],
 
             "baseSharpness": [30,50,80,40,0,0],
-            "maxSharpness": [30,50,80,90,0,0]
+            "maxSharpness": [30,50,80,90,0,0],
+
+            "gunlanceStats": {
+                "shellingType": "normal",
+                "shellingLevel": 2
+            }
         },
         "12b": {
             "rarity": 2,
@@ -1085,7 +1285,12 @@
             ],
 
             "baseSharpness": [40,60,100,50,0,0],
-            "maxSharpness": [40,60,100,100,0,0]
+            "maxSharpness": [40,60,100,100,0,0],
+
+            "gunlanceStats": {
+                "shellingType": "normal",
+                "shellingLevel": 2
+            }
         },
         "12c": {
             "rarity": 4,
@@ -1111,7 +1316,12 @@
             ],
 
             "baseSharpness": [50,60,110,60,20,0],
-            "maxSharpness": [50,60,110,60,50,20]
+            "maxSharpness": [50,60,110,60,50,20],
+
+            "gunlanceStats": {
+                "shellingType": "normal",
+                "shellingLevel": 3
+            }
         },
         "12d": {
             "rarity": 5,
@@ -1137,7 +1347,12 @@
             ],
 
             "baseSharpness": [50,60,100,60,30,0],
-            "maxSharpness": [50,60,100,60,50,30]
+            "maxSharpness": [50,60,100,60,50,30],
+
+            "gunlanceStats": {
+                "shellingType": "normal",
+                "shellingLevel": 4
+            }
         }
     },
     "Almudron Tree": {
@@ -1166,7 +1381,12 @@
             ],
 
             "baseSharpness": [50,50,100,50,0,0],
-            "maxSharpness": [50,50,100,80,20,0]
+            "maxSharpness": [50,50,100,80,20,0],
+
+            "gunlanceStats": {
+                "shellingType": "wide",
+                "shellingLevel": 2
+            }
         },
         "13b": {
             "rarity": 6,
@@ -1194,7 +1414,12 @@
             ],
 
             "baseSharpness": [60,60,80,60,40,0],
-            "maxSharpness": [60,60,80,60,90,0]
+            "maxSharpness": [60,60,80,60,90,0],
+
+            "gunlanceStats": {
+                "shellingType": "wide",
+                "shellingLevel": 4
+            }
         },
         "13c": {
             "rarity": 6,
@@ -1223,7 +1448,12 @@
             ],
 
             "baseSharpness": [60,60,80,100,50,0],
-            "maxSharpness": [60,60,80,100,100,0]
+            "maxSharpness": [60,60,80,100,100,0],
+
+            "gunlanceStats": {
+                "shellingType": "wide",
+                "shellingLevel": 5
+            }
         }
     },
     "Khezu Tree": {
@@ -1250,7 +1480,12 @@
             ],
 
             "baseSharpness": [40,90,40,30,0,0],
-            "maxSharpness": [40,90,40,80,0,0]
+            "maxSharpness": [40,90,40,80,0,0],
+
+            "gunlanceStats": {
+                "shellingType": "long",
+                "shellingLevel": 1
+            }
         },
         "14b": {
             "rarity": 3,
@@ -1276,7 +1511,12 @@
             ],
 
             "baseSharpness": [40,100,70,40,0,0],
-            "maxSharpness": [40,100,70,40,50,0]
+            "maxSharpness": [40,100,70,40,50,0],
+
+            "gunlanceStats": {
+                "shellingType": "long",
+                "shellingLevel": 2
+            }
         },
         "14c": {
             "rarity": 4,
@@ -1304,7 +1544,12 @@
             ],
 
             "baseSharpness": [40,100,80,50,30,0],
-            "maxSharpness": [40,100,80,50,30,50]
+            "maxSharpness": [40,100,80,50,30,50],
+
+            "gunlanceStats": {
+                "shellingType": "long",
+                "shellingLevel": 3
+            }
         }
     },
     "Volvidon Tree": {
@@ -1334,7 +1579,12 @@
             ],
 
             "baseSharpness": [130,40,50,30,0,0],
-            "maxSharpness": [130,40,50,80,0,0]
+            "maxSharpness": [130,40,50,80,0,0],
+
+            "gunlanceStats": {
+                "shellingType": "long",
+                "shellingLevel": 2
+            }
         },
         "15b": {
             "rarity": 5,
@@ -1363,7 +1613,12 @@
             ],
 
             "baseSharpness": [140,40,50,70,0,0],
-            "maxSharpness": [140,40,50,70,50,0]
+            "maxSharpness": [140,40,50,70,50,0],
+
+            "gunlanceStats": {
+                "shellingType": "long",
+                "shellingLevel": 3
+            }
         },
         "15c": {
             "rarity": 6,
@@ -1393,7 +1648,12 @@
             ],
 
             "baseSharpness": [160,50,50,70,20,0],
-            "maxSharpness": [160,50,50,70,60,10]
+            "maxSharpness": [160,50,50,70,60,10],
+
+            "gunlanceStats": {
+                "shellingType": "long",
+                "shellingLevel": 4
+            }
         }
     },
     "Baggi Tree": {
@@ -1419,7 +1679,12 @@
             ],
 
             "baseSharpness": [100,30,50,20,0,0],
-            "maxSharpness": [100,30,50,70,0,0]
+            "maxSharpness": [100,30,50,70,0,0],
+
+            "gunlanceStats": {
+                "shellingType": "long",
+                "shellingLevel": 1
+            }
         },
         "16b": {
             "rarity": 2,
@@ -1444,7 +1709,12 @@
             ],
 
             "baseSharpness": [100,60,50,40,0,0],
-            "maxSharpness": [100,60,50,90,0,0]
+            "maxSharpness": [100,60,50,90,0,0],
+
+            "gunlanceStats": {
+                "shellingType": "long",
+                "shellingLevel": 2
+            }
         },
         "16c": {
             "rarity": 4,
@@ -1470,7 +1740,12 @@
             ],
 
             "baseSharpness": [100,70,60,70,0,0],
-            "maxSharpness": [100,70,60,70,50,0]
+            "maxSharpness": [100,70,60,70,50,0],
+
+            "gunlanceStats": {
+                "shellingType": "long",
+                "shellingLevel": 3
+            }
         },
         "16d": {
             "rarity": 5,
@@ -1497,7 +1772,12 @@
             ],
 
             "baseSharpness": [90,90,80,60,30,0],
-            "maxSharpness": [90,90,80,60,60,20]
+            "maxSharpness": [90,90,80,60,60,20],
+
+            "gunlanceStats": {
+                "shellingType": "long",
+                "shellingLevel": 4
+            }
         }
     },
     "Tobi-Kadachi Tree": {
@@ -1524,7 +1804,12 @@
             ],
 
             "baseSharpness": [120,50,40,40,0,0],
-            "maxSharpness": [120,50,40,80,10,0]
+            "maxSharpness": [120,50,40,80,10,0],
+
+            "gunlanceStats": {
+                "shellingType": "long",
+                "shellingLevel": 2
+            }
         },
         "17b": {
             "rarity": 5,
@@ -1552,7 +1837,12 @@
             ],
 
             "baseSharpness": [120,80,50,80,20,0],
-            "maxSharpness": [120,80,50,80,60,10]
+            "maxSharpness": [120,80,50,80,60,10],
+
+            "gunlanceStats": {
+                "shellingType": "long",
+                "shellingLevel": 3
+            }
         },
         "17c": {
             "rarity": 6,
@@ -1581,7 +1871,12 @@
             ],
 
             "baseSharpness": [110,80,30,100,30,0],
-            "maxSharpness": [110,80,30,100,50,30]
+            "maxSharpness": [110,80,30,100,50,30],
+
+            "gunlanceStats": {
+                "shellingType": "long",
+                "shellingLevel": 4
+            }
         }
     },
     "Bone Tree": {
@@ -1605,7 +1900,12 @@
             ],
 
             "baseSharpness": [70,90,40,0,0,0],
-            "maxSharpness": [70,90,90,0,0,0]
+            "maxSharpness": [70,90,90,0,0,0],
+
+            "gunlanceStats": {
+                "shellingType": "long",
+                "shellingLevel": 1
+            }
         },
         "18b": {
             "rarity": 1,
@@ -1627,7 +1927,12 @@
             ],
 
             "baseSharpness": [80,70,50,0,0,0],
-            "maxSharpness": [80,70,100,0,0,0]
+            "maxSharpness": [80,70,100,0,0,0],
+
+            "gunlanceStats": {
+                "shellingType": "long",
+                "shellingLevel": 1
+            }
         },
         "18c": {
             "rarity": 2,
@@ -1650,7 +1955,12 @@
             ],
 
             "baseSharpness": [90,50,60,0,0,0],
-            "maxSharpness": [90,50,110,0,0,0]
+            "maxSharpness": [90,50,110,0,0,0],
+
+            "gunlanceStats": {
+                "shellingType": "long",
+                "shellingLevel": 2
+            }
         },
         "18d": {
             "rarity": 3,
@@ -1674,7 +1984,12 @@
             ],
 
             "baseSharpness": [100,80,60,10,0,0],
-            "maxSharpness": [100,80,60,60,0,0]
+            "maxSharpness": [100,80,60,60,0,0],
+
+            "gunlanceStats": {
+                "shellingType": "long",
+                "shellingLevel": 2
+            }
         },
         "18e": {
             "rarity": 4,
@@ -1699,7 +2014,12 @@
             ],
 
             "baseSharpness": [80,70,60,40,0,0],
-            "maxSharpness": [80,70,60,80,10,0]
+            "maxSharpness": [80,70,60,80,10,0],
+
+            "gunlanceStats": {
+                "shellingType": "long",
+                "shellingLevel": 3
+            }
         },
         "18f": {
             "rarity": 5,
@@ -1725,7 +2045,12 @@
             ],
 
             "baseSharpness": [80,70,80,70,0,0],
-            "maxSharpness": [80,70,80,100,20,0]
+            "maxSharpness": [80,70,80,100,20,0],
+
+            "gunlanceStats": {
+                "shellingType": "long",
+                "shellingLevel": 4
+            }
         }
     },
     "Nargacuga Tree": {
@@ -1753,7 +2078,12 @@
             ],
 
             "baseSharpness": [50,70,100,80,50,0],
-            "maxSharpness": [50,70,100,80,90,10]
+            "maxSharpness": [50,70,100,80,90,10],
+
+            "gunlanceStats": {
+                "shellingType": "long",
+                "shellingLevel": 3
+            }
         },
         "19b": {
             "rarity": 6,
@@ -1779,7 +2109,12 @@
             ],
 
             "baseSharpness": [50,70,90,80,60,0],
-            "maxSharpness": [50,70,90,80,90,20]
+            "maxSharpness": [50,70,90,80,90,20],
+
+            "gunlanceStats": {
+                "shellingType": "long",
+                "shellingLevel": 4
+            }
         },
         "19c": {
             "rarity": 6,
@@ -1805,7 +2140,12 @@
             ],
 
             "baseSharpness": [50,70,100,90,70,20],
-            "maxSharpness": [50,70,100,90,70,20]
+            "maxSharpness": [50,70,100,90,70,20],
+
+            "gunlanceStats": {
+                "shellingType": "long",
+                "shellingLevel": 4
+            }
         }
     },
     "Anjanath Tree": {
@@ -1832,7 +2172,12 @@
             ],
 
             "baseSharpness": [100,90,30,30,0,0],
-            "maxSharpness": [100,90,30,80,0,0]
+            "maxSharpness": [100,90,30,80,0,0],
+
+            "gunlanceStats": {
+                "shellingType": "wide",
+                "shellingLevel": 2
+            }
         },
         "20b": {
             "rarity": 3,
@@ -1857,7 +2202,12 @@
             ],
 
             "baseSharpness": [100,70,30,50,0,0],
-            "maxSharpness": [100,70,30,100,0,0]
+            "maxSharpness": [100,70,30,100,0,0],
+
+            "gunlanceStats": {
+                "shellingType": "wide",
+                "shellingLevel": 3
+            }
         },
         "20c": {
             "rarity": 5,
@@ -1883,7 +2233,12 @@
             ],
 
             "baseSharpness": [150,60,20,70,0,0],
-            "maxSharpness": [150,60,20,90,30,0]
+            "maxSharpness": [150,60,20,90,30,0],
+
+            "gunlanceStats": {
+                "shellingType": "wide",
+                "shellingLevel": 3
+            }
         },
         "20d": {
             "rarity": 6,
@@ -1910,7 +2265,12 @@
             ],
 
             "baseSharpness": [180,60,20,90,0,0],
-            "maxSharpness": [180,60,20,90,50,0]
+            "maxSharpness": [180,60,20,90,50,0],
+
+            "gunlanceStats": {
+                "shellingType": "wide",
+                "shellingLevel": 4
+            }
         }
     },
     "Barroth Tree": {
@@ -1935,7 +2295,12 @@
             ],
 
             "baseSharpness": [50,60,140,0,0,0],
-            "maxSharpness": [50,60,140,50,0,0]
+            "maxSharpness": [50,60,140,50,0,0],
+
+            "gunlanceStats": {
+                "shellingType": "long",
+                "shellingLevel": 2
+            }
         },
         "21b": {
             "rarity": 2,
@@ -1959,7 +2324,12 @@
             ],
 
             "baseSharpness": [50,60,130,10,0,0],
-            "maxSharpness": [50,60,130,50,10,0]
+            "maxSharpness": [50,60,130,50,10,0],
+
+            "gunlanceStats": {
+                "shellingType": "long",
+                "shellingLevel": 2
+            }
         },
         "21c": {
             "rarity": 5,
@@ -1984,7 +2354,12 @@
             ],
 
             "baseSharpness": [60,40,190,50,10,0],
-            "maxSharpness": [60,40,190,50,40,20]
+            "maxSharpness": [60,40,190,50,40,20],
+
+            "gunlanceStats": {
+                "shellingType": "long",
+                "shellingLevel": 4
+            }
         }
     },
     "Tigrex Tree": {
@@ -2010,7 +2385,12 @@
             ],
 
             "baseSharpness": [70,30,100,90,10,0],
-            "maxSharpness": [70,30,100,90,60,0]
+            "maxSharpness": [70,30,100,90,60,0],
+
+            "gunlanceStats": {
+                "shellingType": "wide",
+                "shellingLevel": 2
+            }
         },
         "22b": {
             "rarity": 6,
@@ -2035,7 +2415,12 @@
             ],
 
             "baseSharpness": [50,30,130,100,40,0],
-            "maxSharpness": [50,30,130,100,70,20]
+            "maxSharpness": [50,30,130,100,70,20],
+
+            "gunlanceStats": {
+                "shellingType": "wide",
+                "shellingLevel": 4
+            }
         },
         "22c": {
             "rarity": 6,
@@ -2061,7 +2446,12 @@
             ],
 
             "baseSharpness": [50,40,120,120,40,30],
-            "maxSharpness": [50,40,120,120,40,30]
+            "maxSharpness": [50,40,120,120,40,30],
+
+            "gunlanceStats": {
+                "shellingType": "wide",
+                "shellingLevel": 4
+            }
         }
     },
     "Lagombi Tree": {
@@ -2088,7 +2478,12 @@
             ],
 
             "baseSharpness": [60,70,50,20,0,0],
-            "maxSharpness": [60,70,50,70,0,0]
+            "maxSharpness": [60,70,50,70,0,0],
+
+            "gunlanceStats": {
+                "shellingType": "wide",
+                "shellingLevel": 1
+            }
         },
         "23b": {
             "rarity": 3,
@@ -2114,7 +2509,12 @@
             ],
 
             "baseSharpness": [60,80,60,50,0,0],
-            "maxSharpness": [60,80,60,100,0,0]
+            "maxSharpness": [60,80,60,100,0,0],
+
+            "gunlanceStats": {
+                "shellingType": "wide",
+                "shellingLevel": 2
+            }
         },
         "23c": {
             "rarity": 4,
@@ -2140,7 +2540,12 @@
             ],
 
             "baseSharpness": [60,80,70,80,10,0],
-            "maxSharpness": [60,80,70,80,50,10]
+            "maxSharpness": [60,80,70,80,50,10],
+
+            "gunlanceStats": {
+                "shellingType": "wide",
+                "shellingLevel": 3
+            }
         },
         "23d": {
             "rarity": 6,
@@ -2168,7 +2573,12 @@
             ],
 
             "baseSharpness": [60,80,90,90,30,0],
-            "maxSharpness": [60,80,90,90,60,20]
+            "maxSharpness": [60,80,90,90,60,20],
+
+            "gunlanceStats": {
+                "shellingType": "wide",
+                "shellingLevel": 4
+            }
         }
     },
     "Royal Ludroth Tree": {
@@ -2197,7 +2607,12 @@
             ],
 
             "baseSharpness": [50,60,100,40,0,0],
-            "maxSharpness": [50,60,100,90,0,0]
+            "maxSharpness": [50,60,100,90,0,0],
+
+            "gunlanceStats": {
+                "shellingType": "normal",
+                "shellingLevel": 2
+            }
         },
         "24b": {
             "rarity": 4,
@@ -2225,7 +2640,12 @@
             ],
 
             "baseSharpness": [60,60,120,40,20,0],
-            "maxSharpness": [60,60,120,40,70,0]
+            "maxSharpness": [60,60,120,40,70,0],
+
+            "gunlanceStats": {
+                "shellingType": "normal",
+                "shellingLevel": 3
+            }
         },
         "24c": {
             "rarity": 5,
@@ -2254,7 +2674,12 @@
             ],
 
             "baseSharpness": [60,60,100,50,30,0],
-            "maxSharpness": [60,60,100,50,70,10]
+            "maxSharpness": [60,60,100,50,70,10],
+
+            "gunlanceStats": {
+                "shellingType": "normal",
+                "shellingLevel": 3
+            }
         },
         "24d": {
             "rarity": 6,
@@ -2284,7 +2709,12 @@
             ],
 
             "baseSharpness": [60,60,130,60,40,0],
-            "maxSharpness": [60,60,130,60,60,30]
+            "maxSharpness": [60,60,130,60,60,30],
+
+            "gunlanceStats": {
+                "shellingType": "normal",
+                "shellingLevel": 4
+            }
         }
     },
     "Bnahabra Tree": {
@@ -2308,7 +2738,12 @@
             ],
 
             "baseSharpness": [100,50,40,10,0,0],
-            "maxSharpness": [100,50,40,60,0,0]
+            "maxSharpness": [100,50,40,60,0,0],
+
+            "gunlanceStats": {
+                "shellingType": "normal",
+                "shellingLevel": 1
+            }
         },
         "25b": {
             "rarity": 2,
@@ -2332,7 +2767,12 @@
             ],
 
             "baseSharpness": [140,20,20,60,10,0],
-            "maxSharpness": [140,20,20,60,60,0]
+            "maxSharpness": [140,20,20,60,60,0],
+
+            "gunlanceStats": {
+                "shellingType": "normal",
+                "shellingLevel": 2
+            }
         },
         "25c": {
             "rarity": 4,
@@ -2358,7 +2798,12 @@
             ],
 
             "baseSharpness": [150,30,30,50,40,0],
-            "maxSharpness": [150,30,30,50,50,40]
+            "maxSharpness": [150,30,30,50,50,40],
+
+            "gunlanceStats": {
+                "shellingType": "normal",
+                "shellingLevel": 3
+            }
         }
     },
     "Rakna-Kadaki Tree": {
@@ -2388,7 +2833,12 @@
             ],
 
             "baseSharpness": [190,40,40,30,50,0],
-            "maxSharpness": [190,40,40,30,50,50]
+            "maxSharpness": [190,40,40,30,50,50],
+
+            "gunlanceStats": {
+                "shellingType": "normal",
+                "shellingLevel": 3
+            }
         },
         "26b": {
             "rarity": 6,
@@ -2417,7 +2867,12 @@
             ],
 
             "baseSharpness": [190,40,40,30,40,10],
-            "maxSharpness": [190,40,40,30,40,60]
+            "maxSharpness": [190,40,40,30,40,60],
+
+            "gunlanceStats": {
+                "shellingType": "normal",
+                "shellingLevel": 4
+            }
         },
         "26c": {
             "rarity": 7,
@@ -2447,7 +2902,12 @@
             ],
 
             "baseSharpness": [190,30,40,30,40,20],
-            "maxSharpness": [190,30,40,30,40,70]
+            "maxSharpness": [190,30,40,30,40,70],
+
+            "gunlanceStats": {
+                "shellingType": "normal",
+                "shellingLevel": 5
+            }
         }
     },
     "Bnahabra (Dragon)": {
@@ -2476,7 +2936,12 @@
             ],
 
             "baseSharpness": [150,30,30,60,30,0],
-            "maxSharpness": [150,30,30,60,70,10]
+            "maxSharpness": [150,30,30,60,70,10],
+
+            "gunlanceStats": {
+                "shellingType": "normal",
+                "shellingLevel": 3
+            }
         },
         "27b": {
             "rarity": 5,
@@ -2504,7 +2969,12 @@
             ],
 
             "baseSharpness": [140,20,20,80,40,0],
-            "maxSharpness": [140,20,20,80,70,20]
+            "maxSharpness": [140,20,20,80,70,20],
+
+            "gunlanceStats": {
+                "shellingType": "normal",
+                "shellingLevel": 3
+            }
         },
         "27c": {
             "rarity": 6,
@@ -2533,7 +3003,12 @@
             ],
 
             "baseSharpness": [160,20,20,90,60,0],
-            "maxSharpness": [160,20,20,90,70,40]
+            "maxSharpness": [160,20,20,90,70,40],
+
+            "gunlanceStats": {
+                "shellingType": "normal",
+                "shellingLevel": 4
+            }
         }
     },
     "Bnahabra (Ice)": {
@@ -2560,7 +3035,12 @@
             ],
 
             "baseSharpness": [100,20,30,50,0,0],
-            "maxSharpness": [100,20,30,100,0,0]
+            "maxSharpness": [100,20,30,100,0,0],
+
+            "gunlanceStats": {
+                "shellingType": "normal",
+                "shellingLevel": 2
+            }
         },
         "28b": {
             "rarity": 3,
@@ -2586,7 +3066,12 @@
             ],
 
             "baseSharpness": [140,20,20,60,10,0],
-            "maxSharpness": [140,20,20,60,60,0]
+            "maxSharpness": [140,20,20,60,60,0],
+
+            "gunlanceStats": {
+                "shellingType": "normal",
+                "shellingLevel": 3
+            }
         },
         "28c": {
             "rarity": 5,
@@ -2613,7 +3098,12 @@
             ],
 
             "baseSharpness": [140,20,20,80,40,0],
-            "maxSharpness": [140,20,20,80,70,20]
+            "maxSharpness": [140,20,20,80,70,20],
+
+            "gunlanceStats": {
+                "shellingType": "normal",
+                "shellingLevel": 4
+            }
         }
     },
     "Bnahabra (Paralysis)": {
@@ -2639,7 +3129,12 @@
             ],
 
             "baseSharpness": [100,30,30,40,0,0],
-            "maxSharpness": [100,30,30,90,0,0]
+            "maxSharpness": [100,30,30,90,0,0],
+
+            "gunlanceStats": {
+                "shellingType": "normal",
+                "shellingLevel": 1
+            }
         },
         "29b": {
             "rarity": 3,
@@ -2664,7 +3159,12 @@
             ],
 
             "baseSharpness": [140,20,20,70,0,0],
-            "maxSharpness": [140,20,20,70,50,0]
+            "maxSharpness": [140,20,20,70,50,0],
+
+            "gunlanceStats": {
+                "shellingType": "normal",
+                "shellingLevel": 2
+            }
         },
         "29c": {
             "rarity": 4,
@@ -2691,7 +3191,12 @@
             ],
 
             "baseSharpness": [160,30,30,60,20,0],
-            "maxSharpness": [160,30,30,60,60,10]
+            "maxSharpness": [160,30,30,60,60,10],
+
+            "gunlanceStats": {
+                "shellingType": "normal",
+                "shellingLevel": 3
+            }
         }
     },
     "Magnamalo Tree": {
@@ -2715,7 +3220,12 @@
             ],
 
             "baseSharpness": [160,20,40,80,0,0],
-            "maxSharpness": [160,20,40,110,20,0]
+            "maxSharpness": [160,20,40,110,20,0],
+
+            "gunlanceStats": {
+                "shellingType": "long",
+                "shellingLevel": 2
+            }
         },
         "30b": {
             "rarity": 3,
@@ -2738,7 +3248,12 @@
             ],
 
             "baseSharpness": [170,20,20,90,0,0],
-            "maxSharpness": [170,20,20,110,30,0]
+            "maxSharpness": [170,20,20,110,30,0],
+
+            "gunlanceStats": {
+                "shellingType": "long",
+                "shellingLevel": 2
+            }
         },
         "30c": {
             "rarity": 6,
@@ -2762,7 +3277,12 @@
             ],
 
             "baseSharpness": [190,10,20,90,40,0],
-            "maxSharpness": [190,10,20,90,60,30]
+            "maxSharpness": [190,10,20,90,60,30],
+
+            "gunlanceStats": {
+                "shellingType": "long",
+                "shellingLevel": 4
+            }
         }
     },
     "Rajang Tree": {
@@ -2786,7 +3306,12 @@
             ],
 
             "baseSharpness": [50,20,100,80,0,0],
-            "maxSharpness": [50,20,100,80,40,10]
+            "maxSharpness": [50,20,100,80,40,10],
+
+            "gunlanceStats": {
+                "shellingType": "wide",
+                "shellingLevel": 3
+            }
         },
         "31b": {
             "rarity": 6,
@@ -2809,7 +3334,12 @@
             ],
 
             "baseSharpness": [40,20,100,90,0,0],
-            "maxSharpness": [40,20,100,90,30,20]
+            "maxSharpness": [40,20,100,90,30,20],
+
+            "gunlanceStats": {
+                "shellingType": "wide",
+                "shellingLevel": 4
+            }
         },
         "31c": {
             "rarity": 7,
@@ -2833,7 +3363,12 @@
             ],
 
             "baseSharpness": [40,20,120,120,0,0],
-            "maxSharpness": [40,20,120,120,10,40]
+            "maxSharpness": [40,20,120,120,10,40],
+
+            "gunlanceStats": {
+                "shellingType": "wide",
+                "shellingLevel": 4
+            }
         }
     },
     "Ibushi Tree": {
@@ -2857,7 +3392,12 @@
             ],
 
             "baseSharpness": [20,20,20,40,100,0],
-            "maxSharpness": [20,20,20,40,150,0]
+            "maxSharpness": [20,20,20,40,150,0],
+
+            "gunlanceStats": {
+                "shellingType": "wide",
+                "shellingLevel": 3
+            }
         },
         "32b": {
             "rarity": 6,
@@ -2880,7 +3420,12 @@
             ],
 
             "baseSharpness": [20,20,50,50,110,0],
-            "maxSharpness": [20,20,50,50,150,10]
+            "maxSharpness": [20,20,50,50,150,10],
+
+            "gunlanceStats": {
+                "shellingType": "wide",
+                "shellingLevel": 4
+            }
         },
         "32c": {
             "rarity": 7,
@@ -2904,7 +3449,12 @@
             ],
 
             "baseSharpness": [20,20,80,60,120,0],
-            "maxSharpness": [20,20,80,60,150,20]
+            "maxSharpness": [20,20,80,60,150,20],
+
+            "gunlanceStats": {
+                "shellingType": "wide",
+                "shellingLevel": 4
+            }
         }
     },
     "Narwa Tree": {
@@ -2928,7 +3478,12 @@
             ],
 
             "baseSharpness": [20,20,190,40,30,0],
-            "maxSharpness": [20,20,190,40,50,30]
+            "maxSharpness": [20,20,190,40,50,30],
+
+            "gunlanceStats": {
+                "shellingType": "normal",
+                "shellingLevel": 4
+            }
         },
         "33b": {
             "rarity": 7,
@@ -2951,7 +3506,12 @@
             ],
 
             "baseSharpness": [10,20,220,40,60,0],
-            "maxSharpness": [10,20,220,40,70,40]
+            "maxSharpness": [10,20,220,40,70,40],
+
+            "gunlanceStats": {
+                "shellingType": "normal",
+                "shellingLevel": 4
+            }
         }
     },
     "Bazelgeuse Tree": {
@@ -2975,7 +3535,12 @@
             ],
 
             "baseSharpness": [60,90,60,90,0,0],
-            "maxSharpness": [60,90,60,90,50,0]
+            "maxSharpness": [60,90,60,90,50,0],
+
+            "gunlanceStats": {
+                "shellingType": "wide",
+                "shellingLevel": 2
+            }
         },
         "34b": {
             "rarity": 6,
@@ -2997,7 +3562,12 @@
             ],
 
             "baseSharpness": [60,110,90,80,10,0],
-            "maxSharpness": [60,110,90,80,30,30]
+            "maxSharpness": [60,110,90,80,30,30],
+
+            "gunlanceStats": {
+                "shellingType": "wide",
+                "shellingLevel": 3
+            }
         },
         "34c": {
             "rarity": 7,
@@ -3021,7 +3591,12 @@
             ],
 
             "baseSharpness": [60,110,80,70,30,0],
-            "maxSharpness": [60,110,80,70,30,50]
+            "maxSharpness": [60,110,80,70,30,50],
+
+            "gunlanceStats": {
+                "shellingType": "wide",
+                "shellingLevel": 4
+            }
         }
     },
     "Kushala Daora Tree": {
@@ -3045,7 +3620,12 @@
             ],
 
             "baseSharpness": [100,80,90,40,40,0],
-            "maxSharpness": [100,80,90,40,60,30]
+            "maxSharpness": [100,80,90,40,60,30],
+
+            "gunlanceStats": {
+                "shellingType": "long",
+                "shellingLevel": 5
+            }
         },
         "35b": {
             "rarity": 7,
@@ -3069,7 +3649,12 @@
             ],
 
             "baseSharpness": [80,80,90,50,40,10],
-            "maxSharpness": [80,80,90,50,40,60]
+            "maxSharpness": [80,80,90,50,40,60],
+
+            "gunlanceStats": {
+                "shellingType": "long",
+                "shellingLevel": 5
+            }
         }
     },
     "Chameleos Tree": {
@@ -3093,7 +3678,12 @@
             ],
 
             "baseSharpness": [50,60,130,70,40,0],
-            "maxSharpness": [50,60,130,70,70,20]
+            "maxSharpness": [50,60,130,70,70,20],
+
+            "gunlanceStats": {
+                "shellingType": "long",
+                "shellingLevel": 3
+            }
         },
         "36b": {
             "rarity": 7,
@@ -3116,7 +3706,12 @@
             ],
 
             "baseSharpness": [60,60,110,70,50,0],
-            "maxSharpness": [60,60,110,70,60,40]
+            "maxSharpness": [60,60,110,70,60,40],
+
+            "gunlanceStats": {
+                "shellingType": "long",
+                "shellingLevel": 3
+            }
         }
     },
     "Valstrax Tree": {
@@ -3140,7 +3735,12 @@
             ],
 
             "baseSharpness": [180,0,0,0,0,70],
-            "maxSharpness": [180,0,0,0,0,120]
+            "maxSharpness": [180,0,0,0,0,120],
+
+            "gunlanceStats": {
+                "shellingType": "long",
+                "shellingLevel": 4
+            }
         },
         "37b": {
             "rarity": 7,
@@ -3162,7 +3762,12 @@
             ],
 
             "baseSharpness": [60,0,0,0,0,90],
-            "maxSharpness": [60,0,0,0,0,140]
+            "maxSharpness": [60,0,0,0,0,140],
+
+            "gunlanceStats": {
+                "shellingType": "long",
+                "shellingLevel": 4
+            }
         }
     },
     "Canyne Tree": {
@@ -3186,7 +3791,12 @@
             ],
 
             "baseSharpness": [70,100,60,70,0,0],
-            "maxSharpness": [70,100,60,80,40,0]
+            "maxSharpness": [70,100,60,80,40,0],
+
+            "gunlanceStats": {
+                "shellingType": "long",
+                "shellingLevel": 2
+            }
         },
         "38b": {
             "rarity": 3,
@@ -3209,7 +3819,12 @@
             ],
 
             "baseSharpness": [80,120,60,80,10,0],
-            "maxSharpness": [80,120,60,80,60,0]
+            "maxSharpness": [80,120,60,80,60,0],
+
+            "gunlanceStats": {
+                "shellingType": "long",
+                "shellingLevel": 3
+            }
         },
         "38c": {
             "rarity": 5,
@@ -3233,7 +3848,12 @@
             ],
 
             "baseSharpness": [80,120,60,70,50,20],
-            "maxSharpness": [80,120,60,70,50,20]
+            "maxSharpness": [80,120,60,70,50,20],
+
+            "gunlanceStats": {
+                "shellingType": "long",
+                "shellingLevel": 5
+            }
         }
     },
     "Guild Tree": {
@@ -3257,7 +3877,12 @@
             ],
 
             "baseSharpness": [50,40,140,70,0,0],
-            "maxSharpness": [50,40,140,110,10,0]
+            "maxSharpness": [50,40,140,110,10,0],
+
+            "gunlanceStats": {
+                "shellingType": "wide",
+                "shellingLevel": 4
+            }
         },
         "39b": {
             "rarity": 5,
@@ -3279,7 +3904,12 @@
             ],
 
             "baseSharpness": [50,60,160,80,0,0],
-            "maxSharpness": [50,60,160,110,20,0]
+            "maxSharpness": [50,60,160,110,20,0],
+
+            "gunlanceStats": {
+                "shellingType": "wide",
+                "shellingLevel": 4
+            }
         },
         "39c": {
             "rarity": 6,
@@ -3302,7 +3932,12 @@
             ],
 
             "baseSharpness": [40,40,180,90,0,0],
-            "maxSharpness": [40,40,180,110,30,0]
+            "maxSharpness": [40,40,180,110,30,0],
+
+            "gunlanceStats": {
+                "shellingType": "wide",
+                "shellingLevel": 5
+            }
         }
     },
     "Shell-Studded Tree": {
@@ -3326,7 +3961,12 @@
             ],
 
             "baseSharpness": [50,60,90,0,0,0],
-            "maxSharpness": [50,60,140,0,0,0]
+            "maxSharpness": [50,60,140,0,0,0],
+
+            "gunlanceStats": {
+                "shellingType": "wide",
+                "shellingLevel": 2
+            }
         },
         "40b": {
             "rarity": 3,
@@ -3349,7 +3989,12 @@
             ],
 
             "baseSharpness": [50,90,80,30,0,0],
-            "maxSharpness": [50,90,80,70,10,0]
+            "maxSharpness": [50,90,80,70,10,0],
+
+            "gunlanceStats": {
+                "shellingType": "wide",
+                "shellingLevel": 2
+            }
         },
         "40c": {
             "rarity": 5,
@@ -3374,7 +4019,12 @@
             ],
 
             "baseSharpness": [60,90,100,50,0,0],
-            "maxSharpness": [60,90,100,60,40,0]
+            "maxSharpness": [60,90,100,60,40,0],
+
+            "gunlanceStats": {
+                "shellingType": "wide",
+                "shellingLevel": 3
+            }
         }
     },
     "Rampage Tree": {
@@ -3407,7 +4057,12 @@
             ],
 
             "baseSharpness": [70,70,90,20,0,0],
-            "maxSharpness": [70,70,90,70,0,0]
+            "maxSharpness": [70,70,90,70,0,0],
+
+            "gunlanceStats": {
+                "shellingType": "normal",
+                "shellingLevel": 2
+            }
         },
         "41b": {
             "rarity": 5,
@@ -3445,7 +4100,12 @@
             ],
 
             "baseSharpness": [60,70,80,40,0,0],
-            "maxSharpness": [60,70,80,90,0,0]
+            "maxSharpness": [60,70,80,90,0,0],
+
+            "gunlanceStats": {
+                "shellingType": "normal",
+                "shellingLevel": 2
+            }
         },
         "41c": {
             "rarity": 5,
@@ -3496,7 +4156,12 @@
             ],
 
             "baseSharpness": [50,70,80,30,20,0],
-            "maxSharpness": [50,70,80,30,70,0]
+            "maxSharpness": [50,70,80,30,70,0],
+
+            "gunlanceStats": {
+                "shellingType": "normal",
+                "shellingLevel": 2
+            }
         },
         "41d": {
             "rarity": 6,
@@ -3556,7 +4221,12 @@
             ],
 
             "baseSharpness": [50,70,70,30,30,0],
-            "maxSharpness": [50,70,70,30,80,0]
+            "maxSharpness": [50,70,70,30,80,0],
+
+            "gunlanceStats": {
+                "shellingType": "normal",
+                "shellingLevel": 2
+            }
         },
         "41e": {
             "rarity": 6,
@@ -3626,7 +4296,12 @@
             ],
 
             "baseSharpness": [50,70,50,50,30,0],
-            "maxSharpness": [50,70,50,50,70,10]
+            "maxSharpness": [50,70,50,50,70,10],
+
+            "gunlanceStats": {
+                "shellingType": "normal",
+                "shellingLevel": 2
+            }
         },
         "41f": {
             "rarity": 7,
@@ -3712,7 +4387,12 @@
             ],
 
             "baseSharpness": [50,70,30,60,40,0],
-            "maxSharpness": [50,70,30,60,70,20]
+            "maxSharpness": [50,70,30,60,70,20],
+
+            "gunlanceStats": {
+                "shellingType": "normal",
+                "shellingLevel": 2
+            }
         }
     }
 }
