@@ -48,6 +48,8 @@ import {
     insectGlaiveKinsectsMap,
     insectGlaiveKinsectTypesMap,
     insectGlaiveKinsectBonusesMap,
+    bowArcShotTypesMap,
+    bowChargeShotTypesMap,
 } from "./hardcoded_data/special_weapon_mechanics.js";
 
 const WEAPON_GS_PATH  = "./data/weapons_greatsword.json";
@@ -181,6 +183,31 @@ function validateWeaponDataInsectGlaive(weaponData) {
     assert(isInt(kinsectLevel) && (kinsectLevel > 0) && (kinsectLevel <= 8));
 }
 
+function validateWeaponDataBow(weaponData) {
+    assert(isObj(weaponData.bowStats.arcShot)); // Already validated
+
+    const chargeShotData = weaponData.bowStats.chargeShot;
+    assert(isArr(chargeShotData));
+    assert((chargeShotData.length >= 3) && (chargeShotData.length <= 4)); // Only known to be 3 or 4
+    for (const [chargeShotRO, level] of chargeShotData) {
+        assert(isObj(chargeShotRO)); // Already validated
+        assert(isInt(level) && (level >= 1) && (level <= 5));
+    }
+
+    const compatibleCoatings = weaponData.bowStats.compatibleCoatings;
+    assert(Object.keys(compatibleCoatings).length === 7);
+    const op = (k) => {
+            assert(isInt(compatibleCoatings[k]) && (compatibleCoatings[k] >= 0) && (compatibleCoatings[k] <= 2)); // tri-state
+        };
+    op("close_range_coating");
+    op("power_coating");
+    op("poison_coating");
+    op("para_coating");
+    op("sleep_coating");
+    op("blast_coating");
+    op("exhaust_coating");
+}
+
 async function downloadCategoryRawWeaponData(category, path, op) {
     console.assert(isWeaponCategoryStr(category));
     isNonEmptyStr(path);
@@ -251,6 +278,22 @@ async function downloadCategoryRawWeaponData(category, path, op) {
                 weaponData.chargebladeStats.phialType = phialTypeRO;
             }
 
+            // Add Bow mechanics
+            if (weaponData.category === "bow") {
+                const arcShotTypeID = weaponData.bowStats.arcShot;
+                const arcShotTypeRO = bowArcShotTypesMap.get(arcShotTypeID);
+                assert(arcShotTypeRO !== undefined, "Unknown arc shot type ID: " + String(arcShotTypeID));
+                weaponData.bowStats.arcShot = arcShotTypeRO;
+
+                const chargeShotData = weaponData.bowStats.chargeShot;
+                for (const tup of chargeShotData) {
+                    const [chargeShotTypeID, level] = tup;
+                    const chargeShotTypeRO = bowChargeShotTypesMap.get(chargeShotTypeID);
+                    assert(chargeShotTypeRO !== undefined, "Unknown charge shot type ID: " + String(chargeShotTypeID));
+                    tup[0] = chargeShotTypeRO; // Replace the original ID
+                }
+            }
+
             // Validate Common Data
             validateWeaponData(weaponData);
             // Validate Specific Data
@@ -292,7 +335,9 @@ async function downloadAllRawWeaponData() {
                                                   validateWeaponDataChargeBlade(weaponData);};
     const validateIG           = (weaponData) => {validateWeaponDataSharpness(weaponData);
                                                   validateWeaponDataInsectGlaive(weaponData);};
+
     const validateSimpleRanged = (weaponData) => {};
+    const validateBow          = (weaponData) => {validateWeaponDataBow(weaponData)};
 
     const gsDataFut  = downloadCategoryRawWeaponData("greatsword",     WEAPON_GS_PATH,  validateSimpleMelee );
     const lsDataFut  = downloadCategoryRawWeaponData("longsword",      WEAPON_LS_PATH,  validateSimpleMelee );
@@ -307,7 +352,7 @@ async function downloadAllRawWeaponData() {
     const igDataFut  = downloadCategoryRawWeaponData("insectglaive",   WEAPON_IG_PATH,  validateIG          );
     const lbgDataFut = downloadCategoryRawWeaponData("lightbowgun",    WEAPON_LBG_PATH, validateSimpleRanged);
     const hbgDataFut = downloadCategoryRawWeaponData("heavybowgun",    WEAPON_HBG_PATH, validateSimpleRanged);
-    const bowDataFut = downloadCategoryRawWeaponData("bow",            WEAPON_BOW_PATH, validateSimpleRanged);
+    const bowDataFut = downloadCategoryRawWeaponData("bow",            WEAPON_BOW_PATH, validateBow         );
     return {
             greatsword:     await gsDataFut,
             longsword:      await lsDataFut,
@@ -660,6 +705,12 @@ class GameData {
             weaponRampSkills: {
                 longIdsMap: rampageSkillsMap,
                 shortIdsMap: rampageSkillsMapShortIds,
+            },
+            weaponMechanics: {
+                bow: {
+                    arcShotTypesMap: bowArcShotTypesMap,
+                    chargeShotTypesMap: bowChargeShotTypesMap,
+                },
             },
             weapons: {
                 array: GameData._makeWeaponsArray(weaponsMap),

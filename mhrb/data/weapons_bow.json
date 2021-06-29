@@ -17,7 +17,26 @@
                     ["affinity_boost_2", ""],
                     ["defense_boost_1", ""]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "recovery",
+                "chargeShot": [
+                    ["rapid", 1],
+                    ["rapid", 1],
+                    ["rapid", 2],
+                    ["pierce", 2]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 1,
+                    "para_coating": 1,
+                    "sleep_coating": 1,
+                    "blast_coating": 1,
+                    "exhaust_coating": 1
+                }
+            }
         },
         "1b": {
             "rarity": 1,
@@ -36,7 +55,26 @@
                     ["affinity_boost_2", ""],
                     ["defense_boost_1", ""]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "recovery",
+                "chargeShot": [
+                    ["rapid", 1],
+                    ["rapid", 2],
+                    ["rapid", 2],
+                    ["pierce", 2]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 1,
+                    "para_coating": 1,
+                    "sleep_coating": 1,
+                    "blast_coating": 1,
+                    "exhaust_coating": 1
+                }
+            }
         },
         "1c": {
             "rarity": 2,
@@ -56,7 +94,26 @@
                     ["defense_boost_2", ""],
                     ["defense_boost_1", "1b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "recovery",
+                "chargeShot": [
+                    ["rapid", 1],
+                    ["rapid", 2],
+                    ["rapid", 3],
+                    ["pierce", 3]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 1,
+                    "para_coating": 1,
+                    "sleep_coating": 1,
+                    "blast_coating": 1,
+                    "exhaust_coating": 1
+                }
+            }
         },
         "1d": {
             "rarity": 3,
@@ -77,7 +134,26 @@
                     ["attack_boost_1", "1c"],
                     ["defense_boost_1", "1b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "recovery",
+                "chargeShot": [
+                    ["rapid", 2],
+                    ["rapid", 2],
+                    ["rapid", 3],
+                    ["pierce", 3]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 1,
+                    "para_coating": 1,
+                    "sleep_coating": 1,
+                    "blast_coating": 1,
+                    "exhaust_coating": 1
+                }
+            }
         },
         "1e": {
             "rarity": 4,
@@ -100,7 +176,26 @@
                     ["attack_boost_1", "1c"],
                     ["defense_boost_1", "1b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "recovery",
+                "chargeShot": [
+                    ["rapid", 2],
+                    ["rapid", 3],
+                    ["rapid", 3],
+                    ["pierce", 4]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 1,
+                    "para_coating": 1,
+                    "sleep_coating": 1,
+                    "blast_coating": 1,
+                    "exhaust_coating": 1
+                }
+            }
         },
         "1f": {
             "rarity": 5,
@@ -124,7 +219,26 @@
                     ["attack_boost_1", "1c"],
                     ["defense_boost_1", "1b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "recovery",
+                "chargeShot": [
+                    ["rapid", 2],
+                    ["rapid", 3],
+                    ["rapid", 4],
+                    ["pierce", 4]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 1,
+                    "para_coating": 1,
+                    "sleep_coating": 1,
+                    "blast_coating": 1,
+                    "exhaust_coating": 1
+                }
+            }
         }
     },
     "Rakna-Kadaki Tree": {
@@ -152,7 +266,26 @@
                     ["attack_boost_1", "1c"],
                     ["defense_boost_1", "1b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "recovery",
+                "chargeShot": [
+                    ["spread", 3],
+                    ["pierce", 3],
+                    ["pierce", 3],
+                    ["pierce", 4]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 1,
+                    "para_coating": 0,
+                    "sleep_coating": 1,
+                    "blast_coating": 0,
+                    "exhaust_coating": 1
+                }
+            }
         },
         "2b": {
             "rarity": 6,
@@ -179,7 +312,26 @@
                     ["attack_boost_1", "1c"],
                     ["defense_boost_1", "1b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "recovery",
+                "chargeShot": [
+                    ["spread", 3],
+                    ["pierce", 4],
+                    ["pierce", 4],
+                    ["pierce", 4]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 1,
+                    "para_coating": 0,
+                    "sleep_coating": 1,
+                    "blast_coating": 0,
+                    "exhaust_coating": 1
+                }
+            }
         },
         "2c": {
             "rarity": 7,
@@ -207,7 +359,26 @@
                     ["attack_boost_1", "1c"],
                     ["defense_boost_1", "1b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "recovery",
+                "chargeShot": [
+                    ["spread", 3],
+                    ["pierce", 4],
+                    ["pierce", 5],
+                    ["pierce", 5]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 1,
+                    "para_coating": 0,
+                    "sleep_coating": 1,
+                    "blast_coating": 0,
+                    "exhaust_coating": 1
+                }
+            }
         }
     },
     "Mizutsune Tree": {
@@ -232,7 +403,26 @@
                     ["defense_boost_2", "1c"],
                     ["defense_boost_1", "1b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "recovery",
+                "chargeShot": [
+                    ["rapid", 2],
+                    ["rapid", 2],
+                    ["rapid", 4],
+                    ["rapid", 4]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 0,
+                    "para_coating": 1,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 1
+                }
+            }
         },
         "3b": {
             "rarity": 5,
@@ -256,7 +446,26 @@
                     ["defense_boost_2", "1c"],
                     ["defense_boost_1", "1b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "recovery",
+                "chargeShot": [
+                    ["rapid", 2],
+                    ["rapid", 3],
+                    ["rapid", 4],
+                    ["rapid", 4]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 0,
+                    "para_coating": 1,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 1
+                }
+            }
         },
         "3c": {
             "rarity": 6,
@@ -281,7 +490,26 @@
                     ["defense_boost_2", "1c"],
                     ["defense_boost_1", "1b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "recovery",
+                "chargeShot": [
+                    ["rapid", 3],
+                    ["rapid", 3],
+                    ["rapid", 4],
+                    ["rapid", 5]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 0,
+                    "para_coating": 1,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 1
+                }
+            }
         }
     },
     "Bishaten Tree": {
@@ -305,7 +533,26 @@
                     ["defense_boost_2", "1c"],
                     ["defense_boost_1", "1b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "affinity",
+                "chargeShot": [
+                    ["pierce", 1],
+                    ["rapid", 2],
+                    ["rapid", 3],
+                    ["pierce", 3]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 2,
+                    "para_coating": 2,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         },
         "4b": {
             "rarity": 5,
@@ -328,7 +575,26 @@
                     ["defense_boost_2", "1c"],
                     ["defense_boost_1", "1b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "affinity",
+                "chargeShot": [
+                    ["pierce", 2],
+                    ["rapid", 3],
+                    ["rapid", 3],
+                    ["pierce", 4]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 2,
+                    "para_coating": 2,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         },
         "4c": {
             "rarity": 6,
@@ -351,7 +617,26 @@
                     ["defense_boost_2", "1c"],
                     ["defense_boost_1", "1b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "affinity",
+                "chargeShot": [
+                    ["pierce", 3],
+                    ["rapid", 4],
+                    ["rapid", 4],
+                    ["pierce", 4]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 2,
+                    "para_coating": 2,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         }
     },
     "Nargacuga Tree": {
@@ -377,7 +662,26 @@
                     ["defense_boost_2", "1c"],
                     ["defense_boost_1", "1b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "affinity",
+                "chargeShot": [
+                    ["pierce", 1],
+                    ["pierce", 2],
+                    ["pierce", 3],
+                    ["pierce", 3]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 2,
+                    "power_coating": 0,
+                    "poison_coating": 1,
+                    "para_coating": 1,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         },
         "5b": {
             "rarity": 5,
@@ -402,7 +706,26 @@
                     ["defense_boost_2", "1c"],
                     ["defense_boost_1", "1b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "affinity",
+                "chargeShot": [
+                    ["pierce", 2],
+                    ["pierce", 2],
+                    ["pierce", 3],
+                    ["pierce", 4]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 2,
+                    "power_coating": 0,
+                    "poison_coating": 1,
+                    "para_coating": 1,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         },
         "5c": {
             "rarity": 6,
@@ -427,7 +750,26 @@
                     ["defense_boost_2", "1c"],
                     ["defense_boost_1", "1b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "affinity",
+                "chargeShot": [
+                    ["pierce", 2],
+                    ["pierce", 3],
+                    ["pierce", 4],
+                    ["pierce", 5]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 2,
+                    "power_coating": 0,
+                    "poison_coating": 1,
+                    "para_coating": 1,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         }
     },
     "Tobi-Kadachi Tree": {
@@ -451,7 +793,26 @@
                     ["defense_boost_2", "1c"],
                     ["defense_boost_1", "1b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "affinity",
+                "chargeShot": [
+                    ["rapid", 1],
+                    ["rapid", 2],
+                    ["rapid", 3],
+                    ["rapid", 4]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 0,
+                    "para_coating": 2,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         },
         "6b": {
             "rarity": 3,
@@ -473,7 +834,26 @@
                     ["defense_boost_2", "1c"],
                     ["defense_boost_1", "1b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "affinity",
+                "chargeShot": [
+                    ["rapid", 2],
+                    ["rapid", 2],
+                    ["rapid", 3],
+                    ["rapid", 4]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 0,
+                    "para_coating": 2,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         },
         "6c": {
             "rarity": 5,
@@ -496,7 +876,26 @@
                     ["defense_boost_2", "1c"],
                     ["defense_boost_1", "1b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "affinity",
+                "chargeShot": [
+                    ["rapid", 2],
+                    ["rapid", 2],
+                    ["rapid", 4],
+                    ["rapid", 4]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 0,
+                    "para_coating": 2,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         },
         "6d": {
             "rarity": 6,
@@ -521,7 +920,26 @@
                     ["defense_boost_2", "1c"],
                     ["defense_boost_1", "1b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "affinity",
+                "chargeShot": [
+                    ["rapid", 2],
+                    ["rapid", 3],
+                    ["rapid", 4],
+                    ["rapid", 4]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 0,
+                    "para_coating": 2,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         }
     },
     "Barioth Tree": {
@@ -545,7 +963,26 @@
                     ["defense_boost_2", "1c"],
                     ["defense_boost_1", "1b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "affinity",
+                "chargeShot": [
+                    ["rapid", 1],
+                    ["rapid", 2],
+                    ["spread", 2],
+                    ["spread", 2]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 0,
+                    "para_coating": 0,
+                    "sleep_coating": 1,
+                    "blast_coating": 0,
+                    "exhaust_coating": 1
+                }
+            }
         },
         "7b": {
             "rarity": 3,
@@ -567,7 +1004,26 @@
                     ["defense_boost_2", "1c"],
                     ["defense_boost_1", "1b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "affinity",
+                "chargeShot": [
+                    ["rapid", 2],
+                    ["rapid", 2],
+                    ["spread", 2],
+                    ["spread", 3]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 0,
+                    "para_coating": 0,
+                    "sleep_coating": 1,
+                    "blast_coating": 0,
+                    "exhaust_coating": 1
+                }
+            }
         },
         "7c": {
             "rarity": 5,
@@ -590,7 +1046,26 @@
                     ["defense_boost_2", "1c"],
                     ["defense_boost_1", "1b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "affinity",
+                "chargeShot": [
+                    ["rapid", 2],
+                    ["rapid", 2],
+                    ["spread", 3],
+                    ["spread", 3]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 0,
+                    "para_coating": 0,
+                    "sleep_coating": 1,
+                    "blast_coating": 0,
+                    "exhaust_coating": 1
+                }
+            }
         },
         "7d": {
             "rarity": 6,
@@ -614,7 +1089,26 @@
                     ["defense_boost_2", "1c"],
                     ["defense_boost_1", "1b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "affinity",
+                "chargeShot": [
+                    ["rapid", 3],
+                    ["rapid", 3],
+                    ["spread", 3],
+                    ["spread", 3]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 0,
+                    "para_coating": 0,
+                    "sleep_coating": 1,
+                    "blast_coating": 0,
+                    "exhaust_coating": 1
+                }
+            }
         }
     },
     "Wroggi Tree": {
@@ -638,7 +1132,26 @@
                     ["affinity_boost_2", "1b"],
                     ["defense_boost_1", "1b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "recovery",
+                "chargeShot": [
+                    ["pierce", 2],
+                    ["rapid", 2],
+                    ["rapid", 3],
+                    ["rapid", 3]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 2,
+                    "para_coating": 0,
+                    "sleep_coating": 2,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         },
         "8b": {
             "rarity": 2,
@@ -660,7 +1173,26 @@
                     ["attack_boost_1", "1b"],
                     ["defense_boost_1", "1b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "recovery",
+                "chargeShot": [
+                    ["pierce", 2],
+                    ["rapid", 3],
+                    ["rapid", 3],
+                    ["rapid", 3]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 2,
+                    "para_coating": 0,
+                    "sleep_coating": 2,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         },
         "8c": {
             "rarity": 4,
@@ -682,7 +1214,26 @@
                     ["attack_boost_1", "1b"],
                     ["defense_boost_1", "1b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "recovery",
+                "chargeShot": [
+                    ["pierce", 2],
+                    ["rapid", 3],
+                    ["rapid", 4],
+                    ["rapid", 4]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 2,
+                    "para_coating": 0,
+                    "sleep_coating": 2,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         }
     },
     "Arzuros Tree": {
@@ -704,7 +1255,26 @@
                     ["small_monster_exploit", ""],
                     ["affinity_boost_2", "1b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "brace",
+                "chargeShot": [
+                    ["spread", 3],
+                    ["spread", 2],
+                    ["spread", 1],
+                    ["spread", 3]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 0,
+                    "para_coating": 0,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 1
+                }
+            }
         },
         "9b": {
             "rarity": 2,
@@ -725,7 +1295,26 @@
                     ["attack_boost_1", "9a"],
                     ["affinity_boost_2", "1b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "brace",
+                "chargeShot": [
+                    ["spread", 4],
+                    ["spread", 3],
+                    ["spread", 1],
+                    ["spread", 3]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 0,
+                    "para_coating": 0,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 1
+                }
+            }
         },
         "9c": {
             "rarity": 4,
@@ -749,7 +1338,26 @@
                     ["attack_boost_1", "9a"],
                     ["affinity_boost_2", "1b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "brace",
+                "chargeShot": [
+                    ["spread", 5],
+                    ["spread", 4],
+                    ["spread", 2],
+                    ["spread", 4]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 0,
+                    "para_coating": 0,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 1
+                }
+            }
         }
     },
     "Ore Tree": {
@@ -770,7 +1378,26 @@
                     ["affinity_boost_1", ""],
                     ["defense_boost_2", ""]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "affinity",
+                "chargeShot": [
+                    ["pierce", 1],
+                    ["pierce", 1],
+                    ["pierce", 2],
+                    ["spread", 2]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 0,
+                    "para_coating": 0,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         },
         "10b": {
             "rarity": 1,
@@ -789,7 +1416,26 @@
                     ["affinity_boost_1", ""],
                     ["defense_boost_2", ""]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "affinity",
+                "chargeShot": [
+                    ["pierce", 1],
+                    ["pierce", 2],
+                    ["pierce", 2],
+                    ["spread", 2]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 0,
+                    "para_coating": 0,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         },
         "10c": {
             "rarity": 2,
@@ -809,7 +1455,26 @@
                     ["defense_boost_2", ""],
                     ["attack_boost_1", "10b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "affinity",
+                "chargeShot": [
+                    ["pierce", 1],
+                    ["pierce", 2],
+                    ["pierce", 3],
+                    ["spread", 3]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 0,
+                    "para_coating": 0,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         },
         "10d": {
             "rarity": 3,
@@ -830,7 +1495,26 @@
                     ["affinity_boost_1", "10c"],
                     ["attack_boost_1", "10b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "affinity",
+                "chargeShot": [
+                    ["pierce", 2],
+                    ["pierce", 2],
+                    ["pierce", 3],
+                    ["spread", 3]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 0,
+                    "para_coating": 0,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         },
         "10e": {
             "rarity": 4,
@@ -852,7 +1536,26 @@
                     ["affinity_boost_1", "10c"],
                     ["attack_boost_1", "10b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "affinity",
+                "chargeShot": [
+                    ["pierce", 2],
+                    ["pierce", 3],
+                    ["pierce", 3],
+                    ["spread", 4]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 0,
+                    "para_coating": 0,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         },
         "10f": {
             "rarity": 5,
@@ -875,7 +1578,26 @@
                     ["affinity_boost_1", "10c"],
                     ["attack_boost_1", "10b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "affinity",
+                "chargeShot": [
+                    ["pierce", 2],
+                    ["pierce", 3],
+                    ["pierce", 4],
+                    ["spread", 4]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 0,
+                    "para_coating": 0,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         }
     },
     "Ore Tree 2": {
@@ -901,7 +1623,26 @@
                     ["affinity_boost_1", "10c"],
                     ["attack_boost_1", "10b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "brace",
+                "chargeShot": [
+                    ["spread", 2],
+                    ["spread", 2],
+                    ["rapid", 3],
+                    ["rapid", 4]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 0,
+                    "para_coating": 0,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         },
         "11b": {
             "rarity": 5,
@@ -925,7 +1666,26 @@
                     ["affinity_boost_1", "10c"],
                     ["attack_boost_1", "10b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "brace",
+                "chargeShot": [
+                    ["spread", 2],
+                    ["spread", 3],
+                    ["rapid", 3],
+                    ["rapid", 4]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 0,
+                    "para_coating": 0,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         },
         "11c": {
             "rarity": 6,
@@ -950,7 +1710,26 @@
                     ["affinity_boost_1", "10c"],
                     ["attack_boost_1", "10b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "brace",
+                "chargeShot": [
+                    ["spread", 3],
+                    ["spread", 3],
+                    ["rapid", 3],
+                    ["rapid", 4]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 0,
+                    "para_coating": 0,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         }
     },
     "Ice Tree": {
@@ -975,7 +1754,26 @@
                     ["affinity_boost_1", "10c"],
                     ["attack_boost_1", "10b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "brace",
+                "chargeShot": [
+                    ["rapid", 1],
+                    ["rapid", 1],
+                    ["rapid", 3],
+                    ["rapid", 3]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 2,
+                    "power_coating": 1,
+                    "poison_coating": 0,
+                    "para_coating": 0,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         },
         "12b": {
             "rarity": 5,
@@ -999,7 +1797,26 @@
                     ["affinity_boost_1", "10c"],
                     ["attack_boost_1", "10b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "brace",
+                "chargeShot": [
+                    ["rapid", 1],
+                    ["rapid", 2],
+                    ["rapid", 3],
+                    ["rapid", 3]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 2,
+                    "power_coating": 1,
+                    "poison_coating": 0,
+                    "para_coating": 0,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         },
         "12c": {
             "rarity": 6,
@@ -1024,7 +1841,26 @@
                     ["affinity_boost_1", "10c"],
                     ["attack_boost_1", "10b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "brace",
+                "chargeShot": [
+                    ["rapid", 2],
+                    ["rapid", 2],
+                    ["rapid", 3],
+                    ["rapid", 3]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 2,
+                    "power_coating": 1,
+                    "poison_coating": 0,
+                    "para_coating": 0,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         }
     },
     "Almudron Tree": {
@@ -1049,7 +1885,25 @@
                     ["affinity_boost_1", "10c"],
                     ["attack_boost_1", "10b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "brace",
+                "chargeShot": [
+                    ["spread", 1],
+                    ["spread", 3],
+                    ["spread", 5]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 0,
+                    "poison_coating": 0,
+                    "para_coating": 0,
+                    "sleep_coating": 1,
+                    "blast_coating": 1,
+                    "exhaust_coating": 1
+                }
+            }
         },
         "13b": {
             "rarity": 4,
@@ -1073,7 +1927,25 @@
                     ["affinity_boost_1", "10c"],
                     ["attack_boost_1", "10b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "brace",
+                "chargeShot": [
+                    ["spread", 1],
+                    ["spread", 3],
+                    ["spread", 5]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 0,
+                    "poison_coating": 0,
+                    "para_coating": 0,
+                    "sleep_coating": 1,
+                    "blast_coating": 1,
+                    "exhaust_coating": 1
+                }
+            }
         },
         "13c": {
             "rarity": 6,
@@ -1098,7 +1970,25 @@
                     ["affinity_boost_1", "10c"],
                     ["attack_boost_1", "10b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "brace",
+                "chargeShot": [
+                    ["spread", 1],
+                    ["spread", 4],
+                    ["spread", 5]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 0,
+                    "poison_coating": 0,
+                    "para_coating": 0,
+                    "sleep_coating": 1,
+                    "blast_coating": 1,
+                    "exhaust_coating": 1
+                }
+            }
         }
     },
     "Rathian Tree": {
@@ -1121,7 +2011,26 @@
                     ["affinity_boost_1", "10b"],
                     ["defense_boost_2", "10b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "affinity",
+                "chargeShot": [
+                    ["rapid", 2],
+                    ["rapid", 2],
+                    ["spread", 3],
+                    ["spread", 3]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 0,
+                    "poison_coating": 2,
+                    "para_coating": 1,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         },
         "14b": {
             "rarity": 3,
@@ -1143,7 +2052,26 @@
                     ["affinity_boost_1", "10b"],
                     ["defense_boost_2", "10b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "affinity",
+                "chargeShot": [
+                    ["rapid", 2],
+                    ["rapid", 3],
+                    ["spread", 3],
+                    ["spread", 3]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 0,
+                    "poison_coating": 2,
+                    "para_coating": 1,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         },
         "14c": {
             "rarity": 5,
@@ -1165,7 +2093,26 @@
                     ["affinity_boost_1", "10b"],
                     ["defense_boost_2", "10b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "affinity",
+                "chargeShot": [
+                    ["rapid", 3],
+                    ["rapid", 3],
+                    ["spread", 3],
+                    ["spread", 3]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 0,
+                    "poison_coating": 2,
+                    "para_coating": 1,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         }
     },
     "Rathalos Tree": {
@@ -1190,7 +2137,26 @@
                     ["affinity_boost_1", "10b"],
                     ["defense_boost_2", "10b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "affinity",
+                "chargeShot": [
+                    ["rapid", 4],
+                    ["rapid", 3],
+                    ["spread", 3],
+                    ["spread", 3]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 2,
+                    "para_coating": 1,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         },
         "15b": {
             "rarity": 6,
@@ -1213,7 +2179,26 @@
                     ["affinity_boost_1", "10b"],
                     ["defense_boost_2", "10b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "affinity",
+                "chargeShot": [
+                    ["rapid", 4],
+                    ["rapid", 4],
+                    ["spread", 3],
+                    ["spread", 3]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 2,
+                    "para_coating": 1,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         },
         "15c": {
             "rarity": 6,
@@ -1237,7 +2222,26 @@
                     ["affinity_boost_1", "10b"],
                     ["defense_boost_2", "10b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "affinity",
+                "chargeShot": [
+                    ["rapid", 4],
+                    ["rapid", 4],
+                    ["spread", 4],
+                    ["spread", 3]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 2,
+                    "para_coating": 1,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         }
     },
     "Kulu-Ya-Ku Tree": {
@@ -1260,7 +2264,26 @@
                     ["affinity_boost_1", "10b"],
                     ["defense_boost_2", "10b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "brace",
+                "chargeShot": [
+                    ["pierce", 1],
+                    ["rapid", 2],
+                    ["rapid", 2],
+                    ["spread", 3]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 0,
+                    "poison_coating": 0,
+                    "para_coating": 1,
+                    "sleep_coating": 1,
+                    "blast_coating": 1,
+                    "exhaust_coating": 0
+                }
+            }
         },
         "16b": {
             "rarity": 3,
@@ -1282,7 +2305,26 @@
                     ["affinity_boost_1", "10b"],
                     ["defense_boost_2", "10b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "brace",
+                "chargeShot": [
+                    ["pierce", 2],
+                    ["rapid", 2],
+                    ["rapid", 3],
+                    ["spread", 3]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 0,
+                    "poison_coating": 0,
+                    "para_coating": 1,
+                    "sleep_coating": 1,
+                    "blast_coating": 1,
+                    "exhaust_coating": 0
+                }
+            }
         },
         "16c": {
             "rarity": 4,
@@ -1304,7 +2346,26 @@
                     ["affinity_boost_1", "10b"],
                     ["defense_boost_2", "10b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "brace",
+                "chargeShot": [
+                    ["pierce", 2],
+                    ["rapid", 3],
+                    ["rapid", 4],
+                    ["spread", 3]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 0,
+                    "poison_coating": 0,
+                    "para_coating": 1,
+                    "sleep_coating": 1,
+                    "blast_coating": 1,
+                    "exhaust_coating": 0
+                }
+            }
         }
     },
     "Khezu Tree": {
@@ -1328,7 +2389,26 @@
                     ["affinity_boost_1", "10b"],
                     ["defense_boost_2", "10b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "recovery",
+                "chargeShot": [
+                    ["spread", 2],
+                    ["spread", 2],
+                    ["spread", 2],
+                    ["spread", 3]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 0,
+                    "para_coating": 2,
+                    "sleep_coating": 1,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         },
         "17b": {
             "rarity": 2,
@@ -1351,7 +2431,26 @@
                     ["affinity_boost_1", "10b"],
                     ["defense_boost_2", "10b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "recovery",
+                "chargeShot": [
+                    ["spread", 2],
+                    ["spread", 3],
+                    ["spread", 3],
+                    ["spread", 3]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 0,
+                    "para_coating": 2,
+                    "sleep_coating": 1,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         },
         "17c": {
             "rarity": 4,
@@ -1376,7 +2475,26 @@
                     ["affinity_boost_1", "10b"],
                     ["defense_boost_2", "10b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "recovery",
+                "chargeShot": [
+                    ["spread", 2],
+                    ["spread", 3],
+                    ["spread", 4],
+                    ["spread", 4]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 0,
+                    "para_coating": 2,
+                    "sleep_coating": 1,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         }
     },
     "Bone Tree": {
@@ -1397,7 +2515,26 @@
                     ["affinity_boost_1", ""],
                     ["defense_boost_1", ""]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "brace",
+                "chargeShot": [
+                    ["spread", 1],
+                    ["spread", 1],
+                    ["spread", 2],
+                    ["rapid", 2]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 0,
+                    "poison_coating": 1,
+                    "para_coating": 0,
+                    "sleep_coating": 0,
+                    "blast_coating": 1,
+                    "exhaust_coating": 1
+                }
+            }
         },
         "18b": {
             "rarity": 1,
@@ -1416,7 +2553,26 @@
                     ["affinity_boost_1", ""],
                     ["defense_boost_1", ""]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "brace",
+                "chargeShot": [
+                    ["spread", 1],
+                    ["spread", 2],
+                    ["spread", 2],
+                    ["rapid", 2]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 0,
+                    "poison_coating": 1,
+                    "para_coating": 0,
+                    "sleep_coating": 0,
+                    "blast_coating": 1,
+                    "exhaust_coating": 1
+                }
+            }
         },
         "18c": {
             "rarity": 2,
@@ -1436,7 +2592,26 @@
                     ["defense_boost_1", ""],
                     ["affinity_boost_1", "18b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "brace",
+                "chargeShot": [
+                    ["spread", 1],
+                    ["spread", 2],
+                    ["spread", 3],
+                    ["rapid", 3]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 0,
+                    "poison_coating": 1,
+                    "para_coating": 0,
+                    "sleep_coating": 0,
+                    "blast_coating": 1,
+                    "exhaust_coating": 1
+                }
+            }
         },
         "18d": {
             "rarity": 3,
@@ -1457,7 +2632,26 @@
                     ["defense_boost_1", "18c"],
                     ["affinity_boost_1", "18b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "brace",
+                "chargeShot": [
+                    ["spread", 2],
+                    ["spread", 2],
+                    ["spread", 3],
+                    ["rapid", 3]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 0,
+                    "poison_coating": 1,
+                    "para_coating": 0,
+                    "sleep_coating": 0,
+                    "blast_coating": 1,
+                    "exhaust_coating": 1
+                }
+            }
         },
         "18e": {
             "rarity": 4,
@@ -1479,7 +2673,26 @@
                     ["defense_boost_1", "18c"],
                     ["affinity_boost_1", "18b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "brace",
+                "chargeShot": [
+                    ["spread", 2],
+                    ["spread", 3],
+                    ["spread", 3],
+                    ["rapid", 4]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 0,
+                    "poison_coating": 1,
+                    "para_coating": 0,
+                    "sleep_coating": 0,
+                    "blast_coating": 1,
+                    "exhaust_coating": 1
+                }
+            }
         },
         "18f": {
             "rarity": 5,
@@ -1502,7 +2715,26 @@
                     ["defense_boost_1", "18c"],
                     ["affinity_boost_1", "18b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "brace",
+                "chargeShot": [
+                    ["spread", 2],
+                    ["spread", 3],
+                    ["spread", 4],
+                    ["rapid", 4]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 0,
+                    "poison_coating": 1,
+                    "para_coating": 0,
+                    "sleep_coating": 0,
+                    "blast_coating": 1,
+                    "exhaust_coating": 1
+                }
+            }
         }
     },
     "Tigrex Tree": {
@@ -1526,7 +2758,26 @@
                     ["poison_coating_boost", "18d"],
                     ["defense_boost_1", "18c"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "affinity",
+                "chargeShot": [
+                    ["rapid", 1],
+                    ["rapid", 2],
+                    ["rapid", 3],
+                    ["spread", 3]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 0,
+                    "poison_coating": 1,
+                    "para_coating": 1,
+                    "sleep_coating": 1,
+                    "blast_coating": 1,
+                    "exhaust_coating": 1
+                }
+            }
         },
         "19b": {
             "rarity": 6,
@@ -1548,7 +2799,26 @@
                     ["poison_coating_boost", "18d"],
                     ["defense_boost_1", "18c"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "affinity",
+                "chargeShot": [
+                    ["rapid", 2],
+                    ["rapid", 3],
+                    ["rapid", 4],
+                    ["spread", 3]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 0,
+                    "poison_coating": 1,
+                    "para_coating": 1,
+                    "sleep_coating": 1,
+                    "blast_coating": 1,
+                    "exhaust_coating": 1
+                }
+            }
         },
         "19c": {
             "rarity": 6,
@@ -1571,7 +2841,26 @@
                     ["poison_coating_boost", "18d"],
                     ["defense_boost_1", "18c"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "affinity",
+                "chargeShot": [
+                    ["rapid", 2],
+                    ["rapid", 3],
+                    ["rapid", 5],
+                    ["spread", 3]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 0,
+                    "poison_coating": 1,
+                    "para_coating": 1,
+                    "sleep_coating": 1,
+                    "blast_coating": 1,
+                    "exhaust_coating": 1
+                }
+            }
         }
     },
     "Diablos Tree": {
@@ -1596,7 +2885,26 @@
                     ["affinity_boost_2", "18d"],
                     ["poison_coating_boost", "18d"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "brace",
+                "chargeShot": [
+                    ["rapid", 2],
+                    ["rapid", 2],
+                    ["pierce", 3],
+                    ["pierce", 3]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 0,
+                    "poison_coating": 0,
+                    "para_coating": 0,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 1
+                }
+            }
         },
         "20b": {
             "rarity": 6,
@@ -1619,7 +2927,26 @@
                     ["brutal_strike", "19a"],
                     ["poison_coating_boost", "18d"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "brace",
+                "chargeShot": [
+                    ["rapid", 2],
+                    ["rapid", 3],
+                    ["pierce", 3],
+                    ["pierce", 4]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 0,
+                    "poison_coating": 0,
+                    "para_coating": 0,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 1
+                }
+            }
         },
         "20c": {
             "rarity": 7,
@@ -1644,7 +2971,26 @@
                     ["brutal_strike", "19a"],
                     ["poison_coating_boost", "18d"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "brace",
+                "chargeShot": [
+                    ["rapid", 2],
+                    ["rapid", 4],
+                    ["pierce", 4],
+                    ["pierce", 4]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 0,
+                    "poison_coating": 0,
+                    "para_coating": 0,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 1
+                }
+            }
         }
     },
     "Zinogre Tree": {
@@ -1669,7 +3015,26 @@
                     ["defense_boost_1", "18c"],
                     ["affinity_boost_1", "18b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "affinity",
+                "chargeShot": [
+                    ["rapid", 2],
+                    ["rapid", 2],
+                    ["pierce", 3],
+                    ["pierce", 4]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 1,
+                    "para_coating": 1,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 1
+                }
+            }
         },
         "21b": {
             "rarity": 5,
@@ -1692,7 +3057,26 @@
                     ["defense_boost_1", "18c"],
                     ["affinity_boost_1", "18b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "affinity",
+                "chargeShot": [
+                    ["rapid", 2],
+                    ["rapid", 3],
+                    ["pierce", 4],
+                    ["pierce", 4]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 1,
+                    "para_coating": 1,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 1
+                }
+            }
         },
         "21c": {
             "rarity": 6,
@@ -1716,7 +3100,26 @@
                     ["defense_boost_1", "18c"],
                     ["affinity_boost_1", "18b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "affinity",
+                "chargeShot": [
+                    ["rapid", 2],
+                    ["rapid", 4],
+                    ["pierce", 4],
+                    ["pierce", 4]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 1,
+                    "para_coating": 1,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 1
+                }
+            }
         }
     },
     "Pukei-Pukei Tree": {
@@ -1739,7 +3142,26 @@
                     ["affinity_boost_2", "18c"],
                     ["affinity_boost_1", "18b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "recovery",
+                "chargeShot": [
+                    ["rapid", 2],
+                    ["pierce", 1],
+                    ["pierce", 3],
+                    ["pierce", 2]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 0,
+                    "poison_coating": 2,
+                    "para_coating": 1,
+                    "sleep_coating": 0,
+                    "blast_coating": 1,
+                    "exhaust_coating": 0
+                }
+            }
         },
         "22b": {
             "rarity": 4,
@@ -1761,7 +3183,26 @@
                     ["affinity_boost_2", "18c"],
                     ["affinity_boost_1", "18b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "recovery",
+                "chargeShot": [
+                    ["rapid", 3],
+                    ["pierce", 2],
+                    ["pierce", 3],
+                    ["pierce", 3]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 0,
+                    "poison_coating": 2,
+                    "para_coating": 1,
+                    "sleep_coating": 0,
+                    "blast_coating": 1,
+                    "exhaust_coating": 0
+                }
+            }
         },
         "22c": {
             "rarity": 5,
@@ -1784,7 +3225,26 @@
                     ["affinity_boost_2", "18c"],
                     ["affinity_boost_1", "18b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "recovery",
+                "chargeShot": [
+                    ["rapid", 4],
+                    ["pierce", 3],
+                    ["pierce", 4],
+                    ["pierce", 3]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 0,
+                    "poison_coating": 2,
+                    "para_coating": 1,
+                    "sleep_coating": 0,
+                    "blast_coating": 1,
+                    "exhaust_coating": 0
+                }
+            }
         }
     },
     "Anjanath Tree": {
@@ -1809,7 +3269,26 @@
                     ["paralysis_coating_boost", "22a"],
                     ["affinity_boost_2", "18c"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "brace",
+                "chargeShot": [
+                    ["rapid", 1],
+                    ["rapid", 2],
+                    ["rapid", 3],
+                    ["rapid", 4]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 0,
+                    "para_coating": 0,
+                    "sleep_coating": 0,
+                    "blast_coating": 1,
+                    "exhaust_coating": 0
+                }
+            }
         },
         "23b": {
             "rarity": 5,
@@ -1833,7 +3312,26 @@
                     ["paralysis_coating_boost", "22a"],
                     ["affinity_boost_2", "18c"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "brace",
+                "chargeShot": [
+                    ["rapid", 2],
+                    ["rapid", 2],
+                    ["rapid", 3],
+                    ["rapid", 4]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 0,
+                    "para_coating": 0,
+                    "sleep_coating": 0,
+                    "blast_coating": 1,
+                    "exhaust_coating": 0
+                }
+            }
         },
         "23c": {
             "rarity": 6,
@@ -1858,7 +3356,26 @@
                     ["defense_boost_1", "22a"],
                     ["paralysis_coating_boost", "22a"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "brace",
+                "chargeShot": [
+                    ["rapid", 3],
+                    ["rapid", 3],
+                    ["rapid", 4],
+                    ["rapid", 4]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 0,
+                    "para_coating": 0,
+                    "sleep_coating": 0,
+                    "blast_coating": 1,
+                    "exhaust_coating": 0
+                }
+            }
         }
     },
     "Royal Ludroth Tree": {
@@ -1881,7 +3398,26 @@
                     ["affinity_boost_1", "18b"],
                     ["defense_boost_1", "18b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "affinity",
+                "chargeShot": [
+                    ["spread", 1],
+                    ["pierce", 1],
+                    ["pierce", 2],
+                    ["pierce", 3]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 0,
+                    "para_coating": 0,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 1
+                }
+            }
         },
         "24b": {
             "rarity": 3,
@@ -1902,7 +3438,26 @@
                     ["affinity_boost_1", "18b"],
                     ["defense_boost_1", "18b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "affinity",
+                "chargeShot": [
+                    ["spread", 2],
+                    ["pierce", 2],
+                    ["pierce", 3],
+                    ["pierce", 3]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 0,
+                    "para_coating": 0,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 1
+                }
+            }
         },
         "24c": {
             "rarity": 5,
@@ -1924,7 +3479,26 @@
                     ["affinity_boost_1", "18b"],
                     ["defense_boost_1", "18b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "affinity",
+                "chargeShot": [
+                    ["spread", 2],
+                    ["pierce", 3],
+                    ["pierce", 3],
+                    ["pierce", 4]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 0,
+                    "para_coating": 0,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 1
+                }
+            }
         },
         "24d": {
             "rarity": 6,
@@ -1947,7 +3521,26 @@
                     ["affinity_boost_1", "18b"],
                     ["defense_boost_1", "18b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "affinity",
+                "chargeShot": [
+                    ["spread", 2],
+                    ["pierce", 3],
+                    ["pierce", 4],
+                    ["pierce", 4]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 0,
+                    "para_coating": 0,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 1
+                }
+            }
         }
     },
     "Baggi Tree": {
@@ -1970,7 +3563,26 @@
                     ["attack_boost_2", "18a"],
                     ["defense_boost_1", "18a"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "brace",
+                "chargeShot": [
+                    ["rapid", 1],
+                    ["spread", 2],
+                    ["rapid", 2],
+                    ["spread", 3]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 1,
+                    "para_coating": 0,
+                    "sleep_coating": 2,
+                    "blast_coating": 1,
+                    "exhaust_coating": 1
+                }
+            }
         },
         "25b": {
             "rarity": 2,
@@ -1992,7 +3604,26 @@
                     ["attack_boost_2", "18a"],
                     ["defense_boost_1", "18a"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "brace",
+                "chargeShot": [
+                    ["rapid", 2],
+                    ["spread", 3],
+                    ["rapid", 3],
+                    ["spread", 3]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 1,
+                    "para_coating": 0,
+                    "sleep_coating": 2,
+                    "blast_coating": 1,
+                    "exhaust_coating": 1
+                }
+            }
         },
         "25c": {
             "rarity": 4,
@@ -2014,7 +3645,26 @@
                     ["attack_boost_2", "18a"],
                     ["defense_boost_1", "18a"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "brace",
+                "chargeShot": [
+                    ["rapid", 3],
+                    ["spread", 3],
+                    ["rapid", 4],
+                    ["spread", 3]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 1,
+                    "para_coating": 0,
+                    "sleep_coating": 2,
+                    "blast_coating": 1,
+                    "exhaust_coating": 1
+                }
+            }
         }
     },
     "Bnahabra Tree": {
@@ -2035,7 +3685,26 @@
                     ["affinity_boost_1", ""],
                     ["defense_boost_1", ""]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "recovery",
+                "chargeShot": [
+                    ["spread", 1],
+                    ["spread", 1],
+                    ["pierce", 2],
+                    ["pierce", 3]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 0,
+                    "poison_coating": 0,
+                    "para_coating": 2,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         },
         "26b": {
             "rarity": 2,
@@ -2055,7 +3724,26 @@
                     ["defense_boost_1", ""],
                     ["attack_boost_1", "26a"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "recovery",
+                "chargeShot": [
+                    ["spread", 1],
+                    ["spread", 2],
+                    ["pierce", 2],
+                    ["pierce", 3]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 0,
+                    "poison_coating": 0,
+                    "para_coating": 2,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         },
         "26c": {
             "rarity": 3,
@@ -2075,7 +3763,26 @@
                     ["defense_boost_1", ""],
                     ["attack_boost_1", "26a"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "recovery",
+                "chargeShot": [
+                    ["spread", 2],
+                    ["spread", 2],
+                    ["pierce", 3],
+                    ["pierce", 3]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 0,
+                    "poison_coating": 0,
+                    "para_coating": 2,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         },
         "26d": {
             "rarity": 4,
@@ -2097,7 +3804,26 @@
                     ["defense_boost_1", "26c"],
                     ["attack_boost_1", "26a"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "recovery",
+                "chargeShot": [
+                    ["spread", 2],
+                    ["spread", 3],
+                    ["pierce", 3],
+                    ["pierce", 4]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 0,
+                    "poison_coating": 0,
+                    "para_coating": 2,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         },
         "26e": {
             "rarity": 5,
@@ -2120,7 +3846,26 @@
                     ["defense_boost_1", "26c"],
                     ["attack_boost_1", "26a"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "recovery",
+                "chargeShot": [
+                    ["spread", 2],
+                    ["spread", 3],
+                    ["pierce", 4],
+                    ["pierce", 4]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 0,
+                    "poison_coating": 0,
+                    "para_coating": 2,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         },
         "26f": {
             "rarity": 6,
@@ -2144,7 +3889,26 @@
                     ["defense_boost_1", "26c"],
                     ["attack_boost_1", "26a"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "recovery",
+                "chargeShot": [
+                    ["spread", 3],
+                    ["spread", 3],
+                    ["pierce", 4],
+                    ["pierce", 4]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 0,
+                    "poison_coating": 0,
+                    "para_coating": 2,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         }
     },
     "Bnahabra (Thunder)": {
@@ -2168,7 +3932,26 @@
                     ["defense_boost_1", "26c"],
                     ["attack_boost_1", "26a"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "recovery",
+                "chargeShot": [
+                    ["spread", 1],
+                    ["spread", 2],
+                    ["pierce", 3],
+                    ["pierce", 4]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 0,
+                    "poison_coating": 0,
+                    "para_coating": 2,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         },
         "27b": {
             "rarity": 5,
@@ -2191,7 +3974,26 @@
                     ["defense_boost_1", "26c"],
                     ["attack_boost_1", "26a"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "recovery",
+                "chargeShot": [
+                    ["spread", 2],
+                    ["spread", 3],
+                    ["pierce", 4],
+                    ["pierce", 4]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 0,
+                    "poison_coating": 0,
+                    "para_coating": 2,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         },
         "27c": {
             "rarity": 6,
@@ -2215,7 +4017,26 @@
                     ["defense_boost_1", "26c"],
                     ["attack_boost_1", "26a"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "recovery",
+                "chargeShot": [
+                    ["spread", 3],
+                    ["spread", 3],
+                    ["pierce", 4],
+                    ["pierce", 5]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 0,
+                    "poison_coating": 0,
+                    "para_coating": 2,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         }
     },
     "Bnahabra (Fire)": {
@@ -2238,7 +4059,26 @@
                     ["affinity_boost_1", "26a"],
                     ["defense_boost_1", "26a"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "recovery",
+                "chargeShot": [
+                    ["spread", 1],
+                    ["spread", 2],
+                    ["pierce", 3],
+                    ["pierce", 3]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 0,
+                    "poison_coating": 0,
+                    "para_coating": 2,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         },
         "28b": {
             "rarity": 3,
@@ -2260,7 +4100,26 @@
                     ["affinity_boost_1", "26a"],
                     ["defense_boost_1", "26a"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "recovery",
+                "chargeShot": [
+                    ["spread", 2],
+                    ["spread", 2],
+                    ["pierce", 3],
+                    ["pierce", 3]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 0,
+                    "poison_coating": 0,
+                    "para_coating": 2,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         },
         "28c": {
             "rarity": 4,
@@ -2283,7 +4142,26 @@
                     ["affinity_boost_1", "26a"],
                     ["defense_boost_1", "26a"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "recovery",
+                "chargeShot": [
+                    ["spread", 2],
+                    ["spread", 2],
+                    ["pierce", 4],
+                    ["pierce", 3]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 0,
+                    "poison_coating": 0,
+                    "para_coating": 2,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         }
     },
     "Bnahabra (Ice)": {
@@ -2306,7 +4184,26 @@
                     ["affinity_boost_1", "26a"],
                     ["defense_boost_1", "26a"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "recovery",
+                "chargeShot": [
+                    ["spread", 1],
+                    ["spread", 2],
+                    ["pierce", 2],
+                    ["pierce", 3]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 0,
+                    "poison_coating": 0,
+                    "para_coating": 2,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         },
         "29b": {
             "rarity": 3,
@@ -2328,7 +4225,26 @@
                     ["affinity_boost_1", "26a"],
                     ["defense_boost_1", "26a"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "recovery",
+                "chargeShot": [
+                    ["spread", 2],
+                    ["spread", 2],
+                    ["pierce", 3],
+                    ["pierce", 3]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 0,
+                    "poison_coating": 0,
+                    "para_coating": 2,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         },
         "29c": {
             "rarity": 5,
@@ -2351,7 +4267,26 @@
                     ["affinity_boost_1", "26a"],
                     ["defense_boost_1", "26a"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "recovery",
+                "chargeShot": [
+                    ["spread", 3],
+                    ["spread", 3],
+                    ["pierce", 4],
+                    ["pierce", 4]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 0,
+                    "poison_coating": 0,
+                    "para_coating": 2,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         }
     },
     "Magnamalo Tree": {
@@ -2372,7 +4307,26 @@
                     ["blast_boost_1", ""],
                     ["magnamalo_soul", ""]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "brace",
+                "chargeShot": [
+                    ["pierce", 4],
+                    ["spread", 3],
+                    ["spread", 3],
+                    ["rapid", 5]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 2,
+                    "power_coating": 1,
+                    "poison_coating": 0,
+                    "para_coating": 0,
+                    "sleep_coating": 0,
+                    "blast_coating": 1,
+                    "exhaust_coating": 1
+                }
+            }
         },
         "30b": {
             "rarity": 3,
@@ -2392,7 +4346,26 @@
                     ["magnamalo_soul", ""],
                     ["attack_boost_2", "30a"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "brace",
+                "chargeShot": [
+                    ["pierce", 5],
+                    ["spread", 3],
+                    ["spread", 3],
+                    ["rapid", 5]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 2,
+                    "power_coating": 1,
+                    "poison_coating": 0,
+                    "para_coating": 0,
+                    "sleep_coating": 0,
+                    "blast_coating": 1,
+                    "exhaust_coating": 1
+                }
+            }
         },
         "30c": {
             "rarity": 6,
@@ -2413,7 +4386,26 @@
                     ["blast_boost_1", "30b"],
                     ["attack_boost_2", "30a"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "brace",
+                "chargeShot": [
+                    ["pierce", 5],
+                    ["spread", 3],
+                    ["spread", 4],
+                    ["rapid", 5]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 2,
+                    "power_coating": 1,
+                    "poison_coating": 0,
+                    "para_coating": 0,
+                    "sleep_coating": 0,
+                    "blast_coating": 1,
+                    "exhaust_coating": 1
+                }
+            }
         }
     },
     "Kelbi Tree": {
@@ -2434,7 +4426,26 @@
                     ["lasting_arc_shot", ""],
                     ["paralysis_coating_boost", ""]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "recovery",
+                "chargeShot": [
+                    ["spread", 2],
+                    ["spread", 2],
+                    ["rapid", 3],
+                    ["rapid", 4]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 2,
+                    "power_coating": 1,
+                    "poison_coating": 1,
+                    "para_coating": 1,
+                    "sleep_coating": 1,
+                    "blast_coating": 0,
+                    "exhaust_coating": 1
+                }
+            }
         },
         "31b": {
             "rarity": 4,
@@ -2453,7 +4464,26 @@
                     ["lasting_arc_shot", ""],
                     ["paralysis_coating_boost", ""]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "recovery",
+                "chargeShot": [
+                    ["spread", 2],
+                    ["spread", 3],
+                    ["rapid", 3],
+                    ["rapid", 4]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 2,
+                    "power_coating": 1,
+                    "poison_coating": 1,
+                    "para_coating": 1,
+                    "sleep_coating": 1,
+                    "blast_coating": 0,
+                    "exhaust_coating": 1
+                }
+            }
         },
         "31c": {
             "rarity": 5,
@@ -2473,7 +4503,26 @@
                     ["paralysis_coating_boost", ""],
                     ["attack_boost_1", "31b"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "recovery",
+                "chargeShot": [
+                    ["spread", 3],
+                    ["spread", 3],
+                    ["rapid", 4],
+                    ["rapid", 4]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 2,
+                    "power_coating": 1,
+                    "poison_coating": 1,
+                    "para_coating": 1,
+                    "sleep_coating": 1,
+                    "blast_coating": 0,
+                    "exhaust_coating": 1
+                }
+            }
         }
     },
     "Rajang Tree": {
@@ -2494,7 +4543,26 @@
                     ["thunder_boost_1", ""],
                     ["master_rider", ""]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "brace",
+                "chargeShot": [
+                    ["pierce", 1],
+                    ["pierce", 3],
+                    ["pierce", 4],
+                    ["pierce", 4]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 0,
+                    "para_coating": 0,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         },
         "32b": {
             "rarity": 6,
@@ -2514,7 +4582,26 @@
                     ["master_rider", ""],
                     ["thunder_boost_1", "32a"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "brace",
+                "chargeShot": [
+                    ["pierce", 2],
+                    ["pierce", 3],
+                    ["pierce", 4],
+                    ["pierce", 4]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 0,
+                    "para_coating": 0,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         },
         "32c": {
             "rarity": 7,
@@ -2535,7 +4622,26 @@
                     ["affinity_boost_1", "32b"],
                     ["thunder_boost_1", "32a"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "brace",
+                "chargeShot": [
+                    ["pierce", 3],
+                    ["pierce", 3],
+                    ["pierce", 4],
+                    ["pierce", 4]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 0,
+                    "para_coating": 0,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         }
     },
     "Ibushi Tree": {
@@ -2556,7 +4662,26 @@
                     ["anti_aerial_species", ""],
                     ["defense_boost_1", ""]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "brace",
+                "chargeShot": [
+                    ["pierce", 1],
+                    ["pierce", 2],
+                    ["rapid", 3],
+                    ["rapid", 4]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 1,
+                    "para_coating": 0,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 1
+                }
+            }
         },
         "33b": {
             "rarity": 6,
@@ -2576,7 +4701,26 @@
                     ["ibushi_soul", ""],
                     ["defense_boost_1", "33a"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "brace",
+                "chargeShot": [
+                    ["pierce", 1],
+                    ["pierce", 2],
+                    ["rapid", 4],
+                    ["rapid", 4]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 1,
+                    "para_coating": 0,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 1
+                }
+            }
         },
         "33c": {
             "rarity": 7,
@@ -2597,7 +4741,26 @@
                     ["dragon_boost_3", "33b"],
                     ["defense_boost_1", "33a"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "brace",
+                "chargeShot": [
+                    ["pierce", 2],
+                    ["pierce", 3],
+                    ["rapid", 4],
+                    ["rapid", 5]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 1,
+                    "para_coating": 0,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 1
+                }
+            }
         }
     },
     "Narwa Tree": {
@@ -2618,7 +4781,26 @@
                     ["anti_aerial_species", ""],
                     ["narwa_soul", ""]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "recovery",
+                "chargeShot": [
+                    ["rapid", 1],
+                    ["spread", 2],
+                    ["spread", 3],
+                    ["pierce", 5]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 0,
+                    "poison_coating": 0,
+                    "para_coating": 1,
+                    "sleep_coating": 1,
+                    "blast_coating": 1,
+                    "exhaust_coating": 0
+                }
+            }
         },
         "34b": {
             "rarity": 7,
@@ -2638,7 +4820,26 @@
                     ["narwa_soul", ""],
                     ["attack_boost_2", "34a"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "recovery",
+                "chargeShot": [
+                    ["rapid", 2],
+                    ["spread", 3],
+                    ["spread", 4],
+                    ["pierce", 5]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 0,
+                    "poison_coating": 0,
+                    "para_coating": 1,
+                    "sleep_coating": 1,
+                    "blast_coating": 1,
+                    "exhaust_coating": 0
+                }
+            }
         }
     },
     "Kushala Daora Tree": {
@@ -2659,7 +4860,26 @@
                     ["affinity_boost_2", ""],
                     ["kushala_daora_soul", ""]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "brace",
+                "chargeShot": [
+                    ["rapid", 2],
+                    ["pierce", 3],
+                    ["pierce", 4],
+                    ["pierce", 5]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 1,
+                    "para_coating": 1,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         },
         "35b": {
             "rarity": 7,
@@ -2680,7 +4900,26 @@
                     ["attack_boost_2", "35a"],
                     ["affinity_boost_2", "35a"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "brace",
+                "chargeShot": [
+                    ["rapid", 3],
+                    ["pierce", 3],
+                    ["pierce", 5],
+                    ["pierce", 5]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 1,
+                    "para_coating": 1,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         }
     },
     "Teostra Tree": {
@@ -2701,7 +4940,26 @@
                     ["fireblight_exploit", ""],
                     ["teostra_soul", ""]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "affinity",
+                "chargeShot": [
+                    ["pierce", 2],
+                    ["pierce", 3],
+                    ["rapid", 3],
+                    ["rapid", 4]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 0,
+                    "para_coating": 0,
+                    "sleep_coating": 1,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         },
         "36b": {
             "rarity": 7,
@@ -2721,7 +4979,26 @@
                     ["teostra_soul", ""],
                     ["attack_boost_2", "36a"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "affinity",
+                "chargeShot": [
+                    ["pierce", 2],
+                    ["pierce", 4],
+                    ["rapid", 4],
+                    ["rapid", 5]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 0,
+                    "para_coating": 0,
+                    "sleep_coating": 1,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         }
     },
     "Chameleos Tree": {
@@ -2742,7 +5019,26 @@
                     ["defense_boost_3", ""],
                     ["chameleos_soul", ""]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "recovery",
+                "chargeShot": [
+                    ["spread", 2],
+                    ["rapid", 2],
+                    ["spread", 4],
+                    ["spread", 4]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 2,
+                    "para_coating": 1,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         },
         "37b": {
             "rarity": 7,
@@ -2762,7 +5058,26 @@
                     ["chameleos_soul", ""],
                     ["attack_boost_2", "37a"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "recovery",
+                "chargeShot": [
+                    ["spread", 2],
+                    ["rapid", 2],
+                    ["spread", 4],
+                    ["spread", 5]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 2,
+                    "para_coating": 1,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         }
     },
     "Valstrax Tree": {
@@ -2783,7 +5098,26 @@
                     ["wyvern_exploit", ""],
                     ["valstrax_soul", ""]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "affinity",
+                "chargeShot": [
+                    ["pierce", 2],
+                    ["spread", 2],
+                    ["spread", 3],
+                    ["spread", 4]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 0,
+                    "para_coating": 0,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         },
         "38b": {
             "rarity": 7,
@@ -2802,7 +5136,26 @@
                     ["wyvern_exploit", ""],
                     ["valstrax_soul", ""]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "affinity",
+                "chargeShot": [
+                    ["pierce", 2],
+                    ["spread", 3],
+                    ["spread", 4],
+                    ["spread", 5]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 0,
+                    "para_coating": 0,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         }
     },
     "Speartuna Tree": {
@@ -2823,7 +5176,26 @@
                     ["master_rider", ""],
                     ["anti_aquatic_species", ""]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "affinity",
+                "chargeShot": [
+                    ["rapid", 1],
+                    ["spread", 2],
+                    ["spread", 2],
+                    ["rapid", 3]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 0,
+                    "para_coating": 2,
+                    "sleep_coating": 2,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         },
         "39b": {
             "rarity": 5,
@@ -2843,7 +5215,26 @@
                     ["anti_aquatic_species", ""],
                     ["affinity_boost_1", "39a"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "affinity",
+                "chargeShot": [
+                    ["rapid", 2],
+                    ["spread", 2],
+                    ["spread", 3],
+                    ["rapid", 3]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 0,
+                    "para_coating": 2,
+                    "sleep_coating": 2,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         },
         "39c": {
             "rarity": 6,
@@ -2864,7 +5255,26 @@
                     ["affinity_boost_2", "39b"],
                     ["affinity_boost_1", "39a"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "affinity",
+                "chargeShot": [
+                    ["rapid", 2],
+                    ["spread", 2],
+                    ["spread", 3],
+                    ["rapid", 4]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 0,
+                    "para_coating": 2,
+                    "sleep_coating": 2,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         }
     },
     "Felyne Tree": {
@@ -2885,7 +5295,26 @@
                     ["brutal_strike", ""],
                     ["buddy_rally", ""]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "recovery",
+                "chargeShot": [
+                    ["spread", 1],
+                    ["rapid", 2],
+                    ["spread", 3],
+                    ["rapid", 3]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 0,
+                    "para_coating": 2,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         },
         "40b": {
             "rarity": 3,
@@ -2905,7 +5334,26 @@
                     ["buddy_rally", ""],
                     ["attack_boost_1", "40a"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "recovery",
+                "chargeShot": [
+                    ["spread", 2],
+                    ["rapid", 3],
+                    ["spread", 3],
+                    ["rapid", 3]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 0,
+                    "para_coating": 2,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         },
         "40c": {
             "rarity": 5,
@@ -2926,7 +5374,26 @@
                     ["attack_boost_2", "40b"],
                     ["attack_boost_1", "40a"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "recovery",
+                "chargeShot": [
+                    ["spread", 2],
+                    ["rapid", 3],
+                    ["spread", 3],
+                    ["rapid", 4]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 0,
+                    "para_coating": 2,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         }
     },
     "Chaos Tree": {
@@ -2947,7 +5414,26 @@
                     ["lasting_arc_shot", ""],
                     ["spiribird_doubled", ""]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "brace",
+                "chargeShot": [
+                    ["rapid", 2],
+                    ["spread", 2],
+                    ["spread", 3],
+                    ["spread", 4]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 2,
+                    "para_coating": 2,
+                    "sleep_coating": 1,
+                    "blast_coating": 1,
+                    "exhaust_coating": 1
+                }
+            }
         },
         "41b": {
             "rarity": 3,
@@ -2967,7 +5453,26 @@
                     ["spiribird_doubled", ""],
                     ["attack_boost_1", "41a"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "brace",
+                "chargeShot": [
+                    ["rapid", 2],
+                    ["spread", 2],
+                    ["spread", 3],
+                    ["spread", 4]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 2,
+                    "para_coating": 2,
+                    "sleep_coating": 1,
+                    "blast_coating": 1,
+                    "exhaust_coating": 1
+                }
+            }
         },
         "41c": {
             "rarity": 5,
@@ -2987,7 +5492,26 @@
                     ["spiribird_doubled", ""],
                     ["attack_boost_1", "41a"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "brace",
+                "chargeShot": [
+                    ["rapid", 2],
+                    ["spread", 2],
+                    ["spread", 3],
+                    ["spread", 4]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 2,
+                    "para_coating": 2,
+                    "sleep_coating": 1,
+                    "blast_coating": 1,
+                    "exhaust_coating": 1
+                }
+            }
         }
     },
     "Edel Tree": {
@@ -3008,7 +5532,26 @@
                     ["defense_boost_1", ""],
                     ["spiribird_doubled", ""]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "recovery",
+                "chargeShot": [
+                    ["rapid", 2],
+                    ["spread", 2],
+                    ["spread", 3],
+                    ["spread", 5]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 0,
+                    "poison_coating": 0,
+                    "para_coating": 0,
+                    "sleep_coating": 2,
+                    "blast_coating": 1,
+                    "exhaust_coating": 1
+                }
+            }
         },
         "42b": {
             "rarity": 3,
@@ -3028,7 +5571,26 @@
                     ["spiribird_doubled", ""],
                     ["defense_boost_1", "42a"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "recovery",
+                "chargeShot": [
+                    ["rapid", 2],
+                    ["spread", 3],
+                    ["spread", 3],
+                    ["spread", 5]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 0,
+                    "poison_coating": 0,
+                    "para_coating": 0,
+                    "sleep_coating": 2,
+                    "blast_coating": 1,
+                    "exhaust_coating": 1
+                }
+            }
         },
         "42c": {
             "rarity": 5,
@@ -3049,7 +5611,26 @@
                     ["affinity_boost_1", "42b"],
                     ["defense_boost_1", "42a"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "recovery",
+                "chargeShot": [
+                    ["rapid", 2],
+                    ["spread", 3],
+                    ["spread", 4],
+                    ["spread", 5]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 0,
+                    "poison_coating": 0,
+                    "para_coating": 0,
+                    "sleep_coating": 2,
+                    "blast_coating": 1,
+                    "exhaust_coating": 1
+                }
+            }
         }
     },
     "Spio Tree": {
@@ -3070,7 +5651,26 @@
                     ["poison_coating_boost", ""],
                     ["silkbind_boost", ""]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "affinity",
+                "chargeShot": [
+                    ["pierce", 2],
+                    ["pierce", 5],
+                    ["pierce", 4],
+                    ["spread", 4]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 1,
+                    "para_coating": 1,
+                    "sleep_coating": 2,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         },
         "43b": {
             "rarity": 4,
@@ -3090,7 +5690,26 @@
                     ["silkbind_boost", ""],
                     ["defense_boost_1", "43a"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "affinity",
+                "chargeShot": [
+                    ["pierce", 2],
+                    ["pierce", 5],
+                    ["pierce", 4],
+                    ["spread", 4]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 1,
+                    "para_coating": 1,
+                    "sleep_coating": 2,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         },
         "43c": {
             "rarity": 5,
@@ -3111,7 +5730,26 @@
                     ["defense_boost_2", "43b"],
                     ["defense_boost_1", "43a"]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "affinity",
+                "chargeShot": [
+                    ["pierce", 2],
+                    ["pierce", 5],
+                    ["pierce", 4],
+                    ["spread", 4]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 1,
+                    "para_coating": 1,
+                    "sleep_coating": 2,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         }
     },
     "Rampage Tree": {
@@ -3154,7 +5792,26 @@
                     ["arc_shot_affinity", ""],
                     ["arc_shot_anti_shock", ""]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "affinity",
+                "chargeShot": [
+                    ["rapid", 1],
+                    ["rapid", 1],
+                    ["rapid", 2],
+                    ["rapid", 3]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 0,
+                    "poison_coating": 0,
+                    "para_coating": 0,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         },
         "44b": {
             "rarity": 5,
@@ -3204,7 +5861,26 @@
                     ["arc_shot_affinity", ""],
                     ["arc_shot_anti_shock", ""]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "affinity",
+                "chargeShot": [
+                    ["rapid", 1],
+                    ["rapid", 2],
+                    ["rapid", 2],
+                    ["rapid", 3]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 0,
+                    "poison_coating": 0,
+                    "para_coating": 0,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         },
         "44c": {
             "rarity": 5,
@@ -3264,7 +5940,26 @@
                     ["arc_shot_affinity", ""],
                     ["arc_shot_anti_shock", ""]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "affinity",
+                "chargeShot": [
+                    ["rapid", 1],
+                    ["rapid", 2],
+                    ["rapid", 3],
+                    ["rapid", 3]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 0,
+                    "poison_coating": 0,
+                    "para_coating": 0,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         },
         "44d": {
             "rarity": 6,
@@ -3331,7 +6026,26 @@
                     ["arc_shot_affinity", ""],
                     ["arc_shot_anti_shock", ""]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "affinity",
+                "chargeShot": [
+                    ["rapid", 2],
+                    ["rapid", 2],
+                    ["rapid", 3],
+                    ["rapid", 3]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 0,
+                    "poison_coating": 0,
+                    "para_coating": 0,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         },
         "44e": {
             "rarity": 6,
@@ -3408,7 +6122,26 @@
                     ["arc_shot_affinity", ""],
                     ["arc_shot_anti_shock", ""]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "affinity",
+                "chargeShot": [
+                    ["rapid", 2],
+                    ["rapid", 2],
+                    ["rapid", 3],
+                    ["rapid", 3]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 0,
+                    "poison_coating": 0,
+                    "para_coating": 0,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         },
         "44f": {
             "rarity": 7,
@@ -3495,7 +6228,26 @@
                     ["arc_shot_affinity", ""],
                     ["arc_shot_anti_shock", ""]
                 ]
-            ]
+            ],
+
+            "bowStats": {
+                "arcShot": "affinity",
+                "chargeShot": [
+                    ["rapid", 2],
+                    ["rapid", 2],
+                    ["rapid", 3],
+                    ["rapid", 3]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 0,
+                    "poison_coating": 0,
+                    "para_coating": 0,
+                    "sleep_coating": 0,
+                    "blast_coating": 0,
+                    "exhaust_coating": 0
+                }
+            }
         }
     }
 }

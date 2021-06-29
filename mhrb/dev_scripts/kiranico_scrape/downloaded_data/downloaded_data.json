@@ -3,6 +3,37 @@
         {
             "affinity": 0,
             "attack": 60,
+            "bow_stats": {
+                "arc_shot": "recovery",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        1
+                    ],
+                    [
+                        "rapid",
+                        1
+                    ],
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "pierce",
+                        2
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 1,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 1,
+                    "para_coating": 1,
+                    "poison_coating": 1,
+                    "power_coating": 1,
+                    "sleep_coating": 1
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -24,6 +55,37 @@
         {
             "affinity": 0,
             "attack": 70,
+            "bow_stats": {
+                "arc_shot": "recovery",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        1
+                    ],
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "pierce",
+                        2
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 1,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 1,
+                    "para_coating": 1,
+                    "poison_coating": 1,
+                    "power_coating": 1,
+                    "sleep_coating": 1
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -45,6 +107,37 @@
         {
             "affinity": 0,
             "attack": 100,
+            "bow_stats": {
+                "arc_shot": "recovery",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        1
+                    ],
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ],
+                    [
+                        "pierce",
+                        3
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 1,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 1,
+                    "para_coating": 1,
+                    "poison_coating": 1,
+                    "power_coating": 1,
+                    "sleep_coating": 1
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -66,6 +159,37 @@
         {
             "affinity": 0,
             "attack": 140,
+            "bow_stats": {
+                "arc_shot": "recovery",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ],
+                    [
+                        "pierce",
+                        3
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 1,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 1,
+                    "para_coating": 1,
+                    "poison_coating": 1,
+                    "power_coating": 1,
+                    "sleep_coating": 1
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -87,6 +211,37 @@
         {
             "affinity": 0,
             "attack": 160,
+            "bow_stats": {
+                "arc_shot": "recovery",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ],
+                    [
+                        "pierce",
+                        4
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 1,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 1,
+                    "para_coating": 1,
+                    "poison_coating": 1,
+                    "power_coating": 1,
+                    "sleep_coating": 1
+                }
+            },
             "decos": [
                 2
             ],
@@ -110,6 +265,37 @@
         {
             "affinity": 0,
             "attack": 190,
+            "bow_stats": {
+                "arc_shot": "recovery",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ],
+                    [
+                        "rapid",
+                        4
+                    ],
+                    [
+                        "pierce",
+                        4
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 1,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 1,
+                    "para_coating": 1,
+                    "poison_coating": 1,
+                    "power_coating": 1,
+                    "sleep_coating": 1
+                }
+            },
             "decos": [
                 2,
                 1
@@ -134,6 +320,37 @@
         {
             "affinity": 20,
             "attack": 150,
+            "bow_stats": {
+                "arc_shot": "recovery",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "pierce",
+                        3
+                    ],
+                    [
+                        "pierce",
+                        3
+                    ],
+                    [
+                        "pierce",
+                        4
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 1,
+                    "para_coating": 0,
+                    "poison_coating": 1,
+                    "power_coating": 1,
+                    "sleep_coating": 1
+                }
+            },
             "decos": [
                 2,
                 1,
@@ -161,6 +378,37 @@
         {
             "affinity": 25,
             "attack": 160,
+            "bow_stats": {
+                "arc_shot": "recovery",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "pierce",
+                        4
+                    ],
+                    [
+                        "pierce",
+                        4
+                    ],
+                    [
+                        "pierce",
+                        4
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 1,
+                    "para_coating": 0,
+                    "poison_coating": 1,
+                    "power_coating": 1,
+                    "sleep_coating": 1
+                }
+            },
             "decos": [
                 2,
                 1,
@@ -188,6 +436,37 @@
         {
             "affinity": 30,
             "attack": 170,
+            "bow_stats": {
+                "arc_shot": "recovery",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "pierce",
+                        4
+                    ],
+                    [
+                        "pierce",
+                        5
+                    ],
+                    [
+                        "pierce",
+                        5
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 1,
+                    "para_coating": 0,
+                    "poison_coating": 1,
+                    "power_coating": 1,
+                    "sleep_coating": 1
+                }
+            },
             "decos": [
                 2,
                 1,
@@ -215,6 +494,37 @@
         {
             "affinity": 10,
             "attack": 120,
+            "bow_stats": {
+                "arc_shot": "recovery",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        4
+                    ],
+                    [
+                        "rapid",
+                        4
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 1,
+                    "para_coating": 1,
+                    "poison_coating": 0,
+                    "power_coating": 1,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -238,6 +548,37 @@
         {
             "affinity": 10,
             "attack": 190,
+            "bow_stats": {
+                "arc_shot": "recovery",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ],
+                    [
+                        "rapid",
+                        4
+                    ],
+                    [
+                        "rapid",
+                        4
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 1,
+                    "para_coating": 1,
+                    "poison_coating": 0,
+                    "power_coating": 1,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [
                 1
             ],
@@ -263,6 +604,37 @@
         {
             "affinity": 10,
             "attack": 210,
+            "bow_stats": {
+                "arc_shot": "recovery",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        3
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ],
+                    [
+                        "rapid",
+                        4
+                    ],
+                    [
+                        "rapid",
+                        5
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 1,
+                    "para_coating": 1,
+                    "poison_coating": 0,
+                    "power_coating": 1,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [
                 1
             ],
@@ -288,6 +660,37 @@
         {
             "affinity": 0,
             "attack": 110,
+            "bow_stats": {
+                "arc_shot": "affinity",
+                "base_charge_level_limit": 4,
+                "charge_shot": [
+                    [
+                        "pierce",
+                        1
+                    ],
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ],
+                    [
+                        "pierce",
+                        3
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 2,
+                    "poison_coating": 2,
+                    "power_coating": 1,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [],
             "defense": 5,
             "elestat": {},
@@ -309,6 +712,37 @@
         {
             "affinity": 0,
             "attack": 170,
+            "bow_stats": {
+                "arc_shot": "affinity",
+                "base_charge_level_limit": 4,
+                "charge_shot": [
+                    [
+                        "pierce",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ],
+                    [
+                        "pierce",
+                        4
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 2,
+                    "poison_coating": 2,
+                    "power_coating": 1,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [
                 3
             ],
@@ -332,6 +766,37 @@
         {
             "affinity": 0,
             "attack": 180,
+            "bow_stats": {
+                "arc_shot": "affinity",
+                "base_charge_level_limit": 4,
+                "charge_shot": [
+                    [
+                        "pierce",
+                        3
+                    ],
+                    [
+                        "rapid",
+                        4
+                    ],
+                    [
+                        "rapid",
+                        4
+                    ],
+                    [
+                        "pierce",
+                        4
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 2,
+                    "poison_coating": 2,
+                    "power_coating": 1,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [
                 3
             ],
@@ -355,6 +820,37 @@
         {
             "affinity": 30,
             "attack": 130,
+            "bow_stats": {
+                "arc_shot": "affinity",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "pierce",
+                        1
+                    ],
+                    [
+                        "pierce",
+                        2
+                    ],
+                    [
+                        "pierce",
+                        3
+                    ],
+                    [
+                        "pierce",
+                        3
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 2,
+                    "exhaust_coating": 0,
+                    "para_coating": 1,
+                    "poison_coating": 1,
+                    "power_coating": 0,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -376,6 +872,37 @@
         {
             "affinity": 35,
             "attack": 190,
+            "bow_stats": {
+                "arc_shot": "affinity",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "pierce",
+                        2
+                    ],
+                    [
+                        "pierce",
+                        2
+                    ],
+                    [
+                        "pierce",
+                        3
+                    ],
+                    [
+                        "pierce",
+                        4
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 2,
+                    "exhaust_coating": 0,
+                    "para_coating": 1,
+                    "poison_coating": 1,
+                    "power_coating": 0,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [
                 2
             ],
@@ -399,6 +926,37 @@
         {
             "affinity": 40,
             "attack": 210,
+            "bow_stats": {
+                "arc_shot": "affinity",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "pierce",
+                        2
+                    ],
+                    [
+                        "pierce",
+                        3
+                    ],
+                    [
+                        "pierce",
+                        4
+                    ],
+                    [
+                        "pierce",
+                        5
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 2,
+                    "exhaust_coating": 0,
+                    "para_coating": 1,
+                    "poison_coating": 1,
+                    "power_coating": 0,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [
                 2
             ],
@@ -422,6 +980,37 @@
         {
             "affinity": 10,
             "attack": 100,
+            "bow_stats": {
+                "arc_shot": "affinity",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        1
+                    ],
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ],
+                    [
+                        "rapid",
+                        4
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 2,
+                    "poison_coating": 0,
+                    "power_coating": 1,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -445,6 +1034,37 @@
         {
             "affinity": 15,
             "attack": 150,
+            "bow_stats": {
+                "arc_shot": "affinity",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ],
+                    [
+                        "rapid",
+                        4
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 2,
+                    "poison_coating": 0,
+                    "power_coating": 1,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -468,6 +1088,37 @@
         {
             "affinity": 15,
             "attack": 180,
+            "bow_stats": {
+                "arc_shot": "affinity",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        4
+                    ],
+                    [
+                        "rapid",
+                        4
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 2,
+                    "poison_coating": 0,
+                    "power_coating": 1,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -491,6 +1142,37 @@
         {
             "affinity": 15,
             "attack": 190,
+            "bow_stats": {
+                "arc_shot": "affinity",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ],
+                    [
+                        "rapid",
+                        4
+                    ],
+                    [
+                        "rapid",
+                        4
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 2,
+                    "poison_coating": 0,
+                    "power_coating": 1,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -514,6 +1196,37 @@
         {
             "affinity": 20,
             "attack": 100,
+            "bow_stats": {
+                "arc_shot": "affinity",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        1
+                    ],
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "spread",
+                        2
+                    ],
+                    [
+                        "spread",
+                        2
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 1,
+                    "para_coating": 0,
+                    "poison_coating": 0,
+                    "power_coating": 1,
+                    "sleep_coating": 1
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -537,6 +1250,37 @@
         {
             "affinity": 25,
             "attack": 120,
+            "bow_stats": {
+                "arc_shot": "affinity",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "spread",
+                        2
+                    ],
+                    [
+                        "spread",
+                        3
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 1,
+                    "para_coating": 0,
+                    "poison_coating": 0,
+                    "power_coating": 1,
+                    "sleep_coating": 1
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -560,6 +1304,37 @@
         {
             "affinity": 25,
             "attack": 180,
+            "bow_stats": {
+                "arc_shot": "affinity",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "spread",
+                        3
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 1,
+                    "para_coating": 0,
+                    "poison_coating": 0,
+                    "power_coating": 1,
+                    "sleep_coating": 1
+                }
+            },
             "decos": [
                 1,
                 1
@@ -586,6 +1361,37 @@
         {
             "affinity": 30,
             "attack": 200,
+            "bow_stats": {
+                "arc_shot": "affinity",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        3
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ],
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "spread",
+                        3
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 1,
+                    "para_coating": 0,
+                    "poison_coating": 0,
+                    "power_coating": 1,
+                    "sleep_coating": 1
+                }
+            },
             "decos": [
                 1,
                 1
@@ -612,6 +1418,37 @@
         {
             "affinity": 0,
             "attack": 100,
+            "bow_stats": {
+                "arc_shot": "recovery",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "pierce",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 0,
+                    "poison_coating": 2,
+                    "power_coating": 1,
+                    "sleep_coating": 2
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -633,6 +1470,37 @@
         {
             "affinity": 0,
             "attack": 110,
+            "bow_stats": {
+                "arc_shot": "recovery",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "pierce",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 0,
+                    "poison_coating": 2,
+                    "power_coating": 1,
+                    "sleep_coating": 2
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -654,6 +1522,37 @@
         {
             "affinity": 0,
             "attack": 160,
+            "bow_stats": {
+                "arc_shot": "recovery",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "pierce",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ],
+                    [
+                        "rapid",
+                        4
+                    ],
+                    [
+                        "rapid",
+                        4
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 0,
+                    "poison_coating": 2,
+                    "power_coating": 1,
+                    "sleep_coating": 2
+                }
+            },
             "decos": [
                 1,
                 1
@@ -678,6 +1577,37 @@
         {
             "affinity": 0,
             "attack": 110,
+            "bow_stats": {
+                "arc_shot": "brace",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "spread",
+                        2
+                    ],
+                    [
+                        "spread",
+                        1
+                    ],
+                    [
+                        "spread",
+                        3
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 1,
+                    "para_coating": 0,
+                    "poison_coating": 0,
+                    "power_coating": 1,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [],
             "defense": 15,
             "elestat": {},
@@ -699,6 +1629,37 @@
         {
             "affinity": 0,
             "attack": 140,
+            "bow_stats": {
+                "arc_shot": "brace",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "spread",
+                        4
+                    ],
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "spread",
+                        1
+                    ],
+                    [
+                        "spread",
+                        3
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 1,
+                    "para_coating": 0,
+                    "poison_coating": 0,
+                    "power_coating": 1,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [],
             "defense": 15,
             "elestat": {},
@@ -720,6 +1681,37 @@
         {
             "affinity": 0,
             "attack": 190,
+            "bow_stats": {
+                "arc_shot": "brace",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "spread",
+                        5
+                    ],
+                    [
+                        "spread",
+                        4
+                    ],
+                    [
+                        "spread",
+                        2
+                    ],
+                    [
+                        "spread",
+                        4
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 1,
+                    "para_coating": 0,
+                    "poison_coating": 0,
+                    "power_coating": 1,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [
                 1
             ],
@@ -743,6 +1735,37 @@
         {
             "affinity": 0,
             "attack": 80,
+            "bow_stats": {
+                "arc_shot": "affinity",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "pierce",
+                        1
+                    ],
+                    [
+                        "pierce",
+                        1
+                    ],
+                    [
+                        "pierce",
+                        2
+                    ],
+                    [
+                        "spread",
+                        2
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 0,
+                    "poison_coating": 0,
+                    "power_coating": 1,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -764,6 +1787,37 @@
         {
             "affinity": 0,
             "attack": 100,
+            "bow_stats": {
+                "arc_shot": "affinity",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "pierce",
+                        1
+                    ],
+                    [
+                        "pierce",
+                        2
+                    ],
+                    [
+                        "pierce",
+                        2
+                    ],
+                    [
+                        "spread",
+                        2
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 0,
+                    "poison_coating": 0,
+                    "power_coating": 1,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -785,6 +1839,37 @@
         {
             "affinity": 0,
             "attack": 120,
+            "bow_stats": {
+                "arc_shot": "affinity",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "pierce",
+                        1
+                    ],
+                    [
+                        "pierce",
+                        2
+                    ],
+                    [
+                        "pierce",
+                        3
+                    ],
+                    [
+                        "spread",
+                        3
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 0,
+                    "poison_coating": 0,
+                    "power_coating": 1,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -806,6 +1891,37 @@
         {
             "affinity": 0,
             "attack": 140,
+            "bow_stats": {
+                "arc_shot": "affinity",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "pierce",
+                        2
+                    ],
+                    [
+                        "pierce",
+                        2
+                    ],
+                    [
+                        "pierce",
+                        3
+                    ],
+                    [
+                        "spread",
+                        3
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 0,
+                    "poison_coating": 0,
+                    "power_coating": 1,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -827,6 +1943,37 @@
         {
             "affinity": 0,
             "attack": 170,
+            "bow_stats": {
+                "arc_shot": "affinity",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "pierce",
+                        2
+                    ],
+                    [
+                        "pierce",
+                        3
+                    ],
+                    [
+                        "pierce",
+                        3
+                    ],
+                    [
+                        "spread",
+                        4
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 0,
+                    "poison_coating": 0,
+                    "power_coating": 1,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [
                 1
             ],
@@ -850,6 +1997,37 @@
         {
             "affinity": 0,
             "attack": 190,
+            "bow_stats": {
+                "arc_shot": "affinity",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "pierce",
+                        2
+                    ],
+                    [
+                        "pierce",
+                        3
+                    ],
+                    [
+                        "pierce",
+                        4
+                    ],
+                    [
+                        "spread",
+                        4
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 0,
+                    "poison_coating": 0,
+                    "power_coating": 1,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [
                 1
             ],
@@ -873,6 +2051,37 @@
         {
             "affinity": 0,
             "attack": 180,
+            "bow_stats": {
+                "arc_shot": "brace",
+                "base_charge_level_limit": 4,
+                "charge_shot": [
+                    [
+                        "spread",
+                        2
+                    ],
+                    [
+                        "spread",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ],
+                    [
+                        "rapid",
+                        4
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 0,
+                    "poison_coating": 0,
+                    "power_coating": 1,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [
                 1
             ],
@@ -896,6 +2105,37 @@
         {
             "affinity": 0,
             "attack": 200,
+            "bow_stats": {
+                "arc_shot": "brace",
+                "base_charge_level_limit": 4,
+                "charge_shot": [
+                    [
+                        "spread",
+                        2
+                    ],
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ],
+                    [
+                        "rapid",
+                        4
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 0,
+                    "poison_coating": 0,
+                    "power_coating": 1,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [
                 1
             ],
@@ -919,6 +2159,37 @@
         {
             "affinity": 0,
             "attack": 220,
+            "bow_stats": {
+                "arc_shot": "brace",
+                "base_charge_level_limit": 4,
+                "charge_shot": [
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ],
+                    [
+                        "rapid",
+                        4
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 0,
+                    "poison_coating": 0,
+                    "power_coating": 1,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [
                 1
             ],
@@ -942,6 +2213,37 @@
         {
             "affinity": 0,
             "attack": 140,
+            "bow_stats": {
+                "arc_shot": "brace",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        1
+                    ],
+                    [
+                        "rapid",
+                        1
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 2,
+                    "exhaust_coating": 0,
+                    "para_coating": 0,
+                    "poison_coating": 0,
+                    "power_coating": 1,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [
                 3
             ],
@@ -967,6 +2269,37 @@
         {
             "affinity": 0,
             "attack": 150,
+            "bow_stats": {
+                "arc_shot": "brace",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        1
+                    ],
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 2,
+                    "exhaust_coating": 0,
+                    "para_coating": 0,
+                    "poison_coating": 0,
+                    "power_coating": 1,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [
                 3
             ],
@@ -992,6 +2325,37 @@
         {
             "affinity": 0,
             "attack": 190,
+            "bow_stats": {
+                "arc_shot": "brace",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 2,
+                    "exhaust_coating": 0,
+                    "para_coating": 0,
+                    "poison_coating": 0,
+                    "power_coating": 1,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [
                 3
             ],
@@ -1017,6 +2381,33 @@
         {
             "affinity": 0,
             "attack": 140,
+            "bow_stats": {
+                "arc_shot": "brace",
+                "base_charge_level_limit": 2,
+                "charge_shot": [
+                    [
+                        "spread",
+                        1
+                    ],
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "spread",
+                        5
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 1,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 1,
+                    "para_coating": 0,
+                    "poison_coating": 0,
+                    "power_coating": 0,
+                    "sleep_coating": 1
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -1040,6 +2431,33 @@
         {
             "affinity": 0,
             "attack": 150,
+            "bow_stats": {
+                "arc_shot": "brace",
+                "base_charge_level_limit": 2,
+                "charge_shot": [
+                    [
+                        "spread",
+                        1
+                    ],
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "spread",
+                        5
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 1,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 1,
+                    "para_coating": 0,
+                    "poison_coating": 0,
+                    "power_coating": 0,
+                    "sleep_coating": 1
+                }
+            },
             "decos": [
                 2,
                 1
@@ -1066,6 +2484,33 @@
         {
             "affinity": 0,
             "attack": 170,
+            "bow_stats": {
+                "arc_shot": "brace",
+                "base_charge_level_limit": 2,
+                "charge_shot": [
+                    [
+                        "spread",
+                        1
+                    ],
+                    [
+                        "spread",
+                        4
+                    ],
+                    [
+                        "spread",
+                        5
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 1,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 1,
+                    "para_coating": 0,
+                    "poison_coating": 0,
+                    "power_coating": 0,
+                    "sleep_coating": 1
+                }
+            },
             "decos": [
                 2,
                 1
@@ -1092,6 +2537,37 @@
         {
             "affinity": 0,
             "attack": 110,
+            "bow_stats": {
+                "arc_shot": "affinity",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "spread",
+                        3
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 1,
+                    "poison_coating": 2,
+                    "power_coating": 0,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -1115,6 +2591,37 @@
         {
             "affinity": 0,
             "attack": 150,
+            "bow_stats": {
+                "arc_shot": "affinity",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ],
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "spread",
+                        3
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 1,
+                    "poison_coating": 2,
+                    "power_coating": 0,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -1138,6 +2645,37 @@
         {
             "affinity": 0,
             "attack": 180,
+            "bow_stats": {
+                "arc_shot": "affinity",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        3
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ],
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "spread",
+                        3
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 1,
+                    "poison_coating": 2,
+                    "power_coating": 0,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [
                 1
             ],
@@ -1163,6 +2701,37 @@
         {
             "affinity": 0,
             "attack": 190,
+            "bow_stats": {
+                "arc_shot": "affinity",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        4
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ],
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "spread",
+                        3
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 1,
+                    "poison_coating": 2,
+                    "power_coating": 1,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [
                 1
             ],
@@ -1188,6 +2757,37 @@
         {
             "affinity": 0,
             "attack": 200,
+            "bow_stats": {
+                "arc_shot": "affinity",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        4
+                    ],
+                    [
+                        "rapid",
+                        4
+                    ],
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "spread",
+                        3
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 1,
+                    "poison_coating": 2,
+                    "power_coating": 1,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [
                 1
             ],
@@ -1213,6 +2813,37 @@
         {
             "affinity": 0,
             "attack": 210,
+            "bow_stats": {
+                "arc_shot": "affinity",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        4
+                    ],
+                    [
+                        "rapid",
+                        4
+                    ],
+                    [
+                        "spread",
+                        4
+                    ],
+                    [
+                        "spread",
+                        3
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 1,
+                    "poison_coating": 2,
+                    "power_coating": 1,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [
                 1
             ],
@@ -1238,6 +2869,37 @@
         {
             "affinity": 10,
             "attack": 110,
+            "bow_stats": {
+                "arc_shot": "brace",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "pierce",
+                        1
+                    ],
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "spread",
+                        3
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 1,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 1,
+                    "poison_coating": 0,
+                    "power_coating": 0,
+                    "sleep_coating": 1
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -1259,6 +2921,37 @@
         {
             "affinity": 20,
             "attack": 130,
+            "bow_stats": {
+                "arc_shot": "brace",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "pierce",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ],
+                    [
+                        "spread",
+                        3
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 1,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 1,
+                    "poison_coating": 0,
+                    "power_coating": 0,
+                    "sleep_coating": 1
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -1280,6 +2973,37 @@
         {
             "affinity": 30,
             "attack": 160,
+            "bow_stats": {
+                "arc_shot": "brace",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "pierce",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ],
+                    [
+                        "rapid",
+                        4
+                    ],
+                    [
+                        "spread",
+                        3
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 1,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 1,
+                    "poison_coating": 0,
+                    "power_coating": 0,
+                    "sleep_coating": 1
+                }
+            },
             "decos": [
                 1,
                 1,
@@ -1305,6 +3029,37 @@
         {
             "affinity": 0,
             "attack": 90,
+            "bow_stats": {
+                "arc_shot": "recovery",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "spread",
+                        2
+                    ],
+                    [
+                        "spread",
+                        2
+                    ],
+                    [
+                        "spread",
+                        2
+                    ],
+                    [
+                        "spread",
+                        3
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 2,
+                    "poison_coating": 0,
+                    "power_coating": 1,
+                    "sleep_coating": 1
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -1328,6 +3083,37 @@
         {
             "affinity": 0,
             "attack": 100,
+            "bow_stats": {
+                "arc_shot": "recovery",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "spread",
+                        2
+                    ],
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "spread",
+                        3
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 2,
+                    "poison_coating": 0,
+                    "power_coating": 1,
+                    "sleep_coating": 1
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -1351,6 +3137,37 @@
         {
             "affinity": 0,
             "attack": 150,
+            "bow_stats": {
+                "arc_shot": "recovery",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "spread",
+                        2
+                    ],
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "spread",
+                        4
+                    ],
+                    [
+                        "spread",
+                        4
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 2,
+                    "poison_coating": 0,
+                    "power_coating": 1,
+                    "sleep_coating": 1
+                }
+            },
             "decos": [
                 2
             ],
@@ -1376,6 +3193,37 @@
         {
             "affinity": 0,
             "attack": 90,
+            "bow_stats": {
+                "arc_shot": "brace",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "spread",
+                        1
+                    ],
+                    [
+                        "spread",
+                        1
+                    ],
+                    [
+                        "spread",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        2
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 1,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 1,
+                    "para_coating": 0,
+                    "poison_coating": 1,
+                    "power_coating": 0,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -1397,6 +3245,37 @@
         {
             "affinity": 0,
             "attack": 110,
+            "bow_stats": {
+                "arc_shot": "brace",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "spread",
+                        1
+                    ],
+                    [
+                        "spread",
+                        2
+                    ],
+                    [
+                        "spread",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        2
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 1,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 1,
+                    "para_coating": 0,
+                    "poison_coating": 1,
+                    "power_coating": 0,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -1418,6 +3297,37 @@
         {
             "affinity": 0,
             "attack": 120,
+            "bow_stats": {
+                "arc_shot": "brace",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "spread",
+                        1
+                    ],
+                    [
+                        "spread",
+                        2
+                    ],
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 1,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 1,
+                    "para_coating": 0,
+                    "poison_coating": 1,
+                    "power_coating": 0,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -1439,6 +3349,37 @@
         {
             "affinity": 0,
             "attack": 150,
+            "bow_stats": {
+                "arc_shot": "brace",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "spread",
+                        2
+                    ],
+                    [
+                        "spread",
+                        2
+                    ],
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 1,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 1,
+                    "para_coating": 0,
+                    "poison_coating": 1,
+                    "power_coating": 0,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -1460,6 +3401,37 @@
         {
             "affinity": 0,
             "attack": 180,
+            "bow_stats": {
+                "arc_shot": "brace",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "spread",
+                        2
+                    ],
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "rapid",
+                        4
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 1,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 1,
+                    "para_coating": 0,
+                    "poison_coating": 1,
+                    "power_coating": 0,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -1481,6 +3453,37 @@
         {
             "affinity": 0,
             "attack": 200,
+            "bow_stats": {
+                "arc_shot": "brace",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "spread",
+                        2
+                    ],
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "spread",
+                        4
+                    ],
+                    [
+                        "rapid",
+                        4
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 1,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 1,
+                    "para_coating": 0,
+                    "poison_coating": 1,
+                    "power_coating": 0,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -1502,6 +3505,37 @@
         {
             "affinity": -25,
             "attack": 160,
+            "bow_stats": {
+                "arc_shot": "affinity",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        1
+                    ],
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ],
+                    [
+                        "spread",
+                        3
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 1,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 1,
+                    "para_coating": 1,
+                    "poison_coating": 1,
+                    "power_coating": 0,
+                    "sleep_coating": 1
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -1523,6 +3557,37 @@
         {
             "affinity": -25,
             "attack": 240,
+            "bow_stats": {
+                "arc_shot": "affinity",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ],
+                    [
+                        "rapid",
+                        4
+                    ],
+                    [
+                        "spread",
+                        3
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 1,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 1,
+                    "para_coating": 1,
+                    "poison_coating": 1,
+                    "power_coating": 0,
+                    "sleep_coating": 1
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -1544,6 +3609,37 @@
         {
             "affinity": -25,
             "attack": 250,
+            "bow_stats": {
+                "arc_shot": "affinity",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ],
+                    [
+                        "rapid",
+                        5
+                    ],
+                    [
+                        "spread",
+                        3
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 1,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 1,
+                    "para_coating": 1,
+                    "poison_coating": 1,
+                    "power_coating": 0,
+                    "sleep_coating": 1
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -1565,6 +3661,37 @@
         {
             "affinity": -20,
             "attack": 230,
+            "bow_stats": {
+                "arc_shot": "brace",
+                "base_charge_level_limit": 4,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "pierce",
+                        3
+                    ],
+                    [
+                        "pierce",
+                        3
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 1,
+                    "para_coating": 0,
+                    "poison_coating": 0,
+                    "power_coating": 0,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [
                 1
             ],
@@ -1588,6 +3715,37 @@
         {
             "affinity": -20,
             "attack": 240,
+            "bow_stats": {
+                "arc_shot": "brace",
+                "base_charge_level_limit": 4,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ],
+                    [
+                        "pierce",
+                        3
+                    ],
+                    [
+                        "pierce",
+                        4
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 1,
+                    "para_coating": 0,
+                    "poison_coating": 0,
+                    "power_coating": 0,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [
                 1
             ],
@@ -1611,6 +3769,37 @@
         {
             "affinity": -20,
             "attack": 250,
+            "bow_stats": {
+                "arc_shot": "brace",
+                "base_charge_level_limit": 4,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        4
+                    ],
+                    [
+                        "pierce",
+                        4
+                    ],
+                    [
+                        "pierce",
+                        4
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 1,
+                    "para_coating": 0,
+                    "poison_coating": 0,
+                    "power_coating": 0,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [
                 1
             ],
@@ -1634,6 +3823,37 @@
         {
             "affinity": 0,
             "attack": 120,
+            "bow_stats": {
+                "arc_shot": "affinity",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "pierce",
+                        3
+                    ],
+                    [
+                        "pierce",
+                        4
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 1,
+                    "para_coating": 1,
+                    "poison_coating": 1,
+                    "power_coating": 1,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -1657,6 +3877,37 @@
         {
             "affinity": 0,
             "attack": 190,
+            "bow_stats": {
+                "arc_shot": "affinity",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ],
+                    [
+                        "pierce",
+                        4
+                    ],
+                    [
+                        "pierce",
+                        4
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 1,
+                    "para_coating": 1,
+                    "poison_coating": 1,
+                    "power_coating": 1,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [
                 1
             ],
@@ -1682,6 +3933,37 @@
         {
             "affinity": 0,
             "attack": 210,
+            "bow_stats": {
+                "arc_shot": "affinity",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        4
+                    ],
+                    [
+                        "pierce",
+                        4
+                    ],
+                    [
+                        "pierce",
+                        4
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 1,
+                    "para_coating": 1,
+                    "poison_coating": 1,
+                    "power_coating": 1,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [
                 1,
                 1
@@ -1708,6 +3990,37 @@
         {
             "affinity": 0,
             "attack": 110,
+            "bow_stats": {
+                "arc_shot": "recovery",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "pierce",
+                        1
+                    ],
+                    [
+                        "pierce",
+                        3
+                    ],
+                    [
+                        "pierce",
+                        2
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 1,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 1,
+                    "poison_coating": 2,
+                    "power_coating": 0,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -1729,6 +4042,37 @@
         {
             "affinity": 0,
             "attack": 160,
+            "bow_stats": {
+                "arc_shot": "recovery",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        3
+                    ],
+                    [
+                        "pierce",
+                        2
+                    ],
+                    [
+                        "pierce",
+                        3
+                    ],
+                    [
+                        "pierce",
+                        3
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 1,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 1,
+                    "poison_coating": 2,
+                    "power_coating": 0,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [
                 1,
                 1
@@ -1753,6 +4097,37 @@
         {
             "affinity": 0,
             "attack": 180,
+            "bow_stats": {
+                "arc_shot": "recovery",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        4
+                    ],
+                    [
+                        "pierce",
+                        3
+                    ],
+                    [
+                        "pierce",
+                        4
+                    ],
+                    [
+                        "pierce",
+                        3
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 1,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 1,
+                    "poison_coating": 2,
+                    "power_coating": 0,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [
                 1,
                 1
@@ -1777,6 +4152,37 @@
         {
             "affinity": -20,
             "attack": 140,
+            "bow_stats": {
+                "arc_shot": "brace",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        1
+                    ],
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ],
+                    [
+                        "rapid",
+                        4
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 1,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 0,
+                    "poison_coating": 0,
+                    "power_coating": 1,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -1800,6 +4206,37 @@
         {
             "affinity": -20,
             "attack": 220,
+            "bow_stats": {
+                "arc_shot": "brace",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ],
+                    [
+                        "rapid",
+                        4
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 1,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 0,
+                    "poison_coating": 0,
+                    "power_coating": 1,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [
                 2,
                 1
@@ -1826,6 +4263,37 @@
         {
             "affinity": -20,
             "attack": 240,
+            "bow_stats": {
+                "arc_shot": "brace",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        3
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ],
+                    [
+                        "rapid",
+                        4
+                    ],
+                    [
+                        "rapid",
+                        4
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 1,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 0,
+                    "poison_coating": 0,
+                    "power_coating": 1,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [
                 2,
                 1
@@ -1852,6 +4320,37 @@
         {
             "affinity": 0,
             "attack": 90,
+            "bow_stats": {
+                "arc_shot": "affinity",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "spread",
+                        1
+                    ],
+                    [
+                        "pierce",
+                        1
+                    ],
+                    [
+                        "pierce",
+                        2
+                    ],
+                    [
+                        "pierce",
+                        3
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 1,
+                    "para_coating": 0,
+                    "poison_coating": 0,
+                    "power_coating": 1,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -1875,6 +4374,37 @@
         {
             "affinity": 0,
             "attack": 140,
+            "bow_stats": {
+                "arc_shot": "affinity",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "spread",
+                        2
+                    ],
+                    [
+                        "pierce",
+                        2
+                    ],
+                    [
+                        "pierce",
+                        3
+                    ],
+                    [
+                        "pierce",
+                        3
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 1,
+                    "para_coating": 0,
+                    "poison_coating": 0,
+                    "power_coating": 1,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -1898,6 +4428,37 @@
         {
             "affinity": 0,
             "attack": 170,
+            "bow_stats": {
+                "arc_shot": "affinity",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "spread",
+                        2
+                    ],
+                    [
+                        "pierce",
+                        3
+                    ],
+                    [
+                        "pierce",
+                        3
+                    ],
+                    [
+                        "pierce",
+                        4
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 1,
+                    "para_coating": 0,
+                    "poison_coating": 0,
+                    "power_coating": 1,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [
                 3
             ],
@@ -1923,6 +4484,37 @@
         {
             "affinity": 0,
             "attack": 200,
+            "bow_stats": {
+                "arc_shot": "affinity",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "spread",
+                        2
+                    ],
+                    [
+                        "pierce",
+                        3
+                    ],
+                    [
+                        "pierce",
+                        4
+                    ],
+                    [
+                        "pierce",
+                        4
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 1,
+                    "para_coating": 0,
+                    "poison_coating": 0,
+                    "power_coating": 1,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [
                 3
             ],
@@ -1948,6 +4540,37 @@
         {
             "affinity": 0,
             "attack": 90,
+            "bow_stats": {
+                "arc_shot": "brace",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        1
+                    ],
+                    [
+                        "spread",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "spread",
+                        3
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 1,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 1,
+                    "para_coating": 0,
+                    "poison_coating": 1,
+                    "power_coating": 1,
+                    "sleep_coating": 2
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -1969,6 +4592,37 @@
         {
             "affinity": 0,
             "attack": 120,
+            "bow_stats": {
+                "arc_shot": "brace",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ],
+                    [
+                        "spread",
+                        3
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 1,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 1,
+                    "para_coating": 0,
+                    "poison_coating": 1,
+                    "power_coating": 1,
+                    "sleep_coating": 2
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -1990,6 +4644,37 @@
         {
             "affinity": 0,
             "attack": 160,
+            "bow_stats": {
+                "arc_shot": "brace",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        3
+                    ],
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "rapid",
+                        4
+                    ],
+                    [
+                        "spread",
+                        3
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 1,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 1,
+                    "para_coating": 0,
+                    "poison_coating": 1,
+                    "power_coating": 1,
+                    "sleep_coating": 2
+                }
+            },
             "decos": [
                 2
             ],
@@ -2013,6 +4698,37 @@
         {
             "affinity": 5,
             "attack": 80,
+            "bow_stats": {
+                "arc_shot": "recovery",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "spread",
+                        1
+                    ],
+                    [
+                        "spread",
+                        1
+                    ],
+                    [
+                        "pierce",
+                        2
+                    ],
+                    [
+                        "pierce",
+                        3
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 2,
+                    "poison_coating": 0,
+                    "power_coating": 0,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -2034,6 +4750,37 @@
         {
             "affinity": 5,
             "attack": 110,
+            "bow_stats": {
+                "arc_shot": "recovery",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "spread",
+                        1
+                    ],
+                    [
+                        "spread",
+                        2
+                    ],
+                    [
+                        "pierce",
+                        2
+                    ],
+                    [
+                        "pierce",
+                        3
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 2,
+                    "poison_coating": 0,
+                    "power_coating": 0,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -2055,6 +4802,37 @@
         {
             "affinity": 10,
             "attack": 140,
+            "bow_stats": {
+                "arc_shot": "recovery",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "spread",
+                        2
+                    ],
+                    [
+                        "spread",
+                        2
+                    ],
+                    [
+                        "pierce",
+                        3
+                    ],
+                    [
+                        "pierce",
+                        3
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 2,
+                    "poison_coating": 0,
+                    "power_coating": 0,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -2076,6 +4854,37 @@
         {
             "affinity": 15,
             "attack": 160,
+            "bow_stats": {
+                "arc_shot": "recovery",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "spread",
+                        2
+                    ],
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "pierce",
+                        3
+                    ],
+                    [
+                        "pierce",
+                        4
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 2,
+                    "poison_coating": 0,
+                    "power_coating": 0,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [
                 1,
                 1,
@@ -2103,6 +4912,37 @@
         {
             "affinity": 15,
             "attack": 170,
+            "bow_stats": {
+                "arc_shot": "recovery",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "spread",
+                        2
+                    ],
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "pierce",
+                        4
+                    ],
+                    [
+                        "pierce",
+                        4
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 2,
+                    "poison_coating": 0,
+                    "power_coating": 0,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [
                 1,
                 1,
@@ -2130,6 +4970,37 @@
         {
             "affinity": 20,
             "attack": 200,
+            "bow_stats": {
+                "arc_shot": "recovery",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "pierce",
+                        4
+                    ],
+                    [
+                        "pierce",
+                        4
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 2,
+                    "poison_coating": 0,
+                    "power_coating": 0,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [
                 1,
                 1,
@@ -2157,6 +5028,37 @@
         {
             "affinity": 10,
             "attack": 140,
+            "bow_stats": {
+                "arc_shot": "recovery",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "spread",
+                        1
+                    ],
+                    [
+                        "spread",
+                        2
+                    ],
+                    [
+                        "pierce",
+                        3
+                    ],
+                    [
+                        "pierce",
+                        4
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 2,
+                    "poison_coating": 0,
+                    "power_coating": 0,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -2180,6 +5082,37 @@
         {
             "affinity": 10,
             "attack": 160,
+            "bow_stats": {
+                "arc_shot": "recovery",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "spread",
+                        2
+                    ],
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "pierce",
+                        4
+                    ],
+                    [
+                        "pierce",
+                        4
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 2,
+                    "poison_coating": 0,
+                    "power_coating": 0,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [
                 2
             ],
@@ -2205,6 +5138,37 @@
         {
             "affinity": 15,
             "attack": 180,
+            "bow_stats": {
+                "arc_shot": "recovery",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "pierce",
+                        4
+                    ],
+                    [
+                        "pierce",
+                        5
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 2,
+                    "poison_coating": 0,
+                    "power_coating": 0,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [
                 2
             ],
@@ -2230,6 +5194,37 @@
         {
             "affinity": 10,
             "attack": 90,
+            "bow_stats": {
+                "arc_shot": "recovery",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "spread",
+                        1
+                    ],
+                    [
+                        "spread",
+                        2
+                    ],
+                    [
+                        "pierce",
+                        3
+                    ],
+                    [
+                        "pierce",
+                        3
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 2,
+                    "poison_coating": 0,
+                    "power_coating": 0,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -2253,6 +5248,37 @@
         {
             "affinity": 15,
             "attack": 130,
+            "bow_stats": {
+                "arc_shot": "recovery",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "spread",
+                        2
+                    ],
+                    [
+                        "spread",
+                        2
+                    ],
+                    [
+                        "pierce",
+                        3
+                    ],
+                    [
+                        "pierce",
+                        3
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 2,
+                    "poison_coating": 0,
+                    "power_coating": 0,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -2276,6 +5302,37 @@
         {
             "affinity": 20,
             "attack": 140,
+            "bow_stats": {
+                "arc_shot": "recovery",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "spread",
+                        2
+                    ],
+                    [
+                        "spread",
+                        2
+                    ],
+                    [
+                        "pierce",
+                        4
+                    ],
+                    [
+                        "pierce",
+                        3
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 2,
+                    "poison_coating": 0,
+                    "power_coating": 0,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [
                 2,
                 1
@@ -2302,6 +5359,37 @@
         {
             "affinity": 5,
             "attack": 80,
+            "bow_stats": {
+                "arc_shot": "recovery",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "spread",
+                        1
+                    ],
+                    [
+                        "spread",
+                        2
+                    ],
+                    [
+                        "pierce",
+                        2
+                    ],
+                    [
+                        "pierce",
+                        3
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 2,
+                    "poison_coating": 0,
+                    "power_coating": 0,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -2325,6 +5413,37 @@
         {
             "affinity": 5,
             "attack": 140,
+            "bow_stats": {
+                "arc_shot": "recovery",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "spread",
+                        2
+                    ],
+                    [
+                        "spread",
+                        2
+                    ],
+                    [
+                        "pierce",
+                        3
+                    ],
+                    [
+                        "pierce",
+                        3
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 2,
+                    "poison_coating": 0,
+                    "power_coating": 0,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -2348,6 +5467,37 @@
         {
             "affinity": 10,
             "attack": 160,
+            "bow_stats": {
+                "arc_shot": "recovery",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "pierce",
+                        4
+                    ],
+                    [
+                        "pierce",
+                        4
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 2,
+                    "poison_coating": 0,
+                    "power_coating": 0,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [
                 1,
                 1
@@ -2374,6 +5524,37 @@
         {
             "affinity": 0,
             "attack": 130,
+            "bow_stats": {
+                "arc_shot": "brace",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "pierce",
+                        4
+                    ],
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "rapid",
+                        5
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 1,
+                    "close_range_coating": 2,
+                    "exhaust_coating": 1,
+                    "para_coating": 0,
+                    "poison_coating": 0,
+                    "power_coating": 1,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -2397,6 +5578,37 @@
         {
             "affinity": 0,
             "attack": 140,
+            "bow_stats": {
+                "arc_shot": "brace",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "pierce",
+                        5
+                    ],
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "rapid",
+                        5
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 1,
+                    "close_range_coating": 2,
+                    "exhaust_coating": 1,
+                    "para_coating": 0,
+                    "poison_coating": 0,
+                    "power_coating": 1,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -2420,6 +5632,37 @@
         {
             "affinity": 0,
             "attack": 200,
+            "bow_stats": {
+                "arc_shot": "brace",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "pierce",
+                        5
+                    ],
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "spread",
+                        4
+                    ],
+                    [
+                        "rapid",
+                        5
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 1,
+                    "close_range_coating": 2,
+                    "exhaust_coating": 1,
+                    "para_coating": 0,
+                    "poison_coating": 0,
+                    "power_coating": 1,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [
                 2,
                 1
@@ -2446,6 +5689,37 @@
         {
             "affinity": 0,
             "attack": 150,
+            "bow_stats": {
+                "arc_shot": "recovery",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "spread",
+                        2
+                    ],
+                    [
+                        "spread",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ],
+                    [
+                        "rapid",
+                        4
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 2,
+                    "exhaust_coating": 1,
+                    "para_coating": 1,
+                    "poison_coating": 1,
+                    "power_coating": 1,
+                    "sleep_coating": 1
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -2467,6 +5741,37 @@
         {
             "affinity": 0,
             "attack": 160,
+            "bow_stats": {
+                "arc_shot": "recovery",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "spread",
+                        2
+                    ],
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ],
+                    [
+                        "rapid",
+                        4
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 2,
+                    "exhaust_coating": 1,
+                    "para_coating": 1,
+                    "poison_coating": 1,
+                    "power_coating": 1,
+                    "sleep_coating": 1
+                }
+            },
             "decos": [
                 2,
                 2
@@ -2491,6 +5796,37 @@
         {
             "affinity": 0,
             "attack": 190,
+            "bow_stats": {
+                "arc_shot": "recovery",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "rapid",
+                        4
+                    ],
+                    [
+                        "rapid",
+                        4
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 2,
+                    "exhaust_coating": 1,
+                    "para_coating": 1,
+                    "poison_coating": 1,
+                    "power_coating": 1,
+                    "sleep_coating": 1
+                }
+            },
             "decos": [
                 2,
                 2
@@ -2515,6 +5851,37 @@
         {
             "affinity": 0,
             "attack": 190,
+            "bow_stats": {
+                "arc_shot": "brace",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "pierce",
+                        1
+                    ],
+                    [
+                        "pierce",
+                        3
+                    ],
+                    [
+                        "pierce",
+                        4
+                    ],
+                    [
+                        "pierce",
+                        4
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 0,
+                    "poison_coating": 0,
+                    "power_coating": 1,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [
                 3
             ],
@@ -2540,6 +5907,37 @@
         {
             "affinity": 0,
             "attack": 210,
+            "bow_stats": {
+                "arc_shot": "brace",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "pierce",
+                        2
+                    ],
+                    [
+                        "pierce",
+                        3
+                    ],
+                    [
+                        "pierce",
+                        4
+                    ],
+                    [
+                        "pierce",
+                        4
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 0,
+                    "poison_coating": 0,
+                    "power_coating": 1,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [
                 3
             ],
@@ -2565,6 +5963,37 @@
         {
             "affinity": 0,
             "attack": 220,
+            "bow_stats": {
+                "arc_shot": "brace",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "pierce",
+                        3
+                    ],
+                    [
+                        "pierce",
+                        3
+                    ],
+                    [
+                        "pierce",
+                        4
+                    ],
+                    [
+                        "pierce",
+                        4
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 0,
+                    "poison_coating": 0,
+                    "power_coating": 1,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [
                 3
             ],
@@ -2590,6 +6019,37 @@
         {
             "affinity": 0,
             "attack": 200,
+            "bow_stats": {
+                "arc_shot": "brace",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "pierce",
+                        1
+                    ],
+                    [
+                        "pierce",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ],
+                    [
+                        "rapid",
+                        4
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 1,
+                    "para_coating": 0,
+                    "poison_coating": 1,
+                    "power_coating": 1,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -2613,6 +6073,37 @@
         {
             "affinity": 0,
             "attack": 210,
+            "bow_stats": {
+                "arc_shot": "brace",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "pierce",
+                        1
+                    ],
+                    [
+                        "pierce",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        4
+                    ],
+                    [
+                        "rapid",
+                        4
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 1,
+                    "para_coating": 0,
+                    "poison_coating": 1,
+                    "power_coating": 1,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -2636,6 +6127,37 @@
         {
             "affinity": 0,
             "attack": 220,
+            "bow_stats": {
+                "arc_shot": "brace",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "pierce",
+                        2
+                    ],
+                    [
+                        "pierce",
+                        3
+                    ],
+                    [
+                        "rapid",
+                        4
+                    ],
+                    [
+                        "rapid",
+                        5
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 1,
+                    "para_coating": 0,
+                    "poison_coating": 1,
+                    "power_coating": 1,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -2659,6 +6181,37 @@
         {
             "affinity": 0,
             "attack": 180,
+            "bow_stats": {
+                "arc_shot": "recovery",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        1
+                    ],
+                    [
+                        "spread",
+                        2
+                    ],
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "pierce",
+                        5
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 1,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 1,
+                    "poison_coating": 0,
+                    "power_coating": 0,
+                    "sleep_coating": 1
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -2682,6 +6235,37 @@
         {
             "affinity": 0,
             "attack": 190,
+            "bow_stats": {
+                "arc_shot": "recovery",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "spread",
+                        4
+                    ],
+                    [
+                        "pierce",
+                        5
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 1,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 1,
+                    "poison_coating": 0,
+                    "power_coating": 0,
+                    "sleep_coating": 1
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -2705,6 +6289,37 @@
         {
             "affinity": 10,
             "attack": 170,
+            "bow_stats": {
+                "arc_shot": "brace",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "pierce",
+                        3
+                    ],
+                    [
+                        "pierce",
+                        4
+                    ],
+                    [
+                        "pierce",
+                        5
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 1,
+                    "poison_coating": 1,
+                    "power_coating": 1,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [
                 1
             ],
@@ -2730,6 +6345,37 @@
         {
             "affinity": 15,
             "attack": 180,
+            "bow_stats": {
+                "arc_shot": "brace",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        3
+                    ],
+                    [
+                        "pierce",
+                        3
+                    ],
+                    [
+                        "pierce",
+                        5
+                    ],
+                    [
+                        "pierce",
+                        5
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 1,
+                    "poison_coating": 1,
+                    "power_coating": 1,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [
                 1
             ],
@@ -2755,6 +6401,37 @@
         {
             "affinity": 0,
             "attack": 180,
+            "bow_stats": {
+                "arc_shot": "affinity",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "pierce",
+                        2
+                    ],
+                    [
+                        "pierce",
+                        3
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ],
+                    [
+                        "rapid",
+                        4
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 0,
+                    "poison_coating": 0,
+                    "power_coating": 1,
+                    "sleep_coating": 1
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -2778,6 +6455,37 @@
         {
             "affinity": 0,
             "attack": 190,
+            "bow_stats": {
+                "arc_shot": "affinity",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "pierce",
+                        2
+                    ],
+                    [
+                        "pierce",
+                        4
+                    ],
+                    [
+                        "rapid",
+                        4
+                    ],
+                    [
+                        "rapid",
+                        5
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 0,
+                    "poison_coating": 0,
+                    "power_coating": 1,
+                    "sleep_coating": 1
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {
@@ -2801,6 +6509,37 @@
         {
             "affinity": 0,
             "attack": 220,
+            "bow_stats": {
+                "arc_shot": "recovery",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "spread",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "spread",
+                        4
+                    ],
+                    [
+                        "spread",
+                        4
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 1,
+                    "poison_coating": 2,
+                    "power_coating": 1,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [
                 3
             ],
@@ -2824,6 +6563,37 @@
         {
             "affinity": 0,
             "attack": 230,
+            "bow_stats": {
+                "arc_shot": "recovery",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "spread",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "spread",
+                        4
+                    ],
+                    [
+                        "spread",
+                        5
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 1,
+                    "poison_coating": 2,
+                    "power_coating": 1,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [
                 3
             ],
@@ -2847,6 +6617,37 @@
         {
             "affinity": 0,
             "attack": 170,
+            "bow_stats": {
+                "arc_shot": "affinity",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "pierce",
+                        2
+                    ],
+                    [
+                        "spread",
+                        2
+                    ],
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "spread",
+                        4
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 0,
+                    "poison_coating": 0,
+                    "power_coating": 1,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [
                 2
             ],
@@ -2872,6 +6673,37 @@
         {
             "affinity": 0,
             "attack": 180,
+            "bow_stats": {
+                "arc_shot": "affinity",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "pierce",
+                        2
+                    ],
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "spread",
+                        4
+                    ],
+                    [
+                        "spread",
+                        5
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 0,
+                    "poison_coating": 0,
+                    "power_coating": 1,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [
                 2
             ],
@@ -2897,6 +6729,37 @@
         {
             "affinity": 0,
             "attack": 160,
+            "bow_stats": {
+                "arc_shot": "affinity",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        1
+                    ],
+                    [
+                        "spread",
+                        2
+                    ],
+                    [
+                        "spread",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 2,
+                    "poison_coating": 0,
+                    "power_coating": 1,
+                    "sleep_coating": 2
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -2918,6 +6781,37 @@
         {
             "affinity": 0,
             "attack": 180,
+            "bow_stats": {
+                "arc_shot": "affinity",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "spread",
+                        2
+                    ],
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 2,
+                    "poison_coating": 0,
+                    "power_coating": 1,
+                    "sleep_coating": 2
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -2939,6 +6833,37 @@
         {
             "affinity": 0,
             "attack": 200,
+            "bow_stats": {
+                "arc_shot": "affinity",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "spread",
+                        2
+                    ],
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "rapid",
+                        4
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 2,
+                    "poison_coating": 0,
+                    "power_coating": 1,
+                    "sleep_coating": 2
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -2960,6 +6885,37 @@
         {
             "affinity": -15,
             "attack": 110,
+            "bow_stats": {
+                "arc_shot": "recovery",
+                "base_charge_level_limit": 4,
+                "charge_shot": [
+                    [
+                        "spread",
+                        1
+                    ],
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 2,
+                    "poison_coating": 0,
+                    "power_coating": 1,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [],
             "defense": 2,
             "elestat": {},
@@ -2981,6 +6937,37 @@
         {
             "affinity": -15,
             "attack": 140,
+            "bow_stats": {
+                "arc_shot": "recovery",
+                "base_charge_level_limit": 4,
+                "charge_shot": [
+                    [
+                        "spread",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ],
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 2,
+                    "poison_coating": 0,
+                    "power_coating": 1,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [],
             "defense": 9,
             "elestat": {},
@@ -3002,6 +6989,37 @@
         {
             "affinity": -15,
             "attack": 190,
+            "bow_stats": {
+                "arc_shot": "recovery",
+                "base_charge_level_limit": 4,
+                "charge_shot": [
+                    [
+                        "spread",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ],
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "rapid",
+                        4
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 2,
+                    "poison_coating": 0,
+                    "power_coating": 1,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [
                 3,
                 1
@@ -3026,6 +7044,37 @@
         {
             "affinity": 0,
             "attack": 100,
+            "bow_stats": {
+                "arc_shot": "brace",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "spread",
+                        2
+                    ],
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "spread",
+                        4
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 1,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 1,
+                    "para_coating": 2,
+                    "poison_coating": 2,
+                    "power_coating": 1,
+                    "sleep_coating": 1
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -3047,6 +7096,37 @@
         {
             "affinity": 0,
             "attack": 140,
+            "bow_stats": {
+                "arc_shot": "brace",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "spread",
+                        2
+                    ],
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "spread",
+                        4
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 1,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 1,
+                    "para_coating": 2,
+                    "poison_coating": 2,
+                    "power_coating": 1,
+                    "sleep_coating": 1
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -3068,6 +7148,37 @@
         {
             "affinity": 0,
             "attack": 180,
+            "bow_stats": {
+                "arc_shot": "brace",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "spread",
+                        2
+                    ],
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "spread",
+                        4
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 1,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 1,
+                    "para_coating": 2,
+                    "poison_coating": 2,
+                    "power_coating": 1,
+                    "sleep_coating": 1
+                }
+            },
             "decos": [
                 1,
                 1
@@ -3092,6 +7203,37 @@
         {
             "affinity": 30,
             "attack": 90,
+            "bow_stats": {
+                "arc_shot": "recovery",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "spread",
+                        2
+                    ],
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "spread",
+                        5
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 1,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 1,
+                    "para_coating": 0,
+                    "poison_coating": 0,
+                    "power_coating": 0,
+                    "sleep_coating": 2
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -3113,6 +7255,37 @@
         {
             "affinity": 30,
             "attack": 140,
+            "bow_stats": {
+                "arc_shot": "recovery",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "spread",
+                        5
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 1,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 1,
+                    "para_coating": 0,
+                    "poison_coating": 0,
+                    "power_coating": 0,
+                    "sleep_coating": 2
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -3134,6 +7307,37 @@
         {
             "affinity": 30,
             "attack": 170,
+            "bow_stats": {
+                "arc_shot": "recovery",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "spread",
+                        4
+                    ],
+                    [
+                        "spread",
+                        5
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 1,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 1,
+                    "para_coating": 0,
+                    "poison_coating": 0,
+                    "power_coating": 0,
+                    "sleep_coating": 2
+                }
+            },
             "decos": [
                 2
             ],
@@ -3157,6 +7361,37 @@
         {
             "affinity": 20,
             "attack": 90,
+            "bow_stats": {
+                "arc_shot": "affinity",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "pierce",
+                        2
+                    ],
+                    [
+                        "pierce",
+                        5
+                    ],
+                    [
+                        "pierce",
+                        4
+                    ],
+                    [
+                        "spread",
+                        4
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 1,
+                    "poison_coating": 1,
+                    "power_coating": 1,
+                    "sleep_coating": 2
+                }
+            },
             "decos": [],
             "defense": 25,
             "elestat": {},
@@ -3178,6 +7413,37 @@
         {
             "affinity": 20,
             "attack": 150,
+            "bow_stats": {
+                "arc_shot": "affinity",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "pierce",
+                        2
+                    ],
+                    [
+                        "pierce",
+                        5
+                    ],
+                    [
+                        "pierce",
+                        4
+                    ],
+                    [
+                        "spread",
+                        4
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 1,
+                    "poison_coating": 1,
+                    "power_coating": 1,
+                    "sleep_coating": 2
+                }
+            },
             "decos": [],
             "defense": 25,
             "elestat": {},
@@ -3199,6 +7465,37 @@
         {
             "affinity": 20,
             "attack": 190,
+            "bow_stats": {
+                "arc_shot": "affinity",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "pierce",
+                        2
+                    ],
+                    [
+                        "pierce",
+                        5
+                    ],
+                    [
+                        "pierce",
+                        4
+                    ],
+                    [
+                        "spread",
+                        4
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 1,
+                    "poison_coating": 1,
+                    "power_coating": 1,
+                    "sleep_coating": 2
+                }
+            },
             "decos": [],
             "defense": 25,
             "elestat": {},
@@ -3220,6 +7517,37 @@
         {
             "affinity": 0,
             "attack": 150,
+            "bow_stats": {
+                "arc_shot": "affinity",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        1
+                    ],
+                    [
+                        "rapid",
+                        1
+                    ],
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 0,
+                    "poison_coating": 0,
+                    "power_coating": 0,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -3258,6 +7586,37 @@
         {
             "affinity": 0,
             "attack": 170,
+            "bow_stats": {
+                "arc_shot": "affinity",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        1
+                    ],
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 0,
+                    "poison_coating": 0,
+                    "power_coating": 0,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -3305,6 +7664,37 @@
         {
             "affinity": 0,
             "attack": 180,
+            "bow_stats": {
+                "arc_shot": "affinity",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        1
+                    ],
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 0,
+                    "poison_coating": 0,
+                    "power_coating": 0,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -3359,6 +7749,37 @@
         {
             "affinity": 0,
             "attack": 190,
+            "bow_stats": {
+                "arc_shot": "affinity",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 0,
+                    "poison_coating": 0,
+                    "power_coating": 0,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -3415,6 +7836,37 @@
         {
             "affinity": 0,
             "attack": 200,
+            "bow_stats": {
+                "arc_shot": "affinity",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 0,
+                    "poison_coating": 0,
+                    "power_coating": 0,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},
@@ -3473,6 +7925,37 @@
         {
             "affinity": 0,
             "attack": 210,
+            "bow_stats": {
+                "arc_shot": "affinity",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        2
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ],
+                    [
+                        "rapid",
+                        3
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 0,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 0,
+                    "para_coating": 0,
+                    "poison_coating": 0,
+                    "power_coating": 0,
+                    "sleep_coating": 0
+                }
+            },
             "decos": [],
             "defense": 0,
             "elestat": {},

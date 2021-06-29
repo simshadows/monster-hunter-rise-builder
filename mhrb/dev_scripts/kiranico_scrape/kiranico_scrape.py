@@ -133,6 +133,7 @@ def scrape_weapon_category_page(weapon_category, url, tagset):
         switchaxe_stats = None
         chargeblade_stats = None
         insectglaive_stats = None
+        bow_stats = None
 
         num_decos = len(c2.contents[1].contents) - 1
         assert (num_decos >= 0) and (num_decos <= 3)
@@ -216,7 +217,7 @@ def scrape_weapon_category_page(weapon_category, url, tagset):
             try:
                 phial_value = int(substrs[-1])
                 special_mech_str = " ".join(substrs[:-1])
-            except ValueError: # Happens if the last string isn't an int
+            except ValueError: # Happens if the last string isn't an int, which can happen
                 pass
 
             switchaxe_stats["phial_type"] = process_string_to_identifier(special_mech_str)
@@ -229,10 +230,72 @@ def scrape_weapon_category_page(weapon_category, url, tagset):
         if weapon_category == "insectglaive":
             insectglaive_stats = {}
             special_mech_str = str(c2.contents[6].contents[0].contents[0]).strip()
-            if special_mech_str[:14] != "Kinsect Level ":
-                raise ValueError
+            assert special_mech_str[:14] == "Kinsect Level "
             kinsect_level = int(special_mech_str[14:])
             insectglaive_stats["kinsect_level"] = kinsect_level
+
+        if weapon_category == "bow":
+            bow_stats = {}
+
+            special_mech_1_str = str(c2.contents[5].contents[0].contents[0]).strip()
+            special_mech_2 = c2.contents[5].contents[1:]
+            special_mech_3 = c2.contents[6].contents
+
+            bow_stats["arc_shot"] = process_string_to_identifier(special_mech_1_str)
+            assert len(bow_stats["arc_shot"]) != 0
+
+            bow_stats["charge_shot"] = []
+            bow_stats["base_charge_level_limit"] = None # We calculate this in the loop
+            in_grey = False # For debugging
+            for (i, c3) in enumerate(special_mech_2):
+                if len(c3.contents) == 0:
+                    continue
+
+                classes = c3.get("class", [])
+                if len(classes) == 0:
+                    assert not in_grey
+                    bow_stats["base_charge_level_limit"] = i + 1
+                else:
+                    assert len(classes) == 1
+                    in_grey = True
+
+                substrs = str(c3.contents[0]).split()
+                assert len(substrs) == 3
+                assert substrs[1] == "Level"
+                charge_shot_type_id = process_string_to_identifier(substrs[0])
+                charge_shot_level = int(substrs[2]) # Implicit check for string formatting
+                assert charge_shot_level > 0
+                bow_stats["charge_shot"].append([charge_shot_type_id, charge_shot_level])
+
+            bow_stats["compatible_coatings"] = {}
+            def read_coating(c3, expected_coating_type):
+                coating_type_id = process_string_to_identifier(expected_coating_type)
+                compatibility = None # We calculate soon
+
+                classes = c3.get("class", [])
+                if len(classes) == 0:
+                    # Text is not specially formatted, so it's a regular coating
+                    compatibility = 1
+                else:
+                    assert len(classes) == 1
+                    # Text is either formatted grey (meaning disabled), or green (meaning it's the "plus" version)
+                    if classes[0] == "text-gray-400":
+                        compatibility = 0
+                    elif classes[0] == "text-green-500":
+                        compatibility = 2
+                    else:
+                        raise ValueError("Unexpected HTML class name.")
+
+                bow_stats["compatible_coatings"][coating_type_id] = compatibility
+
+            assert len(special_mech_3) == 7
+            read_coating(special_mech_3[0], "Close-range Coating")
+            read_coating(special_mech_3[1], "Power Coating"      )
+            read_coating(special_mech_3[2], "Poison Coating"     )
+            read_coating(special_mech_3[3], "Para Coating"       )
+            read_coating(special_mech_3[4], "Sleep Coating"      )
+            read_coating(special_mech_3[5], "Blast Coating"      )
+            read_coating(special_mech_3[6], "Exhaust Coating"    )
             
         #data = {}
         data = scrape_weapon_page(weapon_page_url, weapon_name, weapon_category, tagset)
@@ -254,6 +317,8 @@ def scrape_weapon_category_page(weapon_category, url, tagset):
             data["chargeblade_stats"] = chargeblade_stats
         if insectglaive_stats is not None:
             data["insectglaive_stats"] = insectglaive_stats
+        if bow_stats is not None:
+            data["bow_stats"] = bow_stats
 
         ret.append(data)
     return ret

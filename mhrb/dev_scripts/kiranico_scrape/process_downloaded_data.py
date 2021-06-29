@@ -153,6 +153,8 @@ for (weapon_category, spec_subdict) in data_spec.items():
                 d["chargeblade_stats"] = obj["chargeblade_stats"]
             if weapon_category == "insectglaive":
                 d["insectglaive_stats"] = obj["insectglaive_stats"]
+            if weapon_category == "bow":
+                d["bow_stats"] = obj["bow_stats"]
 
             data[weapon_category][tree_name][weapon_id] = d
 
@@ -314,6 +316,28 @@ insectglaive_stats_fmt = """,
             }}\
 """
 
+bow_stats_fmt = """,
+
+            "bowStats": {{
+                "arcShot": "{arc_shot}",
+                "chargeShot": [
+{charge_shot}
+                ],
+                "compatibleCoatings": {{
+                    "close_range_coating": {close_range_coating},
+                    "power_coating": {power_coating},
+                    "poison_coating": {poison_coating},
+                    "para_coating": {para_coating},
+                    "sleep_coating": {sleep_coating},
+                    "blast_coating": {blast_coating},
+                    "exhaust_coating": {exhaust_coating}
+                }}
+            }}\
+"""
+charge_shot_fmt = """\
+                    ["{charge_shot_type}", {level}]\
+"""
+
 
 def process_ramp_skills(lst):
     slot_strs = []
@@ -375,6 +399,29 @@ for (weapon_category, _) in data_spec.items():
             if "insectglaive_stats" in weapon_data:
                 special_mechanics += insectglaive_stats_fmt.format(
                         kinsect_level=str(weapon_data["insectglaive_stats"]["kinsect_level"]),
+                    )
+
+            if "bow_stats" in weapon_data:
+                charge_shot_substrs = []
+                for (charge_shot_type, level) in weapon_data["bow_stats"]["charge_shot"]:
+                    charge_shot_substrs.append(charge_shot_fmt.format(
+                            charge_shot_type=charge_shot_type,
+                            level=level,
+                        ))
+
+                compatible_coatings = weapon_data["bow_stats"]["compatible_coatings"]
+
+                special_mechanics += bow_stats_fmt.format(
+                        arc_shot=str(weapon_data["bow_stats"]["arc_shot"]),
+                        charge_shot=",\n".join(charge_shot_substrs),
+
+                        close_range_coating=str(compatible_coatings["close_range_coating"]),
+                        power_coating=str(compatible_coatings["power_coating"]),
+                        poison_coating=str(compatible_coatings["poison_coating"]),
+                        para_coating=str(compatible_coatings["para_coating"]),
+                        sleep_coating=str(compatible_coatings["sleep_coating"]),
+                        blast_coating=str(compatible_coatings["blast_coating"]),
+                        exhaust_coating=str(compatible_coatings["exhaust_coating"]),
                     )
 
             weapon_strs.append(weapon_fmt.format(

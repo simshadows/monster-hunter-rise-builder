@@ -365,6 +365,29 @@ const hardcodedInsectGlaiveKinsectBonuses = [
     }],
 ];
 
+const hardcodedBowArcShotTypes = [
+    ["recovery", {
+        name: "Recovery",
+    }],
+    ["affinity", {
+        name: "Affinity",
+    }],
+    ["brace", {
+        name: "Brace",
+    }],
+]
+const hardcodedBowChargeShotTypes = [
+    ["pierce", {
+        name: "Pierce",
+    }],
+    ["rapid", {
+        name: "Rapid",
+    }],
+    ["spread", {
+        name: "Spread",
+    }],
+];
+
 // Now, we populate these maps.
 
 const gunlanceShellingTypesMap = new Map();
@@ -378,6 +401,9 @@ const chargeBladePhialTypesMap = new Map();
 const insectGlaiveKinsectsMap = new Map();
 const insectGlaiveKinsectTypesMap = new Map();
 const insectGlaiveKinsectBonusesMap = new Map();
+
+const bowArcShotTypesMap = new Map();
+const bowChargeShotTypesMap = new Map();
 
 function populate(hardcodedData, finalMap, additionalOps) {
     for (const [k, dataObj] of hardcodedData) {
@@ -437,6 +463,13 @@ populate(hardcodedInsectGlaiveKinsects, insectGlaiveKinsectsMap, (dataObj) => {
     // kinsectBonus is already checked
 });
 
+populate(hardcodedBowArcShotTypes, bowArcShotTypesMap, (dataObj) => {
+    assert(isNonEmptyStr(dataObj.id));
+});
+populate(hardcodedBowChargeShotTypes, bowChargeShotTypesMap, (dataObj) => {
+    assert(isNonEmptyStr(dataObj.id));
+});
+
 export {
     gunlanceShellingTypesMap,
 
@@ -449,5 +482,8 @@ export {
     insectGlaiveKinsectsMap,
     insectGlaiveKinsectTypesMap,
     insectGlaiveKinsectBonusesMap,
+
+    bowArcShotTypesMap,
+    bowChargeShotTypesMap,
 };
 
