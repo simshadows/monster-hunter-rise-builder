@@ -116,6 +116,15 @@ function CalculationResultsSpacerBox(props) {
 
 class CalculationResultsBox extends React.Component {
 
+    _renderGreyed(...elements) {
+        return element("span",
+            {
+            className: "calculation-stat-value-box-greyed",
+            },
+            ...elements,
+        );
+    }
+
     _renderStat(iconImgID, label, ...values) {
         const iconElement = (()=>{
                     if (iconImgID === null) {
@@ -277,6 +286,50 @@ class CalculationResultsBox extends React.Component {
                 element(CalculationResultsGroupBox,
                     null,
                     this._renderStat(null, "Kinsect Level", String(perf.insectGlaiveStats.kinsectLevel)),
+                ),
+            );
+        }
+
+        if (perf.bowStats !== null) {
+            specialMechanicRenderings.push(
+                element(CalculationResultsGroupBox,
+                    null,
+                    this._renderStat(null, "Arc Shot", String(perf.bowStats.arcShot.name)),
+                ),
+            );
+
+            const chargeShotElements = [];
+            for (const [i, [chargeShotTypeRO, level]] of perf.bowStats.chargeShot.entries()) {
+                const label = "Charge Shot " + String(i + 1);
+                const value = String(chargeShotTypeRO.name) + " Level " + String(level);
+
+                const applyStyle = (e) => {return (i < perf.bowStats.baseChargeLevelLimit) ? e : this._renderGreyed(e);};
+
+                chargeShotElements.push(
+                    this._renderStat(null, applyStyle(label), applyStyle(value)),
+                );
+            }
+            specialMechanicRenderings.push(
+                element(CalculationResultsGroupBox,
+                    null,
+                    ...chargeShotElements,
+                ),
+            );
+
+            const coatings = perf.bowStats.compatibleCoatings;
+            const op = (label, value) => {
+                    return this._renderStat(null, label, String(value));
+                };
+            specialMechanicRenderings.push(
+                element(CalculationResultsGroupBox,
+                    null,
+                    op("Close-range Coating", coatings.close_range_coating),
+                    op("Power Coating"      , coatings.power_coating      ),
+                    op("Poison Coating"     , coatings.poison_coating     ),
+                    op("Para Coating"       , coatings.para_coating       ),
+                    op("Sleep Coating"      , coatings.sleep_coating      ),
+                    op("Blast Coating"      , coatings.blast_coating      ),
+                    op("Exhaust Coating"    , coatings.exhaust_coating    ),
                 ),
             );
         }

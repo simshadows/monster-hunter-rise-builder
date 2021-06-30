@@ -186,9 +186,13 @@ function validateWeaponDataInsectGlaive(weaponData) {
 function validateWeaponDataBow(weaponData) {
     assert(isObj(weaponData.bowStats.arcShot)); // Already validated
 
+    const bcll = weaponData.bowStats.baseChargeLevelLimit;
+    assert(isInt(bcll) && (bcll > 0)); // Further validation later
+
     const chargeShotData = weaponData.bowStats.chargeShot;
     assert(isArr(chargeShotData));
     assert((chargeShotData.length >= 3) && (chargeShotData.length <= 4)); // Only known to be 3 or 4
+    assert((chargeShotData.length === bcll) || (chargeShotData.length === bcll + 1)); // We expect at most a difference of 1
     for (const [chargeShotRO, level] of chargeShotData) {
         assert(isObj(chargeShotRO)); // Already validated
         assert(isInt(level) && (level >= 1) && (level <= 5));
@@ -707,6 +711,23 @@ class GameData {
                 shortIdsMap: rampageSkillsMapShortIds,
             },
             weaponMechanics: {
+                gunlance: {
+                    shellingTypesMap: gunlanceShellingTypesMap,
+                },
+                huntinghorn: {
+                    songsMap: huntingHornSongsMap,
+                },
+                switchaxe: {
+                    phialTypesMap: switchAxePhialTypesMap,
+                },
+                chargeblade: {
+                    phialTypesMap: chargeBladePhialTypesMap,
+                },
+                insectglaive: {
+                    kinsectsMap: insectGlaiveKinsectsMap,
+                    kinsectTypesMap: insectGlaiveKinsectTypesMap,
+                    kinsectBonusesMap: insectGlaiveKinsectBonusesMap,
+                },
                 bow: {
                     arcShotTypesMap: bowArcShotTypesMap,
                     chargeShotTypesMap: bowChargeShotTypesMap,
@@ -727,24 +748,6 @@ class GameData {
             decorations: {
                 array: Array.from(decosMap.values()),
                 map: decosMap,
-            },
-            gunlanceShellingTypes: {
-                map: gunlanceShellingTypesMap,
-            },
-            huntingHornSongs: {
-                map: huntingHornSongsMap,
-            },
-            switchAxePhialTypes: {
-                map: switchAxePhialTypesMap,
-            },
-            chargeBladePhialTypes: {
-                map: chargeBladePhialTypesMap,
-            },
-            insectGlaiveKinsects: {
-                map: insectGlaiveKinsectsMap,
-
-                kinsectTypesMap: insectGlaiveKinsectTypesMap,
-                bonusesMap: insectGlaiveKinsectBonusesMap,
             },
         };
 

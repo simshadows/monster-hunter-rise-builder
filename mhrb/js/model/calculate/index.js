@@ -95,6 +95,7 @@ function calculateBuildPerformance(db, build, calcState) {
     assert(b.switchaxeStats    !== undefined);
     assert(b.chargebladeStats  !== undefined);
     assert(b.insectglaiveStats !== undefined);
+    assert(b.bowStats          !== undefined);
 
     const s = getSkillContributions(db, build, calcState);
     assert(s.rawAdd                  !== undefined);
@@ -271,6 +272,9 @@ function calculateBuildPerformance(db, build, calcState) {
     let insectglaiveStats = b.insectglaiveStats;
     assert((weaponRO.category === "insectglaive") === (insectglaiveStats !== null));
 
+    let bowStats = b.bowStats;
+    assert((weaponRO.category === "bow") === (bowStats !== null));
+
     const ret = {
 
         // This part goes to the equips section
@@ -303,6 +307,7 @@ function calculateBuildPerformance(db, build, calcState) {
         switchAxeStats:    switchAxeStats,
         chargeBladeStats:  chargeBladeStats,
         insectGlaiveStats: insectglaiveStats,
+        bowStats:          bowStats,
     };
     return ret;
 }

@@ -25,6 +25,21 @@ import {
 const assert = console.assert;
 
 
+// TODO: When porting to TypeScript, we should implement this with the class
+function copyBowStats(original) {
+    const chargeShot = [];
+    for (const [chargeShotTypeObj, level] of original.chargeShot) {
+        chargeShot.push([chargeShotTypeObj, level]);
+    }
+    return {
+            arcShot: original.arcShot,
+            baseChargeLevelLimit: original.baseChargeLevelLimit,
+            chargeShot: chargeShot,
+            compatibleCoatings: {...original.compatibleCoatings},
+        };
+}
+
+
 function getBaseValues(db, build, calcState) {
     assert(isObj(db));
     assert(isMap(db.readonly.weapons.map.greatsword)); // Spot check for structure
@@ -68,6 +83,7 @@ function getBaseValues(db, build, calcState) {
     let switchaxeStats    = (weaponRO.category !== "switchaxe"   ) ? null : {...weaponRO.switchaxeStats};
     let chargebladeStats  = (weaponRO.category !== "chargeblade" ) ? null : {...weaponRO.chargebladeStats};
     let insectglaiveStats = (weaponRO.category !== "insectglaive") ? null : {...weaponRO.insectglaiveStats};
+    let bowStats          = (weaponRO.category !== "bow"         ) ? null : copyBowStats(weaponRO.bowStats);
 
     // Deferred operations go here
     const deferredOps1 = [];
@@ -117,7 +133,7 @@ function getBaseValues(db, build, calcState) {
     }
     function rampGunlanceSetShellingType(shellingTypeID, level) {
         assert(weaponRO.category === "gunlance");
-        gunlanceStats.shellingType = db.readonly.gunlanceShellingTypes.map.get(shellingTypeID);
+        gunlanceStats.shellingType = db.readonly.weaponMechanics.gunlance.shellingTypesMap.get(shellingTypeID);
         gunlanceStats.shellingLevel = level;
         assert(gunlanceStats.shellingType !== undefined); // Need to make sure we actually got something
     }
@@ -125,9 +141,9 @@ function getBaseValues(db, build, calcState) {
         assert(weaponRO.category === "huntinghorn");
         assert(isMap(huntingHornSongs)); // We expect that it's an existing song set
         huntingHornSongs = new Map([
-            ["x", db.readonly.huntingHornSongs.map.get(songX)],
-            ["a", db.readonly.huntingHornSongs.map.get(songA)],
-            ["xa", db.readonly.huntingHornSongs.map.get(songXA)],
+            ["x", db.readonly.weaponMechanics.huntinghorn.songsMap.get(songX)],
+            ["a", db.readonly.weaponMechanics.huntinghorn.songsMap.get(songA)],
+            ["xa", db.readonly.weaponMechanics.huntinghorn.songsMap.get(songXA)],
         ]);
         for (const songObj of huntingHornSongs.values()) {
             assert(isNonEmptyStr(songObj.name)); // Spot check for structure
@@ -135,9 +151,48 @@ function getBaseValues(db, build, calcState) {
     }
     function rampSwitchAxeSetPhial(phialTypeID, value) {
         assert(weaponRO.category === "switchaxe");
-        switchaxeStats.phialType = db.readonly.switchAxePhialTypes.map.get(phialTypeID);
+        switchaxeStats.phialType = db.readonly.weaponMechanics.switchaxe.phialTypesMap.get(phialTypeID);
         switchaxeStats.phialValue = value;
         assert(switchaxeStats.phialType !== undefined); // Need to make sure we actually got something
+    }
+
+    function rampBowSetArcShot(arcShotTypeID) {
+        assert(weaponRO.category === "bow");
+        bowStats.arcShot = db.readonly.weaponMechanics.bow.arcShotTypesMap.get(arcShotTypeID);
+        assert(bowStats.arcShot !== undefined); // Need to make sure we actually got something
+    }
+    function rampBowSetChargeShot(baseChargeLevelLimit, spec) {
+        assert(weaponRO.category === "bow");
+        assert((bowStats.chargeShot.length === 4) && (spec.length === 4)); // We assume this for now
+        assert((baseChargeLevelLimit === 3) || (baseChargeLevelLimit === 4)); // This assumes 4 charge levels
+
+        bowStats.chargeShot = [];
+        for (const [chargeShotTypeID, level] of spec) {
+            const chargeShotTypeRO = db.readonly.weaponMechanics.bow.chargeShotTypesMap.get(chargeShotTypeID);
+            assert(chargeShotTypeRO !== undefined); // Need to make sure we actually got something
+            bowStats.chargeShot.push([chargeShotTypeRO, level]);
+        }
+
+        bowStats.baseChargeLevelLimit = baseChargeLevelLimit;
+    }
+    // Callback only called if the ramp skill is applied
+    function rampBowSetCoatingCompat(coatingID, state, callback) {
+        assert(weaponRO.category === "bow");
+        assert(coatingID in bowStats.compatibleCoatings);
+        assert((state >= 0) && (state <= 2));
+        if (bowStats.compatibleCoatings[coatingID] >= state) {
+            return; // No change if it's already higher
+        }
+        bowStats.compatibleCoatings[coatingID] = state;
+        callback();
+    }
+    function rampBowBoostCoatingCompat(coatingID) {
+        assert(weaponRO.category === "bow");
+        const state = bowStats.compatibleCoatings[coatingID];
+        assert(state >= 0);
+        if (state === 1) {
+            bowStats.compatibleCoatings[coatingID] = 2;
+        }
     }
 
     // No operation
@@ -423,9 +478,9 @@ function getBaseValues(db, build, calcState) {
 
         ["phial_element", ()=>{
             if (weaponRO.category === "switchaxe") {
-                switchaxeStats.phialType = db.readonly.switchAxePhialTypes.map.get("element_phial");
+                switchaxeStats.phialType = db.readonly.weaponMechanics.switchaxe.phialTypesMap.get("element_phial");
             } else if (weaponRO.category === "chargeblade") {
-                chargebladeStats.phialType = db.readonly.chargeBladePhialTypes.map.get("element_phial");
+                chargebladeStats.phialType = db.readonly.weaponMechanics.chargeblade.phialTypesMap.get("element_phial");
             } else {
                 console.warn("Unexpected weapon category.");
             }
@@ -478,6 +533,75 @@ function getBaseValues(db, build, calcState) {
             baseRaw += -20;
         }],
 
+        //
+        // Bow
+        //
+
+        ["lasting_arc_shot", nop],
+
+        ["poison_coating_boost"     , ()=>{ rampBowBoostCoatingCompat("poison_coating"); }],
+        ["paralysis_coating_boost"  , ()=>{ rampBowBoostCoatingCompat("para_coating"); }],
+        ["sleep_coating_boost"      , ()=>{ rampBowBoostCoatingCompat("sleep_coating"); }],
+        ["close_range_coating_boost", ()=>{ rampBowBoostCoatingCompat("close_range_coating"); baseRaw += -5; }],
+
+        // Rampage Bow, Slot 3
+        ["firing_rapid", ()=>{
+            rampBowSetChargeShot(3, [
+                ["rapid" , 2],
+                ["rapid" , 3],
+                ["rapid" , 4],
+                ["rapid" , 5],
+            ]);
+        }],
+        ["firing_pierce", ()=>{
+            rampBowSetChargeShot(3, [
+                ["pierce" , 2],
+                ["pierce" , 3],
+                ["pierce" , 4],
+                ["pierce" , 5],
+            ]);
+        }],
+        ["firing_spread", ()=>{
+            rampBowSetChargeShot(3, [
+                ["spread" , 1],
+                ["spread" , 2],
+                ["spread" , 3],
+                ["spread" , 4],
+            ]);
+        }],
+        ["firing_charge", ()=>{
+            rampBowSetChargeShot(4, [
+                ["rapid"  , 2],
+                ["pierce" , 3],
+                ["spread" , 5],
+                ["pierce" , 4],
+            ]);
+        }],
+        ["firing_swift", ()=>{
+            rampBowSetChargeShot(4, [
+                ["pierce", 5],
+                ["rapid" , 4],
+                ["spread", 2],
+                ["rapid" , 5],
+            ]);
+        }],
+
+        // Rampage Bow, Slot 4-5
+        ["use_power_coating"   , ()=>{ rampBowSetCoatingCompat("power_coating"  , 1, () => {                 }); }],
+        ["use_poison_coating_1", ()=>{ rampBowSetCoatingCompat("poison_coating" , 1, () => {                 }); }],
+        ["use_poison_coating_2", ()=>{ rampBowSetCoatingCompat("poison_coating" , 2, () => { baseRaw += -5;  }); }],
+        ["use_para_coating_1"  , ()=>{ rampBowSetCoatingCompat("para_coating"   , 1, () => {                 }); }],
+        ["use_para_coating_2"  , ()=>{ rampBowSetCoatingCompat("para_coating"   , 2, () => { baseRaw += -10; }); }],
+        ["use_sleep_coating_1" , ()=>{ rampBowSetCoatingCompat("sleep_coating"  , 1, () => {                 }); }],
+        ["use_sleep_coating_2" , ()=>{ rampBowSetCoatingCompat("sleep_coating"  , 2, () => { baseRaw += -10; }); }],
+        ["use_blast_coating"   , ()=>{ rampBowSetCoatingCompat("blast_coating"  , 1, () => {                 }); }],
+        ["use_exhaust_coating" , ()=>{ rampBowSetCoatingCompat("exhaust_coating", 1, () => { baseRaw += 10;  }); }], // Not a typo
+ 
+        // Rampage Bow, Slot 6
+        ["arc_shot_recovery"  , ()=>{ rampBowSetArcShot("recovery"); }],
+        ["arc_shot_affinity"  , ()=>{ rampBowSetArcShot("affinity"); }],
+        ["arc_shot_anti_shock", ()=>{ rampBowSetArcShot("brace"   ); }],
+
         // MANY OTHER RAMPAGE SKILLS NOT YET IMPLEMENTED
     ]);
 
@@ -522,6 +646,7 @@ function getBaseValues(db, build, calcState) {
         switchaxeStats,
         chargebladeStats,
         insectglaiveStats,
+        bowStats,
     };
     return ret;
 }

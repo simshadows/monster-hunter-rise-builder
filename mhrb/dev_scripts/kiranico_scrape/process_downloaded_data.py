@@ -320,6 +320,7 @@ bow_stats_fmt = """,
 
             "bowStats": {{
                 "arcShot": "{arc_shot}",
+                "baseChargeLevelLimit": {base_charge_level_limit},
                 "chargeShot": [
 {charge_shot}
                 ],
@@ -413,6 +414,7 @@ for (weapon_category, _) in data_spec.items():
 
                 special_mechanics += bow_stats_fmt.format(
                         arc_shot=str(weapon_data["bow_stats"]["arc_shot"]),
+                        base_charge_level_limit=str(weapon_data["bow_stats"]["base_charge_level_limit"]),
                         charge_shot=",\n".join(charge_shot_substrs),
 
                         close_range_coating=str(compatible_coatings["close_range_coating"]),

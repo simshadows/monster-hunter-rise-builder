@@ -6,6 +6,8 @@
 
 - Heroics has `defense-increasing effects are negated`. What does this mean?
 
+- I assume applying, say, `Use Para Coating I` and `Use Para Coating II` on the same bow at the same time will apply the highest compatibility state. Also, applying `Use Para Coating II` to two slots at once will not reapply the raw penalty (or raw bonus for others). Not very meaningful to be pedantic about it, but I want the builder to be accurate, so I'll double-check later.
+
 # Acknowledgements
 
 I should try to build as complete a list of acknowledgements as possible.
@@ -18,4 +20,5 @@ Some acknowledgements so far:
 - Discord user `Moonmadness#9063` for answering questions.
 - Discord user `T3h Phish #5878` for finding a bug.
 - <https://www.mhrbuilder.com/> for providing rampage skill sharpness data, and as a useful cross-check for many others.
+- Discord user `Rayorne_Senephoene#9356` for clarifying `Firing: Rapid`, `Firing: Pierce`, etc. ramp skill math and double-checking which ones require Bow Charge Plus from in-game.
 

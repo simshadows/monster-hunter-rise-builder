@@ -52,6 +52,9 @@ div.calculation-stat-value-box {
     justify-content: flex-start;
     column-gap: 6px;
 }
+.calculation-stat-value-box-greyed {
+    color: var(--color-text-fainter);
+}
 
 div.calculation-stat-icon-box {
     height: 21px;

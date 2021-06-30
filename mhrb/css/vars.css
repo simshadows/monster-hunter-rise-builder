@@ -62,6 +62,7 @@
 
     --color-text: var(--color-scheme--bright2);
     --color-text-hover: var(--color-scheme--bright1);
+    --color-text-fainter: var(--color-scheme--bright4);
     --color-text2: var(--color-scheme--dark1);
     --color-text-link: #00b0f4;
 
