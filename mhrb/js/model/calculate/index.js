@@ -107,6 +107,7 @@ function calculateBuildPerformance(db, build, calcState) {
     assert(s.rawCriticalDamage       !== undefined);
     assert(s.elementalBlunderDamage  !== undefined);
     assert(s.elementalCriticalDamage !== undefined);
+    assert(s.bowChargePlusLevel      !== undefined);
     assert(s.handicraftLevel         !== undefined);
     assert(s.mastersTouchLevel       !== undefined);
     assert(s.razorSharpLevel         !== undefined);
@@ -274,6 +275,13 @@ function calculateBuildPerformance(db, build, calcState) {
 
     let bowStats = b.bowStats;
     assert((weaponRO.category === "bow") === (bowStats !== null));
+    if ((weaponRO.category === "bow") && (s.bowChargePlusLevel !== 0)) {
+        assert(s.bowChargePlusLevel === 1);
+        const cllMax = bowStats.chargeShot.length;
+        const cll = bowStats.chargeLevelLimit;
+        assert((cllMax === cll) || (cllMax === cll + 1)); // Assume cll is at most -1 of max
+        bowStats.chargeLevelLimit = cllMax; // Sets chargeLevelLimit to max
+    }
 
     const ret = {
 

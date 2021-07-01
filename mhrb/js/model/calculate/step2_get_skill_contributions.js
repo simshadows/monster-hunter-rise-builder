@@ -126,6 +126,7 @@ function getSkillContributions(db, build, calcState) {
     let elementalBlunderDamage  = ELEMENTAL_BLUNDER_DAMAGE_MULTIPLIER;
     let elementalCriticalDamage = CRITICAL_ELEMENT_DAMAGE_MULTIPLIERS[0];
 
+    let bowChargePlusLevel = 0;
     let handicraftLevel = 0;
     let mastersTouchLevel = 0; // Affects sharpness bar hits. Calculate later.
     let razorSharpLevel = 0; // Affects sharpness bar hits. Calculate later.
@@ -261,6 +262,13 @@ function getSkillContributions(db, build, calcState) {
 
         ["blight_resistance", (lid, lvl)=>{nop();}],
         ["botanist", (lid, lvl)=>{nop();}],
+
+        ["bow_charge_plus", (lid, lvl)=>{
+            assert(bowChargePlusLevel === 0);
+            assert(lvl === 1);
+            bowChargePlusLevel = 1;
+        }],
+
         ["bubbly_dance", (lid, lvl)=>{nop();}],
         ["capture_master", (lid, lvl)=>{nop();}],
         ["carving_pro", (lid, lvl)=>{nop();}],
@@ -597,6 +605,7 @@ function getSkillContributions(db, build, calcState) {
         elementalBlunderDamage,
         elementalCriticalDamage,
 
+        bowChargePlusLevel,
         handicraftLevel,
         mastersTouchLevel,
         razorSharpLevel,

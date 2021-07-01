@@ -33,7 +33,7 @@ function copyBowStats(original) {
     }
     return {
             arcShot: original.arcShot,
-            baseChargeLevelLimit: original.baseChargeLevelLimit,
+            chargeLevelLimit: original.baseChargeLevelLimit, // We're now calculating the real limit, not the base limit
             chargeShot: chargeShot,
             compatibleCoatings: {...original.compatibleCoatings},
         };
@@ -161,10 +161,10 @@ function getBaseValues(db, build, calcState) {
         bowStats.arcShot = db.readonly.weaponMechanics.bow.arcShotTypesMap.get(arcShotTypeID);
         assert(bowStats.arcShot !== undefined); // Need to make sure we actually got something
     }
-    function rampBowSetChargeShot(baseChargeLevelLimit, spec) {
+    function rampBowSetChargeShot(chargeLevelLimit, spec) {
         assert(weaponRO.category === "bow");
         assert((bowStats.chargeShot.length === 4) && (spec.length === 4)); // We assume this for now
-        assert((baseChargeLevelLimit === 3) || (baseChargeLevelLimit === 4)); // This assumes 4 charge levels
+        assert((chargeLevelLimit === 3) || (chargeLevelLimit === 4)); // This assumes 4 charge levels
 
         bowStats.chargeShot = [];
         for (const [chargeShotTypeID, level] of spec) {
@@ -173,7 +173,7 @@ function getBaseValues(db, build, calcState) {
             bowStats.chargeShot.push([chargeShotTypeRO, level]);
         }
 
-        bowStats.baseChargeLevelLimit = baseChargeLevelLimit;
+        bowStats.chargeLevelLimit = chargeLevelLimit;
     }
     // Callback only called if the ramp skill is applied
     function rampBowSetCoatingCompat(coatingID, state, callback) {

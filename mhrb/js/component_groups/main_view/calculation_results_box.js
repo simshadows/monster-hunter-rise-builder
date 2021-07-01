@@ -303,7 +303,7 @@ class CalculationResultsBox extends React.Component {
                 const label = "Charge Shot " + String(i + 1);
                 const value = String(chargeShotTypeRO.name) + " Level " + String(level);
 
-                const applyStyle = (e) => {return (i < perf.bowStats.baseChargeLevelLimit) ? e : this._renderGreyed(e);};
+                const applyStyle = (e) => {return (i < perf.bowStats.chargeLevelLimit) ? e : this._renderGreyed(e);};
 
                 chargeShotElements.push(
                     this._renderStat(null, applyStyle(label), applyStyle(value)),
