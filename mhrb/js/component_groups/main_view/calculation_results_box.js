@@ -125,7 +125,7 @@ class CalculationResultsBox extends React.Component {
         );
     }
 
-    _renderStat(iconImgID, label, ...values) {
+    _renderStatInner(iconImgID, label, ...values) {
         const iconElement = (()=>{
                     if (iconImgID === null) {
                         return null;
@@ -141,7 +141,7 @@ class CalculationResultsBox extends React.Component {
 
         return element("div",
             {
-            className: "calculation-stat-box",
+            className: "calculation-stat-box-inner",
             },
             element("div",
                 {
@@ -159,6 +159,15 @@ class CalculationResultsBox extends React.Component {
         );
     }
 
+    _renderStat(...args) {
+        return element("div",
+            {
+            className: "calculation-stat-box",
+            },
+            this._renderStatInner(...args),
+        );
+    }
+
     _renderHuntingHornSong(iconImgID, songName) {
         return element("div",
             {
@@ -166,16 +175,76 @@ class CalculationResultsBox extends React.Component {
             },
             element("div",
                 {
-                className: "calculation-song-icon-box",
+                className: "calculation-stat-box-inner",
                 },
-                getSimpleImgElement(iconImgID),
+                element("div",
+                    {
+                    className: "calculation-song-icon-box",
+                    },
+                    getSimpleImgElement(iconImgID),
+                ),
+                element("div",
+                    {
+                    className: "calculation-stat-content-box calculation-stat-label-box",
+                    },
+                    songName,
+                ),
             ),
-            element("div",
-                {
-                className: "calculation-stat-content-box calculation-stat-label-box",
-                },
-                songName,
-            ),
+        );
+    }
+
+    _renderChargeShotBox(chargeShotArr, chargeLevelLimit) {
+        const elems = [];
+        for (const [i, [chargeShotTypeRO, level]] of chargeShotArr.entries()) {
+            const label = "Charge Shot " + String(i + 1);
+            const value = String(chargeShotTypeRO.name) + " Level " + String(level);
+
+            const applyStyle = (e) => {return (i < chargeLevelLimit) ? e : this._renderGreyed(e);};
+
+            elems.push(
+                element("div",
+                    {
+                    className: "calculation-stat-box-inner",
+                    },
+                    element("div",
+                        {
+                        className: "calculation-stat-content-box calculation-stat-label-box",
+                        },
+                        applyStyle(label),
+                    ),
+                    element("div",
+                        {
+                        className: "calculation-stat-content-box calculation-stat-value-box",
+                        },
+                        applyStyle(value),
+                    ),
+                ),
+            );
+        }
+
+        return element("div",
+            {
+            className: "calculation-stat-box",
+            },
+            ...elems,
+        );
+    }
+
+    _renderCompatibleCoatings(compatibleCoatings) {
+        const op = (label, value) => {
+                return this._renderStatInner(null, label, String(value));
+            };
+        return element("div",
+            {
+            className: "calculation-stat-box",
+            },
+            op("Close-range Coating", compatibleCoatings.close_range_coating),
+            op("Power Coating"      , compatibleCoatings.power_coating      ),
+            op("Poison Coating"     , compatibleCoatings.poison_coating     ),
+            op("Para Coating"       , compatibleCoatings.para_coating       ),
+            op("Sleep Coating"      , compatibleCoatings.sleep_coating      ),
+            op("Blast Coating"      , compatibleCoatings.blast_coating      ),
+            op("Exhaust Coating"    , compatibleCoatings.exhaust_coating    ),
         );
     }
 
@@ -295,41 +364,8 @@ class CalculationResultsBox extends React.Component {
                 element(CalculationResultsGroupBox,
                     null,
                     this._renderStat(null, "Arc Shot", String(perf.bowStats.arcShot.name)),
-                ),
-            );
-
-            const chargeShotElements = [];
-            for (const [i, [chargeShotTypeRO, level]] of perf.bowStats.chargeShot.entries()) {
-                const label = "Charge Shot " + String(i + 1);
-                const value = String(chargeShotTypeRO.name) + " Level " + String(level);
-
-                const applyStyle = (e) => {return (i < perf.bowStats.chargeLevelLimit) ? e : this._renderGreyed(e);};
-
-                chargeShotElements.push(
-                    this._renderStat(null, applyStyle(label), applyStyle(value)),
-                );
-            }
-            specialMechanicRenderings.push(
-                element(CalculationResultsGroupBox,
-                    null,
-                    ...chargeShotElements,
-                ),
-            );
-
-            const coatings = perf.bowStats.compatibleCoatings;
-            const op = (label, value) => {
-                    return this._renderStat(null, label, String(value));
-                };
-            specialMechanicRenderings.push(
-                element(CalculationResultsGroupBox,
-                    null,
-                    op("Close-range Coating", coatings.close_range_coating),
-                    op("Power Coating"      , coatings.power_coating      ),
-                    op("Poison Coating"     , coatings.poison_coating     ),
-                    op("Para Coating"       , coatings.para_coating       ),
-                    op("Sleep Coating"      , coatings.sleep_coating      ),
-                    op("Blast Coating"      , coatings.blast_coating      ),
-                    op("Exhaust Coating"    , coatings.exhaust_coating    ),
+                    this._renderChargeShotBox(perf.bowStats.chargeShot, perf.bowStats.chargeLevelLimit),
+                    this._renderCompatibleCoatings(perf.bowStats.compatibleCoatings),
                 ),
             );
         }

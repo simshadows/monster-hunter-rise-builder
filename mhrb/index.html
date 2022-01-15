@@ -49,46 +49,6 @@
 
 <body>
 
-    <!-- Due to how this project is developed, I will not be using minified scripts (yet). -->
-
-    <!-- Minified React: "https://unpkg.com/react@17/umd/react.production.min.js" -->
-    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
-    <script type="text/javascript">
-    if (typeof React == 'undefined') {
-        document.write(unescape(
-            "%3Cscript src='./js/dependencies/react.development.js' type='text/javascript' crossorigin%3E%3C/script%3E"
-        ));
-    }
-    </script>
-
-    <!-- Minified ReactDOM: "https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" -->
-    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
-    <script type="text/javascript">
-    if (typeof ReactDOM == 'undefined') {
-        document.write(unescape(
-            "%3Cscript src='./js/dependencies/react-dom.development.js' type='text/javascript' crossorigin%3E%3C/script%3E"
-        ));
-    }
-    </script>
-
-    <script src="https://unpkg.com/html2canvas@1.0.0-rc.7/dist/html2canvas.js"></script>
-    <script type="text/javascript">
-    if (typeof html2canvas == 'undefined') {
-        document.write(unescape(
-            "%3Cscript src='./js/dependencies/html2canvas.js' type='text/javascript'%3E%3C/script%3E"
-        ));
-    }
-    </script>
-
-    <script src="https://unpkg.com/file-saver@2/dist/FileSaver.js"></script>
-    <script type="text/javascript">
-    if (typeof FileSaver == 'undefined') {
-        document.write(unescape(
-            "%3Cscript src='./js/dependencies/FileSaver.js' type='text/javascript'%3E%3C/script%3E"
-        ));
-    }
-    </script>
-
     <div id="app-wrap">
         <div id="loading-spinner">
             <!-- Loading spinner from <https://loading.io/css/>, licensed under CC0. -->
@@ -138,6 +98,51 @@
             </div>
         </div>
     </div>
+
+    <!-- Due to how this project is developed, I will not be using minified scripts (yet). -->
+
+    <!-- Minified React: "https://unpkg.com/react@17/umd/react.production.min.js" -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script type="text/javascript">
+    if (typeof React == 'undefined') {
+        console.warn("Importing fallback script: React");
+        document.write(unescape(
+            "%3Cscript src='./js/dependencies/react.development.js' type='text/javascript' crossorigin%3E%3C/script%3E"
+        ));
+    }
+    </script>
+
+    <!-- Minified ReactDOM: "https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" -->
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script type="text/javascript">
+    if (typeof ReactDOM == 'undefined') {
+        console.warn("Importing fallback script: React DOM");
+        document.write(unescape(
+            "%3Cscript src='./js/dependencies/react-dom.development.js' type='text/javascript' crossorigin%3E%3C/script%3E"
+        ));
+    }
+    </script>
+
+    <script src="https://unpkg.com/html2canvas@1.0.0-rc.7/dist/html2canvas.js"></script>
+    <script type="text/javascript">
+    if (typeof html2canvas === 'undefined') {
+        console.warn("Importing fallback script: html2canvas");
+        document.write(unescape(
+            "%3Cscript src='./js/dependencies/html2canvas.js' type='text/javascript'%3E%3C/script%3E"
+        ));
+    }
+    </script>
+
+    <script src="https://unpkg.com/file-saver@2/dist/FileSaver.js"></script>
+    <script type="text/javascript">
+    if (typeof FileSaver == 'undefined') {
+        console.warn("Importing fallback script: FileSaver");
+        document.write(unescape(
+            "%3Cscript src='./js/dependencies/FileSaver.js' type='text/javascript'%3E%3C/script%3E"
+        ));
+    }
+    </script>
+
     <script src="./js/index.js" type="module"></script>
 
 </body>

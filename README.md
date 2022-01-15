@@ -65,11 +65,11 @@ Beyond v2.x, the focus of the development will be on game math. Tentative roadma
 
     - Weapon moves and monster parts are selected from motion value tables and hitzone value tables (such as `Deathcream#1576`'s Weapon Attack Tables [[link](http://bit.ly/MHRWeaponAttackTables)] [[alternative link](https://docs.google.com/spreadsheets/d/e/2PACX-1vSMMtrWj7JH1-_Qr_xKb2lxZaZJ_Sq-ta43u6fLmpzVwqMfiTR-KqAFRDk6Zuw9WzM1sCgU9Th5lMoj/pubhtml)]). This data will be available in-app.
 
-    - Based on the user's selected benchmark, the app will display how much raw, elemental, and status damage is done.
+    - Based on the user's selected benchmark, the app will display how much real damage (raw, elemental, and status) is done.
 
     - Alternatively, the user can let the program analyze the best monster parts to attack.
 
-    - **Factoring in damage from poison will be difficult due to its time-dependence. (It should be noted that blast is time-independent, making it possible to model by counting stat buildup and blast procs.)**
+    - **Factoring in damage from poison will be difficult due to its time-dependence. (On the other hand, blast is time-independent, making it possible to model by counting stat buildup and blast procs.)**
 
 Server-side functionality is unlikely to be implemented. The entire app will remain 100% client-side.
 

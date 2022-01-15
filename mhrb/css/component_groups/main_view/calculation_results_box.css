@@ -25,15 +25,21 @@ div.calculation-results-spacer-box {
 
 div.calculation-stat-box {
     display: flex;
+    flex-direction: column;
+
+    background: var(--color-calculated-values--wrap-box);
+    font: var(--font-calculated-values--text);
+    padding: 0 10px 0 10px;
+    width: 100%;
+}
+div.calculation-stat-box-inner {
+    display: flex;
     align-items: center;
     justify-content: flex-start;
     flex-direction: row;
 
-    background: var(--color-calculated-values--wrap-box);
-    font: var(--font-calculated-values--text);
     height: 30px;
     width: 100%;
-    padding: 0 10px 0 10px;
 }
 
 div.calculation-stat-content-box {
@@ -123,7 +129,7 @@ div.calculation-sharpness-bar-stat {
 div.calculation-song-box {
     column-gap: 5px;
 
-    padding: 0 5px 0 5px;
+    padding-left: 5px;
 }
 div.calculation-song-icon-box {
     width: 38.78px;
