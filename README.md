@@ -31,35 +31,43 @@ I will also publish two versions of the app:
 
 If a new major update of Monster Hunter Rise is released, the new content will be released on the in-development version ASAP, and then released on the stable version when it's ready.
 
-### Future Release: v1.x
-
-Along with bug fixes, math adjustments, and minor improvements, I expect to implement defense calculations before v2.0.
-
 ### Future Release: v2.0
 
-**The second release of the app will be a codebase port. No new features are planned for v2.0 at this time, but will come with performance improvements that will ultimately pave the way for future features and sustainable development.**
+Updated builder for the Sunbreak expansion.
+
+### Future Release: v3.0
+
+**The second release of the app will be a codebase port. No new features are planned for v2.0 at this time, but will come with performance improvements and will ultimately pave the way for future features and sustainable development.**
 
 The app before v2.0 is a totally toolchainless codebase. This was done because I only want to introduce complexity as it is needed. Without a toolchain, the entire codebase is only dependent on the browser, and three front-end libraries (React, html2canvas, and FileSaver).
 
 v1.0 will allow me to reassess the project's needs, benchmark the app's performance, and experiment with different toolchain configurations, all with a fully-functional web app with all core features implemented.
 
-I expect the codebase to be ported to a fully Typescript codebase (either plain Typescript or TSX), with major things rewritten for modularity, type/logic safety, and for unit testing.
+I expect the codebase to be ported to a fully Typescript codebase (either plain Typescript or TSX), with major things rewritten for modularity, type/logic safety, and for unit testing, as well as address some glaring technical debt incurred during rapid development of v1.0.
 
 In addition to porting the codebase, I expect to optimize the graphics to reduce download sizes and implement efficient image preloading.
 
-### Future Release: v3.0 and Beyond
+*(NOTE: If time permits, I might do this codebase port as v2.0 instead, and update for Sunbreak as v3.0.)*
 
-**It is not guaranteed that I will be continuing adding features beyond v2.x. Anything written here is an indication of intent, if time allows.**
+### Future Release: v3.x
 
-Beyond v2.x, the focus of the development will be on game math. Tentative roadmap:
+Along with bug fixes, math adjustments, and minor improvements, I expect to implement defense calculations here.
 
-- v3.0: Build Search
+I don't want to do defense calculations and math improvements too early since it will make the Sunbreak update and codebase port releases take longer to develop.
+
+### Future Release: v4.0 and Beyond
+
+**It is not guaranteed that I will be continuing adding features beyond v3.x. Anything written here is an indication of intent, if time allows.**
+
+Beyond v3.x, the focus of the development will be on game math. Tentative roadmap:
+
+- v4.0: Build Search
 
     - Users will be able to let the app automatically come up with builds.
 
-    - v3.0 will first attempt to reimplement <https://mhrise.wiki-db.com/sim/?hl=en>. v3.1 and beyond will build on v3.0, adding addtional search constraints and features.
+    - v4.0 will first attempt to reimplement <https://mhrise.wiki-db.com/sim/?hl=en>. v4.1 and beyond will build on v4.0, adding addtional search constraints and features.
 
-- v4.0: Combat Modelling
+- v5.0: Combat Modelling
 
     - Users will be able to build a benchmark consisting of one or many weapon moves (or "Motion Values"), and one or many monster parts (or "Hitzone Values").
 

@@ -195,7 +195,7 @@ class RampageSkillSelection extends React.Component {
             return element("div",
                 {
                 // TODO: clipsafe doesn't work here. Might have to split clipsafe to clipsafeinner and clipsafeouter?
-                className: "equip-weapon-ramp-box equip-weapon-ramp-box-unselected stackouter",
+                className: "equip-weapon-special-mech-box equip-weapon-ramp-box-unselected stackouter",
                 onClick: (e) => {this.makeVisible();},
                 },
                 clipsafeSpan(text),
@@ -205,7 +205,7 @@ class RampageSkillSelection extends React.Component {
                     },
                     element("div",
                         {
-                        className: "equip-weapon-ramp-box equip-weapon-ramp-box-selected",
+                        className: "equip-weapon-special-mech-box equip-weapon-ramp-box-selected",
                         },
                         clipsafeSpan(text),
                     ),
@@ -216,7 +216,7 @@ class RampageSkillSelection extends React.Component {
             const c = (this.props.selectedRampSkillRO === null) ? " equip-weapon-unused-ramp-box" : "";
             return element("div",
                 {
-                className: "equip-weapon-ramp-box equip-weapon-ramp-box-unselected clipsafe" + c,
+                className: "equip-weapon-special-mech-box equip-weapon-ramp-box-unselected clipsafe" + c,
                 onClick: (e) => {this.makeVisible();},
                 },
                 clipsafeSpan(text),
@@ -228,7 +228,7 @@ class RampageSkillSelection extends React.Component {
 function DummyRampageSkillSelection(props) {
     return element("div",
         {
-        className: "equip-weapon-ramp-box",
+        className: "equip-weapon-special-mech-box",
         style: {visibility: "hidden"},
         },
         null
@@ -366,11 +366,11 @@ class EquipWeaponInfoBox extends React.Component {
             extraGroupElements.push(
                 element("div",
                     {
-                    className: "equip-weapon-ramps-group-box",
+                    className: "equip-weapon-special-mech-group-box",
                     },
                     element("div",
                         {
-                        className: "equip-weapon-ramps-group-box-inner",
+                        className: "equip-weapon-special-mech-group-box-inner",
                         },
                         ...groupElements
                     ),
@@ -401,12 +401,6 @@ class EquipWeaponInfoBox extends React.Component {
                     ...otherStatBoxes,
                 ),
                 ...extraGroupElements,
-                //element("div",
-                //    {
-                //    className: "equip-weapon-special-mech-group-box",
-                //    },
-                //    null,
-                //),
             ),
         )
     }

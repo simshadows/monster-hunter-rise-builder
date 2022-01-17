@@ -388,6 +388,26 @@ const hardcodedBowChargeShotTypes = [
     }],
 ];
 
+const hardcodedSpecialSelectionTypes = [
+    [1, {
+        name: "Silencer",
+        type: "lightbowgunmod",
+    }],
+    [2, {
+        name: "Long Barrel",
+        type: "lightbowgunmod",
+    }],
+
+    [4, {
+        name: "Shield",
+        type: "heavybowgunmod",
+    }],
+    [5, {
+        name: "Power Barrel",
+        type: "heavybowgunmod",
+    }],
+];
+
 // Now, we populate these maps.
 
 const gunlanceShellingTypesMap = new Map();
@@ -404,6 +424,8 @@ const insectGlaiveKinsectBonusesMap = new Map();
 
 const bowArcShotTypesMap = new Map();
 const bowChargeShotTypesMap = new Map();
+
+const specialSelectionTypesMap = new Map();
 
 function populate(hardcodedData, finalMap, additionalOps) {
     for (const [k, dataObj] of hardcodedData) {
@@ -470,6 +492,12 @@ populate(hardcodedBowChargeShotTypes, bowChargeShotTypesMap, (dataObj) => {
     assert(isNonEmptyStr(dataObj.id));
 });
 
+populate(hardcodedSpecialSelectionTypes, specialSelectionTypesMap, (dataObj) => {
+    assert(Number.isInteger(dataObj.id));
+    assert(isNonEmptyStr(dataObj.name));
+    assert(dataObj.type === "lightbowgunmod" || dataObj.type === "heavybowgunmod");
+});
+
 export {
     gunlanceShellingTypesMap,
 
@@ -485,5 +513,7 @@ export {
 
     bowArcShotTypesMap,
     bowChargeShotTypesMap,
+
+    specialSelectionTypesMap,
 };
 

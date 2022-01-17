@@ -121,12 +121,12 @@ div.equip-weapon-stat-content-wrap-box {
     background: var(--color-equip-weapon--stat-box);
 }
 
-div.equip-weapon-ramps-group-box {
+div.equip-weapon-special-mech-group-box {
     height: 25px;
     width: 100%;
     padding: 3px 0 3px 3px;
 }
-div.equip-weapon-ramps-group-box-inner {
+div.equip-weapon-special-mech-group-box-inner {
     display: flex;
     flex-direction: row;
     column-gap: 5px;
@@ -135,7 +135,7 @@ div.equip-weapon-ramps-group-box-inner {
     width: 100%;
 }
 
-div.equip-weapon-ramp-box {
+div.equip-weapon-special-mech-box {
     position: relative;
 
     display: flex;
@@ -235,6 +235,7 @@ div.ramp-skill-selection-table-body-cell-inheritance {
 
 /*** ***/
 
+/* Alternative version, unused for now
 div.equip-weapon-special-mech-group-box {
     display: flex;
     flex-direction: row;
@@ -244,6 +245,7 @@ div.equip-weapon-special-mech-group-box {
     width: 100%;
     padding: 3px;
 }
+*/
 
 div.equip-box {
     display: flex;

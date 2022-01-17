@@ -50,6 +50,7 @@ import {
     insectGlaiveKinsectBonusesMap,
     bowArcShotTypesMap,
     bowChargeShotTypesMap,
+    specialSelectionTypesMap,
 } from "./hardcoded_data/special_weapon_mechanics.js";
 
 const WEAPON_GS_PATH  = "./data/weapons_greatsword.json";
@@ -732,6 +733,10 @@ class GameData {
                     arcShotTypesMap: bowArcShotTypesMap,
                     chargeShotTypesMap: bowChargeShotTypesMap,
                 },
+            },
+            weaponSpecialSelections: {
+                array: Array.from(specialSelectionTypesMap.values()),
+                map: specialSelectionTypesMap,
             },
             weapons: {
                 array: GameData._makeWeaponsArray(weaponsMap),
