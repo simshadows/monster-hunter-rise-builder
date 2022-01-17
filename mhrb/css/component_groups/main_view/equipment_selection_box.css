@@ -148,24 +148,24 @@ div.equip-weapon-special-mech-box {
     background: var(--color-equip-weapon--ramp-box);
     color: var(--color-equip-weapon--ramp-text);
 }
-div.equip-weapon-ramp-box-unselected {
+div.equip-weapon-special-mech-box-unselected {
     cursor: pointer;
 }
-div.equip-weapon-ramp-box-unselected:hover {
+div.equip-weapon-special-mech-box-unselected:hover {
     background: var(--color-equip-weapon--ramp-box-hover);
     color: var(--color-text-hover);
 }
-div.equip-weapon-ramp-box-selected {
+div.equip-weapon-special-mech-box-selected {
     width: 100%;
     background: var(--color-equip-weapon--ramp-box);
     border: 1px solid var(--color-contextbox-common--border);
 }
-div.equip-weapon-unused-ramp-box > span { /* TODO: We shouldn't need to select inner span */
+div.equip-weapon-unused-special-mech-box > span { /* TODO: We shouldn't need to select inner span */
     /* color: var(--color-equip-weapon--ramp-unused-text); */ /* I can't seem to make this look good */
     /* font-style: italic; */
 }
 
-div.equip-weapon-ramp-selection-box {
+div.equip-weapon-special-mech-selection-box {
     position: absolute;
     left: 0;
     top: calc(100% + 4px);
@@ -181,11 +181,11 @@ div.equip-weapon-ramp-selection-box {
 
     overflow-y: auto;
 }
-div.equip-weapon-ramp-selection-box::-webkit-scrollbar {
+div.equip-weapon-special-mech-selection-box::-webkit-scrollbar {
     width: 10px;
     height: 10px;
 }
-div.equip-weapon-ramp-selection-box::-webkit-scrollbar-thumb {
+div.equip-weapon-special-mech-selection-box::-webkit-scrollbar-thumb {
     background-color: var(--color-equip-weapon--ramp-selection-box-scrollbar);
 }
 

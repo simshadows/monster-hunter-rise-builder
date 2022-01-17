@@ -151,6 +151,9 @@ class MainView extends React.Component {
     handleSelectRampSkill(position, rampSkillID) {
         this.props.handleSelectRampSkill(position, rampSkillID);
     }
+    handleSelectWeaponSpecialSelection(specialSelectionID) {
+        this.props.handleSelectWeaponSpecialSelection(specialSelectionID);
+    }
 
     render() {
         check.isObj(this.props.buildRenderingProps);
@@ -168,6 +171,7 @@ class MainView extends React.Component {
         check.isFunction(this.props.handleClickDecorationSelect);
 
         check.isFunction(this.props.handleSelectRampSkill);
+        check.isFunction(this.props.handleSelectWeaponSpecialSelection);
 
         check.isFunction(this.props.handleRemovePiece);
         check.isFunction(this.props.handleRemoveDeco);
@@ -216,6 +220,7 @@ class MainView extends React.Component {
                             handleClickDecorationSelect: (...args) => {this.props.handleClickDecorationSelect(...args)},
 
                             handleSelectRampSkill: (...args) => {this.handleSelectRampSkill(...args);},
+                            handleSelectWeaponSpecialSelection: (...args) => {this.handleSelectWeaponSpecialSelection(...args);},
 
                             handleRemovePiece: (slotID) => {this.props.handleRemovePiece(slotID);},
                             handleRemoveDeco: (slotID, decoSlotID) => {this.props.handleRemoveDeco(slotID, decoSlotID);},

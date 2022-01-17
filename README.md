@@ -51,7 +51,10 @@ In addition to porting the codebase, I expect to optimize the graphics to reduce
 
 ### Future Release: v3.x
 
-Along with bug fixes, math adjustments, and minor improvements, I expect to implement defense calculations here.
+Along with bug fixes, math adjustments, and minor improvements, I expect to implement:
+
+- defense calculations, and
+- responsive UI.
 
 I don't want to do defense calculations and math improvements too early since it will make the Sunbreak update and codebase port releases take longer to develop.
 

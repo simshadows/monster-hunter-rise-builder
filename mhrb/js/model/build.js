@@ -6,6 +6,7 @@
 import {
     isObj,
     isInt,
+    isIntOrNull,
     isNonEmptyStr,
     isStrOrNull,
     isArr,
@@ -26,6 +27,9 @@ class Build {
     _validateState() {
         assert(isObj(this._weaponRO)); // Weapon cannot be null!!!
         assert(isInt(this._weaponRO.affinity)); // Spot check for structure
+
+        assert((this._weaponSpecialSelectionRO === null)
+               || this._weaponSpecialSelectionOptions.includes(this._weaponSpecialSelectionRO));
 
         for (const [slotID, armourPieceRO] of Object.entries(this._armourRO)) {
             if (armourPieceRO != null) { // armourPieceRO allowed to be null
@@ -83,6 +87,9 @@ class Build {
         this._weaponRO = null;
         this._weaponRampSkillSelections = null;
 
+        this._weaponSpecialSelectionOptions = [];
+        this._weaponSpecialSelectionRO = null; // A single object, or null. Currently only used for bowgun mods.
+
         // TODO: Come up with a better name for RO data objects. This is confusing since _armourRO
         //       is actually a "map" of the actual RO data objects.
         this._armourRO = {
@@ -129,6 +136,19 @@ class Build {
 
         this._weaponRO = weaponObj;
         this._weaponRampSkillSelections = this._initWeaponRampSkillSelections();
+
+        this._weaponSpecialSelectionOptions = (()=>{
+            const arr = db.readonly.weaponSpecialSelections.array;
+            if (weaponObj.category === "lightbowgun") {
+                return arr.filter((x) => (x.type === "lightbowgunmod"));
+            } else if (weaponObj.category === "heavybowgun") {
+                return arr.filter((x) => (x.type === "heavybowgunmod"));
+            } else {
+                return [];
+            }
+        })();
+        this._weaponSpecialSelectionRO = null;
+
         this._decorationsRO.weapon = this._generateEmptyDecoObj(weaponObj.decoSlots);
     }
     setWeapon(...args) {
@@ -149,8 +169,22 @@ class Build {
         if (rampageSkillID === null) {
             this._weaponRampSkillSelections[position] = null;
         } else {
-            assert(db.readonly.weaponRampSkills.longIdsMap.has(rampageSkillID));
             this._weaponRampSkillSelections[position] = db.readonly.weaponRampSkills.longIdsMap.get(rampageSkillID);
+            assert(this._weaponRampSkillSelections[position] !== undefined);
+        }
+
+        this._validateState();
+        return this;
+    }
+    setWeaponSpecialSelection(db, specialSelectionID) {
+        assert(isObj(db));
+        assert(isIntOrNull(specialSelectionID));
+
+        if (specialSelectionID === null) {
+            this._weaponSpecialSelectionRO = null;
+        } else {
+            this._weaponSpecialSelectionRO = db.readonly.weaponSpecialSelections.map.get(specialSelectionID);
+            assert(this._weaponSpecialSelectionRO !== undefined);
         }
 
         this._validateState();
@@ -271,6 +305,9 @@ class Build {
     }
     getRampSkills(db) {
         return this._getRampSkillSelectionsArray(db).filter((element) => {return (element !== null)});
+    }
+    getWeaponSpecialSelectionRO() {
+        return this._weaponSpecialSelectionRO;
     }
 
     getArmourROs() {
@@ -442,6 +479,9 @@ class Build {
                         rampSkillSelectionsArray: this._getRampSkillSelectionsArray(db),
                         rampSkillOptionsArray:    this._weaponRO.rampSkills,
                         decosArray:               this._getDecoArrayRenderingProp("weapon"),
+
+                        specialSelection:             this._weaponSpecialSelectionRO,
+                        specialSelectionOptionsArray: this._weaponSpecialSelectionOptions,
 
                         iconImgPath: this._weaponRO.iconImgPath,
                     },

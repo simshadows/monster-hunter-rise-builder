@@ -141,6 +141,14 @@ class MHRBuilderAppInner extends React.Component {
             });
         writeBuildToQueryString(this.state.build);
     }
+    handleSelectWeaponSpecialSelection(specialSelectionID) {
+        check.isIntOrNull(specialSelectionID);
+
+        this.setState({
+                build: this.state.build.setWeaponSpecialSelection(this.props.rawDataRO, specialSelectionID),
+            });
+        writeBuildToQueryString(this.state.build);
+    }
 
     handleSelectArmourPiece(armourPieceRO) {
         if (armourPieceRO != null) { // armourPieceRO allowed to be null
@@ -280,6 +288,7 @@ class MHRBuilderAppInner extends React.Component {
                 handleClickDecorationSelect: (...args) => {this.handleSwitchToDecorationSelect(...args);},
 
                 handleSelectRampSkill: (...args) => {this.handleSelectRampSkill(...args);},
+                handleSelectWeaponSpecialSelection: (...args) => {this.handleSelectWeaponSpecialSelection(...args);},
 
                 handleRemovePiece: (slotID) => {this.handleRemovePiece(slotID);},
                 handleRemoveDeco: (slotID, decoSlotID) => {this.handleRemoveDeco(slotID, decoSlotID);},

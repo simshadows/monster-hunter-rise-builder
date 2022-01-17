@@ -71,6 +71,9 @@ class EquipmentSelectionsBox extends React.Component {
     handleSelectRampSkill(position, rampSkillID) {
         this.props.handleSelectRampSkill(position, rampSkillID);
     }
+    handleSelectWeaponSpecialSelection(specialSelectionID) {
+        this.props.handleSelectWeaponSpecialSelection(specialSelectionID);
+    }
 
     handleRemovePiece(slotID) {
         this.props.handleRemovePiece(slotID);
@@ -93,6 +96,7 @@ class EquipmentSelectionsBox extends React.Component {
         check.isFunction(this.props.handleClickDecorationSelect);
 
         check.isFunction(this.props.handleSelectRampSkill);
+        check.isFunction(this.props.handleSelectWeaponSpecialSelection);
 
         check.isFunction(this.props.handleRemovePiece);
         check.isFunction(this.props.handleRemoveDeco);
@@ -122,6 +126,7 @@ class EquipmentSelectionsBox extends React.Component {
                 handleClickDecorationSelect: (decoSlotID, maxDecoSlotSize) => {this.handleClickDecorationSelect("weapon", decoSlotID, maxDecoSlotSize);},
                 handleClickDecorationRemove: (decoSlotID) => {this.props.handleRemoveDeco("weapon", decoSlotID);},
                 handleSelectRampSkill: (...args) => {this.handleSelectRampSkill(...args);},
+                handleSelectSpecialSelection: (...args) => {this.handleSelectWeaponSpecialSelection(...args);},
                 },
                 null,
             ),

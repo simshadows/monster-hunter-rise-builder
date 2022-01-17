@@ -140,7 +140,6 @@ class RampageSkillSelectionTable extends React.Component {
             null,
         );
     }
-
 }
 
 class RampageSkillSelection extends React.Component {
@@ -169,7 +168,7 @@ class RampageSkillSelection extends React.Component {
 
         return element("div",
             {
-            className: "equip-weapon-ramp-selection-box hide-from-buildcard",
+            className: "equip-weapon-special-mech-selection-box hide-from-buildcard",
             //onClick: (e) => {this.makeVisible();}, // Not needed because onClick is already listened by parent
             },
             element(RampageSkillSelectionTable,
@@ -195,7 +194,7 @@ class RampageSkillSelection extends React.Component {
             return element("div",
                 {
                 // TODO: clipsafe doesn't work here. Might have to split clipsafe to clipsafeinner and clipsafeouter?
-                className: "equip-weapon-special-mech-box equip-weapon-ramp-box-unselected stackouter",
+                className: "equip-weapon-special-mech-box equip-weapon-special-mech-box-unselected stackouter",
                 onClick: (e) => {this.makeVisible();},
                 },
                 clipsafeSpan(text),
@@ -205,7 +204,7 @@ class RampageSkillSelection extends React.Component {
                     },
                     element("div",
                         {
-                        className: "equip-weapon-special-mech-box equip-weapon-ramp-box-selected",
+                        className: "equip-weapon-special-mech-box equip-weapon-special-mech-box-selected",
                         },
                         clipsafeSpan(text),
                     ),
@@ -216,7 +215,7 @@ class RampageSkillSelection extends React.Component {
             const c = (this.props.selectedRampSkillRO === null) ? " equip-weapon-unused-ramp-box" : "";
             return element("div",
                 {
-                className: "equip-weapon-special-mech-box equip-weapon-ramp-box-unselected clipsafe" + c,
+                className: "equip-weapon-special-mech-box equip-weapon-special-mech-box-unselected clipsafe" + c,
                 onClick: (e) => {this.makeVisible();},
                 },
                 clipsafeSpan(text),
@@ -225,7 +224,155 @@ class RampageSkillSelection extends React.Component {
     }
 }
 
-function DummyRampageSkillSelection(props) {
+class SpecialSelectionTable extends React.Component {
+
+    // Logically Static
+    _cspecGetRowContent(specialSelectionRO) {
+        return [
+            element("div",
+                {
+                className: "ramp-skill-selection-table-body-cell-name",
+                },
+                (specialSelectionRO === null) ? "---" : specialSelectionRO.name,
+            ),
+        ];
+    }
+
+    _cspecHighlightConditionFn(specialSelectionRO) {
+        return (specialSelectionRO !== null)
+               && (this.props.currentSelectedRampSkillRO !== null)
+               && (specialSelectionRO.id === this.props.currentSelectedRampSkillRO.id);
+    }
+
+    handleRowClick(specialSelectionRO) {
+        const specialSelectionID = (specialSelectionRO === null) ? null : specialSelectionRO.id;
+        this.props.handleRowClick(specialSelectionID);
+    }
+
+    render() {
+        check.isArr(this.props.dataArray);
+        check.isObjOrNull(this.props.currentSelectedRampSkillRO);
+        check.isFunction(this.props.handleRowClick);
+
+        // We add the remove-item row
+        const dataArray = [null, ...this.props.dataArray];
+
+        const cspecBodyRowFormat = [
+            // Markup Class
+            "",
+        ];
+
+        return element(GenericTable,
+            {
+            renderHeadRow: false,
+
+            dataArray:                 dataArray,
+            handleRowClick:            (specialSelectionRO) => {this.handleRowClick(specialSelectionRO)},
+            cspecBodyRowFormat:        cspecBodyRowFormat,
+            cspecGetRowContent:        (specialSelectionRO) => (this._cspecGetRowContent(specialSelectionRO)),
+            cspecHighlightConditionFn: (specialSelectionRO) => (this._cspecHighlightConditionFn(specialSelectionRO)),
+
+            implementationClassNames: {
+                    wrapDiv: "ramp-skill-selection-table-wrap-box",
+                    table:   "ramp-skill-selection-table",
+
+                    tbody:                "ramp-skill-selection-table-body",
+                    trBodyRow:            "ramp-skill-selection-table-body-row",
+                    trBodyRowHighlighted: "ramp-skill-selection-table-body-row-highlighted",
+                    thBodyCell:           "ramp-skill-selection-table-body-cell",
+                },
+            },
+            null,
+        );
+    }
+}
+
+class SpecialSelection extends React.Component {
+    constructor(props) {
+        super(props);
+        this._ttl = 0;
+        this.state = {
+                ttl: this._ttl,
+            };
+    }
+
+    ttlDecr(v) {
+        doTtlDecr(this, v);
+    }
+    makeVisible() {
+        setTtl(this, 2);
+    }
+
+    handleSelectSpecialSelection(specialSelectionID) {
+        setTtl(this, 0);
+        this.props.handleSelectSpecialSelection(specialSelectionID);
+    }
+
+    _renderSpecialSelectionMenu() {
+        check.isFunction(this.props.handleSelectSpecialSelection);
+
+        return element("div",
+            {
+            className: "equip-weapon-special-mech-selection-box hide-from-buildcard",
+            //onClick: (e) => {this.makeVisible();}, // Not needed because onClick is already listened by parent
+            },
+            element(SpecialSelectionTable,
+                {
+                    dataArray: this.props.specialSelectionOptions,
+                    currentSelectedRampSkillRO: this.props.specialSelectionRO,
+                    handleRowClick: (...args) => {this.handleSelectSpecialSelection(...args)},
+                },
+                null,
+            ),
+        );
+    }
+
+    render() {
+        check.isObjOrNull(this.props.specialSelectionRO);
+        assert(check.isArr(this.props.specialSelectionOptions) && (this.props.specialSelectionOptions.length > 0));
+
+        console.log(this.props.specialSelectionRO);
+        console.log(this.props.specialSelectionOptions);
+
+        check.isFunction(this.props.handleSelectSpecialSelection);
+
+        const text = (this.props.specialSelectionRO === null) ? "No Mod" : this.props.specialSelectionRO.name;
+
+        if (this.state.ttl > 0) {
+            return element("div",
+                {
+                // TODO: clipsafe doesn't work here. Might have to split clipsafe to clipsafeinner and clipsafeouter?
+                className: "equip-weapon-special-mech-box equip-weapon-special-mech-box-unselected stackouter",
+                onClick: (e) => {this.makeVisible();},
+                },
+                clipsafeSpan(text),
+                element("div",
+                    {
+                    className: "stackinner hide-from-buildcard",
+                    },
+                    element("div",
+                        {
+                        className: "equip-weapon-special-mech-box equip-weapon-special-mech-box-selected",
+                        },
+                        clipsafeSpan(text),
+                    ),
+                ),
+                this._renderSpecialSelectionMenu(),
+            );
+        } else {
+            const c = (this.props.specialSelectionRO === null) ? " equip-weapon-unused-special-mech-box" : "";
+            return element("div",
+                {
+                className: "equip-weapon-special-mech-box equip-weapon-special-mech-box-unselected clipsafe" + c,
+                onClick: (e) => {this.makeVisible();},
+                },
+                clipsafeSpan(text),
+            );
+        }
+    }
+}
+
+function DummySpecialMechSelection(props) {
     return element("div",
         {
         className: "equip-weapon-special-mech-box",
@@ -247,6 +394,9 @@ class EquipWeaponInfoBox extends React.Component {
 
     handleSelectRampSkill(position, rampSkillID) {
         this.props.handleSelectRampSkill(position, rampSkillID);
+    }
+    handleSelectSpecialSelection(specialSelectionID) {
+        this.props.handleSelectSpecialSelection(specialSelectionID);
     }
 
     _renderStatBoxEmpty() {
@@ -295,6 +445,8 @@ class EquipWeaponInfoBox extends React.Component {
         assert(weaponRO.name.length > 0);
         check.isArr(weaponRO.rampSkillSelectionsArray);
         check.isArr(weaponRO.rampSkillOptionsArray);
+        assert(weaponRO.specialSelection !== undefined);
+        check.isArr(weaponRO.specialSelectionOptionsArray);
         // TODO: Sharpness?
 
         check.isInt(perf.weaponAttack);
@@ -306,6 +458,7 @@ class EquipWeaponInfoBox extends React.Component {
         assert(check.isMap(perf.weaponEleStat));
 
         check.isFunction(this.props.handleSelectRampSkill);
+        check.isFunction(this.props.handleSelectSpecialSelection);
 
         const otherStatBoxes = [];
 
@@ -349,6 +502,36 @@ class EquipWeaponInfoBox extends React.Component {
         }
 
         const extraGroupElements = [];
+
+        if (weaponRO.specialSelectionOptionsArray.length > 0) {
+            const ref = React.createRef();
+            extraGroupElements.push(
+                element("div",
+                    {
+                    className: "equip-weapon-special-mech-group-box",
+                    },
+                    element("div",
+                        {
+                        className: "equip-weapon-special-mech-group-box-inner",
+                        },
+                        element(
+                            SpecialSelection,
+                            {
+                                ref: ref,
+                                specialSelectionRO: weaponRO.specialSelection,
+                                specialSelectionOptions: weaponRO.specialSelectionOptionsArray,
+                                handleSelectSpecialSelection: (...args) => {this.handleSelectSpecialSelection(...args);},
+                            },
+                            null,
+                        ),
+                        element(DummySpecialMechSelection, null, null),
+                        element(DummySpecialMechSelection, null, null),
+                    ),
+                ),
+            );
+            this.myRefs["specialSelections"] = ref;
+        }
+
         for (const groupElements of rampageSkillBoxes) {
             if (groupElements.length === 0) continue;
 
@@ -356,7 +539,7 @@ class EquipWeaponInfoBox extends React.Component {
             const numDummies = 3 - groupElements.length;
             for (let i = 0; i < numDummies; ++i) {
                 groupElements.push(
-                    element(DummyRampageSkillSelection,
+                    element(DummySpecialMechSelection,
                         null,
                         null,
                     )
@@ -421,6 +604,9 @@ class WeaponSelection extends React.Component {
     handleSelectRampSkill(position, rampSkillID) {
         this.props.handleSelectRampSkill(position, rampSkillID);
     }
+    handleSelectSpecialSelection(specialSelectionID) {
+        this.props.handleSelectSpecialSelection(specialSelectionID);
+    }
 
     render() {
         check.isObj(this.props.weaponRORenderingProps);
@@ -457,6 +643,7 @@ class WeaponSelection extends React.Component {
                         weaponRORenderingProps: this.props.weaponRORenderingProps,
                         buildPerformanceValues: this.props.buildPerformanceValues,
                         handleSelectRampSkill: (...args) => {this.handleSelectRampSkill(...args);},
+                        handleSelectSpecialSelection: (...args) => {this.handleSelectSpecialSelection(...args);},
                     },
                     null,
                 ),
