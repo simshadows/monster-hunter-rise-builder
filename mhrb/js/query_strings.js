@@ -60,12 +60,23 @@ export function getBuildFromQueryString(db) {
     const rampSkillsStr = getQueryValue("b");
     processFlexibleLength(rampSkillsStr, readDecomposedRampSkillsStr);
 
-    const taliStr = getQueryValue("c");
+    // IMPORTANT: Parsing weapon special selection is dependent on first parsing the weapon.
+    const weaponSpecialSelectionStr = getQueryValue("c");
+    processFlexibleLength(weaponSpecialSelectionStr, readDecomposedWeaponSpecialSelectionStr);
+
+    // "d" is reserved for further weapon customization, in case we get something
+    // similar to Safi weapons from Monster Hunter World.
+
+    const taliStr = getQueryValue("e");
     processIfQueryIsValid(taliStr, 7, readDecomposedTalismanStr);
 
-    // IMPORTANT: Parsing decorations must be done last due to dependence on everything else.
-    const decosStr = getQueryValue("d");
+    // IMPORTANT: Parsing decorations must be done almost last due to dependence on most things.
+    const decosStr = getQueryValue("f");
     processIfQueryIsValid(decosStr, (7 * 3), readDecomposedDecosStr); // 7 gear slots * 3 deco slots each
+
+    // Switch skills might take on "g"
+
+    // Further new customization options may take on letters "h" and beyond.
 
     return build;
 }
@@ -107,6 +118,55 @@ function readDecomposedBasicEquipsStr(arr, db, build) {
     }
 }
 
+function readDecomposedRampSkillsStr(arr, db, build) {
+    const weaponRO = build.getWeaponObjRO();
+
+    if (arr.length > weaponRO.rampSkills.length) {
+        console.warn("Invalid rampage skills input length.");
+        return;
+    }
+
+    function op(rampSkillShortID, position) {
+        const optionsSubArray = weaponRO.rampSkills[position];
+        if (optionsSubArray === undefined) return;
+
+        assert((optionsSubArray instanceof Array) && (optionsSubArray.length > 0));
+        for (const [rampSkillRO, inheritedFromWeaponID] of optionsSubArray) {
+            if (rampSkillShortID === rampSkillRO.shortId) {
+                // TODO: It's weird that we need the query the database again for the rampage skill.
+                build.setRampageSkill(db, position, rampSkillRO.id);
+            }
+        }
+    }
+
+    for (const [i, rampSkillID] of arr.entries()) {
+        op(rampSkillID, i);
+    }
+}
+
+function readDecomposedWeaponSpecialSelectionStr(arr, db, build) {
+    const weaponRO = build.getWeaponObjRO();
+
+    const isBowgun = (weaponRO.category === "lightbowgun") || (weaponRO.category === "heavybowgun");
+    if ((arr.length > 1) || (!isBowgun && (arr.length != 0))) {
+        console.warn("Invalid special sepection input length.");
+        return;
+    }
+
+    if (!isBowgun) return; // Nothing to do
+
+    const specialSelectionID = parseInt(arr[0]);
+    const specialSelectionRO = db.readonly.weaponSpecialSelections.map.get(specialSelectionID);
+    if (specialSelectionRO !== undefined) {
+        const expectedType = weaponRO.category + "mod";
+        if (specialSelectionRO.type === expectedType) {
+            build.setWeaponSpecialSelection(db, specialSelectionID);
+        } else {
+            console.warn("Parsed a special selection string, but weapon category is incompatible with it.");
+        }
+    }
+}
+
 function readDecomposedTalismanStr(arr, db, build) {
     const skill0ShortID = arr[0];
     const skill1ShortID = arr[1];
@@ -138,32 +198,6 @@ function readDecomposedTalismanStr(arr, db, build) {
     op2(0, decoSlot0);
     op2(1, decoSlot1);
     op2(2, decoSlot2);
-}
-
-function readDecomposedRampSkillsStr(arr, db, build) {
-    const weaponRO = build.getWeaponObjRO();
-
-    if (arr.length > weaponRO.rampSkills.length) {
-        console.warn("Invalid rampage skills input length.");
-        return;
-    }
-
-    function op(rampSkillShortID, position) {
-        const optionsSubArray = weaponRO.rampSkills[position];
-        if (optionsSubArray === undefined) return;
-
-        assert((optionsSubArray instanceof Array) && (optionsSubArray.length > 0));
-        for (const [rampSkillRO, inheritedFromWeaponID] of optionsSubArray) {
-            if (rampSkillShortID === rampSkillRO.shortId) {
-                // TODO: It's weird that we need the query the database again for the rampage skill.
-                build.setRampageSkill(db, position, rampSkillRO.id);
-            }
-        }
-    }
-
-    for (const [i, rampSkillID] of arr.entries()) {
-        op(rampSkillID, i);
-    }
 }
 
 function readDecomposedDecosStr(arr, db, build) {
@@ -210,6 +244,7 @@ export function writeBuildToQueryString(build) {
     for (let i = 0; i < weaponRO.rampSkills.length; ++i) {
         rampSkills.push(build.getRampSkill(i));
     }
+    const weaponSpecialSelectionRO = build.getWeaponSpecialSelectionRO();
 
     const talismanSkillsRO = build.getTalismanSkills();
     const talismanSlotsRO = build.getTalismanDecoSlots();
@@ -236,6 +271,8 @@ export function writeBuildToQueryString(build) {
             }
             return tmp.join(SPLIT_CHAR);
         })();
+
+    const weaponSpecialSelectionStr = (weaponSpecialSelectionRO === null) ? "" : weaponSpecialSelectionRO.id.toString();
     
     const taliStr = [
             // Talisman skills
@@ -274,8 +311,9 @@ export function writeBuildToQueryString(build) {
     updateQueryKeys(new Map([
         ["a", basicEquipsStr],
         ["b", rampSkillsStr],
-        ["c", taliStr],
-        ["d", decosStr],
+        ["c", weaponSpecialSelectionStr],
+        ["e", taliStr],
+        ["f", decosStr],
     ]));
 }
 

@@ -398,11 +398,11 @@ const hardcodedSpecialSelectionTypes = [
         type: "lightbowgunmod",
     }],
 
-    [4, {
+    [3, {
         name: "Shield",
         type: "heavybowgunmod",
     }],
-    [5, {
+    [4, {
         name: "Power Barrel",
         type: "heavybowgunmod",
     }],
