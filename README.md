@@ -2,9 +2,18 @@
 
 A web-based build calculator for Monster Hunter Rise.
 
-I'm currently hosting it here: <https://monsterhunter.simshadows.com/mhrb/>
-
 This project was inspired by Honey's [MHW build calculator](https://honeyhunterworld.com/mhwbi/).
+
+## Where can I access this website?
+
+I'm currently hosting it at:
+
+- <https://monsterhunter.simshadows.com/mhrb/> (stable version)
+- <https://monsterhunter-dev.simshadows.com/mhrb/> (unstable/development version)
+
+Please use and link to the stable version where possible.
+
+Only use the unstable/development version if you're interested in using features unavailable in the stable version (e.g. for new armour pieces, or to try out new features).
 
 ## How do I host this myself?
 
@@ -21,15 +30,7 @@ python3 -m http.server
 
 ### Future Release: v1.0
 
-**The first release of the app will be a minimally-complete builder app with complete EFR/EFE/EFS calculations, bowgun ammo performance, and other key weapon mechanics. v1.0 will exclude defense calculations.**
-
-I will also publish two versions of the app:
-
-- A stable production version at <https://monsterhunter.simshadows.com/mhrb/> that is updated with every major patch or bugfix, and
-
-- An in-development version that will frequently break and is updated to the latest version available (likely at <https://monsterhunter-dev.simshadows.com/mhrb/>).
-
-If a new major update of Monster Hunter Rise is released, the new content will be released on the in-development version ASAP, and then released on the stable version when it's ready.
+The first release of the app will be a minimally-complete builder app with complete EFR/EFE/EFS calculations, bowgun ammo performance, and other key weapon mechanics. v1.0 will exclude defense calculations.
 
 ### Future Release: v2.0
 
