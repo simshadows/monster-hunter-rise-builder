@@ -53,6 +53,7 @@ In addition to porting the codebase, I expect to optimize the graphics to reduce
 
 Along with bug fixes, math adjustments, and minor improvements, I expect to implement:
 
+- key UI improvements (e.g. talisman configuration screen),
 - defense calculations, and
 - responsive UI.
 
