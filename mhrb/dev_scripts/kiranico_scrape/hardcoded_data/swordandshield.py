@@ -227,12 +227,12 @@ HARDCODED_SNS_SPEC = [
         ("Hi Ninja Sword", "43b"),
     ]),
     ("Rampage Tree", None, [
-        ("Rampage Sword I"  , "44a"),
-        ("Rampage Sword II" , "44b"),
-        ("Rampage Sword III", "44c"),
-        ("Rampage Sword IV" , "44d"),
-        ("Rampage Sword V"  , "44e"),
-        ("Rampage Sword S"  , "44f"),
+        ("Rampage Sword I"  , "ra"),
+        ("Rampage Sword II" , "rb"),
+        ("Rampage Sword III", "rc"),
+        ("Rampage Sword IV" , "rd"),
+        ("Rampage Sword V"  , "re"),
+        ("Rampage Sword S"  , "rf"),
     ]),
 ]
 

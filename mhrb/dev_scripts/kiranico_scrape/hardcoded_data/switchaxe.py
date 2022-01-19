@@ -224,12 +224,12 @@ HARDCODED_SA_SPEC = [
         ("Schale Batis", "41c"),
     ]),
     ("Rampage Tree", None, [
-        ("Rampage Slicer I"  , "42a"),
-        ("Rampage Slicer II" , "42b"),
-        ("Rampage Slicer III", "42c"),
-        ("Rampage Slicer IV" , "42d"),
-        ("Rampage Slicer V"  , "42e"),
-        ("Rampage Slicer S"  , "42f"),
+        ("Rampage Slicer I"  , "ra"),
+        ("Rampage Slicer II" , "rb"),
+        ("Rampage Slicer III", "rc"),
+        ("Rampage Slicer IV" , "rd"),
+        ("Rampage Slicer V"  , "re"),
+        ("Rampage Slicer S"  , "rf"),
     ]),
 ]
 

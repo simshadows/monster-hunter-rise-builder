@@ -218,12 +218,12 @@ HARDCODED_DB_SPEC = [
         ("Perfected Dango" , "41c"),
     ]),
     ("Rampage Tree", None, [
-        ("Rampage Twinblades I"  , "42a"),
-        ("Rampage Twinblades II" , "42b"),
-        ("Rampage Twinblades III", "42c"),
-        ("Rampage Twinblades IV" , "42d"),
-        ("Rampage Twinblades V"  , "42e"),
-        ("Rampage Twinblades S"  , "42f"),
+        ("Rampage Twinblades I"  , "ra"),
+        ("Rampage Twinblades II" , "rb"),
+        ("Rampage Twinblades III", "rc"),
+        ("Rampage Twinblades IV" , "rd"),
+        ("Rampage Twinblades V"  , "re"),
+        ("Rampage Twinblades S"  , "rf"),
     ]),
 ]
 

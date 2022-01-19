@@ -118,7 +118,7 @@ for (weapon_category, spec_subdict) in data_spec.items():
             name = obj["name"]
 
             if name not in spec_subdict:
-                raise ValueError(f"Weapon {name} present in data file, but not in the hardcoded spec.")
+                raise ValueError(f"Weapon {name} ({weapon_category}) present in data file, but not in the hardcoded spec.")
 
             weapon_id = spec_subdict[name]["id"]
             rarity = obj["rarity"]

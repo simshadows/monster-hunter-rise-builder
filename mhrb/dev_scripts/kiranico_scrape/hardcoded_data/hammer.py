@@ -230,12 +230,12 @@ HARDCODED_H_SPEC = [
         ("Jack-'o-lantern King", "43c"),
     ]),
     ("Rampage Tree", None, [
-        ("Rampage Hammer I"  , "44a"),
-        ("Rampage Hammer II" , "44b"),
-        ("Rampage Hammer III", "44c"),
-        ("Rampage Hammer IV" , "44d"),
-        ("Rampage Hammer V"  , "44e"),
-        ("Rampage Hammer S"  , "44f"),
+        ("Rampage Hammer I"  , "ra"),
+        ("Rampage Hammer II" , "rb"),
+        ("Rampage Hammer III", "rc"),
+        ("Rampage Hammer IV" , "rd"),
+        ("Rampage Hammer V"  , "re"),
+        ("Rampage Hammer S"  , "rf"),
     ]),
 ]
 

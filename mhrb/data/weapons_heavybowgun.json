@@ -2613,7 +2613,7 @@
         }
     },
     "Rampage Tree": {
-        "37a": {
+        "ra": {
             "rarity": 4,
             "endlineTag": "",
 
@@ -2651,7 +2651,7 @@
                 ]
             ]
         },
-        "37b": {
+        "rb": {
             "rarity": 5,
             "endlineTag": "",
 
@@ -2696,7 +2696,7 @@
                 ]
             ]
         },
-        "37c": {
+        "rc": {
             "rarity": 5,
             "endlineTag": "",
 
@@ -2715,9 +2715,9 @@
                     ["recoil_down_boost", ""],
                     ["reload_speed_boost", ""],
                     ["steadiness_boost", ""],
-                    ["attack_boost_1", "37b"],
-                    ["affinity_boost_1", "37b"],
-                    ["defense_boost_1", "37b"]
+                    ["attack_boost_1", "rb"],
+                    ["affinity_boost_1", "rb"],
+                    ["defense_boost_1", "rb"]
                 ],
                 [
                     ["attack_surge", ""],
@@ -2747,7 +2747,7 @@
                 ]
             ]
         },
-        "37d": {
+        "rd": {
             "rarity": 6,
             "endlineTag": "",
 
@@ -2766,9 +2766,9 @@
                     ["recoil_down_boost", ""],
                     ["reload_speed_boost", ""],
                     ["steadiness_boost", ""],
-                    ["attack_boost_1", "37b"],
-                    ["affinity_boost_1", "37b"],
-                    ["defense_boost_1", "37b"]
+                    ["attack_boost_1", "rb"],
+                    ["affinity_boost_1", "rb"],
+                    ["defense_boost_1", "rb"]
                 ],
                 [
                     ["attack_surge", ""],
@@ -2780,10 +2780,10 @@
                     ["spread_effect_2", ""],
                     ["shrapnel_effect_2", ""],
                     ["stickycluster_effect_1", ""],
-                    ["add_normal_ammo_1", "37c"],
-                    ["pierce_effect_1", "37c"],
-                    ["spread_effect_1", "37c"],
-                    ["shrapnel_effect_1", "37c"]
+                    ["add_normal_ammo_1", "rc"],
+                    ["pierce_effect_1", "rc"],
+                    ["spread_effect_1", "rc"],
+                    ["shrapnel_effect_1", "rc"]
                 ],
                 [
                     ["fire_effect_1", ""],
@@ -2802,7 +2802,7 @@
                 ]
             ]
         },
-        "37e": {
+        "re": {
             "rarity": 6,
             "endlineTag": "",
 
@@ -2821,12 +2821,12 @@
                     ["recoil_down_boost", ""],
                     ["reload_speed_boost", ""],
                     ["steadiness_boost", ""],
-                    ["attack_boost_2", "37d"],
-                    ["affinity_boost_2", "37d"],
-                    ["defense_boost_2", "37d"],
-                    ["attack_boost_1", "37b"],
-                    ["affinity_boost_1", "37b"],
-                    ["defense_boost_1", "37b"]
+                    ["attack_boost_2", "rd"],
+                    ["affinity_boost_2", "rd"],
+                    ["defense_boost_2", "rd"],
+                    ["attack_boost_1", "rb"],
+                    ["affinity_boost_1", "rb"],
+                    ["defense_boost_1", "rb"]
                 ],
                 [
                     ["attack_surge", ""],
@@ -2841,10 +2841,10 @@
                     ["spread_effect_2", ""],
                     ["shrapnel_effect_2", ""],
                     ["stickycluster_effect_1", ""],
-                    ["add_normal_ammo_1", "37c"],
-                    ["pierce_effect_1", "37c"],
-                    ["spread_effect_1", "37c"],
-                    ["shrapnel_effect_1", "37c"]
+                    ["add_normal_ammo_1", "rc"],
+                    ["pierce_effect_1", "rc"],
+                    ["spread_effect_1", "rc"],
+                    ["shrapnel_effect_1", "rc"]
                 ],
                 [
                     ["fire_effect_2", ""],
@@ -2856,11 +2856,11 @@
                     ["paralysis_effect_1", ""],
                     ["sleep_effect_1", ""],
                     ["exhaust_effect_1", ""],
-                    ["fire_effect_1", "37d"],
-                    ["water_effect_1", "37d"],
-                    ["thunder_effect_1", "37d"],
-                    ["ice_effect_1", "37d"],
-                    ["dragon_effect_1", "37d"]
+                    ["fire_effect_1", "rd"],
+                    ["water_effect_1", "rd"],
+                    ["thunder_effect_1", "rd"],
+                    ["ice_effect_1", "rd"],
+                    ["dragon_effect_1", "rd"]
                 ],
                 [
                     ["special_wyvernheart", ""],
@@ -2868,7 +2868,7 @@
                 ]
             ]
         },
-        "37f": {
+        "rf": {
             "rarity": 7,
             "endlineTag": "hr",
 
@@ -2887,14 +2887,14 @@
                     ["recoil_down_boost", ""],
                     ["reload_speed_boost", ""],
                     ["steadiness_boost", ""],
-                    ["attack_boost_3", "37e"],
-                    ["affinity_boost_3", "37e"],
-                    ["attack_boost_2", "37d"],
-                    ["affinity_boost_2", "37d"],
-                    ["defense_boost_2", "37d"],
-                    ["attack_boost_1", "37b"],
-                    ["affinity_boost_1", "37b"],
-                    ["defense_boost_1", "37b"]
+                    ["attack_boost_3", "re"],
+                    ["affinity_boost_3", "re"],
+                    ["attack_boost_2", "rd"],
+                    ["affinity_boost_2", "rd"],
+                    ["defense_boost_2", "rd"],
+                    ["attack_boost_1", "rb"],
+                    ["affinity_boost_1", "rb"],
+                    ["defense_boost_1", "rb"]
                 ],
                 [
                     ["attack_surge", ""],
@@ -2909,11 +2909,11 @@
                     ["spread_effect_2", ""],
                     ["shrapnel_effect_2", ""],
                     ["stickycluster_effect_2", ""],
-                    ["stickycluster_effect_1", "37e"],
-                    ["add_normal_ammo_1", "37c"],
-                    ["pierce_effect_1", "37c"],
-                    ["spread_effect_1", "37c"],
-                    ["shrapnel_effect_1", "37c"]
+                    ["stickycluster_effect_1", "re"],
+                    ["add_normal_ammo_1", "rc"],
+                    ["pierce_effect_1", "rc"],
+                    ["spread_effect_1", "rc"],
+                    ["shrapnel_effect_1", "rc"]
                 ],
                 [
                     ["fire_effect_2", ""],
@@ -2925,15 +2925,15 @@
                     ["paralysis_effect_2", ""],
                     ["sleep_effect_2", ""],
                     ["exhaust_effect_2", ""],
-                    ["poison_effect_1", "37e"],
-                    ["paralysis_effect_1", "37e"],
-                    ["sleep_effect_1", "37e"],
-                    ["exhaust_effect_1", "37e"],
-                    ["fire_effect_1", "37d"],
-                    ["water_effect_1", "37d"],
-                    ["thunder_effect_1", "37d"],
-                    ["ice_effect_1", "37d"],
-                    ["dragon_effect_1", "37d"]
+                    ["poison_effect_1", "re"],
+                    ["paralysis_effect_1", "re"],
+                    ["sleep_effect_1", "re"],
+                    ["exhaust_effect_1", "re"],
+                    ["fire_effect_1", "rd"],
+                    ["water_effect_1", "rd"],
+                    ["thunder_effect_1", "rd"],
+                    ["ice_effect_1", "rd"],
+                    ["dragon_effect_1", "rd"]
                 ],
                 [
                     ["special_wyvernheart", ""],

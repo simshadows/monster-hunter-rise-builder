@@ -3266,7 +3266,7 @@
         }
     },
     "Rampage Tree": {
-        "41a": {
+        "ra": {
             "rarity": 4,
             "endlineTag": "",
 
@@ -3297,7 +3297,7 @@
             "baseSharpness": [70,70,90,20,0,0],
             "maxSharpness": [70,70,90,70,0,0]
         },
-        "41b": {
+        "rb": {
             "rarity": 5,
             "endlineTag": "",
 
@@ -3332,7 +3332,7 @@
             "baseSharpness": [60,70,80,40,0,0],
             "maxSharpness": [60,70,80,90,0,0]
         },
-        "41c": {
+        "rc": {
             "rarity": 5,
             "endlineTag": "",
 
@@ -3350,9 +3350,9 @@
                     ["affinity_boost_2", ""],
                     ["defense_boost_2", ""],
                     ["sharpness_type_1", ""],
-                    ["attack_boost_1", "41b"],
-                    ["affinity_boost_1", "41b"],
-                    ["defense_boost_1", "41b"]
+                    ["attack_boost_1", "rb"],
+                    ["affinity_boost_1", "rb"],
+                    ["defense_boost_1", "rb"]
                 ],
                 [
                     ["non_elemental_boost", ""],
@@ -3375,7 +3375,7 @@
             "baseSharpness": [50,70,80,30,20,0],
             "maxSharpness": [50,70,80,30,70,0]
         },
-        "41d": {
+        "rd": {
             "rarity": 6,
             "endlineTag": "",
 
@@ -3394,10 +3394,10 @@
                     ["defense_boost_2", ""],
                     ["sharpness_type_1", ""],
                     ["sharpness_type_2", ""],
-                    ["elemental_boost_1", "41c"],
-                    ["attack_boost_1", "41b"],
-                    ["affinity_boost_1", "41b"],
-                    ["defense_boost_1", "41b"]
+                    ["elemental_boost_1", "rc"],
+                    ["attack_boost_1", "rb"],
+                    ["affinity_boost_1", "rb"],
+                    ["defense_boost_1", "rb"]
                 ],
                 [
                     ["non_elemental_boost", ""],
@@ -3410,11 +3410,11 @@
                     ["paralysis_1", ""],
                     ["sleep_1", ""],
                     ["blast_1", ""],
-                    ["fire_1", "41c"],
-                    ["water_1", "41c"],
-                    ["thunder_1", "41c"],
-                    ["ice_1", "41c"],
-                    ["dragon_1", "41c"]
+                    ["fire_1", "rc"],
+                    ["water_1", "rc"],
+                    ["thunder_1", "rc"],
+                    ["ice_1", "rc"],
+                    ["dragon_1", "rc"]
                 ],
                 [
                     ["attack_surge", ""],
@@ -3425,7 +3425,7 @@
             "baseSharpness": [50,70,70,30,30,0],
             "maxSharpness": [50,70,70,30,80,0]
         },
-        "41e": {
+        "re": {
             "rarity": 6,
             "endlineTag": "",
 
@@ -3445,13 +3445,13 @@
                     ["sharpness_type_1", ""],
                     ["sharpness_type_2", ""],
                     ["sharpness_type_3", ""],
-                    ["attack_boost_2", "41d"],
-                    ["affinity_boost_2", "41d"],
-                    ["defense_boost_2", "41d"],
-                    ["elemental_boost_1", "41c"],
-                    ["attack_boost_1", "41b"],
-                    ["affinity_boost_1", "41b"],
-                    ["defense_boost_1", "41b"]
+                    ["attack_boost_2", "rd"],
+                    ["affinity_boost_2", "rd"],
+                    ["defense_boost_2", "rd"],
+                    ["elemental_boost_1", "rc"],
+                    ["attack_boost_1", "rb"],
+                    ["affinity_boost_1", "rb"],
+                    ["defense_boost_1", "rb"]
                 ],
                 [
                     ["non_elemental_boost", ""],
@@ -3464,16 +3464,16 @@
                     ["paralysis_1", ""],
                     ["sleep_1", ""],
                     ["blast_1", ""],
-                    ["fire_2", "41d"],
-                    ["water_2", "41d"],
-                    ["thunder_2", "41d"],
-                    ["ice_2", "41d"],
-                    ["dragon_2", "41d"],
-                    ["fire_1", "41c"],
-                    ["water_1", "41c"],
-                    ["thunder_1", "41c"],
-                    ["ice_1", "41c"],
-                    ["dragon_1", "41c"]
+                    ["fire_2", "rd"],
+                    ["water_2", "rd"],
+                    ["thunder_2", "rd"],
+                    ["ice_2", "rd"],
+                    ["dragon_2", "rd"],
+                    ["fire_1", "rc"],
+                    ["water_1", "rc"],
+                    ["thunder_1", "rc"],
+                    ["ice_1", "rc"],
+                    ["dragon_1", "rc"]
                 ],
                 [
                     ["attack_surge", ""],
@@ -3485,7 +3485,7 @@
             "baseSharpness": [50,70,50,50,30,0],
             "maxSharpness": [50,70,50,50,70,10]
         },
-        "41f": {
+        "rf": {
             "rarity": 7,
             "endlineTag": "hr",
 
@@ -3506,16 +3506,16 @@
                     ["sharpness_type_2", ""],
                     ["sharpness_type_3", ""],
                     ["sharpness_type_4", ""],
-                    ["attack_boost_3", "41e"],
-                    ["elemental_boost_2", "41e"],
-                    ["affinity_boost_3", "41e"],
-                    ["attack_boost_2", "41d"],
-                    ["affinity_boost_2", "41d"],
-                    ["defense_boost_2", "41d"],
-                    ["elemental_boost_1", "41c"],
-                    ["attack_boost_1", "41b"],
-                    ["affinity_boost_1", "41b"],
-                    ["defense_boost_1", "41b"]
+                    ["attack_boost_3", "re"],
+                    ["elemental_boost_2", "re"],
+                    ["affinity_boost_3", "re"],
+                    ["attack_boost_2", "rd"],
+                    ["affinity_boost_2", "rd"],
+                    ["defense_boost_2", "rd"],
+                    ["elemental_boost_1", "rc"],
+                    ["attack_boost_1", "rb"],
+                    ["affinity_boost_1", "rb"],
+                    ["defense_boost_1", "rb"]
                 ],
                 [
                     ["non_elemental_boost", ""],
@@ -3528,20 +3528,20 @@
                     ["paralysis_2", ""],
                     ["sleep_2", ""],
                     ["blast_2", ""],
-                    ["poison_1", "41e"],
-                    ["paralysis_1", "41e"],
-                    ["sleep_1", "41e"],
-                    ["blast_1", "41e"],
-                    ["fire_2", "41d"],
-                    ["water_2", "41d"],
-                    ["thunder_2", "41d"],
-                    ["ice_2", "41d"],
-                    ["dragon_2", "41d"],
-                    ["fire_1", "41c"],
-                    ["water_1", "41c"],
-                    ["thunder_1", "41c"],
-                    ["ice_1", "41c"],
-                    ["dragon_1", "41c"]
+                    ["poison_1", "re"],
+                    ["paralysis_1", "re"],
+                    ["sleep_1", "re"],
+                    ["blast_1", "re"],
+                    ["fire_2", "rd"],
+                    ["water_2", "rd"],
+                    ["thunder_2", "rd"],
+                    ["ice_2", "rd"],
+                    ["dragon_2", "rd"],
+                    ["fire_1", "rc"],
+                    ["water_1", "rc"],
+                    ["thunder_1", "rc"],
+                    ["ice_1", "rc"],
+                    ["dragon_1", "rc"]
                 ],
                 [
                     ["attack_surge", ""],

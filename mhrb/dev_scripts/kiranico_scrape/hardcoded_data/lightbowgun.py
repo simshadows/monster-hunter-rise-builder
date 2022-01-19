@@ -89,9 +89,9 @@ HARDCODED_LBG_SPEC = [
         ("Gale Bowgun", "14d"),
     ]),
     ("Anjanath Tree", "14c", [
-        ("Flammenkanone I", "15a"),
-        ("Flammenkanone II", "15b"),
-        ("Furious Flammenkanone", "15c"),
+        ("Flammengewehr I", "15a"),
+        ("Flammengewehr II", "15b"),
+        ("Furious Flammengewehr", "15c"),
     ]),
     ("Rathian Tree", "14b", [
         ("Valkyrie Fire I", "16a"),
@@ -188,12 +188,12 @@ HARDCODED_LBG_SPEC = [
         ("Springnight Spawn", "34c"),
     ]),
     ("Rampage Tree", None, [
-        ("Rampage L. Bowgun I"  , "35a"),
-        ("Rampage L. Bowgun II" , "35b"),
-        ("Rampage L. Bowgun III", "35c"),
-        ("Rampage L. Bowgun IV" , "35d"),
-        ("Rampage L. Bowgun V"  , "35e"),
-        ("Rampage L. Bowgun S"  , "35f"),
+        ("Rampage L. Bowgun I"  , "ra"),
+        ("Rampage L. Bowgun II" , "rb"),
+        ("Rampage L. Bowgun III", "rc"),
+        ("Rampage L. Bowgun IV" , "rd"),
+        ("Rampage L. Bowgun V"  , "re"),
+        ("Rampage L. Bowgun S"  , "rf"),
     ]),
 ]
 

@@ -8011,6 +8011,118 @@
                 ]
             ],
             "rarity": 7
+        },
+        {
+            "affinity": 10,
+            "attack": 180,
+            "bow_stats": {
+                "arc_shot": "recovery",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "spread",
+                        2
+                    ],
+                    [
+                        "spread",
+                        2
+                    ],
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "spread",
+                        4
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 1,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 1,
+                    "para_coating": 0,
+                    "poison_coating": 1,
+                    "power_coating": 1,
+                    "sleep_coating": 1
+                }
+            },
+            "decos": [
+                3
+            ],
+            "defense": 0,
+            "elestat": {
+                "water": 15
+            },
+            "name": "Azure Era Wyrmbow I",
+            "ramps": [
+                [
+                    "affinity_boost_4",
+                    "water_boost_4",
+                    "anti_aerial_species"
+                ],
+                [],
+                [],
+                [],
+                [],
+                []
+            ],
+            "rarity": 6
+        },
+        {
+            "affinity": 20,
+            "attack": 190,
+            "bow_stats": {
+                "arc_shot": "recovery",
+                "base_charge_level_limit": 3,
+                "charge_shot": [
+                    [
+                        "spread",
+                        2
+                    ],
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "spread",
+                        3
+                    ],
+                    [
+                        "spread",
+                        5
+                    ]
+                ],
+                "compatible_coatings": {
+                    "blast_coating": 1,
+                    "close_range_coating": 1,
+                    "exhaust_coating": 1,
+                    "para_coating": 0,
+                    "poison_coating": 1,
+                    "power_coating": 1,
+                    "sleep_coating": 1
+                }
+            },
+            "decos": [
+                3
+            ],
+            "defense": 0,
+            "elestat": {
+                "water": 25
+            },
+            "name": "Azure Era \"Soaring Dragon\"",
+            "ramps": [
+                [
+                    "affinity_boost_4",
+                    "water_boost_4",
+                    "anti_aerial_species"
+                ],
+                [],
+                [],
+                [],
+                [],
+                []
+            ],
+            "rarity": 7
         }
     ],
     "chargeblade": [
@@ -8576,7 +8688,7 @@
                 40,
                 0
             ],
-            "name": "Paladire",
+            "name": "Pavadira",
             "ramps": [
                 [
                     "attack_boost_4",
@@ -21467,7 +21579,7 @@
                 0,
                 0
             ],
-            "name": "Bone Blade I",
+            "name": "Bone Cleaver I",
             "ramps": [
                 [
                     "attack_boost_2",
@@ -58634,7 +58746,7 @@
             ],
             "defense": 0,
             "elestat": {},
-            "name": "Flammenkanone I",
+            "name": "Flammengewehr I",
             "ramps": [
                 [
                     "affinity_boost_1",
@@ -58658,7 +58770,7 @@
             ],
             "defense": 0,
             "elestat": {},
-            "name": "Flammenkanone II",
+            "name": "Flammengewehr II",
             "ramps": [
                 [
                     "affinity_boost_1",
@@ -58682,7 +58794,7 @@
             ],
             "defense": 0,
             "elestat": {},
-            "name": "Furious Flammenkanone",
+            "name": "Furious Flammengewehr",
             "ramps": [
                 [
                     "affinity_boost_2",
@@ -66015,6 +66127,92 @@
                     "attack_boost_4",
                     "anti_aerial_species",
                     "anti_aquatic_species"
+                ],
+                [],
+                [],
+                [],
+                [],
+                []
+            ],
+            "rarity": 7
+        },
+        {
+            "affinity": 20,
+            "attack": 170,
+            "base_sharpness": [
+                50,
+                100,
+                50,
+                120,
+                20,
+                10,
+                0
+            ],
+            "decos": [
+                3
+            ],
+            "defense": 0,
+            "elestat": {
+                "water": 20
+            },
+            "max_sharpness": [
+                50,
+                100,
+                50,
+                120,
+                20,
+                60,
+                0
+            ],
+            "name": "Azure Star Blade I",
+            "ramps": [
+                [
+                    "affinity_boost_4",
+                    "water_boost_4",
+                    "anti_aerial_species"
+                ],
+                [],
+                [],
+                [],
+                [],
+                []
+            ],
+            "rarity": 6
+        },
+        {
+            "affinity": 30,
+            "attack": 180,
+            "base_sharpness": [
+                50,
+                100,
+                50,
+                100,
+                30,
+                20,
+                0
+            ],
+            "decos": [
+                3
+            ],
+            "defense": 0,
+            "elestat": {
+                "water": 37
+            },
+            "max_sharpness": [
+                50,
+                100,
+                50,
+                100,
+                30,
+                70,
+                0
+            ],
+            "name": "Azure Star \"Dragon Dance\"",
+            "ramps": [
+                [
+                    "affinity_boost_4",
+                    "water_boost_4",
+                    "anti_aerial_species"
                 ],
                 [],
                 [],

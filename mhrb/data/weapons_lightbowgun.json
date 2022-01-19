@@ -1209,7 +1209,7 @@
             "rarity": 5,
             "endlineTag": "",
 
-            "name": "Flammenkanone I",
+            "name": "Flammengewehr I",
             "attack": 200,
             "affinity": -30,
             "defense": 0,
@@ -1233,7 +1233,7 @@
             "rarity": 6,
             "endlineTag": "",
 
-            "name": "Flammenkanone II",
+            "name": "Flammengewehr II",
             "attack": 220,
             "affinity": -30,
             "defense": 0,
@@ -1257,7 +1257,7 @@
             "rarity": 6,
             "endlineTag": "hr",
 
-            "name": "Furious Flammenkanone",
+            "name": "Furious Flammengewehr",
             "attack": 230,
             "affinity": -30,
             "defense": 0,
@@ -2487,7 +2487,7 @@
         }
     },
     "Rampage Tree": {
-        "35a": {
+        "ra": {
             "rarity": 4,
             "endlineTag": "",
 
@@ -2524,7 +2524,7 @@
                 ]
             ]
         },
-        "35b": {
+        "rb": {
             "rarity": 5,
             "endlineTag": "",
 
@@ -2571,7 +2571,7 @@
                 ]
             ]
         },
-        "35c": {
+        "rc": {
             "rarity": 5,
             "endlineTag": "",
 
@@ -2590,9 +2590,9 @@
                     ["recoil_down_boost", ""],
                     ["reload_speed_boost", ""],
                     ["steadiness_boost", ""],
-                    ["attack_boost_1", "35b"],
-                    ["affinity_boost_1", "35b"],
-                    ["defense_boost_1", "35b"]
+                    ["attack_boost_1", "rb"],
+                    ["affinity_boost_1", "rb"],
+                    ["defense_boost_1", "rb"]
                 ],
                 [
                     ["attack_surge", ""],
@@ -2624,7 +2624,7 @@
                 ]
             ]
         },
-        "35d": {
+        "rd": {
             "rarity": 6,
             "endlineTag": "",
 
@@ -2643,9 +2643,9 @@
                     ["recoil_down_boost", ""],
                     ["reload_speed_boost", ""],
                     ["steadiness_boost", ""],
-                    ["attack_boost_1", "35b"],
-                    ["affinity_boost_1", "35b"],
-                    ["defense_boost_1", "35b"]
+                    ["attack_boost_1", "rb"],
+                    ["affinity_boost_1", "rb"],
+                    ["defense_boost_1", "rb"]
                 ],
                 [
                     ["attack_surge", ""],
@@ -2657,10 +2657,10 @@
                     ["spread_effect_2", ""],
                     ["shrapnel_effect_2", ""],
                     ["stickycluster_effect_1", ""],
-                    ["add_normal_ammo_1", "35c"],
-                    ["pierce_effect_1", "35c"],
-                    ["spread_effect_1", "35c"],
-                    ["shrapnel_effect_1", "35c"]
+                    ["add_normal_ammo_1", "rc"],
+                    ["pierce_effect_1", "rc"],
+                    ["spread_effect_1", "rc"],
+                    ["shrapnel_effect_1", "rc"]
                 ],
                 [
                     ["fire_effect_1", ""],
@@ -2682,7 +2682,7 @@
                 ]
             ]
         },
-        "35e": {
+        "re": {
             "rarity": 6,
             "endlineTag": "",
 
@@ -2701,12 +2701,12 @@
                     ["recoil_down_boost", ""],
                     ["reload_speed_boost", ""],
                     ["steadiness_boost", ""],
-                    ["attack_boost_2", "35d"],
-                    ["affinity_boost_2", "35d"],
-                    ["defense_boost_2", "35d"],
-                    ["attack_boost_1", "35b"],
-                    ["affinity_boost_1", "35b"],
-                    ["defense_boost_1", "35b"]
+                    ["attack_boost_2", "rd"],
+                    ["affinity_boost_2", "rd"],
+                    ["defense_boost_2", "rd"],
+                    ["attack_boost_1", "rb"],
+                    ["affinity_boost_1", "rb"],
+                    ["defense_boost_1", "rb"]
                 ],
                 [
                     ["attack_surge", ""],
@@ -2721,10 +2721,10 @@
                     ["spread_effect_2", ""],
                     ["shrapnel_effect_2", ""],
                     ["stickycluster_effect_1", ""],
-                    ["add_normal_ammo_1", "35c"],
-                    ["pierce_effect_1", "35c"],
-                    ["spread_effect_1", "35c"],
-                    ["shrapnel_effect_1", "35c"]
+                    ["add_normal_ammo_1", "rc"],
+                    ["pierce_effect_1", "rc"],
+                    ["spread_effect_1", "rc"],
+                    ["shrapnel_effect_1", "rc"]
                 ],
                 [
                     ["fire_effect_2", ""],
@@ -2736,11 +2736,11 @@
                     ["paralysis_effect_1", ""],
                     ["sleep_effect_1", ""],
                     ["exhaust_effect_1", ""],
-                    ["fire_effect_1", "35d"],
-                    ["water_effect_1", "35d"],
-                    ["thunder_effect_1", "35d"],
-                    ["ice_effect_1", "35d"],
-                    ["dragon_effect_1", "35d"]
+                    ["fire_effect_1", "rd"],
+                    ["water_effect_1", "rd"],
+                    ["thunder_effect_1", "rd"],
+                    ["ice_effect_1", "rd"],
+                    ["dragon_effect_1", "rd"]
                 ],
                 [
                     ["rapid_fire_normal", ""],
@@ -2751,7 +2751,7 @@
                 ]
             ]
         },
-        "35f": {
+        "rf": {
             "rarity": 7,
             "endlineTag": "hr",
 
@@ -2770,14 +2770,14 @@
                     ["recoil_down_boost", ""],
                     ["reload_speed_boost", ""],
                     ["steadiness_boost", ""],
-                    ["attack_boost_3", "35e"],
-                    ["affinity_boost_3", "35e"],
-                    ["attack_boost_2", "35d"],
-                    ["affinity_boost_2", "35d"],
-                    ["defense_boost_2", "35d"],
-                    ["attack_boost_1", "35b"],
-                    ["affinity_boost_1", "35b"],
-                    ["defense_boost_1", "35b"]
+                    ["attack_boost_3", "re"],
+                    ["affinity_boost_3", "re"],
+                    ["attack_boost_2", "rd"],
+                    ["affinity_boost_2", "rd"],
+                    ["defense_boost_2", "rd"],
+                    ["attack_boost_1", "rb"],
+                    ["affinity_boost_1", "rb"],
+                    ["defense_boost_1", "rb"]
                 ],
                 [
                     ["attack_surge", ""],
@@ -2792,10 +2792,10 @@
                     ["spread_effect_2", ""],
                     ["shrapnel_effect_2", ""],
                     ["stickycluster_effect_1", ""],
-                    ["add_normal_ammo_1", "35c"],
-                    ["pierce_effect_1", "35c"],
-                    ["spread_effect_1", "35c"],
-                    ["shrapnel_effect_1", "35c"]
+                    ["add_normal_ammo_1", "rc"],
+                    ["pierce_effect_1", "rc"],
+                    ["spread_effect_1", "rc"],
+                    ["shrapnel_effect_1", "rc"]
                 ],
                 [
                     ["fire_effect_2", ""],
@@ -2807,15 +2807,15 @@
                     ["paralysis_effect_2", ""],
                     ["sleep_effect_2", ""],
                     ["exhaust_effect_2", ""],
-                    ["poison_effect_1", "35e"],
-                    ["paralysis_effect_1", "35e"],
-                    ["sleep_effect_1", "35e"],
-                    ["exhaust_effect_1", "35e"],
-                    ["fire_effect_1", "35d"],
-                    ["water_effect_1", "35d"],
-                    ["thunder_effect_1", "35d"],
-                    ["ice_effect_1", "35d"],
-                    ["dragon_effect_1", "35d"]
+                    ["poison_effect_1", "re"],
+                    ["paralysis_effect_1", "re"],
+                    ["sleep_effect_1", "re"],
+                    ["exhaust_effect_1", "re"],
+                    ["fire_effect_1", "rd"],
+                    ["water_effect_1", "rd"],
+                    ["thunder_effect_1", "rd"],
+                    ["ice_effect_1", "rd"],
+                    ["dragon_effect_1", "rd"]
                 ],
                 [
                     ["rapid_fire_normal", ""],

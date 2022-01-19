@@ -219,12 +219,12 @@ HARDCODED_GL_SPEC = [
         ("Soporific Shellgun", "40c"),
     ]),
     ("Rampage Tree", None, [
-        ("Rampage Gunlance I"  , "41a"),
-        ("Rampage Gunlance II" , "41b"),
-        ("Rampage Gunlance III", "41c"),
-        ("Rampage Gunlance IV" , "41d"),
-        ("Rampage Gunlance V"  , "41e"),
-        ("Rampage Gunlance S"  , "41f"),
+        ("Rampage Gunlance I"  , "ra"),
+        ("Rampage Gunlance II" , "rb"),
+        ("Rampage Gunlance III", "rc"),
+        ("Rampage Gunlance IV" , "rd"),
+        ("Rampage Gunlance V"  , "re"),
+        ("Rampage Gunlance S"  , "rf"),
     ]),
 ]
 

@@ -233,13 +233,17 @@ HARDCODED_B_SPEC = [
         ("Arachnid Bow II", "43b"),
         ("Arachnid Silverstring", "43c"),
     ]),
+    ("<TODO: Find out the name of this tree.>", None, [
+        ("Azure Era Wyrmbow I", "44a"),
+        ("Azure Era \"Soaring Dragon\"", "44b"),
+    ]),
     ("Rampage Tree", None, [
-        ("Rampage Bow I"  , "44a"),
-        ("Rampage Bow II" , "44b"),
-        ("Rampage Bow III", "44c"),
-        ("Rampage Bow IV" , "44d"),
-        ("Rampage Bow V"  , "44e"),
-        ("Rampage Bow S"  , "44f"),
+        ("Rampage Bow I"  , "ra"),
+        ("Rampage Bow II" , "rb"),
+        ("Rampage Bow III", "rc"),
+        ("Rampage Bow IV" , "rd"),
+        ("Rampage Bow V"  , "re"),
+        ("Rampage Bow S"  , "rf"),
     ]),
 ]
 

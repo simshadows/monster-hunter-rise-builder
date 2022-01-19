@@ -3436,8 +3436,54 @@
             "maxSharpness": [70,80,70,80,50,50]
         }
     },
-    "Rampage Tree": {
+    "<TODO: Find out the name of this tree.>": {
         "43a": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Azure Star Blade I",
+            "attack": 170,
+            "affinity": 20,
+            "defense": 0,
+            "decoSlots": [3],
+            "eleStat": {"water": 20},
+
+            "rampSkills": [
+                [
+                    ["affinity_boost_4", ""],
+                    ["water_boost_4", ""],
+                    ["anti_aerial_species", ""]
+                ]
+            ],
+
+            "baseSharpness": [50,100,50,120,20,10],
+            "maxSharpness": [50,100,50,120,20,60]
+        },
+        "43b": {
+            "rarity": 7,
+            "endlineTag": "hr",
+
+            "name": "Azure Star \"Dragon Dance\"",
+            "attack": 180,
+            "affinity": 30,
+            "defense": 0,
+            "decoSlots": [3],
+            "eleStat": {"water": 37},
+
+            "rampSkills": [
+                [
+                    ["affinity_boost_4", ""],
+                    ["water_boost_4", ""],
+                    ["anti_aerial_species", ""]
+                ]
+            ],
+
+            "baseSharpness": [50,100,50,100,30,20],
+            "maxSharpness": [50,100,50,100,30,70]
+        }
+    },
+    "Rampage Tree": {
+        "ra": {
             "rarity": 4,
             "endlineTag": "",
 
@@ -3468,7 +3514,7 @@
             "baseSharpness": [70,70,90,20,0,0],
             "maxSharpness": [70,70,90,70,0,0]
         },
-        "43b": {
+        "rb": {
             "rarity": 5,
             "endlineTag": "",
 
@@ -3503,7 +3549,7 @@
             "baseSharpness": [60,70,80,40,0,0],
             "maxSharpness": [60,70,80,90,0,0]
         },
-        "43c": {
+        "rc": {
             "rarity": 5,
             "endlineTag": "",
 
@@ -3521,9 +3567,9 @@
                     ["affinity_boost_2", ""],
                     ["defense_boost_2", ""],
                     ["sharpness_type_1", ""],
-                    ["attack_boost_1", "43b"],
-                    ["affinity_boost_1", "43b"],
-                    ["defense_boost_1", "43b"]
+                    ["attack_boost_1", "rb"],
+                    ["affinity_boost_1", "rb"],
+                    ["defense_boost_1", "rb"]
                 ],
                 [
                     ["non_elemental_boost", ""],
@@ -3546,7 +3592,7 @@
             "baseSharpness": [50,70,80,30,20,0],
             "maxSharpness": [50,70,80,30,70,0]
         },
-        "43d": {
+        "rd": {
             "rarity": 6,
             "endlineTag": "",
 
@@ -3565,10 +3611,10 @@
                     ["defense_boost_2", ""],
                     ["sharpness_type_1", ""],
                     ["sharpness_type_2", ""],
-                    ["elemental_boost_1", "43c"],
-                    ["attack_boost_1", "43b"],
-                    ["affinity_boost_1", "43b"],
-                    ["defense_boost_1", "43b"]
+                    ["elemental_boost_1", "rc"],
+                    ["attack_boost_1", "rb"],
+                    ["affinity_boost_1", "rb"],
+                    ["defense_boost_1", "rb"]
                 ],
                 [
                     ["non_elemental_boost", ""],
@@ -3581,11 +3627,11 @@
                     ["paralysis_1", ""],
                     ["sleep_1", ""],
                     ["blast_1", ""],
-                    ["fire_1", "43c"],
-                    ["water_1", "43c"],
-                    ["thunder_1", "43c"],
-                    ["ice_1", "43c"],
-                    ["dragon_1", "43c"]
+                    ["fire_1", "rc"],
+                    ["water_1", "rc"],
+                    ["thunder_1", "rc"],
+                    ["ice_1", "rc"],
+                    ["dragon_1", "rc"]
                 ],
                 [
                     ["attack_surge", ""],
@@ -3596,7 +3642,7 @@
             "baseSharpness": [50,70,70,30,30,0],
             "maxSharpness": [50,70,70,30,80,0]
         },
-        "43e": {
+        "re": {
             "rarity": 6,
             "endlineTag": "",
 
@@ -3616,13 +3662,13 @@
                     ["sharpness_type_1", ""],
                     ["sharpness_type_2", ""],
                     ["sharpness_type_3", ""],
-                    ["attack_boost_2", "43d"],
-                    ["affinity_boost_2", "43d"],
-                    ["defense_boost_2", "43d"],
-                    ["elemental_boost_1", "43c"],
-                    ["attack_boost_1", "43b"],
-                    ["affinity_boost_1", "43b"],
-                    ["defense_boost_1", "43b"]
+                    ["attack_boost_2", "rd"],
+                    ["affinity_boost_2", "rd"],
+                    ["defense_boost_2", "rd"],
+                    ["elemental_boost_1", "rc"],
+                    ["attack_boost_1", "rb"],
+                    ["affinity_boost_1", "rb"],
+                    ["defense_boost_1", "rb"]
                 ],
                 [
                     ["non_elemental_boost", ""],
@@ -3635,16 +3681,16 @@
                     ["paralysis_1", ""],
                     ["sleep_1", ""],
                     ["blast_1", ""],
-                    ["fire_2", "43d"],
-                    ["water_2", "43d"],
-                    ["thunder_2", "43d"],
-                    ["ice_2", "43d"],
-                    ["dragon_2", "43d"],
-                    ["fire_1", "43c"],
-                    ["water_1", "43c"],
-                    ["thunder_1", "43c"],
-                    ["ice_1", "43c"],
-                    ["dragon_1", "43c"]
+                    ["fire_2", "rd"],
+                    ["water_2", "rd"],
+                    ["thunder_2", "rd"],
+                    ["ice_2", "rd"],
+                    ["dragon_2", "rd"],
+                    ["fire_1", "rc"],
+                    ["water_1", "rc"],
+                    ["thunder_1", "rc"],
+                    ["ice_1", "rc"],
+                    ["dragon_1", "rc"]
                 ],
                 [
                     ["attack_surge", ""],
@@ -3656,7 +3702,7 @@
             "baseSharpness": [50,70,50,50,30,0],
             "maxSharpness": [50,70,50,50,70,10]
         },
-        "43f": {
+        "rf": {
             "rarity": 7,
             "endlineTag": "hr",
 
@@ -3677,16 +3723,16 @@
                     ["sharpness_type_2", ""],
                     ["sharpness_type_3", ""],
                     ["sharpness_type_4", ""],
-                    ["attack_boost_3", "43e"],
-                    ["elemental_boost_2", "43e"],
-                    ["affinity_boost_3", "43e"],
-                    ["attack_boost_2", "43d"],
-                    ["affinity_boost_2", "43d"],
-                    ["defense_boost_2", "43d"],
-                    ["elemental_boost_1", "43c"],
-                    ["attack_boost_1", "43b"],
-                    ["affinity_boost_1", "43b"],
-                    ["defense_boost_1", "43b"]
+                    ["attack_boost_3", "re"],
+                    ["elemental_boost_2", "re"],
+                    ["affinity_boost_3", "re"],
+                    ["attack_boost_2", "rd"],
+                    ["affinity_boost_2", "rd"],
+                    ["defense_boost_2", "rd"],
+                    ["elemental_boost_1", "rc"],
+                    ["attack_boost_1", "rb"],
+                    ["affinity_boost_1", "rb"],
+                    ["defense_boost_1", "rb"]
                 ],
                 [
                     ["non_elemental_boost", ""],
@@ -3699,20 +3745,20 @@
                     ["paralysis_2", ""],
                     ["sleep_2", ""],
                     ["blast_2", ""],
-                    ["poison_1", "43e"],
-                    ["paralysis_1", "43e"],
-                    ["sleep_1", "43e"],
-                    ["blast_1", "43e"],
-                    ["fire_2", "43d"],
-                    ["water_2", "43d"],
-                    ["thunder_2", "43d"],
-                    ["ice_2", "43d"],
-                    ["dragon_2", "43d"],
-                    ["fire_1", "43c"],
-                    ["water_1", "43c"],
-                    ["thunder_1", "43c"],
-                    ["ice_1", "43c"],
-                    ["dragon_1", "43c"]
+                    ["poison_1", "re"],
+                    ["paralysis_1", "re"],
+                    ["sleep_1", "re"],
+                    ["blast_1", "re"],
+                    ["fire_2", "rd"],
+                    ["water_2", "rd"],
+                    ["thunder_2", "rd"],
+                    ["ice_2", "rd"],
+                    ["dragon_2", "rd"],
+                    ["fire_1", "rc"],
+                    ["water_1", "rc"],
+                    ["thunder_1", "rc"],
+                    ["ice_1", "rc"],
+                    ["dragon_1", "rc"]
                 ],
                 [
                     ["attack_surge", ""],

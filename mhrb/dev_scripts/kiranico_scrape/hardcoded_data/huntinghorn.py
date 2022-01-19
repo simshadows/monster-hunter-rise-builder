@@ -216,12 +216,12 @@ HARDCODED_HH_SPEC = [
         ("Bombadgy's Cry", "40c"),
     ]),
     ("Rampage Tree", None, [
-        ("Rampage Agitato I"  , "41a"),
-        ("Rampage Agitato II" , "41b"),
-        ("Rampage Agitato III", "41c"),
-        ("Rampage Agitato IV" , "41d"),
-        ("Rampage Agitato V"  , "41e"),
-        ("Rampage Agitato S"  , "41f"),
+        ("Rampage Agitato I"  , "ra"),
+        ("Rampage Agitato II" , "rb"),
+        ("Rampage Agitato III", "rc"),
+        ("Rampage Agitato IV" , "rd"),
+        ("Rampage Agitato V"  , "re"),
+        ("Rampage Agitato S"  , "rf"),
     ]),
 ]
 

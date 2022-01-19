@@ -208,12 +208,12 @@ HARDCODED_IG_SPEC = [
         ("Watercolor Glaive", "38c"),
     ]),
     ("Rampage Tree", None, [
-        ("Rampage Glaive I"  , "39a"),
-        ("Rampage Glaive II" , "39b"),
-        ("Rampage Glaive III", "39c"),
-        ("Rampage Glaive IV" , "39d"),
-        ("Rampage Glaive V"  , "39e"),
-        ("Rampage Glaive S"  , "39f"),
+        ("Rampage Glaive I"  , "ra"),
+        ("Rampage Glaive II" , "rb"),
+        ("Rampage Glaive III", "rc"),
+        ("Rampage Glaive IV" , "rd"),
+        ("Rampage Glaive V"  , "re"),
+        ("Rampage Glaive S"  , "rf"),
     ]),
 ]
 

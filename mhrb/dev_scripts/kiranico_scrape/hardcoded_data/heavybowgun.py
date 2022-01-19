@@ -195,12 +195,12 @@ HARDCODED_HBG_SPEC = [
         ("Felyne Cannon", "36c"),
     ]),
     ("Rampage Tree", None, [
-        ("Rampage H. Bowgun I"  , "37a"),
-        ("Rampage H. Bowgun II" , "37b"),
-        ("Rampage H. Bowgun III", "37c"),
-        ("Rampage H. Bowgun IV" , "37d"),
-        ("Rampage H. Bowgun V"  , "37e"),
-        ("Rampage H. Bowgun S"  , "37f"),
+        ("Rampage H. Bowgun I"  , "ra"),
+        ("Rampage H. Bowgun II" , "rb"),
+        ("Rampage H. Bowgun III", "rc"),
+        ("Rampage H. Bowgun IV" , "rd"),
+        ("Rampage H. Bowgun V"  , "re"),
+        ("Rampage H. Bowgun S"  , "rf"),
     ]),
 ]
 

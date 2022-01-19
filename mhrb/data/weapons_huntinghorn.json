@@ -3491,7 +3491,7 @@
         }
     },
     "Rampage Tree": {
-        "41a": {
+        "ra": {
             "rarity": 4,
             "endlineTag": "",
 
@@ -3524,7 +3524,7 @@
 
             "huntinghornSongs": {"a_a":"health_recovery_s", "x_x":"earplugs_s", "xa_xa":"sonic_wave"}
         },
-        "41b": {
+        "rb": {
             "rarity": 5,
             "endlineTag": "",
 
@@ -3565,7 +3565,7 @@
 
             "huntinghornSongs": {"a_a":"health_recovery_s", "x_x":"earplugs_s", "xa_xa":"sonic_wave"}
         },
-        "41c": {
+        "rc": {
             "rarity": 5,
             "endlineTag": "",
 
@@ -3583,9 +3583,9 @@
                     ["affinity_boost_2", ""],
                     ["defense_boost_2", ""],
                     ["sharpness_type_1", ""],
-                    ["attack_boost_1", "41b"],
-                    ["affinity_boost_1", "41b"],
-                    ["defense_boost_1", "41b"]
+                    ["attack_boost_1", "rb"],
+                    ["affinity_boost_1", "rb"],
+                    ["defense_boost_1", "rb"]
                 ],
                 [
                     ["non_elemental_boost", ""],
@@ -3598,11 +3598,11 @@
                     ["paralysis_1", ""],
                     ["sleep_1", ""],
                     ["blast_1", ""],
-                    ["fire_1", "41b"],
-                    ["water_1", "41b"],
-                    ["thunder_1", "41b"],
-                    ["ice_1", "41b"],
-                    ["dragon_1", "41b"]
+                    ["fire_1", "rb"],
+                    ["water_1", "rb"],
+                    ["thunder_1", "rb"],
+                    ["ice_1", "rb"],
+                    ["dragon_1", "rb"]
                 ],
                 [
                     ["attack_surge", ""],
@@ -3619,7 +3619,7 @@
 
             "huntinghornSongs": {"a_a":"health_recovery_s", "x_x":"earplugs_s", "xa_xa":"sonic_wave"}
         },
-        "41d": {
+        "rd": {
             "rarity": 6,
             "endlineTag": "",
 
@@ -3638,10 +3638,10 @@
                     ["defense_boost_2", ""],
                     ["sharpness_type_1", ""],
                     ["sharpness_type_2", ""],
-                    ["elemental_boost_1", "41c"],
-                    ["attack_boost_1", "41b"],
-                    ["affinity_boost_1", "41b"],
-                    ["defense_boost_1", "41b"]
+                    ["elemental_boost_1", "rc"],
+                    ["attack_boost_1", "rb"],
+                    ["affinity_boost_1", "rb"],
+                    ["defense_boost_1", "rb"]
                 ],
                 [
                     ["non_elemental_boost", ""],
@@ -3654,15 +3654,15 @@
                     ["paralysis_2", ""],
                     ["sleep_2", ""],
                     ["blast_2", ""],
-                    ["poison_1", "41c"],
-                    ["paralysis_1", "41c"],
-                    ["sleep_1", "41c"],
-                    ["blast_1", "41c"],
-                    ["fire_1", "41b"],
-                    ["water_1", "41b"],
-                    ["thunder_1", "41b"],
-                    ["ice_1", "41b"],
-                    ["dragon_1", "41b"]
+                    ["poison_1", "rc"],
+                    ["paralysis_1", "rc"],
+                    ["sleep_1", "rc"],
+                    ["blast_1", "rc"],
+                    ["fire_1", "rb"],
+                    ["water_1", "rb"],
+                    ["thunder_1", "rb"],
+                    ["ice_1", "rb"],
+                    ["dragon_1", "rb"]
                 ],
                 [
                     ["attack_surge", ""],
@@ -3671,10 +3671,10 @@
                     ["defensive_melody_2", ""],
                     ["healing_melody_2", ""],
                     ["resilient_melody_2", ""],
-                    ["attack_melody_1", "41c"],
-                    ["defensive_melody_1", "41c"],
-                    ["healing_melody_1", "41c"],
-                    ["resilient_melody_1", "41c"]
+                    ["attack_melody_1", "rc"],
+                    ["defensive_melody_1", "rc"],
+                    ["healing_melody_1", "rc"],
+                    ["resilient_melody_1", "rc"]
                 ]
             ],
 
@@ -3683,7 +3683,7 @@
 
             "huntinghornSongs": {"a_a":"health_recovery_s", "x_x":"earplugs_s", "xa_xa":"sonic_wave"}
         },
-        "41e": {
+        "re": {
             "rarity": 6,
             "endlineTag": "",
 
@@ -3703,13 +3703,13 @@
                     ["sharpness_type_1", ""],
                     ["sharpness_type_2", ""],
                     ["sharpness_type_3", ""],
-                    ["attack_boost_2", "41d"],
-                    ["affinity_boost_2", "41d"],
-                    ["defense_boost_2", "41d"],
-                    ["elemental_boost_1", "41c"],
-                    ["attack_boost_1", "41b"],
-                    ["affinity_boost_1", "41b"],
-                    ["defense_boost_1", "41b"]
+                    ["attack_boost_2", "rd"],
+                    ["affinity_boost_2", "rd"],
+                    ["defense_boost_2", "rd"],
+                    ["elemental_boost_1", "rc"],
+                    ["attack_boost_1", "rb"],
+                    ["affinity_boost_1", "rb"],
+                    ["defense_boost_1", "rb"]
                 ],
                 [
                     ["non_elemental_boost", ""],
@@ -3722,20 +3722,20 @@
                     ["paralysis_2", ""],
                     ["sleep_2", ""],
                     ["blast_2", ""],
-                    ["fire_2", "41d"],
-                    ["water_2", "41d"],
-                    ["thunder_2", "41d"],
-                    ["ice_2", "41d"],
-                    ["dragon_2", "41d"],
-                    ["poison_1", "41c"],
-                    ["paralysis_1", "41c"],
-                    ["sleep_1", "41c"],
-                    ["blast_1", "41c"],
-                    ["fire_1", "41b"],
-                    ["water_1", "41b"],
-                    ["thunder_1", "41b"],
-                    ["ice_1", "41b"],
-                    ["dragon_1", "41b"]
+                    ["fire_2", "rd"],
+                    ["water_2", "rd"],
+                    ["thunder_2", "rd"],
+                    ["ice_2", "rd"],
+                    ["dragon_2", "rd"],
+                    ["poison_1", "rc"],
+                    ["paralysis_1", "rc"],
+                    ["sleep_1", "rc"],
+                    ["blast_1", "rc"],
+                    ["fire_1", "rb"],
+                    ["water_1", "rb"],
+                    ["thunder_1", "rb"],
+                    ["ice_1", "rb"],
+                    ["dragon_1", "rb"]
                 ],
                 [
                     ["attack_surge", ""],
@@ -3745,10 +3745,10 @@
                     ["defensive_melody_2", ""],
                     ["healing_melody_2", ""],
                     ["resilient_melody_2", ""],
-                    ["attack_melody_1", "41c"],
-                    ["defensive_melody_1", "41c"],
-                    ["healing_melody_1", "41c"],
-                    ["resilient_melody_1", "41c"]
+                    ["attack_melody_1", "rc"],
+                    ["defensive_melody_1", "rc"],
+                    ["healing_melody_1", "rc"],
+                    ["resilient_melody_1", "rc"]
                 ]
             ],
 
@@ -3757,7 +3757,7 @@
 
             "huntinghornSongs": {"a_a":"health_recovery_s", "x_x":"earplugs_s", "xa_xa":"sonic_wave"}
         },
-        "41f": {
+        "rf": {
             "rarity": 7,
             "endlineTag": "hr",
 
@@ -3778,16 +3778,16 @@
                     ["sharpness_type_2", ""],
                     ["sharpness_type_3", ""],
                     ["sharpness_type_4", ""],
-                    ["attack_boost_3", "41e"],
-                    ["elemental_boost_2", "41e"],
-                    ["affinity_boost_3", "41e"],
-                    ["attack_boost_2", "41d"],
-                    ["affinity_boost_2", "41d"],
-                    ["defense_boost_2", "41d"],
-                    ["elemental_boost_1", "41c"],
-                    ["attack_boost_1", "41b"],
-                    ["affinity_boost_1", "41b"],
-                    ["defense_boost_1", "41b"]
+                    ["attack_boost_3", "re"],
+                    ["elemental_boost_2", "re"],
+                    ["affinity_boost_3", "re"],
+                    ["attack_boost_2", "rd"],
+                    ["affinity_boost_2", "rd"],
+                    ["defense_boost_2", "rd"],
+                    ["elemental_boost_1", "rc"],
+                    ["attack_boost_1", "rb"],
+                    ["affinity_boost_1", "rb"],
+                    ["defense_boost_1", "rb"]
                 ],
                 [
                     ["non_elemental_boost", ""],
@@ -3800,29 +3800,29 @@
                     ["paralysis_3", ""],
                     ["sleep_3", ""],
                     ["blast_3", ""],
-                    ["fire_3", "41e"],
-                    ["water_3", "41e"],
-                    ["thunder_3", "41e"],
-                    ["ice_3", "41e"],
-                    ["dragon_3", "41e"],
-                    ["poison_2", "41e"],
-                    ["paralysis_2", "41e"],
-                    ["sleep_2", "41e"],
-                    ["blast_2", "41e"],
-                    ["fire_2", "41d"],
-                    ["water_2", "41d"],
-                    ["thunder_2", "41d"],
-                    ["ice_2", "41d"],
-                    ["dragon_2", "41d"],
-                    ["poison_1", "41c"],
-                    ["paralysis_1", "41c"],
-                    ["sleep_1", "41c"],
-                    ["blast_1", "41c"],
-                    ["fire_1", "41b"],
-                    ["water_1", "41b"],
-                    ["thunder_1", "41b"],
-                    ["ice_1", "41b"],
-                    ["dragon_1", "41b"]
+                    ["fire_3", "re"],
+                    ["water_3", "re"],
+                    ["thunder_3", "re"],
+                    ["ice_3", "re"],
+                    ["dragon_3", "re"],
+                    ["poison_2", "re"],
+                    ["paralysis_2", "re"],
+                    ["sleep_2", "re"],
+                    ["blast_2", "re"],
+                    ["fire_2", "rd"],
+                    ["water_2", "rd"],
+                    ["thunder_2", "rd"],
+                    ["ice_2", "rd"],
+                    ["dragon_2", "rd"],
+                    ["poison_1", "rc"],
+                    ["paralysis_1", "rc"],
+                    ["sleep_1", "rc"],
+                    ["blast_1", "rc"],
+                    ["fire_1", "rb"],
+                    ["water_1", "rb"],
+                    ["thunder_1", "rb"],
+                    ["ice_1", "rb"],
+                    ["dragon_1", "rb"]
                 ],
                 [
                     ["attack_surge", ""],
@@ -3832,10 +3832,10 @@
                     ["defensive_melody_2", ""],
                     ["healing_melody_2", ""],
                     ["resilient_melody_2", ""],
-                    ["attack_melody_1", "41c"],
-                    ["defensive_melody_1", "41c"],
-                    ["healing_melody_1", "41c"],
-                    ["resilient_melody_1", "41c"]
+                    ["attack_melody_1", "rc"],
+                    ["defensive_melody_1", "rc"],
+                    ["healing_melody_1", "rc"],
+                    ["resilient_melody_1", "rc"]
                 ]
             ],
 
