@@ -11,6 +11,7 @@ import {
     isNonEmptyStr,
     isArr,
     isMap,
+    isBool,
     assert,
 } from "../check.js";
 import {
@@ -50,6 +51,7 @@ import {
     insectGlaiveKinsectBonusesMap,
     bowArcShotTypesMap,
     bowChargeShotTypesMap,
+    bowgunAmmoTypesMap,
     specialSelectionTypesMap,
 } from "./hardcoded_data/special_weapon_mechanics.js";
 
@@ -185,12 +187,14 @@ function validateWeaponDataInsectGlaive(weaponData) {
 }
 
 function validateWeaponDataBow(weaponData) {
-    assert(isObj(weaponData.bowStats.arcShot)); // Already validated
+    const so = weaponData.bowStats;
 
-    const bcll = weaponData.bowStats.baseChargeLevelLimit;
+    assert(isObj(so.arcShot)); // Already validated
+
+    const bcll = so.baseChargeLevelLimit;
     assert(isInt(bcll) && (bcll > 0)); // Further validation later
 
-    const chargeShotData = weaponData.bowStats.chargeShot;
+    const chargeShotData = so.chargeShot;
     assert(isArr(chargeShotData));
     assert((chargeShotData.length >= 3) && (chargeShotData.length <= 4)); // Only known to be 3 or 4
     assert((chargeShotData.length === bcll) || (chargeShotData.length === bcll + 1)); // We expect at most a difference of 1
@@ -199,7 +203,7 @@ function validateWeaponDataBow(weaponData) {
         assert(isInt(level) && (level >= 1) && (level <= 5));
     }
 
-    const compatibleCoatings = weaponData.bowStats.compatibleCoatings;
+    const compatibleCoatings = so.compatibleCoatings;
     assert(Object.keys(compatibleCoatings).length === 7);
     const op = (k) => {
             assert(isInt(compatibleCoatings[k]) && (compatibleCoatings[k] >= 0) && (compatibleCoatings[k] <= 2)); // tri-state
@@ -211,6 +215,28 @@ function validateWeaponDataBow(weaponData) {
     op("sleep_coating");
     op("blast_coating");
     op("exhaust_coating");
+}
+
+function validateWeaponDataBowguns(weaponData) {
+    const so = weaponData.bowgunStats;
+
+    assert(isInt(so.deviation.severity));
+    assert((so.deviation.severity >= 0) && (so.deviation.severity <= 2));
+    assert(isBool(so.deviation.left));
+    assert(isBool(so.deviation.right));
+
+    assert(isInt(so.recoil));
+    assert((so.recoil >= 2) && (so.recoil <= 5)); // Recoil is in [0, 5], but base value hasn't been seen outside [2, 5]
+
+    assert(isInt(so.reload));
+    assert((so.reload >= 1) && (so.reload <= 6)); // Recoil is in [0, 8], but base value hasn't been seen outside [1, 6]
+
+    // so.ammo keys have already been validated, so we'll just check other things
+    for (const [k, v] of Object.entries(so.ammo)) {
+        assert(isBool(v.available));
+        assert(isInt(v.ammoCapacity) && (v.ammoCapacity >= 0));
+        assert(!(v.available && (v.ammoCapacity === 0)), "Ammo can't be available while also having zero ammo capacity.");
+    }
 }
 
 async function downloadCategoryRawWeaponData(category, path, op) {
@@ -299,6 +325,30 @@ async function downloadCategoryRawWeaponData(category, path, op) {
                 }
             }
 
+            // Add bowgun mechanics
+            if ((weaponData.category === "lightbowgun") || (weaponData.category === "heavybowgun")) {
+                const newAmmoObj = {};
+                for (const [k, v] of Object.entries(weaponData.bowgunStats.ammo)) {
+                    assert(v.length > 0);
+                    if (v.length === 1) {
+                        assert(v[0].length === 2);
+                        assert(bowgunAmmoTypesMap.has(k)); // Check if the ammo type is valid
+                        newAmmoObj[k] = {available: v[0][0], ammoCapacity: v[0][1]};
+                    } else {
+                        for (const [i, [available, ammoCapacity]] of v.entries()) {
+                            const newKey = k + "_" + String(i + 1);
+                            assert(bowgunAmmoTypesMap.has(newKey)); // Check if the ammo type is valid
+                            newAmmoObj[newKey] = {available, ammoCapacity};
+                        }
+                    }
+                }
+                // Knowing all ammo types were found, this should complete the check for equality
+                // between the hardcoded set of ammo type keys and the keys found here.
+                assert(Object.keys(newAmmoObj).length === bowgunAmmoTypesMap.size);
+
+                weaponData.bowgunStats.ammo = newAmmoObj;
+            }
+
             // Validate Common Data
             validateWeaponData(weaponData);
             // Validate Specific Data
@@ -341,23 +391,23 @@ async function downloadAllRawWeaponData() {
     const validateIG           = (weaponData) => {validateWeaponDataSharpness(weaponData);
                                                   validateWeaponDataInsectGlaive(weaponData);};
 
-    const validateSimpleRanged = (weaponData) => {};
-    const validateBow          = (weaponData) => {validateWeaponDataBow(weaponData)};
+    const validateBowgun       = (weaponData) => {validateWeaponDataBowguns(weaponData);};
+    const validateBow          = (weaponData) => {validateWeaponDataBow(weaponData);};
 
-    const gsDataFut  = downloadCategoryRawWeaponData("greatsword",     WEAPON_GS_PATH,  validateSimpleMelee );
-    const lsDataFut  = downloadCategoryRawWeaponData("longsword",      WEAPON_LS_PATH,  validateSimpleMelee );
-    const snsDataFut = downloadCategoryRawWeaponData("swordandshield", WEAPON_SNS_PATH, validateSimpleMelee );
-    const dbDataFut  = downloadCategoryRawWeaponData("dualblades",     WEAPON_DB_PATH,  validateSimpleMelee );
-    const lDataFut   = downloadCategoryRawWeaponData("lance",          WEAPON_L_PATH,   validateSimpleMelee );
-    const glDataFut  = downloadCategoryRawWeaponData("gunlance",       WEAPON_GL_PATH,  validateGL          );
-    const hDataFut   = downloadCategoryRawWeaponData("hammer",         WEAPON_H_PATH,   validateSimpleMelee );
-    const hhDataFut  = downloadCategoryRawWeaponData("huntinghorn",    WEAPON_HH_PATH,  validateHH          );
-    const saDataFut  = downloadCategoryRawWeaponData("switchaxe",      WEAPON_SA_PATH,  validateSA          );
-    const cbDataFut  = downloadCategoryRawWeaponData("chargeblade",    WEAPON_CB_PATH,  validateCB          );
-    const igDataFut  = downloadCategoryRawWeaponData("insectglaive",   WEAPON_IG_PATH,  validateIG          );
-    const lbgDataFut = downloadCategoryRawWeaponData("lightbowgun",    WEAPON_LBG_PATH, validateSimpleRanged);
-    const hbgDataFut = downloadCategoryRawWeaponData("heavybowgun",    WEAPON_HBG_PATH, validateSimpleRanged);
-    const bowDataFut = downloadCategoryRawWeaponData("bow",            WEAPON_BOW_PATH, validateBow         );
+    const gsDataFut  = downloadCategoryRawWeaponData("greatsword",     WEAPON_GS_PATH,  validateSimpleMelee);
+    const lsDataFut  = downloadCategoryRawWeaponData("longsword",      WEAPON_LS_PATH,  validateSimpleMelee);
+    const snsDataFut = downloadCategoryRawWeaponData("swordandshield", WEAPON_SNS_PATH, validateSimpleMelee);
+    const dbDataFut  = downloadCategoryRawWeaponData("dualblades",     WEAPON_DB_PATH,  validateSimpleMelee);
+    const lDataFut   = downloadCategoryRawWeaponData("lance",          WEAPON_L_PATH,   validateSimpleMelee);
+    const glDataFut  = downloadCategoryRawWeaponData("gunlance",       WEAPON_GL_PATH,  validateGL         );
+    const hDataFut   = downloadCategoryRawWeaponData("hammer",         WEAPON_H_PATH,   validateSimpleMelee);
+    const hhDataFut  = downloadCategoryRawWeaponData("huntinghorn",    WEAPON_HH_PATH,  validateHH         );
+    const saDataFut  = downloadCategoryRawWeaponData("switchaxe",      WEAPON_SA_PATH,  validateSA         );
+    const cbDataFut  = downloadCategoryRawWeaponData("chargeblade",    WEAPON_CB_PATH,  validateCB         );
+    const igDataFut  = downloadCategoryRawWeaponData("insectglaive",   WEAPON_IG_PATH,  validateIG         );
+    const lbgDataFut = downloadCategoryRawWeaponData("lightbowgun",    WEAPON_LBG_PATH, validateBowgun     );
+    const hbgDataFut = downloadCategoryRawWeaponData("heavybowgun",    WEAPON_HBG_PATH, validateBowgun     );
+    const bowDataFut = downloadCategoryRawWeaponData("bow",            WEAPON_BOW_PATH, validateBow        );
     return {
             greatsword:     await gsDataFut,
             longsword:      await lsDataFut,
@@ -733,6 +783,9 @@ class GameData {
                     arcShotTypesMap: bowArcShotTypesMap,
                     chargeShotTypesMap: bowChargeShotTypesMap,
                 },
+                bowguns: {
+                    ammoTypesMap: bowgunAmmoTypesMap,
+                }
             },
             weaponSpecialSelections: {
                 array: Array.from(specialSelectionTypesMap.values()),
