@@ -21,4 +21,5 @@ Some acknowledgements so far:
 - Discord user `T3h Phish #5878` for finding a bug.
 - <https://www.mhrbuilder.com/> for providing rampage skill sharpness data, and as a useful cross-check for many others.
 - Discord user `Rayorne_Senephoene#9356` for clarifying `Firing: Rapid`, `Firing: Pierce`, etc. ramp skill math and double-checking which ones require Bow Charge Plus from in-game.
+- Discord user `DevNode#4768` for answering a bunch of questions, particularly on bowgun stats, and providing an [ammo stat tables reference](https://docs.google.com/spreadsheets/d/1DLaU_Q9gVsxexQyjJDeYScVAVjDTH51dhyWEDC31PBg/edit#gid=0).
 

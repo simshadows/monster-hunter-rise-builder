@@ -155,6 +155,8 @@ for (weapon_category, spec_subdict) in data_spec.items():
                 d["insectglaive_stats"] = obj["insectglaive_stats"]
             if weapon_category == "bow":
                 d["bow_stats"] = obj["bow_stats"]
+            if (weapon_category == "lightbowgun") or (weapon_category == "heavybowgun"):
+                d["bowgun_stats"] = obj["bowgun_stats"]
 
             data[weapon_category][tree_name][weapon_id] = d
 
@@ -339,6 +341,47 @@ charge_shot_fmt = """\
                     ["{charge_shot_type}", {level}]\
 """
 
+bowgun_stats_fmt = """,
+
+            "bowgunStats": {{
+                "deviation": {{"severity": {deviation_severity}, "left": {deviation_left}, "right": {deviation_right}}},
+                "recoil": {recoil},
+                "reload": {reload},
+                "ammo": {{
+                    "normal":   {ammo_normal},
+                    "pierce":   {ammo_pierce},
+                    "spread":   {ammo_spread},
+                    "shrapnel": {ammo_shrapnel},
+                    "sticky":   {ammo_sticky},
+                    "cluster":  {ammo_cluster},
+
+                    "fire":    {ammo_fire},
+                    "water":   {ammo_water},
+                    "thunder": {ammo_thunder},
+                    "ice":     {ammo_ice},
+                    "dragon":  {ammo_dragon},
+
+                    "piercing_fire":    {ammo_piercing_fire},
+                    "piercing_water":   {ammo_piercing_water},
+                    "piercing_thunder": {ammo_piercing_thunder},
+                    "piercing_ice":     {ammo_piercing_ice},
+                    "piercing_dragon":  {ammo_piercing_dragon},
+
+                    "poison":    {ammo_poison},
+                    "paralysis": {ammo_paralysis},
+                    "sleep":     {ammo_sleep},
+                    "exhaust":   {ammo_exhaust},
+                    "recover":   {ammo_recover},
+
+                    "demon":   {ammo_demon},
+                    "armor":   {ammo_armor},
+                    "slicing": {ammo_slicing},
+                    "wyvern":  {ammo_wyvern},
+                    "tranq":   {ammo_tranq}
+                }}
+            }}\
+"""
+
 
 def process_ramp_skills(lst):
     slot_strs = []
@@ -424,6 +467,26 @@ for (weapon_category, _) in data_spec.items():
                         sleep_coating=str(compatible_coatings["sleep_coating"]),
                         blast_coating=str(compatible_coatings["blast_coating"]),
                         exhaust_coating=str(compatible_coatings["exhaust_coating"]),
+                    )
+
+            if "bowgun_stats" in weapon_data:
+                so = weapon_data["bowgun_stats"]
+
+                assert len(so["ammo"]) == 6 + 5 + 5 + 5 + 5
+                ammo_kwargs = {}
+                # We're not gonna check every individual key because it will be caught later anyway
+                for (k, v) in so["ammo"].items():
+                    ammo_kwargs["ammo_" + k] = json.dumps([[x["available"], x["ammo_capacity"]] for x in v])
+
+                special_mechanics += bowgun_stats_fmt.format(
+                        deviation_severity=so["deviation"]["severity"],
+                        deviation_left=str(so["deviation"]["left"]).lower(),
+                        deviation_right=str(so["deviation"]["right"]).lower(),
+
+                        recoil=so["recoil"],
+                        reload=so["reload"],
+
+                        **ammo_kwargs,
                     )
 
             weapon_strs.append(weapon_fmt.format(

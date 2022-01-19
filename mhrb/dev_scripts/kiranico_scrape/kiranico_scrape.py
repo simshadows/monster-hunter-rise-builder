@@ -134,6 +134,7 @@ def scrape_weapon_category_page(weapon_category, url, tagset):
         chargeblade_stats = None
         insectglaive_stats = None
         bow_stats = None
+        bowgun_stats = None
 
         num_decos = len(c2.contents[1].contents) - 1
         assert (num_decos >= 0) and (num_decos <= 3)
@@ -296,6 +297,157 @@ def scrape_weapon_category_page(weapon_category, url, tagset):
             read_coating(special_mech_3[4], "Sleep Coating"      )
             read_coating(special_mech_3[5], "Blast Coating"      )
             read_coating(special_mech_3[6], "Exhaust Coating"    )
+
+        if weapon_category == "lightbowgun" or weapon_category == "heavybowgun":
+            bowgun_stats = {}
+
+            c3 = c2.contents[5].contents[0].contents[0]
+
+            assert len(c3) == 5 # Number of tables in c3
+            c4a = c3.contents[0]
+            c4b = c3.contents[1].contents[0]
+            c4c = c3.contents[2].contents[0]
+            c4d = c3.contents[3].contents[0]
+            c4e = c3.contents[4].contents[0]
+
+            assert len(c4a) == 3 # Number of rows
+            deviation_str = str(c4a.contents[0].contents[0]).strip()
+            recoil_str    = str(c4a.contents[1].contents[0]).strip()
+            reload_str    = str(c4a.contents[2].contents[0]).strip()
+
+            deviation_substrs = deviation_str.split()
+            if len(deviation_substrs) == 2:
+                assert deviation_substrs[0] == "Deviation"
+                assert deviation_substrs[1] == "None" # Can only be None
+                bowgun_stats["deviation"] = {
+                    "severity": 0,
+                    "left": False,
+                    "right": False,
+                }
+            elif len(deviation_substrs) == 3:
+                assert deviation_substrs[0] == "Deviation"
+                severity = 0
+                left = False
+                right = False
+                
+                if deviation_substrs[1] == "L":
+                    left = True
+                elif deviation_substrs[1] == "R":
+                    right = True
+                elif deviation_substrs[1] == "LR":
+                    left = True
+                    right = True
+                else:
+                    raise ValueError("Unexpected string")
+
+                severity = {
+                    "Mild": 1,
+                    "Severe": 2
+                }[deviation_substrs[2]]
+
+                bowgun_stats["deviation"] = {
+                    "severity": severity,
+                    "left": left,
+                    "right": right,
+                }
+            else:
+                raise ValueError("Unexpected length")
+
+            recoil_substrs = recoil_str.split()
+            assert recoil_substrs[0] == "Recoil"
+            recoil_tup = tuple(recoil_substrs[1:])
+            bowgun_stats["recoil"] = {
+                #("Smallest",): 0, # Doesn't exist at base configuration
+                #("Very", "Low"): 1, # Doesn't exist at base configuration
+                #("Low",): 2, # (See the last entry...)
+                ("Some",): 3,
+                ("Average",): 4,
+                ("High",): 5,
+
+                ("Very", "Low"): 2, # Kiranico mistakenly writes "Very Low" instead of "Low".
+            }[recoil_tup]
+
+            reload_substrs = reload_str.split()
+            assert reload_substrs[0] == "Reload"
+            reload_tup = tuple(reload_substrs[1:])
+            bowgun_stats["reload"] = {
+                #("Slowest",): 0, # Doesn't exist at base configuration
+                ("Very", "Slow"): 1,
+                ("Slow",): 2,
+                ("Below", "Avg."): 3,
+                ("Average",): 4,
+                ("Above", "Avg."): 5,
+                ("Fast",): 6,
+                #("Very", "Fast"): 7, # Doesn't exist at base configuration
+                #("Fastest",): 8, # Doesn't exist at base configuration
+            }[reload_tup]
+
+            ammo_stats = bowgun_stats["ammo"] = {}
+            def parse_row(c5, expected_first_cell, expected_cols):
+                assert len(c5) == expected_cols
+                assert str(c5.contents[0].contents[0]) == expected_first_cell
+
+                ret2 = []
+                for c6 in c5.contents[1:]:
+                    classes = tuple(c6.get("class", []))
+
+                    if classes == tuple():
+                        available = True
+                    elif classes == ("text-gray-400",):
+                        available = False
+                    else:
+                        raise ValueError("Unexpected HTML classes: " + str(classes))
+
+                    ammo_capacity = int(c6.contents[0])
+
+                    assert ammo_capacity >= 0
+                    assert ammo_capacity < 10 # Sanity check. If a new weapon comes out that exceeds this, update the check!
+                    assert not (available and (ammo_capacity == 0)) # This shouldn't exist
+
+                    ret2.append({"available": available, "ammo_capacity": ammo_capacity})
+                return ret2
+
+            assert len(c4b) == 6 # Number of rows
+            ammo_stats["normal"]   = parse_row(c4b.contents[0], "Nrm", 4)
+            ammo_stats["pierce"]   = parse_row(c4b.contents[1], "Prc", 4)
+            ammo_stats["spread"]   = parse_row(c4b.contents[2], "Spr", 4)
+            ammo_stats["shrapnel"] = parse_row(c4b.contents[3], "Shr", 4)
+            ammo_stats["sticky"]   = parse_row(c4b.contents[4], "Sti", 4)
+            ammo_stats["cluster"]  = parse_row(c4b.contents[5], "Clu", 4)
+
+            assert len(c4c) == 5 # Number of rows
+            ammo_stats["fire"]    = parse_row(c4c.contents[0], "Fir/P.", 3)
+            ammo_stats["water"]   = parse_row(c4c.contents[1], "Wat/P.", 3)
+            ammo_stats["thunder"] = parse_row(c4c.contents[2], "Thn/P.", 3)
+            ammo_stats["ice"]     = parse_row(c4c.contents[3], "Ice/P.", 3)
+            ammo_stats["dragon"]  = parse_row(c4c.contents[4], "Dra/P.", 3)
+
+            assert len(c4d) == 5 # Number of rows
+            ammo_stats["poison"]    = parse_row(c4d.contents[0], "Poi", 3)
+            ammo_stats["paralysis"] = parse_row(c4d.contents[1], "Par", 3)
+            ammo_stats["sleep"]     = parse_row(c4d.contents[2], "Sle", 3)
+            ammo_stats["exhaust"]   = parse_row(c4d.contents[3], "Exh", 3)
+            ammo_stats["recover"]   = parse_row(c4d.contents[4], "Rec", 3)
+
+            assert len(c4e) == 5 # Number of rows
+            ammo_stats["demon"]   = parse_row(c4e.contents[0], "Dem", 2)
+            ammo_stats["armor"]   = parse_row(c4e.contents[1], "Amr", 2)
+            ammo_stats["slicing"] = parse_row(c4e.contents[2], "Sli", 2)
+            ammo_stats["wyvern"]  = parse_row(c4e.contents[3], "Wyv", 2)
+            ammo_stats["tranq"]   = parse_row(c4e.contents[4], "Tra", 2)
+
+            # Now, we do some further processing to separate the piercing elemental ammo
+
+            def reprocess_ele_ammo(k):
+                x = ammo_stats[k]
+                assert len(x) == 2
+                ammo_stats["piercing_"+k] = [x.pop()]
+                assert len(x) == 1
+            reprocess_ele_ammo("fire")
+            reprocess_ele_ammo("water")
+            reprocess_ele_ammo("thunder")
+            reprocess_ele_ammo("ice")
+            reprocess_ele_ammo("dragon")
             
         #data = {}
         data = scrape_weapon_page(weapon_page_url, weapon_name, weapon_category, tagset)
@@ -319,6 +471,8 @@ def scrape_weapon_category_page(weapon_category, url, tagset):
             data["insectglaive_stats"] = insectglaive_stats
         if bow_stats is not None:
             data["bow_stats"] = bow_stats
+        if bowgun_stats is not None:
+            data["bowgun_stats"] = bowgun_stats
 
         ret.append(data)
     return ret

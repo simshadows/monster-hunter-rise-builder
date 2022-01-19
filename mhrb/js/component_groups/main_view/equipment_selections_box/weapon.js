@@ -331,9 +331,6 @@ class SpecialSelection extends React.Component {
         check.isObjOrNull(this.props.specialSelectionRO);
         assert(check.isArr(this.props.specialSelectionOptions) && (this.props.specialSelectionOptions.length > 0));
 
-        console.log(this.props.specialSelectionRO);
-        console.log(this.props.specialSelectionOptions);
-
         check.isFunction(this.props.handleSelectSpecialSelection);
 
         const text = (this.props.specialSelectionRO === null) ? "No Mod" : this.props.specialSelectionRO.name;
