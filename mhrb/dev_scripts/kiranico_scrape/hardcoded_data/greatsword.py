@@ -100,7 +100,7 @@ HARDCODED_GS_SPEC = [
         ("Tetranadon Cutter", "17c"),
     ]),
     ("Bone Tree", None, [
-        ("Bone Blade I", "18a"),
+        ("Bone Cleaver I", "18a"),
         ("Bone Slasher", "18b"),
         ("Jawblade I", "18c"),
         ("Giant Jawblade", "18d"),
@@ -217,12 +217,12 @@ HARDCODED_GS_SPEC = [
         ("Cat's Curse", "41c"),
     ]),
     ("Rampage Tree", None, [
-        ("Rampage Cleaver I"  , "42a"),
-        ("Rampage Cleaver II" , "42b"),
-        ("Rampage Cleaver III", "42c"),
-        ("Rampage Cleaver IV" , "42d"),
-        ("Rampage Cleaver V"  , "42e"),
-        ("Rampage Cleaver S"  , "42f"),
+        ("Rampage Cleaver I"  , "ra"),
+        ("Rampage Cleaver II" , "rb"),
+        ("Rampage Cleaver III", "rc"),
+        ("Rampage Cleaver IV" , "rd"),
+        ("Rampage Cleaver V"  , "re"),
+        ("Rampage Cleaver S"  , "rf"),
     ]),
 ]
 

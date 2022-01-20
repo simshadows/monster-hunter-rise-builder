@@ -160,6 +160,49 @@ export function eleStatIdToName(obj) {
     return eleStatIdToNameMap[obj];
 }
 
+export function bowgunDeviationSpecToName(severity, left, right) {
+    assert(check.isInt(severity));
+    assert(check.isBool(left));
+    assert(check.isBool(right));
+    if (severity === 0) {
+        if (right || left) console.warn("Direction should not be set.");
+        return "None";
+    } else {
+        assert(severity === 1 || severity === 2);
+        let ret = (severity === 1) ? " Mild" : " Severe";
+        if (right) ret = "R" + ret;
+        if (left) ret = "L" + ret;
+        return ret;
+    }
+}
+
+const bowgunRecoilIntToNameMap = new Map([
+    [0, "Smallest"],
+    [1, "Very Low"],
+    [2, "Low"],
+    [3, "Some"],
+    [4, "Average"],
+    [5, "High"],
+]);
+export function bowgunRecoilIntToName(obj) {
+    return bowgunRecoilIntToNameMap.get(obj);
+}
+
+const bowgunReloadIntToNameMap = new Map([
+    [0, "Slowest"],
+    [1, "Very Slow"],
+    [2, "Slow"],
+    [3, "Below Avg."],
+    [4, "Average"],
+    [5, "Above Avg."],
+    [6, "Fast"],
+    [7, "Very Fast"],
+    [8, "Fastest"],
+]);
+export function bowgunReloadIntToName(obj) {
+    return bowgunReloadIntToNameMap.get(obj);
+}
+
 const weaponTagsMap = {
     greatsword    : new Set(["melee"]),
     longsword     : new Set(["melee"]),

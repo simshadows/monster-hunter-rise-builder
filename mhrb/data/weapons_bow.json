@@ -5891,8 +5891,88 @@
             }
         }
     },
-    "Rampage Tree": {
+    "<TODO: Find out the name of this tree.>": {
         "44a": {
+            "rarity": 6,
+            "endlineTag": "",
+
+            "name": "Azure Era Wyrmbow I",
+            "attack": 180,
+            "affinity": 10,
+            "defense": 0,
+            "decoSlots": [3],
+            "eleStat": {"water": 15},
+
+            "rampSkills": [
+                [
+                    ["affinity_boost_4", ""],
+                    ["water_boost_4", ""],
+                    ["anti_aerial_species", ""]
+                ]
+            ],
+
+            "bowStats": {
+                "arcShot": "recovery",
+                "baseChargeLevelLimit": 3,
+                "chargeShot": [
+                    ["spread", 2],
+                    ["spread", 2],
+                    ["spread", 3],
+                    ["spread", 4]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 1,
+                    "para_coating": 0,
+                    "sleep_coating": 1,
+                    "blast_coating": 1,
+                    "exhaust_coating": 1
+                }
+            }
+        },
+        "44b": {
+            "rarity": 7,
+            "endlineTag": "hr",
+
+            "name": "Azure Era \"Soaring Dragon\"",
+            "attack": 190,
+            "affinity": 20,
+            "defense": 0,
+            "decoSlots": [3],
+            "eleStat": {"water": 25},
+
+            "rampSkills": [
+                [
+                    ["affinity_boost_4", ""],
+                    ["water_boost_4", ""],
+                    ["anti_aerial_species", ""]
+                ]
+            ],
+
+            "bowStats": {
+                "arcShot": "recovery",
+                "baseChargeLevelLimit": 3,
+                "chargeShot": [
+                    ["spread", 2],
+                    ["spread", 3],
+                    ["spread", 3],
+                    ["spread", 5]
+                ],
+                "compatibleCoatings": {
+                    "close_range_coating": 1,
+                    "power_coating": 1,
+                    "poison_coating": 1,
+                    "para_coating": 0,
+                    "sleep_coating": 1,
+                    "blast_coating": 1,
+                    "exhaust_coating": 1
+                }
+            }
+        }
+    },
+    "Rampage Tree": {
+        "ra": {
             "rarity": 4,
             "endlineTag": "",
 
@@ -5953,7 +6033,7 @@
                 }
             }
         },
-        "44b": {
+        "rb": {
             "rarity": 5,
             "endlineTag": "",
 
@@ -6023,7 +6103,7 @@
                 }
             }
         },
-        "44c": {
+        "rc": {
             "rarity": 5,
             "endlineTag": "",
 
@@ -6040,9 +6120,9 @@
                     ["elemental_boost_1", ""],
                     ["affinity_boost_2", ""],
                     ["defense_boost_2", ""],
-                    ["attack_boost_1", "44b"],
-                    ["affinity_boost_1", "44b"],
-                    ["defense_boost_1", "44b"]
+                    ["attack_boost_1", "rb"],
+                    ["affinity_boost_1", "rb"],
+                    ["defense_boost_1", "rb"]
                 ],
                 [
                     ["non_elemental_boost", ""],
@@ -6103,7 +6183,7 @@
                 }
             }
         },
-        "44d": {
+        "rd": {
             "rarity": 6,
             "endlineTag": "",
 
@@ -6120,9 +6200,9 @@
                     ["elemental_boost_1", ""],
                     ["affinity_boost_2", ""],
                     ["defense_boost_2", ""],
-                    ["attack_boost_1", "44b"],
-                    ["affinity_boost_1", "44b"],
-                    ["defense_boost_1", "44b"]
+                    ["attack_boost_1", "rb"],
+                    ["affinity_boost_1", "rb"],
+                    ["defense_boost_1", "rb"]
                 ],
                 [
                     ["non_elemental_boost", ""],
@@ -6132,11 +6212,11 @@
                     ["ice_2", ""],
                     ["dragon_2", ""],
                     ["blast_1", ""],
-                    ["fire_1", "44c"],
-                    ["water_1", "44c"],
-                    ["thunder_1", "44c"],
-                    ["ice_1", "44c"],
-                    ["dragon_1", "44c"]
+                    ["fire_1", "rc"],
+                    ["water_1", "rc"],
+                    ["thunder_1", "rc"],
+                    ["ice_1", "rc"],
+                    ["dragon_1", "rc"]
                 ],
                 [
                     ["attack_surge", ""],
@@ -6190,7 +6270,7 @@
                 }
             }
         },
-        "44e": {
+        "re": {
             "rarity": 6,
             "endlineTag": "",
 
@@ -6207,12 +6287,12 @@
                     ["elemental_boost_1", ""],
                     ["affinity_boost_3", ""],
                     ["defense_boost_3", ""],
-                    ["attack_boost_2", "44d"],
-                    ["affinity_boost_2", "44d"],
-                    ["defense_boost_2", "44d"],
-                    ["attack_boost_1", "44b"],
-                    ["affinity_boost_1", "44b"],
-                    ["defense_boost_1", "44b"]
+                    ["attack_boost_2", "rd"],
+                    ["affinity_boost_2", "rd"],
+                    ["defense_boost_2", "rd"],
+                    ["attack_boost_1", "rb"],
+                    ["affinity_boost_1", "rb"],
+                    ["defense_boost_1", "rb"]
                 ],
                 [
                     ["non_elemental_boost", ""],
@@ -6222,16 +6302,16 @@
                     ["ice_3", ""],
                     ["dragon_3", ""],
                     ["blast_1", ""],
-                    ["fire_2", "44d"],
-                    ["water_2", "44d"],
-                    ["thunder_2", "44d"],
-                    ["ice_2", "44d"],
-                    ["dragon_2", "44d"],
-                    ["fire_1", "44c"],
-                    ["water_1", "44c"],
-                    ["thunder_1", "44c"],
-                    ["ice_1", "44c"],
-                    ["dragon_1", "44c"]
+                    ["fire_2", "rd"],
+                    ["water_2", "rd"],
+                    ["thunder_2", "rd"],
+                    ["ice_2", "rd"],
+                    ["dragon_2", "rd"],
+                    ["fire_1", "rc"],
+                    ["water_1", "rc"],
+                    ["thunder_1", "rc"],
+                    ["ice_1", "rc"],
+                    ["dragon_1", "rc"]
                 ],
                 [
                     ["attack_surge", ""],
@@ -6287,7 +6367,7 @@
                 }
             }
         },
-        "44f": {
+        "rf": {
             "rarity": 7,
             "endlineTag": "hr",
 
@@ -6304,14 +6384,14 @@
                     ["elemental_boost_1", ""],
                     ["affinity_boost_4", ""],
                     ["defense_boost_3", ""],
-                    ["attack_boost_3", "44e"],
-                    ["affinity_boost_3", "44e"],
-                    ["attack_boost_2", "44d"],
-                    ["affinity_boost_2", "44d"],
-                    ["defense_boost_2", "44d"],
-                    ["attack_boost_1", "44b"],
-                    ["affinity_boost_1", "44b"],
-                    ["defense_boost_1", "44b"]
+                    ["attack_boost_3", "re"],
+                    ["affinity_boost_3", "re"],
+                    ["attack_boost_2", "rd"],
+                    ["affinity_boost_2", "rd"],
+                    ["defense_boost_2", "rd"],
+                    ["attack_boost_1", "rb"],
+                    ["affinity_boost_1", "rb"],
+                    ["defense_boost_1", "rb"]
                 ],
                 [
                     ["non_elemental_boost", ""],
@@ -6321,17 +6401,17 @@
                     ["ice_3", ""],
                     ["dragon_3", ""],
                     ["blast_2", ""],
-                    ["blast_1", "44e"],
-                    ["fire_2", "44d"],
-                    ["water_2", "44d"],
-                    ["thunder_2", "44d"],
-                    ["ice_2", "44d"],
-                    ["dragon_2", "44d"],
-                    ["fire_1", "44c"],
-                    ["water_1", "44c"],
-                    ["thunder_1", "44c"],
-                    ["ice_1", "44c"],
-                    ["dragon_1", "44c"]
+                    ["blast_1", "re"],
+                    ["fire_2", "rd"],
+                    ["water_2", "rd"],
+                    ["thunder_2", "rd"],
+                    ["ice_2", "rd"],
+                    ["dragon_2", "rd"],
+                    ["fire_1", "rc"],
+                    ["water_1", "rc"],
+                    ["thunder_1", "rc"],
+                    ["ice_1", "rc"],
+                    ["dragon_1", "rc"]
                 ],
                 [
                     ["attack_surge", ""],
@@ -6351,9 +6431,9 @@
                     ["use_sleep_coating_2", ""],
                     ["use_blast_coating", ""],
                     ["use_exhaust_coating", ""],
-                    ["use_poison_coating_1", "44e"],
-                    ["use_para_coating_1", "44e"],
-                    ["use_sleep_coating_1", "44e"]
+                    ["use_poison_coating_1", "re"],
+                    ["use_para_coating_1", "re"],
+                    ["use_sleep_coating_1", "re"]
                 ],
                 [
                     ["close_range_coating_boost", ""],
@@ -6363,9 +6443,9 @@
                     ["use_sleep_coating_2", ""],
                     ["use_blast_coating", ""],
                     ["use_exhaust_coating", ""],
-                    ["use_poison_coating_1", "44e"],
-                    ["use_para_coating_1", "44e"],
-                    ["use_sleep_coating_1", "44e"]
+                    ["use_poison_coating_1", "re"],
+                    ["use_para_coating_1", "re"],
+                    ["use_sleep_coating_1", "re"]
                 ],
                 [
                     ["arc_shot_recovery", ""],

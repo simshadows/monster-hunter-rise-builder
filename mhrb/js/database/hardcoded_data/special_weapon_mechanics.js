@@ -388,6 +388,62 @@ const hardcodedBowChargeShotTypes = [
     }],
 ];
 
+function generateBowgunAmmoTypes(keyBase, nameBase, num) {
+    const ret = [];
+    for (let i = 0; i < num; ++i) {
+        ret.push([keyBase + "_" + String(i+1), {
+            name: nameBase + " Ammo " + String(i+1),
+        }]);
+    }
+    return ret;
+}
+function generateBowgunEleAmmoTypes(keyBase, nameBase) {
+    return [
+        [keyBase, {
+            name: nameBase + " Ammo",
+        }],
+        ["piercing_" + keyBase, {
+            name: "Piercing " + nameBase + " Ammo",
+        }],
+    ];
+}
+const hardcodedBowgunAmmoTypes = [
+    ...generateBowgunAmmoTypes("normal"  , "Normal"  , 3),
+    ...generateBowgunAmmoTypes("pierce", "Pierce"    , 3),
+    ...generateBowgunAmmoTypes("spread"  , "Spread"  , 3),
+    ...generateBowgunAmmoTypes("shrapnel", "Shrapnel", 3),
+    ...generateBowgunAmmoTypes("sticky"  , "Sticky"  , 3),
+    ...generateBowgunAmmoTypes("cluster" , "Cluster" , 3),
+
+    ...generateBowgunEleAmmoTypes("fire"   , "Flaming"),
+    ...generateBowgunEleAmmoTypes("water"  , "Water"),
+    ...generateBowgunEleAmmoTypes("thunder", "Thunder"),
+    ...generateBowgunEleAmmoTypes("ice"    , "Ice"),
+    ...generateBowgunEleAmmoTypes("dragon" , "Dragon"),
+
+    ...generateBowgunAmmoTypes("poison"   , "Poison"   , 2),
+    ...generateBowgunAmmoTypes("paralysis", "Paralysis", 2),
+    ...generateBowgunAmmoTypes("sleep"    , "Sleep"    , 2),
+    ...generateBowgunAmmoTypes("exhaust"  , "Exhaust"  , 2),
+    ...generateBowgunAmmoTypes("recover"  , "Recover"  , 2),
+
+    ["demon", {
+        name: "Demon Ammo",
+    }],
+    ["armor", {
+        name: "Armor Ammo",
+    }],
+    ["slicing", {
+        name: "Slicing Ammo",
+    }],
+    ["wyvern", {
+        name: "Wyvern Ammo",
+    }],
+    ["tranq", {
+        name: "Tranq Ammo",
+    }],
+];
+
 const hardcodedSpecialSelectionTypes = [
     [1, {
         name: "Silencer",
@@ -424,6 +480,8 @@ const insectGlaiveKinsectBonusesMap = new Map();
 
 const bowArcShotTypesMap = new Map();
 const bowChargeShotTypesMap = new Map();
+
+const bowgunAmmoTypesMap = new Map();
 
 const specialSelectionTypesMap = new Map();
 
@@ -492,6 +550,10 @@ populate(hardcodedBowChargeShotTypes, bowChargeShotTypesMap, (dataObj) => {
     assert(isNonEmptyStr(dataObj.id));
 });
 
+populate(hardcodedBowgunAmmoTypes, bowgunAmmoTypesMap, (dataObj) => {
+    assert(isNonEmptyStr(dataObj.id));
+});
+
 populate(hardcodedSpecialSelectionTypes, specialSelectionTypesMap, (dataObj) => {
     assert(Number.isInteger(dataObj.id));
     assert(isNonEmptyStr(dataObj.name));
@@ -513,6 +575,8 @@ export {
 
     bowArcShotTypesMap,
     bowChargeShotTypesMap,
+
+    bowgunAmmoTypesMap,
 
     specialSelectionTypesMap,
 };

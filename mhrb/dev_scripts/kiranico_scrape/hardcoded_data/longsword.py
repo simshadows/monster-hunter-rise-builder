@@ -225,13 +225,17 @@ HARDCODED_LS_SPEC = [
         ("Hand-Me-Down Sword II", "42b"),
         ("Kamura's Inheritance", "42c"),
     ]),
+    ("<TODO: Find out the name of this tree.>", None, [
+        ("Azure Star Blade I", "43a"),
+        ("Azure Star \"Dragon Dance\"", "43b"),
+    ]),
     ("Rampage Tree", None, [
-        ("Rampage Blade I"  , "43a"),
-        ("Rampage Blade II" , "43b"),
-        ("Rampage Blade III", "43c"),
-        ("Rampage Blade IV" , "43d"),
-        ("Rampage Blade V"  , "43e"),
-        ("Rampage Blade S"  , "43f"),
+        ("Rampage Blade I"  , "ra"),
+        ("Rampage Blade II" , "rb"),
+        ("Rampage Blade III", "rc"),
+        ("Rampage Blade IV" , "rd"),
+        ("Rampage Blade V"  , "re"),
+        ("Rampage Blade S"  , "rf"),
     ]),
 ]
 

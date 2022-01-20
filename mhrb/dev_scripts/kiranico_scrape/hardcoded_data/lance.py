@@ -217,12 +217,12 @@ HARDCODED_L_SPEC = [
         ("Classy Fragrance", "40c"),
     ]),
     ("Rampage Tree", None, [
-        ("Rampage Spear I"  , "41a"),
-        ("Rampage Spear II" , "41b"),
-        ("Rampage Spear III", "41c"),
-        ("Rampage Spear IV" , "41d"),
-        ("Rampage Spear V"  , "41e"),
-        ("Rampage Spear S"  , "41f"),
+        ("Rampage Spear I"  , "ra"),
+        ("Rampage Spear II" , "rb"),
+        ("Rampage Spear III", "rc"),
+        ("Rampage Spear IV" , "rd"),
+        ("Rampage Spear V"  , "re"),
+        ("Rampage Spear S"  , "rf"),
     ]),
 ]
 

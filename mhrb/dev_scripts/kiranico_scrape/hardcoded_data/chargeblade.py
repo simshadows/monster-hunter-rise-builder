@@ -25,7 +25,7 @@ HARDCODED_CB_SPEC = [
         ("Weissritter I", "3a"),
         ("Weissritter II", "3b"),
         ("Weissritter III", "3c"),
-        ("Paladire", "3d"),
+        ("Pavadira", "3d"),
     ]),
     ("Zinogre Tree", "3a", [
         ("Usurper's Lightning I", "4a"),
@@ -195,12 +195,12 @@ HARDCODED_CB_SPEC = [
         ("Shieldraad", "36c"),
     ]),
     ("Rampage Tree", None, [
-        ("Rampage C. Blade I"  , "37a"),
-        ("Rampage C. Blade II" , "37b"),
-        ("Rampage C. Blade III", "37c"),
-        ("Rampage C. Blade IV" , "37d"),
-        ("Rampage C. Blade V"  , "37e"),
-        ("Rampage C. Blade S"  , "37f"),
+        ("Rampage C. Blade I"  , "ra"),
+        ("Rampage C. Blade II" , "rb"),
+        ("Rampage C. Blade III", "rc"),
+        ("Rampage C. Blade IV" , "rd"),
+        ("Rampage C. Blade V"  , "re"),
+        ("Rampage C. Blade S"  , "rf"),
     ]),
 ]
 
