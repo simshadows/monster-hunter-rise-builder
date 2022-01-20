@@ -155,6 +155,10 @@ div.calculation-ammo-box-table {
 table.calculation-ammo-box-table {
     width: 100%;
 }
+thead.calculation-ammo-box-table > tr > th {
+    font: var(--font-calculated-skills--ammo-head);
+    padding: 2px 0 6px 0;
+}
 th.calculation-ammo-box-table {
     font: var(--font-calculated-skills--ammo);
 }

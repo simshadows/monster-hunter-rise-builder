@@ -393,6 +393,7 @@ function generateBowgunAmmoTypes(keyBase, nameBase, num) {
     for (let i = 0; i < num; ++i) {
         ret.push([keyBase + "_" + String(i+1), {
             name: nameBase + " Ammo " + String(i+1),
+            shortName: nameBase + " " + String(i+1),
         }]);
     }
     return ret;
@@ -401,15 +402,17 @@ function generateBowgunEleAmmoTypes(keyBase, nameBase) {
     return [
         [keyBase, {
             name: nameBase + " Ammo",
+            shortName: nameBase
         }],
         ["piercing_" + keyBase, {
             name: "Piercing " + nameBase + " Ammo",
+            shortName: "P. " + nameBase,
         }],
     ];
 }
 const hardcodedBowgunAmmoTypes = [
     ...generateBowgunAmmoTypes("normal"  , "Normal"  , 3),
-    ...generateBowgunAmmoTypes("pierce", "Pierce"    , 3),
+    ...generateBowgunAmmoTypes("pierce"  , "Pierce"  , 3),
     ...generateBowgunAmmoTypes("spread"  , "Spread"  , 3),
     ...generateBowgunAmmoTypes("shrapnel", "Shrapnel", 3),
     ...generateBowgunAmmoTypes("sticky"  , "Sticky"  , 3),
@@ -429,18 +432,23 @@ const hardcodedBowgunAmmoTypes = [
 
     ["demon", {
         name: "Demon Ammo",
+        shortName: "Demon",
     }],
     ["armor", {
         name: "Armor Ammo",
+        shortName: "Armor",
     }],
     ["slicing", {
         name: "Slicing Ammo",
+        shortName: "Slicing",
     }],
     ["wyvern", {
         name: "Wyvern Ammo",
+        shortName: "Wyvern",
     }],
     ["tranq", {
         name: "Tranq Ammo",
+        shortName: "Tranq",
     }],
 ];
 

@@ -26,6 +26,7 @@
     --font-equip-petalace--stat: normal normal 14px var(--font-scheme--family2);
 
     --font-calculated-values--text: bold   normal 14px var(--font-scheme--family2);
+    --font-calculated-skills--ammo-head: bold normal 14px var(--font-scheme--family2);
     --font-calculated-skills--ammo: normal normal 12px var(--font-scheme--family2);
 
     --font-select-buff--group-heading: bold   normal 18px var(--font-scheme--family2);

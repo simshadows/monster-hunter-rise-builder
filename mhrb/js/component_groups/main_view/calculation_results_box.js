@@ -111,7 +111,7 @@ class CalculationAmmoStatsBox extends React.Component {
         const dataArray = [];
         for (const [k, v] of Object.entries(this.props.ammoData)) {
             dataArray.push({
-                id: k,
+                ammoRO: v.ammoRO,
                 available: v.available,
                 capacity: v.ammoCapacity,
             });
@@ -131,7 +131,7 @@ class CalculationAmmoStatsBox extends React.Component {
         ];
 
         const cspecGetRowContent = (dataObj) => {
-            return [dataObj.id, String(dataObj.capacity), "Very High", "Slowest"];
+            return [dataObj.ammoRO.shortName, String(dataObj.capacity), "Very High", "Slowest"];
         };
 
         const implementationClassNames = {
