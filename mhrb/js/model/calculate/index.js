@@ -57,56 +57,27 @@ const elementalSharpnessModifiers = [
 
 
 const bowgunAmmoUpCapacityTable = new Map([
-    // id, Ammo Up 1, Ammo Up 2, Ammo Up 3
-    ["normal_1", [1, 1, 2]],
-    ["normal_2", [0, 1, 2]],
-    ["normal_3", [0, 0, 1]],
+    // [id, [Ammo Up 1, Ammo Up 2, Ammo Up 3]]
 
-    ["pierce_1", [1, 1, 2]],
-    ["pierce_2", [0, 1, 1]],
-    ["pierce_3", [0, 0, 1]],
+    ["normal_1", [1, 1, 2]], ["pierce_1", [1, 1, 2]], ["spread_1", [1, 1, 2]],
+    ["normal_2", [0, 1, 2]], ["pierce_2", [0, 1, 1]], ["spread_2", [0, 1, 1]],
+    ["normal_3", [0, 0, 1]], ["pierce_3", [0, 0, 1]], ["spread_3", [0, 0, 1]],
 
-    ["spread_1", [1, 1, 2]],
-    ["spread_2", [0, 1, 1]],
-    ["spread_3", [0, 0, 1]],
+    ["shrapnel_1", [1, 1, 2]], ["sticky_1", [0, 1, 1]], ["cluster_1", [0, 0, 1]],
+    ["shrapnel_2", [0, 1, 2]], ["sticky_2", [0, 0, 1]], ["cluster_2", [0, 0, 1]],
+    ["shrapnel_3", [0, 0, 1]], ["sticky_3", [0, 0, 1]], ["cluster_3", [0, 0, 1]],
 
-    ["shrapnel_1", [1, 1, 2]],
-    ["shrapnel_2", [0, 1, 2]],
-    ["shrapnel_3", [0, 0, 1]],
+    ["fire"   , [0, 1, 1]], ["piercing_fire"   , [0, 1, 1]],
+    ["water"  , [0, 1, 1]], ["piercing_water"  , [0, 1, 1]],
+    ["thunder", [0, 1, 1]], ["piercing_thunder", [0, 1, 1]],
+    ["ice"    , [0, 1, 1]], ["piercing_ice"    , [0, 1, 1]],
+    ["dragon" , [0, 0, 1]], ["piercing_dragon" , [0, 0, 1]],
 
-    ["sticky_1", [0, 1, 1]],
-    ["sticky_2", [0, 0, 1]],
-    ["sticky_3", [0, 0, 1]],
+    ["poison_1", [0, 1, 1]], ["paralysis_1", [0, 0, 1]], ["sleep_1", [0, 0, 1]],
+    ["poison_2", [0, 0, 1]], ["paralysis_2", [0, 0, 1]], ["sleep_2", [0, 0, 1]],
 
-    ["cluster_1", [0, 0, 1]],
-    ["cluster_2", [0, 0, 1]],
-    ["cluster_3", [0, 0, 1]],
-
-    ["fire"            , [0, 1, 1]],
-    ["piercing_fire"   , [0, 1, 1]],
-    ["water"           , [0, 1, 1]],
-    ["piercing_water"  , [0, 1, 1]],
-    ["thunder"         , [0, 1, 1]],
-    ["piercing_thunder", [0, 1, 1]],
-    ["ice"             , [0, 1, 1]],
-    ["piercing_ice"    , [0, 1, 1]],
-    ["dragon"          , [0, 0, 1]],
-    ["piercing_dragon" , [0, 0, 1]],
-
-    ["poison_1", [0, 1, 1]],
-    ["poison_2", [0, 0, 1]],
-
-    ["paralysis_1", [0, 0, 1]],
-    ["paralysis_2", [0, 0, 1]],
-
-    ["sleep_1", [0, 0, 1]],
-    ["sleep_2", [0, 0, 1]],
-
-    ["exhaust_1", [0, 0, 1]],
-    ["exhaust_2", [0, 0, 1]],
-
-    ["recover_1", [0, 1, 1]],
-    ["recover_2", [0, 0, 1]],
+    ["exhaust_1", [0, 0, 1]], ["recover_1", [0, 1, 1]],
+    ["exhaust_2", [0, 0, 1]], ["recover_2", [0, 0, 1]],
 
     ["demon"  , [0, 0, 1]],
     ["armor"  , [0, 0, 1]],
@@ -114,6 +85,61 @@ const bowgunAmmoUpCapacityTable = new Map([
     ["wyvern" , [0, 0, 0]],
     ["tranq"  , [1, 1, 1]],
 ]);
+
+
+const bowgunRecoilPerAmmoTable = new Map([
+    // Converts main stat into ammo-specific recoil values.
+    // Main stat is:                Ammo-specific values are:
+    //      5 = High                    3 = Very High
+    //      4 = Average                 2 = High
+    //      3 = Some                    1 = Average
+    //      2 = Low                     0 = Low
+    //      1 = Very Low
+    //      0 = Smallest
+
+    ["normal_1", [0, 0, 0, 0, 0, 0]], ["pierce_1", [0, 0, 0, 0, 0, 1]], ["spread_1", [0, 0, 0, 0, 0, 1]],
+    ["normal_2", [0, 0, 0, 0, 0, 1]], ["pierce_2", [0, 0, 0, 1, 2, 2]], ["spread_2", [0, 0, 0, 0, 1, 2]],
+    ["normal_3", [0, 0, 0, 0, 0, 1]], ["pierce_3", [0, 0, 0, 1, 2, 2]], ["spread_3", [0, 0, 0, 1, 2, 2]],
+
+    ["shrapnel_1", [0, 0, 0, 0, 0, 1]], ["sticky_1", [0, 0, 0, 1, 2, 2]], ["cluster_1", [0, 1, 2, 2, 3, 3]],
+    ["shrapnel_2", [0, 0, 0, 0, 1, 2]], ["sticky_2", [0, 0, 1, 2, 2, 3]], ["cluster_2", [1, 2, 2, 3, 3, 3]],
+    ["shrapnel_3", [0, 0, 0, 1, 2, 2]], ["sticky_3", [0, 0, 1, 2, 2, 3]], ["cluster_3", [1, 2, 2, 3, 3, 3]],
+
+    ["fire"   , [0, 0, 0, 0, 0, 1]], ["piercing_fire"   , [0, 0, 0, 0, 1, 2]],
+    ["water"  , [0, 0, 0, 0, 0, 1]], ["piercing_water"  , [0, 0, 0, 0, 1, 2]],
+    ["thunder", [0, 0, 0, 0, 0, 1]], ["piercing_thunder", [0, 0, 0, 0, 1, 2]],
+    ["ice"    , [0, 0, 0, 0, 0, 1]], ["piercing_ice"    , [0, 0, 0, 0, 1, 2]],
+    ["dragon" , [0, 0, 1, 2, 2, 3]], ["piercing_dragon" , [1, 2, 2, 3, 3, 3]],
+
+    ["poison_1", [0, 0, 1, 2, 2, 3]], ["paralysis_1", [0, 0, 1, 2, 2, 3]], ["sleep_1", [0, 0, 1, 2, 2, 3]],
+    ["poison_2", [1, 2, 2, 3, 3, 3]], ["paralysis_2", [1, 2, 2, 3, 3, 3]], ["sleep_2", [1, 2, 2, 3, 3, 3]],
+
+    ["exhaust_1", [0, 0, 0, 1, 2, 2]], ["recover_1", [0, 0, 0, 0, 1, 2]],
+    ["exhaust_2", [0, 0, 1, 2, 2, 3]], ["recover_2", [0, 0, 1, 2, 2, 3]],
+
+    ["demon"  , [0, 0, 0, 0, 1, 2]],
+    ["armor"  , [0, 0, 0, 0, 1, 2]],
+    ["slicing", [0, 0, 1, 2, 2, 3]],
+    ["wyvern" , [null, null, null, null, null, null]], // The UI writes "Wyvern" for this one
+    ["tranq"  , [0, 0, 0, 0, 1, 2]],
+]);
+
+
+//const bowgunReloadPerAmmoTable = new Map([
+//    // Converts main stat into ammo-specific reload values.
+//    // Main stat is:                Ammo-specific values are:
+//    //      0 = Slowest                 0 = Slowest
+//    //      1 = Very Slow               1 = Slow
+//    //      2 = Slow                    2 = Fast
+//    //      3 = Below Avg.              3 = Fastest
+//    //      4 = Average
+//    //      5 = Above Avg.
+//    //      6 = Fast
+//    //      7 = Very Fast
+//    //      8 = Fastest
+//
+//    ["normal_1", []], // TODO
+//]);
 
 
 /****************************************************************************************/
@@ -173,6 +199,7 @@ function calculateBuildPerformance(db, build, calcState) {
     assert(s.handicraftLevel         !== undefined);
     assert(s.mastersTouchLevel       !== undefined);
     assert(s.razorSharpLevel         !== undefined);
+    assert(s.recoilDownLevel         !== undefined);
     assert(s.defenseAdd              !== undefined);
     assert(s.defenseMul              !== undefined);
     assert(s.eleResAdd               !== undefined);
@@ -347,7 +374,10 @@ function calculateBuildPerformance(db, build, calcState) {
 
     let bowgunStats = b.bowgunStats;
     assert(((weaponRO.category === "lightbowgun") || (weaponRO.category === "heavybowgun")) === (bowgunStats !== null));
-    applyBuffsToBowgunAmmo(bowgunStats.ammo, s.ammoUpLevel);
+    if ((weaponRO.category === "lightbowgun") || (weaponRO.category === "heavybowgun")) {
+        const recoilStage = Math.max(0, bowgunStats.recoil - s.recoilDownLevel);
+        applyBuffsToBowgunAmmo(bowgunStats.ammo, s.ammoUpLevel, recoilStage);
+    }
 
     const ret = {
 
@@ -449,16 +479,19 @@ function getHighestSharpnessIndex(realSharpnessBar) {
 
 
 // IMPURE FUNCTION. Will modify the bowgun ammo object with new values.
-function applyBuffsToBowgunAmmo(ammoData, ammoUpLevel) {
-    if (ammoUpLevel > 0) {
-        assert(ammoUpLevel <= 3);
-        const keys = Object.keys(ammoData);
-        const i = ammoUpLevel - 1;
-        for (const k of keys) {
-            const addedCapacity = bowgunAmmoUpCapacityTable.get(k)[i];
+function applyBuffsToBowgunAmmo(ammoStat, ammoUpLevel, recoilStage) {
+    assert((ammoUpLevel >= 0) && (ammoUpLevel <= 3));
+    assert((recoilStage >= 0) && (recoilStage <= 5));
+
+    const keys = Object.keys(ammoStat);
+    for (const k of keys) {
+        if (ammoUpLevel > 0) {
+            const addedCapacity = bowgunAmmoUpCapacityTable.get(k)[ammoUpLevel - 1];
             assert(addedCapacity !== undefined);
-            ammoData[k].ammoCapacity += addedCapacity;
+            ammoStat[k].ammoCapacity += addedCapacity;
         }
+        ammoStat[k].recoil = bowgunRecoilPerAmmoTable.get(k)[recoilStage];
+        assert(ammoStat[k].recoil !== undefined);
     }
 }
 

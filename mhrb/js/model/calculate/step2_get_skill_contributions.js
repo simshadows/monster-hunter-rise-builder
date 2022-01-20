@@ -131,6 +131,7 @@ function getSkillContributions(db, build, calcState) {
     let handicraftLevel = 0;
     let mastersTouchLevel = 0; // Affects sharpness bar hits. Calculate later.
     let razorSharpLevel = 0; // Affects sharpness bar hits. Calculate later.
+    let recoilDownLevel = 0;
 
     let defenseAdd = 0;
     let defenseMul = 1;
@@ -512,6 +513,10 @@ function getSkillContributions(db, build, calcState) {
             razorSharpLevel = lvl;
         }],
 
+        ["recoil_down", (lid, lvl)=>{
+            recoilDownLevel = lvl;
+        }],
+
         ["recovery_speed", (lid, lvl)=>{nop();}],
         ["recovery_up", (lid, lvl)=>{nop();}],
 
@@ -615,6 +620,7 @@ function getSkillContributions(db, build, calcState) {
         handicraftLevel,
         mastersTouchLevel,
         razorSharpLevel,
+        recoilDownLevel,
 
         defenseAdd,
         defenseMul,

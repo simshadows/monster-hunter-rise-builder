@@ -17,6 +17,7 @@ import {
     eleStatIdToName,
     bowgunDeviationSpecToName,
     bowgunRecoilIntToName,
+    bowgunAmmoRecoilIntToName,
     bowgunReloadIntToName,
     iterateEleStatMapInLogicalOrder,
 } from "../../common.js";
@@ -115,6 +116,7 @@ class CalculationAmmoStatsBox extends React.Component {
                 ammoRO: v.ammoRO,
                 available: v.available,
                 capacity: v.ammoCapacity,
+                recoil: v.recoil,
             });
         }
         assert(dataArray.length > 0); // Should always be at least one row
@@ -133,7 +135,12 @@ class CalculationAmmoStatsBox extends React.Component {
         ];
 
         const cspecGetRowContent = (dataObj) => {
-            return [dataObj.ammoRO.shortName, String(dataObj.capacity), "Very High", "Slowest"];
+            return [
+                dataObj.ammoRO.shortName,
+                String(dataObj.capacity),
+                bowgunAmmoRecoilIntToName(dataObj.recoil),
+                "Slowest",
+            ];
         };
 
         const implementationClassNames = {

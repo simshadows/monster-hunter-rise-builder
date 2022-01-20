@@ -402,7 +402,7 @@ function generateBowgunEleAmmoTypes(keyBase, nameBase) {
     return [
         [keyBase, {
             name: nameBase + " Ammo",
-            shortName: nameBase
+            shortName: nameBase,
         }],
         ["piercing_" + keyBase, {
             name: "Piercing " + nameBase + " Ammo",
@@ -418,10 +418,24 @@ const hardcodedBowgunAmmoTypes = [
     ...generateBowgunAmmoTypes("sticky"  , "Sticky"  , 3),
     ...generateBowgunAmmoTypes("cluster" , "Cluster" , 3),
 
-    ...generateBowgunEleAmmoTypes("fire"   , "Flaming"),
+    ["fire", {
+        name: "Flaming Ammo",
+        shortName: "Flaming",
+    }],
+    ["piercing_fire", {
+        name: "Piercing Fire Ammo",
+        shortName: "P. Fire",
+    }],
     ...generateBowgunEleAmmoTypes("water"  , "Water"),
     ...generateBowgunEleAmmoTypes("thunder", "Thunder"),
-    ...generateBowgunEleAmmoTypes("ice"    , "Ice"),
+    ["ice", {
+        name: "Freeze Ammo",
+        shortName: "Freeze",
+    }],
+    ["piercing_ice", {
+        name: "Piercing Ice Ammo",
+        shortName: "P. Ice",
+    }],
     ...generateBowgunEleAmmoTypes("dragon" , "Dragon"),
 
     ...generateBowgunAmmoTypes("poison"   , "Poison"   , 2),
