@@ -110,12 +110,14 @@ class CalculationAmmoStatsBox extends React.Component {
 
         const dataArray = [];
         for (const [k, v] of Object.entries(this.props.ammoData)) {
+            if (!v.available) continue;
             dataArray.push({
                 ammoRO: v.ammoRO,
                 available: v.available,
                 capacity: v.ammoCapacity,
             });
         }
+        assert(dataArray.length > 0); // Should always be at least one row
 
         const cspecBodyRowFormat = [
             "calculation-ammo-box-table",
@@ -487,24 +489,38 @@ class CalculationResultsBox extends React.Component {
             );
         }
 
-        const endBoxes = (()=>{
+        const critStatBox = (()=>{
             if (perf.bowgunStats === null) {
-                return [
-                    element(CalculationResultsGroupBox,
-                        null,
-                        this._renderStat(null, "Raw Crit Damage", perf.rawCritDmgMultiplier.toFixed(2) + "x"),
-                        this._renderStat(null, "Elem. Crit Damage", perf.elementalCritDmgMultiplier.toFixed(2) + "x"),
-                        this._renderStat(null, "Raw Crit Modifier", perf.rawCritModifier.toFixed(4) + "x"),
-                        this._renderStat(null, "Elem. Crit Modifier", perf.elementalCritModifier.toFixed(4) + "x"),
-                    ),
-                    element(CalculationResultsSpacerBox,
-                        null,
-                        null,
-                    ),
-                ];
+                return element(CalculationResultsGroupBox,
+                    null,
+                    this._renderStat(null, "Raw Crit Damage", perf.rawCritDmgMultiplier.toFixed(2) + "x"),
+                    this._renderStat(null, "Elem. Crit Damage", perf.elementalCritDmgMultiplier.toFixed(2) + "x"),
+                    this._renderStat(null, "Raw Crit Modifier", perf.rawCritModifier.toFixed(4) + "x"),
+                    this._renderStat(null, "Elem. Crit Modifier", perf.elementalCritModifier.toFixed(4) + "x"),
+                );
             } else {
                 // We hide the crit stats because there's no space for it, and it's not terribly relevant information anyway,
-                return [];
+                return null;
+            }
+        })();
+
+        const spacerBox = (()=>{
+            // TODO: Oh my god why did I decide to do this. This makes me wanna vomit lmao
+            const showSpacer = (()=>{
+                if (perf.bowgunStats === null) return false;
+                let countAmmoRows = 0;
+                for (const [k, v] of Object.entries(perf.bowgunStats.ammo)) {
+                    if (v.available) ++countAmmoRows;
+                }
+                return countAmmoRows <= 28;
+            })();
+            if (showSpacer) {
+                return element(CalculationResultsSpacerBox,
+                    null,
+                    null,
+                );
+            } else {
+                return null;
             }
         })();
 
@@ -521,7 +537,8 @@ class CalculationResultsBox extends React.Component {
             ),
             ...specialMechanicRenderings,
             sharpnessRendering,
-            ...endBoxes,
+            critStatBox,
+            spacerBox,
         );
     }
 }

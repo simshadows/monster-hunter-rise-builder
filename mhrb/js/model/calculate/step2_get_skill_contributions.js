@@ -126,6 +126,7 @@ function getSkillContributions(db, build, calcState) {
     let elementalBlunderDamage  = ELEMENTAL_BLUNDER_DAMAGE_MULTIPLIER;
     let elementalCriticalDamage = CRITICAL_ELEMENT_DAMAGE_MULTIPLIERS[0];
 
+    let ammoUpLevel = 0;
     let bowChargePlusLevel = 0;
     let handicraftLevel = 0;
     let mastersTouchLevel = 0; // Affects sharpness bar hits. Calculate later.
@@ -244,6 +245,10 @@ function getSkillContributions(db, build, calcState) {
                 default:
                     invalidLevel(lid);
             }
+        }],
+
+        ["ammo_up", (lid, lvl)=>{
+            ammoUpLevel = lvl;
         }],
 
         ["attack_boost", (lid, lvl)=>{
@@ -605,6 +610,7 @@ function getSkillContributions(db, build, calcState) {
         elementalBlunderDamage,
         elementalCriticalDamage,
 
+        ammoUpLevel,
         bowChargePlusLevel,
         handicraftLevel,
         mastersTouchLevel,

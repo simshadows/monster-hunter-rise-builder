@@ -159,7 +159,13 @@ thead.calculation-ammo-box-table > tr > th {
     font: var(--font-calculated-skills--ammo-head);
     padding: 2px 0 6px 0;
 }
-th.calculation-ammo-box-table {
+tbody.calculation-ammo-box-table > tr > th {
     font: var(--font-calculated-skills--ammo);
+    padding: 2px 0 2px 0;
 }
+/*
+th.calculation-ammo-box-table:first-child {
+    text-align: left;
+}
+*/
 

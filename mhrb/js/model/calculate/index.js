@@ -56,6 +56,66 @@ const elementalSharpnessModifiers = [
 ];
 
 
+const bowgunAmmoUpCapacityTable = new Map([
+    // id, Ammo Up 1, Ammo Up 2, Ammo Up 3
+    ["normal_1", [1, 1, 2]],
+    ["normal_2", [0, 1, 2]],
+    ["normal_3", [0, 0, 1]],
+
+    ["pierce_1", [1, 1, 2]],
+    ["pierce_2", [0, 1, 1]],
+    ["pierce_3", [0, 0, 1]],
+
+    ["spread_1", [1, 1, 2]],
+    ["spread_2", [0, 1, 1]],
+    ["spread_3", [0, 0, 1]],
+
+    ["shrapnel_1", [1, 1, 2]],
+    ["shrapnel_2", [0, 1, 2]],
+    ["shrapnel_3", [0, 0, 1]],
+
+    ["sticky_1", [0, 1, 1]],
+    ["sticky_2", [0, 0, 1]],
+    ["sticky_3", [0, 0, 1]],
+
+    ["cluster_1", [0, 0, 1]],
+    ["cluster_2", [0, 0, 1]],
+    ["cluster_3", [0, 0, 1]],
+
+    ["fire"            , [0, 1, 1]],
+    ["piercing_fire"   , [0, 1, 1]],
+    ["water"           , [0, 1, 1]],
+    ["piercing_water"  , [0, 1, 1]],
+    ["thunder"         , [0, 1, 1]],
+    ["piercing_thunder", [0, 1, 1]],
+    ["ice"             , [0, 1, 1]],
+    ["piercing_ice"    , [0, 1, 1]],
+    ["dragon"          , [0, 0, 1]],
+    ["piercing_dragon" , [0, 0, 1]],
+
+    ["poison_1", [0, 1, 1]],
+    ["poison_2", [0, 0, 1]],
+
+    ["paralysis_1", [0, 0, 1]],
+    ["paralysis_2", [0, 0, 1]],
+
+    ["sleep_1", [0, 0, 1]],
+    ["sleep_2", [0, 0, 1]],
+
+    ["exhaust_1", [0, 0, 1]],
+    ["exhaust_2", [0, 0, 1]],
+
+    ["recover_1", [0, 1, 1]],
+    ["recover_2", [0, 0, 1]],
+
+    ["demon"  , [0, 0, 1]],
+    ["armor"  , [0, 0, 1]],
+    ["slicing", [0, 1, 1]],
+    ["wyvern" , [0, 0, 0]],
+    ["tranq"  , [1, 1, 1]],
+]);
+
+
 /****************************************************************************************/
 /*  Main Formula  ***********************************************************************/
 /****************************************************************************************/
@@ -108,6 +168,7 @@ function calculateBuildPerformance(db, build, calcState) {
     assert(s.rawCriticalDamage       !== undefined);
     assert(s.elementalBlunderDamage  !== undefined);
     assert(s.elementalCriticalDamage !== undefined);
+    assert(s.ammoUpLevel             !== undefined);
     assert(s.bowChargePlusLevel      !== undefined);
     assert(s.handicraftLevel         !== undefined);
     assert(s.mastersTouchLevel       !== undefined);
@@ -286,6 +347,7 @@ function calculateBuildPerformance(db, build, calcState) {
 
     let bowgunStats = b.bowgunStats;
     assert(((weaponRO.category === "lightbowgun") || (weaponRO.category === "heavybowgun")) === (bowgunStats !== null));
+    applyBuffsToBowgunAmmo(bowgunStats.ammo, s.ammoUpLevel);
 
     const ret = {
 
@@ -378,6 +440,26 @@ function getHighestSharpnessIndex(realSharpnessBar) {
     }
     assert(highestIndex !== null); // We always find a sharpness level
     return highestIndex;
+}
+
+
+/****************************************************************************************/
+/*  Bowguns  ****************************************************************************/
+/****************************************************************************************/
+
+
+// IMPURE FUNCTION. Will modify the bowgun ammo object with new values.
+function applyBuffsToBowgunAmmo(ammoData, ammoUpLevel) {
+    if (ammoUpLevel > 0) {
+        assert(ammoUpLevel <= 3);
+        const keys = Object.keys(ammoData);
+        const i = ammoUpLevel - 1;
+        for (const k of keys) {
+            const addedCapacity = bowgunAmmoUpCapacityTable.get(k)[i];
+            assert(addedCapacity !== undefined);
+            ammoData[k].ammoCapacity += addedCapacity;
+        }
+    }
 }
 
 
