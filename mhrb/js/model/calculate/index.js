@@ -96,6 +96,7 @@ function calculateBuildPerformance(db, build, calcState) {
     assert(b.chargebladeStats  !== undefined);
     assert(b.insectglaiveStats !== undefined);
     assert(b.bowStats          !== undefined);
+    assert(b.bowgunStats       !== undefined);
 
     const s = getSkillContributions(db, build, calcState);
     assert(s.rawAdd                  !== undefined);
@@ -283,6 +284,9 @@ function calculateBuildPerformance(db, build, calcState) {
         bowStats.chargeLevelLimit = cllMax; // Sets chargeLevelLimit to max
     }
 
+    let bowgunStats = b.bowgunStats;
+    assert(((weaponRO.category === "lightbowgun") || (weaponRO.category === "heavybowgun")) === (bowgunStats !== null));
+
     const ret = {
 
         // This part goes to the equips section
@@ -316,6 +320,7 @@ function calculateBuildPerformance(db, build, calcState) {
         chargeBladeStats:  chargeBladeStats,
         insectGlaiveStats: insectglaiveStats,
         bowStats:          bowStats,
+        bowgunStats:       bowgunStats,
     };
     return ret;
 }

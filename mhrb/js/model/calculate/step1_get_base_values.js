@@ -21,24 +21,11 @@ import {
     isEleStr,
     getWeaponTags,
 } from "../../common.js";
+import {
+    deepcopy,
+} from "../../utils.js";
 
 const assert = console.assert;
-
-
-// TODO: When porting to TypeScript, we should implement this with the class
-function copyBowStats(original) {
-    const chargeShot = [];
-    for (const [chargeShotTypeObj, level] of original.chargeShot) {
-        chargeShot.push([chargeShotTypeObj, level]);
-    }
-    return {
-            arcShot: original.arcShot,
-            chargeLevelLimit: original.baseChargeLevelLimit, // We're now calculating the real limit, not the base limit
-            chargeShot: chargeShot,
-            compatibleCoatings: {...original.compatibleCoatings},
-        };
-}
-
 
 function getBaseValues(db, build, calcState) {
     assert(isObj(db));
@@ -78,12 +65,14 @@ function getBaseValues(db, build, calcState) {
 
     let rawPostTruncMul = 1;
 
+    const isBowgun = (weaponRO.category === "lightbowgun") || (weaponRO.category === "heavybowgun");
     let gunlanceStats     = (weaponRO.category !== "gunlance"    ) ? null : {...weaponRO.gunlanceStats};
     let huntingHornSongs  = (weaponRO.category !== "huntinghorn" ) ? null : weaponRO.huntinghornSongs;
     let switchaxeStats    = (weaponRO.category !== "switchaxe"   ) ? null : {...weaponRO.switchaxeStats};
     let chargebladeStats  = (weaponRO.category !== "chargeblade" ) ? null : {...weaponRO.chargebladeStats};
     let insectglaiveStats = (weaponRO.category !== "insectglaive") ? null : {...weaponRO.insectglaiveStats};
-    let bowStats          = (weaponRO.category !== "bow"         ) ? null : copyBowStats(weaponRO.bowStats);
+    let bowStats          = (weaponRO.category !== "bow"         ) ? null : deepcopy(weaponRO.bowStats);
+    let bowgunStats       = (!isBowgun                           ) ? null : deepcopy(weaponRO.bowgunStats);
 
     // Deferred operations go here
     const deferredOps1 = [];
@@ -647,6 +636,7 @@ function getBaseValues(db, build, calcState) {
         chargebladeStats,
         insectglaiveStats,
         bowStats,
+        bowgunStats,
     };
     return ret;
 }

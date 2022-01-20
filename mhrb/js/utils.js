@@ -3,6 +3,40 @@
  * License: GNU Affero General Public License v3 (AGPL-3.0)
  */
 
+export function deepcopy(obj) {
+    if (obj === null) return null;
+    switch (typeof obj) {
+        case "undefined":
+        case "boolean":
+        case "number":
+        case "bigint":
+        case "string":
+            return obj;
+        case "object":
+            // Hyperspecific type checking to avoid unintended behaviour.
+            // This function should not support user-defined classes.
+            if (obj.constructor === Map) {
+                const newMap = new Map();
+                for (const [k, v] of obj.entries()) {
+                    newMap.set(deepcopy(k), deepcopy(v));
+                }
+                return newMap;
+            } else if (obj.constructor === Array) {
+                return obj.map(deepcopy);
+            } else if (obj.constructor === Object) {
+                const newObj = {};
+                // Only copies enumerable own properties.
+                for (const [k, v] of Object.entries(obj)) {
+                    newObj[deepcopy(k)] = deepcopy(v); // Doesn't handle symbol keys yet
+                }
+                return newObj;
+            }
+            throw "Unsupported prototype.";
+        default:
+            throw "Unsupported typeof value.";
+    }
+}
+
 export function removeElementByID(elementID) {
     document.getElementById(elementID).remove();
 }

@@ -15,6 +15,9 @@ import {
     SharpnessBar,
     isEleStatStr,
     eleStatIdToName,
+    bowgunDeviationSpecToName,
+    bowgunRecoilIntToName,
+    bowgunReloadIntToName,
     iterateEleStatMapInLogicalOrder,
 } from "../../common.js";
 import {
@@ -370,6 +373,23 @@ class CalculationResultsBox extends React.Component {
             );
         }
 
+        if (perf.bowgunStats !== null) {
+            const so = perf.bowgunStats;
+
+            const deviationStr = bowgunDeviationSpecToName(so.deviation.severity, so.deviation.left, so.deviation.right);
+            const recoilStr = bowgunRecoilIntToName(so.recoil);
+            const reloadStr = bowgunReloadIntToName(so.reload);
+
+            specialMechanicRenderings.push(
+                element(CalculationResultsGroupBox,
+                    null,
+                    this._renderStat(null, "Deviation", deviationStr),
+                    this._renderStat(null, "Recoil", recoilStr),
+                    this._renderStat(null, "Reload", reloadStr),
+                ),
+            );
+        }
+
         return element("div",
             {
             id: "calculation-results-box",
@@ -399,4 +419,4 @@ class CalculationResultsBox extends React.Component {
 }
 
 export {CalculationResultsBox};
-
+                    
