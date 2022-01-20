@@ -32,6 +32,8 @@ python3 -m http.server
 
 The first release of the app will be a minimally-complete builder app with complete EFR/EFE/EFS calculations, bowgun ammo performance, and other key weapon mechanics. v1.0 will exclude defense calculations.
 
+Data that can't simply be scraped from Kiranico may be excluded from v1.0. Instead, I may choose to defer on this until v3.x.
+
 ### Future Release: v2.0
 
 Updated builder for the Sunbreak expansion.
