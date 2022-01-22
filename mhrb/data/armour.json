@@ -2874,6 +2874,25 @@
         "legs":  null
     },
     "defenses": {"defLvl1": 60, "f":2, "w":2, "t":2, "i":2, "d":2}
+}],
+[150, {
+    "tier": "hr",
+    "rarity": 7,
+    "setName": "Azure Age",
+    "searchHint": "",
+
+    "prefix": "Azure Age",
+    "namingScheme": "azure_age",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[2,1], {"constitution": 2, "water_attack"    : 2                       }],
+        "chest": [[2  ], {"constitution": 2, "weakness_exploit": 1                       }],
+        "arms":  [[1  ], {"constitution": 1, "weakness_exploit": 1, "critical_element": 2}],
+        "waist": [[3,1], {"quick_sheath": 1, "water_attack"    : 2, "critical_element": 1}],
+        "legs":  [[2,1], {"quick_sheath": 2, "focus"           : 1                       }]
+    },
+    "defenses": {"defLvl1": 72, "f":2, "w":2, "t":0, "i":0, "d":2}
 }]
 
 

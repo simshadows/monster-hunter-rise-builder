@@ -12,6 +12,157 @@
 
 - The Elemental Reload switch skill affects LBG reload speed, but the app doesn't support switch skills yet.
 
+# Game Data WIP: HBG Ramp Skills
+
+- `Rampage H. Bowgun I`
+    - `Add: Normal Ammo I`
+        - `Normal Ammo 1`: `7`
+        - `Normal Ammo 2`: `6`
+        - `Normal Ammo 3`: `2`
+    - `Pierce Effect I`
+        - `Pierce Ammo 1`: `8`
+        - `Pierce Ammo 2`: `6`
+        - `Pierce Ammo 3`: `3`
+    - `Spread Effect I`
+        - `Spread Ammo 1`: `8`
+        - `Spread Ammo 2`: `6`
+        - `Spread Ammo 3`: `3`
+    - `Shrapnel Effect I`
+        - `Shrapnel Ammo 1`: `8`
+        - `Shrapnel Ammo 2`: `6`
+        - `Shrapnel Ammo 3`: `3`
+    - `Fire Effect I`
+        - `Flaming Ammo`: `5`
+        - (Similarly for `Water Effect I`, `Thunder Effect I`, and `Ice Effect I`)
+- `Rampage H. Bowgun II`
+    - *Includes all the same as `Rampage H. Bowgun I`.*
+    - `Recoil Down Boost`
+        - Recoil `Average` --> `Some`
+    - `Reload Speed Boost`
+        - Reload `Below Avg.` --> `Average`
+    - `Steadiness Boost`
+        - Deviation `L Severe` --> `L Mild`
+    - `Sticky/Cluster Effect I`
+        - `Sticky Ammo 1`: `5`
+        - `Sticky Ammo 2`: `2`
+        - `Cluster Bomb 1`: `3`
+        - `Cluster Bomb 2`: `2`
+    - `Dragon Effect I`
+        - `Dragon Ammo`: `3`
+    - `Poison Effect I`
+        - `Poison Ammo 1`: `3`
+        - `Poison Ammo 2`: `2`
+        - `Recover Ammo 1`: `2`
+        - `Recover Ammo 2`: `1`
+        - `Demon Ammo`: `1`
+        - `Armor Ammo`: `1`
+    - `Exhaust Effect I`
+        - `Exhaust Ammo 1`: `3`
+        - `Exhaust Ammo 2`: `2`
+        - (Recover, Demon and Armor ammo same as `Poison Effect I`)
+    - (I won't bother with special ammo ramp skills)
+- `Rampage H. Bowgun III`
+    - *Includes all the same as `Rampage H. Bowgun II`.*
+    - `Paralysis Effect I`
+        - `Paralysis Ammo 1`: `3`
+        - `Paralysis Ammo 2`: `2`
+        - (Interestingly enough, I don't see any other ammo types.)
+    - `Sleep Effect I`
+        - `Sleep Ammo 1`: `3`
+        - `Sleep Ammo 2`: `2`
+        - (Interestingly enough, I don't see any other ammo types.)
+- `Rampage H. Bowgun IV`
+    - *Includes all the same as `Rampage H. Bowgun III`.*
+    - `Add: Normal Ammo II`
+        - `Normal Ammo 1`: `5`
+        - `Normal Ammo 2`: `5`
+        - `Normal Ammo 3`: `7`
+    - `Pierce Effect II`
+        - `Pierce Ammo 1`: `5`
+        - `Pierce Ammo 2`: `4`
+        - `Pierce Ammo 3`: `5`
+    - `Spread Effect II`
+        - (Similar to `Pierce Effect II`)
+    - `Shrapnel Effect II`
+        - (Similar to `Pierce Effect II`)
+
+# Game Data WIP: LBG Ramp Skills
+
+- `Rampage L. Bowgun I`
+    - `Add: Normal Ammo I`
+        - `Normal Ammo 1`: `6`
+        - `Normal Ammo 2`: `5`
+        - `Normal Ammo 3`: `1`
+    - `Pierce Effect I`
+        - `Pierce Ammo 1`: `7`
+        - `Pierce Ammo 2`: `5`
+        - `Pierce Ammo 3`: `2`
+    - `Spread Effect I`
+        - `Spread Ammo 1`: `7`
+        - `Spread Ammo 2`: `5`
+        - `Spread Ammo 3`: `2`
+    - `Shrapnel Effect I`
+        - `Shrapnel Ammo 1`: `7`
+        - `Shrapnel Ammo 2`: `5`
+        - `Shrapnel Ammo 3`: `2`
+    - `Fire Effect I`
+        - `Flaming Ammo`: `4`
+        - (Similarly for `Water Effect I`, `Thunder Effect I`, and `Ice Effect I`)
+    - `Rapid Fire (Normal)`
+        - `Normal Ammo 1` is now rapid fire
+        - `Normal Ammo 2` is now rapid fire
+- `Rampage L. Bowgun II`
+    - *Includes all the same as `Rampage L. Bowgun I`.*
+    - `Recoil Down Boost`
+        - Recoil `Average` --> `Some`
+    - `Reload Speed Boost`
+        - Reload `Below Avg.` --> `Average`
+    - `Steadiness Boost`
+        - Deviation `R Severe` --> `R Mild`
+    - `Sticky/Cluster Effect I`
+        - `Sticky Ammo 1`: `5`
+        - `Sticky Ammo 2`: `2`
+        - `Cluster Bomb 1`: `3`
+        - `Cluster Bomb 2`: `2`
+    - `Dragon Effect I`
+        - `Dragon Ammo`: `3`
+    - `Poison Effect I`
+        - `Poison Ammo 1`: `2`
+        - `Poison Ammo 2`: `1`
+        - `Recover Ammo 1`: `2`
+        - `Recover Ammo 2`: `1`
+        - `Demon Ammo`: `1`
+        - `Armor Ammo`: `1`
+    - `Exhaust Effect I`
+        - `Exhaust Ammo 1`: `2`
+        - `Exhaust Ammo 2`: `1`
+        - (Recover, Demon and Armor ammo same as `Poison Effect I`)
+    - (I won't bother with rapid fire ramp skills)
+- `Rampage L. Bowgun III`
+    - *Includes all the same as `Rampage L. Bowgun II`.*
+    - `Paralysis Effect I`
+        - `Paralysis Ammo 1`: `2`
+        - `Paralysis Ammo 2`: `1`
+        - (Interestingly enough, I don't see any other ammo types.)
+    - `Sleep Effect I`
+        - `Sleep Ammo 1`: `2`
+        - `Sleep Ammo 2`: `1`
+        - (Interestingly enough, I don't see any other ammo types.)
+- `Rampage L. Bowgun IV`
+    - *Includes all the same as `Rampage L. Bowgun III`.*
+    - `Add: Normal Ammo II`
+        - `Normal Ammo 1`: `4`
+        - `Normal Ammo 2`: `4`
+        - `Normal Ammo 3`: `6`
+    - `Pierce Effect II`
+        - `Pierce Ammo 1`: `4`
+        - `Pierce Ammo 2`: `3`
+        - `Pierce Ammo 3`: `4`
+    - `Spread Effect II`
+        - (Similar to `Pierce Effect II`)
+    - `Shrapnel Effect II`
+        - (Similar to `Pierce Effect II`)
+
 # Acknowledgements
 
 I should try to build as complete a list of acknowledgements as possible.
