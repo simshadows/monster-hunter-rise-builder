@@ -132,6 +132,7 @@ function getSkillContributions(db, build, calcState) {
     let mastersTouchLevel = 0; // Affects sharpness bar hits. Calculate later.
     let razorSharpLevel = 0; // Affects sharpness bar hits. Calculate later.
     let recoilDownLevel = 0;
+    let reloadSpeedLevel = 0;
 
     let defenseAdd = 0;
     let defenseMul = 1;
@@ -520,6 +521,10 @@ function getSkillContributions(db, build, calcState) {
         ["recovery_speed", (lid, lvl)=>{nop();}],
         ["recovery_up", (lid, lvl)=>{nop();}],
 
+        ["reload_speed", (lid, lvl)=>{
+            reloadSpeedLevel = lvl;
+        }],
+
         ["resentment", (lid, lvl)=>{
             if (!skillActive("Resentment (RES)")) return;
             switch (lvl) {
@@ -621,6 +626,7 @@ function getSkillContributions(db, build, calcState) {
         mastersTouchLevel,
         razorSharpLevel,
         recoilDownLevel,
+        reloadSpeedLevel,
 
         defenseAdd,
         defenseMul,

@@ -8,6 +8,10 @@
 
 - I assume applying, say, `Use Para Coating I` and `Use Para Coating II` on the same bow at the same time will apply the highest compatibility state. Also, applying `Use Para Coating II` to two slots at once will not reapply the raw penalty (or raw bonus for others). Not very meaningful to be pedantic about it, but I want the builder to be accurate, so I'll double-check later.
 
+- Bowgun rampage skills aren't implemented yet since I don't have any data on how they work. I'll need to either ask around or obtain the data myself in-game.
+
+- The Elemental Reload switch skill affects LBG reload speed, but the app doesn't support switch skills yet.
+
 # Acknowledgements
 
 I should try to build as complete a list of acknowledgements as possible.

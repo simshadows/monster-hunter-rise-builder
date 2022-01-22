@@ -19,6 +19,7 @@ import {
     bowgunRecoilIntToName,
     bowgunAmmoRecoilIntToName,
     bowgunReloadIntToName,
+    bowgunAmmoReloadIntToName,
     iterateEleStatMapInLogicalOrder,
 } from "../../common.js";
 import {
@@ -117,6 +118,7 @@ class CalculationAmmoStatsBox extends React.Component {
                 available: v.available,
                 capacity: v.ammoCapacity,
                 recoil: v.recoil,
+                reload: v.reload,
             });
         }
         assert(dataArray.length > 0); // Should always be at least one row
@@ -139,7 +141,7 @@ class CalculationAmmoStatsBox extends React.Component {
                 dataObj.ammoRO.shortName,
                 String(dataObj.capacity),
                 bowgunAmmoRecoilIntToName(dataObj.recoil),
-                "Slowest",
+                bowgunAmmoReloadIntToName(dataObj.reload),
             ];
         };
 
@@ -514,7 +516,7 @@ class CalculationResultsBox extends React.Component {
         const spacerBox = (()=>{
             // TODO: Oh my god why did I decide to do this. This makes me wanna vomit lmao
             const showSpacer = (()=>{
-                if (perf.bowgunStats === null) return false;
+                if (perf.bowgunStats === null) return true;
                 let countAmmoRows = 0;
                 for (const [k, v] of Object.entries(perf.bowgunStats.ammo)) {
                     if (v.available) ++countAmmoRows;

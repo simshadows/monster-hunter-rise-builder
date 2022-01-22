@@ -214,6 +214,16 @@ export function bowgunReloadIntToName(obj) {
     return bowgunReloadIntToNameMap.get(obj);
 }
 
+const bowgunAmmoReloadIntToNameMap = new Map([
+    [0, "Slowest"],
+    [1, "Slow"],
+    [2, "Fast"],
+    [3, "Fastest"],
+]);
+export function bowgunAmmoReloadIntToName(obj) {
+    return bowgunAmmoReloadIntToNameMap.get(obj);
+}
+
 const weaponTagsMap = {
     greatsword    : new Set(["melee"]),
     longsword     : new Set(["melee"]),
