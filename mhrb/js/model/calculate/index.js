@@ -202,6 +202,8 @@ function calculateBuildPerformance(db, build, calcState) {
     assert(b.maxSharpness !== undefined);
     assert(b.baseDefense  !== undefined);
 
+    assert(b.baseRawAdd      !== undefined);
+    assert(b.baseRawMul      !== undefined);
     assert(b.rawPostTruncMul !== undefined);
 
     assert(b.gunlanceStats     !== undefined);
@@ -247,7 +249,9 @@ function calculateBuildPerformance(db, build, calcState) {
     // STAGE 2: Calculate post-base values
     //
 
-    const postbaseRaw = (Math.trunc(b.baseRaw * s.rawMul * m.rawMul) + s.rawAdd + m.rawAdd) * b.rawPostTruncMul * s.rawPostTruncMul;
+    // TODO: It's confusing that we're overloading the term "base raw" here
+    const baseRaw = Math.trunc((b.baseRaw * b.baseRawMul) + b.baseRawAdd + 0.1); // TODO: Does this truncation step exist?
+    const postbaseRaw = (Math.trunc(baseRaw * s.rawMul * m.rawMul + 0.1) + s.rawAdd + m.rawAdd) * b.rawPostTruncMul * s.rawPostTruncMul;
     const postbaseAffinity = b.baseAffinity + s.affinityAdd + m.affinityAdd;
 
     const postbaseEleStat = new Map();
@@ -412,7 +416,7 @@ function calculateBuildPerformance(db, build, calcState) {
         // This part goes to the equips section
         // TODO: Rename it to baseAttack, etc.
 
-        weaponAttack:   b.baseRaw,
+        weaponAttack:   baseRaw,
         weaponAffinity: b.baseAffinity,
         weaponDefense:  b.baseDefense,
         weaponEleStat:  b.baseEleStat,

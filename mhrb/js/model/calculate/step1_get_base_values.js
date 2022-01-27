@@ -27,6 +27,16 @@ import {
 
 const assert = console.assert;
 
+// TODO: Rewrite? This was lazily written to deepcopy including the database object, then
+//       overwrite database references with the original database object.
+function copyBowgunStats(obj) {
+    const ret = deepcopy(obj);
+    for (const [k, v] of Object.entries(obj.ammo)) {
+        ret.ammo[k].ammoRO = v.ammoRO;
+    }
+    return ret;
+}
+
 function getBaseValues(db, build, calcState) {
     assert(isObj(db));
     assert(isMap(db.readonly.weapons.map.greatsword)); // Spot check for structure
@@ -39,6 +49,8 @@ function getBaseValues(db, build, calcState) {
 
     const allCurrentRampSkills = build.getRampSkills(db);
     assert(isArr(allCurrentRampSkills));
+
+    const weaponSpecialSelection = build.getWeaponSpecialSelectionRO();
 
     const allCalcStateSpec = calcState.getSpecification();
     const allCalcState = calcState.getCurrState();
@@ -63,6 +75,8 @@ function getBaseValues(db, build, calcState) {
 
     let baseDefense = weaponRO.defense;
 
+    let baseRawAdd = 0;
+    let baseRawMul = 1;
     let rawPostTruncMul = 1;
 
     const isBowgun = (weaponRO.category === "lightbowgun") || (weaponRO.category === "heavybowgun");
@@ -72,7 +86,7 @@ function getBaseValues(db, build, calcState) {
     let chargebladeStats  = (weaponRO.category !== "chargeblade" ) ? null : {...weaponRO.chargebladeStats};
     let insectglaiveStats = (weaponRO.category !== "insectglaive") ? null : {...weaponRO.insectglaiveStats};
     let bowStats          = (weaponRO.category !== "bow"         ) ? null : deepcopy(weaponRO.bowStats);
-    let bowgunStats       = (!isBowgun                           ) ? null : deepcopy(weaponRO.bowgunStats);
+    let bowgunStats       = (!isBowgun                           ) ? null : copyBowgunStats(weaponRO.bowgunStats);
 
     // Deferred operations go here
     const deferredOps1 = [];
@@ -231,36 +245,36 @@ function getBaseValues(db, build, calcState) {
 
         ["fire_1"   , ()=>{ rampSetEleStat("fire"   , 10);                 }],
         ["fire_2"   , ()=>{ rampSetEleStat("fire"   , 15);                 }],
-        ["fire_3"   , ()=>{ rampSetEleStat("fire"   , 20); baseRaw += -5;  }],
-        ["fire_4"   , ()=>{ rampSetEleStat("fire"   , 30); baseRaw += -10; }],
+        ["fire_3"   , ()=>{ rampSetEleStat("fire"   , 20); baseRawAdd += -5;  }],
+        ["fire_4"   , ()=>{ rampSetEleStat("fire"   , 30); baseRawAdd += -10; }],
         ["water_1"  , ()=>{ rampSetEleStat("water"  , 10);                 }],
         ["water_2"  , ()=>{ rampSetEleStat("water"  , 15);                 }],
-        ["water_3"  , ()=>{ rampSetEleStat("water"  , 20); baseRaw += -5;  }],
-        ["water_4"  , ()=>{ rampSetEleStat("water"  , 30); baseRaw += -10; }],
+        ["water_3"  , ()=>{ rampSetEleStat("water"  , 20); baseRawAdd += -5;  }],
+        ["water_4"  , ()=>{ rampSetEleStat("water"  , 30); baseRawAdd += -10; }],
         ["thunder_1", ()=>{ rampSetEleStat("thunder", 10);                 }],
         ["thunder_2", ()=>{ rampSetEleStat("thunder", 15);                 }],
-        ["thunder_3", ()=>{ rampSetEleStat("thunder", 20); baseRaw += -5;  }],
-        ["thunder_4", ()=>{ rampSetEleStat("thunder", 30); baseRaw += -10; }],
+        ["thunder_3", ()=>{ rampSetEleStat("thunder", 20); baseRawAdd += -5;  }],
+        ["thunder_4", ()=>{ rampSetEleStat("thunder", 30); baseRawAdd += -10; }],
         ["ice_1"    , ()=>{ rampSetEleStat("ice"    , 10);                 }],
         ["ice_2"    , ()=>{ rampSetEleStat("ice"    , 15);                 }],
-        ["ice_3"    , ()=>{ rampSetEleStat("ice"    , 20); baseRaw += -5;  }],
-        ["ice_4"    , ()=>{ rampSetEleStat("ice"    , 30); baseRaw += -10; }],
+        ["ice_3"    , ()=>{ rampSetEleStat("ice"    , 20); baseRawAdd += -5;  }],
+        ["ice_4"    , ()=>{ rampSetEleStat("ice"    , 30); baseRawAdd += -10; }],
         ["dragon_1" , ()=>{ rampSetEleStat("dragon" , 10);                 }],
         ["dragon_2" , ()=>{ rampSetEleStat("dragon" , 15);                 }],
-        ["dragon_3" , ()=>{ rampSetEleStat("dragon" , 20); baseRaw += -5;  }],
-        ["dragon_4" , ()=>{ rampSetEleStat("dragon" , 30); baseRaw += -10; }],
+        ["dragon_3" , ()=>{ rampSetEleStat("dragon" , 20); baseRawAdd += -5;  }],
+        ["dragon_4" , ()=>{ rampSetEleStat("dragon" , 30); baseRawAdd += -10; }],
         ["poison_1"   , ()=>{ rampSetEleStat("poison"   , 10);                 }],
-        ["poison_2"   , ()=>{ rampSetEleStat("poison"   , 20); baseRaw += -10; }],
-        ["poison_3"   , ()=>{ rampSetEleStat("poison"   , 30); baseRaw += -20; }],
+        ["poison_2"   , ()=>{ rampSetEleStat("poison"   , 20); baseRawAdd += -10; }],
+        ["poison_3"   , ()=>{ rampSetEleStat("poison"   , 30); baseRawAdd += -20; }],
         ["paralysis_1", ()=>{ rampSetEleStat("paralysis", 10);                 }],
-        ["paralysis_2", ()=>{ rampSetEleStat("paralysis", 15); baseRaw += -10; }],
-        ["paralysis_3", ()=>{ rampSetEleStat("paralysis", 20); baseRaw += -20; }],
+        ["paralysis_2", ()=>{ rampSetEleStat("paralysis", 15); baseRawAdd += -10; }],
+        ["paralysis_3", ()=>{ rampSetEleStat("paralysis", 20); baseRawAdd += -20; }],
         ["sleep_1"    , ()=>{ rampSetEleStat("sleep"    , 10);                 }],
-        ["sleep_2"    , ()=>{ rampSetEleStat("sleep"    , 12); baseRaw += -10; }],
-        ["sleep_3"    , ()=>{ rampSetEleStat("sleep"    , 15); baseRaw += -20; }],
+        ["sleep_2"    , ()=>{ rampSetEleStat("sleep"    , 12); baseRawAdd += -10; }],
+        ["sleep_3"    , ()=>{ rampSetEleStat("sleep"    , 15); baseRawAdd += -20; }],
         ["blast_1"    , ()=>{ rampSetEleStat("blast"    , 10);                 }],
-        ["blast_2"    , ()=>{ rampSetEleStat("blast"    , 15); baseRaw += -10; }],
-        ["blast_3"    , ()=>{ rampSetEleStat("blast"    , 20); baseRaw += -20; }],
+        ["blast_2"    , ()=>{ rampSetEleStat("blast"    , 15); baseRawAdd += -10; }],
+        ["blast_3"    , ()=>{ rampSetEleStat("blast"    , 20); baseRawAdd += -20; }],
 
         ["secondary_fire_1"   , ()=>{ rampSecondaryEle("fire"   , 10, 0 ); }],
         ["secondary_fire_2"   , ()=>{ rampSecondaryEle("fire"   , 20, 5 ); }],
@@ -282,10 +296,10 @@ function getBaseValues(db, build, calcState) {
         // Everything Else
         //
 
-        ["attack_boost_1", ()=>{ baseRaw += 4;  }],
-        ["attack_boost_2", ()=>{ baseRaw += 6;  }],
-        ["attack_boost_3", ()=>{ baseRaw += 8;  }],
-        ["attack_boost_4", ()=>{ baseRaw += 10; }],
+        ["attack_boost_1", ()=>{ baseRawAdd += 4;  }],
+        ["attack_boost_2", ()=>{ baseRawAdd += 6;  }],
+        ["attack_boost_3", ()=>{ baseRawAdd += 8;  }],
+        ["attack_boost_4", ()=>{ baseRawAdd += 10; }],
 
         ["affinity_boost_1", ()=>{ baseAffinity += 4;  }],
         ["affinity_boost_2", ()=>{ baseAffinity += 6;  }],
@@ -300,7 +314,7 @@ function getBaseValues(db, build, calcState) {
         ["defense_boost_2", ()=>{ baseDefense += 20; }],
         ["defense_boost_3", ()=>{ baseDefense += 30; }],
 
-        ["attack_surge"   , ()=>{ baseRaw += 20;
+        ["attack_surge"   , ()=>{ baseRawAdd += 20;
                                   baseAffinity += -30; }],
         ["elemental_surge", ()=>{ 
             function op() {
@@ -312,11 +326,11 @@ function getBaseValues(db, build, calcState) {
                 }
                 baseEleStat = tmp;
 
-                baseRaw += -15;
+                baseRawAdd += -15;
             }
             deferredOps2.push(op); // Defer to last
         }],
-        ["affinity_surge" , ()=>{ baseRaw += -10;
+        ["affinity_surge" , ()=>{ baseRawAdd += -10;
                                   baseAffinity += 30; }],
 
         ["sharpness_type_1", ()=>{
@@ -382,7 +396,7 @@ function getBaseValues(db, build, calcState) {
         ["thunderblight_exploit", ()=>{ console.warn("NOT IMPLEMENTED"); }],
         ["waterblight_exploit"  , ()=>{ console.warn("NOT IMPLEMENTED"); }],
 
-        ["non_elemental_boost", ()=>{ deferredOps2.push(()=>{ if (baseEleStat.size === 0) baseRaw += 10; }); }],
+        ["non_elemental_boost", ()=>{ deferredOps2.push(()=>{ if (baseEleStat.size === 0) baseRawAdd += 10; }); }],
 
         //
         // Gunlance
@@ -514,12 +528,12 @@ function getBaseValues(db, build, calcState) {
         ["kinsect_level_boost_3", ()=>{
             assert(weaponRO.category === "insectglaive");
             insectglaiveStats.kinsectLevel = 6;
-            baseRaw += -10;
+            baseRawAdd += -10;
         }],
         ["kinsect_level_boost_4", ()=>{
             assert(weaponRO.category === "insectglaive");
             insectglaiveStats.kinsectLevel = 7;
-            baseRaw += -20;
+            baseRawAdd += -20;
         }],
 
         //
@@ -531,7 +545,7 @@ function getBaseValues(db, build, calcState) {
         ["poison_coating_boost"     , ()=>{ rampBowBoostCoatingCompat("poison_coating"); }],
         ["paralysis_coating_boost"  , ()=>{ rampBowBoostCoatingCompat("para_coating"); }],
         ["sleep_coating_boost"      , ()=>{ rampBowBoostCoatingCompat("sleep_coating"); }],
-        ["close_range_coating_boost", ()=>{ rampBowBoostCoatingCompat("close_range_coating"); baseRaw += -5; }],
+        ["close_range_coating_boost", ()=>{ rampBowBoostCoatingCompat("close_range_coating"); baseRawAdd += -5; }],
 
         // Rampage Bow, Slot 3
         ["firing_rapid", ()=>{
@@ -578,13 +592,13 @@ function getBaseValues(db, build, calcState) {
         // Rampage Bow, Slot 4-5
         ["use_power_coating"   , ()=>{ rampBowSetCoatingCompat("power_coating"  , 1, () => {                 }); }],
         ["use_poison_coating_1", ()=>{ rampBowSetCoatingCompat("poison_coating" , 1, () => {                 }); }],
-        ["use_poison_coating_2", ()=>{ rampBowSetCoatingCompat("poison_coating" , 2, () => { baseRaw += -5;  }); }],
+        ["use_poison_coating_2", ()=>{ rampBowSetCoatingCompat("poison_coating" , 2, () => { baseRawAdd += -5;  }); }],
         ["use_para_coating_1"  , ()=>{ rampBowSetCoatingCompat("para_coating"   , 1, () => {                 }); }],
-        ["use_para_coating_2"  , ()=>{ rampBowSetCoatingCompat("para_coating"   , 2, () => { baseRaw += -10; }); }],
+        ["use_para_coating_2"  , ()=>{ rampBowSetCoatingCompat("para_coating"   , 2, () => { baseRawAdd += -10; }); }],
         ["use_sleep_coating_1" , ()=>{ rampBowSetCoatingCompat("sleep_coating"  , 1, () => {                 }); }],
-        ["use_sleep_coating_2" , ()=>{ rampBowSetCoatingCompat("sleep_coating"  , 2, () => { baseRaw += -10; }); }],
+        ["use_sleep_coating_2" , ()=>{ rampBowSetCoatingCompat("sleep_coating"  , 2, () => { baseRawAdd += -10; }); }],
         ["use_blast_coating"   , ()=>{ rampBowSetCoatingCompat("blast_coating"  , 1, () => {                 }); }],
-        ["use_exhaust_coating" , ()=>{ rampBowSetCoatingCompat("exhaust_coating", 1, () => { baseRaw += 10;  }); }], // Not a typo
+        ["use_exhaust_coating" , ()=>{ rampBowSetCoatingCompat("exhaust_coating", 1, () => { baseRawAdd += 10;  }); }], // Not a typo
  
         // Rampage Bow, Slot 6
         ["arc_shot_recovery"  , ()=>{ rampBowSetArcShot("recovery"); }],
@@ -617,6 +631,24 @@ function getBaseValues(db, build, calcState) {
     for (const op of deferredOps1) op();
     for (const op of deferredOps2) op();
 
+    // Now, we process weapon special selections
+    console.log(weaponSpecialSelection);
+    if (weaponSpecialSelection !== null) {
+        if (weaponSpecialSelection.type === "lightbowgunmod" && weaponRO.category === "lightbowgun") {
+            if (weaponSpecialSelection.id === 1) { // Silencer
+                bowgunStats.recoil = Math.max(0, bowgunStats.recoil - 1);
+            } else if (weaponSpecialSelection.id === 2) { // Long Barrel
+                baseRawMul *= 1.05;
+            }
+        } else if (weaponSpecialSelection.type === "heavybowgunmod" && weaponRO.category === "heavybowgun") {
+            if (weaponSpecialSelection.id === 4) { // Power Barrel
+                baseRawMul *= 1.125;
+            }
+        } else {
+            console.error(`Special selection ${weaponSpecialSelection.name} not possible with ${weaponRO.category}.`);
+        }
+    }
+
     const ret = {
         baseRaw,
         baseAffinity,
@@ -628,6 +660,8 @@ function getBaseValues(db, build, calcState) {
 
         baseDefense,
 
+        baseRawAdd,
+        baseRawMul,
         rawPostTruncMul,
 
         gunlanceStats,

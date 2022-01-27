@@ -108,8 +108,6 @@ class CalculationAmmoStatsBox extends React.Component {
 
         assert(isObj(this.props.ammoData));
 
-        console.log(this.props.ammoData);
-
         const dataArray = [];
         for (const [k, v] of Object.entries(this.props.ammoData)) {
             if (!v.available) continue;
