@@ -14,6 +14,20 @@
 
 # Game Data WIP: HBG Ramp Skills
 
+- `Meteor Bazooka I`
+    - `Pierce Effect I`
+        - `Pierce Ammo 1`: `3 --> 5`
+        - `Pierce Ammo 2`: `3 --> 5`
+- `Carrozza Bazooka I`
+    - `Pierce Effect I`
+        - `Pierce Ammo 1`: `2 --> 4`
+        - `Pierce Ammo 2`: `0 --> 5`
+    - `Spread Effect I`
+        - `Spread Ammo 1`: `0 --> 5`
+        - `Spread Ammo 2`: `0 --> 6`
+    - `Shrapnel Effect I`
+        - `Shrapnel Ammo 1`: `5 --> 7`
+        - `Shrapnel Ammo 2`: `4 --> 6`
 - `Rampage H. Bowgun I`
     - `Add: Normal Ammo I`
         - `Normal Ammo 1`: `7`
