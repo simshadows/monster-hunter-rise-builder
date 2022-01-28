@@ -107,6 +107,18 @@ function getBaseValues(db, build, calcState) {
             console.error("Not a bowgun.");
         }
     }
+    function bowgunAmmoInc(ammoID, capacity) {
+        console.assert(weaponRO.category === "lightbowgun" || weaponRO.category === "heavybowgun");
+        console.assert((typeof capacity.lbg === "number" || capacity.lbg === undefined) && typeof capacity.hbg === "number");
+        bowgunStats.ammo[ammoID].available = true;
+        if (weaponRO.category === "lightbowgun") {
+            bowgunStats.ammo[ammoID].ammoCapacity += capacity.lbg;
+        } else if (weaponRO.category === "heavybowgun") {
+            bowgunStats.ammo[ammoID].ammoCapacity += capacity.hbg;
+        } else {
+            console.error("Not a bowgun.");
+        }
+    }
 
     /*** ***/
 
@@ -669,21 +681,27 @@ function getBaseValues(db, build, calcState) {
             bowgunAmmoSet("normal_2", {lbg: 4, hbg: 5});
             bowgunAmmoSet("normal_3", {lbg: 6, hbg: 7});
         }],
-        // TODO
-        //["normal_effect_1", ()=>{
-        //    console.assert(!isRampageWeapon);
-        //}],
-        //["normal_effect_2", ()=>{
-        //    console.assert(!isRampageWeapon);
-        //}],
+        ["normal_effect_1", ()=>{
+            console.assert(!isRampageWeapon);
+            // TODO: Verify HBG numbers. I'm extrapolating from Pierce Effect 1.
+            bowgunAmmoInc("normal_1", {lbg: 2, hbg: 2});
+            bowgunAmmoInc("normal_2", {lbg: 2, hbg: 2});
+        }],
+        ["normal_effect_2", ()=>{
+            console.assert(!isRampageWeapon);
+            // TODO: Verify HBG numbers. I'm extrapolating from Pierce Effect 2.
+            bowgunAmmoInc("normal_1", {lbg: 3, hbg: 3});
+            bowgunAmmoInc("normal_2", {lbg: 3, hbg: 3});
+            bowgunAmmoInc("normal_3", {lbg: 3, hbg: 3});
+        }],
         ["pierce_effect_1", ()=>{
             if (isRampageWeapon) {
                 bowgunAmmoSet("pierce_1", {lbg: 7, hbg: 8});
                 bowgunAmmoSet("pierce_2", {lbg: 5, hbg: 6});
                 bowgunAmmoSet("pierce_3", {lbg: 2, hbg: 3});
             } else {
-                // TODO
-                console.warn("NOT IMPLEMENTED");
+                bowgunAmmoInc("pierce_1", {lbg: 2, hbg: 2});
+                bowgunAmmoInc("pierce_2", {lbg: 2, hbg: 2});
             }
         }],
         ["pierce_effect_2", ()=>{
@@ -692,8 +710,9 @@ function getBaseValues(db, build, calcState) {
                 bowgunAmmoSet("pierce_2", {lbg: 3, hbg: 4});
                 bowgunAmmoSet("pierce_3", {lbg: 4, hbg: 5});
             } else {
-                // TODO
-                console.warn("NOT IMPLEMENTED");
+                bowgunAmmoInc("pierce_1", {lbg: 3, hbg: 3});
+                bowgunAmmoInc("pierce_2", {lbg: 3, hbg: 3});
+                bowgunAmmoInc("pierce_3", {lbg: 3, hbg: 3});
             }
         }],
         ["spread_effect_1", ()=>{
@@ -702,8 +721,9 @@ function getBaseValues(db, build, calcState) {
                 bowgunAmmoSet("spread_2", {lbg: 5, hbg: 6});
                 bowgunAmmoSet("spread_3", {lbg: 2, hbg: 3});
             } else {
-                // TODO
-                console.warn("NOT IMPLEMENTED");
+                // TODO: Verify LBG numbers. I'm extrapolating from Pierce Effect 1.
+                bowgunAmmoInc("spread_1", {lbg: 2, hbg: 2});
+                bowgunAmmoInc("spread_2", {lbg: 2, hbg: 2});
             }
         }],
         ["spread_effect_2", ()=>{
@@ -712,8 +732,10 @@ function getBaseValues(db, build, calcState) {
                 bowgunAmmoSet("spread_2", {lbg: 3, hbg: 4});
                 bowgunAmmoSet("spread_3", {lbg: 4, hbg: 5});
             } else {
-                // TODO
-                console.warn("NOT IMPLEMENTED");
+                // TODO: Needs verification (both LBG and HBG). I'm extrapolating from Pierce Effect 2.
+                bowgunAmmoInc("spread_1", {lbg: 3, hbg: 3});
+                bowgunAmmoInc("spread_2", {lbg: 3, hbg: 3});
+                bowgunAmmoInc("spread_3", {lbg: 3, hbg: 3});
             }
         }],
         ["shrapnel_effect_1", ()=>{
@@ -722,8 +744,9 @@ function getBaseValues(db, build, calcState) {
                 bowgunAmmoSet("shrapnel_2", {lbg: 5, hbg: 6});
                 bowgunAmmoSet("shrapnel_3", {lbg: 2, hbg: 3});
             } else {
-                // TODO
-                console.warn("NOT IMPLEMENTED");
+                // TODO: Verify LBG numbers. I'm extrapolating from Pierce Effect 1.
+                bowgunAmmoInc("shrapnel_1", {lbg: 2, hbg: 2});
+                bowgunAmmoInc("shrapnel_2", {lbg: 2, hbg: 2});
             }
         }],
         ["shrapnel_effect_2", ()=>{
@@ -732,23 +755,40 @@ function getBaseValues(db, build, calcState) {
                 bowgunAmmoSet("shrapnel_2", {lbg: 3, hbg: 4});
                 bowgunAmmoSet("shrapnel_3", {lbg: 4, hbg: 5});
             } else {
-                // TODO
-                console.warn("NOT IMPLEMENTED");
+                // TODO: Needs verification (both LBG and HBG). I'm extrapolating from Pierce Effect 2.
+                bowgunAmmoInc("shrapnel_1", {lbg: 3, hbg: 3});
+                bowgunAmmoInc("shrapnel_2", {lbg: 3, hbg: 3});
+                bowgunAmmoInc("shrapnel_3", {lbg: 3, hbg: 3});
             }
         }],
-        // TODO
-        //["sticky_effect_1", ()=>{
-        //    console.assert(!isRampageWeapon);
-        //}],
-        //["sticky_effect_2", ()=>{
-        //    console.assert(!isRampageWeapon);
-        //}],
-        //["cluster_effect_1", ()=>{
-        //    console.assert(!isRampageWeapon);
-        //}],
-        //["cluster_effect_2", ()=>{
-        //    console.assert(!isRampageWeapon);
-        //}],
+        ["sticky_effect_1", ()=>{
+            console.assert(!isRampageWeapon);
+            // TODO: I'm taking a guess for LBG since LBG and HBG matching has been consistent
+            //       with the other Effect ramp skills so far. That should be verified.
+            bowgunAmmoInc("sticky_1" , {lbg: 1, hbg: 1});
+            bowgunAmmoInc("sticky_2" , {lbg: 1, hbg: 1});
+        }],
+        ["sticky_effect_2", ()=>{
+            console.assert(!isRampageWeapon);
+            // LBG doesn't have this.
+            bowgunAmmoInc("sticky_1" , {lbg: undefined, hbg: 2});
+            bowgunAmmoInc("sticky_2" , {lbg: undefined, hbg: 2});
+            bowgunAmmoInc("sticky_3" , {lbg: undefined, hbg: 2});
+        }],
+        ["cluster_effect_1", ()=>{
+            console.assert(!isRampageWeapon);
+            // TODO: I'm taking a guess for LBG since LBG and HBG matching has been consistent
+            //       with the other Effect ramp skills so far. That should be verified.
+            bowgunAmmoInc("cluster_1" , {lbg: 1, hbg: 1});
+            bowgunAmmoInc("cluster_2" , {lbg: 1, hbg: 1});
+        }],
+        ["cluster_effect_2", ()=>{
+            console.assert(!isRampageWeapon);
+            // LBG doesn't have this.
+            bowgunAmmoInc("cluster_1" , {lbg: undefined, hbg: 2});
+            bowgunAmmoInc("cluster_2" , {lbg: undefined, hbg: 2});
+            bowgunAmmoInc("cluster_3" , {lbg: undefined, hbg: 2});
+        }],
         ["stickycluster_effect_1", ()=>{
             console.assert(isRampageWeapon);
             bowgunAmmoSet("sticky_1" , {lbg: 5, hbg: 5});
@@ -756,10 +796,16 @@ function getBaseValues(db, build, calcState) {
             bowgunAmmoSet("cluster_1", {lbg: 3, hbg: 3});
             bowgunAmmoSet("cluster_2", {lbg: 2, hbg: 2});
         }],
-        // TODO
-        //["stickycluster_effect_2", ()=>{
-        //    console.assert(isRampageWeapon);
-        //}],
+        ["stickycluster_effect_2", ()=>{
+            console.assert(isRampageWeapon);
+            // LBG doesn't have this.
+            bowgunAmmoSet("sticky_1" , {lbg: undefined, hbg: 3});
+            bowgunAmmoSet("sticky_2" , {lbg: undefined, hbg: 2});
+            bowgunAmmoSet("sticky_3" , {lbg: undefined, hbg: 4});
+            bowgunAmmoSet("cluster_1", {lbg: undefined, hbg: 2});
+            bowgunAmmoSet("cluster_2", {lbg: undefined, hbg: 2});
+            bowgunAmmoSet("cluster_3", {lbg: undefined, hbg: 3});
+        }],
         ["fire_effect_1", ()=>{
             console.assert(isRampageWeapon);
             bowgunAmmoSet("fire", {lbg: 4, hbg: 5});
@@ -861,7 +907,8 @@ function getBaseValues(db, build, calcState) {
             bowgunAmmoSet("demon"    , {lbg: 2, hbg: 2});
             bowgunAmmoSet("armor"    , {lbg: 2, hbg: 2});
         }],
-        // TODO
+
+        // TODO: Implement these when the relevant features are supported
         //["rapid_fire_normal", ()=>{}],
         //["rapid_fire_piercing", ()=>{}],
         //["rapid_fire_spread", ()=>{}],
@@ -873,7 +920,7 @@ function getBaseValues(db, build, calcState) {
         //["rapid_fire_ice", ()=>{}],
         //["rapid_fire_dragon", ()=>{}],
         
-        // TODO
+        // TODO: Implement these when the relevant features are supported
         //["special_wyvernheart", ()=>{
         //    console.assert(isRampageWeapon);
         //}],

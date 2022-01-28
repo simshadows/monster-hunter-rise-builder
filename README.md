@@ -30,21 +30,10 @@ python3 -m http.server
 
 ## Key Features Missing/Unverified
 
-- Bowgun-specific ramp skills
+- Many bowgun rampage skills will need to be verified. (To save time/resources, I took guesses, which are marked with `TODO` comments in `calculate/step1_get_base_values.js`.
 - Bowgun ammo attributes (this data is not available on Kiranico, and I don't want to manually collect the data at this stage)
 - LBG Elemental Reload calculation (switch skills aren't implemented yet, but I should at least add it to the Misc. Buffs section)
 - Bowgun Power Barrel/Long Barrel
-    - Phemto's Bowgun Bible indicates HBG's Power Barrel mod increases base raw by 10%, but my testing indicates this is far too low.
-    - Example: `Kamura H. Bowgun I` without ramp skills has base raw 60
-        - `60 * 1.1` is 66, but the game's equipment card indicates `67`.
-        - `60 * 1.125` is 67.5, which truncates to 67.
-    - Example: `Rampage H. Bowgun IV` without ramp skills has base raw 190
-        - `190 * 1.1` is 209, but the game's equipment card indicates 213.
-        - `190 * 1.125` is 213.75, which truncates to 213.
-    - Example: `Rampage H. Bowgun IV` with `Attack Boost II` has base raw 196
-        - `(190 * 1.1) + 6` is 215, but the game's equipment card indicates 219.
-        - `(190 * 1.25) + 6` is 219.75, which truncates to 219
-    - More testing required. Hopefully I can get more information from the community at some point.
     - The line `const baseRaw = Math.trunc((b.baseRaw * b.baseRawMul) + b.baseRawAdd + 0.1);` in `calculate/index.js` must also be looked at.
 
 ## Roadmap
