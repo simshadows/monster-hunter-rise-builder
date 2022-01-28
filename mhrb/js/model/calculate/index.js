@@ -225,12 +225,14 @@ function calculateBuildPerformance(db, build, calcState) {
     assert(s.elementalBlunderDamage  !== undefined);
     assert(s.elementalCriticalDamage !== undefined);
     assert(s.ammoUpLevel             !== undefined);
+    assert(s.bludgeonerLevel         !== undefined);
     assert(s.bowChargePlusLevel      !== undefined);
     assert(s.handicraftLevel         !== undefined);
     assert(s.mastersTouchLevel       !== undefined);
     assert(s.razorSharpLevel         !== undefined);
     assert(s.recoilDownLevel         !== undefined);
     assert(s.reloadSpeedLevel        !== undefined);
+    assert(s.steadinessLevel         !== undefined);
     assert(s.defenseAdd              !== undefined);
     assert(s.defenseMul              !== undefined);
     assert(s.eleResAdd               !== undefined);
@@ -246,28 +248,7 @@ function calculateBuildPerformance(db, build, calcState) {
     assert(m.defenseMul  !== undefined);
 
     //
-    // STAGE 2: Calculate post-base values
-    //
-
-    // TODO: It's confusing that we're overloading the term "base raw" here
-    const baseRaw = Math.trunc((b.baseRaw * b.baseRawMul) + b.baseRawAdd + 0.1); // TODO: Does this truncation step exist?
-    const postbaseRaw = (Math.trunc(baseRaw * s.rawMul * m.rawMul + 0.1) + s.rawAdd + m.rawAdd) * b.rawPostTruncMul * s.rawPostTruncMul;
-    const postbaseAffinity = b.baseAffinity + s.affinityAdd + m.affinityAdd;
-
-    const postbaseEleStat = new Map();
-    for (const [eleStatID, baseEleStatValue] of b.baseEleStat.entries()) {
-        let x = baseEleStatValue * s.eleStatMul[eleStatID];
-        if (isEleStr(eleStatID)) {
-            x *= m.eleMul;
-        }
-        const postbaseEleStatValue = Math.trunc(x) + s.eleStatAdd[eleStatID];
-        postbaseEleStat.set(eleStatID, postbaseEleStatValue);
-    }
-
-    let hitsMultiplier = 1; // To be accumulated over later
-
-    //
-    // STAGE 3: Find Sharpness Modifiers
+    // STAGE 2: Find Sharpness Modifiers
     //
 
     let realSharpnessBar              = null;
@@ -304,7 +285,46 @@ function calculateBuildPerformance(db, build, calcState) {
     }
 
     //
-    // STAGE 4: Find and Apply Crit Modifiers
+    // STAGE 3: Handle Bludgeoner Calculation
+    //
+
+    const bludgeonerBaseRawMul = (()=>{
+        if (!tagset.has("melee")) return 1;
+
+        const highestSharpnessIndex = getHighestSharpnessIndex(realSharpnessBar);
+        if ((s.bludgeonerLevel === 1) && (highestSharpnessIndex <= 2)) { // Yellow or lower
+            return 1.05;
+        } else if ((s.bludgeonerLevel === 2) && (highestSharpnessIndex <= 2)) { // Yellow or lower
+            return 1.1;
+        } else if ((s.bludgeonerLevel === 3) && (highestSharpnessIndex <= 3)) { // Green or lower
+            return 1.1;
+        }
+        return 1;
+    })();
+
+    //
+    // STAGE 4: Calculate post-base values
+    //
+
+    // TODO: It's confusing that we're overloading the term "base raw" here
+    const baseRaw = Math.trunc((b.baseRaw * b.baseRawMul) + b.baseRawAdd + 0.1); // TODO: Does this truncation step exist?
+    const postbaseRaw = (Math.trunc((baseRaw * s.rawMul * m.rawMul * bludgeonerBaseRawMul) + 0.1) + s.rawAdd + m.rawAdd) * b.rawPostTruncMul * s.rawPostTruncMul;
+    const postbaseAffinity = b.baseAffinity + s.affinityAdd + m.affinityAdd;
+
+    const postbaseEleStat = new Map();
+    for (const [eleStatID, baseEleStatValue] of b.baseEleStat.entries()) {
+        let x = baseEleStatValue * s.eleStatMul[eleStatID];
+        if (isEleStr(eleStatID)) {
+            x *= m.eleMul;
+        }
+        const postbaseEleStatValue = Math.trunc(x) + s.eleStatAdd[eleStatID];
+        postbaseEleStat.set(eleStatID, postbaseEleStatValue);
+    }
+
+    let hitsMultiplier = 1; // To be accumulated over later
+
+    //
+    // STAGE 5: Find and Apply Crit Modifiers
     //
 
     const critChance = Math.min(postbaseAffinity, 100) / 100; // Clip values to 1 or less
@@ -323,7 +343,7 @@ function calculateBuildPerformance(db, build, calcState) {
     const elementalCritModifier = getCritModifier(s.elementalCriticalDamage, s.elementalBlunderDamage);
 
     //
-    // STAGE 5: Apply Master's Touch and Razor Sharp to the sharpness bar
+    // STAGE 6: Apply Master's Touch and Razor Sharp to the sharpness bar
     //
 
     if (s.razorSharpLevel > 0) {
@@ -356,7 +376,7 @@ function calculateBuildPerformance(db, build, calcState) {
     }
 
     //
-    // STAGE 6: We finally calculate effective raw!
+    // STAGE 7: We finally calculate effective raw!
     //
 
     let effectiveRaw = postbaseRaw * rawCritModifier;
@@ -377,7 +397,7 @@ function calculateBuildPerformance(db, build, calcState) {
     }
 
     //
-    // STAGE 7: Special Mechanics
+    // STAGE 8: Special Mechanics
     //
 
     let gunlanceStats = b.gunlanceStats;
@@ -408,7 +428,7 @@ function calculateBuildPerformance(db, build, calcState) {
     let bowgunStats = b.bowgunStats;
     assert(((weaponRO.category === "lightbowgun") || (weaponRO.category === "heavybowgun")) === (bowgunStats !== null));
     if ((weaponRO.category === "lightbowgun") || (weaponRO.category === "heavybowgun")) {
-        applyBuffsToBowgunAmmoAndClamp(bowgunStats, s.ammoUpLevel, s.recoilDownLevel, s.reloadSpeedLevel);
+        applyBuffsToBowgunAmmoAndClamp(bowgunStats, s.ammoUpLevel, s.recoilDownLevel, s.reloadSpeedLevel, s.steadinessLevel);
     }
 
     const ret = {
@@ -511,10 +531,10 @@ function getHighestSharpnessIndex(realSharpnessBar) {
 
 
 // IMPURE FUNCTION. Will modify the bowgun ammo object with new values.
-function applyBuffsToBowgunAmmoAndClamp(bowgunStats, ammoUpLevel, recoilDownLevel, reloadSpeedLevel) {
+function applyBuffsToBowgunAmmoAndClamp(bowgunStats, ammoUpLevel, recoilDownLevel, reloadSpeedLevel, steadinessLevel) {
     assert((ammoUpLevel >= 0) && (ammoUpLevel <= 3));
 
-    bowgunStats.deviation.severity = Math.max(0, Math.min(2, bowgunStats.deviation.severity));
+    bowgunStats.deviation.severity = Math.max(0, Math.min(2, bowgunStats.deviation.severity - steadinessLevel));
     const recoilStage = bowgunStats.recoil = Math.max(0, Math.min(5, bowgunStats.recoil - recoilDownLevel));
     const reloadStage = bowgunStats.reload = Math.max(0, Math.min(8, bowgunStats.reload + reloadSpeedLevel));
 

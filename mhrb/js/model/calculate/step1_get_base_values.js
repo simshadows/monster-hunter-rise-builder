@@ -908,24 +908,54 @@ function getBaseValues(db, build, calcState) {
             bowgunAmmoSet("armor"    , {lbg: 2, hbg: 2});
         }],
 
-        // TODO: Implement these when the relevant features are supported
-        //["rapid_fire_normal", ()=>{}],
-        //["rapid_fire_piercing", ()=>{}],
-        //["rapid_fire_spread", ()=>{}],
-        //["rapid_fire_shrapnel", ()=>{}],
-        //["rapid_fire_sticky", ()=>{}],
-        //["rapid_fire_fire", ()=>{}],
-        //["rapid_fire_water", ()=>{}],
-        //["rapid_fire_thunder", ()=>{}],
-        //["rapid_fire_ice", ()=>{}],
-        //["rapid_fire_dragon", ()=>{}],
+        //["rapid_fire_normal", ()=>{
+        //    console.assert(isRampageWeapon);
+        //    // TODO: NOT IMPLEMENTED
+        //}],
+        //["rapid_fire_piercing", ()=>{
+        //    console.assert(isRampageWeapon);
+        //    // TODO: NOT IMPLEMENTED
+        //}],
+        //["rapid_fire_spread", ()=>{
+        //    console.assert(isRampageWeapon);
+        //    // TODO: NOT IMPLEMENTED
+        //}],
+        //["rapid_fire_shrapnel", ()=>{
+        //    console.assert(isRampageWeapon);
+        //    // TODO: NOT IMPLEMENTED
+        //}],
+        //["rapid_fire_sticky", ()=>{
+        //    console.assert(isRampageWeapon);
+        //    // TODO: NOT IMPLEMENTED
+        //}],
+        //["rapid_fire_fire", ()=>{
+        //    console.assert(isRampageWeapon);
+        //    // TODO: NOT IMPLEMENTED
+        //}],
+        //["rapid_fire_water", ()=>{
+        //    console.assert(isRampageWeapon);
+        //    // TODO: NOT IMPLEMENTED
+        //}],
+        //["rapid_fire_thunder", ()=>{
+        //    console.assert(isRampageWeapon);
+        //    // TODO: NOT IMPLEMENTED
+        //}],
+        //["rapid_fire_ice", ()=>{
+        //    console.assert(isRampageWeapon);
+        //    // TODO: NOT IMPLEMENTED
+        //}],
+        //["rapid_fire_dragon", ()=>{
+        //    console.assert(isRampageWeapon);
+        //    // TODO: NOT IMPLEMENTED
+        //}],
         
-        // TODO: Implement these when the relevant features are supported
         //["special_wyvernheart", ()=>{
         //    console.assert(isRampageWeapon);
+        //    // TODO: NOT IMPLEMENTED
         //}],
         //["special_wyvernsnipe", ()=>{
         //    console.assert(isRampageWeapon);
+        //    // TODO: NOT IMPLEMENTED
         //}],
 
         // MANY OTHER RAMPAGE SKILLS NOT YET IMPLEMENTED

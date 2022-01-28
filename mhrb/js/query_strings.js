@@ -39,6 +39,7 @@ export function getBuildFromQueryString(db) {
     const build = new Build(db, db.getDefaultWeapon());
 
     function processIfQueryIsValid(queryStringValue, expectedLength, processingFunction) {
+        if (queryStringValue === "") return; // Do nothing for empty value
         if (typeof queryStringValue === "string") {
             const decomp = queryStringValue.split(SPLIT_CHAR);
             if (decomp.length === expectedLength) {
@@ -47,6 +48,7 @@ export function getBuildFromQueryString(db) {
         }
     }
     function processFlexibleLength(queryStringValue, processingFunction) {
+        if (queryStringValue === "") return; // Do nothing for empty value
         if (typeof queryStringValue === "string") {
             const decomp = queryStringValue.split(SPLIT_CHAR);
             processingFunction(decomp, db, build);

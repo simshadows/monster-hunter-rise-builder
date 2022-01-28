@@ -4,7 +4,7 @@ A web-based build calculator for Monster Hunter Rise.
 
 This project was inspired by Honey's [MHW build calculator](https://honeyhunterworld.com/mhwbi/).
 
-The application is currently almost minimally feature-complete for EFR/EFE/EFS calculations, with only the following important features missing or unverified (see *Missing/Unverified Features* below). Defense calculations will be implemented later. UI improvements will continue to be made throughout development.
+The application is currently almost minimally feature-complete for EFR/EFE/EFS calculations, with only some important features missing or unverified (see *Missing/Unverified Features* below). Defense calculations will be implemented later. UI improvements will continue to be made throughout development.
 
 ## Where can I access this website?
 
