@@ -66,6 +66,16 @@ function getBaseValues(db, build, calcState) {
         assert(isInt(stateValue) && (stateValue >= 0) && (stateValue < 2));
         return (stateValue === 1);
     }
+    // Returns the value of a state, not necessarily of a binary state.
+    // TODO: This is a copy of the same function in the step 2 file. Deduplicate it!
+    function rampSkillState(stateLabel) {
+        const presentations = allCalcStateSpec.get("Rampage Skill States").get(stateLabel).presentations;
+        const numPossibleStates = presentations.length;
+        assert(numPossibleStates >= 2);
+        const stateValue = allCalcState.get("Rampage Skill States").get(stateLabel);
+        assert(isInt(stateValue) && (stateValue >= 0) && (stateValue < numPossibleStates));
+        return stateValue;
+    }
 
     let baseRaw      = weaponRO.attack;
     let baseAffinity = weaponRO.affinity;
@@ -80,6 +90,10 @@ function getBaseValues(db, build, calcState) {
     let baseRawAdd = 0;
     let baseRawMul = 1;
     let rawPostTruncMul = 1;
+    
+    let affinityAdd = 0;
+
+    let narwaSoulActive = false;
 
     const isBowgun = (weaponRO.category === "lightbowgun") || (weaponRO.category === "heavybowgun");
     const isRampageWeapon = (weaponRO.id[0] === "r"); // Rampage tree IDs are "ra", "rb", ...
@@ -422,6 +436,23 @@ function getBaseValues(db, build, calcState) {
         ["defense_grinder_1", nop],
         ["defense_grinder_2", nop],
 
+        ["chameleos_soul", nop], // This really just gives you spiribirds rather than a unique buff
+        ["kushala_daora_soul", ()=>{
+            const ksdState = rampSkillState("Kushala Daora Soul (KUS)");
+            switch (ksdState) {
+                case 0: /* No Operation */ break;
+                case 1: affinityAdd += 25; break;
+                case 2: affinityAdd += 30; break;
+                default:
+                    console.error("Invalid state for Kushala Daora Soul.");
+            }
+        }],
+        ["teostra_soul", nop], // TODO: Need to implement this if I calculate blast damage per proc.
+        ["ibushi_soul", nop], // TODO: Need to implement this if I calculate defense.
+        ["narwa_soul", ()=>{
+            narwaSoulActive = true;
+        }],
+        
         ["element_exploit"      , ()=>{ console.warn("NOT IMPLEMENTED"); }],
         ["fireblight_exploit"   , ()=>{ console.warn("NOT IMPLEMENTED"); }],
         ["iceblight_exploit"    , ()=>{ console.warn("NOT IMPLEMENTED"); }],
@@ -1015,6 +1046,10 @@ function getBaseValues(db, build, calcState) {
         baseRawAdd,
         baseRawMul,
         rawPostTruncMul,
+
+        affinityAdd,
+
+        narwaSoulActive,
 
         gunlanceStats,
         huntingHornSongs,

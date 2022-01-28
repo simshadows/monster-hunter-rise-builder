@@ -183,6 +183,7 @@ function calculateBuildPerformance(db, build, calcState) {
     assert(calcState instanceof CalcState);
 
     const weaponRO = build.getWeaponObjRO();
+    const armourROs = build.getArmourROs();
     const tagset   = getWeaponTags(weaponRO.category);
 
     const allCalcStateSpec = calcState.getSpecification();
@@ -205,6 +206,10 @@ function calculateBuildPerformance(db, build, calcState) {
     assert(b.baseRawAdd      !== undefined);
     assert(b.baseRawMul      !== undefined);
     assert(b.rawPostTruncMul !== undefined);
+
+    assert(b.affinityAdd !== undefined);
+
+    assert(b.narwaSoulActive !== undefined);
 
     assert(b.gunlanceStats     !== undefined);
     assert(b.huntingHornSongs  !== undefined);
@@ -285,7 +290,7 @@ function calculateBuildPerformance(db, build, calcState) {
     }
 
     //
-    // STAGE 3: Handle Bludgeoner Calculation
+    // STAGE 3: Handle some special conditions
     //
 
     const bludgeonerBaseRawMul = (()=>{
@@ -302,6 +307,27 @@ function calculateBuildPerformance(db, build, calcState) {
         return 1;
     })();
 
+    const narwaSoulAffinityAdd = (()=>{
+        if (!b.narwaSoulActive) return 0;
+        // We count Ibushi pieces
+        let ibushiPieces = 0;
+        for (const [_, armourRO] of Object.entries(armourROs)) {
+            if ((armourRO !== null) && (armourRO.setID === 144 || armourRO.setID === 145)) {
+                assert(armourRO.setName === "Ibushi"); // Sanity check
+                ++ibushiPieces;
+            }
+        }
+        switch (ibushiPieces) {
+            case 1: return 4;
+            case 2: return 6;
+            case 3: return 10;
+            case 4: return 12;
+            case 5: return 40;
+            default: console.error(`Counted ${ibushiPieces} Ibushi armour pieces.`); // Fallthrough
+            case 0: return 0;
+        }
+    })();
+
     //
     // STAGE 4: Calculate post-base values
     //
@@ -309,7 +335,7 @@ function calculateBuildPerformance(db, build, calcState) {
     // TODO: It's confusing that we're overloading the term "base raw" here
     const baseRaw = Math.trunc((b.baseRaw * b.baseRawMul) + b.baseRawAdd + 0.1); // TODO: Does this truncation step exist?
     const postbaseRaw = (Math.trunc((baseRaw * s.rawMul * m.rawMul * bludgeonerBaseRawMul) + 0.1) + s.rawAdd + m.rawAdd) * b.rawPostTruncMul * s.rawPostTruncMul;
-    const postbaseAffinity = b.baseAffinity + s.affinityAdd + m.affinityAdd;
+    const postbaseAffinity = b.baseAffinity + b.affinityAdd + s.affinityAdd + m.affinityAdd + narwaSoulAffinityAdd;
 
     const postbaseEleStat = new Map();
     for (const [eleStatID, baseEleStatValue] of b.baseEleStat.entries()) {

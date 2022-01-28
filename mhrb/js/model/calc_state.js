@@ -494,19 +494,6 @@ class CalcState {
             }],
         ])],
         ["Rampage Skill States", new Map([
-            ["Wyvern Exploit (WYX)", {
-                initialState: 0,
-                presentations: [
-                    null,
-                    {
-                        name: "Active",
-                        type: "abbreviation",
-                        abbreviation: "WYX",
-                        color:       "#5f8700",
-                        borderColor: "#5f8700",
-                    },
-                ],
-            }],
             ["Anti-Aerial Species (AA)", {
                 initialState: 0,
                 presentations: [
@@ -546,6 +533,39 @@ class CalcState {
             //        },
             //    ],
             //}],
+            ["Kushala Daora Soul (KUS)", {
+                initialState: 0,
+                presentations: [
+                    null,
+                    {
+                        name: "After One Hit",
+                        type: "abbreviation",
+                        abbreviation: "KUS1",
+                        color:       "#d7d7d7",
+                        borderColor: "#d7d7d7",
+                    },
+                    {
+                        name: "After Five Hits",
+                        type: "abbreviation",
+                        abbreviation: "KUS2",
+                        color:       "#d7d7d7",
+                        borderColor: "#d7d7d7",
+                    },
+                ],
+            }],
+            ["Wyvern Exploit (WYX)", {
+                initialState: 0,
+                presentations: [
+                    null,
+                    {
+                        name: "Active",
+                        type: "abbreviation",
+                        abbreviation: "WYX",
+                        color:       "#5f8700",
+                        borderColor: "#5f8700",
+                    },
+                ],
+            }],
         ])],
     ]);
 

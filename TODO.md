@@ -8,9 +8,15 @@
 
 - I assume applying, say, `Use Para Coating I` and `Use Para Coating II` on the same bow at the same time will apply the highest compatibility state. Also, applying `Use Para Coating II` to two slots at once will not reapply the raw penalty (or raw bonus for others). Not very meaningful to be pedantic about it, but I want the builder to be accurate, so I'll double-check later.
 
-- Bowgun rampage skills aren't implemented yet since I don't have any data on how they work. I'll need to either ask around or obtain the data myself in-game.
-
 - The Elemental Reload switch skill affects LBG reload speed, but the app doesn't support switch skills yet.
+
+- I should properly document the in-game testing I do personally rather than asking people or finding data on the internet. Things I know I tested rigorously:
+
+    - I tested all bowgun rampage weapon rampage skills.
+    - Narwa Soul rampage skill with various numbers of Ibushi armour
+        - Tested with `Thunderbolt Great Sword I`
+        - No pieces --> 0% affinity, add head --> 4%, add arms --> 6%, add waist --> 10%, add legs --> 12%, add chest --> 40%
+        - any piece on its own --> 4%
 
 # Game Data WIP: HBG Ramp Skills
 
