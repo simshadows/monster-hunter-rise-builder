@@ -37,6 +37,8 @@ function copyBowgunStats(obj) {
     return ret;
 }
 
+// NOTE: Bowgun stats will be returned unclamped.
+//       The caller will need to clamp the values before returning!
 function getBaseValues(db, build, calcState) {
     assert(isObj(db));
     assert(isMap(db.readonly.weapons.map.greatsword)); // Spot check for structure
@@ -627,28 +629,33 @@ function getBaseValues(db, build, calcState) {
         // Rampage Bowguns, Slot 1
         ["recoil_down_boost", ()=>{
             console.assert(isRampageWeapon);
-            bowgunStats.recoil = Math.max(0, bowgunStats.recoil - 1);
+            bowgunStats.recoil -= 1;
         }],
         ["reload_speed_boost", ()=>{
             console.assert(isRampageWeapon);
-            bowgunStats.reload = Math.min(8, bowgunStats.reload + 1);
+            bowgunStats.reload += 1;
         }],
         ["steadiness_boost", ()=>{
             console.assert(isRampageWeapon);
-            bowgunStats.deviation.severity = Math.max(0, bowgunStats.deviation.severity - 1);
+            bowgunStats.deviation.severity -= 1;
         }],
 
         // Rampage Bowguns, Slot 2
-        // TODO
-        //["recoil_down_surge", ()=>{
-        //    console.assert(isRampageWeapon);
-        //}],
-        //["reload_speed_surge", ()=>{
-        //    console.assert(isRampageWeapon);
-        //}],
-        //["steadiness_surge", ()=>{
-        //    console.assert(isRampageWeapon);
-        //}],
+        ["recoil_down_surge", ()=>{
+            console.assert(isRampageWeapon);
+            bowgunStats.recoil -= 2;
+            bowgunStats.deviation.severity += 1;
+        }],
+        ["reload_speed_surge", ()=>{
+            console.assert(isRampageWeapon);
+            bowgunStats.reload += 2;
+            bowgunStats.recoil += 1;
+        }],
+        ["steadiness_surge", ()=>{
+            console.assert(isRampageWeapon);
+            bowgunStats.deviation.severity -= 2;
+            bowgunStats.reload -= 1;
+        }],
 
         ["add_normal_ammo_1", ()=>{
             console.assert(isRampageWeapon);
@@ -757,42 +764,47 @@ function getBaseValues(db, build, calcState) {
             console.assert(isRampageWeapon);
             bowgunAmmoSet("fire", {lbg: 4, hbg: 5});
         }],
-        // TODO
-        //["fire_effect_2", ()=>{
-        //    console.assert(isRampageWeapon);
-        //}],
+        ["fire_effect_2", ()=>{
+            console.assert(isRampageWeapon);
+            bowgunAmmoSet("fire"         , {lbg: 2, hbg: 3});
+            bowgunAmmoSet("piercing_fire", {lbg: 3, hbg: 4});
+        }],
         ["water_effect_1", ()=>{
             console.assert(isRampageWeapon);
             bowgunAmmoSet("water", {lbg: 4, hbg: 5});
         }],
-        // TODO
-        //["water_effect_2", ()=>{
-        //    console.assert(isRampageWeapon);
-        //}],
+        ["water_effect_2", ()=>{
+            console.assert(isRampageWeapon);
+            bowgunAmmoSet("water"         , {lbg: 2, hbg: 3});
+            bowgunAmmoSet("piercing_water", {lbg: 3, hbg: 4});
+        }],
         ["thunder_effect_1", ()=>{
             console.assert(isRampageWeapon);
             bowgunAmmoSet("thunder", {lbg: 4, hbg: 5});
         }],
-        // TODO
-        //["thunder_effect_2", ()=>{
-        //    console.assert(isRampageWeapon);
-        //}],
+        ["thunder_effect_2", ()=>{
+            console.assert(isRampageWeapon);
+            bowgunAmmoSet("thunder"         , {lbg: 2, hbg: 3});
+            bowgunAmmoSet("piercing_thunder", {lbg: 3, hbg: 4});
+        }],
         ["ice_effect_1", ()=>{
             console.assert(isRampageWeapon);
             bowgunAmmoSet("ice", {lbg: 4, hbg: 5});
         }],
-        // TODO
-        //["ice_effect_2", ()=>{
-        //    console.assert(isRampageWeapon);
-        //}],
+        ["ice_effect_2", ()=>{
+            console.assert(isRampageWeapon);
+            bowgunAmmoSet("ice"         , {lbg: 2, hbg: 3});
+            bowgunAmmoSet("piercing_ice", {lbg: 3, hbg: 4});
+        }],
         ["dragon_effect_1", ()=>{
             console.assert(isRampageWeapon);
             bowgunAmmoSet("dragon", {lbg: 3, hbg: 3});
         }],
-        // TODO
-        //["dragon_effect_2", ()=>{
-        //    console.assert(isRampageWeapon);
-        //}],
+        ["dragon_effect_2", ()=>{
+            console.assert(isRampageWeapon);
+            bowgunAmmoSet("dragon"         , {lbg: 2, hbg: 2});
+            bowgunAmmoSet("piercing_dragon", {lbg: 2, hbg: 3});
+        }],
         ["poison_effect_1", ()=>{
             console.assert(isRampageWeapon);
             bowgunAmmoSet("poison_1" , {lbg: 2, hbg: 3});
@@ -802,28 +814,35 @@ function getBaseValues(db, build, calcState) {
             bowgunAmmoSet("demon"    , {lbg: 1, hbg: 1});
             bowgunAmmoSet("armor"    , {lbg: 1, hbg: 1});
         }],
-        // TODO
-        //["poison_effect_2", ()=>{
-        //    console.assert(isRampageWeapon);
-        //}],
+        ["poison_effect_2", ()=>{
+            console.assert(isRampageWeapon);
+            bowgunAmmoSet("poison_1" , {lbg: 1, hbg: 2});
+            bowgunAmmoSet("poison_2" , {lbg: 2, hbg: 3});
+            bowgunAmmoSet("recover_1", {lbg: 3, hbg: 3});
+            bowgunAmmoSet("recover_2", {lbg: 2, hbg: 2});
+            bowgunAmmoSet("demon"    , {lbg: 2, hbg: 2});
+            bowgunAmmoSet("armor"    , {lbg: 2, hbg: 2});
+        }],
         ["paralysis_effect_1", ()=>{
             console.assert(isRampageWeapon);
             bowgunAmmoSet("paralysis_1", {lbg: 2, hbg: 3});
             bowgunAmmoSet("paralysis_2", {lbg: 1, hbg: 2});
         }],
-        // TODO
-        //["paralysis_effect_2", ()=>{
-        //    console.assert(isRampageWeapon);
-        //}],
+        ["paralysis_effect_2", ()=>{
+            console.assert(isRampageWeapon);
+            bowgunAmmoSet("paralysis_1", {lbg: 1, hbg: 2});
+            bowgunAmmoSet("paralysis_2", {lbg: 2, hbg: 3});
+        }],
         ["sleep_effect_1", ()=>{
             console.assert(isRampageWeapon);
             bowgunAmmoSet("sleep_1", {lbg: 2, hbg: 3});
             bowgunAmmoSet("sleep_2", {lbg: 1, hbg: 2});
         }],
-        // TODO
-        //["sleep_effect_2", ()=>{
-        //    console.assert(isRampageWeapon);
-        //}],
+        ["sleep_effect_2", ()=>{
+            console.assert(isRampageWeapon);
+            bowgunAmmoSet("sleep_1", {lbg: 1, hbg: 2});
+            bowgunAmmoSet("sleep_2", {lbg: 2, hbg: 3});
+        }],
         ["exhaust_effect_1", ()=>{
             console.assert(isRampageWeapon);
             bowgunAmmoSet("exhaust_1", {lbg: 2, hbg: 3});
@@ -833,10 +852,15 @@ function getBaseValues(db, build, calcState) {
             bowgunAmmoSet("demon"    , {lbg: 1, hbg: 1});
             bowgunAmmoSet("armor"    , {lbg: 1, hbg: 1});
         }],
-        // TODO
-        //["exhaust_effect_2", ()=>{
-        //    console.assert(isRampageWeapon);
-        //}],
+        ["exhaust_effect_2", ()=>{
+            console.assert(isRampageWeapon);
+            bowgunAmmoSet("exhaust_1", {lbg: 1, hbg: 2});
+            bowgunAmmoSet("exhaust_2", {lbg: 2, hbg: 3});
+            bowgunAmmoSet("recover_1", {lbg: 3, hbg: 3});
+            bowgunAmmoSet("recover_2", {lbg: 2, hbg: 2});
+            bowgunAmmoSet("demon"    , {lbg: 2, hbg: 2});
+            bowgunAmmoSet("armor"    , {lbg: 2, hbg: 2});
+        }],
         // TODO
         //["rapid_fire_normal", ()=>{}],
         //["rapid_fire_piercing", ()=>{}],

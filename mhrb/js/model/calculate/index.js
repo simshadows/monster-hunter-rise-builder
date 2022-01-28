@@ -408,7 +408,7 @@ function calculateBuildPerformance(db, build, calcState) {
     let bowgunStats = b.bowgunStats;
     assert(((weaponRO.category === "lightbowgun") || (weaponRO.category === "heavybowgun")) === (bowgunStats !== null));
     if ((weaponRO.category === "lightbowgun") || (weaponRO.category === "heavybowgun")) {
-        applyBuffsToBowgunAmmo(bowgunStats, s.ammoUpLevel, s.recoilDownLevel, s.reloadSpeedLevel);
+        applyBuffsToBowgunAmmoAndClamp(bowgunStats, s.ammoUpLevel, s.recoilDownLevel, s.reloadSpeedLevel);
     }
 
     const ret = {
@@ -511,12 +511,12 @@ function getHighestSharpnessIndex(realSharpnessBar) {
 
 
 // IMPURE FUNCTION. Will modify the bowgun ammo object with new values.
-function applyBuffsToBowgunAmmo(bowgunStats, ammoUpLevel, recoilDownLevel, reloadSpeedLevel) {
+function applyBuffsToBowgunAmmoAndClamp(bowgunStats, ammoUpLevel, recoilDownLevel, reloadSpeedLevel) {
     assert((ammoUpLevel >= 0) && (ammoUpLevel <= 3));
 
-    // TODO: Is the clamping necessary?
-    const recoilStage = Math.max(0, Math.min(5, bowgunStats.recoil - recoilDownLevel));
-    const reloadStage = Math.max(0, Math.min(8, bowgunStats.reload + reloadSpeedLevel));
+    bowgunStats.deviation.severity = Math.max(0, Math.min(2, bowgunStats.deviation.severity));
+    const recoilStage = bowgunStats.recoil = Math.max(0, Math.min(5, bowgunStats.recoil - recoilDownLevel));
+    const reloadStage = bowgunStats.reload = Math.max(0, Math.min(8, bowgunStats.reload + reloadSpeedLevel));
 
     const keys = Object.keys(bowgunStats.ammo);
     for (const k of keys) {
