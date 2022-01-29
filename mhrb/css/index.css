@@ -170,7 +170,7 @@ div.body-inner-box {
 #app-inner-box {
     display: flex;
     flex-direction: column;
-    width: 1260px;
+    width: 1250px;
 }
 
 /* An alternative idea to adding 50px to the bottom-padding of body-inner-box but idk how to do it

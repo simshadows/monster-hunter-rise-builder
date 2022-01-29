@@ -360,14 +360,14 @@ class CalcState {
                 presentations: [
                     null,
                     {
-                        name: "1 Stack",
+                        name: "One Stack",
                         type: "abbreviation",
                         abbreviation: "FOR1",
                         color:       COLOUR.orange,
                         borderColor: COLOUR.orange,
                     },
                     {
-                        name: "2 Stacks",
+                        name: "Two Stacks",
                         type: "abbreviation",
                         abbreviation: "FOR2",
                         color:       COLOUR.orange,
