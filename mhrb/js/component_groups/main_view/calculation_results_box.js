@@ -324,8 +324,13 @@ class CalculationResultsBox extends React.Component {
 
     _renderCompatibleCoatings(compatibleCoatings) {
         const op = (label, value) => {
-                return this._renderStatInner(null, label, String(value));
-            };
+            if (value === 0) {
+                return this._renderStatInner(null, this._renderGreyed(label), this._renderGreyed("Incompatible"));
+            } else {
+                const displayedStr = (value === 1) ? "Compatible" : "Enhanced";
+                return this._renderStatInner(null, label, displayedStr);
+            }
+        };
         return element("div",
             {
             className: "calculation-stat-box",
