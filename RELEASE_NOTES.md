@@ -2,7 +2,7 @@
 
 *Release notes are sorted with the latest at the top.*
 
-## (UPCOMING) Version 1.0.2
+## Version 1.0.2
 
 Fixed a bug where bow charge shots are all greyed by default.
 
