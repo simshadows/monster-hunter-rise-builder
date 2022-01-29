@@ -1,14 +1,10 @@
-# Important TODOs
-
-- I haven't actually run the elemental/status formula through anybody yet. I'll need to get that off someone who's done the research.
+# TODOs not described in `README.md`
 
 - If I implement calculations involving MV's, I'll need to remember that Silkbind attacks can be treated differently to other attacks, such as with Critical Draw and Punishing Draw.
 
 - Heroics has `defense-increasing effects are negated`. What does this mean?
 
 - I assume applying, say, `Use Para Coating I` and `Use Para Coating II` on the same bow at the same time will apply the highest compatibility state. Also, applying `Use Para Coating II` to two slots at once will not reapply the raw penalty (or raw bonus for others). Not very meaningful to be pedantic about it, but I want the builder to be accurate, so I'll double-check later.
-
-- The Elemental Reload switch skill affects LBG reload speed, but the app doesn't support switch skills yet.
 
 - I should properly document the in-game testing I do personally rather than asking people or finding data on the internet. Things I know I tested rigorously:
 

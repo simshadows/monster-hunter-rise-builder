@@ -30,11 +30,34 @@ python3 -m http.server
 
 ## Key Features Missing/Unverified
 
-- Many bowgun rampage skills will need to be verified. (To save time/resources, I took guesses, which are marked with `TODO` comments in `calculate/step1_get_base_values.js`.
-- Bowgun ammo attributes (this data is not available on Kiranico, and I don't want to manually collect the data at this stage)
-- LBG Elemental Reload calculation (switch skills aren't implemented yet, but I should at least add it to the Misc. Buffs section)
-- Bowgun Power Barrel/Long Barrel
-    - The line `const baseRaw = Math.trunc((b.baseRaw * b.baseRawMul) + b.baseRawAdd + 0.1);` in `calculate/index.js` must also be looked at.
+- Element/Status calculations in general will need to be verified.
+- Many bowgun rampage skills will need to be verified.
+    - To save time/resources, I took guesses, which are marked with `TODO` comments in `calculate/step1_get_base_values.js`.
+- Bowgun ammo attributes aren't implemented (including LBG rapid fire).
+    - This data is not available on Kiranico, and I don't want to manually collect this data at this stage.
+- HBG special ammo.
+    - This data is also not available on Kiranico.
+- Bowgun Power Barrel/Long Barrel calculation needs to be verified
+    - Particularly, at the line `const baseRaw = Math.trunc((b.baseRaw * b.baseRawMul) + b.baseRawAdd + 0.1);` in `calculate/index.js`.
+- Important damage-related features not yet implemented:
+    - Magnamalo Soul (Rampage Skill)
+    - Dulling Strike (Rampage Skill)
+    - Brutal Strike (Rampage Skill)
+    - Silkbind Boost (Rampage Skill)
+    - Element Exploit (Rampage Skill)
+    - Fireblight Exploit (Rampage Skill)
+    - Waterblight Exploit (Rampage Skill)
+    - Thunderblight Exploit (Rampage Skill)
+    - Iceblight Exploit (Rampage Skill)
+    - Small Monster Exploit (Rampage Skill)
+    - Anti-Aerial Species (Rampage Skill) elemental/status damage contribution (if it has any)
+    - Anti-Aquatic Species (Rampage Skill) elemental/status damage contribution (if it has any)
+    - Wyvern Exploit (Rampage Skill) elemental/status damage contribution (if it has any)
+    - Rapid Fire Up (Armour Skill)
+    - Normal/Rapid Fire Up (Armour Skill)
+    - Pierce Up (Armour Skill)
+    - Spread Up (Armour Skill)
+    - Stormsoul (Armour Skill)
 
 ## Roadmap
 

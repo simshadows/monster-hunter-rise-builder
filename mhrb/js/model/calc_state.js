@@ -275,6 +275,19 @@ class CalcState {
                     },
                 ],
             }],
+            ["LBG Switch Skill: Elemental Reload", {
+                initialState: 0,
+                presentations: [
+                    null,
+                    {
+                        name: "Active",
+                        type: "abbreviation",
+                        abbreviation: "ER",
+                        color:       "#b1d7d1",
+                        borderColor: "#b1d7d1",
+                    },
+                ],
+            }],
         ])],
         ["Skill States", new Map([
             ["Affinity Sliding (AFS)", {
@@ -541,15 +554,28 @@ class CalcState {
                         name: "After One Hit",
                         type: "abbreviation",
                         abbreviation: "KUS1",
-                        color:       "#d7d7d7",
-                        borderColor: "#d7d7d7",
+                        color:       "#5f8700",
+                        borderColor: "#5f8700",
                     },
                     {
                         name: "After Five Hits",
                         type: "abbreviation",
                         abbreviation: "KUS2",
-                        color:       "#d7d7d7",
-                        borderColor: "#d7d7d7",
+                        color:       "#5f8700",
+                        borderColor: "#5f8700",
+                    },
+                ],
+            }],
+            ["Valstrax Soul (VAS)", {
+                initialState: 0,
+                presentations: [
+                    null,
+                    {
+                        name: "Active",
+                        type: "abbreviation",
+                        abbreviation: "VAS",
+                        color:       "#5f8700",
+                        borderColor: "#5f8700",
                     },
                 ],
             }],

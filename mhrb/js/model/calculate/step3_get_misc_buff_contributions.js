@@ -26,6 +26,8 @@ function getMiscBuffContributions(db, build, calcState) {
     assert(build instanceof Build);
     assert(calcState instanceof CalcState);
 
+    const weaponRO = build.getWeaponObjRO();
+
     const allCalcStateSpec = calcState.getSpecification();
     const allCalcState = calcState.getCurrState();
 
@@ -53,6 +55,8 @@ function getMiscBuffContributions(db, build, calcState) {
     let eleMul = 1;
     let defenseAdd = 0;
     let defenseMul = 1;
+
+    let reloadSpeedAdd = 0;
 
     if (itemBoxBuffActive("Powercharm")) {
         rawAdd += 6;
@@ -130,6 +134,10 @@ function getMiscBuffContributions(db, build, calcState) {
         defenseMul *= 1.20;
     }
 
+    if (miscBuffActive("LBG Switch Skill: Elemental Reload") && (weaponRO.category === "lightbowgun")) {
+        reloadSpeedAdd -= 2;
+    }
+
     const ret = {
         rawAdd,
         rawMul,
@@ -137,6 +145,8 @@ function getMiscBuffContributions(db, build, calcState) {
         eleMul,
         defenseAdd,
         defenseMul,
+
+        reloadSpeedAdd,
     };
     return ret;
 }

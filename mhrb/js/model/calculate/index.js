@@ -209,6 +209,8 @@ function calculateBuildPerformance(db, build, calcState) {
 
     assert(b.affinityAdd !== undefined);
 
+    assert(b.eleStatMul !== undefined);
+
     assert(b.narwaSoulActive !== undefined);
 
     assert(b.gunlanceStats     !== undefined);
@@ -251,6 +253,8 @@ function calculateBuildPerformance(db, build, calcState) {
     assert(m.eleMul      !== undefined);
     assert(m.defenseAdd  !== undefined);
     assert(m.defenseMul  !== undefined);
+
+    assert(m.reloadSpeedAdd !== undefined);
 
     //
     // STAGE 2: Find Sharpness Modifiers
@@ -339,7 +343,7 @@ function calculateBuildPerformance(db, build, calcState) {
 
     const postbaseEleStat = new Map();
     for (const [eleStatID, baseEleStatValue] of b.baseEleStat.entries()) {
-        let x = baseEleStatValue * s.eleStatMul[eleStatID];
+        let x = baseEleStatValue * s.eleStatMul[eleStatID] * b.eleStatMul[eleStatID];
         if (isEleStr(eleStatID)) {
             x *= m.eleMul;
         }
@@ -454,6 +458,7 @@ function calculateBuildPerformance(db, build, calcState) {
     let bowgunStats = b.bowgunStats;
     assert(((weaponRO.category === "lightbowgun") || (weaponRO.category === "heavybowgun")) === (bowgunStats !== null));
     if ((weaponRO.category === "lightbowgun") || (weaponRO.category === "heavybowgun")) {
+        bowgunStats.reload += m.reloadSpeedAdd;
         applyBuffsToBowgunAmmoAndClamp(bowgunStats, s.ammoUpLevel, s.recoilDownLevel, s.reloadSpeedLevel, s.steadinessLevel);
     }
 

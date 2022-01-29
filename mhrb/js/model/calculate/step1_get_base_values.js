@@ -93,6 +93,19 @@ function getBaseValues(db, build, calcState) {
     
     let affinityAdd = 0;
 
+    let eleStatMul = {
+            fire:      1,
+            water:     1,
+            thunder:   1,
+            ice:       1,
+            dragon:    1,
+
+            poison:    1,
+            paralysis: 1,
+            sleep:     1,
+            blast:     1,
+        };
+
     let narwaSoulActive = false;
 
     const isBowgun = (weaponRO.category === "lightbowgun") || (weaponRO.category === "heavybowgun");
@@ -452,13 +465,17 @@ function getBaseValues(db, build, calcState) {
         ["narwa_soul", ()=>{
             narwaSoulActive = true;
         }],
+        ["valstrax_soul", ()=>{
+            if (!rampSkillActive("Valstrax Soul (VAS)")) return;
+            eleStatMul.dragon *= 1.2;
+        }],
         
-        ["element_exploit"      , ()=>{ console.warn("NOT IMPLEMENTED"); }],
-        ["fireblight_exploit"   , ()=>{ console.warn("NOT IMPLEMENTED"); }],
-        ["iceblight_exploit"    , ()=>{ console.warn("NOT IMPLEMENTED"); }],
-        ["small_monster_exploit", ()=>{ console.warn("NOT IMPLEMENTED"); }],
-        ["thunderblight_exploit", ()=>{ console.warn("NOT IMPLEMENTED"); }],
-        ["waterblight_exploit"  , ()=>{ console.warn("NOT IMPLEMENTED"); }],
+        ["element_exploit"      , ()=>{ console.warn("NOT IMPLEMENTED"); }], // TODO
+        ["fireblight_exploit"   , ()=>{ console.warn("NOT IMPLEMENTED"); }], // TODO
+        ["iceblight_exploit"    , ()=>{ console.warn("NOT IMPLEMENTED"); }], // TODO
+        ["small_monster_exploit", ()=>{ console.warn("NOT IMPLEMENTED"); }], // TODO
+        ["thunderblight_exploit", ()=>{ console.warn("NOT IMPLEMENTED"); }], // TODO
+        ["waterblight_exploit"  , ()=>{ console.warn("NOT IMPLEMENTED"); }], // TODO
 
         ["non_elemental_boost", ()=>{ deferredOps2.push(()=>{ if (baseEleStat.size === 0) baseRawAdd += 10; }); }],
 
@@ -1048,6 +1065,8 @@ function getBaseValues(db, build, calcState) {
         rawPostTruncMul,
 
         affinityAdd,
+
+        eleStatMul,
 
         narwaSoulActive,
 
