@@ -37,6 +37,13 @@ function copyBowgunStats(obj) {
     return ret;
 }
 
+function copyBowStats(obj) {
+    const ret = deepcopy(obj);
+    ret.chargeLevelLimit = ret.baseChargeLevelLimit;
+    return ret;
+
+}
+
 // NOTE: Bowgun stats will be returned unclamped.
 //       The caller will need to clamp the values before returning!
 function getBaseValues(db, build, calcState) {
@@ -116,7 +123,7 @@ function getBaseValues(db, build, calcState) {
     let switchaxeStats    = (weaponRO.category !== "switchaxe"   ) ? null : {...weaponRO.switchaxeStats};
     let chargebladeStats  = (weaponRO.category !== "chargeblade" ) ? null : {...weaponRO.chargebladeStats};
     let insectglaiveStats = (weaponRO.category !== "insectglaive") ? null : {...weaponRO.insectglaiveStats};
-    let bowStats          = (weaponRO.category !== "bow"         ) ? null : deepcopy(weaponRO.bowStats);
+    let bowStats          = (weaponRO.category !== "bow"         ) ? null : copyBowStats(weaponRO.bowStats);
     let bowgunStats       = (!isBowgun                           ) ? null : copyBowgunStats(weaponRO.bowgunStats);
 
     /*** ***/
