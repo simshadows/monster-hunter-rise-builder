@@ -61,11 +61,11 @@ python3 -m http.server
 
 ## Roadmap
 
-### Future Release: v1.0
+### Future Release: v1.x.x
 
-The first release of the app will be a minimally-complete builder app with complete EFR/EFE/EFS calculations, bowgun ammo performance, and other key weapon mechanics. v1.0 will exclude defense calculations.
+Particularly in-demand features missing from v1.0.0 may be implemented in patches. Otherwise, no more new features are planned before the codebase port (which will probably be v3.0).
 
-Data that can't simply be scraped from Kiranico may be excluded from v1.0. Instead, I may choose to defer on this until v3.x.
+I will also not implement defense calculations until after the codebase port.
 
 ### Future Release: v2.0
 
