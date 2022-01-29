@@ -126,10 +126,15 @@ function getSkillContributions(db, build, calcState) {
     let elementalBlunderDamage  = ELEMENTAL_BLUNDER_DAMAGE_MULTIPLIER;
     let elementalCriticalDamage = CRITICAL_ELEMENT_DAMAGE_MULTIPLIERS[0];
 
+    let ammoUpLevel = 0;
+    let bludgeonerLevel = 0;
     let bowChargePlusLevel = 0;
     let handicraftLevel = 0;
     let mastersTouchLevel = 0; // Affects sharpness bar hits. Calculate later.
     let razorSharpLevel = 0; // Affects sharpness bar hits. Calculate later.
+    let recoilDownLevel = 0;
+    let reloadSpeedLevel = 0;
+    let steadinessLevel = 0;
 
     let defenseAdd = 0;
     let defenseMul = 1;
@@ -246,8 +251,12 @@ function getSkillContributions(db, build, calcState) {
             }
         }],
 
+        ["ammo_up", (lid, lvl)=>{
+            ammoUpLevel = lvl;
+        }],
+
         ["attack_boost", (lid, lvl)=>{
-            switch (lid, lvl) {
+            switch (lvl) {
                 case 1: rawAdd +=  3; break;
                 case 2: rawAdd +=  6; break;
                 case 3: rawAdd +=  9; break;
@@ -261,6 +270,11 @@ function getSkillContributions(db, build, calcState) {
         }],
 
         ["blight_resistance", (lid, lvl)=>{nop();}],
+
+        ["bludgeoner", (lid, lvl)=>{
+            bludgeonerLevel = lvl;
+        }],
+
         ["botanist", (lid, lvl)=>{nop();}],
 
         ["bow_charge_plus", (lid, lvl)=>{
@@ -271,12 +285,13 @@ function getSkillContributions(db, build, calcState) {
 
         ["bubbly_dance", (lid, lvl)=>{nop();}],
         ["capture_master", (lid, lvl)=>{nop();}],
+        ["carving_master", (lid, lvl)=>{nop();}],
         ["carving_pro", (lid, lvl)=>{nop();}],
         ["constitution", (lid, lvl)=>{nop();}],
         
         ["counterstrike", (lid, lvl)=>{
             if (!skillActive("Counterstrike (CS)")) return;
-            switch (lid, lvl) {
+            switch (lvl) {
                 case 1: rawAdd += 10; break;
                 case 2: rawAdd += 15; break;
                 case 3: rawAdd += 25; break;
@@ -432,6 +447,7 @@ function getSkillContributions(db, build, calcState) {
             }
         }],
 
+        ["load_shells", (lid, lvl)=>{nop();}],
         ["marathon_runner", (lid, lvl)=>{nop();}],
         ["master_mounter", (lid, lvl)=>{nop();}],
 
@@ -466,7 +482,7 @@ function getSkillContributions(db, build, calcState) {
 
         ["offensive_guard", (lid, lvl)=>{
             if (!skillActive("Offensive Guard (OG)")) return;
-            switch (lid, lvl) {
+            switch (lvl) {
                 case 1: rawMul *= 1.05; break;
                 case 2: rawMul *= 1.10; break;
                 case 3: rawMul *= 1.15; break;
@@ -507,8 +523,16 @@ function getSkillContributions(db, build, calcState) {
             razorSharpLevel = lvl;
         }],
 
+        ["recoil_down", (lid, lvl)=>{
+            recoilDownLevel = lvl;
+        }],
+
         ["recovery_speed", (lid, lvl)=>{nop();}],
         ["recovery_up", (lid, lvl)=>{nop();}],
+
+        ["reload_speed", (lid, lvl)=>{
+            reloadSpeedLevel = lvl;
+        }],
 
         ["resentment", (lid, lvl)=>{
             if (!skillActive("Resentment (RES)")) return;
@@ -537,6 +561,11 @@ function getSkillContributions(db, build, calcState) {
         ["speed_eating", (lid, lvl)=>{nop();}],
         ["speed_sharpening", (lid, lvl)=>{nop();}],
         ["stamina_surge", (lid, lvl)=>{nop();}],
+
+        ["steadiness", (lid, lvl)=>{
+            steadinessLevel = lvl;
+        }],
+
         ["stun_resistance", (lid, lvl)=>{nop();}],
 
         ["teostra_blessing", (lid, lvl)=>{
@@ -551,6 +580,7 @@ function getSkillContributions(db, build, calcState) {
         }],
 
         ["tremor_resistance", (lid, lvl)=>{nop();}],
+        ["wall_runner", (lid, lvl)=>{nop();}],
 
         ["weakness_exploit", (lid, lvl)=>{
             if (!skillActive("Weakness Exploit (WEX)")) return;
@@ -605,10 +635,15 @@ function getSkillContributions(db, build, calcState) {
         elementalBlunderDamage,
         elementalCriticalDamage,
 
+        ammoUpLevel,
+        bludgeonerLevel,
         bowChargePlusLevel,
         handicraftLevel,
         mastersTouchLevel,
         razorSharpLevel,
+        recoilDownLevel,
+        reloadSpeedLevel,
+        steadinessLevel,
 
         defenseAdd,
         defenseMul,

@@ -330,15 +330,23 @@ async function downloadCategoryRawWeaponData(category, path, op) {
                 const newAmmoObj = {};
                 for (const [k, v] of Object.entries(weaponData.bowgunStats.ammo)) {
                     assert(v.length > 0);
+
+                    function op(_ammoTypeKey, _available, _capacity) {
+                        const ammoRO = bowgunAmmoTypesMap.get(_ammoTypeKey);
+                        assert(ammoRO !== undefined); // Check if the ammo type is valid
+                        newAmmoObj[_ammoTypeKey] = {
+                            ammoRO: ammoRO, // Merge in
+                            available: _available,
+                            ammoCapacity: _capacity,
+                        };
+                    }
+
                     if (v.length === 1) {
                         assert(v[0].length === 2);
-                        assert(bowgunAmmoTypesMap.has(k)); // Check if the ammo type is valid
-                        newAmmoObj[k] = {available: v[0][0], ammoCapacity: v[0][1]};
+                        op(k, v[0][0], v[0][1]);
                     } else {
                         for (const [i, [available, ammoCapacity]] of v.entries()) {
-                            const newKey = k + "_" + String(i + 1);
-                            assert(bowgunAmmoTypesMap.has(newKey)); // Check if the ammo type is valid
-                            newAmmoObj[newKey] = {available, ammoCapacity};
+                            op(k + "_" + String(i + 1), available, ammoCapacity);
                         }
                     }
                 }

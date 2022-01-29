@@ -17,9 +17,14 @@ import {
     eleStatIdToName,
     bowgunDeviationSpecToName,
     bowgunRecoilIntToName,
+    bowgunAmmoRecoilIntToName,
     bowgunReloadIntToName,
+    bowgunAmmoReloadIntToName,
     iterateEleStatMapInLogicalOrder,
 } from "../../common.js";
+import {
+    GenericTable,
+} from "../generic_components.js";
 import {
     getSimpleImgElement,
     eleStatStrToImgId,
@@ -95,6 +100,90 @@ class CalculationSharpnessBarBox extends React.Component {
             ),
         );
     }
+}
+
+class CalculationAmmoStatsBox extends React.Component {
+
+    render(props) {
+
+        assert(isObj(this.props.ammoData));
+
+        const dataArray = [];
+        for (const [k, v] of Object.entries(this.props.ammoData)) {
+            if (!v.available) continue;
+            dataArray.push({
+                ammoRO: v.ammoRO,
+                available: v.available,
+                capacity: v.ammoCapacity,
+                recoil: v.recoil,
+                reload: v.reload,
+            });
+        }
+        assert(dataArray.length > 0); // Should always be at least one row
+
+        const cspecBodyRowFormat = [
+            "calculation-ammo-box-table",
+            "calculation-ammo-box-table",
+            "calculation-ammo-box-table",
+            "calculation-ammo-box-table",
+        ];
+        const cspecHeadRowFormat = [
+            ["", "Ammo"],
+            ["", "Capacity"],
+            ["", "Recoil"],
+            ["", "Reload"],
+        ];
+
+        const cspecGetRowContent = (dataObj) => {
+            return [
+                dataObj.ammoRO.shortName,
+                String(dataObj.capacity),
+                bowgunAmmoRecoilIntToName(dataObj.recoil),
+                bowgunAmmoReloadIntToName(dataObj.reload),
+            ];
+        };
+
+        const implementationClassNames = {
+            wrapDiv: "calculation-ammo-box-table",
+            table: "calculation-ammo-box-table",
+
+            thead: "calculation-ammo-box-table",
+            trHeadRow: "calculation-ammo-box-table",
+            thHeadCell: "calculation-ammo-box-table",
+
+            tbody: "calculation-ammo-box-table",
+            trBodyRow: "calculation-ammo-box-table",
+            trBodyRowHighlighted: "tmp",
+            thBodyCell: "calculation-ammo-box-table",
+        };
+
+        return element("div",
+            {
+            className: "calculation-stat-box",
+            },
+            element("div",
+                {
+                className: "calculation-ammo-box-inner",
+                },
+                element(GenericTable,
+                    {
+                    renderHeadRow: true,
+                    dataArray: dataArray,
+                    handleRowClick: () => {},
+
+                    cspecHeadRowFormat: cspecHeadRowFormat,
+                    cspecBodyRowFormat: cspecBodyRowFormat,
+                    cspecGetRowContent: cspecGetRowContent,
+                    cspecHighlightConditionFn: () => false,
+
+                    implementationClassNames: implementationClassNames,
+                    },
+                    null
+                ),
+            ),
+        );
+    }
+
 }
 
 
@@ -386,9 +475,61 @@ class CalculationResultsBox extends React.Component {
                     this._renderStat(null, "Deviation", deviationStr),
                     this._renderStat(null, "Recoil", recoilStr),
                     this._renderStat(null, "Reload", reloadStr),
+                    //element(CalculationAmmoStatsBox,
+                    //    {
+                    //    ammoData: so.ammo,
+                    //    },
+                    //    null,
+                    //),
+                ),
+            );
+            specialMechanicRenderings.push(
+                element(CalculationResultsGroupBox,
+                    null,
+                    element(CalculationAmmoStatsBox,
+                        {
+                        ammoData: so.ammo,
+                        },
+                        null,
+                    ),
                 ),
             );
         }
+
+        const critStatBox = (()=>{
+            if (perf.bowgunStats === null) {
+                return element(CalculationResultsGroupBox,
+                    null,
+                    this._renderStat(null, "Raw Crit Damage", perf.rawCritDmgMultiplier.toFixed(2) + "x"),
+                    this._renderStat(null, "Elem. Crit Damage", perf.elementalCritDmgMultiplier.toFixed(2) + "x"),
+                    this._renderStat(null, "Raw Crit Modifier", perf.rawCritModifier.toFixed(4) + "x"),
+                    this._renderStat(null, "Elem. Crit Modifier", perf.elementalCritModifier.toFixed(4) + "x"),
+                );
+            } else {
+                // We hide the crit stats because there's no space for it, and it's not terribly relevant information anyway,
+                return null;
+            }
+        })();
+
+        const spacerBox = (()=>{
+            // TODO: Oh my god why did I decide to do this. This makes me wanna vomit lmao
+            const showSpacer = (()=>{
+                if (perf.bowgunStats === null) return true;
+                let countAmmoRows = 0;
+                for (const [k, v] of Object.entries(perf.bowgunStats.ammo)) {
+                    if (v.available) ++countAmmoRows;
+                }
+                return countAmmoRows <= 28;
+            })();
+            if (showSpacer) {
+                return element(CalculationResultsSpacerBox,
+                    null,
+                    null,
+                );
+            } else {
+                return null;
+            }
+        })();
 
         return element("div",
             {
@@ -403,17 +544,8 @@ class CalculationResultsBox extends React.Component {
             ),
             ...specialMechanicRenderings,
             sharpnessRendering,
-            element(CalculationResultsGroupBox,
-                null,
-                this._renderStat(null, "Raw Crit Damage", perf.rawCritDmgMultiplier.toFixed(2) + "x"),
-                this._renderStat(null, "Elem. Crit Damage", perf.elementalCritDmgMultiplier.toFixed(2) + "x"),
-                this._renderStat(null, "Raw Crit Modifier", perf.rawCritModifier.toFixed(4) + "x"),
-                this._renderStat(null, "Elem. Crit Modifier", perf.elementalCritModifier.toFixed(4) + "x"),
-            ),
-            element(CalculationResultsSpacerBox,
-                null,
-                null,
-            ),
+            critStatBox,
+            spacerBox,
         );
     }
 }

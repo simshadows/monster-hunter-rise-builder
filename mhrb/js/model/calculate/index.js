@@ -56,6 +56,120 @@ const elementalSharpnessModifiers = [
 ];
 
 
+const bowgunAmmoUpCapacityTable = new Map([
+    // [id, [Ammo Up 1, Ammo Up 2, Ammo Up 3]]
+
+    ["normal_1", [1, 1, 2]], ["pierce_1", [1, 1, 2]], ["spread_1", [1, 1, 2]],
+    ["normal_2", [0, 1, 2]], ["pierce_2", [0, 1, 1]], ["spread_2", [0, 1, 1]],
+    ["normal_3", [0, 0, 1]], ["pierce_3", [0, 0, 1]], ["spread_3", [0, 0, 1]],
+
+    ["shrapnel_1", [1, 1, 2]], ["sticky_1", [0, 1, 1]], ["cluster_1", [0, 0, 1]],
+    ["shrapnel_2", [0, 1, 2]], ["sticky_2", [0, 0, 1]], ["cluster_2", [0, 0, 1]],
+    ["shrapnel_3", [0, 0, 1]], ["sticky_3", [0, 0, 1]], ["cluster_3", [0, 0, 1]],
+
+    ["fire"   , [0, 1, 1]], ["piercing_fire"   , [0, 1, 1]],
+    ["water"  , [0, 1, 1]], ["piercing_water"  , [0, 1, 1]],
+    ["thunder", [0, 1, 1]], ["piercing_thunder", [0, 1, 1]],
+    ["ice"    , [0, 1, 1]], ["piercing_ice"    , [0, 1, 1]],
+    ["dragon" , [0, 0, 1]], ["piercing_dragon" , [0, 0, 1]],
+
+    ["poison_1", [0, 1, 1]], ["paralysis_1", [0, 0, 1]], ["sleep_1", [0, 0, 1]],
+    ["poison_2", [0, 0, 1]], ["paralysis_2", [0, 0, 1]], ["sleep_2", [0, 0, 1]],
+
+    ["exhaust_1", [0, 0, 1]], ["recover_1", [0, 1, 1]],
+    ["exhaust_2", [0, 0, 1]], ["recover_2", [0, 0, 1]],
+
+    ["demon"  , [0, 0, 1]],
+    ["armor"  , [0, 0, 1]],
+    ["slicing", [0, 1, 1]],
+    ["wyvern" , [0, 0, 0]],
+    ["tranq"  , [1, 1, 1]],
+]);
+
+
+const bowgunRecoilPerAmmoTable = new Map([
+    // Converts main stat into ammo-specific recoil values.
+    // Main stat is:                Ammo-specific values are:
+    //      5 = High                    3 = Very High
+    //      4 = Average                 2 = High
+    //      3 = Some                    1 = Average
+    //      2 = Low                     0 = Low
+    //      1 = Very Low
+    //      0 = Smallest
+
+    ["normal_1", [0,0,0,0,0,0]], ["pierce_1", [0,0,0,0,0,1]], ["spread_1", [0,0,0,0,0,1]],
+    ["normal_2", [0,0,0,0,0,1]], ["pierce_2", [0,0,0,1,2,2]], ["spread_2", [0,0,0,0,1,2]],
+    ["normal_3", [0,0,0,0,0,1]], ["pierce_3", [0,0,0,1,2,2]], ["spread_3", [0,0,0,1,2,2]],
+
+    ["shrapnel_1", [0,0,0,0,0,1]], ["sticky_1", [0,0,0,1,2,2]], ["cluster_1", [0,1,2,2,3,3]],
+    ["shrapnel_2", [0,0,0,0,1,2]], ["sticky_2", [0,0,1,2,2,3]], ["cluster_2", [1,2,2,3,3,3]],
+    ["shrapnel_3", [0,0,0,1,2,2]], ["sticky_3", [0,0,1,2,2,3]], ["cluster_3", [1,2,2,3,3,3]],
+
+    ["fire"   , [0,0,0,0,0,1]], ["piercing_fire"   , [0,0,0,0,1,2]],
+    ["water"  , [0,0,0,0,0,1]], ["piercing_water"  , [0,0,0,0,1,2]],
+    ["thunder", [0,0,0,0,0,1]], ["piercing_thunder", [0,0,0,0,1,2]],
+    ["ice"    , [0,0,0,0,0,1]], ["piercing_ice"    , [0,0,0,0,1,2]],
+    ["dragon" , [0,0,1,2,2,3]], ["piercing_dragon" , [1,2,2,3,3,3]],
+
+    ["poison_1", [0,0,1,2,2,3]], ["paralysis_1", [0,0,1,2,2,3]], ["sleep_1", [0,0,1,2,2,3]],
+    ["poison_2", [1,2,2,3,3,3]], ["paralysis_2", [1,2,2,3,3,3]], ["sleep_2", [1,2,2,3,3,3]],
+
+    ["exhaust_1", [0,0,0,1,2,2]], ["recover_1", [0,0,0,0,1,2]],
+    ["exhaust_2", [0,0,1,2,2,3]], ["recover_2", [0,0,1,2,2,3]],
+
+    ["demon"  , [0,0,0,0,1,2]],
+    ["armor"  , [0,0,0,0,1,2]],
+    ["slicing", [0,0,1,2,2,3]],
+    ["wyvern" , [null,null,null,null,null,null]], // The UI writes "Wyvern" for this one
+    ["tranq"  , [0,0,0,0,1,2]],
+]);
+
+
+const bowgunReloadPerAmmoTable = new Map([
+    // Converts main stat into ammo-specific reload values.
+    // Main stat is:                Ammo-specific values are:
+    //      0 = Slowest                 0 = Slowest
+    //      1 = Very Slow               1 = Slow
+    //      2 = Slow                    2 = Fast
+    //      3 = Below Avg.              3 = Fastest
+    //      4 = Average
+    //      5 = Above Avg.
+    //      6 = Fast
+    //      7 = Very Fast
+    //      8 = Fastest
+
+    ["normal_1", [1,1,2,3,3,3,3,3,3]], ["pierce_1", [0,1,1,2,2,3,3,3,3]], ["spread_1", [1,1,2,2,3,3,3,3,3]],
+    ["normal_2", [1,1,2,2,3,3,3,3,3]], ["pierce_2", [0,0,1,1,2,2,3,3,3]], ["spread_2", [0,1,1,2,2,3,3,3,3]],
+    ["normal_3", [0,1,1,2,2,3,3,3,3]], ["pierce_3", [0,0,1,1,2,2,3,3,3]], ["spread_3", [0,0,1,1,2,2,3,3,3]],
+
+    ["shrapnel_1", [1,1,2,2,3,3,3,3,3]], ["sticky_1", [0,0,1,1,2,2,3,3,3]],
+    ["shrapnel_2", [0,1,1,2,2,3,3,3,3]], ["sticky_2", [0,0,0,1,1,2,2,3,3]],
+    ["shrapnel_3", [0,0,1,1,2,2,3,3,3]], ["sticky_3", [0,0,0,0,1,1,2,2,3]],
+
+    ["cluster_1", [0,0,0,0,1,1,2,2,3]],
+    ["cluster_2", [0,0,0,0,0,1,1,2,2]],
+    ["cluster_3", [0,0,0,0,0,1,1,2,2]], // Main stat "Slowest" and "Very Slow" have guessed ammo-specific values.
+
+    ["fire"   , [0,1,1,2,2,3,3,3,3]], ["piercing_fire"   , [0,0,1,1,2,2,3,3,3]],
+    ["water"  , [0,1,1,2,2,3,3,3,3]], ["piercing_water"  , [0,0,1,1,2,2,3,3,3]],
+    ["thunder", [0,1,1,2,2,3,3,3,3]], ["piercing_thunder", [0,0,1,1,2,2,3,3,3]],
+    ["ice"    , [0,1,1,2,2,3,3,3,3]], ["piercing_ice"    , [0,0,1,1,2,2,3,3,3]],
+    ["dragon" , [0,0,0,0,1,1,2,2,3]], ["piercing_dragon" , [0,0,1,1,2,2,3,3,3]],
+
+    ["poison_1", [0,0,1,1,2,2,3,3,3]], ["paralysis_1", [0,0,0,1,1,2,2,3,3]], ["sleep_1", [0,0,0,1,1,2,2,3,3]],
+    ["poison_2", [0,0,0,0,1,1,2,2,3]], ["paralysis_2", [0,0,0,0,1,1,2,2,3]], ["sleep_2", [0,0,0,0,1,1,2,2,3]],
+
+    ["exhaust_1", [0,0,1,1,2,2,3,3,3]], ["recover_1", [1,1,2,2,3,3,3,3,3]],
+    ["exhaust_2", [0,0,0,1,1,2,2,3,3]], ["recover_2", [0,0,1,1,2,2,3,3,3]],
+
+    ["demon"  , [0,0,0,1,1,2,2,3,3]],
+    ["armor"  , [0,0,0,1,1,2,2,3,3]],
+    ["slicing", [0,0,0,1,1,2,2,3,3]],
+    ["wyvern" , [0,0,0,1,1,2,2,3,3]], // Main stat "Slowest" and "Very Slow" have guessed ammo-specific values.
+    ["tranq"  , [1,1,2,2,3,3,3,3,3]],
+]);
+
+
 /****************************************************************************************/
 /*  Main Formula  ***********************************************************************/
 /****************************************************************************************/
@@ -69,6 +183,7 @@ function calculateBuildPerformance(db, build, calcState) {
     assert(calcState instanceof CalcState);
 
     const weaponRO = build.getWeaponObjRO();
+    const armourROs = build.getArmourROs();
     const tagset   = getWeaponTags(weaponRO.category);
 
     const allCalcStateSpec = calcState.getSpecification();
@@ -88,7 +203,15 @@ function calculateBuildPerformance(db, build, calcState) {
     assert(b.maxSharpness !== undefined);
     assert(b.baseDefense  !== undefined);
 
+    assert(b.baseRawAdd      !== undefined);
+    assert(b.baseRawMul      !== undefined);
     assert(b.rawPostTruncMul !== undefined);
+
+    assert(b.affinityAdd !== undefined);
+
+    assert(b.eleStatMul !== undefined);
+
+    assert(b.narwaSoulActive !== undefined);
 
     assert(b.gunlanceStats     !== undefined);
     assert(b.huntingHornSongs  !== undefined);
@@ -108,10 +231,15 @@ function calculateBuildPerformance(db, build, calcState) {
     assert(s.rawCriticalDamage       !== undefined);
     assert(s.elementalBlunderDamage  !== undefined);
     assert(s.elementalCriticalDamage !== undefined);
+    assert(s.ammoUpLevel             !== undefined);
+    assert(s.bludgeonerLevel         !== undefined);
     assert(s.bowChargePlusLevel      !== undefined);
     assert(s.handicraftLevel         !== undefined);
     assert(s.mastersTouchLevel       !== undefined);
     assert(s.razorSharpLevel         !== undefined);
+    assert(s.recoilDownLevel         !== undefined);
+    assert(s.reloadSpeedLevel        !== undefined);
+    assert(s.steadinessLevel         !== undefined);
     assert(s.defenseAdd              !== undefined);
     assert(s.defenseMul              !== undefined);
     assert(s.eleResAdd               !== undefined);
@@ -126,27 +254,10 @@ function calculateBuildPerformance(db, build, calcState) {
     assert(m.defenseAdd  !== undefined);
     assert(m.defenseMul  !== undefined);
 
-    //
-    // STAGE 2: Calculate post-base values
-    //
-
-    const postbaseRaw = (Math.trunc(b.baseRaw * s.rawMul * m.rawMul) + s.rawAdd + m.rawAdd) * b.rawPostTruncMul * s.rawPostTruncMul;
-    const postbaseAffinity = b.baseAffinity + s.affinityAdd + m.affinityAdd;
-
-    const postbaseEleStat = new Map();
-    for (const [eleStatID, baseEleStatValue] of b.baseEleStat.entries()) {
-        let x = baseEleStatValue * s.eleStatMul[eleStatID];
-        if (isEleStr(eleStatID)) {
-            x *= m.eleMul;
-        }
-        const postbaseEleStatValue = Math.trunc(x) + s.eleStatAdd[eleStatID];
-        postbaseEleStat.set(eleStatID, postbaseEleStatValue);
-    }
-
-    let hitsMultiplier = 1; // To be accumulated over later
+    assert(m.reloadSpeedAdd !== undefined);
 
     //
-    // STAGE 3: Find Sharpness Modifiers
+    // STAGE 2: Find Sharpness Modifiers
     //
 
     let realSharpnessBar              = null;
@@ -183,7 +294,67 @@ function calculateBuildPerformance(db, build, calcState) {
     }
 
     //
-    // STAGE 4: Find and Apply Crit Modifiers
+    // STAGE 3: Handle some special conditions
+    //
+
+    const bludgeonerBaseRawMul = (()=>{
+        if (!tagset.has("melee")) return 1;
+
+        const highestSharpnessIndex = getHighestSharpnessIndex(realSharpnessBar);
+        if ((s.bludgeonerLevel === 1) && (highestSharpnessIndex <= 2)) { // Yellow or lower
+            return 1.05;
+        } else if ((s.bludgeonerLevel === 2) && (highestSharpnessIndex <= 2)) { // Yellow or lower
+            return 1.1;
+        } else if ((s.bludgeonerLevel === 3) && (highestSharpnessIndex <= 3)) { // Green or lower
+            return 1.1;
+        }
+        return 1;
+    })();
+
+    const narwaSoulAffinityAdd = (()=>{
+        if (!b.narwaSoulActive) return 0;
+        // We count Ibushi pieces
+        let ibushiPieces = 0;
+        for (const [_, armourRO] of Object.entries(armourROs)) {
+            if ((armourRO !== null) && (armourRO.setID === 144 || armourRO.setID === 145)) {
+                assert(armourRO.setName === "Ibushi"); // Sanity check
+                ++ibushiPieces;
+            }
+        }
+        switch (ibushiPieces) {
+            case 1: return 4;
+            case 2: return 6;
+            case 3: return 10;
+            case 4: return 12;
+            case 5: return 40;
+            default: console.error(`Counted ${ibushiPieces} Ibushi armour pieces.`); // Fallthrough
+            case 0: return 0;
+        }
+    })();
+
+    //
+    // STAGE 4: Calculate post-base values
+    //
+
+    // TODO: It's confusing that we're overloading the term "base raw" here
+    const baseRaw = Math.trunc((b.baseRaw * b.baseRawMul) + b.baseRawAdd + 0.1); // TODO: Does this truncation step exist?
+    const postbaseRaw = (Math.trunc((baseRaw * s.rawMul * m.rawMul * bludgeonerBaseRawMul) + 0.1) + s.rawAdd + m.rawAdd) * b.rawPostTruncMul * s.rawPostTruncMul;
+    const postbaseAffinity = b.baseAffinity + b.affinityAdd + s.affinityAdd + m.affinityAdd + narwaSoulAffinityAdd;
+
+    const postbaseEleStat = new Map();
+    for (const [eleStatID, baseEleStatValue] of b.baseEleStat.entries()) {
+        let x = baseEleStatValue * s.eleStatMul[eleStatID] * b.eleStatMul[eleStatID];
+        if (isEleStr(eleStatID)) {
+            x *= m.eleMul;
+        }
+        const postbaseEleStatValue = Math.trunc(x) + s.eleStatAdd[eleStatID];
+        postbaseEleStat.set(eleStatID, postbaseEleStatValue);
+    }
+
+    let hitsMultiplier = 1; // To be accumulated over later
+
+    //
+    // STAGE 5: Find and Apply Crit Modifiers
     //
 
     const critChance = Math.min(postbaseAffinity, 100) / 100; // Clip values to 1 or less
@@ -202,7 +373,7 @@ function calculateBuildPerformance(db, build, calcState) {
     const elementalCritModifier = getCritModifier(s.elementalCriticalDamage, s.elementalBlunderDamage);
 
     //
-    // STAGE 5: Apply Master's Touch and Razor Sharp to the sharpness bar
+    // STAGE 6: Apply Master's Touch and Razor Sharp to the sharpness bar
     //
 
     if (s.razorSharpLevel > 0) {
@@ -235,7 +406,7 @@ function calculateBuildPerformance(db, build, calcState) {
     }
 
     //
-    // STAGE 6: We finally calculate effective raw!
+    // STAGE 7: We finally calculate effective raw!
     //
 
     let effectiveRaw = postbaseRaw * rawCritModifier;
@@ -256,7 +427,7 @@ function calculateBuildPerformance(db, build, calcState) {
     }
 
     //
-    // STAGE 7: Special Mechanics
+    // STAGE 8: Special Mechanics
     //
 
     let gunlanceStats = b.gunlanceStats;
@@ -286,13 +457,17 @@ function calculateBuildPerformance(db, build, calcState) {
 
     let bowgunStats = b.bowgunStats;
     assert(((weaponRO.category === "lightbowgun") || (weaponRO.category === "heavybowgun")) === (bowgunStats !== null));
+    if ((weaponRO.category === "lightbowgun") || (weaponRO.category === "heavybowgun")) {
+        bowgunStats.reload += m.reloadSpeedAdd;
+        applyBuffsToBowgunAmmoAndClamp(bowgunStats, s.ammoUpLevel, s.recoilDownLevel, s.reloadSpeedLevel, s.steadinessLevel);
+    }
 
     const ret = {
 
         // This part goes to the equips section
         // TODO: Rename it to baseAttack, etc.
 
-        weaponAttack:   b.baseRaw,
+        weaponAttack:   baseRaw,
         weaponAffinity: b.baseAffinity,
         weaponDefense:  b.baseDefense,
         weaponEleStat:  b.baseEleStat,
@@ -378,6 +553,37 @@ function getHighestSharpnessIndex(realSharpnessBar) {
     }
     assert(highestIndex !== null); // We always find a sharpness level
     return highestIndex;
+}
+
+
+/****************************************************************************************/
+/*  Bowguns  ****************************************************************************/
+/****************************************************************************************/
+
+
+// IMPURE FUNCTION. Will modify the bowgun ammo object with new values.
+function applyBuffsToBowgunAmmoAndClamp(bowgunStats, ammoUpLevel, recoilDownLevel, reloadSpeedLevel, steadinessLevel) {
+    assert((ammoUpLevel >= 0) && (ammoUpLevel <= 3));
+
+    bowgunStats.deviation.severity = Math.max(0, Math.min(2, bowgunStats.deviation.severity - steadinessLevel));
+    const recoilStage = bowgunStats.recoil = Math.max(0, Math.min(5, bowgunStats.recoil - recoilDownLevel));
+    const reloadStage = bowgunStats.reload = Math.max(0, Math.min(8, bowgunStats.reload + reloadSpeedLevel));
+
+    const keys = Object.keys(bowgunStats.ammo);
+    for (const k of keys) {
+        if (ammoUpLevel > 0) {
+            const addedCapacity = bowgunAmmoUpCapacityTable.get(k)[ammoUpLevel - 1];
+            assert(addedCapacity !== undefined);
+            bowgunStats.ammo[k].ammoCapacity += addedCapacity;
+        }
+        bowgunStats.ammo[k].recoil = bowgunRecoilPerAmmoTable.get(k)[recoilStage];
+        assert(bowgunStats.ammo[k].recoil >= 0);
+        assert(bowgunStats.ammo[k].recoil <= 3);
+
+        bowgunStats.ammo[k].reload = bowgunReloadPerAmmoTable.get(k)[reloadStage];
+        assert(bowgunStats.ammo[k].reload >= 0);
+        assert(bowgunStats.ammo[k].reload <= 3);
+    }
 }
 
 

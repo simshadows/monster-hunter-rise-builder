@@ -275,6 +275,19 @@ class CalcState {
                     },
                 ],
             }],
+            ["LBG Switch Skill: Elemental Reload", {
+                initialState: 0,
+                presentations: [
+                    null,
+                    {
+                        name: "Active",
+                        type: "abbreviation",
+                        abbreviation: "ER",
+                        color:       "#b1d7d1",
+                        borderColor: "#b1d7d1",
+                    },
+                ],
+            }],
         ])],
         ["Skill States", new Map([
             ["Affinity Sliding (AFS)", {
@@ -347,14 +360,14 @@ class CalcState {
                 presentations: [
                     null,
                     {
-                        name: "1 Stack",
+                        name: "One Stack",
                         type: "abbreviation",
                         abbreviation: "FOR1",
                         color:       COLOUR.orange,
                         borderColor: COLOUR.orange,
                     },
                     {
-                        name: "2 Stacks",
+                        name: "Two Stacks",
                         type: "abbreviation",
                         abbreviation: "FOR2",
                         color:       COLOUR.orange,
@@ -494,19 +507,6 @@ class CalcState {
             }],
         ])],
         ["Rampage Skill States", new Map([
-            ["Wyvern Exploit (WYX)", {
-                initialState: 0,
-                presentations: [
-                    null,
-                    {
-                        name: "Active",
-                        type: "abbreviation",
-                        abbreviation: "WYX",
-                        color:       "#5f8700",
-                        borderColor: "#5f8700",
-                    },
-                ],
-            }],
             ["Anti-Aerial Species (AA)", {
                 initialState: 0,
                 presentations: [
@@ -546,6 +546,52 @@ class CalcState {
             //        },
             //    ],
             //}],
+            ["Kushala Daora Soul (KUS)", {
+                initialState: 0,
+                presentations: [
+                    null,
+                    {
+                        name: "After One Hit",
+                        type: "abbreviation",
+                        abbreviation: "KUS1",
+                        color:       "#5f8700",
+                        borderColor: "#5f8700",
+                    },
+                    {
+                        name: "After Five Hits",
+                        type: "abbreviation",
+                        abbreviation: "KUS2",
+                        color:       "#5f8700",
+                        borderColor: "#5f8700",
+                    },
+                ],
+            }],
+            ["Valstrax Soul (VAS)", {
+                initialState: 0,
+                presentations: [
+                    null,
+                    {
+                        name: "Active",
+                        type: "abbreviation",
+                        abbreviation: "VAS",
+                        color:       "#5f8700",
+                        borderColor: "#5f8700",
+                    },
+                ],
+            }],
+            ["Wyvern Exploit (WYX)", {
+                initialState: 0,
+                presentations: [
+                    null,
+                    {
+                        name: "Active",
+                        type: "abbreviation",
+                        abbreviation: "WYX",
+                        color:       "#5f8700",
+                        borderColor: "#5f8700",
+                    },
+                ],
+            }],
         ])],
     ]);
 

@@ -77,9 +77,9 @@ function generateEle(name, shortIdPrefix) {
     ];
 }
 
-function generateStat(name, shortIdPrefix) {
+function generateStat(name, shortIdPrefix, generateEffect) {
     const idPrefix = name.toLowerCase();
-    return [
+    const ret = [
         [idPrefix + "_boost_1", {
             shortId: shortIdPrefix + "b1",
             name: name + " Boost I",
@@ -106,15 +106,18 @@ function generateStat(name, shortIdPrefix) {
             name: name + " III",
         }],
 
-        [idPrefix + "_effect_1", {
+    ];
+    if (generateEffect) {
+        ret.push([idPrefix + "_effect_1", {
             shortId: shortIdPrefix + "e1",
             name: name + " Effect I",
-        }],
-        [idPrefix + "_effect_2", {
+        }]);
+        ret.push([idPrefix + "_effect_2", {
             shortId: shortIdPrefix + "e2",
             name: name + " Effect II",
-        }],
-    ];
+        }]);
+    }
+    return ret;
 }
 
 const hardcodedRampageSkills = [
@@ -701,15 +704,15 @@ const hardcodedRampageSkills = [
 // TODO: Verify no ID collisons?
 const tmpArray = [
     ...hardcodedRampageSkills,
-    ...generateEle("Fire"      , "fi"),
-    ...generateEle("Water"     , "wa"),
-    ...generateEle("Thunder"   , "th"),
-    ...generateEle("Ice"       , "ic"),
-    ...generateEle("Dragon"    , "dr"),
-    ...generateStat("Poison"   , "po"),
-    ...generateStat("Paralysis", "pa"),
-    ...generateStat("Sleep"    , "sl"),
-    ...generateStat("Blast"    , "bl"),
+    ...generateEle("Fire"      , "fi", true ),
+    ...generateEle("Water"     , "wa", true ),
+    ...generateEle("Thunder"   , "th", true ),
+    ...generateEle("Ice"       , "ic", true ),
+    ...generateEle("Dragon"    , "dr", true ),
+    ...generateStat("Poison"   , "po", true ),
+    ...generateStat("Paralysis", "pa", true ),
+    ...generateStat("Sleep"    , "sl", true ),
+    ...generateStat("Blast"    , "bl", false),
 ];
 
 // Now, we populate these maps.

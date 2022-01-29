@@ -393,6 +393,7 @@ function generateBowgunAmmoTypes(keyBase, nameBase, num) {
     for (let i = 0; i < num; ++i) {
         ret.push([keyBase + "_" + String(i+1), {
             name: nameBase + " Ammo " + String(i+1),
+            shortName: nameBase + " " + String(i+1),
         }]);
     }
     return ret;
@@ -401,24 +402,40 @@ function generateBowgunEleAmmoTypes(keyBase, nameBase) {
     return [
         [keyBase, {
             name: nameBase + " Ammo",
+            shortName: nameBase,
         }],
         ["piercing_" + keyBase, {
             name: "Piercing " + nameBase + " Ammo",
+            shortName: "P. " + nameBase,
         }],
     ];
 }
 const hardcodedBowgunAmmoTypes = [
     ...generateBowgunAmmoTypes("normal"  , "Normal"  , 3),
-    ...generateBowgunAmmoTypes("pierce", "Pierce"    , 3),
+    ...generateBowgunAmmoTypes("pierce"  , "Pierce"  , 3),
     ...generateBowgunAmmoTypes("spread"  , "Spread"  , 3),
     ...generateBowgunAmmoTypes("shrapnel", "Shrapnel", 3),
     ...generateBowgunAmmoTypes("sticky"  , "Sticky"  , 3),
     ...generateBowgunAmmoTypes("cluster" , "Cluster" , 3),
 
-    ...generateBowgunEleAmmoTypes("fire"   , "Flaming"),
+    ["fire", {
+        name: "Flaming Ammo",
+        shortName: "Flaming",
+    }],
+    ["piercing_fire", {
+        name: "Piercing Fire Ammo",
+        shortName: "P. Fire",
+    }],
     ...generateBowgunEleAmmoTypes("water"  , "Water"),
     ...generateBowgunEleAmmoTypes("thunder", "Thunder"),
-    ...generateBowgunEleAmmoTypes("ice"    , "Ice"),
+    ["ice", {
+        name: "Freeze Ammo",
+        shortName: "Freeze",
+    }],
+    ["piercing_ice", {
+        name: "Piercing Ice Ammo",
+        shortName: "P. Ice",
+    }],
     ...generateBowgunEleAmmoTypes("dragon" , "Dragon"),
 
     ...generateBowgunAmmoTypes("poison"   , "Poison"   , 2),
@@ -429,18 +446,23 @@ const hardcodedBowgunAmmoTypes = [
 
     ["demon", {
         name: "Demon Ammo",
+        shortName: "Demon",
     }],
     ["armor", {
         name: "Armor Ammo",
+        shortName: "Armor",
     }],
     ["slicing", {
         name: "Slicing Ammo",
+        shortName: "Slicing",
     }],
     ["wyvern", {
         name: "Wyvern Ammo",
+        shortName: "Wyvern",
     }],
     ["tranq", {
         name: "Tranq Ammo",
+        shortName: "Tranq",
     }],
 ];
 

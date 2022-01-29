@@ -4,6 +4,8 @@ A web-based build calculator for Monster Hunter Rise.
 
 This project was inspired by Honey's [MHW build calculator](https://honeyhunterworld.com/mhwbi/).
 
+The application is currently almost minimally feature-complete for EFR/EFE/EFS calculations, with only some important features missing or unverified (see *Missing/Unverified Features* below). Defense calculations will be implemented later. UI improvements will continue to be made throughout development.
+
 ## Where can I access this website?
 
 I'm currently hosting it at:
@@ -26,13 +28,44 @@ cd monster-hunter-rise-builder
 python3 -m http.server
 ```
 
+## Key Features Missing/Unverified
+
+- Element/Status calculations in general will need to be verified.
+- Many bowgun rampage skills will need to be verified.
+    - To save time/resources, I took guesses, which are marked with `TODO` comments in `calculate/step1_get_base_values.js`.
+- Bowgun ammo attributes aren't implemented (including LBG rapid fire).
+    - This data is not available on Kiranico, and I don't want to manually collect this data at this stage.
+- HBG special ammo.
+    - This data is also not available on Kiranico.
+- Bowgun Power Barrel/Long Barrel calculation needs to be verified
+    - Particularly, at the line `const baseRaw = Math.trunc((b.baseRaw * b.baseRawMul) + b.baseRawAdd + 0.1);` in `calculate/index.js`.
+- Important damage-related features not yet implemented:
+    - Magnamalo Soul (Rampage Skill)
+    - Dulling Strike (Rampage Skill)
+    - Brutal Strike (Rampage Skill)
+    - Silkbind Boost (Rampage Skill)
+    - Element Exploit (Rampage Skill)
+    - Fireblight Exploit (Rampage Skill)
+    - Waterblight Exploit (Rampage Skill)
+    - Thunderblight Exploit (Rampage Skill)
+    - Iceblight Exploit (Rampage Skill)
+    - Small Monster Exploit (Rampage Skill)
+    - Anti-Aerial Species (Rampage Skill) elemental/status damage contribution (if it has any)
+    - Anti-Aquatic Species (Rampage Skill) elemental/status damage contribution (if it has any)
+    - Wyvern Exploit (Rampage Skill) elemental/status damage contribution (if it has any)
+    - Rapid Fire Up (Armour Skill)
+    - Normal/Rapid Fire Up (Armour Skill)
+    - Pierce Up (Armour Skill)
+    - Spread Up (Armour Skill)
+    - Stormsoul (Armour Skill)
+
 ## Roadmap
 
-### Future Release: v1.0
+### Future Release: v1.x.x
 
-The first release of the app will be a minimally-complete builder app with complete EFR/EFE/EFS calculations, bowgun ammo performance, and other key weapon mechanics. v1.0 will exclude defense calculations.
+Particularly in-demand features missing from v1.0.0 may be implemented in patches. Otherwise, no more new features are planned before the codebase port (which will probably be v3.0).
 
-Data that can't simply be scraped from Kiranico may be excluded from v1.0. Instead, I may choose to defer on this until v3.x.
+I will also not implement defense calculations until after the codebase port.
 
 ### Future Release: v2.0
 
@@ -40,11 +73,11 @@ Updated builder for the Sunbreak expansion.
 
 ### Future Release: v3.0
 
-**The second release of the app will be a codebase port. No new features are planned for v2.0 at this time, but will come with performance improvements and will ultimately pave the way for future features and sustainable development.**
+**The second release of the app will be a codebase port. No new features are planned for v3.0 at this time, but will come with performance improvements and will ultimately pave the way for future features and sustainable development.**
 
-The app before v2.0 is a totally toolchainless codebase. This was done because I only want to introduce complexity as it is needed. Without a toolchain, the entire codebase is only dependent on the browser, and three front-end libraries (React, html2canvas, and FileSaver).
+The app before v3.0 is a totally toolchainless codebase. This was done because I only want to introduce complexity as it is needed. Without a toolchain, the entire codebase is only dependent on the browser, and three front-end libraries (React, html2canvas, and FileSaver).
 
-v1.0 will allow me to reassess the project's needs, benchmark the app's performance, and experiment with different toolchain configurations, all with a fully-functional web app with all core features implemented.
+v2.0 will allow me to reassess the project's needs, benchmark the app's performance, and experiment with different toolchain configurations, all with a fully-functional web app with all core features implemented.
 
 I expect the codebase to be ported to a fully Typescript codebase (either plain Typescript or TSX), with major things rewritten for modularity, type/logic safety, and for unit testing, as well as address some glaring technical debt incurred during rapid development of v1.0.
 

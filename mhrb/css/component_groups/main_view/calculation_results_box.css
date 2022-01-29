@@ -140,3 +140,32 @@ div.calculation-song-icon-box > img {
     height: 100%;
 }
 
+div.calculation-ammo-box-inner {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+
+    padding: 4px 0 4px 0;
+    width: 100%;
+}
+div.calculation-ammo-box-table {
+    width: 100%;
+}
+table.calculation-ammo-box-table {
+    width: 100%;
+}
+thead.calculation-ammo-box-table > tr > th {
+    font: var(--font-calculated-skills--ammo-head);
+    padding: 2px 0 6px 0;
+}
+tbody.calculation-ammo-box-table > tr > th {
+    font: var(--font-calculated-skills--ammo);
+    padding: 2px 0 2px 0;
+}
+/*
+th.calculation-ammo-box-table:first-child {
+    text-align: left;
+}
+*/
+

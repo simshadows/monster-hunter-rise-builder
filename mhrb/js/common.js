@@ -188,6 +188,17 @@ export function bowgunRecoilIntToName(obj) {
     return bowgunRecoilIntToNameMap.get(obj);
 }
 
+const bowgunAmmoRecoilIntToNameMap = new Map([
+    [0, "Low"],
+    [1, "Average"],
+    [2, "High"],
+    [3, "Very High"],
+    [null, "Wyvern"],
+]);
+export function bowgunAmmoRecoilIntToName(obj) {
+    return bowgunAmmoRecoilIntToNameMap.get(obj);
+}
+
 const bowgunReloadIntToNameMap = new Map([
     [0, "Slowest"],
     [1, "Very Slow"],
@@ -201,6 +212,16 @@ const bowgunReloadIntToNameMap = new Map([
 ]);
 export function bowgunReloadIntToName(obj) {
     return bowgunReloadIntToNameMap.get(obj);
+}
+
+const bowgunAmmoReloadIntToNameMap = new Map([
+    [0, "Slowest"],
+    [1, "Slow"],
+    [2, "Fast"],
+    [3, "Fastest"],
+]);
+export function bowgunAmmoReloadIntToName(obj) {
+    return bowgunAmmoReloadIntToNameMap.get(obj);
 }
 
 const weaponTagsMap = {
