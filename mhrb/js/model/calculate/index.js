@@ -378,6 +378,14 @@ function calculateBuildPerformance(db, build, calcState) {
     // STAGE 6: Apply Master's Touch and Razor Sharp to the sharpness bar
     //
 
+    // Innate razor sharp
+    switch (weaponRO.category) {
+        case "dualblades":   hitsMultiplier *= 3;   break; // 2/3 razor sharp, i.e. 1 of 3 hits reduces sharpness
+        case "insectglaive": hitsMultiplier *= 1.5; break; // 1/3 razor sharp, i.e. 2 of 3 hits reduces sharpness
+        default:
+            // Do nothing
+    }
+
     if (s.razorSharpLevel > 0) {
         const chanceOfNoSharpnessLoss = (()=>{
                 switch (s.razorSharpLevel) {
