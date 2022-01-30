@@ -2,6 +2,14 @@
 
 *Release notes are sorted with the latest at the top.*
 
+## Version 1.0.3
+
+- Implemented sharpness level reduction.
+- Implemented innate razor sharp.
+    - DB has ~66% chance to not lose sharpness.
+    - IG has ~33% chance to not lose sharpness.
+    - No other weapon is known to have innate razor sharp.
+
 ## Version 1.0.2
 
 Fixed a bug where bow charge shots are all greyed by default.

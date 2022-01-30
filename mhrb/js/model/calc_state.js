@@ -288,6 +288,37 @@ class CalcState {
                     },
                 ],
             }],
+            ["Reduce Sharpness Level", {
+                initialState: 0,
+                presentations: [
+                    null,
+                    {
+                        name: "-1",
+                        type: "icon",
+                        iconImgPath: getImgPath("sharpness_reduction_1"),
+                    },
+                    {
+                        name: "-2",
+                        type: "icon",
+                        iconImgPath: getImgPath("sharpness_reduction_2"),
+                    },
+                    {
+                        name: "-3",
+                        type: "icon",
+                        iconImgPath: getImgPath("sharpness_reduction_3"),
+                    },
+                    {
+                        name: "-4",
+                        type: "icon",
+                        iconImgPath: getImgPath("sharpness_reduction_4"),
+                    },
+                    {
+                        name: "-5",
+                        type: "icon",
+                        iconImgPath: getImgPath("sharpness_reduction_5"),
+                    },
+                ],
+            }],
         ])],
         ["Skill States", new Map([
             ["Affinity Sliding (AFS)", {

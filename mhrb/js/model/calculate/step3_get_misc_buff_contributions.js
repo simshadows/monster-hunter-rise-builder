@@ -33,6 +33,18 @@ function getMiscBuffContributions(db, build, calcState) {
 
     const petalaceRO = build.getPetalaceObjRO();
 
+    function buffState(groupName, stateName) {
+        const presentations = allCalcStateSpec.get(groupName).get(stateName).presentations;
+        const numPossibleStates = presentations.length;
+        assert(numPossibleStates > 2);
+        const stateValue = allCalcState.get(groupName).get(stateName);
+        assert(isInt(stateValue) && (stateValue >= 0) && (stateValue < numPossibleStates));
+        return stateValue;
+    }
+    function miscBuffState(stateName) {
+        return buffState("Misc.", stateName);
+    }
+
     // Defined for code readability. Returns whether a binary state is "on" or "off".
     function buffActive(groupName, stateName) {
         const presentations = allCalcStateSpec.get(groupName).get(stateName).presentations;
@@ -57,6 +69,8 @@ function getMiscBuffContributions(db, build, calcState) {
     let defenseMul = 1;
 
     let reloadSpeedAdd = 0;
+
+    let sharpnessLevelReduction = 0;
 
     if (itemBoxBuffActive("Powercharm")) {
         rawAdd += 6;
@@ -138,6 +152,8 @@ function getMiscBuffContributions(db, build, calcState) {
         reloadSpeedAdd -= 2;
     }
 
+    sharpnessLevelReduction = miscBuffState("Reduce Sharpness Level");
+
     const ret = {
         rawAdd,
         rawMul,
@@ -147,6 +163,8 @@ function getMiscBuffContributions(db, build, calcState) {
         defenseMul,
 
         reloadSpeedAdd,
+
+        sharpnessLevelReduction,
     };
     return ret;
 }
