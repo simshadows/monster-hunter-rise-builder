@@ -78,6 +78,12 @@ const imgPathMap = new Map([
     ["huntinghorn_song_x" , "./images/huntinghorn_song_x_inkscapesourcefile.svg" ],
     ["huntinghorn_song_a" , "./images/huntinghorn_song_a_inkscapesourcefile.svg" ],
     ["huntinghorn_song_xa", "./images/huntinghorn_song_xa_inkscapesourcefile.svg"],
+
+    ["sharpness_reduction_1", "./images/originals/sharpness_reduction_1.svg"],
+    ["sharpness_reduction_2", "./images/originals/sharpness_reduction_2.svg"],
+    ["sharpness_reduction_3", "./images/originals/sharpness_reduction_3.svg"],
+    ["sharpness_reduction_4", "./images/originals/sharpness_reduction_4.svg"],
+    ["sharpness_reduction_5", "./images/originals/sharpness_reduction_5.svg"],
 ]);
 
 // Now we add a few procedurally generated IDs.

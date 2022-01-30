@@ -256,6 +256,8 @@ function calculateBuildPerformance(db, build, calcState) {
 
     assert(m.reloadSpeedAdd !== undefined);
 
+    assert(m.sharpnessLevelReduction !== undefined);
+
     //
     // STAGE 2: Find Sharpness Modifiers
     //
@@ -286,7 +288,7 @@ function calculateBuildPerformance(db, build, calcState) {
         const effectiveHandicraftLevel = (barIsFull) ? 5 : s.handicraftLevel;
 
         // Now, we apply this effective handicraft level.
-        const sharpnessValues = getSharpnessValues(b.maxSharpness, effectiveHandicraftLevel);
+        const sharpnessValues = getSharpnessValues(b.maxSharpness, effectiveHandicraftLevel, m.sharpnessLevelReduction);
         realSharpnessBar           = sharpnessValues.realSharpnessBar;
         maxSharpnessBar            = b.maxSharpness;
         rawSharpnessModifier       = sharpnessValues.rawSharpnessModifier;
@@ -506,8 +508,18 @@ function calculateBuildPerformance(db, build, calcState) {
 /****************************************************************************************/
 
 
-function getSharpnessValues(maxSharpness, handicraftLevel) {
+function getSharpnessValues(maxSharpness, handicraftLevel, sharpnessLevelReduction) {
     const realSharpnessBar = applyHandicraft(maxSharpness, handicraftLevel);
+
+    let r = sharpnessLevelReduction;
+    for (let i = realSharpnessBar.length - 1; i > 0; --i) {
+        if (r <= 0) break;
+        if (realSharpnessBar[i] > 0) {
+            realSharpnessBar[i] = 0;
+            --r;
+        }
+    }
+
     const highestSharpnessLevel = getHighestSharpnessIndex(realSharpnessBar);
     return {
         realSharpnessBar:           realSharpnessBar,

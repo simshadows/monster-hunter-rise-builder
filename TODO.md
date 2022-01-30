@@ -179,6 +179,18 @@
     - `Shrapnel Effect II`
         - (Similar to `Pierce Effect II`)
 
+# Colours
+
+Need to take note of colours used.
+
+Sharpness colours:
+
+- Blue: `rgb(22,134,250)`, `rgb(13,88,167)`
+- Green: `rgb(28,187,98)`, `rgb(50,132,79)`
+- Yellow: `rgb(228,213,3)`, `rgb(121,122,67)`
+- Orange: `rgb(251,123,23)`, `rgb(186,108,58)`
+- Red: `rgb(224,23,1)`, `rgb(140,13,6)`
+
 # Acknowledgements
 
 I should try to build as complete a list of acknowledgements as possible.
