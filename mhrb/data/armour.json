@@ -2064,7 +2064,7 @@
         "chest": [[2    ], {"reload_speed"    : 2                  }],
         "arms":  [[2,1,1], {"blast_resistance": 1, "flinch_free": 1}],
         "waist": [[1    ], {"fire_attack"     : 3                  }],
-        "legs":  [[2,1  ], {"recoil_down"     : 1                  }]
+        "legs":  [[2,1  ], {"recoil_down"     : 2                  }]
     },
     "defenses": {"defLvl1": 52, "f":-3, "w":1, "t":0, "i":3, "d":0}
 }],

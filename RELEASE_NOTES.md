@@ -2,6 +2,12 @@
 
 *Release notes are sorted with the latest at the top.*
 
+## Version 1.0.4
+
+Fixed incorrect gear data:
+
+- *Mosgharl Roots S* showed *Recoil Down* level 1, but it is actually level 2.
+
 ## Version 1.0.3
 
 - Implemented sharpness level reduction.
