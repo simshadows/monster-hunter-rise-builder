@@ -71,7 +71,7 @@ class MHRBuilderAppInner extends React.Component {
         // TODO: Ugh, the fact that we don't do this consistently is weird. Change it later?
         this.handlePopState = this.handlePopState.bind(this);
 
-        writeBuildToQueryString(this.state.build);
+        //writeBuildToQueryString(this.state.build); // We don't do this on instantiation to preserve the first URL
     }
 
     ttlDecr(v) {
