@@ -2,6 +2,10 @@
 
 *Release notes are sorted with the latest at the top.*
 
+## Version 1.0.5
+
+The query string is no longer overwritten on startup.
+
 ## Version 1.0.4
 
 Fixed incorrect gear data:
