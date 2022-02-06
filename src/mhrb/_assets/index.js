@@ -10,14 +10,14 @@ import "regenerator-runtime/runtime"; // A hack to get it working. Idk how it wo
 import React from "react";
 import ReactDOM from "react-dom";
 
-import * as check from "./js/check.js";
-import {removeElementByID} from "./js/utils.js";
+import * as check from "./check.js";
+import {removeElementByID} from "./utils.js";
 import {
     br,
-} from "./js/common.js";
+} from "./common.js";
 
-import {downloadRawData} from "./js/database/database.js";
-import {MHRBuilderAppInner} from "./js/app.js";
+import {downloadRawData} from "./database/database.js";
+import {MHRBuilderAppInner} from "./app.js";
 
 import "./css/index.css";
 import "./css/vars.css";
