@@ -2,6 +2,10 @@
 
 *Release notes are sorted with the latest at the top.*
 
+## Version 2.0.0
+
+Improved website performance.
+
 ## Version 1.0.5
 
 The query string is no longer overwritten on startup.

@@ -1,0 +1,52 @@
+<% const CANONICAL   = htmlWebpackPlugin.options.canonical %>
+<% const TITLE       = htmlWebpackPlugin.options.title %>
+<% const AUTHOR      = htmlWebpackPlugin.options.author %>
+<% const DESCRIPTION = htmlWebpackPlugin.options.description %>
+<% const KEYWORDS    = htmlWebpackPlugin.options.keywords %>
+<% const EMBED_IMAGE = htmlWebpackPlugin.options.embedImage %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% if (TITLE) { %><title><%= TITLE %></title><% } %>
+
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <% if (CANONICAL  ) { %><link rel="canonical" href="<%- CANONICAL %>"><% } %>
+    <% if (AUTHOR     ) { %><meta name="author" content="<%- AUTHOR %>"><% } %>
+    <% if (DESCRIPTION) { %><meta name="description" content="<%- DESCRIPTION %>"><% } %>
+    <% if (KEYWORDS   ) { %><meta name="keywords" content="<%- KEYWORDS %>"><% } %>
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:type" content="website">
+    <% if (CANONICAL  ) { %><meta property="og:url" content="<%- CANONICAL %>"><% } %>
+    <% if (TITLE      ) { %><meta property="og:title" content="<%- TITLE %>"><% } %>
+    <% if (DESCRIPTION) { %><meta property="og:description" content="<%- DESCRIPTION %>"><% } %>
+    <% if (EMBED_IMAGE) { %><meta property="og:image" content="<%- EMBED_IMAGE %>"><% } %>
+
+    <!-- Twitter Meta Tags -->
+    <% if (EMBED_IMAGE) { %><meta property="twitter:card" content="summary_large_image"><% } %>
+    <% if (TITLE      ) { %><meta property="twitter:title" content="<%- TITLE %>"><% } %>
+    <% if (DESCRIPTION) { %><meta property="twitter:description" content="<%- DESCRIPTION %>"><% } %>
+    <% if (EMBED_IMAGE) { %><meta property="twitter:image" content="<%- EMBED_IMAGE %>"><% } %>
+
+    <meta http-equiv="refresh" content="0; url=mhrb" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9QGQ9S67FZ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-9QGQ9S67FZ');
+    </script>
+
+</head>
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="app-mount"></div>
+</body>
+</html>

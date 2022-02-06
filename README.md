@@ -17,15 +17,41 @@ Please use and link to the stable version where possible.
 
 Only use the unstable/development version if you're interested in using features unavailable in the stable version (e.g. for new armour pieces, or to try out new features).
 
-## How do I host this myself?
+## How do I compile the website?
 
-Simply host the repository root on a web server. The codebase is static and totally toolchainless.
-
-For example, you can use the Python simple server:
-
+First, you need to install node and npm. On Debian, this can be done with:
 ```
-cd monster-hunter-rise-builder
-python3 -m http.server
+sudo apt-get install nodejs npm
+```
+
+Afterwards, you'll need to clone and enter the repo:
+```
+git clone https://github.com/simshadows/react-tsx-ghpages-toolchain-test.git
+cd react-tsx-ghpages-toolchain-test
+```
+
+Optionally, set up npm with a globals directory (and reopen your terminal session):
+```
+mkdir ~/.npm-global
+npm config set prefix '~/.npm-global'
+echo 'export PATH=~/.npm-global/bin:$PATH' >> ~/.bashrc
+```
+
+Now, install yarn globally (and optionally, check its version):
+```
+npm install -g yarn
+yarn --version
+```
+
+Now you're good to go! Build and serve the app using:
+```
+yarn build
+yarn serve
+```
+
+Or, you can use webpack's development server:
+```
+yarn start
 ```
 
 ## Key Features Missing/Unverified

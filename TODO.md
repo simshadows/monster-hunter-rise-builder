@@ -1,5 +1,7 @@
 # TODOs not described in `README.md`
 
+- I had to downgrade `copy-webpack-plugin` to `<10` due to an issue with `globby` (one of its dependencies). It might be incompatible with Yarn Berry's PnP model.
+
 - If I implement calculations involving MV's, I'll need to remember that Silkbind attacks can be treated differently to other attacks, such as with Critical Draw and Punishing Draw.
 
 - Heroics has `defense-increasing effects are negated`. What does this mean?
