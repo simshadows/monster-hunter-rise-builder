@@ -5,19 +5,19 @@
 
 import React from "react";
 
-import * as check from "../../check.ts";
+import * as check from "../../check";
 import {
     isDecoEquippableSlotStr,
     br,
     toNameFilterString,
-} from "../../common.ts";
+} from "../../common";
 import {
     NameFilterTextField,
     //TypeFilterButton,
     SelectionTable,
     //SelectionControlClearButton,
     //SelectionControlButtonsBox,
-} from "./common.ts";
+} from "./common";
 
 
 const element = React.createElement;

@@ -5,22 +5,22 @@
 
 import React from "react";
 
-import * as check from "../../check.ts";
+import * as check from "../../check";
 import {
     getImgPath,
     eleStatStrToImgPath,
-} from "../../images.ts";
+} from "../../images";
 import {
     isWeaponCategoryStr,
     weaponCategoryToName,
     toNameFilterString,
     iterateEleStatMapInLogicalOrder,
-} from "../../common.ts";
+} from "../../common";
 import {
     NameFilterTextField,
     TypeFilterButton,
     SelectionTable,
-} from "./common.ts";
+} from "./common";
 
 const element = React.createElement;
 const assert = console.assert;

@@ -7,10 +7,10 @@ import {
     isNonEmptyStr,
     isInt,
     assert,
-} from "../../check.ts";
+} from "../../check";
 import {
     isRawTypeStr,
-} from "../../common.ts";
+} from "../../common";
 
 const hardcodedGunlanceShellingTypes = [
     ["normal", {

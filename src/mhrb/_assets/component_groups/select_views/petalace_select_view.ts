@@ -5,14 +5,14 @@
 
 import React from "react";
 
-import * as check from "../../check.ts";
+import * as check from "../../check";
 import {
     NameFilterTextField,
     SelectionTable,
-} from "./common.ts";
+} from "./common";
 import {
     toNameFilterString,
-} from "../../common.ts";
+} from "../../common";
 
 const element = React.createElement;
 const assert = console.assert;

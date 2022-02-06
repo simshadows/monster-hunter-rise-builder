@@ -9,7 +9,7 @@ import {
     isStr,
     isNonEmptyStr,
     assert,
-} from "../../check.ts";
+} from "../../check";
 
 
 function generateEle(name, shortIdPrefix) {

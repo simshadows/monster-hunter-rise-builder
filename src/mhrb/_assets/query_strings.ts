@@ -5,8 +5,8 @@
  * Everything to do with query string manipulation in this app happens here.
  */
 
-import * as check from "./check.ts";
-import {Build} from "./model/build.ts";
+import * as check from "./check";
+import {Build} from "./model/build";
 
 const assert = console.assert;
 

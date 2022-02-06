@@ -5,11 +5,11 @@
 
 import React from "react";
 
-import * as check from "../../check.ts";
+import * as check from "../../check";
 import {
     DropdownSelect,
     DropdownSelectWithNull,
-} from "../generic_components.ts";
+} from "../generic_components";
 
 const element = React.createElement;
 const assert = console.assert;

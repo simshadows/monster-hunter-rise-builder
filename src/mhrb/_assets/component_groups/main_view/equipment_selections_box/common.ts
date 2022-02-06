@@ -5,15 +5,15 @@
 
 import React from "react";
 
-import * as check from "../../../check.ts";
+import * as check from "../../../check";
 import {
     getImgPath,
     getSimpleImgElement,
     FontAwesomeSprite,
-} from "../../../images.ts";
+} from "../../../images";
 import {
     clipsafeSpan,
-} from "../../../common.ts";
+} from "../../../common";
 
 const assert = console.assert;
 const element = React.createElement;

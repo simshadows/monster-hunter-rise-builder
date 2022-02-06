@@ -5,12 +5,12 @@
 
 import React from "react";
 
-import * as check from "../check.ts";
-import {FontAwesomeSprite} from "../images.ts";
+import * as check from "../check";
+import {FontAwesomeSprite} from "../images";
 import {
     doTtlDecr,
     setTtl,
-} from "../utils.ts";
+} from "../utils";
 
 const element = React.createElement;
 const assert = console.assert;

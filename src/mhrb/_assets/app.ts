@@ -5,35 +5,35 @@
 
 import React from "react";
 
-import * as check from "./check.ts";
+import * as check from "./check";
 import {
     getBuildFromQueryString,
     writeBuildToQueryString,
-} from "./query_strings.ts";
+} from "./query_strings";
 
-import {GameData} from "./database/database.ts";
+import {GameData} from "./database/database";
 import {
     isArmourSlotStr,
     isDecoEquippableSlotStr,
     br,
-} from "./common.ts";
+} from "./common";
 import {
     callTtlDecr,
-} from "./utils.ts";
-import {Build} from "./model/build.ts";
-import {CalcState} from "./model/calc_state.ts";
-import {calculateBuildPerformance} from "./model/calculate/index.ts";
+} from "./utils";
+import {Build} from "./model/build";
+import {CalcState} from "./model/calc_state";
+import {calculateBuildPerformance} from "./model/calculate/index";
 
-import {Modal} from "./component_groups/modal.ts";
+import {Modal} from "./component_groups/modal";
 
-import {MainView} from "./component_groups/main_view/index.ts";
+import {MainView} from "./component_groups/main_view/index";
 
-import {WeaponSelectView} from "./component_groups/select_views/weapon_select_view.ts";
-import {ArmourSelectView} from "./component_groups/select_views/armour_select_view.ts";
-import {TalismanSelectView} from "./component_groups/select_views/talisman_select_view.ts";
-import {BuffsSelectView} from "./component_groups/select_views/buffs_select_view.ts";
-import {PetalaceSelectView} from "./component_groups/select_views/petalace_select_view.ts";
-import {DecorationSelectView} from "./component_groups/select_views/decoration_select_view.ts";
+import {WeaponSelectView} from "./component_groups/select_views/weapon_select_view";
+import {ArmourSelectView} from "./component_groups/select_views/armour_select_view";
+import {TalismanSelectView} from "./component_groups/select_views/talisman_select_view";
+import {BuffsSelectView} from "./component_groups/select_views/buffs_select_view";
+import {PetalaceSelectView} from "./component_groups/select_views/petalace_select_view";
+import {DecorationSelectView} from "./component_groups/select_views/decoration_select_view";
 
 const element = React.createElement;
 const assert = console.assert;

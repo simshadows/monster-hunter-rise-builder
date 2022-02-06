@@ -5,12 +5,12 @@
 
 import React from "react";
 
-import * as check from "./check.ts";
-import {getImgPath} from "./images.ts";
+import * as check from "./check";
+import {getImgPath} from "./images";
 
 import {
     sum,
-} from "./utils.ts";
+} from "./utils";
 
 const element = React.createElement;
 const assert = console.assert;

@@ -5,12 +5,12 @@
 
 import React from "react";
 
-import * as check from "../../check.ts";
-import {FontAwesomeSprite} from "../../images.ts";
+import * as check from "../../check";
+import {FontAwesomeSprite} from "../../images";
 
-import {SkillsResultsBox} from "./skill_results_box.ts";
-import {EquipmentSelectionsBox} from "./equipment_selections_box/index.ts";
-import {CalculationResultsBox} from "./calculation_results_box.ts";
+import {SkillsResultsBox} from "./skill_results_box";
+import {EquipmentSelectionsBox} from "./equipment_selections_box/index";
+import {CalculationResultsBox} from "./calculation_results_box";
 
 const element = React.createElement;
 const assert = console.assert;

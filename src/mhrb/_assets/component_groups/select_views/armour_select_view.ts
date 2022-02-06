@@ -5,22 +5,22 @@
 
 import React from "react";
 
-import * as check from "../../check.ts";
-import {getImgPath} from "../../images.ts";
+import * as check from "../../check";
+import {getImgPath} from "../../images";
 import {
     isArmourSlotStr,
     tierIDToAbbrev,
     equipmentSlotToName,
     br,
     toNameFilterString,
-} from "../../common.ts";
+} from "../../common";
 import {
     NameFilterTextField,
     TypeFilterButton,
     SelectionTable,
     //SelectionControlClearButton,
     //SelectionControlButtonsBox,
-} from "./common.ts";
+} from "./common";
 
 const element = React.createElement;
 const assert = console.assert;

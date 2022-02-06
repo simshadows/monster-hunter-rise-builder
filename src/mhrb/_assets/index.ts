@@ -8,13 +8,13 @@ import "regenerator-runtime/runtime"; // A hack to get it working. Idk how it wo
 import React from "react";
 import ReactDOM from "react-dom";
 
-import * as check from "./check.ts";
-import {removeElementByID} from "./utils.ts";
+import * as check from "./check";
+import {removeElementByID} from "./utils";
 import {
     br,
-} from "./common.ts";
+} from "./common";
 
-import {downloadRawData} from "./database/database.ts";
+import {downloadRawData} from "./database/database";
 import {MHRBuilderAppInner} from "./app";
 
 import "./css/index.css";

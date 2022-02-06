@@ -5,14 +5,14 @@
 
 import React from "react";
 
-import * as check from "../../../check.ts";
-import {getImgPath} from "../../../images.ts";
+import * as check from "../../../check";
+import {getImgPath} from "../../../images";
 import {
     isEleStatStr,
     isArmourSlotStr,
     isDecoEquippableSlotStr,
     clipsafeSpan,
-} from "../../../common.ts";
+} from "../../../common";
 
 import {
     EquipIcon,
@@ -21,12 +21,12 @@ import {
     EquipArmourInfoBox,
     EquipDefensesBoxEmpty,
     EquipDefensesBox,
-} from "./common.ts";
-import {BuffsSelection} from "./buffs.ts";
-import {WeaponSelection} from "./weapon.ts";
-import {ArmourSelection} from "./armour.ts";
-import {TalismanSelection} from "./talisman.ts";
-import {PetalaceSelection} from "./petalace.ts";
+} from "./common";
+import {BuffsSelection} from "./buffs";
+import {WeaponSelection} from "./weapon";
+import {ArmourSelection} from "./armour";
+import {TalismanSelection} from "./talisman";
+import {PetalaceSelection} from "./petalace";
 
 const assert = console.assert;
 const element = React.createElement;

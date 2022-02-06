@@ -3,8 +3,8 @@
  * License: GNU Affero General Public License v3 (AGPL-3.0)
  */
 
-import {Build} from "../build.ts";
-import {CalcState} from "../calc_state.ts";
+import {Build} from "../build";
+import {CalcState} from "../calc_state";
 
 import {
     isObj,
@@ -15,7 +15,7 @@ import {
     isMap,
     isSet,
     isFunction,
-} from "../../check.ts";
+} from "../../check";
 
 const assert = console.assert;
 

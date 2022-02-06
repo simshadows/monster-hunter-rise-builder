@@ -5,32 +5,32 @@
 
 import React from "react";
 
-import * as check from "../../../check.ts";
+import * as check from "../../../check";
 import {
     getSimpleImgElement,
     eleStatStrToImgPath,
     eleStatStrToImgId,
-} from "../../../images.ts";
+} from "../../../images";
 import {
     isEleStatStr,
     isArmourSlotStr,
     isDecoEquippableSlotStr,
     clipsafeSpan,
     iterateEleStatMapInLogicalOrder,
-} from "../../../common.ts";
+} from "../../../common";
 
 import {
     EquipIcon,
     EquipDecosWrapBox,
-} from "./common.ts";
+} from "./common";
 import {
     doTtlDecr,
     callTtlDecr,
     setTtl,
-} from "../../../utils.ts";
+} from "../../../utils";
 import {
     GenericTable,
-} from "../../generic_components.ts";
+} from "../../generic_components";
 
 const assert = console.assert;
 const element = React.createElement;

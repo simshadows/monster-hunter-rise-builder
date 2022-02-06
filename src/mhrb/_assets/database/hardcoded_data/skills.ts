@@ -3,7 +3,7 @@
  * License: GNU Affero General Public License v3 (AGPL-3.0)
  */
 
-import {getImgPath} from "../../images.ts";
+import {getImgPath} from "../../images";
 
 import {
     isObj,
@@ -11,12 +11,12 @@ import {
     isStr,
     isNonEmptyStr,
     assert,
-} from "../../check.ts";
+} from "../../check";
 import {
     strHasOnlyLowerUnder,
     strHasOnlyLowerNumeral,
     toNameFilterString,
-} from "../../common.ts";
+} from "../../common";
 
 const iconsToImageID = new Map([
     ["blue"     , "skill_icon_blue"     ],

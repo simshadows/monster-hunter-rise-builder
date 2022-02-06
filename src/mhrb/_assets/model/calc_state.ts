@@ -10,15 +10,15 @@ import {
     isStrOrNull,
     isArr,
     isMap,
-} from "../check.ts";
+} from "../check";
 import {
     isDecoEquippableSlotStr,
     isWeaponCategoryStr,
     isEleStatStr,
     isArmourSlotStr,
     toNameFilterString,
-} from "../common.ts";
-import {getImgPath} from "../images.ts";
+} from "../common";
+import {getImgPath} from "../images";
 
 const assert = console.assert;
 

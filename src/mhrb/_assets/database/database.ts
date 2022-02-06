@@ -13,7 +13,7 @@ import {
     isMap,
     isBool,
     assert,
-} from "../check.ts";
+} from "../check";
 import {
     sleep,
     strHasOnlyLowerNumeral,
@@ -24,23 +24,23 @@ import {
     isWeaponEndlineTagStr,
     isEleStatStr,
     toNameFilterString,
-} from "../common.ts";
+} from "../common";
 import {
     setDifference,
-} from "../utils.ts";
+} from "../utils";
 
-import {getImgPath} from "../images.ts";
+import {getImgPath} from "../images";
 import {
     skillMap,
     skillMapShortIds,
-} from "./hardcoded_data/skills.ts";
+} from "./hardcoded_data/skills";
 import {
     rampageSkillsMap,
     rampageSkillsMapShortIds,
-} from "./hardcoded_data/rampage_skills.ts";
+} from "./hardcoded_data/rampage_skills";
 import {
     petalaceMap,
-} from "./hardcoded_data/petalace_data.ts";
+} from "./hardcoded_data/petalace_data";
 import {
     gunlanceShellingTypesMap,
     huntingHornSongsMap,
@@ -53,7 +53,7 @@ import {
     bowChargeShotTypesMap,
     bowgunAmmoTypesMap,
     specialSelectionTypesMap,
-} from "./hardcoded_data/special_weapon_mechanics.ts";
+} from "./hardcoded_data/special_weapon_mechanics";
 
 const WEAPON_GS_PATH  = "./data/weapons_greatsword.json";
 const WEAPON_LS_PATH  = "./data/weapons_longsword.json";

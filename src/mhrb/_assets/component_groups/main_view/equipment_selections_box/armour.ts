@@ -5,11 +5,11 @@
 
 import React from "react";
 
-import * as check from "../../../check.ts";
-import {getImgPath} from "../../../images.ts";
+import * as check from "../../../check";
+import {getImgPath} from "../../../images";
 import {
     isArmourSlotStr,
-} from "../../../common.ts";
+} from "../../../common";
 
 import {
     EquipIcon,
@@ -17,7 +17,7 @@ import {
     EquipArmourInfoBox,
     EquipDefensesBoxEmpty,
     EquipDefensesBox,
-} from "./common.ts";
+} from "./common";
 
 const assert = console.assert;
 const element = React.createElement;

@@ -5,7 +5,7 @@
 
 import React from "react";
 
-import * as check from "../check.ts";
+import * as check from "../check";
 
 const element = React.createElement;
 const assert = console.assert;

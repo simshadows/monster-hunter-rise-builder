@@ -10,7 +10,7 @@ import {
     isArr,
     isInt,
     isNumber,
-} from "../../check.ts";
+} from "../../check";
 import {
     SharpnessBar,
     isEleStatStr,
@@ -21,14 +21,14 @@ import {
     bowgunReloadIntToName,
     bowgunAmmoReloadIntToName,
     iterateEleStatMapInLogicalOrder,
-} from "../../common.ts";
+} from "../../common";
 import {
     GenericTable,
-} from "../generic_components.ts";
+} from "../generic_components";
 import {
     getSimpleImgElement,
     eleStatStrToImgId,
-} from "../../images.ts";
+} from "../../images";
 
 const element = React.createElement;
 const assert = console.assert;

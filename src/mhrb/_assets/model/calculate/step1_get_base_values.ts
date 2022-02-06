@@ -3,8 +3,8 @@
  * License: GNU Affero General Public License v3 (AGPL-3.0)
  */
 
-import {Build} from "../build.ts";
-import {CalcState} from "../calc_state.ts";
+import {Build} from "../build";
+import {CalcState} from "../calc_state";
 
 import {
     isObj,
@@ -15,15 +15,15 @@ import {
     isMap,
     isSet,
     isFunction,
-} from "../../check.ts";
+} from "../../check";
 import {
     eleStrs,
     isEleStr,
     getWeaponTags,
-} from "../../common.ts";
+} from "../../common";
 import {
     deepcopy,
-} from "../../utils.ts";
+} from "../../utils";
 
 const assert = console.assert;
 

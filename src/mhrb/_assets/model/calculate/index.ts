@@ -3,12 +3,12 @@
  * License: GNU Affero General Public License v3 (AGPL-3.0)
  */
 
-import {Build} from "../build.ts";
-import {CalcState} from "../calc_state.ts";
+import {Build} from "../build";
+import {CalcState} from "../calc_state";
 
-import {getBaseValues} from "./step1_get_base_values.ts";
-import {getSkillContributions} from "./step2_get_skill_contributions.ts";
-import {getMiscBuffContributions} from "./step3_get_misc_buff_contributions.ts";
+import {getBaseValues} from "./step1_get_base_values";
+import {getSkillContributions} from "./step2_get_skill_contributions";
+import {getMiscBuffContributions} from "./step3_get_misc_buff_contributions";
 
 import {
     isObj,
@@ -19,14 +19,14 @@ import {
     isMap,
     isSet,
     isFunction,
-} from "../../check.ts";
+} from "../../check";
 import {
     isEleStr,
     getWeaponTags,
-} from "../../common.ts";
+} from "../../common";
 import {
     sum,
-} from "../../utils.ts";
+} from "../../utils";
 
 const assert = console.assert;
 

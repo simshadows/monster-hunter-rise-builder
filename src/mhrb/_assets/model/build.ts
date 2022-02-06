@@ -11,14 +11,14 @@ import {
     isStrOrNull,
     isArr,
     isMap,
-} from "../check.ts";
+} from "../check";
 import {
     isDecoEquippableSlotStr,
     isWeaponCategoryStr,
     isEleStatStr,
     isArmourSlotStr,
     toNameFilterString,
-} from "../common.ts";
+} from "../common";
 
 const assert = console.assert;
 

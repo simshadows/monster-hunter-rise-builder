@@ -5,9 +5,9 @@
 
 import React from "react";
 
-import * as check from "../../check.ts";
+import * as check from "../../check";
 
-import {GenericTable} from "../generic_components.ts";
+import {GenericTable} from "../generic_components";
 
 const element = React.createElement;
 const assert = console.assert;

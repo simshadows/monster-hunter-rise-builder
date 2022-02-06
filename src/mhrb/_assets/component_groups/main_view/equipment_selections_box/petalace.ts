@@ -5,13 +5,13 @@
 
 import React from "react";
 
-import * as check from "../../../check.ts";
-import {getImgPath} from "../../../images.ts";
+import * as check from "../../../check";
+import {getImgPath} from "../../../images";
 
 import {
     EquipIcon,
     EquipInfoBox,
-} from "./common.ts";
+} from "./common";
 
 const element = React.createElement;
 

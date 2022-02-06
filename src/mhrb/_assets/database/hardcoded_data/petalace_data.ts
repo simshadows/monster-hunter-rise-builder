@@ -9,12 +9,12 @@ import {
     isStr,
     isNonEmptyStr,
     assert,
-} from "../../check.ts";
+} from "../../check";
 import {
     isWeaponEndlineTagStr,
     toNameFilterString,
-} from "../../common.ts";
-import {getImgPath} from "../../images.ts";
+} from "../../common";
+import {getImgPath} from "../../images";
 
 const hardcodedPetalaceData = [
     ["h3", {
