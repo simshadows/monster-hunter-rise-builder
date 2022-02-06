@@ -53,7 +53,6 @@ class MHRBuilderAppInner extends React.Component {
                 mainView:             React.createRef(),
 
                 buffsSelectModal:     React.createRef(),
-                buffsSelectModal:     React.createRef(),
                 weaponSelectModal:    React.createRef(),
                 armourSelectModal:    React.createRef(),
                 talismanSelectModal:  React.createRef(),
