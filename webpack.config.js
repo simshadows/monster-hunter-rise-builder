@@ -21,7 +21,7 @@ function htmlWebpackPluginCommon(configArgs, mergeIn) {
         description: "Sim's Monster Hunter Fansite",
         keywords: "Monster Hunter Rise, Builder, Damage, Calculator, EFR",
         canonical: "https://monsterhunter.simshadows.com",
-        favicon: path.resolve(__dirname, "src", "favicon.png"),
+        favicon: path.resolve(__dirname, "src", "mhrb", "_assets", "image_files", "derived", "armour_head_r1.png"),
     }, mergeIn);
 }
 
