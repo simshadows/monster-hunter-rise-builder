@@ -14,7 +14,7 @@ import {
 const element = React.createElement;
 const assert = console.assert;
 
-class TalismanSelectView extends React.Component {
+class TalismanSelectView extends React.Component<any, any> {
 
     handleSelectSkill(skillIndex, skillID, skillLevel) {
         const skillRO = (skillID === null) ? null : this.props.allSkillsMapLongIds.get(skillID);

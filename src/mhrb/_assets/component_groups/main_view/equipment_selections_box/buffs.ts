@@ -45,7 +45,7 @@ function BuffAbbreviationIcon(props) {
     );
 }
 
-class BuffsSelection extends React.Component {
+class BuffsSelection extends React.Component<any, any> {
 
     render() {
         check.isMap(this.props.calcStateSpecification);

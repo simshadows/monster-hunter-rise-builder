@@ -14,7 +14,7 @@ const assert = console.assert;
 
 /*** Common Components: Name Filter Text Field ***/
 
-class NameFilterTextField extends React.Component {
+class NameFilterTextField extends React.Component<any, any> {
 
     handleChange(e) {
         const newInput = e.target.value;
@@ -45,7 +45,7 @@ class NameFilterTextField extends React.Component {
 
 /*** Common Components: Type Filter Button ***/
 
-class TypeFilterButton extends React.Component {
+class TypeFilterButton extends React.Component<any, any> {
 
     handleOnClick(e) {
         e.stopPropagation();
@@ -87,7 +87,7 @@ class TypeFilterButton extends React.Component {
 /*** Common Components: Selection Table ***/
 
 // Highly recommended to specialize this component
-class SelectionTable extends React.Component {
+class SelectionTable extends React.Component<any, any> {
     render() {
         assert(this.props.renderHeadRow === undefined);
         assert(this.props.implementationClassNames === undefined);

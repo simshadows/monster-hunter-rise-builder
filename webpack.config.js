@@ -1,7 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-//const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
+const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
@@ -58,17 +58,17 @@ const config = (configArgs) => ({
         new MiniCssExtractPlugin({
             filename: "[name].css",
         }),
-        //new ForkTsCheckerWebpackPlugin({
-        //    typescript: {
-        //        diagnosticOptions: { // To be honest, I have no idea what this is doing yet
-        //            semantic: true,
-        //            syntactic: true,
-        //            declaration: true,
-        //            global: true,
-        //        },
-        //        mode: "write-references",
-        //    },
-        //}),
+        new ForkTsCheckerWebpackPlugin({
+            typescript: {
+                diagnosticOptions: { // To be honest, I have no idea what this is doing yet
+                    semantic: true,
+                    syntactic: true,
+                    declaration: true,
+                    global: true,
+                },
+                mode: "write-references",
+            },
+        }),
         new CopyPlugin({
             patterns: [
                 { from: "public" },

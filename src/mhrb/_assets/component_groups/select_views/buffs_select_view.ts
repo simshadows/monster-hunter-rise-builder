@@ -13,7 +13,7 @@ import {
 const element = React.createElement;
 const assert = console.assert;
 
-class BuffBox extends React.Component {
+class BuffBox extends React.Component<any, any> {
 
     handleChangeCalcState(groupName, stateName, newValue) {
         this.props.handleChangeCalcState(groupName, stateName, newValue);
@@ -100,7 +100,7 @@ class BuffBox extends React.Component {
     }
 }
 
-class BuffsSelectGroup extends React.Component {
+class BuffsSelectGroup extends React.Component<any, any> {
 
     handleChangeCalcState(...args) {
         this.props.handleChangeCalcState(...args);
@@ -143,10 +143,10 @@ class BuffsSelectGroup extends React.Component {
     }
 }
 
-class BuffsSelectView extends React.Component {
+class BuffsSelectView extends React.Component<any, any> {
 
-    handleChangeCalcState(...args) {
-        this.props.handleChangeCalcState(...args);
+    handleChangeCalcState(groupName, stateName, newValue) {
+        this.props.handleChangeCalcState(groupName, stateName, newValue);
     }
 
     render() {
@@ -163,7 +163,7 @@ class BuffsSelectView extends React.Component {
                     groupName: groupName,
                     groupStatesSpecs: groupStatesSpecs,
                     groupCurrentStates: groupCurrentStates,
-                    handleChangeCalcState: (...args) => {this.handleChangeCalcState(...args)},
+                    handleChangeCalcState: (__a, __b, __c) => {this.handleChangeCalcState(__a, __b, __c)},
                     },
                     null,
                 )

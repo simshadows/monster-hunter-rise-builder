@@ -42,7 +42,7 @@ function UtilityButtonExternalLink(props) {
     );
 }
 
-class UtilityBar extends React.Component {
+class UtilityBar extends React.Component<any, any> {
 
     constructor(props) {
         super(props);
@@ -149,7 +149,7 @@ class UtilityBar extends React.Component {
     }
 }
 
-class MainView extends React.Component {
+class MainView extends React.Component<any, any> {
     constructor(props) {
         super(props);
 
@@ -226,15 +226,15 @@ class MainView extends React.Component {
                             calcStateCurrValues:    this.props.calcStateCurrValues,
                             buildPerformanceValues: this.props.buildPerformanceValues,
 
-                            handleClickBuffsSelect:      ()       => {this.props.handleClickBuffsSelect();},
-                            handleClickWeaponSelect:     ()       => {this.props.handleClickWeaponSelect();},
-                            handleClickArmourSelect:     (slotID) => {this.props.handleClickArmourSelect(slotID);},
-                            handleClickTalismanSelect:   ()       => {this.props.handleClickTalismanSelect();},
-                            handleClickPetalaceSelect:   ()       => {this.props.handleClickPetalaceSelect();},
-                            handleClickDecorationSelect: (...args) => {this.props.handleClickDecorationSelect(...args)},
+                            handleClickBuffsSelect:      ()              => {this.props.handleClickBuffsSelect();},
+                            handleClickWeaponSelect:     ()              => {this.props.handleClickWeaponSelect();},
+                            handleClickArmourSelect:     (slotID)        => {this.props.handleClickArmourSelect(slotID);},
+                            handleClickTalismanSelect:   ()              => {this.props.handleClickTalismanSelect();},
+                            handleClickPetalaceSelect:   ()              => {this.props.handleClickPetalaceSelect();},
+                            handleClickDecorationSelect: (__a, __b, __c) => {this.props.handleClickDecorationSelect(__a, __b, __c)},
 
-                            handleSelectRampSkill: (...args) => {this.handleSelectRampSkill(...args);},
-                            handleSelectWeaponSpecialSelection: (...args) => {this.handleSelectWeaponSpecialSelection(...args);},
+                            handleSelectRampSkill: (__a, __b) => {this.handleSelectRampSkill(__a, __b);},
+                            handleSelectWeaponSpecialSelection: (__a) => {this.handleSelectWeaponSpecialSelection(__a);},
 
                             handleRemovePiece: (slotID) => {this.props.handleRemovePiece(slotID);},
                             handleRemoveDeco: (slotID, decoSlotID) => {this.props.handleRemoveDeco(slotID, decoSlotID);},

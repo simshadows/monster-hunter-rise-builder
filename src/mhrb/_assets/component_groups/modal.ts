@@ -15,7 +15,7 @@ import {
 const element = React.createElement;
 const assert = console.assert;
 
-class Modal extends React.Component {
+class Modal extends React.Component<any, any> {
 
     constructor(props) {
         super(props);

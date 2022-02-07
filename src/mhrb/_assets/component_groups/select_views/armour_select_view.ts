@@ -40,7 +40,7 @@ function headRowIconElement(iconImgID) {
     );
 }
 
-class ArmourSelectionTable extends React.Component {
+class ArmourSelectionTable extends React.Component<any, any> {
 
     static _cspecHeadRowFormat = [
             // [Markup Class, Content]
@@ -138,7 +138,7 @@ class ArmourSelectionTable extends React.Component {
 
 }
 
-class ArmourSelectView extends React.Component {
+class ArmourSelectView extends React.Component<any, any> {
 
     static _armourSlotIDToIconMap = new Map([
             ["head" , getImgPath("head_r1") ],

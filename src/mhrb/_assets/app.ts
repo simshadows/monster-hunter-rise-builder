@@ -39,7 +39,8 @@ const element = React.createElement;
 const assert = console.assert;
 
 
-class MHRBuilderAppInner extends React.Component {
+class MHRBuilderAppInner extends React.Component<any, any> {
+    myRefs: any;
 
     constructor(props) {
         super(props);
@@ -279,15 +280,15 @@ class MHRBuilderAppInner extends React.Component {
                 calcStateCurrValues:    calcStateCurrValues,
                 buildPerformanceValues: buildPerformanceValues,
 
-                handleClickBuffsSelect:      ()        => {this.handleSwitchToBuffsSelect();},
-                handleClickWeaponSelect:     ()        => {this.handleSwitchToWeaponSelect();},
-                handleClickArmourSelect:     (...args) => {this.handleSwitchToArmourSelect(...args);},
-                handleClickTalismanSelect:   ()        => {this.handleSwitchToTalismanSelect();},
-                handleClickPetalaceSelect:   ()        => {this.handleSwitchToPetalaceSelect();},
-                handleClickDecorationSelect: (...args) => {this.handleSwitchToDecorationSelect(...args);},
+                handleClickBuffsSelect:      ()              => {this.handleSwitchToBuffsSelect();},
+                handleClickWeaponSelect:     ()              => {this.handleSwitchToWeaponSelect();},
+                handleClickArmourSelect:     (slotID)        => {this.handleSwitchToArmourSelect(slotID);},
+                handleClickTalismanSelect:   ()              => {this.handleSwitchToTalismanSelect();},
+                handleClickPetalaceSelect:   ()              => {this.handleSwitchToPetalaceSelect();},
+                handleClickDecorationSelect: (__a, __b, __c) => {this.handleSwitchToDecorationSelect(__a, __b, __c);},
 
-                handleSelectRampSkill: (...args) => {this.handleSelectRampSkill(...args);},
-                handleSelectWeaponSpecialSelection: (...args) => {this.handleSelectWeaponSpecialSelection(...args);},
+                handleSelectRampSkill: (__a, __b) => {this.handleSelectRampSkill(__a, __b);},
+                handleSelectWeaponSpecialSelection: (__a) => {this.handleSelectWeaponSpecialSelection(__a);},
 
                 handleRemovePiece: (slotID) => {this.handleRemovePiece(slotID);},
                 handleRemoveDeco: (slotID, decoSlotID) => {this.handleRemoveDeco(slotID, decoSlotID);},
@@ -304,7 +305,7 @@ class MHRBuilderAppInner extends React.Component {
                     ref: this.myRefs.buffsSelectView,
                     calcStateSpecification: calcStateSpecification,
                     calcStateCurrValues:    calcStateCurrValues,
-                    handleChangeCalcState: (...args) => {this.handleChangeCalcState(...args)},
+                    handleChangeCalcState: (__a, __b, __c) => {this.handleChangeCalcState(__a, __b, __c)},
                     },
                     null,
                 ),
@@ -351,8 +352,8 @@ class MHRBuilderAppInner extends React.Component {
                     allSkillsMapLongIds: rawData.readonly.skills.longIdsMap,
                     currentSkills: this.state.build.getTalismanSkills(),
                     currentDecoSlots: this.state.build.getTalismanDecoSlots(),
-                    handleSelectSkill: (...args) => {this.handleSelectTalismanSkill(...args)},
-                    handleSelectDecoSlotSize: (...args) => {this.handleSelectTalismanDecoSlotSize(...args)},
+                    handleSelectSkill: (__a, __b, __c) => {this.handleSelectTalismanSkill(__a, __b, __c)},
+                    handleSelectDecoSlotSize: (__a, __b) => {this.handleSelectTalismanDecoSlotSize(__a, __b)},
                     },
                     null,
                 ),
@@ -381,7 +382,7 @@ class MHRBuilderAppInner extends React.Component {
                     {
                     ref: this.myRefs.decoSelectView,
                     allDecosArray: rawData.readonly.decorations.array,
-                    handleSelectDecoration: (...args) => {this.handleSelectDecoration(...args)},
+                    handleSelectDecoration: (__a, __b, __c) => {this.handleSelectDecoration(__a, __b, __c)},
                     },
                     null,
                 ),

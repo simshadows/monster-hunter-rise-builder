@@ -25,7 +25,7 @@ import {
 const element = React.createElement;
 const assert = console.assert;
 
-class WeaponSelectionTable extends React.Component {
+class WeaponSelectionTable extends React.Component<any, any> {
 
     static _cspecHeadRowFormat = [
             // [Markup Class, Content]

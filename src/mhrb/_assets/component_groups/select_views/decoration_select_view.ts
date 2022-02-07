@@ -23,7 +23,7 @@ import {
 const element = React.createElement;
 const assert = console.assert;
 
-class DecorationSelectionTable extends React.Component {
+class DecorationSelectionTable extends React.Component<any, any> {
 
     static _cspecHeadRowFormat = [
             // [Markup Class, Content]
@@ -81,7 +81,7 @@ class DecorationSelectionTable extends React.Component {
 
 }
 
-class DecorationSelectView extends React.Component {
+class DecorationSelectView extends React.Component<any, any> {
 
     constructor(props) {
         super(props);

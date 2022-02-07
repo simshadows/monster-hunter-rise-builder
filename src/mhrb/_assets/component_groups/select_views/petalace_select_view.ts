@@ -17,7 +17,7 @@ import {
 const element = React.createElement;
 const assert = console.assert;
 
-class PetalaceSelectionTable extends React.Component {
+class PetalaceSelectionTable extends React.Component<any, any> {
 
     static _cspecHeadRowFormat = [
             // [Markup Class, Content]
@@ -108,7 +108,7 @@ class PetalaceSelectionTable extends React.Component {
 
 }
 
-class PetalaceSelectView extends React.Component {
+class PetalaceSelectView extends React.Component<any, any> {
 
     constructor(props) {
         super(props);

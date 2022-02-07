@@ -35,7 +35,7 @@ import {
 const assert = console.assert;
 const element = React.createElement;
 
-class RampageSkillSelectionTable extends React.Component {
+class RampageSkillSelectionTable extends React.Component<any, any> {
 
     constructor(props) {
         super(props);
@@ -142,7 +142,7 @@ class RampageSkillSelectionTable extends React.Component {
     }
 }
 
-class RampageSkillSelection extends React.Component {
+class RampageSkillSelection extends React.Component<any, any> {
     constructor(props) {
         super(props);
         this._ttl = 0;
@@ -224,7 +224,7 @@ class RampageSkillSelection extends React.Component {
     }
 }
 
-class SpecialSelectionTable extends React.Component {
+class SpecialSelectionTable extends React.Component<any, any> {
 
     // Logically Static
     _cspecGetRowContent(specialSelectionRO) {
@@ -287,7 +287,7 @@ class SpecialSelectionTable extends React.Component {
     }
 }
 
-class SpecialSelection extends React.Component {
+class SpecialSelection extends React.Component<any, any> {
     constructor(props) {
         super(props);
         this._ttl = 0;
@@ -379,7 +379,7 @@ function DummySpecialMechSelection(props) {
     );
 }
 
-class EquipWeaponInfoBox extends React.Component {
+class EquipWeaponInfoBox extends React.Component<any, any> {
     constructor(props) {
         super(props);
         this.myRefs = {}; // Keys will be added during rendering
@@ -586,7 +586,7 @@ class EquipWeaponInfoBox extends React.Component {
     }
 }
 
-class WeaponSelection extends React.Component {
+class WeaponSelection extends React.Component<any, any> {
     constructor(props) {
         super(props);
         this.myRefs = {

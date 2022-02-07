@@ -10,7 +10,7 @@ import * as check from "../check";
 const element = React.createElement;
 const assert = console.assert;
 
-export class GenericTable extends React.Component {
+export class GenericTable extends React.Component<any, any> {
 
     handleRowClick(e, unprocessedRowData) {
         e.stopPropagation();
@@ -127,7 +127,7 @@ export class GenericTable extends React.Component {
     }
 }
 
-export class DropdownSelect extends React.Component {
+export class DropdownSelect extends React.Component<any, any> {
 
     handleOnChange(e) {
         const selectedItem = e.target.value;
@@ -179,7 +179,7 @@ export class DropdownSelect extends React.Component {
     }
 }
 
-export class DropdownSelectWithNull extends React.Component {
+export class DropdownSelectWithNull extends React.Component<any, any> {
 
     handleOnChange(e) {
         const selectedItem = e.target.value;

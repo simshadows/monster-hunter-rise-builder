@@ -31,7 +31,7 @@ import {PetalaceSelection} from "./petalace";
 const assert = console.assert;
 const element = React.createElement;
 
-class EquipmentSelectionsBox extends React.Component {
+class EquipmentSelectionsBox extends React.Component<any, any> {
     constructor(props) {
         super(props);
 
@@ -125,8 +125,8 @@ class EquipmentSelectionsBox extends React.Component {
                 handleClickWeaponSelect:     () => {this.handleClickWeaponSelect();},
                 handleClickDecorationSelect: (decoSlotID, maxDecoSlotSize) => {this.handleClickDecorationSelect("weapon", decoSlotID, maxDecoSlotSize);},
                 handleClickDecorationRemove: (decoSlotID) => {this.props.handleRemoveDeco("weapon", decoSlotID);},
-                handleSelectRampSkill: (...args) => {this.handleSelectRampSkill(...args);},
-                handleSelectSpecialSelection: (...args) => {this.handleSelectWeaponSpecialSelection(...args);},
+                handleSelectRampSkill: (__a, __b) => {this.handleSelectRampSkill(__a, __b);},
+                handleSelectSpecialSelection: (__a) => {this.handleSelectWeaponSpecialSelection(__a);},
                 },
                 null,
             ),

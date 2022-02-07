@@ -18,7 +18,7 @@ import {
 const assert = console.assert;
 const element = React.createElement;
 
-class EquipIcon extends React.Component {
+class EquipIcon extends React.Component<any, any> {
 
     handleSelectButton(e) {
         this.props.handleSelectButton();
@@ -101,7 +101,7 @@ function EquipInfoBox(props) {
     )
 }
 
-class EquipDecoBox extends React.Component {
+class EquipDecoBox extends React.Component<any, any> {
 
     // Logically static
     _iconsToImageID(icon, decoSize, slotSize) {
@@ -206,7 +206,7 @@ class EquipDecoBox extends React.Component {
     }
 }
 
-class EquipDecosWrapBox extends React.Component {
+class EquipDecosWrapBox extends React.Component<any, any> {
 
     handleClickSelect(decoSlotID, maxDecoSize) {
         this.props.handleClickSelect(decoSlotID, maxDecoSize);
@@ -312,7 +312,7 @@ function EquipDefensesBoxEmpty() {
     );
 }
 
-class EquipDefensesBox extends React.Component {
+class EquipDefensesBox extends React.Component<any, any> {
     _renderCell(imgPath, value) {
         return element("div",
             {

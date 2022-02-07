@@ -22,7 +22,7 @@ import {
 const assert = console.assert;
 const element = React.createElement;
 
-class ArmourSelection extends React.Component {
+class ArmourSelection extends React.Component<any, any> {
 
     static _slotNameToIconImgPath = new Map([
             ["head" , getImgPath("head_r1" )],

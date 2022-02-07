@@ -34,7 +34,7 @@ const element = React.createElement;
 const assert = console.assert;
 
 
-class CalculationSharpnessBarBox extends React.Component {
+class CalculationSharpnessBarBox extends React.Component<any, any> {
     
     _renderStat(colour, value) {
         assert(value >= 0);
@@ -102,7 +102,7 @@ class CalculationSharpnessBarBox extends React.Component {
     }
 }
 
-class CalculationAmmoStatsBox extends React.Component {
+class CalculationAmmoStatsBox extends React.Component<any, any> {
 
     render(props) {
 
@@ -206,7 +206,7 @@ function CalculationResultsSpacerBox(props) {
 }
 
 
-class CalculationResultsBox extends React.Component {
+class CalculationResultsBox extends React.Component<any, any> {
 
     _renderGreyed(...elements) {
         return element("span",
