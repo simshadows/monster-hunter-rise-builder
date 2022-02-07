@@ -6,13 +6,14 @@
 
 import React from "react";
 
-import * as check from "../../check";
+import * as check from "../../../check";
 
-import {SkillsResultsBox} from "./skill_results_box";
-import {EquipmentSelectionsBox} from "./equipment_selections_box/index";
-import {CalculationResultsBox} from "./calculation_results_box";
+import {EquipmentSelectionsBox} from "../../../component_groups/main_view/equipment_selections_box/index";
 
-import {FontAwesomeSprite} from "../../components/images/FontAwesomeSprite";
+import {FontAwesomeSprite} from "../../images/FontAwesomeSprite";
+
+import {SkillsResultsBox} from "./SkillsResultsBox";
+import {CalculationResultsBox} from "./CalculationResultsBox";
 
 const element = React.createElement;
 const assert = console.assert;
@@ -151,7 +152,7 @@ class UtilityBar extends React.Component<any, any> {
     }
 }
 
-class MainView extends React.Component<any, any> {
+export class MainView extends React.Component<any, any> {
     constructor(props) {
         super(props);
 
@@ -256,6 +257,4 @@ class MainView extends React.Component<any, any> {
 
     }
 }
-
-export {MainView};
 

@@ -11,7 +11,7 @@ import {
     isArr,
     isInt,
     isNumber,
-} from "../../check";
+} from "../../../check";
 import {
     isEleStatStr,
     eleStatIdToName,
@@ -21,14 +21,14 @@ import {
     bowgunReloadIntToName,
     bowgunAmmoReloadIntToName,
     iterateEleStatMapInLogicalOrder,
-} from "../../common";
+} from "../../../common";
 import {
     eleStatStrToImgId,
-} from "../../images";
+} from "../../../images";
 
-import {GenericTable} from "../../components/generic/GenericTable";
-import {SimpleImg} from "../../components/images/SimpleImg";
-import {SharpnessBar} from "../../components/common/SharpnessBar";
+import {GenericTable} from "../../generic/GenericTable";
+import {SimpleImg} from "../../images/SimpleImg";
+import {SharpnessBar} from "../../common/SharpnessBar";
 
 const element = React.createElement;
 const assert = console.assert;
@@ -205,7 +205,7 @@ function CalculationResultsSpacerBox(props) {
 }
 
 
-class CalculationResultsBox extends React.Component<any, any> {
+export class CalculationResultsBox extends React.Component<any, any> {
 
     _renderGreyed(...elements) {
         return element("span",
@@ -553,6 +553,4 @@ class CalculationResultsBox extends React.Component<any, any> {
         );
     }
 }
-
-export {CalculationResultsBox};
                     

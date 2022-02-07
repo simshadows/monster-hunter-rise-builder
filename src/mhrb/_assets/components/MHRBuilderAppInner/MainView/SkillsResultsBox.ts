@@ -5,9 +5,9 @@
 
 import React from "react";
 
-import * as check from "../../check";
+import * as check from "../../../check";
 
-import {clipsafeSpan} from "../../components/common/clipsafeSpan";
+import {clipsafeSpan} from "../../common/clipsafeSpan";
 
 const assert = console.assert;
 const element = React.createElement;
@@ -107,7 +107,7 @@ function SkillResult(props) {
     );
 }
 
-function SkillsResultsBox(props) {
+export function SkillsResultsBox(props) {
     check.isObj(props.buildRenderingProps);
     check.isArr(props.buildRenderingProps.calculatedSkills); // Spot check for structure
 
@@ -144,6 +144,4 @@ function SkillsResultsBox(props) {
         ...elements,
     );
 }
-
-export {SkillsResultsBox};
 
