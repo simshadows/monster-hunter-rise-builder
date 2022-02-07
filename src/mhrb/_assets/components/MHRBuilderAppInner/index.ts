@@ -5,41 +5,41 @@
 
 import React from "react";
 
-import * as check from "./check";
+import * as check from "../../check";
 import {
     getBuildFromQueryString,
     writeBuildToQueryString,
-} from "./query_strings";
+} from "../../query_strings";
 
-import {GameData} from "./database/database";
+import {GameData} from "../../database/database";
 import {
     isArmourSlotStr,
     isDecoEquippableSlotStr,
-} from "./common";
+} from "../../common";
 import {
     callTtlDecr,
-} from "./utils";
-import {Build} from "./model/build";
-import {CalcState} from "./model/calc_state";
-import {calculateBuildPerformance} from "./model/calculate/index";
+} from "../../utils";
+import {Build} from "../../model/build";
+import {CalcState} from "../../model/calc_state";
+import {calculateBuildPerformance} from "../../model/calculate/index";
 
-import {Modal} from "./component_groups/modal";
+import {Modal} from "../../component_groups/modal";
 
-import {MainView} from "./component_groups/main_view/index";
+import {MainView} from "../../component_groups/main_view/index";
 
-import {WeaponSelectView} from "./component_groups/select_views/weapon_select_view";
-import {ArmourSelectView} from "./component_groups/select_views/armour_select_view";
-import {TalismanSelectView} from "./component_groups/select_views/talisman_select_view";
-import {BuffsSelectView} from "./component_groups/select_views/buffs_select_view";
-import {PetalaceSelectView} from "./component_groups/select_views/petalace_select_view";
-import {DecorationSelectView} from "./component_groups/select_views/decoration_select_view";
+import {WeaponSelectView} from "../../component_groups/select_views/weapon_select_view";
+import {ArmourSelectView} from "../../component_groups/select_views/armour_select_view";
+import {TalismanSelectView} from "../../component_groups/select_views/talisman_select_view";
+import {BuffsSelectView} from "../../component_groups/select_views/buffs_select_view";
+import {PetalaceSelectView} from "../../component_groups/select_views/petalace_select_view";
+import {DecorationSelectView} from "../../component_groups/select_views/decoration_select_view";
 
 
 const element = React.createElement;
 const assert = console.assert;
 
 
-class MHRBuilderAppInner extends React.Component<any, any> {
+export class MHRBuilderAppInner extends React.Component<any, any> {
     myRefs: any;
 
     constructor(props) {
@@ -390,6 +390,4 @@ class MHRBuilderAppInner extends React.Component<any, any> {
         );
     }
 }
-
-export {MHRBuilderAppInner};
 

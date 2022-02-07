@@ -4,19 +4,16 @@
  * License: GNU Affero General Public License v3 (AGPL-3.0)
  */
 
-import "regenerator-runtime/runtime"; // A hack to get it working. Idk how it works, but it just do
+import "regenerator-runtime/runtime"; // A hack to get it working. Idk how it works. It just do
 
 import React from "react";
 import ReactDOM from "react-dom";
 
 import * as check from "./check";
 import {removeElementByID} from "./utils";
-import {
-    br,
-} from "./common";
 
 import {downloadRawData} from "./database/database";
-import {MHRBuilderAppInner} from "./app";
+import {MHRBuilderAppInner} from "./components/MHRBuilderAppInner";
 
 import "./css/index.css";
 import "./css/vars.css";
