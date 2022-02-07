@@ -5,6 +5,7 @@
  */
 
 import React from "react";
+const element = React.createElement;
 
 import * as check from "../../../check";
 import {
@@ -13,7 +14,6 @@ import {
 
 import {SelectionTable} from "./internals/SelectionTable";
 
-const element = React.createElement;
 const assert = console.assert;
 
 class PetalaceSelectionTable extends React.Component<any, any> {

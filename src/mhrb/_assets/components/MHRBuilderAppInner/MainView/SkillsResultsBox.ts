@@ -4,13 +4,13 @@
  */
 
 import React from "react";
+const element = React.createElement;
 
 import * as check from "../../../check";
 
 import {clipsafeSpan} from "../../common/clipsafeSpan";
 
 const assert = console.assert;
-const element = React.createElement;
 
 function NoSkills() {
     return element("div",

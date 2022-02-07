@@ -5,25 +5,23 @@
  */
 
 import React from "react";
-
-import * as check from "../../../check";
-import {getImgPath} from "../../../images";
-import {
-    isArmourSlotStr,
-} from "../../../common";
-
-import {
-    EquipIcon,
-    EquipDecosWrapBox,
-    EquipArmourInfoBox,
-    EquipDefensesBoxEmpty,
-    EquipDefensesBox,
-} from "./common";
-
-const assert = console.assert;
 const element = React.createElement;
 
-class ArmourSelection extends React.Component<any, any> {
+import * as check from "../../../../check";
+import {getImgPath} from "../../../../images";
+import {
+    isArmourSlotStr,
+} from "../../../../common";
+
+import {EquipDefensesBox} from "./EquipDefensesBox";
+import {EquipDefensesBoxEmpty} from "./EquipDefensesBoxEmpty";
+import {EquipArmourInfoBox} from "./EquipArmourInfoBox";
+import {EquipDecosWrapBox} from "./EquipDecosWrapBox";
+import {EquipIcon} from "./EquipIcon";
+
+const assert = console.assert;
+
+export class SelectArmour extends React.Component<any, any> {
 
     static _slotNameToIconImgPath = new Map([
             ["head" , getImgPath("head_r1" )],
@@ -125,6 +123,4 @@ class ArmourSelection extends React.Component<any, any> {
         );
     }
 }
-
-export {ArmourSelection};
 

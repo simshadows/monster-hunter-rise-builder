@@ -4,14 +4,14 @@
  */
 
 import React from "react";
+const element = React.createElement;
 
-import * as check from "../../../check";
-import {getImgPath} from "../../../images";
+import * as check from "../../../../check";
+import {getImgPath} from "../../../../images";
 
-import {clipsafeSpan} from "../../../components/common/clipsafeSpan";
+import {clipsafeSpan} from "../../../common/clipsafeSpan";
 
 const assert = console.assert;
-const element = React.createElement;
 
 function BuffImgIcon(props) {
     check.isNonEmptyStr(props.iconImgPath);
@@ -44,7 +44,7 @@ function BuffAbbreviationIcon(props) {
     );
 }
 
-class BuffsSelection extends React.Component<any, any> {
+export class SelectBuffs extends React.Component<any, any> {
 
     render() {
         check.isMap(this.props.calcStateSpecification);
@@ -93,6 +93,4 @@ class BuffsSelection extends React.Component<any, any> {
         );
     }
 }
-
-export {BuffsSelection};
 

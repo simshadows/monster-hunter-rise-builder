@@ -5,6 +5,7 @@
  */
 
 import React from "react";
+const element = React.createElement;
 
 import {
     isObj,
@@ -30,7 +31,6 @@ import {GenericTable} from "../../generic/GenericTable";
 import {SimpleImg} from "../../images/SimpleImg";
 import {SharpnessBar} from "../../common/SharpnessBar";
 
-const element = React.createElement;
 const assert = console.assert;
 
 

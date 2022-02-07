@@ -5,17 +5,16 @@
  */
 
 import React from "react";
+const element = React.createElement;
 
 import * as check from "../../../check";
-
-import {EquipmentSelectionsBox} from "../../../component_groups/main_view/equipment_selections_box/index";
 
 import {FontAwesomeSprite} from "../../images/FontAwesomeSprite";
 
 import {SkillsResultsBox} from "./SkillsResultsBox";
+import {EquipmentSelectionsBox} from "./EquipmentSelectionsBox";
 import {CalculationResultsBox} from "./CalculationResultsBox";
 
-const element = React.createElement;
 const assert = console.assert;
 
 function UtilityButtonExternalLink(props) {

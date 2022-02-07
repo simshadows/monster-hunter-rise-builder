@@ -4,20 +4,17 @@
  */
 
 import React from "react";
-
-import * as check from "../../../check";
-import {getImgPath} from "../../../images";
-
-import {
-    EquipIcon,
-    EquipDecosWrapBox,
-    EquipArmourInfoBox,
-    EquipDefensesBoxEmpty,
-} from "./common";
-
 const element = React.createElement;
 
-function TalismanSelection(props) {
+import * as check from "../../../../check";
+import {getImgPath} from "../../../../images";
+
+import {EquipArmourInfoBox} from "./EquipArmourInfoBox";
+import {EquipDefensesBoxEmpty} from "./EquipDefensesBoxEmpty";
+import {EquipDecosWrapBox} from "./EquipDecosWrapBox";
+import {EquipIcon} from "./EquipIcon";
+
+export function SelectTalisman(props) {
     check.isObj(props.talismanRORenderingProps);
     check.isArr(props.talismanRORenderingProps.skills); // Spot check for structure
     check.isArr(props.talismanRORenderingProps.decosArray); // Spot check for structure
@@ -68,6 +65,4 @@ function TalismanSelection(props) {
         ),
     );
 }
-
-export {TalismanSelection};
 

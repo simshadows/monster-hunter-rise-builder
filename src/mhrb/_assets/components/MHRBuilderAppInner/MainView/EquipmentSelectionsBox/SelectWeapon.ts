@@ -5,35 +5,34 @@
  */
 
 import React from "react";
+const element = React.createElement;
 
-import * as check from "../../../check";
+import * as check from "../../../../check";
 import {
     eleStatStrToImgPath,
     eleStatStrToImgId,
-} from "../../../images";
+} from "../../../../images";
 import {
     isEleStatStr,
     isArmourSlotStr,
     isDecoEquippableSlotStr,
     iterateEleStatMapInLogicalOrder,
-} from "../../../common";
+} from "../../../../common";
 
-import {
-    EquipIcon,
-    EquipDecosWrapBox,
-} from "./common";
 import {
     doTtlDecr,
     callTtlDecr,
     setTtl,
-} from "../../../utils";
+} from "../../../../utils";
 
-import {GenericTable} from "../../../components/generic/GenericTable";
-import {clipsafeSpan} from "../../../components/common/clipsafeSpan";
-import {SimpleImg} from "../../../components/images/SimpleImg";
+import {GenericTable} from "../../../generic/GenericTable";
+import {clipsafeSpan} from "../../../common/clipsafeSpan";
+import {SimpleImg} from "../../../images/SimpleImg";
+
+import {EquipDecosWrapBox} from "./EquipDecosWrapBox";
+import {EquipIcon} from "./EquipIcon";
 
 const assert = console.assert;
-const element = React.createElement;
 
 class RampageSkillSelectionTable extends React.Component<any, any> {
 
@@ -585,7 +584,7 @@ class EquipWeaponInfoBox extends React.Component<any, any> {
     }
 }
 
-class WeaponSelection extends React.Component<any, any> {
+export class SelectWeapon extends React.Component<any, any> {
     constructor(props) {
         super(props);
         this.myRefs = {
@@ -655,6 +654,4 @@ class WeaponSelection extends React.Component<any, any> {
         );
     }
 }
-
-export {WeaponSelection};
 

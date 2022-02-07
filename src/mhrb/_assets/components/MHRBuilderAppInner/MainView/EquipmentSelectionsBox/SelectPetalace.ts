@@ -4,18 +4,15 @@
  */
 
 import React from "react";
-
-import * as check from "../../../check";
-import {getImgPath} from "../../../images";
-
-import {
-    EquipIcon,
-    EquipInfoBox,
-} from "./common";
-
 const element = React.createElement;
 
-function PetalaceSelection(props) {
+import * as check from "../../../../check";
+import {getImgPath} from "../../../../images";
+
+import {EquipInfoBox} from "./EquipInfoBox";
+import {EquipIcon} from "./EquipIcon";
+
+export function SelectPetalace(props) {
     check.isObj(props.petalaceRORenderingProps);
     if (props.petalaceRORenderingProps.originalPetalaceObj != null) { // Allowed to be null
         check.isStr(props.petalaceRORenderingProps.originalPetalaceObj.name); // Spot check for structure
@@ -100,6 +97,4 @@ function PetalaceSelection(props) {
         ),
     );
 }
-
-export {PetalaceSelection};
 

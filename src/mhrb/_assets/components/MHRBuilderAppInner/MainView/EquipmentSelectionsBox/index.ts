@@ -5,34 +5,22 @@
  */
 
 import React from "react";
-
-import * as check from "../../../check";
-import {getImgPath} from "../../../images";
-import {
-    isEleStatStr,
-    isArmourSlotStr,
-    isDecoEquippableSlotStr,
-    clipsafeSpan,
-} from "../../../common";
-
-import {
-    EquipIcon,
-    EquipInfoBox,
-    EquipDecosWrapBox,
-    EquipArmourInfoBox,
-    EquipDefensesBoxEmpty,
-    EquipDefensesBox,
-} from "./common";
-import {BuffsSelection} from "./buffs";
-import {WeaponSelection} from "./weapon";
-import {ArmourSelection} from "./armour";
-import {TalismanSelection} from "./talisman";
-import {PetalaceSelection} from "./petalace";
-
-const assert = console.assert;
 const element = React.createElement;
 
-class EquipmentSelectionsBox extends React.Component<any, any> {
+import * as check from "../../../../check";
+import {
+    isDecoEquippableSlotStr,
+} from "../../../../common";
+
+import {SelectBuffs   } from "./SelectBuffs";
+import {SelectWeapon  } from "./SelectWeapon";
+import {SelectArmour  } from "./SelectArmour";
+import {SelectTalisman} from "./SelectTalisman";
+import {SelectPetalace} from "./SelectPetalace";
+
+const assert = console.assert;
+
+export class EquipmentSelectionsBox extends React.Component<any, any> {
     constructor(props) {
         super(props);
 
@@ -107,7 +95,7 @@ class EquipmentSelectionsBox extends React.Component<any, any> {
             id: "equipment-selections-box",
             className: "sub-box",
             },
-            element(BuffsSelection,
+            element(SelectBuffs,
                 {
                 calcStateSpecification: this.props.calcStateSpecification,
                 calcStateCurrValues:    this.props.calcStateCurrValues,
@@ -117,7 +105,7 @@ class EquipmentSelectionsBox extends React.Component<any, any> {
                 null,
                 null,
             ),
-            element(WeaponSelection,
+            element(SelectWeapon,
                 {
                 ref: this.myRefs.weaponSelection,
 
@@ -131,7 +119,7 @@ class EquipmentSelectionsBox extends React.Component<any, any> {
                 },
                 null,
             ),
-            element(ArmourSelection,
+            element(SelectArmour,
                 {
                 slotID: "head",
                 armourPieceRORenderingProps:this.props.buildRenderingProps.armourRO.head,
@@ -143,7 +131,7 @@ class EquipmentSelectionsBox extends React.Component<any, any> {
                 },
                 null,
             ),
-            element(ArmourSelection,
+            element(SelectArmour,
                 {
                 slotID: "chest",
                 armourPieceRORenderingProps:this.props.buildRenderingProps.armourRO.chest,
@@ -155,7 +143,7 @@ class EquipmentSelectionsBox extends React.Component<any, any> {
                 },
                 null,
             ),
-            element(ArmourSelection,
+            element(SelectArmour,
                 {
                 slotID: "arms",
                 armourPieceRORenderingProps:this.props.buildRenderingProps.armourRO.arms,
@@ -167,7 +155,7 @@ class EquipmentSelectionsBox extends React.Component<any, any> {
                 },
                 null,
             ),
-            element(ArmourSelection,
+            element(SelectArmour,
                 {
                 slotID: "waist",
                 armourPieceRORenderingProps:this.props.buildRenderingProps.armourRO.waist,
@@ -179,7 +167,7 @@ class EquipmentSelectionsBox extends React.Component<any, any> {
                 },
                 null,
             ),
-            element(ArmourSelection,
+            element(SelectArmour,
                 {
                 slotID: "legs",
                 armourPieceRORenderingProps:this.props.buildRenderingProps.armourRO.legs,
@@ -191,7 +179,7 @@ class EquipmentSelectionsBox extends React.Component<any, any> {
                 },
                 null,
             ),
-            element(TalismanSelection,
+            element(SelectTalisman,
                 {
                 talismanRORenderingProps:this.props.buildRenderingProps.talismanRO,
 
@@ -202,7 +190,7 @@ class EquipmentSelectionsBox extends React.Component<any, any> {
                 },
                 null,
             ),
-            element(PetalaceSelection,
+            element(SelectPetalace,
                 {
                 petalaceRORenderingProps: this.props.buildRenderingProps.petalaceRO,
                 handleClickPetalaceSelect: () => {this.handleClickPetalaceSelect();},
@@ -213,6 +201,4 @@ class EquipmentSelectionsBox extends React.Component<any, any> {
         );
     }
 }
-
-export {EquipmentSelectionsBox};
 
