@@ -79,7 +79,8 @@ const config = (configArgs) => ({
         rules: [
             {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
-                type: "asset/resource",
+                type: "asset/inline", // Use this if you want inlined image files (best performance!)
+                //type: "asset/resource", // Use this if you want separate image files (could be useful for debugging!)
             },
             {
                 test: /\.css$/i,
