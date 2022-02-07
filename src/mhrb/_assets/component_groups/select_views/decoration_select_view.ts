@@ -5,6 +5,7 @@
  */
 
 import React from "react";
+const element = React.createElement;
 
 import * as check from "../../check";
 import {
@@ -12,16 +13,10 @@ import {
     br,
     toNameFilterString,
 } from "../../common";
-import {
-    NameFilterTextField,
-    //TypeFilterButton,
-    SelectionTable,
-    //SelectionControlClearButton,
-    //SelectionControlButtonsBox,
-} from "./common";
 
+import {NameFilterTextField} from "../../components/MHRBuilderAppInner/select_views/internals/NameFilterTextField";
+import {SelectionTable} from "../../components/MHRBuilderAppInner/select_views/internals/SelectionTable";
 
-const element = React.createElement;
 const assert = console.assert;
 
 class DecorationSelectionTable extends React.Component<any, any> {

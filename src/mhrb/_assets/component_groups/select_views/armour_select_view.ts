@@ -5,6 +5,7 @@
  */
 
 import React from "react";
+const element = React.createElement;
 
 import * as check from "../../check";
 import {getImgPath} from "../../images";
@@ -15,15 +16,11 @@ import {
     br,
     toNameFilterString,
 } from "../../common";
-import {
-    NameFilterTextField,
-    TypeFilterButton,
-    SelectionTable,
-    //SelectionControlClearButton,
-    //SelectionControlButtonsBox,
-} from "./common";
 
-const element = React.createElement;
+import {NameFilterTextField} from "../../components/MHRBuilderAppInner/select_views/internals/NameFilterTextField";
+import {TypeFilterButton} from "../../components/MHRBuilderAppInner/select_views/internals/TypeFilterButton";
+import {SelectionTable} from "../../components/MHRBuilderAppInner/select_views/internals/SelectionTable";
+
 const assert = console.assert;
 
 function headRowIconElement(iconImgID) {

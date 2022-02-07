@@ -8,12 +8,10 @@ import React from "react";
 
 import * as check from "../../check";
 import {
-    NameFilterTextField,
-    SelectionTable,
-} from "./common";
-import {
     toNameFilterString,
 } from "../../common";
+
+import {SelectionTable} from "../../components/MHRBuilderAppInner/select_views/internals/SelectionTable";
 
 const element = React.createElement;
 const assert = console.assert;

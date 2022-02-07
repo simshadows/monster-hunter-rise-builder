@@ -5,6 +5,7 @@
  */
 
 import React from "react";
+const element = React.createElement;
 
 import * as check from "../../check";
 import {
@@ -17,13 +18,11 @@ import {
     toNameFilterString,
     iterateEleStatMapInLogicalOrder,
 } from "../../common";
-import {
-    NameFilterTextField,
-    TypeFilterButton,
-    SelectionTable,
-} from "./common";
 
-const element = React.createElement;
+import {NameFilterTextField} from "../../components/MHRBuilderAppInner/select_views/internals/NameFilterTextField";
+import {TypeFilterButton} from "../../components/MHRBuilderAppInner/select_views/internals/TypeFilterButton";
+import {SelectionTable} from "../../components/MHRBuilderAppInner/select_views/internals/SelectionTable";
+
 const assert = console.assert;
 
 class WeaponSelectionTable extends React.Component<any, any> {
