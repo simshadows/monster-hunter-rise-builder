@@ -27,10 +27,8 @@ import {
     callTtlDecr,
     setTtl,
 } from "../../../utils";
-import {
-    GenericTable,
-} from "../../generic_components";
 
+import {GenericTable} from "../../../components/generic/GenericTable";
 import {clipsafeSpan} from "../../../components/common/clipsafeSpan";
 import {SimpleImg} from "../../../components/images/SimpleImg";
 

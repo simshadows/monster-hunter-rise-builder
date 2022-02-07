@@ -23,12 +23,10 @@ import {
     iterateEleStatMapInLogicalOrder,
 } from "../../common";
 import {
-    GenericTable,
-} from "../generic_components";
-import {
     eleStatStrToImgId,
 } from "../../images";
 
+import {GenericTable} from "../../components/generic/GenericTable";
 import {SimpleImg} from "../../components/images/SimpleImg";
 import {SharpnessBar} from "../../components/common/SharpnessBar";
 

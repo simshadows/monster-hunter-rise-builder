@@ -4,13 +4,12 @@
  */
 
 import React from "react";
+const element = React.createElement;
 
 import * as check from "../../check";
-import {
-    DropdownSelect,
-} from "../generic_components";
 
-const element = React.createElement;
+import {DropdownSelect} from "../../components/generic/DropdownSelect";
+
 const assert = console.assert;
 
 class BuffBox extends React.Component<any, any> {

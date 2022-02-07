@@ -4,14 +4,13 @@
  */
 
 import React from "react";
+const element = React.createElement;
 
 import * as check from "../../check";
-import {
-    DropdownSelect,
-    DropdownSelectWithNull,
-} from "../generic_components";
 
-const element = React.createElement;
+import {DropdownSelect} from "../../components/generic/DropdownSelect";
+import {DropdownSelectWithNull} from "../../components/generic/DropdownSelectWithNull";
+
 const assert = console.assert;
 
 class TalismanSelectView extends React.Component<any, any> {

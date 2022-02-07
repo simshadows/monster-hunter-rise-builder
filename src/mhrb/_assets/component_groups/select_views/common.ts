@@ -4,12 +4,12 @@
  */
 
 import React from "react";
+const element = React.createElement;
 
 import * as check from "../../check";
 
-import {GenericTable} from "../generic_components";
+import {GenericTable} from "../../components/generic/GenericTable";
 
-const element = React.createElement;
 const assert = console.assert;
 
 /*** Common Components: Name Filter Text Field ***/
