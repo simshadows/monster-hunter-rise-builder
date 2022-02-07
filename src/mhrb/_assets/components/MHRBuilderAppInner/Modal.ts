@@ -5,16 +5,16 @@
  */
 
 import React from "react";
+const element = React.createElement;
 
-import * as check from "../check";
+import * as check from "../../check";
 import {
     doTtlDecr,
     setTtl,
-} from "../utils";
+} from "../../utils";
 
-import {FontAwesomeSprite} from "../components/images/FontAwesomeSprite";
+import {FontAwesomeSprite} from "../images/FontAwesomeSprite";
 
-const element = React.createElement;
 const assert = console.assert;
 
 class Modal extends React.Component<any, any> {

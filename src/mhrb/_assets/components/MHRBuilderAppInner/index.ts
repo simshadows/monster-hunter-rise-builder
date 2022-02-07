@@ -24,7 +24,7 @@ import {Build} from "../../model/build";
 import {CalcState} from "../../model/calc_state";
 import {calculateBuildPerformance} from "../../model/calculate/index";
 
-import {Modal} from "../../component_groups/modal";
+import {Modal} from "./Modal";
 
 import {MainView} from "../../component_groups/main_view/index";
 
