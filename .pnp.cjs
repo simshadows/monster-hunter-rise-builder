@@ -51,6 +51,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["file-saver", "npm:2.0.5"],
             ["fork-ts-checker-webpack-plugin", "virtual:95d0bb8d0ac84df80c4126a85bd700976121ab78540f622a3a95337ac01fa2c2a1963946e532d8ec9b29dc0b25d9d9d2fe41d5b870a096f6816108f999afa955#npm:7.0.0"],
             ["html-webpack-plugin", "virtual:95d0bb8d0ac84df80c4126a85bd700976121ab78540f622a3a95337ac01fa2c2a1963946e532d8ec9b29dc0b25d9d9d2fe41d5b870a096f6816108f999afa955#npm:5.5.0"],
+            ["html2canvas", "npm:1.4.1"],
             ["jest", "virtual:95d0bb8d0ac84df80c4126a85bd700976121ab78540f622a3a95337ac01fa2c2a1963946e532d8ec9b29dc0b25d9d9d2fe41d5b870a096f6816108f999afa955#npm:27.5.0"],
             ["mini-css-extract-plugin", "virtual:95d0bb8d0ac84df80c4126a85bd700976121ab78540f622a3a95337ac01fa2c2a1963946e532d8ec9b29dc0b25d9d9d2fe41d5b870a096f6816108f999afa955#npm:2.5.3"],
             ["react", "npm:17.0.2"],
@@ -4286,6 +4287,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["base64-arraybuffer", [
+        ["npm:1.0.2", {
+          "packageLocation": "./.yarn/cache/base64-arraybuffer-npm-1.0.2-18f4899892-15e6400d2d.zip/node_modules/base64-arraybuffer/",
+          "packageDependencies": [
+            ["base64-arraybuffer", "npm:1.0.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["batch", [
         ["npm:0.6.1", {
           "packageLocation": "./.yarn/cache/batch-npm-0.6.1-70e2e81169-61f9934c73.zip/node_modules/batch/",
@@ -4990,6 +5000,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packagePeers": [
             "@types/postcss",
             "postcss"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["css-line-break", [
+        ["npm:2.1.0", {
+          "packageLocation": "./.yarn/cache/css-line-break-npm-2.1.0-a1fd810d69-37b1fe632b.zip/node_modules/css-line-break/",
+          "packageDependencies": [
+            ["css-line-break", "npm:2.1.0"],
+            ["utrie", "npm:1.0.2"]
           ],
           "linkType": "HARD",
         }]
@@ -6527,6 +6547,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packagePeers": [
             "@types/webpack",
             "webpack"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["html2canvas", [
+        ["npm:1.4.1", {
+          "packageLocation": "./.yarn/cache/html2canvas-npm-1.4.1-fa13983145-c134324af5.zip/node_modules/html2canvas/",
+          "packageDependencies": [
+            ["html2canvas", "npm:1.4.1"],
+            ["css-line-break", "npm:2.1.0"],
+            ["text-segmentation", "npm:1.0.3"]
           ],
           "linkType": "HARD",
         }]
@@ -8292,6 +8323,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["file-saver", "npm:2.0.5"],
             ["fork-ts-checker-webpack-plugin", "virtual:95d0bb8d0ac84df80c4126a85bd700976121ab78540f622a3a95337ac01fa2c2a1963946e532d8ec9b29dc0b25d9d9d2fe41d5b870a096f6816108f999afa955#npm:7.0.0"],
             ["html-webpack-plugin", "virtual:95d0bb8d0ac84df80c4126a85bd700976121ab78540f622a3a95337ac01fa2c2a1963946e532d8ec9b29dc0b25d9d9d2fe41d5b870a096f6816108f999afa955#npm:5.5.0"],
+            ["html2canvas", "npm:1.4.1"],
             ["jest", "virtual:95d0bb8d0ac84df80c4126a85bd700976121ab78540f622a3a95337ac01fa2c2a1963946e532d8ec9b29dc0b25d9d9d2fe41d5b870a096f6816108f999afa955#npm:27.5.0"],
             ["mini-css-extract-plugin", "virtual:95d0bb8d0ac84df80c4126a85bd700976121ab78540f622a3a95337ac01fa2c2a1963946e532d8ec9b29dc0b25d9d9d2fe41d5b870a096f6816108f999afa955#npm:2.5.3"],
             ["react", "npm:17.0.2"],
@@ -10845,6 +10877,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["text-segmentation", [
+        ["npm:1.0.3", {
+          "packageLocation": "./.yarn/cache/text-segmentation-npm-1.0.3-634201c349-2e24632d59.zip/node_modules/text-segmentation/",
+          "packageDependencies": [
+            ["text-segmentation", "npm:1.0.3"],
+            ["utrie", "npm:1.0.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["throat", [
         ["npm:6.0.1", {
           "packageLocation": "./.yarn/cache/throat-npm-6.0.1-1308a37a10-782d4171ee.zip/node_modules/throat/",
@@ -11160,6 +11202,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/utils-merge-npm-1.0.1-363bbdfbca-c810954932.zip/node_modules/utils-merge/",
           "packageDependencies": [
             ["utils-merge", "npm:1.0.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["utrie", [
+        ["npm:1.0.2", {
+          "packageLocation": "./.yarn/cache/utrie-npm-1.0.2-909cbd985c-c96fbb7d4d.zip/node_modules/utrie/",
+          "packageDependencies": [
+            ["utrie", "npm:1.0.2"],
+            ["base64-arraybuffer", "npm:1.0.2"]
           ],
           "linkType": "HARD",
         }]
