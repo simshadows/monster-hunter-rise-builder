@@ -175,7 +175,7 @@ class RampageSkillSelection extends React.Component<any, any> {
                 {
                     dataArray: this.props.rampageSkillOptions,
                     currentSelectedRampSkillRO: this.props.selectedRampSkillRO,
-                    handleRowClick: (...args) => {this.handleSelectRampSkill(...args);},
+                    handleRowClick: (rampSkillTuple) => {this.handleSelectRampSkill(rampSkillTuple);},
                 },
                 null,
             ),
@@ -320,7 +320,7 @@ class SpecialSelection extends React.Component<any, any> {
                 {
                     dataArray: this.props.specialSelectionOptions,
                     currentSelectedRampSkillRO: this.props.specialSelectionRO,
-                    handleRowClick: (...args) => {this.handleSelectSpecialSelection(...args)},
+                    handleRowClick: (specialSelectionRO) => {this.handleSelectSpecialSelection(specialSelectionRO)},
                 },
                 null,
             ),
@@ -484,7 +484,7 @@ class EquipWeaponInfoBox extends React.Component<any, any> {
                     ref: ref,
                     selectedRampSkillRO: rampageSkillObj,
                     rampageSkillOptions: weaponRO.rampSkillOptionsArray[i],
-                    handleSelectRampSkill: (...args) => {this.handleSelectRampSkill(i, ...args);},
+                    handleSelectRampSkill: (position, rampSkillID) => {this.handleSelectRampSkill(position, rampSkillID);},
                     },
                     null,
                 );
@@ -511,13 +511,12 @@ class EquipWeaponInfoBox extends React.Component<any, any> {
                         {
                         className: "equip-weapon-special-mech-group-box-inner",
                         },
-                        element(
-                            SpecialSelection,
+                        element(SpecialSelection,
                             {
                                 ref: ref,
                                 specialSelectionRO: weaponRO.specialSelection,
                                 specialSelectionOptions: weaponRO.specialSelectionOptionsArray,
-                                handleSelectSpecialSelection: (...args) => {this.handleSelectSpecialSelection(...args);},
+                                handleSelectSpecialSelection: (__a) => {this.handleSelectSpecialSelection(__a);},
                             },
                             null,
                         ),
@@ -639,8 +638,8 @@ class WeaponSelection extends React.Component<any, any> {
                         ref: this.myRefs.weaponInfoBox,
                         weaponRORenderingProps: this.props.weaponRORenderingProps,
                         buildPerformanceValues: this.props.buildPerformanceValues,
-                        handleSelectRampSkill: (...args) => {this.handleSelectRampSkill(...args);},
-                        handleSelectSpecialSelection: (...args) => {this.handleSelectSpecialSelection(...args);},
+                        handleSelectRampSkill: (position, rampSkillID) => {this.handleSelectRampSkill(position, rampSkillID);},
+                        handleSelectSpecialSelection: (__a) => {this.handleSelectSpecialSelection(__a);},
                     },
                     null,
                 ),

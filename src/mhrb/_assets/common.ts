@@ -344,8 +344,8 @@ export function SharpnessBar(props) {
             {
             className: "sharpness-bar",
             },
-            renderSection(props.baseSharpness, []),
-            renderSection(props.maxSharpness, []),
+            renderSection(props.baseSharpness, [], []),
+            renderSection(props.maxSharpness, [], []),
         );
     }
 }

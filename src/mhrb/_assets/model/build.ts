@@ -151,8 +151,8 @@ class Build {
 
         this._decorationsRO.weapon = this._generateEmptyDecoObj(weaponObj.decoSlots);
     }
-    setWeapon(...args) {
-        this._setWeaponNoCheck(...args);
+    setWeapon(db, weaponObj) {
+        this._setWeaponNoCheck(db, weaponObj);
         this._validateState();
         return this;
     }

@@ -3,7 +3,7 @@
         "allowJs": true,
         "jsx": "react",
         "module": "es6",
-        "target": "es5",
+        "target": "es2015",
         "esModuleInterop": true,
         "noImplicitAny": false,
         "moduleResolution": "node",

@@ -238,8 +238,8 @@ class EquipDecosWrapBox extends React.Component<any, any> {
                     decoSlotID: decoSlotID,
                     slotSize: decoPropsRO.slotSize,
                     decoPropsRO: decoPropsRO,
-                    handleClickSelect: (..._args) => {this.handleClickSelect(..._args);},
-                    handleClickRemove: (..._args) => {this.handleClickRemove(..._args);},
+                    handleClickSelect: (__a, __b) => {this.handleClickSelect(__a, __b);},
+                    handleClickRemove: (decoSlotID) => {this.handleClickRemove(decoSlotID);},
                     },
                     null,
                 )

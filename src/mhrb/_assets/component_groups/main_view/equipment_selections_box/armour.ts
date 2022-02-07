@@ -116,8 +116,8 @@ class ArmourSelection extends React.Component<any, any> {
             element(EquipDecosWrapBox,
                 {
                     decosArray: (armourPieceRO !== null) ? armourPieceRO.decosArray : [],
-                    handleClickSelect: (...args) => {this.handleClickDecorationSelect(...args);},
-                    handleClickRemove: (...args) => {this.handleClickDecorationRemove(...args);},
+                    handleClickSelect: (__a, __b) => {this.handleClickDecorationSelect(__a, __b);},
+                    handleClickRemove: (decoSlotID) => {this.handleClickDecorationRemove(decoSlotID);},
                 },
                 null,
             ),

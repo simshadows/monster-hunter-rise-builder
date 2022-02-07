@@ -51,7 +51,7 @@ class CalculationSharpnessBarBox extends React.Component<any, any> {
         );
     }
 
-    render(props) {
+    render() {
         assert(isArr(this.props.realSharpness));
         assert(isArr(this.props.maxSharpness));
         assert(this.props.hitsMultiplier >= 1);
@@ -104,8 +104,7 @@ class CalculationSharpnessBarBox extends React.Component<any, any> {
 
 class CalculationAmmoStatsBox extends React.Component<any, any> {
 
-    render(props) {
-
+    render() {
         assert(isObj(this.props.ammoData));
 
         const dataArray = [];
