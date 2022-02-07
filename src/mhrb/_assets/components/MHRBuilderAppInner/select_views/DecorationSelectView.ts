@@ -7,15 +7,14 @@
 import React from "react";
 const element = React.createElement;
 
-import * as check from "../../check";
+import * as check from "../../../check";
 import {
     isDecoEquippableSlotStr,
-    br,
     toNameFilterString,
-} from "../../common";
+} from "../../../common";
 
-import {NameFilterTextField} from "../../components/MHRBuilderAppInner/select_views/internals/NameFilterTextField";
-import {SelectionTable} from "../../components/MHRBuilderAppInner/select_views/internals/SelectionTable";
+import {NameFilterTextField} from "./internals/NameFilterTextField";
+import {SelectionTable} from "./internals/SelectionTable";
 
 const assert = console.assert;
 
@@ -77,7 +76,7 @@ class DecorationSelectionTable extends React.Component<any, any> {
 
 }
 
-class DecorationSelectView extends React.Component<any, any> {
+export class DecorationSelectView extends React.Component<any, any> {
 
     constructor(props) {
         super(props);
@@ -162,6 +161,4 @@ class DecorationSelectView extends React.Component<any, any> {
         );
     }
 }
-
-export {DecorationSelectView};
 

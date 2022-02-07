@@ -7,21 +7,21 @@
 import React from "react";
 const element = React.createElement;
 
-import * as check from "../../check";
+import * as check from "../../../check";
 import {
     getImgPath,
     eleStatStrToImgPath,
-} from "../../images";
+} from "../../../images";
 import {
     isWeaponCategoryStr,
     weaponCategoryToName,
     toNameFilterString,
     iterateEleStatMapInLogicalOrder,
-} from "../../common";
+} from "../../../common";
 
-import {NameFilterTextField} from "../../components/MHRBuilderAppInner/select_views/internals/NameFilterTextField";
-import {TypeFilterButton} from "../../components/MHRBuilderAppInner/select_views/internals/TypeFilterButton";
-import {SelectionTable} from "../../components/MHRBuilderAppInner/select_views/internals/SelectionTable";
+import {NameFilterTextField} from "./internals/NameFilterTextField";
+import {TypeFilterButton} from "./internals/TypeFilterButton";
+import {SelectionTable} from "./internals/SelectionTable";
 
 const assert = console.assert;
 
@@ -149,7 +149,7 @@ class WeaponSelectionTable extends React.Component<any, any> {
 
 }
 
-class WeaponSelectView extends React.Component {
+export class WeaponSelectView extends React.Component {
 
     static _weaponCategoryToIconMap = new Map([
             ["greatsword"    , getImgPath("weapon_greatsword_r1"    )],
@@ -308,6 +308,4 @@ class WeaponSelectView extends React.Component {
         );
     }
 }
-
-export {WeaponSelectView};
 

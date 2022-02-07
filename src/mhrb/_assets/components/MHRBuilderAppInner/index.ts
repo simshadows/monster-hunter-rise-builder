@@ -28,12 +28,12 @@ import {Modal} from "./Modal";
 
 import {MainView} from "../../component_groups/main_view/index";
 
-import {WeaponSelectView} from "../../component_groups/select_views/weapon_select_view";
-import {ArmourSelectView} from "../../component_groups/select_views/armour_select_view";
-import {TalismanSelectView} from "../../component_groups/select_views/talisman_select_view";
-import {BuffsSelectView} from "../../component_groups/select_views/buffs_select_view";
-import {PetalaceSelectView} from "../../component_groups/select_views/petalace_select_view";
-import {DecorationSelectView} from "../../component_groups/select_views/decoration_select_view";
+import {ArmourSelectView} from "./select_views/ArmourSelectView";
+import {BuffsSelectView} from "./select_views/BuffsSelectView";
+import {DecorationSelectView} from "./select_views/DecorationSelectView";
+import {PetalaceSelectView} from "./select_views/PetalaceSelectView";
+import {TalismanSelectView} from "./select_views/TalismanSelectView";
+import {WeaponSelectView} from "./select_views/WeaponSelectView";
 
 const assert = console.assert;
 

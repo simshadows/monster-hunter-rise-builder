@@ -6,14 +6,14 @@
 import React from "react";
 const element = React.createElement;
 
-import * as check from "../../check";
+import * as check from "../../../check";
 
-import {DropdownSelect} from "../../components/generic/DropdownSelect";
-import {DropdownSelectWithNull} from "../../components/generic/DropdownSelectWithNull";
+import {DropdownSelect} from "../../../components/generic/DropdownSelect";
+import {DropdownSelectWithNull} from "../../../components/generic/DropdownSelectWithNull";
 
 const assert = console.assert;
 
-class TalismanSelectView extends React.Component<any, any> {
+export class TalismanSelectView extends React.Component<any, any> {
 
     handleSelectSkill(skillIndex, skillID, skillLevel) {
         const skillRO = (skillID === null) ? null : this.props.allSkillsMapLongIds.get(skillID);
@@ -139,6 +139,4 @@ class TalismanSelectView extends React.Component<any, any> {
         );
     }
 }
-
-export {TalismanSelectView};
 

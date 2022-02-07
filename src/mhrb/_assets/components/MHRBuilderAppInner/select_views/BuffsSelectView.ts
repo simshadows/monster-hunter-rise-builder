@@ -6,9 +6,9 @@
 import React from "react";
 const element = React.createElement;
 
-import * as check from "../../check";
+import * as check from "../../../check";
 
-import {DropdownSelect} from "../../components/generic/DropdownSelect";
+import {DropdownSelect} from "../../generic/DropdownSelect";
 
 const assert = console.assert;
 
@@ -142,7 +142,7 @@ class BuffsSelectGroup extends React.Component<any, any> {
     }
 }
 
-class BuffsSelectView extends React.Component<any, any> {
+export class BuffsSelectView extends React.Component<any, any> {
 
     handleChangeCalcState(groupName, stateName, newValue) {
         this.props.handleChangeCalcState(groupName, stateName, newValue);
@@ -178,6 +178,4 @@ class BuffsSelectView extends React.Component<any, any> {
         );
     }
 }
-
-export {BuffsSelectView};
 

@@ -6,12 +6,12 @@
 
 import React from "react";
 
-import * as check from "../../check";
+import * as check from "../../../check";
 import {
     toNameFilterString,
-} from "../../common";
+} from "../../../common";
 
-import {SelectionTable} from "../../components/MHRBuilderAppInner/select_views/internals/SelectionTable";
+import {SelectionTable} from "./internals/SelectionTable";
 
 const element = React.createElement;
 const assert = console.assert;
@@ -107,7 +107,7 @@ class PetalaceSelectionTable extends React.Component<any, any> {
 
 }
 
-class PetalaceSelectView extends React.Component<any, any> {
+export class PetalaceSelectView extends React.Component<any, any> {
 
     constructor(props) {
         super(props);
@@ -166,6 +166,4 @@ class PetalaceSelectView extends React.Component<any, any> {
         );
     }
 }
-
-export {PetalaceSelectView};
 

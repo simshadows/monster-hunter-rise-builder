@@ -7,19 +7,18 @@
 import React from "react";
 const element = React.createElement;
 
-import * as check from "../../check";
-import {getImgPath} from "../../images";
+import * as check from "../../../check";
+import {getImgPath} from "../../../images";
 import {
     isArmourSlotStr,
     tierIDToAbbrev,
     equipmentSlotToName,
-    br,
     toNameFilterString,
-} from "../../common";
+} from "../../../common";
 
-import {NameFilterTextField} from "../../components/MHRBuilderAppInner/select_views/internals/NameFilterTextField";
-import {TypeFilterButton} from "../../components/MHRBuilderAppInner/select_views/internals/TypeFilterButton";
-import {SelectionTable} from "../../components/MHRBuilderAppInner/select_views/internals/SelectionTable";
+import {NameFilterTextField} from "./internals/NameFilterTextField";
+import {TypeFilterButton} from "./internals/TypeFilterButton";
+import {SelectionTable} from "./internals/SelectionTable";
 
 const assert = console.assert;
 
@@ -136,7 +135,7 @@ class ArmourSelectionTable extends React.Component<any, any> {
 
 }
 
-class ArmourSelectView extends React.Component<any, any> {
+export class ArmourSelectView extends React.Component<any, any> {
 
     static _armourSlotIDToIconMap = new Map([
             ["head" , getImgPath("head_r1") ],
@@ -298,6 +297,4 @@ class ArmourSelectView extends React.Component<any, any> {
         );
     }
 }
-
-export {ArmourSelectView};
 
