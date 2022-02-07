@@ -5,6 +5,7 @@
  */
 
 import React from "react";
+import {saveAs} from "file-saver";
 const element = React.createElement;
 
 import * as check from "../../../check";
@@ -62,7 +63,7 @@ class UtilityBar extends React.Component<any, any> {
             };
         html2canvas(document.getElementById("main-view"), options).then(function(canvas) {
             canvas.toBlob(function(blob) {
-                window.saveAs(blob, "build_card.png");
+                saveAs(blob, "build_card.png");
             });
         });
     }
