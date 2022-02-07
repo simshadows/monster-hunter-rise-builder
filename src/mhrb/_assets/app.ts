@@ -15,7 +15,6 @@ import {GameData} from "./database/database";
 import {
     isArmourSlotStr,
     isDecoEquippableSlotStr,
-    br,
 } from "./common";
 import {
     callTtlDecr,
@@ -34,6 +33,7 @@ import {TalismanSelectView} from "./component_groups/select_views/talisman_selec
 import {BuffsSelectView} from "./component_groups/select_views/buffs_select_view";
 import {PetalaceSelectView} from "./component_groups/select_views/petalace_select_view";
 import {DecorationSelectView} from "./component_groups/select_views/decoration_select_view";
+
 
 const element = React.createElement;
 const assert = console.assert;

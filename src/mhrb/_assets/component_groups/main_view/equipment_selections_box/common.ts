@@ -11,9 +11,8 @@ import {
     getSimpleImgElement,
     FontAwesomeSprite,
 } from "../../../images";
-import {
-    clipsafeSpan,
-} from "../../../common";
+
+import {clipsafeSpan} from "../../../components/common/clipsafeSpan";
 
 const assert = console.assert;
 const element = React.createElement;

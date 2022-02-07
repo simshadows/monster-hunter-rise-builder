@@ -16,7 +16,6 @@ import {
     isEleStatStr,
     isArmourSlotStr,
     isDecoEquippableSlotStr,
-    clipsafeSpan,
     iterateEleStatMapInLogicalOrder,
 } from "../../../common";
 
@@ -32,6 +31,8 @@ import {
 import {
     GenericTable,
 } from "../../generic_components";
+
+import {clipsafeSpan} from "../../../components/common/clipsafeSpan";
 
 const assert = console.assert;
 const element = React.createElement;

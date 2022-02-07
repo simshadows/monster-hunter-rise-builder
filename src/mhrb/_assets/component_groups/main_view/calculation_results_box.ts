@@ -13,7 +13,6 @@ import {
     isNumber,
 } from "../../check";
 import {
-    SharpnessBar,
     isEleStatStr,
     eleStatIdToName,
     bowgunDeviationSpecToName,
@@ -30,6 +29,8 @@ import {
     getSimpleImgElement,
     eleStatStrToImgId,
 } from "../../images";
+
+import {SharpnessBar} from "../../components/common/SharpnessBar";
 
 const element = React.createElement;
 const assert = console.assert;

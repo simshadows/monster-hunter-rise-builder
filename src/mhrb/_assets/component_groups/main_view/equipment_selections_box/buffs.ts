@@ -7,9 +7,8 @@ import React from "react";
 
 import * as check from "../../../check";
 import {getImgPath} from "../../../images";
-import {
-    clipsafeSpan,
-} from "../../../common";
+
+import {clipsafeSpan} from "../../../components/common/clipsafeSpan";
 
 const assert = console.assert;
 const element = React.createElement;
