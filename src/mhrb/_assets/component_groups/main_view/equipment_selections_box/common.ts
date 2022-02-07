@@ -8,11 +8,11 @@ import React from "react";
 import * as check from "../../../check";
 import {
     getImgPath,
-    getSimpleImgElement,
-    FontAwesomeSprite,
 } from "../../../images";
 
 import {clipsafeSpan} from "../../../components/common/clipsafeSpan";
+import {SimpleImg} from "../../../components/images/SimpleImg";
+import {FontAwesomeSprite} from "../../../components/images/FontAwesomeSprite";
 
 const assert = console.assert;
 const element = React.createElement;
@@ -185,7 +185,7 @@ class EquipDecoBox extends React.Component<any, any> {
                 {
                 className: "equip-deco-icon-box",
                 },
-                getSimpleImgElement(iconImgID),
+                element(SimpleImg, {src: iconImgID}, null),
             ),
             element("div",
                 {

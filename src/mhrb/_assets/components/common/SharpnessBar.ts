@@ -4,10 +4,10 @@
  */
 
 import React from "react";
+const element = React.createElement;
 
 import * as check from "../../check";
 
-const element = React.createElement;
 const assert = console.assert;
 
 const MAX_TOTAL_SHARPNESS = 400;

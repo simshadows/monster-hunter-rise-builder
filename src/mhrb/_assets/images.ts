@@ -4,9 +4,6 @@
  * License: GNU Affero General Public License v3 (AGPL-3.0)
  */
 
-import React from "react";
-
-const element = React.createElement;
 const assert = console.assert;
 
 const imgPathMap = new Map([
@@ -158,37 +155,6 @@ function getImgPath(id) {
     return imgPathMap.get(id);
 }
 
-function getSimpleImgElement(id) {
-    return element("img",
-        {
-        src: getImgPath(id),
-        alt: id, // TODO: Better alt texts?
-        },
-        null,
-    );
-}
-
-function FontAwesomeSprite(props) {
-    let {style, fragment, ...otherProps} = props;
-
-    if (typeof style !== "string") {
-        style = "solid"; // Default
-    }
-    console.assert(style.length > 0);
-
-    console.assert((typeof fragment === "string") && (fragment.length > 0));
-
-    return element("svg",
-        otherProps,
-        element("use",
-            {
-            href: "./images/fontawesome-free-web/sprites/" + style + ".svg#" + fragment,
-            },
-            null,
-        ),
-    );
-}
-
 /*** Usage-specific Functions ***/
 
 const eleStatStrToImgPathMap = {
@@ -231,8 +197,6 @@ function eleStatStrToImgId(obj) {
 
 export {
     getImgPath,
-    getSimpleImgElement,
-    FontAwesomeSprite,
     eleStatStrToImgPath,
     eleStatStrToImgId,
 };

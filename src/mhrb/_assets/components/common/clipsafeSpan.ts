@@ -4,7 +4,6 @@
  */
 
 import React from "react";
-
 const element = React.createElement;
 
 export function clipsafeSpan(...children) {

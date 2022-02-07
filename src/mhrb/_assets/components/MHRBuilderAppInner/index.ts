@@ -4,6 +4,7 @@
  */
 
 import React from "react";
+const element = React.createElement;
 
 import * as check from "../../check";
 import {
@@ -34,10 +35,7 @@ import {BuffsSelectView} from "../../component_groups/select_views/buffs_select_
 import {PetalaceSelectView} from "../../component_groups/select_views/petalace_select_view";
 import {DecorationSelectView} from "../../component_groups/select_views/decoration_select_view";
 
-
-const element = React.createElement;
 const assert = console.assert;
-
 
 export class MHRBuilderAppInner extends React.Component<any, any> {
     myRefs: any;

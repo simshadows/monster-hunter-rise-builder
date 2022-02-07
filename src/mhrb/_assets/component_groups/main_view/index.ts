@@ -7,11 +7,12 @@
 import React from "react";
 
 import * as check from "../../check";
-import {FontAwesomeSprite} from "../../images";
 
 import {SkillsResultsBox} from "./skill_results_box";
 import {EquipmentSelectionsBox} from "./equipment_selections_box/index";
 import {CalculationResultsBox} from "./calculation_results_box";
+
+import {FontAwesomeSprite} from "../../components/images/FontAwesomeSprite";
 
 const element = React.createElement;
 const assert = console.assert;

@@ -26,10 +26,10 @@ import {
     GenericTable,
 } from "../generic_components";
 import {
-    getSimpleImgElement,
     eleStatStrToImgId,
 } from "../../images";
 
+import {SimpleImg} from "../../components/images/SimpleImg";
 import {SharpnessBar} from "../../components/common/SharpnessBar";
 
 const element = React.createElement;
@@ -227,7 +227,7 @@ class CalculationResultsBox extends React.Component<any, any> {
                             {
                             className: "calculation-stat-icon-box",
                             },
-                            getSimpleImgElement(iconImgID),
+                            element(SimpleImg, {src: iconImgID}, null),
                         );
                     }
             })();
@@ -274,7 +274,7 @@ class CalculationResultsBox extends React.Component<any, any> {
                     {
                     className: "calculation-song-icon-box",
                     },
-                    getSimpleImgElement(iconImgID),
+                    element(SimpleImg, {src: iconImgID}, null),
                 ),
                 element("div",
                     {

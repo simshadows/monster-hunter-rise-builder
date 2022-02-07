@@ -8,7 +8,6 @@ import React from "react";
 
 import * as check from "../../../check";
 import {
-    getSimpleImgElement,
     eleStatStrToImgPath,
     eleStatStrToImgId,
 } from "../../../images";
@@ -33,6 +32,7 @@ import {
 } from "../../generic_components";
 
 import {clipsafeSpan} from "../../../components/common/clipsafeSpan";
+import {SimpleImg} from "../../../components/images/SimpleImg";
 
 const assert = console.assert;
 const element = React.createElement;
@@ -418,7 +418,7 @@ class EquipWeaponInfoBox extends React.Component<any, any> {
                 {
                 className: "equip-weapon-stat-icon-wrap-box",
                 },
-                getSimpleImgElement(iconImgID),
+                element(SimpleImg, {src: iconImgID}, null),
             ),
             element("div",
                 {

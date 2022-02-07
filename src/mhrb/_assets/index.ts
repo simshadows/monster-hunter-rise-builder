@@ -8,6 +8,7 @@ import "regenerator-runtime/runtime"; // A hack to get it working. Idk how it wo
 
 import React from "react";
 import ReactDOM from "react-dom";
+const element = React.createElement;
 
 import * as check from "./check";
 import {removeElementByID} from "./utils";
@@ -23,7 +24,6 @@ import "./css/component_groups/main_view/skill_results_box.css";
 import "./css/component_groups/modal.css";
 import "./css/component_groups/select_views.css";
 
-const element = React.createElement;
 const assert = console.assert;
 
 class ErrorMessage extends React.Component {

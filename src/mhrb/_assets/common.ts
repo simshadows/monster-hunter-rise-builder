@@ -3,8 +3,6 @@
  * License: GNU Affero General Public License v3 (AGPL-3.0)
  */
 
-import React from "react";
-
 import * as check from "./check";
 import {getImgPath} from "./images";
 

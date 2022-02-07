@@ -7,11 +7,12 @@
 import React from "react";
 
 import * as check from "../check";
-import {FontAwesomeSprite} from "../images";
 import {
     doTtlDecr,
     setTtl,
 } from "../utils";
+
+import {FontAwesomeSprite} from "../components/images/FontAwesomeSprite";
 
 const element = React.createElement;
 const assert = console.assert;
