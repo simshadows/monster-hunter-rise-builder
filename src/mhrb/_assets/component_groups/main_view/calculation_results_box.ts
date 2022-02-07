@@ -216,7 +216,7 @@ class CalculationResultsBox extends React.Component<any, any> {
         );
     }
 
-    _renderStatInner(iconImgID, label, ...values) {
+    _renderStatInner(iconImgID, label, values) {
         const iconElement = (()=>{
                     if (iconImgID === null) {
                         return null;
@@ -250,12 +250,12 @@ class CalculationResultsBox extends React.Component<any, any> {
         );
     }
 
-    _renderStat(...args) {
+    _renderStat(iconImgID, label, values) {
         return element("div",
             {
             className: "calculation-stat-box",
             },
-            this._renderStatInner(...args),
+            this._renderStatInner(iconImgID, label, values),
         );
     }
 
@@ -324,10 +324,10 @@ class CalculationResultsBox extends React.Component<any, any> {
     _renderCompatibleCoatings(compatibleCoatings) {
         const op = (label, value) => {
             if (value === 0) {
-                return this._renderStatInner(null, this._renderGreyed(label), this._renderGreyed("Incompatible"));
+                return this._renderStatInner(null, this._renderGreyed(label), [this._renderGreyed("Incompatible")]);
             } else {
                 const displayedStr = (value === 1) ? "Compatible" : "Enhanced";
-                return this._renderStatInner(null, label, displayedStr);
+                return this._renderStatInner(null, label, [displayedStr]);
             }
         };
         return element("div",
@@ -358,13 +358,13 @@ class CalculationResultsBox extends React.Component<any, any> {
                     const eleStatName = eleStatIdToName(eleStatType);
 
                     const iconImgID = eleStatStrToImgId(eleStatType);
-                    v.push(this._renderStat(iconImgID, "Effective " + eleStatName, effectiveEleStatValue.toFixed(2)));
+                    v.push(this._renderStat(iconImgID, "Effective " + eleStatName, [effectiveEleStatValue.toFixed(2)]));
                 }
                 return v;
             })();
 
         const affinityRendering = (()=>{
-                let v = null;
+                let v = [];
                 if (perf.affinity > 100) {
                     v = ["100% (" + String(perf.affinity) + "%)"];
                 } else if (perf.affinity < -100) {
@@ -374,7 +374,7 @@ class CalculationResultsBox extends React.Component<any, any> {
                 } else {
                     v = [String(perf.affinity) + "%"];
                 }
-                return this._renderStat("affinity_icon", "Affinity", ...v);
+                return this._renderStat("affinity_icon", "Affinity", v);
             })();
 
         let sharpnessRendering = null;
@@ -389,9 +389,9 @@ class CalculationResultsBox extends React.Component<any, any> {
                     },
                     null
                 ),
-                this._renderStat(null, "Hits Multiplier", perf.hitsMultiplier.toFixed(1) + "x"),
-                this._renderStat(null, "Raw Sharpness Modifier", perf.rawSharpnessModifier.toFixed(4) + "x"),
-                this._renderStat(null, "Elem. Sharpness Modifier", perf.elementalSharpnessModifier.toFixed(4) + "x"),
+                this._renderStat(null, "Hits Multiplier", [perf.hitsMultiplier.toFixed(1) + "x"]),
+                this._renderStat(null, "Raw Sharpness Modifier", [perf.rawSharpnessModifier.toFixed(4) + "x"]),
+                this._renderStat(null, "Elem. Sharpness Modifier", [perf.elementalSharpnessModifier.toFixed(4) + "x"]),
             );
         }
 
@@ -402,7 +402,7 @@ class CalculationResultsBox extends React.Component<any, any> {
             specialMechanicRenderings.push(
                 element(CalculationResultsGroupBox,
                     null,
-                    this._renderStat(null, "Shelling Type", text),
+                    this._renderStat(null, "Shelling Type", [text]),
                 ),
             );
         }
@@ -420,12 +420,12 @@ class CalculationResultsBox extends React.Component<any, any> {
 
         if (perf.switchAxeStats !== null) {
             const statBoxes = [
-                    this._renderStat(null, "Phial Type", String(perf.switchAxeStats.phialType.name)),
+                    this._renderStat(null, "Phial Type", [String(perf.switchAxeStats.phialType.name)]),
                 ];
             
             if (perf.switchAxeStats.phialValue !== null) {
                 statBoxes.push(
-                    this._renderStat(null, "Phial Value", String(perf.switchAxeStats.phialValue)),
+                    this._renderStat(null, "Phial Value", [String(perf.switchAxeStats.phialValue)]),
                 );
             }
 
@@ -441,7 +441,7 @@ class CalculationResultsBox extends React.Component<any, any> {
             specialMechanicRenderings.push(
                 element(CalculationResultsGroupBox,
                     null,
-                    this._renderStat(null, "Phial Type", String(perf.chargeBladeStats.phialType.name)),
+                    this._renderStat(null, "Phial Type", [String(perf.chargeBladeStats.phialType.name)]),
                 ),
             );
         }
@@ -450,7 +450,7 @@ class CalculationResultsBox extends React.Component<any, any> {
             specialMechanicRenderings.push(
                 element(CalculationResultsGroupBox,
                     null,
-                    this._renderStat(null, "Kinsect Level", String(perf.insectGlaiveStats.kinsectLevel)),
+                    this._renderStat(null, "Kinsect Level", [String(perf.insectGlaiveStats.kinsectLevel)]),
                 ),
             );
         }
@@ -459,7 +459,7 @@ class CalculationResultsBox extends React.Component<any, any> {
             specialMechanicRenderings.push(
                 element(CalculationResultsGroupBox,
                     null,
-                    this._renderStat(null, "Arc Shot", String(perf.bowStats.arcShot.name)),
+                    this._renderStat(null, "Arc Shot", [String(perf.bowStats.arcShot.name)]),
                     this._renderChargeShotBox(perf.bowStats.chargeShot, perf.bowStats.chargeLevelLimit),
                     this._renderCompatibleCoatings(perf.bowStats.compatibleCoatings),
                 ),
@@ -476,9 +476,9 @@ class CalculationResultsBox extends React.Component<any, any> {
             specialMechanicRenderings.push(
                 element(CalculationResultsGroupBox,
                     null,
-                    this._renderStat(null, "Deviation", deviationStr),
-                    this._renderStat(null, "Recoil", recoilStr),
-                    this._renderStat(null, "Reload", reloadStr),
+                    this._renderStat(null, "Deviation", [deviationStr]),
+                    this._renderStat(null, "Recoil", [recoilStr]),
+                    this._renderStat(null, "Reload", [reloadStr]),
                     //element(CalculationAmmoStatsBox,
                     //    {
                     //    ammoData: so.ammo,
@@ -504,10 +504,10 @@ class CalculationResultsBox extends React.Component<any, any> {
             if (perf.bowgunStats === null) {
                 return element(CalculationResultsGroupBox,
                     null,
-                    this._renderStat(null, "Raw Crit Damage", perf.rawCritDmgMultiplier.toFixed(2) + "x"),
-                    this._renderStat(null, "Elem. Crit Damage", perf.elementalCritDmgMultiplier.toFixed(2) + "x"),
-                    this._renderStat(null, "Raw Crit Modifier", perf.rawCritModifier.toFixed(4) + "x"),
-                    this._renderStat(null, "Elem. Crit Modifier", perf.elementalCritModifier.toFixed(4) + "x"),
+                    this._renderStat(null, "Raw Crit Damage", [perf.rawCritDmgMultiplier.toFixed(2) + "x"]),
+                    this._renderStat(null, "Elem. Crit Damage", [perf.elementalCritDmgMultiplier.toFixed(2) + "x"]),
+                    this._renderStat(null, "Raw Crit Modifier", [perf.rawCritModifier.toFixed(4) + "x"]),
+                    this._renderStat(null, "Elem. Crit Modifier", [perf.elementalCritModifier.toFixed(4) + "x"]),
                 );
             } else {
                 // We hide the crit stats because there's no space for it, and it's not terribly relevant information anyway,
@@ -542,7 +542,7 @@ class CalculationResultsBox extends React.Component<any, any> {
             },
             element(CalculationResultsGroupBox,
                 null,
-                this._renderStat("attack_icon", "Effective Raw", perf.effectiveRaw.toFixed(2)),
+                this._renderStat("attack_icon", "Effective Raw", [perf.effectiveRaw.toFixed(2)]),
                 ...effectiveEleStatRendering,
                 affinityRendering,
             ),
