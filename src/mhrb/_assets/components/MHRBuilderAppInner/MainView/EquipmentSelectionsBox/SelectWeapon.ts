@@ -174,7 +174,7 @@ class RampageSkillSelection extends React.Component<any, any> {
                 {
                     dataArray: this.props.rampageSkillOptions,
                     currentSelectedRampSkillRO: this.props.selectedRampSkillRO,
-                    handleRowClick: (rampSkillTuple) => {this.handleSelectRampSkill(rampSkillTuple);},
+                    handleRowClick: (rampSkillID) => {this.handleSelectRampSkill(rampSkillID);},
                 },
                 null,
             ),
@@ -483,7 +483,7 @@ class EquipWeaponInfoBox extends React.Component<any, any> {
                     ref: ref,
                     selectedRampSkillRO: rampageSkillObj,
                     rampageSkillOptions: weaponRO.rampSkillOptionsArray[i],
-                    handleSelectRampSkill: (position, rampSkillID) => {this.handleSelectRampSkill(position, rampSkillID);},
+                    handleSelectRampSkill: (rampSkillID) => {this.handleSelectRampSkill(i, rampSkillID);},
                     },
                     null,
                 );
