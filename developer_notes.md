@@ -1,5 +1,9 @@
 # Monster Hunter Rise Builder - Developer Notes
 
+## Minor Notes
+
+All files where type annotations haven't been fully implemented yet will include `// @ts-nocheck` as the first line. This will serve as a marker to indicate refactoring progress.
+
 ## React component constructors
 
 I set three fields in a React class component contructor:
