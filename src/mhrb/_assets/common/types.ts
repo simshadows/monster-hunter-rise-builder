@@ -12,3 +12,26 @@ export type EleStatStr = ElementStr | StatStr;
 
 export type EndlineTag = "" | "hr";
 
+export interface Petalace {
+    id:   string;
+    name: string;
+
+    endlineTag:  EndlineTag;
+    rarity:      Rarity;
+
+    healthUp:    number;
+    healthGain:  number;
+    staminaUp:   number;
+    staminaGain: number;
+    attackUp:    number;
+    attackGain:  number;
+    defenseUp:   number;
+    defenseGain: number;
+
+    iconImgPath: string;
+    filterHelpers: Readonly<{
+        nameLower: string;
+    }>;
+}
+export type PetalaceRO = Readonly<Petalace>;
+

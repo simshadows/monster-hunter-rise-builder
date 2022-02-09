@@ -1,27 +1,37 @@
-// @ts-nocheck
 /*
  * Author:  simshadows <contact@simshadows.com>
  * License: GNU Affero General Public License v3 (AGPL-3.0)
  */
 
 import {
-    isObj,
-    isInt,
-    isStr,
+    isPositiveInt,
     isNonEmptyStr,
-    assert,
-} from "../../check";
+} from "../../generic/check";
 import {
-    isWeaponEndlineTagStr,
+    FrozenMap,
+} from "../../generic/frozen-containers";
+
+import {
+    type Rarity,
+    type Petalace,
+    type PetalaceRO,
+} from "../../common/types";
+import {
     toNameFilterString,
-} from "../../common";
+} from "../../common/mappings";
 import {getImgPath} from "../../images";
 
-const hardcodedPetalaceData = [
-    ["h3", {
+
+type HardcodedPetalaceData = Omit<Petalace, "iconImgPath" | "filterHelpers">;
+
+const hardcodedPetalaceData: HardcodedPetalaceData[] = [
+    {
+        id: "h3",
+        name: "Hunting Petalace III",
+
         endlineTag: "hr",
         rarity: 6,
-        name: "Hunting Petalace III",
+
         healthUp:    70,
         healthGain:  8,
         staminaUp:   70,
@@ -30,11 +40,14 @@ const hardcodedPetalaceData = [
         attackGain:  2,
         defenseUp:   30,
         defenseGain: 3,
-    }],
-    ["s3", {
+    },
+    {
+        id: "s3",
+        name: "Strength Petalace III",
+
         endlineTag: "hr",
         rarity: 6,
-        name: "Strength Petalace III",
+
         healthUp:    100,
         healthGain:  9,
         staminaUp:   90,
@@ -43,11 +56,14 @@ const hardcodedPetalaceData = [
         attackGain:  2,
         defenseUp:   15,
         defenseGain: 2,
-    }],
-    ["f3", {
+    },
+    {
+        id: "f3",
+        name: "Fortitude Petalace III",
+
         endlineTag: "hr",
         rarity: 6,
-        name: "Fortitude Petalace III",
+
         healthUp:    50,
         healthGain:  8,
         staminaUp:   100,
@@ -56,11 +72,14 @@ const hardcodedPetalaceData = [
         attackGain:  1,
         defenseUp:   40,
         defenseGain: 4,
-    }],
-    ["d3", {
+    },
+    {
+        id: "d3",
+        name: "Demon Petalace III",
+
         endlineTag: "hr",
         rarity: 6,
-        name: "Demon Petalace III",
+
         healthUp:    50,
         healthGain:  5,
         staminaUp:   90,
@@ -69,11 +88,14 @@ const hardcodedPetalaceData = [
         attackGain:  4,
         defenseUp:   20,
         defenseGain: 2,
-    }],
-    ["a", {
+    },
+    {
+        id: "a",
+        name: "Absolute Petalace",
+
         endlineTag: "hr",
         rarity: 7,
-        name: "Absolute Petalace",
+
         healthUp:    100,
         healthGain:  10,
         staminaUp:   70,
@@ -82,11 +104,14 @@ const hardcodedPetalaceData = [
         attackGain:  2,
         defenseUp:   50,
         defenseGain: 5,
-    }],
-    ["u", {
+    },
+    {
+        id: "u",
+        name: "Underworld Petalace",
+
         endlineTag: "hr",
         rarity: 7,
-        name: "Underworld Petalace",
+        
         healthUp:    70,
         healthGain:  10,
         staminaUp:   100,
@@ -95,53 +120,52 @@ const hardcodedPetalaceData = [
         attackGain:  2,
         defenseUp:   50,
         defenseGain: 5,
-    }],
+    },
 ];
 
-const petalaceMap = new Map();
+function makeFinalMap(): FrozenMap<string, PetalaceRO> {
+    const ret = new Map<string, PetalaceRO>();
 
-function petalaceRarityToIconImgPath(rarity) {
-    assert(isInt(rarity) && (rarity > 0) && (rarity <= 7));
-    return getImgPath("petalace_r" + String(rarity));
+    function petalaceRarityToIconImgPath(rarity: Rarity): string {
+        return getImgPath(`petalace_r${rarity}`);
+    }
+
+    // For convenience, we also attach IDs and filter helpers to each object
+    for (const obj of hardcodedPetalaceData) {
+
+        const mergeIn = {
+            iconImgPath: petalaceRarityToIconImgPath(obj.rarity),
+            filterHelpers: {
+                nameLower: toNameFilterString(obj.name),
+            },
+        } as const;
+
+        const finalObj: PetalaceRO = {...obj, ...mergeIn}; 
+
+        isNonEmptyStr(finalObj.id         );
+        isNonEmptyStr(finalObj.name       );
+        isPositiveInt(finalObj.healthUp   );
+        isPositiveInt(finalObj.healthGain );
+        isPositiveInt(finalObj.staminaUp  );
+        isPositiveInt(finalObj.staminaGain);
+        isPositiveInt(finalObj.attackUp   );
+        isPositiveInt(finalObj.attackGain );
+        isPositiveInt(finalObj.defenseUp  );
+        isPositiveInt(finalObj.defenseGain);
+        console.assert((finalObj.healthUp  > finalObj.healthGain ) && (finalObj.healthGain  <= 100));
+        console.assert((finalObj.staminaUp > finalObj.staminaGain) && (finalObj.staminaGain <= 100));
+        console.assert((finalObj.attackUp  > finalObj.attackGain ) && (finalObj.attackGain  <= 100));
+        console.assert((finalObj.defenseUp > finalObj.defenseGain) && (finalObj.defenseGain <= 100));
+
+        // And now, we check for duplicates and add
+
+        if (ret.has(finalObj.id)) console.error(`Duplicate pentalace ID: ${finalObj.id}`);
+        ret.set(finalObj.id, finalObj);
+    }
+    return new FrozenMap<string, PetalaceRO>(ret);
 }
 
-// For convenience, we also attach IDs and filter helpers to each object
-for (const [petalaceID, petalaceObj] of hardcodedPetalaceData) {
-    petalaceObj.id = petalaceID;
-    petalaceObj.iconImgPath = petalaceRarityToIconImgPath(petalaceObj.rarity);
-    petalaceObj.filterHelpers = {};
-    petalaceObj.filterHelpers.nameLower = toNameFilterString(petalaceObj.name);
-
-    //
-    // Validate
-    //
-
-    assert(isNonEmptyStr(petalaceObj.id));
-    assert(isWeaponEndlineTagStr(petalaceObj.endlineTag));
-    assert(isInt(petalaceObj.rarity) && (petalaceObj.rarity > 0) && (petalaceObj.rarity <= 7));
-    assert(isNonEmptyStr(petalaceObj.name));
-    assert(isInt(petalaceObj.healthUp));
-    assert(isInt(petalaceObj.healthGain));
-    assert(isInt(petalaceObj.staminaUp));
-    assert(isInt(petalaceObj.staminaGain));
-    assert(isInt(petalaceObj.attackUp));
-    assert(isInt(petalaceObj.attackGain));
-    assert(isInt(petalaceObj.defenseUp));
-    assert(isInt(petalaceObj.defenseGain));
-
-    assert(
-        (petalaceObj.healthGain  > 0) && (petalaceObj.healthUp  > petalaceObj.healthGain ) && (petalaceObj.healthUp  <= 100) &&
-        (petalaceObj.staminaGain > 0) && (petalaceObj.staminaUp > petalaceObj.staminaGain) && (petalaceObj.staminaUp <= 100) &&
-        (petalaceObj.attackGain  > 0) && (petalaceObj.attackUp  > petalaceObj.attackGain ) && (petalaceObj.attackUp  <= 100) &&
-        (petalaceObj.defenseGain > 0) && (petalaceObj.defenseUp > petalaceObj.defenseGain) && (petalaceObj.defenseUp <= 100),
-        "Invalid numerical value(s). Petalace ID: " + petalaceObj.id,
-    );
-
-    // And now, we check for duplicates and add
-
-    assert(!(petalaceMap.has(petalaceObj.id)), "Duplicate petalace ID: " + petalaceObj.id);
-    petalaceMap.set(petalaceObj.id, petalaceObj);
-}
+const petalaceMap = makeFinalMap();
 
 export {petalaceMap};
 
