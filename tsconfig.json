@@ -1,11 +1,22 @@
 {
     "compilerOptions": {
+        "strict": true,
+        "allowUnreachableCode": false,
+        "allowUnusedLabels": false,
+        "exactOptionalPropertyTypes": true,
+        "noFallthroughCasesInSwitch": false,
+        "noImplicitOverride": true,
+        "noImplicitReturns": true,
+        "noPropertyAccessFromIndexSignature": true,
+        "noUncheckedIndexedAccess": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+
         "allowJs": true,
         "jsx": "react",
         "module": "es6",
         "target": "es2015",
         "esModuleInterop": true,
-        "noImplicitAny": true,
         "moduleResolution": "node",
         "allowSyntheticDefaultImports": true
     }

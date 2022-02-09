@@ -1,12 +1,16 @@
-// @ts-nocheck
 /*
  * Author:  simshadows <contact@simshadows.com>
  * License: GNU Affero General Public License v3 (AGPL-3.0)
  */
 
-const assert = console.assert;
+import {
+    FrozenMap,
+} from "./generic/frozen-containers";
+import {
+    type EleStatStr,
+} from "./common/types";
 
-const imgPathMapEntries = [];
+const imgPathMapEntries: [string, string][] = [];
 
 import imgTalismanR1 from "./image_files/talisman_r1.svg";
 import imgTalismanR7 from "./image_files/talisman_r7_inkscapesourcefile.svg";
@@ -689,38 +693,21 @@ imgPathMapEntries.push(
     ["deco_slot3_size3_yellow", imgDecoSlot3Size3Yellow],
 );
 
-const imgPathMap = new Map(imgPathMapEntries);
+const imgPathMap = new FrozenMap<string, string>(new Map(imgPathMapEntries));
 
 /*** General Functions ***/
 
-function getImgPath(id) {
-    if (!imgPathMap.has(id)) {
-        throw new Error("Invalid image ID: ", id);
+function getImgPath(id: string): string {
+    const ret = imgPathMap.get(id);
+    if (ret === undefined) { // TODO: Make this part of the type system? Or make it fail gracefully?
+        throw new Error(`Invalid image ID: ${id}`);
     }
-    return imgPathMap.get(id);
+    return ret;
 }
 
 /*** Usage-specific Functions ***/
 
-const eleStatStrToImgPathMap = {
-    fire:    getImgPath("eleres_fire_icon"   ),
-    water:   getImgPath("eleres_water_icon"  ),
-    thunder: getImgPath("eleres_thunder_icon"),
-    ice:     getImgPath("eleres_ice_icon"    ),
-    dragon:  getImgPath("eleres_dragon_icon" ),
-
-    poison:    getImgPath("status_poison_icon"   ),
-    paralysis: getImgPath("status_paralysis_icon"),
-    sleep:     getImgPath("status_sleep_icon"    ),
-    blast:     getImgPath("status_blast_icon"    ),
-}
-function eleStatStrToImgPath(obj) {
-    assert(obj !== null, "Passing null to eleStatStrToImgPath will return undefined. This is probably not desired.");
-    assert(obj !== "none", "Passing 'none' to eleStatStrToImgPath will return undefined. This is probably not desired.");
-    return eleStatStrToImgPathMap[obj];
-}
-
-const eleStatStrToImgIdMap = {
+const eleStatStrToImgIdMap: {[key in EleStatStr]: string} = {
     fire:    "eleres_fire_icon",
     water:   "eleres_water_icon",
     thunder: "eleres_thunder_icon",
@@ -732,17 +719,19 @@ const eleStatStrToImgIdMap = {
     sleep:     "status_sleep_icon",
     blast:     "status_blast_icon",
 }
-function eleStatStrToImgId(obj) {
-    assert(obj !== null, "Passing null to eleStatStrToImgPath will return undefined. This is probably not desired.");
-    assert(obj !== "none", "Passing 'none' to eleStatStrToImgPath will return undefined. This is probably not desired.");
+function eleStatStrToImgId(obj: EleStatStr): string {
     return eleStatStrToImgIdMap[obj];
 }
 
-/*** ***/
+function eleStatStrToImgPath(obj: EleStatStr): string {
+    return getImgPath(eleStatStrToImgIdMap[obj]);
+}
+
+/******/
 
 export {
     getImgPath,
-    eleStatStrToImgPath,
     eleStatStrToImgId,
+    eleStatStrToImgPath,
 };
 
