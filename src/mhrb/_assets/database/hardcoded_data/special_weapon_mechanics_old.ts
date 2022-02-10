@@ -13,18 +13,6 @@ import {
     isRawTypeStr,
 } from "../../common";
 
-const hardcodedGunlanceShellingTypes = [
-    ["normal", {
-        name: "Normal",
-    }],
-    ["long", {
-        name: "Long",
-    }],
-    ["wide", {
-        name: "Wide",
-    }],
-];
-
 const hardcodedHuntingHornSongs = [
     ["attack_up", {
         name: "Attack Up",
@@ -489,8 +477,6 @@ const hardcodedSpecialSelectionTypes = [
 
 // Now, we populate these maps.
 
-const gunlanceShellingTypesMap = new Map();
-
 const huntingHornSongsMap = new Map();
 
 const switchAxePhialTypesMap = new Map();
@@ -522,10 +508,6 @@ function populate(hardcodedData, finalMap, additionalOps) {
         finalMap.set(dataObj.id, dataObj);
     }
 }
-
-populate(hardcodedGunlanceShellingTypes, gunlanceShellingTypesMap, (dataObj) => {
-    assert(isNonEmptyStr(dataObj.id));
-});
 
 populate(hardcodedHuntingHornSongs, huntingHornSongsMap, (dataObj) => {
     assert(isNonEmptyStr(dataObj.id));
@@ -584,8 +566,6 @@ populate(hardcodedSpecialSelectionTypes, specialSelectionTypesMap, (dataObj) => 
 });
 
 export {
-    gunlanceShellingTypesMap,
-
     huntingHornSongsMap,
 
     switchAxePhialTypesMap,

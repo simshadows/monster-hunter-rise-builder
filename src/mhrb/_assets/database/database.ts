@@ -42,8 +42,8 @@ import {
 import {
     petalaceMap,
 } from "./hardcoded_data/petalace_data";
+import {gunlanceShellingTypesMap} from "./hardcoded_data/special_weapon_mechanics/gunlance";
 import {
-    gunlanceShellingTypesMap,
     huntingHornSongsMap,
     switchAxePhialTypesMap,
     chargeBladePhialTypesMap,
@@ -54,7 +54,7 @@ import {
     bowChargeShotTypesMap,
     bowgunAmmoTypesMap,
     specialSelectionTypesMap,
-} from "./hardcoded_data/special_weapon_mechanics";
+} from "./hardcoded_data/special_weapon_mechanics_old";
 
 const WEAPON_GS_PATH  = "./data/weapons_greatsword.json";
 const WEAPON_LS_PATH  = "./data/weapons_longsword.json";

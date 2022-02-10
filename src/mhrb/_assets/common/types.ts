@@ -76,3 +76,11 @@ export interface RampageSkill {
 }
 export type RampageSkillRO = Readonly<RampageSkill>;
 
+/*** Weapon Mechanics: Gunlance ***/
+
+export interface GLShellingType {
+    id:   string;
+    name: string;
+}
+export type GLShellingTypeRO = Readonly<GLShellingType>;
+
