@@ -141,7 +141,8 @@ function makeFinalMap(): FrozenMap<string, PetalaceRO> {
 
         const finalObj: PetalaceRO = {...obj, ...mergeIn}; 
 
-        console.assert(finalObj.id !== "");
+        // Validate
+        console.assert(/^[a-z0-9]+$/.test(finalObj.id));
         console.assert(finalObj.name !== "");
         console.assert(isPositiveInt(finalObj.healthUp   ));
         console.assert(isPositiveInt(finalObj.healthGain ));
@@ -156,15 +157,15 @@ function makeFinalMap(): FrozenMap<string, PetalaceRO> {
         console.assert((finalObj.attackUp  > finalObj.attackGain ) && (finalObj.attackGain  <= 100));
         console.assert((finalObj.defenseUp > finalObj.defenseGain) && (finalObj.defenseGain <= 100));
 
-        // And now, we check for duplicates and add
+        // Check for duplicates
+        console.assert(!ret.has(finalObj.id));
 
-        if (ret.has(finalObj.id)) console.error(`Duplicate pentalace ID: ${finalObj.id}`);
         ret.set(finalObj.id, finalObj);
     }
     return new FrozenMap<string, PetalaceRO>(ret);
 }
 
-const petalaceMap = makeFinalMap();
+const petalaceMap: FrozenMap<string, PetalaceRO> = makeFinalMap();
 
 export {petalaceMap};
 

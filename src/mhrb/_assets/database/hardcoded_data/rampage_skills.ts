@@ -887,16 +887,17 @@ const rampsMapShortIds = new Map<string, RampageSkillRO>();
 // For convenience, we also attach IDs to each object
 for (const obj of rampsArray) {
 
+    // Validate
     console.assert(/^[_a-z0-9]+$/.test(obj.id));
     console.assert(/^[a-z0-9]+$/.test(obj.shortId));
     console.assert(obj.name !== "");
 
-    console.assert(!rampsMap.has(obj.id), `Duplicate ramp skill ID: ${obj.id}`);
-    console.assert(!rampsMapShortIds.has(obj.shortId), `Duplicate ramp skill short ID: ${obj.id}`);
+    // Check for duplicates
+    console.assert(!rampsMap.has(obj.id));
+    console.assert(!rampsMapShortIds.has(obj.shortId));
 
     rampsMap.set(obj.id, obj);
     rampsMapShortIds.set(obj.shortId, obj);
-
 }
 
 const finalRampsMap = new FrozenMap<string, RampageSkillRO>(rampsMap);

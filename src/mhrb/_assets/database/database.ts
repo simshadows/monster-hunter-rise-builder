@@ -654,7 +654,7 @@ async function downloadAllRawArmourData() {
 
 function joinSkillObjsToArmourData(armourData, skillDataLongIdMap) {
     assert(isMap(armourData));
-    assert(isMap(skillDataLongIdMap));
+    //assert(isMap(skillDataLongIdMap));
     for (const [armourSetID, armourSetMap] of armourData.entries()) {
         for (const [slotID, armourPieceObj] of armourSetMap.entries()) {
             const newSkillArray = [];
@@ -719,7 +719,7 @@ async function downloadAllRawDecorationsData() {
 
 function joinSkillObjsToDecoData(decoData, skillDataLongIdMap) {
     assert(isMap(decoData));
-    assert(isMap(skillDataLongIdMap));
+    //assert(isMap(skillDataLongIdMap));
     for (const [decoID, decoItemData] of decoData.entries()) {
         const newSkillsArray = [];
         for (const [skillLongID, skillLevel] of Object.entries(decoItemData.skills)) {

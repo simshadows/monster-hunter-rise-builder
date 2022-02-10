@@ -12,6 +12,8 @@ export type EleStatStr = ElementStr | StatStr;
 
 export type EndlineTag = "" | "hr";
 
+/*** Petalace ***/
+
 export interface Petalace {
     id:   string;
     name: string;
@@ -34,6 +36,38 @@ export interface Petalace {
     }>;
 }
 export type PetalaceRO = Readonly<Petalace>;
+
+/*** Armour Skills ***/
+
+export type SkillIcon = "blue"
+                      | "brown"
+                      | "darkblue"
+                      | "gold"
+                      | "green"
+                      | "grey"
+                      | "lightblue"
+                      | "orange"
+                      | "pink"
+                      | "purple"
+                      | "red"
+                      | "white"
+                      | "yellow";
+
+export interface Skill {
+    id:        string;
+    shortId:   number;
+    name:      string;
+    maxLevels: number;
+
+    icon: SkillIcon;
+    iconImgPath: string;
+    filterHelpers: Readonly<{
+        nameLower: string;
+    }>;
+}
+export type SkillRO = Readonly<Skill>;
+
+/*** Rampage Skills ***/
 
 export interface RampageSkill {
     id:      string;
