@@ -6,7 +6,7 @@ Parses './hardcoded_data/skills.json' and uses 'templates/skills.ts' to generate
 """
 
 import os
-import json
+import re
 
 GENERATED_CODE_NOTICE = """\
 /*
@@ -43,4 +43,9 @@ GENERATED_CODE_NOTICE = """\
 
 def append_generated_code_notice(s):
     return GENERATED_CODE_NOTICE + s
+
+def to_name_filter_string(s):
+    # IMPORTANT: Please maintain parity between this Python implementation and the Javascript implementation.
+    # TODO: Also strip out punctuation?
+    return re.sub("\\s", "", s.lower())
 

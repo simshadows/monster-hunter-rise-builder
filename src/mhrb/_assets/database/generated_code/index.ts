@@ -22,36 +22,27 @@ import {
     toNameFilterString,
 } from "../../common/mappings";
 
-import {hardcodedSkills} from "./_generated_skills";
+import {skillsArray} from "./_generated_skills";
 
 const skillMap = new Map<string, SkillRO>();
 const skillMapShortIds = new Map<number, SkillRO>();
 
-for (const obj of hardcodedSkills) {
-
-    const mergeIn = {
-        // We will also convert the icon string to an icon image path.
-        // This will also implicitly check for the icon validity
-        filterHelpers: {
-            nameLower: toNameFilterString(obj.name),
-        },
-    } as const;
-
-    const finalObj: SkillRO = {...obj, ...mergeIn}; 
-
+for (const obj of skillsArray) {
     // Validate
-    console.assert(/^[_a-z0-9]+$/.test(finalObj.id));
-    console.assert(isPositiveInt(finalObj.shortId));
-    console.assert(finalObj.name !== "");
-    console.assert(isPositiveInt(finalObj.maxLevels) && (finalObj.maxLevels < 8)); // Change if needed
-    console.assert(finalObj.filterHelpers.nameLower !== "");
+    console.assert(/^[_a-z0-9]+$/.test(obj.id));
+    console.assert(isPositiveInt(obj.shortId));
+    console.assert(obj.name !== "");
+    console.assert(isPositiveInt(obj.maxLevels) && (obj.maxLevels < 8)); // Change if needed
+
+    console.assert(obj.filterHelpers.nameLower !== "");
+    console.assert(obj.filterHelpers.nameLower === toNameFilterString(obj.name));
     
     // Check for duplicates
     console.assert(!skillMap.has(obj.id));
     console.assert(!skillMapShortIds.has(obj.shortId));
 
-    skillMap.set(finalObj.id, finalObj);
-    skillMapShortIds.set(finalObj.shortId, finalObj);
+    skillMap.set(obj.id, obj);
+    skillMapShortIds.set(obj.shortId, obj);
 }
 
 const finalSkillMap = new FrozenMap<string, SkillRO>(skillMap);

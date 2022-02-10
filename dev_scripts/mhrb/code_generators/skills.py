@@ -8,7 +8,7 @@ Parses './hardcoded_data/skills.json' and uses 'templates/skills.ts' to generate
 import os
 import json
 
-from utils import append_generated_code_notice
+from utils import append_generated_code_notice, to_name_filter_string
 
 DATA_PATH = "./dev_scripts/mhrb/code_generators/hardcoded_data/skills.json"
 TEMPLATE_PATH = "./dev_scripts/mhrb/code_generators/templates/skills.ts"
@@ -38,6 +38,9 @@ array_entry_fmt = """\
         maxLevels: {max_levels},
 
         iconImgID: {icon_image_id},
+        filterHelpers: {{
+            nameLower: {filter_helper_name_lower},
+        }}
     }},\
 """
 
@@ -70,6 +73,7 @@ def generate_and_get_skills():
         assert isinstance(obj["icon"], str)
 
         image_id = icon_name_to_image_id[obj["icon"]]
+        filter_helper_name_lower = to_name_filter_string(obj["name"])
 
         entries.append(array_entry_fmt.format(
             id=           json.dumps(obj["id"]),
@@ -77,6 +81,8 @@ def generate_and_get_skills():
             name=         json.dumps(obj["name"]),
             max_levels=   json.dumps(obj["maxLevels"]),
             icon_image_id=json.dumps(image_id),
+
+            filter_helper_name_lower=json.dumps(filter_helper_name_lower),
         ))
     
     output_data = file_template.replace("%SKILLS_ARRAY_GOES_HERE%", "\n".join(entries))
