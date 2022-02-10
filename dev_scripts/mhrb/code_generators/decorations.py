@@ -2,17 +2,25 @@
 Filename: decorations.py
 Author:   simshadows <contact@simshadows.com>
 
-Parses decorations from './hardcoded_data/' and uses './templates/' to generate the corresponding source file.
+Parses skills from './hardcoded_data/' to generate the corresponding source file.
 """
 
 import os
 import json
 
-from utils import append_generated_code_notice, skill_id_to_object_name, to_name_filter_string
+from utils import skill_id_to_object_name, to_name_filter_string
 
-DATA_PATH = "./dev_scripts/mhrb/code_generators/hardcoded_data/decorations.json"
-TEMPLATE_PATH = "./dev_scripts/mhrb/code_generators/templates/decorations_template.ts"
-OUTPUT_PATH = "./src/mhrb/_assets/database/generated_code/_generated_decorations.ts"
+source_template = """\
+import {{
+{skill_imports}
+}} from "./_generated_skills";
+
+import {{type DecorationRO}} from "../../common/types";
+
+export const decosArray: Readonly<DecorationRO[]> = [
+{array_entries}
+];
+"""
 
 skills_import_fmt = """\
     {obj_name},\
@@ -36,28 +44,12 @@ array_entry_fmt = """\
     }},\
 """
 
-def read_data():
-    with open(DATA_PATH, encoding="utf-8", mode="r") as f:
-        return json.loads(f.read())
-
-def read_source_template():
-    with open(TEMPLATE_PATH, encoding="utf-8", mode="r") as f:
-        return f.read()
-
-def write_source_file(data):
-    with open(OUTPUT_PATH, "w") as f:
-        f.write(data)
-
-def generate_and_get_decorations():
-    print("Generating decorations data...")
-    input_data = read_data()
-    file_template = read_source_template()
-
-    assert isinstance(input_data, list)
+def generate_decos_source_file(json_data):
+    assert isinstance(json_data, list)
 
     entries = []
     skills_found = set()
-    for [deco_id, obj] in input_data:
+    for [deco_id, obj] in json_data:
         assert isinstance(deco_id, int)
         assert isinstance(obj, dict)
 
@@ -90,10 +82,10 @@ def generate_and_get_decorations():
     skills_entries = []
     for skill_obj_name in skills_found:
         skills_entries.append(skills_import_fmt.format(obj_name=skill_obj_name))
+    skills_entries.sort() # Makes the final output stable so we don't get git diffs all the time
 
-    output_data = file_template.replace("%SKILL_OBJ_NAMES_GO_HERE%", "\n".join(skills_entries))
-    output_data = output_data.replace("%DECORATIONS_ARRAY_CONTENTS_GOES_HERE%", "\n".join(entries))
-
-    write_source_file(append_generated_code_notice(output_data))
-    return input_data
+    return source_template.format(
+        skill_imports="\n".join(skills_entries),
+        array_entries="\n".join(entries),
+    )
 

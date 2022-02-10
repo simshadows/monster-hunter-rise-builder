@@ -26,10 +26,12 @@
  *      $ yarn run-code-generators
  *
  * (ASCII art generated using <https://patorjk.com/software/taag/#p=display&h=0&f=Doh&t=STOP>)
+ *
  */
 
+
 /*
- * Author:  simshadows <contact@simshadows.com>
+ * Code Generator Author: simshadows <contact@simshadows.com>
  * License: GNU Affero General Public License v3 (AGPL-3.0)
  */
 
@@ -1480,4 +1482,3 @@ export const skillsArray: Readonly<SkillRO[]> = [
     __generated_skill__windproof,
     __generated_skill__wirebug_whisperer,
 ];
-

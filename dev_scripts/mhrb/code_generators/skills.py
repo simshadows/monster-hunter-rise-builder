@@ -2,17 +2,13 @@
 Filename: skills.py
 Author:   simshadows <contact@simshadows.com>
 
-Parses skills from './hardcoded_data/' and uses './templates/' to generate the corresponding source file.
+Parses skills from './hardcoded_data/' to generate the corresponding source file.
 """
 
 import os
 import json
 
-from utils import append_generated_code_notice, skill_id_to_object_name, to_name_filter_string
-
-DATA_PATH = "./dev_scripts/mhrb/code_generators/hardcoded_data/skills.json"
-TEMPLATE_PATH = "./dev_scripts/mhrb/code_generators/templates/skills_template.ts"
-OUTPUT_PATH = "./src/mhrb/_assets/database/generated_code/_generated_skills.ts"
+from utils import skill_id_to_object_name, to_name_filter_string
 
 icon_name_to_image_id = {
     "blue"     : "skill_icon_blue",
@@ -29,6 +25,16 @@ icon_name_to_image_id = {
     "white"    : "skill_icon_white",
     "yellow"   : "skill_icon_yellow",
 }
+
+source_template = """\
+import {{type SkillRO}} from "../../common/types";
+
+{objects}
+
+export const skillsArray: Readonly<SkillRO[]> = [
+{array_entries}
+];
+"""
 
 object_fmt = """\
 export const {object_name}: SkillRO = {{
@@ -48,28 +54,12 @@ array_entry_fmt = """\
     {object_name},\
 """
 
-def read_skills_data():
-    with open(DATA_PATH, encoding="utf-8", mode="r") as f:
-        return json.loads(f.read())
-
-def read_source_template():
-    with open(TEMPLATE_PATH, encoding="utf-8", mode="r") as f:
-        return f.read()
-
-def write_source_file(data):
-    with open(OUTPUT_PATH, "w") as f:
-        f.write(data)
-
-def generate_and_get_skills():
-    print("Generating skills data...")
-    input_data = read_skills_data()
-    file_template = read_source_template()
-
-    assert isinstance(input_data, list)
+def generate_skills_source_file(json_data):
+    assert isinstance(json_data, list)
 
     objects_entries = []
     array_entries = []
-    for obj in input_data:
+    for obj in json_data:
         assert isinstance(obj["id"], str)
         assert isinstance(obj["shortId"], int)
         assert isinstance(obj["name"], str)
@@ -92,10 +82,9 @@ def generate_and_get_skills():
         ))
 
         array_entries.append(array_entry_fmt.format(object_name=object_name))
-    
-    output_data = file_template.replace("%SKILL_OBJECTS_GOES_HERE%", "\n\n".join(objects_entries))
-    output_data = output_data.replace("%SKILLS_ARRAY_CONTENTS_GOES_HERE%", "\n".join(array_entries))
 
-    write_source_file(append_generated_code_notice(output_data))
-    return input_data
+    return source_template.format(
+        objects="\n\n".join(objects_entries),
+        array_entries="\n".join(array_entries),
+    )
 
