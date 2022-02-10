@@ -4,6 +4,8 @@
  *
  * This file is NOT generated code.
  * The generated code files are the '_generated_*.ts' files.
+ *
+ * This file processes the generated code for consumption by the rest of the application.
  */
 
 import {
@@ -19,7 +21,6 @@ import {
 import {
     toNameFilterString,
 } from "../../common/mappings";
-import {getImgPath} from "../../images";
 
 import {hardcodedSkills} from "./_generated_skills";
 
@@ -29,9 +30,6 @@ const skillMapShortIds = new Map<number, SkillRO>();
 for (const obj of hardcodedSkills) {
 
     const mergeIn = {
-        // For convenience, we also attach IDs and filter helpers to each object
-        iconImgPath: getImgPath(obj.iconImgID),
-
         // We will also convert the icon string to an icon image path.
         // This will also implicitly check for the icon validity
         filterHelpers: {
@@ -46,7 +44,6 @@ for (const obj of hardcodedSkills) {
     console.assert(isPositiveInt(finalObj.shortId));
     console.assert(finalObj.name !== "");
     console.assert(isPositiveInt(finalObj.maxLevels) && (finalObj.maxLevels < 8)); // Change if needed
-    console.assert(finalObj.iconImgPath !== "");
     console.assert(finalObj.filterHelpers.nameLower !== "");
     
     // Check for duplicates

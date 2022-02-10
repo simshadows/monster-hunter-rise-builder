@@ -415,7 +415,7 @@ class Build {
                     maxLevel: skillRO.maxLevels,
                     isOverlevelled: (skillLevel > skillRO.maxLevels),
 
-                    iconImgPath: skillRO.iconImgPath,
+                    iconImgID: skillRO.iconImgID,
                 });
         }
         calculatedTotalSkillsRenderingProps.sort((a, b) => {

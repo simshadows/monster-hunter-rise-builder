@@ -7,6 +7,8 @@
 import React from "react";
 const element = React.createElement;
 
+import {getImgPath} from "../../../images";
+
 import * as check from "../../../check";
 
 import {clipsafeSpan} from "../../common/clipsafeSpan";
@@ -54,7 +56,7 @@ function SkillResult(props) {
     check.isInt(props.skillLevelMax);
     assert((props.skillLevel <= props.skillLevelMax) && (props.skillLevel > 0));
     check.isBool(props.isOverlevelled);
-    check.isStr(props.skillIconImgPath);
+    check.isStr(props.skillIconImgID);
 
     return element("div",
         {
@@ -66,7 +68,7 @@ function SkillResult(props) {
             },
             element("img",
                 {
-                src: props.skillIconImgPath,
+                src: getImgPath(props.skillIconImgID),
                 alt: "icon",
                 },
                 null,
@@ -129,7 +131,7 @@ export function SkillsResultsBox(props) {
                     skillLevel: skillProps.level,
                     skillLevelMax: skillProps.maxLevel,
                     isOverlevelled: skillProps.isOverlevelled,
-                    skillIconImgPath: skillProps.iconImgPath,
+                    skillIconImgID: skillProps.iconImgID,
                     },
                     null,
                 ),

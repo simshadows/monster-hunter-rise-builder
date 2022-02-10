@@ -64,7 +64,6 @@ export interface Skill {
     maxLevels: number;
 
     iconImgID: SkillIconImgID;
-    iconImgPath: string;
     filterHelpers: Readonly<{
         nameLower: string;
     }>;
