@@ -15,9 +15,18 @@ import {
 } from "./_internals";
 
 const hardcoded: GLShellingTypeRO[] = [
-    {id: "normal", name: "Normal"},
-    {id: "long"  , name: "Long"  },
-    {id: "wide"  , name: "Wide"  },
+    {
+        id: "normal",
+        name: "Normal",
+    },
+    {
+        id: "long",
+        name: "Long",
+    },
+    {
+        id: "wide",
+        name: "Wide",
+    },
 ];
 
 export const gunlanceShellingTypesMap: FrozenMap<string, GLShellingTypeRO> = populate(hardcoded, (obj) => obj);

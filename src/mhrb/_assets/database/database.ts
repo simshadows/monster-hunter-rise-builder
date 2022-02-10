@@ -42,16 +42,21 @@ import {
 import {
     petalaceMap,
 } from "./hardcoded_data/petalace_data";
+
 import {gunlanceShellingTypesMap} from "./hardcoded_data/special_weapon_mechanics/gunlance";
+import {huntingHornSongsMap     } from "./hardcoded_data/special_weapon_mechanics/huntinghorn";
+import {switchAxePhialTypesMap  } from "./hardcoded_data/special_weapon_mechanics/switchaxe";
+import {chargeBladePhialTypesMap} from "./hardcoded_data/special_weapon_mechanics/chargeblade";
 import {
-    huntingHornSongsMap,
-    switchAxePhialTypesMap,
-    chargeBladePhialTypesMap,
     insectGlaiveKinsectsMap,
     insectGlaiveKinsectTypesMap,
     insectGlaiveKinsectBonusesMap,
+} from "./hardcoded_data/special_weapon_mechanics/insectglaive";
+import {
     bowArcShotTypesMap,
     bowChargeShotTypesMap,
+} from "./hardcoded_data/special_weapon_mechanics/bow";
+import {
     bowgunAmmoTypesMap,
     specialSelectionTypesMap,
 } from "./hardcoded_data/special_weapon_mechanics_old";

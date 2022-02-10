@@ -6,6 +6,8 @@
 export type Tier = "lr" | "hr";
 export type Rarity = 1 | 2 | 3 | 4 | 5 | 6 | 7;
 
+export type RawTypeStr = "severing" | "blunt";
+
 export type ElementStr = "fire" | "water" | "thunder" | "ice" | "dragon";
 export type StatStr = "poison" | "paralysis" | "sleep" | "blast";
 export type EleStatStr = ElementStr | StatStr;
@@ -83,4 +85,67 @@ export interface GLShellingType {
     name: string;
 }
 export type GLShellingTypeRO = Readonly<GLShellingType>;
+
+/*** Weapon Mechanics: Hunting Horn ***/
+
+export interface HHSong {
+    id:   string;
+    name: string;
+}
+export type HHSongRO = Readonly<HHSong>;
+
+/*** Weapon Mechanics: Switchaxe ***/
+
+export interface SAPhialType {
+    id:   string;
+    name: string;
+}
+export type SAPhialTypeRO = Readonly<SAPhialType>;
+
+/*** Weapon Mechanics: Charge Blade ***/
+
+export interface CBPhialType {
+    id:   string;
+    name: string;
+}
+export type CBPhialTypeRO = Readonly<CBPhialType>;
+
+/*** Weapon Mechanics: Insect Glaive ***/
+
+export interface IGKinsectType {
+    id:   string;
+    name: string;
+}
+export type IGKinsectTypeRO = Readonly<IGKinsectType>;
+
+export interface IGKinsectBonus {
+    id:   string;
+    name: string;
+}
+export type IGKinsectBonusRO = Readonly<IGKinsectBonus>;
+
+export interface IGKinsect {
+    id:     number;
+    name:   string;
+    rarity: Rarity;
+
+    attackType:   RawTypeStr;
+    kinsectType:  IGKinsectTypeRO;
+    kinsectBonus: IGKinsectBonusRO;
+}
+export type IGKinsectRO = Readonly<IGKinsect>;
+
+/*** Weapon Mechanics: Bow ***/
+
+export interface BowArcShotType {
+    id:   string;
+    name: string;
+}
+export type BowArcShotTypeRO = Readonly<BowArcShotType>;
+
+export interface BowChargeShotType {
+    id:   string;
+    name: string;
+}
+export type BowChargeShotTypeRO = Readonly<BowChargeShotType>;
 
