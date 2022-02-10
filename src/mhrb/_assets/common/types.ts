@@ -55,13 +55,15 @@ export type SkillIcon = "blue"
                       | "white"
                       | "yellow";
 
+export type SkillIconImgID = `skill_icon_${SkillIcon}`;
+
 export interface Skill {
     id:        string;
     shortId:   number;
     name:      string;
     maxLevels: number;
 
-    icon: SkillIcon;
+    iconImgID: SkillIconImgID;
     iconImgPath: string;
     filterHelpers: Readonly<{
         nameLower: string;

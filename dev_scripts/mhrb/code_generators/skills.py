@@ -12,7 +12,23 @@ from utils import append_generated_code_notice
 
 DATA_PATH = "./dev_scripts/mhrb/code_generators/hardcoded_data/skills.json"
 TEMPLATE_PATH = "./dev_scripts/mhrb/code_generators/templates/skills.ts"
-OUTPUT_PATH = "./src/mhrb/_assets/database/generated_code/skills.ts"
+OUTPUT_PATH = "./src/mhrb/_assets/database/generated_code/_generated_skills.ts"
+
+icon_name_to_image_id = {
+    "blue"     : "skill_icon_blue",
+    "brown"    : "skill_icon_brown",
+    "darkblue" : "skill_icon_darkblue",
+    "gold"     : "skill_icon_gold",
+    "green"    : "skill_icon_green",
+    "grey"     : "skill_icon_grey",
+    "lightblue": "skill_icon_lightblue",
+    "orange"   : "skill_icon_orange",
+    "pink"     : "skill_icon_pink",
+    "purple"   : "skill_icon_purple",
+    "red"      : "skill_icon_red",
+    "white"    : "skill_icon_white",
+    "yellow"   : "skill_icon_yellow",
+}
 
 array_entry_fmt = """\
     {{
@@ -21,7 +37,7 @@ array_entry_fmt = """\
         name: {name},
         maxLevels: {max_levels},
 
-        icon: {icon},
+        iconImgID: {icon_image_id},
     }},\
 """
 
@@ -52,12 +68,15 @@ def generate_and_get_skills():
         assert isinstance(obj["name"], str)
         assert isinstance(obj["maxLevels"], int)
         assert isinstance(obj["icon"], str)
+
+        image_id = icon_name_to_image_id[obj["icon"]]
+
         entries.append(array_entry_fmt.format(
-            id=        json.dumps(obj["id"]),
-            short_id=  json.dumps(obj["shortId"]),
-            name=      json.dumps(obj["name"]),
-            max_levels=json.dumps(obj["maxLevels"]),
-            icon=      json.dumps(obj["icon"]),
+            id=           json.dumps(obj["id"]),
+            short_id=     json.dumps(obj["shortId"]),
+            name=         json.dumps(obj["name"]),
+            max_levels=   json.dumps(obj["maxLevels"]),
+            icon_image_id=json.dumps(image_id),
         ))
     
     output_data = file_template.replace("%SKILLS_ARRAY_GOES_HERE%", "\n".join(entries))

@@ -33,38 +33,16 @@
  * License: GNU Affero General Public License v3 (AGPL-3.0)
  */
 
-import {
-    isPositiveInt,
-} from "../../generic/check";
-import {
-    FrozenMap,
-} from "../../generic/frozen-containers";
+import {type HardcodedSkill} from "./types";
 
-import {
-    type SkillIcon,
-    type Skill,
-    type SkillRO,
-} from "../../common/types";
-import {
-    toNameFilterString,
-} from "../../common/mappings";
-import {getImgPath} from "../../images";
-
-type HardcodedSkill = Omit<Skill, "iconImgPath" | "filterHelpers">;
-
-/*
- * GENERATED DATA
- */
-
-
-const hardcodedSkills: HardcodedSkill[] = [
+export const hardcodedSkills: HardcodedSkill[] = [
     {
         id: "fire_attack",
         shortId: 1,
         name: "Fire Attack",
         maxLevels: 5,
 
-        icon: "red",
+        iconImgID: "skill_icon_red",
     },
     {
         id: "water_attack",
@@ -72,7 +50,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Water Attack",
         maxLevels: 5,
 
-        icon: "blue",
+        iconImgID: "skill_icon_blue",
     },
     {
         id: "thunder_attack",
@@ -80,7 +58,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Thunder Attack",
         maxLevels: 5,
 
-        icon: "yellow",
+        iconImgID: "skill_icon_yellow",
     },
     {
         id: "ice_attack",
@@ -88,7 +66,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Ice Attack",
         maxLevels: 5,
 
-        icon: "lightblue",
+        iconImgID: "skill_icon_lightblue",
     },
     {
         id: "dragon_attack",
@@ -96,7 +74,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Dragon Attack",
         maxLevels: 5,
 
-        icon: "orange",
+        iconImgID: "skill_icon_orange",
     },
     {
         id: "poison_attack",
@@ -104,7 +82,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Poison Attack",
         maxLevels: 3,
 
-        icon: "purple",
+        iconImgID: "skill_icon_purple",
     },
     {
         id: "paralysis_attack",
@@ -112,7 +90,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Paralysis Attack",
         maxLevels: 3,
 
-        icon: "gold",
+        iconImgID: "skill_icon_gold",
     },
     {
         id: "sleep_attack",
@@ -120,7 +98,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Sleep Attack",
         maxLevels: 3,
 
-        icon: "lightblue",
+        iconImgID: "skill_icon_lightblue",
     },
     {
         id: "blast_attack",
@@ -128,7 +106,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Blast Attack",
         maxLevels: 3,
 
-        icon: "orange",
+        iconImgID: "skill_icon_orange",
     },
     {
         id: "fire_resistance",
@@ -136,7 +114,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Fire Resistance",
         maxLevels: 3,
 
-        icon: "red",
+        iconImgID: "skill_icon_red",
     },
     {
         id: "water_resistance",
@@ -144,7 +122,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Water Resistance",
         maxLevels: 3,
 
-        icon: "blue",
+        iconImgID: "skill_icon_blue",
     },
     {
         id: "thunder_resistance",
@@ -152,7 +130,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Thunder Resistance",
         maxLevels: 3,
 
-        icon: "yellow",
+        iconImgID: "skill_icon_yellow",
     },
     {
         id: "ice_resistance",
@@ -160,7 +138,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Ice Resistance",
         maxLevels: 3,
 
-        icon: "lightblue",
+        iconImgID: "skill_icon_lightblue",
     },
     {
         id: "dragon_resistance",
@@ -168,7 +146,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Dragon Resistance",
         maxLevels: 3,
 
-        icon: "orange",
+        iconImgID: "skill_icon_orange",
     },
     {
         id: "poison_resistance",
@@ -176,7 +154,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Poison Resistance",
         maxLevels: 3,
 
-        icon: "purple",
+        iconImgID: "skill_icon_purple",
     },
     {
         id: "paralysis_resistance",
@@ -184,7 +162,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Paralysis Resistance",
         maxLevels: 3,
 
-        icon: "gold",
+        iconImgID: "skill_icon_gold",
     },
     {
         id: "sleep_resistance",
@@ -192,7 +170,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Sleep Resistance",
         maxLevels: 3,
 
-        icon: "lightblue",
+        iconImgID: "skill_icon_lightblue",
     },
     {
         id: "blast_resistance",
@@ -200,7 +178,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Blast Resistance",
         maxLevels: 3,
 
-        icon: "orange",
+        iconImgID: "skill_icon_orange",
     },
     {
         id: "affinity_sliding",
@@ -208,7 +186,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Affinity Sliding",
         maxLevels: 1,
 
-        icon: "pink",
+        iconImgID: "skill_icon_pink",
     },
     {
         id: "agitator",
@@ -216,7 +194,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Agitator",
         maxLevels: 5,
 
-        icon: "red",
+        iconImgID: "skill_icon_red",
     },
     {
         id: "ammo_up",
@@ -224,7 +202,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Ammo Up",
         maxLevels: 3,
 
-        icon: "green",
+        iconImgID: "skill_icon_green",
     },
     {
         id: "artillery",
@@ -232,7 +210,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Artillery",
         maxLevels: 3,
 
-        icon: "grey",
+        iconImgID: "skill_icon_grey",
     },
     {
         id: "attack_boost",
@@ -240,7 +218,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Attack Boost",
         maxLevels: 7,
 
-        icon: "red",
+        iconImgID: "skill_icon_red",
     },
     {
         id: "ballistics",
@@ -248,7 +226,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Ballistics",
         maxLevels: 3,
 
-        icon: "white",
+        iconImgID: "skill_icon_white",
     },
     {
         id: "blight_resistance",
@@ -256,7 +234,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Blight Resistance",
         maxLevels: 3,
 
-        icon: "blue",
+        iconImgID: "skill_icon_blue",
     },
     {
         id: "bludgeoner",
@@ -264,7 +242,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Bludgeoner",
         maxLevels: 3,
 
-        icon: "grey",
+        iconImgID: "skill_icon_grey",
     },
     {
         id: "bombardier",
@@ -272,7 +250,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Bombardier",
         maxLevels: 3,
 
-        icon: "orange",
+        iconImgID: "skill_icon_orange",
     },
     {
         id: "botanist",
@@ -280,7 +258,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Botanist",
         maxLevels: 4,
 
-        icon: "green",
+        iconImgID: "skill_icon_green",
     },
     {
         id: "bow_charge_plus",
@@ -288,7 +266,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Bow Charge Plus",
         maxLevels: 1,
 
-        icon: "green",
+        iconImgID: "skill_icon_green",
     },
     {
         id: "bubbly_dance",
@@ -296,7 +274,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Bubbly Dance",
         maxLevels: 3,
 
-        icon: "white",
+        iconImgID: "skill_icon_white",
     },
     {
         id: "capture_master",
@@ -304,7 +282,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Capture Master",
         maxLevels: 1,
 
-        icon: "pink",
+        iconImgID: "skill_icon_pink",
     },
     {
         id: "carving_master",
@@ -312,7 +290,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Carving Master",
         maxLevels: 1,
 
-        icon: "green",
+        iconImgID: "skill_icon_green",
     },
     {
         id: "carving_pro",
@@ -320,7 +298,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Carving Pro",
         maxLevels: 1,
 
-        icon: "grey",
+        iconImgID: "skill_icon_grey",
     },
     {
         id: "chameleos_blessing",
@@ -328,7 +306,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Chameleos Blessing",
         maxLevels: 4,
 
-        icon: "purple",
+        iconImgID: "skill_icon_purple",
     },
     {
         id: "constitution",
@@ -336,7 +314,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Constitution",
         maxLevels: 5,
 
-        icon: "gold",
+        iconImgID: "skill_icon_gold",
     },
     {
         id: "counterstrike",
@@ -344,7 +322,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Counterstrike",
         maxLevels: 3,
 
-        icon: "red",
+        iconImgID: "skill_icon_red",
     },
     {
         id: "critical_boost",
@@ -352,7 +330,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Critical Boost",
         maxLevels: 3,
 
-        icon: "pink",
+        iconImgID: "skill_icon_pink",
     },
     {
         id: "critical_draw",
@@ -360,7 +338,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Critical Draw",
         maxLevels: 3,
 
-        icon: "pink",
+        iconImgID: "skill_icon_pink",
     },
     {
         id: "critical_element",
@@ -368,7 +346,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Critical Element",
         maxLevels: 3,
 
-        icon: "darkblue",
+        iconImgID: "skill_icon_darkblue",
     },
     {
         id: "critical_eye",
@@ -376,7 +354,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Critical Eye",
         maxLevels: 7,
 
-        icon: "pink",
+        iconImgID: "skill_icon_pink",
     },
     {
         id: "defense_boost",
@@ -384,7 +362,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Defense Boost",
         maxLevels: 7,
 
-        icon: "gold",
+        iconImgID: "skill_icon_gold",
     },
     {
         id: "diversion",
@@ -392,7 +370,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Diversion",
         maxLevels: 1,
 
-        icon: "purple",
+        iconImgID: "skill_icon_purple",
     },
     {
         id: "divine_blessing",
@@ -400,7 +378,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Divine Blessing",
         maxLevels: 3,
 
-        icon: "white",
+        iconImgID: "skill_icon_white",
     },
     {
         id: "dragonheart",
@@ -408,7 +386,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Dragonheart",
         maxLevels: 5,
 
-        icon: "orange",
+        iconImgID: "skill_icon_orange",
     },
     {
         id: "earplugs",
@@ -416,7 +394,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Earplugs",
         maxLevels: 5,
 
-        icon: "white",
+        iconImgID: "skill_icon_white",
     },
     {
         id: "evade_extender",
@@ -424,7 +402,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Evade Extender",
         maxLevels: 3,
 
-        icon: "lightblue",
+        iconImgID: "skill_icon_lightblue",
     },
     {
         id: "evade_window",
@@ -432,7 +410,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Evade Window",
         maxLevels: 5,
 
-        icon: "lightblue",
+        iconImgID: "skill_icon_lightblue",
     },
     {
         id: "flinch_free",
@@ -440,7 +418,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Flinch Free",
         maxLevels: 3,
 
-        icon: "grey",
+        iconImgID: "skill_icon_grey",
     },
     {
         id: "focus",
@@ -448,7 +426,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Focus",
         maxLevels: 3,
 
-        icon: "white",
+        iconImgID: "skill_icon_white",
     },
     {
         id: "fortify",
@@ -456,7 +434,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Fortify",
         maxLevels: 1,
 
-        icon: "orange",
+        iconImgID: "skill_icon_orange",
     },
     {
         id: "free_meal",
@@ -464,7 +442,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Free Meal",
         maxLevels: 3,
 
-        icon: "brown",
+        iconImgID: "skill_icon_brown",
     },
     {
         id: "geologist",
@@ -472,7 +450,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Geologist",
         maxLevels: 3,
 
-        icon: "brown",
+        iconImgID: "skill_icon_brown",
     },
     {
         id: "good_luck",
@@ -480,7 +458,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Good Luck",
         maxLevels: 3,
 
-        icon: "yellow",
+        iconImgID: "skill_icon_yellow",
     },
     {
         id: "guard",
@@ -488,7 +466,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Guard",
         maxLevels: 5,
 
-        icon: "grey",
+        iconImgID: "skill_icon_grey",
     },
     {
         id: "guard_up",
@@ -496,7 +474,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Guard Up",
         maxLevels: 3,
 
-        icon: "white",
+        iconImgID: "skill_icon_white",
     },
     {
         id: "handicraft",
@@ -504,7 +482,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Handicraft",
         maxLevels: 5,
 
-        icon: "darkblue",
+        iconImgID: "skill_icon_darkblue",
     },
     {
         id: "hellfire_cloak",
@@ -512,7 +490,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Hellfire Cloak",
         maxLevels: 4,
 
-        icon: "purple",
+        iconImgID: "skill_icon_purple",
     },
     {
         id: "heroics",
@@ -520,7 +498,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Heroics",
         maxLevels: 5,
 
-        icon: "red",
+        iconImgID: "skill_icon_red",
     },
     {
         id: "horn_maestro",
@@ -528,7 +506,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Horn Maestro",
         maxLevels: 1,
 
-        icon: "green",
+        iconImgID: "skill_icon_green",
     },
     {
         id: "hunger_resistance",
@@ -536,7 +514,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Hunger Resistance",
         maxLevels: 3,
 
-        icon: "gold",
+        iconImgID: "skill_icon_gold",
     },
     {
         id: "item_prolonger",
@@ -544,7 +522,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Item Prolonger",
         maxLevels: 3,
 
-        icon: "brown",
+        iconImgID: "skill_icon_brown",
     },
     {
         id: "jump_master",
@@ -552,7 +530,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Jump Master",
         maxLevels: 1,
 
-        icon: "blue",
+        iconImgID: "skill_icon_blue",
     },
     {
         id: "kushala_blessing",
@@ -560,7 +538,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Kushala Blessing",
         maxLevels: 4,
 
-        icon: "grey",
+        iconImgID: "skill_icon_grey",
     },
     {
         id: "latent_power",
@@ -568,7 +546,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Latent Power",
         maxLevels: 5,
 
-        icon: "pink",
+        iconImgID: "skill_icon_pink",
     },
     {
         id: "leap_of_faith",
@@ -576,7 +554,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Leap Of Faith",
         maxLevels: 1,
 
-        icon: "lightblue",
+        iconImgID: "skill_icon_lightblue",
     },
     {
         id: "load_shells",
@@ -584,7 +562,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Load Shells",
         maxLevels: 2,
 
-        icon: "grey",
+        iconImgID: "skill_icon_grey",
     },
     {
         id: "marathon_runner",
@@ -592,7 +570,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Marathon Runner",
         maxLevels: 3,
 
-        icon: "gold",
+        iconImgID: "skill_icon_gold",
     },
     {
         id: "master_mounter",
@@ -600,7 +578,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Master Mounter",
         maxLevels: 1,
 
-        icon: "blue",
+        iconImgID: "skill_icon_blue",
     },
     {
         id: "masters_touch",
@@ -608,7 +586,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Master's Touch",
         maxLevels: 3,
 
-        icon: "white",
+        iconImgID: "skill_icon_white",
     },
     {
         id: "maximum_might",
@@ -616,7 +594,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Maximum Might",
         maxLevels: 3,
 
-        icon: "pink",
+        iconImgID: "skill_icon_pink",
     },
     {
         id: "minds_eye",
@@ -624,7 +602,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Mind's Eye",
         maxLevels: 3,
 
-        icon: "white",
+        iconImgID: "skill_icon_white",
     },
     {
         id: "muck_resistance",
@@ -632,7 +610,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Muck Resistance",
         maxLevels: 2,
 
-        icon: "grey",
+        iconImgID: "skill_icon_grey",
     },
     {
         id: "mushroomancer",
@@ -640,7 +618,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Mushroomancer",
         maxLevels: 3,
 
-        icon: "purple",
+        iconImgID: "skill_icon_purple",
     },
     {
         id: "normal_rapid_up",
@@ -648,7 +626,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Normal/Rapid Up",
         maxLevels: 3,
 
-        icon: "white",
+        iconImgID: "skill_icon_white",
     },
     {
         id: "offensive_guard",
@@ -656,7 +634,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Offensive Guard",
         maxLevels: 3,
 
-        icon: "purple",
+        iconImgID: "skill_icon_purple",
     },
     {
         id: "partbreaker",
@@ -664,7 +642,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Partbreaker",
         maxLevels: 3,
 
-        icon: "grey",
+        iconImgID: "skill_icon_grey",
     },
     {
         id: "peak_performance",
@@ -672,7 +650,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Peak Performance",
         maxLevels: 3,
 
-        icon: "red",
+        iconImgID: "skill_icon_red",
     },
     {
         id: "pierce_up",
@@ -680,7 +658,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Pierce Up",
         maxLevels: 3,
 
-        icon: "blue",
+        iconImgID: "skill_icon_blue",
     },
     {
         id: "power_prolonger",
@@ -688,7 +666,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Power Prolonger",
         maxLevels: 3,
 
-        icon: "brown",
+        iconImgID: "skill_icon_brown",
     },
     {
         id: "protective_polish",
@@ -696,7 +674,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Protective Polish",
         maxLevels: 3,
 
-        icon: "yellow",
+        iconImgID: "skill_icon_yellow",
     },
     {
         id: "punishing_draw",
@@ -704,7 +682,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Punishing Draw",
         maxLevels: 3,
 
-        icon: "yellow",
+        iconImgID: "skill_icon_yellow",
     },
     {
         id: "quick_sheath",
@@ -712,7 +690,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Quick Sheath",
         maxLevels: 3,
 
-        icon: "brown",
+        iconImgID: "skill_icon_brown",
     },
     {
         id: "rapid_fire_up",
@@ -720,7 +698,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Rapid Fire Up",
         maxLevels: 3,
 
-        icon: "white",
+        iconImgID: "skill_icon_white",
     },
     {
         id: "rapid_morph",
@@ -728,7 +706,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Rapid Morph",
         maxLevels: 3,
 
-        icon: "blue",
+        iconImgID: "skill_icon_blue",
     },
     {
         id: "razor_sharp",
@@ -736,7 +714,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Razor Sharp",
         maxLevels: 3,
 
-        icon: "yellow",
+        iconImgID: "skill_icon_yellow",
     },
     {
         id: "recoil_down",
@@ -744,7 +722,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Recoil Down",
         maxLevels: 3,
 
-        icon: "brown",
+        iconImgID: "skill_icon_brown",
     },
     {
         id: "recovery_speed",
@@ -752,7 +730,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Recovery Speed",
         maxLevels: 3,
 
-        icon: "green",
+        iconImgID: "skill_icon_green",
     },
     {
         id: "recovery_up",
@@ -760,7 +738,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Recovery Up",
         maxLevels: 3,
 
-        icon: "green",
+        iconImgID: "skill_icon_green",
     },
     {
         id: "reload_speed",
@@ -768,7 +746,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Reload Speed",
         maxLevels: 3,
 
-        icon: "white",
+        iconImgID: "skill_icon_white",
     },
     {
         id: "resentment",
@@ -776,7 +754,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Resentment",
         maxLevels: 5,
 
-        icon: "orange",
+        iconImgID: "skill_icon_orange",
     },
     {
         id: "resuscitate",
@@ -784,7 +762,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Resuscitate",
         maxLevels: 3,
 
-        icon: "orange",
+        iconImgID: "skill_icon_orange",
     },
     {
         id: "slugger",
@@ -792,7 +770,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Slugger",
         maxLevels: 3,
 
-        icon: "yellow",
+        iconImgID: "skill_icon_yellow",
     },
     {
         id: "spare_shot",
@@ -800,7 +778,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Spare Shot",
         maxLevels: 3,
 
-        icon: "yellow",
+        iconImgID: "skill_icon_yellow",
     },
     {
         id: "special_ammo_boost",
@@ -808,7 +786,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Special Ammo Boost",
         maxLevels: 2,
 
-        icon: "grey",
+        iconImgID: "skill_icon_grey",
     },
     {
         id: "speed_eating",
@@ -816,7 +794,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Speed Eating",
         maxLevels: 3,
 
-        icon: "gold",
+        iconImgID: "skill_icon_gold",
     },
     {
         id: "speed_sharpening",
@@ -824,7 +802,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Speed Sharpening",
         maxLevels: 3,
 
-        icon: "yellow",
+        iconImgID: "skill_icon_yellow",
     },
     {
         id: "spread_up",
@@ -832,7 +810,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Spread Up",
         maxLevels: 3,
 
-        icon: "grey",
+        iconImgID: "skill_icon_grey",
     },
     {
         id: "stamina_surge",
@@ -840,7 +818,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Stamina Surge",
         maxLevels: 3,
 
-        icon: "gold",
+        iconImgID: "skill_icon_gold",
     },
     {
         id: "stamina_thief",
@@ -848,7 +826,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Stamina Thief",
         maxLevels: 3,
 
-        icon: "darkblue",
+        iconImgID: "skill_icon_darkblue",
     },
     {
         id: "steadiness",
@@ -856,7 +834,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Steadiness",
         maxLevels: 2,
 
-        icon: "grey",
+        iconImgID: "skill_icon_grey",
     },
     {
         id: "stormsoul",
@@ -864,7 +842,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Stormsoul",
         maxLevels: 5,
 
-        icon: "orange",
+        iconImgID: "skill_icon_orange",
     },
     {
         id: "stun_resistance",
@@ -872,7 +850,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Stun Resistance",
         maxLevels: 3,
 
-        icon: "yellow",
+        iconImgID: "skill_icon_yellow",
     },
     {
         id: "teostra_blessing",
@@ -880,7 +858,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Teostra Blessing",
         maxLevels: 4,
 
-        icon: "red",
+        iconImgID: "skill_icon_red",
     },
     {
         id: "thunder_alignment",
@@ -888,7 +866,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Thunder Alignment",
         maxLevels: 5,
 
-        icon: "yellow",
+        iconImgID: "skill_icon_yellow",
     },
     {
         id: "tremor_resistance",
@@ -896,7 +874,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Tremor Resistance",
         maxLevels: 3,
 
-        icon: "grey",
+        iconImgID: "skill_icon_grey",
     },
     {
         id: "wall_runner",
@@ -904,7 +882,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Wall Runner",
         maxLevels: 3,
 
-        icon: "green",
+        iconImgID: "skill_icon_green",
     },
     {
         id: "weakness_exploit",
@@ -912,7 +890,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Weakness Exploit",
         maxLevels: 3,
 
-        icon: "pink",
+        iconImgID: "skill_icon_pink",
     },
     {
         id: "wide_range",
@@ -920,7 +898,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Wide Range",
         maxLevels: 5,
 
-        icon: "white",
+        iconImgID: "skill_icon_white",
     },
     {
         id: "wind_alignment",
@@ -928,7 +906,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Wind Alignment",
         maxLevels: 5,
 
-        icon: "lightblue",
+        iconImgID: "skill_icon_lightblue",
     },
     {
         id: "windproof",
@@ -936,7 +914,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Windproof",
         maxLevels: 3,
 
-        icon: "white",
+        iconImgID: "skill_icon_white",
     },
     {
         id: "wirebug_whisperer",
@@ -944,70 +922,7 @@ const hardcodedSkills: HardcodedSkill[] = [
         name: "Wirebug Whisperer",
         maxLevels: 3,
 
-        icon: "lightblue",
+        iconImgID: "skill_icon_lightblue",
     },
 ];
-
-
-/*
- * DATA PROCESSING
- */
-
-const iconsToImageID: {[key in SkillIcon]: string} = {
-    blue     : "skill_icon_blue",
-    brown    : "skill_icon_brown",
-    darkblue : "skill_icon_darkblue",
-    gold     : "skill_icon_gold",
-    green    : "skill_icon_green",
-    grey     : "skill_icon_grey",
-    lightblue: "skill_icon_lightblue",
-    orange   : "skill_icon_orange",
-    pink     : "skill_icon_pink",
-    purple   : "skill_icon_purple",
-    red      : "skill_icon_red",
-    white    : "skill_icon_white",
-    yellow   : "skill_icon_yellow",
-}
-
-const skillMap = new Map<string, SkillRO>();
-const skillMapShortIds = new Map<number, SkillRO>();
-
-for (const obj of hardcodedSkills) {
-
-    const mergeIn = {
-        // For convenience, we also attach IDs and filter helpers to each object
-        iconImgPath: getImgPath(iconsToImageID[obj.icon]),
-
-        // We will also convert the icon string to an icon image path.
-        // This will also implicitly check for the icon validity
-        filterHelpers: {
-            nameLower: toNameFilterString(obj.name),
-        },
-    } as const;
-
-    const finalObj: SkillRO = {...obj, ...mergeIn}; 
-
-    // Validate
-    console.assert(/^[_a-z0-9]+$/.test(finalObj.id));
-    console.assert(isPositiveInt(finalObj.shortId));
-    console.assert(finalObj.name !== "");
-    console.assert(isPositiveInt(finalObj.maxLevels) && (finalObj.maxLevels < 8)); // Change if needed
-    console.assert(finalObj.iconImgPath !== "");
-    console.assert(finalObj.filterHelpers.nameLower !== "");
-    
-    // Check for duplicates
-    console.assert(!skillMap.has(obj.id));
-    console.assert(!skillMapShortIds.has(obj.shortId));
-
-    skillMap.set(finalObj.id, finalObj);
-    skillMapShortIds.set(finalObj.shortId, finalObj);
-}
-
-const finalSkillMap = new FrozenMap<string, SkillRO>(skillMap);
-const finalSkillMapShortIds = new FrozenMap<number, SkillRO>(skillMapShortIds);
-
-export {
-    finalSkillMap as skillMap,
-    finalSkillMapShortIds as skillMapShortIds,
-};
 
