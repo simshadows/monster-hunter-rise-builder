@@ -56,10 +56,8 @@ import {
     bowArcShotTypesMap,
     bowChargeShotTypesMap,
 } from "./hardcoded_data/special_weapon_mechanics/bow";
-import {
-    bowgunAmmoTypesMap,
-    specialSelectionTypesMap,
-} from "./hardcoded_data/special_weapon_mechanics_old";
+import {bowgunAmmoTypesMap      } from "./hardcoded_data/special_weapon_mechanics/bowguns";
+import {specialSelectionTypesMap} from "./hardcoded_data/special_weapon_mechanics/general";
 
 const WEAPON_GS_PATH  = "./data/weapons_greatsword.json";
 const WEAPON_LS_PATH  = "./data/weapons_longsword.json";

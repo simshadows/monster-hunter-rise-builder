@@ -78,6 +78,17 @@ export interface RampageSkill {
 }
 export type RampageSkillRO = Readonly<RampageSkill>;
 
+/*** Weapon Special Selections ***/
+
+export type WeaponSpecialSelectionType = "lightbowgunmod" | "heavybowgunmod";
+
+export interface WeaponSpecialSelection {
+    id:   number;
+    name: string;
+    type: WeaponSpecialSelectionType;
+}
+export type WeaponSpecialSelectionRO = Readonly<WeaponSpecialSelection>;
+
 /*** Weapon Mechanics: Gunlance ***/
 
 export interface GLShellingType {
@@ -148,4 +159,13 @@ export interface BowChargeShotType {
     name: string;
 }
 export type BowChargeShotTypeRO = Readonly<BowChargeShotType>;
+
+/*** Weapon Mechanics: Light Bowgun and Heavy Bowgun ***/
+
+export interface BowgunAmmoType {
+    id:        string;
+    name:      string;
+    shortName: string;
+}
+export type BowgunAmmoTypeRO = Readonly<BowgunAmmoType>;
 
