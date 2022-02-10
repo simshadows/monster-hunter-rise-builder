@@ -34,7 +34,7 @@ import {getImgPath} from "../images";
 import {
     skillMap,
     skillMapShortIds,
-} from "./hardcoded_data/skills";
+} from "./generated_code/skills";
 import {
     rampageSkillsMap,
     rampageSkillsMapShortIds,

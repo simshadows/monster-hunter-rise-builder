@@ -13,7 +13,8 @@
     "start": "webpack serve --mode development",
     "serve": "python3 -m http.server --directory ./dist",
     "ghpages-build": "webpack --output-path ./docs",
-    "ghpages-serve": "python3 -m http.server --directory ./docs"
+    "ghpages-serve": "python3 -m http.server --directory ./docs",
+    "run-code-generators": "python3 ./dev_scripts/mhrb/code_generators/run_code_generator.py"
   },
   "devDependencies": {
     "@babel/core": "^7.17.0",
