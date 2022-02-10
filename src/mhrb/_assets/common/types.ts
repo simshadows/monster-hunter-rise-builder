@@ -5,6 +5,7 @@
 
 export type Tier = "lr" | "hr";
 export type Rarity = 1 | 2 | 3 | 4 | 5 | 6 | 7;
+export type DecorationSlotSize = 1 | 2 | 3;
 
 export type RawTypeStr = "severing" | "blunt";
 
@@ -13,31 +14,6 @@ export type StatStr = "poison" | "paralysis" | "sleep" | "blast";
 export type EleStatStr = ElementStr | StatStr;
 
 export type EndlineTag = "" | "hr";
-
-/*** Petalace ***/
-
-export interface Petalace {
-    id:   string;
-    name: string;
-
-    endlineTag:  EndlineTag;
-    rarity:      Rarity;
-
-    healthUp:    number;
-    healthGain:  number;
-    staminaUp:   number;
-    staminaGain: number;
-    attackUp:    number;
-    attackGain:  number;
-    defenseUp:   number;
-    defenseGain: number;
-
-    iconImgPath: string;
-    filterHelpers: Readonly<{
-        nameLower: string;
-    }>;
-}
-export type PetalaceRO = Readonly<Petalace>;
 
 /*** Armour Skills ***/
 
@@ -70,6 +46,9 @@ export interface Skill {
 }
 export type SkillRO = Readonly<Skill>;
 
+// Common to represent levels of skills as an array of 2-tuples like this.
+export type SkillLevels = Readonly<[SkillRO, number]>[];
+
 /*** Rampage Skills ***/
 
 export interface RampageSkill {
@@ -78,6 +57,62 @@ export interface RampageSkill {
     name:    string;
 }
 export type RampageSkillRO = Readonly<RampageSkill>;
+
+/*** Petalace ***/
+
+export interface Petalace {
+    id:   string;
+    name: string;
+
+    endlineTag:  EndlineTag;
+    rarity:      Rarity;
+
+    healthUp:    number;
+    healthGain:  number;
+    staminaUp:   number;
+    staminaGain: number;
+    attackUp:    number;
+    attackGain:  number;
+    defenseUp:   number;
+    defenseGain: number;
+
+    iconImgPath: string;
+    filterHelpers: Readonly<{
+        nameLower: string;
+    }>;
+}
+export type PetalaceRO = Readonly<Petalace>;
+
+/*** Decorations ***/
+
+export type DecorationIconType = "blue"
+                               | "brown"
+                               | "darkblue"
+                               | "gold"
+                               | "green"
+                               | "grey"
+                               | "lightblue"
+                               | "orange"
+                               | "pink"
+                               | "purple"
+                               | "red"
+                               | "white"
+                               | "yellow";
+
+export interface Decoration {
+    id:   number;
+    name: string;
+
+    slotSize: DecorationSlotSize;
+    rarity:   Exclude<Rarity, 1 | 2 | 3>; // Decorations aren't observed to have rarities 1-3
+    skills:   Readonly<SkillLevels>;
+
+    icon: DecorationIconType;
+    filterHelpers: Readonly<{
+        nameLower: string;
+    }>;
+}
+export type DecorationRO = Readonly<Decoration>;
 
 /*** Weapon Special Selections ***/
 

@@ -14,7 +14,7 @@ import {
 
 import {
     populate,
-} from "./_internals";
+} from "../../_internals";
 
 type HardcodedKinsect = Readonly<Omit<IGKinsectRO, "kinsectType" | "kinsectBonus"> & {
     kinsectType: string; // These will be converted to their final types

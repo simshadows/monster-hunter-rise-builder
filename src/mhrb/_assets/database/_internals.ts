@@ -5,10 +5,10 @@
 
 import {
     isPositiveInt,
-} from "../../../generic/check";
+} from "../generic/check";
 import {
     FrozenMap,
-} from "../../../generic/frozen-containers";
+} from "../generic/frozen-containers";
 
 // TODO: Get this to work?
 //function defaultMapper<In, Out>(obj: In): Out {
@@ -20,12 +20,12 @@ type HasIDandName<K> = {
     name: string;
 };
 
-// NOTE: hardcodedData can be modified by this operation!
+// NOTE: hardcodedData can be modified by this operation if hardcodedData elements are mutable!
 export function populate<
     PreprocessedDataObj extends HasIDandName<PreprocessedDataObj["id"]>,
     FinalDataObj        extends HasIDandName<PreprocessedDataObj["id"]> = PreprocessedDataObj,
 >(
-    hardcodedData: PreprocessedDataObj[],
+    hardcodedData: Readonly<PreprocessedDataObj[]>,
     mapper       : (x: PreprocessedDataObj) => FinalDataObj,
 ): FrozenMap<PreprocessedDataObj["id"], FinalDataObj> {
 

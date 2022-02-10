@@ -17,12 +17,19 @@ import {
 
 import {
     type SkillRO,
+    type DecorationRO,
 } from "../../common/types";
 import {
     toNameFilterString,
 } from "../../common/mappings";
+import {
+    populate,
+} from "../_internals";
 
 import {skillsArray} from "./_generated_skills";
+import {decosArray} from "./_generated_decorations";
+
+/*** Skills ***/
 
 const skillMap = new Map<string, SkillRO>();
 const skillMapShortIds = new Map<number, SkillRO>();
@@ -48,7 +55,26 @@ for (const obj of skillsArray) {
 const finalSkillMap = new FrozenMap<string, SkillRO>(skillMap);
 const finalSkillMapShortIds = new FrozenMap<number, SkillRO>(skillMapShortIds);
 
+/*** Decorations ***/
+
+const decosMap: FrozenMap<number, DecorationRO> = populate(
+    decosArray,
+    (obj) => {
+        // Validate
+        console.assert(isPositiveInt(obj.id));
+        console.assert(obj.name !== "");
+        console.assert(obj.skills.length > 0); // Should be at least one skill in there
+        for (const [_, v] of obj.skills) console.assert(isPositiveInt(v));
+
+        console.assert(obj.filterHelpers.nameLower !== "");
+        console.assert(obj.filterHelpers.nameLower === toNameFilterString(obj.name));
+
+        return obj;
+    }
+);
+
 export {
+    decosMap,
     finalSkillMap as skillMap,
     finalSkillMapShortIds as skillMapShortIds,
 };

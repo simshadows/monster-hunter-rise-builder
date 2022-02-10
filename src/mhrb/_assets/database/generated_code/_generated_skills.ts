@@ -35,1227 +35,1449 @@
 
 import {type SkillRO} from "../../common/types";
 
+export const __generated_skill__fire_attack: SkillRO = {
+    id: "fire_attack",
+    shortId: 1,
+    name: "Fire Attack",
+    maxLevels: 5,
+
+    iconImgID: "skill_icon_red",
+    filterHelpers: {
+        nameLower: "fireattack",
+    }
+};
+
+export const __generated_skill__water_attack: SkillRO = {
+    id: "water_attack",
+    shortId: 2,
+    name: "Water Attack",
+    maxLevels: 5,
+
+    iconImgID: "skill_icon_blue",
+    filterHelpers: {
+        nameLower: "waterattack",
+    }
+};
+
+export const __generated_skill__thunder_attack: SkillRO = {
+    id: "thunder_attack",
+    shortId: 3,
+    name: "Thunder Attack",
+    maxLevels: 5,
+
+    iconImgID: "skill_icon_yellow",
+    filterHelpers: {
+        nameLower: "thunderattack",
+    }
+};
+
+export const __generated_skill__ice_attack: SkillRO = {
+    id: "ice_attack",
+    shortId: 4,
+    name: "Ice Attack",
+    maxLevels: 5,
+
+    iconImgID: "skill_icon_lightblue",
+    filterHelpers: {
+        nameLower: "iceattack",
+    }
+};
+
+export const __generated_skill__dragon_attack: SkillRO = {
+    id: "dragon_attack",
+    shortId: 5,
+    name: "Dragon Attack",
+    maxLevels: 5,
+
+    iconImgID: "skill_icon_orange",
+    filterHelpers: {
+        nameLower: "dragonattack",
+    }
+};
+
+export const __generated_skill__poison_attack: SkillRO = {
+    id: "poison_attack",
+    shortId: 6,
+    name: "Poison Attack",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_purple",
+    filterHelpers: {
+        nameLower: "poisonattack",
+    }
+};
+
+export const __generated_skill__paralysis_attack: SkillRO = {
+    id: "paralysis_attack",
+    shortId: 7,
+    name: "Paralysis Attack",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_gold",
+    filterHelpers: {
+        nameLower: "paralysisattack",
+    }
+};
+
+export const __generated_skill__sleep_attack: SkillRO = {
+    id: "sleep_attack",
+    shortId: 8,
+    name: "Sleep Attack",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_lightblue",
+    filterHelpers: {
+        nameLower: "sleepattack",
+    }
+};
+
+export const __generated_skill__blast_attack: SkillRO = {
+    id: "blast_attack",
+    shortId: 9,
+    name: "Blast Attack",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_orange",
+    filterHelpers: {
+        nameLower: "blastattack",
+    }
+};
+
+export const __generated_skill__fire_resistance: SkillRO = {
+    id: "fire_resistance",
+    shortId: 10,
+    name: "Fire Resistance",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_red",
+    filterHelpers: {
+        nameLower: "fireresistance",
+    }
+};
+
+export const __generated_skill__water_resistance: SkillRO = {
+    id: "water_resistance",
+    shortId: 11,
+    name: "Water Resistance",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_blue",
+    filterHelpers: {
+        nameLower: "waterresistance",
+    }
+};
+
+export const __generated_skill__thunder_resistance: SkillRO = {
+    id: "thunder_resistance",
+    shortId: 12,
+    name: "Thunder Resistance",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_yellow",
+    filterHelpers: {
+        nameLower: "thunderresistance",
+    }
+};
+
+export const __generated_skill__ice_resistance: SkillRO = {
+    id: "ice_resistance",
+    shortId: 13,
+    name: "Ice Resistance",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_lightblue",
+    filterHelpers: {
+        nameLower: "iceresistance",
+    }
+};
+
+export const __generated_skill__dragon_resistance: SkillRO = {
+    id: "dragon_resistance",
+    shortId: 14,
+    name: "Dragon Resistance",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_orange",
+    filterHelpers: {
+        nameLower: "dragonresistance",
+    }
+};
+
+export const __generated_skill__poison_resistance: SkillRO = {
+    id: "poison_resistance",
+    shortId: 15,
+    name: "Poison Resistance",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_purple",
+    filterHelpers: {
+        nameLower: "poisonresistance",
+    }
+};
+
+export const __generated_skill__paralysis_resistance: SkillRO = {
+    id: "paralysis_resistance",
+    shortId: 16,
+    name: "Paralysis Resistance",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_gold",
+    filterHelpers: {
+        nameLower: "paralysisresistance",
+    }
+};
+
+export const __generated_skill__sleep_resistance: SkillRO = {
+    id: "sleep_resistance",
+    shortId: 17,
+    name: "Sleep Resistance",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_lightblue",
+    filterHelpers: {
+        nameLower: "sleepresistance",
+    }
+};
+
+export const __generated_skill__blast_resistance: SkillRO = {
+    id: "blast_resistance",
+    shortId: 18,
+    name: "Blast Resistance",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_orange",
+    filterHelpers: {
+        nameLower: "blastresistance",
+    }
+};
+
+export const __generated_skill__affinity_sliding: SkillRO = {
+    id: "affinity_sliding",
+    shortId: 19,
+    name: "Affinity Sliding",
+    maxLevels: 1,
+
+    iconImgID: "skill_icon_pink",
+    filterHelpers: {
+        nameLower: "affinitysliding",
+    }
+};
+
+export const __generated_skill__agitator: SkillRO = {
+    id: "agitator",
+    shortId: 20,
+    name: "Agitator",
+    maxLevels: 5,
+
+    iconImgID: "skill_icon_red",
+    filterHelpers: {
+        nameLower: "agitator",
+    }
+};
+
+export const __generated_skill__ammo_up: SkillRO = {
+    id: "ammo_up",
+    shortId: 21,
+    name: "Ammo Up",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_green",
+    filterHelpers: {
+        nameLower: "ammoup",
+    }
+};
+
+export const __generated_skill__artillery: SkillRO = {
+    id: "artillery",
+    shortId: 22,
+    name: "Artillery",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_grey",
+    filterHelpers: {
+        nameLower: "artillery",
+    }
+};
+
+export const __generated_skill__attack_boost: SkillRO = {
+    id: "attack_boost",
+    shortId: 23,
+    name: "Attack Boost",
+    maxLevels: 7,
+
+    iconImgID: "skill_icon_red",
+    filterHelpers: {
+        nameLower: "attackboost",
+    }
+};
+
+export const __generated_skill__ballistics: SkillRO = {
+    id: "ballistics",
+    shortId: 24,
+    name: "Ballistics",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_white",
+    filterHelpers: {
+        nameLower: "ballistics",
+    }
+};
+
+export const __generated_skill__blight_resistance: SkillRO = {
+    id: "blight_resistance",
+    shortId: 25,
+    name: "Blight Resistance",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_blue",
+    filterHelpers: {
+        nameLower: "blightresistance",
+    }
+};
+
+export const __generated_skill__bludgeoner: SkillRO = {
+    id: "bludgeoner",
+    shortId: 26,
+    name: "Bludgeoner",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_grey",
+    filterHelpers: {
+        nameLower: "bludgeoner",
+    }
+};
+
+export const __generated_skill__bombardier: SkillRO = {
+    id: "bombardier",
+    shortId: 27,
+    name: "Bombardier",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_orange",
+    filterHelpers: {
+        nameLower: "bombardier",
+    }
+};
+
+export const __generated_skill__botanist: SkillRO = {
+    id: "botanist",
+    shortId: 28,
+    name: "Botanist",
+    maxLevels: 4,
+
+    iconImgID: "skill_icon_green",
+    filterHelpers: {
+        nameLower: "botanist",
+    }
+};
+
+export const __generated_skill__bow_charge_plus: SkillRO = {
+    id: "bow_charge_plus",
+    shortId: 29,
+    name: "Bow Charge Plus",
+    maxLevels: 1,
+
+    iconImgID: "skill_icon_green",
+    filterHelpers: {
+        nameLower: "bowchargeplus",
+    }
+};
+
+export const __generated_skill__bubbly_dance: SkillRO = {
+    id: "bubbly_dance",
+    shortId: 30,
+    name: "Bubbly Dance",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_white",
+    filterHelpers: {
+        nameLower: "bubblydance",
+    }
+};
+
+export const __generated_skill__capture_master: SkillRO = {
+    id: "capture_master",
+    shortId: 31,
+    name: "Capture Master",
+    maxLevels: 1,
+
+    iconImgID: "skill_icon_pink",
+    filterHelpers: {
+        nameLower: "capturemaster",
+    }
+};
+
+export const __generated_skill__carving_master: SkillRO = {
+    id: "carving_master",
+    shortId: 32,
+    name: "Carving Master",
+    maxLevels: 1,
+
+    iconImgID: "skill_icon_green",
+    filterHelpers: {
+        nameLower: "carvingmaster",
+    }
+};
+
+export const __generated_skill__carving_pro: SkillRO = {
+    id: "carving_pro",
+    shortId: 33,
+    name: "Carving Pro",
+    maxLevels: 1,
+
+    iconImgID: "skill_icon_grey",
+    filterHelpers: {
+        nameLower: "carvingpro",
+    }
+};
+
+export const __generated_skill__chameleos_blessing: SkillRO = {
+    id: "chameleos_blessing",
+    shortId: 34,
+    name: "Chameleos Blessing",
+    maxLevels: 4,
+
+    iconImgID: "skill_icon_purple",
+    filterHelpers: {
+        nameLower: "chameleosblessing",
+    }
+};
+
+export const __generated_skill__constitution: SkillRO = {
+    id: "constitution",
+    shortId: 35,
+    name: "Constitution",
+    maxLevels: 5,
+
+    iconImgID: "skill_icon_gold",
+    filterHelpers: {
+        nameLower: "constitution",
+    }
+};
+
+export const __generated_skill__counterstrike: SkillRO = {
+    id: "counterstrike",
+    shortId: 36,
+    name: "Counterstrike",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_red",
+    filterHelpers: {
+        nameLower: "counterstrike",
+    }
+};
+
+export const __generated_skill__critical_boost: SkillRO = {
+    id: "critical_boost",
+    shortId: 37,
+    name: "Critical Boost",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_pink",
+    filterHelpers: {
+        nameLower: "criticalboost",
+    }
+};
+
+export const __generated_skill__critical_draw: SkillRO = {
+    id: "critical_draw",
+    shortId: 38,
+    name: "Critical Draw",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_pink",
+    filterHelpers: {
+        nameLower: "criticaldraw",
+    }
+};
+
+export const __generated_skill__critical_element: SkillRO = {
+    id: "critical_element",
+    shortId: 39,
+    name: "Critical Element",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_darkblue",
+    filterHelpers: {
+        nameLower: "criticalelement",
+    }
+};
+
+export const __generated_skill__critical_eye: SkillRO = {
+    id: "critical_eye",
+    shortId: 40,
+    name: "Critical Eye",
+    maxLevels: 7,
+
+    iconImgID: "skill_icon_pink",
+    filterHelpers: {
+        nameLower: "criticaleye",
+    }
+};
+
+export const __generated_skill__defense_boost: SkillRO = {
+    id: "defense_boost",
+    shortId: 41,
+    name: "Defense Boost",
+    maxLevels: 7,
+
+    iconImgID: "skill_icon_gold",
+    filterHelpers: {
+        nameLower: "defenseboost",
+    }
+};
+
+export const __generated_skill__diversion: SkillRO = {
+    id: "diversion",
+    shortId: 42,
+    name: "Diversion",
+    maxLevels: 1,
+
+    iconImgID: "skill_icon_purple",
+    filterHelpers: {
+        nameLower: "diversion",
+    }
+};
+
+export const __generated_skill__divine_blessing: SkillRO = {
+    id: "divine_blessing",
+    shortId: 43,
+    name: "Divine Blessing",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_white",
+    filterHelpers: {
+        nameLower: "divineblessing",
+    }
+};
+
+export const __generated_skill__dragonheart: SkillRO = {
+    id: "dragonheart",
+    shortId: 44,
+    name: "Dragonheart",
+    maxLevels: 5,
+
+    iconImgID: "skill_icon_orange",
+    filterHelpers: {
+        nameLower: "dragonheart",
+    }
+};
+
+export const __generated_skill__earplugs: SkillRO = {
+    id: "earplugs",
+    shortId: 45,
+    name: "Earplugs",
+    maxLevels: 5,
+
+    iconImgID: "skill_icon_white",
+    filterHelpers: {
+        nameLower: "earplugs",
+    }
+};
+
+export const __generated_skill__evade_extender: SkillRO = {
+    id: "evade_extender",
+    shortId: 46,
+    name: "Evade Extender",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_lightblue",
+    filterHelpers: {
+        nameLower: "evadeextender",
+    }
+};
+
+export const __generated_skill__evade_window: SkillRO = {
+    id: "evade_window",
+    shortId: 47,
+    name: "Evade Window",
+    maxLevels: 5,
+
+    iconImgID: "skill_icon_lightblue",
+    filterHelpers: {
+        nameLower: "evadewindow",
+    }
+};
+
+export const __generated_skill__flinch_free: SkillRO = {
+    id: "flinch_free",
+    shortId: 48,
+    name: "Flinch Free",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_grey",
+    filterHelpers: {
+        nameLower: "flinchfree",
+    }
+};
+
+export const __generated_skill__focus: SkillRO = {
+    id: "focus",
+    shortId: 49,
+    name: "Focus",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_white",
+    filterHelpers: {
+        nameLower: "focus",
+    }
+};
+
+export const __generated_skill__fortify: SkillRO = {
+    id: "fortify",
+    shortId: 50,
+    name: "Fortify",
+    maxLevels: 1,
+
+    iconImgID: "skill_icon_orange",
+    filterHelpers: {
+        nameLower: "fortify",
+    }
+};
+
+export const __generated_skill__free_meal: SkillRO = {
+    id: "free_meal",
+    shortId: 51,
+    name: "Free Meal",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_brown",
+    filterHelpers: {
+        nameLower: "freemeal",
+    }
+};
+
+export const __generated_skill__geologist: SkillRO = {
+    id: "geologist",
+    shortId: 52,
+    name: "Geologist",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_brown",
+    filterHelpers: {
+        nameLower: "geologist",
+    }
+};
+
+export const __generated_skill__good_luck: SkillRO = {
+    id: "good_luck",
+    shortId: 53,
+    name: "Good Luck",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_yellow",
+    filterHelpers: {
+        nameLower: "goodluck",
+    }
+};
+
+export const __generated_skill__guard: SkillRO = {
+    id: "guard",
+    shortId: 54,
+    name: "Guard",
+    maxLevels: 5,
+
+    iconImgID: "skill_icon_grey",
+    filterHelpers: {
+        nameLower: "guard",
+    }
+};
+
+export const __generated_skill__guard_up: SkillRO = {
+    id: "guard_up",
+    shortId: 55,
+    name: "Guard Up",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_white",
+    filterHelpers: {
+        nameLower: "guardup",
+    }
+};
+
+export const __generated_skill__handicraft: SkillRO = {
+    id: "handicraft",
+    shortId: 56,
+    name: "Handicraft",
+    maxLevels: 5,
+
+    iconImgID: "skill_icon_darkblue",
+    filterHelpers: {
+        nameLower: "handicraft",
+    }
+};
+
+export const __generated_skill__hellfire_cloak: SkillRO = {
+    id: "hellfire_cloak",
+    shortId: 57,
+    name: "Hellfire Cloak",
+    maxLevels: 4,
+
+    iconImgID: "skill_icon_purple",
+    filterHelpers: {
+        nameLower: "hellfirecloak",
+    }
+};
+
+export const __generated_skill__heroics: SkillRO = {
+    id: "heroics",
+    shortId: 58,
+    name: "Heroics",
+    maxLevels: 5,
+
+    iconImgID: "skill_icon_red",
+    filterHelpers: {
+        nameLower: "heroics",
+    }
+};
+
+export const __generated_skill__horn_maestro: SkillRO = {
+    id: "horn_maestro",
+    shortId: 59,
+    name: "Horn Maestro",
+    maxLevels: 1,
+
+    iconImgID: "skill_icon_green",
+    filterHelpers: {
+        nameLower: "hornmaestro",
+    }
+};
+
+export const __generated_skill__hunger_resistance: SkillRO = {
+    id: "hunger_resistance",
+    shortId: 60,
+    name: "Hunger Resistance",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_gold",
+    filterHelpers: {
+        nameLower: "hungerresistance",
+    }
+};
+
+export const __generated_skill__item_prolonger: SkillRO = {
+    id: "item_prolonger",
+    shortId: 61,
+    name: "Item Prolonger",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_brown",
+    filterHelpers: {
+        nameLower: "itemprolonger",
+    }
+};
+
+export const __generated_skill__jump_master: SkillRO = {
+    id: "jump_master",
+    shortId: 62,
+    name: "Jump Master",
+    maxLevels: 1,
+
+    iconImgID: "skill_icon_blue",
+    filterHelpers: {
+        nameLower: "jumpmaster",
+    }
+};
+
+export const __generated_skill__kushala_blessing: SkillRO = {
+    id: "kushala_blessing",
+    shortId: 63,
+    name: "Kushala Blessing",
+    maxLevels: 4,
+
+    iconImgID: "skill_icon_grey",
+    filterHelpers: {
+        nameLower: "kushalablessing",
+    }
+};
+
+export const __generated_skill__latent_power: SkillRO = {
+    id: "latent_power",
+    shortId: 64,
+    name: "Latent Power",
+    maxLevels: 5,
+
+    iconImgID: "skill_icon_pink",
+    filterHelpers: {
+        nameLower: "latentpower",
+    }
+};
+
+export const __generated_skill__leap_of_faith: SkillRO = {
+    id: "leap_of_faith",
+    shortId: 65,
+    name: "Leap Of Faith",
+    maxLevels: 1,
+
+    iconImgID: "skill_icon_lightblue",
+    filterHelpers: {
+        nameLower: "leapoffaith",
+    }
+};
+
+export const __generated_skill__load_shells: SkillRO = {
+    id: "load_shells",
+    shortId: 66,
+    name: "Load Shells",
+    maxLevels: 2,
+
+    iconImgID: "skill_icon_grey",
+    filterHelpers: {
+        nameLower: "loadshells",
+    }
+};
+
+export const __generated_skill__marathon_runner: SkillRO = {
+    id: "marathon_runner",
+    shortId: 67,
+    name: "Marathon Runner",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_gold",
+    filterHelpers: {
+        nameLower: "marathonrunner",
+    }
+};
+
+export const __generated_skill__master_mounter: SkillRO = {
+    id: "master_mounter",
+    shortId: 68,
+    name: "Master Mounter",
+    maxLevels: 1,
+
+    iconImgID: "skill_icon_blue",
+    filterHelpers: {
+        nameLower: "mastermounter",
+    }
+};
+
+export const __generated_skill__masters_touch: SkillRO = {
+    id: "masters_touch",
+    shortId: 69,
+    name: "Master's Touch",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_white",
+    filterHelpers: {
+        nameLower: "master'stouch",
+    }
+};
+
+export const __generated_skill__maximum_might: SkillRO = {
+    id: "maximum_might",
+    shortId: 70,
+    name: "Maximum Might",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_pink",
+    filterHelpers: {
+        nameLower: "maximummight",
+    }
+};
+
+export const __generated_skill__minds_eye: SkillRO = {
+    id: "minds_eye",
+    shortId: 71,
+    name: "Mind's Eye",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_white",
+    filterHelpers: {
+        nameLower: "mind'seye",
+    }
+};
+
+export const __generated_skill__muck_resistance: SkillRO = {
+    id: "muck_resistance",
+    shortId: 72,
+    name: "Muck Resistance",
+    maxLevels: 2,
+
+    iconImgID: "skill_icon_grey",
+    filterHelpers: {
+        nameLower: "muckresistance",
+    }
+};
+
+export const __generated_skill__mushroomancer: SkillRO = {
+    id: "mushroomancer",
+    shortId: 73,
+    name: "Mushroomancer",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_purple",
+    filterHelpers: {
+        nameLower: "mushroomancer",
+    }
+};
+
+export const __generated_skill__normal_rapid_up: SkillRO = {
+    id: "normal_rapid_up",
+    shortId: 74,
+    name: "Normal/Rapid Up",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_white",
+    filterHelpers: {
+        nameLower: "normal/rapidup",
+    }
+};
+
+export const __generated_skill__offensive_guard: SkillRO = {
+    id: "offensive_guard",
+    shortId: 75,
+    name: "Offensive Guard",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_purple",
+    filterHelpers: {
+        nameLower: "offensiveguard",
+    }
+};
+
+export const __generated_skill__partbreaker: SkillRO = {
+    id: "partbreaker",
+    shortId: 76,
+    name: "Partbreaker",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_grey",
+    filterHelpers: {
+        nameLower: "partbreaker",
+    }
+};
+
+export const __generated_skill__peak_performance: SkillRO = {
+    id: "peak_performance",
+    shortId: 77,
+    name: "Peak Performance",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_red",
+    filterHelpers: {
+        nameLower: "peakperformance",
+    }
+};
+
+export const __generated_skill__pierce_up: SkillRO = {
+    id: "pierce_up",
+    shortId: 78,
+    name: "Pierce Up",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_blue",
+    filterHelpers: {
+        nameLower: "pierceup",
+    }
+};
+
+export const __generated_skill__power_prolonger: SkillRO = {
+    id: "power_prolonger",
+    shortId: 79,
+    name: "Power Prolonger",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_brown",
+    filterHelpers: {
+        nameLower: "powerprolonger",
+    }
+};
+
+export const __generated_skill__protective_polish: SkillRO = {
+    id: "protective_polish",
+    shortId: 80,
+    name: "Protective Polish",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_yellow",
+    filterHelpers: {
+        nameLower: "protectivepolish",
+    }
+};
+
+export const __generated_skill__punishing_draw: SkillRO = {
+    id: "punishing_draw",
+    shortId: 81,
+    name: "Punishing Draw",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_yellow",
+    filterHelpers: {
+        nameLower: "punishingdraw",
+    }
+};
+
+export const __generated_skill__quick_sheath: SkillRO = {
+    id: "quick_sheath",
+    shortId: 82,
+    name: "Quick Sheath",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_brown",
+    filterHelpers: {
+        nameLower: "quicksheath",
+    }
+};
+
+export const __generated_skill__rapid_fire_up: SkillRO = {
+    id: "rapid_fire_up",
+    shortId: 83,
+    name: "Rapid Fire Up",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_white",
+    filterHelpers: {
+        nameLower: "rapidfireup",
+    }
+};
+
+export const __generated_skill__rapid_morph: SkillRO = {
+    id: "rapid_morph",
+    shortId: 84,
+    name: "Rapid Morph",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_blue",
+    filterHelpers: {
+        nameLower: "rapidmorph",
+    }
+};
+
+export const __generated_skill__razor_sharp: SkillRO = {
+    id: "razor_sharp",
+    shortId: 85,
+    name: "Razor Sharp",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_yellow",
+    filterHelpers: {
+        nameLower: "razorsharp",
+    }
+};
+
+export const __generated_skill__recoil_down: SkillRO = {
+    id: "recoil_down",
+    shortId: 86,
+    name: "Recoil Down",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_brown",
+    filterHelpers: {
+        nameLower: "recoildown",
+    }
+};
+
+export const __generated_skill__recovery_speed: SkillRO = {
+    id: "recovery_speed",
+    shortId: 87,
+    name: "Recovery Speed",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_green",
+    filterHelpers: {
+        nameLower: "recoveryspeed",
+    }
+};
+
+export const __generated_skill__recovery_up: SkillRO = {
+    id: "recovery_up",
+    shortId: 88,
+    name: "Recovery Up",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_green",
+    filterHelpers: {
+        nameLower: "recoveryup",
+    }
+};
+
+export const __generated_skill__reload_speed: SkillRO = {
+    id: "reload_speed",
+    shortId: 89,
+    name: "Reload Speed",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_white",
+    filterHelpers: {
+        nameLower: "reloadspeed",
+    }
+};
+
+export const __generated_skill__resentment: SkillRO = {
+    id: "resentment",
+    shortId: 90,
+    name: "Resentment",
+    maxLevels: 5,
+
+    iconImgID: "skill_icon_orange",
+    filterHelpers: {
+        nameLower: "resentment",
+    }
+};
+
+export const __generated_skill__resuscitate: SkillRO = {
+    id: "resuscitate",
+    shortId: 91,
+    name: "Resuscitate",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_orange",
+    filterHelpers: {
+        nameLower: "resuscitate",
+    }
+};
+
+export const __generated_skill__slugger: SkillRO = {
+    id: "slugger",
+    shortId: 92,
+    name: "Slugger",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_yellow",
+    filterHelpers: {
+        nameLower: "slugger",
+    }
+};
+
+export const __generated_skill__spare_shot: SkillRO = {
+    id: "spare_shot",
+    shortId: 93,
+    name: "Spare Shot",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_yellow",
+    filterHelpers: {
+        nameLower: "spareshot",
+    }
+};
+
+export const __generated_skill__special_ammo_boost: SkillRO = {
+    id: "special_ammo_boost",
+    shortId: 94,
+    name: "Special Ammo Boost",
+    maxLevels: 2,
+
+    iconImgID: "skill_icon_grey",
+    filterHelpers: {
+        nameLower: "specialammoboost",
+    }
+};
+
+export const __generated_skill__speed_eating: SkillRO = {
+    id: "speed_eating",
+    shortId: 95,
+    name: "Speed Eating",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_gold",
+    filterHelpers: {
+        nameLower: "speedeating",
+    }
+};
+
+export const __generated_skill__speed_sharpening: SkillRO = {
+    id: "speed_sharpening",
+    shortId: 96,
+    name: "Speed Sharpening",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_yellow",
+    filterHelpers: {
+        nameLower: "speedsharpening",
+    }
+};
+
+export const __generated_skill__spread_up: SkillRO = {
+    id: "spread_up",
+    shortId: 97,
+    name: "Spread Up",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_grey",
+    filterHelpers: {
+        nameLower: "spreadup",
+    }
+};
+
+export const __generated_skill__stamina_surge: SkillRO = {
+    id: "stamina_surge",
+    shortId: 98,
+    name: "Stamina Surge",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_gold",
+    filterHelpers: {
+        nameLower: "staminasurge",
+    }
+};
+
+export const __generated_skill__stamina_thief: SkillRO = {
+    id: "stamina_thief",
+    shortId: 99,
+    name: "Stamina Thief",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_darkblue",
+    filterHelpers: {
+        nameLower: "staminathief",
+    }
+};
+
+export const __generated_skill__steadiness: SkillRO = {
+    id: "steadiness",
+    shortId: 100,
+    name: "Steadiness",
+    maxLevels: 2,
+
+    iconImgID: "skill_icon_grey",
+    filterHelpers: {
+        nameLower: "steadiness",
+    }
+};
+
+export const __generated_skill__stormsoul: SkillRO = {
+    id: "stormsoul",
+    shortId: 101,
+    name: "Stormsoul",
+    maxLevels: 5,
+
+    iconImgID: "skill_icon_orange",
+    filterHelpers: {
+        nameLower: "stormsoul",
+    }
+};
+
+export const __generated_skill__stun_resistance: SkillRO = {
+    id: "stun_resistance",
+    shortId: 102,
+    name: "Stun Resistance",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_yellow",
+    filterHelpers: {
+        nameLower: "stunresistance",
+    }
+};
+
+export const __generated_skill__teostra_blessing: SkillRO = {
+    id: "teostra_blessing",
+    shortId: 103,
+    name: "Teostra Blessing",
+    maxLevels: 4,
+
+    iconImgID: "skill_icon_red",
+    filterHelpers: {
+        nameLower: "teostrablessing",
+    }
+};
+
+export const __generated_skill__thunder_alignment: SkillRO = {
+    id: "thunder_alignment",
+    shortId: 104,
+    name: "Thunder Alignment",
+    maxLevels: 5,
+
+    iconImgID: "skill_icon_yellow",
+    filterHelpers: {
+        nameLower: "thunderalignment",
+    }
+};
+
+export const __generated_skill__tremor_resistance: SkillRO = {
+    id: "tremor_resistance",
+    shortId: 105,
+    name: "Tremor Resistance",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_grey",
+    filterHelpers: {
+        nameLower: "tremorresistance",
+    }
+};
+
+export const __generated_skill__wall_runner: SkillRO = {
+    id: "wall_runner",
+    shortId: 106,
+    name: "Wall Runner",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_green",
+    filterHelpers: {
+        nameLower: "wallrunner",
+    }
+};
+
+export const __generated_skill__weakness_exploit: SkillRO = {
+    id: "weakness_exploit",
+    shortId: 107,
+    name: "Weakness Exploit",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_pink",
+    filterHelpers: {
+        nameLower: "weaknessexploit",
+    }
+};
+
+export const __generated_skill__wide_range: SkillRO = {
+    id: "wide_range",
+    shortId: 108,
+    name: "Wide Range",
+    maxLevels: 5,
+
+    iconImgID: "skill_icon_white",
+    filterHelpers: {
+        nameLower: "widerange",
+    }
+};
+
+export const __generated_skill__wind_alignment: SkillRO = {
+    id: "wind_alignment",
+    shortId: 109,
+    name: "Wind Alignment",
+    maxLevels: 5,
+
+    iconImgID: "skill_icon_lightblue",
+    filterHelpers: {
+        nameLower: "windalignment",
+    }
+};
+
+export const __generated_skill__windproof: SkillRO = {
+    id: "windproof",
+    shortId: 110,
+    name: "Windproof",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_white",
+    filterHelpers: {
+        nameLower: "windproof",
+    }
+};
+
+export const __generated_skill__wirebug_whisperer: SkillRO = {
+    id: "wirebug_whisperer",
+    shortId: 111,
+    name: "Wirebug Whisperer",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_lightblue",
+    filterHelpers: {
+        nameLower: "wirebugwhisperer",
+    }
+};
+
 export const skillsArray: Readonly<SkillRO[]> = [
-    {
-        id: "fire_attack",
-        shortId: 1,
-        name: "Fire Attack",
-        maxLevels: 5,
-
-        iconImgID: "skill_icon_red",
-        filterHelpers: {
-            nameLower: "fireattack",
-        }
-    },
-    {
-        id: "water_attack",
-        shortId: 2,
-        name: "Water Attack",
-        maxLevels: 5,
-
-        iconImgID: "skill_icon_blue",
-        filterHelpers: {
-            nameLower: "waterattack",
-        }
-    },
-    {
-        id: "thunder_attack",
-        shortId: 3,
-        name: "Thunder Attack",
-        maxLevels: 5,
-
-        iconImgID: "skill_icon_yellow",
-        filterHelpers: {
-            nameLower: "thunderattack",
-        }
-    },
-    {
-        id: "ice_attack",
-        shortId: 4,
-        name: "Ice Attack",
-        maxLevels: 5,
-
-        iconImgID: "skill_icon_lightblue",
-        filterHelpers: {
-            nameLower: "iceattack",
-        }
-    },
-    {
-        id: "dragon_attack",
-        shortId: 5,
-        name: "Dragon Attack",
-        maxLevels: 5,
-
-        iconImgID: "skill_icon_orange",
-        filterHelpers: {
-            nameLower: "dragonattack",
-        }
-    },
-    {
-        id: "poison_attack",
-        shortId: 6,
-        name: "Poison Attack",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_purple",
-        filterHelpers: {
-            nameLower: "poisonattack",
-        }
-    },
-    {
-        id: "paralysis_attack",
-        shortId: 7,
-        name: "Paralysis Attack",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_gold",
-        filterHelpers: {
-            nameLower: "paralysisattack",
-        }
-    },
-    {
-        id: "sleep_attack",
-        shortId: 8,
-        name: "Sleep Attack",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_lightblue",
-        filterHelpers: {
-            nameLower: "sleepattack",
-        }
-    },
-    {
-        id: "blast_attack",
-        shortId: 9,
-        name: "Blast Attack",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_orange",
-        filterHelpers: {
-            nameLower: "blastattack",
-        }
-    },
-    {
-        id: "fire_resistance",
-        shortId: 10,
-        name: "Fire Resistance",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_red",
-        filterHelpers: {
-            nameLower: "fireresistance",
-        }
-    },
-    {
-        id: "water_resistance",
-        shortId: 11,
-        name: "Water Resistance",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_blue",
-        filterHelpers: {
-            nameLower: "waterresistance",
-        }
-    },
-    {
-        id: "thunder_resistance",
-        shortId: 12,
-        name: "Thunder Resistance",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_yellow",
-        filterHelpers: {
-            nameLower: "thunderresistance",
-        }
-    },
-    {
-        id: "ice_resistance",
-        shortId: 13,
-        name: "Ice Resistance",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_lightblue",
-        filterHelpers: {
-            nameLower: "iceresistance",
-        }
-    },
-    {
-        id: "dragon_resistance",
-        shortId: 14,
-        name: "Dragon Resistance",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_orange",
-        filterHelpers: {
-            nameLower: "dragonresistance",
-        }
-    },
-    {
-        id: "poison_resistance",
-        shortId: 15,
-        name: "Poison Resistance",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_purple",
-        filterHelpers: {
-            nameLower: "poisonresistance",
-        }
-    },
-    {
-        id: "paralysis_resistance",
-        shortId: 16,
-        name: "Paralysis Resistance",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_gold",
-        filterHelpers: {
-            nameLower: "paralysisresistance",
-        }
-    },
-    {
-        id: "sleep_resistance",
-        shortId: 17,
-        name: "Sleep Resistance",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_lightblue",
-        filterHelpers: {
-            nameLower: "sleepresistance",
-        }
-    },
-    {
-        id: "blast_resistance",
-        shortId: 18,
-        name: "Blast Resistance",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_orange",
-        filterHelpers: {
-            nameLower: "blastresistance",
-        }
-    },
-    {
-        id: "affinity_sliding",
-        shortId: 19,
-        name: "Affinity Sliding",
-        maxLevels: 1,
-
-        iconImgID: "skill_icon_pink",
-        filterHelpers: {
-            nameLower: "affinitysliding",
-        }
-    },
-    {
-        id: "agitator",
-        shortId: 20,
-        name: "Agitator",
-        maxLevels: 5,
-
-        iconImgID: "skill_icon_red",
-        filterHelpers: {
-            nameLower: "agitator",
-        }
-    },
-    {
-        id: "ammo_up",
-        shortId: 21,
-        name: "Ammo Up",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_green",
-        filterHelpers: {
-            nameLower: "ammoup",
-        }
-    },
-    {
-        id: "artillery",
-        shortId: 22,
-        name: "Artillery",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_grey",
-        filterHelpers: {
-            nameLower: "artillery",
-        }
-    },
-    {
-        id: "attack_boost",
-        shortId: 23,
-        name: "Attack Boost",
-        maxLevels: 7,
-
-        iconImgID: "skill_icon_red",
-        filterHelpers: {
-            nameLower: "attackboost",
-        }
-    },
-    {
-        id: "ballistics",
-        shortId: 24,
-        name: "Ballistics",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_white",
-        filterHelpers: {
-            nameLower: "ballistics",
-        }
-    },
-    {
-        id: "blight_resistance",
-        shortId: 25,
-        name: "Blight Resistance",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_blue",
-        filterHelpers: {
-            nameLower: "blightresistance",
-        }
-    },
-    {
-        id: "bludgeoner",
-        shortId: 26,
-        name: "Bludgeoner",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_grey",
-        filterHelpers: {
-            nameLower: "bludgeoner",
-        }
-    },
-    {
-        id: "bombardier",
-        shortId: 27,
-        name: "Bombardier",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_orange",
-        filterHelpers: {
-            nameLower: "bombardier",
-        }
-    },
-    {
-        id: "botanist",
-        shortId: 28,
-        name: "Botanist",
-        maxLevels: 4,
-
-        iconImgID: "skill_icon_green",
-        filterHelpers: {
-            nameLower: "botanist",
-        }
-    },
-    {
-        id: "bow_charge_plus",
-        shortId: 29,
-        name: "Bow Charge Plus",
-        maxLevels: 1,
-
-        iconImgID: "skill_icon_green",
-        filterHelpers: {
-            nameLower: "bowchargeplus",
-        }
-    },
-    {
-        id: "bubbly_dance",
-        shortId: 30,
-        name: "Bubbly Dance",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_white",
-        filterHelpers: {
-            nameLower: "bubblydance",
-        }
-    },
-    {
-        id: "capture_master",
-        shortId: 31,
-        name: "Capture Master",
-        maxLevels: 1,
-
-        iconImgID: "skill_icon_pink",
-        filterHelpers: {
-            nameLower: "capturemaster",
-        }
-    },
-    {
-        id: "carving_master",
-        shortId: 32,
-        name: "Carving Master",
-        maxLevels: 1,
-
-        iconImgID: "skill_icon_green",
-        filterHelpers: {
-            nameLower: "carvingmaster",
-        }
-    },
-    {
-        id: "carving_pro",
-        shortId: 33,
-        name: "Carving Pro",
-        maxLevels: 1,
-
-        iconImgID: "skill_icon_grey",
-        filterHelpers: {
-            nameLower: "carvingpro",
-        }
-    },
-    {
-        id: "chameleos_blessing",
-        shortId: 34,
-        name: "Chameleos Blessing",
-        maxLevels: 4,
-
-        iconImgID: "skill_icon_purple",
-        filterHelpers: {
-            nameLower: "chameleosblessing",
-        }
-    },
-    {
-        id: "constitution",
-        shortId: 35,
-        name: "Constitution",
-        maxLevels: 5,
-
-        iconImgID: "skill_icon_gold",
-        filterHelpers: {
-            nameLower: "constitution",
-        }
-    },
-    {
-        id: "counterstrike",
-        shortId: 36,
-        name: "Counterstrike",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_red",
-        filterHelpers: {
-            nameLower: "counterstrike",
-        }
-    },
-    {
-        id: "critical_boost",
-        shortId: 37,
-        name: "Critical Boost",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_pink",
-        filterHelpers: {
-            nameLower: "criticalboost",
-        }
-    },
-    {
-        id: "critical_draw",
-        shortId: 38,
-        name: "Critical Draw",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_pink",
-        filterHelpers: {
-            nameLower: "criticaldraw",
-        }
-    },
-    {
-        id: "critical_element",
-        shortId: 39,
-        name: "Critical Element",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_darkblue",
-        filterHelpers: {
-            nameLower: "criticalelement",
-        }
-    },
-    {
-        id: "critical_eye",
-        shortId: 40,
-        name: "Critical Eye",
-        maxLevels: 7,
-
-        iconImgID: "skill_icon_pink",
-        filterHelpers: {
-            nameLower: "criticaleye",
-        }
-    },
-    {
-        id: "defense_boost",
-        shortId: 41,
-        name: "Defense Boost",
-        maxLevels: 7,
-
-        iconImgID: "skill_icon_gold",
-        filterHelpers: {
-            nameLower: "defenseboost",
-        }
-    },
-    {
-        id: "diversion",
-        shortId: 42,
-        name: "Diversion",
-        maxLevels: 1,
-
-        iconImgID: "skill_icon_purple",
-        filterHelpers: {
-            nameLower: "diversion",
-        }
-    },
-    {
-        id: "divine_blessing",
-        shortId: 43,
-        name: "Divine Blessing",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_white",
-        filterHelpers: {
-            nameLower: "divineblessing",
-        }
-    },
-    {
-        id: "dragonheart",
-        shortId: 44,
-        name: "Dragonheart",
-        maxLevels: 5,
-
-        iconImgID: "skill_icon_orange",
-        filterHelpers: {
-            nameLower: "dragonheart",
-        }
-    },
-    {
-        id: "earplugs",
-        shortId: 45,
-        name: "Earplugs",
-        maxLevels: 5,
-
-        iconImgID: "skill_icon_white",
-        filterHelpers: {
-            nameLower: "earplugs",
-        }
-    },
-    {
-        id: "evade_extender",
-        shortId: 46,
-        name: "Evade Extender",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_lightblue",
-        filterHelpers: {
-            nameLower: "evadeextender",
-        }
-    },
-    {
-        id: "evade_window",
-        shortId: 47,
-        name: "Evade Window",
-        maxLevels: 5,
-
-        iconImgID: "skill_icon_lightblue",
-        filterHelpers: {
-            nameLower: "evadewindow",
-        }
-    },
-    {
-        id: "flinch_free",
-        shortId: 48,
-        name: "Flinch Free",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_grey",
-        filterHelpers: {
-            nameLower: "flinchfree",
-        }
-    },
-    {
-        id: "focus",
-        shortId: 49,
-        name: "Focus",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_white",
-        filterHelpers: {
-            nameLower: "focus",
-        }
-    },
-    {
-        id: "fortify",
-        shortId: 50,
-        name: "Fortify",
-        maxLevels: 1,
-
-        iconImgID: "skill_icon_orange",
-        filterHelpers: {
-            nameLower: "fortify",
-        }
-    },
-    {
-        id: "free_meal",
-        shortId: 51,
-        name: "Free Meal",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_brown",
-        filterHelpers: {
-            nameLower: "freemeal",
-        }
-    },
-    {
-        id: "geologist",
-        shortId: 52,
-        name: "Geologist",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_brown",
-        filterHelpers: {
-            nameLower: "geologist",
-        }
-    },
-    {
-        id: "good_luck",
-        shortId: 53,
-        name: "Good Luck",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_yellow",
-        filterHelpers: {
-            nameLower: "goodluck",
-        }
-    },
-    {
-        id: "guard",
-        shortId: 54,
-        name: "Guard",
-        maxLevels: 5,
-
-        iconImgID: "skill_icon_grey",
-        filterHelpers: {
-            nameLower: "guard",
-        }
-    },
-    {
-        id: "guard_up",
-        shortId: 55,
-        name: "Guard Up",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_white",
-        filterHelpers: {
-            nameLower: "guardup",
-        }
-    },
-    {
-        id: "handicraft",
-        shortId: 56,
-        name: "Handicraft",
-        maxLevels: 5,
-
-        iconImgID: "skill_icon_darkblue",
-        filterHelpers: {
-            nameLower: "handicraft",
-        }
-    },
-    {
-        id: "hellfire_cloak",
-        shortId: 57,
-        name: "Hellfire Cloak",
-        maxLevels: 4,
-
-        iconImgID: "skill_icon_purple",
-        filterHelpers: {
-            nameLower: "hellfirecloak",
-        }
-    },
-    {
-        id: "heroics",
-        shortId: 58,
-        name: "Heroics",
-        maxLevels: 5,
-
-        iconImgID: "skill_icon_red",
-        filterHelpers: {
-            nameLower: "heroics",
-        }
-    },
-    {
-        id: "horn_maestro",
-        shortId: 59,
-        name: "Horn Maestro",
-        maxLevels: 1,
-
-        iconImgID: "skill_icon_green",
-        filterHelpers: {
-            nameLower: "hornmaestro",
-        }
-    },
-    {
-        id: "hunger_resistance",
-        shortId: 60,
-        name: "Hunger Resistance",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_gold",
-        filterHelpers: {
-            nameLower: "hungerresistance",
-        }
-    },
-    {
-        id: "item_prolonger",
-        shortId: 61,
-        name: "Item Prolonger",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_brown",
-        filterHelpers: {
-            nameLower: "itemprolonger",
-        }
-    },
-    {
-        id: "jump_master",
-        shortId: 62,
-        name: "Jump Master",
-        maxLevels: 1,
-
-        iconImgID: "skill_icon_blue",
-        filterHelpers: {
-            nameLower: "jumpmaster",
-        }
-    },
-    {
-        id: "kushala_blessing",
-        shortId: 63,
-        name: "Kushala Blessing",
-        maxLevels: 4,
-
-        iconImgID: "skill_icon_grey",
-        filterHelpers: {
-            nameLower: "kushalablessing",
-        }
-    },
-    {
-        id: "latent_power",
-        shortId: 64,
-        name: "Latent Power",
-        maxLevels: 5,
-
-        iconImgID: "skill_icon_pink",
-        filterHelpers: {
-            nameLower: "latentpower",
-        }
-    },
-    {
-        id: "leap_of_faith",
-        shortId: 65,
-        name: "Leap Of Faith",
-        maxLevels: 1,
-
-        iconImgID: "skill_icon_lightblue",
-        filterHelpers: {
-            nameLower: "leapoffaith",
-        }
-    },
-    {
-        id: "load_shells",
-        shortId: 66,
-        name: "Load Shells",
-        maxLevels: 2,
-
-        iconImgID: "skill_icon_grey",
-        filterHelpers: {
-            nameLower: "loadshells",
-        }
-    },
-    {
-        id: "marathon_runner",
-        shortId: 67,
-        name: "Marathon Runner",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_gold",
-        filterHelpers: {
-            nameLower: "marathonrunner",
-        }
-    },
-    {
-        id: "master_mounter",
-        shortId: 68,
-        name: "Master Mounter",
-        maxLevels: 1,
-
-        iconImgID: "skill_icon_blue",
-        filterHelpers: {
-            nameLower: "mastermounter",
-        }
-    },
-    {
-        id: "masters_touch",
-        shortId: 69,
-        name: "Master's Touch",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_white",
-        filterHelpers: {
-            nameLower: "master'stouch",
-        }
-    },
-    {
-        id: "maximum_might",
-        shortId: 70,
-        name: "Maximum Might",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_pink",
-        filterHelpers: {
-            nameLower: "maximummight",
-        }
-    },
-    {
-        id: "minds_eye",
-        shortId: 71,
-        name: "Mind's Eye",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_white",
-        filterHelpers: {
-            nameLower: "mind'seye",
-        }
-    },
-    {
-        id: "muck_resistance",
-        shortId: 72,
-        name: "Muck Resistance",
-        maxLevels: 2,
-
-        iconImgID: "skill_icon_grey",
-        filterHelpers: {
-            nameLower: "muckresistance",
-        }
-    },
-    {
-        id: "mushroomancer",
-        shortId: 73,
-        name: "Mushroomancer",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_purple",
-        filterHelpers: {
-            nameLower: "mushroomancer",
-        }
-    },
-    {
-        id: "normal_rapid_up",
-        shortId: 74,
-        name: "Normal/Rapid Up",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_white",
-        filterHelpers: {
-            nameLower: "normal/rapidup",
-        }
-    },
-    {
-        id: "offensive_guard",
-        shortId: 75,
-        name: "Offensive Guard",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_purple",
-        filterHelpers: {
-            nameLower: "offensiveguard",
-        }
-    },
-    {
-        id: "partbreaker",
-        shortId: 76,
-        name: "Partbreaker",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_grey",
-        filterHelpers: {
-            nameLower: "partbreaker",
-        }
-    },
-    {
-        id: "peak_performance",
-        shortId: 77,
-        name: "Peak Performance",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_red",
-        filterHelpers: {
-            nameLower: "peakperformance",
-        }
-    },
-    {
-        id: "pierce_up",
-        shortId: 78,
-        name: "Pierce Up",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_blue",
-        filterHelpers: {
-            nameLower: "pierceup",
-        }
-    },
-    {
-        id: "power_prolonger",
-        shortId: 79,
-        name: "Power Prolonger",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_brown",
-        filterHelpers: {
-            nameLower: "powerprolonger",
-        }
-    },
-    {
-        id: "protective_polish",
-        shortId: 80,
-        name: "Protective Polish",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_yellow",
-        filterHelpers: {
-            nameLower: "protectivepolish",
-        }
-    },
-    {
-        id: "punishing_draw",
-        shortId: 81,
-        name: "Punishing Draw",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_yellow",
-        filterHelpers: {
-            nameLower: "punishingdraw",
-        }
-    },
-    {
-        id: "quick_sheath",
-        shortId: 82,
-        name: "Quick Sheath",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_brown",
-        filterHelpers: {
-            nameLower: "quicksheath",
-        }
-    },
-    {
-        id: "rapid_fire_up",
-        shortId: 83,
-        name: "Rapid Fire Up",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_white",
-        filterHelpers: {
-            nameLower: "rapidfireup",
-        }
-    },
-    {
-        id: "rapid_morph",
-        shortId: 84,
-        name: "Rapid Morph",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_blue",
-        filterHelpers: {
-            nameLower: "rapidmorph",
-        }
-    },
-    {
-        id: "razor_sharp",
-        shortId: 85,
-        name: "Razor Sharp",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_yellow",
-        filterHelpers: {
-            nameLower: "razorsharp",
-        }
-    },
-    {
-        id: "recoil_down",
-        shortId: 86,
-        name: "Recoil Down",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_brown",
-        filterHelpers: {
-            nameLower: "recoildown",
-        }
-    },
-    {
-        id: "recovery_speed",
-        shortId: 87,
-        name: "Recovery Speed",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_green",
-        filterHelpers: {
-            nameLower: "recoveryspeed",
-        }
-    },
-    {
-        id: "recovery_up",
-        shortId: 88,
-        name: "Recovery Up",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_green",
-        filterHelpers: {
-            nameLower: "recoveryup",
-        }
-    },
-    {
-        id: "reload_speed",
-        shortId: 89,
-        name: "Reload Speed",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_white",
-        filterHelpers: {
-            nameLower: "reloadspeed",
-        }
-    },
-    {
-        id: "resentment",
-        shortId: 90,
-        name: "Resentment",
-        maxLevels: 5,
-
-        iconImgID: "skill_icon_orange",
-        filterHelpers: {
-            nameLower: "resentment",
-        }
-    },
-    {
-        id: "resuscitate",
-        shortId: 91,
-        name: "Resuscitate",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_orange",
-        filterHelpers: {
-            nameLower: "resuscitate",
-        }
-    },
-    {
-        id: "slugger",
-        shortId: 92,
-        name: "Slugger",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_yellow",
-        filterHelpers: {
-            nameLower: "slugger",
-        }
-    },
-    {
-        id: "spare_shot",
-        shortId: 93,
-        name: "Spare Shot",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_yellow",
-        filterHelpers: {
-            nameLower: "spareshot",
-        }
-    },
-    {
-        id: "special_ammo_boost",
-        shortId: 94,
-        name: "Special Ammo Boost",
-        maxLevels: 2,
-
-        iconImgID: "skill_icon_grey",
-        filterHelpers: {
-            nameLower: "specialammoboost",
-        }
-    },
-    {
-        id: "speed_eating",
-        shortId: 95,
-        name: "Speed Eating",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_gold",
-        filterHelpers: {
-            nameLower: "speedeating",
-        }
-    },
-    {
-        id: "speed_sharpening",
-        shortId: 96,
-        name: "Speed Sharpening",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_yellow",
-        filterHelpers: {
-            nameLower: "speedsharpening",
-        }
-    },
-    {
-        id: "spread_up",
-        shortId: 97,
-        name: "Spread Up",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_grey",
-        filterHelpers: {
-            nameLower: "spreadup",
-        }
-    },
-    {
-        id: "stamina_surge",
-        shortId: 98,
-        name: "Stamina Surge",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_gold",
-        filterHelpers: {
-            nameLower: "staminasurge",
-        }
-    },
-    {
-        id: "stamina_thief",
-        shortId: 99,
-        name: "Stamina Thief",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_darkblue",
-        filterHelpers: {
-            nameLower: "staminathief",
-        }
-    },
-    {
-        id: "steadiness",
-        shortId: 100,
-        name: "Steadiness",
-        maxLevels: 2,
-
-        iconImgID: "skill_icon_grey",
-        filterHelpers: {
-            nameLower: "steadiness",
-        }
-    },
-    {
-        id: "stormsoul",
-        shortId: 101,
-        name: "Stormsoul",
-        maxLevels: 5,
-
-        iconImgID: "skill_icon_orange",
-        filterHelpers: {
-            nameLower: "stormsoul",
-        }
-    },
-    {
-        id: "stun_resistance",
-        shortId: 102,
-        name: "Stun Resistance",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_yellow",
-        filterHelpers: {
-            nameLower: "stunresistance",
-        }
-    },
-    {
-        id: "teostra_blessing",
-        shortId: 103,
-        name: "Teostra Blessing",
-        maxLevels: 4,
-
-        iconImgID: "skill_icon_red",
-        filterHelpers: {
-            nameLower: "teostrablessing",
-        }
-    },
-    {
-        id: "thunder_alignment",
-        shortId: 104,
-        name: "Thunder Alignment",
-        maxLevels: 5,
-
-        iconImgID: "skill_icon_yellow",
-        filterHelpers: {
-            nameLower: "thunderalignment",
-        }
-    },
-    {
-        id: "tremor_resistance",
-        shortId: 105,
-        name: "Tremor Resistance",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_grey",
-        filterHelpers: {
-            nameLower: "tremorresistance",
-        }
-    },
-    {
-        id: "wall_runner",
-        shortId: 106,
-        name: "Wall Runner",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_green",
-        filterHelpers: {
-            nameLower: "wallrunner",
-        }
-    },
-    {
-        id: "weakness_exploit",
-        shortId: 107,
-        name: "Weakness Exploit",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_pink",
-        filterHelpers: {
-            nameLower: "weaknessexploit",
-        }
-    },
-    {
-        id: "wide_range",
-        shortId: 108,
-        name: "Wide Range",
-        maxLevels: 5,
-
-        iconImgID: "skill_icon_white",
-        filterHelpers: {
-            nameLower: "widerange",
-        }
-    },
-    {
-        id: "wind_alignment",
-        shortId: 109,
-        name: "Wind Alignment",
-        maxLevels: 5,
-
-        iconImgID: "skill_icon_lightblue",
-        filterHelpers: {
-            nameLower: "windalignment",
-        }
-    },
-    {
-        id: "windproof",
-        shortId: 110,
-        name: "Windproof",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_white",
-        filterHelpers: {
-            nameLower: "windproof",
-        }
-    },
-    {
-        id: "wirebug_whisperer",
-        shortId: 111,
-        name: "Wirebug Whisperer",
-        maxLevels: 3,
-
-        iconImgID: "skill_icon_lightblue",
-        filterHelpers: {
-            nameLower: "wirebugwhisperer",
-        }
-    },
+    __generated_skill__fire_attack,
+    __generated_skill__water_attack,
+    __generated_skill__thunder_attack,
+    __generated_skill__ice_attack,
+    __generated_skill__dragon_attack,
+    __generated_skill__poison_attack,
+    __generated_skill__paralysis_attack,
+    __generated_skill__sleep_attack,
+    __generated_skill__blast_attack,
+    __generated_skill__fire_resistance,
+    __generated_skill__water_resistance,
+    __generated_skill__thunder_resistance,
+    __generated_skill__ice_resistance,
+    __generated_skill__dragon_resistance,
+    __generated_skill__poison_resistance,
+    __generated_skill__paralysis_resistance,
+    __generated_skill__sleep_resistance,
+    __generated_skill__blast_resistance,
+    __generated_skill__affinity_sliding,
+    __generated_skill__agitator,
+    __generated_skill__ammo_up,
+    __generated_skill__artillery,
+    __generated_skill__attack_boost,
+    __generated_skill__ballistics,
+    __generated_skill__blight_resistance,
+    __generated_skill__bludgeoner,
+    __generated_skill__bombardier,
+    __generated_skill__botanist,
+    __generated_skill__bow_charge_plus,
+    __generated_skill__bubbly_dance,
+    __generated_skill__capture_master,
+    __generated_skill__carving_master,
+    __generated_skill__carving_pro,
+    __generated_skill__chameleos_blessing,
+    __generated_skill__constitution,
+    __generated_skill__counterstrike,
+    __generated_skill__critical_boost,
+    __generated_skill__critical_draw,
+    __generated_skill__critical_element,
+    __generated_skill__critical_eye,
+    __generated_skill__defense_boost,
+    __generated_skill__diversion,
+    __generated_skill__divine_blessing,
+    __generated_skill__dragonheart,
+    __generated_skill__earplugs,
+    __generated_skill__evade_extender,
+    __generated_skill__evade_window,
+    __generated_skill__flinch_free,
+    __generated_skill__focus,
+    __generated_skill__fortify,
+    __generated_skill__free_meal,
+    __generated_skill__geologist,
+    __generated_skill__good_luck,
+    __generated_skill__guard,
+    __generated_skill__guard_up,
+    __generated_skill__handicraft,
+    __generated_skill__hellfire_cloak,
+    __generated_skill__heroics,
+    __generated_skill__horn_maestro,
+    __generated_skill__hunger_resistance,
+    __generated_skill__item_prolonger,
+    __generated_skill__jump_master,
+    __generated_skill__kushala_blessing,
+    __generated_skill__latent_power,
+    __generated_skill__leap_of_faith,
+    __generated_skill__load_shells,
+    __generated_skill__marathon_runner,
+    __generated_skill__master_mounter,
+    __generated_skill__masters_touch,
+    __generated_skill__maximum_might,
+    __generated_skill__minds_eye,
+    __generated_skill__muck_resistance,
+    __generated_skill__mushroomancer,
+    __generated_skill__normal_rapid_up,
+    __generated_skill__offensive_guard,
+    __generated_skill__partbreaker,
+    __generated_skill__peak_performance,
+    __generated_skill__pierce_up,
+    __generated_skill__power_prolonger,
+    __generated_skill__protective_polish,
+    __generated_skill__punishing_draw,
+    __generated_skill__quick_sheath,
+    __generated_skill__rapid_fire_up,
+    __generated_skill__rapid_morph,
+    __generated_skill__razor_sharp,
+    __generated_skill__recoil_down,
+    __generated_skill__recovery_speed,
+    __generated_skill__recovery_up,
+    __generated_skill__reload_speed,
+    __generated_skill__resentment,
+    __generated_skill__resuscitate,
+    __generated_skill__slugger,
+    __generated_skill__spare_shot,
+    __generated_skill__special_ammo_boost,
+    __generated_skill__speed_eating,
+    __generated_skill__speed_sharpening,
+    __generated_skill__spread_up,
+    __generated_skill__stamina_surge,
+    __generated_skill__stamina_thief,
+    __generated_skill__steadiness,
+    __generated_skill__stormsoul,
+    __generated_skill__stun_resistance,
+    __generated_skill__teostra_blessing,
+    __generated_skill__thunder_alignment,
+    __generated_skill__tremor_resistance,
+    __generated_skill__wall_runner,
+    __generated_skill__weakness_exploit,
+    __generated_skill__wide_range,
+    __generated_skill__wind_alignment,
+    __generated_skill__windproof,
+    __generated_skill__wirebug_whisperer,
 ];
 

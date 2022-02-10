@@ -12,7 +12,7 @@ import {
 
 import {
     populate,
-} from "./_internals";
+} from "../../_internals";
 
 function generateBowgunAmmoTypes(keyBase: string, nameBase: string, num: number): BowgunAmmoTypeRO[] {
     const ret = [];

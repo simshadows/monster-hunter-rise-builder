@@ -44,6 +44,9 @@ GENERATED_CODE_NOTICE = """\
 def append_generated_code_notice(s):
     return GENERATED_CODE_NOTICE + s
 
+def skill_id_to_object_name(skill_id):
+    return f"__generated_skill__{skill_id}"
+
 def to_name_filter_string(s):
     # IMPORTANT: Please maintain parity between this Python implementation and the Javascript implementation.
     # TODO: Also strip out punctuation?

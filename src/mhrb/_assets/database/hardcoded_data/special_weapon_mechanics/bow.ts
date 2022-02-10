@@ -13,7 +13,7 @@ import {
 
 import {
     populate,
-} from "./_internals";
+} from "../../_internals";
 
 const hardcodedArcShotTypes: BowArcShotTypeRO[] = [
     {
