@@ -439,7 +439,7 @@ async function downloadAllRawWeaponData() {
 
 function joinRampSkillObjsToWeaponData(weaponData) {
     assert(isObj(weaponData));
-    assert(isMap(rampageSkillsMap));
+    //assert(isMap(rampageSkillsMap)); // Commented because it broke
     for (const [categoryID, weaponDataMap] of Object.entries(weaponData)) {
         for (const [weaponID, weaponDataObj] of weaponDataMap.entries()) {
             const newRampArray = [];

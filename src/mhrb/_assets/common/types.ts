@@ -35,3 +35,10 @@ export interface Petalace {
 }
 export type PetalaceRO = Readonly<Petalace>;
 
+export interface RampageSkill {
+    id:      string;
+    shortId: string;
+    name:    string;
+}
+export type RampageSkillRO = Readonly<RampageSkill>;
+

@@ -5,7 +5,6 @@
 
 import {
     isPositiveInt,
-    isNonEmptyStr,
 } from "../../generic/check";
 import {
     FrozenMap,
@@ -142,16 +141,16 @@ function makeFinalMap(): FrozenMap<string, PetalaceRO> {
 
         const finalObj: PetalaceRO = {...obj, ...mergeIn}; 
 
-        isNonEmptyStr(finalObj.id         );
-        isNonEmptyStr(finalObj.name       );
-        isPositiveInt(finalObj.healthUp   );
-        isPositiveInt(finalObj.healthGain );
-        isPositiveInt(finalObj.staminaUp  );
-        isPositiveInt(finalObj.staminaGain);
-        isPositiveInt(finalObj.attackUp   );
-        isPositiveInt(finalObj.attackGain );
-        isPositiveInt(finalObj.defenseUp  );
-        isPositiveInt(finalObj.defenseGain);
+        console.assert(finalObj.id !== "");
+        console.assert(finalObj.name !== "");
+        console.assert(isPositiveInt(finalObj.healthUp   ));
+        console.assert(isPositiveInt(finalObj.healthGain ));
+        console.assert(isPositiveInt(finalObj.staminaUp  ));
+        console.assert(isPositiveInt(finalObj.staminaGain));
+        console.assert(isPositiveInt(finalObj.attackUp   ));
+        console.assert(isPositiveInt(finalObj.attackGain ));
+        console.assert(isPositiveInt(finalObj.defenseUp  ));
+        console.assert(isPositiveInt(finalObj.defenseGain));
         console.assert((finalObj.healthUp  > finalObj.healthGain ) && (finalObj.healthGain  <= 100));
         console.assert((finalObj.staminaUp > finalObj.staminaGain) && (finalObj.staminaGain <= 100));
         console.assert((finalObj.attackUp  > finalObj.attackGain ) && (finalObj.attackGain  <= 100));
