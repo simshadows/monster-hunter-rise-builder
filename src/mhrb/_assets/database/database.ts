@@ -21,7 +21,6 @@ import {
     strHasOnlyLowerNumeralUnder,
     isWeaponCategoryStr,
     isTierStr,
-    isArmourSlotStr,
     isWeaponEndlineTagStr,
     isEleStatStr,
     toNameFilterString,
@@ -35,6 +34,8 @@ import {
     decosMap,
     skillMap,
     skillMapShortIds,
+    armourMap,
+    armourArrays,
 } from "./generated_code";
 import {
     rampageSkillsMap,
@@ -74,9 +75,6 @@ const WEAPON_IG_PATH  = "./data/weapons_insectglaive.json";
 const WEAPON_LBG_PATH = "./data/weapons_lightbowgun.json";
 const WEAPON_HBG_PATH = "./data/weapons_heavybowgun.json";
 const WEAPON_BOW_PATH = "./data/weapons_bow.json";
-
-const ARMOUR_PATH = "./data/armour.json";
-const ARMOUR_NAMING_SCHEMES_PATH = "./data/armour_naming_schemes.json";
 
 
 /* WEAPONS ******************************************************************************/
@@ -477,191 +475,6 @@ function joinRampSkillObjsToWeaponData(weaponData) {
 }
 
 
-/* ARMOUR *******************************************************************************/
-
-function validateArmourNamingSchemes(namingSchemesData) {
-    for (const [armourNamingSchemeID, armourNamingSchemeObj] of Object.entries(namingSchemesData)) {
-        assert(
-            isNonEmptyStr(armourNamingSchemeID),
-            "Armour naming scheme IDs must be non-empty strings. Object used: " + armourNamingSchemeID
-        );
-        assert(
-            isArr(armourNamingSchemeObj),
-            "Armour naming schemes must be arrays. Scheme ID: " + armourNamingSchemeID
-        );
-        
-        assert(
-            strHasOnlyLowerNumeralUnder(armourNamingSchemeID),
-            "Invalid armour naming scheme name. Scheme ID: " + armourNamingSchemeID
-        );
-        assert(
-            (armourNamingSchemeObj.length === 5),
-            "Armour naming schemes must be arrays of 5 strings. Scheme ID: " + armourNamingSchemeID
-        );
-        
-        for (const s of armourNamingSchemeObj) {
-            assert(isNonEmptyStr(s), "Armour naming must be a non-empty string. Scheme ID: " + armourNamingSchemeID);
-        }
-    }
-}
-
-function validateFinalArmourPieceObject(armourPieceObj) {
-    const errorIDString = "Error with armour set ID: " + String(armourPieceObj.setID);
-
-    // Set ID should already be validated by now.
-    // Slot ID should also be valid.
-
-    assert(isNonEmptyStr(armourPieceObj.tierID), errorIDString);
-    assert(isTierStr(armourPieceObj.tierID), errorIDString);
-
-    assert(isNonEmptyStr(armourPieceObj.setName), errorIDString);
-    assert(isNonEmptyStr(armourPieceObj.name), errorIDString);
-
-    assert(isArr(armourPieceObj.decorationSlots), errorIDString);
-    assert(armourPieceObj.decorationSlots.length <= 3, errorIDString);
-    for (const slotSize of armourPieceObj.decorationSlots) {
-        assert(isInt(slotSize), errorIDString);
-        assert((slotSize > 0) && (slotSize <= 3), errorIDString);
-    }
-
-    assert(isObj(armourPieceObj.skills), errorIDString);
-    for (const [skillLongID, skillLevel] of Object.entries(armourPieceObj.skills)) {
-        assert(isNonEmptyStr(skillLongID), errorIDString);
-        assert(strHasOnlyLowerNumeralUnder(skillLongID), errorIDString);
-
-        assert(isInt(skillLevel), errorIDString);
-        assert(skillLevel > 0, errorIDString);
-    }
-
-    assert(isInt(armourPieceObj.defenseAtLevel1), errorIDString);
-    assert(armourPieceObj.defenseAtLevel1 > 0, errorIDString);
-
-    assert(isInt(armourPieceObj.fireRes), errorIDString);
-    assert(isInt(armourPieceObj.waterRes), errorIDString);
-    assert(isInt(armourPieceObj.thunderRes), errorIDString);
-    assert(isInt(armourPieceObj.iceRes), errorIDString);
-    assert(isInt(armourPieceObj.dragonRes), errorIDString);
-}
-
-async function downloadAllRawArmourData() {
-    const namingSchemesFut = fetch(ARMOUR_NAMING_SCHEMES_PATH);
-    const armourFut = fetch(ARMOUR_PATH);
-
-    const namingSchemesRawData = await (await namingSchemesFut).json();
-    const armourRawData = await (await armourFut).json();
-
-    assert(isArr(armourRawData));
-    validateArmourNamingSchemes(namingSchemesRawData);
-
-    const expectedSlotIDs = ["head", "chest", "arms", "waist", "legs"];
-
-    const finalDataMap = new Map(); // This is a two-layer map: {set ID string: {piece ID string: data object}}
-    const finalDataArrays = { head:[], chest:[], arms:[], waist:[], legs:[] };
-
-    for (const [armourSetID, armourRawDataObj] of armourRawData) {
-        const namingScheme = namingSchemesRawData[armourRawDataObj.namingScheme];
-        const errorIDString = "Error with armour set ID: " + String(armourSetID);
-
-        assert(isInt(armourSetID) && (armourSetID > 0), errorIDString);
-        assert(isObj(armourRawDataObj), errorIDString);
-
-        assert(isTierStr(armourRawDataObj.tier), errorIDString);
-        assert(isInt(armourRawDataObj.rarity), errorIDString);
-        assert(isNonEmptyStr(armourRawDataObj.setName), errorIDString);
-        assert(isStr(armourRawDataObj.searchHint), errorIDString); // Can be empty string
-
-        if (armourRawDataObj.prefix instanceof Array) {
-            assert(armourRawDataObj.prefix.length === 5, errorIDString);
-            for (const prefix of armourRawDataObj.prefix) {
-                assert(isNonEmptyStr(prefix), errorIDString);
-            }
-        } else {
-            assert(isStr(armourRawDataObj.prefix), errorIDString);
-        }
-        assert(isStr(armourRawDataObj.suffix), errorIDString);
-        assert(isNonEmptyStr(armourRawDataObj.namingScheme), errorIDString);
-
-        assert(isObj(armourRawDataObj.pieces), errorIDString);
-        assert(isObj(armourRawDataObj.defenses), errorIDString);
-
-        //
-
-        assert((armourRawDataObj.rarity > 0) && (armourRawDataObj.rarity <= 7), errorIDString);
-        assert(Object.keys(armourRawDataObj.pieces).length === 5, errorIDString);
-        assert(Object.keys(armourRawDataObj.defenses).length === 6, errorIDString);
-
-        // Must never be a duplicate
-        assert(!finalDataMap.has(armourSetID), errorIDString);
-
-        finalDataMap.set(armourSetID, new Map());
-
-        for (const [i, slotID] of expectedSlotIDs.entries()) {
-            const p = armourRawDataObj.pieces[slotID];
-            if (p !== null) {
-                assert(isArr(p), errorIDString);
-                assert(p.length === 2, errorIDString);
-
-                let prefix = (armourRawDataObj.prefix instanceof Array) ? armourRawDataObj.prefix[i] : armourRawDataObj.prefix;
-                prefix = (prefix.length == 0) ? "" : prefix + " ";
-
-                const suffix = (armourRawDataObj.suffix == "") ? "" : " " + armourRawDataObj.suffix;
-
-                // Create the final data object without verifying first
-                const newPiece = {
-                    rarity: armourRawDataObj.rarity,
-                    tierID: armourRawDataObj.tier,
-                    setID: armourSetID,
-                    setName: armourRawDataObj.setName,
-                    slotID: slotID,
-                    name: prefix + namingScheme[i] + suffix,
-                    decorationSlots: p[0],
-                    skills: p[1],
-
-                    defenseAtLevel1: armourRawDataObj.defenses["defLvl1"],
-
-                    fireRes: armourRawDataObj.defenses["f"],
-                    waterRes: armourRawDataObj.defenses["w"],
-                    thunderRes: armourRawDataObj.defenses["t"],
-                    iceRes: armourRawDataObj.defenses["i"],
-                    dragonRes: armourRawDataObj.defenses["d"],
-
-                    filterHelpers: {}, // Populate after
-                };
-                newPiece.filterHelpers.nameLower = toNameFilterString(newPiece.name);
-                newPiece.filterHelpers.setNameLower = toNameFilterString(newPiece.setName);
-                newPiece.filterHelpers.hintStrLower = toNameFilterString(armourRawDataObj.searchHint);
-
-                // Now, we verify the structure
-                validateFinalArmourPieceObject(newPiece);
-
-                finalDataMap.get(armourSetID).set(slotID, newPiece);
-                finalDataArrays[slotID].push(newPiece);
-            }
-        }
-
-    }
-
-    return [finalDataMap, finalDataArrays];
-}
-
-/*** Joining Data ***/
-
-function joinSkillObjsToArmourData(armourData, skillDataLongIdMap) {
-    assert(isMap(armourData));
-    //assert(isMap(skillDataLongIdMap));
-    for (const [armourSetID, armourSetMap] of armourData.entries()) {
-        for (const [slotID, armourPieceObj] of armourSetMap.entries()) {
-            const newSkillArray = [];
-            for (const [skillLongID, skillLevel] of Object.entries(armourPieceObj.skills)) {
-                assert(skillDataLongIdMap.has(skillLongID), "Missing skill long ID: " + skillLongID);
-                newSkillArray.push([skillDataLongIdMap.get(skillLongID), skillLevel]);
-            }
-            armourPieceObj.skills = newSkillArray; // Overwrite old object with new array
-        }
-    }
-}
-
-
 /* GameData CLASS ***********************************************************************/
 
 
@@ -683,10 +496,8 @@ class GameData {
         // Start all downloads
         // Also verify data, except we verify referential integrity later.
         const weaponDataFut = downloadAllRawWeaponData();
-        const armourDataFut = downloadAllRawArmourData();
 
         const weaponsMap = await weaponDataFut;
-        const [armourMap, armourArrays] = await armourDataFut;
 
         const obj = new GameData("hello smish");
         obj.readonly = {
@@ -749,8 +560,6 @@ class GameData {
 
         // Replace all weapon ramp skill IDs with ramp skill objects
         joinRampSkillObjsToWeaponData(weaponsMap);
-        // Replace all armour skill long IDs with skill objects
-        joinSkillObjsToArmourData(armourMap, obj.readonly.skills.longIdsMap);
 
         return obj;
     }

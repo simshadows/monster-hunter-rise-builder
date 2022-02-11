@@ -35,6 +35,8 @@
  * License: GNU Affero General Public License v3 (AGPL-3.0)
  */
 
+import {type DecorationRO} from "../../common/types";
+
 import {
     __generated_skill__affinity_sliding,
     __generated_skill__agitator,
@@ -138,8 +140,6 @@ import {
     __generated_skill__windproof,
     __generated_skill__wirebug_whisperer,
 } from "./_generated_skills";
-
-import {type DecorationRO} from "../../common/types";
 
 export const decosArray: Readonly<DecorationRO[]> = [
     {

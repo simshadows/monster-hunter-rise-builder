@@ -12,6 +12,7 @@ import json
 
 from skills import generate_skills_source_file
 from decorations import generate_decos_source_file
+from armour import generate_armour_source_file
 
 GENERATED_CODE_NOTICE = """\
 /*
@@ -75,6 +76,11 @@ def run():
     decos_data = read_data("decorations.json")
     write_source_file("_generated_decorations.ts", generate_decos_source_file(decos_data))
     print(f"Discovered {len(decos_data)} decorations.")
+
+    armour_data = read_data("armour.json")
+    armour_naming_schemes_data = read_data("armour_naming_schemes.json")
+    write_source_file("_generated_armour.ts", generate_armour_source_file(armour_data, armour_naming_schemes_data))
+    print(f"Discovered {len(armour_data)} armour sets.")
 
 if __name__ == "__main__":
     run()

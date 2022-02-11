@@ -18,6 +18,9 @@ import {
 import {
     type SkillRO,
     type DecorationRO,
+    type ArmourSlot,
+    type ArmourPieceRO,
+    type ArmourSetRO,
 } from "../../common/types";
 import {
     toNameFilterString,
@@ -28,6 +31,7 @@ import {
 
 import {skillsArray} from "./_generated_skills";
 import {decosArray} from "./_generated_decorations";
+import {armourSetsArray} from "./_generated_armour";
 
 /*** Skills ***/
 
@@ -70,12 +74,68 @@ const decosMap: FrozenMap<number, DecorationRO> = populate(
         console.assert(obj.filterHelpers.nameLower === toNameFilterString(obj.name));
 
         return obj;
-    }
+    },
 );
 
+/*** Armour ***/
+
+const tmpSlotIDList: ArmourSlot[] = ["head", "chest", "arms", "waist", "legs"];
+
+const armourMap: FrozenMap<number, ArmourSetRO> = populate(
+    armourSetsArray,
+    (obj) => {
+        // Validate
+        console.assert(isPositiveInt(obj.id));
+        console.assert(obj.name !== "");
+        for (const slotID of tmpSlotIDList) {
+            const piece = obj[slotID]
+            if (!piece) continue;
+            console.assert(piece.setID === obj.id);
+            console.assert(piece.setName === obj.name);
+            console.assert(piece.name !== "");
+            for (const [_, v] of piece.skills) console.assert(isPositiveInt(v));
+
+            console.assert((piece.defenseAtLevel1 % 1 === 0) && (piece.defenseAtLevel1 >= 0));
+            console.assert(piece.fireRes    % 1 === 0);
+            console.assert(piece.waterRes   % 1 === 0);
+            console.assert(piece.thunderRes % 1 === 0);
+            console.assert(piece.iceRes     % 1 === 0);
+            console.assert(piece.dragonRes  % 1 === 0);
+
+            console.assert(piece.filterHelpers.nameLower !== "");
+            console.assert(piece.filterHelpers.nameLower === toNameFilterString(piece.name));
+
+            console.assert(piece.filterHelpers.setNameLower !== "");
+            console.assert(piece.filterHelpers.setNameLower === toNameFilterString(piece.setName));
+
+            // piece.filterHelpers.hintStrLower doesn't need validation
+        }
+        return obj;
+    },
+);
+
+const armourArrays: Readonly<{[key in ArmourSlot]: Readonly<ArmourPieceRO[]>}> = (()=>{
+    const ret: {[key in ArmourSlot]: ArmourPieceRO[]} = {
+        head:  [],
+        chest: [],
+        arms:  [],
+        waist: [],
+        legs:  [],
+    };
+    for (const [_, armourSet] of armourMap.entries()) {
+        for (const slotID of tmpSlotIDList) {
+            const armourPiece = armourSet[slotID];
+            if (armourPiece) ret[slotID].push(armourPiece);
+        }
+    }
+    return ret;
+})();
+
 export {
-    decosMap,
     finalSkillMap as skillMap,
     finalSkillMapShortIds as skillMapShortIds,
+    decosMap,
+    armourMap,
+    armourArrays,
 };
 

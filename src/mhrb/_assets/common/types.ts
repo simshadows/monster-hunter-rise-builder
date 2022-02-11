@@ -149,39 +149,59 @@ export interface BowgunAmmoType {
 }
 export type BowgunAmmoTypeRO = Readonly<BowgunAmmoType>;
 
+/*** Weapons ***/
+
+//export interface Weapon {
+//    // TODO
+//}
+
 /*** Armour ***/
 
 export type ArmourSlot = "head" | "chest" | "arms" | "waist" | "legs";
 
-// NOT YET USED
-//
-//export interface ArmourPiece {
-//    // These two IDs uniquely identify each individual armour set.
-//    setID:  number;
-//    slotID: ArmourSlot;
-//
-//    setName: string;
-//    name:    string;
-//    rarity:  Rarity;
-//    tierID:  Tier;
-//    decorationSlots: Readonly<DecorationSlotSize[]>;
-//    skills:  Readonly<SkillLevels>;
-//    
-//    defenseAtLevel1: number;
-//
-//    fireRes:    number;
-//    waterRes:   number;
-//    thunderRes: number;
-//    iceRes:     number;
-//    dragonRes:  number;
-//
-//    filterHelpers: Readonly<{
-//        nameLower:    string;
-//        setNameLower: string;
-//        hintStrLower: string;
-//    }>;
-//}
-//export type ArmourPieceRO = Readonly<ArmourPiece>;
+export interface ArmourPiece {
+    // These two IDs uniquely identify each individual armour set.
+    setID:  number;
+    slotID: ArmourSlot;
+
+    setName: string;
+    name:    string;
+    rarity:  Rarity;
+    tierID:  Tier;
+    decorationSlots: Readonly<
+        []
+        | [DecorationSlotSize]
+        | [DecorationSlotSize, DecorationSlotSize]
+        | [DecorationSlotSize, DecorationSlotSize, DecorationSlotSize]
+    >;
+    skills:  Readonly<SkillLevels>;
+    
+    defenseAtLevel1: number;
+
+    fireRes:    number;
+    waterRes:   number;
+    thunderRes: number;
+    iceRes:     number;
+    dragonRes:  number;
+
+    filterHelpers: Readonly<{
+        nameLower:    string;
+        setNameLower: string;
+        hintStrLower: string;
+    }>;
+}
+export type ArmourPieceRO = Readonly<ArmourPiece>;
+
+export interface ArmourSet {
+    id:    number;
+    name:  string;
+    head:  ArmourPieceRO | undefined;
+    chest: ArmourPieceRO | undefined;
+    arms:  ArmourPieceRO | undefined;
+    waist: ArmourPieceRO | undefined;
+    legs:  ArmourPieceRO | undefined;
+}
+export type ArmourSetRO = Readonly<ArmourSet>;
 
 /*** Petalace ***/
 

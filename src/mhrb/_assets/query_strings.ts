@@ -108,7 +108,7 @@ function readDecomposedBasicEquipsStr(arr, db, build) {
     for (const [slotID, queryValue] of Object.entries(armourIDs)) {
         const subMap = armourMap.get(parseInt(queryValue, NUMBER_BASE));
         if (subMap !== undefined) {
-            const armourRO = subMap.get(slotID);
+            const armourRO = subMap[slotID];
             if (armourRO !== undefined) {
                 build.setArmourPiece(db, slotID, armourRO);
             }
