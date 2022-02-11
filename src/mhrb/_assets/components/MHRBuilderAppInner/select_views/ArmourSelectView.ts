@@ -8,7 +8,10 @@ import React from "react";
 const element = React.createElement;
 
 import * as check from "../../../check";
-import {getImgPath} from "../../../images";
+import {
+    getImgPath,
+    armourSlotAndRarityToIconImgPath,
+} from "../../../images";
 import {
     isArmourSlotStr,
     tierIDToAbbrev,
@@ -73,8 +76,10 @@ class ArmourSelectionTable extends React.Component<any, any> {
             skillsStrs.push(skillRO.name + " +" + parseInt(skillLevel));
         }
 
+        const iconImgPath = armourSlotAndRarityToIconImgPath(armourPieceRO.slotID, armourPieceRO.rarity);
+
         return [
-            this._renderPieceIcon(armourPieceRO.iconImgPath),
+            this._renderPieceIcon(iconImgPath),
             armourPieceRO.name,
             parseInt(armourPieceRO.defenseAtLevel1),
             parseInt(armourPieceRO.fireRes),

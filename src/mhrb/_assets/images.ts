@@ -7,7 +7,9 @@ import {
     FrozenMap,
 } from "./generic/frozen-containers";
 import {
+    type Rarity,
     type EleStatStr,
+    type ArmourSlot,
 } from "./common/types";
 
 const imgPathMapEntries: [string, string][] = [];
@@ -727,11 +729,14 @@ function eleStatStrToImgPath(obj: EleStatStr): string {
     return getImgPath(eleStatStrToImgIdMap[obj]);
 }
 
-/******/
+function armourSlotAndRarityToIconImgPath(armourSlot: ArmourSlot, rarity: Rarity): string {
+    return getImgPath(`${armourSlot}_r${rarity}`);
+}
 
 export {
     getImgPath,
     eleStatStrToImgId,
     eleStatStrToImgPath,
+    armourSlotAndRarityToIconImgPath,
 };
 

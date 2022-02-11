@@ -58,62 +58,6 @@ export interface RampageSkill {
 }
 export type RampageSkillRO = Readonly<RampageSkill>;
 
-/*** Petalace ***/
-
-export interface Petalace {
-    id:   string;
-    name: string;
-
-    endlineTag:  EndlineTag;
-    rarity:      Rarity;
-
-    healthUp:    number;
-    healthGain:  number;
-    staminaUp:   number;
-    staminaGain: number;
-    attackUp:    number;
-    attackGain:  number;
-    defenseUp:   number;
-    defenseGain: number;
-
-    iconImgPath: string;
-    filterHelpers: Readonly<{
-        nameLower: string;
-    }>;
-}
-export type PetalaceRO = Readonly<Petalace>;
-
-/*** Decorations ***/
-
-export type DecorationIconType = "blue"
-                               | "brown"
-                               | "darkblue"
-                               | "gold"
-                               | "green"
-                               | "grey"
-                               | "lightblue"
-                               | "orange"
-                               | "pink"
-                               | "purple"
-                               | "red"
-                               | "white"
-                               | "yellow";
-
-export interface Decoration {
-    id:   number;
-    name: string;
-
-    slotSize: DecorationSlotSize;
-    rarity:   Exclude<Rarity, 1 | 2 | 3>; // Decorations aren't observed to have rarities 1-3
-    skills:   Readonly<SkillLevels>;
-
-    icon: DecorationIconType;
-    filterHelpers: Readonly<{
-        nameLower: string;
-    }>;
-}
-export type DecorationRO = Readonly<Decoration>;
-
 /*** Weapon Special Selections ***/
 
 export type WeaponSpecialSelectionType = "lightbowgunmod" | "heavybowgunmod";
@@ -204,4 +148,94 @@ export interface BowgunAmmoType {
     shortName: string;
 }
 export type BowgunAmmoTypeRO = Readonly<BowgunAmmoType>;
+
+/*** Armour ***/
+
+export type ArmourSlot = "head" | "chest" | "arms" | "waist" | "legs";
+
+// NOT YET USED
+//
+//export interface ArmourPiece {
+//    // These two IDs uniquely identify each individual armour set.
+//    setID:  number;
+//    slotID: ArmourSlot;
+//
+//    setName: string;
+//    name:    string;
+//    rarity:  Rarity;
+//    tierID:  Tier;
+//    decorationSlots: Readonly<DecorationSlotSize[]>;
+//    skills:  Readonly<SkillLevels>;
+//    
+//    defenseAtLevel1: number;
+//
+//    fireRes:    number;
+//    waterRes:   number;
+//    thunderRes: number;
+//    iceRes:     number;
+//    dragonRes:  number;
+//
+//    filterHelpers: Readonly<{
+//        nameLower:    string;
+//        setNameLower: string;
+//        hintStrLower: string;
+//    }>;
+//}
+//export type ArmourPieceRO = Readonly<ArmourPiece>;
+
+/*** Petalace ***/
+
+export interface Petalace {
+    id:   string;
+    name: string;
+
+    endlineTag:  EndlineTag;
+    rarity:      Rarity;
+
+    healthUp:    number;
+    healthGain:  number;
+    staminaUp:   number;
+    staminaGain: number;
+    attackUp:    number;
+    attackGain:  number;
+    defenseUp:   number;
+    defenseGain: number;
+
+    iconImgPath: string;
+    filterHelpers: Readonly<{
+        nameLower: string;
+    }>;
+}
+export type PetalaceRO = Readonly<Petalace>;
+
+/*** Decorations ***/
+
+export type DecorationIconType = "blue"
+                               | "brown"
+                               | "darkblue"
+                               | "gold"
+                               | "green"
+                               | "grey"
+                               | "lightblue"
+                               | "orange"
+                               | "pink"
+                               | "purple"
+                               | "red"
+                               | "white"
+                               | "yellow";
+
+export interface Decoration {
+    id:   number;
+    name: string;
+
+    slotSize: DecorationSlotSize;
+    rarity:   Exclude<Rarity, 1 | 2 | 3>; // Decorations aren't observed to have rarities 1-3
+    skills:   Readonly<SkillLevels>;
+
+    icon: DecorationIconType;
+    filterHelpers: Readonly<{
+        nameLower: string;
+    }>;
+}
+export type DecorationRO = Readonly<Decoration>;
 

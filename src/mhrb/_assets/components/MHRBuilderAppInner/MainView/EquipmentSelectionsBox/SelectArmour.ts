@@ -8,7 +8,10 @@ import React from "react";
 const element = React.createElement;
 
 import * as check from "../../../../check";
-import {getImgPath} from "../../../../images";
+import {
+    getImgPath,
+    armourSlotAndRarityToIconImgPath,
+} from "../../../../images";
 import {
     isArmourSlotStr,
 } from "../../../../common";
@@ -22,14 +25,6 @@ import {EquipIcon} from "./EquipIcon";
 const assert = console.assert;
 
 export class SelectArmour extends React.Component<any, any> {
-
-    static _slotNameToIconImgPath = new Map([
-            ["head" , getImgPath("head_r1" )],
-            ["chest", getImgPath("chest_r1")],
-            ["arms" , getImgPath("arms_r1" )],
-            ["waist", getImgPath("waist_r1")],
-            ["legs" , getImgPath("legs_r1" )],
-        ]);
 
     handleClickArmourSelect() {
         this.props.handleClickArmourSelect(this.props.slotID);
@@ -86,13 +81,17 @@ export class SelectArmour extends React.Component<any, any> {
         check.isFunction(this.props.handleClickDecorationSelect);
         check.isFunction(this.props.handleClickDecorationRemove);
 
+        const iconImg = (armourPieceRO === null)
+                        ? armourSlotAndRarityToIconImgPath(this.props.slotID, 1)
+                        : armourSlotAndRarityToIconImgPath(this.props.slotID, armourPieceRO.rarity);
+
         return element("div",
             {
             className: "equip-box",
             },
             element(EquipIcon,
                 {
-                iconImg: (armourPieceRO !== null) ? armourPieceRO.iconImgPath : this.constructor._slotNameToIconImgPath.get(this.props.slotID),
+                iconImg: iconImg,
                 showRemoveButton: (armourPieceRO !== null),
                 handleSelectButton: () => {this.handleClickArmourSelect();},
                 handleRemoveButton: () => {this.handleClickRemovePiece();},

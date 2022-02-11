@@ -8,21 +8,24 @@ const CopyPlugin = require("copy-webpack-plugin");
 
 function htmlWebpackPluginCommon(configArgs, mergeIn) {
     // Merge mergeIn with some common options
-    return Object.assign({
-        filename: "index.html",
-        template: path.resolve(__dirname, "src", "index.html"),
-        chunks: [],
-        //chunks: ["index"],
+    return Object.assign(
+        {
+            filename: "index.html",
+            template: path.resolve(__dirname, "src", "index.html"),
+            chunks: [],
+            //chunks: ["index"],
 
-        minify: (configArgs.mode === "production"),
+            minify: (configArgs.mode === "production"),
 
-        title: "Sim's Monster Hunter Fansite",
-        author: "simshadows",
-        description: "Sim's Monster Hunter Fansite",
-        keywords: "Monster Hunter Rise, Builder, Damage, Calculator, EFR",
-        canonical: "https://monsterhunter.simshadows.com",
-        favicon: path.resolve(__dirname, "src", "mhrb", "_assets", "image_files", "derived", "armour_head_r1.png"),
-    }, mergeIn);
+            title: "Sim's Monster Hunter Fansite",
+            author: "simshadows",
+            description: "Sim's Monster Hunter Fansite",
+            keywords: "Monster Hunter Rise, Builder, Damage, Calculator, EFR",
+            canonical: "https://monsterhunter.simshadows.com",
+            favicon: path.resolve(__dirname, "src", "mhrb", "_assets", "image_files", "derived", "armour_head_r1.png"),
+        },
+        mergeIn,
+    );
 }
 
 const config = (configArgs) => ({

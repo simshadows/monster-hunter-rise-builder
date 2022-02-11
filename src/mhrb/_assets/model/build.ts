@@ -445,6 +445,7 @@ class Build {
 
                 return {
                     name: armourPieceRO.name,
+                    rarity: armourPieceRO.rarity,
                     skills: skillNamesArray,
                     decosArray: this._getDecoArrayRenderingProp(slotID),
 

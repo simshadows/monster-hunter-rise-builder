@@ -479,12 +479,6 @@ function joinRampSkillObjsToWeaponData(weaponData) {
 
 /* ARMOUR *******************************************************************************/
 
-function armourSlotAndRarityToIconImgPath(armourSlot, rarity) {
-    assert(isArmourSlotStr(armourSlot));
-    assert(isInt(rarity) && (rarity > 0) && (rarity <= 7));
-    return getImgPath(armourSlot + "_r" + parseInt(rarity));
-}
-
 function validateArmourNamingSchemes(namingSchemesData) {
     for (const [armourNamingSchemeID, armourNamingSchemeObj] of Object.entries(namingSchemesData)) {
         assert(
@@ -632,8 +626,6 @@ async function downloadAllRawArmourData() {
                     dragonRes: armourRawDataObj.defenses["d"],
 
                     filterHelpers: {}, // Populate after
-
-                    iconImgPath: armourSlotAndRarityToIconImgPath(slotID, armourRawDataObj.rarity),
                 };
                 newPiece.filterHelpers.nameLower = toNameFilterString(newPiece.name);
                 newPiece.filterHelpers.setNameLower = toNameFilterString(newPiece.setName);
