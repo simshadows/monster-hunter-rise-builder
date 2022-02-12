@@ -21,7 +21,12 @@ import {
 import {
     type WeaponRO,
     type MeleeWeaponRO,
+    
     type GreatswordRO,
+    type LongswordRO,
+    type SwordAndShieldRO,
+    type DualBladesRO,
+    type LanceRO,
 
     type WeaponMap,
 } from "../../common/types";
@@ -35,7 +40,11 @@ import {
     populate,
 } from "../_internals";
 
-import {greatswordsArray} from "./_generated_weapon_greatsword";
+import {greatswordsArray    } from "./_generated_weapon_greatsword";
+import {longswordsArray     } from "./_generated_weapon_longsword";
+import {swordandshieldsArray} from "./_generated_weapon_swordandshield";
+import {dualbladessArray    } from "./_generated_weapon_dualblades";
+import {lancesArray         } from "./_generated_weapon_lance";
 
 function validateMeleeWeapon(w: MeleeWeaponRO): void {
     const baseSum = sumArray(w.baseSharpness);
@@ -94,7 +103,11 @@ function processWeapon<W extends WeaponRO>(arr: Readonly<W[]>): FrozenMap<string
 }
 
 const weaponsMap: Readonly<WeaponMap> = {
-    greatsword: processWeapon<GreatswordRO>(greatswordsArray),
+    greatsword:     processWeapon<GreatswordRO    >(greatswordsArray),
+    longsword:      processWeapon<LongswordRO     >(longswordsArray ),
+    swordandshield: processWeapon<SwordAndShieldRO>(swordandshieldsArray),
+    dualblades:     processWeapon<DualBladesRO    >(dualbladessArray),
+    lance:          processWeapon<LanceRO         >(lancesArray),
 };
 
 export {

@@ -263,8 +263,16 @@ export function isMeleeRO(obj: WeaponRO): obj is MeleeWeaponRO { // DANGER: RETU
     return isMeleeCategory(obj.category);
 }
 
-export interface Greatsword extends MeleeWeapon {category: "greatsword";}
-export type GreatswordRO = Readonly<Greatsword>;
+export interface Greatsword     extends MeleeWeapon {category: "greatsword";    }
+export interface Longsword      extends MeleeWeapon {category: "longsword";     }
+export interface SwordAndShield extends MeleeWeapon {category: "swordandshield";}
+export interface DualBlades     extends MeleeWeapon {category: "dualblades";    }
+export interface Lance          extends MeleeWeapon {category: "lance";         }
+export type GreatswordRO     = Readonly<Greatsword    >;
+export type LongswordRO      = Readonly<Longsword     >;
+export type SwordAndShieldRO = Readonly<SwordAndShield>;
+export type DualBladesRO     = Readonly<DualBlades    >;
+export type LanceRO          = Readonly<Lance         >;
 
 /*** Armour ***/
 
@@ -368,6 +376,10 @@ export type DecorationRO = Readonly<Decoration>;
 type WeaponMapInner<W> = FrozenMap<string, W>;
 
 export type WeaponMap = {
-    greatsword: WeaponMapInner<GreatswordRO>;
+    greatsword:     WeaponMapInner<GreatswordRO    >;
+    longsword:      WeaponMapInner<LongswordRO     >;
+    swordandshield: WeaponMapInner<SwordAndShieldRO>;
+    dualblades:     WeaponMapInner<DualBladesRO    >;
+    lance:          WeaponMapInner<LanceRO         >;
 };
 

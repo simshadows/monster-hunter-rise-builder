@@ -90,10 +90,18 @@ def run():
     print(f"Discovered {len(armour_data)} armour sets.")
 
     weapon_data = {
-        "greatsword": read_data("../../kiranico_scrape/output/weapons_greatsword.json"),
+        "greatsword":     read_data("../../kiranico_scrape/output/weapons_greatsword.json"    ),
+        "longsword":      read_data("../../kiranico_scrape/output/weapons_longsword.json"     ),
+        "swordandshield": read_data("../../kiranico_scrape/output/weapons_swordandshield.json"),
+        "dualblades":     read_data("../../kiranico_scrape/output/weapons_dualblades.json"    ),
+        "lance":          read_data("../../kiranico_scrape/output/weapons_lance.json"         ),
     }
     weapon_source_files_content = generate_weapon_source_files(weapon_data)
-    write_source_file("_generated_weapon_greatsword.ts", weapon_source_files_content["greatsword"])
+    write_source_file("_generated_weapon_greatsword.ts"    , weapon_source_files_content["greatsword"    ])
+    write_source_file("_generated_weapon_longsword.ts"     , weapon_source_files_content["longsword"     ])
+    write_source_file("_generated_weapon_swordandshield.ts", weapon_source_files_content["swordandshield"])
+    write_source_file("_generated_weapon_dualblades.ts"    , weapon_source_files_content["dualblades"    ])
+    write_source_file("_generated_weapon_lance.ts"         , weapon_source_files_content["lance"         ])
     for (k, v) in weapon_data.items():
         print(f"Discovered {len(v)} weapon trees of category '{k}'.")
 

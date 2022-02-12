@@ -79,7 +79,11 @@ ramp_skill_entry_fmt = """\
 """
 
 _to_type_ref = {
-    "greatsword": "GreatswordRO",
+    "greatsword":     "GreatswordRO",
+    "longsword":      "LongswordRO",
+    "swordandshield": "SwordAndShieldRO",
+    "dualblades":     "DualBladesRO",
+    "lance":          "LanceRO",
 }
 
 _melee_weapons = {

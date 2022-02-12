@@ -391,10 +391,6 @@ async function downloadAllRawWeaponData() {
     const validateBowgun       = (weaponData) => {validateWeaponDataBowguns(weaponData);};
     const validateBow          = (weaponData) => {validateWeaponDataBow(weaponData);};
 
-    const lsDataFut  = downloadCategoryRawWeaponData("longsword",      WEAPON_LS_PATH,  validateSimpleMelee);
-    const snsDataFut = downloadCategoryRawWeaponData("swordandshield", WEAPON_SNS_PATH, validateSimpleMelee);
-    const dbDataFut  = downloadCategoryRawWeaponData("dualblades",     WEAPON_DB_PATH,  validateSimpleMelee);
-    const lDataFut   = downloadCategoryRawWeaponData("lance",          WEAPON_L_PATH,   validateSimpleMelee);
     const glDataFut  = downloadCategoryRawWeaponData("gunlance",       WEAPON_GL_PATH,  validateGL         );
     const hDataFut   = downloadCategoryRawWeaponData("hammer",         WEAPON_H_PATH,   validateSimpleMelee);
     const hhDataFut  = downloadCategoryRawWeaponData("huntinghorn",    WEAPON_HH_PATH,  validateHH         );
@@ -406,10 +402,10 @@ async function downloadAllRawWeaponData() {
     const bowDataFut = downloadCategoryRawWeaponData("bow",            WEAPON_BOW_PATH, validateBow        );
     return {
             greatsword:     newWeaponsMap.greatsword,
-            longsword:      await lsDataFut,
-            swordandshield: await snsDataFut,
-            dualblades:     await dbDataFut,
-            lance:          await lDataFut,
+            longsword:      newWeaponsMap.longsword,
+            swordandshield: newWeaponsMap.swordandshield,
+            dualblades:     newWeaponsMap.dualblades,
+            lance:          newWeaponsMap.lance,
             gunlance:       await glDataFut,
             hammer:         await hDataFut,
             huntinghorn:    await hhDataFut,
@@ -428,7 +424,8 @@ function joinRampSkillObjsToWeaponData(weaponData) {
     assert(isObj(weaponData));
     //assert(isMap(rampageSkillsMap)); // Commented because it broke
     for (const [categoryID, weaponDataMap] of Object.entries(weaponData)) {
-        if (["greatsword"].includes(categoryID)) continue; // Bandaid for refactoring
+        // Bandaid for refactoring
+        if (["greatsword", "longsword", "swordandshield", "dualblades", "lance"].includes(categoryID)) continue;
         for (const [weaponID, weaponDataObj] of weaponDataMap.entries()) {
             const newRampArray = [];
             for (const rampSkillRampArray of weaponDataObj.rampSkills) {
