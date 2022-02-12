@@ -14,6 +14,7 @@ from skills import generate_skills_source_file
 from rampage_skills import generate_ramps_source_file
 from decorations import generate_decos_source_file
 from armour import generate_armour_source_file
+from weapons import generate_weapon_source_files
 from hardcoded_data.rampage_skills_procedural import get_procedural_rampage_skills
 
 GENERATED_CODE_NOTICE = """\
@@ -87,6 +88,14 @@ def run():
     armour_naming_schemes_data = read_data("armour_naming_schemes.json")
     write_source_file("_generated_armour.ts", generate_armour_source_file(armour_data, armour_naming_schemes_data))
     print(f"Discovered {len(armour_data)} armour sets.")
+
+    weapon_data = {
+        "greatsword": read_data("../../kiranico_scrape/output/weapons_greatsword.json"),
+    }
+    weapon_source_files_content = generate_weapon_source_files(weapon_data)
+    write_source_file("_generated_weapon_greatsword.ts", weapon_source_files_content["greatsword"])
+    for (k, v) in weapon_data.items():
+        print(f"Discovered {len(v)} weapon trees of category '{k}'.")
 
 if __name__ == "__main__":
     run()

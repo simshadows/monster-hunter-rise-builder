@@ -3,6 +3,10 @@
  * License: GNU Affero General Public License v3 (AGPL-3.0)
  */
 
+import {
+    FrozenMap,
+} from "../generic/frozen-containers";
+
 export type Tier = "lr" | "hr";
 export type Rarity = 1 | 2 | 3 | 4 | 5 | 6 | 7;
 export type DecorationSlotSize = 1 | 2 | 3;
@@ -15,20 +19,43 @@ export type EleStatStr = ElementStr | StatStr;
 
 export type EndlineTag = "" | "hr";
 
+export type ArmourSlot = "head" | "chest" | "arms" | "waist" | "legs";
+
+export type WeaponCategory = "greatsword"
+                           | "longsword"
+                           | "swordandshield"
+                           | "dualblades"
+                           | "lance"
+                           | "gunlance"
+                           | "hammer"
+                           | "huntinghorn"
+                           | "switchaxe"
+                           | "chargeblade"
+                           | "insectglaive"
+                           | "lightbowgun"
+                           | "heavybowgun"
+                           | "bow";
+export type MeleeWeaponCategory = Exclude<WeaponCategory, "lightbowgun" | "heavybowgun" | "bow">;
+
+export function isMeleeCategory(s: WeaponCategory): s is MeleeWeaponCategory { // DANGER: Returns type predicate.
+    return (s !== "lightbowgun") && (s !== "heavybowgun") && (s !== "bow");
+}
+
 /*** Utility Types ***/
 
-// TODO: Continue this!
-//export type Sharpness = [
-//    number, // red
-//    number, // orange
-//    number, // yellow
-//    number, // green
-//    number, // blue
-//    number, // white
-//]
-//
+export type Sharpness = [
+    number, // red
+    number, // orange
+    number, // yellow
+    number, // green
+    number, // blue
+    number, // white
+]
+
+export type EleStatMap = FrozenMap<EleStatStr, number>;
+// TODO: Migrate to this?
 //export type EleStatMap = {
-//    [key in EleStatStr]: number;
+//    [key in EleStatStr]?: number;
 //};
 
 export type DecoSlotsArray = []
@@ -190,66 +217,56 @@ export type BowgunAmmoTypeRO = Readonly<BowgunAmmoType>;
 
 /*** Weapons ***/
 
-export type WeaponCategory = "greatsword"
-                           | "longsword"
-                           | "swordandshield"
-                           | "dualblades"
-                           | "lance"
-                           | "gunlance"
-                           | "hammer"
-                           | "huntinghorn"
-                           | "switchaxe"
-                           | "chargeblade"
-                           | "insectglaive"
-                           | "lightbowgun"
-                           | "heavybowgun"
-                           | "bow";
+export interface Weapon {
+    // These two IDs uniquely identify each individual weapon.
+    category: WeaponCategory;
+    id:       string;
 
-// TODO: Continue this!
-//export interface Weapon {
-//    // These two IDs uniquely identify each individual weapon.
-//    category: WeaponCategory;
-//    id:       string;
-//
-//    name:       string;
-//    treeName:   string;
-//    rarity:     Rarity;
-//    endlineTag: EndlineTag;
-//
-//    attack:    number;
-//    affinity:  number;
-//    defense:   number;
-//    decoSlots: Readonly<DecoSlotsArray>; // TODO: Why is this a different name than the one for armour pieces?
-//    eleStat:   Readonly<EleStatMap>;
-//
-//    rampSkills: Readonly<
-//        Readonly<
-//            Readonly<[RampageSkillRO, string]>[]
-//        >[]
-//    >;
-//
-//    baseSharpness: Sharpness | undefined;
-//    maxSharpness:  Sharpness | undefined;
-//
-//    //bowStats: BowStats | undefined;
-//    // TODO: Continue writing these
-//
-//    filterHelpers: Readonly<{
-//        nameLower:     string;
-//        treeNameLower: string;
-//    }>;
-//}
-//export type WeaponRO = Readonly<Weapon>;
-//
-//export interface MeleeWeapon extends Weapon {
-//    baseSharpness: Sharpness;
-//    maxSharpness:  Sharpness;
-//}
-//export type MeleeWeaponRO = Readonly<MeleeWeapon>;
+    name:       string;
+    treeName:   string;
+    rarity:     Rarity;
+    endlineTag: EndlineTag;
+
+    attack:    number;
+    affinity:  number;
+    defense:   number;
+    decoSlots: Readonly<DecoSlotsArray>; // TODO: Why is this a different name than the one for armour pieces?
+    eleStat:   Readonly<EleStatMap>;
+
+    rampSkills: Readonly<
+        Readonly<
+            Readonly<[RampageSkillRO, WeaponRO | null]>[]
+        >[]
+    >;
+
+    baseSharpness: Sharpness | undefined;
+    maxSharpness:  Sharpness | undefined;
+
+    //bowStats: BowStats | undefined;
+    // TODO: Continue writing these
+
+    filterHelpers: Readonly<{
+        nameLower:     string;
+        treeNameLower: string;
+    }>;
+}
+export type WeaponRO = Readonly<Weapon>;
+
+export interface MeleeWeapon extends Weapon {
+    category:      MeleeWeaponCategory;
+    baseSharpness: Sharpness;
+    maxSharpness:  Sharpness;
+}
+export type MeleeWeaponRO = Readonly<MeleeWeapon>;
+
+export function isMeleeRO(obj: WeaponRO): obj is MeleeWeaponRO { // DANGER: RETURNS TYPE PREDICATE
+    return isMeleeCategory(obj.category);
+}
+
+export interface Greatsword extends MeleeWeapon {category: "greatsword";}
+export type GreatswordRO = Readonly<Greatsword>;
 
 /*** Armour ***/
-
-export type ArmourSlot = "head" | "chest" | "arms" | "waist" | "legs";
 
 export interface ArmourPiece {
     // These two IDs uniquely identify each individual armour set.
@@ -345,4 +362,12 @@ export interface Decoration {
     }>;
 }
 export type DecorationRO = Readonly<Decoration>;
+
+/*** Other Database Utility Types ***/
+
+type WeaponMapInner<W> = FrozenMap<string, W>;
+
+export type WeaponMap = {
+    greatsword: WeaponMapInner<GreatswordRO>;
+};
 

@@ -4,6 +4,10 @@
  * License: GNU Affero General Public License v3 (AGPL-3.0)
  */
 
+import {
+    FrozenMap,
+} from "./generic/frozen-containers";
+
 export function isDefined(obj) {
     const res = (typeof obj !== undefined);
     console.assert(res, "Unexpected undefined object.", obj);
@@ -82,7 +86,7 @@ export function isArr(obj) {
 }
 
 export function isMap(obj) {
-    const res = (obj instanceof Map);
+    const res = (obj instanceof Map) || (obj instanceof FrozenMap);
     console.assert(res, "Expected a Map type. Instead got:", obj);
     return res;
 }

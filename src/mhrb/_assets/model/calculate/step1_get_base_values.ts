@@ -88,7 +88,7 @@ function getBaseValues(db, build, calcState) {
     let baseRaw      = weaponRO.attack;
     let baseAffinity = weaponRO.affinity;
 
-    let baseEleStat = new Map(weaponRO.eleStat);
+    let baseEleStat = new Map(weaponRO.eleStat.entries());
 
     // TODO: Another weird naming thing. Fix this!
     let minSharpness = (tagset.has("melee")) ? deepcopy(weaponRO.baseSharpness) : null;

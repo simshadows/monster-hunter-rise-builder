@@ -12,17 +12,29 @@ import {
     isPositiveInt,
 } from "../../generic/check";
 import {
+    sumArray,
+} from "../../generic/utils";
+import {
     FrozenMap,
 } from "../../generic/frozen-containers";
 
 import {
+    type ArmourSlot,
     type SkillRO,
     type RampageSkillRO,
     type DecorationRO,
-    type ArmourSlot,
+
+    type WeaponRO,
+    type MeleeWeaponRO,
+    type GreatswordRO,
+
     type ArmourPieceRO,
     type ArmourSetRO,
+    type WeaponMap,
 } from "../../common/types";
+import {
+    isMeleeRO,
+} from "../../common/type_predicates";
 import {
     toNameFilterString,
 } from "../../common/mappings";
@@ -34,6 +46,8 @@ import {skillsArray} from "./_generated_skills";
 import {rampsArray} from "./_generated_rampage_skills";
 import {decosArray} from "./_generated_decorations";
 import {armourSetsArray} from "./_generated_armour";
+
+import {greatswordsArray} from "./_generated_weapon_greatsword";
 
 /*** Skills ***/
 
@@ -104,6 +118,68 @@ const decosMap: FrozenMap<number, DecorationRO> = populate(
     },
 );
 
+/*** Weapons ***/
+
+function validateMeleeWeapon(w: MeleeWeaponRO): void {
+    const baseSum = sumArray(w.baseSharpness);
+    const maxSum = sumArray(w.maxSharpness);
+
+    console.assert((baseSum === maxSum) || (baseSum + 50 === maxSum));
+    
+    console.assert(w.baseSharpness.length === w.maxSharpness.length); // sanity check
+    let levelMustBeEqual = false;
+    for (let i = w.baseSharpness.length - 1; i >= 0; --i) {
+        const b = w.baseSharpness[i]!; // DANGER: Type assertion!
+        const m = w.maxSharpness[i]!;
+
+        // Check to see that the assertions are correct
+        console.assert(b !== undefined);
+        console.assert(m !== undefined);
+
+        console.assert((b % 1 === 0) && (b >= 0));
+        console.assert((m % 1 === 0) && (m >= 0));
+
+        if (levelMustBeEqual) {
+            console.assert(b === m);
+        } else {
+            if (b > 0) levelMustBeEqual = true;
+            console.assert(b <= m);
+        }
+    }
+}
+
+function processWeapon<W extends WeaponRO>(arr: Readonly<W[]>): FrozenMap<string, W> {
+    return populate<W>(
+        arr,
+        (obj) => {
+
+            // Validate common invariants
+            console.assert(/^[a-z0-9]+$/.test(obj.id));
+            console.assert(obj.name !== "");
+            console.assert(obj.treeName !== "");
+            console.assert(isPositiveInt(obj.attack));
+            console.assert(obj.affinity % 1 === 0);
+            console.assert((obj.defense % 1 === 0) && (obj.defense >= 0));
+            for (const [_, eleStatValue] of obj.eleStat.entries()) {
+                console.assert(isPositiveInt(eleStatValue));
+            }
+
+            console.assert(obj.filterHelpers.nameLower !== "");
+            console.assert(obj.filterHelpers.nameLower === toNameFilterString(obj.name));
+
+            console.assert(obj.filterHelpers.treeNameLower !== "");
+            console.assert(obj.filterHelpers.treeNameLower === toNameFilterString(obj.treeName));
+
+            if (isMeleeRO(obj)) validateMeleeWeapon(obj);
+            return obj;
+        },
+    );
+}
+
+const weaponsMap: Readonly<WeaponMap> = {
+    greatsword: processWeapon<GreatswordRO>(greatswordsArray),
+};
+
 /*** Armour ***/
 
 const tmpSlotIDList: ArmourSlot[] = ["head", "chest", "arms", "waist", "legs"];
@@ -164,6 +240,7 @@ export {
     finalRampsMap         as rampageSkillsMap,
     finalRampsMapShortIds as rampageSkillsMapShortIds,
     decosMap,
+    weaponsMap,
     armourMap,
     armourArrays,
 };

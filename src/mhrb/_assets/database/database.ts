@@ -35,6 +35,7 @@ import {
     rampageSkillsMap,
     rampageSkillsMapShortIds,
     decosMap,
+    weaponsMap as newWeaponsMap,
     armourMap,
     armourArrays,
 } from "./generated_code";
@@ -58,7 +59,6 @@ import {
 import {bowgunAmmoTypesMap      } from "./hardcoded_data/special_weapon_mechanics/bowguns";
 import {specialSelectionTypesMap} from "./hardcoded_data/special_weapon_mechanics/general";
 
-const WEAPON_GS_PATH  = "./data/weapons_greatsword.json";
 const WEAPON_LS_PATH  = "./data/weapons_longsword.json";
 const WEAPON_SNS_PATH = "./data/weapons_swordandshield.json";
 const WEAPON_DB_PATH  = "./data/weapons_dualblades.json";
@@ -391,7 +391,6 @@ async function downloadAllRawWeaponData() {
     const validateBowgun       = (weaponData) => {validateWeaponDataBowguns(weaponData);};
     const validateBow          = (weaponData) => {validateWeaponDataBow(weaponData);};
 
-    const gsDataFut  = downloadCategoryRawWeaponData("greatsword",     WEAPON_GS_PATH,  validateSimpleMelee);
     const lsDataFut  = downloadCategoryRawWeaponData("longsword",      WEAPON_LS_PATH,  validateSimpleMelee);
     const snsDataFut = downloadCategoryRawWeaponData("swordandshield", WEAPON_SNS_PATH, validateSimpleMelee);
     const dbDataFut  = downloadCategoryRawWeaponData("dualblades",     WEAPON_DB_PATH,  validateSimpleMelee);
@@ -406,7 +405,7 @@ async function downloadAllRawWeaponData() {
     const hbgDataFut = downloadCategoryRawWeaponData("heavybowgun",    WEAPON_HBG_PATH, validateBowgun     );
     const bowDataFut = downloadCategoryRawWeaponData("bow",            WEAPON_BOW_PATH, validateBow        );
     return {
-            greatsword:     await gsDataFut,
+            greatsword:     newWeaponsMap.greatsword,
             longsword:      await lsDataFut,
             swordandshield: await snsDataFut,
             dualblades:     await dbDataFut,
@@ -429,6 +428,7 @@ function joinRampSkillObjsToWeaponData(weaponData) {
     assert(isObj(weaponData));
     //assert(isMap(rampageSkillsMap)); // Commented because it broke
     for (const [categoryID, weaponDataMap] of Object.entries(weaponData)) {
+        if (["greatsword"].includes(categoryID)) continue; // Bandaid for refactoring
         for (const [weaponID, weaponDataObj] of weaponDataMap.entries()) {
             const newRampArray = [];
             for (const rampSkillRampArray of weaponDataObj.rampSkills) {
