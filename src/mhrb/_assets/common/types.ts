@@ -101,7 +101,7 @@ export type SkillLevels = Readonly<[SkillRO, number]>[];
 
 export interface RampageSkill {
     id:      string;
-    shortId: string;
+    shortID: string;
     name:    string;
 }
 export type RampageSkillRO = Readonly<RampageSkill>;

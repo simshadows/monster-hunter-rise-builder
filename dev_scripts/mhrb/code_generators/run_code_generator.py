@@ -10,8 +10,10 @@ Runs the code generator.
 import os
 import json
 
+from general import generate_source_file
+from utils import ramp_id_to_object_name
+
 from skills import generate_skills_source_file
-from rampage_skills import generate_ramps_source_file
 from decorations import generate_decos_source_file
 from armour import generate_armour_source_file
 from weapons import generate_weapon_source_files
@@ -77,7 +79,18 @@ def run():
     print(f"Discovered {len(skills_data)} skills.")
 
     ramps_data = get_procedural_rampage_skills() + read_data("rampage_skills_individual.json")
-    write_source_file("_generated_rampage_skills.ts", generate_ramps_source_file(ramps_data))
+    write_source_file(
+        "_generated_rampage_skills.ts",
+        generate_source_file(
+            {
+                "keys": ["id", "shortID", "name"],
+                "array": "rampsArray",
+                "type": "RampageSkillRO",
+                "obj_name_map": ramp_id_to_object_name,
+            },
+            ramps_data,
+        ),
+    )
     print(f"Discovered {len(ramps_data)} rampage skills.")
 
     decos_data = read_data("decorations.json")

@@ -59,10 +59,6 @@ import {
 import {bowgunAmmoTypesMap      } from "./hardcoded_data/special_weapon_mechanics/bowguns";
 import {specialSelectionTypesMap} from "./hardcoded_data/special_weapon_mechanics/general";
 
-const WEAPON_LS_PATH  = "./data/weapons_longsword.json";
-const WEAPON_SNS_PATH = "./data/weapons_swordandshield.json";
-const WEAPON_DB_PATH  = "./data/weapons_dualblades.json";
-const WEAPON_L_PATH   = "./data/weapons_lance.json";
 const WEAPON_GL_PATH  = "./data/weapons_gunlance.json";
 const WEAPON_H_PATH   = "./data/weapons_hammer.json";
 const WEAPON_HH_PATH  = "./data/weapons_huntinghorn.json";

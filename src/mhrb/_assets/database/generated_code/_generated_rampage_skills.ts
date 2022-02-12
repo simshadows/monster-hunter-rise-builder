@@ -39,1435 +39,1435 @@ import {type RampageSkillRO} from "../../common/types";
 
 export const __generated_ramp__fire_boost_1: RampageSkillRO = {
     id: "fire_boost_1",
-    shortId: "fib1",
+    shortID: "fib1",
     name: "Fire Boost I",
 };
 
 export const __generated_ramp__fire_boost_2: RampageSkillRO = {
     id: "fire_boost_2",
-    shortId: "fib2",
+    shortID: "fib2",
     name: "Fire Boost II",
 };
 
 export const __generated_ramp__fire_boost_3: RampageSkillRO = {
     id: "fire_boost_3",
-    shortId: "fib3",
+    shortID: "fib3",
     name: "Fire Boost III",
 };
 
 export const __generated_ramp__fire_boost_4: RampageSkillRO = {
     id: "fire_boost_4",
-    shortId: "fib4",
+    shortID: "fib4",
     name: "Fire Boost IV",
 };
 
 export const __generated_ramp__fire_1: RampageSkillRO = {
     id: "fire_1",
-    shortId: "fix1",
+    shortID: "fix1",
     name: "Fire I",
 };
 
 export const __generated_ramp__fire_2: RampageSkillRO = {
     id: "fire_2",
-    shortId: "fix2",
+    shortID: "fix2",
     name: "Fire II",
 };
 
 export const __generated_ramp__fire_3: RampageSkillRO = {
     id: "fire_3",
-    shortId: "fix3",
+    shortID: "fix3",
     name: "Fire III",
 };
 
 export const __generated_ramp__fire_4: RampageSkillRO = {
     id: "fire_4",
-    shortId: "fix4",
+    shortID: "fix4",
     name: "Fire IV",
 };
 
 export const __generated_ramp__secondary_fire_1: RampageSkillRO = {
     id: "secondary_fire_1",
-    shortId: "fis1",
+    shortID: "fis1",
     name: "Secondary Fire I",
 };
 
 export const __generated_ramp__secondary_fire_2: RampageSkillRO = {
     id: "secondary_fire_2",
-    shortId: "fis2",
+    shortID: "fis2",
     name: "Secondary Fire II",
 };
 
 export const __generated_ramp__secondary_fire_3: RampageSkillRO = {
     id: "secondary_fire_3",
-    shortId: "fis3",
+    shortID: "fis3",
     name: "Secondary Fire III",
 };
 
 export const __generated_ramp__fire_effect_1: RampageSkillRO = {
     id: "fire_effect_1",
-    shortId: "fie1",
+    shortID: "fie1",
     name: "Fire Effect I",
 };
 
 export const __generated_ramp__fire_effect_2: RampageSkillRO = {
     id: "fire_effect_2",
-    shortId: "fie2",
+    shortID: "fie2",
     name: "Fire Effect II",
 };
 
 export const __generated_ramp__rapid_fire_fire: RampageSkillRO = {
     id: "rapid_fire_fire",
-    shortId: "fir1",
+    shortID: "fir1",
     name: "Rapid Fire Fire",
 };
 
 export const __generated_ramp__water_boost_1: RampageSkillRO = {
     id: "water_boost_1",
-    shortId: "wab1",
+    shortID: "wab1",
     name: "Water Boost I",
 };
 
 export const __generated_ramp__water_boost_2: RampageSkillRO = {
     id: "water_boost_2",
-    shortId: "wab2",
+    shortID: "wab2",
     name: "Water Boost II",
 };
 
 export const __generated_ramp__water_boost_3: RampageSkillRO = {
     id: "water_boost_3",
-    shortId: "wab3",
+    shortID: "wab3",
     name: "Water Boost III",
 };
 
 export const __generated_ramp__water_boost_4: RampageSkillRO = {
     id: "water_boost_4",
-    shortId: "wab4",
+    shortID: "wab4",
     name: "Water Boost IV",
 };
 
 export const __generated_ramp__water_1: RampageSkillRO = {
     id: "water_1",
-    shortId: "wax1",
+    shortID: "wax1",
     name: "Water I",
 };
 
 export const __generated_ramp__water_2: RampageSkillRO = {
     id: "water_2",
-    shortId: "wax2",
+    shortID: "wax2",
     name: "Water II",
 };
 
 export const __generated_ramp__water_3: RampageSkillRO = {
     id: "water_3",
-    shortId: "wax3",
+    shortID: "wax3",
     name: "Water III",
 };
 
 export const __generated_ramp__water_4: RampageSkillRO = {
     id: "water_4",
-    shortId: "wax4",
+    shortID: "wax4",
     name: "Water IV",
 };
 
 export const __generated_ramp__secondary_water_1: RampageSkillRO = {
     id: "secondary_water_1",
-    shortId: "was1",
+    shortID: "was1",
     name: "Secondary Water I",
 };
 
 export const __generated_ramp__secondary_water_2: RampageSkillRO = {
     id: "secondary_water_2",
-    shortId: "was2",
+    shortID: "was2",
     name: "Secondary Water II",
 };
 
 export const __generated_ramp__secondary_water_3: RampageSkillRO = {
     id: "secondary_water_3",
-    shortId: "was3",
+    shortID: "was3",
     name: "Secondary Water III",
 };
 
 export const __generated_ramp__water_effect_1: RampageSkillRO = {
     id: "water_effect_1",
-    shortId: "wae1",
+    shortID: "wae1",
     name: "Water Effect I",
 };
 
 export const __generated_ramp__water_effect_2: RampageSkillRO = {
     id: "water_effect_2",
-    shortId: "wae2",
+    shortID: "wae2",
     name: "Water Effect II",
 };
 
 export const __generated_ramp__rapid_fire_water: RampageSkillRO = {
     id: "rapid_fire_water",
-    shortId: "war1",
+    shortID: "war1",
     name: "Rapid Fire Water",
 };
 
 export const __generated_ramp__thunder_boost_1: RampageSkillRO = {
     id: "thunder_boost_1",
-    shortId: "thb1",
+    shortID: "thb1",
     name: "Thunder Boost I",
 };
 
 export const __generated_ramp__thunder_boost_2: RampageSkillRO = {
     id: "thunder_boost_2",
-    shortId: "thb2",
+    shortID: "thb2",
     name: "Thunder Boost II",
 };
 
 export const __generated_ramp__thunder_boost_3: RampageSkillRO = {
     id: "thunder_boost_3",
-    shortId: "thb3",
+    shortID: "thb3",
     name: "Thunder Boost III",
 };
 
 export const __generated_ramp__thunder_boost_4: RampageSkillRO = {
     id: "thunder_boost_4",
-    shortId: "thb4",
+    shortID: "thb4",
     name: "Thunder Boost IV",
 };
 
 export const __generated_ramp__thunder_1: RampageSkillRO = {
     id: "thunder_1",
-    shortId: "thx1",
+    shortID: "thx1",
     name: "Thunder I",
 };
 
 export const __generated_ramp__thunder_2: RampageSkillRO = {
     id: "thunder_2",
-    shortId: "thx2",
+    shortID: "thx2",
     name: "Thunder II",
 };
 
 export const __generated_ramp__thunder_3: RampageSkillRO = {
     id: "thunder_3",
-    shortId: "thx3",
+    shortID: "thx3",
     name: "Thunder III",
 };
 
 export const __generated_ramp__thunder_4: RampageSkillRO = {
     id: "thunder_4",
-    shortId: "thx4",
+    shortID: "thx4",
     name: "Thunder IV",
 };
 
 export const __generated_ramp__secondary_thunder_1: RampageSkillRO = {
     id: "secondary_thunder_1",
-    shortId: "ths1",
+    shortID: "ths1",
     name: "Secondary Thunder I",
 };
 
 export const __generated_ramp__secondary_thunder_2: RampageSkillRO = {
     id: "secondary_thunder_2",
-    shortId: "ths2",
+    shortID: "ths2",
     name: "Secondary Thunder II",
 };
 
 export const __generated_ramp__secondary_thunder_3: RampageSkillRO = {
     id: "secondary_thunder_3",
-    shortId: "ths3",
+    shortID: "ths3",
     name: "Secondary Thunder III",
 };
 
 export const __generated_ramp__thunder_effect_1: RampageSkillRO = {
     id: "thunder_effect_1",
-    shortId: "the1",
+    shortID: "the1",
     name: "Thunder Effect I",
 };
 
 export const __generated_ramp__thunder_effect_2: RampageSkillRO = {
     id: "thunder_effect_2",
-    shortId: "the2",
+    shortID: "the2",
     name: "Thunder Effect II",
 };
 
 export const __generated_ramp__rapid_fire_thunder: RampageSkillRO = {
     id: "rapid_fire_thunder",
-    shortId: "thr1",
+    shortID: "thr1",
     name: "Rapid Fire Thunder",
 };
 
 export const __generated_ramp__ice_boost_1: RampageSkillRO = {
     id: "ice_boost_1",
-    shortId: "icb1",
+    shortID: "icb1",
     name: "Ice Boost I",
 };
 
 export const __generated_ramp__ice_boost_2: RampageSkillRO = {
     id: "ice_boost_2",
-    shortId: "icb2",
+    shortID: "icb2",
     name: "Ice Boost II",
 };
 
 export const __generated_ramp__ice_boost_3: RampageSkillRO = {
     id: "ice_boost_3",
-    shortId: "icb3",
+    shortID: "icb3",
     name: "Ice Boost III",
 };
 
 export const __generated_ramp__ice_boost_4: RampageSkillRO = {
     id: "ice_boost_4",
-    shortId: "icb4",
+    shortID: "icb4",
     name: "Ice Boost IV",
 };
 
 export const __generated_ramp__ice_1: RampageSkillRO = {
     id: "ice_1",
-    shortId: "icx1",
+    shortID: "icx1",
     name: "Ice I",
 };
 
 export const __generated_ramp__ice_2: RampageSkillRO = {
     id: "ice_2",
-    shortId: "icx2",
+    shortID: "icx2",
     name: "Ice II",
 };
 
 export const __generated_ramp__ice_3: RampageSkillRO = {
     id: "ice_3",
-    shortId: "icx3",
+    shortID: "icx3",
     name: "Ice III",
 };
 
 export const __generated_ramp__ice_4: RampageSkillRO = {
     id: "ice_4",
-    shortId: "icx4",
+    shortID: "icx4",
     name: "Ice IV",
 };
 
 export const __generated_ramp__secondary_ice_1: RampageSkillRO = {
     id: "secondary_ice_1",
-    shortId: "ics1",
+    shortID: "ics1",
     name: "Secondary Ice I",
 };
 
 export const __generated_ramp__secondary_ice_2: RampageSkillRO = {
     id: "secondary_ice_2",
-    shortId: "ics2",
+    shortID: "ics2",
     name: "Secondary Ice II",
 };
 
 export const __generated_ramp__secondary_ice_3: RampageSkillRO = {
     id: "secondary_ice_3",
-    shortId: "ics3",
+    shortID: "ics3",
     name: "Secondary Ice III",
 };
 
 export const __generated_ramp__ice_effect_1: RampageSkillRO = {
     id: "ice_effect_1",
-    shortId: "ice1",
+    shortID: "ice1",
     name: "Ice Effect I",
 };
 
 export const __generated_ramp__ice_effect_2: RampageSkillRO = {
     id: "ice_effect_2",
-    shortId: "ice2",
+    shortID: "ice2",
     name: "Ice Effect II",
 };
 
 export const __generated_ramp__rapid_fire_ice: RampageSkillRO = {
     id: "rapid_fire_ice",
-    shortId: "icr1",
+    shortID: "icr1",
     name: "Rapid Fire Ice",
 };
 
 export const __generated_ramp__dragon_boost_1: RampageSkillRO = {
     id: "dragon_boost_1",
-    shortId: "drb1",
+    shortID: "drb1",
     name: "Dragon Boost I",
 };
 
 export const __generated_ramp__dragon_boost_2: RampageSkillRO = {
     id: "dragon_boost_2",
-    shortId: "drb2",
+    shortID: "drb2",
     name: "Dragon Boost II",
 };
 
 export const __generated_ramp__dragon_boost_3: RampageSkillRO = {
     id: "dragon_boost_3",
-    shortId: "drb3",
+    shortID: "drb3",
     name: "Dragon Boost III",
 };
 
 export const __generated_ramp__dragon_boost_4: RampageSkillRO = {
     id: "dragon_boost_4",
-    shortId: "drb4",
+    shortID: "drb4",
     name: "Dragon Boost IV",
 };
 
 export const __generated_ramp__dragon_1: RampageSkillRO = {
     id: "dragon_1",
-    shortId: "drx1",
+    shortID: "drx1",
     name: "Dragon I",
 };
 
 export const __generated_ramp__dragon_2: RampageSkillRO = {
     id: "dragon_2",
-    shortId: "drx2",
+    shortID: "drx2",
     name: "Dragon II",
 };
 
 export const __generated_ramp__dragon_3: RampageSkillRO = {
     id: "dragon_3",
-    shortId: "drx3",
+    shortID: "drx3",
     name: "Dragon III",
 };
 
 export const __generated_ramp__dragon_4: RampageSkillRO = {
     id: "dragon_4",
-    shortId: "drx4",
+    shortID: "drx4",
     name: "Dragon IV",
 };
 
 export const __generated_ramp__secondary_dragon_1: RampageSkillRO = {
     id: "secondary_dragon_1",
-    shortId: "drs1",
+    shortID: "drs1",
     name: "Secondary Dragon I",
 };
 
 export const __generated_ramp__secondary_dragon_2: RampageSkillRO = {
     id: "secondary_dragon_2",
-    shortId: "drs2",
+    shortID: "drs2",
     name: "Secondary Dragon II",
 };
 
 export const __generated_ramp__secondary_dragon_3: RampageSkillRO = {
     id: "secondary_dragon_3",
-    shortId: "drs3",
+    shortID: "drs3",
     name: "Secondary Dragon III",
 };
 
 export const __generated_ramp__dragon_effect_1: RampageSkillRO = {
     id: "dragon_effect_1",
-    shortId: "dre1",
+    shortID: "dre1",
     name: "Dragon Effect I",
 };
 
 export const __generated_ramp__dragon_effect_2: RampageSkillRO = {
     id: "dragon_effect_2",
-    shortId: "dre2",
+    shortID: "dre2",
     name: "Dragon Effect II",
 };
 
 export const __generated_ramp__rapid_fire_dragon: RampageSkillRO = {
     id: "rapid_fire_dragon",
-    shortId: "drr1",
+    shortID: "drr1",
     name: "Rapid Fire Dragon",
 };
 
 export const __generated_ramp__poison_boost_1: RampageSkillRO = {
     id: "poison_boost_1",
-    shortId: "pob1",
+    shortID: "pob1",
     name: "Poison Boost I",
 };
 
 export const __generated_ramp__poison_boost_2: RampageSkillRO = {
     id: "poison_boost_2",
-    shortId: "pob2",
+    shortID: "pob2",
     name: "Poison Boost II",
 };
 
 export const __generated_ramp__poison_boost_3: RampageSkillRO = {
     id: "poison_boost_3",
-    shortId: "pob3",
+    shortID: "pob3",
     name: "Poison Boost III",
 };
 
 export const __generated_ramp__poison_1: RampageSkillRO = {
     id: "poison_1",
-    shortId: "pox1",
+    shortID: "pox1",
     name: "Poison I",
 };
 
 export const __generated_ramp__poison_2: RampageSkillRO = {
     id: "poison_2",
-    shortId: "pox2",
+    shortID: "pox2",
     name: "Poison II",
 };
 
 export const __generated_ramp__poison_3: RampageSkillRO = {
     id: "poison_3",
-    shortId: "pox3",
+    shortID: "pox3",
     name: "Poison III",
 };
 
 export const __generated_ramp__poison_effect_1: RampageSkillRO = {
     id: "poison_effect_1",
-    shortId: "poe1",
+    shortID: "poe1",
     name: "Poison Effect I",
 };
 
 export const __generated_ramp__poison_effect_2: RampageSkillRO = {
     id: "poison_effect_2",
-    shortId: "poe2",
+    shortID: "poe2",
     name: "Poison Effect II",
 };
 
 export const __generated_ramp__paralysis_boost_1: RampageSkillRO = {
     id: "paralysis_boost_1",
-    shortId: "pab1",
+    shortID: "pab1",
     name: "Paralysis Boost I",
 };
 
 export const __generated_ramp__paralysis_boost_2: RampageSkillRO = {
     id: "paralysis_boost_2",
-    shortId: "pab2",
+    shortID: "pab2",
     name: "Paralysis Boost II",
 };
 
 export const __generated_ramp__paralysis_boost_3: RampageSkillRO = {
     id: "paralysis_boost_3",
-    shortId: "pab3",
+    shortID: "pab3",
     name: "Paralysis Boost III",
 };
 
 export const __generated_ramp__paralysis_1: RampageSkillRO = {
     id: "paralysis_1",
-    shortId: "pax1",
+    shortID: "pax1",
     name: "Paralysis I",
 };
 
 export const __generated_ramp__paralysis_2: RampageSkillRO = {
     id: "paralysis_2",
-    shortId: "pax2",
+    shortID: "pax2",
     name: "Paralysis II",
 };
 
 export const __generated_ramp__paralysis_3: RampageSkillRO = {
     id: "paralysis_3",
-    shortId: "pax3",
+    shortID: "pax3",
     name: "Paralysis III",
 };
 
 export const __generated_ramp__paralysis_effect_1: RampageSkillRO = {
     id: "paralysis_effect_1",
-    shortId: "pae1",
+    shortID: "pae1",
     name: "Paralysis Effect I",
 };
 
 export const __generated_ramp__paralysis_effect_2: RampageSkillRO = {
     id: "paralysis_effect_2",
-    shortId: "pae2",
+    shortID: "pae2",
     name: "Paralysis Effect II",
 };
 
 export const __generated_ramp__sleep_boost_1: RampageSkillRO = {
     id: "sleep_boost_1",
-    shortId: "slb1",
+    shortID: "slb1",
     name: "Sleep Boost I",
 };
 
 export const __generated_ramp__sleep_boost_2: RampageSkillRO = {
     id: "sleep_boost_2",
-    shortId: "slb2",
+    shortID: "slb2",
     name: "Sleep Boost II",
 };
 
 export const __generated_ramp__sleep_boost_3: RampageSkillRO = {
     id: "sleep_boost_3",
-    shortId: "slb3",
+    shortID: "slb3",
     name: "Sleep Boost III",
 };
 
 export const __generated_ramp__sleep_1: RampageSkillRO = {
     id: "sleep_1",
-    shortId: "slx1",
+    shortID: "slx1",
     name: "Sleep I",
 };
 
 export const __generated_ramp__sleep_2: RampageSkillRO = {
     id: "sleep_2",
-    shortId: "slx2",
+    shortID: "slx2",
     name: "Sleep II",
 };
 
 export const __generated_ramp__sleep_3: RampageSkillRO = {
     id: "sleep_3",
-    shortId: "slx3",
+    shortID: "slx3",
     name: "Sleep III",
 };
 
 export const __generated_ramp__sleep_effect_1: RampageSkillRO = {
     id: "sleep_effect_1",
-    shortId: "sle1",
+    shortID: "sle1",
     name: "Sleep Effect I",
 };
 
 export const __generated_ramp__sleep_effect_2: RampageSkillRO = {
     id: "sleep_effect_2",
-    shortId: "sle2",
+    shortID: "sle2",
     name: "Sleep Effect II",
 };
 
 export const __generated_ramp__blast_boost_1: RampageSkillRO = {
     id: "blast_boost_1",
-    shortId: "blb1",
+    shortID: "blb1",
     name: "Blast Boost I",
 };
 
 export const __generated_ramp__blast_boost_2: RampageSkillRO = {
     id: "blast_boost_2",
-    shortId: "blb2",
+    shortID: "blb2",
     name: "Blast Boost II",
 };
 
 export const __generated_ramp__blast_boost_3: RampageSkillRO = {
     id: "blast_boost_3",
-    shortId: "blb3",
+    shortID: "blb3",
     name: "Blast Boost III",
 };
 
 export const __generated_ramp__blast_1: RampageSkillRO = {
     id: "blast_1",
-    shortId: "blx1",
+    shortID: "blx1",
     name: "Blast I",
 };
 
 export const __generated_ramp__blast_2: RampageSkillRO = {
     id: "blast_2",
-    shortId: "blx2",
+    shortID: "blx2",
     name: "Blast II",
 };
 
 export const __generated_ramp__blast_3: RampageSkillRO = {
     id: "blast_3",
-    shortId: "blx3",
+    shortID: "blx3",
     name: "Blast III",
 };
 
 export const __generated_ramp__attack_boost_1: RampageSkillRO = {
     id: "attack_boost_1",
-    shortId: "atb1",
+    shortID: "atb1",
     name: "Attack Boost I",
 };
 
 export const __generated_ramp__attack_boost_2: RampageSkillRO = {
     id: "attack_boost_2",
-    shortId: "atb2",
+    shortID: "atb2",
     name: "Attack Boost II",
 };
 
 export const __generated_ramp__attack_boost_3: RampageSkillRO = {
     id: "attack_boost_3",
-    shortId: "atb3",
+    shortID: "atb3",
     name: "Attack Boost III",
 };
 
 export const __generated_ramp__attack_boost_4: RampageSkillRO = {
     id: "attack_boost_4",
-    shortId: "atb4",
+    shortID: "atb4",
     name: "Attack Boost IV",
 };
 
 export const __generated_ramp__affinity_boost_1: RampageSkillRO = {
     id: "affinity_boost_1",
-    shortId: "afb1",
+    shortID: "afb1",
     name: "Affinity Boost I",
 };
 
 export const __generated_ramp__affinity_boost_2: RampageSkillRO = {
     id: "affinity_boost_2",
-    shortId: "afb2",
+    shortID: "afb2",
     name: "Affinity Boost II",
 };
 
 export const __generated_ramp__affinity_boost_3: RampageSkillRO = {
     id: "affinity_boost_3",
-    shortId: "afb3",
+    shortID: "afb3",
     name: "Affinity Boost III",
 };
 
 export const __generated_ramp__affinity_boost_4: RampageSkillRO = {
     id: "affinity_boost_4",
-    shortId: "afb4",
+    shortID: "afb4",
     name: "Affinity Boost IV",
 };
 
 export const __generated_ramp__elemental_boost_1: RampageSkillRO = {
     id: "elemental_boost_1",
-    shortId: "elb1",
+    shortID: "elb1",
     name: "Elemental Boost I",
 };
 
 export const __generated_ramp__elemental_boost_2: RampageSkillRO = {
     id: "elemental_boost_2",
-    shortId: "elb2",
+    shortID: "elb2",
     name: "Elemental Boost II",
 };
 
 export const __generated_ramp__elemental_boost_3: RampageSkillRO = {
     id: "elemental_boost_3",
-    shortId: "elb3",
+    shortID: "elb3",
     name: "Elemental Boost III",
 };
 
 export const __generated_ramp__defense_boost_1: RampageSkillRO = {
     id: "defense_boost_1",
-    shortId: "deb1",
+    shortID: "deb1",
     name: "Defense Boost I",
 };
 
 export const __generated_ramp__defense_boost_2: RampageSkillRO = {
     id: "defense_boost_2",
-    shortId: "deb2",
+    shortID: "deb2",
     name: "Defense Boost II",
 };
 
 export const __generated_ramp__defense_boost_3: RampageSkillRO = {
     id: "defense_boost_3",
-    shortId: "deb3",
+    shortID: "deb3",
     name: "Defense Boost III",
 };
 
 export const __generated_ramp__attack_surge: RampageSkillRO = {
     id: "attack_surge",
-    shortId: "atsu",
+    shortID: "atsu",
     name: "Attack Surge",
 };
 
 export const __generated_ramp__elemental_surge: RampageSkillRO = {
     id: "elemental_surge",
-    shortId: "elsu",
+    shortID: "elsu",
     name: "Elemental Surge",
 };
 
 export const __generated_ramp__affinity_surge: RampageSkillRO = {
     id: "affinity_surge",
-    shortId: "afsu",
+    shortID: "afsu",
     name: "Affinity Surge",
 };
 
 export const __generated_ramp__sharpness_type_1: RampageSkillRO = {
     id: "sharpness_type_1",
-    shortId: "sht1",
+    shortID: "sht1",
     name: "Sharpness Type I",
 };
 
 export const __generated_ramp__sharpness_type_2: RampageSkillRO = {
     id: "sharpness_type_2",
-    shortId: "sht2",
+    shortID: "sht2",
     name: "Sharpness Type II",
 };
 
 export const __generated_ramp__sharpness_type_3: RampageSkillRO = {
     id: "sharpness_type_3",
-    shortId: "sht3",
+    shortID: "sht3",
     name: "Sharpness Type III",
 };
 
 export const __generated_ramp__sharpness_type_4: RampageSkillRO = {
     id: "sharpness_type_4",
-    shortId: "sht4",
+    shortID: "sht4",
     name: "Sharpness Type IV",
 };
 
 export const __generated_ramp__defense_grinder_1: RampageSkillRO = {
     id: "defense_grinder_1",
-    shortId: "deg1",
+    shortID: "deg1",
     name: "Defense Grinder I",
 };
 
 export const __generated_ramp__defense_grinder_2: RampageSkillRO = {
     id: "defense_grinder_2",
-    shortId: "deg2",
+    shortID: "deg2",
     name: "Defense Grinder II",
 };
 
 export const __generated_ramp__shelling_normal_1: RampageSkillRO = {
     id: "shelling_normal_1",
-    shortId: "shn1",
+    shortID: "shn1",
     name: "Shelling: Normal I",
 };
 
 export const __generated_ramp__shelling_normal_2: RampageSkillRO = {
     id: "shelling_normal_2",
-    shortId: "shn2",
+    shortID: "shn2",
     name: "Shelling: Normal II",
 };
 
 export const __generated_ramp__shelling_normal_3: RampageSkillRO = {
     id: "shelling_normal_3",
-    shortId: "shn3",
+    shortID: "shn3",
     name: "Shelling: Normal III",
 };
 
 export const __generated_ramp__shelling_long_1: RampageSkillRO = {
     id: "shelling_long_1",
-    shortId: "shl1",
+    shortID: "shl1",
     name: "Shelling: Long I",
 };
 
 export const __generated_ramp__shelling_long_2: RampageSkillRO = {
     id: "shelling_long_2",
-    shortId: "shl2",
+    shortID: "shl2",
     name: "Shelling: Long II",
 };
 
 export const __generated_ramp__shelling_long_3: RampageSkillRO = {
     id: "shelling_long_3",
-    shortId: "shl3",
+    shortID: "shl3",
     name: "Shelling: Long III",
 };
 
 export const __generated_ramp__shelling_wide_1: RampageSkillRO = {
     id: "shelling_wide_1",
-    shortId: "shw1",
+    shortID: "shw1",
     name: "Shelling: Wide I",
 };
 
 export const __generated_ramp__shelling_wide_2: RampageSkillRO = {
     id: "shelling_wide_2",
-    shortId: "shw2",
+    shortID: "shw2",
     name: "Shelling: Wide II",
 };
 
 export const __generated_ramp__shelling_wide_3: RampageSkillRO = {
     id: "shelling_wide_3",
-    shortId: "shw3",
+    shortID: "shw3",
     name: "Shelling: Wide III",
 };
 
 export const __generated_ramp__attack_melody_1: RampageSkillRO = {
     id: "attack_melody_1",
-    shortId: "mea1",
+    shortID: "mea1",
     name: "Attack Melody I",
 };
 
 export const __generated_ramp__attack_melody_2: RampageSkillRO = {
     id: "attack_melody_2",
-    shortId: "mea2",
+    shortID: "mea2",
     name: "Attack Melody II",
 };
 
 export const __generated_ramp__defensive_melody_1: RampageSkillRO = {
     id: "defensive_melody_1",
-    shortId: "med1",
+    shortID: "med1",
     name: "Defensive Melody I",
 };
 
 export const __generated_ramp__defensive_melody_2: RampageSkillRO = {
     id: "defensive_melody_2",
-    shortId: "med2",
+    shortID: "med2",
     name: "Defensive Melody II",
 };
 
 export const __generated_ramp__healing_melody_1: RampageSkillRO = {
     id: "healing_melody_1",
-    shortId: "meh1",
+    shortID: "meh1",
     name: "Healing Melody I",
 };
 
 export const __generated_ramp__healing_melody_2: RampageSkillRO = {
     id: "healing_melody_2",
-    shortId: "meh2",
+    shortID: "meh2",
     name: "Healing Melody II",
 };
 
 export const __generated_ramp__resilient_melody_1: RampageSkillRO = {
     id: "resilient_melody_1",
-    shortId: "mer1",
+    shortID: "mer1",
     name: "Resilient Melody I",
 };
 
 export const __generated_ramp__resilient_melody_2: RampageSkillRO = {
     id: "resilient_melody_2",
-    shortId: "mer2",
+    shortID: "mer2",
     name: "Resilient Melody II",
 };
 
 export const __generated_ramp__phial_element: RampageSkillRO = {
     id: "phial_element",
-    shortId: "phele",
+    shortID: "phele",
     name: "Phial: Element",
 };
 
 export const __generated_ramp__phial_poison_1: RampageSkillRO = {
     id: "phial_poison_1",
-    shortId: "phpo1",
+    shortID: "phpo1",
     name: "Phial: Poison I",
 };
 
 export const __generated_ramp__phial_poison_2: RampageSkillRO = {
     id: "phial_poison_2",
-    shortId: "phpo2",
+    shortID: "phpo2",
     name: "Phial: Poison II",
 };
 
 export const __generated_ramp__phial_poison_3: RampageSkillRO = {
     id: "phial_poison_3",
-    shortId: "phpo3",
+    shortID: "phpo3",
     name: "Phial: Poison III",
 };
 
 export const __generated_ramp__phial_paralysis_1: RampageSkillRO = {
     id: "phial_paralysis_1",
-    shortId: "phpa1",
+    shortID: "phpa1",
     name: "Phial: Paralysis I",
 };
 
 export const __generated_ramp__phial_paralysis_2: RampageSkillRO = {
     id: "phial_paralysis_2",
-    shortId: "phpa2",
+    shortID: "phpa2",
     name: "Phial: Paralysis II",
 };
 
 export const __generated_ramp__phial_paralysis_3: RampageSkillRO = {
     id: "phial_paralysis_3",
-    shortId: "phpa3",
+    shortID: "phpa3",
     name: "Phial: Paralysis III",
 };
 
 export const __generated_ramp__phial_dragon_1: RampageSkillRO = {
     id: "phial_dragon_1",
-    shortId: "phdr1",
+    shortID: "phdr1",
     name: "Phial: Dragon I",
 };
 
 export const __generated_ramp__phial_dragon_2: RampageSkillRO = {
     id: "phial_dragon_2",
-    shortId: "phdr2",
+    shortID: "phdr2",
     name: "Phial: Dragon II",
 };
 
 export const __generated_ramp__phial_dragon_3: RampageSkillRO = {
     id: "phial_dragon_3",
-    shortId: "phdr3",
+    shortID: "phdr3",
     name: "Phial: Dragon III",
 };
 
 export const __generated_ramp__phial_exhaust_1: RampageSkillRO = {
     id: "phial_exhaust_1",
-    shortId: "phex1",
+    shortID: "phex1",
     name: "Phial: Exhaust I",
 };
 
 export const __generated_ramp__phial_exhaust_2: RampageSkillRO = {
     id: "phial_exhaust_2",
-    shortId: "phex2",
+    shortID: "phex2",
     name: "Phial: Exhaust II",
 };
 
 export const __generated_ramp__phial_exhaust_3: RampageSkillRO = {
     id: "phial_exhaust_3",
-    shortId: "phex3",
+    shortID: "phex3",
     name: "Phial: Exhaust III",
 };
 
 export const __generated_ramp__kinsect_level_boost: RampageSkillRO = {
     id: "kinsect_level_boost",
-    shortId: "klb",
+    shortID: "klb",
     name: "Kinsect Level Boost",
 };
 
 export const __generated_ramp__kinsect_level_boost_1: RampageSkillRO = {
     id: "kinsect_level_boost_1",
-    shortId: "klb1",
+    shortID: "klb1",
     name: "Kinsect Level Boost I",
 };
 
 export const __generated_ramp__kinsect_level_boost_2: RampageSkillRO = {
     id: "kinsect_level_boost_2",
-    shortId: "klb2",
+    shortID: "klb2",
     name: "Kinsect Level Boost II",
 };
 
 export const __generated_ramp__kinsect_level_boost_3: RampageSkillRO = {
     id: "kinsect_level_boost_3",
-    shortId: "klb3",
+    shortID: "klb3",
     name: "Kinsect Level Boost III",
 };
 
 export const __generated_ramp__kinsect_level_boost_4: RampageSkillRO = {
     id: "kinsect_level_boost_4",
-    shortId: "klb4",
+    shortID: "klb4",
     name: "Kinsect Level Boost IV",
 };
 
 export const __generated_ramp__spread_effect_1: RampageSkillRO = {
     id: "spread_effect_1",
-    shortId: "spe1",
+    shortID: "spe1",
     name: "Spread Effect I",
 };
 
 export const __generated_ramp__spread_effect_2: RampageSkillRO = {
     id: "spread_effect_2",
-    shortId: "spe2",
+    shortID: "spe2",
     name: "Spread Effect II",
 };
 
 export const __generated_ramp__shrapnel_effect_1: RampageSkillRO = {
     id: "shrapnel_effect_1",
-    shortId: "she1",
+    shortID: "she1",
     name: "Shrapnel Effect I",
 };
 
 export const __generated_ramp__shrapnel_effect_2: RampageSkillRO = {
     id: "shrapnel_effect_2",
-    shortId: "she2",
+    shortID: "she2",
     name: "Shrapnel Effect II",
 };
 
 export const __generated_ramp__pierce_effect_1: RampageSkillRO = {
     id: "pierce_effect_1",
-    shortId: "pie1",
+    shortID: "pie1",
     name: "Pierce Effect I",
 };
 
 export const __generated_ramp__pierce_effect_2: RampageSkillRO = {
     id: "pierce_effect_2",
-    shortId: "pie2",
+    shortID: "pie2",
     name: "Pierce Effect II",
 };
 
 export const __generated_ramp__normal_effect_1: RampageSkillRO = {
     id: "normal_effect_1",
-    shortId: "noe1",
+    shortID: "noe1",
     name: "Normal Effect I",
 };
 
 export const __generated_ramp__normal_effect_2: RampageSkillRO = {
     id: "normal_effect_2",
-    shortId: "noe2",
+    shortID: "noe2",
     name: "Normal Effect II",
 };
 
 export const __generated_ramp__sticky_effect_1: RampageSkillRO = {
     id: "sticky_effect_1",
-    shortId: "ste1",
+    shortID: "ste1",
     name: "Sticky Effect I",
 };
 
 export const __generated_ramp__sticky_effect_2: RampageSkillRO = {
     id: "sticky_effect_2",
-    shortId: "ste2",
+    shortID: "ste2",
     name: "Sticky Effect II",
 };
 
 export const __generated_ramp__cluster_effect_1: RampageSkillRO = {
     id: "cluster_effect_1",
-    shortId: "cle1",
+    shortID: "cle1",
     name: "Cluster Effect I",
 };
 
 export const __generated_ramp__cluster_effect_2: RampageSkillRO = {
     id: "cluster_effect_2",
-    shortId: "cle2",
+    shortID: "cle2",
     name: "Cluster Effect II",
 };
 
 export const __generated_ramp__stickycluster_effect_1: RampageSkillRO = {
     id: "stickycluster_effect_1",
-    shortId: "sce1",
+    shortID: "sce1",
     name: "Sticky/Cluster Effect I",
 };
 
 export const __generated_ramp__stickycluster_effect_2: RampageSkillRO = {
     id: "stickycluster_effect_2",
-    shortId: "sce2",
+    shortID: "sce2",
     name: "Sticky/Cluster Effect II",
 };
 
 export const __generated_ramp__exhaust_effect_1: RampageSkillRO = {
     id: "exhaust_effect_1",
-    shortId: "exe1",
+    shortID: "exe1",
     name: "Exhaust Effect I",
 };
 
 export const __generated_ramp__exhaust_effect_2: RampageSkillRO = {
     id: "exhaust_effect_2",
-    shortId: "exe2",
+    shortID: "exe2",
     name: "Exhaust Effect II",
 };
 
 export const __generated_ramp__add_normal_ammo_1: RampageSkillRO = {
     id: "add_normal_ammo_1",
-    shortId: "anoa1",
+    shortID: "anoa1",
     name: "Add: Normal Ammo I",
 };
 
 export const __generated_ramp__add_normal_ammo_2: RampageSkillRO = {
     id: "add_normal_ammo_2",
-    shortId: "anoa2",
+    shortID: "anoa2",
     name: "Add: Normal Ammo II",
 };
 
 export const __generated_ramp__rapid_fire_normal: RampageSkillRO = {
     id: "rapid_fire_normal",
-    shortId: "rfno",
+    shortID: "rfno",
     name: "Rapid Fire (Normal)",
 };
 
 export const __generated_ramp__rapid_fire_piercing: RampageSkillRO = {
     id: "rapid_fire_piercing",
-    shortId: "rfpi",
+    shortID: "rfpi",
     name: "Rapid Fire (Piercing)",
 };
 
 export const __generated_ramp__rapid_fire_spread: RampageSkillRO = {
     id: "rapid_fire_spread",
-    shortId: "rfsp",
+    shortID: "rfsp",
     name: "Rapid Fire (Spread)",
 };
 
 export const __generated_ramp__rapid_fire_shrapnel: RampageSkillRO = {
     id: "rapid_fire_shrapnel",
-    shortId: "rfsh",
+    shortID: "rfsh",
     name: "Rapid Fire (Shrapnel)",
 };
 
 export const __generated_ramp__rapid_fire_sticky: RampageSkillRO = {
     id: "rapid_fire_sticky",
-    shortId: "rfst",
+    shortID: "rfst",
     name: "Rapid Fire (Sticky)",
 };
 
 export const __generated_ramp__recoil_down_boost: RampageSkillRO = {
     id: "recoil_down_boost",
-    shortId: "rdb",
+    shortID: "rdb",
     name: "Recoil Down Boost",
 };
 
 export const __generated_ramp__recoil_down_surge: RampageSkillRO = {
     id: "recoil_down_surge",
-    shortId: "rds",
+    shortID: "rds",
     name: "Recoil Down Surge",
 };
 
 export const __generated_ramp__reload_speed_boost: RampageSkillRO = {
     id: "reload_speed_boost",
-    shortId: "rsb",
+    shortID: "rsb",
     name: "Reload Speed Boost",
 };
 
 export const __generated_ramp__reload_speed_surge: RampageSkillRO = {
     id: "reload_speed_surge",
-    shortId: "rss",
+    shortID: "rss",
     name: "Reload Speed Surge",
 };
 
 export const __generated_ramp__steadiness_boost: RampageSkillRO = {
     id: "steadiness_boost",
-    shortId: "steb",
+    shortID: "steb",
     name: "Steadiness Boost",
 };
 
 export const __generated_ramp__steadiness_surge: RampageSkillRO = {
     id: "steadiness_surge",
-    shortId: "stes",
+    shortID: "stes",
     name: "Steadiness Surge",
 };
 
 export const __generated_ramp__special_wyvernheart: RampageSkillRO = {
     id: "special_wyvernheart",
-    shortId: "spwh",
+    shortID: "spwh",
     name: "Special: Wyvernheart",
 };
 
 export const __generated_ramp__special_wyvernsnipe: RampageSkillRO = {
     id: "special_wyvernsnipe",
-    shortId: "spws",
+    shortID: "spws",
     name: "Special: Wyvernsnipe",
 };
 
 export const __generated_ramp__poison_coating_boost: RampageSkillRO = {
     id: "poison_coating_boost",
-    shortId: "cbpo",
+    shortID: "cbpo",
     name: "Poison Coating Boost",
 };
 
 export const __generated_ramp__paralysis_coating_boost: RampageSkillRO = {
     id: "paralysis_coating_boost",
-    shortId: "cbpa",
+    shortID: "cbpa",
     name: "Paralysis Coating Boost",
 };
 
 export const __generated_ramp__sleep_coating_boost: RampageSkillRO = {
     id: "sleep_coating_boost",
-    shortId: "cbsl",
+    shortID: "cbsl",
     name: "Sleep Coating Boost",
 };
 
 export const __generated_ramp__close_range_coating_boost: RampageSkillRO = {
     id: "close_range_coating_boost",
-    shortId: "clcb",
+    shortID: "clcb",
     name: "Close-range Coating Boost",
 };
 
 export const __generated_ramp__use_power_coating: RampageSkillRO = {
     id: "use_power_coating",
-    shortId: "upc",
+    shortID: "upc",
     name: "Use Power Coating",
 };
 
 export const __generated_ramp__use_poison_coating_1: RampageSkillRO = {
     id: "use_poison_coating_1",
-    shortId: "upoc1",
+    shortID: "upoc1",
     name: "Use Poison Coating I",
 };
 
 export const __generated_ramp__use_poison_coating_2: RampageSkillRO = {
     id: "use_poison_coating_2",
-    shortId: "upoc2",
+    shortID: "upoc2",
     name: "Use Poison Coating II",
 };
 
 export const __generated_ramp__use_para_coating_1: RampageSkillRO = {
     id: "use_para_coating_1",
-    shortId: "upac1",
+    shortID: "upac1",
     name: "Use Para Coating I",
 };
 
 export const __generated_ramp__use_para_coating_2: RampageSkillRO = {
     id: "use_para_coating_2",
-    shortId: "upac2",
+    shortID: "upac2",
     name: "Use Para Coating II",
 };
 
 export const __generated_ramp__use_sleep_coating_1: RampageSkillRO = {
     id: "use_sleep_coating_1",
-    shortId: "uslc1",
+    shortID: "uslc1",
     name: "Use Sleep Coating I",
 };
 
 export const __generated_ramp__use_sleep_coating_2: RampageSkillRO = {
     id: "use_sleep_coating_2",
-    shortId: "uslc2",
+    shortID: "uslc2",
     name: "Use Sleep Coating II",
 };
 
 export const __generated_ramp__use_blast_coating: RampageSkillRO = {
     id: "use_blast_coating",
-    shortId: "ublc",
+    shortID: "ublc",
     name: "Use Blast Coating",
 };
 
 export const __generated_ramp__use_exhaust_coating: RampageSkillRO = {
     id: "use_exhaust_coating",
-    shortId: "uexc",
+    shortID: "uexc",
     name: "Use Exhaust Coating",
 };
 
 export const __generated_ramp__lasting_arc_shot: RampageSkillRO = {
     id: "lasting_arc_shot",
-    shortId: "arla",
+    shortID: "arla",
     name: "Lasting Arc Shot",
 };
 
 export const __generated_ramp__arc_shot_recovery: RampageSkillRO = {
     id: "arc_shot_recovery",
-    shortId: "arre",
+    shortID: "arre",
     name: "Arc Shot: Recovery",
 };
 
 export const __generated_ramp__arc_shot_affinity: RampageSkillRO = {
     id: "arc_shot_affinity",
-    shortId: "araf",
+    shortID: "araf",
     name: "Arc Shot: Affinity",
 };
 
 export const __generated_ramp__arc_shot_anti_shock: RampageSkillRO = {
     id: "arc_shot_anti_shock",
-    shortId: "aras",
+    shortID: "aras",
     name: "Arc Shot: Anti-shock",
 };
 
 export const __generated_ramp__firing_rapid: RampageSkillRO = {
     id: "firing_rapid",
-    shortId: "frap",
+    shortID: "frap",
     name: "Firing: Rapid",
 };
 
 export const __generated_ramp__firing_pierce: RampageSkillRO = {
     id: "firing_pierce",
-    shortId: "fpie",
+    shortID: "fpie",
     name: "Firing: Pierce",
 };
 
 export const __generated_ramp__firing_spread: RampageSkillRO = {
     id: "firing_spread",
-    shortId: "fspr",
+    shortID: "fspr",
     name: "Firing: Spread",
 };
 
 export const __generated_ramp__firing_charge: RampageSkillRO = {
     id: "firing_charge",
-    shortId: "fcha",
+    shortID: "fcha",
     name: "Firing: Charge",
 };
 
 export const __generated_ramp__firing_swift: RampageSkillRO = {
     id: "firing_swift",
-    shortId: "fswi",
+    shortID: "fswi",
     name: "Firing: Swift",
 };
 
 export const __generated_ramp__anti_aerial_species: RampageSkillRO = {
     id: "anti_aerial_species",
-    shortId: "anae",
+    shortID: "anae",
     name: "Anti-Aerial Species",
 };
 
 export const __generated_ramp__anti_aquatic_species: RampageSkillRO = {
     id: "anti_aquatic_species",
-    shortId: "anaq",
+    shortID: "anaq",
     name: "Anti-Aquatic Species",
 };
 
 export const __generated_ramp__element_exploit: RampageSkillRO = {
     id: "element_exploit",
-    shortId: "xele",
+    shortID: "xele",
     name: "Element Exploit",
 };
 
 export const __generated_ramp__fireblight_exploit: RampageSkillRO = {
     id: "fireblight_exploit",
-    shortId: "xfib",
+    shortID: "xfib",
     name: "Fireblight Exploit",
 };
 
 export const __generated_ramp__iceblight_exploit: RampageSkillRO = {
     id: "iceblight_exploit",
-    shortId: "xicb",
+    shortID: "xicb",
     name: "Iceblight Exploit",
 };
 
 export const __generated_ramp__small_monster_exploit: RampageSkillRO = {
     id: "small_monster_exploit",
-    shortId: "xsm",
+    shortID: "xsm",
     name: "Small Monster Exploit",
 };
 
 export const __generated_ramp__thunderblight_exploit: RampageSkillRO = {
     id: "thunderblight_exploit",
-    shortId: "xthb",
+    shortID: "xthb",
     name: "Thunderblight Exploit",
 };
 
 export const __generated_ramp__waterblight_exploit: RampageSkillRO = {
     id: "waterblight_exploit",
-    shortId: "xwab",
+    shortID: "xwab",
     name: "Waterblight Exploit",
 };
 
 export const __generated_ramp__wyvern_exploit: RampageSkillRO = {
     id: "wyvern_exploit",
-    shortId: "xwyv",
+    shortID: "xwyv",
     name: "Wyvern Exploit",
 };
 
 export const __generated_ramp__chameleos_soul: RampageSkillRO = {
     id: "chameleos_soul",
-    shortId: "chas",
+    shortID: "chas",
     name: "Chameleos Soul",
 };
 
 export const __generated_ramp__ibushi_soul: RampageSkillRO = {
     id: "ibushi_soul",
-    shortId: "ibus",
+    shortID: "ibus",
     name: "Magnamalo Soul",
 };
 
 export const __generated_ramp__kushala_daora_soul: RampageSkillRO = {
     id: "kushala_daora_soul",
-    shortId: "kuss",
+    shortID: "kuss",
     name: "Kushala Daora Soul",
 };
 
 export const __generated_ramp__magnamalo_soul: RampageSkillRO = {
     id: "magnamalo_soul",
-    shortId: "mags",
+    shortID: "mags",
     name: "Magnamalo Soul",
 };
 
 export const __generated_ramp__narwa_soul: RampageSkillRO = {
     id: "narwa_soul",
-    shortId: "nars",
+    shortID: "nars",
     name: "Narwa Soul",
 };
 
 export const __generated_ramp__teostra_soul: RampageSkillRO = {
     id: "teostra_soul",
-    shortId: "teos",
+    shortID: "teos",
     name: "Teostra Soul",
 };
 
 export const __generated_ramp__valstrax_soul: RampageSkillRO = {
     id: "valstrax_soul",
-    shortId: "vals",
+    shortID: "vals",
     name: "Valstrax Soul",
 };
 
 export const __generated_ramp__boost_equipped_coating: RampageSkillRO = {
     id: "boost_equipped_coating",
-    shortId: "10",
+    shortID: "10",
     name: "Boost Equipped Coating",
 };
 
 export const __generated_ramp__brutal_strike: RampageSkillRO = {
     id: "brutal_strike",
-    shortId: "20",
+    shortID: "20",
     name: "Brutal Strike",
 };
 
 export const __generated_ramp__buddy_rally: RampageSkillRO = {
     id: "buddy_rally",
-    shortId: "30",
+    shortID: "30",
     name: "Buddy Rally",
 };
 
 export const __generated_ramp__coating_switch_boost: RampageSkillRO = {
     id: "coating_switch_boost",
-    shortId: "40",
+    shortID: "40",
     name: "Coating Switch Boost",
 };
 
 export const __generated_ramp__dulling_strike: RampageSkillRO = {
     id: "dulling_strike",
-    shortId: "50",
+    shortID: "50",
     name: "Dulling Strike",
 };
 
 export const __generated_ramp__hellion_mode: RampageSkillRO = {
     id: "hellion_mode",
-    shortId: "60",
+    shortID: "60",
     name: "Hellion Mode",
 };
 
 export const __generated_ramp__master_rider: RampageSkillRO = {
     id: "master_rider",
-    shortId: "80",
+    shortID: "80",
     name: "Master Rider",
 };
 
 export const __generated_ramp__maximum_volume: RampageSkillRO = {
     id: "maximum_volume",
-    shortId: "90",
+    shortID: "90",
     name: "Maximum Volume",
 };
 
 export const __generated_ramp__non_elemental_boost: RampageSkillRO = {
     id: "non_elemental_boost",
-    shortId: "100",
+    shortID: "100",
     name: "Non-elemental Boost",
 };
 
 export const __generated_ramp__silkbind_boost: RampageSkillRO = {
     id: "silkbind_boost",
-    shortId: "110",
+    shortID: "110",
     name: "Silkbind Boost",
 };
 
 export const __generated_ramp__spiribird_doubled: RampageSkillRO = {
     id: "spiribird_doubled",
-    shortId: "120",
+    shortID: "120",
     name: "Spiribird Doubled",
 };
 
 export const __generated_ramp__wyrmstake_boost: RampageSkillRO = {
     id: "wyrmstake_boost",
-    shortId: "130",
+    shortID: "130",
     name: "Wyrmstake Boost",
 };
 

@@ -135,7 +135,7 @@ function readDecomposedRampSkillsStr(arr, db, build) {
 
         assert((optionsSubArray instanceof Array) && (optionsSubArray.length > 0));
         for (const [rampSkillRO, inheritedFromWeaponID] of optionsSubArray) {
-            if (rampSkillShortID === rampSkillRO.shortId) {
+            if (rampSkillShortID === rampSkillRO.shortID) {
                 // TODO: It's weird that we need the query the database again for the rampage skill.
                 build.setRampageSkill(db, position, rampSkillRO.id);
             }
@@ -270,7 +270,7 @@ export function writeBuildToQueryString(build) {
     const rampSkillsStr = (()=>{
             const tmp = [];
             for (const rampSkillRO of rampSkills) {
-                tmp.push((rampSkillRO === null) ? "" : rampSkillRO.shortId);
+                tmp.push((rampSkillRO === null) ? "" : rampSkillRO.shortID);
             }
             return tmp.join(SPLIT_CHAR);
         })();

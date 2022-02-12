@@ -103,11 +103,11 @@ function processWeapon<W extends WeaponRO>(arr: Readonly<W[]>): FrozenMap<string
 }
 
 const weaponsMap: Readonly<WeaponMap> = {
-    greatsword:     processWeapon<GreatswordRO    >(greatswordsArray),
-    longsword:      processWeapon<LongswordRO     >(longswordsArray ),
+    greatsword:     processWeapon<GreatswordRO    >(greatswordsArray    ),
+    longsword:      processWeapon<LongswordRO     >(longswordsArray     ),
     swordandshield: processWeapon<SwordAndShieldRO>(swordandshieldsArray),
-    dualblades:     processWeapon<DualBladesRO    >(dualbladessArray),
-    lance:          processWeapon<LanceRO         >(lancesArray),
+    dualblades:     processWeapon<DualBladesRO    >(dualbladessArray    ),
+    lance:          processWeapon<LanceRO         >(lancesArray         ),
 };
 
 export {
