@@ -31,16 +31,14 @@ import {
 
 import {getImgPath} from "../images";
 import {
-    decosMap,
     skillMap,
     skillMapShortIds,
+    rampageSkillsMap,
+    rampageSkillsMapShortIds,
+    decosMap,
     armourMap,
     armourArrays,
 } from "./generated_code";
-import {
-    rampageSkillsMap,
-    rampageSkillsMapShortIds,
-} from "./hardcoded_data/rampage_skills";
 import {
     petalaceMap,
 } from "./hardcoded_data/petalace_data";

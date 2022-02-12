@@ -17,6 +17,7 @@ import {
 
 import {
     type SkillRO,
+    type RampageSkillRO,
     type DecorationRO,
     type ArmourSlot,
     type ArmourPieceRO,
@@ -30,6 +31,7 @@ import {
 } from "../_internals";
 
 import {skillsArray} from "./_generated_skills";
+import {rampsArray} from "./_generated_rampage_skills";
 import {decosArray} from "./_generated_decorations";
 import {armourSetsArray} from "./_generated_armour";
 
@@ -58,6 +60,31 @@ for (const obj of skillsArray) {
 
 const finalSkillMap = new FrozenMap<string, SkillRO>(skillMap);
 const finalSkillMapShortIds = new FrozenMap<number, SkillRO>(skillMapShortIds);
+
+/*** Rampage Skills ***/
+
+// Now, we populate these maps.
+const rampsMap = new Map<string, RampageSkillRO>();
+const rampsMapShortIds = new Map<string, RampageSkillRO>();
+
+// For convenience, we also attach IDs to each object
+for (const obj of rampsArray) {
+
+    // Validate
+    console.assert(/^[_a-z0-9]+$/.test(obj.id));
+    console.assert(/^[a-z0-9]+$/.test(obj.shortId));
+    console.assert(obj.name !== "");
+
+    // Check for duplicates
+    console.assert(!rampsMap.has(obj.id));
+    console.assert(!rampsMapShortIds.has(obj.shortId));
+
+    rampsMap.set(obj.id, obj);
+    rampsMapShortIds.set(obj.shortId, obj);
+}
+
+const finalRampsMap = new FrozenMap<string, RampageSkillRO>(rampsMap);
+const finalRampsMapShortIds = new FrozenMap<string, RampageSkillRO>(rampsMapShortIds);
 
 /*** Decorations ***/
 
@@ -132,8 +159,10 @@ const armourArrays: Readonly<{[key in ArmourSlot]: Readonly<ArmourPieceRO[]>}> =
 })();
 
 export {
-    finalSkillMap as skillMap,
+    finalSkillMap         as skillMap,
     finalSkillMapShortIds as skillMapShortIds,
+    finalRampsMap         as rampageSkillsMap,
+    finalRampsMapShortIds as rampageSkillsMapShortIds,
     decosMap,
     armourMap,
     armourArrays,

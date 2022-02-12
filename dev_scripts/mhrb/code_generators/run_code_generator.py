@@ -11,8 +11,10 @@ import os
 import json
 
 from skills import generate_skills_source_file
+from rampage_skills import generate_ramps_source_file
 from decorations import generate_decos_source_file
 from armour import generate_armour_source_file
+from hardcoded_data.rampage_skills_procedural import get_procedural_rampage_skills
 
 GENERATED_CODE_NOTICE = """\
 /*
@@ -72,6 +74,10 @@ def run():
     skills_data = read_data("skills.json")
     write_source_file("_generated_skills.ts", generate_skills_source_file(skills_data))
     print(f"Discovered {len(skills_data)} skills.")
+
+    ramps_data = get_procedural_rampage_skills() + read_data("rampage_skills_individual.json")
+    write_source_file("_generated_rampage_skills.ts", generate_ramps_source_file(ramps_data))
+    print(f"Discovered {len(ramps_data)} rampage skills.")
 
     decos_data = read_data("decorations.json")
     write_source_file("_generated_decorations.ts", generate_decos_source_file(decos_data))

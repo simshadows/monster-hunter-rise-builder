@@ -15,6 +15,17 @@ export type EleStatStr = ElementStr | StatStr;
 
 export type EndlineTag = "" | "hr";
 
+/*** Utility Types ***/
+
+//export type EleStatMap = {
+//    [key in EleStatStr]: number;
+//};
+
+export type DecoSlotsArray = []
+                           | [DecorationSlotSize]
+                           | [DecorationSlotSize, DecorationSlotSize]
+                           | [DecorationSlotSize, DecorationSlotSize, DecorationSlotSize];
+
 /*** Armour Skills ***/
 
 export type SkillIcon = "blue"
@@ -140,6 +151,24 @@ export interface BowChargeShotType {
 }
 export type BowChargeShotTypeRO = Readonly<BowChargeShotType>;
 
+// TODO: Continue working on this!
+//export type BowChargeShotLevel = 1 | 2 | 3 | 4 | 5;
+//
+//export interface BowStats {
+//    arcShot: BowArcShotType;
+//    baseChargeLevelLimit: 3 | 4;
+//    chargeShot: Readonly<Readonly<[BowChargeShotTypeRO, BowChargeShotLevel]>[]>;
+//    compatibleCoatings: Readonly<{
+//        close_range_coating: 0 | 1 | 2;
+//        power_coating:       0 | 1 | 2;
+//        poison_coating:      0 | 1 | 2;
+//        para_coating:        0 | 1 | 2;
+//        sleep_coating:       0 | 1 | 2;
+//        blast_coating:       0 | 1;
+//        exhaust_coating:     0 | 1 | 2;
+//    }>;
+//}
+
 /*** Weapon Mechanics: Light Bowgun and Heavy Bowgun ***/
 
 export interface BowgunAmmoType {
@@ -151,9 +180,53 @@ export type BowgunAmmoTypeRO = Readonly<BowgunAmmoType>;
 
 /*** Weapons ***/
 
+// TODO: Continue working on this!
+//export type WeaponCategory = "greatsword"
+//                           | "longsword"
+//                           | "swordandshield"
+//                           | "dualblades"
+//                           | "lance"
+//                           | "gunlance"
+//                           | "hammer"
+//                           | "huntinghorn"
+//                           | "switchaxe"
+//                           | "chargeblade"
+//                           | "insectglaive"
+//                           | "lightbowgun"
+//                           | "heavybowgun"
+//                           | "bow";
+//
 //export interface Weapon {
-//    // TODO
+//    // These two IDs uniquely identify each individual weapon.
+//    category: WeaponCategory;
+//    id:       string;
+//
+//    name:       string;
+//    treeName:   string;
+//    rarity:     Rarity;
+//    endlineTag: EndlineTag;
+//
+//    attack:    number;
+//    affinity:  number;
+//    defense:   number;
+//    decoSlots: Readonly<DecoSlotsArray>; // TODO: Why is this a different name than the one for armour pieces?
+//    eleStat:   Readonly<EleStatMap>;
+//
+//    rampSkills: Readonly<
+//        Readonly<
+//            Readonly<[RampageSkillRO, string]>[]
+//        >[]
+//    >;
+//
+//    bowStats: BowStats | undefined;
+//    // TODO: Continue writing these
+//
+//    filterHelpers: Readonly<{
+//        nameLower:     string;
+//        treeNameLower: string;
+//    }>;
 //}
+//export type WeaponRO = Readonly<Weapon>;
 
 /*** Armour ***/
 
@@ -168,12 +241,7 @@ export interface ArmourPiece {
     name:    string;
     rarity:  Rarity;
     tierID:  Tier;
-    decorationSlots: Readonly<
-        []
-        | [DecorationSlotSize]
-        | [DecorationSlotSize, DecorationSlotSize]
-        | [DecorationSlotSize, DecorationSlotSize, DecorationSlotSize]
-    >;
+    decorationSlots: Readonly<DecoSlotsArray>;
     skills:  Readonly<SkillLevels>;
     
     defenseAtLevel1: number;
