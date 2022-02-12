@@ -4,7 +4,7 @@
  */
 
 import {
-    isPositiveInt,
+    isPositiveNZInt,
 } from "../generic/check";
 import {
     FrozenMap,
@@ -31,7 +31,7 @@ export function populate<
 
     const ret = new Map<PreprocessedDataObj["id"], FinalDataObj>();
     for (const obj of hardcodedData) {
-        console.assert((obj.id !== "") && ((typeof obj.id !== "number") || isPositiveInt(obj.id)));
+        console.assert((obj.id !== "") && ((typeof obj.id !== "number") || isPositiveNZInt(obj.id)));
         console.assert(obj.name !== "");
 
         const finalObj: FinalDataObj = mapper(obj);

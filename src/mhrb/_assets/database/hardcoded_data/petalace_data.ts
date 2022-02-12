@@ -4,7 +4,7 @@
  */
 
 import {
-    isPositiveInt,
+    isPositiveNZInt,
 } from "../../generic/check";
 import {
     FrozenMap,
@@ -144,14 +144,14 @@ function makeFinalMap(): FrozenMap<string, PetalaceRO> {
         // Validate
         console.assert(/^[a-z0-9]+$/.test(finalObj.id));
         console.assert(finalObj.name !== "");
-        console.assert(isPositiveInt(finalObj.healthUp   ));
-        console.assert(isPositiveInt(finalObj.healthGain ));
-        console.assert(isPositiveInt(finalObj.staminaUp  ));
-        console.assert(isPositiveInt(finalObj.staminaGain));
-        console.assert(isPositiveInt(finalObj.attackUp   ));
-        console.assert(isPositiveInt(finalObj.attackGain ));
-        console.assert(isPositiveInt(finalObj.defenseUp  ));
-        console.assert(isPositiveInt(finalObj.defenseGain));
+        console.assert(isPositiveNZInt(finalObj.healthUp   ));
+        console.assert(isPositiveNZInt(finalObj.healthGain ));
+        console.assert(isPositiveNZInt(finalObj.staminaUp  ));
+        console.assert(isPositiveNZInt(finalObj.staminaGain));
+        console.assert(isPositiveNZInt(finalObj.attackUp   ));
+        console.assert(isPositiveNZInt(finalObj.attackGain ));
+        console.assert(isPositiveNZInt(finalObj.defenseUp  ));
+        console.assert(isPositiveNZInt(finalObj.defenseGain));
         console.assert((finalObj.healthUp  > finalObj.healthGain ) && (finalObj.healthGain  <= 100));
         console.assert((finalObj.staminaUp > finalObj.staminaGain) && (finalObj.staminaGain <= 100));
         console.assert((finalObj.attackUp  > finalObj.attackGain ) && (finalObj.attackGain  <= 100));
