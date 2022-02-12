@@ -29,7 +29,6 @@ import {
     setDifference,
 } from "../utils";
 
-import {getImgPath} from "../images";
 import {
     skillMap,
     skillMapShortIds,
@@ -77,12 +76,6 @@ const WEAPON_BOW_PATH = "./data/weapons_bow.json";
 
 /* WEAPONS ******************************************************************************/
 
-function weaponAndRarityToIconImgPath(weaponType, rarity) {
-    assert(isWeaponCategoryStr(weaponType));
-    assert(isInt(rarity) && (rarity > 0) && (rarity <= 7));
-    return getImgPath("weapon_" + weaponType + "_r" + parseInt(rarity));
-}
-
 /*** Downloading and Validating Weapon Data (without referential integrity checking) ***/
 
 // Common stuff
@@ -96,8 +89,6 @@ function validateWeaponData(weaponData) {
     assert(isNonEmptyStr(weaponData.name));
 
     assert(isNonEmptyStr(weaponData.treeName));
-
-    assert(isNonEmptyStr(weaponData.iconImgPath));
     
     assert(isObj(weaponData.filterHelpers));
     // Not going to further test the structure of this.
@@ -257,7 +248,6 @@ async function downloadCategoryRawWeaponData(category, path, op) {
             weaponData.category = category;
             weaponData.id = weaponID;
             weaponData.treeName = treeName;
-            weaponData.iconImgPath = weaponAndRarityToIconImgPath(category, weaponData.rarity);
             // Merge in helper strings for filter functions
             weaponData.filterHelpers = {};
             weaponData.filterHelpers.nameLower = toNameFilterString(weaponData.name);

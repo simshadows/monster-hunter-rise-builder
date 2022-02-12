@@ -11,6 +11,7 @@ import * as check from "../../../../check";
 import {
     eleStatStrToImgPath,
     eleStatStrToImgId,
+    weaponAndRarityToIconImgPath,
 } from "../../../../images";
 import {
     isEleStatStr,
@@ -606,7 +607,8 @@ export class SelectWeapon extends React.Component<any, any> {
     render() {
         check.isObj(this.props.weaponRORenderingProps);
         check.isArr(this.props.weaponRORenderingProps.rampSkillSelectionsArray); // Spot check for structure
-        check.isNonEmptyStr(this.props.weaponRORenderingProps.iconImgPath);
+        check.isNonEmptyStr(this.props.weaponRORenderingProps.category); // TODO: This is category
+        check.isInt(this.props.weaponRORenderingProps.rarity); // TODO: This is rarity
 
         check.isObj(this.props.buildPerformanceValues);
         check.isInt(this.props.buildPerformanceValues.weaponAttack); // Spot check for structure
@@ -622,7 +624,7 @@ export class SelectWeapon extends React.Component<any, any> {
             },
             element(EquipIcon,
                 {
-                iconImg: this.props.weaponRORenderingProps.iconImgPath,
+                iconImg: weaponAndRarityToIconImgPath(this.props.weaponRORenderingProps.category, this.props.weaponRORenderingProps.rarity),
                 showRemoveButton: false,
                 handleSelectButton: () => {this.props.handleClickWeaponSelect()},
                 },

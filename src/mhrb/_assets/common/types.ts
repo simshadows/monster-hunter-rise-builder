@@ -17,6 +17,16 @@ export type EndlineTag = "" | "hr";
 
 /*** Utility Types ***/
 
+// TODO: Continue this!
+//export type Sharpness = [
+//    number, // red
+//    number, // orange
+//    number, // yellow
+//    number, // green
+//    number, // blue
+//    number, // white
+//]
+//
 //export type EleStatMap = {
 //    [key in EleStatStr]: number;
 //};
@@ -180,22 +190,22 @@ export type BowgunAmmoTypeRO = Readonly<BowgunAmmoType>;
 
 /*** Weapons ***/
 
-// TODO: Continue working on this!
-//export type WeaponCategory = "greatsword"
-//                           | "longsword"
-//                           | "swordandshield"
-//                           | "dualblades"
-//                           | "lance"
-//                           | "gunlance"
-//                           | "hammer"
-//                           | "huntinghorn"
-//                           | "switchaxe"
-//                           | "chargeblade"
-//                           | "insectglaive"
-//                           | "lightbowgun"
-//                           | "heavybowgun"
-//                           | "bow";
-//
+export type WeaponCategory = "greatsword"
+                           | "longsword"
+                           | "swordandshield"
+                           | "dualblades"
+                           | "lance"
+                           | "gunlance"
+                           | "hammer"
+                           | "huntinghorn"
+                           | "switchaxe"
+                           | "chargeblade"
+                           | "insectglaive"
+                           | "lightbowgun"
+                           | "heavybowgun"
+                           | "bow";
+
+// TODO: Continue this!
 //export interface Weapon {
 //    // These two IDs uniquely identify each individual weapon.
 //    category: WeaponCategory;
@@ -218,7 +228,10 @@ export type BowgunAmmoTypeRO = Readonly<BowgunAmmoType>;
 //        >[]
 //    >;
 //
-//    bowStats: BowStats | undefined;
+//    baseSharpness: Sharpness | undefined;
+//    maxSharpness:  Sharpness | undefined;
+//
+//    //bowStats: BowStats | undefined;
 //    // TODO: Continue writing these
 //
 //    filterHelpers: Readonly<{
@@ -227,6 +240,12 @@ export type BowgunAmmoTypeRO = Readonly<BowgunAmmoType>;
 //    }>;
 //}
 //export type WeaponRO = Readonly<Weapon>;
+//
+//export interface MeleeWeapon extends Weapon {
+//    baseSharpness: Sharpness;
+//    maxSharpness:  Sharpness;
+//}
+//export type MeleeWeaponRO = Readonly<MeleeWeapon>;
 
 /*** Armour ***/
 

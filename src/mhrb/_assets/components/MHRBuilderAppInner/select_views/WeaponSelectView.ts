@@ -11,6 +11,7 @@ import * as check from "../../../check";
 import {
     getImgPath,
     eleStatStrToImgPath,
+    weaponAndRarityToIconImgPath,
 } from "../../../images";
 import {
     isWeaponCategoryStr,
@@ -57,7 +58,7 @@ class WeaponSelectionTable extends React.Component<any, any> {
                                ? ""
                                : "MaxSharpness: " + weaponRO.maxSharpness.toString();
         return [
-            this._renderPieceIcon(weaponRO.iconImgPath),
+            this._renderPieceIcon(weaponAndRarityToIconImgPath(weaponRO.category, weaponRO.rarity)),
             weaponRO.name,
             parseInt(weaponRO.attack),
             parseInt(weaponRO.affinity) + "%",

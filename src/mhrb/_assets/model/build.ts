@@ -485,7 +485,8 @@ class Build {
                         specialSelection:             this._weaponSpecialSelectionRO,
                         specialSelectionOptionsArray: this._weaponSpecialSelectionOptions,
 
-                        iconImgPath: this._weaponRO.iconImgPath,
+                        category: this._weaponRO.category,
+                        rarity: this._weaponRO.rarity,
                     },
                 armourRO: {
                         head:  makeArmourRenderingProps("head"),

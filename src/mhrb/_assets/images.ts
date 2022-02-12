@@ -9,6 +9,7 @@ import {
 import {
     type Rarity,
     type EleStatStr,
+    type WeaponCategory,
     type ArmourSlot,
 } from "./common/types";
 
@@ -733,10 +734,15 @@ function armourSlotAndRarityToIconImgPath(armourSlot: ArmourSlot, rarity: Rarity
     return getImgPath(`${armourSlot}_r${rarity}`);
 }
 
+function weaponAndRarityToIconImgPath(weaponType: WeaponCategory, rarity: Rarity): string {
+    return getImgPath(`weapon_${weaponType}_r${rarity}`);
+}
+
 export {
     getImgPath,
     eleStatStrToImgId,
     eleStatStrToImgPath,
     armourSlotAndRarityToIconImgPath,
+    weaponAndRarityToIconImgPath,
 };
 
