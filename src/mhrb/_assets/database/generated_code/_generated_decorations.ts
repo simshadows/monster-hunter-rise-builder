@@ -35,7 +35,7 @@
  * License: GNU Affero General Public License v3 (AGPL-3.0)
  */
 
-import {type DecorationRO} from "../../common/types";
+import {type Decoration} from "../../common/types";
 
 import {
     __generated_skill__affinity_sliding,
@@ -141,7 +141,7 @@ import {
     __generated_skill__wirebug_whisperer,
 } from "./_generated_skills";
 
-export const decosArray: Readonly<DecorationRO[]> = [
+export const decosArray: Readonly<Decoration[]> = [
     {
         id: 1,
         name: "Mastery Jewel 2",

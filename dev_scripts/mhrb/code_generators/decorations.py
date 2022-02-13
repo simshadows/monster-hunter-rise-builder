@@ -11,13 +11,13 @@ import json
 from utils import skill_id_to_object_name, to_name_filter_string
 
 source_template = """\
-import {{type DecorationRO}} from "../../common/types";
+import {{type Decoration}} from "../../common/types";
 
 import {{
 {skill_imports}
 }} from "./_generated_skills";
 
-export const decosArray: Readonly<DecorationRO[]> = [
+export const decosArray: Readonly<Decoration[]> = [
 {array_entries}
 ];
 """

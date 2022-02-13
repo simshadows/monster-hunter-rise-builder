@@ -390,32 +390,31 @@ export type DecorationIconType = "blue"
                                | "yellow";
 
 export interface Decoration {
-    id:   number;
-    name: string;
+    readonly id:   number;
+    readonly name: string;
 
-    slotSize: DecorationSlotSize;
-    rarity:   Exclude<Rarity, 1 | 2 | 3>; // Decorations aren't observed to have rarities 1-3
-    skills:   Readonly<SkillLevels>;
+    readonly slotSize: DecorationSlotSize;
+    readonly rarity:   Exclude<Rarity, 1 | 2 | 3>; // Decorations aren't observed to have rarities 1-3
+    readonly skills:   Readonly<SkillLevels>;
 
-    icon: DecorationIconType;
-    filterHelpers: Readonly<{
-        nameLower: string;
-    }>;
+    readonly icon: DecorationIconType;
+    readonly filterHelpers: {
+        readonly nameLower: string;
+    };
 }
-export type DecorationRO = Readonly<Decoration>;
 
 /*** Other Database Utility Types ***/
 
 type WeaponMapInner<W> = FrozenMap<string, W>;
 
 export type WeaponMap = {
-    greatsword:     WeaponMapInner<GreatswordRO    >;
-    longsword:      WeaponMapInner<LongswordRO     >;
-    swordandshield: WeaponMapInner<SwordAndShieldRO>;
-    dualblades:     WeaponMapInner<DualBladesRO    >;
-    lance:          WeaponMapInner<LanceRO         >;
-    gunlance:       WeaponMapInner<GunlanceRO      >;
-    hammer:         WeaponMapInner<HammerRO        >;
-    huntinghorn:    WeaponMapInner<HuntingHornRO   >;
+    readonly greatsword:     WeaponMapInner<GreatswordRO    >;
+    readonly longsword:      WeaponMapInner<LongswordRO     >;
+    readonly swordandshield: WeaponMapInner<SwordAndShieldRO>;
+    readonly dualblades:     WeaponMapInner<DualBladesRO    >;
+    readonly lance:          WeaponMapInner<LanceRO         >;
+    readonly gunlance:       WeaponMapInner<GunlanceRO      >;
+    readonly hammer:         WeaponMapInner<HammerRO        >;
+    readonly huntinghorn:    WeaponMapInner<HuntingHornRO   >;
 };
 

@@ -19,7 +19,7 @@ import {
     type ArmourSlot,
     type Skill,
     type RampageSkill,
-    type DecorationRO,
+    type Decoration,
 
     type ArmourPieceRO,
     type ArmourSetRO,
@@ -91,7 +91,7 @@ const finalRampsMapShortIds = new FrozenMap<string, RampageSkill>(rampsMapShortI
 
 /*** Decorations ***/
 
-const decosMap: FrozenMap<number, DecorationRO> = populate(
+const decosMap: FrozenMap<number, Decoration> = populate(
     decosArray,
     (obj) => {
         // Validate
