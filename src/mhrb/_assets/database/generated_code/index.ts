@@ -29,7 +29,7 @@ import {
 } from "../../common/mappings";
 import {
     populate,
-} from "../_internals";
+} from "../../common/utils";
 
 import {skillsArray} from "./_generated_skills";
 import {rampsArray} from "./_generated_rampage_skills";

@@ -8,9 +8,12 @@ import {
     type HHSong,
     type SAPhialType,
     type CBPhialType,
+    type BowgunAmmoType,
+    type BowgunAmmoInfo,
     type BowArcShotType,
     type BowChargeShotType,
 } from "./types";
+import {bowgunAmmoInfoMap} from "./_internals/bowgun_ammo_data";
 
 export function toNameFilterString(s: string): string {
     // IMPORTANT: Please maintain parity between this Javascript implementation and the Python implementation.
@@ -76,6 +79,13 @@ export function cbPhialTypeName(s: CBPhialType): string {
         case "impact_phial":  return "Impact Phial";
         case "element_phial": return "Element Phial";
     }
+}
+
+export function getBowgunInfo(s: BowgunAmmoType): BowgunAmmoInfo {
+    const ammoInfo = bowgunAmmoInfoMap.get(s);
+    // TODO: Make this safer? (i.e. use a TypeScript mapping type, not ES6 Map?
+    if (!ammoInfo) return {id: "unknown", name: "unknown", shortName: "unknown"};
+    return ammoInfo;
 }
 
 export function bowArcShotTypeName(s: BowArcShotType): string {

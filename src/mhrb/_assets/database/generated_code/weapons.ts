@@ -33,6 +33,8 @@ import {
     type SwitchAxe,
     type ChargeBlade,
     type InsectGlaive,
+    type LightBowgun,
+    type HeavyBowgun,
     type Bow,
 
     type WeaponMap,
@@ -44,7 +46,7 @@ import {
 } from "../../common/mappings";
 import {
     populate,
-} from "../_internals";
+} from "../../common/utils";
 
 import {greatswordsArray    } from "./_generated_weapon_greatsword";
 import {longswordsArray     } from "./_generated_weapon_longsword";
@@ -57,6 +59,8 @@ import {huntinghornsArray   } from "./_generated_weapon_huntinghorn";
 import {switchaxesArray     } from "./_generated_weapon_switchaxe";
 import {chargebladesArray   } from "./_generated_weapon_chargeblade";
 import {insectglaivesArray  } from "./_generated_weapon_insectglaive";
+import {lightbowgunsArray   } from "./_generated_weapon_lightbowgun";
+import {heavybowgunsArray   } from "./_generated_weapon_heavybowgun";
 import {bowsArray           } from "./_generated_weapon_bow";
 
 function validateMeleeWeapon(w: MeleeWeapon): void {
@@ -127,6 +131,8 @@ const weaponsMap: Readonly<WeaponMap> = {
     switchaxe:      processWeapon<SwitchAxe     >(switchaxesArray     ),
     chargeblade:    processWeapon<ChargeBlade   >(chargebladesArray   ),
     insectglaive:   processWeapon<InsectGlaive  >(insectglaivesArray  ),
+    lightbowgun:    processWeapon<LightBowgun   >(lightbowgunsArray   ),
+    heavybowgun:    processWeapon<HeavyBowgun   >(heavybowgunsArray   ),
     bow:            processWeapon<Bow           >(bowsArray           ),
 };
 

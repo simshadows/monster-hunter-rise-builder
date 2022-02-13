@@ -32,6 +32,7 @@ import {
     hhSongName,
     saPhialTypeName,
     cbPhialTypeName,
+    getBowgunInfo,
     bowArcShotTypeName,
     bowChargeShotTypeName,
 } from "../../../common/mappings";
@@ -120,7 +121,7 @@ class CalculationAmmoStatsBox extends React.Component<any, any> {
         for (const [k, v] of Object.entries(this.props.ammoData)) {
             if (!v.available) continue;
             dataArray.push({
-                ammoRO: v.ammoRO,
+                ammoRO: getBowgunInfo(k),
                 available: v.available,
                 capacity: v.ammoCapacity,
                 recoil: v.recoil,

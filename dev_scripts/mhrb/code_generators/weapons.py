@@ -14,6 +14,7 @@ from weapons_details.huntinghorn  import generate_huntinghorn_source_lines
 from weapons_details.switchaxe    import generate_switchaxe_source_lines
 from weapons_details.chargeblade  import generate_chargeblade_source_lines
 from weapons_details.insectglaive import generate_insectglaive_source_lines
+from weapons_details.bowguns      import generate_bowgun_source_lines
 from weapons_details.bow          import generate_bow_source_lines
 
 from utils import ramp_id_to_object_name, to_name_filter_string
@@ -96,6 +97,8 @@ _to_type_ref = {
     "switchaxe":      "SwitchAxe",
     "chargeblade":    "ChargeBlade",
     "insectglaive":   "InsectGlaive",
+    "lightbowgun":    "LightBowgun",
+    "heavybowgun":    "HeavyBowgun",
     "bow":            "Bow",
 }
 
@@ -158,6 +161,8 @@ def _get_special_mechanics_str(category, obj):
         entries.append(generate_chargeblade_source_lines(obj))
     elif category == "insectglaive":
         entries.append(generate_insectglaive_source_lines(obj))
+    elif (category == "lightbowgun") or (category == "heavybowgun"):
+        entries.append(generate_bowgun_source_lines(obj))
     elif category == "bow":
         entries.append(generate_bow_source_lines(obj))
 

@@ -4,17 +4,17 @@
  */
 
 import {
-    type BowgunAmmoTypeRO,
-} from "../../../common/types";
+    type BowgunAmmoInfo,
+} from "../types";
 import {
     FrozenMap,
-} from "../../../generic/frozen-containers";
+} from "../../generic/frozen-containers";
 
 import {
     populate,
-} from "../../_internals";
+} from "../utils";
 
-function generateBowgunAmmoTypes(keyBase: string, nameBase: string, num: number): BowgunAmmoTypeRO[] {
+function generateBowgunAmmoTypes(keyBase: string, nameBase: string, num: number): BowgunAmmoInfo[] {
     const ret = [];
     for (let i = 0; i < num; ++i) {
         ret.push({
@@ -25,7 +25,7 @@ function generateBowgunAmmoTypes(keyBase: string, nameBase: string, num: number)
     }
     return ret;
 }
-function generateBowgunEleAmmoTypes(keyBase: string, nameBase: string): BowgunAmmoTypeRO[] {
+function generateBowgunEleAmmoTypes(keyBase: string, nameBase: string): BowgunAmmoInfo[] {
     return [
         {
             id: keyBase,
@@ -40,7 +40,7 @@ function generateBowgunEleAmmoTypes(keyBase: string, nameBase: string): BowgunAm
     ];
 }
 
-const hardcodedAmmoTypes: BowgunAmmoTypeRO[] = [
+const hardcodedAmmoTypes: BowgunAmmoInfo[] = [
     ...generateBowgunAmmoTypes("normal"  , "Normal"  , 3),
     ...generateBowgunAmmoTypes("pierce"  , "Pierce"  , 3),
     ...generateBowgunAmmoTypes("spread"  , "Spread"  , 3),
@@ -105,5 +105,5 @@ const hardcodedAmmoTypes: BowgunAmmoTypeRO[] = [
     },
 ];
 
-export const bowgunAmmoTypesMap: FrozenMap<string, BowgunAmmoTypeRO> = populate(hardcodedAmmoTypes, (obj) => obj);
+export const bowgunAmmoInfoMap: FrozenMap<string, BowgunAmmoInfo> = populate(hardcodedAmmoTypes, (obj) => obj);
 

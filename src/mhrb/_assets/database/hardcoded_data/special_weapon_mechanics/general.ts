@@ -12,7 +12,7 @@ import {
 
 import {
     populate,
-} from "../../_internals";
+} from "../../../common/utils";
 
 const hardcoded: WeaponSpecialSelection[] = [
     {

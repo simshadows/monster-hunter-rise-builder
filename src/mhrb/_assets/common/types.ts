@@ -36,9 +36,13 @@ export type WeaponCategory = "greatsword"
                            | "heavybowgun"
                            | "bow";
 export type MeleeWeaponCategory = Exclude<WeaponCategory, "lightbowgun" | "heavybowgun" | "bow">;
+export type BowgunCategory      = "lightbowgun" | "heavybowgun";
 
 export function isMeleeCategory(s: WeaponCategory): s is MeleeWeaponCategory { // DANGER: Returns type predicate.
     return (s !== "lightbowgun") && (s !== "heavybowgun") && (s !== "bow");
+}
+export function isBowgunCategory(s: WeaponCategory): s is BowgunCategory { // DANGER: Returns type predicate.
+    return (s === "lightbowgun") || (s === "heavybowgun");
 }
 
 /*** Utility Types ***/
@@ -231,25 +235,40 @@ export interface BowStats {
     };
 }
 
-
-export interface BowArcShotTypeRO {
-    id:   string;
-    name: string;
-}
-export interface BowChargeShotTypeRO {
-    id:   string;
-    name: string;
-}
-
-
 /*** Weapon Mechanics: Light Bowgun and Heavy Bowgun ***/
 
-export interface BowgunAmmoType {
-    id:        string;
-    name:      string;
-    shortName: string;
+export type BowgunRecoil = 0 | 1 | 2 | 3 | 4 | 5;
+export type BowgunReload = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;
+
+export type BowgunAmmoType = `${"normal" | "pierce" | "spread" | "shrapnel" | "sticky" | "cluster"}_${1 | 2 | 3}`
+                           | `${"" | "piercing_"}${"fire" | "water" | "thunder" | "ice" | "dragon"}`
+                           | `${"poison" | "paralysis" | "sleep" | "exhaust" | "recover"}_${1 | 2}`
+                           | "demon" | "armor" | "slicing" | "wyvern" | "tranq";
+
+export type BowgunAmmoMap = {
+    readonly [Key in BowgunAmmoType]: {
+        readonly available:    boolean;
+        readonly ammoCapacity: number;
+    };
 }
-export type BowgunAmmoTypeRO = Readonly<BowgunAmmoType>;
+
+export interface BowgunStats {
+    readonly deviation: {
+        readonly severity: 0 | 1 | 2;
+        readonly left:     boolean;
+        readonly right:    boolean;
+    };
+    readonly recoil: BowgunRecoil;
+    readonly reload: BowgunReload;
+    readonly ammo:   BowgunAmmoMap;
+}
+
+// Used when querying bowgun ammo
+export interface BowgunAmmoInfo {
+    readonly id:        string;
+    readonly name:      string;
+    readonly shortName: string;
+}
 
 /*** Weapons ***/
 
@@ -283,6 +302,7 @@ export interface Weapon {
     readonly switchaxeStats?:    SAStats;
     readonly chargebladeStats?:  CBStats;
     readonly insectglaiveStats?: IGStats;
+    readonly bowgunStats?:       BowgunStats;
     readonly bowStats?:          BowStats;
 
     readonly filterHelpers: {
@@ -296,9 +316,16 @@ export interface MeleeWeapon extends Weapon {
     readonly baseSharpness: Readonly<Sharpness>;
     readonly maxSharpness:  Readonly<Sharpness>;
 }
-
 export function isMelee(obj: Weapon): obj is MeleeWeapon { // DANGER: RETURNS TYPE PREDICATE
     return isMeleeCategory(obj.category);
+}
+
+export interface Bowgun extends Weapon {
+    readonly category:    "lightbowgun" | "heavybowgun";
+    readonly bowgunStats: BowgunStats;
+}
+export function isBowgun(obj: Weapon): obj is Bowgun { // DANGER: RETURNS TYPE PREDICATE
+    return isBowgunCategory(obj.category);
 }
 
 export interface Greatsword     extends MeleeWeapon {readonly category: "greatsword";                                        }
@@ -312,6 +339,8 @@ export interface HuntingHorn    extends MeleeWeapon {readonly category: "hunting
 export interface SwitchAxe      extends MeleeWeapon {readonly category: "switchaxe";    readonly switchaxeStats:    SAStats; }
 export interface ChargeBlade    extends MeleeWeapon {readonly category: "chargeblade";  readonly chargebladeStats:  CBStats; }
 export interface InsectGlaive   extends MeleeWeapon {readonly category: "insectglaive"; readonly insectglaiveStats: IGStats; }
+export interface LightBowgun    extends Bowgun      {readonly category: "lightbowgun";                                       }
+export interface HeavyBowgun    extends Bowgun      {readonly category: "heavybowgun";                                       }
 export interface Bow            extends Weapon      {readonly category: "bow";          readonly bowStats:          BowStats;}
 
 /*** Armour ***/
@@ -423,6 +452,8 @@ export type WeaponMap = {
     readonly switchaxe:      WeaponMapInner<SwitchAxe     >;
     readonly chargeblade:    WeaponMapInner<ChargeBlade   >;
     readonly insectglaive:   WeaponMapInner<InsectGlaive  >;
+    readonly lightbowgun:    WeaponMapInner<LightBowgun   >;
+    readonly heavybowgun:    WeaponMapInner<HeavyBowgun   >;
     readonly bow:            WeaponMapInner<Bow           >;
 };
 
