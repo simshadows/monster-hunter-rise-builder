@@ -82,20 +82,19 @@ export type SkillIcon = "blue"
 export type SkillIconImgID = `skill_icon_${SkillIcon}`;
 
 export interface Skill {
-    id:        string;
-    shortId:   number;
-    name:      string;
-    maxLevels: number;
+    readonly id:        string;
+    readonly shortId:   number;
+    readonly name:      string;
+    readonly maxLevels: number;
 
-    iconImgID: SkillIconImgID;
-    filterHelpers: Readonly<{
-        nameLower: string;
-    }>;
+    readonly iconImgID: SkillIconImgID;
+    readonly filterHelpers: {
+        readonly nameLower: string;
+    };
 }
-export type SkillRO = Readonly<Skill>;
 
 // Common to represent levels of skills as an array of 2-tuples like this.
-export type SkillLevels = Readonly<[SkillRO, number]>[];
+export type SkillLevels = Readonly<[Skill, number]>[];
 
 /*** Rampage Skills ***/
 

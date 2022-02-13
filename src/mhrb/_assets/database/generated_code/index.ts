@@ -17,7 +17,7 @@ import {
 
 import {
     type ArmourSlot,
-    type SkillRO,
+    type Skill,
     type RampageSkillRO,
     type DecorationRO,
 
@@ -40,8 +40,8 @@ import {weaponsMap} from "./weapons";
 
 /*** Skills ***/
 
-const skillMap = new Map<string, SkillRO>();
-const skillMapShortIds = new Map<number, SkillRO>();
+const skillMap = new Map<string, Skill>();
+const skillMapShortIds = new Map<number, Skill>();
 
 for (const obj of skillsArray) {
     // Validate
@@ -61,8 +61,8 @@ for (const obj of skillsArray) {
     skillMapShortIds.set(obj.shortId, obj);
 }
 
-const finalSkillMap = new FrozenMap<string, SkillRO>(skillMap);
-const finalSkillMapShortIds = new FrozenMap<number, SkillRO>(skillMapShortIds);
+const finalSkillMap = new FrozenMap<string, Skill>(skillMap);
+const finalSkillMapShortIds = new FrozenMap<number, Skill>(skillMapShortIds);
 
 /*** Rampage Skills ***/
 

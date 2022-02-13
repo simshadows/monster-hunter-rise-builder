@@ -27,17 +27,17 @@ icon_name_to_image_id = {
 }
 
 source_template = """\
-import {{type SkillRO}} from "../../common/types";
+import {{type Skill}} from "../../common/types";
 
 {objects}
 
-export const skillsArray: Readonly<SkillRO[]> = [
+export const skillsArray: Readonly<Skill[]> = [
 {array_entries}
 ];
 """
 
 object_fmt = """\
-export const {object_name}: SkillRO = {{
+export const {object_name}: Skill = {{
     id: {id},
     shortId: {short_id},
     name: {name},

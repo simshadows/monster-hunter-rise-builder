@@ -35,9 +35,9 @@
  * License: GNU Affero General Public License v3 (AGPL-3.0)
  */
 
-import {type SkillRO} from "../../common/types";
+import {type Skill} from "../../common/types";
 
-export const __generated_skill__fire_attack: SkillRO = {
+export const __generated_skill__fire_attack: Skill = {
     id: "fire_attack",
     shortId: 1,
     name: "Fire Attack",
@@ -49,7 +49,7 @@ export const __generated_skill__fire_attack: SkillRO = {
     }
 };
 
-export const __generated_skill__water_attack: SkillRO = {
+export const __generated_skill__water_attack: Skill = {
     id: "water_attack",
     shortId: 2,
     name: "Water Attack",
@@ -61,7 +61,7 @@ export const __generated_skill__water_attack: SkillRO = {
     }
 };
 
-export const __generated_skill__thunder_attack: SkillRO = {
+export const __generated_skill__thunder_attack: Skill = {
     id: "thunder_attack",
     shortId: 3,
     name: "Thunder Attack",
@@ -73,7 +73,7 @@ export const __generated_skill__thunder_attack: SkillRO = {
     }
 };
 
-export const __generated_skill__ice_attack: SkillRO = {
+export const __generated_skill__ice_attack: Skill = {
     id: "ice_attack",
     shortId: 4,
     name: "Ice Attack",
@@ -85,7 +85,7 @@ export const __generated_skill__ice_attack: SkillRO = {
     }
 };
 
-export const __generated_skill__dragon_attack: SkillRO = {
+export const __generated_skill__dragon_attack: Skill = {
     id: "dragon_attack",
     shortId: 5,
     name: "Dragon Attack",
@@ -97,7 +97,7 @@ export const __generated_skill__dragon_attack: SkillRO = {
     }
 };
 
-export const __generated_skill__poison_attack: SkillRO = {
+export const __generated_skill__poison_attack: Skill = {
     id: "poison_attack",
     shortId: 6,
     name: "Poison Attack",
@@ -109,7 +109,7 @@ export const __generated_skill__poison_attack: SkillRO = {
     }
 };
 
-export const __generated_skill__paralysis_attack: SkillRO = {
+export const __generated_skill__paralysis_attack: Skill = {
     id: "paralysis_attack",
     shortId: 7,
     name: "Paralysis Attack",
@@ -121,7 +121,7 @@ export const __generated_skill__paralysis_attack: SkillRO = {
     }
 };
 
-export const __generated_skill__sleep_attack: SkillRO = {
+export const __generated_skill__sleep_attack: Skill = {
     id: "sleep_attack",
     shortId: 8,
     name: "Sleep Attack",
@@ -133,7 +133,7 @@ export const __generated_skill__sleep_attack: SkillRO = {
     }
 };
 
-export const __generated_skill__blast_attack: SkillRO = {
+export const __generated_skill__blast_attack: Skill = {
     id: "blast_attack",
     shortId: 9,
     name: "Blast Attack",
@@ -145,7 +145,7 @@ export const __generated_skill__blast_attack: SkillRO = {
     }
 };
 
-export const __generated_skill__fire_resistance: SkillRO = {
+export const __generated_skill__fire_resistance: Skill = {
     id: "fire_resistance",
     shortId: 10,
     name: "Fire Resistance",
@@ -157,7 +157,7 @@ export const __generated_skill__fire_resistance: SkillRO = {
     }
 };
 
-export const __generated_skill__water_resistance: SkillRO = {
+export const __generated_skill__water_resistance: Skill = {
     id: "water_resistance",
     shortId: 11,
     name: "Water Resistance",
@@ -169,7 +169,7 @@ export const __generated_skill__water_resistance: SkillRO = {
     }
 };
 
-export const __generated_skill__thunder_resistance: SkillRO = {
+export const __generated_skill__thunder_resistance: Skill = {
     id: "thunder_resistance",
     shortId: 12,
     name: "Thunder Resistance",
@@ -181,7 +181,7 @@ export const __generated_skill__thunder_resistance: SkillRO = {
     }
 };
 
-export const __generated_skill__ice_resistance: SkillRO = {
+export const __generated_skill__ice_resistance: Skill = {
     id: "ice_resistance",
     shortId: 13,
     name: "Ice Resistance",
@@ -193,7 +193,7 @@ export const __generated_skill__ice_resistance: SkillRO = {
     }
 };
 
-export const __generated_skill__dragon_resistance: SkillRO = {
+export const __generated_skill__dragon_resistance: Skill = {
     id: "dragon_resistance",
     shortId: 14,
     name: "Dragon Resistance",
@@ -205,7 +205,7 @@ export const __generated_skill__dragon_resistance: SkillRO = {
     }
 };
 
-export const __generated_skill__poison_resistance: SkillRO = {
+export const __generated_skill__poison_resistance: Skill = {
     id: "poison_resistance",
     shortId: 15,
     name: "Poison Resistance",
@@ -217,7 +217,7 @@ export const __generated_skill__poison_resistance: SkillRO = {
     }
 };
 
-export const __generated_skill__paralysis_resistance: SkillRO = {
+export const __generated_skill__paralysis_resistance: Skill = {
     id: "paralysis_resistance",
     shortId: 16,
     name: "Paralysis Resistance",
@@ -229,7 +229,7 @@ export const __generated_skill__paralysis_resistance: SkillRO = {
     }
 };
 
-export const __generated_skill__sleep_resistance: SkillRO = {
+export const __generated_skill__sleep_resistance: Skill = {
     id: "sleep_resistance",
     shortId: 17,
     name: "Sleep Resistance",
@@ -241,7 +241,7 @@ export const __generated_skill__sleep_resistance: SkillRO = {
     }
 };
 
-export const __generated_skill__blast_resistance: SkillRO = {
+export const __generated_skill__blast_resistance: Skill = {
     id: "blast_resistance",
     shortId: 18,
     name: "Blast Resistance",
@@ -253,7 +253,7 @@ export const __generated_skill__blast_resistance: SkillRO = {
     }
 };
 
-export const __generated_skill__affinity_sliding: SkillRO = {
+export const __generated_skill__affinity_sliding: Skill = {
     id: "affinity_sliding",
     shortId: 19,
     name: "Affinity Sliding",
@@ -265,7 +265,7 @@ export const __generated_skill__affinity_sliding: SkillRO = {
     }
 };
 
-export const __generated_skill__agitator: SkillRO = {
+export const __generated_skill__agitator: Skill = {
     id: "agitator",
     shortId: 20,
     name: "Agitator",
@@ -277,7 +277,7 @@ export const __generated_skill__agitator: SkillRO = {
     }
 };
 
-export const __generated_skill__ammo_up: SkillRO = {
+export const __generated_skill__ammo_up: Skill = {
     id: "ammo_up",
     shortId: 21,
     name: "Ammo Up",
@@ -289,7 +289,7 @@ export const __generated_skill__ammo_up: SkillRO = {
     }
 };
 
-export const __generated_skill__artillery: SkillRO = {
+export const __generated_skill__artillery: Skill = {
     id: "artillery",
     shortId: 22,
     name: "Artillery",
@@ -301,7 +301,7 @@ export const __generated_skill__artillery: SkillRO = {
     }
 };
 
-export const __generated_skill__attack_boost: SkillRO = {
+export const __generated_skill__attack_boost: Skill = {
     id: "attack_boost",
     shortId: 23,
     name: "Attack Boost",
@@ -313,7 +313,7 @@ export const __generated_skill__attack_boost: SkillRO = {
     }
 };
 
-export const __generated_skill__ballistics: SkillRO = {
+export const __generated_skill__ballistics: Skill = {
     id: "ballistics",
     shortId: 24,
     name: "Ballistics",
@@ -325,7 +325,7 @@ export const __generated_skill__ballistics: SkillRO = {
     }
 };
 
-export const __generated_skill__blight_resistance: SkillRO = {
+export const __generated_skill__blight_resistance: Skill = {
     id: "blight_resistance",
     shortId: 25,
     name: "Blight Resistance",
@@ -337,7 +337,7 @@ export const __generated_skill__blight_resistance: SkillRO = {
     }
 };
 
-export const __generated_skill__bludgeoner: SkillRO = {
+export const __generated_skill__bludgeoner: Skill = {
     id: "bludgeoner",
     shortId: 26,
     name: "Bludgeoner",
@@ -349,7 +349,7 @@ export const __generated_skill__bludgeoner: SkillRO = {
     }
 };
 
-export const __generated_skill__bombardier: SkillRO = {
+export const __generated_skill__bombardier: Skill = {
     id: "bombardier",
     shortId: 27,
     name: "Bombardier",
@@ -361,7 +361,7 @@ export const __generated_skill__bombardier: SkillRO = {
     }
 };
 
-export const __generated_skill__botanist: SkillRO = {
+export const __generated_skill__botanist: Skill = {
     id: "botanist",
     shortId: 28,
     name: "Botanist",
@@ -373,7 +373,7 @@ export const __generated_skill__botanist: SkillRO = {
     }
 };
 
-export const __generated_skill__bow_charge_plus: SkillRO = {
+export const __generated_skill__bow_charge_plus: Skill = {
     id: "bow_charge_plus",
     shortId: 29,
     name: "Bow Charge Plus",
@@ -385,7 +385,7 @@ export const __generated_skill__bow_charge_plus: SkillRO = {
     }
 };
 
-export const __generated_skill__bubbly_dance: SkillRO = {
+export const __generated_skill__bubbly_dance: Skill = {
     id: "bubbly_dance",
     shortId: 30,
     name: "Bubbly Dance",
@@ -397,7 +397,7 @@ export const __generated_skill__bubbly_dance: SkillRO = {
     }
 };
 
-export const __generated_skill__capture_master: SkillRO = {
+export const __generated_skill__capture_master: Skill = {
     id: "capture_master",
     shortId: 31,
     name: "Capture Master",
@@ -409,7 +409,7 @@ export const __generated_skill__capture_master: SkillRO = {
     }
 };
 
-export const __generated_skill__carving_master: SkillRO = {
+export const __generated_skill__carving_master: Skill = {
     id: "carving_master",
     shortId: 32,
     name: "Carving Master",
@@ -421,7 +421,7 @@ export const __generated_skill__carving_master: SkillRO = {
     }
 };
 
-export const __generated_skill__carving_pro: SkillRO = {
+export const __generated_skill__carving_pro: Skill = {
     id: "carving_pro",
     shortId: 33,
     name: "Carving Pro",
@@ -433,7 +433,7 @@ export const __generated_skill__carving_pro: SkillRO = {
     }
 };
 
-export const __generated_skill__chameleos_blessing: SkillRO = {
+export const __generated_skill__chameleos_blessing: Skill = {
     id: "chameleos_blessing",
     shortId: 34,
     name: "Chameleos Blessing",
@@ -445,7 +445,7 @@ export const __generated_skill__chameleos_blessing: SkillRO = {
     }
 };
 
-export const __generated_skill__constitution: SkillRO = {
+export const __generated_skill__constitution: Skill = {
     id: "constitution",
     shortId: 35,
     name: "Constitution",
@@ -457,7 +457,7 @@ export const __generated_skill__constitution: SkillRO = {
     }
 };
 
-export const __generated_skill__counterstrike: SkillRO = {
+export const __generated_skill__counterstrike: Skill = {
     id: "counterstrike",
     shortId: 36,
     name: "Counterstrike",
@@ -469,7 +469,7 @@ export const __generated_skill__counterstrike: SkillRO = {
     }
 };
 
-export const __generated_skill__critical_boost: SkillRO = {
+export const __generated_skill__critical_boost: Skill = {
     id: "critical_boost",
     shortId: 37,
     name: "Critical Boost",
@@ -481,7 +481,7 @@ export const __generated_skill__critical_boost: SkillRO = {
     }
 };
 
-export const __generated_skill__critical_draw: SkillRO = {
+export const __generated_skill__critical_draw: Skill = {
     id: "critical_draw",
     shortId: 38,
     name: "Critical Draw",
@@ -493,7 +493,7 @@ export const __generated_skill__critical_draw: SkillRO = {
     }
 };
 
-export const __generated_skill__critical_element: SkillRO = {
+export const __generated_skill__critical_element: Skill = {
     id: "critical_element",
     shortId: 39,
     name: "Critical Element",
@@ -505,7 +505,7 @@ export const __generated_skill__critical_element: SkillRO = {
     }
 };
 
-export const __generated_skill__critical_eye: SkillRO = {
+export const __generated_skill__critical_eye: Skill = {
     id: "critical_eye",
     shortId: 40,
     name: "Critical Eye",
@@ -517,7 +517,7 @@ export const __generated_skill__critical_eye: SkillRO = {
     }
 };
 
-export const __generated_skill__defense_boost: SkillRO = {
+export const __generated_skill__defense_boost: Skill = {
     id: "defense_boost",
     shortId: 41,
     name: "Defense Boost",
@@ -529,7 +529,7 @@ export const __generated_skill__defense_boost: SkillRO = {
     }
 };
 
-export const __generated_skill__diversion: SkillRO = {
+export const __generated_skill__diversion: Skill = {
     id: "diversion",
     shortId: 42,
     name: "Diversion",
@@ -541,7 +541,7 @@ export const __generated_skill__diversion: SkillRO = {
     }
 };
 
-export const __generated_skill__divine_blessing: SkillRO = {
+export const __generated_skill__divine_blessing: Skill = {
     id: "divine_blessing",
     shortId: 43,
     name: "Divine Blessing",
@@ -553,7 +553,7 @@ export const __generated_skill__divine_blessing: SkillRO = {
     }
 };
 
-export const __generated_skill__dragonheart: SkillRO = {
+export const __generated_skill__dragonheart: Skill = {
     id: "dragonheart",
     shortId: 44,
     name: "Dragonheart",
@@ -565,7 +565,7 @@ export const __generated_skill__dragonheart: SkillRO = {
     }
 };
 
-export const __generated_skill__earplugs: SkillRO = {
+export const __generated_skill__earplugs: Skill = {
     id: "earplugs",
     shortId: 45,
     name: "Earplugs",
@@ -577,7 +577,7 @@ export const __generated_skill__earplugs: SkillRO = {
     }
 };
 
-export const __generated_skill__evade_extender: SkillRO = {
+export const __generated_skill__evade_extender: Skill = {
     id: "evade_extender",
     shortId: 46,
     name: "Evade Extender",
@@ -589,7 +589,7 @@ export const __generated_skill__evade_extender: SkillRO = {
     }
 };
 
-export const __generated_skill__evade_window: SkillRO = {
+export const __generated_skill__evade_window: Skill = {
     id: "evade_window",
     shortId: 47,
     name: "Evade Window",
@@ -601,7 +601,7 @@ export const __generated_skill__evade_window: SkillRO = {
     }
 };
 
-export const __generated_skill__flinch_free: SkillRO = {
+export const __generated_skill__flinch_free: Skill = {
     id: "flinch_free",
     shortId: 48,
     name: "Flinch Free",
@@ -613,7 +613,7 @@ export const __generated_skill__flinch_free: SkillRO = {
     }
 };
 
-export const __generated_skill__focus: SkillRO = {
+export const __generated_skill__focus: Skill = {
     id: "focus",
     shortId: 49,
     name: "Focus",
@@ -625,7 +625,7 @@ export const __generated_skill__focus: SkillRO = {
     }
 };
 
-export const __generated_skill__fortify: SkillRO = {
+export const __generated_skill__fortify: Skill = {
     id: "fortify",
     shortId: 50,
     name: "Fortify",
@@ -637,7 +637,7 @@ export const __generated_skill__fortify: SkillRO = {
     }
 };
 
-export const __generated_skill__free_meal: SkillRO = {
+export const __generated_skill__free_meal: Skill = {
     id: "free_meal",
     shortId: 51,
     name: "Free Meal",
@@ -649,7 +649,7 @@ export const __generated_skill__free_meal: SkillRO = {
     }
 };
 
-export const __generated_skill__geologist: SkillRO = {
+export const __generated_skill__geologist: Skill = {
     id: "geologist",
     shortId: 52,
     name: "Geologist",
@@ -661,7 +661,7 @@ export const __generated_skill__geologist: SkillRO = {
     }
 };
 
-export const __generated_skill__good_luck: SkillRO = {
+export const __generated_skill__good_luck: Skill = {
     id: "good_luck",
     shortId: 53,
     name: "Good Luck",
@@ -673,7 +673,7 @@ export const __generated_skill__good_luck: SkillRO = {
     }
 };
 
-export const __generated_skill__guard: SkillRO = {
+export const __generated_skill__guard: Skill = {
     id: "guard",
     shortId: 54,
     name: "Guard",
@@ -685,7 +685,7 @@ export const __generated_skill__guard: SkillRO = {
     }
 };
 
-export const __generated_skill__guard_up: SkillRO = {
+export const __generated_skill__guard_up: Skill = {
     id: "guard_up",
     shortId: 55,
     name: "Guard Up",
@@ -697,7 +697,7 @@ export const __generated_skill__guard_up: SkillRO = {
     }
 };
 
-export const __generated_skill__handicraft: SkillRO = {
+export const __generated_skill__handicraft: Skill = {
     id: "handicraft",
     shortId: 56,
     name: "Handicraft",
@@ -709,7 +709,7 @@ export const __generated_skill__handicraft: SkillRO = {
     }
 };
 
-export const __generated_skill__hellfire_cloak: SkillRO = {
+export const __generated_skill__hellfire_cloak: Skill = {
     id: "hellfire_cloak",
     shortId: 57,
     name: "Hellfire Cloak",
@@ -721,7 +721,7 @@ export const __generated_skill__hellfire_cloak: SkillRO = {
     }
 };
 
-export const __generated_skill__heroics: SkillRO = {
+export const __generated_skill__heroics: Skill = {
     id: "heroics",
     shortId: 58,
     name: "Heroics",
@@ -733,7 +733,7 @@ export const __generated_skill__heroics: SkillRO = {
     }
 };
 
-export const __generated_skill__horn_maestro: SkillRO = {
+export const __generated_skill__horn_maestro: Skill = {
     id: "horn_maestro",
     shortId: 59,
     name: "Horn Maestro",
@@ -745,7 +745,7 @@ export const __generated_skill__horn_maestro: SkillRO = {
     }
 };
 
-export const __generated_skill__hunger_resistance: SkillRO = {
+export const __generated_skill__hunger_resistance: Skill = {
     id: "hunger_resistance",
     shortId: 60,
     name: "Hunger Resistance",
@@ -757,7 +757,7 @@ export const __generated_skill__hunger_resistance: SkillRO = {
     }
 };
 
-export const __generated_skill__item_prolonger: SkillRO = {
+export const __generated_skill__item_prolonger: Skill = {
     id: "item_prolonger",
     shortId: 61,
     name: "Item Prolonger",
@@ -769,7 +769,7 @@ export const __generated_skill__item_prolonger: SkillRO = {
     }
 };
 
-export const __generated_skill__jump_master: SkillRO = {
+export const __generated_skill__jump_master: Skill = {
     id: "jump_master",
     shortId: 62,
     name: "Jump Master",
@@ -781,7 +781,7 @@ export const __generated_skill__jump_master: SkillRO = {
     }
 };
 
-export const __generated_skill__kushala_blessing: SkillRO = {
+export const __generated_skill__kushala_blessing: Skill = {
     id: "kushala_blessing",
     shortId: 63,
     name: "Kushala Blessing",
@@ -793,7 +793,7 @@ export const __generated_skill__kushala_blessing: SkillRO = {
     }
 };
 
-export const __generated_skill__latent_power: SkillRO = {
+export const __generated_skill__latent_power: Skill = {
     id: "latent_power",
     shortId: 64,
     name: "Latent Power",
@@ -805,7 +805,7 @@ export const __generated_skill__latent_power: SkillRO = {
     }
 };
 
-export const __generated_skill__leap_of_faith: SkillRO = {
+export const __generated_skill__leap_of_faith: Skill = {
     id: "leap_of_faith",
     shortId: 65,
     name: "Leap Of Faith",
@@ -817,7 +817,7 @@ export const __generated_skill__leap_of_faith: SkillRO = {
     }
 };
 
-export const __generated_skill__load_shells: SkillRO = {
+export const __generated_skill__load_shells: Skill = {
     id: "load_shells",
     shortId: 66,
     name: "Load Shells",
@@ -829,7 +829,7 @@ export const __generated_skill__load_shells: SkillRO = {
     }
 };
 
-export const __generated_skill__marathon_runner: SkillRO = {
+export const __generated_skill__marathon_runner: Skill = {
     id: "marathon_runner",
     shortId: 67,
     name: "Marathon Runner",
@@ -841,7 +841,7 @@ export const __generated_skill__marathon_runner: SkillRO = {
     }
 };
 
-export const __generated_skill__master_mounter: SkillRO = {
+export const __generated_skill__master_mounter: Skill = {
     id: "master_mounter",
     shortId: 68,
     name: "Master Mounter",
@@ -853,7 +853,7 @@ export const __generated_skill__master_mounter: SkillRO = {
     }
 };
 
-export const __generated_skill__masters_touch: SkillRO = {
+export const __generated_skill__masters_touch: Skill = {
     id: "masters_touch",
     shortId: 69,
     name: "Master's Touch",
@@ -865,7 +865,7 @@ export const __generated_skill__masters_touch: SkillRO = {
     }
 };
 
-export const __generated_skill__maximum_might: SkillRO = {
+export const __generated_skill__maximum_might: Skill = {
     id: "maximum_might",
     shortId: 70,
     name: "Maximum Might",
@@ -877,7 +877,7 @@ export const __generated_skill__maximum_might: SkillRO = {
     }
 };
 
-export const __generated_skill__minds_eye: SkillRO = {
+export const __generated_skill__minds_eye: Skill = {
     id: "minds_eye",
     shortId: 71,
     name: "Mind's Eye",
@@ -889,7 +889,7 @@ export const __generated_skill__minds_eye: SkillRO = {
     }
 };
 
-export const __generated_skill__muck_resistance: SkillRO = {
+export const __generated_skill__muck_resistance: Skill = {
     id: "muck_resistance",
     shortId: 72,
     name: "Muck Resistance",
@@ -901,7 +901,7 @@ export const __generated_skill__muck_resistance: SkillRO = {
     }
 };
 
-export const __generated_skill__mushroomancer: SkillRO = {
+export const __generated_skill__mushroomancer: Skill = {
     id: "mushroomancer",
     shortId: 73,
     name: "Mushroomancer",
@@ -913,7 +913,7 @@ export const __generated_skill__mushroomancer: SkillRO = {
     }
 };
 
-export const __generated_skill__normal_rapid_up: SkillRO = {
+export const __generated_skill__normal_rapid_up: Skill = {
     id: "normal_rapid_up",
     shortId: 74,
     name: "Normal/Rapid Up",
@@ -925,7 +925,7 @@ export const __generated_skill__normal_rapid_up: SkillRO = {
     }
 };
 
-export const __generated_skill__offensive_guard: SkillRO = {
+export const __generated_skill__offensive_guard: Skill = {
     id: "offensive_guard",
     shortId: 75,
     name: "Offensive Guard",
@@ -937,7 +937,7 @@ export const __generated_skill__offensive_guard: SkillRO = {
     }
 };
 
-export const __generated_skill__partbreaker: SkillRO = {
+export const __generated_skill__partbreaker: Skill = {
     id: "partbreaker",
     shortId: 76,
     name: "Partbreaker",
@@ -949,7 +949,7 @@ export const __generated_skill__partbreaker: SkillRO = {
     }
 };
 
-export const __generated_skill__peak_performance: SkillRO = {
+export const __generated_skill__peak_performance: Skill = {
     id: "peak_performance",
     shortId: 77,
     name: "Peak Performance",
@@ -961,7 +961,7 @@ export const __generated_skill__peak_performance: SkillRO = {
     }
 };
 
-export const __generated_skill__pierce_up: SkillRO = {
+export const __generated_skill__pierce_up: Skill = {
     id: "pierce_up",
     shortId: 78,
     name: "Pierce Up",
@@ -973,7 +973,7 @@ export const __generated_skill__pierce_up: SkillRO = {
     }
 };
 
-export const __generated_skill__power_prolonger: SkillRO = {
+export const __generated_skill__power_prolonger: Skill = {
     id: "power_prolonger",
     shortId: 79,
     name: "Power Prolonger",
@@ -985,7 +985,7 @@ export const __generated_skill__power_prolonger: SkillRO = {
     }
 };
 
-export const __generated_skill__protective_polish: SkillRO = {
+export const __generated_skill__protective_polish: Skill = {
     id: "protective_polish",
     shortId: 80,
     name: "Protective Polish",
@@ -997,7 +997,7 @@ export const __generated_skill__protective_polish: SkillRO = {
     }
 };
 
-export const __generated_skill__punishing_draw: SkillRO = {
+export const __generated_skill__punishing_draw: Skill = {
     id: "punishing_draw",
     shortId: 81,
     name: "Punishing Draw",
@@ -1009,7 +1009,7 @@ export const __generated_skill__punishing_draw: SkillRO = {
     }
 };
 
-export const __generated_skill__quick_sheath: SkillRO = {
+export const __generated_skill__quick_sheath: Skill = {
     id: "quick_sheath",
     shortId: 82,
     name: "Quick Sheath",
@@ -1021,7 +1021,7 @@ export const __generated_skill__quick_sheath: SkillRO = {
     }
 };
 
-export const __generated_skill__rapid_fire_up: SkillRO = {
+export const __generated_skill__rapid_fire_up: Skill = {
     id: "rapid_fire_up",
     shortId: 83,
     name: "Rapid Fire Up",
@@ -1033,7 +1033,7 @@ export const __generated_skill__rapid_fire_up: SkillRO = {
     }
 };
 
-export const __generated_skill__rapid_morph: SkillRO = {
+export const __generated_skill__rapid_morph: Skill = {
     id: "rapid_morph",
     shortId: 84,
     name: "Rapid Morph",
@@ -1045,7 +1045,7 @@ export const __generated_skill__rapid_morph: SkillRO = {
     }
 };
 
-export const __generated_skill__razor_sharp: SkillRO = {
+export const __generated_skill__razor_sharp: Skill = {
     id: "razor_sharp",
     shortId: 85,
     name: "Razor Sharp",
@@ -1057,7 +1057,7 @@ export const __generated_skill__razor_sharp: SkillRO = {
     }
 };
 
-export const __generated_skill__recoil_down: SkillRO = {
+export const __generated_skill__recoil_down: Skill = {
     id: "recoil_down",
     shortId: 86,
     name: "Recoil Down",
@@ -1069,7 +1069,7 @@ export const __generated_skill__recoil_down: SkillRO = {
     }
 };
 
-export const __generated_skill__recovery_speed: SkillRO = {
+export const __generated_skill__recovery_speed: Skill = {
     id: "recovery_speed",
     shortId: 87,
     name: "Recovery Speed",
@@ -1081,7 +1081,7 @@ export const __generated_skill__recovery_speed: SkillRO = {
     }
 };
 
-export const __generated_skill__recovery_up: SkillRO = {
+export const __generated_skill__recovery_up: Skill = {
     id: "recovery_up",
     shortId: 88,
     name: "Recovery Up",
@@ -1093,7 +1093,7 @@ export const __generated_skill__recovery_up: SkillRO = {
     }
 };
 
-export const __generated_skill__reload_speed: SkillRO = {
+export const __generated_skill__reload_speed: Skill = {
     id: "reload_speed",
     shortId: 89,
     name: "Reload Speed",
@@ -1105,7 +1105,7 @@ export const __generated_skill__reload_speed: SkillRO = {
     }
 };
 
-export const __generated_skill__resentment: SkillRO = {
+export const __generated_skill__resentment: Skill = {
     id: "resentment",
     shortId: 90,
     name: "Resentment",
@@ -1117,7 +1117,7 @@ export const __generated_skill__resentment: SkillRO = {
     }
 };
 
-export const __generated_skill__resuscitate: SkillRO = {
+export const __generated_skill__resuscitate: Skill = {
     id: "resuscitate",
     shortId: 91,
     name: "Resuscitate",
@@ -1129,7 +1129,7 @@ export const __generated_skill__resuscitate: SkillRO = {
     }
 };
 
-export const __generated_skill__slugger: SkillRO = {
+export const __generated_skill__slugger: Skill = {
     id: "slugger",
     shortId: 92,
     name: "Slugger",
@@ -1141,7 +1141,7 @@ export const __generated_skill__slugger: SkillRO = {
     }
 };
 
-export const __generated_skill__spare_shot: SkillRO = {
+export const __generated_skill__spare_shot: Skill = {
     id: "spare_shot",
     shortId: 93,
     name: "Spare Shot",
@@ -1153,7 +1153,7 @@ export const __generated_skill__spare_shot: SkillRO = {
     }
 };
 
-export const __generated_skill__special_ammo_boost: SkillRO = {
+export const __generated_skill__special_ammo_boost: Skill = {
     id: "special_ammo_boost",
     shortId: 94,
     name: "Special Ammo Boost",
@@ -1165,7 +1165,7 @@ export const __generated_skill__special_ammo_boost: SkillRO = {
     }
 };
 
-export const __generated_skill__speed_eating: SkillRO = {
+export const __generated_skill__speed_eating: Skill = {
     id: "speed_eating",
     shortId: 95,
     name: "Speed Eating",
@@ -1177,7 +1177,7 @@ export const __generated_skill__speed_eating: SkillRO = {
     }
 };
 
-export const __generated_skill__speed_sharpening: SkillRO = {
+export const __generated_skill__speed_sharpening: Skill = {
     id: "speed_sharpening",
     shortId: 96,
     name: "Speed Sharpening",
@@ -1189,7 +1189,7 @@ export const __generated_skill__speed_sharpening: SkillRO = {
     }
 };
 
-export const __generated_skill__spread_up: SkillRO = {
+export const __generated_skill__spread_up: Skill = {
     id: "spread_up",
     shortId: 97,
     name: "Spread Up",
@@ -1201,7 +1201,7 @@ export const __generated_skill__spread_up: SkillRO = {
     }
 };
 
-export const __generated_skill__stamina_surge: SkillRO = {
+export const __generated_skill__stamina_surge: Skill = {
     id: "stamina_surge",
     shortId: 98,
     name: "Stamina Surge",
@@ -1213,7 +1213,7 @@ export const __generated_skill__stamina_surge: SkillRO = {
     }
 };
 
-export const __generated_skill__stamina_thief: SkillRO = {
+export const __generated_skill__stamina_thief: Skill = {
     id: "stamina_thief",
     shortId: 99,
     name: "Stamina Thief",
@@ -1225,7 +1225,7 @@ export const __generated_skill__stamina_thief: SkillRO = {
     }
 };
 
-export const __generated_skill__steadiness: SkillRO = {
+export const __generated_skill__steadiness: Skill = {
     id: "steadiness",
     shortId: 100,
     name: "Steadiness",
@@ -1237,7 +1237,7 @@ export const __generated_skill__steadiness: SkillRO = {
     }
 };
 
-export const __generated_skill__stormsoul: SkillRO = {
+export const __generated_skill__stormsoul: Skill = {
     id: "stormsoul",
     shortId: 101,
     name: "Stormsoul",
@@ -1249,7 +1249,7 @@ export const __generated_skill__stormsoul: SkillRO = {
     }
 };
 
-export const __generated_skill__stun_resistance: SkillRO = {
+export const __generated_skill__stun_resistance: Skill = {
     id: "stun_resistance",
     shortId: 102,
     name: "Stun Resistance",
@@ -1261,7 +1261,7 @@ export const __generated_skill__stun_resistance: SkillRO = {
     }
 };
 
-export const __generated_skill__teostra_blessing: SkillRO = {
+export const __generated_skill__teostra_blessing: Skill = {
     id: "teostra_blessing",
     shortId: 103,
     name: "Teostra Blessing",
@@ -1273,7 +1273,7 @@ export const __generated_skill__teostra_blessing: SkillRO = {
     }
 };
 
-export const __generated_skill__thunder_alignment: SkillRO = {
+export const __generated_skill__thunder_alignment: Skill = {
     id: "thunder_alignment",
     shortId: 104,
     name: "Thunder Alignment",
@@ -1285,7 +1285,7 @@ export const __generated_skill__thunder_alignment: SkillRO = {
     }
 };
 
-export const __generated_skill__tremor_resistance: SkillRO = {
+export const __generated_skill__tremor_resistance: Skill = {
     id: "tremor_resistance",
     shortId: 105,
     name: "Tremor Resistance",
@@ -1297,7 +1297,7 @@ export const __generated_skill__tremor_resistance: SkillRO = {
     }
 };
 
-export const __generated_skill__wall_runner: SkillRO = {
+export const __generated_skill__wall_runner: Skill = {
     id: "wall_runner",
     shortId: 106,
     name: "Wall Runner",
@@ -1309,7 +1309,7 @@ export const __generated_skill__wall_runner: SkillRO = {
     }
 };
 
-export const __generated_skill__weakness_exploit: SkillRO = {
+export const __generated_skill__weakness_exploit: Skill = {
     id: "weakness_exploit",
     shortId: 107,
     name: "Weakness Exploit",
@@ -1321,7 +1321,7 @@ export const __generated_skill__weakness_exploit: SkillRO = {
     }
 };
 
-export const __generated_skill__wide_range: SkillRO = {
+export const __generated_skill__wide_range: Skill = {
     id: "wide_range",
     shortId: 108,
     name: "Wide Range",
@@ -1333,7 +1333,7 @@ export const __generated_skill__wide_range: SkillRO = {
     }
 };
 
-export const __generated_skill__wind_alignment: SkillRO = {
+export const __generated_skill__wind_alignment: Skill = {
     id: "wind_alignment",
     shortId: 109,
     name: "Wind Alignment",
@@ -1345,7 +1345,7 @@ export const __generated_skill__wind_alignment: SkillRO = {
     }
 };
 
-export const __generated_skill__windproof: SkillRO = {
+export const __generated_skill__windproof: Skill = {
     id: "windproof",
     shortId: 110,
     name: "Windproof",
@@ -1357,7 +1357,7 @@ export const __generated_skill__windproof: SkillRO = {
     }
 };
 
-export const __generated_skill__wirebug_whisperer: SkillRO = {
+export const __generated_skill__wirebug_whisperer: Skill = {
     id: "wirebug_whisperer",
     shortId: 111,
     name: "Wirebug Whisperer",
@@ -1369,7 +1369,7 @@ export const __generated_skill__wirebug_whisperer: SkillRO = {
     }
 };
 
-export const skillsArray: Readonly<SkillRO[]> = [
+export const skillsArray: Readonly<Skill[]> = [
     __generated_skill__fire_attack,
     __generated_skill__water_attack,
     __generated_skill__thunder_attack,
