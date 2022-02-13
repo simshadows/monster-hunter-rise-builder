@@ -99,11 +99,10 @@ export type SkillLevels = Readonly<[Skill, number]>[];
 /*** Rampage Skills ***/
 
 export interface RampageSkill {
-    id:      string;
-    shortID: string;
-    name:    string;
+    readonly id:      string;
+    readonly shortID: string;
+    readonly name:    string;
 }
-export type RampageSkillRO = Readonly<RampageSkill>;
 
 /*** Weapon Special Selections ***/
 
@@ -262,7 +261,7 @@ export interface Weapon {
 
     rampSkills: Readonly<
         Readonly<
-            Readonly<[RampageSkillRO, WeaponRO | null]>[]
+            Readonly<[RampageSkill, WeaponRO | null]>[]
         >[]
     >;
 

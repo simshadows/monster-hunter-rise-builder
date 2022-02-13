@@ -18,7 +18,7 @@ import {
 import {
     type ArmourSlot,
     type Skill,
-    type RampageSkillRO,
+    type RampageSkill,
     type DecorationRO,
 
     type ArmourPieceRO,
@@ -67,8 +67,8 @@ const finalSkillMapShortIds = new FrozenMap<number, Skill>(skillMapShortIds);
 /*** Rampage Skills ***/
 
 // Now, we populate these maps.
-const rampsMap = new Map<string, RampageSkillRO>();
-const rampsMapShortIds = new Map<string, RampageSkillRO>();
+const rampsMap = new Map<string, RampageSkill>();
+const rampsMapShortIds = new Map<string, RampageSkill>();
 
 // For convenience, we also attach IDs to each object
 for (const obj of rampsArray) {
@@ -86,8 +86,8 @@ for (const obj of rampsArray) {
     rampsMapShortIds.set(obj.shortID, obj);
 }
 
-const finalRampsMap = new FrozenMap<string, RampageSkillRO>(rampsMap);
-const finalRampsMapShortIds = new FrozenMap<string, RampageSkillRO>(rampsMapShortIds);
+const finalRampsMap = new FrozenMap<string, RampageSkill>(rampsMap);
+const finalRampsMapShortIds = new FrozenMap<string, RampageSkill>(rampsMapShortIds);
 
 /*** Decorations ***/
 

@@ -85,7 +85,7 @@ def run():
             {
                 "keys": ["id", "shortID", "name"],
                 "array": "rampsArray",
-                "type": "RampageSkillRO",
+                "type": "RampageSkill",
                 "obj_name_map": ramp_id_to_object_name,
             },
             ramps_data,
