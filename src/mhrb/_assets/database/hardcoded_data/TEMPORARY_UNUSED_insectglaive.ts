@@ -1,6 +1,9 @@
+// @ts-nocheck
 /*
  * Author:  simshadows <contact@simshadows.com>
  * License: GNU Affero General Public License v3 (AGPL-3.0)
+ *
+ * TODO: I'll need to eventually use this when I implement kinsects.
  */
 
 import {

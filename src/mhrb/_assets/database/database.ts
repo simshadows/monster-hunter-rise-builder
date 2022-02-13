@@ -43,12 +43,6 @@ import {
     petalaceMap,
 } from "./hardcoded_data/petalace_data";
 
-import {chargeBladePhialTypesMap} from "./hardcoded_data/special_weapon_mechanics/chargeblade";
-import {
-    insectGlaiveKinsectsMap,
-    insectGlaiveKinsectTypesMap,
-    insectGlaiveKinsectBonusesMap,
-} from "./hardcoded_data/special_weapon_mechanics/insectglaive";
 import {
     bowArcShotTypesMap,
     bowChargeShotTypesMap,
@@ -56,8 +50,6 @@ import {
 import {bowgunAmmoTypesMap      } from "./hardcoded_data/special_weapon_mechanics/bowguns";
 import {specialSelectionTypesMap} from "./hardcoded_data/special_weapon_mechanics/general";
 
-const WEAPON_CB_PATH  = "./data/weapons_chargeblade.json";
-const WEAPON_IG_PATH  = "./data/weapons_insectglaive.json";
 const WEAPON_LBG_PATH = "./data/weapons_lightbowgun.json";
 const WEAPON_HBG_PATH = "./data/weapons_heavybowgun.json";
 const WEAPON_BOW_PATH = "./data/weapons_bow.json";
@@ -113,36 +105,6 @@ function validateWeaponData(weaponData) {
             assert(isStr(inheritedFromWeaponID)); // Empty string is allowed
         }
     }
-}
-
-function validateWeaponDataSharpness(weaponData) {
-    // Only weapons with sharpness bars
-    function op(values) {
-        assert(isArr(values), "Maximum sharpness must be an Array.");
-        assert((values.length == 6), "Maximum sharpness must have 6 numbers (each corresponding to a colour). " + weaponData.category + " " + weaponData.id);
-        // First element is red sharpness. Last element is white sharpness.
-
-        let hitSum = 0;
-        let prevHits = 1;
-        for (const hits of values) {
-            assert(isInt(hits) && (hits >= 0), "Hits must be an integer >= 0.");
-            //assert((hits == 0) || (prevHits > 0), "Hits must not skip a colour."); // This check is wrong.
-            hitSum += hits;
-            prevHits = hits;
-        }
-        assert((hitSum > 100), "Hits must add up to at least 100."); // If we find cases where this is wrong, remove this check.
-    }
-    op(weaponData.baseSharpness);
-    op(weaponData.maxSharpness);
-}
-
-function validateWeaponDataChargeBlade(weaponData) {
-    assert(isObj(weaponData.chargebladeStats.phialType));
-}
-
-function validateWeaponDataInsectGlaive(weaponData) {
-    const kinsectLevel = weaponData.insectglaiveStats.kinsectLevel;
-    assert(isInt(kinsectLevel) && (kinsectLevel > 0) && (kinsectLevel <= 8));
 }
 
 function validateWeaponDataBow(weaponData) {
@@ -225,15 +187,6 @@ async function downloadCategoryRawWeaponData(category, path, op) {
             // Convert the eleStat object to a map because it's easier to work with
             weaponData.eleStat = new Map(Object.entries(weaponData.eleStat));
 
-
-            // Add Charge Blade mechanics
-            if (weaponData.category === "chargeblade") {
-                const phialTypeID = weaponData.chargebladeStats.phialType;
-                const phialTypeRO = chargeBladePhialTypesMap.get(phialTypeID);
-                assert(phialTypeRO !== undefined, "Unknown phial type ID: " + String(phialTypeID));
-                weaponData.chargebladeStats.phialType = phialTypeRO;
-            }
-
             // Add Bow mechanics
             if (weaponData.category === "bow") {
                 const arcShotTypeID = weaponData.bowStats.arcShot;
@@ -299,17 +252,9 @@ async function downloadCategoryRawWeaponData(category, path, op) {
 }
 
 async function downloadAllRawWeaponData() {
-    const validateSimpleMelee  = (weaponData) => {validateWeaponDataSharpness(weaponData);};
-    const validateCB           = (weaponData) => {validateWeaponDataSharpness(weaponData);
-                                                  validateWeaponDataChargeBlade(weaponData);};
-    const validateIG           = (weaponData) => {validateWeaponDataSharpness(weaponData);
-                                                  validateWeaponDataInsectGlaive(weaponData);};
-
     const validateBowgun       = (weaponData) => {validateWeaponDataBowguns(weaponData);};
     const validateBow          = (weaponData) => {validateWeaponDataBow(weaponData);};
 
-    const cbDataFut  = downloadCategoryRawWeaponData("chargeblade",    WEAPON_CB_PATH,  validateCB         );
-    const igDataFut  = downloadCategoryRawWeaponData("insectglaive",   WEAPON_IG_PATH,  validateIG         );
     const lbgDataFut = downloadCategoryRawWeaponData("lightbowgun",    WEAPON_LBG_PATH, validateBowgun     );
     const hbgDataFut = downloadCategoryRawWeaponData("heavybowgun",    WEAPON_HBG_PATH, validateBowgun     );
     const bowDataFut = downloadCategoryRawWeaponData("bow",            WEAPON_BOW_PATH, validateBow        );
@@ -323,8 +268,8 @@ async function downloadAllRawWeaponData() {
             hammer:         newWeaponsMap.hammer,
             huntinghorn:    newWeaponsMap.huntinghorn,
             switchaxe:      newWeaponsMap.switchaxe,
-            chargeblade:    await cbDataFut,
-            insectglaive:   await igDataFut,
+            chargeblade:    newWeaponsMap.chargeblade,
+            insectglaive:   newWeaponsMap.insectglaive,
             lightbowgun:    await lbgDataFut,
             heavybowgun:    await hbgDataFut,
             bow:            await bowDataFut,
@@ -337,7 +282,7 @@ function joinRampSkillObjsToWeaponData(weaponData) {
     assert(isObj(weaponData));
     //assert(isMap(rampageSkillsMap)); // Commented because it broke
     for (const [categoryID, weaponDataMap] of Object.entries(weaponData)) {
-        if (["greatsword", "longsword", "swordandshield", "dualblades", "lance", "gunlance", "hammer", "huntinghorn", "switchaxe"].includes(categoryID)) continue; // Bandaid for refactoring
+        if (!["lightbowgun", "heavybowgun", "bow"].includes(categoryID)) continue; // Bandaid for refactoring
         for (const [weaponID, weaponDataObj] of weaponDataMap.entries()) {
             const newRampArray = [];
             for (const rampSkillRampArray of weaponDataObj.rampSkills) {
@@ -408,14 +353,6 @@ class GameData {
                 shortIdsMap: rampageSkillsMapShortIds,
             },
             weaponMechanics: {
-                chargeblade: {
-                    phialTypesMap: chargeBladePhialTypesMap,
-                },
-                insectglaive: {
-                    kinsectsMap: insectGlaiveKinsectsMap,
-                    kinsectTypesMap: insectGlaiveKinsectTypesMap,
-                    kinsectBonusesMap: insectGlaiveKinsectBonusesMap,
-                },
                 bow: {
                     arcShotTypesMap: bowArcShotTypesMap,
                     chargeShotTypesMap: bowChargeShotTypesMap,

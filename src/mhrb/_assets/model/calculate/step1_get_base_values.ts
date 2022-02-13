@@ -567,7 +567,7 @@ function getBaseValues(db, build, calcState) {
             if (weaponRO.category === "switchaxe") {
                 switchaxeStats.phialType = "element_phial";
             } else if (weaponRO.category === "chargeblade") {
-                chargebladeStats.phialType = db.readonly.weaponMechanics.chargeblade.phialTypesMap.get("element_phial");
+                chargebladeStats.phialType = "element_phial";
             } else {
                 console.warn("Unexpected weapon category.");
             }

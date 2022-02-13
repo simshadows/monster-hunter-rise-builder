@@ -31,6 +31,7 @@ import {
     glShellingTypeName,
     hhSongName,
     saPhialTypeName,
+    cbPhialTypeName,
 } from "../../../common/mappings";
 
 import {GenericTable} from "../../generic/GenericTable";
@@ -447,7 +448,7 @@ export class CalculationResultsBox extends React.Component<any, any> {
             specialMechanicRenderings.push(
                 element(CalculationResultsGroupBox,
                     null,
-                    this._renderStat(null, "Phial Type", [String(perf.chargeBladeStats.phialType.name)]),
+                    this._renderStat(null, "Phial Type", [cbPhialTypeName(perf.chargeBladeStats.phialType)]),
                 ),
             );
         }

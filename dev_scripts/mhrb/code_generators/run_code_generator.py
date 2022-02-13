@@ -111,7 +111,9 @@ def run():
         "gunlance":       read_data("../../kiranico_scrape/output/weapons_gunlance.json"      ),
         "hammer":         read_data("../../kiranico_scrape/output/weapons_hammer.json"        ),
         "huntinghorn":    read_data("../../kiranico_scrape/output/weapons_huntinghorn.json"   ),
-        "switchaxe":      read_data("../../kiranico_scrape/output/weapons_switchaxe.json"   ),
+        "switchaxe":      read_data("../../kiranico_scrape/output/weapons_switchaxe.json"     ),
+        "chargeblade":    read_data("../../kiranico_scrape/output/weapons_chargeblade.json"   ),
+        "insectglaive":   read_data("../../kiranico_scrape/output/weapons_insectglaive.json"  ),
     }
     weapon_source_files_content = generate_weapon_source_files(weapon_data)
     write_source_file("_generated_weapon_greatsword.ts"    , weapon_source_files_content["greatsword"    ])
@@ -122,6 +124,8 @@ def run():
     write_source_file("_generated_weapon_gunlance.ts"      , weapon_source_files_content["gunlance"      ])
     write_source_file("_generated_weapon_hammer.ts"        , weapon_source_files_content["hammer"        ])
     write_source_file("_generated_weapon_switchaxe.ts"     , weapon_source_files_content["switchaxe"     ])
+    write_source_file("_generated_weapon_chargeblade.ts"   , weapon_source_files_content["chargeblade"   ])
+    write_source_file("_generated_weapon_insectglaive.ts"  , weapon_source_files_content["insectglaive"  ])
     for (k, v) in weapon_data.items():
         print(f"Discovered {len(v)} weapon trees of category '{k}'.")
 

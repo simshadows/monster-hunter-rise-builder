@@ -175,36 +175,40 @@ export interface SAStats {
 
 /*** Weapon Mechanics: Charge Blade ***/
 
-export interface CBPhialType {
-    id:   string;
-    name: string;
+export type CBPhialType = "impact_phial" | "element_phial";
+
+export interface CBStats {
+    readonly phialType: CBPhialType;
 }
-export type CBPhialTypeRO = Readonly<CBPhialType>;
 
 /*** Weapon Mechanics: Insect Glaive ***/
 
-export interface IGKinsectType {
-    id:   string;
-    name: string;
-}
-export type IGKinsectTypeRO = Readonly<IGKinsectType>;
+export type KinsectLevel = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;
 
-export interface IGKinsectBonus {
-    id:   string;
-    name: string;
+export interface IGStats {
+    readonly kinsectLevel: KinsectLevel;
 }
-export type IGKinsectBonusRO = Readonly<IGKinsectBonus>;
 
-export interface IGKinsect {
-    id:     number;
-    name:   string;
-    rarity: Rarity;
-
-    attackType:   RawTypeStr;
-    kinsectType:  IGKinsectTypeRO;
-    kinsectBonus: IGKinsectBonusRO;
-}
-export type IGKinsectRO = Readonly<IGKinsect>;
+// Currently unused
+//export interface IGKinsectType {
+//    readonly id:   string;
+//    readonly name: string;
+//}
+//
+//export interface IGKinsectBonus {
+//    readonly id:   string;
+//    readonly name: string;
+//}
+//
+//export interface IGKinsect {
+//    readonly id:     number;
+//    readonly name:   string;
+//    readonly rarity: Rarity;
+//
+//    readonly attackType:   RawTypeStr;
+//    readonly kinsectType:  IGKinsectTypeRO;
+//    readonly kinsectBonus: IGKinsectBonusRO;
+//}
 
 /*** Weapon Mechanics: Bow ***/
 
@@ -274,8 +278,11 @@ export interface Weapon {
     readonly baseSharpness?: Readonly<Sharpness>;
     readonly maxSharpness?:  Readonly<Sharpness>;
 
-    readonly gunlanceStats?:    GLStats;
-    readonly huntinghornSongs?: HHSongs;
+    readonly gunlanceStats?:     GLStats;
+    readonly huntinghornSongs?:  HHSongs;
+    readonly switchaxeStats?:    SAStats;
+    readonly chargebladeStats?:  CBStats;
+    readonly insectglaiveStats?: IGStats;
     //readonly bowStats?: BowStats;
 
     readonly filterHelpers: {
@@ -299,10 +306,12 @@ export interface Longsword      extends MeleeWeapon {readonly category: "longswo
 export interface SwordAndShield extends MeleeWeapon {readonly category: "swordandshield";}
 export interface DualBlades     extends MeleeWeapon {readonly category: "dualblades";    }
 export interface Lance          extends MeleeWeapon {readonly category: "lance";         }
-export interface Gunlance       extends MeleeWeapon {readonly category: "gunlance"; readonly gunlanceStats: GLStats;}
+export interface Gunlance       extends MeleeWeapon {readonly category: "gunlance";     readonly gunlanceStats: GLStats;}
 export interface Hammer         extends MeleeWeapon {readonly category: "hammer";        }
-export interface HuntingHorn    extends MeleeWeapon {readonly category: "huntinghorn"; readonly huntinghornSongs: HHSongs;}
-export interface SwitchAxe      extends MeleeWeapon {readonly category: "switchaxe"; readonly switchaxeStats: SAStats;}
+export interface HuntingHorn    extends MeleeWeapon {readonly category: "huntinghorn";  readonly huntinghornSongs: HHSongs;}
+export interface SwitchAxe      extends MeleeWeapon {readonly category: "switchaxe";    readonly switchaxeStats: SAStats;}
+export interface ChargeBlade    extends MeleeWeapon {readonly category: "chargeblade";  readonly chargebladeStats: CBStats;}
+export interface InsectGlaive   extends MeleeWeapon {readonly category: "insectglaive"; readonly insectglaiveStats: IGStats;}
 
 /*** Armour ***/
 
@@ -411,5 +420,7 @@ export type WeaponMap = {
     readonly hammer:         WeaponMapInner<Hammer        >;
     readonly huntinghorn:    WeaponMapInner<HuntingHorn   >;
     readonly switchaxe:      WeaponMapInner<SwitchAxe     >;
+    readonly chargeblade:    WeaponMapInner<ChargeBlade   >;
+    readonly insectglaive:   WeaponMapInner<InsectGlaive  >;
 };
 

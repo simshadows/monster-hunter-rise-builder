@@ -8,10 +8,12 @@ Processes weapon data to generate the corresponding source file.
 import os
 import json
 
-from weapons_details.sharpness   import generate_sharpness_source_lines
-from weapons_details.gunlance    import generate_gunlance_source_lines
-from weapons_details.huntinghorn import generate_huntinghorn_source_lines
-from weapons_details.switchaxe   import generate_switchaxe_source_lines
+from weapons_details.sharpness    import generate_sharpness_source_lines
+from weapons_details.gunlance     import generate_gunlance_source_lines
+from weapons_details.huntinghorn  import generate_huntinghorn_source_lines
+from weapons_details.switchaxe    import generate_switchaxe_source_lines
+from weapons_details.chargeblade  import generate_chargeblade_source_lines
+from weapons_details.insectglaive import generate_insectglaive_source_lines
 
 from utils import ramp_id_to_object_name, to_name_filter_string
 
@@ -91,6 +93,8 @@ _to_type_ref = {
     "hammer":         "Hammer",
     "huntinghorn":    "HuntingHorn",
     "switchaxe":      "SwitchAxe",
+    "chargeblade":    "ChargeBlade",
+    "insectglaive":   "InsectGlaive",
 }
 
 _melee_weapons = {
@@ -148,6 +152,10 @@ def _get_special_mechanics_str(category, obj):
         entries.append(generate_huntinghorn_source_lines(obj))
     elif category == "switchaxe":
         entries.append(generate_switchaxe_source_lines(obj))
+    elif category == "chargeblade":
+        entries.append(generate_chargeblade_source_lines(obj))
+    elif category == "insectglaive":
+        entries.append(generate_insectglaive_source_lines(obj))
 
     return "".join(f"\n\n{x}" for x in entries)
 

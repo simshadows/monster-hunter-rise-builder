@@ -7,6 +7,7 @@ import {
     type GLShellingType,
     type HHSong,
     type SAPhialType,
+    type CBPhialType,
 } from "./types";
 
 export function toNameFilterString(s: string): string {
@@ -64,6 +65,14 @@ export function saPhialTypeName(s: SAPhialType): string {
         case "paralysis_phial": return "Paralysis Phial";
         case "dragon_phial":    return "Dragon Phial";
         case "exhaust_phial":   return "Exhaust Phial";
+    }
+}
+
+export function cbPhialTypeName(s: CBPhialType): string {
+    switch (s) {
+        default: console.error(`Unexpected value: ${s}`); // Fallthrough for graceful failure
+        case "impact_phial":  return "Impact Phial";
+        case "element_phial": return "Element Phial";
     }
 }
 
