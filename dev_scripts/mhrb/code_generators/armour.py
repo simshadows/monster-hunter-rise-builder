@@ -12,14 +12,14 @@ from utils import skill_id_to_object_name, to_name_filter_string
 
 source_template = """\
 import {{
-    type ArmourSetRO,
+    type ArmourSet,
 }} from "../../common/types";
 
 import {{
 {skill_imports}
 }} from "./_generated_skills";
 
-export const armourSetsArray: Readonly<ArmourSetRO[]> = [
+export const armourSetsArray: Readonly<ArmourSet[]> = [
 {array_entries}
 ];
 """

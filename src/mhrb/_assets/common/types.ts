@@ -43,6 +43,7 @@ export function isMeleeCategory(s: WeaponCategory): s is MeleeWeaponCategory { /
 
 /*** Utility Types ***/
 
+// TODO: Should this become readonly?
 export type Sharpness = [
     number, // red
     number, // orange
@@ -109,11 +110,10 @@ export interface RampageSkill {
 export type WeaponSpecialSelectionType = "lightbowgunmod" | "heavybowgunmod";
 
 export interface WeaponSpecialSelection {
-    id:   number;
-    name: string;
-    type: WeaponSpecialSelectionType;
+    readonly id:   number;
+    readonly name: string;
+    readonly type: WeaponSpecialSelectionType;
 }
-export type WeaponSpecialSelectionRO = Readonly<WeaponSpecialSelection>;
 
 /*** Weapon Mechanics: Gunlance ***/
 
@@ -245,133 +245,120 @@ export type BowgunAmmoTypeRO = Readonly<BowgunAmmoType>;
 
 export interface Weapon {
     // These two IDs uniquely identify each individual weapon.
-    category: WeaponCategory;
-    id:       string;
+    readonly category: WeaponCategory;
+    readonly id:       string;
 
-    name:       string;
-    treeName:   string;
-    rarity:     Rarity;
-    endlineTag: EndlineTag;
+    readonly name:       string;
+    readonly treeName:   string;
+    readonly rarity:     Rarity;
+    readonly endlineTag: EndlineTag;
 
-    attack:    number;
-    affinity:  number;
-    defense:   number;
-    decoSlots: Readonly<DecoSlotsArray>; // TODO: Why is this a different name than the one for armour pieces?
-    eleStat:   Readonly<EleStatMap>;
+    readonly attack:    number;
+    readonly affinity:  number;
+    readonly defense:   number;
+    readonly decoSlots: Readonly<DecoSlotsArray>; // TODO: Why is this a different name than the one for armour pieces?
+    readonly eleStat:   Readonly<EleStatMap>;
 
-    rampSkills: Readonly<
+    readonly rampSkills: Readonly<
         Readonly<
-            Readonly<[RampageSkill, WeaponRO | null]>[]
+            Readonly<[RampageSkill, Weapon | null]>[]
         >[]
     >;
 
-    baseSharpness?: Sharpness;
-    maxSharpness?:  Sharpness;
+    readonly baseSharpness?: Readonly<Sharpness>;
+    readonly maxSharpness?:  Readonly<Sharpness>;
 
-    gunlanceStats?:    GLStats;
-    huntinghornSongs?: HHSongs;
-    //bowStats?: BowStats;
+    readonly gunlanceStats?:    GLStats;
+    readonly huntinghornSongs?: HHSongs;
+    //readonly bowStats?: BowStats;
 
-    filterHelpers: Readonly<{
-        nameLower:     string;
-        treeNameLower: string;
-    }>;
+    readonly filterHelpers: {
+        readonly nameLower:     string;
+        readonly treeNameLower: string;
+    };
 }
-export type WeaponRO = Readonly<Weapon>;
 
 export interface MeleeWeapon extends Weapon {
-    category:      MeleeWeaponCategory;
-    baseSharpness: Sharpness;
-    maxSharpness:  Sharpness;
+    readonly category:      MeleeWeaponCategory;
+    readonly baseSharpness: Readonly<Sharpness>;
+    readonly maxSharpness:  Readonly<Sharpness>;
 }
-export type MeleeWeaponRO = Readonly<MeleeWeapon>;
 
-export function isMeleeRO(obj: WeaponRO): obj is MeleeWeaponRO { // DANGER: RETURNS TYPE PREDICATE
+export function isMelee(obj: Weapon): obj is MeleeWeapon { // DANGER: RETURNS TYPE PREDICATE
     return isMeleeCategory(obj.category);
 }
 
-export interface Greatsword     extends MeleeWeapon {category: "greatsword";    }
-export interface Longsword      extends MeleeWeapon {category: "longsword";     }
-export interface SwordAndShield extends MeleeWeapon {category: "swordandshield";}
-export interface DualBlades     extends MeleeWeapon {category: "dualblades";    }
-export interface Lance          extends MeleeWeapon {category: "lance";         }
-export interface Gunlance       extends MeleeWeapon {category: "gunlance"; gunlanceStats: GLStats;}
-export interface Hammer         extends MeleeWeapon {category: "hammer";        }
-export interface HuntingHorn    extends MeleeWeapon {category: "huntinghorn"; huntinghornSongs: HHSongs;}
-export type GreatswordRO     = Readonly<Greatsword    >;
-export type LongswordRO      = Readonly<Longsword     >;
-export type SwordAndShieldRO = Readonly<SwordAndShield>;
-export type DualBladesRO     = Readonly<DualBlades    >;
-export type LanceRO          = Readonly<Lance         >;
-export type GunlanceRO       = Readonly<Gunlance      >;
-export type HammerRO         = Readonly<Hammer        >;
-export type HuntingHornRO    = Readonly<HuntingHorn   >;
+export interface Greatsword     extends MeleeWeapon {readonly category: "greatsword";    }
+export interface Longsword      extends MeleeWeapon {readonly category: "longsword";     }
+export interface SwordAndShield extends MeleeWeapon {readonly category: "swordandshield";}
+export interface DualBlades     extends MeleeWeapon {readonly category: "dualblades";    }
+export interface Lance          extends MeleeWeapon {readonly category: "lance";         }
+export interface Gunlance       extends MeleeWeapon {readonly category: "gunlance"; readonly gunlanceStats: GLStats;}
+export interface Hammer         extends MeleeWeapon {readonly category: "hammer";        }
+export interface HuntingHorn    extends MeleeWeapon {readonly category: "huntinghorn"; readonly huntinghornSongs: HHSongs;}
 
 /*** Armour ***/
 
 export interface ArmourPiece {
     // These two IDs uniquely identify each individual armour set.
-    setID:  number;
-    slotID: ArmourSlot;
+    readonly setID:  number;
+    readonly slotID: ArmourSlot;
 
-    setName: string;
-    name:    string;
-    rarity:  Rarity;
-    tierID:  Tier;
-    decorationSlots: Readonly<DecoSlotsArray>;
-    skills:  Readonly<SkillLevels>;
+    readonly setName: string;
+    readonly name:    string;
+    readonly rarity:  Rarity;
+    readonly tierID:  Tier;
+    readonly decorationSlots: Readonly<DecoSlotsArray>;
+    readonly skills:  Readonly<SkillLevels>;
     
-    defenseAtLevel1: number;
+    readonly defenseAtLevel1: number;
 
-    fireRes:    number;
-    waterRes:   number;
-    thunderRes: number;
-    iceRes:     number;
-    dragonRes:  number;
+    readonly fireRes:    number;
+    readonly waterRes:   number;
+    readonly thunderRes: number;
+    readonly iceRes:     number;
+    readonly dragonRes:  number;
 
-    filterHelpers: Readonly<{
-        nameLower:    string;
-        setNameLower: string;
-        hintStrLower: string;
-    }>;
+    readonly filterHelpers: {
+        readonly nameLower:    string;
+        readonly setNameLower: string;
+        readonly hintStrLower: string;
+    };
 }
-export type ArmourPieceRO = Readonly<ArmourPiece>;
 
 export interface ArmourSet {
-    id:    number;
-    name:  string;
-    head:  ArmourPieceRO | undefined;
-    chest: ArmourPieceRO | undefined;
-    arms:  ArmourPieceRO | undefined;
-    waist: ArmourPieceRO | undefined;
-    legs:  ArmourPieceRO | undefined;
+    readonly id:    number;
+    readonly name:  string;
+    readonly head:  ArmourPiece | undefined;
+    readonly chest: ArmourPiece | undefined;
+    readonly arms:  ArmourPiece | undefined;
+    readonly waist: ArmourPiece | undefined;
+    readonly legs:  ArmourPiece | undefined;
 }
-export type ArmourSetRO = Readonly<ArmourSet>;
 
 /*** Petalace ***/
 
 export interface Petalace {
-    id:   string;
-    name: string;
+    readonly id:   string;
+    readonly name: string;
 
-    endlineTag:  EndlineTag;
-    rarity:      Rarity;
+    readonly endlineTag:  EndlineTag;
+    readonly rarity:      Rarity;
 
-    healthUp:    number;
-    healthGain:  number;
-    staminaUp:   number;
-    staminaGain: number;
-    attackUp:    number;
-    attackGain:  number;
-    defenseUp:   number;
-    defenseGain: number;
+    readonly healthUp:    number;
+    readonly healthGain:  number;
+    readonly staminaUp:   number;
+    readonly staminaGain: number;
+    readonly attackUp:    number;
+    readonly attackGain:  number;
+    readonly defenseUp:   number;
+    readonly defenseGain: number;
 
-    iconImgPath: string;
-    filterHelpers: Readonly<{
-        nameLower: string;
-    }>;
+    readonly iconImgPath: string;
+    readonly filterHelpers: {
+        readonly nameLower: string;
+    };
 }
-export type PetalaceRO = Readonly<Petalace>;
 
 /*** Decorations ***/
 
@@ -408,13 +395,13 @@ export interface Decoration {
 type WeaponMapInner<W> = FrozenMap<string, W>;
 
 export type WeaponMap = {
-    readonly greatsword:     WeaponMapInner<GreatswordRO    >;
-    readonly longsword:      WeaponMapInner<LongswordRO     >;
-    readonly swordandshield: WeaponMapInner<SwordAndShieldRO>;
-    readonly dualblades:     WeaponMapInner<DualBladesRO    >;
-    readonly lance:          WeaponMapInner<LanceRO         >;
-    readonly gunlance:       WeaponMapInner<GunlanceRO      >;
-    readonly hammer:         WeaponMapInner<HammerRO        >;
-    readonly huntinghorn:    WeaponMapInner<HuntingHornRO   >;
+    readonly greatsword:     WeaponMapInner<Greatsword    >;
+    readonly longsword:      WeaponMapInner<Longsword     >;
+    readonly swordandshield: WeaponMapInner<SwordAndShield>;
+    readonly dualblades:     WeaponMapInner<DualBlades    >;
+    readonly lance:          WeaponMapInner<Lance         >;
+    readonly gunlance:       WeaponMapInner<Gunlance      >;
+    readonly hammer:         WeaponMapInner<Hammer        >;
+    readonly huntinghorn:    WeaponMapInner<HuntingHorn   >;
 };
 

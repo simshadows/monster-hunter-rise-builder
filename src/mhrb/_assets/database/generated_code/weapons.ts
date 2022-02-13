@@ -19,21 +19,21 @@ import {
 } from "../../generic/frozen-containers";
 
 import {
-    type WeaponRO,
-    type MeleeWeaponRO,
+    type Weapon,
+    type MeleeWeapon,
     
-    type GreatswordRO,
-    type LongswordRO,
-    type SwordAndShieldRO,
-    type DualBladesRO,
-    type LanceRO,
-    type GunlanceRO,
-    type HammerRO,
-    type HuntingHornRO,
+    type Greatsword,
+    type Longsword,
+    type SwordAndShield,
+    type DualBlades,
+    type Lance,
+    type Gunlance,
+    type Hammer,
+    type HuntingHorn,
 
     type WeaponMap,
 
-    isMeleeRO, // Type Predicate
+    isMelee, // Type Predicate
 } from "../../common/types";
 import {
     toNameFilterString,
@@ -51,7 +51,7 @@ import {gunlancesArray      } from "./_generated_weapon_gunlance";
 import {hammersArray        } from "./_generated_weapon_hammer";
 import {huntinghornsArray   } from "./_generated_weapon_huntinghorn";
 
-function validateMeleeWeapon(w: MeleeWeaponRO): void {
+function validateMeleeWeapon(w: MeleeWeapon): void {
     const baseSum = sumArray(w.baseSharpness);
     const maxSum = sumArray(w.maxSharpness);
 
@@ -79,7 +79,7 @@ function validateMeleeWeapon(w: MeleeWeaponRO): void {
     }
 }
 
-function processWeapon<W extends WeaponRO>(arr: Readonly<W[]>): FrozenMap<string, W> {
+function processWeapon<W extends Weapon>(arr: Readonly<W[]>): FrozenMap<string, W> {
     return populate<W>(
         arr,
         (obj) => {
@@ -101,21 +101,21 @@ function processWeapon<W extends WeaponRO>(arr: Readonly<W[]>): FrozenMap<string
             console.assert(obj.filterHelpers.treeNameLower !== "");
             console.assert(obj.filterHelpers.treeNameLower === toNameFilterString(obj.treeName));
 
-            if (isMeleeRO(obj)) validateMeleeWeapon(obj);
+            if (isMelee(obj)) validateMeleeWeapon(obj);
             return obj;
         },
     );
 }
 
 const weaponsMap: Readonly<WeaponMap> = {
-    greatsword:     processWeapon<GreatswordRO    >(greatswordsArray    ),
-    longsword:      processWeapon<LongswordRO     >(longswordsArray     ),
-    swordandshield: processWeapon<SwordAndShieldRO>(swordandshieldsArray),
-    dualblades:     processWeapon<DualBladesRO    >(dualbladessArray    ),
-    lance:          processWeapon<LanceRO         >(lancesArray         ),
-    gunlance:       processWeapon<GunlanceRO      >(gunlancesArray      ),
-    hammer:         processWeapon<HammerRO        >(hammersArray        ),
-    huntinghorn:    processWeapon<HuntingHornRO   >(huntinghornsArray   ),
+    greatsword:     processWeapon<Greatsword    >(greatswordsArray    ),
+    longsword:      processWeapon<Longsword     >(longswordsArray     ),
+    swordandshield: processWeapon<SwordAndShield>(swordandshieldsArray),
+    dualblades:     processWeapon<DualBlades    >(dualbladessArray    ),
+    lance:          processWeapon<Lance         >(lancesArray         ),
+    gunlance:       processWeapon<Gunlance      >(gunlancesArray      ),
+    hammer:         processWeapon<Hammer        >(hammersArray        ),
+    huntinghorn:    processWeapon<HuntingHorn   >(huntinghornsArray   ),
 };
 
 export {

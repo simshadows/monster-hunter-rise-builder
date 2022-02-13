@@ -37,7 +37,7 @@
 
 import {
     type EleStatStr,
-    type HuntingHornRO,
+    type HuntingHorn,
 } from "../../common/types";
 import {
     FrozenMap,
@@ -152,7 +152,7 @@ import {
     __generated_ramp__wyvern_exploit,
 } from "./_generated_rampage_skills";
 
-const __generated_huntinghorn__1a: HuntingHornRO = {
+const __generated_huntinghorn__1a: HuntingHorn = {
     category: "huntinghorn",
     id: "1a",
 
@@ -190,7 +190,7 @@ const __generated_huntinghorn__1a: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__1b: HuntingHornRO = {
+const __generated_huntinghorn__1b: HuntingHorn = {
     category: "huntinghorn",
     id: "1b",
 
@@ -228,7 +228,7 @@ const __generated_huntinghorn__1b: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__1c: HuntingHornRO = {
+const __generated_huntinghorn__1c: HuntingHorn = {
     category: "huntinghorn",
     id: "1c",
 
@@ -267,7 +267,7 @@ const __generated_huntinghorn__1c: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__1d: HuntingHornRO = {
+const __generated_huntinghorn__1d: HuntingHorn = {
     category: "huntinghorn",
     id: "1d",
 
@@ -307,7 +307,7 @@ const __generated_huntinghorn__1d: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__1e: HuntingHornRO = {
+const __generated_huntinghorn__1e: HuntingHorn = {
     category: "huntinghorn",
     id: "1e",
 
@@ -349,7 +349,7 @@ const __generated_huntinghorn__1e: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__1f: HuntingHornRO = {
+const __generated_huntinghorn__1f: HuntingHorn = {
     category: "huntinghorn",
     id: "1f",
 
@@ -392,7 +392,7 @@ const __generated_huntinghorn__1f: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__2a: HuntingHornRO = {
+const __generated_huntinghorn__2a: HuntingHorn = {
     category: "huntinghorn",
     id: "2a",
 
@@ -434,7 +434,7 @@ const __generated_huntinghorn__2a: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__2b: HuntingHornRO = {
+const __generated_huntinghorn__2b: HuntingHorn = {
     category: "huntinghorn",
     id: "2b",
 
@@ -477,7 +477,7 @@ const __generated_huntinghorn__2b: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__2c: HuntingHornRO = {
+const __generated_huntinghorn__2c: HuntingHorn = {
     category: "huntinghorn",
     id: "2c",
 
@@ -521,7 +521,7 @@ const __generated_huntinghorn__2c: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__3a: HuntingHornRO = {
+const __generated_huntinghorn__3a: HuntingHorn = {
     category: "huntinghorn",
     id: "3a",
 
@@ -567,7 +567,7 @@ const __generated_huntinghorn__3a: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__3b: HuntingHornRO = {
+const __generated_huntinghorn__3b: HuntingHorn = {
     category: "huntinghorn",
     id: "3b",
 
@@ -614,7 +614,7 @@ const __generated_huntinghorn__3b: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__3c: HuntingHornRO = {
+const __generated_huntinghorn__3c: HuntingHorn = {
     category: "huntinghorn",
     id: "3c",
 
@@ -662,7 +662,7 @@ const __generated_huntinghorn__3c: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__4a: HuntingHornRO = {
+const __generated_huntinghorn__4a: HuntingHorn = {
     category: "huntinghorn",
     id: "4a",
 
@@ -703,7 +703,7 @@ const __generated_huntinghorn__4a: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__4b: HuntingHornRO = {
+const __generated_huntinghorn__4b: HuntingHorn = {
     category: "huntinghorn",
     id: "4b",
 
@@ -745,7 +745,7 @@ const __generated_huntinghorn__4b: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__4c: HuntingHornRO = {
+const __generated_huntinghorn__4c: HuntingHorn = {
     category: "huntinghorn",
     id: "4c",
 
@@ -788,7 +788,7 @@ const __generated_huntinghorn__4c: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__5a: HuntingHornRO = {
+const __generated_huntinghorn__5a: HuntingHorn = {
     category: "huntinghorn",
     id: "5a",
 
@@ -831,7 +831,7 @@ const __generated_huntinghorn__5a: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__5b: HuntingHornRO = {
+const __generated_huntinghorn__5b: HuntingHorn = {
     category: "huntinghorn",
     id: "5b",
 
@@ -875,7 +875,7 @@ const __generated_huntinghorn__5b: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__5c: HuntingHornRO = {
+const __generated_huntinghorn__5c: HuntingHorn = {
     category: "huntinghorn",
     id: "5c",
 
@@ -920,7 +920,7 @@ const __generated_huntinghorn__5c: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__6a: HuntingHornRO = {
+const __generated_huntinghorn__6a: HuntingHorn = {
     category: "huntinghorn",
     id: "6a",
 
@@ -959,7 +959,7 @@ const __generated_huntinghorn__6a: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__6b: HuntingHornRO = {
+const __generated_huntinghorn__6b: HuntingHorn = {
     category: "huntinghorn",
     id: "6b",
 
@@ -999,7 +999,7 @@ const __generated_huntinghorn__6b: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__6c: HuntingHornRO = {
+const __generated_huntinghorn__6c: HuntingHorn = {
     category: "huntinghorn",
     id: "6c",
 
@@ -1042,7 +1042,7 @@ const __generated_huntinghorn__6c: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__7a: HuntingHornRO = {
+const __generated_huntinghorn__7a: HuntingHorn = {
     category: "huntinghorn",
     id: "7a",
 
@@ -1084,7 +1084,7 @@ const __generated_huntinghorn__7a: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__7b: HuntingHornRO = {
+const __generated_huntinghorn__7b: HuntingHorn = {
     category: "huntinghorn",
     id: "7b",
 
@@ -1126,7 +1126,7 @@ const __generated_huntinghorn__7b: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__7c: HuntingHornRO = {
+const __generated_huntinghorn__7c: HuntingHorn = {
     category: "huntinghorn",
     id: "7c",
 
@@ -1169,7 +1169,7 @@ const __generated_huntinghorn__7c: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__8a: HuntingHornRO = {
+const __generated_huntinghorn__8a: HuntingHorn = {
     category: "huntinghorn",
     id: "8a",
 
@@ -1210,7 +1210,7 @@ const __generated_huntinghorn__8a: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__8b: HuntingHornRO = {
+const __generated_huntinghorn__8b: HuntingHorn = {
     category: "huntinghorn",
     id: "8b",
 
@@ -1252,7 +1252,7 @@ const __generated_huntinghorn__8b: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__8c: HuntingHornRO = {
+const __generated_huntinghorn__8c: HuntingHorn = {
     category: "huntinghorn",
     id: "8c",
 
@@ -1295,7 +1295,7 @@ const __generated_huntinghorn__8c: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__9a: HuntingHornRO = {
+const __generated_huntinghorn__9a: HuntingHorn = {
     category: "huntinghorn",
     id: "9a",
 
@@ -1336,7 +1336,7 @@ const __generated_huntinghorn__9a: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__9b: HuntingHornRO = {
+const __generated_huntinghorn__9b: HuntingHorn = {
     category: "huntinghorn",
     id: "9b",
 
@@ -1378,7 +1378,7 @@ const __generated_huntinghorn__9b: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__9c: HuntingHornRO = {
+const __generated_huntinghorn__9c: HuntingHorn = {
     category: "huntinghorn",
     id: "9c",
 
@@ -1421,7 +1421,7 @@ const __generated_huntinghorn__9c: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__10a: HuntingHornRO = {
+const __generated_huntinghorn__10a: HuntingHorn = {
     category: "huntinghorn",
     id: "10a",
 
@@ -1459,7 +1459,7 @@ const __generated_huntinghorn__10a: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__10b: HuntingHornRO = {
+const __generated_huntinghorn__10b: HuntingHorn = {
     category: "huntinghorn",
     id: "10b",
 
@@ -1497,7 +1497,7 @@ const __generated_huntinghorn__10b: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__10c: HuntingHornRO = {
+const __generated_huntinghorn__10c: HuntingHorn = {
     category: "huntinghorn",
     id: "10c",
 
@@ -1536,7 +1536,7 @@ const __generated_huntinghorn__10c: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__10d: HuntingHornRO = {
+const __generated_huntinghorn__10d: HuntingHorn = {
     category: "huntinghorn",
     id: "10d",
 
@@ -1575,7 +1575,7 @@ const __generated_huntinghorn__10d: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__10e: HuntingHornRO = {
+const __generated_huntinghorn__10e: HuntingHorn = {
     category: "huntinghorn",
     id: "10e",
 
@@ -1616,7 +1616,7 @@ const __generated_huntinghorn__10e: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__10f: HuntingHornRO = {
+const __generated_huntinghorn__10f: HuntingHorn = {
     category: "huntinghorn",
     id: "10f",
 
@@ -1658,7 +1658,7 @@ const __generated_huntinghorn__10f: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__11a: HuntingHornRO = {
+const __generated_huntinghorn__11a: HuntingHorn = {
     category: "huntinghorn",
     id: "11a",
 
@@ -1700,7 +1700,7 @@ const __generated_huntinghorn__11a: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__11b: HuntingHornRO = {
+const __generated_huntinghorn__11b: HuntingHorn = {
     category: "huntinghorn",
     id: "11b",
 
@@ -1743,7 +1743,7 @@ const __generated_huntinghorn__11b: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__11c: HuntingHornRO = {
+const __generated_huntinghorn__11c: HuntingHorn = {
     category: "huntinghorn",
     id: "11c",
 
@@ -1787,7 +1787,7 @@ const __generated_huntinghorn__11c: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__12a: HuntingHornRO = {
+const __generated_huntinghorn__12a: HuntingHorn = {
     category: "huntinghorn",
     id: "12a",
 
@@ -1828,7 +1828,7 @@ const __generated_huntinghorn__12a: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__12b: HuntingHornRO = {
+const __generated_huntinghorn__12b: HuntingHorn = {
     category: "huntinghorn",
     id: "12b",
 
@@ -1870,7 +1870,7 @@ const __generated_huntinghorn__12b: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__12c: HuntingHornRO = {
+const __generated_huntinghorn__12c: HuntingHorn = {
     category: "huntinghorn",
     id: "12c",
 
@@ -1913,7 +1913,7 @@ const __generated_huntinghorn__12c: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__13a: HuntingHornRO = {
+const __generated_huntinghorn__13a: HuntingHorn = {
     category: "huntinghorn",
     id: "13a",
 
@@ -1957,7 +1957,7 @@ const __generated_huntinghorn__13a: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__13b: HuntingHornRO = {
+const __generated_huntinghorn__13b: HuntingHorn = {
     category: "huntinghorn",
     id: "13b",
 
@@ -2002,7 +2002,7 @@ const __generated_huntinghorn__13b: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__13c: HuntingHornRO = {
+const __generated_huntinghorn__13c: HuntingHorn = {
     category: "huntinghorn",
     id: "13c",
 
@@ -2049,7 +2049,7 @@ const __generated_huntinghorn__13c: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__14a: HuntingHornRO = {
+const __generated_huntinghorn__14a: HuntingHorn = {
     category: "huntinghorn",
     id: "14a",
 
@@ -2090,7 +2090,7 @@ const __generated_huntinghorn__14a: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__14b: HuntingHornRO = {
+const __generated_huntinghorn__14b: HuntingHorn = {
     category: "huntinghorn",
     id: "14b",
 
@@ -2131,7 +2131,7 @@ const __generated_huntinghorn__14b: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__14c: HuntingHornRO = {
+const __generated_huntinghorn__14c: HuntingHorn = {
     category: "huntinghorn",
     id: "14c",
 
@@ -2173,7 +2173,7 @@ const __generated_huntinghorn__14c: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__15a: HuntingHornRO = {
+const __generated_huntinghorn__15a: HuntingHorn = {
     category: "huntinghorn",
     id: "15a",
 
@@ -2213,7 +2213,7 @@ const __generated_huntinghorn__15a: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__15b: HuntingHornRO = {
+const __generated_huntinghorn__15b: HuntingHorn = {
     category: "huntinghorn",
     id: "15b",
 
@@ -2253,7 +2253,7 @@ const __generated_huntinghorn__15b: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__15c: HuntingHornRO = {
+const __generated_huntinghorn__15c: HuntingHorn = {
     category: "huntinghorn",
     id: "15c",
 
@@ -2294,7 +2294,7 @@ const __generated_huntinghorn__15c: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__16a: HuntingHornRO = {
+const __generated_huntinghorn__16a: HuntingHorn = {
     category: "huntinghorn",
     id: "16a",
 
@@ -2335,7 +2335,7 @@ const __generated_huntinghorn__16a: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__16b: HuntingHornRO = {
+const __generated_huntinghorn__16b: HuntingHorn = {
     category: "huntinghorn",
     id: "16b",
 
@@ -2377,7 +2377,7 @@ const __generated_huntinghorn__16b: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__16c: HuntingHornRO = {
+const __generated_huntinghorn__16c: HuntingHorn = {
     category: "huntinghorn",
     id: "16c",
 
@@ -2420,7 +2420,7 @@ const __generated_huntinghorn__16c: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__17a: HuntingHornRO = {
+const __generated_huntinghorn__17a: HuntingHorn = {
     category: "huntinghorn",
     id: "17a",
 
@@ -2460,7 +2460,7 @@ const __generated_huntinghorn__17a: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__17b: HuntingHornRO = {
+const __generated_huntinghorn__17b: HuntingHorn = {
     category: "huntinghorn",
     id: "17b",
 
@@ -2501,7 +2501,7 @@ const __generated_huntinghorn__17b: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__17c: HuntingHornRO = {
+const __generated_huntinghorn__17c: HuntingHorn = {
     category: "huntinghorn",
     id: "17c",
 
@@ -2543,7 +2543,7 @@ const __generated_huntinghorn__17c: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__18a: HuntingHornRO = {
+const __generated_huntinghorn__18a: HuntingHorn = {
     category: "huntinghorn",
     id: "18a",
 
@@ -2586,7 +2586,7 @@ const __generated_huntinghorn__18a: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__18b: HuntingHornRO = {
+const __generated_huntinghorn__18b: HuntingHorn = {
     category: "huntinghorn",
     id: "18b",
 
@@ -2629,7 +2629,7 @@ const __generated_huntinghorn__18b: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__18c: HuntingHornRO = {
+const __generated_huntinghorn__18c: HuntingHorn = {
     category: "huntinghorn",
     id: "18c",
 
@@ -2674,7 +2674,7 @@ const __generated_huntinghorn__18c: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__19a: HuntingHornRO = {
+const __generated_huntinghorn__19a: HuntingHorn = {
     category: "huntinghorn",
     id: "19a",
 
@@ -2712,7 +2712,7 @@ const __generated_huntinghorn__19a: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__19b: HuntingHornRO = {
+const __generated_huntinghorn__19b: HuntingHorn = {
     category: "huntinghorn",
     id: "19b",
 
@@ -2750,7 +2750,7 @@ const __generated_huntinghorn__19b: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__19c: HuntingHornRO = {
+const __generated_huntinghorn__19c: HuntingHorn = {
     category: "huntinghorn",
     id: "19c",
 
@@ -2789,7 +2789,7 @@ const __generated_huntinghorn__19c: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__19d: HuntingHornRO = {
+const __generated_huntinghorn__19d: HuntingHorn = {
     category: "huntinghorn",
     id: "19d",
 
@@ -2830,7 +2830,7 @@ const __generated_huntinghorn__19d: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__19e: HuntingHornRO = {
+const __generated_huntinghorn__19e: HuntingHorn = {
     category: "huntinghorn",
     id: "19e",
 
@@ -2872,7 +2872,7 @@ const __generated_huntinghorn__19e: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__20a: HuntingHornRO = {
+const __generated_huntinghorn__20a: HuntingHorn = {
     category: "huntinghorn",
     id: "20a",
 
@@ -2914,7 +2914,7 @@ const __generated_huntinghorn__20a: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__20b: HuntingHornRO = {
+const __generated_huntinghorn__20b: HuntingHorn = {
     category: "huntinghorn",
     id: "20b",
 
@@ -2957,7 +2957,7 @@ const __generated_huntinghorn__20b: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__20c: HuntingHornRO = {
+const __generated_huntinghorn__20c: HuntingHorn = {
     category: "huntinghorn",
     id: "20c",
 
@@ -3001,7 +3001,7 @@ const __generated_huntinghorn__20c: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__21a: HuntingHornRO = {
+const __generated_huntinghorn__21a: HuntingHorn = {
     category: "huntinghorn",
     id: "21a",
 
@@ -3042,7 +3042,7 @@ const __generated_huntinghorn__21a: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__21b: HuntingHornRO = {
+const __generated_huntinghorn__21b: HuntingHorn = {
     category: "huntinghorn",
     id: "21b",
 
@@ -3084,7 +3084,7 @@ const __generated_huntinghorn__21b: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__21c: HuntingHornRO = {
+const __generated_huntinghorn__21c: HuntingHorn = {
     category: "huntinghorn",
     id: "21c",
 
@@ -3127,7 +3127,7 @@ const __generated_huntinghorn__21c: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__22a: HuntingHornRO = {
+const __generated_huntinghorn__22a: HuntingHorn = {
     category: "huntinghorn",
     id: "22a",
 
@@ -3167,7 +3167,7 @@ const __generated_huntinghorn__22a: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__22b: HuntingHornRO = {
+const __generated_huntinghorn__22b: HuntingHorn = {
     category: "huntinghorn",
     id: "22b",
 
@@ -3207,7 +3207,7 @@ const __generated_huntinghorn__22b: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__22c: HuntingHornRO = {
+const __generated_huntinghorn__22c: HuntingHorn = {
     category: "huntinghorn",
     id: "22c",
 
@@ -3248,7 +3248,7 @@ const __generated_huntinghorn__22c: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__23a: HuntingHornRO = {
+const __generated_huntinghorn__23a: HuntingHorn = {
     category: "huntinghorn",
     id: "23a",
 
@@ -3289,7 +3289,7 @@ const __generated_huntinghorn__23a: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__23b: HuntingHornRO = {
+const __generated_huntinghorn__23b: HuntingHorn = {
     category: "huntinghorn",
     id: "23b",
 
@@ -3330,7 +3330,7 @@ const __generated_huntinghorn__23b: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__23c: HuntingHornRO = {
+const __generated_huntinghorn__23c: HuntingHorn = {
     category: "huntinghorn",
     id: "23c",
 
@@ -3372,7 +3372,7 @@ const __generated_huntinghorn__23c: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__24a: HuntingHornRO = {
+const __generated_huntinghorn__24a: HuntingHorn = {
     category: "huntinghorn",
     id: "24a",
 
@@ -3412,7 +3412,7 @@ const __generated_huntinghorn__24a: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__24b: HuntingHornRO = {
+const __generated_huntinghorn__24b: HuntingHorn = {
     category: "huntinghorn",
     id: "24b",
 
@@ -3453,7 +3453,7 @@ const __generated_huntinghorn__24b: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__24c: HuntingHornRO = {
+const __generated_huntinghorn__24c: HuntingHorn = {
     category: "huntinghorn",
     id: "24c",
 
@@ -3496,7 +3496,7 @@ const __generated_huntinghorn__24c: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__25a: HuntingHornRO = {
+const __generated_huntinghorn__25a: HuntingHorn = {
     category: "huntinghorn",
     id: "25a",
 
@@ -3534,7 +3534,7 @@ const __generated_huntinghorn__25a: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__25b: HuntingHornRO = {
+const __generated_huntinghorn__25b: HuntingHorn = {
     category: "huntinghorn",
     id: "25b",
 
@@ -3573,7 +3573,7 @@ const __generated_huntinghorn__25b: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__25c: HuntingHornRO = {
+const __generated_huntinghorn__25c: HuntingHorn = {
     category: "huntinghorn",
     id: "25c",
 
@@ -3613,7 +3613,7 @@ const __generated_huntinghorn__25c: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__25d: HuntingHornRO = {
+const __generated_huntinghorn__25d: HuntingHorn = {
     category: "huntinghorn",
     id: "25d",
 
@@ -3654,7 +3654,7 @@ const __generated_huntinghorn__25d: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__25e: HuntingHornRO = {
+const __generated_huntinghorn__25e: HuntingHorn = {
     category: "huntinghorn",
     id: "25e",
 
@@ -3696,7 +3696,7 @@ const __generated_huntinghorn__25e: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__25f: HuntingHornRO = {
+const __generated_huntinghorn__25f: HuntingHorn = {
     category: "huntinghorn",
     id: "25f",
 
@@ -3739,7 +3739,7 @@ const __generated_huntinghorn__25f: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__26a: HuntingHornRO = {
+const __generated_huntinghorn__26a: HuntingHorn = {
     category: "huntinghorn",
     id: "26a",
 
@@ -3779,7 +3779,7 @@ const __generated_huntinghorn__26a: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__26b: HuntingHornRO = {
+const __generated_huntinghorn__26b: HuntingHorn = {
     category: "huntinghorn",
     id: "26b",
 
@@ -3820,7 +3820,7 @@ const __generated_huntinghorn__26b: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__26c: HuntingHornRO = {
+const __generated_huntinghorn__26c: HuntingHorn = {
     category: "huntinghorn",
     id: "26c",
 
@@ -3862,7 +3862,7 @@ const __generated_huntinghorn__26c: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__27a: HuntingHornRO = {
+const __generated_huntinghorn__27a: HuntingHorn = {
     category: "huntinghorn",
     id: "27a",
 
@@ -3901,7 +3901,7 @@ const __generated_huntinghorn__27a: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__27b: HuntingHornRO = {
+const __generated_huntinghorn__27b: HuntingHorn = {
     category: "huntinghorn",
     id: "27b",
 
@@ -3942,7 +3942,7 @@ const __generated_huntinghorn__27b: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__27c: HuntingHornRO = {
+const __generated_huntinghorn__27c: HuntingHorn = {
     category: "huntinghorn",
     id: "27c",
 
@@ -3985,7 +3985,7 @@ const __generated_huntinghorn__27c: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__28a: HuntingHornRO = {
+const __generated_huntinghorn__28a: HuntingHorn = {
     category: "huntinghorn",
     id: "28a",
 
@@ -4023,7 +4023,7 @@ const __generated_huntinghorn__28a: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__28b: HuntingHornRO = {
+const __generated_huntinghorn__28b: HuntingHorn = {
     category: "huntinghorn",
     id: "28b",
 
@@ -4062,7 +4062,7 @@ const __generated_huntinghorn__28b: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__28c: HuntingHornRO = {
+const __generated_huntinghorn__28c: HuntingHorn = {
     category: "huntinghorn",
     id: "28c",
 
@@ -4102,7 +4102,7 @@ const __generated_huntinghorn__28c: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__29a: HuntingHornRO = {
+const __generated_huntinghorn__29a: HuntingHorn = {
     category: "huntinghorn",
     id: "29a",
 
@@ -4140,7 +4140,7 @@ const __generated_huntinghorn__29a: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__29b: HuntingHornRO = {
+const __generated_huntinghorn__29b: HuntingHorn = {
     category: "huntinghorn",
     id: "29b",
 
@@ -4178,7 +4178,7 @@ const __generated_huntinghorn__29b: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__29c: HuntingHornRO = {
+const __generated_huntinghorn__29c: HuntingHorn = {
     category: "huntinghorn",
     id: "29c",
 
@@ -4217,7 +4217,7 @@ const __generated_huntinghorn__29c: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__30a: HuntingHornRO = {
+const __generated_huntinghorn__30a: HuntingHorn = {
     category: "huntinghorn",
     id: "30a",
 
@@ -4255,7 +4255,7 @@ const __generated_huntinghorn__30a: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__30b: HuntingHornRO = {
+const __generated_huntinghorn__30b: HuntingHorn = {
     category: "huntinghorn",
     id: "30b",
 
@@ -4294,7 +4294,7 @@ const __generated_huntinghorn__30b: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__30c: HuntingHornRO = {
+const __generated_huntinghorn__30c: HuntingHorn = {
     category: "huntinghorn",
     id: "30c",
 
@@ -4334,7 +4334,7 @@ const __generated_huntinghorn__30c: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__31a: HuntingHornRO = {
+const __generated_huntinghorn__31a: HuntingHorn = {
     category: "huntinghorn",
     id: "31a",
 
@@ -4372,7 +4372,7 @@ const __generated_huntinghorn__31a: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__31b: HuntingHornRO = {
+const __generated_huntinghorn__31b: HuntingHorn = {
     category: "huntinghorn",
     id: "31b",
 
@@ -4411,7 +4411,7 @@ const __generated_huntinghorn__31b: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__32a: HuntingHornRO = {
+const __generated_huntinghorn__32a: HuntingHorn = {
     category: "huntinghorn",
     id: "32a",
 
@@ -4449,7 +4449,7 @@ const __generated_huntinghorn__32a: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__32b: HuntingHornRO = {
+const __generated_huntinghorn__32b: HuntingHorn = {
     category: "huntinghorn",
     id: "32b",
 
@@ -4487,7 +4487,7 @@ const __generated_huntinghorn__32b: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__32c: HuntingHornRO = {
+const __generated_huntinghorn__32c: HuntingHorn = {
     category: "huntinghorn",
     id: "32c",
 
@@ -4527,7 +4527,7 @@ const __generated_huntinghorn__32c: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__33a: HuntingHornRO = {
+const __generated_huntinghorn__33a: HuntingHorn = {
     category: "huntinghorn",
     id: "33a",
 
@@ -4565,7 +4565,7 @@ const __generated_huntinghorn__33a: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__33b: HuntingHornRO = {
+const __generated_huntinghorn__33b: HuntingHorn = {
     category: "huntinghorn",
     id: "33b",
 
@@ -4605,7 +4605,7 @@ const __generated_huntinghorn__33b: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__34a: HuntingHornRO = {
+const __generated_huntinghorn__34a: HuntingHorn = {
     category: "huntinghorn",
     id: "34a",
 
@@ -4643,7 +4643,7 @@ const __generated_huntinghorn__34a: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__34b: HuntingHornRO = {
+const __generated_huntinghorn__34b: HuntingHorn = {
     category: "huntinghorn",
     id: "34b",
 
@@ -4682,7 +4682,7 @@ const __generated_huntinghorn__34b: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__35a: HuntingHornRO = {
+const __generated_huntinghorn__35a: HuntingHorn = {
     category: "huntinghorn",
     id: "35a",
 
@@ -4720,7 +4720,7 @@ const __generated_huntinghorn__35a: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__35b: HuntingHornRO = {
+const __generated_huntinghorn__35b: HuntingHorn = {
     category: "huntinghorn",
     id: "35b",
 
@@ -4759,7 +4759,7 @@ const __generated_huntinghorn__35b: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__36a: HuntingHornRO = {
+const __generated_huntinghorn__36a: HuntingHorn = {
     category: "huntinghorn",
     id: "36a",
 
@@ -4797,7 +4797,7 @@ const __generated_huntinghorn__36a: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__36b: HuntingHornRO = {
+const __generated_huntinghorn__36b: HuntingHorn = {
     category: "huntinghorn",
     id: "36b",
 
@@ -4835,7 +4835,7 @@ const __generated_huntinghorn__36b: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__37a: HuntingHornRO = {
+const __generated_huntinghorn__37a: HuntingHorn = {
     category: "huntinghorn",
     id: "37a",
 
@@ -4873,7 +4873,7 @@ const __generated_huntinghorn__37a: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__37b: HuntingHornRO = {
+const __generated_huntinghorn__37b: HuntingHorn = {
     category: "huntinghorn",
     id: "37b",
 
@@ -4911,7 +4911,7 @@ const __generated_huntinghorn__37b: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__37c: HuntingHornRO = {
+const __generated_huntinghorn__37c: HuntingHorn = {
     category: "huntinghorn",
     id: "37c",
 
@@ -4950,7 +4950,7 @@ const __generated_huntinghorn__37c: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__38a: HuntingHornRO = {
+const __generated_huntinghorn__38a: HuntingHorn = {
     category: "huntinghorn",
     id: "38a",
 
@@ -4988,7 +4988,7 @@ const __generated_huntinghorn__38a: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__38b: HuntingHornRO = {
+const __generated_huntinghorn__38b: HuntingHorn = {
     category: "huntinghorn",
     id: "38b",
 
@@ -5026,7 +5026,7 @@ const __generated_huntinghorn__38b: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__38c: HuntingHornRO = {
+const __generated_huntinghorn__38c: HuntingHorn = {
     category: "huntinghorn",
     id: "38c",
 
@@ -5065,7 +5065,7 @@ const __generated_huntinghorn__38c: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__38d: HuntingHornRO = {
+const __generated_huntinghorn__38d: HuntingHorn = {
     category: "huntinghorn",
     id: "38d",
 
@@ -5105,7 +5105,7 @@ const __generated_huntinghorn__38d: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__39a: HuntingHornRO = {
+const __generated_huntinghorn__39a: HuntingHorn = {
     category: "huntinghorn",
     id: "39a",
 
@@ -5143,7 +5143,7 @@ const __generated_huntinghorn__39a: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__39b: HuntingHornRO = {
+const __generated_huntinghorn__39b: HuntingHorn = {
     category: "huntinghorn",
     id: "39b",
 
@@ -5182,7 +5182,7 @@ const __generated_huntinghorn__39b: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__39c: HuntingHornRO = {
+const __generated_huntinghorn__39c: HuntingHorn = {
     category: "huntinghorn",
     id: "39c",
 
@@ -5222,7 +5222,7 @@ const __generated_huntinghorn__39c: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__40a: HuntingHornRO = {
+const __generated_huntinghorn__40a: HuntingHorn = {
     category: "huntinghorn",
     id: "40a",
 
@@ -5260,7 +5260,7 @@ const __generated_huntinghorn__40a: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__40b: HuntingHornRO = {
+const __generated_huntinghorn__40b: HuntingHorn = {
     category: "huntinghorn",
     id: "40b",
 
@@ -5300,7 +5300,7 @@ const __generated_huntinghorn__40b: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__40c: HuntingHornRO = {
+const __generated_huntinghorn__40c: HuntingHorn = {
     category: "huntinghorn",
     id: "40c",
 
@@ -5341,7 +5341,7 @@ const __generated_huntinghorn__40c: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__ra: HuntingHornRO = {
+const __generated_huntinghorn__ra: HuntingHorn = {
     category: "huntinghorn",
     id: "ra",
 
@@ -5388,7 +5388,7 @@ const __generated_huntinghorn__ra: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__rb: HuntingHornRO = {
+const __generated_huntinghorn__rb: HuntingHorn = {
     category: "huntinghorn",
     id: "rb",
 
@@ -5443,7 +5443,7 @@ const __generated_huntinghorn__rb: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__rc: HuntingHornRO = {
+const __generated_huntinghorn__rc: HuntingHorn = {
     category: "huntinghorn",
     id: "rc",
 
@@ -5511,7 +5511,7 @@ const __generated_huntinghorn__rc: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__rd: HuntingHornRO = {
+const __generated_huntinghorn__rd: HuntingHorn = {
     category: "huntinghorn",
     id: "rd",
 
@@ -5589,7 +5589,7 @@ const __generated_huntinghorn__rd: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__re: HuntingHornRO = {
+const __generated_huntinghorn__re: HuntingHorn = {
     category: "huntinghorn",
     id: "re",
 
@@ -5677,7 +5677,7 @@ const __generated_huntinghorn__re: HuntingHornRO = {
     },
 };
 
-const __generated_huntinghorn__rf: HuntingHornRO = {
+const __generated_huntinghorn__rf: HuntingHorn = {
     category: "huntinghorn",
     id: "rf",
 
@@ -5778,7 +5778,7 @@ const __generated_huntinghorn__rf: HuntingHornRO = {
     },
 };
 
-export const huntinghornsArray: Readonly<HuntingHornRO[]> = [
+export const huntinghornsArray: Readonly<HuntingHorn[]> = [
     __generated_huntinghorn__1a,
     __generated_huntinghorn__1b,
     __generated_huntinghorn__1c,

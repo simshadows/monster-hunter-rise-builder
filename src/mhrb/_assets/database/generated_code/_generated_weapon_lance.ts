@@ -37,7 +37,7 @@
 
 import {
     type EleStatStr,
-    type LanceRO,
+    type Lance,
 } from "../../common/types";
 import {
     FrozenMap,
@@ -135,7 +135,7 @@ import {
     __generated_ramp__wyvern_exploit,
 } from "./_generated_rampage_skills";
 
-const __generated_lance__1a: LanceRO = {
+const __generated_lance__1a: Lance = {
     category: "lance",
     id: "1a",
 
@@ -167,7 +167,7 @@ const __generated_lance__1a: LanceRO = {
     },
 };
 
-const __generated_lance__1b: LanceRO = {
+const __generated_lance__1b: Lance = {
     category: "lance",
     id: "1b",
 
@@ -199,7 +199,7 @@ const __generated_lance__1b: LanceRO = {
     },
 };
 
-const __generated_lance__1c: LanceRO = {
+const __generated_lance__1c: Lance = {
     category: "lance",
     id: "1c",
 
@@ -232,7 +232,7 @@ const __generated_lance__1c: LanceRO = {
     },
 };
 
-const __generated_lance__1d: LanceRO = {
+const __generated_lance__1d: Lance = {
     category: "lance",
     id: "1d",
 
@@ -266,7 +266,7 @@ const __generated_lance__1d: LanceRO = {
     },
 };
 
-const __generated_lance__1e: LanceRO = {
+const __generated_lance__1e: Lance = {
     category: "lance",
     id: "1e",
 
@@ -302,7 +302,7 @@ const __generated_lance__1e: LanceRO = {
     },
 };
 
-const __generated_lance__1f: LanceRO = {
+const __generated_lance__1f: Lance = {
     category: "lance",
     id: "1f",
 
@@ -339,7 +339,7 @@ const __generated_lance__1f: LanceRO = {
     },
 };
 
-const __generated_lance__2a: LanceRO = {
+const __generated_lance__2a: Lance = {
     category: "lance",
     id: "2a",
 
@@ -375,7 +375,7 @@ const __generated_lance__2a: LanceRO = {
     },
 };
 
-const __generated_lance__2b: LanceRO = {
+const __generated_lance__2b: Lance = {
     category: "lance",
     id: "2b",
 
@@ -412,7 +412,7 @@ const __generated_lance__2b: LanceRO = {
     },
 };
 
-const __generated_lance__2c: LanceRO = {
+const __generated_lance__2c: Lance = {
     category: "lance",
     id: "2c",
 
@@ -450,7 +450,7 @@ const __generated_lance__2c: LanceRO = {
     },
 };
 
-const __generated_lance__3a: LanceRO = {
+const __generated_lance__3a: Lance = {
     category: "lance",
     id: "3a",
 
@@ -486,7 +486,7 @@ const __generated_lance__3a: LanceRO = {
     },
 };
 
-const __generated_lance__3b: LanceRO = {
+const __generated_lance__3b: Lance = {
     category: "lance",
     id: "3b",
 
@@ -523,7 +523,7 @@ const __generated_lance__3b: LanceRO = {
     },
 };
 
-const __generated_lance__3c: LanceRO = {
+const __generated_lance__3c: Lance = {
     category: "lance",
     id: "3c",
 
@@ -561,7 +561,7 @@ const __generated_lance__3c: LanceRO = {
     },
 };
 
-const __generated_lance__4a: LanceRO = {
+const __generated_lance__4a: Lance = {
     category: "lance",
     id: "4a",
 
@@ -597,7 +597,7 @@ const __generated_lance__4a: LanceRO = {
     },
 };
 
-const __generated_lance__4b: LanceRO = {
+const __generated_lance__4b: Lance = {
     category: "lance",
     id: "4b",
 
@@ -634,7 +634,7 @@ const __generated_lance__4b: LanceRO = {
     },
 };
 
-const __generated_lance__4c: LanceRO = {
+const __generated_lance__4c: Lance = {
     category: "lance",
     id: "4c",
 
@@ -671,7 +671,7 @@ const __generated_lance__4c: LanceRO = {
     },
 };
 
-const __generated_lance__5a: LanceRO = {
+const __generated_lance__5a: Lance = {
     category: "lance",
     id: "5a",
 
@@ -705,7 +705,7 @@ const __generated_lance__5a: LanceRO = {
     },
 };
 
-const __generated_lance__5b: LanceRO = {
+const __generated_lance__5b: Lance = {
     category: "lance",
     id: "5b",
 
@@ -740,7 +740,7 @@ const __generated_lance__5b: LanceRO = {
     },
 };
 
-const __generated_lance__5c: LanceRO = {
+const __generated_lance__5c: Lance = {
     category: "lance",
     id: "5c",
 
@@ -776,7 +776,7 @@ const __generated_lance__5c: LanceRO = {
     },
 };
 
-const __generated_lance__6a: LanceRO = {
+const __generated_lance__6a: Lance = {
     category: "lance",
     id: "6a",
 
@@ -810,7 +810,7 @@ const __generated_lance__6a: LanceRO = {
     },
 };
 
-const __generated_lance__6b: LanceRO = {
+const __generated_lance__6b: Lance = {
     category: "lance",
     id: "6b",
 
@@ -844,7 +844,7 @@ const __generated_lance__6b: LanceRO = {
     },
 };
 
-const __generated_lance__6c: LanceRO = {
+const __generated_lance__6c: Lance = {
     category: "lance",
     id: "6c",
 
@@ -879,7 +879,7 @@ const __generated_lance__6c: LanceRO = {
     },
 };
 
-const __generated_lance__7a: LanceRO = {
+const __generated_lance__7a: Lance = {
     category: "lance",
     id: "7a",
 
@@ -913,7 +913,7 @@ const __generated_lance__7a: LanceRO = {
     },
 };
 
-const __generated_lance__7b: LanceRO = {
+const __generated_lance__7b: Lance = {
     category: "lance",
     id: "7b",
 
@@ -948,7 +948,7 @@ const __generated_lance__7b: LanceRO = {
     },
 };
 
-const __generated_lance__7c: LanceRO = {
+const __generated_lance__7c: Lance = {
     category: "lance",
     id: "7c",
 
@@ -985,7 +985,7 @@ const __generated_lance__7c: LanceRO = {
     },
 };
 
-const __generated_lance__8a: LanceRO = {
+const __generated_lance__8a: Lance = {
     category: "lance",
     id: "8a",
 
@@ -1017,7 +1017,7 @@ const __generated_lance__8a: LanceRO = {
     },
 };
 
-const __generated_lance__8b: LanceRO = {
+const __generated_lance__8b: Lance = {
     category: "lance",
     id: "8b",
 
@@ -1049,7 +1049,7 @@ const __generated_lance__8b: LanceRO = {
     },
 };
 
-const __generated_lance__8c: LanceRO = {
+const __generated_lance__8c: Lance = {
     category: "lance",
     id: "8c",
 
@@ -1082,7 +1082,7 @@ const __generated_lance__8c: LanceRO = {
     },
 };
 
-const __generated_lance__8d: LanceRO = {
+const __generated_lance__8d: Lance = {
     category: "lance",
     id: "8d",
 
@@ -1116,7 +1116,7 @@ const __generated_lance__8d: LanceRO = {
     },
 };
 
-const __generated_lance__8e: LanceRO = {
+const __generated_lance__8e: Lance = {
     category: "lance",
     id: "8e",
 
@@ -1151,7 +1151,7 @@ const __generated_lance__8e: LanceRO = {
     },
 };
 
-const __generated_lance__8f: LanceRO = {
+const __generated_lance__8f: Lance = {
     category: "lance",
     id: "8f",
 
@@ -1187,7 +1187,7 @@ const __generated_lance__8f: LanceRO = {
     },
 };
 
-const __generated_lance__9a: LanceRO = {
+const __generated_lance__9a: Lance = {
     category: "lance",
     id: "9a",
 
@@ -1222,7 +1222,7 @@ const __generated_lance__9a: LanceRO = {
     },
 };
 
-const __generated_lance__9b: LanceRO = {
+const __generated_lance__9b: Lance = {
     category: "lance",
     id: "9b",
 
@@ -1258,7 +1258,7 @@ const __generated_lance__9b: LanceRO = {
     },
 };
 
-const __generated_lance__9c: LanceRO = {
+const __generated_lance__9c: Lance = {
     category: "lance",
     id: "9c",
 
@@ -1296,7 +1296,7 @@ const __generated_lance__9c: LanceRO = {
     },
 };
 
-const __generated_lance__10a: LanceRO = {
+const __generated_lance__10a: Lance = {
     category: "lance",
     id: "10a",
 
@@ -1333,7 +1333,7 @@ const __generated_lance__10a: LanceRO = {
     },
 };
 
-const __generated_lance__10b: LanceRO = {
+const __generated_lance__10b: Lance = {
     category: "lance",
     id: "10b",
 
@@ -1371,7 +1371,7 @@ const __generated_lance__10b: LanceRO = {
     },
 };
 
-const __generated_lance__10c: LanceRO = {
+const __generated_lance__10c: Lance = {
     category: "lance",
     id: "10c",
 
@@ -1410,7 +1410,7 @@ const __generated_lance__10c: LanceRO = {
     },
 };
 
-const __generated_lance__11a: LanceRO = {
+const __generated_lance__11a: Lance = {
     category: "lance",
     id: "11a",
 
@@ -1444,7 +1444,7 @@ const __generated_lance__11a: LanceRO = {
     },
 };
 
-const __generated_lance__11b: LanceRO = {
+const __generated_lance__11b: Lance = {
     category: "lance",
     id: "11b",
 
@@ -1479,7 +1479,7 @@ const __generated_lance__11b: LanceRO = {
     },
 };
 
-const __generated_lance__11c: LanceRO = {
+const __generated_lance__11c: Lance = {
     category: "lance",
     id: "11c",
 
@@ -1515,7 +1515,7 @@ const __generated_lance__11c: LanceRO = {
     },
 };
 
-const __generated_lance__12a: LanceRO = {
+const __generated_lance__12a: Lance = {
     category: "lance",
     id: "12a",
 
@@ -1550,7 +1550,7 @@ const __generated_lance__12a: LanceRO = {
     },
 };
 
-const __generated_lance__12b: LanceRO = {
+const __generated_lance__12b: Lance = {
     category: "lance",
     id: "12b",
 
@@ -1586,7 +1586,7 @@ const __generated_lance__12b: LanceRO = {
     },
 };
 
-const __generated_lance__12c: LanceRO = {
+const __generated_lance__12c: Lance = {
     category: "lance",
     id: "12c",
 
@@ -1624,7 +1624,7 @@ const __generated_lance__12c: LanceRO = {
     },
 };
 
-const __generated_lance__13a: LanceRO = {
+const __generated_lance__13a: Lance = {
     category: "lance",
     id: "13a",
 
@@ -1657,7 +1657,7 @@ const __generated_lance__13a: LanceRO = {
     },
 };
 
-const __generated_lance__13b: LanceRO = {
+const __generated_lance__13b: Lance = {
     category: "lance",
     id: "13b",
 
@@ -1692,7 +1692,7 @@ const __generated_lance__13b: LanceRO = {
     },
 };
 
-const __generated_lance__13c: LanceRO = {
+const __generated_lance__13c: Lance = {
     category: "lance",
     id: "13c",
 
@@ -1728,7 +1728,7 @@ const __generated_lance__13c: LanceRO = {
     },
 };
 
-const __generated_lance__14a: LanceRO = {
+const __generated_lance__14a: Lance = {
     category: "lance",
     id: "14a",
 
@@ -1762,7 +1762,7 @@ const __generated_lance__14a: LanceRO = {
     },
 };
 
-const __generated_lance__14b: LanceRO = {
+const __generated_lance__14b: Lance = {
     category: "lance",
     id: "14b",
 
@@ -1796,7 +1796,7 @@ const __generated_lance__14b: LanceRO = {
     },
 };
 
-const __generated_lance__14c: LanceRO = {
+const __generated_lance__14c: Lance = {
     category: "lance",
     id: "14c",
 
@@ -1832,7 +1832,7 @@ const __generated_lance__14c: LanceRO = {
     },
 };
 
-const __generated_lance__14d: LanceRO = {
+const __generated_lance__14d: Lance = {
     category: "lance",
     id: "14d",
 
@@ -1869,7 +1869,7 @@ const __generated_lance__14d: LanceRO = {
     },
 };
 
-const __generated_lance__15a: LanceRO = {
+const __generated_lance__15a: Lance = {
     category: "lance",
     id: "15a",
 
@@ -1903,7 +1903,7 @@ const __generated_lance__15a: LanceRO = {
     },
 };
 
-const __generated_lance__15b: LanceRO = {
+const __generated_lance__15b: Lance = {
     category: "lance",
     id: "15b",
 
@@ -1937,7 +1937,7 @@ const __generated_lance__15b: LanceRO = {
     },
 };
 
-const __generated_lance__15c: LanceRO = {
+const __generated_lance__15c: Lance = {
     category: "lance",
     id: "15c",
 
@@ -1972,7 +1972,7 @@ const __generated_lance__15c: LanceRO = {
     },
 };
 
-const __generated_lance__16a: LanceRO = {
+const __generated_lance__16a: Lance = {
     category: "lance",
     id: "16a",
 
@@ -2008,7 +2008,7 @@ const __generated_lance__16a: LanceRO = {
     },
 };
 
-const __generated_lance__16b: LanceRO = {
+const __generated_lance__16b: Lance = {
     category: "lance",
     id: "16b",
 
@@ -2045,7 +2045,7 @@ const __generated_lance__16b: LanceRO = {
     },
 };
 
-const __generated_lance__16c: LanceRO = {
+const __generated_lance__16c: Lance = {
     category: "lance",
     id: "16c",
 
@@ -2084,7 +2084,7 @@ const __generated_lance__16c: LanceRO = {
     },
 };
 
-const __generated_lance__17a: LanceRO = {
+const __generated_lance__17a: Lance = {
     category: "lance",
     id: "17a",
 
@@ -2120,7 +2120,7 @@ const __generated_lance__17a: LanceRO = {
     },
 };
 
-const __generated_lance__17b: LanceRO = {
+const __generated_lance__17b: Lance = {
     category: "lance",
     id: "17b",
 
@@ -2156,7 +2156,7 @@ const __generated_lance__17b: LanceRO = {
     },
 };
 
-const __generated_lance__17c: LanceRO = {
+const __generated_lance__17c: Lance = {
     category: "lance",
     id: "17c",
 
@@ -2193,7 +2193,7 @@ const __generated_lance__17c: LanceRO = {
     },
 };
 
-const __generated_lance__18a: LanceRO = {
+const __generated_lance__18a: Lance = {
     category: "lance",
     id: "18a",
 
@@ -2228,7 +2228,7 @@ const __generated_lance__18a: LanceRO = {
     },
 };
 
-const __generated_lance__18b: LanceRO = {
+const __generated_lance__18b: Lance = {
     category: "lance",
     id: "18b",
 
@@ -2264,7 +2264,7 @@ const __generated_lance__18b: LanceRO = {
     },
 };
 
-const __generated_lance__18c: LanceRO = {
+const __generated_lance__18c: Lance = {
     category: "lance",
     id: "18c",
 
@@ -2302,7 +2302,7 @@ const __generated_lance__18c: LanceRO = {
     },
 };
 
-const __generated_lance__19a: LanceRO = {
+const __generated_lance__19a: Lance = {
     category: "lance",
     id: "19a",
 
@@ -2334,7 +2334,7 @@ const __generated_lance__19a: LanceRO = {
     },
 };
 
-const __generated_lance__19b: LanceRO = {
+const __generated_lance__19b: Lance = {
     category: "lance",
     id: "19b",
 
@@ -2366,7 +2366,7 @@ const __generated_lance__19b: LanceRO = {
     },
 };
 
-const __generated_lance__19c: LanceRO = {
+const __generated_lance__19c: Lance = {
     category: "lance",
     id: "19c",
 
@@ -2399,7 +2399,7 @@ const __generated_lance__19c: LanceRO = {
     },
 };
 
-const __generated_lance__19d: LanceRO = {
+const __generated_lance__19d: Lance = {
     category: "lance",
     id: "19d",
 
@@ -2433,7 +2433,7 @@ const __generated_lance__19d: LanceRO = {
     },
 };
 
-const __generated_lance__19e: LanceRO = {
+const __generated_lance__19e: Lance = {
     category: "lance",
     id: "19e",
 
@@ -2469,7 +2469,7 @@ const __generated_lance__19e: LanceRO = {
     },
 };
 
-const __generated_lance__19f: LanceRO = {
+const __generated_lance__19f: Lance = {
     category: "lance",
     id: "19f",
 
@@ -2505,7 +2505,7 @@ const __generated_lance__19f: LanceRO = {
     },
 };
 
-const __generated_lance__20a: LanceRO = {
+const __generated_lance__20a: Lance = {
     category: "lance",
     id: "20a",
 
@@ -2542,7 +2542,7 @@ const __generated_lance__20a: LanceRO = {
     },
 };
 
-const __generated_lance__20b: LanceRO = {
+const __generated_lance__20b: Lance = {
     category: "lance",
     id: "20b",
 
@@ -2579,7 +2579,7 @@ const __generated_lance__20b: LanceRO = {
     },
 };
 
-const __generated_lance__20c: LanceRO = {
+const __generated_lance__20c: Lance = {
     category: "lance",
     id: "20c",
 
@@ -2616,7 +2616,7 @@ const __generated_lance__20c: LanceRO = {
     },
 };
 
-const __generated_lance__21a: LanceRO = {
+const __generated_lance__21a: Lance = {
     category: "lance",
     id: "21a",
 
@@ -2650,7 +2650,7 @@ const __generated_lance__21a: LanceRO = {
     },
 };
 
-const __generated_lance__21b: LanceRO = {
+const __generated_lance__21b: Lance = {
     category: "lance",
     id: "21b",
 
@@ -2685,7 +2685,7 @@ const __generated_lance__21b: LanceRO = {
     },
 };
 
-const __generated_lance__21c: LanceRO = {
+const __generated_lance__21c: Lance = {
     category: "lance",
     id: "21c",
 
@@ -2721,7 +2721,7 @@ const __generated_lance__21c: LanceRO = {
     },
 };
 
-const __generated_lance__22a: LanceRO = {
+const __generated_lance__22a: Lance = {
     category: "lance",
     id: "22a",
 
@@ -2755,7 +2755,7 @@ const __generated_lance__22a: LanceRO = {
     },
 };
 
-const __generated_lance__22b: LanceRO = {
+const __generated_lance__22b: Lance = {
     category: "lance",
     id: "22b",
 
@@ -2791,7 +2791,7 @@ const __generated_lance__22b: LanceRO = {
     },
 };
 
-const __generated_lance__22c: LanceRO = {
+const __generated_lance__22c: Lance = {
     category: "lance",
     id: "22c",
 
@@ -2828,7 +2828,7 @@ const __generated_lance__22c: LanceRO = {
     },
 };
 
-const __generated_lance__23a: LanceRO = {
+const __generated_lance__23a: Lance = {
     category: "lance",
     id: "23a",
 
@@ -2864,7 +2864,7 @@ const __generated_lance__23a: LanceRO = {
     },
 };
 
-const __generated_lance__23b: LanceRO = {
+const __generated_lance__23b: Lance = {
     category: "lance",
     id: "23b",
 
@@ -2900,7 +2900,7 @@ const __generated_lance__23b: LanceRO = {
     },
 };
 
-const __generated_lance__23c: LanceRO = {
+const __generated_lance__23c: Lance = {
     category: "lance",
     id: "23c",
 
@@ -2937,7 +2937,7 @@ const __generated_lance__23c: LanceRO = {
     },
 };
 
-const __generated_lance__24a: LanceRO = {
+const __generated_lance__24a: Lance = {
     category: "lance",
     id: "24a",
 
@@ -2971,7 +2971,7 @@ const __generated_lance__24a: LanceRO = {
     },
 };
 
-const __generated_lance__24b: LanceRO = {
+const __generated_lance__24b: Lance = {
     category: "lance",
     id: "24b",
 
@@ -3006,7 +3006,7 @@ const __generated_lance__24b: LanceRO = {
     },
 };
 
-const __generated_lance__24c: LanceRO = {
+const __generated_lance__24c: Lance = {
     category: "lance",
     id: "24c",
 
@@ -3042,7 +3042,7 @@ const __generated_lance__24c: LanceRO = {
     },
 };
 
-const __generated_lance__25a: LanceRO = {
+const __generated_lance__25a: Lance = {
     category: "lance",
     id: "25a",
 
@@ -3076,7 +3076,7 @@ const __generated_lance__25a: LanceRO = {
     },
 };
 
-const __generated_lance__25b: LanceRO = {
+const __generated_lance__25b: Lance = {
     category: "lance",
     id: "25b",
 
@@ -3111,7 +3111,7 @@ const __generated_lance__25b: LanceRO = {
     },
 };
 
-const __generated_lance__25c: LanceRO = {
+const __generated_lance__25c: Lance = {
     category: "lance",
     id: "25c",
 
@@ -3146,7 +3146,7 @@ const __generated_lance__25c: LanceRO = {
     },
 };
 
-const __generated_lance__26a: LanceRO = {
+const __generated_lance__26a: Lance = {
     category: "lance",
     id: "26a",
 
@@ -3180,7 +3180,7 @@ const __generated_lance__26a: LanceRO = {
     },
 };
 
-const __generated_lance__26b: LanceRO = {
+const __generated_lance__26b: Lance = {
     category: "lance",
     id: "26b",
 
@@ -3215,7 +3215,7 @@ const __generated_lance__26b: LanceRO = {
     },
 };
 
-const __generated_lance__26c: LanceRO = {
+const __generated_lance__26c: Lance = {
     category: "lance",
     id: "26c",
 
@@ -3252,7 +3252,7 @@ const __generated_lance__26c: LanceRO = {
     },
 };
 
-const __generated_lance__27a: LanceRO = {
+const __generated_lance__27a: Lance = {
     category: "lance",
     id: "27a",
 
@@ -3287,7 +3287,7 @@ const __generated_lance__27a: LanceRO = {
     },
 };
 
-const __generated_lance__27b: LanceRO = {
+const __generated_lance__27b: Lance = {
     category: "lance",
     id: "27b",
 
@@ -3322,7 +3322,7 @@ const __generated_lance__27b: LanceRO = {
     },
 };
 
-const __generated_lance__27c: LanceRO = {
+const __generated_lance__27c: Lance = {
     category: "lance",
     id: "27c",
 
@@ -3358,7 +3358,7 @@ const __generated_lance__27c: LanceRO = {
     },
 };
 
-const __generated_lance__28a: LanceRO = {
+const __generated_lance__28a: Lance = {
     category: "lance",
     id: "28a",
 
@@ -3396,7 +3396,7 @@ const __generated_lance__28a: LanceRO = {
     },
 };
 
-const __generated_lance__28b: LanceRO = {
+const __generated_lance__28b: Lance = {
     category: "lance",
     id: "28b",
 
@@ -3434,7 +3434,7 @@ const __generated_lance__28b: LanceRO = {
     },
 };
 
-const __generated_lance__28c: LanceRO = {
+const __generated_lance__28c: Lance = {
     category: "lance",
     id: "28c",
 
@@ -3473,7 +3473,7 @@ const __generated_lance__28c: LanceRO = {
     },
 };
 
-const __generated_lance__29a: LanceRO = {
+const __generated_lance__29a: Lance = {
     category: "lance",
     id: "29a",
 
@@ -3507,7 +3507,7 @@ const __generated_lance__29a: LanceRO = {
     },
 };
 
-const __generated_lance__29b: LanceRO = {
+const __generated_lance__29b: Lance = {
     category: "lance",
     id: "29b",
 
@@ -3542,7 +3542,7 @@ const __generated_lance__29b: LanceRO = {
     },
 };
 
-const __generated_lance__29c: LanceRO = {
+const __generated_lance__29c: Lance = {
     category: "lance",
     id: "29c",
 
@@ -3578,7 +3578,7 @@ const __generated_lance__29c: LanceRO = {
     },
 };
 
-const __generated_lance__29d: LanceRO = {
+const __generated_lance__29d: Lance = {
     category: "lance",
     id: "29d",
 
@@ -3615,7 +3615,7 @@ const __generated_lance__29d: LanceRO = {
     },
 };
 
-const __generated_lance__30a: LanceRO = {
+const __generated_lance__30a: Lance = {
     category: "lance",
     id: "30a",
 
@@ -3647,7 +3647,7 @@ const __generated_lance__30a: LanceRO = {
     },
 };
 
-const __generated_lance__30b: LanceRO = {
+const __generated_lance__30b: Lance = {
     category: "lance",
     id: "30b",
 
@@ -3680,7 +3680,7 @@ const __generated_lance__30b: LanceRO = {
     },
 };
 
-const __generated_lance__30c: LanceRO = {
+const __generated_lance__30c: Lance = {
     category: "lance",
     id: "30c",
 
@@ -3714,7 +3714,7 @@ const __generated_lance__30c: LanceRO = {
     },
 };
 
-const __generated_lance__31a: LanceRO = {
+const __generated_lance__31a: Lance = {
     category: "lance",
     id: "31a",
 
@@ -3746,7 +3746,7 @@ const __generated_lance__31a: LanceRO = {
     },
 };
 
-const __generated_lance__31b: LanceRO = {
+const __generated_lance__31b: Lance = {
     category: "lance",
     id: "31b",
 
@@ -3779,7 +3779,7 @@ const __generated_lance__31b: LanceRO = {
     },
 };
 
-const __generated_lance__31c: LanceRO = {
+const __generated_lance__31c: Lance = {
     category: "lance",
     id: "31c",
 
@@ -3813,7 +3813,7 @@ const __generated_lance__31c: LanceRO = {
     },
 };
 
-const __generated_lance__32a: LanceRO = {
+const __generated_lance__32a: Lance = {
     category: "lance",
     id: "32a",
 
@@ -3845,7 +3845,7 @@ const __generated_lance__32a: LanceRO = {
     },
 };
 
-const __generated_lance__32b: LanceRO = {
+const __generated_lance__32b: Lance = {
     category: "lance",
     id: "32b",
 
@@ -3878,7 +3878,7 @@ const __generated_lance__32b: LanceRO = {
     },
 };
 
-const __generated_lance__32c: LanceRO = {
+const __generated_lance__32c: Lance = {
     category: "lance",
     id: "32c",
 
@@ -3912,7 +3912,7 @@ const __generated_lance__32c: LanceRO = {
     },
 };
 
-const __generated_lance__33a: LanceRO = {
+const __generated_lance__33a: Lance = {
     category: "lance",
     id: "33a",
 
@@ -3944,7 +3944,7 @@ const __generated_lance__33a: LanceRO = {
     },
 };
 
-const __generated_lance__33b: LanceRO = {
+const __generated_lance__33b: Lance = {
     category: "lance",
     id: "33b",
 
@@ -3977,7 +3977,7 @@ const __generated_lance__33b: LanceRO = {
     },
 };
 
-const __generated_lance__34a: LanceRO = {
+const __generated_lance__34a: Lance = {
     category: "lance",
     id: "34a",
 
@@ -4009,7 +4009,7 @@ const __generated_lance__34a: LanceRO = {
     },
 };
 
-const __generated_lance__34b: LanceRO = {
+const __generated_lance__34b: Lance = {
     category: "lance",
     id: "34b",
 
@@ -4041,7 +4041,7 @@ const __generated_lance__34b: LanceRO = {
     },
 };
 
-const __generated_lance__34c: LanceRO = {
+const __generated_lance__34c: Lance = {
     category: "lance",
     id: "34c",
 
@@ -4075,7 +4075,7 @@ const __generated_lance__34c: LanceRO = {
     },
 };
 
-const __generated_lance__35a: LanceRO = {
+const __generated_lance__35a: Lance = {
     category: "lance",
     id: "35a",
 
@@ -4107,7 +4107,7 @@ const __generated_lance__35a: LanceRO = {
     },
 };
 
-const __generated_lance__35b: LanceRO = {
+const __generated_lance__35b: Lance = {
     category: "lance",
     id: "35b",
 
@@ -4141,7 +4141,7 @@ const __generated_lance__35b: LanceRO = {
     },
 };
 
-const __generated_lance__36a: LanceRO = {
+const __generated_lance__36a: Lance = {
     category: "lance",
     id: "36a",
 
@@ -4173,7 +4173,7 @@ const __generated_lance__36a: LanceRO = {
     },
 };
 
-const __generated_lance__36b: LanceRO = {
+const __generated_lance__36b: Lance = {
     category: "lance",
     id: "36b",
 
@@ -4206,7 +4206,7 @@ const __generated_lance__36b: LanceRO = {
     },
 };
 
-const __generated_lance__37a: LanceRO = {
+const __generated_lance__37a: Lance = {
     category: "lance",
     id: "37a",
 
@@ -4238,7 +4238,7 @@ const __generated_lance__37a: LanceRO = {
     },
 };
 
-const __generated_lance__37b: LanceRO = {
+const __generated_lance__37b: Lance = {
     category: "lance",
     id: "37b",
 
@@ -4270,7 +4270,7 @@ const __generated_lance__37b: LanceRO = {
     },
 };
 
-const __generated_lance__38a: LanceRO = {
+const __generated_lance__38a: Lance = {
     category: "lance",
     id: "38a",
 
@@ -4302,7 +4302,7 @@ const __generated_lance__38a: LanceRO = {
     },
 };
 
-const __generated_lance__38b: LanceRO = {
+const __generated_lance__38b: Lance = {
     category: "lance",
     id: "38b",
 
@@ -4334,7 +4334,7 @@ const __generated_lance__38b: LanceRO = {
     },
 };
 
-const __generated_lance__38c: LanceRO = {
+const __generated_lance__38c: Lance = {
     category: "lance",
     id: "38c",
 
@@ -4367,7 +4367,7 @@ const __generated_lance__38c: LanceRO = {
     },
 };
 
-const __generated_lance__39a: LanceRO = {
+const __generated_lance__39a: Lance = {
     category: "lance",
     id: "39a",
 
@@ -4399,7 +4399,7 @@ const __generated_lance__39a: LanceRO = {
     },
 };
 
-const __generated_lance__39b: LanceRO = {
+const __generated_lance__39b: Lance = {
     category: "lance",
     id: "39b",
 
@@ -4432,7 +4432,7 @@ const __generated_lance__39b: LanceRO = {
     },
 };
 
-const __generated_lance__39c: LanceRO = {
+const __generated_lance__39c: Lance = {
     category: "lance",
     id: "39c",
 
@@ -4465,7 +4465,7 @@ const __generated_lance__39c: LanceRO = {
     },
 };
 
-const __generated_lance__39d: LanceRO = {
+const __generated_lance__39d: Lance = {
     category: "lance",
     id: "39d",
 
@@ -4499,7 +4499,7 @@ const __generated_lance__39d: LanceRO = {
     },
 };
 
-const __generated_lance__40a: LanceRO = {
+const __generated_lance__40a: Lance = {
     category: "lance",
     id: "40a",
 
@@ -4531,7 +4531,7 @@ const __generated_lance__40a: LanceRO = {
     },
 };
 
-const __generated_lance__40b: LanceRO = {
+const __generated_lance__40b: Lance = {
     category: "lance",
     id: "40b",
 
@@ -4565,7 +4565,7 @@ const __generated_lance__40b: LanceRO = {
     },
 };
 
-const __generated_lance__40c: LanceRO = {
+const __generated_lance__40c: Lance = {
     category: "lance",
     id: "40c",
 
@@ -4601,7 +4601,7 @@ const __generated_lance__40c: LanceRO = {
     },
 };
 
-const __generated_lance__ra: LanceRO = {
+const __generated_lance__ra: Lance = {
     category: "lance",
     id: "ra",
 
@@ -4642,7 +4642,7 @@ const __generated_lance__ra: LanceRO = {
     },
 };
 
-const __generated_lance__rb: LanceRO = {
+const __generated_lance__rb: Lance = {
     category: "lance",
     id: "rb",
 
@@ -4687,7 +4687,7 @@ const __generated_lance__rb: LanceRO = {
     },
 };
 
-const __generated_lance__rc: LanceRO = {
+const __generated_lance__rc: Lance = {
     category: "lance",
     id: "rc",
 
@@ -4740,7 +4740,7 @@ const __generated_lance__rc: LanceRO = {
     },
 };
 
-const __generated_lance__rd: LanceRO = {
+const __generated_lance__rd: Lance = {
     category: "lance",
     id: "rd",
 
@@ -4800,7 +4800,7 @@ const __generated_lance__rd: LanceRO = {
     },
 };
 
-const __generated_lance__re: LanceRO = {
+const __generated_lance__re: Lance = {
     category: "lance",
     id: "re",
 
@@ -4870,7 +4870,7 @@ const __generated_lance__re: LanceRO = {
     },
 };
 
-const __generated_lance__rf: LanceRO = {
+const __generated_lance__rf: Lance = {
     category: "lance",
     id: "rf",
 
@@ -4948,7 +4948,7 @@ const __generated_lance__rf: LanceRO = {
     },
 };
 
-export const lancesArray: Readonly<LanceRO[]> = [
+export const lancesArray: Readonly<Lance[]> = [
     __generated_lance__1a,
     __generated_lance__1b,
     __generated_lance__1c,

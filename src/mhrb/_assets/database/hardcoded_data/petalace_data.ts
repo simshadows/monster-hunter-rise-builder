@@ -13,7 +13,6 @@ import {
 import {
     type Rarity,
     type Petalace,
-    type PetalaceRO,
 } from "../../common/types";
 import {
     toNameFilterString,
@@ -122,8 +121,8 @@ const hardcodedPetalaceData: HardcodedPetalaceData[] = [
     },
 ];
 
-function makeFinalMap(): FrozenMap<string, PetalaceRO> {
-    const ret = new Map<string, PetalaceRO>();
+function makeFinalMap(): FrozenMap<string, Petalace> {
+    const ret = new Map<string, Petalace>();
 
     function petalaceRarityToIconImgPath(rarity: Rarity): string {
         return getImgPath(`petalace_r${rarity}`);
@@ -139,7 +138,7 @@ function makeFinalMap(): FrozenMap<string, PetalaceRO> {
             },
         } as const;
 
-        const finalObj: PetalaceRO = {...obj, ...mergeIn}; 
+        const finalObj: Petalace = {...obj, ...mergeIn}; 
 
         // Validate
         console.assert(/^[a-z0-9]+$/.test(finalObj.id));
@@ -162,10 +161,10 @@ function makeFinalMap(): FrozenMap<string, PetalaceRO> {
 
         ret.set(finalObj.id, finalObj);
     }
-    return new FrozenMap<string, PetalaceRO>(ret);
+    return new FrozenMap<string, Petalace>(ret);
 }
 
-const petalaceMap: FrozenMap<string, PetalaceRO> = makeFinalMap();
+const petalaceMap: FrozenMap<string, Petalace> = makeFinalMap();
 
 export {petalaceMap};
 

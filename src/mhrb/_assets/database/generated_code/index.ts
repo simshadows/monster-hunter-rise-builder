@@ -21,8 +21,8 @@ import {
     type RampageSkill,
     type Decoration,
 
-    type ArmourPieceRO,
-    type ArmourSetRO,
+    type ArmourPiece,
+    type ArmourSet,
 } from "../../common/types";
 import {
     toNameFilterString,
@@ -111,7 +111,7 @@ const decosMap: FrozenMap<number, Decoration> = populate(
 
 const tmpSlotIDList: ArmourSlot[] = ["head", "chest", "arms", "waist", "legs"];
 
-const armourMap: FrozenMap<number, ArmourSetRO> = populate(
+const armourMap: FrozenMap<number, ArmourSet> = populate(
     armourSetsArray,
     (obj) => {
         // Validate
@@ -144,8 +144,8 @@ const armourMap: FrozenMap<number, ArmourSetRO> = populate(
     },
 );
 
-const armourArrays: Readonly<{[key in ArmourSlot]: Readonly<ArmourPieceRO[]>}> = (()=>{
-    const ret: {[key in ArmourSlot]: ArmourPieceRO[]} = {
+const armourArrays: Readonly<{[key in ArmourSlot]: Readonly<ArmourPiece[]>}> = (()=>{
+    const ret: {[key in ArmourSlot]: ArmourPiece[]} = {
         head:  [],
         chest: [],
         arms:  [],

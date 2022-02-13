@@ -37,7 +37,7 @@
 
 import {
     type EleStatStr,
-    type HammerRO,
+    type Hammer,
 } from "../../common/types";
 import {
     FrozenMap,
@@ -144,7 +144,7 @@ import {
     __generated_ramp__wyvern_exploit,
 } from "./_generated_rampage_skills";
 
-const __generated_hammer__1a: HammerRO = {
+const __generated_hammer__1a: Hammer = {
     category: "hammer",
     id: "1a",
 
@@ -176,7 +176,7 @@ const __generated_hammer__1a: HammerRO = {
     },
 };
 
-const __generated_hammer__1b: HammerRO = {
+const __generated_hammer__1b: Hammer = {
     category: "hammer",
     id: "1b",
 
@@ -208,7 +208,7 @@ const __generated_hammer__1b: HammerRO = {
     },
 };
 
-const __generated_hammer__1c: HammerRO = {
+const __generated_hammer__1c: Hammer = {
     category: "hammer",
     id: "1c",
 
@@ -241,7 +241,7 @@ const __generated_hammer__1c: HammerRO = {
     },
 };
 
-const __generated_hammer__1d: HammerRO = {
+const __generated_hammer__1d: Hammer = {
     category: "hammer",
     id: "1d",
 
@@ -275,7 +275,7 @@ const __generated_hammer__1d: HammerRO = {
     },
 };
 
-const __generated_hammer__1e: HammerRO = {
+const __generated_hammer__1e: Hammer = {
     category: "hammer",
     id: "1e",
 
@@ -311,7 +311,7 @@ const __generated_hammer__1e: HammerRO = {
     },
 };
 
-const __generated_hammer__1f: HammerRO = {
+const __generated_hammer__1f: Hammer = {
     category: "hammer",
     id: "1f",
 
@@ -348,7 +348,7 @@ const __generated_hammer__1f: HammerRO = {
     },
 };
 
-const __generated_hammer__2a: HammerRO = {
+const __generated_hammer__2a: Hammer = {
     category: "hammer",
     id: "2a",
 
@@ -383,7 +383,7 @@ const __generated_hammer__2a: HammerRO = {
     },
 };
 
-const __generated_hammer__2b: HammerRO = {
+const __generated_hammer__2b: Hammer = {
     category: "hammer",
     id: "2b",
 
@@ -419,7 +419,7 @@ const __generated_hammer__2b: HammerRO = {
     },
 };
 
-const __generated_hammer__2c: HammerRO = {
+const __generated_hammer__2c: Hammer = {
     category: "hammer",
     id: "2c",
 
@@ -456,7 +456,7 @@ const __generated_hammer__2c: HammerRO = {
     },
 };
 
-const __generated_hammer__3a: HammerRO = {
+const __generated_hammer__3a: Hammer = {
     category: "hammer",
     id: "3a",
 
@@ -491,7 +491,7 @@ const __generated_hammer__3a: HammerRO = {
     },
 };
 
-const __generated_hammer__3b: HammerRO = {
+const __generated_hammer__3b: Hammer = {
     category: "hammer",
     id: "3b",
 
@@ -527,7 +527,7 @@ const __generated_hammer__3b: HammerRO = {
     },
 };
 
-const __generated_hammer__3c: HammerRO = {
+const __generated_hammer__3c: Hammer = {
     category: "hammer",
     id: "3c",
 
@@ -565,7 +565,7 @@ const __generated_hammer__3c: HammerRO = {
     },
 };
 
-const __generated_hammer__4a: HammerRO = {
+const __generated_hammer__4a: Hammer = {
     category: "hammer",
     id: "4a",
 
@@ -602,7 +602,7 @@ const __generated_hammer__4a: HammerRO = {
     },
 };
 
-const __generated_hammer__4b: HammerRO = {
+const __generated_hammer__4b: Hammer = {
     category: "hammer",
     id: "4b",
 
@@ -639,7 +639,7 @@ const __generated_hammer__4b: HammerRO = {
     },
 };
 
-const __generated_hammer__4c: HammerRO = {
+const __generated_hammer__4c: Hammer = {
     category: "hammer",
     id: "4c",
 
@@ -678,7 +678,7 @@ const __generated_hammer__4c: HammerRO = {
     },
 };
 
-const __generated_hammer__5a: HammerRO = {
+const __generated_hammer__5a: Hammer = {
     category: "hammer",
     id: "5a",
 
@@ -713,7 +713,7 @@ const __generated_hammer__5a: HammerRO = {
     },
 };
 
-const __generated_hammer__5b: HammerRO = {
+const __generated_hammer__5b: Hammer = {
     category: "hammer",
     id: "5b",
 
@@ -749,7 +749,7 @@ const __generated_hammer__5b: HammerRO = {
     },
 };
 
-const __generated_hammer__5c: HammerRO = {
+const __generated_hammer__5c: Hammer = {
     category: "hammer",
     id: "5c",
 
@@ -785,7 +785,7 @@ const __generated_hammer__5c: HammerRO = {
     },
 };
 
-const __generated_hammer__6a: HammerRO = {
+const __generated_hammer__6a: Hammer = {
     category: "hammer",
     id: "6a",
 
@@ -820,7 +820,7 @@ const __generated_hammer__6a: HammerRO = {
     },
 };
 
-const __generated_hammer__6b: HammerRO = {
+const __generated_hammer__6b: Hammer = {
     category: "hammer",
     id: "6b",
 
@@ -855,7 +855,7 @@ const __generated_hammer__6b: HammerRO = {
     },
 };
 
-const __generated_hammer__6c: HammerRO = {
+const __generated_hammer__6c: Hammer = {
     category: "hammer",
     id: "6c",
 
@@ -891,7 +891,7 @@ const __generated_hammer__6c: HammerRO = {
     },
 };
 
-const __generated_hammer__7a: HammerRO = {
+const __generated_hammer__7a: Hammer = {
     category: "hammer",
     id: "7a",
 
@@ -926,7 +926,7 @@ const __generated_hammer__7a: HammerRO = {
     },
 };
 
-const __generated_hammer__7b: HammerRO = {
+const __generated_hammer__7b: Hammer = {
     category: "hammer",
     id: "7b",
 
@@ -962,7 +962,7 @@ const __generated_hammer__7b: HammerRO = {
     },
 };
 
-const __generated_hammer__7c: HammerRO = {
+const __generated_hammer__7c: Hammer = {
     category: "hammer",
     id: "7c",
 
@@ -999,7 +999,7 @@ const __generated_hammer__7c: HammerRO = {
     },
 };
 
-const __generated_hammer__8a: HammerRO = {
+const __generated_hammer__8a: Hammer = {
     category: "hammer",
     id: "8a",
 
@@ -1031,7 +1031,7 @@ const __generated_hammer__8a: HammerRO = {
     },
 };
 
-const __generated_hammer__8b: HammerRO = {
+const __generated_hammer__8b: Hammer = {
     category: "hammer",
     id: "8b",
 
@@ -1063,7 +1063,7 @@ const __generated_hammer__8b: HammerRO = {
     },
 };
 
-const __generated_hammer__8c: HammerRO = {
+const __generated_hammer__8c: Hammer = {
     category: "hammer",
     id: "8c",
 
@@ -1096,7 +1096,7 @@ const __generated_hammer__8c: HammerRO = {
     },
 };
 
-const __generated_hammer__8d: HammerRO = {
+const __generated_hammer__8d: Hammer = {
     category: "hammer",
     id: "8d",
 
@@ -1130,7 +1130,7 @@ const __generated_hammer__8d: HammerRO = {
     },
 };
 
-const __generated_hammer__8e: HammerRO = {
+const __generated_hammer__8e: Hammer = {
     category: "hammer",
     id: "8e",
 
@@ -1165,7 +1165,7 @@ const __generated_hammer__8e: HammerRO = {
     },
 };
 
-const __generated_hammer__8f: HammerRO = {
+const __generated_hammer__8f: Hammer = {
     category: "hammer",
     id: "8f",
 
@@ -1201,7 +1201,7 @@ const __generated_hammer__8f: HammerRO = {
     },
 };
 
-const __generated_hammer__9a: HammerRO = {
+const __generated_hammer__9a: Hammer = {
     category: "hammer",
     id: "9a",
 
@@ -1238,7 +1238,7 @@ const __generated_hammer__9a: HammerRO = {
     },
 };
 
-const __generated_hammer__9b: HammerRO = {
+const __generated_hammer__9b: Hammer = {
     category: "hammer",
     id: "9b",
 
@@ -1275,7 +1275,7 @@ const __generated_hammer__9b: HammerRO = {
     },
 };
 
-const __generated_hammer__9c: HammerRO = {
+const __generated_hammer__9c: Hammer = {
     category: "hammer",
     id: "9c",
 
@@ -1312,7 +1312,7 @@ const __generated_hammer__9c: HammerRO = {
     },
 };
 
-const __generated_hammer__10a: HammerRO = {
+const __generated_hammer__10a: Hammer = {
     category: "hammer",
     id: "10a",
 
@@ -1347,7 +1347,7 @@ const __generated_hammer__10a: HammerRO = {
     },
 };
 
-const __generated_hammer__10b: HammerRO = {
+const __generated_hammer__10b: Hammer = {
     category: "hammer",
     id: "10b",
 
@@ -1383,7 +1383,7 @@ const __generated_hammer__10b: HammerRO = {
     },
 };
 
-const __generated_hammer__10c: HammerRO = {
+const __generated_hammer__10c: Hammer = {
     category: "hammer",
     id: "10c",
 
@@ -1420,7 +1420,7 @@ const __generated_hammer__10c: HammerRO = {
     },
 };
 
-const __generated_hammer__11a: HammerRO = {
+const __generated_hammer__11a: Hammer = {
     category: "hammer",
     id: "11a",
 
@@ -1455,7 +1455,7 @@ const __generated_hammer__11a: HammerRO = {
     },
 };
 
-const __generated_hammer__11b: HammerRO = {
+const __generated_hammer__11b: Hammer = {
     category: "hammer",
     id: "11b",
 
@@ -1491,7 +1491,7 @@ const __generated_hammer__11b: HammerRO = {
     },
 };
 
-const __generated_hammer__11c: HammerRO = {
+const __generated_hammer__11c: Hammer = {
     category: "hammer",
     id: "11c",
 
@@ -1529,7 +1529,7 @@ const __generated_hammer__11c: HammerRO = {
     },
 };
 
-const __generated_hammer__12a: HammerRO = {
+const __generated_hammer__12a: Hammer = {
     category: "hammer",
     id: "12a",
 
@@ -1564,7 +1564,7 @@ const __generated_hammer__12a: HammerRO = {
     },
 };
 
-const __generated_hammer__12b: HammerRO = {
+const __generated_hammer__12b: Hammer = {
     category: "hammer",
     id: "12b",
 
@@ -1600,7 +1600,7 @@ const __generated_hammer__12b: HammerRO = {
     },
 };
 
-const __generated_hammer__12c: HammerRO = {
+const __generated_hammer__12c: Hammer = {
     category: "hammer",
     id: "12c",
 
@@ -1637,7 +1637,7 @@ const __generated_hammer__12c: HammerRO = {
     },
 };
 
-const __generated_hammer__13a: HammerRO = {
+const __generated_hammer__13a: Hammer = {
     category: "hammer",
     id: "13a",
 
@@ -1672,7 +1672,7 @@ const __generated_hammer__13a: HammerRO = {
     },
 };
 
-const __generated_hammer__13b: HammerRO = {
+const __generated_hammer__13b: Hammer = {
     category: "hammer",
     id: "13b",
 
@@ -1707,7 +1707,7 @@ const __generated_hammer__13b: HammerRO = {
     },
 };
 
-const __generated_hammer__13c: HammerRO = {
+const __generated_hammer__13c: Hammer = {
     category: "hammer",
     id: "13c",
 
@@ -1743,7 +1743,7 @@ const __generated_hammer__13c: HammerRO = {
     },
 };
 
-const __generated_hammer__14a: HammerRO = {
+const __generated_hammer__14a: Hammer = {
     category: "hammer",
     id: "14a",
 
@@ -1781,7 +1781,7 @@ const __generated_hammer__14a: HammerRO = {
     },
 };
 
-const __generated_hammer__14b: HammerRO = {
+const __generated_hammer__14b: Hammer = {
     category: "hammer",
     id: "14b",
 
@@ -1820,7 +1820,7 @@ const __generated_hammer__14b: HammerRO = {
     },
 };
 
-const __generated_hammer__14c: HammerRO = {
+const __generated_hammer__14c: Hammer = {
     category: "hammer",
     id: "14c",
 
@@ -1861,7 +1861,7 @@ const __generated_hammer__14c: HammerRO = {
     },
 };
 
-const __generated_hammer__15a: HammerRO = {
+const __generated_hammer__15a: Hammer = {
     category: "hammer",
     id: "15a",
 
@@ -1894,7 +1894,7 @@ const __generated_hammer__15a: HammerRO = {
     },
 };
 
-const __generated_hammer__15b: HammerRO = {
+const __generated_hammer__15b: Hammer = {
     category: "hammer",
     id: "15b",
 
@@ -1928,7 +1928,7 @@ const __generated_hammer__15b: HammerRO = {
     },
 };
 
-const __generated_hammer__15c: HammerRO = {
+const __generated_hammer__15c: Hammer = {
     category: "hammer",
     id: "15c",
 
@@ -1963,7 +1963,7 @@ const __generated_hammer__15c: HammerRO = {
     },
 };
 
-const __generated_hammer__16a: HammerRO = {
+const __generated_hammer__16a: Hammer = {
     category: "hammer",
     id: "16a",
 
@@ -1999,7 +1999,7 @@ const __generated_hammer__16a: HammerRO = {
     },
 };
 
-const __generated_hammer__16b: HammerRO = {
+const __generated_hammer__16b: Hammer = {
     category: "hammer",
     id: "16b",
 
@@ -2035,7 +2035,7 @@ const __generated_hammer__16b: HammerRO = {
     },
 };
 
-const __generated_hammer__16c: HammerRO = {
+const __generated_hammer__16c: Hammer = {
     category: "hammer",
     id: "16c",
 
@@ -2072,7 +2072,7 @@ const __generated_hammer__16c: HammerRO = {
     },
 };
 
-const __generated_hammer__17a: HammerRO = {
+const __generated_hammer__17a: Hammer = {
     category: "hammer",
     id: "17a",
 
@@ -2108,7 +2108,7 @@ const __generated_hammer__17a: HammerRO = {
     },
 };
 
-const __generated_hammer__17b: HammerRO = {
+const __generated_hammer__17b: Hammer = {
     category: "hammer",
     id: "17b",
 
@@ -2144,7 +2144,7 @@ const __generated_hammer__17b: HammerRO = {
     },
 };
 
-const __generated_hammer__17c: HammerRO = {
+const __generated_hammer__17c: Hammer = {
     category: "hammer",
     id: "17c",
 
@@ -2182,7 +2182,7 @@ const __generated_hammer__17c: HammerRO = {
     },
 };
 
-const __generated_hammer__18a: HammerRO = {
+const __generated_hammer__18a: Hammer = {
     category: "hammer",
     id: "18a",
 
@@ -2216,7 +2216,7 @@ const __generated_hammer__18a: HammerRO = {
     },
 };
 
-const __generated_hammer__18b: HammerRO = {
+const __generated_hammer__18b: Hammer = {
     category: "hammer",
     id: "18b",
 
@@ -2250,7 +2250,7 @@ const __generated_hammer__18b: HammerRO = {
     },
 };
 
-const __generated_hammer__18c: HammerRO = {
+const __generated_hammer__18c: Hammer = {
     category: "hammer",
     id: "18c",
 
@@ -2286,7 +2286,7 @@ const __generated_hammer__18c: HammerRO = {
     },
 };
 
-const __generated_hammer__19a: HammerRO = {
+const __generated_hammer__19a: Hammer = {
     category: "hammer",
     id: "19a",
 
@@ -2318,7 +2318,7 @@ const __generated_hammer__19a: HammerRO = {
     },
 };
 
-const __generated_hammer__19b: HammerRO = {
+const __generated_hammer__19b: Hammer = {
     category: "hammer",
     id: "19b",
 
@@ -2350,7 +2350,7 @@ const __generated_hammer__19b: HammerRO = {
     },
 };
 
-const __generated_hammer__19c: HammerRO = {
+const __generated_hammer__19c: Hammer = {
     category: "hammer",
     id: "19c",
 
@@ -2383,7 +2383,7 @@ const __generated_hammer__19c: HammerRO = {
     },
 };
 
-const __generated_hammer__19d: HammerRO = {
+const __generated_hammer__19d: Hammer = {
     category: "hammer",
     id: "19d",
 
@@ -2417,7 +2417,7 @@ const __generated_hammer__19d: HammerRO = {
     },
 };
 
-const __generated_hammer__19e: HammerRO = {
+const __generated_hammer__19e: Hammer = {
     category: "hammer",
     id: "19e",
 
@@ -2452,7 +2452,7 @@ const __generated_hammer__19e: HammerRO = {
     },
 };
 
-const __generated_hammer__19f: HammerRO = {
+const __generated_hammer__19f: Hammer = {
     category: "hammer",
     id: "19f",
 
@@ -2488,7 +2488,7 @@ const __generated_hammer__19f: HammerRO = {
     },
 };
 
-const __generated_hammer__20a: HammerRO = {
+const __generated_hammer__20a: Hammer = {
     category: "hammer",
     id: "20a",
 
@@ -2525,7 +2525,7 @@ const __generated_hammer__20a: HammerRO = {
     },
 };
 
-const __generated_hammer__20b: HammerRO = {
+const __generated_hammer__20b: Hammer = {
     category: "hammer",
     id: "20b",
 
@@ -2563,7 +2563,7 @@ const __generated_hammer__20b: HammerRO = {
     },
 };
 
-const __generated_hammer__20c: HammerRO = {
+const __generated_hammer__20c: Hammer = {
     category: "hammer",
     id: "20c",
 
@@ -2602,7 +2602,7 @@ const __generated_hammer__20c: HammerRO = {
     },
 };
 
-const __generated_hammer__21a: HammerRO = {
+const __generated_hammer__21a: Hammer = {
     category: "hammer",
     id: "21a",
 
@@ -2639,7 +2639,7 @@ const __generated_hammer__21a: HammerRO = {
     },
 };
 
-const __generated_hammer__21b: HammerRO = {
+const __generated_hammer__21b: Hammer = {
     category: "hammer",
     id: "21b",
 
@@ -2677,7 +2677,7 @@ const __generated_hammer__21b: HammerRO = {
     },
 };
 
-const __generated_hammer__21c: HammerRO = {
+const __generated_hammer__21c: Hammer = {
     category: "hammer",
     id: "21c",
 
@@ -2715,7 +2715,7 @@ const __generated_hammer__21c: HammerRO = {
     },
 };
 
-const __generated_hammer__22a: HammerRO = {
+const __generated_hammer__22a: Hammer = {
     category: "hammer",
     id: "22a",
 
@@ -2754,7 +2754,7 @@ const __generated_hammer__22a: HammerRO = {
     },
 };
 
-const __generated_hammer__22b: HammerRO = {
+const __generated_hammer__22b: Hammer = {
     category: "hammer",
     id: "22b",
 
@@ -2793,7 +2793,7 @@ const __generated_hammer__22b: HammerRO = {
     },
 };
 
-const __generated_hammer__22c: HammerRO = {
+const __generated_hammer__22c: Hammer = {
     category: "hammer",
     id: "22c",
 
@@ -2834,7 +2834,7 @@ const __generated_hammer__22c: HammerRO = {
     },
 };
 
-const __generated_hammer__23a: HammerRO = {
+const __generated_hammer__23a: Hammer = {
     category: "hammer",
     id: "23a",
 
@@ -2867,7 +2867,7 @@ const __generated_hammer__23a: HammerRO = {
     },
 };
 
-const __generated_hammer__23b: HammerRO = {
+const __generated_hammer__23b: Hammer = {
     category: "hammer",
     id: "23b",
 
@@ -2901,7 +2901,7 @@ const __generated_hammer__23b: HammerRO = {
     },
 };
 
-const __generated_hammer__23c: HammerRO = {
+const __generated_hammer__23c: Hammer = {
     category: "hammer",
     id: "23c",
 
@@ -2936,7 +2936,7 @@ const __generated_hammer__23c: HammerRO = {
     },
 };
 
-const __generated_hammer__24a: HammerRO = {
+const __generated_hammer__24a: Hammer = {
     category: "hammer",
     id: "24a",
 
@@ -2973,7 +2973,7 @@ const __generated_hammer__24a: HammerRO = {
     },
 };
 
-const __generated_hammer__24b: HammerRO = {
+const __generated_hammer__24b: Hammer = {
     category: "hammer",
     id: "24b",
 
@@ -3010,7 +3010,7 @@ const __generated_hammer__24b: HammerRO = {
     },
 };
 
-const __generated_hammer__24c: HammerRO = {
+const __generated_hammer__24c: Hammer = {
     category: "hammer",
     id: "24c",
 
@@ -3047,7 +3047,7 @@ const __generated_hammer__24c: HammerRO = {
     },
 };
 
-const __generated_hammer__25a: HammerRO = {
+const __generated_hammer__25a: Hammer = {
     category: "hammer",
     id: "25a",
 
@@ -3082,7 +3082,7 @@ const __generated_hammer__25a: HammerRO = {
     },
 };
 
-const __generated_hammer__25b: HammerRO = {
+const __generated_hammer__25b: Hammer = {
     category: "hammer",
     id: "25b",
 
@@ -3118,7 +3118,7 @@ const __generated_hammer__25b: HammerRO = {
     },
 };
 
-const __generated_hammer__25c: HammerRO = {
+const __generated_hammer__25c: Hammer = {
     category: "hammer",
     id: "25c",
 
@@ -3154,7 +3154,7 @@ const __generated_hammer__25c: HammerRO = {
     },
 };
 
-const __generated_hammer__25d: HammerRO = {
+const __generated_hammer__25d: Hammer = {
     category: "hammer",
     id: "25d",
 
@@ -3191,7 +3191,7 @@ const __generated_hammer__25d: HammerRO = {
     },
 };
 
-const __generated_hammer__26a: HammerRO = {
+const __generated_hammer__26a: Hammer = {
     category: "hammer",
     id: "26a",
 
@@ -3227,7 +3227,7 @@ const __generated_hammer__26a: HammerRO = {
     },
 };
 
-const __generated_hammer__26b: HammerRO = {
+const __generated_hammer__26b: Hammer = {
     category: "hammer",
     id: "26b",
 
@@ -3263,7 +3263,7 @@ const __generated_hammer__26b: HammerRO = {
     },
 };
 
-const __generated_hammer__26c: HammerRO = {
+const __generated_hammer__26c: Hammer = {
     category: "hammer",
     id: "26c",
 
@@ -3300,7 +3300,7 @@ const __generated_hammer__26c: HammerRO = {
     },
 };
 
-const __generated_hammer__27a: HammerRO = {
+const __generated_hammer__27a: Hammer = {
     category: "hammer",
     id: "27a",
 
@@ -3334,7 +3334,7 @@ const __generated_hammer__27a: HammerRO = {
     },
 };
 
-const __generated_hammer__27b: HammerRO = {
+const __generated_hammer__27b: Hammer = {
     category: "hammer",
     id: "27b",
 
@@ -3369,7 +3369,7 @@ const __generated_hammer__27b: HammerRO = {
     },
 };
 
-const __generated_hammer__27c: HammerRO = {
+const __generated_hammer__27c: Hammer = {
     category: "hammer",
     id: "27c",
 
@@ -3405,7 +3405,7 @@ const __generated_hammer__27c: HammerRO = {
     },
 };
 
-const __generated_hammer__28a: HammerRO = {
+const __generated_hammer__28a: Hammer = {
     category: "hammer",
     id: "28a",
 
@@ -3439,7 +3439,7 @@ const __generated_hammer__28a: HammerRO = {
     },
 };
 
-const __generated_hammer__28b: HammerRO = {
+const __generated_hammer__28b: Hammer = {
     category: "hammer",
     id: "28b",
 
@@ -3473,7 +3473,7 @@ const __generated_hammer__28b: HammerRO = {
     },
 };
 
-const __generated_hammer__28c: HammerRO = {
+const __generated_hammer__28c: Hammer = {
     category: "hammer",
     id: "28c",
 
@@ -3509,7 +3509,7 @@ const __generated_hammer__28c: HammerRO = {
     },
 };
 
-const __generated_hammer__29a: HammerRO = {
+const __generated_hammer__29a: Hammer = {
     category: "hammer",
     id: "29a",
 
@@ -3543,7 +3543,7 @@ const __generated_hammer__29a: HammerRO = {
     },
 };
 
-const __generated_hammer__29b: HammerRO = {
+const __generated_hammer__29b: Hammer = {
     category: "hammer",
     id: "29b",
 
@@ -3578,7 +3578,7 @@ const __generated_hammer__29b: HammerRO = {
     },
 };
 
-const __generated_hammer__29c: HammerRO = {
+const __generated_hammer__29c: Hammer = {
     category: "hammer",
     id: "29c",
 
@@ -3614,7 +3614,7 @@ const __generated_hammer__29c: HammerRO = {
     },
 };
 
-const __generated_hammer__30a: HammerRO = {
+const __generated_hammer__30a: Hammer = {
     category: "hammer",
     id: "30a",
 
@@ -3650,7 +3650,7 @@ const __generated_hammer__30a: HammerRO = {
     },
 };
 
-const __generated_hammer__30b: HammerRO = {
+const __generated_hammer__30b: Hammer = {
     category: "hammer",
     id: "30b",
 
@@ -3687,7 +3687,7 @@ const __generated_hammer__30b: HammerRO = {
     },
 };
 
-const __generated_hammer__30c: HammerRO = {
+const __generated_hammer__30c: Hammer = {
     category: "hammer",
     id: "30c",
 
@@ -3724,7 +3724,7 @@ const __generated_hammer__30c: HammerRO = {
     },
 };
 
-const __generated_hammer__31a: HammerRO = {
+const __generated_hammer__31a: Hammer = {
     category: "hammer",
     id: "31a",
 
@@ -3760,7 +3760,7 @@ const __generated_hammer__31a: HammerRO = {
     },
 };
 
-const __generated_hammer__31b: HammerRO = {
+const __generated_hammer__31b: Hammer = {
     category: "hammer",
     id: "31b",
 
@@ -3797,7 +3797,7 @@ const __generated_hammer__31b: HammerRO = {
     },
 };
 
-const __generated_hammer__31c: HammerRO = {
+const __generated_hammer__31c: Hammer = {
     category: "hammer",
     id: "31c",
 
@@ -3834,7 +3834,7 @@ const __generated_hammer__31c: HammerRO = {
     },
 };
 
-const __generated_hammer__32a: HammerRO = {
+const __generated_hammer__32a: Hammer = {
     category: "hammer",
     id: "32a",
 
@@ -3866,7 +3866,7 @@ const __generated_hammer__32a: HammerRO = {
     },
 };
 
-const __generated_hammer__32b: HammerRO = {
+const __generated_hammer__32b: Hammer = {
     category: "hammer",
     id: "32b",
 
@@ -3899,7 +3899,7 @@ const __generated_hammer__32b: HammerRO = {
     },
 };
 
-const __generated_hammer__32c: HammerRO = {
+const __generated_hammer__32c: Hammer = {
     category: "hammer",
     id: "32c",
 
@@ -3933,7 +3933,7 @@ const __generated_hammer__32c: HammerRO = {
     },
 };
 
-const __generated_hammer__33a: HammerRO = {
+const __generated_hammer__33a: Hammer = {
     category: "hammer",
     id: "33a",
 
@@ -3965,7 +3965,7 @@ const __generated_hammer__33a: HammerRO = {
     },
 };
 
-const __generated_hammer__33b: HammerRO = {
+const __generated_hammer__33b: Hammer = {
     category: "hammer",
     id: "33b",
 
@@ -3997,7 +3997,7 @@ const __generated_hammer__33b: HammerRO = {
     },
 };
 
-const __generated_hammer__33c: HammerRO = {
+const __generated_hammer__33c: Hammer = {
     category: "hammer",
     id: "33c",
 
@@ -4029,7 +4029,7 @@ const __generated_hammer__33c: HammerRO = {
     },
 };
 
-const __generated_hammer__34a: HammerRO = {
+const __generated_hammer__34a: Hammer = {
     category: "hammer",
     id: "34a",
 
@@ -4061,7 +4061,7 @@ const __generated_hammer__34a: HammerRO = {
     },
 };
 
-const __generated_hammer__34b: HammerRO = {
+const __generated_hammer__34b: Hammer = {
     category: "hammer",
     id: "34b",
 
@@ -4094,7 +4094,7 @@ const __generated_hammer__34b: HammerRO = {
     },
 };
 
-const __generated_hammer__34c: HammerRO = {
+const __generated_hammer__34c: Hammer = {
     category: "hammer",
     id: "34c",
 
@@ -4128,7 +4128,7 @@ const __generated_hammer__34c: HammerRO = {
     },
 };
 
-const __generated_hammer__35a: HammerRO = {
+const __generated_hammer__35a: Hammer = {
     category: "hammer",
     id: "35a",
 
@@ -4160,7 +4160,7 @@ const __generated_hammer__35a: HammerRO = {
     },
 };
 
-const __generated_hammer__35b: HammerRO = {
+const __generated_hammer__35b: Hammer = {
     category: "hammer",
     id: "35b",
 
@@ -4193,7 +4193,7 @@ const __generated_hammer__35b: HammerRO = {
     },
 };
 
-const __generated_hammer__35c: HammerRO = {
+const __generated_hammer__35c: Hammer = {
     category: "hammer",
     id: "35c",
 
@@ -4227,7 +4227,7 @@ const __generated_hammer__35c: HammerRO = {
     },
 };
 
-const __generated_hammer__36a: HammerRO = {
+const __generated_hammer__36a: Hammer = {
     category: "hammer",
     id: "36a",
 
@@ -4259,7 +4259,7 @@ const __generated_hammer__36a: HammerRO = {
     },
 };
 
-const __generated_hammer__36b: HammerRO = {
+const __generated_hammer__36b: Hammer = {
     category: "hammer",
     id: "36b",
 
@@ -4292,7 +4292,7 @@ const __generated_hammer__36b: HammerRO = {
     },
 };
 
-const __generated_hammer__37a: HammerRO = {
+const __generated_hammer__37a: Hammer = {
     category: "hammer",
     id: "37a",
 
@@ -4324,7 +4324,7 @@ const __generated_hammer__37a: HammerRO = {
     },
 };
 
-const __generated_hammer__37b: HammerRO = {
+const __generated_hammer__37b: Hammer = {
     category: "hammer",
     id: "37b",
 
@@ -4358,7 +4358,7 @@ const __generated_hammer__37b: HammerRO = {
     },
 };
 
-const __generated_hammer__38a: HammerRO = {
+const __generated_hammer__38a: Hammer = {
     category: "hammer",
     id: "38a",
 
@@ -4390,7 +4390,7 @@ const __generated_hammer__38a: HammerRO = {
     },
 };
 
-const __generated_hammer__38b: HammerRO = {
+const __generated_hammer__38b: Hammer = {
     category: "hammer",
     id: "38b",
 
@@ -4423,7 +4423,7 @@ const __generated_hammer__38b: HammerRO = {
     },
 };
 
-const __generated_hammer__39a: HammerRO = {
+const __generated_hammer__39a: Hammer = {
     category: "hammer",
     id: "39a",
 
@@ -4455,7 +4455,7 @@ const __generated_hammer__39a: HammerRO = {
     },
 };
 
-const __generated_hammer__39b: HammerRO = {
+const __generated_hammer__39b: Hammer = {
     category: "hammer",
     id: "39b",
 
@@ -4488,7 +4488,7 @@ const __generated_hammer__39b: HammerRO = {
     },
 };
 
-const __generated_hammer__40a: HammerRO = {
+const __generated_hammer__40a: Hammer = {
     category: "hammer",
     id: "40a",
 
@@ -4520,7 +4520,7 @@ const __generated_hammer__40a: HammerRO = {
     },
 };
 
-const __generated_hammer__40b: HammerRO = {
+const __generated_hammer__40b: Hammer = {
     category: "hammer",
     id: "40b",
 
@@ -4552,7 +4552,7 @@ const __generated_hammer__40b: HammerRO = {
     },
 };
 
-const __generated_hammer__41a: HammerRO = {
+const __generated_hammer__41a: Hammer = {
     category: "hammer",
     id: "41a",
 
@@ -4584,7 +4584,7 @@ const __generated_hammer__41a: HammerRO = {
     },
 };
 
-const __generated_hammer__41b: HammerRO = {
+const __generated_hammer__41b: Hammer = {
     category: "hammer",
     id: "41b",
 
@@ -4617,7 +4617,7 @@ const __generated_hammer__41b: HammerRO = {
     },
 };
 
-const __generated_hammer__41c: HammerRO = {
+const __generated_hammer__41c: Hammer = {
     category: "hammer",
     id: "41c",
 
@@ -4652,7 +4652,7 @@ const __generated_hammer__41c: HammerRO = {
     },
 };
 
-const __generated_hammer__42a: HammerRO = {
+const __generated_hammer__42a: Hammer = {
     category: "hammer",
     id: "42a",
 
@@ -4684,7 +4684,7 @@ const __generated_hammer__42a: HammerRO = {
     },
 };
 
-const __generated_hammer__42b: HammerRO = {
+const __generated_hammer__42b: Hammer = {
     category: "hammer",
     id: "42b",
 
@@ -4717,7 +4717,7 @@ const __generated_hammer__42b: HammerRO = {
     },
 };
 
-const __generated_hammer__42c: HammerRO = {
+const __generated_hammer__42c: Hammer = {
     category: "hammer",
     id: "42c",
 
@@ -4751,7 +4751,7 @@ const __generated_hammer__42c: HammerRO = {
     },
 };
 
-const __generated_hammer__42d: HammerRO = {
+const __generated_hammer__42d: Hammer = {
     category: "hammer",
     id: "42d",
 
@@ -4786,7 +4786,7 @@ const __generated_hammer__42d: HammerRO = {
     },
 };
 
-const __generated_hammer__43a: HammerRO = {
+const __generated_hammer__43a: Hammer = {
     category: "hammer",
     id: "43a",
 
@@ -4818,7 +4818,7 @@ const __generated_hammer__43a: HammerRO = {
     },
 };
 
-const __generated_hammer__43b: HammerRO = {
+const __generated_hammer__43b: Hammer = {
     category: "hammer",
     id: "43b",
 
@@ -4850,7 +4850,7 @@ const __generated_hammer__43b: HammerRO = {
     },
 };
 
-const __generated_hammer__43c: HammerRO = {
+const __generated_hammer__43c: Hammer = {
     category: "hammer",
     id: "43c",
 
@@ -4883,7 +4883,7 @@ const __generated_hammer__43c: HammerRO = {
     },
 };
 
-const __generated_hammer__ra: HammerRO = {
+const __generated_hammer__ra: Hammer = {
     category: "hammer",
     id: "ra",
 
@@ -4924,7 +4924,7 @@ const __generated_hammer__ra: HammerRO = {
     },
 };
 
-const __generated_hammer__rb: HammerRO = {
+const __generated_hammer__rb: Hammer = {
     category: "hammer",
     id: "rb",
 
@@ -4969,7 +4969,7 @@ const __generated_hammer__rb: HammerRO = {
     },
 };
 
-const __generated_hammer__rc: HammerRO = {
+const __generated_hammer__rc: Hammer = {
     category: "hammer",
     id: "rc",
 
@@ -5027,7 +5027,7 @@ const __generated_hammer__rc: HammerRO = {
     },
 };
 
-const __generated_hammer__rd: HammerRO = {
+const __generated_hammer__rd: Hammer = {
     category: "hammer",
     id: "rd",
 
@@ -5091,7 +5091,7 @@ const __generated_hammer__rd: HammerRO = {
     },
 };
 
-const __generated_hammer__re: HammerRO = {
+const __generated_hammer__re: Hammer = {
     category: "hammer",
     id: "re",
 
@@ -5165,7 +5165,7 @@ const __generated_hammer__re: HammerRO = {
     },
 };
 
-const __generated_hammer__rf: HammerRO = {
+const __generated_hammer__rf: Hammer = {
     category: "hammer",
     id: "rf",
 
@@ -5252,7 +5252,7 @@ const __generated_hammer__rf: HammerRO = {
     },
 };
 
-export const hammersArray: Readonly<HammerRO[]> = [
+export const hammersArray: Readonly<Hammer[]> = [
     __generated_hammer__1a,
     __generated_hammer__1b,
     __generated_hammer__1c,

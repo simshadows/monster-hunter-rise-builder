@@ -36,7 +36,7 @@
  */
 
 import {
-    type ArmourSetRO,
+    type ArmourSet,
 } from "../../common/types";
 
 import {
@@ -152,7 +152,7 @@ import {
     __generated_skill__wirebug_whisperer,
 } from "./_generated_skills";
 
-export const armourSetsArray: Readonly<ArmourSetRO[]> = [
+export const armourSetsArray: Readonly<ArmourSet[]> = [
     {
         id: 1,
         name: "Kamura",

@@ -4,7 +4,7 @@
  */
 
 import {
-    type WeaponSpecialSelectionRO,
+    type WeaponSpecialSelection,
 } from "../../../common/types";
 import {
     FrozenMap,
@@ -14,7 +14,7 @@ import {
     populate,
 } from "../../_internals";
 
-const hardcoded: WeaponSpecialSelectionRO[] = [
+const hardcoded: WeaponSpecialSelection[] = [
     {
         id: 1,
         name: "Silencer",
@@ -38,5 +38,5 @@ const hardcoded: WeaponSpecialSelectionRO[] = [
     },
 ];
 
-export const specialSelectionTypesMap: FrozenMap<number, WeaponSpecialSelectionRO> = populate(hardcoded, (obj) => obj);
+export const specialSelectionTypesMap: FrozenMap<number, WeaponSpecialSelection> = populate(hardcoded, (obj) => obj);
 

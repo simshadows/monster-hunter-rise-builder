@@ -37,7 +37,7 @@
 
 import {
     type EleStatStr,
-    type LongswordRO,
+    type Longsword,
 } from "../../common/types";
 import {
     FrozenMap,
@@ -136,7 +136,7 @@ import {
     __generated_ramp__wyvern_exploit,
 } from "./_generated_rampage_skills";
 
-const __generated_longsword__1a: LongswordRO = {
+const __generated_longsword__1a: Longsword = {
     category: "longsword",
     id: "1a",
 
@@ -168,7 +168,7 @@ const __generated_longsword__1a: LongswordRO = {
     },
 };
 
-const __generated_longsword__1b: LongswordRO = {
+const __generated_longsword__1b: Longsword = {
     category: "longsword",
     id: "1b",
 
@@ -200,7 +200,7 @@ const __generated_longsword__1b: LongswordRO = {
     },
 };
 
-const __generated_longsword__1c: LongswordRO = {
+const __generated_longsword__1c: Longsword = {
     category: "longsword",
     id: "1c",
 
@@ -233,7 +233,7 @@ const __generated_longsword__1c: LongswordRO = {
     },
 };
 
-const __generated_longsword__1d: LongswordRO = {
+const __generated_longsword__1d: Longsword = {
     category: "longsword",
     id: "1d",
 
@@ -267,7 +267,7 @@ const __generated_longsword__1d: LongswordRO = {
     },
 };
 
-const __generated_longsword__1e: LongswordRO = {
+const __generated_longsword__1e: Longsword = {
     category: "longsword",
     id: "1e",
 
@@ -303,7 +303,7 @@ const __generated_longsword__1e: LongswordRO = {
     },
 };
 
-const __generated_longsword__1f: LongswordRO = {
+const __generated_longsword__1f: Longsword = {
     category: "longsword",
     id: "1f",
 
@@ -340,7 +340,7 @@ const __generated_longsword__1f: LongswordRO = {
     },
 };
 
-const __generated_longsword__2a: LongswordRO = {
+const __generated_longsword__2a: Longsword = {
     category: "longsword",
     id: "2a",
 
@@ -375,7 +375,7 @@ const __generated_longsword__2a: LongswordRO = {
     },
 };
 
-const __generated_longsword__2b: LongswordRO = {
+const __generated_longsword__2b: Longsword = {
     category: "longsword",
     id: "2b",
 
@@ -411,7 +411,7 @@ const __generated_longsword__2b: LongswordRO = {
     },
 };
 
-const __generated_longsword__2c: LongswordRO = {
+const __generated_longsword__2c: Longsword = {
     category: "longsword",
     id: "2c",
 
@@ -448,7 +448,7 @@ const __generated_longsword__2c: LongswordRO = {
     },
 };
 
-const __generated_longsword__3a: LongswordRO = {
+const __generated_longsword__3a: Longsword = {
     category: "longsword",
     id: "3a",
 
@@ -482,7 +482,7 @@ const __generated_longsword__3a: LongswordRO = {
     },
 };
 
-const __generated_longsword__3b: LongswordRO = {
+const __generated_longsword__3b: Longsword = {
     category: "longsword",
     id: "3b",
 
@@ -517,7 +517,7 @@ const __generated_longsword__3b: LongswordRO = {
     },
 };
 
-const __generated_longsword__3c: LongswordRO = {
+const __generated_longsword__3c: Longsword = {
     category: "longsword",
     id: "3c",
 
@@ -553,7 +553,7 @@ const __generated_longsword__3c: LongswordRO = {
     },
 };
 
-const __generated_longsword__4a: LongswordRO = {
+const __generated_longsword__4a: Longsword = {
     category: "longsword",
     id: "4a",
 
@@ -587,7 +587,7 @@ const __generated_longsword__4a: LongswordRO = {
     },
 };
 
-const __generated_longsword__4b: LongswordRO = {
+const __generated_longsword__4b: Longsword = {
     category: "longsword",
     id: "4b",
 
@@ -622,7 +622,7 @@ const __generated_longsword__4b: LongswordRO = {
     },
 };
 
-const __generated_longsword__4c: LongswordRO = {
+const __generated_longsword__4c: Longsword = {
     category: "longsword",
     id: "4c",
 
@@ -659,7 +659,7 @@ const __generated_longsword__4c: LongswordRO = {
     },
 };
 
-const __generated_longsword__5a: LongswordRO = {
+const __generated_longsword__5a: Longsword = {
     category: "longsword",
     id: "5a",
 
@@ -693,7 +693,7 @@ const __generated_longsword__5a: LongswordRO = {
     },
 };
 
-const __generated_longsword__5b: LongswordRO = {
+const __generated_longsword__5b: Longsword = {
     category: "longsword",
     id: "5b",
 
@@ -727,7 +727,7 @@ const __generated_longsword__5b: LongswordRO = {
     },
 };
 
-const __generated_longsword__5c: LongswordRO = {
+const __generated_longsword__5c: Longsword = {
     category: "longsword",
     id: "5c",
 
@@ -763,7 +763,7 @@ const __generated_longsword__5c: LongswordRO = {
     },
 };
 
-const __generated_longsword__6a: LongswordRO = {
+const __generated_longsword__6a: Longsword = {
     category: "longsword",
     id: "6a",
 
@@ -799,7 +799,7 @@ const __generated_longsword__6a: LongswordRO = {
     },
 };
 
-const __generated_longsword__6b: LongswordRO = {
+const __generated_longsword__6b: Longsword = {
     category: "longsword",
     id: "6b",
 
@@ -835,7 +835,7 @@ const __generated_longsword__6b: LongswordRO = {
     },
 };
 
-const __generated_longsword__6c: LongswordRO = {
+const __generated_longsword__6c: Longsword = {
     category: "longsword",
     id: "6c",
 
@@ -871,7 +871,7 @@ const __generated_longsword__6c: LongswordRO = {
     },
 };
 
-const __generated_longsword__7a: LongswordRO = {
+const __generated_longsword__7a: Longsword = {
     category: "longsword",
     id: "7a",
 
@@ -909,7 +909,7 @@ const __generated_longsword__7a: LongswordRO = {
     },
 };
 
-const __generated_longsword__7b: LongswordRO = {
+const __generated_longsword__7b: Longsword = {
     category: "longsword",
     id: "7b",
 
@@ -948,7 +948,7 @@ const __generated_longsword__7b: LongswordRO = {
     },
 };
 
-const __generated_longsword__7c: LongswordRO = {
+const __generated_longsword__7c: Longsword = {
     category: "longsword",
     id: "7c",
 
@@ -988,7 +988,7 @@ const __generated_longsword__7c: LongswordRO = {
     },
 };
 
-const __generated_longsword__8a: LongswordRO = {
+const __generated_longsword__8a: Longsword = {
     category: "longsword",
     id: "8a",
 
@@ -1029,7 +1029,7 @@ const __generated_longsword__8a: LongswordRO = {
     },
 };
 
-const __generated_longsword__8b: LongswordRO = {
+const __generated_longsword__8b: Longsword = {
     category: "longsword",
     id: "8b",
 
@@ -1071,7 +1071,7 @@ const __generated_longsword__8b: LongswordRO = {
     },
 };
 
-const __generated_longsword__8c: LongswordRO = {
+const __generated_longsword__8c: Longsword = {
     category: "longsword",
     id: "8c",
 
@@ -1114,7 +1114,7 @@ const __generated_longsword__8c: LongswordRO = {
     },
 };
 
-const __generated_longsword__9a: LongswordRO = {
+const __generated_longsword__9a: Longsword = {
     category: "longsword",
     id: "9a",
 
@@ -1146,7 +1146,7 @@ const __generated_longsword__9a: LongswordRO = {
     },
 };
 
-const __generated_longsword__9b: LongswordRO = {
+const __generated_longsword__9b: Longsword = {
     category: "longsword",
     id: "9b",
 
@@ -1178,7 +1178,7 @@ const __generated_longsword__9b: LongswordRO = {
     },
 };
 
-const __generated_longsword__9c: LongswordRO = {
+const __generated_longsword__9c: Longsword = {
     category: "longsword",
     id: "9c",
 
@@ -1211,7 +1211,7 @@ const __generated_longsword__9c: LongswordRO = {
     },
 };
 
-const __generated_longsword__9d: LongswordRO = {
+const __generated_longsword__9d: Longsword = {
     category: "longsword",
     id: "9d",
 
@@ -1245,7 +1245,7 @@ const __generated_longsword__9d: LongswordRO = {
     },
 };
 
-const __generated_longsword__9e: LongswordRO = {
+const __generated_longsword__9e: Longsword = {
     category: "longsword",
     id: "9e",
 
@@ -1280,7 +1280,7 @@ const __generated_longsword__9e: LongswordRO = {
     },
 };
 
-const __generated_longsword__9f: LongswordRO = {
+const __generated_longsword__9f: Longsword = {
     category: "longsword",
     id: "9f",
 
@@ -1316,7 +1316,7 @@ const __generated_longsword__9f: LongswordRO = {
     },
 };
 
-const __generated_longsword__10a: LongswordRO = {
+const __generated_longsword__10a: Longsword = {
     category: "longsword",
     id: "10a",
 
@@ -1351,7 +1351,7 @@ const __generated_longsword__10a: LongswordRO = {
     },
 };
 
-const __generated_longsword__10b: LongswordRO = {
+const __generated_longsword__10b: Longsword = {
     category: "longsword",
     id: "10b",
 
@@ -1387,7 +1387,7 @@ const __generated_longsword__10b: LongswordRO = {
     },
 };
 
-const __generated_longsword__10c: LongswordRO = {
+const __generated_longsword__10c: Longsword = {
     category: "longsword",
     id: "10c",
 
@@ -1424,7 +1424,7 @@ const __generated_longsword__10c: LongswordRO = {
     },
 };
 
-const __generated_longsword__11a: LongswordRO = {
+const __generated_longsword__11a: Longsword = {
     category: "longsword",
     id: "11a",
 
@@ -1458,7 +1458,7 @@ const __generated_longsword__11a: LongswordRO = {
     },
 };
 
-const __generated_longsword__11b: LongswordRO = {
+const __generated_longsword__11b: Longsword = {
     category: "longsword",
     id: "11b",
 
@@ -1494,7 +1494,7 @@ const __generated_longsword__11b: LongswordRO = {
     },
 };
 
-const __generated_longsword__11c: LongswordRO = {
+const __generated_longsword__11c: Longsword = {
     category: "longsword",
     id: "11c",
 
@@ -1531,7 +1531,7 @@ const __generated_longsword__11c: LongswordRO = {
     },
 };
 
-const __generated_longsword__12a: LongswordRO = {
+const __generated_longsword__12a: Longsword = {
     category: "longsword",
     id: "12a",
 
@@ -1565,7 +1565,7 @@ const __generated_longsword__12a: LongswordRO = {
     },
 };
 
-const __generated_longsword__12b: LongswordRO = {
+const __generated_longsword__12b: Longsword = {
     category: "longsword",
     id: "12b",
 
@@ -1600,7 +1600,7 @@ const __generated_longsword__12b: LongswordRO = {
     },
 };
 
-const __generated_longsword__12c: LongswordRO = {
+const __generated_longsword__12c: Longsword = {
     category: "longsword",
     id: "12c",
 
@@ -1636,7 +1636,7 @@ const __generated_longsword__12c: LongswordRO = {
     },
 };
 
-const __generated_longsword__13a: LongswordRO = {
+const __generated_longsword__13a: Longsword = {
     category: "longsword",
     id: "13a",
 
@@ -1671,7 +1671,7 @@ const __generated_longsword__13a: LongswordRO = {
     },
 };
 
-const __generated_longsword__13b: LongswordRO = {
+const __generated_longsword__13b: Longsword = {
     category: "longsword",
     id: "13b",
 
@@ -1706,7 +1706,7 @@ const __generated_longsword__13b: LongswordRO = {
     },
 };
 
-const __generated_longsword__13c: LongswordRO = {
+const __generated_longsword__13c: Longsword = {
     category: "longsword",
     id: "13c",
 
@@ -1742,7 +1742,7 @@ const __generated_longsword__13c: LongswordRO = {
     },
 };
 
-const __generated_longsword__14a: LongswordRO = {
+const __generated_longsword__14a: Longsword = {
     category: "longsword",
     id: "14a",
 
@@ -1776,7 +1776,7 @@ const __generated_longsword__14a: LongswordRO = {
     },
 };
 
-const __generated_longsword__14b: LongswordRO = {
+const __generated_longsword__14b: Longsword = {
     category: "longsword",
     id: "14b",
 
@@ -1811,7 +1811,7 @@ const __generated_longsword__14b: LongswordRO = {
     },
 };
 
-const __generated_longsword__14c: LongswordRO = {
+const __generated_longsword__14c: Longsword = {
     category: "longsword",
     id: "14c",
 
@@ -1847,7 +1847,7 @@ const __generated_longsword__14c: LongswordRO = {
     },
 };
 
-const __generated_longsword__15a: LongswordRO = {
+const __generated_longsword__15a: Longsword = {
     category: "longsword",
     id: "15a",
 
@@ -1884,7 +1884,7 @@ const __generated_longsword__15a: LongswordRO = {
     },
 };
 
-const __generated_longsword__15b: LongswordRO = {
+const __generated_longsword__15b: Longsword = {
     category: "longsword",
     id: "15b",
 
@@ -1922,7 +1922,7 @@ const __generated_longsword__15b: LongswordRO = {
     },
 };
 
-const __generated_longsword__15c: LongswordRO = {
+const __generated_longsword__15c: Longsword = {
     category: "longsword",
     id: "15c",
 
@@ -1960,7 +1960,7 @@ const __generated_longsword__15c: LongswordRO = {
     },
 };
 
-const __generated_longsword__16a: LongswordRO = {
+const __generated_longsword__16a: Longsword = {
     category: "longsword",
     id: "16a",
 
@@ -1996,7 +1996,7 @@ const __generated_longsword__16a: LongswordRO = {
     },
 };
 
-const __generated_longsword__16b: LongswordRO = {
+const __generated_longsword__16b: Longsword = {
     category: "longsword",
     id: "16b",
 
@@ -2033,7 +2033,7 @@ const __generated_longsword__16b: LongswordRO = {
     },
 };
 
-const __generated_longsword__16c: LongswordRO = {
+const __generated_longsword__16c: Longsword = {
     category: "longsword",
     id: "16c",
 
@@ -2070,7 +2070,7 @@ const __generated_longsword__16c: LongswordRO = {
     },
 };
 
-const __generated_longsword__17a: LongswordRO = {
+const __generated_longsword__17a: Longsword = {
     category: "longsword",
     id: "17a",
 
@@ -2109,7 +2109,7 @@ const __generated_longsword__17a: LongswordRO = {
     },
 };
 
-const __generated_longsword__17b: LongswordRO = {
+const __generated_longsword__17b: Longsword = {
     category: "longsword",
     id: "17b",
 
@@ -2148,7 +2148,7 @@ const __generated_longsword__17b: LongswordRO = {
     },
 };
 
-const __generated_longsword__17c: LongswordRO = {
+const __generated_longsword__17c: Longsword = {
     category: "longsword",
     id: "17c",
 
@@ -2188,7 +2188,7 @@ const __generated_longsword__17c: LongswordRO = {
     },
 };
 
-const __generated_longsword__18a: LongswordRO = {
+const __generated_longsword__18a: Longsword = {
     category: "longsword",
     id: "18a",
 
@@ -2220,7 +2220,7 @@ const __generated_longsword__18a: LongswordRO = {
     },
 };
 
-const __generated_longsword__18b: LongswordRO = {
+const __generated_longsword__18b: Longsword = {
     category: "longsword",
     id: "18b",
 
@@ -2252,7 +2252,7 @@ const __generated_longsword__18b: LongswordRO = {
     },
 };
 
-const __generated_longsword__18c: LongswordRO = {
+const __generated_longsword__18c: Longsword = {
     category: "longsword",
     id: "18c",
 
@@ -2285,7 +2285,7 @@ const __generated_longsword__18c: LongswordRO = {
     },
 };
 
-const __generated_longsword__18d: LongswordRO = {
+const __generated_longsword__18d: Longsword = {
     category: "longsword",
     id: "18d",
 
@@ -2319,7 +2319,7 @@ const __generated_longsword__18d: LongswordRO = {
     },
 };
 
-const __generated_longsword__18e: LongswordRO = {
+const __generated_longsword__18e: Longsword = {
     category: "longsword",
     id: "18e",
 
@@ -2354,7 +2354,7 @@ const __generated_longsword__18e: LongswordRO = {
     },
 };
 
-const __generated_longsword__18f: LongswordRO = {
+const __generated_longsword__18f: Longsword = {
     category: "longsword",
     id: "18f",
 
@@ -2390,7 +2390,7 @@ const __generated_longsword__18f: LongswordRO = {
     },
 };
 
-const __generated_longsword__19a: LongswordRO = {
+const __generated_longsword__19a: Longsword = {
     category: "longsword",
     id: "19a",
 
@@ -2425,7 +2425,7 @@ const __generated_longsword__19a: LongswordRO = {
     },
 };
 
-const __generated_longsword__19b: LongswordRO = {
+const __generated_longsword__19b: Longsword = {
     category: "longsword",
     id: "19b",
 
@@ -2461,7 +2461,7 @@ const __generated_longsword__19b: LongswordRO = {
     },
 };
 
-const __generated_longsword__19c: LongswordRO = {
+const __generated_longsword__19c: Longsword = {
     category: "longsword",
     id: "19c",
 
@@ -2498,7 +2498,7 @@ const __generated_longsword__19c: LongswordRO = {
     },
 };
 
-const __generated_longsword__20a: LongswordRO = {
+const __generated_longsword__20a: Longsword = {
     category: "longsword",
     id: "20a",
 
@@ -2532,7 +2532,7 @@ const __generated_longsword__20a: LongswordRO = {
     },
 };
 
-const __generated_longsword__20b: LongswordRO = {
+const __generated_longsword__20b: Longsword = {
     category: "longsword",
     id: "20b",
 
@@ -2567,7 +2567,7 @@ const __generated_longsword__20b: LongswordRO = {
     },
 };
 
-const __generated_longsword__20c: LongswordRO = {
+const __generated_longsword__20c: Longsword = {
     category: "longsword",
     id: "20c",
 
@@ -2603,7 +2603,7 @@ const __generated_longsword__20c: LongswordRO = {
     },
 };
 
-const __generated_longsword__21a: LongswordRO = {
+const __generated_longsword__21a: Longsword = {
     category: "longsword",
     id: "21a",
 
@@ -2637,7 +2637,7 @@ const __generated_longsword__21a: LongswordRO = {
     },
 };
 
-const __generated_longsword__21b: LongswordRO = {
+const __generated_longsword__21b: Longsword = {
     category: "longsword",
     id: "21b",
 
@@ -2672,7 +2672,7 @@ const __generated_longsword__21b: LongswordRO = {
     },
 };
 
-const __generated_longsword__21c: LongswordRO = {
+const __generated_longsword__21c: Longsword = {
     category: "longsword",
     id: "21c",
 
@@ -2708,7 +2708,7 @@ const __generated_longsword__21c: LongswordRO = {
     },
 };
 
-const __generated_longsword__22a: LongswordRO = {
+const __generated_longsword__22a: Longsword = {
     category: "longsword",
     id: "22a",
 
@@ -2742,7 +2742,7 @@ const __generated_longsword__22a: LongswordRO = {
     },
 };
 
-const __generated_longsword__22b: LongswordRO = {
+const __generated_longsword__22b: Longsword = {
     category: "longsword",
     id: "22b",
 
@@ -2777,7 +2777,7 @@ const __generated_longsword__22b: LongswordRO = {
     },
 };
 
-const __generated_longsword__22c: LongswordRO = {
+const __generated_longsword__22c: Longsword = {
     category: "longsword",
     id: "22c",
 
@@ -2813,7 +2813,7 @@ const __generated_longsword__22c: LongswordRO = {
     },
 };
 
-const __generated_longsword__23a: LongswordRO = {
+const __generated_longsword__23a: Longsword = {
     category: "longsword",
     id: "23a",
 
@@ -2845,7 +2845,7 @@ const __generated_longsword__23a: LongswordRO = {
     },
 };
 
-const __generated_longsword__23b: LongswordRO = {
+const __generated_longsword__23b: Longsword = {
     category: "longsword",
     id: "23b",
 
@@ -2877,7 +2877,7 @@ const __generated_longsword__23b: LongswordRO = {
     },
 };
 
-const __generated_longsword__23c: LongswordRO = {
+const __generated_longsword__23c: Longsword = {
     category: "longsword",
     id: "23c",
 
@@ -2910,7 +2910,7 @@ const __generated_longsword__23c: LongswordRO = {
     },
 };
 
-const __generated_longsword__23d: LongswordRO = {
+const __generated_longsword__23d: Longsword = {
     category: "longsword",
     id: "23d",
 
@@ -2944,7 +2944,7 @@ const __generated_longsword__23d: LongswordRO = {
     },
 };
 
-const __generated_longsword__23e: LongswordRO = {
+const __generated_longsword__23e: Longsword = {
     category: "longsword",
     id: "23e",
 
@@ -2979,7 +2979,7 @@ const __generated_longsword__23e: LongswordRO = {
     },
 };
 
-const __generated_longsword__23f: LongswordRO = {
+const __generated_longsword__23f: Longsword = {
     category: "longsword",
     id: "23f",
 
@@ -3017,7 +3017,7 @@ const __generated_longsword__23f: LongswordRO = {
     },
 };
 
-const __generated_longsword__24a: LongswordRO = {
+const __generated_longsword__24a: Longsword = {
     category: "longsword",
     id: "24a",
 
@@ -3054,7 +3054,7 @@ const __generated_longsword__24a: LongswordRO = {
     },
 };
 
-const __generated_longsword__24b: LongswordRO = {
+const __generated_longsword__24b: Longsword = {
     category: "longsword",
     id: "24b",
 
@@ -3092,7 +3092,7 @@ const __generated_longsword__24b: LongswordRO = {
     },
 };
 
-const __generated_longsword__24c: LongswordRO = {
+const __generated_longsword__24c: Longsword = {
     category: "longsword",
     id: "24c",
 
@@ -3130,7 +3130,7 @@ const __generated_longsword__24c: LongswordRO = {
     },
 };
 
-const __generated_longsword__25a: LongswordRO = {
+const __generated_longsword__25a: Longsword = {
     category: "longsword",
     id: "25a",
 
@@ -3167,7 +3167,7 @@ const __generated_longsword__25a: LongswordRO = {
     },
 };
 
-const __generated_longsword__25b: LongswordRO = {
+const __generated_longsword__25b: Longsword = {
     category: "longsword",
     id: "25b",
 
@@ -3204,7 +3204,7 @@ const __generated_longsword__25b: LongswordRO = {
     },
 };
 
-const __generated_longsword__25c: LongswordRO = {
+const __generated_longsword__25c: Longsword = {
     category: "longsword",
     id: "25c",
 
@@ -3242,7 +3242,7 @@ const __generated_longsword__25c: LongswordRO = {
     },
 };
 
-const __generated_longsword__26a: LongswordRO = {
+const __generated_longsword__26a: Longsword = {
     category: "longsword",
     id: "26a",
 
@@ -3277,7 +3277,7 @@ const __generated_longsword__26a: LongswordRO = {
     },
 };
 
-const __generated_longsword__26b: LongswordRO = {
+const __generated_longsword__26b: Longsword = {
     category: "longsword",
     id: "26b",
 
@@ -3313,7 +3313,7 @@ const __generated_longsword__26b: LongswordRO = {
     },
 };
 
-const __generated_longsword__26c: LongswordRO = {
+const __generated_longsword__26c: Longsword = {
     category: "longsword",
     id: "26c",
 
@@ -3350,7 +3350,7 @@ const __generated_longsword__26c: LongswordRO = {
     },
 };
 
-const __generated_longsword__27a: LongswordRO = {
+const __generated_longsword__27a: Longsword = {
     category: "longsword",
     id: "27a",
 
@@ -3386,7 +3386,7 @@ const __generated_longsword__27a: LongswordRO = {
     },
 };
 
-const __generated_longsword__27b: LongswordRO = {
+const __generated_longsword__27b: Longsword = {
     category: "longsword",
     id: "27b",
 
@@ -3422,7 +3422,7 @@ const __generated_longsword__27b: LongswordRO = {
     },
 };
 
-const __generated_longsword__27c: LongswordRO = {
+const __generated_longsword__27c: Longsword = {
     category: "longsword",
     id: "27c",
 
@@ -3460,7 +3460,7 @@ const __generated_longsword__27c: LongswordRO = {
     },
 };
 
-const __generated_longsword__28a: LongswordRO = {
+const __generated_longsword__28a: Longsword = {
     category: "longsword",
     id: "28a",
 
@@ -3493,7 +3493,7 @@ const __generated_longsword__28a: LongswordRO = {
     },
 };
 
-const __generated_longsword__28b: LongswordRO = {
+const __generated_longsword__28b: Longsword = {
     category: "longsword",
     id: "28b",
 
@@ -3527,7 +3527,7 @@ const __generated_longsword__28b: LongswordRO = {
     },
 };
 
-const __generated_longsword__28c: LongswordRO = {
+const __generated_longsword__28c: Longsword = {
     category: "longsword",
     id: "28c",
 
@@ -3564,7 +3564,7 @@ const __generated_longsword__28c: LongswordRO = {
     },
 };
 
-const __generated_longsword__29a: LongswordRO = {
+const __generated_longsword__29a: Longsword = {
     category: "longsword",
     id: "29a",
 
@@ -3598,7 +3598,7 @@ const __generated_longsword__29a: LongswordRO = {
     },
 };
 
-const __generated_longsword__29b: LongswordRO = {
+const __generated_longsword__29b: Longsword = {
     category: "longsword",
     id: "29b",
 
@@ -3633,7 +3633,7 @@ const __generated_longsword__29b: LongswordRO = {
     },
 };
 
-const __generated_longsword__29c: LongswordRO = {
+const __generated_longsword__29c: Longsword = {
     category: "longsword",
     id: "29c",
 
@@ -3669,7 +3669,7 @@ const __generated_longsword__29c: LongswordRO = {
     },
 };
 
-const __generated_longsword__30a: LongswordRO = {
+const __generated_longsword__30a: Longsword = {
     category: "longsword",
     id: "30a",
 
@@ -3706,7 +3706,7 @@ const __generated_longsword__30a: LongswordRO = {
     },
 };
 
-const __generated_longsword__30b: LongswordRO = {
+const __generated_longsword__30b: Longsword = {
     category: "longsword",
     id: "30b",
 
@@ -3744,7 +3744,7 @@ const __generated_longsword__30b: LongswordRO = {
     },
 };
 
-const __generated_longsword__31a: LongswordRO = {
+const __generated_longsword__31a: Longsword = {
     category: "longsword",
     id: "31a",
 
@@ -3783,7 +3783,7 @@ const __generated_longsword__31a: LongswordRO = {
     },
 };
 
-const __generated_longsword__31b: LongswordRO = {
+const __generated_longsword__31b: Longsword = {
     category: "longsword",
     id: "31b",
 
@@ -3822,7 +3822,7 @@ const __generated_longsword__31b: LongswordRO = {
     },
 };
 
-const __generated_longsword__31c: LongswordRO = {
+const __generated_longsword__31c: Longsword = {
     category: "longsword",
     id: "31c",
 
@@ -3862,7 +3862,7 @@ const __generated_longsword__31c: LongswordRO = {
     },
 };
 
-const __generated_longsword__32a: LongswordRO = {
+const __generated_longsword__32a: Longsword = {
     category: "longsword",
     id: "32a",
 
@@ -3894,7 +3894,7 @@ const __generated_longsword__32a: LongswordRO = {
     },
 };
 
-const __generated_longsword__32b: LongswordRO = {
+const __generated_longsword__32b: Longsword = {
     category: "longsword",
     id: "32b",
 
@@ -3927,7 +3927,7 @@ const __generated_longsword__32b: LongswordRO = {
     },
 };
 
-const __generated_longsword__32c: LongswordRO = {
+const __generated_longsword__32c: Longsword = {
     category: "longsword",
     id: "32c",
 
@@ -3961,7 +3961,7 @@ const __generated_longsword__32c: LongswordRO = {
     },
 };
 
-const __generated_longsword__33a: LongswordRO = {
+const __generated_longsword__33a: Longsword = {
     category: "longsword",
     id: "33a",
 
@@ -3993,7 +3993,7 @@ const __generated_longsword__33a: LongswordRO = {
     },
 };
 
-const __generated_longsword__33b: LongswordRO = {
+const __generated_longsword__33b: Longsword = {
     category: "longsword",
     id: "33b",
 
@@ -4026,7 +4026,7 @@ const __generated_longsword__33b: LongswordRO = {
     },
 };
 
-const __generated_longsword__33c: LongswordRO = {
+const __generated_longsword__33c: Longsword = {
     category: "longsword",
     id: "33c",
 
@@ -4060,7 +4060,7 @@ const __generated_longsword__33c: LongswordRO = {
     },
 };
 
-const __generated_longsword__34a: LongswordRO = {
+const __generated_longsword__34a: Longsword = {
     category: "longsword",
     id: "34a",
 
@@ -4092,7 +4092,7 @@ const __generated_longsword__34a: LongswordRO = {
     },
 };
 
-const __generated_longsword__34b: LongswordRO = {
+const __generated_longsword__34b: Longsword = {
     category: "longsword",
     id: "34b",
 
@@ -4125,7 +4125,7 @@ const __generated_longsword__34b: LongswordRO = {
     },
 };
 
-const __generated_longsword__34c: LongswordRO = {
+const __generated_longsword__34c: Longsword = {
     category: "longsword",
     id: "34c",
 
@@ -4159,7 +4159,7 @@ const __generated_longsword__34c: LongswordRO = {
     },
 };
 
-const __generated_longsword__35a: LongswordRO = {
+const __generated_longsword__35a: Longsword = {
     category: "longsword",
     id: "35a",
 
@@ -4191,7 +4191,7 @@ const __generated_longsword__35a: LongswordRO = {
     },
 };
 
-const __generated_longsword__35b: LongswordRO = {
+const __generated_longsword__35b: Longsword = {
     category: "longsword",
     id: "35b",
 
@@ -4224,7 +4224,7 @@ const __generated_longsword__35b: LongswordRO = {
     },
 };
 
-const __generated_longsword__36a: LongswordRO = {
+const __generated_longsword__36a: Longsword = {
     category: "longsword",
     id: "36a",
 
@@ -4256,7 +4256,7 @@ const __generated_longsword__36a: LongswordRO = {
     },
 };
 
-const __generated_longsword__36b: LongswordRO = {
+const __generated_longsword__36b: Longsword = {
     category: "longsword",
     id: "36b",
 
@@ -4288,7 +4288,7 @@ const __generated_longsword__36b: LongswordRO = {
     },
 };
 
-const __generated_longsword__36c: LongswordRO = {
+const __generated_longsword__36c: Longsword = {
     category: "longsword",
     id: "36c",
 
@@ -4322,7 +4322,7 @@ const __generated_longsword__36c: LongswordRO = {
     },
 };
 
-const __generated_longsword__37a: LongswordRO = {
+const __generated_longsword__37a: Longsword = {
     category: "longsword",
     id: "37a",
 
@@ -4354,7 +4354,7 @@ const __generated_longsword__37a: LongswordRO = {
     },
 };
 
-const __generated_longsword__37b: LongswordRO = {
+const __generated_longsword__37b: Longsword = {
     category: "longsword",
     id: "37b",
 
@@ -4388,7 +4388,7 @@ const __generated_longsword__37b: LongswordRO = {
     },
 };
 
-const __generated_longsword__38a: LongswordRO = {
+const __generated_longsword__38a: Longsword = {
     category: "longsword",
     id: "38a",
 
@@ -4420,7 +4420,7 @@ const __generated_longsword__38a: LongswordRO = {
     },
 };
 
-const __generated_longsword__38b: LongswordRO = {
+const __generated_longsword__38b: Longsword = {
     category: "longsword",
     id: "38b",
 
@@ -4453,7 +4453,7 @@ const __generated_longsword__38b: LongswordRO = {
     },
 };
 
-const __generated_longsword__39a: LongswordRO = {
+const __generated_longsword__39a: Longsword = {
     category: "longsword",
     id: "39a",
 
@@ -4485,7 +4485,7 @@ const __generated_longsword__39a: LongswordRO = {
     },
 };
 
-const __generated_longsword__39b: LongswordRO = {
+const __generated_longsword__39b: Longsword = {
     category: "longsword",
     id: "39b",
 
@@ -4518,7 +4518,7 @@ const __generated_longsword__39b: LongswordRO = {
     },
 };
 
-const __generated_longsword__40a: LongswordRO = {
+const __generated_longsword__40a: Longsword = {
     category: "longsword",
     id: "40a",
 
@@ -4550,7 +4550,7 @@ const __generated_longsword__40a: LongswordRO = {
     },
 };
 
-const __generated_longsword__40b: LongswordRO = {
+const __generated_longsword__40b: Longsword = {
     category: "longsword",
     id: "40b",
 
@@ -4582,7 +4582,7 @@ const __generated_longsword__40b: LongswordRO = {
     },
 };
 
-const __generated_longsword__41a: LongswordRO = {
+const __generated_longsword__41a: Longsword = {
     category: "longsword",
     id: "41a",
 
@@ -4614,7 +4614,7 @@ const __generated_longsword__41a: LongswordRO = {
     },
 };
 
-const __generated_longsword__41b: LongswordRO = {
+const __generated_longsword__41b: Longsword = {
     category: "longsword",
     id: "41b",
 
@@ -4647,7 +4647,7 @@ const __generated_longsword__41b: LongswordRO = {
     },
 };
 
-const __generated_longsword__41c: LongswordRO = {
+const __generated_longsword__41c: Longsword = {
     category: "longsword",
     id: "41c",
 
@@ -4681,7 +4681,7 @@ const __generated_longsword__41c: LongswordRO = {
     },
 };
 
-const __generated_longsword__41d: LongswordRO = {
+const __generated_longsword__41d: Longsword = {
     category: "longsword",
     id: "41d",
 
@@ -4716,7 +4716,7 @@ const __generated_longsword__41d: LongswordRO = {
     },
 };
 
-const __generated_longsword__42a: LongswordRO = {
+const __generated_longsword__42a: Longsword = {
     category: "longsword",
     id: "42a",
 
@@ -4748,7 +4748,7 @@ const __generated_longsword__42a: LongswordRO = {
     },
 };
 
-const __generated_longsword__42b: LongswordRO = {
+const __generated_longsword__42b: Longsword = {
     category: "longsword",
     id: "42b",
 
@@ -4783,7 +4783,7 @@ const __generated_longsword__42b: LongswordRO = {
     },
 };
 
-const __generated_longsword__42c: LongswordRO = {
+const __generated_longsword__42c: Longsword = {
     category: "longsword",
     id: "42c",
 
@@ -4819,7 +4819,7 @@ const __generated_longsword__42c: LongswordRO = {
     },
 };
 
-const __generated_longsword__43a: LongswordRO = {
+const __generated_longsword__43a: Longsword = {
     category: "longsword",
     id: "43a",
 
@@ -4851,7 +4851,7 @@ const __generated_longsword__43a: LongswordRO = {
     },
 };
 
-const __generated_longsword__43b: LongswordRO = {
+const __generated_longsword__43b: Longsword = {
     category: "longsword",
     id: "43b",
 
@@ -4883,7 +4883,7 @@ const __generated_longsword__43b: LongswordRO = {
     },
 };
 
-const __generated_longsword__ra: LongswordRO = {
+const __generated_longsword__ra: Longsword = {
     category: "longsword",
     id: "ra",
 
@@ -4924,7 +4924,7 @@ const __generated_longsword__ra: LongswordRO = {
     },
 };
 
-const __generated_longsword__rb: LongswordRO = {
+const __generated_longsword__rb: Longsword = {
     category: "longsword",
     id: "rb",
 
@@ -4969,7 +4969,7 @@ const __generated_longsword__rb: LongswordRO = {
     },
 };
 
-const __generated_longsword__rc: LongswordRO = {
+const __generated_longsword__rc: Longsword = {
     category: "longsword",
     id: "rc",
 
@@ -5022,7 +5022,7 @@ const __generated_longsword__rc: LongswordRO = {
     },
 };
 
-const __generated_longsword__rd: LongswordRO = {
+const __generated_longsword__rd: Longsword = {
     category: "longsword",
     id: "rd",
 
@@ -5082,7 +5082,7 @@ const __generated_longsword__rd: LongswordRO = {
     },
 };
 
-const __generated_longsword__re: LongswordRO = {
+const __generated_longsword__re: Longsword = {
     category: "longsword",
     id: "re",
 
@@ -5152,7 +5152,7 @@ const __generated_longsword__re: LongswordRO = {
     },
 };
 
-const __generated_longsword__rf: LongswordRO = {
+const __generated_longsword__rf: Longsword = {
     category: "longsword",
     id: "rf",
 
@@ -5230,7 +5230,7 @@ const __generated_longsword__rf: LongswordRO = {
     },
 };
 
-export const longswordsArray: Readonly<LongswordRO[]> = [
+export const longswordsArray: Readonly<Longsword[]> = [
     __generated_longsword__1a,
     __generated_longsword__1b,
     __generated_longsword__1c,

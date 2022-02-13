@@ -37,7 +37,7 @@
 
 import {
     type EleStatStr,
-    type SwordAndShieldRO,
+    type SwordAndShield,
 } from "../../common/types";
 import {
     FrozenMap,
@@ -132,7 +132,7 @@ import {
     __generated_ramp__wyvern_exploit,
 } from "./_generated_rampage_skills";
 
-const __generated_swordandshield__1a: SwordAndShieldRO = {
+const __generated_swordandshield__1a: SwordAndShield = {
     category: "swordandshield",
     id: "1a",
 
@@ -164,7 +164,7 @@ const __generated_swordandshield__1a: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__1b: SwordAndShieldRO = {
+const __generated_swordandshield__1b: SwordAndShield = {
     category: "swordandshield",
     id: "1b",
 
@@ -196,7 +196,7 @@ const __generated_swordandshield__1b: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__1c: SwordAndShieldRO = {
+const __generated_swordandshield__1c: SwordAndShield = {
     category: "swordandshield",
     id: "1c",
 
@@ -229,7 +229,7 @@ const __generated_swordandshield__1c: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__1d: SwordAndShieldRO = {
+const __generated_swordandshield__1d: SwordAndShield = {
     category: "swordandshield",
     id: "1d",
 
@@ -263,7 +263,7 @@ const __generated_swordandshield__1d: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__1e: SwordAndShieldRO = {
+const __generated_swordandshield__1e: SwordAndShield = {
     category: "swordandshield",
     id: "1e",
 
@@ -299,7 +299,7 @@ const __generated_swordandshield__1e: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__1f: SwordAndShieldRO = {
+const __generated_swordandshield__1f: SwordAndShield = {
     category: "swordandshield",
     id: "1f",
 
@@ -336,7 +336,7 @@ const __generated_swordandshield__1f: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__2a: SwordAndShieldRO = {
+const __generated_swordandshield__2a: SwordAndShield = {
     category: "swordandshield",
     id: "2a",
 
@@ -372,7 +372,7 @@ const __generated_swordandshield__2a: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__2b: SwordAndShieldRO = {
+const __generated_swordandshield__2b: SwordAndShield = {
     category: "swordandshield",
     id: "2b",
 
@@ -409,7 +409,7 @@ const __generated_swordandshield__2b: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__2c: SwordAndShieldRO = {
+const __generated_swordandshield__2c: SwordAndShield = {
     category: "swordandshield",
     id: "2c",
 
@@ -446,7 +446,7 @@ const __generated_swordandshield__2c: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__3a: SwordAndShieldRO = {
+const __generated_swordandshield__3a: SwordAndShield = {
     category: "swordandshield",
     id: "3a",
 
@@ -482,7 +482,7 @@ const __generated_swordandshield__3a: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__3b: SwordAndShieldRO = {
+const __generated_swordandshield__3b: SwordAndShield = {
     category: "swordandshield",
     id: "3b",
 
@@ -519,7 +519,7 @@ const __generated_swordandshield__3b: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__3c: SwordAndShieldRO = {
+const __generated_swordandshield__3c: SwordAndShield = {
     category: "swordandshield",
     id: "3c",
 
@@ -557,7 +557,7 @@ const __generated_swordandshield__3c: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__4a: SwordAndShieldRO = {
+const __generated_swordandshield__4a: SwordAndShield = {
     category: "swordandshield",
     id: "4a",
 
@@ -592,7 +592,7 @@ const __generated_swordandshield__4a: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__4b: SwordAndShieldRO = {
+const __generated_swordandshield__4b: SwordAndShield = {
     category: "swordandshield",
     id: "4b",
 
@@ -628,7 +628,7 @@ const __generated_swordandshield__4b: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__4c: SwordAndShieldRO = {
+const __generated_swordandshield__4c: SwordAndShield = {
     category: "swordandshield",
     id: "4c",
 
@@ -664,7 +664,7 @@ const __generated_swordandshield__4c: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__5a: SwordAndShieldRO = {
+const __generated_swordandshield__5a: SwordAndShield = {
     category: "swordandshield",
     id: "5a",
 
@@ -701,7 +701,7 @@ const __generated_swordandshield__5a: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__5b: SwordAndShieldRO = {
+const __generated_swordandshield__5b: SwordAndShield = {
     category: "swordandshield",
     id: "5b",
 
@@ -739,7 +739,7 @@ const __generated_swordandshield__5b: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__5c: SwordAndShieldRO = {
+const __generated_swordandshield__5c: SwordAndShield = {
     category: "swordandshield",
     id: "5c",
 
@@ -778,7 +778,7 @@ const __generated_swordandshield__5c: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__6a: SwordAndShieldRO = {
+const __generated_swordandshield__6a: SwordAndShield = {
     category: "swordandshield",
     id: "6a",
 
@@ -813,7 +813,7 @@ const __generated_swordandshield__6a: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__6b: SwordAndShieldRO = {
+const __generated_swordandshield__6b: SwordAndShield = {
     category: "swordandshield",
     id: "6b",
 
@@ -848,7 +848,7 @@ const __generated_swordandshield__6b: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__6c: SwordAndShieldRO = {
+const __generated_swordandshield__6c: SwordAndShield = {
     category: "swordandshield",
     id: "6c",
 
@@ -884,7 +884,7 @@ const __generated_swordandshield__6c: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__7a: SwordAndShieldRO = {
+const __generated_swordandshield__7a: SwordAndShield = {
     category: "swordandshield",
     id: "7a",
 
@@ -919,7 +919,7 @@ const __generated_swordandshield__7a: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__7b: SwordAndShieldRO = {
+const __generated_swordandshield__7b: SwordAndShield = {
     category: "swordandshield",
     id: "7b",
 
@@ -954,7 +954,7 @@ const __generated_swordandshield__7b: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__7c: SwordAndShieldRO = {
+const __generated_swordandshield__7c: SwordAndShield = {
     category: "swordandshield",
     id: "7c",
 
@@ -991,7 +991,7 @@ const __generated_swordandshield__7c: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__8a: SwordAndShieldRO = {
+const __generated_swordandshield__8a: SwordAndShield = {
     category: "swordandshield",
     id: "8a",
 
@@ -1028,7 +1028,7 @@ const __generated_swordandshield__8a: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__8b: SwordAndShieldRO = {
+const __generated_swordandshield__8b: SwordAndShield = {
     category: "swordandshield",
     id: "8b",
 
@@ -1065,7 +1065,7 @@ const __generated_swordandshield__8b: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__8c: SwordAndShieldRO = {
+const __generated_swordandshield__8c: SwordAndShield = {
     category: "swordandshield",
     id: "8c",
 
@@ -1103,7 +1103,7 @@ const __generated_swordandshield__8c: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__9a: SwordAndShieldRO = {
+const __generated_swordandshield__9a: SwordAndShield = {
     category: "swordandshield",
     id: "9a",
 
@@ -1137,7 +1137,7 @@ const __generated_swordandshield__9a: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__9b: SwordAndShieldRO = {
+const __generated_swordandshield__9b: SwordAndShield = {
     category: "swordandshield",
     id: "9b",
 
@@ -1171,7 +1171,7 @@ const __generated_swordandshield__9b: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__9c: SwordAndShieldRO = {
+const __generated_swordandshield__9c: SwordAndShield = {
     category: "swordandshield",
     id: "9c",
 
@@ -1206,7 +1206,7 @@ const __generated_swordandshield__9c: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__10a: SwordAndShieldRO = {
+const __generated_swordandshield__10a: SwordAndShield = {
     category: "swordandshield",
     id: "10a",
 
@@ -1238,7 +1238,7 @@ const __generated_swordandshield__10a: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__10b: SwordAndShieldRO = {
+const __generated_swordandshield__10b: SwordAndShield = {
     category: "swordandshield",
     id: "10b",
 
@@ -1270,7 +1270,7 @@ const __generated_swordandshield__10b: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__10c: SwordAndShieldRO = {
+const __generated_swordandshield__10c: SwordAndShield = {
     category: "swordandshield",
     id: "10c",
 
@@ -1303,7 +1303,7 @@ const __generated_swordandshield__10c: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__10d: SwordAndShieldRO = {
+const __generated_swordandshield__10d: SwordAndShield = {
     category: "swordandshield",
     id: "10d",
 
@@ -1337,7 +1337,7 @@ const __generated_swordandshield__10d: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__10e: SwordAndShieldRO = {
+const __generated_swordandshield__10e: SwordAndShield = {
     category: "swordandshield",
     id: "10e",
 
@@ -1372,7 +1372,7 @@ const __generated_swordandshield__10e: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__10f: SwordAndShieldRO = {
+const __generated_swordandshield__10f: SwordAndShield = {
     category: "swordandshield",
     id: "10f",
 
@@ -1408,7 +1408,7 @@ const __generated_swordandshield__10f: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__11a: SwordAndShieldRO = {
+const __generated_swordandshield__11a: SwordAndShield = {
     category: "swordandshield",
     id: "11a",
 
@@ -1445,7 +1445,7 @@ const __generated_swordandshield__11a: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__11b: SwordAndShieldRO = {
+const __generated_swordandshield__11b: SwordAndShield = {
     category: "swordandshield",
     id: "11b",
 
@@ -1482,7 +1482,7 @@ const __generated_swordandshield__11b: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__11c: SwordAndShieldRO = {
+const __generated_swordandshield__11c: SwordAndShield = {
     category: "swordandshield",
     id: "11c",
 
@@ -1520,7 +1520,7 @@ const __generated_swordandshield__11c: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__12a: SwordAndShieldRO = {
+const __generated_swordandshield__12a: SwordAndShield = {
     category: "swordandshield",
     id: "12a",
 
@@ -1555,7 +1555,7 @@ const __generated_swordandshield__12a: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__12b: SwordAndShieldRO = {
+const __generated_swordandshield__12b: SwordAndShield = {
     category: "swordandshield",
     id: "12b",
 
@@ -1590,7 +1590,7 @@ const __generated_swordandshield__12b: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__12c: SwordAndShieldRO = {
+const __generated_swordandshield__12c: SwordAndShield = {
     category: "swordandshield",
     id: "12c",
 
@@ -1626,7 +1626,7 @@ const __generated_swordandshield__12c: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__13a: SwordAndShieldRO = {
+const __generated_swordandshield__13a: SwordAndShield = {
     category: "swordandshield",
     id: "13a",
 
@@ -1661,7 +1661,7 @@ const __generated_swordandshield__13a: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__13b: SwordAndShieldRO = {
+const __generated_swordandshield__13b: SwordAndShield = {
     category: "swordandshield",
     id: "13b",
 
@@ -1698,7 +1698,7 @@ const __generated_swordandshield__13b: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__13c: SwordAndShieldRO = {
+const __generated_swordandshield__13c: SwordAndShield = {
     category: "swordandshield",
     id: "13c",
 
@@ -1735,7 +1735,7 @@ const __generated_swordandshield__13c: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__14a: SwordAndShieldRO = {
+const __generated_swordandshield__14a: SwordAndShield = {
     category: "swordandshield",
     id: "14a",
 
@@ -1772,7 +1772,7 @@ const __generated_swordandshield__14a: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__14b: SwordAndShieldRO = {
+const __generated_swordandshield__14b: SwordAndShield = {
     category: "swordandshield",
     id: "14b",
 
@@ -1809,7 +1809,7 @@ const __generated_swordandshield__14b: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__14c: SwordAndShieldRO = {
+const __generated_swordandshield__14c: SwordAndShield = {
     category: "swordandshield",
     id: "14c",
 
@@ -1847,7 +1847,7 @@ const __generated_swordandshield__14c: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__15a: SwordAndShieldRO = {
+const __generated_swordandshield__15a: SwordAndShield = {
     category: "swordandshield",
     id: "15a",
 
@@ -1882,7 +1882,7 @@ const __generated_swordandshield__15a: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__15b: SwordAndShieldRO = {
+const __generated_swordandshield__15b: SwordAndShield = {
     category: "swordandshield",
     id: "15b",
 
@@ -1918,7 +1918,7 @@ const __generated_swordandshield__15b: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__15c: SwordAndShieldRO = {
+const __generated_swordandshield__15c: SwordAndShield = {
     category: "swordandshield",
     id: "15c",
 
@@ -1955,7 +1955,7 @@ const __generated_swordandshield__15c: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__16a: SwordAndShieldRO = {
+const __generated_swordandshield__16a: SwordAndShield = {
     category: "swordandshield",
     id: "16a",
 
@@ -1990,7 +1990,7 @@ const __generated_swordandshield__16a: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__16b: SwordAndShieldRO = {
+const __generated_swordandshield__16b: SwordAndShield = {
     category: "swordandshield",
     id: "16b",
 
@@ -2026,7 +2026,7 @@ const __generated_swordandshield__16b: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__16c: SwordAndShieldRO = {
+const __generated_swordandshield__16c: SwordAndShield = {
     category: "swordandshield",
     id: "16c",
 
@@ -2063,7 +2063,7 @@ const __generated_swordandshield__16c: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__17a: SwordAndShieldRO = {
+const __generated_swordandshield__17a: SwordAndShield = {
     category: "swordandshield",
     id: "17a",
 
@@ -2098,7 +2098,7 @@ const __generated_swordandshield__17a: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__17b: SwordAndShieldRO = {
+const __generated_swordandshield__17b: SwordAndShield = {
     category: "swordandshield",
     id: "17b",
 
@@ -2133,7 +2133,7 @@ const __generated_swordandshield__17b: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__17c: SwordAndShieldRO = {
+const __generated_swordandshield__17c: SwordAndShield = {
     category: "swordandshield",
     id: "17c",
 
@@ -2170,7 +2170,7 @@ const __generated_swordandshield__17c: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__18a: SwordAndShieldRO = {
+const __generated_swordandshield__18a: SwordAndShield = {
     category: "swordandshield",
     id: "18a",
 
@@ -2204,7 +2204,7 @@ const __generated_swordandshield__18a: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__18b: SwordAndShieldRO = {
+const __generated_swordandshield__18b: SwordAndShield = {
     category: "swordandshield",
     id: "18b",
 
@@ -2239,7 +2239,7 @@ const __generated_swordandshield__18b: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__18c: SwordAndShieldRO = {
+const __generated_swordandshield__18c: SwordAndShield = {
     category: "swordandshield",
     id: "18c",
 
@@ -2275,7 +2275,7 @@ const __generated_swordandshield__18c: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__19a: SwordAndShieldRO = {
+const __generated_swordandshield__19a: SwordAndShield = {
     category: "swordandshield",
     id: "19a",
 
@@ -2307,7 +2307,7 @@ const __generated_swordandshield__19a: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__19b: SwordAndShieldRO = {
+const __generated_swordandshield__19b: SwordAndShield = {
     category: "swordandshield",
     id: "19b",
 
@@ -2339,7 +2339,7 @@ const __generated_swordandshield__19b: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__19c: SwordAndShieldRO = {
+const __generated_swordandshield__19c: SwordAndShield = {
     category: "swordandshield",
     id: "19c",
 
@@ -2372,7 +2372,7 @@ const __generated_swordandshield__19c: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__19d: SwordAndShieldRO = {
+const __generated_swordandshield__19d: SwordAndShield = {
     category: "swordandshield",
     id: "19d",
 
@@ -2406,7 +2406,7 @@ const __generated_swordandshield__19d: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__19e: SwordAndShieldRO = {
+const __generated_swordandshield__19e: SwordAndShield = {
     category: "swordandshield",
     id: "19e",
 
@@ -2441,7 +2441,7 @@ const __generated_swordandshield__19e: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__19f: SwordAndShieldRO = {
+const __generated_swordandshield__19f: SwordAndShield = {
     category: "swordandshield",
     id: "19f",
 
@@ -2477,7 +2477,7 @@ const __generated_swordandshield__19f: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__20a: SwordAndShieldRO = {
+const __generated_swordandshield__20a: SwordAndShield = {
     category: "swordandshield",
     id: "20a",
 
@@ -2513,7 +2513,7 @@ const __generated_swordandshield__20a: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__20b: SwordAndShieldRO = {
+const __generated_swordandshield__20b: SwordAndShield = {
     category: "swordandshield",
     id: "20b",
 
@@ -2549,7 +2549,7 @@ const __generated_swordandshield__20b: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__20c: SwordAndShieldRO = {
+const __generated_swordandshield__20c: SwordAndShield = {
     category: "swordandshield",
     id: "20c",
 
@@ -2586,7 +2586,7 @@ const __generated_swordandshield__20c: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__21a: SwordAndShieldRO = {
+const __generated_swordandshield__21a: SwordAndShield = {
     category: "swordandshield",
     id: "21a",
 
@@ -2621,7 +2621,7 @@ const __generated_swordandshield__21a: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__21b: SwordAndShieldRO = {
+const __generated_swordandshield__21b: SwordAndShield = {
     category: "swordandshield",
     id: "21b",
 
@@ -2657,7 +2657,7 @@ const __generated_swordandshield__21b: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__21c: SwordAndShieldRO = {
+const __generated_swordandshield__21c: SwordAndShield = {
     category: "swordandshield",
     id: "21c",
 
@@ -2694,7 +2694,7 @@ const __generated_swordandshield__21c: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__22a: SwordAndShieldRO = {
+const __generated_swordandshield__22a: SwordAndShield = {
     category: "swordandshield",
     id: "22a",
 
@@ -2727,7 +2727,7 @@ const __generated_swordandshield__22a: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__22b: SwordAndShieldRO = {
+const __generated_swordandshield__22b: SwordAndShield = {
     category: "swordandshield",
     id: "22b",
 
@@ -2761,7 +2761,7 @@ const __generated_swordandshield__22b: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__22c: SwordAndShieldRO = {
+const __generated_swordandshield__22c: SwordAndShield = {
     category: "swordandshield",
     id: "22c",
 
@@ -2796,7 +2796,7 @@ const __generated_swordandshield__22c: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__23a: SwordAndShieldRO = {
+const __generated_swordandshield__23a: SwordAndShield = {
     category: "swordandshield",
     id: "23a",
 
@@ -2831,7 +2831,7 @@ const __generated_swordandshield__23a: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__23b: SwordAndShieldRO = {
+const __generated_swordandshield__23b: SwordAndShield = {
     category: "swordandshield",
     id: "23b",
 
@@ -2867,7 +2867,7 @@ const __generated_swordandshield__23b: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__23c: SwordAndShieldRO = {
+const __generated_swordandshield__23c: SwordAndShield = {
     category: "swordandshield",
     id: "23c",
 
@@ -2904,7 +2904,7 @@ const __generated_swordandshield__23c: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__24a: SwordAndShieldRO = {
+const __generated_swordandshield__24a: SwordAndShield = {
     category: "swordandshield",
     id: "24a",
 
@@ -2938,7 +2938,7 @@ const __generated_swordandshield__24a: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__24b: SwordAndShieldRO = {
+const __generated_swordandshield__24b: SwordAndShield = {
     category: "swordandshield",
     id: "24b",
 
@@ -2973,7 +2973,7 @@ const __generated_swordandshield__24b: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__24c: SwordAndShieldRO = {
+const __generated_swordandshield__24c: SwordAndShield = {
     category: "swordandshield",
     id: "24c",
 
@@ -3008,7 +3008,7 @@ const __generated_swordandshield__24c: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__25a: SwordAndShieldRO = {
+const __generated_swordandshield__25a: SwordAndShield = {
     category: "swordandshield",
     id: "25a",
 
@@ -3045,7 +3045,7 @@ const __generated_swordandshield__25a: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__25b: SwordAndShieldRO = {
+const __generated_swordandshield__25b: SwordAndShield = {
     category: "swordandshield",
     id: "25b",
 
@@ -3084,7 +3084,7 @@ const __generated_swordandshield__25b: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__25c: SwordAndShieldRO = {
+const __generated_swordandshield__25c: SwordAndShield = {
     category: "swordandshield",
     id: "25c",
 
@@ -3124,7 +3124,7 @@ const __generated_swordandshield__25c: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__26a: SwordAndShieldRO = {
+const __generated_swordandshield__26a: SwordAndShield = {
     category: "swordandshield",
     id: "26a",
 
@@ -3160,7 +3160,7 @@ const __generated_swordandshield__26a: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__26b: SwordAndShieldRO = {
+const __generated_swordandshield__26b: SwordAndShield = {
     category: "swordandshield",
     id: "26b",
 
@@ -3197,7 +3197,7 @@ const __generated_swordandshield__26b: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__26c: SwordAndShieldRO = {
+const __generated_swordandshield__26c: SwordAndShield = {
     category: "swordandshield",
     id: "26c",
 
@@ -3235,7 +3235,7 @@ const __generated_swordandshield__26c: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__27a: SwordAndShieldRO = {
+const __generated_swordandshield__27a: SwordAndShield = {
     category: "swordandshield",
     id: "27a",
 
@@ -3269,7 +3269,7 @@ const __generated_swordandshield__27a: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__27b: SwordAndShieldRO = {
+const __generated_swordandshield__27b: SwordAndShield = {
     category: "swordandshield",
     id: "27b",
 
@@ -3304,7 +3304,7 @@ const __generated_swordandshield__27b: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__27c: SwordAndShieldRO = {
+const __generated_swordandshield__27c: SwordAndShield = {
     category: "swordandshield",
     id: "27c",
 
@@ -3340,7 +3340,7 @@ const __generated_swordandshield__27c: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__28a: SwordAndShieldRO = {
+const __generated_swordandshield__28a: SwordAndShield = {
     category: "swordandshield",
     id: "28a",
 
@@ -3378,7 +3378,7 @@ const __generated_swordandshield__28a: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__28b: SwordAndShieldRO = {
+const __generated_swordandshield__28b: SwordAndShield = {
     category: "swordandshield",
     id: "28b",
 
@@ -3416,7 +3416,7 @@ const __generated_swordandshield__28b: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__28c: SwordAndShieldRO = {
+const __generated_swordandshield__28c: SwordAndShield = {
     category: "swordandshield",
     id: "28c",
 
@@ -3455,7 +3455,7 @@ const __generated_swordandshield__28c: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__29a: SwordAndShieldRO = {
+const __generated_swordandshield__29a: SwordAndShield = {
     category: "swordandshield",
     id: "29a",
 
@@ -3487,7 +3487,7 @@ const __generated_swordandshield__29a: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__29b: SwordAndShieldRO = {
+const __generated_swordandshield__29b: SwordAndShield = {
     category: "swordandshield",
     id: "29b",
 
@@ -3519,7 +3519,7 @@ const __generated_swordandshield__29b: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__29c: SwordAndShieldRO = {
+const __generated_swordandshield__29c: SwordAndShield = {
     category: "swordandshield",
     id: "29c",
 
@@ -3554,7 +3554,7 @@ const __generated_swordandshield__29c: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__29d: SwordAndShieldRO = {
+const __generated_swordandshield__29d: SwordAndShield = {
     category: "swordandshield",
     id: "29d",
 
@@ -3591,7 +3591,7 @@ const __generated_swordandshield__29d: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__30a: SwordAndShieldRO = {
+const __generated_swordandshield__30a: SwordAndShield = {
     category: "swordandshield",
     id: "30a",
 
@@ -3628,7 +3628,7 @@ const __generated_swordandshield__30a: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__30b: SwordAndShieldRO = {
+const __generated_swordandshield__30b: SwordAndShield = {
     category: "swordandshield",
     id: "30b",
 
@@ -3666,7 +3666,7 @@ const __generated_swordandshield__30b: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__30c: SwordAndShieldRO = {
+const __generated_swordandshield__30c: SwordAndShield = {
     category: "swordandshield",
     id: "30c",
 
@@ -3705,7 +3705,7 @@ const __generated_swordandshield__30c: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__31a: SwordAndShieldRO = {
+const __generated_swordandshield__31a: SwordAndShield = {
     category: "swordandshield",
     id: "31a",
 
@@ -3739,7 +3739,7 @@ const __generated_swordandshield__31a: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__31b: SwordAndShieldRO = {
+const __generated_swordandshield__31b: SwordAndShield = {
     category: "swordandshield",
     id: "31b",
 
@@ -3775,7 +3775,7 @@ const __generated_swordandshield__31b: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__32a: SwordAndShieldRO = {
+const __generated_swordandshield__32a: SwordAndShield = {
     category: "swordandshield",
     id: "32a",
 
@@ -3810,7 +3810,7 @@ const __generated_swordandshield__32a: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__32b: SwordAndShieldRO = {
+const __generated_swordandshield__32b: SwordAndShield = {
     category: "swordandshield",
     id: "32b",
 
@@ -3846,7 +3846,7 @@ const __generated_swordandshield__32b: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__33a: SwordAndShieldRO = {
+const __generated_swordandshield__33a: SwordAndShield = {
     category: "swordandshield",
     id: "33a",
 
@@ -3880,7 +3880,7 @@ const __generated_swordandshield__33a: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__33b: SwordAndShieldRO = {
+const __generated_swordandshield__33b: SwordAndShield = {
     category: "swordandshield",
     id: "33b",
 
@@ -3916,7 +3916,7 @@ const __generated_swordandshield__33b: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__33c: SwordAndShieldRO = {
+const __generated_swordandshield__33c: SwordAndShield = {
     category: "swordandshield",
     id: "33c",
 
@@ -3955,7 +3955,7 @@ const __generated_swordandshield__33c: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__34a: SwordAndShieldRO = {
+const __generated_swordandshield__34a: SwordAndShield = {
     category: "swordandshield",
     id: "34a",
 
@@ -3987,7 +3987,7 @@ const __generated_swordandshield__34a: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__34b: SwordAndShieldRO = {
+const __generated_swordandshield__34b: SwordAndShield = {
     category: "swordandshield",
     id: "34b",
 
@@ -4020,7 +4020,7 @@ const __generated_swordandshield__34b: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__34c: SwordAndShieldRO = {
+const __generated_swordandshield__34c: SwordAndShield = {
     category: "swordandshield",
     id: "34c",
 
@@ -4054,7 +4054,7 @@ const __generated_swordandshield__34c: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__35a: SwordAndShieldRO = {
+const __generated_swordandshield__35a: SwordAndShield = {
     category: "swordandshield",
     id: "35a",
 
@@ -4086,7 +4086,7 @@ const __generated_swordandshield__35a: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__35b: SwordAndShieldRO = {
+const __generated_swordandshield__35b: SwordAndShield = {
     category: "swordandshield",
     id: "35b",
 
@@ -4119,7 +4119,7 @@ const __generated_swordandshield__35b: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__35c: SwordAndShieldRO = {
+const __generated_swordandshield__35c: SwordAndShield = {
     category: "swordandshield",
     id: "35c",
 
@@ -4153,7 +4153,7 @@ const __generated_swordandshield__35c: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__36a: SwordAndShieldRO = {
+const __generated_swordandshield__36a: SwordAndShield = {
     category: "swordandshield",
     id: "36a",
 
@@ -4185,7 +4185,7 @@ const __generated_swordandshield__36a: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__36b: SwordAndShieldRO = {
+const __generated_swordandshield__36b: SwordAndShield = {
     category: "swordandshield",
     id: "36b",
 
@@ -4218,7 +4218,7 @@ const __generated_swordandshield__36b: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__36c: SwordAndShieldRO = {
+const __generated_swordandshield__36c: SwordAndShield = {
     category: "swordandshield",
     id: "36c",
 
@@ -4252,7 +4252,7 @@ const __generated_swordandshield__36c: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__37a: SwordAndShieldRO = {
+const __generated_swordandshield__37a: SwordAndShield = {
     category: "swordandshield",
     id: "37a",
 
@@ -4284,7 +4284,7 @@ const __generated_swordandshield__37a: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__37b: SwordAndShieldRO = {
+const __generated_swordandshield__37b: SwordAndShield = {
     category: "swordandshield",
     id: "37b",
 
@@ -4317,7 +4317,7 @@ const __generated_swordandshield__37b: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__38a: SwordAndShieldRO = {
+const __generated_swordandshield__38a: SwordAndShield = {
     category: "swordandshield",
     id: "38a",
 
@@ -4349,7 +4349,7 @@ const __generated_swordandshield__38a: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__38b: SwordAndShieldRO = {
+const __generated_swordandshield__38b: SwordAndShield = {
     category: "swordandshield",
     id: "38b",
 
@@ -4383,7 +4383,7 @@ const __generated_swordandshield__38b: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__39a: SwordAndShieldRO = {
+const __generated_swordandshield__39a: SwordAndShield = {
     category: "swordandshield",
     id: "39a",
 
@@ -4415,7 +4415,7 @@ const __generated_swordandshield__39a: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__39b: SwordAndShieldRO = {
+const __generated_swordandshield__39b: SwordAndShield = {
     category: "swordandshield",
     id: "39b",
 
@@ -4448,7 +4448,7 @@ const __generated_swordandshield__39b: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__40a: SwordAndShieldRO = {
+const __generated_swordandshield__40a: SwordAndShield = {
     category: "swordandshield",
     id: "40a",
 
@@ -4480,7 +4480,7 @@ const __generated_swordandshield__40a: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__40b: SwordAndShieldRO = {
+const __generated_swordandshield__40b: SwordAndShield = {
     category: "swordandshield",
     id: "40b",
 
@@ -4512,7 +4512,7 @@ const __generated_swordandshield__40b: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__41a: SwordAndShieldRO = {
+const __generated_swordandshield__41a: SwordAndShield = {
     category: "swordandshield",
     id: "41a",
 
@@ -4544,7 +4544,7 @@ const __generated_swordandshield__41a: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__41b: SwordAndShieldRO = {
+const __generated_swordandshield__41b: SwordAndShield = {
     category: "swordandshield",
     id: "41b",
 
@@ -4577,7 +4577,7 @@ const __generated_swordandshield__41b: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__41c: SwordAndShieldRO = {
+const __generated_swordandshield__41c: SwordAndShield = {
     category: "swordandshield",
     id: "41c",
 
@@ -4612,7 +4612,7 @@ const __generated_swordandshield__41c: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__42a: SwordAndShieldRO = {
+const __generated_swordandshield__42a: SwordAndShield = {
     category: "swordandshield",
     id: "42a",
 
@@ -4644,7 +4644,7 @@ const __generated_swordandshield__42a: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__42b: SwordAndShieldRO = {
+const __generated_swordandshield__42b: SwordAndShield = {
     category: "swordandshield",
     id: "42b",
 
@@ -4677,7 +4677,7 @@ const __generated_swordandshield__42b: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__42c: SwordAndShieldRO = {
+const __generated_swordandshield__42c: SwordAndShield = {
     category: "swordandshield",
     id: "42c",
 
@@ -4711,7 +4711,7 @@ const __generated_swordandshield__42c: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__43a: SwordAndShieldRO = {
+const __generated_swordandshield__43a: SwordAndShield = {
     category: "swordandshield",
     id: "43a",
 
@@ -4743,7 +4743,7 @@ const __generated_swordandshield__43a: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__43b: SwordAndShieldRO = {
+const __generated_swordandshield__43b: SwordAndShield = {
     category: "swordandshield",
     id: "43b",
 
@@ -4775,7 +4775,7 @@ const __generated_swordandshield__43b: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__ra: SwordAndShieldRO = {
+const __generated_swordandshield__ra: SwordAndShield = {
     category: "swordandshield",
     id: "ra",
 
@@ -4816,7 +4816,7 @@ const __generated_swordandshield__ra: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__rb: SwordAndShieldRO = {
+const __generated_swordandshield__rb: SwordAndShield = {
     category: "swordandshield",
     id: "rb",
 
@@ -4860,7 +4860,7 @@ const __generated_swordandshield__rb: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__rc: SwordAndShieldRO = {
+const __generated_swordandshield__rc: SwordAndShield = {
     category: "swordandshield",
     id: "rc",
 
@@ -4913,7 +4913,7 @@ const __generated_swordandshield__rc: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__rd: SwordAndShieldRO = {
+const __generated_swordandshield__rd: SwordAndShield = {
     category: "swordandshield",
     id: "rd",
 
@@ -4972,7 +4972,7 @@ const __generated_swordandshield__rd: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__re: SwordAndShieldRO = {
+const __generated_swordandshield__re: SwordAndShield = {
     category: "swordandshield",
     id: "re",
 
@@ -5041,7 +5041,7 @@ const __generated_swordandshield__re: SwordAndShieldRO = {
     },
 };
 
-const __generated_swordandshield__rf: SwordAndShieldRO = {
+const __generated_swordandshield__rf: SwordAndShield = {
     category: "swordandshield",
     id: "rf",
 
@@ -5117,7 +5117,7 @@ const __generated_swordandshield__rf: SwordAndShieldRO = {
     },
 };
 
-export const swordandshieldsArray: Readonly<SwordAndShieldRO[]> = [
+export const swordandshieldsArray: Readonly<SwordAndShield[]> = [
     __generated_swordandshield__1a,
     __generated_swordandshield__1b,
     __generated_swordandshield__1c,

@@ -37,7 +37,7 @@
 
 import {
     type EleStatStr,
-    type GunlanceRO,
+    type Gunlance,
 } from "../../common/types";
 import {
     FrozenMap,
@@ -155,7 +155,7 @@ import {
     __generated_ramp__wyvern_exploit,
 } from "./_generated_rampage_skills";
 
-const __generated_gunlance__1a: GunlanceRO = {
+const __generated_gunlance__1a: Gunlance = {
     category: "gunlance",
     id: "1a",
 
@@ -192,7 +192,7 @@ const __generated_gunlance__1a: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__1b: GunlanceRO = {
+const __generated_gunlance__1b: Gunlance = {
     category: "gunlance",
     id: "1b",
 
@@ -229,7 +229,7 @@ const __generated_gunlance__1b: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__1c: GunlanceRO = {
+const __generated_gunlance__1c: Gunlance = {
     category: "gunlance",
     id: "1c",
 
@@ -267,7 +267,7 @@ const __generated_gunlance__1c: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__1d: GunlanceRO = {
+const __generated_gunlance__1d: Gunlance = {
     category: "gunlance",
     id: "1d",
 
@@ -306,7 +306,7 @@ const __generated_gunlance__1d: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__1e: GunlanceRO = {
+const __generated_gunlance__1e: Gunlance = {
     category: "gunlance",
     id: "1e",
 
@@ -347,7 +347,7 @@ const __generated_gunlance__1e: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__1f: GunlanceRO = {
+const __generated_gunlance__1f: Gunlance = {
     category: "gunlance",
     id: "1f",
 
@@ -389,7 +389,7 @@ const __generated_gunlance__1f: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__2a: GunlanceRO = {
+const __generated_gunlance__2a: Gunlance = {
     category: "gunlance",
     id: "2a",
 
@@ -430,7 +430,7 @@ const __generated_gunlance__2a: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__2b: GunlanceRO = {
+const __generated_gunlance__2b: Gunlance = {
     category: "gunlance",
     id: "2b",
 
@@ -472,7 +472,7 @@ const __generated_gunlance__2b: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__2c: GunlanceRO = {
+const __generated_gunlance__2c: Gunlance = {
     category: "gunlance",
     id: "2c",
 
@@ -515,7 +515,7 @@ const __generated_gunlance__2c: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__3a: GunlanceRO = {
+const __generated_gunlance__3a: Gunlance = {
     category: "gunlance",
     id: "3a",
 
@@ -555,7 +555,7 @@ const __generated_gunlance__3a: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__3b: GunlanceRO = {
+const __generated_gunlance__3b: Gunlance = {
     category: "gunlance",
     id: "3b",
 
@@ -595,7 +595,7 @@ const __generated_gunlance__3b: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__3c: GunlanceRO = {
+const __generated_gunlance__3c: Gunlance = {
     category: "gunlance",
     id: "3c",
 
@@ -636,7 +636,7 @@ const __generated_gunlance__3c: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__4a: GunlanceRO = {
+const __generated_gunlance__4a: Gunlance = {
     category: "gunlance",
     id: "4a",
 
@@ -679,7 +679,7 @@ const __generated_gunlance__4a: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__4b: GunlanceRO = {
+const __generated_gunlance__4b: Gunlance = {
     category: "gunlance",
     id: "4b",
 
@@ -722,7 +722,7 @@ const __generated_gunlance__4b: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__4c: GunlanceRO = {
+const __generated_gunlance__4c: Gunlance = {
     category: "gunlance",
     id: "4c",
 
@@ -766,7 +766,7 @@ const __generated_gunlance__4c: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__5a: GunlanceRO = {
+const __generated_gunlance__5a: Gunlance = {
     category: "gunlance",
     id: "5a",
 
@@ -805,7 +805,7 @@ const __generated_gunlance__5a: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__5b: GunlanceRO = {
+const __generated_gunlance__5b: Gunlance = {
     category: "gunlance",
     id: "5b",
 
@@ -844,7 +844,7 @@ const __generated_gunlance__5b: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__5c: GunlanceRO = {
+const __generated_gunlance__5c: Gunlance = {
     category: "gunlance",
     id: "5c",
 
@@ -885,7 +885,7 @@ const __generated_gunlance__5c: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__6a: GunlanceRO = {
+const __generated_gunlance__6a: Gunlance = {
     category: "gunlance",
     id: "6a",
 
@@ -926,7 +926,7 @@ const __generated_gunlance__6a: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__6b: GunlanceRO = {
+const __generated_gunlance__6b: Gunlance = {
     category: "gunlance",
     id: "6b",
 
@@ -968,7 +968,7 @@ const __generated_gunlance__6b: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__6c: GunlanceRO = {
+const __generated_gunlance__6c: Gunlance = {
     category: "gunlance",
     id: "6c",
 
@@ -1011,7 +1011,7 @@ const __generated_gunlance__6c: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__7a: GunlanceRO = {
+const __generated_gunlance__7a: Gunlance = {
     category: "gunlance",
     id: "7a",
 
@@ -1052,7 +1052,7 @@ const __generated_gunlance__7a: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__7b: GunlanceRO = {
+const __generated_gunlance__7b: Gunlance = {
     category: "gunlance",
     id: "7b",
 
@@ -1094,7 +1094,7 @@ const __generated_gunlance__7b: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__7c: GunlanceRO = {
+const __generated_gunlance__7c: Gunlance = {
     category: "gunlance",
     id: "7c",
 
@@ -1137,7 +1137,7 @@ const __generated_gunlance__7c: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__8a: GunlanceRO = {
+const __generated_gunlance__8a: Gunlance = {
     category: "gunlance",
     id: "8a",
 
@@ -1174,7 +1174,7 @@ const __generated_gunlance__8a: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__8b: GunlanceRO = {
+const __generated_gunlance__8b: Gunlance = {
     category: "gunlance",
     id: "8b",
 
@@ -1211,7 +1211,7 @@ const __generated_gunlance__8b: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__8c: GunlanceRO = {
+const __generated_gunlance__8c: Gunlance = {
     category: "gunlance",
     id: "8c",
 
@@ -1249,7 +1249,7 @@ const __generated_gunlance__8c: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__8d: GunlanceRO = {
+const __generated_gunlance__8d: Gunlance = {
     category: "gunlance",
     id: "8d",
 
@@ -1288,7 +1288,7 @@ const __generated_gunlance__8d: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__8e: GunlanceRO = {
+const __generated_gunlance__8e: Gunlance = {
     category: "gunlance",
     id: "8e",
 
@@ -1328,7 +1328,7 @@ const __generated_gunlance__8e: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__8f: GunlanceRO = {
+const __generated_gunlance__8f: Gunlance = {
     category: "gunlance",
     id: "8f",
 
@@ -1369,7 +1369,7 @@ const __generated_gunlance__8f: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__9a: GunlanceRO = {
+const __generated_gunlance__9a: Gunlance = {
     category: "gunlance",
     id: "9a",
 
@@ -1411,7 +1411,7 @@ const __generated_gunlance__9a: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__9b: GunlanceRO = {
+const __generated_gunlance__9b: Gunlance = {
     category: "gunlance",
     id: "9b",
 
@@ -1453,7 +1453,7 @@ const __generated_gunlance__9b: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__9c: GunlanceRO = {
+const __generated_gunlance__9c: Gunlance = {
     category: "gunlance",
     id: "9c",
 
@@ -1496,7 +1496,7 @@ const __generated_gunlance__9c: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__10a: GunlanceRO = {
+const __generated_gunlance__10a: Gunlance = {
     category: "gunlance",
     id: "10a",
 
@@ -1540,7 +1540,7 @@ const __generated_gunlance__10a: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__10b: GunlanceRO = {
+const __generated_gunlance__10b: Gunlance = {
     category: "gunlance",
     id: "10b",
 
@@ -1584,7 +1584,7 @@ const __generated_gunlance__10b: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__10c: GunlanceRO = {
+const __generated_gunlance__10c: Gunlance = {
     category: "gunlance",
     id: "10c",
 
@@ -1631,7 +1631,7 @@ const __generated_gunlance__10c: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__11a: GunlanceRO = {
+const __generated_gunlance__11a: Gunlance = {
     category: "gunlance",
     id: "11a",
 
@@ -1672,7 +1672,7 @@ const __generated_gunlance__11a: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__11b: GunlanceRO = {
+const __generated_gunlance__11b: Gunlance = {
     category: "gunlance",
     id: "11b",
 
@@ -1714,7 +1714,7 @@ const __generated_gunlance__11b: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__11c: GunlanceRO = {
+const __generated_gunlance__11c: Gunlance = {
     category: "gunlance",
     id: "11c",
 
@@ -1757,7 +1757,7 @@ const __generated_gunlance__11c: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__12a: GunlanceRO = {
+const __generated_gunlance__12a: Gunlance = {
     category: "gunlance",
     id: "12a",
 
@@ -1796,7 +1796,7 @@ const __generated_gunlance__12a: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__12b: GunlanceRO = {
+const __generated_gunlance__12b: Gunlance = {
     category: "gunlance",
     id: "12b",
 
@@ -1835,7 +1835,7 @@ const __generated_gunlance__12b: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__12c: GunlanceRO = {
+const __generated_gunlance__12c: Gunlance = {
     category: "gunlance",
     id: "12c",
 
@@ -1876,7 +1876,7 @@ const __generated_gunlance__12c: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__12d: GunlanceRO = {
+const __generated_gunlance__12d: Gunlance = {
     category: "gunlance",
     id: "12d",
 
@@ -1917,7 +1917,7 @@ const __generated_gunlance__12d: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__13a: GunlanceRO = {
+const __generated_gunlance__13a: Gunlance = {
     category: "gunlance",
     id: "13a",
 
@@ -1959,7 +1959,7 @@ const __generated_gunlance__13a: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__13b: GunlanceRO = {
+const __generated_gunlance__13b: Gunlance = {
     category: "gunlance",
     id: "13b",
 
@@ -2002,7 +2002,7 @@ const __generated_gunlance__13b: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__13c: GunlanceRO = {
+const __generated_gunlance__13c: Gunlance = {
     category: "gunlance",
     id: "13c",
 
@@ -2046,7 +2046,7 @@ const __generated_gunlance__13c: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__14a: GunlanceRO = {
+const __generated_gunlance__14a: Gunlance = {
     category: "gunlance",
     id: "14a",
 
@@ -2086,7 +2086,7 @@ const __generated_gunlance__14a: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__14b: GunlanceRO = {
+const __generated_gunlance__14b: Gunlance = {
     category: "gunlance",
     id: "14b",
 
@@ -2127,7 +2127,7 @@ const __generated_gunlance__14b: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__14c: GunlanceRO = {
+const __generated_gunlance__14c: Gunlance = {
     category: "gunlance",
     id: "14c",
 
@@ -2170,7 +2170,7 @@ const __generated_gunlance__14c: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__15a: GunlanceRO = {
+const __generated_gunlance__15a: Gunlance = {
     category: "gunlance",
     id: "15a",
 
@@ -2213,7 +2213,7 @@ const __generated_gunlance__15a: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__15b: GunlanceRO = {
+const __generated_gunlance__15b: Gunlance = {
     category: "gunlance",
     id: "15b",
 
@@ -2257,7 +2257,7 @@ const __generated_gunlance__15b: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__15c: GunlanceRO = {
+const __generated_gunlance__15c: Gunlance = {
     category: "gunlance",
     id: "15c",
 
@@ -2302,7 +2302,7 @@ const __generated_gunlance__15c: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__16a: GunlanceRO = {
+const __generated_gunlance__16a: Gunlance = {
     category: "gunlance",
     id: "16a",
 
@@ -2341,7 +2341,7 @@ const __generated_gunlance__16a: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__16b: GunlanceRO = {
+const __generated_gunlance__16b: Gunlance = {
     category: "gunlance",
     id: "16b",
 
@@ -2381,7 +2381,7 @@ const __generated_gunlance__16b: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__16c: GunlanceRO = {
+const __generated_gunlance__16c: Gunlance = {
     category: "gunlance",
     id: "16c",
 
@@ -2422,7 +2422,7 @@ const __generated_gunlance__16c: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__16d: GunlanceRO = {
+const __generated_gunlance__16d: Gunlance = {
     category: "gunlance",
     id: "16d",
 
@@ -2464,7 +2464,7 @@ const __generated_gunlance__16d: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__17a: GunlanceRO = {
+const __generated_gunlance__17a: Gunlance = {
     category: "gunlance",
     id: "17a",
 
@@ -2504,7 +2504,7 @@ const __generated_gunlance__17a: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__17b: GunlanceRO = {
+const __generated_gunlance__17b: Gunlance = {
     category: "gunlance",
     id: "17b",
 
@@ -2547,7 +2547,7 @@ const __generated_gunlance__17b: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__17c: GunlanceRO = {
+const __generated_gunlance__17c: Gunlance = {
     category: "gunlance",
     id: "17c",
 
@@ -2591,7 +2591,7 @@ const __generated_gunlance__17c: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__18a: GunlanceRO = {
+const __generated_gunlance__18a: Gunlance = {
     category: "gunlance",
     id: "18a",
 
@@ -2628,7 +2628,7 @@ const __generated_gunlance__18a: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__18b: GunlanceRO = {
+const __generated_gunlance__18b: Gunlance = {
     category: "gunlance",
     id: "18b",
 
@@ -2665,7 +2665,7 @@ const __generated_gunlance__18b: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__18c: GunlanceRO = {
+const __generated_gunlance__18c: Gunlance = {
     category: "gunlance",
     id: "18c",
 
@@ -2703,7 +2703,7 @@ const __generated_gunlance__18c: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__18d: GunlanceRO = {
+const __generated_gunlance__18d: Gunlance = {
     category: "gunlance",
     id: "18d",
 
@@ -2742,7 +2742,7 @@ const __generated_gunlance__18d: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__18e: GunlanceRO = {
+const __generated_gunlance__18e: Gunlance = {
     category: "gunlance",
     id: "18e",
 
@@ -2782,7 +2782,7 @@ const __generated_gunlance__18e: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__18f: GunlanceRO = {
+const __generated_gunlance__18f: Gunlance = {
     category: "gunlance",
     id: "18f",
 
@@ -2823,7 +2823,7 @@ const __generated_gunlance__18f: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__19a: GunlanceRO = {
+const __generated_gunlance__19a: Gunlance = {
     category: "gunlance",
     id: "19a",
 
@@ -2864,7 +2864,7 @@ const __generated_gunlance__19a: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__19b: GunlanceRO = {
+const __generated_gunlance__19b: Gunlance = {
     category: "gunlance",
     id: "19b",
 
@@ -2905,7 +2905,7 @@ const __generated_gunlance__19b: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__19c: GunlanceRO = {
+const __generated_gunlance__19c: Gunlance = {
     category: "gunlance",
     id: "19c",
 
@@ -2946,7 +2946,7 @@ const __generated_gunlance__19c: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__20a: GunlanceRO = {
+const __generated_gunlance__20a: Gunlance = {
     category: "gunlance",
     id: "20a",
 
@@ -2986,7 +2986,7 @@ const __generated_gunlance__20a: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__20b: GunlanceRO = {
+const __generated_gunlance__20b: Gunlance = {
     category: "gunlance",
     id: "20b",
 
@@ -3026,7 +3026,7 @@ const __generated_gunlance__20b: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__20c: GunlanceRO = {
+const __generated_gunlance__20c: Gunlance = {
     category: "gunlance",
     id: "20c",
 
@@ -3067,7 +3067,7 @@ const __generated_gunlance__20c: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__20d: GunlanceRO = {
+const __generated_gunlance__20d: Gunlance = {
     category: "gunlance",
     id: "20d",
 
@@ -3109,7 +3109,7 @@ const __generated_gunlance__20d: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__21a: GunlanceRO = {
+const __generated_gunlance__21a: Gunlance = {
     category: "gunlance",
     id: "21a",
 
@@ -3147,7 +3147,7 @@ const __generated_gunlance__21a: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__21b: GunlanceRO = {
+const __generated_gunlance__21b: Gunlance = {
     category: "gunlance",
     id: "21b",
 
@@ -3186,7 +3186,7 @@ const __generated_gunlance__21b: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__21c: GunlanceRO = {
+const __generated_gunlance__21c: Gunlance = {
     category: "gunlance",
     id: "21c",
 
@@ -3226,7 +3226,7 @@ const __generated_gunlance__21c: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__22a: GunlanceRO = {
+const __generated_gunlance__22a: Gunlance = {
     category: "gunlance",
     id: "22a",
 
@@ -3265,7 +3265,7 @@ const __generated_gunlance__22a: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__22b: GunlanceRO = {
+const __generated_gunlance__22b: Gunlance = {
     category: "gunlance",
     id: "22b",
 
@@ -3305,7 +3305,7 @@ const __generated_gunlance__22b: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__22c: GunlanceRO = {
+const __generated_gunlance__22c: Gunlance = {
     category: "gunlance",
     id: "22c",
 
@@ -3346,7 +3346,7 @@ const __generated_gunlance__22c: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__23a: GunlanceRO = {
+const __generated_gunlance__23a: Gunlance = {
     category: "gunlance",
     id: "23a",
 
@@ -3386,7 +3386,7 @@ const __generated_gunlance__23a: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__23b: GunlanceRO = {
+const __generated_gunlance__23b: Gunlance = {
     category: "gunlance",
     id: "23b",
 
@@ -3427,7 +3427,7 @@ const __generated_gunlance__23b: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__23c: GunlanceRO = {
+const __generated_gunlance__23c: Gunlance = {
     category: "gunlance",
     id: "23c",
 
@@ -3468,7 +3468,7 @@ const __generated_gunlance__23c: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__23d: GunlanceRO = {
+const __generated_gunlance__23d: Gunlance = {
     category: "gunlance",
     id: "23d",
 
@@ -3511,7 +3511,7 @@ const __generated_gunlance__23d: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__24a: GunlanceRO = {
+const __generated_gunlance__24a: Gunlance = {
     category: "gunlance",
     id: "24a",
 
@@ -3553,7 +3553,7 @@ const __generated_gunlance__24a: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__24b: GunlanceRO = {
+const __generated_gunlance__24b: Gunlance = {
     category: "gunlance",
     id: "24b",
 
@@ -3596,7 +3596,7 @@ const __generated_gunlance__24b: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__24c: GunlanceRO = {
+const __generated_gunlance__24c: Gunlance = {
     category: "gunlance",
     id: "24c",
 
@@ -3640,7 +3640,7 @@ const __generated_gunlance__24c: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__24d: GunlanceRO = {
+const __generated_gunlance__24d: Gunlance = {
     category: "gunlance",
     id: "24d",
 
@@ -3685,7 +3685,7 @@ const __generated_gunlance__24d: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__25a: GunlanceRO = {
+const __generated_gunlance__25a: Gunlance = {
     category: "gunlance",
     id: "25a",
 
@@ -3722,7 +3722,7 @@ const __generated_gunlance__25a: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__25b: GunlanceRO = {
+const __generated_gunlance__25b: Gunlance = {
     category: "gunlance",
     id: "25b",
 
@@ -3761,7 +3761,7 @@ const __generated_gunlance__25b: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__25c: GunlanceRO = {
+const __generated_gunlance__25c: Gunlance = {
     category: "gunlance",
     id: "25c",
 
@@ -3802,7 +3802,7 @@ const __generated_gunlance__25c: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__26a: GunlanceRO = {
+const __generated_gunlance__26a: Gunlance = {
     category: "gunlance",
     id: "26a",
 
@@ -3845,7 +3845,7 @@ const __generated_gunlance__26a: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__26b: GunlanceRO = {
+const __generated_gunlance__26b: Gunlance = {
     category: "gunlance",
     id: "26b",
 
@@ -3889,7 +3889,7 @@ const __generated_gunlance__26b: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__26c: GunlanceRO = {
+const __generated_gunlance__26c: Gunlance = {
     category: "gunlance",
     id: "26c",
 
@@ -3934,7 +3934,7 @@ const __generated_gunlance__26c: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__27a: GunlanceRO = {
+const __generated_gunlance__27a: Gunlance = {
     category: "gunlance",
     id: "27a",
 
@@ -3976,7 +3976,7 @@ const __generated_gunlance__27a: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__27b: GunlanceRO = {
+const __generated_gunlance__27b: Gunlance = {
     category: "gunlance",
     id: "27b",
 
@@ -4019,7 +4019,7 @@ const __generated_gunlance__27b: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__27c: GunlanceRO = {
+const __generated_gunlance__27c: Gunlance = {
     category: "gunlance",
     id: "27c",
 
@@ -4063,7 +4063,7 @@ const __generated_gunlance__27c: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__28a: GunlanceRO = {
+const __generated_gunlance__28a: Gunlance = {
     category: "gunlance",
     id: "28a",
 
@@ -4103,7 +4103,7 @@ const __generated_gunlance__28a: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__28b: GunlanceRO = {
+const __generated_gunlance__28b: Gunlance = {
     category: "gunlance",
     id: "28b",
 
@@ -4144,7 +4144,7 @@ const __generated_gunlance__28b: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__28c: GunlanceRO = {
+const __generated_gunlance__28c: Gunlance = {
     category: "gunlance",
     id: "28c",
 
@@ -4186,7 +4186,7 @@ const __generated_gunlance__28c: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__29a: GunlanceRO = {
+const __generated_gunlance__29a: Gunlance = {
     category: "gunlance",
     id: "29a",
 
@@ -4225,7 +4225,7 @@ const __generated_gunlance__29a: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__29b: GunlanceRO = {
+const __generated_gunlance__29b: Gunlance = {
     category: "gunlance",
     id: "29b",
 
@@ -4265,7 +4265,7 @@ const __generated_gunlance__29b: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__29c: GunlanceRO = {
+const __generated_gunlance__29c: Gunlance = {
     category: "gunlance",
     id: "29c",
 
@@ -4307,7 +4307,7 @@ const __generated_gunlance__29c: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__30a: GunlanceRO = {
+const __generated_gunlance__30a: Gunlance = {
     category: "gunlance",
     id: "30a",
 
@@ -4344,7 +4344,7 @@ const __generated_gunlance__30a: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__30b: GunlanceRO = {
+const __generated_gunlance__30b: Gunlance = {
     category: "gunlance",
     id: "30b",
 
@@ -4382,7 +4382,7 @@ const __generated_gunlance__30b: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__30c: GunlanceRO = {
+const __generated_gunlance__30c: Gunlance = {
     category: "gunlance",
     id: "30c",
 
@@ -4421,7 +4421,7 @@ const __generated_gunlance__30c: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__31a: GunlanceRO = {
+const __generated_gunlance__31a: Gunlance = {
     category: "gunlance",
     id: "31a",
 
@@ -4458,7 +4458,7 @@ const __generated_gunlance__31a: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__31b: GunlanceRO = {
+const __generated_gunlance__31b: Gunlance = {
     category: "gunlance",
     id: "31b",
 
@@ -4496,7 +4496,7 @@ const __generated_gunlance__31b: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__31c: GunlanceRO = {
+const __generated_gunlance__31c: Gunlance = {
     category: "gunlance",
     id: "31c",
 
@@ -4535,7 +4535,7 @@ const __generated_gunlance__31c: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__32a: GunlanceRO = {
+const __generated_gunlance__32a: Gunlance = {
     category: "gunlance",
     id: "32a",
 
@@ -4572,7 +4572,7 @@ const __generated_gunlance__32a: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__32b: GunlanceRO = {
+const __generated_gunlance__32b: Gunlance = {
     category: "gunlance",
     id: "32b",
 
@@ -4610,7 +4610,7 @@ const __generated_gunlance__32b: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__32c: GunlanceRO = {
+const __generated_gunlance__32c: Gunlance = {
     category: "gunlance",
     id: "32c",
 
@@ -4649,7 +4649,7 @@ const __generated_gunlance__32c: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__33a: GunlanceRO = {
+const __generated_gunlance__33a: Gunlance = {
     category: "gunlance",
     id: "33a",
 
@@ -4686,7 +4686,7 @@ const __generated_gunlance__33a: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__33b: GunlanceRO = {
+const __generated_gunlance__33b: Gunlance = {
     category: "gunlance",
     id: "33b",
 
@@ -4724,7 +4724,7 @@ const __generated_gunlance__33b: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__34a: GunlanceRO = {
+const __generated_gunlance__34a: Gunlance = {
     category: "gunlance",
     id: "34a",
 
@@ -4761,7 +4761,7 @@ const __generated_gunlance__34a: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__34b: GunlanceRO = {
+const __generated_gunlance__34b: Gunlance = {
     category: "gunlance",
     id: "34b",
 
@@ -4798,7 +4798,7 @@ const __generated_gunlance__34b: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__34c: GunlanceRO = {
+const __generated_gunlance__34c: Gunlance = {
     category: "gunlance",
     id: "34c",
 
@@ -4837,7 +4837,7 @@ const __generated_gunlance__34c: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__35a: GunlanceRO = {
+const __generated_gunlance__35a: Gunlance = {
     category: "gunlance",
     id: "35a",
 
@@ -4874,7 +4874,7 @@ const __generated_gunlance__35a: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__35b: GunlanceRO = {
+const __generated_gunlance__35b: Gunlance = {
     category: "gunlance",
     id: "35b",
 
@@ -4913,7 +4913,7 @@ const __generated_gunlance__35b: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__36a: GunlanceRO = {
+const __generated_gunlance__36a: Gunlance = {
     category: "gunlance",
     id: "36a",
 
@@ -4950,7 +4950,7 @@ const __generated_gunlance__36a: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__36b: GunlanceRO = {
+const __generated_gunlance__36b: Gunlance = {
     category: "gunlance",
     id: "36b",
 
@@ -4988,7 +4988,7 @@ const __generated_gunlance__36b: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__37a: GunlanceRO = {
+const __generated_gunlance__37a: Gunlance = {
     category: "gunlance",
     id: "37a",
 
@@ -5025,7 +5025,7 @@ const __generated_gunlance__37a: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__37b: GunlanceRO = {
+const __generated_gunlance__37b: Gunlance = {
     category: "gunlance",
     id: "37b",
 
@@ -5062,7 +5062,7 @@ const __generated_gunlance__37b: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__38a: GunlanceRO = {
+const __generated_gunlance__38a: Gunlance = {
     category: "gunlance",
     id: "38a",
 
@@ -5099,7 +5099,7 @@ const __generated_gunlance__38a: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__38b: GunlanceRO = {
+const __generated_gunlance__38b: Gunlance = {
     category: "gunlance",
     id: "38b",
 
@@ -5137,7 +5137,7 @@ const __generated_gunlance__38b: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__38c: GunlanceRO = {
+const __generated_gunlance__38c: Gunlance = {
     category: "gunlance",
     id: "38c",
 
@@ -5176,7 +5176,7 @@ const __generated_gunlance__38c: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__39a: GunlanceRO = {
+const __generated_gunlance__39a: Gunlance = {
     category: "gunlance",
     id: "39a",
 
@@ -5213,7 +5213,7 @@ const __generated_gunlance__39a: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__39b: GunlanceRO = {
+const __generated_gunlance__39b: Gunlance = {
     category: "gunlance",
     id: "39b",
 
@@ -5250,7 +5250,7 @@ const __generated_gunlance__39b: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__39c: GunlanceRO = {
+const __generated_gunlance__39c: Gunlance = {
     category: "gunlance",
     id: "39c",
 
@@ -5288,7 +5288,7 @@ const __generated_gunlance__39c: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__40a: GunlanceRO = {
+const __generated_gunlance__40a: Gunlance = {
     category: "gunlance",
     id: "40a",
 
@@ -5325,7 +5325,7 @@ const __generated_gunlance__40a: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__40b: GunlanceRO = {
+const __generated_gunlance__40b: Gunlance = {
     category: "gunlance",
     id: "40b",
 
@@ -5363,7 +5363,7 @@ const __generated_gunlance__40b: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__40c: GunlanceRO = {
+const __generated_gunlance__40c: Gunlance = {
     category: "gunlance",
     id: "40c",
 
@@ -5403,7 +5403,7 @@ const __generated_gunlance__40c: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__ra: GunlanceRO = {
+const __generated_gunlance__ra: Gunlance = {
     category: "gunlance",
     id: "ra",
 
@@ -5449,7 +5449,7 @@ const __generated_gunlance__ra: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__rb: GunlanceRO = {
+const __generated_gunlance__rb: Gunlance = {
     category: "gunlance",
     id: "rb",
 
@@ -5502,7 +5502,7 @@ const __generated_gunlance__rb: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__rc: GunlanceRO = {
+const __generated_gunlance__rc: Gunlance = {
     category: "gunlance",
     id: "rc",
 
@@ -5568,7 +5568,7 @@ const __generated_gunlance__rc: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__rd: GunlanceRO = {
+const __generated_gunlance__rd: Gunlance = {
     category: "gunlance",
     id: "rd",
 
@@ -5643,7 +5643,7 @@ const __generated_gunlance__rd: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__re: GunlanceRO = {
+const __generated_gunlance__re: Gunlance = {
     category: "gunlance",
     id: "re",
 
@@ -5728,7 +5728,7 @@ const __generated_gunlance__re: GunlanceRO = {
     },
 };
 
-const __generated_gunlance__rf: GunlanceRO = {
+const __generated_gunlance__rf: Gunlance = {
     category: "gunlance",
     id: "rf",
 
@@ -5829,7 +5829,7 @@ const __generated_gunlance__rf: GunlanceRO = {
     },
 };
 
-export const gunlancesArray: Readonly<GunlanceRO[]> = [
+export const gunlancesArray: Readonly<Gunlance[]> = [
     __generated_gunlance__1a,
     __generated_gunlance__1b,
     __generated_gunlance__1c,

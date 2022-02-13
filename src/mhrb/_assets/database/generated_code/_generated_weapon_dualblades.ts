@@ -37,7 +37,7 @@
 
 import {
     type EleStatStr,
-    type DualBladesRO,
+    type DualBlades,
 } from "../../common/types";
 import {
     FrozenMap,
@@ -150,7 +150,7 @@ import {
     __generated_ramp__wyvern_exploit,
 } from "./_generated_rampage_skills";
 
-const __generated_dualblades__1a: DualBladesRO = {
+const __generated_dualblades__1a: DualBlades = {
     category: "dualblades",
     id: "1a",
 
@@ -182,7 +182,7 @@ const __generated_dualblades__1a: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__1b: DualBladesRO = {
+const __generated_dualblades__1b: DualBlades = {
     category: "dualblades",
     id: "1b",
 
@@ -214,7 +214,7 @@ const __generated_dualblades__1b: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__1c: DualBladesRO = {
+const __generated_dualblades__1c: DualBlades = {
     category: "dualblades",
     id: "1c",
 
@@ -247,7 +247,7 @@ const __generated_dualblades__1c: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__1d: DualBladesRO = {
+const __generated_dualblades__1d: DualBlades = {
     category: "dualblades",
     id: "1d",
 
@@ -281,7 +281,7 @@ const __generated_dualblades__1d: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__1e: DualBladesRO = {
+const __generated_dualblades__1e: DualBlades = {
     category: "dualblades",
     id: "1e",
 
@@ -317,7 +317,7 @@ const __generated_dualblades__1e: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__1f: DualBladesRO = {
+const __generated_dualblades__1f: DualBlades = {
     category: "dualblades",
     id: "1f",
 
@@ -354,7 +354,7 @@ const __generated_dualblades__1f: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__2a: DualBladesRO = {
+const __generated_dualblades__2a: DualBlades = {
     category: "dualblades",
     id: "2a",
 
@@ -390,7 +390,7 @@ const __generated_dualblades__2a: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__2b: DualBladesRO = {
+const __generated_dualblades__2b: DualBlades = {
     category: "dualblades",
     id: "2b",
 
@@ -427,7 +427,7 @@ const __generated_dualblades__2b: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__2c: DualBladesRO = {
+const __generated_dualblades__2c: DualBlades = {
     category: "dualblades",
     id: "2c",
 
@@ -465,7 +465,7 @@ const __generated_dualblades__2c: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__3a: DualBladesRO = {
+const __generated_dualblades__3a: DualBlades = {
     category: "dualblades",
     id: "3a",
 
@@ -500,7 +500,7 @@ const __generated_dualblades__3a: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__3b: DualBladesRO = {
+const __generated_dualblades__3b: DualBlades = {
     category: "dualblades",
     id: "3b",
 
@@ -536,7 +536,7 @@ const __generated_dualblades__3b: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__3c: DualBladesRO = {
+const __generated_dualblades__3c: DualBlades = {
     category: "dualblades",
     id: "3c",
 
@@ -573,7 +573,7 @@ const __generated_dualblades__3c: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__4a: DualBladesRO = {
+const __generated_dualblades__4a: DualBlades = {
     category: "dualblades",
     id: "4a",
 
@@ -608,7 +608,7 @@ const __generated_dualblades__4a: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__4b: DualBladesRO = {
+const __generated_dualblades__4b: DualBlades = {
     category: "dualblades",
     id: "4b",
 
@@ -644,7 +644,7 @@ const __generated_dualblades__4b: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__4c: DualBladesRO = {
+const __generated_dualblades__4c: DualBlades = {
     category: "dualblades",
     id: "4c",
 
@@ -681,7 +681,7 @@ const __generated_dualblades__4c: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__5a: DualBladesRO = {
+const __generated_dualblades__5a: DualBlades = {
     category: "dualblades",
     id: "5a",
 
@@ -716,7 +716,7 @@ const __generated_dualblades__5a: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__5b: DualBladesRO = {
+const __generated_dualblades__5b: DualBlades = {
     category: "dualblades",
     id: "5b",
 
@@ -751,7 +751,7 @@ const __generated_dualblades__5b: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__5c: DualBladesRO = {
+const __generated_dualblades__5c: DualBlades = {
     category: "dualblades",
     id: "5c",
 
@@ -787,7 +787,7 @@ const __generated_dualblades__5c: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__6a: DualBladesRO = {
+const __generated_dualblades__6a: DualBlades = {
     category: "dualblades",
     id: "6a",
 
@@ -822,7 +822,7 @@ const __generated_dualblades__6a: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__6b: DualBladesRO = {
+const __generated_dualblades__6b: DualBlades = {
     category: "dualblades",
     id: "6b",
 
@@ -859,7 +859,7 @@ const __generated_dualblades__6b: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__6c: DualBladesRO = {
+const __generated_dualblades__6c: DualBlades = {
     category: "dualblades",
     id: "6c",
 
@@ -898,7 +898,7 @@ const __generated_dualblades__6c: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__7a: DualBladesRO = {
+const __generated_dualblades__7a: DualBlades = {
     category: "dualblades",
     id: "7a",
 
@@ -930,7 +930,7 @@ const __generated_dualblades__7a: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__7b: DualBladesRO = {
+const __generated_dualblades__7b: DualBlades = {
     category: "dualblades",
     id: "7b",
 
@@ -962,7 +962,7 @@ const __generated_dualblades__7b: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__7c: DualBladesRO = {
+const __generated_dualblades__7c: DualBlades = {
     category: "dualblades",
     id: "7c",
 
@@ -995,7 +995,7 @@ const __generated_dualblades__7c: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__7d: DualBladesRO = {
+const __generated_dualblades__7d: DualBlades = {
     category: "dualblades",
     id: "7d",
 
@@ -1029,7 +1029,7 @@ const __generated_dualblades__7d: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__7e: DualBladesRO = {
+const __generated_dualblades__7e: DualBlades = {
     category: "dualblades",
     id: "7e",
 
@@ -1064,7 +1064,7 @@ const __generated_dualblades__7e: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__7f: DualBladesRO = {
+const __generated_dualblades__7f: DualBlades = {
     category: "dualblades",
     id: "7f",
 
@@ -1100,7 +1100,7 @@ const __generated_dualblades__7f: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__8a: DualBladesRO = {
+const __generated_dualblades__8a: DualBlades = {
     category: "dualblades",
     id: "8a",
 
@@ -1135,7 +1135,7 @@ const __generated_dualblades__8a: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__8b: DualBladesRO = {
+const __generated_dualblades__8b: DualBlades = {
     category: "dualblades",
     id: "8b",
 
@@ -1171,7 +1171,7 @@ const __generated_dualblades__8b: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__8c: DualBladesRO = {
+const __generated_dualblades__8c: DualBlades = {
     category: "dualblades",
     id: "8c",
 
@@ -1208,7 +1208,7 @@ const __generated_dualblades__8c: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__9a: DualBladesRO = {
+const __generated_dualblades__9a: DualBlades = {
     category: "dualblades",
     id: "9a",
 
@@ -1242,7 +1242,7 @@ const __generated_dualblades__9a: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__9b: DualBladesRO = {
+const __generated_dualblades__9b: DualBlades = {
     category: "dualblades",
     id: "9b",
 
@@ -1278,7 +1278,7 @@ const __generated_dualblades__9b: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__9c: DualBladesRO = {
+const __generated_dualblades__9c: DualBlades = {
     category: "dualblades",
     id: "9c",
 
@@ -1315,7 +1315,7 @@ const __generated_dualblades__9c: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__10a: DualBladesRO = {
+const __generated_dualblades__10a: DualBlades = {
     category: "dualblades",
     id: "10a",
 
@@ -1349,7 +1349,7 @@ const __generated_dualblades__10a: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__10b: DualBladesRO = {
+const __generated_dualblades__10b: DualBlades = {
     category: "dualblades",
     id: "10b",
 
@@ -1384,7 +1384,7 @@ const __generated_dualblades__10b: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__10c: DualBladesRO = {
+const __generated_dualblades__10c: DualBlades = {
     category: "dualblades",
     id: "10c",
 
@@ -1420,7 +1420,7 @@ const __generated_dualblades__10c: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__11a: DualBladesRO = {
+const __generated_dualblades__11a: DualBlades = {
     category: "dualblades",
     id: "11a",
 
@@ -1454,7 +1454,7 @@ const __generated_dualblades__11a: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__11b: DualBladesRO = {
+const __generated_dualblades__11b: DualBlades = {
     category: "dualblades",
     id: "11b",
 
@@ -1489,7 +1489,7 @@ const __generated_dualblades__11b: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__11c: DualBladesRO = {
+const __generated_dualblades__11c: DualBlades = {
     category: "dualblades",
     id: "11c",
 
@@ -1525,7 +1525,7 @@ const __generated_dualblades__11c: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__12a: DualBladesRO = {
+const __generated_dualblades__12a: DualBlades = {
     category: "dualblades",
     id: "12a",
 
@@ -1563,7 +1563,7 @@ const __generated_dualblades__12a: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__12b: DualBladesRO = {
+const __generated_dualblades__12b: DualBlades = {
     category: "dualblades",
     id: "12b",
 
@@ -1602,7 +1602,7 @@ const __generated_dualblades__12b: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__12c: DualBladesRO = {
+const __generated_dualblades__12c: DualBlades = {
     category: "dualblades",
     id: "12c",
 
@@ -1642,7 +1642,7 @@ const __generated_dualblades__12c: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__13a: DualBladesRO = {
+const __generated_dualblades__13a: DualBlades = {
     category: "dualblades",
     id: "13a",
 
@@ -1678,7 +1678,7 @@ const __generated_dualblades__13a: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__13b: DualBladesRO = {
+const __generated_dualblades__13b: DualBlades = {
     category: "dualblades",
     id: "13b",
 
@@ -1715,7 +1715,7 @@ const __generated_dualblades__13b: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__13c: DualBladesRO = {
+const __generated_dualblades__13c: DualBlades = {
     category: "dualblades",
     id: "13c",
 
@@ -1752,7 +1752,7 @@ const __generated_dualblades__13c: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__14a: DualBladesRO = {
+const __generated_dualblades__14a: DualBlades = {
     category: "dualblades",
     id: "14a",
 
@@ -1786,7 +1786,7 @@ const __generated_dualblades__14a: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__14b: DualBladesRO = {
+const __generated_dualblades__14b: DualBlades = {
     category: "dualblades",
     id: "14b",
 
@@ -1821,7 +1821,7 @@ const __generated_dualblades__14b: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__14c: DualBladesRO = {
+const __generated_dualblades__14c: DualBlades = {
     category: "dualblades",
     id: "14c",
 
@@ -1857,7 +1857,7 @@ const __generated_dualblades__14c: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__15a: DualBladesRO = {
+const __generated_dualblades__15a: DualBlades = {
     category: "dualblades",
     id: "15a",
 
@@ -1890,7 +1890,7 @@ const __generated_dualblades__15a: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__15b: DualBladesRO = {
+const __generated_dualblades__15b: DualBlades = {
     category: "dualblades",
     id: "15b",
 
@@ -1924,7 +1924,7 @@ const __generated_dualblades__15b: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__15c: DualBladesRO = {
+const __generated_dualblades__15c: DualBlades = {
     category: "dualblades",
     id: "15c",
 
@@ -1959,7 +1959,7 @@ const __generated_dualblades__15c: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__16a: DualBladesRO = {
+const __generated_dualblades__16a: DualBlades = {
     category: "dualblades",
     id: "16a",
 
@@ -1995,7 +1995,7 @@ const __generated_dualblades__16a: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__16b: DualBladesRO = {
+const __generated_dualblades__16b: DualBlades = {
     category: "dualblades",
     id: "16b",
 
@@ -2031,7 +2031,7 @@ const __generated_dualblades__16b: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__16c: DualBladesRO = {
+const __generated_dualblades__16c: DualBlades = {
     category: "dualblades",
     id: "16c",
 
@@ -2068,7 +2068,7 @@ const __generated_dualblades__16c: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__17a: DualBladesRO = {
+const __generated_dualblades__17a: DualBlades = {
     category: "dualblades",
     id: "17a",
 
@@ -2104,7 +2104,7 @@ const __generated_dualblades__17a: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__17b: DualBladesRO = {
+const __generated_dualblades__17b: DualBlades = {
     category: "dualblades",
     id: "17b",
 
@@ -2141,7 +2141,7 @@ const __generated_dualblades__17b: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__17c: DualBladesRO = {
+const __generated_dualblades__17c: DualBlades = {
     category: "dualblades",
     id: "17c",
 
@@ -2180,7 +2180,7 @@ const __generated_dualblades__17c: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__18a: DualBladesRO = {
+const __generated_dualblades__18a: DualBlades = {
     category: "dualblades",
     id: "18a",
 
@@ -2212,7 +2212,7 @@ const __generated_dualblades__18a: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__18b: DualBladesRO = {
+const __generated_dualblades__18b: DualBlades = {
     category: "dualblades",
     id: "18b",
 
@@ -2244,7 +2244,7 @@ const __generated_dualblades__18b: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__18c: DualBladesRO = {
+const __generated_dualblades__18c: DualBlades = {
     category: "dualblades",
     id: "18c",
 
@@ -2277,7 +2277,7 @@ const __generated_dualblades__18c: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__18d: DualBladesRO = {
+const __generated_dualblades__18d: DualBlades = {
     category: "dualblades",
     id: "18d",
 
@@ -2311,7 +2311,7 @@ const __generated_dualblades__18d: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__18e: DualBladesRO = {
+const __generated_dualblades__18e: DualBlades = {
     category: "dualblades",
     id: "18e",
 
@@ -2346,7 +2346,7 @@ const __generated_dualblades__18e: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__18f: DualBladesRO = {
+const __generated_dualblades__18f: DualBlades = {
     category: "dualblades",
     id: "18f",
 
@@ -2382,7 +2382,7 @@ const __generated_dualblades__18f: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__19a: DualBladesRO = {
+const __generated_dualblades__19a: DualBlades = {
     category: "dualblades",
     id: "19a",
 
@@ -2419,7 +2419,7 @@ const __generated_dualblades__19a: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__19b: DualBladesRO = {
+const __generated_dualblades__19b: DualBlades = {
     category: "dualblades",
     id: "19b",
 
@@ -2456,7 +2456,7 @@ const __generated_dualblades__19b: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__19c: DualBladesRO = {
+const __generated_dualblades__19c: DualBlades = {
     category: "dualblades",
     id: "19c",
 
@@ -2493,7 +2493,7 @@ const __generated_dualblades__19c: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__20a: DualBladesRO = {
+const __generated_dualblades__20a: DualBlades = {
     category: "dualblades",
     id: "20a",
 
@@ -2527,7 +2527,7 @@ const __generated_dualblades__20a: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__20b: DualBladesRO = {
+const __generated_dualblades__20b: DualBlades = {
     category: "dualblades",
     id: "20b",
 
@@ -2561,7 +2561,7 @@ const __generated_dualblades__20b: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__20c: DualBladesRO = {
+const __generated_dualblades__20c: DualBlades = {
     category: "dualblades",
     id: "20c",
 
@@ -2597,7 +2597,7 @@ const __generated_dualblades__20c: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__21a: DualBladesRO = {
+const __generated_dualblades__21a: DualBlades = {
     category: "dualblades",
     id: "21a",
 
@@ -2633,7 +2633,7 @@ const __generated_dualblades__21a: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__21b: DualBladesRO = {
+const __generated_dualblades__21b: DualBlades = {
     category: "dualblades",
     id: "21b",
 
@@ -2670,7 +2670,7 @@ const __generated_dualblades__21b: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__21c: DualBladesRO = {
+const __generated_dualblades__21c: DualBlades = {
     category: "dualblades",
     id: "21c",
 
@@ -2707,7 +2707,7 @@ const __generated_dualblades__21c: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__22a: DualBladesRO = {
+const __generated_dualblades__22a: DualBlades = {
     category: "dualblades",
     id: "22a",
 
@@ -2742,7 +2742,7 @@ const __generated_dualblades__22a: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__22b: DualBladesRO = {
+const __generated_dualblades__22b: DualBlades = {
     category: "dualblades",
     id: "22b",
 
@@ -2777,7 +2777,7 @@ const __generated_dualblades__22b: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__22c: DualBladesRO = {
+const __generated_dualblades__22c: DualBlades = {
     category: "dualblades",
     id: "22c",
 
@@ -2814,7 +2814,7 @@ const __generated_dualblades__22c: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__23a: DualBladesRO = {
+const __generated_dualblades__23a: DualBlades = {
     category: "dualblades",
     id: "23a",
 
@@ -2848,7 +2848,7 @@ const __generated_dualblades__23a: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__23b: DualBladesRO = {
+const __generated_dualblades__23b: DualBlades = {
     category: "dualblades",
     id: "23b",
 
@@ -2882,7 +2882,7 @@ const __generated_dualblades__23b: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__23c: DualBladesRO = {
+const __generated_dualblades__23c: DualBlades = {
     category: "dualblades",
     id: "23c",
 
@@ -2917,7 +2917,7 @@ const __generated_dualblades__23c: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__24a: DualBladesRO = {
+const __generated_dualblades__24a: DualBlades = {
     category: "dualblades",
     id: "24a",
 
@@ -2951,7 +2951,7 @@ const __generated_dualblades__24a: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__24b: DualBladesRO = {
+const __generated_dualblades__24b: DualBlades = {
     category: "dualblades",
     id: "24b",
 
@@ -2986,7 +2986,7 @@ const __generated_dualblades__24b: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__24c: DualBladesRO = {
+const __generated_dualblades__24c: DualBlades = {
     category: "dualblades",
     id: "24c",
 
@@ -3022,7 +3022,7 @@ const __generated_dualblades__24c: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__25a: DualBladesRO = {
+const __generated_dualblades__25a: DualBlades = {
     category: "dualblades",
     id: "25a",
 
@@ -3059,7 +3059,7 @@ const __generated_dualblades__25a: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__25b: DualBladesRO = {
+const __generated_dualblades__25b: DualBlades = {
     category: "dualblades",
     id: "25b",
 
@@ -3096,7 +3096,7 @@ const __generated_dualblades__25b: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__25c: DualBladesRO = {
+const __generated_dualblades__25c: DualBlades = {
     category: "dualblades",
     id: "25c",
 
@@ -3134,7 +3134,7 @@ const __generated_dualblades__25c: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__26a: DualBladesRO = {
+const __generated_dualblades__26a: DualBlades = {
     category: "dualblades",
     id: "26a",
 
@@ -3169,7 +3169,7 @@ const __generated_dualblades__26a: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__26b: DualBladesRO = {
+const __generated_dualblades__26b: DualBlades = {
     category: "dualblades",
     id: "26b",
 
@@ -3205,7 +3205,7 @@ const __generated_dualblades__26b: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__26c: DualBladesRO = {
+const __generated_dualblades__26c: DualBlades = {
     category: "dualblades",
     id: "26c",
 
@@ -3242,7 +3242,7 @@ const __generated_dualblades__26c: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__27a: DualBladesRO = {
+const __generated_dualblades__27a: DualBlades = {
     category: "dualblades",
     id: "27a",
 
@@ -3274,7 +3274,7 @@ const __generated_dualblades__27a: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__27b: DualBladesRO = {
+const __generated_dualblades__27b: DualBlades = {
     category: "dualblades",
     id: "27b",
 
@@ -3307,7 +3307,7 @@ const __generated_dualblades__27b: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__27c: DualBladesRO = {
+const __generated_dualblades__27c: DualBlades = {
     category: "dualblades",
     id: "27c",
 
@@ -3341,7 +3341,7 @@ const __generated_dualblades__27c: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__28a: DualBladesRO = {
+const __generated_dualblades__28a: DualBlades = {
     category: "dualblades",
     id: "28a",
 
@@ -3373,7 +3373,7 @@ const __generated_dualblades__28a: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__28b: DualBladesRO = {
+const __generated_dualblades__28b: DualBlades = {
     category: "dualblades",
     id: "28b",
 
@@ -3406,7 +3406,7 @@ const __generated_dualblades__28b: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__28c: DualBladesRO = {
+const __generated_dualblades__28c: DualBlades = {
     category: "dualblades",
     id: "28c",
 
@@ -3440,7 +3440,7 @@ const __generated_dualblades__28c: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__29a: DualBladesRO = {
+const __generated_dualblades__29a: DualBlades = {
     category: "dualblades",
     id: "29a",
 
@@ -3472,7 +3472,7 @@ const __generated_dualblades__29a: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__29b: DualBladesRO = {
+const __generated_dualblades__29b: DualBlades = {
     category: "dualblades",
     id: "29b",
 
@@ -3505,7 +3505,7 @@ const __generated_dualblades__29b: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__29c: DualBladesRO = {
+const __generated_dualblades__29c: DualBlades = {
     category: "dualblades",
     id: "29c",
 
@@ -3539,7 +3539,7 @@ const __generated_dualblades__29c: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__30a: DualBladesRO = {
+const __generated_dualblades__30a: DualBlades = {
     category: "dualblades",
     id: "30a",
 
@@ -3571,7 +3571,7 @@ const __generated_dualblades__30a: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__30b: DualBladesRO = {
+const __generated_dualblades__30b: DualBlades = {
     category: "dualblades",
     id: "30b",
 
@@ -3604,7 +3604,7 @@ const __generated_dualblades__30b: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__31a: DualBladesRO = {
+const __generated_dualblades__31a: DualBlades = {
     category: "dualblades",
     id: "31a",
 
@@ -3636,7 +3636,7 @@ const __generated_dualblades__31a: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__31b: DualBladesRO = {
+const __generated_dualblades__31b: DualBlades = {
     category: "dualblades",
     id: "31b",
 
@@ -3668,7 +3668,7 @@ const __generated_dualblades__31b: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__31c: DualBladesRO = {
+const __generated_dualblades__31c: DualBlades = {
     category: "dualblades",
     id: "31c",
 
@@ -3702,7 +3702,7 @@ const __generated_dualblades__31c: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__32a: DualBladesRO = {
+const __generated_dualblades__32a: DualBlades = {
     category: "dualblades",
     id: "32a",
 
@@ -3734,7 +3734,7 @@ const __generated_dualblades__32a: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__32b: DualBladesRO = {
+const __generated_dualblades__32b: DualBlades = {
     category: "dualblades",
     id: "32b",
 
@@ -3768,7 +3768,7 @@ const __generated_dualblades__32b: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__33a: DualBladesRO = {
+const __generated_dualblades__33a: DualBlades = {
     category: "dualblades",
     id: "33a",
 
@@ -3800,7 +3800,7 @@ const __generated_dualblades__33a: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__33b: DualBladesRO = {
+const __generated_dualblades__33b: DualBlades = {
     category: "dualblades",
     id: "33b",
 
@@ -3833,7 +3833,7 @@ const __generated_dualblades__33b: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__34a: DualBladesRO = {
+const __generated_dualblades__34a: DualBlades = {
     category: "dualblades",
     id: "34a",
 
@@ -3865,7 +3865,7 @@ const __generated_dualblades__34a: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__34b: DualBladesRO = {
+const __generated_dualblades__34b: DualBlades = {
     category: "dualblades",
     id: "34b",
 
@@ -3898,7 +3898,7 @@ const __generated_dualblades__34b: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__35a: DualBladesRO = {
+const __generated_dualblades__35a: DualBlades = {
     category: "dualblades",
     id: "35a",
 
@@ -3930,7 +3930,7 @@ const __generated_dualblades__35a: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__35b: DualBladesRO = {
+const __generated_dualblades__35b: DualBlades = {
     category: "dualblades",
     id: "35b",
 
@@ -3962,7 +3962,7 @@ const __generated_dualblades__35b: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__36a: DualBladesRO = {
+const __generated_dualblades__36a: DualBlades = {
     category: "dualblades",
     id: "36a",
 
@@ -3994,7 +3994,7 @@ const __generated_dualblades__36a: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__36b: DualBladesRO = {
+const __generated_dualblades__36b: DualBlades = {
     category: "dualblades",
     id: "36b",
 
@@ -4026,7 +4026,7 @@ const __generated_dualblades__36b: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__36c: DualBladesRO = {
+const __generated_dualblades__36c: DualBlades = {
     category: "dualblades",
     id: "36c",
 
@@ -4059,7 +4059,7 @@ const __generated_dualblades__36c: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__37a: DualBladesRO = {
+const __generated_dualblades__37a: DualBlades = {
     category: "dualblades",
     id: "37a",
 
@@ -4091,7 +4091,7 @@ const __generated_dualblades__37a: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__37b: DualBladesRO = {
+const __generated_dualblades__37b: DualBlades = {
     category: "dualblades",
     id: "37b",
 
@@ -4124,7 +4124,7 @@ const __generated_dualblades__37b: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__37c: DualBladesRO = {
+const __generated_dualblades__37c: DualBlades = {
     category: "dualblades",
     id: "37c",
 
@@ -4159,7 +4159,7 @@ const __generated_dualblades__37c: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__38a: DualBladesRO = {
+const __generated_dualblades__38a: DualBlades = {
     category: "dualblades",
     id: "38a",
 
@@ -4191,7 +4191,7 @@ const __generated_dualblades__38a: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__38b: DualBladesRO = {
+const __generated_dualblades__38b: DualBlades = {
     category: "dualblades",
     id: "38b",
 
@@ -4224,7 +4224,7 @@ const __generated_dualblades__38b: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__38c: DualBladesRO = {
+const __generated_dualblades__38c: DualBlades = {
     category: "dualblades",
     id: "38c",
 
@@ -4259,7 +4259,7 @@ const __generated_dualblades__38c: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__39a: DualBladesRO = {
+const __generated_dualblades__39a: DualBlades = {
     category: "dualblades",
     id: "39a",
 
@@ -4291,7 +4291,7 @@ const __generated_dualblades__39a: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__39b: DualBladesRO = {
+const __generated_dualblades__39b: DualBlades = {
     category: "dualblades",
     id: "39b",
 
@@ -4323,7 +4323,7 @@ const __generated_dualblades__39b: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__39c: DualBladesRO = {
+const __generated_dualblades__39c: DualBlades = {
     category: "dualblades",
     id: "39c",
 
@@ -4357,7 +4357,7 @@ const __generated_dualblades__39c: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__40a: DualBladesRO = {
+const __generated_dualblades__40a: DualBlades = {
     category: "dualblades",
     id: "40a",
 
@@ -4389,7 +4389,7 @@ const __generated_dualblades__40a: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__40b: DualBladesRO = {
+const __generated_dualblades__40b: DualBlades = {
     category: "dualblades",
     id: "40b",
 
@@ -4422,7 +4422,7 @@ const __generated_dualblades__40b: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__40c: DualBladesRO = {
+const __generated_dualblades__40c: DualBlades = {
     category: "dualblades",
     id: "40c",
 
@@ -4456,7 +4456,7 @@ const __generated_dualblades__40c: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__41a: DualBladesRO = {
+const __generated_dualblades__41a: DualBlades = {
     category: "dualblades",
     id: "41a",
 
@@ -4488,7 +4488,7 @@ const __generated_dualblades__41a: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__41b: DualBladesRO = {
+const __generated_dualblades__41b: DualBlades = {
     category: "dualblades",
     id: "41b",
 
@@ -4521,7 +4521,7 @@ const __generated_dualblades__41b: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__41c: DualBladesRO = {
+const __generated_dualblades__41c: DualBlades = {
     category: "dualblades",
     id: "41c",
 
@@ -4555,7 +4555,7 @@ const __generated_dualblades__41c: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__ra: DualBladesRO = {
+const __generated_dualblades__ra: DualBlades = {
     category: "dualblades",
     id: "ra",
 
@@ -4596,7 +4596,7 @@ const __generated_dualblades__ra: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__rb: DualBladesRO = {
+const __generated_dualblades__rb: DualBlades = {
     category: "dualblades",
     id: "rb",
 
@@ -4645,7 +4645,7 @@ const __generated_dualblades__rb: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__rc: DualBladesRO = {
+const __generated_dualblades__rc: DualBlades = {
     category: "dualblades",
     id: "rc",
 
@@ -4703,7 +4703,7 @@ const __generated_dualblades__rc: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__rd: DualBladesRO = {
+const __generated_dualblades__rd: DualBlades = {
     category: "dualblades",
     id: "rd",
 
@@ -4772,7 +4772,7 @@ const __generated_dualblades__rd: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__re: DualBladesRO = {
+const __generated_dualblades__re: DualBlades = {
     category: "dualblades",
     id: "re",
 
@@ -4851,7 +4851,7 @@ const __generated_dualblades__re: DualBladesRO = {
     },
 };
 
-const __generated_dualblades__rf: DualBladesRO = {
+const __generated_dualblades__rf: DualBlades = {
     category: "dualblades",
     id: "rf",
 
@@ -4942,7 +4942,7 @@ const __generated_dualblades__rf: DualBladesRO = {
     },
 };
 
-export const dualbladessArray: Readonly<DualBladesRO[]> = [
+export const dualbladessArray: Readonly<DualBlades[]> = [
     __generated_dualblades__1a,
     __generated_dualblades__1b,
     __generated_dualblades__1c,
