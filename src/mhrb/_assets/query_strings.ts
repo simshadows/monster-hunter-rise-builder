@@ -9,6 +9,10 @@
 import * as check from "./check";
 import {Build} from "./model/build";
 
+import {
+    getDefaultWeapon,
+} from "./database";
+
 const assert = console.assert;
 
 const SPLIT_CHAR = " ";
@@ -37,7 +41,7 @@ function updateQueryKeys(map) {
 /****************************************************************************************/
 
 export function getBuildFromQueryString(db) {
-    const build = new Build(db, db.getDefaultWeapon());
+    const build = new Build(db, getDefaultWeapon());
 
     function processIfQueryIsValid(queryStringValue, expectedLength, processingFunction) {
         if (queryStringValue === "") return; // Do nothing for empty value

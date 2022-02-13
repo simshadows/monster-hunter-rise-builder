@@ -13,7 +13,6 @@ import {
     writeBuildToQueryString,
 } from "../../query_strings";
 
-import {GameData} from "../../database/database";
 import {
     isArmourSlotStr,
     isDecoEquippableSlotStr,
@@ -253,8 +252,6 @@ export class MHRBuilderAppInner extends React.Component<any, any> {
     }
 
     render() {
-        assert(this.props.rawDataRO instanceof GameData);
-
         console.log(this.state);
 
         const rawData = this.props.rawDataRO;

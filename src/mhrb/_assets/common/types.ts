@@ -436,11 +436,11 @@ export interface Decoration {
     };
 }
 
-/*** Other Database Utility Types ***/
+/*** Database Utility Types ***/
 
 type WeaponMapInner<W> = FrozenMap<string, W>;
 
-export type WeaponMap = {
+export interface WeaponMap {
     readonly greatsword:     WeaponMapInner<Greatsword    >;
     readonly longsword:      WeaponMapInner<Longsword     >;
     readonly swordandshield: WeaponMapInner<SwordAndShield>;

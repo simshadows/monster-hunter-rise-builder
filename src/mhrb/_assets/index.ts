@@ -13,7 +13,7 @@ const element = React.createElement;
 import * as check from "./check";
 import {removeElementByID} from "./utils";
 
-import {downloadRawData} from "./database/database";
+import {db} from "./database";
 import {MHRBuilderAppInner} from "./components/MHRBuilderAppInner";
 
 import "./css/index.css";
@@ -91,7 +91,7 @@ class MHRBuilderApp extends React.Component {
     /*** Other Methods ***/
 
     async componentDidMount() {
-        const rawData = await downloadRawData();
+        const rawData = {"readonly": db};
         this.setState({rawData: rawData});
         removeElementByID("loading-spinner");
 
