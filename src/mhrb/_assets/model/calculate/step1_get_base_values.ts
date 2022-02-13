@@ -205,10 +205,8 @@ function getBaseValues(db, build, calcState) {
         deferredOps1.push(op); // Defer
     }
     function rampGunlanceSetShellingType(shellingTypeID, level) {
-        assert(weaponRO.category === "gunlance");
-        gunlanceStats.shellingType = db.readonly.weaponMechanics.gunlance.shellingTypesMap.get(shellingTypeID);
+        gunlanceStats.shellingType = shellingTypeID;
         gunlanceStats.shellingLevel = level;
-        assert(gunlanceStats.shellingType !== undefined); // Need to make sure we actually got something
     }
     function rampMelody(songX, songA, songXA) {
         assert(weaponRO.category === "huntinghorn");
