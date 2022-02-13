@@ -33,6 +33,7 @@ import {
     type SwitchAxe,
     type ChargeBlade,
     type InsectGlaive,
+    type Bow,
 
     type WeaponMap,
 
@@ -56,6 +57,7 @@ import {huntinghornsArray   } from "./_generated_weapon_huntinghorn";
 import {switchaxesArray     } from "./_generated_weapon_switchaxe";
 import {chargebladesArray   } from "./_generated_weapon_chargeblade";
 import {insectglaivesArray  } from "./_generated_weapon_insectglaive";
+import {bowsArray           } from "./_generated_weapon_bow";
 
 function validateMeleeWeapon(w: MeleeWeapon): void {
     const baseSum = sumArray(w.baseSharpness);
@@ -125,6 +127,7 @@ const weaponsMap: Readonly<WeaponMap> = {
     switchaxe:      processWeapon<SwitchAxe     >(switchaxesArray     ),
     chargeblade:    processWeapon<ChargeBlade   >(chargebladesArray   ),
     insectglaive:   processWeapon<InsectGlaive  >(insectglaivesArray  ),
+    bow:            processWeapon<Bow           >(bowsArray           ),
 };
 
 export {

@@ -8,6 +8,8 @@ import {
     type HHSong,
     type SAPhialType,
     type CBPhialType,
+    type BowArcShotType,
+    type BowChargeShotType,
 } from "./types";
 
 export function toNameFilterString(s: string): string {
@@ -73,6 +75,24 @@ export function cbPhialTypeName(s: CBPhialType): string {
         default: console.error(`Unexpected value: ${s}`); // Fallthrough for graceful failure
         case "impact_phial":  return "Impact Phial";
         case "element_phial": return "Element Phial";
+    }
+}
+
+export function bowArcShotTypeName(s: BowArcShotType): string {
+    switch (s) {
+        default: console.error(`Unexpected value: ${s}`); // Fallthrough for graceful failure
+        case "recovery": return "Recovery";
+        case "affinity": return "Affinity";
+        case "brace":    return "Brace";
+    }
+}
+
+export function bowChargeShotTypeName(s: BowChargeShotType): string {
+    switch (s) {
+        default: console.error(`Unexpected value: ${s}`); // Fallthrough for graceful failure
+        case "pierce": return "Pierce";
+        case "rapid":  return "Rapid";
+        case "spread": return "Spread";
     }
 }
 

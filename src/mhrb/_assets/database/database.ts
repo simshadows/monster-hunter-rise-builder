@@ -43,16 +43,11 @@ import {
     petalaceMap,
 } from "./hardcoded_data/petalace_data";
 
-import {
-    bowArcShotTypesMap,
-    bowChargeShotTypesMap,
-} from "./hardcoded_data/special_weapon_mechanics/bow";
 import {bowgunAmmoTypesMap      } from "./hardcoded_data/special_weapon_mechanics/bowguns";
 import {specialSelectionTypesMap} from "./hardcoded_data/special_weapon_mechanics/general";
 
 const WEAPON_LBG_PATH = "./data/weapons_lightbowgun.json";
 const WEAPON_HBG_PATH = "./data/weapons_heavybowgun.json";
-const WEAPON_BOW_PATH = "./data/weapons_bow.json";
 
 
 /* WEAPONS ******************************************************************************/
@@ -107,37 +102,6 @@ function validateWeaponData(weaponData) {
     }
 }
 
-function validateWeaponDataBow(weaponData) {
-    const so = weaponData.bowStats;
-
-    assert(isObj(so.arcShot)); // Already validated
-
-    const bcll = so.baseChargeLevelLimit;
-    assert(isInt(bcll) && (bcll > 0)); // Further validation later
-
-    const chargeShotData = so.chargeShot;
-    assert(isArr(chargeShotData));
-    assert((chargeShotData.length >= 3) && (chargeShotData.length <= 4)); // Only known to be 3 or 4
-    assert((chargeShotData.length === bcll) || (chargeShotData.length === bcll + 1)); // We expect at most a difference of 1
-    for (const [chargeShotRO, level] of chargeShotData) {
-        assert(isObj(chargeShotRO)); // Already validated
-        assert(isInt(level) && (level >= 1) && (level <= 5));
-    }
-
-    const compatibleCoatings = so.compatibleCoatings;
-    assert(Object.keys(compatibleCoatings).length === 7);
-    const op = (k) => {
-            assert(isInt(compatibleCoatings[k]) && (compatibleCoatings[k] >= 0) && (compatibleCoatings[k] <= 2)); // tri-state
-        };
-    op("close_range_coating");
-    op("power_coating");
-    op("poison_coating");
-    op("para_coating");
-    op("sleep_coating");
-    op("blast_coating");
-    op("exhaust_coating");
-}
-
 function validateWeaponDataBowguns(weaponData) {
     const so = weaponData.bowgunStats;
 
@@ -186,22 +150,6 @@ async function downloadCategoryRawWeaponData(category, path, op) {
 
             // Convert the eleStat object to a map because it's easier to work with
             weaponData.eleStat = new Map(Object.entries(weaponData.eleStat));
-
-            // Add Bow mechanics
-            if (weaponData.category === "bow") {
-                const arcShotTypeID = weaponData.bowStats.arcShot;
-                const arcShotTypeRO = bowArcShotTypesMap.get(arcShotTypeID);
-                assert(arcShotTypeRO !== undefined, "Unknown arc shot type ID: " + String(arcShotTypeID));
-                weaponData.bowStats.arcShot = arcShotTypeRO;
-
-                const chargeShotData = weaponData.bowStats.chargeShot;
-                for (const tup of chargeShotData) {
-                    const [chargeShotTypeID, level] = tup;
-                    const chargeShotTypeRO = bowChargeShotTypesMap.get(chargeShotTypeID);
-                    assert(chargeShotTypeRO !== undefined, "Unknown charge shot type ID: " + String(chargeShotTypeID));
-                    tup[0] = chargeShotTypeRO; // Replace the original ID
-                }
-            }
 
             // Add bowgun mechanics
             if ((weaponData.category === "lightbowgun") || (weaponData.category === "heavybowgun")) {
@@ -253,11 +201,9 @@ async function downloadCategoryRawWeaponData(category, path, op) {
 
 async function downloadAllRawWeaponData() {
     const validateBowgun       = (weaponData) => {validateWeaponDataBowguns(weaponData);};
-    const validateBow          = (weaponData) => {validateWeaponDataBow(weaponData);};
 
     const lbgDataFut = downloadCategoryRawWeaponData("lightbowgun",    WEAPON_LBG_PATH, validateBowgun     );
     const hbgDataFut = downloadCategoryRawWeaponData("heavybowgun",    WEAPON_HBG_PATH, validateBowgun     );
-    const bowDataFut = downloadCategoryRawWeaponData("bow",            WEAPON_BOW_PATH, validateBow        );
     return {
             greatsword:     newWeaponsMap.greatsword,
             longsword:      newWeaponsMap.longsword,
@@ -272,7 +218,7 @@ async function downloadAllRawWeaponData() {
             insectglaive:   newWeaponsMap.insectglaive,
             lightbowgun:    await lbgDataFut,
             heavybowgun:    await hbgDataFut,
-            bow:            await bowDataFut,
+            bow:            newWeaponsMap.bow,
         };
 }
 
@@ -282,7 +228,7 @@ function joinRampSkillObjsToWeaponData(weaponData) {
     assert(isObj(weaponData));
     //assert(isMap(rampageSkillsMap)); // Commented because it broke
     for (const [categoryID, weaponDataMap] of Object.entries(weaponData)) {
-        if (!["lightbowgun", "heavybowgun", "bow"].includes(categoryID)) continue; // Bandaid for refactoring
+        if (!["lightbowgun", "heavybowgun"].includes(categoryID)) continue; // Bandaid for refactoring
         for (const [weaponID, weaponDataObj] of weaponDataMap.entries()) {
             const newRampArray = [];
             for (const rampSkillRampArray of weaponDataObj.rampSkills) {
@@ -353,10 +299,6 @@ class GameData {
                 shortIdsMap: rampageSkillsMapShortIds,
             },
             weaponMechanics: {
-                bow: {
-                    arcShotTypesMap: bowArcShotTypesMap,
-                    chargeShotTypesMap: bowChargeShotTypesMap,
-                },
                 bowguns: {
                     ammoTypesMap: bowgunAmmoTypesMap,
                 }

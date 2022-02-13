@@ -32,6 +32,8 @@ import {
     hhSongName,
     saPhialTypeName,
     cbPhialTypeName,
+    bowArcShotTypeName,
+    bowChargeShotTypeName,
 } from "../../../common/mappings";
 
 import {GenericTable} from "../../generic/GenericTable";
@@ -293,9 +295,9 @@ export class CalculationResultsBox extends React.Component<any, any> {
 
     _renderChargeShotBox(chargeShotArr, chargeLevelLimit) {
         const elems = [];
-        for (const [i, [chargeShotTypeRO, level]] of chargeShotArr.entries()) {
-            const label = "Charge Shot " + String(i + 1);
-            const value = String(chargeShotTypeRO.name) + " Level " + String(level);
+        for (const [i, [chargeShotType, level]] of chargeShotArr.entries()) {
+            const label = `Charge Shot ${i + 1}`;
+            const value = `${bowChargeShotTypeName(chargeShotType)} Level ${level}`;
 
             const applyStyle = (e) => {return (i < chargeLevelLimit) ? e : this._renderGreyed(e);};
 
@@ -466,7 +468,7 @@ export class CalculationResultsBox extends React.Component<any, any> {
             specialMechanicRenderings.push(
                 element(CalculationResultsGroupBox,
                     null,
-                    this._renderStat(null, "Arc Shot", [String(perf.bowStats.arcShot.name)]),
+                    this._renderStat(null, "Arc Shot", [bowArcShotTypeName(perf.bowStats.arcShot)]),
                     this._renderChargeShotBox(perf.bowStats.chargeShot, perf.bowStats.chargeLevelLimit),
                     this._renderCompatibleCoatings(perf.bowStats.compatibleCoatings),
                 ),

@@ -223,10 +223,9 @@ function getBaseValues(db, build, calcState) {
         switchaxeStats.phialValue = value;
     }
 
-    function rampBowSetArcShot(arcShotTypeID) {
+    function rampBowSetArcShot(arcShotType) {
         assert(weaponRO.category === "bow");
-        bowStats.arcShot = db.readonly.weaponMechanics.bow.arcShotTypesMap.get(arcShotTypeID);
-        assert(bowStats.arcShot !== undefined); // Need to make sure we actually got something
+        bowStats.arcShot = arcShotType;
     }
     function rampBowSetChargeShot(chargeLevelLimit, spec) {
         assert(weaponRO.category === "bow");
@@ -234,10 +233,8 @@ function getBaseValues(db, build, calcState) {
         assert((chargeLevelLimit === 3) || (chargeLevelLimit === 4)); // This assumes 4 charge levels
 
         bowStats.chargeShot = [];
-        for (const [chargeShotTypeID, level] of spec) {
-            const chargeShotTypeRO = db.readonly.weaponMechanics.bow.chargeShotTypesMap.get(chargeShotTypeID);
-            assert(chargeShotTypeRO !== undefined); // Need to make sure we actually got something
-            bowStats.chargeShot.push([chargeShotTypeRO, level]);
+        for (const [chargeShotType, level] of spec) {
+            bowStats.chargeShot.push([chargeShotType, level]);
         }
 
         bowStats.chargeLevelLimit = chargeLevelLimit;

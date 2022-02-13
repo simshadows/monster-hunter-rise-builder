@@ -212,35 +212,35 @@ export interface IGStats {
 
 /*** Weapon Mechanics: Bow ***/
 
-export interface BowArcShotType {
+export type BowArcShotType = "recovery" | "affinity" | "brace";
+export type BowChargeShotType = "pierce" | "rapid" | "spread";
+export type BowChargeShotLevel = 1 | 2 | 3 | 4 | 5;
+
+export interface BowStats {
+    readonly arcShot: BowArcShotType;
+    readonly baseChargeLevelLimit: 2 | 3 | 4;
+    readonly chargeShot: Readonly<Readonly<[BowChargeShotType, BowChargeShotLevel]>[]>;
+    readonly compatibleCoatings: {
+        readonly close_range_coating: 0 | 1 | 2;
+        readonly power_coating:       0 | 1 | 2;
+        readonly poison_coating:      0 | 1 | 2;
+        readonly para_coating:        0 | 1 | 2;
+        readonly sleep_coating:       0 | 1 | 2;
+        readonly blast_coating:       0 | 1;
+        readonly exhaust_coating:     0 | 1 | 2;
+    };
+}
+
+
+export interface BowArcShotTypeRO {
     id:   string;
     name: string;
 }
-export type BowArcShotTypeRO = Readonly<BowArcShotType>;
-
-export interface BowChargeShotType {
+export interface BowChargeShotTypeRO {
     id:   string;
     name: string;
 }
-export type BowChargeShotTypeRO = Readonly<BowChargeShotType>;
 
-// TODO: Continue working on this!
-//export type BowChargeShotLevel = 1 | 2 | 3 | 4 | 5;
-//
-//export interface BowStats {
-//    arcShot: BowArcShotType;
-//    baseChargeLevelLimit: 3 | 4;
-//    chargeShot: Readonly<Readonly<[BowChargeShotTypeRO, BowChargeShotLevel]>[]>;
-//    compatibleCoatings: Readonly<{
-//        close_range_coating: 0 | 1 | 2;
-//        power_coating:       0 | 1 | 2;
-//        poison_coating:      0 | 1 | 2;
-//        para_coating:        0 | 1 | 2;
-//        sleep_coating:       0 | 1 | 2;
-//        blast_coating:       0 | 1;
-//        exhaust_coating:     0 | 1 | 2;
-//    }>;
-//}
 
 /*** Weapon Mechanics: Light Bowgun and Heavy Bowgun ***/
 
@@ -283,7 +283,7 @@ export interface Weapon {
     readonly switchaxeStats?:    SAStats;
     readonly chargebladeStats?:  CBStats;
     readonly insectglaiveStats?: IGStats;
-    //readonly bowStats?: BowStats;
+    readonly bowStats?:          BowStats;
 
     readonly filterHelpers: {
         readonly nameLower:     string;
@@ -301,17 +301,18 @@ export function isMelee(obj: Weapon): obj is MeleeWeapon { // DANGER: RETURNS TY
     return isMeleeCategory(obj.category);
 }
 
-export interface Greatsword     extends MeleeWeapon {readonly category: "greatsword";    }
-export interface Longsword      extends MeleeWeapon {readonly category: "longsword";     }
-export interface SwordAndShield extends MeleeWeapon {readonly category: "swordandshield";}
-export interface DualBlades     extends MeleeWeapon {readonly category: "dualblades";    }
-export interface Lance          extends MeleeWeapon {readonly category: "lance";         }
-export interface Gunlance       extends MeleeWeapon {readonly category: "gunlance";     readonly gunlanceStats: GLStats;}
-export interface Hammer         extends MeleeWeapon {readonly category: "hammer";        }
-export interface HuntingHorn    extends MeleeWeapon {readonly category: "huntinghorn";  readonly huntinghornSongs: HHSongs;}
-export interface SwitchAxe      extends MeleeWeapon {readonly category: "switchaxe";    readonly switchaxeStats: SAStats;}
-export interface ChargeBlade    extends MeleeWeapon {readonly category: "chargeblade";  readonly chargebladeStats: CBStats;}
-export interface InsectGlaive   extends MeleeWeapon {readonly category: "insectglaive"; readonly insectglaiveStats: IGStats;}
+export interface Greatsword     extends MeleeWeapon {readonly category: "greatsword";                                        }
+export interface Longsword      extends MeleeWeapon {readonly category: "longsword";                                         }
+export interface SwordAndShield extends MeleeWeapon {readonly category: "swordandshield";                                    }
+export interface DualBlades     extends MeleeWeapon {readonly category: "dualblades";                                        }
+export interface Lance          extends MeleeWeapon {readonly category: "lance";                                             }
+export interface Gunlance       extends MeleeWeapon {readonly category: "gunlance";     readonly gunlanceStats:     GLStats; }
+export interface Hammer         extends MeleeWeapon {readonly category: "hammer";                                            }
+export interface HuntingHorn    extends MeleeWeapon {readonly category: "huntinghorn";  readonly huntinghornSongs:  HHSongs; }
+export interface SwitchAxe      extends MeleeWeapon {readonly category: "switchaxe";    readonly switchaxeStats:    SAStats; }
+export interface ChargeBlade    extends MeleeWeapon {readonly category: "chargeblade";  readonly chargebladeStats:  CBStats; }
+export interface InsectGlaive   extends MeleeWeapon {readonly category: "insectglaive"; readonly insectglaiveStats: IGStats; }
+export interface Bow            extends Weapon      {readonly category: "bow";          readonly bowStats:          BowStats;}
 
 /*** Armour ***/
 
@@ -422,5 +423,6 @@ export type WeaponMap = {
     readonly switchaxe:      WeaponMapInner<SwitchAxe     >;
     readonly chargeblade:    WeaponMapInner<ChargeBlade   >;
     readonly insectglaive:   WeaponMapInner<InsectGlaive  >;
+    readonly bow:            WeaponMapInner<Bow           >;
 };
 
