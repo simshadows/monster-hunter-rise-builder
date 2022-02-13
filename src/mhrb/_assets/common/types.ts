@@ -119,11 +119,7 @@ export type WeaponSpecialSelectionRO = Readonly<WeaponSpecialSelection>;
 
 /*** Weapon Mechanics: Gunlance ***/
 
-export interface GLShellingType {
-    id:   string;
-    name: string;
-}
-export type GLShellingTypeRO = Readonly<GLShellingType>;
+export type GLShellingType = "normal" | "long" | "wide";
 
 /*** Weapon Mechanics: Hunting Horn ***/
 

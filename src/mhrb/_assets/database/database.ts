@@ -43,7 +43,6 @@ import {
     petalaceMap,
 } from "./hardcoded_data/petalace_data";
 
-import {gunlanceShellingTypesMap} from "./hardcoded_data/special_weapon_mechanics/gunlance";
 import {huntingHornSongsMap     } from "./hardcoded_data/special_weapon_mechanics/huntinghorn";
 import {switchAxePhialTypesMap  } from "./hardcoded_data/special_weapon_mechanics/switchaxe";
 import {chargeBladePhialTypesMap} from "./hardcoded_data/special_weapon_mechanics/chargeblade";
@@ -251,14 +250,6 @@ async function downloadCategoryRawWeaponData(category, path, op) {
 
             // Convert the eleStat object to a map because it's easier to work with
             weaponData.eleStat = new Map(Object.entries(weaponData.eleStat));
-
-            // Add Gunlance mechanics
-            if (weaponData.category === "gunlance") {
-                const shellingTypeID = weaponData.gunlanceStats.shellingType;
-                const shellingTypeRO = gunlanceShellingTypesMap.get(shellingTypeID);
-                assert(shellingTypeRO !== undefined, "Unknown shelling type ID: " + String(shellingTypeID));
-                weaponData.gunlanceStats.shellingType = shellingTypeRO;
-            }
 
             // Add Hunting Horn mechanics
             if (weaponData.category === "huntinghorn") {
@@ -492,9 +483,6 @@ class GameData {
                 shortIdsMap: rampageSkillsMapShortIds,
             },
             weaponMechanics: {
-                gunlance: {
-                    shellingTypesMap: gunlanceShellingTypesMap,
-                },
                 huntinghorn: {
                     songsMap: huntingHornSongsMap,
                 },

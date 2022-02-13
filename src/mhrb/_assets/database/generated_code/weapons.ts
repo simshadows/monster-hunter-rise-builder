@@ -29,10 +29,9 @@ import {
     type LanceRO,
 
     type WeaponMap,
+
+    isMeleeRO, // Type Predicate
 } from "../../common/types";
-import {
-    isMeleeRO,
-} from "../../common/type_predicates";
 import {
     toNameFilterString,
 } from "../../common/mappings";

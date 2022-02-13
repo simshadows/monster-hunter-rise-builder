@@ -27,6 +27,10 @@ import {
     eleStatStrToImgId,
 } from "../../../images";
 
+import {
+    glShellingTypeName,
+} from "../../../common/mappings";
+
 import {GenericTable} from "../../generic/GenericTable";
 import {SimpleImg} from "../../images/SimpleImg";
 import {SharpnessBar} from "../../common/SharpnessBar";
@@ -398,7 +402,7 @@ export class CalculationResultsBox extends React.Component<any, any> {
         const specialMechanicRenderings = [];
 
         if (perf.gunlanceStats !== null) {
-            const text = String(perf.gunlanceStats.shellingType.name) + " " + String(perf.gunlanceStats.shellingLevel);
+            const text = glShellingTypeName(perf.gunlanceStats.shellingType) + " " + String(perf.gunlanceStats.shellingLevel);
             specialMechanicRenderings.push(
                 element(CalculationResultsGroupBox,
                     null,
