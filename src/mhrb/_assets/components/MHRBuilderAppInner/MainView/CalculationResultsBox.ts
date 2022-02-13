@@ -30,6 +30,7 @@ import {
 import {
     glShellingTypeName,
     hhSongName,
+    saPhialTypeName,
 } from "../../../common/mappings";
 
 import {GenericTable} from "../../generic/GenericTable";
@@ -425,7 +426,7 @@ export class CalculationResultsBox extends React.Component<any, any> {
 
         if (perf.switchAxeStats !== null) {
             const statBoxes = [
-                    this._renderStat(null, "Phial Type", [String(perf.switchAxeStats.phialType.name)]),
+                    this._renderStat(null, "Phial Type", [saPhialTypeName(perf.switchAxeStats.phialType)]),
                 ];
             
             if (perf.switchAxeStats.phialValue !== null) {

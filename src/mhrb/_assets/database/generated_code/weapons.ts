@@ -30,6 +30,7 @@ import {
     type Gunlance,
     type Hammer,
     type HuntingHorn,
+    type SwitchAxe,
 
     type WeaponMap,
 
@@ -50,6 +51,7 @@ import {lancesArray         } from "./_generated_weapon_lance";
 import {gunlancesArray      } from "./_generated_weapon_gunlance";
 import {hammersArray        } from "./_generated_weapon_hammer";
 import {huntinghornsArray   } from "./_generated_weapon_huntinghorn";
+import {switchaxesArray     } from "./_generated_weapon_switchaxe";
 
 function validateMeleeWeapon(w: MeleeWeapon): void {
     const baseSum = sumArray(w.baseSharpness);
@@ -116,6 +118,7 @@ const weaponsMap: Readonly<WeaponMap> = {
     gunlance:       processWeapon<Gunlance      >(gunlancesArray      ),
     hammer:         processWeapon<Hammer        >(hammersArray        ),
     huntinghorn:    processWeapon<HuntingHorn   >(huntinghornsArray   ),
+    switchaxe:      processWeapon<SwitchAxe     >(switchaxesArray     ),
 };
 
 export {

@@ -161,11 +161,17 @@ export interface HHSongs {
 
 /*** Weapon Mechanics: Switchaxe ***/
 
-export interface SAPhialType {
-    id:   string;
-    name: string;
+export type SAPhialType = "power_phial"
+                        | "element_phial"
+                        | "poison_phial"
+                        | "paralysis_phial"
+                        | "dragon_phial"
+                        | "exhaust_phial";
+
+export interface SAStats {
+    readonly phialType: SAPhialType;
+    readonly phialValue: number | null; // Null if the value isn't used
 }
-export type SAPhialTypeRO = Readonly<SAPhialType>;
 
 /*** Weapon Mechanics: Charge Blade ***/
 
@@ -296,6 +302,7 @@ export interface Lance          extends MeleeWeapon {readonly category: "lance";
 export interface Gunlance       extends MeleeWeapon {readonly category: "gunlance"; readonly gunlanceStats: GLStats;}
 export interface Hammer         extends MeleeWeapon {readonly category: "hammer";        }
 export interface HuntingHorn    extends MeleeWeapon {readonly category: "huntinghorn"; readonly huntinghornSongs: HHSongs;}
+export interface SwitchAxe      extends MeleeWeapon {readonly category: "switchaxe"; readonly switchaxeStats: SAStats;}
 
 /*** Armour ***/
 
@@ -403,5 +410,6 @@ export type WeaponMap = {
     readonly gunlance:       WeaponMapInner<Gunlance      >;
     readonly hammer:         WeaponMapInner<Hammer        >;
     readonly huntinghorn:    WeaponMapInner<HuntingHorn   >;
+    readonly switchaxe:      WeaponMapInner<SwitchAxe     >;
 };
 

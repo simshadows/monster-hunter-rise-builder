@@ -43,7 +43,6 @@ import {
     petalaceMap,
 } from "./hardcoded_data/petalace_data";
 
-import {switchAxePhialTypesMap  } from "./hardcoded_data/special_weapon_mechanics/switchaxe";
 import {chargeBladePhialTypesMap} from "./hardcoded_data/special_weapon_mechanics/chargeblade";
 import {
     insectGlaiveKinsectsMap,
@@ -57,7 +56,6 @@ import {
 import {bowgunAmmoTypesMap      } from "./hardcoded_data/special_weapon_mechanics/bowguns";
 import {specialSelectionTypesMap} from "./hardcoded_data/special_weapon_mechanics/general";
 
-const WEAPON_SA_PATH  = "./data/weapons_switchaxe.json";
 const WEAPON_CB_PATH  = "./data/weapons_chargeblade.json";
 const WEAPON_IG_PATH  = "./data/weapons_insectglaive.json";
 const WEAPON_LBG_PATH = "./data/weapons_lightbowgun.json";
@@ -136,14 +134,6 @@ function validateWeaponDataSharpness(weaponData) {
     }
     op(weaponData.baseSharpness);
     op(weaponData.maxSharpness);
-}
-
-function validateWeaponDataSwitchAxe(weaponData) {
-    const phialType = weaponData.switchaxeStats.phialType;
-    const phialValue = weaponData.switchaxeStats.phialValue;
-
-    assert(isObj(phialType));
-    assert((phialValue === null) || (isInt(phialValue) && (phialValue > 0)));
 }
 
 function validateWeaponDataChargeBlade(weaponData) {
@@ -235,13 +225,6 @@ async function downloadCategoryRawWeaponData(category, path, op) {
             // Convert the eleStat object to a map because it's easier to work with
             weaponData.eleStat = new Map(Object.entries(weaponData.eleStat));
 
-            // Add Switch Axe mechanics
-            if (weaponData.category === "switchaxe") {
-                const phialTypeID = weaponData.switchaxeStats.phialType;
-                const phialTypeRO = switchAxePhialTypesMap.get(phialTypeID);
-                assert(phialTypeRO !== undefined, "Unknown phial type ID: " + String(phialTypeID));
-                weaponData.switchaxeStats.phialType = phialTypeRO;
-            }
 
             // Add Charge Blade mechanics
             if (weaponData.category === "chargeblade") {
@@ -317,8 +300,6 @@ async function downloadCategoryRawWeaponData(category, path, op) {
 
 async function downloadAllRawWeaponData() {
     const validateSimpleMelee  = (weaponData) => {validateWeaponDataSharpness(weaponData);};
-    const validateSA           = (weaponData) => {validateWeaponDataSharpness(weaponData);
-                                                  validateWeaponDataSwitchAxe(weaponData);};
     const validateCB           = (weaponData) => {validateWeaponDataSharpness(weaponData);
                                                   validateWeaponDataChargeBlade(weaponData);};
     const validateIG           = (weaponData) => {validateWeaponDataSharpness(weaponData);
@@ -327,7 +308,6 @@ async function downloadAllRawWeaponData() {
     const validateBowgun       = (weaponData) => {validateWeaponDataBowguns(weaponData);};
     const validateBow          = (weaponData) => {validateWeaponDataBow(weaponData);};
 
-    const saDataFut  = downloadCategoryRawWeaponData("switchaxe",      WEAPON_SA_PATH,  validateSA         );
     const cbDataFut  = downloadCategoryRawWeaponData("chargeblade",    WEAPON_CB_PATH,  validateCB         );
     const igDataFut  = downloadCategoryRawWeaponData("insectglaive",   WEAPON_IG_PATH,  validateIG         );
     const lbgDataFut = downloadCategoryRawWeaponData("lightbowgun",    WEAPON_LBG_PATH, validateBowgun     );
@@ -342,7 +322,7 @@ async function downloadAllRawWeaponData() {
             gunlance:       newWeaponsMap.gunlance,
             hammer:         newWeaponsMap.hammer,
             huntinghorn:    newWeaponsMap.huntinghorn,
-            switchaxe:      await saDataFut,
+            switchaxe:      newWeaponsMap.switchaxe,
             chargeblade:    await cbDataFut,
             insectglaive:   await igDataFut,
             lightbowgun:    await lbgDataFut,
@@ -357,8 +337,7 @@ function joinRampSkillObjsToWeaponData(weaponData) {
     assert(isObj(weaponData));
     //assert(isMap(rampageSkillsMap)); // Commented because it broke
     for (const [categoryID, weaponDataMap] of Object.entries(weaponData)) {
-        // Bandaid for refactoring
-        if (["greatsword", "longsword", "swordandshield", "dualblades", "lance", "gunlance", "hammer", "huntinghorn"].includes(categoryID)) continue;
+        if (["greatsword", "longsword", "swordandshield", "dualblades", "lance", "gunlance", "hammer", "huntinghorn", "switchaxe"].includes(categoryID)) continue; // Bandaid for refactoring
         for (const [weaponID, weaponDataObj] of weaponDataMap.entries()) {
             const newRampArray = [];
             for (const rampSkillRampArray of weaponDataObj.rampSkills) {
@@ -429,9 +408,6 @@ class GameData {
                 shortIdsMap: rampageSkillsMapShortIds,
             },
             weaponMechanics: {
-                switchaxe: {
-                    phialTypesMap: switchAxePhialTypesMap,
-                },
                 chargeblade: {
                     phialTypesMap: chargeBladePhialTypesMap,
                 },

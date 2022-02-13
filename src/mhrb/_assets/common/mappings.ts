@@ -6,6 +6,7 @@
 import {
     type GLShellingType,
     type HHSong,
+    type SAPhialType,
 } from "./types";
 
 export function toNameFilterString(s: string): string {
@@ -51,6 +52,18 @@ export function hhSongName(s: HHSong): string {
         case "stun_negated":                    return "Stun Negated";
         case "tremors_negated":                 return "Tremors Negated";
         case "wind_pressure_negated":           return "Wind Pressure Negated";
+    }
+}
+
+export function saPhialTypeName(s: SAPhialType): string {
+    switch (s) {
+        default: console.error(`Unexpected value: ${s}`); // Fallthrough for graceful failure
+        case "power_phial":     return "Power Phial";
+        case "element_phial":   return "Element Phial";
+        case "poison_phial":    return "Poison Phial";
+        case "paralysis_phial": return "Paralysis Phial";
+        case "dragon_phial":    return "Dragon Phial";
+        case "exhaust_phial":   return "Exhaust Phial";
     }
 }
 

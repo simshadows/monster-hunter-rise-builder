@@ -11,6 +11,7 @@ import json
 from weapons_details.sharpness   import generate_sharpness_source_lines
 from weapons_details.gunlance    import generate_gunlance_source_lines
 from weapons_details.huntinghorn import generate_huntinghorn_source_lines
+from weapons_details.switchaxe   import generate_switchaxe_source_lines
 
 from utils import ramp_id_to_object_name, to_name_filter_string
 
@@ -89,6 +90,7 @@ _to_type_ref = {
     "gunlance":       "Gunlance",
     "hammer":         "Hammer",
     "huntinghorn":    "HuntingHorn",
+    "switchaxe":      "SwitchAxe",
 }
 
 _melee_weapons = {
@@ -144,6 +146,8 @@ def _get_special_mechanics_str(category, obj):
         entries.append(generate_gunlance_source_lines(obj))
     elif category == "huntinghorn":
         entries.append(generate_huntinghorn_source_lines(obj))
+    elif category == "switchaxe":
+        entries.append(generate_switchaxe_source_lines(obj))
 
     return "".join(f"\n\n{x}" for x in entries)
 

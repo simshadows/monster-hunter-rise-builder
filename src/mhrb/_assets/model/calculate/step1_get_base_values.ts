@@ -219,9 +219,8 @@ function getBaseValues(db, build, calcState) {
     }
     function rampSwitchAxeSetPhial(phialTypeID, value) {
         assert(weaponRO.category === "switchaxe");
-        switchaxeStats.phialType = db.readonly.weaponMechanics.switchaxe.phialTypesMap.get(phialTypeID);
+        switchaxeStats.phialType = phialTypeID;
         switchaxeStats.phialValue = value;
-        assert(switchaxeStats.phialType !== undefined); // Need to make sure we actually got something
     }
 
     function rampBowSetArcShot(arcShotTypeID) {
@@ -566,7 +565,7 @@ function getBaseValues(db, build, calcState) {
 
         ["phial_element", ()=>{
             if (weaponRO.category === "switchaxe") {
-                switchaxeStats.phialType = db.readonly.weaponMechanics.switchaxe.phialTypesMap.get("element_phial");
+                switchaxeStats.phialType = "element_phial";
             } else if (weaponRO.category === "chargeblade") {
                 chargebladeStats.phialType = db.readonly.weaponMechanics.chargeblade.phialTypesMap.get("element_phial");
             } else {
