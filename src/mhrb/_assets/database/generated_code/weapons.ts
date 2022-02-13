@@ -29,6 +29,7 @@ import {
     type LanceRO,
     type GunlanceRO,
     type HammerRO,
+    type HuntingHornRO,
 
     type WeaponMap,
 
@@ -48,6 +49,7 @@ import {dualbladessArray    } from "./_generated_weapon_dualblades";
 import {lancesArray         } from "./_generated_weapon_lance";
 import {gunlancesArray      } from "./_generated_weapon_gunlance";
 import {hammersArray        } from "./_generated_weapon_hammer";
+import {huntinghornsArray   } from "./_generated_weapon_huntinghorn";
 
 function validateMeleeWeapon(w: MeleeWeaponRO): void {
     const baseSum = sumArray(w.baseSharpness);
@@ -113,6 +115,7 @@ const weaponsMap: Readonly<WeaponMap> = {
     lance:          processWeapon<LanceRO         >(lancesArray         ),
     gunlance:       processWeapon<GunlanceRO      >(gunlancesArray      ),
     hammer:         processWeapon<HammerRO        >(hammersArray        ),
+    huntinghorn:    processWeapon<HuntingHornRO   >(huntinghornsArray   ),
 };
 
 export {

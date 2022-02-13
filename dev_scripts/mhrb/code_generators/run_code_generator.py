@@ -110,6 +110,7 @@ def run():
         "lance":          read_data("../../kiranico_scrape/output/weapons_lance.json"         ),
         "gunlance":       read_data("../../kiranico_scrape/output/weapons_gunlance.json"      ),
         "hammer":         read_data("../../kiranico_scrape/output/weapons_hammer.json"        ),
+        "huntinghorn":    read_data("../../kiranico_scrape/output/weapons_huntinghorn.json"   ),
     }
     weapon_source_files_content = generate_weapon_source_files(weapon_data)
     write_source_file("_generated_weapon_greatsword.ts"    , weapon_source_files_content["greatsword"    ])
@@ -119,6 +120,7 @@ def run():
     write_source_file("_generated_weapon_lance.ts"         , weapon_source_files_content["lance"         ])
     write_source_file("_generated_weapon_gunlance.ts"      , weapon_source_files_content["gunlance"      ])
     write_source_file("_generated_weapon_hammer.ts"        , weapon_source_files_content["hammer"        ])
+    write_source_file("_generated_weapon_huntinghorn.ts"   , weapon_source_files_content["huntinghorn"   ])
     for (k, v) in weapon_data.items():
         print(f"Discovered {len(v)} weapon trees of category '{k}'.")
 

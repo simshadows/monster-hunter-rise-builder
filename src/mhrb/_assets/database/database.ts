@@ -43,7 +43,6 @@ import {
     petalaceMap,
 } from "./hardcoded_data/petalace_data";
 
-import {huntingHornSongsMap     } from "./hardcoded_data/special_weapon_mechanics/huntinghorn";
 import {switchAxePhialTypesMap  } from "./hardcoded_data/special_weapon_mechanics/switchaxe";
 import {chargeBladePhialTypesMap} from "./hardcoded_data/special_weapon_mechanics/chargeblade";
 import {
@@ -58,7 +57,6 @@ import {
 import {bowgunAmmoTypesMap      } from "./hardcoded_data/special_weapon_mechanics/bowguns";
 import {specialSelectionTypesMap} from "./hardcoded_data/special_weapon_mechanics/general";
 
-const WEAPON_HH_PATH  = "./data/weapons_huntinghorn.json";
 const WEAPON_SA_PATH  = "./data/weapons_switchaxe.json";
 const WEAPON_CB_PATH  = "./data/weapons_chargeblade.json";
 const WEAPON_IG_PATH  = "./data/weapons_insectglaive.json";
@@ -140,13 +138,6 @@ function validateWeaponDataSharpness(weaponData) {
     op(weaponData.maxSharpness);
 }
 
-function validateWeaponDataHuntingHorn(weaponData) {
-    assert(isObj(weaponData.huntinghornSongs));
-    //assert(isNonEmptyStr(weaponData.huntinghornSongs.x_x));
-    //assert(isNonEmptyStr(weaponData.huntinghornSongs.a_a));
-    //assert(isNonEmptyStr(weaponData.huntinghornSongs.xa_xa));
-}
-
 function validateWeaponDataSwitchAxe(weaponData) {
     const phialType = weaponData.switchaxeStats.phialType;
     const phialValue = weaponData.switchaxeStats.phialValue;
@@ -226,7 +217,7 @@ async function downloadCategoryRawWeaponData(category, path, op) {
     const rawData = await res.json();
 
     // Used for issuing useful warnings
-    const huntingHornSeenSongs = new Set();
+    //const huntingHornSeenSongs = new Set();
 
     const finalData = new Map();
     for (const [treeName, treeData] of Object.entries(rawData)) {
@@ -243,24 +234,6 @@ async function downloadCategoryRawWeaponData(category, path, op) {
 
             // Convert the eleStat object to a map because it's easier to work with
             weaponData.eleStat = new Map(Object.entries(weaponData.eleStat));
-
-            // Add Hunting Horn mechanics
-            if (weaponData.category === "huntinghorn") {
-                function getSong(songID) {
-                    const _ret = huntingHornSongsMap.get(songID);
-                    assert(_ret !== undefined, "Unknown song ID: " + String(songID));
-                    return _ret;
-                }
-                const tmp = new Map([
-                    ["x", getSong(weaponData.huntinghornSongs["x_x"])],
-                    ["a", getSong(weaponData.huntinghornSongs["a_a"])],
-                    ["xa", getSong(weaponData.huntinghornSongs["xa_xa"])],
-                ]);
-                huntingHornSeenSongs.add(tmp.get("x").id);
-                huntingHornSeenSongs.add(tmp.get("a").id);
-                huntingHornSeenSongs.add(tmp.get("xa").id);
-                weaponData.huntinghornSongs = tmp;
-            }
 
             // Add Switch Axe mechanics
             if (weaponData.category === "switchaxe") {
@@ -339,26 +312,11 @@ async function downloadCategoryRawWeaponData(category, path, op) {
             finalData.set(weaponID, weaponData);
         }
     }
-
-    if (category === "huntinghorn") {
-        assert(huntingHornSeenSongs.size <= huntingHornSongsMap.size);
-        const unseenSongs = setDifference(new Set(huntingHornSongsMap.keys()), huntingHornSeenSongs);
-        if (unseenSongs.size !== 0) {
-            for (const songID of unseenSongs) {
-                console.warn("Song ID present in database but not used on a weapon: " + String(songID));
-            }
-        }
-    } else {
-        assert(huntingHornSeenSongs.size === 0);
-    }
-
     return finalData;
 }
 
 async function downloadAllRawWeaponData() {
     const validateSimpleMelee  = (weaponData) => {validateWeaponDataSharpness(weaponData);};
-    const validateHH           = (weaponData) => {validateWeaponDataSharpness(weaponData);
-                                                  validateWeaponDataHuntingHorn(weaponData);};
     const validateSA           = (weaponData) => {validateWeaponDataSharpness(weaponData);
                                                   validateWeaponDataSwitchAxe(weaponData);};
     const validateCB           = (weaponData) => {validateWeaponDataSharpness(weaponData);
@@ -369,7 +327,6 @@ async function downloadAllRawWeaponData() {
     const validateBowgun       = (weaponData) => {validateWeaponDataBowguns(weaponData);};
     const validateBow          = (weaponData) => {validateWeaponDataBow(weaponData);};
 
-    const hhDataFut  = downloadCategoryRawWeaponData("huntinghorn",    WEAPON_HH_PATH,  validateHH         );
     const saDataFut  = downloadCategoryRawWeaponData("switchaxe",      WEAPON_SA_PATH,  validateSA         );
     const cbDataFut  = downloadCategoryRawWeaponData("chargeblade",    WEAPON_CB_PATH,  validateCB         );
     const igDataFut  = downloadCategoryRawWeaponData("insectglaive",   WEAPON_IG_PATH,  validateIG         );
@@ -384,7 +341,7 @@ async function downloadAllRawWeaponData() {
             lance:          newWeaponsMap.lance,
             gunlance:       newWeaponsMap.gunlance,
             hammer:         newWeaponsMap.hammer,
-            huntinghorn:    await hhDataFut,
+            huntinghorn:    newWeaponsMap.huntinghorn,
             switchaxe:      await saDataFut,
             chargeblade:    await cbDataFut,
             insectglaive:   await igDataFut,
@@ -401,7 +358,7 @@ function joinRampSkillObjsToWeaponData(weaponData) {
     //assert(isMap(rampageSkillsMap)); // Commented because it broke
     for (const [categoryID, weaponDataMap] of Object.entries(weaponData)) {
         // Bandaid for refactoring
-        if (["greatsword", "longsword", "swordandshield", "dualblades", "lance", "gunlance", "hammer"].includes(categoryID)) continue;
+        if (["greatsword", "longsword", "swordandshield", "dualblades", "lance", "gunlance", "hammer", "huntinghorn"].includes(categoryID)) continue;
         for (const [weaponID, weaponDataObj] of weaponDataMap.entries()) {
             const newRampArray = [];
             for (const rampSkillRampArray of weaponDataObj.rampSkills) {
@@ -472,9 +429,6 @@ class GameData {
                 shortIdsMap: rampageSkillsMapShortIds,
             },
             weaponMechanics: {
-                huntinghorn: {
-                    songsMap: huntingHornSongsMap,
-                },
                 switchaxe: {
                     phialTypesMap: switchAxePhialTypesMap,
                 },

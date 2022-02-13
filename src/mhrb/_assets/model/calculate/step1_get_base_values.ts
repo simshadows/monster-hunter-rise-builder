@@ -210,15 +210,12 @@ function getBaseValues(db, build, calcState) {
     }
     function rampMelody(songX, songA, songXA) {
         assert(weaponRO.category === "huntinghorn");
-        assert(isMap(huntingHornSongs)); // We expect that it's an existing song set
-        huntingHornSongs = new Map([
-            ["x", db.readonly.weaponMechanics.huntinghorn.songsMap.get(songX)],
-            ["a", db.readonly.weaponMechanics.huntinghorn.songsMap.get(songA)],
-            ["xa", db.readonly.weaponMechanics.huntinghorn.songsMap.get(songXA)],
-        ]);
-        for (const songObj of huntingHornSongs.values()) {
-            assert(isNonEmptyStr(songObj.name)); // Spot check for structure
-        }
+        assert(typeof huntingHornSongs === "object");
+        huntingHornSongs = {
+            x:  songX,
+            a:  songA,
+            xa: songXA,
+        };
     }
     function rampSwitchAxeSetPhial(phialTypeID, value) {
         assert(weaponRO.category === "switchaxe");

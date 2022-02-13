@@ -123,17 +123,43 @@ export type GLShellingType = "normal" | "long" | "wide";
 export type GLShellingLevel = 1 | 2 | 3 | 4 | 5;
 
 export interface GLStats {
-    shellingType:  GLShellingType;
-    shellingLevel: GLShellingLevel;
+    readonly shellingType:  GLShellingType;
+    readonly shellingLevel: GLShellingLevel;
 }
 
 /*** Weapon Mechanics: Hunting Horn ***/
 
-export interface HHSong {
-    id:   string;
-    name: string;
+export type HHSong = "attack_up"
+                   | "affinity_up"
+                   | "defense_up"
+                   | "attack_and_defense_up"
+                   | "attack_and_affinity_up"
+
+                   | "blight_negated"
+                   | "divine_protection"
+                   | "earplugs_l"
+                   | "earplugs_s"
+                   | "elemental_attack_boost"
+                   | "environment_damage_negated"
+                   | "health_recovery_s"
+                   | "health_recovery_s_plus_antidote"
+                   | "health_recovery_l"
+                   | "health_regeneration"
+                   | "knockbacks_negated"
+                   | "sharpness_loss_reduced"
+                   | "sonic_barrier"
+                   | "sonic_wave"
+                   | "stamina_use_reduced"
+                   | "stamina_recovery_up"
+                   | "stun_negated"
+                   | "tremors_negated"
+                   | "wind_pressure_negated";
+
+export interface HHSongs {
+    readonly x:  HHSong;
+    readonly a:  HHSong;
+    readonly xa: HHSong;
 }
-export type HHSongRO = Readonly<HHSong>;
 
 /*** Weapon Mechanics: Switchaxe ***/
 
@@ -244,9 +270,9 @@ export interface Weapon {
     baseSharpness?: Sharpness;
     maxSharpness?:  Sharpness;
 
-    gunlanceStats?: GLStats;
-    //bowStats: BowStats | undefined;
-    // TODO: Continue writing these
+    gunlanceStats?:    GLStats;
+    huntinghornSongs?: HHSongs;
+    //bowStats?: BowStats;
 
     filterHelpers: Readonly<{
         nameLower:     string;
@@ -273,6 +299,7 @@ export interface DualBlades     extends MeleeWeapon {category: "dualblades";    
 export interface Lance          extends MeleeWeapon {category: "lance";         }
 export interface Gunlance       extends MeleeWeapon {category: "gunlance"; gunlanceStats: GLStats;}
 export interface Hammer         extends MeleeWeapon {category: "hammer";        }
+export interface HuntingHorn    extends MeleeWeapon {category: "huntinghorn"; huntinghornSongs: HHSongs;}
 export type GreatswordRO     = Readonly<Greatsword    >;
 export type LongswordRO      = Readonly<Longsword     >;
 export type SwordAndShieldRO = Readonly<SwordAndShield>;
@@ -280,6 +307,7 @@ export type DualBladesRO     = Readonly<DualBlades    >;
 export type LanceRO          = Readonly<Lance         >;
 export type GunlanceRO       = Readonly<Gunlance      >;
 export type HammerRO         = Readonly<Hammer        >;
+export type HuntingHornRO    = Readonly<HuntingHorn   >;
 
 /*** Armour ***/
 
@@ -390,5 +418,6 @@ export type WeaponMap = {
     lance:          WeaponMapInner<LanceRO         >;
     gunlance:       WeaponMapInner<GunlanceRO      >;
     hammer:         WeaponMapInner<HammerRO        >;
+    huntinghorn:    WeaponMapInner<HuntingHornRO   >;
 };
 

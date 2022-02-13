@@ -29,6 +29,7 @@ import {
 
 import {
     glShellingTypeName,
+    hhSongName,
 } from "../../../common/mappings";
 
 import {GenericTable} from "../../generic/GenericTable";
@@ -415,9 +416,9 @@ export class CalculationResultsBox extends React.Component<any, any> {
             specialMechanicRenderings.push(
                 element(CalculationResultsGroupBox,
                     null,
-                    this._renderHuntingHornSong("huntinghorn_song_x", perf.huntingHornSongs.get("x").name),
-                    this._renderHuntingHornSong("huntinghorn_song_a", perf.huntingHornSongs.get("a").name),
-                    this._renderHuntingHornSong("huntinghorn_song_xa", perf.huntingHornSongs.get("xa").name),
+                    this._renderHuntingHornSong("huntinghorn_song_x", hhSongName(perf.huntingHornSongs.x)),
+                    this._renderHuntingHornSong("huntinghorn_song_a", hhSongName(perf.huntingHornSongs.a)),
+                    this._renderHuntingHornSong("huntinghorn_song_xa", hhSongName(perf.huntingHornSongs.xa)),
                 ),
             );
         }
