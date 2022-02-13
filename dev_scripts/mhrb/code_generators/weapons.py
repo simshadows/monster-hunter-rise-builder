@@ -9,6 +9,7 @@ import os
 import json
 
 from weapons_details.sharpness import generate_sharpness_source_lines
+from weapons_details.gunlance import generate_gunlance_source_lines
 
 from utils import ramp_id_to_object_name, to_name_filter_string
 
@@ -84,6 +85,8 @@ _to_type_ref = {
     "swordandshield": "SwordAndShieldRO",
     "dualblades":     "DualBladesRO",
     "lance":          "LanceRO",
+    "gunlance":       "GunlanceRO",
+    "hammer":         "HammerRO",
 }
 
 _melee_weapons = {
@@ -134,6 +137,8 @@ def _get_special_mechanics_str(category, obj):
     entries = []
     if category in _melee_weapons:
         entries.append(generate_sharpness_source_lines(obj))
+    if category == "gunlance":
+        entries.append(generate_gunlance_source_lines(obj))
     return "".join(f"\n\n{x}" for x in entries)
 
 def _generate_category_source_file(category, category_data):

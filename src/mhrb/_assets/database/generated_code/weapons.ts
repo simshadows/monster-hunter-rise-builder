@@ -27,6 +27,8 @@ import {
     type SwordAndShieldRO,
     type DualBladesRO,
     type LanceRO,
+    type GunlanceRO,
+    type HammerRO,
 
     type WeaponMap,
 
@@ -44,6 +46,8 @@ import {longswordsArray     } from "./_generated_weapon_longsword";
 import {swordandshieldsArray} from "./_generated_weapon_swordandshield";
 import {dualbladessArray    } from "./_generated_weapon_dualblades";
 import {lancesArray         } from "./_generated_weapon_lance";
+import {gunlancesArray      } from "./_generated_weapon_gunlance";
+import {hammersArray        } from "./_generated_weapon_hammer";
 
 function validateMeleeWeapon(w: MeleeWeaponRO): void {
     const baseSum = sumArray(w.baseSharpness);
@@ -107,6 +111,8 @@ const weaponsMap: Readonly<WeaponMap> = {
     swordandshield: processWeapon<SwordAndShieldRO>(swordandshieldsArray),
     dualblades:     processWeapon<DualBladesRO    >(dualbladessArray    ),
     lance:          processWeapon<LanceRO         >(lancesArray         ),
+    gunlance:       processWeapon<GunlanceRO      >(gunlancesArray      ),
+    hammer:         processWeapon<HammerRO        >(hammersArray        ),
 };
 
 export {

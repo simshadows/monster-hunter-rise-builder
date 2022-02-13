@@ -58,8 +58,6 @@ import {
 import {bowgunAmmoTypesMap      } from "./hardcoded_data/special_weapon_mechanics/bowguns";
 import {specialSelectionTypesMap} from "./hardcoded_data/special_weapon_mechanics/general";
 
-const WEAPON_GL_PATH  = "./data/weapons_gunlance.json";
-const WEAPON_H_PATH   = "./data/weapons_hammer.json";
 const WEAPON_HH_PATH  = "./data/weapons_huntinghorn.json";
 const WEAPON_SA_PATH  = "./data/weapons_switchaxe.json";
 const WEAPON_CB_PATH  = "./data/weapons_chargeblade.json";
@@ -140,11 +138,6 @@ function validateWeaponDataSharpness(weaponData) {
     }
     op(weaponData.baseSharpness);
     op(weaponData.maxSharpness);
-}
-
-function validateWeaponDataGunlance(weaponData) {
-    const shellingLevel = weaponData.gunlanceStats.shellingLevel;
-    assert(isInt(shellingLevel) && (shellingLevel > 0) && (shellingLevel <= 5), "Invalid shelling level: " + String(shellingLevel));
 }
 
 function validateWeaponDataHuntingHorn(weaponData) {
@@ -364,8 +357,6 @@ async function downloadCategoryRawWeaponData(category, path, op) {
 
 async function downloadAllRawWeaponData() {
     const validateSimpleMelee  = (weaponData) => {validateWeaponDataSharpness(weaponData);};
-    const validateGL           = (weaponData) => {validateWeaponDataSharpness(weaponData);
-                                                  validateWeaponDataGunlance(weaponData);};
     const validateHH           = (weaponData) => {validateWeaponDataSharpness(weaponData);
                                                   validateWeaponDataHuntingHorn(weaponData);};
     const validateSA           = (weaponData) => {validateWeaponDataSharpness(weaponData);
@@ -378,8 +369,6 @@ async function downloadAllRawWeaponData() {
     const validateBowgun       = (weaponData) => {validateWeaponDataBowguns(weaponData);};
     const validateBow          = (weaponData) => {validateWeaponDataBow(weaponData);};
 
-    const glDataFut  = downloadCategoryRawWeaponData("gunlance",       WEAPON_GL_PATH,  validateGL         );
-    const hDataFut   = downloadCategoryRawWeaponData("hammer",         WEAPON_H_PATH,   validateSimpleMelee);
     const hhDataFut  = downloadCategoryRawWeaponData("huntinghorn",    WEAPON_HH_PATH,  validateHH         );
     const saDataFut  = downloadCategoryRawWeaponData("switchaxe",      WEAPON_SA_PATH,  validateSA         );
     const cbDataFut  = downloadCategoryRawWeaponData("chargeblade",    WEAPON_CB_PATH,  validateCB         );
@@ -393,8 +382,8 @@ async function downloadAllRawWeaponData() {
             swordandshield: newWeaponsMap.swordandshield,
             dualblades:     newWeaponsMap.dualblades,
             lance:          newWeaponsMap.lance,
-            gunlance:       await glDataFut,
-            hammer:         await hDataFut,
+            gunlance:       newWeaponsMap.gunlance,
+            hammer:         newWeaponsMap.hammer,
             huntinghorn:    await hhDataFut,
             switchaxe:      await saDataFut,
             chargeblade:    await cbDataFut,
@@ -412,7 +401,7 @@ function joinRampSkillObjsToWeaponData(weaponData) {
     //assert(isMap(rampageSkillsMap)); // Commented because it broke
     for (const [categoryID, weaponDataMap] of Object.entries(weaponData)) {
         // Bandaid for refactoring
-        if (["greatsword", "longsword", "swordandshield", "dualblades", "lance"].includes(categoryID)) continue;
+        if (["greatsword", "longsword", "swordandshield", "dualblades", "lance", "gunlance", "hammer"].includes(categoryID)) continue;
         for (const [weaponID, weaponDataObj] of weaponDataMap.entries()) {
             const newRampArray = [];
             for (const rampSkillRampArray of weaponDataObj.rampSkills) {

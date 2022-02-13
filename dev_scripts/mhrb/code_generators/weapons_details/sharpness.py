@@ -2,7 +2,7 @@
 Filename: sharpness.py
 Author:   simshadows <contact@simshadows.com>
 
-Specifically processes weapoon sharpness data.
+Processes weapon sharpness data.
 """
 
 import json

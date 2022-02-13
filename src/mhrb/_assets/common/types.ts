@@ -120,6 +120,12 @@ export type WeaponSpecialSelectionRO = Readonly<WeaponSpecialSelection>;
 /*** Weapon Mechanics: Gunlance ***/
 
 export type GLShellingType = "normal" | "long" | "wide";
+export type GLShellingLevel = 1 | 2 | 3 | 4 | 5;
+
+export interface GLStats {
+    shellingType:  GLShellingType;
+    shellingLevel: GLShellingLevel;
+}
 
 /*** Weapon Mechanics: Hunting Horn ***/
 
@@ -235,9 +241,10 @@ export interface Weapon {
         >[]
     >;
 
-    baseSharpness: Sharpness | undefined;
-    maxSharpness:  Sharpness | undefined;
+    baseSharpness?: Sharpness;
+    maxSharpness?:  Sharpness;
 
+    gunlanceStats?: GLStats;
     //bowStats: BowStats | undefined;
     // TODO: Continue writing these
 
@@ -264,11 +271,15 @@ export interface Longsword      extends MeleeWeapon {category: "longsword";     
 export interface SwordAndShield extends MeleeWeapon {category: "swordandshield";}
 export interface DualBlades     extends MeleeWeapon {category: "dualblades";    }
 export interface Lance          extends MeleeWeapon {category: "lance";         }
+export interface Gunlance       extends MeleeWeapon {category: "gunlance"; gunlanceStats: GLStats;}
+export interface Hammer         extends MeleeWeapon {category: "hammer";        }
 export type GreatswordRO     = Readonly<Greatsword    >;
 export type LongswordRO      = Readonly<Longsword     >;
 export type SwordAndShieldRO = Readonly<SwordAndShield>;
 export type DualBladesRO     = Readonly<DualBlades    >;
 export type LanceRO          = Readonly<Lance         >;
+export type GunlanceRO       = Readonly<Gunlance      >;
+export type HammerRO         = Readonly<Hammer        >;
 
 /*** Armour ***/
 
@@ -377,5 +388,7 @@ export type WeaponMap = {
     swordandshield: WeaponMapInner<SwordAndShieldRO>;
     dualblades:     WeaponMapInner<DualBladesRO    >;
     lance:          WeaponMapInner<LanceRO         >;
+    gunlance:       WeaponMapInner<GunlanceRO      >;
+    hammer:         WeaponMapInner<HammerRO        >;
 };
 
