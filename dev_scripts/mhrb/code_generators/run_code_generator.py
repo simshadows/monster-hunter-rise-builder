@@ -60,7 +60,7 @@ GENERATED_CODE_NOTICE = """\
 """
 
 DATA_PATH_FMT = "./dev_scripts/mhrb/code_generators/hardcoded_data/{s}"
-OUTPUT_PATH_FMT = "./src/mhrb/_assets/database/generated_code/{s}"
+OUTPUT_PATH_FMT = "./src/mhrb/_app/database/generated_code/{s}"
 
 def read_data(s):
     with open(DATA_PATH_FMT.format(s=s), encoding="utf-8", mode="r") as f:

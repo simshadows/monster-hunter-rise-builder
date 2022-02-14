@@ -31,8 +31,8 @@ function htmlWebpackPluginCommon(configArgs, mergeIn) {
 const config = (configArgs) => ({
     mode: configArgs.mode,
     entry: {
-        //"index": path.resolve(__dirname, "src", "_assets", "index.ts"),
-        "mhrb/index": path.resolve(__dirname, "src", "mhrb", "_assets", "index.ts"),
+        //"index": path.resolve(__dirname, "src", "_app", "index.ts"),
+        "mhrb/index": path.resolve(__dirname, "src", "mhrb", "_app", "index.ts"),
     },
     output: {
         filename: "[name].js",
