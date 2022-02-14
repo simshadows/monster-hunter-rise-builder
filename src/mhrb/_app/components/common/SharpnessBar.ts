@@ -1,18 +1,17 @@
-// @ts-nocheck
 /*
  * Author:  simshadows <contact@simshadows.com>
  * License: GNU Affero General Public License v3 (AGPL-3.0)
  */
 
 import React from "react";
-const element = React.createElement;
+const el = React.createElement;
 
-import * as check from "../../check";
+import {neverUndefined} from "../../generic/type_assertions";
 
-const assert = console.assert;
+import {Sharpness} from "../../common/types";
 
 const MAX_TOTAL_SHARPNESS = 400;
-const SHARPNESS_LEVELS = [
+const SHARPNESS_LEVELS: [string, string][] = [
     ["red"   , "var(--color-sharpness--red)"   ],
     ["orange", "var(--color-sharpness--orange)"],
     ["yellow", "var(--color-sharpness--yellow)"],
@@ -20,87 +19,77 @@ const SHARPNESS_LEVELS = [
     ["blue"  , "var(--color-sharpness--blue)"  ],
     ["white" , "var(--color-sharpness--white)" ],
 ]
-export function SharpnessBar(props) {
-    assert(check.isArr(props.baseSharpness) && (props.baseSharpness.length === 6));
-    assert(check.isArr(props.maxSharpness) && (props.maxSharpness.length === 6));
-    assert(check.isBool(props.renderMaxAsPips));
 
-    function renderSection(_values, _height, _circles) {
-        const elements = [];
-        for (const [i, [levelName, backgroundColour]] of SHARPNESS_LEVELS.entries()) {
-            // levelName not used yet
-            const width = ((_values[i] / MAX_TOTAL_SHARPNESS) * 100).toFixed(4) + "%";
-            elements.push(
-                element("div",
-                    {
-                    className: "sharpness-bar-level",
-                    style: {
+function renderSection(values: Sharpness, height: string, circles: string[]) {
+    const elements: React.ReactNode[] = [];
+    for (const [i, [_, backgroundColour]] of SHARPNESS_LEVELS.entries()) {
+        const value = values[i];
+        neverUndefined(value);
+        const width = ((value / MAX_TOTAL_SHARPNESS) * 100).toFixed(4) + "%";
+        elements.push(
+            el("div", { className: "sharpness-bar-level",
+                        style: {
                             background: backgroundColour,
-                            width: width,
-                        },
-                    },
-                )
-            );
-        }
-        for (const backgroundColour of _circles) {
-            const width = ((10 / MAX_TOTAL_SHARPNESS) * 100).toFixed(4) + "%"
-            elements.push(
-                element("div",
-                    {
-                    className: "sharpness-bar-level",
-                    style: {width: width},
-                    },
-                    element("div",
-                        {
-                        className: "sharpness-bar-level-pip",
-                        style: {background: backgroundColour},
-                        },
-                    ),
-                )
-            );
-        }
-        return element("div",
-            {
-            className: "sharpness-bar-section",
-            style: {height: _height},
-            },
-            ...elements,
+                            width: width
+                        }},
+            ),
         );
     }
+    for (const backgroundColour of circles) {
+        const width = ((10 / MAX_TOTAL_SHARPNESS) * 100).toFixed(4) + "%";
+        elements.push(
+            el("div", { className: "sharpness-bar-level",
+                        style:     {width: width} },
+                el("div", { className: "sharpness-bar-level-pip",
+                            style:     {background: backgroundColour} },
+                ),
+            ),
+        );
+    }
+    return el("div", { className: "sharpness-bar-section",
+                       style: {height: height} },
+        ...elements,
+    );
+}
 
+/****************************************************************************/
+
+interface Props {
+    baseSharpness:   Sharpness;
+    maxSharpness:    Sharpness;
+    renderMaxAsPips: boolean;
+}
+
+export function SharpnessBar(props: Props) {
+    console.assert(props.baseSharpness.length === props.maxSharpness.length);
     if (props.renderMaxAsPips) {
 
-        const maxMinusBase = [];
+        const maxMinusBase: number[] = [];
         for (const [i, baseVal] of props.baseSharpness.entries()) {
             const maxVal = props.maxSharpness[i];
-            assert(baseVal <= maxVal);
+            neverUndefined(maxVal);
             maxMinusBase.push(maxVal - baseVal);
         }
 
-        const circles = [];
-        for (const [i, [levelName, backgroundColour]] of SHARPNESS_LEVELS.entries()) {
-            assert(maxMinusBase[i] % 10 === 0);
-            const numCircles = maxMinusBase[i] / 10;
+        const circles: string[] = [];
+        for (const [i, [_, backgroundColour]] of SHARPNESS_LEVELS.entries()) {
+            const m = maxMinusBase[i];
+            neverUndefined(m);
+            console.assert(m % 10 === 0);
+            const numCircles = m / 10;
             for (let j = 0; j < numCircles; ++j) {
                 circles.push(backgroundColour);
             }
         }
 
-        return element("div",
-            {
-            className: "sharpness-bar",
-            },
+        return el("div", {className: "sharpness-bar"},
             renderSection(props.baseSharpness, "68%", []),
             renderSection(props.baseSharpness, "32%", circles),
         );
-    
     } else {
-        return element("div",
-            {
-            className: "sharpness-bar",
-            },
-            renderSection(props.baseSharpness, [], []),
-            renderSection(props.maxSharpness, [], []),
+        return el("div", {className: "sharpness-bar"},
+            renderSection(props.baseSharpness, "", []),
+            renderSection(props.maxSharpness, "", []),
         );
     }
 }
