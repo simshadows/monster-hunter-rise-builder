@@ -13,6 +13,9 @@ import {
     type ArmourSlot,
 } from "./common/types";
 
+import imgFASolidSprites  from "../_images/fontawesome-free-web/sprites/solid.svg";
+import imgFABrandsSprites from "../_images/fontawesome-free-web/sprites/brands.svg";
+
 const imgPathMapEntries: [string, string][] = [];
 
 import imgTalismanR1 from "../_images/talisman_r1.svg";
@@ -744,5 +747,8 @@ export {
     eleStatStrToImgPath,
     armourSlotAndRarityToIconImgPath,
     weaponAndRarityToIconImgPath,
+
+    imgFASolidSprites,
+    imgFABrandsSprites,
 };
 

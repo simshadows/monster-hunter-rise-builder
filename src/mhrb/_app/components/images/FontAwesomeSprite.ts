@@ -6,6 +6,11 @@
 import React from "react";
 const ele = React.createElement;
 
+import {
+    imgFASolidSprites,
+    imgFABrandsSprites,
+} from "../../images";
+
 // TODO: Is prop forwarding here a good idea?
 
 type Props = {
@@ -23,9 +28,11 @@ export function FontAwesomeSprite(props: Props) {
     console.assert(style.length > 0);
     console.assert(fragment.length > 0);
 
+    const spritesPath = (style === "solid") ? imgFASolidSprites : imgFABrandsSprites;
+
     return ele("svg",
         otherProps,
-        ele("use", {href: `./images/fontawesome-free-web/sprites/${style}.svg#${fragment}`}),
+        ele("use", {href: `${spritesPath}#${fragment}`}),
     );
 }
 
