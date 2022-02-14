@@ -9,8 +9,8 @@ const ele = React.createElement;
 // TODO: Is prop forwarding here a good idea?
 
 type Props = {
-    style?:   "solid" | "brands";
-    fragment: string;
+    readonly style?:   "solid" | "brands";
+    readonly fragment: string;
 };// & React.ComponentProps<"svg">;
 
 export function FontAwesomeSprite(props: Props) {

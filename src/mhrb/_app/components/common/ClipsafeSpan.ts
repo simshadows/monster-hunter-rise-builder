@@ -7,7 +7,7 @@ import React from "react";
 const el = React.createElement;
 
 interface Props {
-    children: React.ReactNode;
+    readonly children: React.ReactNode;
 }
 
 export function ClipsafeSpan({children}: Props) {

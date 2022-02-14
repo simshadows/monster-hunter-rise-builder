@@ -55,9 +55,9 @@ function renderSection(values: Sharpness, height: string, circles: string[]) {
 /******************************************************************************/
 
 interface Props {
-    baseSharpness:   Sharpness;
-    maxSharpness:    Sharpness;
-    renderMaxAsPips: boolean;
+    readonly baseSharpness:   Sharpness;
+    readonly maxSharpness:    Sharpness;
+    readonly renderMaxAsPips: boolean;
 }
 
 export function SharpnessBar(props: Props) {
