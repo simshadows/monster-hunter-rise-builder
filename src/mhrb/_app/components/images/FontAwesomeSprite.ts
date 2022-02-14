@@ -1,32 +1,31 @@
-// @ts-nocheck
 /*
  * Author:  simshadows <contact@simshadows.com>
  * License: GNU Affero General Public License v3 (AGPL-3.0)
  */
 
 import React from "react";
-const element = React.createElement;
+const ele = React.createElement;
 
-const assert = console.assert;
+// TODO: Is prop forwarding here a good idea?
 
-export function FontAwesomeSprite(props) {
-    let {style, fragment, ...otherProps} = props;
+type Props = {
+    style?:   "solid" | "brands";
+    fragment: string;
+};// & React.ComponentProps<"svg">;
 
-    if (typeof style !== "string") {
-        style = "solid"; // Default
-    }
+export function FontAwesomeSprite(props: Props) {
+    const {
+        style = "solid",
+        fragment,
+        ...otherProps
+    } = props;
+
     console.assert(style.length > 0);
+    console.assert(fragment.length > 0);
 
-    console.assert((typeof fragment === "string") && (fragment.length > 0));
-
-    return element("svg",
+    return ele("svg",
         otherProps,
-        element("use",
-            {
-            href: "./images/fontawesome-free-web/sprites/" + style + ".svg#" + fragment,
-            },
-            null,
-        ),
+        ele("use", {href: `./images/fontawesome-free-web/sprites/${style}.svg#${fragment}`}),
     );
 }
 
