@@ -4,13 +4,13 @@
  */
 
 import React from "react";
-const element = React.createElement;
+const el = React.createElement;
 
 interface Props {
     children: React.ReactNode;
 }
 
 export function ClipsafeSpan({children}: Props) {
-    return element("span", {className: "clipsafe"}, children);
+    return el("span", {className: "clipsafe"}, children);
 }
 

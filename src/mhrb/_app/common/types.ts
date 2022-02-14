@@ -47,8 +47,7 @@ export function isBowgunCategory(s: WeaponCategory): s is BowgunCategory { // DA
 
 /*** Utility Types ***/
 
-// TODO: Should this become readonly?
-export type Sharpness = [
+type SharpnessMutable = [ // TODO: Export?
     number, // red
     number, // orange
     number, // yellow
@@ -56,6 +55,7 @@ export type Sharpness = [
     number, // blue
     number, // white
 ]
+export type Sharpness = Readonly<SharpnessMutable>;
 
 export type EleStatMap = FrozenMap<EleStatStr, number>;
 // TODO: Migrate to this?
@@ -294,8 +294,8 @@ export interface Weapon {
         >[]
     >;
 
-    readonly baseSharpness?: Readonly<Sharpness>;
-    readonly maxSharpness?:  Readonly<Sharpness>;
+    readonly baseSharpness?: Sharpness;
+    readonly maxSharpness?:  Sharpness;
 
     readonly gunlanceStats?:     GLStats;
     readonly huntinghornSongs?:  HHSongs;
@@ -313,8 +313,8 @@ export interface Weapon {
 
 export interface MeleeWeapon extends Weapon {
     readonly category:      MeleeWeaponCategory;
-    readonly baseSharpness: Readonly<Sharpness>;
-    readonly maxSharpness:  Readonly<Sharpness>;
+    readonly baseSharpness: Sharpness;
+    readonly maxSharpness:  Sharpness;
 }
 export function isMelee(obj: Weapon): obj is MeleeWeapon { // DANGER: RETURNS TYPE PREDICATE
     return isMeleeCategory(obj.category);
