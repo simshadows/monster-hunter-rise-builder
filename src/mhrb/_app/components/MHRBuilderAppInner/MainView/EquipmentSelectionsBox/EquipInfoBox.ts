@@ -9,7 +9,7 @@ const element = React.createElement;
 
 import * as check from "../../../../check";
 
-import {clipsafeSpan} from "../../../common/clipsafeSpan";
+import {ClipsafeSpan} from "../../../common/ClipsafeSpan";
 
 const assert = console.assert;
 
@@ -25,7 +25,7 @@ export function EquipInfoBox(props) {
             {
             className: "equip-name-box clipsafe",
             },
-            clipsafeSpan(props.eqName),
+            element(ClipsafeSpan, null, props.eqName),
         ),
         React.Children.toArray(props.children),
     )

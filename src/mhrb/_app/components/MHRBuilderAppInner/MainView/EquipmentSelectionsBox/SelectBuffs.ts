@@ -10,8 +10,6 @@ const element = React.createElement;
 import * as check from "../../../../check";
 import {getImgPath} from "../../../../images";
 
-import {clipsafeSpan} from "../../../common/clipsafeSpan";
-
 const assert = console.assert;
 
 function BuffImgIcon(props) {

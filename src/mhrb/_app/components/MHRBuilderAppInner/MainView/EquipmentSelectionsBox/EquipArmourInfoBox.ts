@@ -9,7 +9,7 @@ const element = React.createElement;
 
 import * as check from "../../../../check";
 
-import {clipsafeSpan} from "../../../common/clipsafeSpan";
+import {ClipsafeSpan} from "../../../common/ClipsafeSpan";
 
 import {EquipInfoBox} from "./EquipInfoBox";
 
@@ -32,7 +32,7 @@ export function EquipArmourInfoBox(props) {
                 {
                 className: "equip-skills-box clipsafe",
                 },
-                clipsafeSpan(skillName + " +" + parseInt(skillLevel)),
+                element(ClipsafeSpan, null, `${skillName} +${skillLevel}`),
             )
         );
     }

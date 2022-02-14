@@ -27,7 +27,7 @@ import {
 } from "../../../../utils";
 
 import {GenericTable} from "../../../generic/GenericTable";
-import {clipsafeSpan} from "../../../common/clipsafeSpan";
+import {ClipsafeSpan} from "../../../common/ClipsafeSpan";
 import {SimpleImg} from "../../../images/SimpleImg";
 
 import {EquipDecosWrapBox} from "./EquipDecosWrapBox";
@@ -197,7 +197,7 @@ class RampageSkillSelection extends React.Component<any, any> {
                 className: "equip-weapon-special-mech-box equip-weapon-special-mech-box-unselected stackouter",
                 onClick: (e) => {this.makeVisible();},
                 },
-                clipsafeSpan(text),
+                element(ClipsafeSpan, null, text),
                 element("div",
                     {
                     className: "stackinner hide-from-buildcard",
@@ -206,7 +206,7 @@ class RampageSkillSelection extends React.Component<any, any> {
                         {
                         className: "equip-weapon-special-mech-box equip-weapon-special-mech-box-selected",
                         },
-                        clipsafeSpan(text),
+                        element(ClipsafeSpan, null, text),
                     ),
                 ),
                 this._renderRampSelection(),
@@ -218,7 +218,7 @@ class RampageSkillSelection extends React.Component<any, any> {
                 className: "equip-weapon-special-mech-box equip-weapon-special-mech-box-unselected clipsafe" + c,
                 onClick: (e) => {this.makeVisible();},
                 },
-                clipsafeSpan(text),
+                element(ClipsafeSpan, null, text),
             );
         }
     }
@@ -342,7 +342,7 @@ class SpecialSelection extends React.Component<any, any> {
                 className: "equip-weapon-special-mech-box equip-weapon-special-mech-box-unselected stackouter",
                 onClick: (e) => {this.makeVisible();},
                 },
-                clipsafeSpan(text),
+                element(ClipsafeSpan, null, text),
                 element("div",
                     {
                     className: "stackinner hide-from-buildcard",
@@ -351,7 +351,7 @@ class SpecialSelection extends React.Component<any, any> {
                         {
                         className: "equip-weapon-special-mech-box equip-weapon-special-mech-box-selected",
                         },
-                        clipsafeSpan(text),
+                        element(ClipsafeSpan, null, text),
                     ),
                 ),
                 this._renderSpecialSelectionMenu(),
@@ -363,7 +363,7 @@ class SpecialSelection extends React.Component<any, any> {
                 className: "equip-weapon-special-mech-box equip-weapon-special-mech-box-unselected clipsafe" + c,
                 onClick: (e) => {this.makeVisible();},
                 },
-                clipsafeSpan(text),
+                element(ClipsafeSpan, null, text),
             );
         }
     }
@@ -422,7 +422,7 @@ class EquipWeaponInfoBox extends React.Component<any, any> {
                 {
                 className: "equip-weapon-stat-content-wrap-box clipsafe",
                 },
-                clipsafeSpan(value),
+                element(ClipsafeSpan, null, value),
             ),
         );
     }
@@ -565,7 +565,7 @@ class EquipWeaponInfoBox extends React.Component<any, any> {
                 {
                 className: "equip-name-box clipsafe",
                 },
-                clipsafeSpan(weaponRO.name),
+                element(ClipsafeSpan, null, weaponRO.name),
             ),
             element("div",
                 {

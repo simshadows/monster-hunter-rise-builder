@@ -11,7 +11,7 @@ import {getImgPath} from "../../../images";
 
 import * as check from "../../../check";
 
-import {clipsafeSpan} from "../../common/clipsafeSpan";
+import {ClipsafeSpan} from "../../common/ClipsafeSpan";
 
 const assert = console.assert;
 
@@ -20,7 +20,8 @@ function NoSkills() {
         {
         className: "skill-box",
         },
-        clipsafeSpan(element("b", null, "No Skills")),
+
+        element(ClipsafeSpan, null, element("b", null, "No Skills")),
     );
 }
 
@@ -78,7 +79,8 @@ function SkillResult(props) {
             {
             className: "skill-detail-box",
             },
-            clipsafeSpan(
+            element(ClipsafeSpan,
+                null,
                 element("span", 
                     {
                     className: "skill-name",
@@ -97,7 +99,8 @@ function SkillResult(props) {
                     },
                     null,
                 ),
-                clipsafeSpan(
+                element(ClipsafeSpan,
+                    null,
                     element("span", 
                         {
                         className: "skill-detail" + ((props.isOverlevelled) ? " skill-detail-overlevelled" : ""),

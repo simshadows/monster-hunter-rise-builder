@@ -9,7 +9,7 @@ const element = React.createElement;
 
 import * as check from "../../../../check";
 
-import {clipsafeSpan} from "../../../common/clipsafeSpan";
+import {ClipsafeSpan} from "../../../common/ClipsafeSpan";
 import {SimpleImg} from "../../../images/SimpleImg";
 import {FontAwesomeSprite} from "../../../images/FontAwesomeSprite";
 
@@ -106,7 +106,7 @@ class EquipDecoBox extends React.Component<any, any> {
                 {
                 className: "equip-deco-name-box clipsafe",
                 },
-                clipsafeSpan(((decoPropsRO.deco === null) ? "None" : decoPropsRO.deco.name)),
+                element(ClipsafeSpan, null, (decoPropsRO.deco === null) ? "None" : decoPropsRO.deco.name),
             ),
             element("div",
                 {
