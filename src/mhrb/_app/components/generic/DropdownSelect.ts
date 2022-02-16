@@ -1,63 +1,57 @@
-// @ts-nocheck
 /*
  * Author:  simshadows <contact@simshadows.com>
  * License: GNU Affero General Public License v3 (AGPL-3.0)
  */
 
 import React from "react";
-const element = React.createElement;
+const el = React.createElement;
 
-import * as check from "../../check";
+interface Props<T> {
+    readonly currentlySelected: T;
+    readonly optionsArray:      Readonly<T[]>;
+    readonly onChange:    (selectedValue: string) => void; // Returns a value, not the item!
 
-export class DropdownSelect extends React.Component<any, any> {
+    readonly cspecGetOptionValue: (item: T) => string;
+    readonly cspecGetOptionName:  (item: T) => string;
 
-    handleOnChange(e) {
-        const selectedItem = e.target.value;
-        this.props.handleOnChange(selectedItem)
-    }
+    readonly implementationClassNames: {
+        readonly select: string;
+    };
+}
 
-    _renderOption(item) {
-        return element("option",
-            {
-            value: this.props.cspecGetOptionValue(item),
-            },
-            this.props.cspecGetOptionName(item),
+export function DropdownSelect<T>(props: Props<T>) {
+    const {
+        currentlySelected,
+        optionsArray,
+        onChange,
+
+        cspecGetOptionValue,
+        cspecGetOptionName,
+
+        implementationClassNames,
+    } = props;
+
+    const classNames = implementationClassNames;
+
+    const optionsElements = [];
+    for (const rampSkillObj of optionsArray) {
+        optionsElements.push(
+            el("option", {value: cspecGetOptionValue(rampSkillObj)},
+                cspecGetOptionName(rampSkillObj),
+            ),
         );
     }
 
-    render() {
-        check.isDefined(this.props.currentlySelected); // This is the currently selected item.
-        check.isArr(this.props.optionsArray); // This is an array of all items.
-        check.isFunction(this.props.handleOnChange);
-
-        check.isFunction(this.props.cspecGetOptionValue);
-        check.isFunction(this.props.cspecGetOptionName);
-
-        check.isObj(this.props.implementationClassNames);
-
-        ////////////////////////////////
-        // Implementation class names //
-        ////////////////////////////////
-
-        const classNames = this.props.implementationClassNames;
-
-        check.isNonEmptyStr(classNames.select);
-
-        ////////////////////////////////
-
-        const optionsElements = [];
-        for (const rampSkillObj of this.props.optionsArray) {
-            optionsElements.push(this._renderOption(rampSkillObj));
-        }
-        
-        return element("select",
-            {
-            className: classNames.select,
-            value: this.props.cspecGetOptionValue(this.props.currentlySelected),
-            onChange: (e) => {this.handleOnChange(e);},
-            },
-            ...optionsElements,
-        );
-    }
+    const _onChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+        const v: string = e.target.value;
+        console.assert(v !== undefined); // Not guaranteed
+        onChange(v);
+    };
+    
+    return el("select", { className: classNames.select,
+                          value: cspecGetOptionValue(currentlySelected),
+                          onChange: _onChange },
+        ...optionsElements,
+    );
 }
 

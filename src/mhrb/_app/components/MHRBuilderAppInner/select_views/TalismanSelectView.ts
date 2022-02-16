@@ -40,7 +40,7 @@ export class TalismanSelectView extends React.Component<any, any> {
                     {
                     currentlySelected: skillLevel,
                     optionsArray: skillLevelOptions,
-                    handleOnChange: (_skillLevel) => {this.handleSelectSkill(skillIndex, skillRO.id, parseInt(_skillLevel))},
+                    onChange: (_skillLevel) => {this.handleSelectSkill(skillIndex, skillRO.id, parseInt(_skillLevel))},
                     cspecGetOptionValue: (_skillLevel) => {return parseInt(_skillLevel)},
                     cspecGetOptionName: (_skillLevel) => {return parseInt(_skillLevel)},
 

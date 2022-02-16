@@ -85,7 +85,7 @@ class BuffBox extends React.Component<any, any> {
                         {
                         currentlySelected: currStateValue,
                         optionsArray: optionsArray,
-                        handleOnChange: (_stateValue) => {this.handleChangeCalcState(groupName, stateName, parseInt(_stateValue));},
+                        onChange: (_stateValue) => {this.handleChangeCalcState(groupName, stateName, parseInt(_stateValue));},
                         cspecGetOptionValue: (_optionsArrayElement) => {return _optionsArrayElement.stateValue;},
                         cspecGetOptionName: (_optionsArrayElement) => {return _optionsArrayElement.presentedName;},
 
