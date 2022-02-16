@@ -7,10 +7,21 @@ import React from "react";
 const el = React.createElement;
 
 interface Props<T> {
+    // If the null option is currently selected, currentlySelected is the empty string.
     readonly currentlySelected: T;
-    readonly optionsArray:      Readonly<T[]>;
-    readonly onChange:    (selectedValue: string) => void; // Returns a value, not the item!
 
+    readonly optionsArray:      Readonly<T[]>;
+
+    // When the user selects an item, this will trigger.
+    // selectedValue is the option value, not the associated item!
+    // If the null option is chosen, selectedValue is the empty string.
+    readonly onChange:          (selectedValue: string) => void;
+
+    // Include the null option
+    readonly addNull:             boolean;
+
+    // Maps items from optionsArray to values and names.
+    // cspecGetOptionValue must never produce an empty string since that's reserved for the null value.
     readonly cspecGetOptionValue: (item: T) => string;
     readonly cspecGetOptionName:  (item: T) => string;
 
@@ -25,6 +36,7 @@ export function DropdownSelect<T>(props: Props<T>) {
         optionsArray,
         onChange,
 
+        addNull,
         cspecGetOptionValue,
         cspecGetOptionName,
 
@@ -34,9 +46,14 @@ export function DropdownSelect<T>(props: Props<T>) {
     const classNames = implementationClassNames;
 
     const optionsElements = [];
+    if (addNull) {
+        optionsElements.push(el("option", {value: ""}, "---"));
+    }
     for (const rampSkillObj of optionsArray) {
+        const v = cspecGetOptionValue(rampSkillObj);
+        if (v === "") console.error("An option value as an empty string must be reserved for the null option.");
         optionsElements.push(
-            el("option", {value: cspecGetOptionValue(rampSkillObj)},
+            el("option", {value: v},
                 cspecGetOptionName(rampSkillObj),
             ),
         );

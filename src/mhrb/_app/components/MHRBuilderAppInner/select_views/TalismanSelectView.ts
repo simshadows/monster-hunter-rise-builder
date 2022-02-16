@@ -10,7 +10,6 @@ const element = React.createElement;
 import * as check from "../../../check";
 
 import {DropdownSelect} from "../../../components/generic/DropdownSelect";
-import {DropdownSelectWithNull} from "../../../components/generic/DropdownSelectWithNull";
 
 const assert = console.assert;
 
@@ -41,6 +40,7 @@ export class TalismanSelectView extends React.Component<any, any> {
                     currentlySelected: skillLevel,
                     optionsArray: skillLevelOptions,
                     onChange: (_skillLevel) => {this.handleSelectSkill(skillIndex, skillRO.id, parseInt(_skillLevel))},
+                    addNull: false,
                     cspecGetOptionValue: (_skillLevel) => {return parseInt(_skillLevel)},
                     cspecGetOptionName: (_skillLevel) => {return parseInt(_skillLevel)},
 
@@ -64,11 +64,13 @@ export class TalismanSelectView extends React.Component<any, any> {
                 {
                 className: "talisman-customize-view-select-content-box",
                 },
-                element(DropdownSelectWithNull,
+                element(DropdownSelect,
                     {
-                    currentlySelected: skillRO,
+                    currentlySelected: (skillRO === null) ? "" : skillRO,
                     optionsArray: this.props.allSkillsArray,
-                    handleOnChange: (_skillID) => {this.handleSelectSkill(skillIndex, _skillID, 1)},
+                    onChange: (_skillID) => { const v = (_skillID === "") ? null : _skillID;
+                                              return this.handleSelectSkill(skillIndex, v, 1); },
+                    addNull: true,
                     cspecGetOptionValue: (_skillRO) => {return _skillRO.id},
                     cspecGetOptionName: (_skillRO) => {return _skillRO.name},
 
@@ -97,12 +99,14 @@ export class TalismanSelectView extends React.Component<any, any> {
                 {
                 className: "talisman-customize-view-select-content-box",
                 },
-                element(DropdownSelectWithNull,
+                element(DropdownSelect,
                     {
-                    currentlySelected: (decoSlotSize == 0) ? null : decoSlotSize,
+                    currentlySelected: (decoSlotSize == 0) ? "" : decoSlotSize,
                     optionsArray: [1,2,3],
-                    // TODO: the parseInt in handleOnChange... we should check all usage of parseInt throughout the codebase.
-                    handleOnChange: (_slotSizeWrongType) => {this.handleSelectDecoSlotSize(decoSlotIndex, _slotSizeWrongType)},
+                    // TODO: the parseInt in onChange... we should check all usage of parseInt throughout the codebase.
+                    onChange: (_slotSizeWrongType) => { const v = (_slotSizeWrongType === "") ? null : _slotSizeWrongType;
+                                                        return this.handleSelectDecoSlotSize(decoSlotIndex, v); },
+                    addNull: true,
                     cspecGetOptionValue: (_slotSize) => {return _slotSize},
                     cspecGetOptionName: (_slotSize) => {return parseInt(_slotSize)},
 
