@@ -419,6 +419,8 @@ function getBaseValues(db, build, calcState) {
             // TODO: Check if the sharpness bars are rampage weapon default bars?
             minSharpness = [70,70,30,30,100,0];
             maxSharpness = [70,70,30,30,150,0];
+
+            baseRawAdd += -10;
         }],
         ["sharpness_type_4", ()=>{
             if (!tagset.has("melee")) {
@@ -428,6 +430,8 @@ function getBaseValues(db, build, calcState) {
             // TODO: Check if the sharpness bars are rampage weapon default bars?
             minSharpness = [50,80,70,160,10,30]; // Full bar
             maxSharpness = [50,80,70,160,10,30];
+
+            baseRawAdd += -20;
         }],
 
         ["anti_aerial_species", ()=>{
