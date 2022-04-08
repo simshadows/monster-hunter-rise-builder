@@ -391,7 +391,7 @@ function getBaseValues(db, build, calcState) {
             deferredOps2.push(op); // Defer to last
         }],
         ["affinity_surge" , ()=>{ baseRawAdd += -10;
-                                  baseAffinity += 30; }],
+                                  baseAffinity += 20; }],
 
         ["sharpness_type_1", ()=>{
             if (!tagset.has("melee")) {
