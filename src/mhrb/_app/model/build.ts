@@ -1,51 +1,93 @@
 // @ts-nocheck
+// PARTLY REFACTORED
 /*
  * Author:  simshadows <contact@simshadows.com>
  * License: GNU Affero General Public License v3 (AGPL-3.0)
  */
 
 import {
+    type ArmourSlot,
+    type DecoEquippableSlot,
+    type DecorationSlotSize,
+    type DecoSlotsArray,
+    type Weapon,
+    type ArmourPiece,
+    type HeadPiece,
+    type ChestPiece,
+    type ArmsPiece,
+    type WaistPiece,
+    type LegsPiece,
+    type Petalace,
+    type Skill,
+    type RampageSkill,
+    type WeaponSpecialSelection,
+    type Decoration,
+} from "../common/types";
+
+import {
+    type MHRDatabase,
+} from "../database";
+
+import {
     isObj,
     isInt,
-    isIntOrNull,
-    isNonEmptyStr,
-    isStrOrNull,
     isArr,
     isMap,
 } from "../check";
 import {
     isDecoEquippableSlotStr,
-    isWeaponCategoryStr,
-    isEleStatStr,
-    isArmourSlotStr,
-    toNameFilterString,
 } from "../common";
+
+type RampSkillPosition = 0 | 1 | 2 | 3 | 4 | 5; // TODO: Verify this
+type TalismanSkillIndex = 0 | 1; // TODO: Verify this
+type DecoSlotIndex = 0 | 1 | 2; // TODO: Verify this
+
+type TalismanDecoSlotSize = 0 | DecorationSlotSize;
+type TalismanDecoSlotsArray = [TalismanDecoSlotSize, TalismanDecoSlotSize, TalismanDecoSlotSize];
+interface TalismanSkill {
+    skillRO:    null | Skill;
+    skillLevel: null | number;
+};
+
+interface DecoSetting {
+    slotSize: DecorationSlotSize;
+    decoRO:   null | Decoration;
+};
 
 const assert = console.assert;
 
 class Build {
+    private _weaponRO: Weapon; // Cannot be null!
+    private _weaponRampSkillSelections: Array<null | RampageSkill>;
+
+    private _weaponSpecialSelectionOptions: Array<WeaponSpecialSelection>;
+    private _weaponSpecialSelectionRO: null | WeaponSpecialSelection;
+
+    private _armourRO: {
+        head:  null | HeadPiece;
+        chest: null | ChestPiece;
+        arms:  null | ArmsPiece;
+        waist: null | WaistPiece;
+        legs:  null | LegsPiece;
+    };
+
+    private _talisman: {
+        // Only two skills for now
+        skills: [TalismanSkill, TalismanSkill];
+        decoSlots: TalismanDecoSlotsArray;
+    };
+
+    private _petalaceRO: null | Petalace;
+
+    private _decorationsRO: {
+        [K in keyof DecoEquippableSlot]: Array<DecoSetting>;
+    };
 
     _validateState() {
-        assert(isObj(this._weaponRO)); // Weapon cannot be null!!!
-        assert(isInt(this._weaponRO.affinity)); // Spot check for structure
-
         assert((this._weaponSpecialSelectionRO === null)
                || this._weaponSpecialSelectionOptions.includes(this._weaponSpecialSelectionRO));
 
-        for (const [slotID, armourPieceRO] of Object.entries(this._armourRO)) {
-            if (armourPieceRO != null) { // armourPieceRO allowed to be null
-                assert(isInt(armourPieceRO.dragonRes)); // Spot check for structure
-            }
-        }
-
-        if (this._petalaceRO !== null) {
-            assert(isObj(this._petalaceRO));
-            // TODO: Spot check for structure?
-        }
-
-        if (this._weaponRO !== null) {
-            this._validateDecorations();
-        }
+        this._validateDecorations();
     }
 
     _validateDecorations() {
@@ -83,7 +125,7 @@ class Build {
         return new Array(numSlots).fill(null); // Array of nulls
     }
 
-    constructor(db, weaponRO) {
+    constructor(db: MHRDatabase, weaponRO: Weapon) {
         // Equipment Selections
         this._weaponRO = null;
         this._weaponRampSkillSelections = null;
@@ -130,8 +172,7 @@ class Build {
     }
 
     // Usefully returns self for use in React state transitions.
-    _setWeaponNoCheck(db, weaponObj) {
-        assert(isObj(db));
+    _setWeaponNoCheck(db: MHRDatabase, weaponObj: Weapon) {
         assert(isMap(db.readonly.weapons.map.greatsword)); // Spot check for structure
         // weaponObj validity will be checked by verifying overall state
 
@@ -158,14 +199,10 @@ class Build {
         return this;
     }
     // Usefully returns self for use in React state transitions.
-    setRampageSkill(db, position, rampageSkillID) {
-        assert(isObj(db));
-        assert(isMap(db.readonly.weapons.map.greatsword)); // Spot check for structure
-        assert(isInt(position));
-        assert(isStrOrNull(rampageSkillID));
+    setRampageSkill(db: MHRDatabase, position: RampSkillPosition, rampageSkillID: null | string) {
+        assert(position % 1 === 0);
 
         assert((position >= 0) && (position < this._weaponRampSkillSelections.length));
-        // TODO: Verify if the rampage skill ID is valid?
 
         if (rampageSkillID === null) {
             this._weaponRampSkillSelections[position] = null;
@@ -177,9 +214,8 @@ class Build {
         this._validateState();
         return this;
     }
-    setWeaponSpecialSelection(db, specialSelectionID) {
-        assert(isObj(db));
-        assert(isIntOrNull(specialSelectionID));
+    setWeaponSpecialSelection(db: MHRDatabase, specialSelectionID: null | number) {
+        assert(specialSelectionID % 1 === 0);
 
         if (specialSelectionID === null) {
             this._weaponSpecialSelectionRO = null;
@@ -193,20 +229,15 @@ class Build {
     }
 
     // Usefully returns self for use in React state transitions.
-    setArmourPiece(db, slotID, armourPieceObj) {
-        assert(isObj(db));
-        assert(isMap(db.readonly.weapons.map.greatsword)); // Spot check for structure
-        assert(isArmourSlotStr(slotID));
-        // armourPieceObj validity will be checked by verifying overall state
-        if (armourPieceObj !== null) {
-            assert(slotID === armourPieceObj.slotID);
-        }
+    setArmourPiece(db: MHRDatabase, slotID: ArmourSlot, armourPiece: ArmourPiece) {
+        // armourPiece validity will be checked by verifying overall state
+        assert((armourPiece === null) || (slotID === armourPiece.slotID));
 
-        this._armourRO[slotID] = armourPieceObj;
-        if (armourPieceObj === null) {
+        this._armourRO[slotID] = armourPiece;
+        if (armourPiece === null) {
             this._decorationsRO[slotID] = this._generateEmptyDecoObj([]);
         } else {
-            this._decorationsRO[slotID] = this._generateEmptyDecoObj(armourPieceObj.decorationSlots);
+            this._decorationsRO[slotID] = this._generateEmptyDecoObj(armourPiece.decorationSlots);
         }
 
         this._validateState();
@@ -214,22 +245,14 @@ class Build {
     }
 
     // Usefully returns self for use in React state transitions.
-    setTalismanSkill(db, skillIndex, skillRO, skillLevel) {
-        assert(isObj(db));
-        assert(isInt(skillIndex) && (skillIndex >= 0) && (skillIndex <= 1));
-        if (skillRO === null) {
-            //assert(isIntOrNull(skillLevel)); // Basically allowed to be anything
-        } else {
-            assert(isObj(skillRO));
-            assert(isInt(skillRO.maxLevels)); // Spot check for structure
-            assert(isInt(skillLevel) && (skillLevel > 0) && (skillLevel <= 10)); // Unlikely to be a huge number
-        }
-
-        if (skillRO === null) {
+    setTalismanSkill(db: MHRDatabase, skillIndex: TalismanSkillIndex, skill: Skill, skillLevel: number) {
+        assert(skillLevel % 1 === 0);
+        assert((skillLevel > 0) && (skillLevel <= 10)); // Unlikely to be huge. TODO: Is it always > 0?
+        if (skill === null) {
             this._talisman.skills[skillIndex].skillRO = null;
             this._talisman.skills[skillIndex].skillLevel = null;
         } else {
-            this._talisman.skills[skillIndex].skillRO = skillRO;
+            this._talisman.skills[skillIndex].skillRO = skill;
             this._talisman.skills[skillIndex].skillLevel = skillLevel;
         }
 
@@ -237,11 +260,7 @@ class Build {
         return this;
     }
     // Usefully returns self for use in React state transitions.
-    setTalismanDecoSlot(db, decoSlotIndex, decoSlotSize) {
-        assert(isObj(db));
-        assert(isInt(decoSlotIndex) && (decoSlotIndex >= 0) && (decoSlotIndex <= 2));
-        assert(isInt(decoSlotSize) && (decoSlotSize >= 0) && (decoSlotSize <= 3));
-
+    setTalismanDecoSlot(db: MHRDatabase, decoSlotIndex: DecoSlotIndex, decoSlotSize: 0 | DecorationSlotSize) {
         this._talisman.decoSlots[decoSlotIndex] = decoSlotSize
         this._decorationsRO.talisman = this._generateEmptyDecoObj(this._getAdjustedTalismanDecoSlots());
 
@@ -262,30 +281,17 @@ class Build {
     }
 
     // Usefully returns self for use in React state transitions.
-    setPetalace(db, petalaceObj) {
-        assert(isObj(db));
-        assert(isMap(db.readonly.weapons.map.greatsword)); // Spot check for structure
-        // petalaceObj validity will be checked by verifying overall state
-
-        this._petalaceRO = petalaceObj;
+    setPetalace(db: MHRDatabase, petalace: null | Petalace) {
+        this._petalaceRO = petalace;
 
         this._validateState();
         return this;
     }
 
     // Usefully returns self for use in React state transitions.
-    setDecoration(db, decoRO, slotID, position) {
-        if (decoRO !== null) {
-            assert(isObj(decoRO));
-            assert(isInt(decoRO.slotSize)); // Spot check for structure
-        }
-        isNonEmptyStr(slotID);
-        assert(isDecoEquippableSlotStr(slotID));
-        isInt(position);
-        assert((position >= 0) && (position <= 2));
-
-        this._decorationsRO[slotID][position].decoRO = decoRO;
-        // TODO: We don't actually need the database here... get rid of the parameter?
+    setDecoration(db: MHRDatabase, deco: null | Decoration, slotID: DecoEquippableSlot, position: DecoSlotIndex) {
+        db; // TODO: We shouldn't need this. Remove the parameter?
+        this._decorationsRO[slotID][position].decoRO = deco;
 
         this._validateState();
         return this;
@@ -294,8 +300,7 @@ class Build {
     getWeaponObjRO() {
         return this._weaponRO;
     }
-    getRampSkill(rampSkillIndex) {
-        assert(isInt(rampSkillIndex));
+    getRampSkill(rampSkillIndex: RampSkillPosition) {
         const rampSkillRO = this._weaponRampSkillSelections[rampSkillIndex];
         if ((rampSkillRO === undefined) || (rampSkillRO === null)) {
             return null;
@@ -304,7 +309,8 @@ class Build {
             return rampSkillRO;
         }
     }
-    getRampSkills(db) {
+    getRampSkills(db: MHRDatabase) {
+        db; // TODO: Remove the db parameter?
         return this._getRampSkillSelectionsArray(db).filter((element) => {return (element !== null)});
     }
     getWeaponSpecialSelectionRO() {
@@ -327,7 +333,7 @@ class Build {
         return this._petalaceRO;
     }
 
-    getDecoSlotSize(slotID, position) {
+    getDecoSlotSize(slotID: DecorationSlotSize, position: DecoSlotIndex) {
         const arr = this._decorationsRO[slotID];
         if (arr === undefined) return 0;
 
@@ -337,7 +343,7 @@ class Build {
         assert(isInt(obj.slotSize) && (obj.slotSize > 0) && (obj.slotSize <= 3));
         return obj.slotSize;
     }
-    getDeco(slotID, position) {
+    getDeco(slotID: DecorationSlotSize, position: DecoSlotIndex) {
         const arr = this._decorationsRO[slotID];
         if (arr === undefined) return null;
 
@@ -400,10 +406,7 @@ class Build {
         return ret;
     }
 
-    getRenderingProps(db) {
-        assert(isObj(db));
-        assert(isMap(db.readonly.weapons.map.greatsword)); // Spot check for structure
-
+    getRenderingProps(db: DecorationSlotSize) {
         // TODO: This is called again for calculating the build. Maybe avoid that?
         const calculatedTotalSkills = this.getCurrentSkills();
 
@@ -507,7 +510,7 @@ class Build {
             };
     }
 
-    _getDecoArrayRenderingProp(slotID) {
+    _getDecoArrayRenderingProp(slotID: DecoEquippableSlot) {
         assert(isDecoEquippableSlotStr(slotID));
         const ret = [];
         for (const obj of this._decorationsRO[slotID]) {
@@ -529,10 +532,8 @@ class Build {
         return ret;
     }
 
-    _getRampSkillSelectionsArray(db) {
-        assert(isObj(db));
-        assert(isMap(db.readonly.weapons.map.greatsword)); // Spot check for structure
-
+    _getRampSkillSelectionsArray(db: DecorationSlotSize) {
+        db; // TODO: Remove the db parameter?
         const ret = [];
         for (const rampSkillObj of this._weaponRampSkillSelections) {
             if (rampSkillObj === null) {
@@ -545,7 +546,7 @@ class Build {
     }
 
     // Logically static
-    _generateEmptyDecoObj(decoSlotsArray) {
+    _generateEmptyDecoObj(decoSlotsArray: DecoSlotsArray) {
         assert(isArr(decoSlotsArray));
         const ret = [];
         for (const slotSize of decoSlotsArray) {

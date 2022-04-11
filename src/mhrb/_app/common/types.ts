@@ -20,6 +20,7 @@ export type EleStatStr = ElementStr | StatStr;
 export type EndlineTag = "" | "hr";
 
 export type ArmourSlot = "head" | "chest" | "arms" | "waist" | "legs";
+export type DecoEquippableSlot = ArmourSlot | "weapon" | "talisman";
 
 export type WeaponCategory = "greatsword"
                            | "longsword"
@@ -371,6 +372,12 @@ export interface ArmourPiece {
         readonly hintStrLower: string;
     };
 }
+
+export interface HeadPiece  extends ArmourPiece {readonly slotID: "head" ;}
+export interface ChestPiece extends ArmourPiece {readonly slotID: "chest";}
+export interface ArmsPiece  extends ArmourPiece {readonly slotID: "arms" ;}
+export interface WaistPiece extends ArmourPiece {readonly slotID: "waist";}
+export interface LegsPiece  extends ArmourPiece {readonly slotID: "legs" ;}
 
 export interface ArmourSet {
     readonly id:    number;

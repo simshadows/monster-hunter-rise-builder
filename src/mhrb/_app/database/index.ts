@@ -41,7 +41,7 @@ interface ArrayMapPair<K, T> {
     readonly map:   Readonly<FrozenMap<K, T>>;
 }
 
-interface MHRDatabase {
+export interface MHRDatabase {
     readonly skills: {
         readonly array:       Readonly<Skill[]>;
         readonly longIdsMap:  Readonly<FrozenMap<string, Skill>>;
