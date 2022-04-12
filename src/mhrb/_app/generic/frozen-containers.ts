@@ -1,6 +1,8 @@
 /*
  * Author:  simshadows <contact@simshadows.com>
  * License: GNU Affero General Public License v3 (AGPL-3.0)
+ *
+ * TODO: Refactor FrozenMap usage into just using Typescript's ReadonlyMap.
  */
 
 export class FrozenMap<K, V> {
