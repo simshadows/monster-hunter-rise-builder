@@ -1,5 +1,3 @@
-// @ts-nocheck
-// PARTLY REFACTORED
 /*
  * Author:  simshadows <contact@simshadows.com>
  * License: GNU Affero General Public License v3 (AGPL-3.0)
@@ -10,13 +8,9 @@ import {
     type DecoEquippableSlot,
     type DecorationSlotSize,
     type DecoSlotsArray,
+    isDecoSlotsArray,
     type Weapon,
     type ArmourPiece,
-    type HeadPiece,
-    type ChestPiece,
-    type ArmsPiece,
-    type WaistPiece,
-    type LegsPiece,
     type Petalace,
     type Skill,
     type RampageSkill,
@@ -27,16 +21,6 @@ import {
 import {
     type MHRDatabase,
 } from "../database";
-
-import {
-    isObj,
-    isInt,
-    isArr,
-    isMap,
-} from "../check";
-import {
-    isDecoEquippableSlotStr,
-} from "../common";
 
 type RampSkillPosition = 0 | 1 | 2 | 3 | 4 | 5; // TODO: Verify this
 type TalismanSkillIndex = 0 | 1; // TODO: Verify this
@@ -54,22 +38,31 @@ interface DecoSetting {
     decoRO:   null | Decoration;
 };
 
-const assert = console.assert;
+interface ArmourEquips {
+    head:  ArmourPiece | null;
+    chest: ArmourPiece | null;
+    arms:  ArmourPiece | null;
+    waist: ArmourPiece | null;
+    legs:  ArmourPiece | null;
+};
+
+interface DecoRenderingProp {
+    slotSize: DecorationSlotSize;
+    deco: null | {
+        name:     string;
+        slotSize: DecorationSlotSize;
+        icon:     string;
+    };
+};
 
 class Build {
     private _weaponRO: Weapon; // Cannot be null!
-    private _weaponRampSkillSelections: Array<null | RampageSkill>;
+    private _weaponRampSkillSelections: (null | RampageSkill)[];
 
-    private _weaponSpecialSelectionOptions: Array<WeaponSpecialSelection>;
+    private _weaponSpecialSelectionOptions: WeaponSpecialSelection[];
     private _weaponSpecialSelectionRO: null | WeaponSpecialSelection;
 
-    private _armourRO: {
-        head:  null | HeadPiece;
-        chest: null | ChestPiece;
-        arms:  null | ArmsPiece;
-        waist: null | WaistPiece;
-        legs:  null | LegsPiece;
-    };
+    private _armourRO: ArmourEquips;
 
     private _talisman: {
         // Only two skills for now
@@ -80,55 +73,49 @@ class Build {
     private _petalaceRO: null | Petalace;
 
     private _decorationsRO: {
-        [K in keyof DecoEquippableSlot]: Array<DecoSetting>;
+        [K in DecoEquippableSlot]: DecoSetting[];
     };
 
-    _validateState() {
-        assert((this._weaponSpecialSelectionRO === null)
-               || this._weaponSpecialSelectionOptions.includes(this._weaponSpecialSelectionRO));
-
+    _validateState(): void {
+        console.assert((this._weaponSpecialSelectionRO === null)
+                       || this._weaponSpecialSelectionOptions.includes(this._weaponSpecialSelectionRO));
         this._validateDecorations();
     }
+    _validateDecorations(): void {
+        const getArmourDecoSlots = (slotID: ArmourSlot): Readonly<DecoSlotsArray> => {
+            const armourPieceRO = this._armourRO[slotID];
+            return (armourPieceRO === null) ? [] : armourPieceRO.decorationSlots;
+        };
 
-    _validateDecorations() {
-        const getArmourDecoSlots = (slotID) => {
-                const armourPieceRO = this._armourRO[slotID];
-                return (armourPieceRO === null) ? [] : armourPieceRO.decorationSlots;
-            };
+        const allDecoSlots: Map<DecoEquippableSlot, Readonly<DecoSlotsArray>> = new Map([
+            ["weapon"  , this._weaponRO.decoSlots            ],
+            ["head"    , getArmourDecoSlots("head")          ],
+            ["chest"   , getArmourDecoSlots("chest")         ],
+            ["arms"    , getArmourDecoSlots("arms")          ],
+            ["waist"   , getArmourDecoSlots("waist")         ],
+            ["legs"    , getArmourDecoSlots("legs")          ],
+            ["talisman", this._getAdjustedTalismanDecoSlots()],
+        ]);
 
-        const allDecoSlots = {
-                weapon:   this._weaponRO.decoSlots,
-                head:     getArmourDecoSlots("head"),
-                chest:    getArmourDecoSlots("chest"),
-                arms:     getArmourDecoSlots("arms"),
-                waist:    getArmourDecoSlots("waist"),
-                legs:     getArmourDecoSlots("legs"),
-                talisman: this._getAdjustedTalismanDecoSlots(),
-            }
-
-        for (const [slotID, decoSlots] of Object.entries(allDecoSlots)) {
+        for (const [slotID, decoSlots] of allDecoSlots.entries()) {
             const equippedDecos = this._decorationsRO[slotID];
-            assert(isArr(equippedDecos));
-            assert(equippedDecos.length == decoSlots.length);
+            console.assert(equippedDecos.length === decoSlots.length);
             for (const [i, obj] of equippedDecos.entries()) {
-                assert(isObj(obj));
-                assert(decoSlots[i] === obj.slotSize);
-                if (obj.decoRO !== null) {
-                    assert(obj.decoRO.slotSize <= obj.slotSize);
-                }
+                console.assert(decoSlots[i] === obj.slotSize);
+                console.assert((obj.decoRO === null) || (obj.decoRO.slotSize <= obj.slotSize));
             }
         }
     }
 
-    _initWeaponRampSkillSelections() {
+    _initWeaponRampSkillSelections(): (null | RampageSkill)[] {
         const numSlots = this._weaponRO.rampSkills.length;
         return new Array(numSlots).fill(null); // Array of nulls
     }
 
-    constructor(db: MHRDatabase, weaponRO: Weapon) {
+    constructor(db: {"readonly": MHRDatabase}, weapon: Weapon) {
         // Equipment Selections
-        this._weaponRO = null;
-        this._weaponRampSkillSelections = null;
+        this._weaponRO = weapon; // Dummy value, will be replaced later
+        this._weaponRampSkillSelections = []; // Dummy value, will be replaced later
 
         this._weaponSpecialSelectionOptions = [];
         this._weaponSpecialSelectionRO = null; // A single object, or null. Currently only used for bowgun mods.
@@ -167,23 +154,20 @@ class Build {
                 talisman: this._generateEmptyDecoObj([]),
             };
 
-        this._setWeaponNoCheck(db, weaponRO);
+        this._setWeaponNoCheck(db, weapon);
         this._validateState();
     }
 
-    // Usefully returns self for use in React state transitions.
-    _setWeaponNoCheck(db: MHRDatabase, weaponObj: Weapon) {
-        assert(isMap(db.readonly.weapons.map.greatsword)); // Spot check for structure
-        // weaponObj validity will be checked by verifying overall state
-
-        this._weaponRO = weaponObj;
+    _setWeaponNoCheck(db: {"readonly": MHRDatabase}, weapon: Weapon): void {
+        // weapon validity will be checked by verifying overall state
+        this._weaponRO = weapon;
         this._weaponRampSkillSelections = this._initWeaponRampSkillSelections();
 
         this._weaponSpecialSelectionOptions = (()=>{
             const arr = db.readonly.weaponSpecialSelections.array;
-            if (weaponObj.category === "lightbowgun") {
+            if (weapon.category === "lightbowgun") {
                 return arr.filter((x) => (x.type === "lightbowgunmod"));
-            } else if (weaponObj.category === "heavybowgun") {
+            } else if (weapon.category === "heavybowgun") {
                 return arr.filter((x) => (x.type === "heavybowgunmod"));
             } else {
                 return [];
@@ -191,63 +175,71 @@ class Build {
         })();
         this._weaponSpecialSelectionRO = null;
 
-        this._decorationsRO.weapon = this._generateEmptyDecoObj(weaponObj.decoSlots);
+        this._decorationsRO.weapon = this._generateEmptyDecoObj(weapon.decoSlots);
     }
-    setWeapon(db, weaponObj) {
-        this._setWeaponNoCheck(db, weaponObj);
+    setWeapon(db: {"readonly": MHRDatabase}, weapon: Weapon): Build {
+        this._setWeaponNoCheck(db, weapon);
         this._validateState();
         return this;
     }
-    // Usefully returns self for use in React state transitions.
-    setRampageSkill(db: MHRDatabase, position: RampSkillPosition, rampageSkillID: null | string) {
-        assert(position % 1 === 0);
 
-        assert((position >= 0) && (position < this._weaponRampSkillSelections.length));
+    setRampageSkill(
+        db:             {"readonly": MHRDatabase},
+        position:       RampSkillPosition,
+        rampageSkillID: null | string,
+    ): Build {
+        console.assert(position % 1 === 0);
+        console.assert((position >= 0) && (position < this._weaponRampSkillSelections.length));
 
         if (rampageSkillID === null) {
             this._weaponRampSkillSelections[position] = null;
         } else {
-            this._weaponRampSkillSelections[position] = db.readonly.weaponRampSkills.longIdsMap.get(rampageSkillID);
-            assert(this._weaponRampSkillSelections[position] !== undefined);
+            const result = db.readonly.weaponRampSkills.longIdsMap.get(rampageSkillID);
+            if (result === undefined) throw "Expected a result.";
+            this._weaponRampSkillSelections[position] = result;
         }
 
         this._validateState();
         return this;
     }
-    setWeaponSpecialSelection(db: MHRDatabase, specialSelectionID: null | number) {
-        assert(specialSelectionID % 1 === 0);
+    setWeaponSpecialSelection(db: {"readonly": MHRDatabase}, specialSelectionID: null | number): Build {
+        console.assert((specialSelectionID === null) || (specialSelectionID % 1 === 0));
 
         if (specialSelectionID === null) {
             this._weaponSpecialSelectionRO = null;
         } else {
-            this._weaponSpecialSelectionRO = db.readonly.weaponSpecialSelections.map.get(specialSelectionID);
-            assert(this._weaponSpecialSelectionRO !== undefined);
+            const result = db.readonly.weaponSpecialSelections.map.get(specialSelectionID);
+            if (result === undefined) throw "Expected a result.";
+            this._weaponSpecialSelectionRO = result;
         }
 
         this._validateState();
         return this;
     }
 
-    // Usefully returns self for use in React state transitions.
-    setArmourPiece(db: MHRDatabase, slotID: ArmourSlot, armourPiece: ArmourPiece) {
+    setArmourPiece(db: {"readonly": MHRDatabase}, slotID: ArmourSlot, armourPiece: null | ArmourPiece): Build {
+        db; // TODO: Remove the db parameter?
+
         // armourPiece validity will be checked by verifying overall state
-        assert((armourPiece === null) || (slotID === armourPiece.slotID));
+        console.assert((armourPiece === null) || (slotID === armourPiece.slotID));
 
+        const decoSlots: Readonly<DecoSlotsArray> = (armourPiece === null) ? [] : armourPiece.decorationSlots;
         this._armourRO[slotID] = armourPiece;
-        if (armourPiece === null) {
-            this._decorationsRO[slotID] = this._generateEmptyDecoObj([]);
-        } else {
-            this._decorationsRO[slotID] = this._generateEmptyDecoObj(armourPiece.decorationSlots);
-        }
+        this._decorationsRO[slotID] = this._generateEmptyDecoObj(decoSlots);
 
         this._validateState();
         return this;
     }
 
-    // Usefully returns self for use in React state transitions.
-    setTalismanSkill(db: MHRDatabase, skillIndex: TalismanSkillIndex, skill: Skill, skillLevel: number) {
-        assert(skillLevel % 1 === 0);
-        assert((skillLevel > 0) && (skillLevel <= 10)); // Unlikely to be huge. TODO: Is it always > 0?
+    setTalismanSkill(
+        db:         {"readonly": MHRDatabase},
+        skillIndex: TalismanSkillIndex,
+        skill:      Skill,
+        skillLevel: number,
+    ): Build {
+        db; // TODO: Remove the db parameter?
+        console.assert(skillLevel % 1 === 0);
+        console.assert((skillLevel > 0) && (skillLevel <= 10)); // Unlikely to be huge. TODO: Is it always > 0?
         if (skill === null) {
             this._talisman.skills[skillIndex].skillRO = null;
             this._talisman.skills[skillIndex].skillLevel = null;
@@ -259,8 +251,13 @@ class Build {
         this._validateState();
         return this;
     }
-    // Usefully returns self for use in React state transitions.
-    setTalismanDecoSlot(db: MHRDatabase, decoSlotIndex: DecoSlotIndex, decoSlotSize: 0 | DecorationSlotSize) {
+
+    setTalismanDecoSlot(
+        db:            {"readonly": MHRDatabase},
+        decoSlotIndex: DecoSlotIndex,
+        decoSlotSize:  0 | DecorationSlotSize,
+    ): Build {
+        db; // TODO: Remove the db parameter?
         this._talisman.decoSlots[decoSlotIndex] = decoSlotSize
         this._decorationsRO.talisman = this._generateEmptyDecoObj(this._getAdjustedTalismanDecoSlots());
 
@@ -268,7 +265,7 @@ class Build {
         return this;
     }
 
-    resetTalisman() {
+    resetTalisman(): Build {
         this._talisman.decoSlots = [0,0,0];
         this._talisman.skills = [
                 {skillRO: null, skillLevel: null}, // TODO: Reset this more cleanly than rewriting the whole data structure
@@ -280,85 +277,84 @@ class Build {
         return this;
     }
 
-    // Usefully returns self for use in React state transitions.
-    setPetalace(db: MHRDatabase, petalace: null | Petalace) {
+    setPetalace(db: {"readonly": MHRDatabase}, petalace: null | Petalace): Build {
+        db; // TODO: Remove the db parameter?
         this._petalaceRO = petalace;
 
         this._validateState();
         return this;
     }
 
-    // Usefully returns self for use in React state transitions.
-    setDecoration(db: MHRDatabase, deco: null | Decoration, slotID: DecoEquippableSlot, position: DecoSlotIndex) {
+    setDecoration(
+        db:       {"readonly": MHRDatabase},
+        deco:     null | Decoration,
+        slotID:   DecoEquippableSlot,
+        position: DecoSlotIndex,
+    ): Build {
         db; // TODO: We shouldn't need this. Remove the parameter?
-        this._decorationsRO[slotID][position].decoRO = deco;
+        const decoSetting = this._decorationsRO[slotID][position];
+        if (decoSetting === undefined) throw "Expected a result";
+        decoSetting.decoRO = deco;
 
         this._validateState();
         return this;
     }
 
-    getWeaponObjRO() {
+    getWeaponObjRO(): Weapon {
         return this._weaponRO;
     }
-    getRampSkill(rampSkillIndex: RampSkillPosition) {
-        const rampSkillRO = this._weaponRampSkillSelections[rampSkillIndex];
-        if ((rampSkillRO === undefined) || (rampSkillRO === null)) {
+    getRampSkill(rampSkillIndex: RampSkillPosition): null | RampageSkill {
+        const rampSkill = this._weaponRampSkillSelections[rampSkillIndex];
+        if ((rampSkill === undefined) || (rampSkill === null)) {
             return null;
         } else {
-            assert(isObj(rampSkillRO));
-            return rampSkillRO;
+            return rampSkill;
         }
     }
-    getRampSkills(db: MHRDatabase) {
+    getRampSkills(db: {"readonly": MHRDatabase}): RampageSkill[] {
         db; // TODO: Remove the db parameter?
-        return this._getRampSkillSelectionsArray(db).filter((element) => {return (element !== null)});
+        const ret: RampageSkill[] = [];
+        for (const obj of this._getRampSkillSelectionsArray(db)) {
+            if (obj !== null) ret.push(obj);
+        }
+        // TODO: Figure out how to use filter?
+        //return this._getRampSkillSelectionsArray(db).filter(x => (x !== null));
+        return ret;
     }
-    getWeaponSpecialSelectionRO() {
+    getWeaponSpecialSelectionRO(): null | WeaponSpecialSelection {
         return this._weaponSpecialSelectionRO;
     }
 
-    getArmourROs() {
+    getArmourROs(): ArmourEquips {
         return this._armourRO;
     }
 
-    getTalismanSkills() {
+    getTalismanSkills(): [TalismanSkill, TalismanSkill] {
         return this._talisman.skills;
     }
-    getTalismanDecoSlots() {
+    getTalismanDecoSlots(): TalismanDecoSlotsArray {
         //return this._talisman.decoSlots.filter((slotSize) => {return slotSize != 0});
         return this._talisman.decoSlots;
     }
 
-    getPetalaceObjRO() {
+    getPetalaceObjRO(): null | Petalace {
         return this._petalaceRO;
     }
 
-    getDecoSlotSize(slotID: DecorationSlotSize, position: DecoSlotIndex) {
-        const arr = this._decorationsRO[slotID];
-        if (arr === undefined) return 0;
-
-        const obj = arr[position];
+    getDecoSlotSize(slotID: DecoEquippableSlot, position: DecoSlotIndex): 0 | DecorationSlotSize {
+        const obj = this._decorationsRO[slotID]?.[position];
         if (obj === undefined) return 0;
-
-        assert(isInt(obj.slotSize) && (obj.slotSize > 0) && (obj.slotSize <= 3));
         return obj.slotSize;
     }
-    getDeco(slotID: DecorationSlotSize, position: DecoSlotIndex) {
-        const arr = this._decorationsRO[slotID];
-        if (arr === undefined) return null;
-
-        const obj = arr[position];
+    getDeco(slotID: DecoEquippableSlot, position: DecoSlotIndex): null | Decoration {
+        const obj = this._decorationsRO[slotID]?.[position];
         if (obj === undefined) return null;
-
-        if (obj.decoRO !== null) {
-            assert(isInt(obj.decoRO.slotSize)); // Spot check for structure
-        }
         return obj.decoRO;
     }
 
-    _getAllDecosAsFlatArray() {
-        const ret = [];
-        for (const [slotID, subArray] of Object.entries(this._decorationsRO)) {
+    _getAllDecosAsFlatArray(): Decoration[] {
+        const ret: Decoration[] = [];
+        for (const [_, subArray] of Object.entries(this._decorationsRO)) {
             for (const obj of subArray) {
                 if (obj.decoRO !== null) {
                     ret.push(obj.decoRO);
@@ -368,50 +364,47 @@ class Build {
         return ret;
     }
 
-    getCurrentSkills() {
-        const ret = new Map(); // Map of arrays: {skill long ID : [skill object, skill level]}
+    getCurrentSkills(): Map<string, [Skill, number]> {
+        const ret: Map<string, [Skill, number]> = new Map(); // {skill long ID : [skill object, skill level]}
+        const incLevel = (_skill: Skill, _level: number): void => {
+            const result = ret.get(_skill.id);
+            if (result === undefined) {
+                ret.set(_skill.id, [_skill, _level]);
+            } else {
+                result[1] += _level;
+            }
+        };
+
         // First add armour skills
-        for (const [slotID, armourPieceRO] of Object.entries(this._armourRO)) {
+        for (const [_, armourPieceRO] of Object.entries(this._armourRO)) {
             if (armourPieceRO === null) continue;
             for (const [skillRO, skillLevel] of armourPieceRO.skills) {
-                if (ret.has(skillRO.id)) {
-                    ret.get(skillRO.id)[1] += skillLevel;
-                } else {
-                    ret.set(skillRO.id, [skillRO, skillLevel]);
-                }
+                incLevel(skillRO, skillLevel);
             }
         }
         // Then now we add talisman skills
-        for (const obj of this._talisman.skills) {
-            const skillRO = obj.skillRO;
-            const skillLevel = obj.skillLevel;
+        for (const {skillRO, skillLevel} of this._talisman.skills) {
             if (skillRO !== null) {
-                if (ret.has(skillRO.id)) {
-                    ret.get(skillRO.id)[1] += skillLevel;
-                } else {
-                    ret.set(skillRO.id, [skillRO, skillLevel]);
-                }
+                if (skillLevel === null) throw "Expected a value";
+                incLevel(skillRO, skillLevel);
             }
         }
         // And finally, we add decoration skills
         for (const decoRO of this._getAllDecosAsFlatArray()) {
             for (const [skillRO, skillLevel] of decoRO.skills) {
-                if (ret.has(skillRO.id)) {
-                    ret.get(skillRO.id)[1] += skillLevel;
-                } else {
-                    ret.set(skillRO.id, [skillRO, skillLevel]);
-                }
+                incLevel(skillRO, skillLevel);
             }
         }
         return ret;
     }
 
-    getRenderingProps(db: DecorationSlotSize) {
+    // Return value is intentionally inferred
+    getRenderingProps(db: {"readonly": MHRDatabase}) {
         // TODO: This is called again for calculating the build. Maybe avoid that?
         const calculatedTotalSkills = this.getCurrentSkills();
 
         const calculatedTotalSkillsRenderingProps = [];
-        for (const [skillLongID, [skillRO, skillLevel]] of calculatedTotalSkills.entries()) {
+        for (const [_, [skillRO, skillLevel]] of calculatedTotalSkills.entries()) {
             calculatedTotalSkillsRenderingProps.push({
                     name: skillRO.name,
                     level: (skillLevel > skillRO.maxLevels) ? skillRO.maxLevels : skillLevel,
@@ -429,38 +422,36 @@ class Build {
             }
         });
 
-        const makeArmourRenderingProps = (slotID) => {
-                const armourPieceRO = this._armourRO[slotID];
-                if (armourPieceRO === null) {
+        const makeArmourRenderingProps = (slotID: ArmourSlot) => {
+                const armourPiece = this._armourRO[slotID];
+                if (armourPiece === null) {
                     return null;
                 }
 
                 const skillNamesArray = [];
-                for (const [skillRO, skillLevel] of armourPieceRO.skills) {
+                for (const [skillRO, skillLevel] of armourPiece.skills) {
                     skillNamesArray.push([skillRO.name, skillLevel]);
                 }
                 
                 //// TODO
                 //const decos = [];
-                //for (const slotSize of armourPieceRO.decorationSlots) {
+                //for (const slotSize of armourPiece.decorationSlots) {
 
                 //}
 
                 return {
-                    name: armourPieceRO.name,
-                    rarity: armourPieceRO.rarity,
+                    name: armourPiece.name,
+                    rarity: armourPiece.rarity,
                     skills: skillNamesArray,
                     decosArray: this._getDecoArrayRenderingProp(slotID),
 
-                    defense:    armourPieceRO.defenseAtLevel1, // Placeholder for now
+                    defense:    armourPiece.defenseAtLevel1, // Placeholder for now
 
-                    fireRes:    armourPieceRO.fireRes,
-                    waterRes:   armourPieceRO.waterRes,
-                    thunderRes: armourPieceRO.thunderRes,
-                    iceRes:     armourPieceRO.iceRes,
-                    dragonRes:  armourPieceRO.dragonRes,
-
-                    iconImgPath: armourPieceRO.iconImgPath,
+                    fireRes:    armourPiece.fireRes,
+                    waterRes:   armourPiece.waterRes,
+                    thunderRes: armourPiece.thunderRes,
+                    iceRes:     armourPiece.iceRes,
+                    dragonRes:  armourPiece.dragonRes,
                 };
             };
 
@@ -479,40 +470,39 @@ class Build {
             );
 
         return {
-                weaponRO: {
-                        name:                     this._weaponRO.name,
-                        rampSkillSelectionsArray: this._getRampSkillSelectionsArray(db),
-                        rampSkillOptionsArray:    this._weaponRO.rampSkills,
-                        decosArray:               this._getDecoArrayRenderingProp("weapon"),
+            weaponRO: {
+                    name:                     this._weaponRO.name,
+                    rampSkillSelectionsArray: this._getRampSkillSelectionsArray(db),
+                    rampSkillOptionsArray:    this._weaponRO.rampSkills,
+                    decosArray:               this._getDecoArrayRenderingProp("weapon"),
 
-                        specialSelection:             this._weaponSpecialSelectionRO,
-                        specialSelectionOptionsArray: this._weaponSpecialSelectionOptions,
+                    specialSelection:             this._weaponSpecialSelectionRO,
+                    specialSelectionOptionsArray: this._weaponSpecialSelectionOptions,
 
-                        category: this._weaponRO.category,
-                        rarity: this._weaponRO.rarity,
-                    },
-                armourRO: {
-                        head:  makeArmourRenderingProps("head"),
-                        chest: makeArmourRenderingProps("chest"),
-                        arms:  makeArmourRenderingProps("arms"),
-                        waist: makeArmourRenderingProps("waist"),
-                        legs:  makeArmourRenderingProps("legs"),
-                    },
-                talismanRO: {
-                        name: (renderNoneTalisman) ? "None" : "Talisman",
-                        skills: talismanSkillNamesArray,
-                        decosArray: this._getDecoArrayRenderingProp("talisman"),
-                    },
-                petalaceRO: {
-                        originalPetalaceObj: this._petalaceRO, // I'm lazy
-                    },
-                calculatedSkills: calculatedTotalSkillsRenderingProps,
-            };
+                    category: this._weaponRO.category,
+                    rarity: this._weaponRO.rarity,
+                },
+            armourRO: {
+                    head:  makeArmourRenderingProps("head"),
+                    chest: makeArmourRenderingProps("chest"),
+                    arms:  makeArmourRenderingProps("arms"),
+                    waist: makeArmourRenderingProps("waist"),
+                    legs:  makeArmourRenderingProps("legs"),
+                },
+            talismanRO: {
+                    name: (renderNoneTalisman) ? "None" : "Talisman",
+                    skills: talismanSkillNamesArray,
+                    decosArray: this._getDecoArrayRenderingProp("talisman"),
+                },
+            petalaceRO: {
+                    originalPetalaceObj: this._petalaceRO, // I'm lazy
+                },
+            calculatedSkills: calculatedTotalSkillsRenderingProps,
+        };
     }
 
-    _getDecoArrayRenderingProp(slotID: DecoEquippableSlot) {
-        assert(isDecoEquippableSlotStr(slotID));
-        const ret = [];
+    _getDecoArrayRenderingProp(slotID: DecoEquippableSlot): DecoRenderingProp[] {
+        const ret: DecoRenderingProp[] = [];
         for (const obj of this._decorationsRO[slotID]) {
             ret.push({
                 slotSize: obj.slotSize,
@@ -526,15 +516,16 @@ class Build {
         return ret;
     }
 
-    _getAdjustedTalismanDecoSlots() {
+    _getAdjustedTalismanDecoSlots(): Readonly<DecoSlotsArray> {
         const ret = this._talisman.decoSlots.filter((_slotSize) => {return (_slotSize !== 0)});
         ret.sort((a, b) => {return (a < b) ? 1 : -1;});
+        if (!isDecoSlotsArray(ret)) throw "Must be a decoration slots array";
         return ret;
     }
 
-    _getRampSkillSelectionsArray(db: DecorationSlotSize) {
+    _getRampSkillSelectionsArray(db: {"readonly": MHRDatabase}): (null | RampageSkill)[] {
         db; // TODO: Remove the db parameter?
-        const ret = [];
+        const ret: (null | RampageSkill)[] = [];
         for (const rampSkillObj of this._weaponRampSkillSelections) {
             if (rampSkillObj === null) {
                 ret.push(null);
@@ -546,9 +537,8 @@ class Build {
     }
 
     // Logically static
-    _generateEmptyDecoObj(decoSlotsArray: DecoSlotsArray) {
-        assert(isArr(decoSlotsArray));
-        const ret = [];
+    _generateEmptyDecoObj(decoSlotsArray: Readonly<DecoSlotsArray>): DecoSetting[] {
+        const ret: DecoSetting[] = [];
         for (const slotSize of decoSlotsArray) {
             ret.push({slotSize: slotSize, decoRO: null});
         }

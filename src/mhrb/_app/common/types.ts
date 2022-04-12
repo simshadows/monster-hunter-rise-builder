@@ -1,6 +1,8 @@
 /*
  * Author:  simshadows <contact@simshadows.com>
  * License: GNU Affero General Public License v3 (AGPL-3.0)
+ *
+ * TODO: Consider splitting this file.
  */
 
 import {
@@ -9,7 +11,6 @@ import {
 
 export type Tier = "lr" | "hr";
 export type Rarity = 1 | 2 | 3 | 4 | 5 | 6 | 7;
-export type DecorationSlotSize = 1 | 2 | 3;
 
 export type RawTypeStr = "severing" | "blunt";
 
@@ -22,22 +23,21 @@ export type EndlineTag = "" | "hr";
 export type ArmourSlot = "head" | "chest" | "arms" | "waist" | "legs";
 export type DecoEquippableSlot = ArmourSlot | "weapon" | "talisman";
 
-export type WeaponCategory = "greatsword"
-                           | "longsword"
-                           | "swordandshield"
-                           | "dualblades"
-                           | "lance"
-                           | "gunlance"
-                           | "hammer"
-                           | "huntinghorn"
-                           | "switchaxe"
-                           | "chargeblade"
-                           | "insectglaive"
-                           | "lightbowgun"
-                           | "heavybowgun"
-                           | "bow";
-export type MeleeWeaponCategory = Exclude<WeaponCategory, "lightbowgun" | "heavybowgun" | "bow">;
-export type BowgunCategory      = "lightbowgun" | "heavybowgun";
+export type MeleeWeaponCategory = "greatsword"
+                                  | "longsword"
+                                  | "swordandshield"
+                                  | "dualblades"
+                                  | "lance"
+                                  | "gunlance"
+                                  | "hammer"
+                                  | "huntinghorn"
+                                  | "switchaxe"
+                                  | "chargeblade"
+                                  | "insectglaive";
+export type BowgunCategory = "lightbowgun" | "heavybowgun";
+export type WeaponCategory = MeleeWeaponCategory
+                             | BowgunCategory
+                             | "bow";
 
 export function isMeleeCategory(s: WeaponCategory): s is MeleeWeaponCategory { // DANGER: Returns type predicate.
     return (s !== "lightbowgun") && (s !== "heavybowgun") && (s !== "bow");
@@ -64,10 +64,19 @@ export type EleStatMap = FrozenMap<EleStatStr, number>;
 //    [key in EleStatStr]?: number;
 //};
 
+// If this is refactored into an array, we should add more validation code for the database.
+export type DecorationSlotSize = 1 | 2 | 3;
 export type DecoSlotsArray = []
                            | [DecorationSlotSize]
                            | [DecorationSlotSize, DecorationSlotSize]
                            | [DecorationSlotSize, DecorationSlotSize, DecorationSlotSize];
+export function isDecoSlotsArray(obj: number[]): obj is DecoSlotsArray { // DANGER: Returns type predicate.
+    if (obj.length > 3) return false;
+    for (const v of obj) {
+        if ((v !== 1) && (v !== 2) && (v !== 3)) return false;
+    }
+    return true;
+}
 
 /*** Armour Skills ***/
 
@@ -373,11 +382,12 @@ export interface ArmourPiece {
     };
 }
 
-export interface HeadPiece  extends ArmourPiece {readonly slotID: "head" ;}
-export interface ChestPiece extends ArmourPiece {readonly slotID: "chest";}
-export interface ArmsPiece  extends ArmourPiece {readonly slotID: "arms" ;}
-export interface WaistPiece extends ArmourPiece {readonly slotID: "waist";}
-export interface LegsPiece  extends ArmourPiece {readonly slotID: "legs" ;}
+// TODO: Use this?
+//export interface HeadPiece  extends ArmourPiece {readonly slotID: "head" ;}
+//export interface ChestPiece extends ArmourPiece {readonly slotID: "chest";}
+//export interface ArmsPiece  extends ArmourPiece {readonly slotID: "arms" ;}
+//export interface WaistPiece extends ArmourPiece {readonly slotID: "waist";}
+//export interface LegsPiece  extends ArmourPiece {readonly slotID: "legs" ;}
 
 export interface ArmourSet {
     readonly id:    number;
