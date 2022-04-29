@@ -82,6 +82,7 @@ export interface EleStatObj {
 }
 
 // All fields are publicly mutable, with convenience methods provided.
+// TODO: Consider refactoring this into a simple TypeScript interface.
 export class BaseStatistics {
     baseRaw:      number;
     baseAffinity: number;

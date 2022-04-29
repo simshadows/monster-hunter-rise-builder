@@ -197,6 +197,7 @@ function calculateBuildPerformance(db, build, calcState) {
     //
 
     const b = getBaseValues(db, build, calcState);
+    console.log(b);
     assert(b.baseRaw                 !== undefined);
     assert(b.baseAffinity            !== undefined);
     assert(b.baseEleStat             !== undefined);

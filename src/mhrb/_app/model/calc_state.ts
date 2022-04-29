@@ -39,7 +39,8 @@ const COLOUR = {
 };
 
 // Group Name --> State Name --> StatInnerSpec
-const statesSpecification: ReadonlyMap<string, ReadonlyMap<string, StateInnerSpec>> = new Map([
+type StatesSpecificationType = ReadonlyMap<string, ReadonlyMap<string, StateInnerSpec>>;
+const statesSpecification: StatesSpecificationType = new Map([
     ["Item Box", new Map([
         ["Powercharm", {
             initialState: 1,
@@ -673,6 +674,50 @@ class CalcState {
         return this._state;
     }
 
+
+    /*** State Accessors ***/
+    // These should be the preferred way of reading state since they
+    // communicate intention.
+    // Use 'get*State' for non-boolean state.
+    // Use '*IsActive' for boolean state.
+
+    getRampState(stateLabel: string): number {
+        const numPossibleStates = statesSpecification
+            .get("Rampage Skill States")
+            ?.get(stateLabel)
+            ?.presentations
+            .length;
+        if (numPossibleStates === undefined) throw "Undefined value";
+        console.assert((numPossibleStates % 1 === 0) && (numPossibleStates >= 2));
+
+        const stateValue = this._state
+            .get("Rampage Skill States")
+            ?.get(stateLabel);
+        if (stateValue === undefined) throw "Undefined value";
+        console.assert(
+            (stateValue % 1 === 0)
+            && (stateValue >= 0)
+            && (stateValue < numPossibleStates)
+        );
+        return stateValue;
+    }
+    rampIsActive(stateLabel: string): boolean {
+        const numPossibleStates = statesSpecification
+            .get("Rampage Skill States")
+            ?.get(stateLabel)
+            ?.presentations
+            .length;
+        if (numPossibleStates === undefined) throw "Undefined value";
+        console.assert(numPossibleStates === 2);
+
+        const stateValue = this._state
+            .get("Rampage Skill States")
+            ?.get(stateLabel);
+        if (stateValue === undefined) throw "Undefined value";
+        console.assert((stateValue === 0) || (stateValue === 1));
+        return (stateValue === 1);
+    }
+
     //_getIndividualSpec(groupName, stateName) {
     //    const subMap = statesSpecification.get(groupName);
     //    if (subMap === undefined) return undefined:
@@ -683,6 +728,9 @@ class CalcState {
     //    if (subMap === undefined) return undefined:
     //    return subMap.get(stateName);
     //}
+
+
+    /*** Setters ***/
 
     // Usefully returns self for use in React state transitions.
     setState(groupName: string, stateName: string, newValue: number): CalcState {
