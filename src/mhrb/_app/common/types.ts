@@ -48,7 +48,7 @@ export function isBowgunCategory(s: WeaponCategory): s is BowgunCategory { // DA
 
 /*** Utility Types ***/
 
-type SharpnessMutable = [ // TODO: Export?
+export type SharpnessMutable = [
     number, // red
     number, // orange
     number, // yellow
@@ -58,6 +58,7 @@ type SharpnessMutable = [ // TODO: Export?
 ]
 export type Sharpness = Readonly<SharpnessMutable>;
 
+export type EleStatMapMutable = Map<EleStatStr, number>;
 export type EleStatMap = FrozenMap<EleStatStr, number>;
 // TODO: Migrate to this?
 //export type EleStatMap = {
@@ -229,20 +230,28 @@ export interface IGStats {
 export type BowArcShotType = "recovery" | "affinity" | "brace";
 export type BowChargeShotType = "pierce" | "rapid" | "spread";
 export type BowChargeShotLevel = 1 | 2 | 3 | 4 | 5;
+export type BowChargeLevelLimit = 2 | 3 | 4;
 
+// TODO: This mutable definition should be further deduplicated.
+export interface BowStatsMutable {
+    arcShot: BowArcShotType;
+    baseChargeLevelLimit: BowChargeLevelLimit;
+    chargeShot: [BowChargeShotType, BowChargeShotLevel][];
+    compatibleCoatings: {
+        close_range_coating: 0 | 1 | 2;
+        power_coating:       0 | 1 | 2;
+        poison_coating:      0 | 1 | 2;
+        para_coating:        0 | 1 | 2;
+        sleep_coating:       0 | 1 | 2;
+        blast_coating:       0 | 1;
+        exhaust_coating:     0 | 1 | 2;
+    };
+}
 export interface BowStats {
     readonly arcShot: BowArcShotType;
-    readonly baseChargeLevelLimit: 2 | 3 | 4;
+    readonly baseChargeLevelLimit: BowChargeLevelLimit;
     readonly chargeShot: Readonly<Readonly<[BowChargeShotType, BowChargeShotLevel]>[]>;
-    readonly compatibleCoatings: {
-        readonly close_range_coating: 0 | 1 | 2;
-        readonly power_coating:       0 | 1 | 2;
-        readonly poison_coating:      0 | 1 | 2;
-        readonly para_coating:        0 | 1 | 2;
-        readonly sleep_coating:       0 | 1 | 2;
-        readonly blast_coating:       0 | 1;
-        readonly exhaust_coating:     0 | 1 | 2;
-    };
+    readonly compatibleCoatings: Readonly<BowStatsMutable["compatibleCoatings"]>;
 }
 
 /*** Weapon Mechanics: Light Bowgun and Heavy Bowgun ***/
@@ -255,19 +264,32 @@ export type BowgunAmmoType = `${"normal" | "pierce" | "spread" | "shrapnel" | "s
                            | `${"poison" | "paralysis" | "sleep" | "exhaust" | "recover"}_${1 | 2}`
                            | "demon" | "armor" | "slicing" | "wyvern" | "tranq";
 
+// TODO: Deduplicate this code somehow.
+export type BowgunAmmoMapMutable = {
+    [K in BowgunAmmoType]: {
+        available:    boolean;
+        ammoCapacity: number;
+    };
+}
 export type BowgunAmmoMap = {
-    readonly [Key in BowgunAmmoType]: {
+    readonly [K in BowgunAmmoType]: {
         readonly available:    boolean;
         readonly ammoCapacity: number;
     };
 }
 
-export interface BowgunStats {
-    readonly deviation: {
-        readonly severity: 0 | 1 | 2;
-        readonly left:     boolean;
-        readonly right:    boolean;
+export interface BowgunStatsMutable {
+    deviation: {
+        severity: 0 | 1 | 2;
+        left:     boolean;
+        right:    boolean;
     };
+    recoil: BowgunRecoil;
+    reload: BowgunReload;
+    ammo:   BowgunAmmoMapMutable;
+}
+export interface BowgunStats {
+    readonly deviation: Readonly<BowgunStatsMutable["deviation"]>;
     readonly recoil: BowgunRecoil;
     readonly reload: BowgunReload;
     readonly ammo:   BowgunAmmoMap;
@@ -326,16 +348,10 @@ export interface MeleeWeapon extends Weapon {
     readonly baseSharpness: Sharpness;
     readonly maxSharpness:  Sharpness;
 }
-export function isMelee(obj: Weapon): obj is MeleeWeapon { // DANGER: RETURNS TYPE PREDICATE
-    return isMeleeCategory(obj.category);
-}
 
 export interface Bowgun extends Weapon {
     readonly category:    "lightbowgun" | "heavybowgun";
     readonly bowgunStats: BowgunStats;
-}
-export function isBowgun(obj: Weapon): obj is Bowgun { // DANGER: RETURNS TYPE PREDICATE
-    return isBowgunCategory(obj.category);
 }
 
 export interface Greatsword     extends MeleeWeapon {readonly category: "greatsword";                                        }
@@ -352,6 +368,33 @@ export interface InsectGlaive   extends MeleeWeapon {readonly category: "insectg
 export interface LightBowgun    extends Bowgun      {readonly category: "lightbowgun";                                       }
 export interface HeavyBowgun    extends Bowgun      {readonly category: "heavybowgun";                                       }
 export interface Bow            extends Weapon      {readonly category: "bow";          readonly bowStats:          BowStats;}
+
+export function isMelee(obj: Weapon): obj is MeleeWeapon { // DANGER: RETURNS TYPE PREDICATE
+    return isMeleeCategory(obj.category);
+}
+export function isBowgun(obj: Weapon): obj is Bowgun { // DANGER: RETURNS TYPE PREDICATE
+    return isBowgunCategory(obj.category);
+}
+
+export function isGL(obj: MeleeWeapon): obj is Gunlance { // DANGER: RETURNS TYPE PREDICATE
+    return (obj.category === "gunlance") && (obj.gunlanceStats !== undefined);
+}
+export function isHH(obj: MeleeWeapon): obj is HuntingHorn { // DANGER: RETURNS TYPE PREDICATE
+    return (obj.category === "huntinghorn") && (obj.huntinghornSongs !== undefined);
+}
+export function isSA(obj: MeleeWeapon): obj is SwitchAxe { // DANGER: RETURNS TYPE PREDICATE
+    return (obj.category === "switchaxe") && (obj.switchaxeStats !== undefined);
+}
+export function isCB(obj: MeleeWeapon): obj is ChargeBlade { // DANGER: RETURNS TYPE PREDICATE
+    return (obj.category === "chargeblade") && (obj.chargebladeStats !== undefined);
+}
+export function isIG(obj: MeleeWeapon): obj is InsectGlaive { // DANGER: RETURNS TYPE PREDICATE
+    return (obj.category === "insectglaive") && (obj.insectglaiveStats !== undefined);
+}
+
+export function isBow(obj: Weapon): obj is Bow { // DANGER: RETURNS TYPE PREDICATE
+    return (obj.category === "bow") && (obj.bowStats !== undefined);
+}
 
 /*** Armour ***/
 

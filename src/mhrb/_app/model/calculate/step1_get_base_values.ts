@@ -4,8 +4,14 @@
  * License: GNU Affero General Public License v3 (AGPL-3.0)
  */
 
+import {
+    type MHRDatabase,
+} from "../../database";
+
 import {Build} from "../build";
 import {CalcState} from "../calc_state";
+
+import {BaseStatistics} from "./_common";
 
 import {
     isObj,
@@ -28,32 +34,13 @@ import {
 
 const assert = console.assert;
 
-// TODO: Rewrite? This was lazily written to deepcopy including the database object, then
-//       overwrite database references with the original database object.
-function copyBowgunStats(obj) {
-    const ret = deepcopy(obj);
-    for (const [k, v] of Object.entries(obj.ammo)) {
-        ret.ammo[k].ammoRO = v.ammoRO;
-    }
-    return ret;
-}
-
-function copyBowStats(obj) {
-    const ret = deepcopy(obj);
-    ret.chargeLevelLimit = ret.baseChargeLevelLimit;
-    return ret;
-
-}
-
 // NOTE: Bowgun stats will be returned unclamped.
 //       The caller will need to clamp the values before returning!
-function getBaseValues(db, build, calcState) {
-    assert(isObj(db));
-    assert(isMap(db.readonly.weapons.map.greatsword)); // Spot check for structure
-
-    assert(build instanceof Build);
-    assert(calcState instanceof CalcState);
-
+function getBaseValues(
+    db:        {"readonly": MHRDatabase},
+    build:     Build,
+    calcState: CalcState,
+) {
     const weaponRO = build.getWeaponObjRO();
     const tagset   = getWeaponTags(weaponRO.category);
 
@@ -64,6 +51,8 @@ function getBaseValues(db, build, calcState) {
 
     const allCalcStateSpec = calcState.getSpecification();
     const allCalcState = calcState.getCurrState();
+
+    const v = new BaseStatistics(weaponRO);
 
     // Defined for code readability. Returns whether a binary state is "on" or "off".
     function rampSkillActive(stateLabel) {
@@ -85,48 +74,8 @@ function getBaseValues(db, build, calcState) {
         return stateValue;
     }
 
-    let baseRaw      = weaponRO.attack;
-    let baseAffinity = weaponRO.affinity;
-
-    let baseEleStat = new Map(weaponRO.eleStat.entries());
-
-    // TODO: Another weird naming thing. Fix this!
-    let minSharpness = (tagset.has("melee")) ? deepcopy(weaponRO.baseSharpness) : null;
-    let maxSharpness = (tagset.has("melee")) ? deepcopy(weaponRO.maxSharpness)  : null;
-
-    let baseDefense = weaponRO.defense;
-
-    let baseRawAdd = 0;
-    let baseRawMul = 1;
-    let rawPostTruncMul = 1;
-    
-    let affinityAdd = 0;
-
-    let eleStatMul = {
-            fire:      1,
-            water:     1,
-            thunder:   1,
-            ice:       1,
-            dragon:    1,
-
-            poison:    1,
-            paralysis: 1,
-            sleep:     1,
-            blast:     1,
-        };
-
-    let narwaSoulActive = false;
-
     const isBowgun = (weaponRO.category === "lightbowgun") || (weaponRO.category === "heavybowgun");
     const isRampageWeapon = (weaponRO.id[0] === "r"); // Rampage tree IDs are "ra", "rb", ...
-
-    let gunlanceStats     = (weaponRO.category !== "gunlance"    ) ? null : {...weaponRO.gunlanceStats};
-    let huntingHornSongs  = (weaponRO.category !== "huntinghorn" ) ? null : weaponRO.huntinghornSongs;
-    let switchaxeStats    = (weaponRO.category !== "switchaxe"   ) ? null : {...weaponRO.switchaxeStats};
-    let chargebladeStats  = (weaponRO.category !== "chargeblade" ) ? null : {...weaponRO.chargebladeStats};
-    let insectglaiveStats = (weaponRO.category !== "insectglaive") ? null : {...weaponRO.insectglaiveStats};
-    let bowStats          = (weaponRO.category !== "bow"         ) ? null : copyBowStats(weaponRO.bowStats);
-    let bowgunStats       = (!isBowgun                           ) ? null : copyBowgunStats(weaponRO.bowgunStats);
 
     /*** ***/
 
@@ -134,11 +83,11 @@ function getBaseValues(db, build, calcState) {
     function bowgunAmmoSet(ammoID, capacity) {
         console.assert(weaponRO.category === "lightbowgun" || weaponRO.category === "heavybowgun");
         console.assert(typeof capacity.lbg === "number" && typeof capacity.hbg === "number");
-        bowgunStats.ammo[ammoID].available = true;
+        v.bowgunStats.ammo[ammoID].available = true;
         if (weaponRO.category === "lightbowgun") {
-            bowgunStats.ammo[ammoID].ammoCapacity = capacity.lbg;
+            v.bowgunStats.ammo[ammoID].ammoCapacity = capacity.lbg;
         } else if (weaponRO.category === "heavybowgun") {
-            bowgunStats.ammo[ammoID].ammoCapacity = capacity.hbg;
+            v.bowgunStats.ammo[ammoID].ammoCapacity = capacity.hbg;
         } else {
             console.error("Not a bowgun.");
         }
@@ -146,11 +95,11 @@ function getBaseValues(db, build, calcState) {
     function bowgunAmmoInc(ammoID, capacity) {
         console.assert(weaponRO.category === "lightbowgun" || weaponRO.category === "heavybowgun");
         console.assert((typeof capacity.lbg === "number" || capacity.lbg === undefined) && typeof capacity.hbg === "number");
-        bowgunStats.ammo[ammoID].available = true;
+        v.bowgunStats.ammo[ammoID].available = true;
         if (weaponRO.category === "lightbowgun") {
-            bowgunStats.ammo[ammoID].ammoCapacity += capacity.lbg;
+            v.bowgunStats.ammo[ammoID].ammoCapacity += capacity.lbg;
         } else if (weaponRO.category === "heavybowgun") {
-            bowgunStats.ammo[ammoID].ammoCapacity += capacity.hbg;
+            v.bowgunStats.ammo[ammoID].ammoCapacity += capacity.hbg;
         } else {
             console.error("Not a bowgun.");
         }
@@ -167,51 +116,52 @@ function getBaseValues(db, build, calcState) {
         function op() {
             assert(isInt(eleValueToAdd));
             for (const eleID of eleStrs) {
-                const eleValue = baseEleStat.get(eleID);
+                const eleValue = v.baseEleStat.get(eleID);
                 if (eleValue === undefined) continue;
-                baseEleStat.set(eleID, eleValue + eleValueToAdd);
+                v.baseEleStat.set(eleID, eleValue + eleValueToAdd);
             }
         }
         deferredOps2.push(op); // Defer to last
     }
     function rampBoostEleStat(eleType, eleValue) {
-        const originalValue = baseEleStat.get(eleType)
+        const originalValue = v.baseEleStat.get(eleType)
         assert(originalValue !== undefined);
-        baseEleStat.set(eleType, originalValue + eleValue);
+        v.baseEleStat.set(eleType, originalValue + eleValue);
     }
     function rampSetEleStat(eleType, eleValue) {
-        assert(!baseEleStat.has(eleType));
-        baseEleStat.set(eleType, eleValue);
+        assert(!v.baseEleStat.has(eleType));
+        v.baseEleStat.set(eleType, eleValue);
     }
     function rampSecondaryEle(eleType, eleValue, addToPrimaryElement) {
         function op() {
-            if (baseEleStat.has(eleType)) return; // We ignore the rampage skill if the weapon already has the element.
+            if (v.baseEleStat.has(eleType)) return; // We ignore the rampage skill if the weapon already has the element.
             assert(isInt(eleValue));
             assert(isInt(addToPrimaryElement));
 
             // We first add to the primary element
-            assert(baseEleStat.size === 1); // We only expect one element or status, which is the primary
+            assert(v.baseEleStat.size === 1); // We only expect one element or status, which is the primary
             const tmp = new Map();
-            for (const [eleStatType, eleStatValue] of baseEleStat.entries()) {
+            for (const [eleStatType, eleStatValue] of v.baseEleStat.entries()) {
                 if (!isEleStr(eleStatType)) continue; // Ensure it's element
                 tmp.set(eleStatType, eleStatValue + addToPrimaryElement);
             }
-            baseEleStat = tmp;
+            v.baseEleStat = tmp;
 
             // Now, we add the secondary element
-            baseEleStat.set(eleType, eleValue);
-            assert(baseEleStat.size === 2);
+            v.baseEleStat.set(eleType, eleValue);
+            assert(v.baseEleStat.size === 2);
         }
         deferredOps1.push(op); // Defer
     }
     function rampGunlanceSetShellingType(shellingTypeID, level) {
-        gunlanceStats.shellingType = shellingTypeID;
-        gunlanceStats.shellingLevel = level;
+        v.glStats = {
+            shellingType:  shellingTypeID,
+            shellingLevel: level,
+        }
     }
     function rampMelody(songX, songA, songXA) {
         assert(weaponRO.category === "huntinghorn");
-        assert(typeof huntingHornSongs === "object");
-        huntingHornSongs = {
+        v.hhStats = {
             x:  songX,
             a:  songA,
             xa: songXA,
@@ -219,42 +169,44 @@ function getBaseValues(db, build, calcState) {
     }
     function rampSwitchAxeSetPhial(phialTypeID, value) {
         assert(weaponRO.category === "switchaxe");
-        switchaxeStats.phialType = phialTypeID;
-        switchaxeStats.phialValue = value;
+        v.saStats = {
+            phialType:  phialTypeID,
+            phialValue: value,
+        };
     }
 
     function rampBowSetArcShot(arcShotType) {
         assert(weaponRO.category === "bow");
-        bowStats.arcShot = arcShotType;
+        v.bowStats.arcShot = arcShotType;
     }
     function rampBowSetChargeShot(chargeLevelLimit, spec) {
         assert(weaponRO.category === "bow");
-        assert((bowStats.chargeShot.length === 4) && (spec.length === 4)); // We assume this for now
+        assert((v.bowStats.chargeShot.length === 4) && (spec.length === 4)); // We assume this for now
         assert((chargeLevelLimit === 3) || (chargeLevelLimit === 4)); // This assumes 4 charge levels
 
-        bowStats.chargeShot = [];
+        v.bowStats.chargeShot = [];
         for (const [chargeShotType, level] of spec) {
-            bowStats.chargeShot.push([chargeShotType, level]);
+            v.bowStats.chargeShot.push([chargeShotType, level]);
         }
 
-        bowStats.chargeLevelLimit = chargeLevelLimit;
+        v.bowStats.chargeLevelLimit = chargeLevelLimit;
     }
     function rampBowSetCoatingCompat(coatingID, state, callback) {
         assert(weaponRO.category === "bow");
-        assert(coatingID in bowStats.compatibleCoatings);
+        assert(coatingID in v.bowStats.compatibleCoatings);
         assert((state >= 0) && (state <= 2));
-        if (bowStats.compatibleCoatings[coatingID] >= state) {
+        if (v.bowStats.compatibleCoatings[coatingID] >= state) {
             return; // No change if it's already higher
         }
-        bowStats.compatibleCoatings[coatingID] = state;
+        v.bowStats.compatibleCoatings[coatingID] = state;
         callback(); // Callback only called if the ramp skill is applied
     }
     function rampBowBoostCoatingCompat(coatingID) {
         assert(weaponRO.category === "bow");
-        const state = bowStats.compatibleCoatings[coatingID];
+        const state = v.bowStats.compatibleCoatings[coatingID];
         assert(state >= 0);
         if (state === 1) {
-            bowStats.compatibleCoatings[coatingID] = 2;
+            v.bowStats.compatibleCoatings[coatingID] = 2;
         }
     }
 
@@ -303,38 +255,38 @@ function getBaseValues(db, build, calcState) {
         ["blast_boost_2"    , ()=>{ rampBoostEleStat("blast"    , 5); }],
         ["blast_boost_3"    , ()=>{ rampBoostEleStat("blast"    , 7); }],
 
-        ["fire_1"   , ()=>{ rampSetEleStat("fire"   , 10);                    }],
-        ["fire_2"   , ()=>{ rampSetEleStat("fire"   , 15);                    }],
-        ["fire_3"   , ()=>{ rampSetEleStat("fire"   , 20); baseRawAdd += -5;  }],
-        ["fire_4"   , ()=>{ rampSetEleStat("fire"   , 30); baseRawAdd += -10; }],
-        ["water_1"  , ()=>{ rampSetEleStat("water"  , 10);                    }],
-        ["water_2"  , ()=>{ rampSetEleStat("water"  , 15);                    }],
-        ["water_3"  , ()=>{ rampSetEleStat("water"  , 20); baseRawAdd += -5;  }],
-        ["water_4"  , ()=>{ rampSetEleStat("water"  , 30); baseRawAdd += -10; }],
-        ["thunder_1", ()=>{ rampSetEleStat("thunder", 10);                    }],
-        ["thunder_2", ()=>{ rampSetEleStat("thunder", 15);                    }],
-        ["thunder_3", ()=>{ rampSetEleStat("thunder", 20); baseRawAdd += -5;  }],
-        ["thunder_4", ()=>{ rampSetEleStat("thunder", 30); baseRawAdd += -10; }],
-        ["ice_1"    , ()=>{ rampSetEleStat("ice"    , 10);                    }],
-        ["ice_2"    , ()=>{ rampSetEleStat("ice"    , 15);                    }],
-        ["ice_3"    , ()=>{ rampSetEleStat("ice"    , 20); baseRawAdd += -5;  }],
-        ["ice_4"    , ()=>{ rampSetEleStat("ice"    , 30); baseRawAdd += -10; }],
-        ["dragon_1" , ()=>{ rampSetEleStat("dragon" , 10);                    }],
-        ["dragon_2" , ()=>{ rampSetEleStat("dragon" , 15);                    }],
-        ["dragon_3" , ()=>{ rampSetEleStat("dragon" , 20); baseRawAdd += -5;  }],
-        ["dragon_4" , ()=>{ rampSetEleStat("dragon" , 30); baseRawAdd += -10; }],
-        ["poison_1"   , ()=>{ rampSetEleStat("poison"   , 10);                    }],
-        ["poison_2"   , ()=>{ rampSetEleStat("poison"   , 20); baseRawAdd += -10; }],
-        ["poison_3"   , ()=>{ rampSetEleStat("poison"   , 30); baseRawAdd += -20; }],
-        ["paralysis_1", ()=>{ rampSetEleStat("paralysis", 10);                    }],
-        ["paralysis_2", ()=>{ rampSetEleStat("paralysis", 15); baseRawAdd += -10; }],
-        ["paralysis_3", ()=>{ rampSetEleStat("paralysis", 20); baseRawAdd += -20; }],
-        ["sleep_1"    , ()=>{ rampSetEleStat("sleep"    , 10);                    }],
-        ["sleep_2"    , ()=>{ rampSetEleStat("sleep"    , 12); baseRawAdd += -10; }],
-        ["sleep_3"    , ()=>{ rampSetEleStat("sleep"    , 15); baseRawAdd += -20; }],
-        ["blast_1"    , ()=>{ rampSetEleStat("blast"    , 10);                    }],
-        ["blast_2"    , ()=>{ rampSetEleStat("blast"    , 15); baseRawAdd += -10; }],
-        ["blast_3"    , ()=>{ rampSetEleStat("blast"    , 20); baseRawAdd += -20; }],
+        ["fire_1"   , ()=>{ rampSetEleStat("fire"   , 10);                      }],
+        ["fire_2"   , ()=>{ rampSetEleStat("fire"   , 15);                      }],
+        ["fire_3"   , ()=>{ rampSetEleStat("fire"   , 20); v.baseRawAdd += -5;  }],
+        ["fire_4"   , ()=>{ rampSetEleStat("fire"   , 30); v.baseRawAdd += -10; }],
+        ["water_1"  , ()=>{ rampSetEleStat("water"  , 10);                      }],
+        ["water_2"  , ()=>{ rampSetEleStat("water"  , 15);                      }],
+        ["water_3"  , ()=>{ rampSetEleStat("water"  , 20); v.baseRawAdd += -5;  }],
+        ["water_4"  , ()=>{ rampSetEleStat("water"  , 30); v.baseRawAdd += -10; }],
+        ["thunder_1", ()=>{ rampSetEleStat("thunder", 10);                      }],
+        ["thunder_2", ()=>{ rampSetEleStat("thunder", 15);                      }],
+        ["thunder_3", ()=>{ rampSetEleStat("thunder", 20); v.baseRawAdd += -5;  }],
+        ["thunder_4", ()=>{ rampSetEleStat("thunder", 30); v.baseRawAdd += -10; }],
+        ["ice_1"    , ()=>{ rampSetEleStat("ice"    , 10);                      }],
+        ["ice_2"    , ()=>{ rampSetEleStat("ice"    , 15);                      }],
+        ["ice_3"    , ()=>{ rampSetEleStat("ice"    , 20); v.baseRawAdd += -5;  }],
+        ["ice_4"    , ()=>{ rampSetEleStat("ice"    , 30); v.baseRawAdd += -10; }],
+        ["dragon_1" , ()=>{ rampSetEleStat("dragon" , 10);                      }],
+        ["dragon_2" , ()=>{ rampSetEleStat("dragon" , 15);                      }],
+        ["dragon_3" , ()=>{ rampSetEleStat("dragon" , 20); v.baseRawAdd += -5;  }],
+        ["dragon_4" , ()=>{ rampSetEleStat("dragon" , 30); v.baseRawAdd += -10; }],
+        ["poison_1"   , ()=>{ rampSetEleStat("poison"   , 10);                      }],
+        ["poison_2"   , ()=>{ rampSetEleStat("poison"   , 20); v.baseRawAdd += -10; }],
+        ["poison_3"   , ()=>{ rampSetEleStat("poison"   , 30); v.baseRawAdd += -20; }],
+        ["paralysis_1", ()=>{ rampSetEleStat("paralysis", 10);                      }],
+        ["paralysis_2", ()=>{ rampSetEleStat("paralysis", 15); v.baseRawAdd += -10; }],
+        ["paralysis_3", ()=>{ rampSetEleStat("paralysis", 20); v.baseRawAdd += -20; }],
+        ["sleep_1"    , ()=>{ rampSetEleStat("sleep"    , 10);                      }],
+        ["sleep_2"    , ()=>{ rampSetEleStat("sleep"    , 12); v.baseRawAdd += -10; }],
+        ["sleep_3"    , ()=>{ rampSetEleStat("sleep"    , 15); v.baseRawAdd += -20; }],
+        ["blast_1"    , ()=>{ rampSetEleStat("blast"    , 10);                      }],
+        ["blast_2"    , ()=>{ rampSetEleStat("blast"    , 15); v.baseRawAdd += -10; }],
+        ["blast_3"    , ()=>{ rampSetEleStat("blast"    , 20); v.baseRawAdd += -20; }],
 
         ["secondary_fire_1"   , ()=>{ rampSecondaryEle("fire"   , 10, 0 ); }],
         ["secondary_fire_2"   , ()=>{ rampSecondaryEle("fire"   , 20, 5 ); }],
@@ -356,42 +308,42 @@ function getBaseValues(db, build, calcState) {
         // Everything Else
         //
 
-        ["attack_boost_1", ()=>{ baseRawAdd += 4;  }],
-        ["attack_boost_2", ()=>{ baseRawAdd += 6;  }],
-        ["attack_boost_3", ()=>{ baseRawAdd += 8;  }],
-        ["attack_boost_4", ()=>{ baseRawAdd += 10; }],
+        ["attack_boost_1", ()=>{ v.baseRawAdd += 4;  }],
+        ["attack_boost_2", ()=>{ v.baseRawAdd += 6;  }],
+        ["attack_boost_3", ()=>{ v.baseRawAdd += 8;  }],
+        ["attack_boost_4", ()=>{ v.baseRawAdd += 10; }],
 
-        ["affinity_boost_1", ()=>{ baseAffinity += 4;  }],
-        ["affinity_boost_2", ()=>{ baseAffinity += 6;  }],
-        ["affinity_boost_3", ()=>{ baseAffinity += 8;  }],
-        ["affinity_boost_4", ()=>{ baseAffinity += 10; }],
+        ["affinity_boost_1", ()=>{ v.baseAffinity += 4;  }],
+        ["affinity_boost_2", ()=>{ v.baseAffinity += 6;  }],
+        ["affinity_boost_3", ()=>{ v.baseAffinity += 8;  }],
+        ["affinity_boost_4", ()=>{ v.baseAffinity += 10; }],
 
         ["elemental_boost_1", ()=>{ rampElementalBoost(5);  }],
         ["elemental_boost_2", ()=>{ rampElementalBoost(7);  }],
         ["elemental_boost_3", ()=>{ rampElementalBoost(10); }],
 
-        ["defense_boost_1", ()=>{ baseDefense += 10; }],
-        ["defense_boost_2", ()=>{ baseDefense += 20; }],
-        ["defense_boost_3", ()=>{ baseDefense += 30; }],
+        ["defense_boost_1", ()=>{ v.baseDefense += 10; }],
+        ["defense_boost_2", ()=>{ v.baseDefense += 20; }],
+        ["defense_boost_3", ()=>{ v.baseDefense += 30; }],
 
-        ["attack_surge"   , ()=>{ baseRawAdd += 20;
-                                  baseAffinity += -30; }],
+        ["attack_surge"   , ()=>{ v.baseRawAdd += 20;
+                                  v.baseAffinity += -30; }],
         ["elemental_surge", ()=>{ 
             function op() {
-                assert(baseEleStat.size <= 1); // We only expect one element or none
+                assert(v.baseEleStat.size <= 1); // We only expect one element or none
                 const tmp = new Map();
-                for (const [eleStatType, eleStatValue] of baseEleStat.entries()) {
+                for (const [eleStatType, eleStatValue] of v.baseEleStat.entries()) {
                     if (!isEleStr(eleStatType)) continue;
                     tmp.set(eleStatType, eleStatValue + 10);
                 }
-                baseEleStat = tmp;
+                v.baseEleStat = tmp;
 
-                baseRawAdd += -15;
+                v.baseRawAdd += -15;
             }
             deferredOps2.push(op); // Defer to last
         }],
-        ["affinity_surge" , ()=>{ baseRawAdd += -10;
-                                  baseAffinity += 20; }],
+        ["affinity_surge" , ()=>{ v.baseRawAdd += -10;
+                                  v.baseAffinity += 20; }],
 
         ["sharpness_type_1", ()=>{
             if (!tagset.has("melee")) {
@@ -399,8 +351,8 @@ function getBaseValues(db, build, calcState) {
                 return;
             }
             // TODO: Check if the sharpness bars are rampage weapon default bars?
-            minSharpness = [100,150,50,20,30,0];
-            maxSharpness = [100,150,50,20,30,50];
+            v.meleeStats.minSharpness = [100,150,50,20,30,0];
+            v.meleeStats.maxSharpness = [100,150,50,20,30,50];
         }],
         ["sharpness_type_2", ()=>{
             if (!tagset.has("melee")) {
@@ -408,8 +360,8 @@ function getBaseValues(db, build, calcState) {
                 return;
             }
             // TODO: Check if the sharpness bars are rampage weapon default bars?
-            minSharpness = [20,80,150,100,0,0];
-            maxSharpness = [20,80,150,100,40,10];
+            v.meleeStats.minSharpness = [20,80,150,100,0,0];
+            v.meleeStats.maxSharpness = [20,80,150,100,40,10];
         }],
         ["sharpness_type_3", ()=>{
             if (!tagset.has("melee")) {
@@ -417,10 +369,10 @@ function getBaseValues(db, build, calcState) {
                 return;
             }
             // TODO: Check if the sharpness bars are rampage weapon default bars?
-            minSharpness = [70,70,30,30,100,0];
-            maxSharpness = [70,70,30,30,150,0];
+            v.meleeStats.minSharpness = [70,70,30,30,100,0];
+            v.meleeStats.maxSharpness = [70,70,30,30,150,0];
 
-            baseRawAdd += -10;
+            v.baseRawAdd += -10;
         }],
         ["sharpness_type_4", ()=>{
             if (!tagset.has("melee")) {
@@ -428,25 +380,25 @@ function getBaseValues(db, build, calcState) {
                 return;
             }
             // TODO: Check if the sharpness bars are rampage weapon default bars?
-            minSharpness = [50,80,70,160,10,30]; // Full bar
-            maxSharpness = [50,80,70,160,10,30];
+            v.meleeStats.minSharpness = [50,80,70,160,10,30]; // Full bar
+            v.meleeStats.maxSharpness = [50,80,70,160,10,30];
 
-            baseRawAdd += -20;
+            v.baseRawAdd += -20;
         }],
 
         ["anti_aerial_species", ()=>{
             if (!rampSkillActive("Anti-Aerial Species (AA)")) return;
-            rawPostTruncMul *= 1.05;
+            v.rawPostTruncMul *= 1.05;
             // TODO: Is there an elemental multiplier?
         }],
         ["anti_aquatic_species", ()=>{
             if (!rampSkillActive("Anti-Aquatic Species (AAQ)")) return;
-            rawPostTruncMul *= 1.10;
+            v.rawPostTruncMul *= 1.10;
             // TODO: Is there an elemental multiplier?
         }],
         ["wyvern_exploit", ()=>{
             if (!rampSkillActive("Wyvern Exploit (WYX)")) return;
-            rawPostTruncMul *= 1.05;
+            v.rawPostTruncMul *= 1.05;
             // TODO: Is there an elemental multiplier?
         }],
 
@@ -458,8 +410,8 @@ function getBaseValues(db, build, calcState) {
             const ksdState = rampSkillState("Kushala Daora Soul (KUS)");
             switch (ksdState) {
                 case 0: /* No Operation */ break;
-                case 1: affinityAdd += 25; break;
-                case 2: affinityAdd += 30; break;
+                case 1: v.affinityAdd += 25; break;
+                case 2: v.affinityAdd += 30; break;
                 default:
                     console.error("Invalid state for Kushala Daora Soul.");
             }
@@ -467,11 +419,11 @@ function getBaseValues(db, build, calcState) {
         ["teostra_soul", nop], // TODO: Need to implement this if I calculate blast damage per proc.
         ["ibushi_soul", nop], // TODO: Need to implement this if I calculate defense.
         ["narwa_soul", ()=>{
-            narwaSoulActive = true;
+            v.narwaSoulActive = true;
         }],
         ["valstrax_soul", ()=>{
             if (!rampSkillActive("Valstrax Soul (VAS)")) return;
-            eleStatMul.dragon *= 1.2;
+            v.eleStatMul.dragon *= 1.2;
         }],
         
         ["element_exploit"      , ()=>{ console.warn("NOT IMPLEMENTED"); }], // TODO
@@ -481,7 +433,7 @@ function getBaseValues(db, build, calcState) {
         ["thunderblight_exploit", ()=>{ console.warn("NOT IMPLEMENTED"); }], // TODO
         ["waterblight_exploit"  , ()=>{ console.warn("NOT IMPLEMENTED"); }], // TODO
 
-        ["non_elemental_boost", ()=>{ deferredOps2.push(()=>{ if (baseEleStat.size === 0) baseRawAdd += 10; }); }],
+        ["non_elemental_boost", ()=>{ deferredOps2.push(()=>{ if (v.baseEleStat.size === 0) v.baseRawAdd += 10; }); }],
 
         //
         // Gunlance
@@ -566,9 +518,9 @@ function getBaseValues(db, build, calcState) {
 
         ["phial_element", ()=>{
             if (weaponRO.category === "switchaxe") {
-                switchaxeStats.phialType = "element_phial";
+                rampSwitchAxeSetPhial("element_phial", null);
             } else if (weaponRO.category === "chargeblade") {
-                chargebladeStats.phialType = "element_phial";
+                v.cbStats = {phialType: "element_phial"};
             } else {
                 console.warn("Unexpected weapon category.");
             }
@@ -597,28 +549,28 @@ function getBaseValues(db, build, calcState) {
         ["kinsect_level_boost", ()=>{
             function op() {
                 assert(weaponRO.category === "insectglaive");
-                insectglaiveStats.kinsectLevel += 1;
+                v.igStats = {kinsectLevel: v.igStats.kinsectLevel + 1};
             }
             deferredOps1.push(op); // Defer
         }],
 
         ["kinsect_level_boost_1", ()=>{
             assert(weaponRO.category === "insectglaive");
-            insectglaiveStats.kinsectLevel = 4;
+            v.igStats = {kinsectLevel: 4};
         }],
         ["kinsect_level_boost_2", ()=>{
             assert(weaponRO.category === "insectglaive");
-            insectglaiveStats.kinsectLevel = 5;
+            v.igStats = {kinsectLevel: 5};
         }],
         ["kinsect_level_boost_3", ()=>{
             assert(weaponRO.category === "insectglaive");
-            insectglaiveStats.kinsectLevel = 6;
-            baseRawAdd += -10;
+            v.igStats = {kinsectLevel: 6};
+            v.baseRawAdd += -10;
         }],
         ["kinsect_level_boost_4", ()=>{
             assert(weaponRO.category === "insectglaive");
-            insectglaiveStats.kinsectLevel = 7;
-            baseRawAdd += -20;
+            v.igStats = {kinsectLevel: 7};
+            v.baseRawAdd += -20;
         }],
 
         //
@@ -630,7 +582,7 @@ function getBaseValues(db, build, calcState) {
         ["poison_coating_boost"     , ()=>{ rampBowBoostCoatingCompat("poison_coating"); }],
         ["paralysis_coating_boost"  , ()=>{ rampBowBoostCoatingCompat("para_coating"); }],
         ["sleep_coating_boost"      , ()=>{ rampBowBoostCoatingCompat("sleep_coating"); }],
-        ["close_range_coating_boost", ()=>{ rampBowBoostCoatingCompat("close_range_coating"); baseRawAdd += -5; }],
+        ["close_range_coating_boost", ()=>{ rampBowBoostCoatingCompat("close_range_coating"); v.baseRawAdd += -5; }],
 
         // Rampage Bow, Slot 3
         ["firing_rapid", ()=>{
@@ -677,13 +629,13 @@ function getBaseValues(db, build, calcState) {
         // Rampage Bow, Slot 4-5
         ["use_power_coating"   , ()=>{ rampBowSetCoatingCompat("power_coating"  , 1, () => {                    }); }],
         ["use_poison_coating_1", ()=>{ rampBowSetCoatingCompat("poison_coating" , 1, () => {                    }); }],
-        ["use_poison_coating_2", ()=>{ rampBowSetCoatingCompat("poison_coating" , 2, () => { baseRawAdd += -5;  }); }],
+        ["use_poison_coating_2", ()=>{ rampBowSetCoatingCompat("poison_coating" , 2, () => { v.baseRawAdd += -5;  }); }],
         ["use_para_coating_1"  , ()=>{ rampBowSetCoatingCompat("para_coating"   , 1, () => {                    }); }],
-        ["use_para_coating_2"  , ()=>{ rampBowSetCoatingCompat("para_coating"   , 2, () => { baseRawAdd += -10; }); }],
+        ["use_para_coating_2"  , ()=>{ rampBowSetCoatingCompat("para_coating"   , 2, () => { v.baseRawAdd += -10; }); }],
         ["use_sleep_coating_1" , ()=>{ rampBowSetCoatingCompat("sleep_coating"  , 1, () => {                    }); }],
-        ["use_sleep_coating_2" , ()=>{ rampBowSetCoatingCompat("sleep_coating"  , 2, () => { baseRawAdd += -10; }); }],
+        ["use_sleep_coating_2" , ()=>{ rampBowSetCoatingCompat("sleep_coating"  , 2, () => { v.baseRawAdd += -10; }); }],
         ["use_blast_coating"   , ()=>{ rampBowSetCoatingCompat("blast_coating"  , 1, () => {                    }); }],
-        ["use_exhaust_coating" , ()=>{ rampBowSetCoatingCompat("exhaust_coating", 1, () => { baseRawAdd += 10;  }); }], // Not a typo
+        ["use_exhaust_coating" , ()=>{ rampBowSetCoatingCompat("exhaust_coating", 1, () => { v.baseRawAdd += 10;  }); }], // Not a typo
  
         // Rampage Bow, Slot 6
         ["arc_shot_recovery"  , ()=>{ rampBowSetArcShot("recovery"); }],
@@ -693,32 +645,32 @@ function getBaseValues(db, build, calcState) {
         // Rampage Bowguns, Slot 1
         ["recoil_down_boost", ()=>{
             console.assert(isRampageWeapon);
-            bowgunStats.recoil -= 1;
+            v.bowgunStats.recoil -= 1;
         }],
         ["reload_speed_boost", ()=>{
             console.assert(isRampageWeapon);
-            bowgunStats.reload += 1;
+            v.bowgunStats.reload += 1;
         }],
         ["steadiness_boost", ()=>{
             console.assert(isRampageWeapon);
-            bowgunStats.deviation.severity -= 1;
+            v.bowgunStats.deviation.severity -= 1;
         }],
 
         // Rampage Bowguns, Slot 2
         ["recoil_down_surge", ()=>{
             console.assert(isRampageWeapon);
-            bowgunStats.recoil -= 2;
-            bowgunStats.deviation.severity += 1;
+            v.bowgunStats.recoil -= 2;
+            v.bowgunStats.deviation.severity += 1;
         }],
         ["reload_speed_surge", ()=>{
             console.assert(isRampageWeapon);
-            bowgunStats.reload += 2;
-            bowgunStats.recoil += 1;
+            v.bowgunStats.reload += 2;
+            v.bowgunStats.recoil += 1;
         }],
         ["steadiness_surge", ()=>{
             console.assert(isRampageWeapon);
-            bowgunStats.deviation.severity -= 2;
-            bowgunStats.reload -= 1;
+            v.bowgunStats.deviation.severity -= 2;
+            v.bowgunStats.reload -= 1;
         }],
 
         ["add_normal_ammo_1", ()=>{
@@ -1040,49 +992,20 @@ function getBaseValues(db, build, calcState) {
     if (weaponSpecialSelection !== null) {
         if (weaponSpecialSelection.type === "lightbowgunmod" && weaponRO.category === "lightbowgun") {
             if (weaponSpecialSelection.id === 1) { // Silencer
-                bowgunStats.recoil = Math.max(0, bowgunStats.recoil - 1);
+                v.bowgunStats.recoil = Math.max(0, v.bowgunStats.recoil - 1);
             } else if (weaponSpecialSelection.id === 2) { // Long Barrel
-                baseRawMul *= 1.05;
+                v.baseRawMul *= 1.05;
             }
         } else if (weaponSpecialSelection.type === "heavybowgunmod" && weaponRO.category === "heavybowgun") {
             if (weaponSpecialSelection.id === 4) { // Power Barrel
-                baseRawMul *= 1.125;
+                v.baseRawMul *= 1.125;
             }
         } else {
             console.error(`Special selection ${weaponSpecialSelection.name} not possible with ${weaponRO.category}.`);
         }
     }
 
-    const ret = {
-        baseRaw,
-        baseAffinity,
-
-        baseEleStat,
-
-        minSharpness,
-        maxSharpness,
-
-        baseDefense,
-
-        baseRawAdd,
-        baseRawMul,
-        rawPostTruncMul,
-
-        affinityAdd,
-
-        eleStatMul,
-
-        narwaSoulActive,
-
-        gunlanceStats,
-        huntingHornSongs,
-        switchaxeStats,
-        chargebladeStats,
-        insectglaiveStats,
-        bowStats,
-        bowgunStats,
-    };
-    return ret;
+    return v;
 }
 
 export {getBaseValues};

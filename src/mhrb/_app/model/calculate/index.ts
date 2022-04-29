@@ -197,12 +197,12 @@ function calculateBuildPerformance(db, build, calcState) {
     //
 
     const b = getBaseValues(db, build, calcState);
-    assert(b.baseRaw      !== undefined);
-    assert(b.baseAffinity !== undefined);
-    assert(b.baseEleStat  !== undefined);
-    assert(b.minSharpness !== undefined);
-    assert(b.maxSharpness !== undefined);
-    assert(b.baseDefense  !== undefined);
+    assert(b.baseRaw                 !== undefined);
+    assert(b.baseAffinity            !== undefined);
+    assert(b.baseEleStat             !== undefined);
+    assert(b.meleeStats.minSharpness !== undefined);
+    assert(b.meleeStats.maxSharpness !== undefined);
+    assert(b.baseDefense             !== undefined);
 
     assert(b.baseRawAdd      !== undefined);
     assert(b.baseRawMul      !== undefined);
@@ -214,13 +214,13 @@ function calculateBuildPerformance(db, build, calcState) {
 
     assert(b.narwaSoulActive !== undefined);
 
-    assert(b.gunlanceStats     !== undefined);
-    assert(b.huntingHornSongs  !== undefined);
-    assert(b.switchaxeStats    !== undefined);
-    assert(b.chargebladeStats  !== undefined);
-    assert(b.insectglaiveStats !== undefined);
-    assert(b.bowStats          !== undefined);
-    assert(b.bowgunStats       !== undefined);
+    assert(b.glStats     !== undefined);
+    assert(b.hhStats     !== undefined);
+    assert(b.saStats     !== undefined);
+    assert(b.cbStats     !== undefined);
+    assert(b.igStats     !== undefined);
+    assert(b.bowStats    !== undefined);
+    assert(b.bowgunStats !== undefined);
 
     const s = getSkillContributions(db, build, calcState);
     assert(s.rawAdd                  !== undefined);
@@ -272,8 +272,8 @@ function calculateBuildPerformance(db, build, calcState) {
         
         // We first determine if the sharpness bar is full.
 
-        const minSharpnessTotalHits = b.minSharpness.reduce(sum);
-        const maxSharpnessTotalHits = b.maxSharpness.reduce(sum);
+        const minSharpnessTotalHits = b.meleeStats.minSharpness.reduce(sum);
+        const maxSharpnessTotalHits = b.meleeStats.maxSharpness.reduce(sum);
 
         const barIsFull = (()=>{
                 if (minSharpnessTotalHits === maxSharpnessTotalHits) {
@@ -289,9 +289,13 @@ function calculateBuildPerformance(db, build, calcState) {
         const effectiveHandicraftLevel = (barIsFull) ? 5 : s.handicraftLevel;
 
         // Now, we apply this effective handicraft level.
-        const sharpnessValues = getSharpnessValues(b.maxSharpness, effectiveHandicraftLevel, m.sharpnessLevelReduction);
+        const sharpnessValues = getSharpnessValues(
+            b.meleeStats.maxSharpness,
+            effectiveHandicraftLevel,
+            m.sharpnessLevelReduction,
+        );
         realSharpnessBar           = sharpnessValues.realSharpnessBar;
-        maxSharpnessBar            = b.maxSharpness;
+        maxSharpnessBar            = b.meleeStats.maxSharpness;
         rawSharpnessModifier       = sharpnessValues.rawSharpnessModifier;
         elementalSharpnessModifier = sharpnessValues.elementalSharpnessModifier;
     }
@@ -441,19 +445,19 @@ function calculateBuildPerformance(db, build, calcState) {
     // STAGE 8: Special Mechanics
     //
 
-    let gunlanceStats = b.gunlanceStats;
+    let gunlanceStats = b.glStats;
     assert((weaponRO.category === "gunlance") === (gunlanceStats !== null));
 
-    let huntingHornSongs = b.huntingHornSongs;
+    let huntingHornSongs = b.hhStats;
     assert((weaponRO.category === "huntinghorn") === (huntingHornSongs !== null));
 
-    let switchAxeStats = b.switchaxeStats;
+    let switchAxeStats = b.saStats;
     assert((weaponRO.category === "switchaxe") === (switchAxeStats !== null));
 
-    let chargeBladeStats = b.chargebladeStats;
+    let chargeBladeStats = b.cbStats;
     assert((weaponRO.category === "chargeblade") === (chargeBladeStats !== null));
 
-    let insectglaiveStats = b.insectglaiveStats;
+    let insectglaiveStats = b.igStats;
     assert((weaponRO.category === "insectglaive") === (insectglaiveStats !== null));
 
     let bowStats = b.bowStats;
