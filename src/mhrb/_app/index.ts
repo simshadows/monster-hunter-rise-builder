@@ -163,7 +163,9 @@ class MHRBuilderApp extends React.Component {
 }
 
 ReactDOM.render(
+    //element(React.StrictMode, null,
     element(MHRBuilderApp, null),
+    //),
     document.getElementById("app-mount")
 );
 

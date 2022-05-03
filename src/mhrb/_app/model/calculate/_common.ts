@@ -98,7 +98,7 @@ export class BaseStatistics {
     cbStats:     null | CBStats              = null;
     igStats:     null | IGStats              = null;
     bowgunStats: null | BowgunStatsMutable   = null; // Mutable
-    bowStats:    null | BowStatsMutable      = null; // Mutable
+    bowStats:    null | BowStatsModified     = null; // Mutable
 
     baseRawAdd:      number = 0;
     baseRawMul:      number = 1;

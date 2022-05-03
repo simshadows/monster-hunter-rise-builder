@@ -1,5 +1,3 @@
-// @ts-nocheck
-// Partially refactored
 /*
  * Author:  simshadows <contact@simshadows.com>
  * License: GNU Affero General Public License v3 (AGPL-3.0)
@@ -9,23 +7,38 @@ import {
     type MHRDatabase,
 } from "../../database";
 import {
+    type ElementStr,
+    type EleStatStr,
+    isElementStr,
+    type WeaponSpecialSelection,
+    type GLShellingType,
+    type GLShellingLevel,
+    type HHSong,
+    type SAPhialType,
+    isKinsectLevel,
+    type BowArcShotType,
+    type BowChargeShotType,
+    type BowChargeShotLevel,
+    type BowChargeLevelLimit,
+    type BowCoating,
+    isBowgunRecoil,
     type BowgunAmmoType,
     type Weapon,
     isMelee,
     isBowgun,
+    isHH,
+    isSA,
+    isCB,
+    isIG,
+    isLBG,
+    isHBG,
+    isBow,
 } from "../../common/types";
 
 import {Build} from "../build";
 import {CalcState} from "../calc_state";
 
 import {BaseStatistics} from "./_common";
-
-import {
-    eleStrs,
-    isEleStr,
-} from "../../common";
-
-const assert = console.assert;
 
 
 // NOTE: Bowgun stats will be returned unclamped.
@@ -46,36 +59,37 @@ function getBaseValues(
     // Some helpers
     function bowgunAmmoSet(
         ammoID: BowgunAmmoType,
-        capacity: {lbg: number; hbg: number},
+        capacity: {lbg: number | undefined; hbg: number},
     ): void {
-        if (!isBowgun(weapon)) throw "Expected bowgun";
+        if (!isBowgun(weapon)) throw "Expected bowgun"; // TODO: Redundant?
         if (v.bowgunStats === null) throw "Null value";
 
         v.bowgunStats.ammo[ammoID].available = true;
-        if (weapon.category === "lightbowgun") {
+        if (isLBG(weapon)) {
+            if (capacity.lbg === undefined) throw "LBG doesn't support this ammo type";
             v.bowgunStats.ammo[ammoID].ammoCapacity = capacity.lbg;
-        } else if (weapon.category === "heavybowgun") {
+        } else if (isHBG(weapon)) {
             v.bowgunStats.ammo[ammoID].ammoCapacity = capacity.hbg;
         } else {
-            console.error("Not a bowgun.");
+            throw "Not a bowgun"; // TODO: Redundant?
         }
     }
     // (Intentionally optional lbg value)
     function bowgunAmmoInc(
         ammoID: BowgunAmmoType,
-        capacity: {lbg?: number; hbg: number},
+        capacity: {lbg: number | undefined; hbg: number},
     ) {
-        if (!isBowgun(weapon)) throw "Expected bowgun";
+        if (!isBowgun(weapon)) throw "Expected bowgun"; // TODO: Redundant?
         if (v.bowgunStats === null) throw "Null value";
 
         v.bowgunStats.ammo[ammoID].available = true;
-        if (weapon.category === "lightbowgun") {
+        if (isLBG(weapon)) {
             if (capacity.lbg === undefined) throw "LBG doesn't support this ammo type";
             v.bowgunStats.ammo[ammoID].ammoCapacity += capacity.lbg;
-        } else if (weapon.category === "heavybowgun") {
+        } else if (isHBG(weapon)) {
             v.bowgunStats.ammo[ammoID].ammoCapacity += capacity.hbg;
         } else {
-            console.error("Not a bowgun.");
+            throw "Not a bowgun"; // TODO: Redundant?
         }
     }
 
@@ -86,77 +100,94 @@ function getBaseValues(
     const deferredOps2: (() => void)[] = [];
 
     // Define what all rampage skills do
-    function rampElementalBoost(eleValueToAdd) {
-        function op() {
-            assert(eleValueToAdd % 1 === 0);
-            for (const eleID of eleStrs) {
-                const eleValue = v.baseEleStat.get(eleID);
-                if (eleValue === undefined) continue;
-                v.baseEleStat.set(eleID, eleValue + eleValueToAdd);
+    function rampElementalBoost(eleValueToAdd: number): void {
+        console.assert(eleValueToAdd % 1 === 0);
+        deferredOps2.push(() => {
+            for (const [eleStatStr, value] of [...v.baseEleStat.entries()]) {
+                if (isElementStr(eleStatStr)) {
+                    v.baseEleStat.set(eleStatStr, value + eleValueToAdd);
+                }
             }
-        }
-        deferredOps2.push(op); // Defer to last
+        });
     }
-    function rampBoostEleStat(eleType, eleValue) {
-        const originalValue = v.baseEleStat.get(eleType)
-        assert(originalValue !== undefined);
-        v.baseEleStat.set(eleType, originalValue + eleValue);
+    function rampBoostEleStat(eleStatStr: EleStatStr, valueToAdd: number): void {
+        console.assert(valueToAdd % 1 === 0);
+        const value = v.baseEleStat.get(eleStatStr)
+        if (value === undefined) throw "Undefined value";
+        v.baseEleStat.set(eleStatStr, value + valueToAdd);
     }
-    function rampSetEleStat(eleType, eleValue) {
-        assert(!v.baseEleStat.has(eleType));
-        v.baseEleStat.set(eleType, eleValue);
+    function rampSetEleStat(eleStatStr: EleStatStr, value: number): void {
+        console.assert(value % 1 === 0);
+        v.baseEleStat.set(eleStatStr, value);
     }
-    function rampSecondaryEle(eleType, eleValue, addToPrimaryElement) {
-        function op() {
-            if (v.baseEleStat.has(eleType)) return; // We ignore the rampage skill if the weapon already has the element.
-            assert(eleValue % 1 === 0);
-            assert(addToPrimaryElement % 1 === 0);
+    function rampSecondaryEle(
+        eleType: ElementStr,
+        eleValue: number,
+        addToPrimaryElement: number,
+    ): void {
+        deferredOps1.push(() => {
+            // We ignore the rampage skill if the weapon already has the element.
+            if (v.baseEleStat.has(eleType)) return;
+            console.assert(eleValue % 1 === 0);
+            console.assert(addToPrimaryElement % 1 === 0);
 
-            // We first add to the primary element
-            assert(v.baseEleStat.size === 1); // We only expect one element or status, which is the primary
-            const tmp = new Map();
-            for (const [eleStatType, eleStatValue] of v.baseEleStat.entries()) {
-                if (!isEleStr(eleStatType)) continue; // Ensure it's element
-                tmp.set(eleStatType, eleStatValue + addToPrimaryElement);
+            // We only expect one element or status, which is the primary
+            console.assert(v.baseEleStat.size === 1);
+
+            //const [primaryType, primaryValue] = [...v.baseEleStat.entries()][0];
+            //v.baseEleStat.set(primaryType, primaryValue + addToPrimaryElement);
+            // We're doing this just to appease the type system.
+            for (const [primaryType, primaryValue] of [...v.baseEleStat.entries()]) {
+                console.assert(primaryType !== eleType);
+                v.baseEleStat.set(primaryType, primaryValue + addToPrimaryElement);
             }
-            v.baseEleStat = tmp;
 
-            // Now, we add the secondary element
             v.baseEleStat.set(eleType, eleValue);
-            assert(v.baseEleStat.size === 2);
-        }
-        deferredOps1.push(op); // Defer
+            console.assert(v.baseEleStat.size === 2);
+        });
     }
-    function rampGunlanceSetShellingType(shellingTypeID, level) {
+    function rampGunlanceSetShellingType(
+        shellingTypeID: GLShellingType,
+        level: GLShellingLevel,
+    ): void {
         v.glStats = {
             shellingType:  shellingTypeID,
             shellingLevel: level,
         }
     }
-    function rampMelody(songX, songA, songXA) {
-        assert(weapon.category === "huntinghorn");
+    function rampMelody(songX: HHSong, songA: HHSong, songXA: HHSong): void {
+        console.assert(isHH(weapon));
         v.hhStats = {
             x:  songX,
             a:  songA,
             xa: songXA,
         };
     }
-    function rampSwitchAxeSetPhial(phialTypeID, value) {
-        assert(weapon.category === "switchaxe");
+    function rampSwitchAxeSetPhial(phialTypeID: SAPhialType, value: number | null): void {
+        console.assert(isSA(weapon));
         v.saStats = {
             phialType:  phialTypeID,
             phialValue: value,
         };
     }
 
-    function rampBowSetArcShot(arcShotType) {
-        assert(weapon.category === "bow");
+    function rampBowSetArcShot(arcShotType: BowArcShotType): void {
+        console.assert(isBow(weapon));
+        if (v.bowStats === null) throw "Null value";
         v.bowStats.arcShot = arcShotType;
     }
-    function rampBowSetChargeShot(chargeLevelLimit, spec) {
-        assert(weapon.category === "bow");
-        assert((v.bowStats.chargeShot.length === 4) && (spec.length === 4)); // We assume this for now
-        assert((chargeLevelLimit === 3) || (chargeLevelLimit === 4)); // This assumes 4 charge levels
+    function rampBowSetChargeShot(
+        chargeLevelLimit: BowChargeLevelLimit,
+        spec: [BowChargeShotType, BowChargeShotLevel][],
+    ): void {
+        console.assert(isBow(weapon));
+        if (v.bowStats === null) throw "Null value";
+
+        // We assume this for now
+        console.assert((v.bowStats.chargeShot.length === 4) && (spec.length === 4));
+
+        // This assumes 4 charge levels
+        console.assert((chargeLevelLimit === 3) || (chargeLevelLimit === 4));
 
         v.bowStats.chargeShot = [];
         for (const [chargeShotType, level] of spec) {
@@ -165,21 +196,38 @@ function getBaseValues(
 
         v.bowStats.chargeLevelLimit = chargeLevelLimit;
     }
-    function rampBowSetCoatingCompat(coatingID, state, callback) {
-        assert(weapon.category === "bow");
-        assert(coatingID in v.bowStats.compatibleCoatings);
-        assert((state >= 0) && (state <= 2));
-        if (v.bowStats.compatibleCoatings[coatingID] >= state) {
-            return; // No change if it's already higher
+    function rampBowSetCoatingCompat(
+        coatingID: BowCoating,
+        state: 1 | 2, // No 0?
+        callback: () => void,
+    ): void {
+        console.assert(isBow(weapon));
+        if (v.bowStats === null) throw "Null value";
+
+        console.assert(coatingID in v.bowStats.compatibleCoatings);
+
+        //if ((coatingID === "blast_coating") && (state === 2)) {
+        //    throw "Blast coating cannot be enhanced";
+        //}
+        //v.bowStats.compatibleCoatings[coatingID] = state;
+        // Doing it this way to appease the type system
+        if (coatingID === "blast_coating") {
+            if (state === 2) throw "Blast coating cannot be enhanced";
+            v.bowStats.compatibleCoatings[coatingID] = state;
+        } else {
+            v.bowStats.compatibleCoatings[coatingID] = state;
         }
-        v.bowStats.compatibleCoatings[coatingID] = state;
+
         callback(); // Callback only called if the ramp skill is applied
     }
-    function rampBowBoostCoatingCompat(coatingID) {
-        assert(weapon.category === "bow");
+    function rampBowBoostCoatingCompat(coatingID: BowCoating): void {
+        console.assert(isBow(weapon));
+        if (v.bowStats === null) throw "Null value";
+
         const state = v.bowStats.compatibleCoatings[coatingID];
-        assert(state >= 0);
+        console.assert(state >= 0);
         if (state === 1) {
+            if (coatingID === "blast_coating") throw "Blast coating cannot be enhanced";
             v.bowStats.compatibleCoatings[coatingID] = 2;
         }
     }
@@ -303,18 +351,17 @@ function getBaseValues(
         ["attack_surge"   , ()=>{ v.baseRawAdd += 20;
                                   v.baseAffinity += -30; }],
         ["elemental_surge", ()=>{ 
-            function op() {
-                assert(v.baseEleStat.size <= 1); // We only expect one element or none
+            deferredOps2.push(() => {
+                console.assert(v.baseEleStat.size <= 1); // We only expect one element or none
                 const tmp = new Map();
                 for (const [eleStatType, eleStatValue] of v.baseEleStat.entries()) {
-                    if (!isEleStr(eleStatType)) continue;
+                    if (!isElementStr(eleStatType)) continue;
                     tmp.set(eleStatType, eleStatValue + 10);
                 }
                 v.baseEleStat = tmp;
 
                 v.baseRawAdd += -15;
-            }
-            deferredOps2.push(op); // Defer to last
+            });
         }],
         ["affinity_surge" , ()=>{ v.baseRawAdd += -10;
                                   v.baseAffinity += 20; }],
@@ -324,6 +371,7 @@ function getBaseValues(
                 console.warn("Attempted to apply Sharpness Type I on a ranged weapon.");
                 return;
             }
+            if (v.meleeStats === null) throw "Null value";
             // TODO: Check if the sharpness bars are rampage weapon default bars?
             v.meleeStats.minSharpness = [100,150,50,20,30,0];
             v.meleeStats.maxSharpness = [100,150,50,20,30,50];
@@ -333,6 +381,7 @@ function getBaseValues(
                 console.warn("Attempted to apply Sharpness Type II on a ranged weapon.");
                 return;
             }
+            if (v.meleeStats === null) throw "Null value";
             // TODO: Check if the sharpness bars are rampage weapon default bars?
             v.meleeStats.minSharpness = [20,80,150,100,0,0];
             v.meleeStats.maxSharpness = [20,80,150,100,40,10];
@@ -342,6 +391,7 @@ function getBaseValues(
                 console.warn("Attempted to apply Sharpness Type III on a ranged weapon.");
                 return;
             }
+            if (v.meleeStats === null) throw "Null value";
             // TODO: Check if the sharpness bars are rampage weapon default bars?
             v.meleeStats.minSharpness = [70,70,30,30,100,0];
             v.meleeStats.maxSharpness = [70,70,30,30,150,0];
@@ -353,6 +403,7 @@ function getBaseValues(
                 console.warn("Attempted to apply Sharpness Type IV on a ranged weapon.");
                 return;
             }
+            if (v.meleeStats === null) throw "Null value";
             // TODO: Check if the sharpness bars are rampage weapon default bars?
             v.meleeStats.minSharpness = [50,80,70,160,10,30]; // Full bar
             v.meleeStats.maxSharpness = [50,80,70,160,10,30];
@@ -407,7 +458,11 @@ function getBaseValues(
         ["thunderblight_exploit", ()=>{ console.warn("NOT IMPLEMENTED"); }], // TODO
         ["waterblight_exploit"  , ()=>{ console.warn("NOT IMPLEMENTED"); }], // TODO
 
-        ["non_elemental_boost", ()=>{ deferredOps2.push(()=>{ if (v.baseEleStat.size === 0) v.baseRawAdd += 10; }); }],
+        ["non_elemental_boost", ()=>{
+            deferredOps2.push(() => {
+                if (v.baseEleStat.size === 0) v.baseRawAdd += 10;
+            });
+        }],
 
         //
         // Gunlance
@@ -491,9 +546,9 @@ function getBaseValues(
         //
 
         ["phial_element", ()=>{
-            if (weapon.category === "switchaxe") {
+            if (isSA(weapon)) {
                 rampSwitchAxeSetPhial("element_phial", null);
-            } else if (weapon.category === "chargeblade") {
+            } else if (isCB(weapon)) {
                 v.cbStats = {phialType: "element_phial"};
             } else {
                 console.warn("Unexpected weapon category.");
@@ -521,28 +576,31 @@ function getBaseValues(
         //
 
         ["kinsect_level_boost", ()=>{
-            function op() {
-                assert(weapon.category === "insectglaive");
-                v.igStats = {kinsectLevel: v.igStats.kinsectLevel + 1};
-            }
-            deferredOps1.push(op); // Defer
+            deferredOps1.push(() => {
+                console.assert(isIG(weapon));
+                if (v.igStats === null) throw "Null value";
+
+                const newKinsectLevel = v.igStats.kinsectLevel + 1;
+                if (!isKinsectLevel(newKinsectLevel)) throw "Invalid value";
+                v.igStats = {kinsectLevel: newKinsectLevel};
+            });
         }],
 
         ["kinsect_level_boost_1", ()=>{
-            assert(weapon.category === "insectglaive");
+            console.assert(isIG(weapon));
             v.igStats = {kinsectLevel: 4};
         }],
         ["kinsect_level_boost_2", ()=>{
-            assert(weapon.category === "insectglaive");
+            console.assert(isIG(weapon));
             v.igStats = {kinsectLevel: 5};
         }],
         ["kinsect_level_boost_3", ()=>{
-            assert(weapon.category === "insectglaive");
+            console.assert(isIG(weapon));
             v.igStats = {kinsectLevel: 6};
             v.baseRawAdd += -10;
         }],
         ["kinsect_level_boost_4", ()=>{
-            assert(weapon.category === "insectglaive");
+            console.assert(isIG(weapon));
             v.igStats = {kinsectLevel: 7};
             v.baseRawAdd += -20;
         }],
@@ -619,30 +677,36 @@ function getBaseValues(
         // Rampage Bowguns, Slot 1
         ["recoil_down_boost", ()=>{
             console.assert(isRampageWeapon);
+            if (v.bowgunStats === null) throw "Null value";
             v.bowgunStats.recoil -= 1;
         }],
         ["reload_speed_boost", ()=>{
             console.assert(isRampageWeapon);
+            if (v.bowgunStats === null) throw "Null value";
             v.bowgunStats.reload += 1;
         }],
         ["steadiness_boost", ()=>{
             console.assert(isRampageWeapon);
+            if (v.bowgunStats === null) throw "Null value";
             v.bowgunStats.deviation.severity -= 1;
         }],
 
         // Rampage Bowguns, Slot 2
         ["recoil_down_surge", ()=>{
             console.assert(isRampageWeapon);
+            if (v.bowgunStats === null) throw "Null value";
             v.bowgunStats.recoil -= 2;
             v.bowgunStats.deviation.severity += 1;
         }],
         ["reload_speed_surge", ()=>{
             console.assert(isRampageWeapon);
+            if (v.bowgunStats === null) throw "Null value";
             v.bowgunStats.reload += 2;
             v.bowgunStats.recoil += 1;
         }],
         ["steadiness_surge", ()=>{
             console.assert(isRampageWeapon);
+            if (v.bowgunStats === null) throw "Null value";
             v.bowgunStats.deviation.severity -= 2;
             v.bowgunStats.reload -= 1;
         }],
@@ -956,7 +1020,7 @@ function getBaseValues(
     // Process all rampage skills in the build
     for (const rampSkillRO of build.getRampSkills(db)) {
         const op = rampSkillOps.get(rampSkillRO.id);
-        if (op !== undefined) op(rampSkillRO);
+        if (op !== undefined) op();
     }
     // Process deferred operations
     for (const op of deferredOps1) op();
@@ -965,18 +1029,21 @@ function getBaseValues(
     // Now, we process weapon special selections
     const specialSelection: null | WeaponSpecialSelection = build.getWeaponSpecialSelectionRO();
     if (specialSelection !== null) {
-        if (specialSelection.type === "lightbowgunmod" && weapon.category === "lightbowgun") {
+        if (specialSelection.type === "lightbowgunmod" && isLBG(weapon)) {
             if (specialSelection.id === 1) { // Silencer
-                v.bowgunStats.recoil = Math.max(0, v.bowgunStats.recoil - 1);
+                if (v.bowgunStats === null) throw "Null value";
+                const newRecoil = Math.max(0, v.bowgunStats.recoil - 1);
+                if (!isBowgunRecoil(newRecoil)) throw "Invalid recoil value";
+                v.bowgunStats.recoil = newRecoil;
             } else if (specialSelection.id === 2) { // Long Barrel
                 v.baseRawMul *= 1.05;
             }
-        } else if (specialSelection.type === "heavybowgunmod" && weapon.category === "heavybowgun") {
+        } else if (specialSelection.type === "heavybowgunmod" && isHBG(weapon)) {
             if (specialSelection.id === 4) { // Power Barrel
                 v.baseRawMul *= 1.125;
             }
         } else {
-            console.error(`Special selection ${weaponSpecialSelection.name} not possible with ${weapon.category}.`);
+            throw `Special selection ${specialSelection.name} not possible with ${weapon.category}.`;
         }
     }
 
