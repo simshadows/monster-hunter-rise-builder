@@ -81,6 +81,16 @@ export interface EleStatObj {
     blast:     number;
 }
 
+// TODO: We should unify this with other types.
+// TODO: Mapping type?
+export interface EleDefStatObj {
+    fire:    number;
+    water:   number;
+    thunder: number;
+    ice:     number;
+    dragon:  number;
+}
+
 // All fields are publicly mutable, with convenience methods provided.
 // TODO: Consider refactoring this into a simple TypeScript interface.
 export class BaseStatistics {
@@ -146,5 +156,35 @@ export class BaseStatistics {
             throw "Unhandled weapon type.";
         }
     }
+}
+
+export interface SkillContributions {
+    rawAdd:          number;
+    rawMul:          number;
+    rawPostTruncMul: number;
+    
+    affinityAdd: number;
+
+    eleStatAdd: EleStatObj;
+    eleStatMul: EleStatObj;
+
+    rawBlunderDamage:        number;
+    rawCriticalDamage:       number;
+    elementalBlunderDamage:  number;
+    elementalCriticalDamage: number;
+
+    ammoUpLevel:        number;
+    bludgeonerLevel:    number;
+    bowChargePlusLevel: number;
+    handicraftLevel:    number;
+    mastersTouchLevel:  number; // Affects sharpness bar hits. Calculate later.
+    razorSharpLevel:    number; // Affects sharpness bar hits. Calculate later.
+    recoilDownLevel:    number;
+    reloadSpeedLevel:   number;
+    steadinessLevel:    number;
+
+    defenseAdd: number;
+    defenseMul: number;
+    eleResAdd:  EleDefStatObj;
 }
 

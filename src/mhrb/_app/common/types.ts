@@ -117,6 +117,7 @@ export interface Skill {
 // Common to represent levels of skills as an array of 2-tuples like this.
 export type SkillLevels = Readonly<[Skill, number]>[];
 
+
 /*** Rampage Skills ***/
 
 export interface RampageSkill {

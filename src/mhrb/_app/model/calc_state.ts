@@ -681,9 +681,9 @@ class CalcState {
     // Use 'get*State' for non-boolean state.
     // Use '*IsActive' for boolean state.
 
-    getRampState(stateLabel: string): number {
+    private _getState(groupLabel: string, stateLabel: string): number {
         const numPossibleStates = statesSpecification
-            .get("Rampage Skill States")
+            .get(groupLabel)
             ?.get(stateLabel)
             ?.presentations
             .length;
@@ -691,7 +691,7 @@ class CalcState {
         console.assert((numPossibleStates % 1 === 0) && (numPossibleStates >= 2));
 
         const stateValue = this._state
-            .get("Rampage Skill States")
+            .get(groupLabel)
             ?.get(stateLabel);
         if (stateValue === undefined) throw "Undefined value";
         console.assert(
@@ -701,9 +701,9 @@ class CalcState {
         );
         return stateValue;
     }
-    rampIsActive(stateLabel: string): boolean {
+    private _stateIsActive(groupLabel: string, stateLabel: string): boolean {
         const numPossibleStates = statesSpecification
-            .get("Rampage Skill States")
+            .get(groupLabel)
             ?.get(stateLabel)
             ?.presentations
             .length;
@@ -711,11 +711,25 @@ class CalcState {
         console.assert(numPossibleStates === 2);
 
         const stateValue = this._state
-            .get("Rampage Skill States")
+            .get(groupLabel)
             ?.get(stateLabel);
         if (stateValue === undefined) throw "Undefined value";
         console.assert((stateValue === 0) || (stateValue === 1));
         return (stateValue === 1);
+    }
+
+    getRampState(stateLabel: string): number {
+        return this._getState("Rampage Skill States", stateLabel);
+    }
+    rampIsActive(stateLabel: string): boolean {
+        return this._stateIsActive("Rampage Skill States", stateLabel);
+    }
+
+    getSkillState(stateLabel: string): number {
+        return this._getState("Skill States", stateLabel);
+    }
+    skillIsActive(stateLabel: string): boolean {
+        return this._stateIsActive("Skill States", stateLabel);
     }
 
     //_getIndividualSpec(groupName, stateName) {

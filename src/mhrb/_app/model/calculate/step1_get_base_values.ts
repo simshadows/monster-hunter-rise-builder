@@ -41,8 +41,13 @@ import {CalcState} from "../calc_state";
 import {BaseStatistics} from "./_common";
 
 
-// NOTE: Bowgun stats will be returned unclamped.
-//       The caller will need to clamp the values before returning!
+// No operation
+// (All skills that intentionally do not have any operations attached to them will use this function.)
+function nop() {
+    // Do nothing
+}
+
+
 function getBaseValues(
     db:        {"readonly": MHRDatabase},
     build:     Build,
@@ -230,12 +235,6 @@ function getBaseValues(
             if (coatingID === "blast_coating") throw "Blast coating cannot be enhanced";
             v.bowStats.compatibleCoatings[coatingID] = 2;
         }
-    }
-
-    // No operation
-    // (All skills that intentionally do not have any operations attached to them will use this function.)
-    function nop() {
-        // Do nothing
     }
 
     const rampSkillOps = new Map([
