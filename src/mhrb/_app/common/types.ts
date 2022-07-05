@@ -60,6 +60,7 @@ export type SharpnessMutable = [
     number, // green
     number, // blue
     number, // white
+    number, // purple
 ]
 export type Sharpness = Readonly<SharpnessMutable>;
 

@@ -158,8 +158,8 @@ const __generated_chargeblade__1a: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [50, 90, 60, 0, 0, 0],
-    maxSharpness:  [50, 90, 100, 10, 0, 0],
+    baseSharpness: [50, 90, 60, 0, 0, 0, 0],
+    maxSharpness:  [50, 90, 100, 10, 0, 0, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -194,8 +194,8 @@ const __generated_chargeblade__1b: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [60, 70, 70, 0, 0, 0],
-    maxSharpness:  [60, 70, 110, 10, 0, 0],
+    baseSharpness: [60, 70, 70, 0, 0, 0, 0],
+    maxSharpness:  [60, 70, 110, 10, 0, 0, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -231,8 +231,8 @@ const __generated_chargeblade__1c: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [60, 70, 90, 30, 0, 0],
-    maxSharpness:  [60, 70, 90, 80, 0, 0],
+    baseSharpness: [60, 70, 90, 30, 0, 0, 0],
+    maxSharpness:  [60, 70, 90, 80, 0, 0, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -269,8 +269,8 @@ const __generated_chargeblade__1d: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [50, 70, 80, 30, 20, 0],
-    maxSharpness:  [50, 70, 80, 30, 70, 0],
+    baseSharpness: [50, 70, 80, 30, 20, 0, 0],
+    maxSharpness:  [50, 70, 80, 30, 70, 0, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -309,8 +309,8 @@ const __generated_chargeblade__1e: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [60, 80, 90, 40, 30, 0],
-    maxSharpness:  [60, 80, 90, 40, 70, 10],
+    baseSharpness: [60, 80, 90, 40, 30, 0, 0],
+    maxSharpness:  [60, 80, 90, 40, 70, 10, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -350,8 +350,8 @@ const __generated_chargeblade__1f: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [40, 90, 60, 60, 50, 0],
-    maxSharpness:  [40, 90, 60, 60, 80, 20],
+    baseSharpness: [40, 90, 60, 60, 50, 0, 0],
+    maxSharpness:  [40, 90, 60, 60, 80, 20, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -389,8 +389,8 @@ const __generated_chargeblade__2a: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [20, 90, 90, 50, 0, 0],
-    maxSharpness:  [20, 90, 90, 100, 0, 0],
+    baseSharpness: [20, 90, 90, 50, 0, 0, 0],
+    maxSharpness:  [20, 90, 90, 100, 0, 0, 0],
 
     chargebladeStats: {
         phialType: "element_phial",
@@ -429,8 +429,8 @@ const __generated_chargeblade__2b: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [20, 100, 60, 110, 10, 0],
-    maxSharpness:  [20, 100, 60, 110, 60, 0],
+    baseSharpness: [20, 100, 60, 110, 10, 0, 0],
+    maxSharpness:  [20, 100, 60, 110, 60, 0, 0],
 
     chargebladeStats: {
         phialType: "element_phial",
@@ -470,8 +470,8 @@ const __generated_chargeblade__2c: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [10, 110, 40, 120, 20, 0],
-    maxSharpness:  [10, 110, 40, 120, 50, 20],
+    baseSharpness: [10, 110, 40, 120, 20, 0, 0],
+    maxSharpness:  [10, 110, 40, 120, 50, 20, 0],
 
     chargebladeStats: {
         phialType: "element_phial",
@@ -509,8 +509,8 @@ const __generated_chargeblade__3a: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [50, 60, 70, 70, 0, 0],
-    maxSharpness:  [50, 60, 70, 100, 20, 0],
+    baseSharpness: [50, 60, 70, 70, 0, 0, 0],
+    maxSharpness:  [50, 60, 70, 100, 20, 0, 0],
 
     chargebladeStats: {
         phialType: "element_phial",
@@ -548,8 +548,8 @@ const __generated_chargeblade__3b: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [40, 50, 80, 70, 10, 0],
-    maxSharpness:  [40, 50, 80, 70, 50, 10],
+    baseSharpness: [40, 50, 80, 70, 10, 0, 0],
+    maxSharpness:  [40, 50, 80, 70, 50, 10, 0],
 
     chargebladeStats: {
         phialType: "element_phial",
@@ -588,8 +588,8 @@ const __generated_chargeblade__3c: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [40, 50, 80, 90, 40, 0],
-    maxSharpness:  [40, 50, 80, 90, 70, 20],
+    baseSharpness: [40, 50, 80, 90, 40, 0, 0],
+    maxSharpness:  [40, 50, 80, 90, 70, 20, 0],
 
     chargebladeStats: {
         phialType: "element_phial",
@@ -629,8 +629,8 @@ const __generated_chargeblade__3d: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [50, 70, 80, 90, 60, 0],
-    maxSharpness:  [50, 70, 80, 90, 70, 40],
+    baseSharpness: [50, 70, 80, 90, 60, 0, 0],
+    maxSharpness:  [50, 70, 80, 90, 70, 40, 0],
 
     chargebladeStats: {
         phialType: "element_phial",
@@ -670,8 +670,8 @@ const __generated_chargeblade__4a: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [70, 40, 90, 50, 0, 0],
-    maxSharpness:  [70, 40, 90, 100, 0, 0],
+    baseSharpness: [70, 40, 90, 50, 0, 0, 0],
+    maxSharpness:  [70, 40, 90, 100, 0, 0, 0],
 
     chargebladeStats: {
         phialType: "element_phial",
@@ -711,8 +711,8 @@ const __generated_chargeblade__4b: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [70, 40, 70, 90, 30, 0],
-    maxSharpness:  [70, 40, 70, 90, 80, 0],
+    baseSharpness: [70, 40, 70, 90, 30, 0, 0],
+    maxSharpness:  [70, 40, 70, 90, 80, 0, 0],
 
     chargebladeStats: {
         phialType: "element_phial",
@@ -753,8 +753,8 @@ const __generated_chargeblade__4c: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [70, 40, 100, 100, 40, 0],
-    maxSharpness:  [70, 40, 100, 100, 50, 40],
+    baseSharpness: [70, 40, 100, 100, 40, 0, 0],
+    maxSharpness:  [70, 40, 100, 100, 50, 40, 0],
 
     chargebladeStats: {
         phialType: "element_phial",
@@ -791,8 +791,8 @@ const __generated_chargeblade__5a: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [30, 80, 70, 20, 0, 0],
-    maxSharpness:  [30, 80, 70, 70, 0, 0],
+    baseSharpness: [30, 80, 70, 20, 0, 0, 0],
+    maxSharpness:  [30, 80, 70, 70, 0, 0, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -830,8 +830,8 @@ const __generated_chargeblade__5b: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [40, 90, 110, 60, 0, 0],
-    maxSharpness:  [40, 90, 110, 100, 10, 0],
+    baseSharpness: [40, 90, 110, 60, 0, 0, 0],
+    maxSharpness:  [40, 90, 110, 100, 10, 0, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -870,8 +870,8 @@ const __generated_chargeblade__5c: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [40, 90, 110, 110, 0, 0],
-    maxSharpness:  [40, 90, 110, 110, 50, 0],
+    baseSharpness: [40, 90, 110, 110, 0, 0, 0],
+    maxSharpness:  [40, 90, 110, 110, 50, 0, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -909,8 +909,8 @@ const __generated_chargeblade__6a: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [30, 150, 40, 30, 0, 0],
-    maxSharpness:  [30, 150, 40, 80, 0, 0],
+    baseSharpness: [30, 150, 40, 30, 0, 0, 0],
+    maxSharpness:  [30, 150, 40, 80, 0, 0, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -949,8 +949,8 @@ const __generated_chargeblade__6b: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [20, 140, 40, 50, 0, 0],
-    maxSharpness:  [20, 140, 40, 80, 20, 0],
+    baseSharpness: [20, 140, 40, 50, 0, 0, 0],
+    maxSharpness:  [20, 140, 40, 80, 20, 0, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -991,8 +991,8 @@ const __generated_chargeblade__6c: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [10, 140, 50, 80, 20, 0],
-    maxSharpness:  [10, 140, 50, 80, 50, 20],
+    baseSharpness: [10, 140, 50, 80, 20, 0, 0],
+    maxSharpness:  [10, 140, 50, 80, 50, 20, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -1034,8 +1034,8 @@ const __generated_chargeblade__6d: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [10, 140, 40, 80, 30, 0],
-    maxSharpness:  [10, 140, 40, 80, 50, 30],
+    baseSharpness: [10, 140, 40, 80, 30, 0, 0],
+    maxSharpness:  [10, 140, 40, 80, 50, 30, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -1076,8 +1076,8 @@ const __generated_chargeblade__7a: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [90, 30, 90, 40, 0, 0],
-    maxSharpness:  [90, 30, 90, 80, 10, 0],
+    baseSharpness: [90, 30, 90, 40, 0, 0, 0],
+    maxSharpness:  [90, 30, 90, 80, 10, 0, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -1119,8 +1119,8 @@ const __generated_chargeblade__7b: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [90, 40, 110, 40, 20, 0],
-    maxSharpness:  [90, 40, 110, 40, 70, 0],
+    baseSharpness: [90, 40, 110, 40, 20, 0, 0],
+    maxSharpness:  [90, 40, 110, 40, 70, 0, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -1163,8 +1163,8 @@ const __generated_chargeblade__7c: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [90, 40, 100, 40, 30, 0],
-    maxSharpness:  [90, 40, 100, 40, 70, 10],
+    baseSharpness: [90, 40, 100, 40, 30, 0, 0],
+    maxSharpness:  [90, 40, 100, 40, 70, 10, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -1199,8 +1199,8 @@ const __generated_chargeblade__8a: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [80, 70, 50, 0, 0, 0],
-    maxSharpness:  [80, 70, 90, 10, 0, 0],
+    baseSharpness: [80, 70, 50, 0, 0, 0, 0],
+    maxSharpness:  [80, 70, 90, 10, 0, 0, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -1235,8 +1235,8 @@ const __generated_chargeblade__8b: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [70, 60, 70, 0, 0, 0],
-    maxSharpness:  [70, 60, 110, 10, 0, 0],
+    baseSharpness: [70, 60, 70, 0, 0, 0, 0],
+    maxSharpness:  [70, 60, 110, 10, 0, 0, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -1272,8 +1272,8 @@ const __generated_chargeblade__8c: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [80, 80, 60, 30, 0, 0],
-    maxSharpness:  [80, 80, 60, 80, 0, 0],
+    baseSharpness: [80, 80, 60, 30, 0, 0, 0],
+    maxSharpness:  [80, 80, 60, 80, 0, 0, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -1310,8 +1310,8 @@ const __generated_chargeblade__8d: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [90, 70, 40, 50, 0, 0],
-    maxSharpness:  [90, 70, 40, 80, 20, 0],
+    baseSharpness: [90, 70, 40, 50, 0, 0, 0],
+    maxSharpness:  [90, 70, 40, 80, 20, 0, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -1349,8 +1349,8 @@ const __generated_chargeblade__8e: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [90, 90, 50, 50, 20, 0],
-    maxSharpness:  [90, 90, 50, 50, 50, 20],
+    baseSharpness: [90, 90, 50, 50, 20, 0, 0],
+    maxSharpness:  [90, 90, 50, 50, 50, 20, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -1389,8 +1389,8 @@ const __generated_chargeblade__8f: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [90, 90, 40, 50, 30, 0],
-    maxSharpness:  [90, 90, 40, 50, 50, 30],
+    baseSharpness: [90, 90, 40, 50, 30, 0, 0],
+    maxSharpness:  [90, 90, 40, 50, 50, 30, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -1429,8 +1429,8 @@ const __generated_chargeblade__9a: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [110, 70, 60, 50, 10, 0],
-    maxSharpness:  [110, 70, 60, 50, 60, 0],
+    baseSharpness: [110, 70, 60, 50, 10, 0, 0],
+    maxSharpness:  [110, 70, 60, 50, 60, 0, 0],
 
     chargebladeStats: {
         phialType: "element_phial",
@@ -1469,8 +1469,8 @@ const __generated_chargeblade__9b: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [100, 70, 50, 50, 30, 0],
-    maxSharpness:  [100, 70, 50, 50, 70, 10],
+    baseSharpness: [100, 70, 50, 50, 30, 0, 0],
+    maxSharpness:  [100, 70, 50, 50, 70, 10, 0],
 
     chargebladeStats: {
         phialType: "element_phial",
@@ -1510,8 +1510,8 @@ const __generated_chargeblade__9c: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [100, 80, 70, 60, 40, 0],
-    maxSharpness:  [100, 80, 70, 60, 70, 20],
+    baseSharpness: [100, 80, 70, 60, 40, 0, 0],
+    maxSharpness:  [100, 80, 70, 60, 70, 20, 0],
 
     chargebladeStats: {
         phialType: "element_phial",
@@ -1552,8 +1552,8 @@ const __generated_chargeblade__10a: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [200, 40, 40, 30, 40, 0],
-    maxSharpness:  [200, 40, 40, 30, 40, 50],
+    baseSharpness: [200, 40, 40, 30, 40, 0, 0],
+    maxSharpness:  [200, 40, 40, 30, 40, 50, 0],
 
     chargebladeStats: {
         phialType: "element_phial",
@@ -1595,8 +1595,8 @@ const __generated_chargeblade__10b: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [200, 40, 40, 30, 30, 10],
-    maxSharpness:  [200, 40, 40, 30, 30, 60],
+    baseSharpness: [200, 40, 40, 30, 30, 10, 0],
+    maxSharpness:  [200, 40, 40, 30, 30, 60, 0],
 
     chargebladeStats: {
         phialType: "element_phial",
@@ -1639,8 +1639,8 @@ const __generated_chargeblade__10c: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [200, 30, 40, 30, 30, 20],
-    maxSharpness:  [200, 30, 40, 30, 30, 70],
+    baseSharpness: [200, 30, 40, 30, 30, 20, 0],
+    maxSharpness:  [200, 30, 40, 30, 30, 70, 0],
 
     chargebladeStats: {
         phialType: "element_phial",
@@ -1678,8 +1678,8 @@ const __generated_chargeblade__11a: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [70, 30, 100, 90, 10, 0],
-    maxSharpness:  [70, 30, 100, 90, 60, 0],
+    baseSharpness: [70, 30, 100, 90, 10, 0, 0],
+    maxSharpness:  [70, 30, 100, 90, 60, 0, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -1718,8 +1718,8 @@ const __generated_chargeblade__11b: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [50, 40, 130, 100, 30, 0],
-    maxSharpness:  [50, 40, 130, 100, 60, 20],
+    baseSharpness: [50, 40, 130, 100, 30, 0, 0],
+    maxSharpness:  [50, 40, 130, 100, 60, 20, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -1759,8 +1759,8 @@ const __generated_chargeblade__11c: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [50, 40, 120, 120, 50, 20],
-    maxSharpness:  [50, 40, 120, 120, 50, 20],
+    baseSharpness: [50, 40, 120, 120, 50, 20, 0],
+    maxSharpness:  [50, 40, 120, 120, 50, 20, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -1797,8 +1797,8 @@ const __generated_chargeblade__12a: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [110, 40, 30, 70, 0, 0],
-    maxSharpness:  [110, 40, 30, 90, 30, 0],
+    baseSharpness: [110, 40, 30, 70, 0, 0, 0],
+    maxSharpness:  [110, 40, 30, 90, 30, 0, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -1837,8 +1837,8 @@ const __generated_chargeblade__12b: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [110, 90, 70, 50, 30, 0],
-    maxSharpness:  [110, 90, 70, 50, 60, 20],
+    baseSharpness: [110, 90, 70, 50, 30, 0, 0],
+    maxSharpness:  [110, 90, 70, 50, 60, 20, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -1878,8 +1878,8 @@ const __generated_chargeblade__12c: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [110, 70, 70, 50, 50, 0],
-    maxSharpness:  [110, 70, 70, 50, 50, 50],
+    baseSharpness: [110, 70, 70, 50, 50, 0, 0],
+    maxSharpness:  [110, 70, 70, 50, 50, 50, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -1915,8 +1915,8 @@ const __generated_chargeblade__13a: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [130, 30, 50, 40, 0, 0],
-    maxSharpness:  [130, 30, 50, 90, 0, 0],
+    baseSharpness: [130, 30, 50, 40, 0, 0, 0],
+    maxSharpness:  [130, 30, 50, 90, 0, 0, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -1953,8 +1953,8 @@ const __generated_chargeblade__13b: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [110, 40, 50, 50, 0, 0],
-    maxSharpness:  [110, 40, 50, 50, 50, 0],
+    baseSharpness: [110, 40, 50, 50, 0, 0, 0],
+    maxSharpness:  [110, 40, 50, 50, 50, 0, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -1994,8 +1994,8 @@ const __generated_chargeblade__13c: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [120, 80, 30, 30, 40, 0],
-    maxSharpness:  [120, 80, 30, 30, 60, 30],
+    baseSharpness: [120, 80, 30, 30, 40, 0, 0],
+    maxSharpness:  [120, 80, 30, 30, 60, 30, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -2032,8 +2032,8 @@ const __generated_chargeblade__14a: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [70, 40, 50, 40, 0, 0],
-    maxSharpness:  [70, 40, 50, 90, 0, 0],
+    baseSharpness: [70, 40, 50, 40, 0, 0, 0],
+    maxSharpness:  [70, 40, 50, 90, 0, 0, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -2071,8 +2071,8 @@ const __generated_chargeblade__14b: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [70, 40, 40, 50, 0, 0],
-    maxSharpness:  [70, 40, 40, 50, 50, 0],
+    baseSharpness: [70, 40, 40, 50, 0, 0, 0],
+    maxSharpness:  [70, 40, 40, 50, 50, 0, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -2111,8 +2111,8 @@ const __generated_chargeblade__14c: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [100, 50, 50, 50, 50, 0],
-    maxSharpness:  [100, 50, 50, 50, 50, 50],
+    baseSharpness: [100, 50, 50, 50, 50, 0, 0],
+    maxSharpness:  [100, 50, 50, 50, 50, 50, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -2152,8 +2152,8 @@ const __generated_chargeblade__15a: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [50, 70, 80, 100, 0, 0],
-    maxSharpness:  [50, 70, 80, 100, 50, 0],
+    baseSharpness: [50, 70, 80, 100, 0, 0, 0],
+    maxSharpness:  [50, 70, 80, 100, 50, 0, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -2194,8 +2194,8 @@ const __generated_chargeblade__15b: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [70, 70, 40, 120, 50, 0],
-    maxSharpness:  [70, 70, 40, 120, 80, 20],
+    baseSharpness: [70, 70, 40, 120, 50, 0, 0],
+    maxSharpness:  [70, 70, 40, 120, 80, 20, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -2237,8 +2237,8 @@ const __generated_chargeblade__15c: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [70, 40, 100, 90, 80, 20],
-    maxSharpness:  [70, 40, 100, 90, 80, 20],
+    baseSharpness: [70, 40, 100, 90, 80, 20, 0],
+    maxSharpness:  [70, 40, 100, 90, 80, 20, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -2273,8 +2273,8 @@ const __generated_chargeblade__16a: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [70, 90, 40, 0, 0, 0],
-    maxSharpness:  [70, 90, 90, 0, 0, 0],
+    baseSharpness: [70, 90, 40, 0, 0, 0, 0],
+    maxSharpness:  [70, 90, 90, 0, 0, 0, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -2309,8 +2309,8 @@ const __generated_chargeblade__16b: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [80, 70, 50, 0, 0, 0],
-    maxSharpness:  [80, 70, 100, 0, 0, 0],
+    baseSharpness: [80, 70, 50, 0, 0, 0, 0],
+    maxSharpness:  [80, 70, 100, 0, 0, 0, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -2346,8 +2346,8 @@ const __generated_chargeblade__16c: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [90, 50, 60, 0, 0, 0],
-    maxSharpness:  [90, 50, 110, 0, 0, 0],
+    baseSharpness: [90, 50, 60, 0, 0, 0, 0],
+    maxSharpness:  [90, 50, 110, 0, 0, 0, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -2384,8 +2384,8 @@ const __generated_chargeblade__16d: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [70, 90, 70, 20, 0, 0],
-    maxSharpness:  [70, 90, 70, 70, 0, 0],
+    baseSharpness: [70, 90, 70, 20, 0, 0, 0],
+    maxSharpness:  [70, 90, 70, 70, 0, 0, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -2423,8 +2423,8 @@ const __generated_chargeblade__16e: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [80, 70, 60, 40, 0, 0],
-    maxSharpness:  [80, 70, 60, 80, 10, 0],
+    baseSharpness: [80, 70, 60, 40, 0, 0, 0],
+    maxSharpness:  [80, 70, 60, 80, 10, 0, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -2463,8 +2463,8 @@ const __generated_chargeblade__16f: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [80, 70, 80, 70, 0, 0],
-    maxSharpness:  [80, 70, 80, 100, 20, 0],
+    baseSharpness: [80, 70, 80, 70, 0, 0, 0],
+    maxSharpness:  [80, 70, 80, 100, 20, 0, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -2504,8 +2504,8 @@ const __generated_chargeblade__17a: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [90, 90, 50, 50, 20, 0],
-    maxSharpness:  [90, 90, 50, 50, 70, 0],
+    baseSharpness: [90, 90, 50, 50, 20, 0, 0],
+    maxSharpness:  [90, 90, 50, 50, 70, 0, 0],
 
     chargebladeStats: {
         phialType: "element_phial",
@@ -2546,8 +2546,8 @@ const __generated_chargeblade__17b: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [110, 110, 50, 50, 30, 0],
-    maxSharpness:  [110, 110, 50, 50, 70, 10],
+    baseSharpness: [110, 110, 50, 50, 30, 0, 0],
+    maxSharpness:  [110, 110, 50, 50, 70, 10, 0],
 
     chargebladeStats: {
         phialType: "element_phial",
@@ -2588,8 +2588,8 @@ const __generated_chargeblade__17c: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [120, 120, 30, 30, 50, 0],
-    maxSharpness:  [120, 120, 30, 30, 80, 20],
+    baseSharpness: [120, 120, 30, 30, 50, 0, 0],
+    maxSharpness:  [120, 120, 30, 30, 80, 20, 0],
 
     chargebladeStats: {
         phialType: "element_phial",
@@ -2627,8 +2627,8 @@ const __generated_chargeblade__18a: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [30, 100, 80, 40, 0, 0],
-    maxSharpness:  [30, 100, 80, 80, 10, 0],
+    baseSharpness: [30, 100, 80, 40, 0, 0, 0],
+    maxSharpness:  [30, 100, 80, 80, 10, 0, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -2666,8 +2666,8 @@ const __generated_chargeblade__18b: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [90, 70, 110, 60, 20, 0],
-    maxSharpness:  [90, 70, 110, 60, 70, 0],
+    baseSharpness: [90, 70, 110, 60, 20, 0, 0],
+    maxSharpness:  [90, 70, 110, 60, 70, 0, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -2706,8 +2706,8 @@ const __generated_chargeblade__18c: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [90, 40, 130, 60, 30, 0],
-    maxSharpness:  [90, 40, 130, 60, 50, 30],
+    baseSharpness: [90, 40, 130, 60, 30, 0, 0],
+    maxSharpness:  [90, 40, 130, 60, 50, 30, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -2746,8 +2746,8 @@ const __generated_chargeblade__19a: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [80, 70, 70, 30, 0, 0],
-    maxSharpness:  [80, 70, 70, 80, 0, 0],
+    baseSharpness: [80, 70, 70, 30, 0, 0, 0],
+    maxSharpness:  [80, 70, 70, 80, 0, 0, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -2786,8 +2786,8 @@ const __generated_chargeblade__19b: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [60, 50, 90, 50, 0, 0],
-    maxSharpness:  [60, 50, 90, 80, 20, 0],
+    baseSharpness: [60, 50, 90, 50, 0, 0, 0],
+    maxSharpness:  [60, 50, 90, 80, 20, 0, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -2827,8 +2827,8 @@ const __generated_chargeblade__19c: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [60, 50, 150, 90, 0, 0],
-    maxSharpness:  [60, 50, 150, 100, 40, 0],
+    baseSharpness: [60, 50, 150, 90, 0, 0, 0],
+    maxSharpness:  [60, 50, 150, 100, 40, 0, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -2865,8 +2865,8 @@ const __generated_chargeblade__20a: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [100, 30, 40, 30, 0, 0],
-    maxSharpness:  [100, 30, 40, 80, 0, 0],
+    baseSharpness: [100, 30, 40, 30, 0, 0, 0],
+    maxSharpness:  [100, 30, 40, 80, 0, 0, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -2904,8 +2904,8 @@ const __generated_chargeblade__20b: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [150, 70, 40, 40, 0, 0],
-    maxSharpness:  [150, 70, 40, 40, 50, 0],
+    baseSharpness: [150, 70, 40, 40, 0, 0, 0],
+    maxSharpness:  [150, 70, 40, 40, 50, 0, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -2944,8 +2944,8 @@ const __generated_chargeblade__20c: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [170, 70, 40, 60, 10, 0],
-    maxSharpness:  [170, 70, 40, 60, 50, 10],
+    baseSharpness: [170, 70, 40, 60, 10, 0, 0],
+    maxSharpness:  [170, 70, 40, 60, 50, 10, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -2985,8 +2985,8 @@ const __generated_chargeblade__21a: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [150, 70, 40, 40, 0, 0],
-    maxSharpness:  [150, 70, 40, 40, 50, 0],
+    baseSharpness: [150, 70, 40, 40, 0, 0, 0],
+    maxSharpness:  [150, 70, 40, 40, 50, 0, 0],
 
     chargebladeStats: {
         phialType: "element_phial",
@@ -3026,8 +3026,8 @@ const __generated_chargeblade__21b: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [160, 50, 40, 50, 0, 0],
-    maxSharpness:  [160, 50, 40, 50, 50, 0],
+    baseSharpness: [160, 50, 40, 50, 0, 0, 0],
+    maxSharpness:  [160, 50, 40, 50, 50, 0, 0],
 
     chargebladeStats: {
         phialType: "element_phial",
@@ -3069,8 +3069,8 @@ const __generated_chargeblade__21c: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [170, 30, 40, 60, 0, 0],
-    maxSharpness:  [170, 30, 40, 60, 40, 10],
+    baseSharpness: [170, 30, 40, 60, 0, 0, 0],
+    maxSharpness:  [170, 30, 40, 60, 40, 10, 0],
 
     chargebladeStats: {
         phialType: "element_phial",
@@ -3106,8 +3106,8 @@ const __generated_chargeblade__22a: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [50, 60, 140, 0, 0, 0],
-    maxSharpness:  [50, 60, 140, 50, 0, 0],
+    baseSharpness: [50, 60, 140, 0, 0, 0, 0],
+    maxSharpness:  [50, 60, 140, 50, 0, 0, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -3144,8 +3144,8 @@ const __generated_chargeblade__22b: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [60, 60, 160, 20, 0, 0],
-    maxSharpness:  [60, 60, 160, 60, 10, 0],
+    baseSharpness: [60, 60, 160, 20, 0, 0, 0],
+    maxSharpness:  [60, 60, 160, 60, 10, 0, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -3183,8 +3183,8 @@ const __generated_chargeblade__22c: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [60, 60, 160, 70, 0, 0],
-    maxSharpness:  [60, 60, 160, 70, 30, 20],
+    baseSharpness: [60, 60, 160, 70, 0, 0, 0],
+    maxSharpness:  [60, 60, 160, 70, 30, 20, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -3223,8 +3223,8 @@ const __generated_chargeblade__23a: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [50, 160, 30, 100, 10, 0],
-    maxSharpness:  [50, 160, 30, 100, 50, 10],
+    baseSharpness: [50, 160, 30, 100, 10, 0, 0],
+    maxSharpness:  [50, 160, 30, 100, 50, 10, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -3264,8 +3264,8 @@ const __generated_chargeblade__23b: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [50, 160, 20, 100, 20, 0],
-    maxSharpness:  [50, 160, 20, 100, 60, 10],
+    baseSharpness: [50, 160, 20, 100, 20, 0, 0],
+    maxSharpness:  [50, 160, 20, 100, 60, 10, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -3307,8 +3307,8 @@ const __generated_chargeblade__23c: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [50, 160, 10, 100, 30, 0],
-    maxSharpness:  [50, 160, 10, 100, 50, 30],
+    baseSharpness: [50, 160, 10, 100, 30, 0, 0],
+    maxSharpness:  [50, 160, 10, 100, 50, 30, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -3346,8 +3346,8 @@ const __generated_chargeblade__24a: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [100, 40, 70, 40, 0, 0],
-    maxSharpness:  [100, 40, 70, 90, 0, 0],
+    baseSharpness: [100, 40, 70, 40, 0, 0, 0],
+    maxSharpness:  [100, 40, 70, 90, 0, 0, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -3386,8 +3386,8 @@ const __generated_chargeblade__24b: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [100, 50, 70, 60, 20, 0],
-    maxSharpness:  [100, 50, 70, 60, 70, 0],
+    baseSharpness: [100, 50, 70, 60, 20, 0, 0],
+    maxSharpness:  [100, 50, 70, 60, 70, 0, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -3427,8 +3427,8 @@ const __generated_chargeblade__24c: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [110, 60, 70, 70, 40, 0],
-    maxSharpness:  [110, 60, 70, 70, 90, 0],
+    baseSharpness: [110, 60, 70, 70, 40, 0, 0],
+    maxSharpness:  [110, 60, 70, 70, 90, 0, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -3463,8 +3463,8 @@ const __generated_chargeblade__25a: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [160, 20, 40, 80, 0, 0],
-    maxSharpness:  [160, 20, 40, 110, 20, 0],
+    baseSharpness: [160, 20, 40, 80, 0, 0, 0],
+    maxSharpness:  [160, 20, 40, 110, 20, 0, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -3500,8 +3500,8 @@ const __generated_chargeblade__25b: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [170, 20, 20, 90, 0, 0],
-    maxSharpness:  [170, 20, 20, 110, 30, 0],
+    baseSharpness: [170, 20, 20, 90, 0, 0, 0],
+    maxSharpness:  [170, 20, 20, 110, 30, 0, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -3538,8 +3538,8 @@ const __generated_chargeblade__25c: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [190, 10, 20, 90, 40, 0],
-    maxSharpness:  [190, 10, 20, 90, 60, 30],
+    baseSharpness: [190, 10, 20, 90, 40, 0, 0],
+    maxSharpness:  [190, 10, 20, 90, 60, 30, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -3574,8 +3574,8 @@ const __generated_chargeblade__26a: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [50, 20, 100, 80, 0, 0],
-    maxSharpness:  [50, 20, 100, 120, 10, 0],
+    baseSharpness: [50, 20, 100, 80, 0, 0, 0],
+    maxSharpness:  [50, 20, 100, 120, 10, 0, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -3611,8 +3611,8 @@ const __generated_chargeblade__26b: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [20, 40, 100, 90, 0, 0],
-    maxSharpness:  [20, 40, 100, 110, 30, 0],
+    baseSharpness: [20, 40, 100, 90, 0, 0, 0],
+    maxSharpness:  [20, 40, 100, 110, 30, 0, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -3649,8 +3649,8 @@ const __generated_chargeblade__26c: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [50, 60, 90, 100, 0, 0],
-    maxSharpness:  [50, 60, 90, 100, 40, 10],
+    baseSharpness: [50, 60, 90, 100, 0, 0, 0],
+    maxSharpness:  [50, 60, 90, 100, 40, 10, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -3685,8 +3685,8 @@ const __generated_chargeblade__27a: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [20, 20, 20, 40, 100, 0],
-    maxSharpness:  [20, 20, 20, 40, 150, 0],
+    baseSharpness: [20, 20, 20, 40, 100, 0, 0],
+    maxSharpness:  [20, 20, 20, 40, 150, 0, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -3722,8 +3722,8 @@ const __generated_chargeblade__27b: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [20, 20, 50, 50, 110, 0],
-    maxSharpness:  [20, 20, 50, 50, 150, 10],
+    baseSharpness: [20, 20, 50, 50, 110, 0, 0],
+    maxSharpness:  [20, 20, 50, 50, 150, 10, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -3760,8 +3760,8 @@ const __generated_chargeblade__27c: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [20, 20, 80, 60, 120, 0],
-    maxSharpness:  [20, 20, 80, 60, 150, 20],
+    baseSharpness: [20, 20, 80, 60, 120, 0, 0],
+    maxSharpness:  [20, 20, 80, 60, 150, 20, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -3796,8 +3796,8 @@ const __generated_chargeblade__28a: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [20, 20, 190, 40, 30, 0],
-    maxSharpness:  [20, 20, 190, 40, 50, 30],
+    baseSharpness: [20, 20, 190, 40, 30, 0, 0],
+    maxSharpness:  [20, 20, 190, 40, 50, 30, 0],
 
     chargebladeStats: {
         phialType: "element_phial",
@@ -3833,8 +3833,8 @@ const __generated_chargeblade__28b: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [10, 20, 220, 40, 60, 0],
-    maxSharpness:  [10, 20, 220, 40, 70, 40],
+    baseSharpness: [10, 20, 220, 40, 60, 0, 0],
+    maxSharpness:  [10, 20, 220, 40, 70, 40, 0],
 
     chargebladeStats: {
         phialType: "element_phial",
@@ -3869,8 +3869,8 @@ const __generated_chargeblade__29a: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [70, 40, 100, 90, 50, 0],
-    maxSharpness:  [70, 40, 100, 90, 70, 30],
+    baseSharpness: [70, 40, 100, 90, 50, 0, 0],
+    maxSharpness:  [70, 40, 100, 90, 70, 30, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -3907,8 +3907,8 @@ const __generated_chargeblade__29b: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [80, 100, 70, 40, 50, 10],
-    maxSharpness:  [80, 100, 70, 40, 50, 60],
+    baseSharpness: [80, 100, 70, 40, 50, 10, 0],
+    maxSharpness:  [80, 100, 70, 40, 50, 60, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -3943,8 +3943,8 @@ const __generated_chargeblade__30a: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [150, 20, 70, 80, 30, 0],
-    maxSharpness:  [150, 20, 70, 80, 50, 30],
+    baseSharpness: [150, 20, 70, 80, 30, 0, 0],
+    maxSharpness:  [150, 20, 70, 80, 50, 30, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -3980,8 +3980,8 @@ const __generated_chargeblade__30b: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [160, 40, 30, 80, 40, 0],
-    maxSharpness:  [160, 40, 30, 80, 50, 40],
+    baseSharpness: [160, 40, 30, 80, 40, 0, 0],
+    maxSharpness:  [160, 40, 30, 80, 50, 40, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -4016,8 +4016,8 @@ const __generated_chargeblade__31a: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [40, 80, 110, 70, 50, 0],
-    maxSharpness:  [40, 80, 110, 70, 60, 40],
+    baseSharpness: [40, 80, 110, 70, 50, 0, 0],
+    maxSharpness:  [40, 80, 110, 70, 60, 40, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -4053,8 +4053,8 @@ const __generated_chargeblade__31b: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [40, 80, 110, 60, 60, 0],
-    maxSharpness:  [40, 80, 110, 60, 60, 50],
+    baseSharpness: [40, 80, 110, 60, 60, 0, 0],
+    maxSharpness:  [40, 80, 110, 60, 60, 50, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -4089,8 +4089,8 @@ const __generated_chargeblade__32a: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [180, 0, 0, 0, 0, 70],
-    maxSharpness:  [180, 0, 0, 0, 0, 120],
+    baseSharpness: [180, 0, 0, 0, 0, 70, 0],
+    maxSharpness:  [180, 0, 0, 0, 0, 120, 0],
 
     chargebladeStats: {
         phialType: "element_phial",
@@ -4125,8 +4125,8 @@ const __generated_chargeblade__32b: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [60, 0, 0, 0, 0, 90],
-    maxSharpness:  [60, 0, 0, 0, 0, 140],
+    baseSharpness: [60, 0, 0, 0, 0, 90, 0],
+    maxSharpness:  [60, 0, 0, 0, 0, 140, 0],
 
     chargebladeStats: {
         phialType: "element_phial",
@@ -4161,8 +4161,8 @@ const __generated_chargeblade__33a: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [120, 70, 60, 0, 0, 0],
-    maxSharpness:  [120, 70, 60, 50, 0, 0],
+    baseSharpness: [120, 70, 60, 0, 0, 0, 0],
+    maxSharpness:  [120, 70, 60, 50, 0, 0, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -4199,8 +4199,8 @@ const __generated_chargeblade__33b: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [160, 70, 60, 10, 0, 0],
-    maxSharpness:  [160, 70, 60, 60, 0, 0],
+    baseSharpness: [160, 70, 60, 10, 0, 0, 0],
+    maxSharpness:  [160, 70, 60, 60, 0, 0, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -4239,8 +4239,8 @@ const __generated_chargeblade__33c: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [160, 60, 50, 30, 0, 0],
-    maxSharpness:  [160, 60, 50, 40, 40, 0],
+    baseSharpness: [160, 60, 50, 30, 0, 0, 0],
+    maxSharpness:  [160, 60, 50, 40, 40, 0, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -4275,8 +4275,8 @@ const __generated_chargeblade__34a: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [60, 100, 30, 10, 0, 0],
-    maxSharpness:  [60, 100, 30, 60, 0, 0],
+    baseSharpness: [60, 100, 30, 10, 0, 0, 0],
+    maxSharpness:  [60, 100, 30, 60, 0, 0, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -4312,8 +4312,8 @@ const __generated_chargeblade__34b: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [70, 100, 50, 30, 0, 0],
-    maxSharpness:  [70, 100, 50, 80, 0, 0],
+    baseSharpness: [70, 100, 50, 30, 0, 0, 0],
+    maxSharpness:  [70, 100, 50, 80, 0, 0, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -4351,8 +4351,8 @@ const __generated_chargeblade__34c: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [80, 100, 60, 40, 20, 0],
-    maxSharpness:  [80, 100, 60, 40, 60, 10],
+    baseSharpness: [80, 100, 60, 40, 20, 0, 0],
+    maxSharpness:  [80, 100, 60, 40, 60, 10, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -4387,8 +4387,8 @@ const __generated_chargeblade__35a: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [50, 90, 40, 70, 0, 0],
-    maxSharpness:  [50, 90, 40, 100, 20, 0],
+    baseSharpness: [50, 90, 40, 70, 0, 0, 0],
+    maxSharpness:  [50, 90, 40, 100, 20, 0, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -4424,8 +4424,8 @@ const __generated_chargeblade__35b: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [30, 110, 30, 70, 10, 0],
-    maxSharpness:  [30, 110, 30, 70, 60, 0],
+    baseSharpness: [30, 110, 30, 70, 10, 0, 0],
+    maxSharpness:  [30, 110, 30, 70, 60, 0, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -4463,8 +4463,8 @@ const __generated_chargeblade__35c: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [30, 150, 30, 80, 60, 0],
-    maxSharpness:  [30, 150, 30, 80, 90, 20],
+    baseSharpness: [30, 150, 30, 80, 60, 0, 0],
+    maxSharpness:  [30, 150, 30, 80, 90, 20, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -4499,8 +4499,8 @@ const __generated_chargeblade__36a: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [60, 90, 70, 30, 0, 0],
-    maxSharpness:  [60, 90, 70, 50, 30, 0],
+    baseSharpness: [60, 90, 70, 30, 0, 0, 0],
+    maxSharpness:  [60, 90, 70, 50, 30, 0, 0],
 
     chargebladeStats: {
         phialType: "element_phial",
@@ -4536,8 +4536,8 @@ const __generated_chargeblade__36b: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [50, 90, 60, 50, 0, 0],
-    maxSharpness:  [50, 90, 60, 60, 40, 0],
+    baseSharpness: [50, 90, 60, 50, 0, 0, 0],
+    maxSharpness:  [50, 90, 60, 60, 40, 0, 0],
 
     chargebladeStats: {
         phialType: "element_phial",
@@ -4574,8 +4574,8 @@ const __generated_chargeblade__36c: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [60, 100, 70, 50, 20, 0],
-    maxSharpness:  [60, 100, 70, 50, 70, 0],
+    baseSharpness: [60, 100, 70, 50, 20, 0, 0],
+    maxSharpness:  [60, 100, 70, 50, 70, 0, 0],
 
     chargebladeStats: {
         phialType: "element_phial",
@@ -4620,8 +4620,8 @@ const __generated_chargeblade__ra: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [70, 70, 90, 20, 0, 0],
-    maxSharpness:  [70, 70, 90, 70, 0, 0],
+    baseSharpness: [70, 70, 90, 20, 0, 0, 0],
+    maxSharpness:  [70, 70, 90, 70, 0, 0, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -4670,8 +4670,8 @@ const __generated_chargeblade__rb: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [60, 70, 80, 40, 0, 0],
-    maxSharpness:  [60, 70, 80, 90, 0, 0],
+    baseSharpness: [60, 70, 80, 40, 0, 0, 0],
+    maxSharpness:  [60, 70, 80, 90, 0, 0, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -4728,8 +4728,8 @@ const __generated_chargeblade__rc: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [50, 70, 80, 30, 20, 0],
-    maxSharpness:  [50, 70, 80, 30, 70, 0],
+    baseSharpness: [50, 70, 80, 30, 20, 0, 0],
+    maxSharpness:  [50, 70, 80, 30, 70, 0, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -4793,8 +4793,8 @@ const __generated_chargeblade__rd: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [50, 70, 70, 30, 30, 0],
-    maxSharpness:  [50, 70, 70, 30, 80, 0],
+    baseSharpness: [50, 70, 70, 30, 30, 0, 0],
+    maxSharpness:  [50, 70, 70, 30, 80, 0, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -4868,8 +4868,8 @@ const __generated_chargeblade__re: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [50, 70, 50, 50, 30, 0],
-    maxSharpness:  [50, 70, 50, 50, 70, 10],
+    baseSharpness: [50, 70, 50, 50, 30, 0, 0],
+    maxSharpness:  [50, 70, 50, 50, 70, 10, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",
@@ -4950,8 +4950,8 @@ const __generated_chargeblade__rf: ChargeBlade = {
         ],
     ],
 
-    baseSharpness: [50, 70, 30, 60, 40, 0],
-    maxSharpness:  [50, 70, 30, 60, 70, 20],
+    baseSharpness: [50, 70, 30, 60, 40, 0, 0],
+    maxSharpness:  [50, 70, 30, 60, 70, 20, 0],
 
     chargebladeStats: {
         phialType: "impact_phial",

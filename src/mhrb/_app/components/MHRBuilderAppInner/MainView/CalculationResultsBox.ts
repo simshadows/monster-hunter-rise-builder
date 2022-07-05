@@ -88,6 +88,7 @@ class CalculationSharpnessBarBox extends React.Component<any, any> {
                 this._renderStat("var(--color-sharpness--green)" , this.props.realSharpness[3] * this.props.hitsMultiplier),
                 this._renderStat("var(--color-sharpness--blue)"  , this.props.realSharpness[4] * this.props.hitsMultiplier),
                 this._renderStat("var(--color-sharpness--white)" , this.props.realSharpness[5] * this.props.hitsMultiplier),
+                this._renderStat("var(--color-sharpness--purple)" , this.props.realSharpness[6] * this.props.hitsMultiplier),
             ),
             element("div",
                 {

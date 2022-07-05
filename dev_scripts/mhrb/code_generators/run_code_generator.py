@@ -126,6 +126,7 @@ def run():
     write_source_file("_generated_weapon_lance.ts"         , weapon_source_files_content["lance"         ])
     write_source_file("_generated_weapon_gunlance.ts"      , weapon_source_files_content["gunlance"      ])
     write_source_file("_generated_weapon_hammer.ts"        , weapon_source_files_content["hammer"        ])
+    write_source_file("_generated_weapon_huntinghorn.ts"   , weapon_source_files_content["huntinghorn"   ])
     write_source_file("_generated_weapon_switchaxe.ts"     , weapon_source_files_content["switchaxe"     ])
     write_source_file("_generated_weapon_chargeblade.ts"   , weapon_source_files_content["chargeblade"   ])
     write_source_file("_generated_weapon_insectglaive.ts"  , weapon_source_files_content["insectglaive"  ])

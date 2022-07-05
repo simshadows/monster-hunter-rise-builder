@@ -175,8 +175,8 @@ const __generated_huntinghorn__1a: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [50, 90, 60, 0, 0, 0],
-    maxSharpness:  [50, 90, 100, 10, 0, 0],
+    baseSharpness: [50, 90, 60, 0, 0, 0, 0],
+    maxSharpness:  [50, 90, 100, 10, 0, 0, 0],
 
     huntinghornSongs: {
         x: "defense_up",
@@ -213,8 +213,8 @@ const __generated_huntinghorn__1b: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [60, 70, 70, 0, 0, 0],
-    maxSharpness:  [60, 70, 110, 10, 0, 0],
+    baseSharpness: [60, 70, 70, 0, 0, 0, 0],
+    maxSharpness:  [60, 70, 110, 10, 0, 0, 0],
 
     huntinghornSongs: {
         x: "defense_up",
@@ -252,8 +252,8 @@ const __generated_huntinghorn__1c: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [70, 70, 90, 20, 0, 0],
-    maxSharpness:  [70, 70, 90, 70, 0, 0],
+    baseSharpness: [70, 70, 90, 20, 0, 0, 0],
+    maxSharpness:  [70, 70, 90, 70, 0, 0, 0],
 
     huntinghornSongs: {
         x: "defense_up",
@@ -292,8 +292,8 @@ const __generated_huntinghorn__1d: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [60, 80, 80, 20, 10, 0],
-    maxSharpness:  [60, 80, 80, 20, 60, 0],
+    baseSharpness: [60, 80, 80, 20, 10, 0, 0],
+    maxSharpness:  [60, 80, 80, 20, 60, 0, 0],
 
     huntinghornSongs: {
         x: "defense_up",
@@ -334,8 +334,8 @@ const __generated_huntinghorn__1e: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [60, 80, 90, 40, 30, 0],
-    maxSharpness:  [60, 80, 90, 40, 70, 10],
+    baseSharpness: [60, 80, 90, 40, 30, 0, 0],
+    maxSharpness:  [60, 80, 90, 40, 70, 10, 0],
 
     huntinghornSongs: {
         x: "defense_up",
@@ -377,8 +377,8 @@ const __generated_huntinghorn__1f: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [40, 90, 60, 60, 50, 0],
-    maxSharpness:  [40, 90, 60, 60, 80, 20],
+    baseSharpness: [40, 90, 60, 60, 50, 0, 0],
+    maxSharpness:  [40, 90, 60, 60, 80, 20, 0],
 
     huntinghornSongs: {
         x: "defense_up",
@@ -419,8 +419,8 @@ const __generated_huntinghorn__2a: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [60, 40, 90, 60, 0, 0],
-    maxSharpness:  [60, 40, 90, 90, 20, 0],
+    baseSharpness: [60, 40, 90, 60, 0, 0, 0],
+    maxSharpness:  [60, 40, 90, 90, 20, 0, 0],
 
     huntinghornSongs: {
         x: "health_recovery_s",
@@ -462,8 +462,8 @@ const __generated_huntinghorn__2b: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [60, 80, 100, 80, 30, 0],
-    maxSharpness:  [60, 80, 100, 80, 60, 20],
+    baseSharpness: [60, 80, 100, 80, 30, 0, 0],
+    maxSharpness:  [60, 80, 100, 80, 60, 20, 0],
 
     huntinghornSongs: {
         x: "health_recovery_s",
@@ -506,8 +506,8 @@ const __generated_huntinghorn__2c: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [60, 40, 120, 90, 40, 0],
-    maxSharpness:  [60, 40, 120, 90, 40, 50],
+    baseSharpness: [60, 40, 120, 90, 40, 0, 0],
+    maxSharpness:  [60, 40, 120, 90, 40, 50, 0],
 
     huntinghornSongs: {
         x: "health_recovery_s",
@@ -552,8 +552,8 @@ const __generated_huntinghorn__3a: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [190, 40, 40, 30, 50, 0],
-    maxSharpness:  [190, 40, 40, 30, 50, 50],
+    baseSharpness: [190, 40, 40, 30, 50, 0, 0],
+    maxSharpness:  [190, 40, 40, 30, 50, 50, 0],
 
     huntinghornSongs: {
         x: "blight_negated",
@@ -599,8 +599,8 @@ const __generated_huntinghorn__3b: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [190, 40, 40, 30, 40, 10],
-    maxSharpness:  [190, 40, 40, 30, 40, 60],
+    baseSharpness: [190, 40, 40, 30, 40, 10, 0],
+    maxSharpness:  [190, 40, 40, 30, 40, 60, 0],
 
     huntinghornSongs: {
         x: "blight_negated",
@@ -647,8 +647,8 @@ const __generated_huntinghorn__3c: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [190, 30, 40, 30, 40, 20],
-    maxSharpness:  [190, 30, 40, 30, 40, 70],
+    baseSharpness: [190, 30, 40, 30, 40, 20, 0],
+    maxSharpness:  [190, 30, 40, 30, 40, 70, 0],
 
     huntinghornSongs: {
         x: "blight_negated",
@@ -688,8 +688,8 @@ const __generated_huntinghorn__4a: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [20, 20, 180, 30, 0, 0],
-    maxSharpness:  [20, 20, 180, 80, 0, 0],
+    baseSharpness: [20, 20, 180, 30, 0, 0, 0],
+    maxSharpness:  [20, 20, 180, 80, 0, 0, 0],
 
     huntinghornSongs: {
         x: "tremors_negated",
@@ -730,8 +730,8 @@ const __generated_huntinghorn__4b: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [20, 10, 180, 40, 0, 0],
-    maxSharpness:  [20, 10, 180, 80, 10, 0],
+    baseSharpness: [20, 10, 180, 40, 0, 0, 0],
+    maxSharpness:  [20, 10, 180, 80, 10, 0, 0],
 
     huntinghornSongs: {
         x: "tremors_negated",
@@ -773,8 +773,8 @@ const __generated_huntinghorn__4c: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [20, 30, 180, 70, 0, 0],
-    maxSharpness:  [20, 30, 180, 80, 40, 0],
+    baseSharpness: [20, 30, 180, 70, 0, 0, 0],
+    maxSharpness:  [20, 30, 180, 80, 40, 0, 0],
 
     huntinghornSongs: {
         x: "tremors_negated",
@@ -816,8 +816,8 @@ const __generated_huntinghorn__5a: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [60, 40, 50, 100, 0, 0],
-    maxSharpness:  [60, 40, 50, 150, 0, 0],
+    baseSharpness: [60, 40, 50, 100, 0, 0, 0],
+    maxSharpness:  [60, 40, 50, 150, 0, 0, 0],
 
     huntinghornSongs: {
         x: "stun_negated",
@@ -860,8 +860,8 @@ const __generated_huntinghorn__5b: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [60, 30, 100, 90, 20, 0],
-    maxSharpness:  [60, 30, 100, 90, 70, 0],
+    baseSharpness: [60, 30, 100, 90, 20, 0, 0],
+    maxSharpness:  [60, 30, 100, 90, 70, 0, 0],
 
     huntinghornSongs: {
         x: "stun_negated",
@@ -905,8 +905,8 @@ const __generated_huntinghorn__5c: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [60, 40, 120, 100, 30, 0],
-    maxSharpness:  [60, 40, 120, 100, 50, 30],
+    baseSharpness: [60, 40, 120, 100, 30, 0, 0],
+    maxSharpness:  [60, 40, 120, 100, 50, 30, 0],
 
     huntinghornSongs: {
         x: "stun_negated",
@@ -944,8 +944,8 @@ const __generated_huntinghorn__6a: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [140, 20, 40, 0, 0, 0],
-    maxSharpness:  [140, 20, 70, 20, 0, 0],
+    baseSharpness: [140, 20, 40, 0, 0, 0, 0],
+    maxSharpness:  [140, 20, 70, 20, 0, 0, 0],
 
     huntinghornSongs: {
         x: "attack_up",
@@ -984,8 +984,8 @@ const __generated_huntinghorn__6b: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [140, 30, 50, 30, 0, 0],
-    maxSharpness:  [140, 30, 50, 80, 0, 0],
+    baseSharpness: [140, 30, 50, 30, 0, 0, 0],
+    maxSharpness:  [140, 30, 50, 80, 0, 0, 0],
 
     huntinghornSongs: {
         x: "attack_up",
@@ -1027,8 +1027,8 @@ const __generated_huntinghorn__6c: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [20, 50, 150, 80, 0, 0],
-    maxSharpness:  [20, 50, 150, 100, 30, 0],
+    baseSharpness: [20, 50, 150, 80, 0, 0, 0],
+    maxSharpness:  [20, 50, 150, 100, 30, 0, 0],
 
     huntinghornSongs: {
         x: "attack_up",
@@ -1069,8 +1069,8 @@ const __generated_huntinghorn__7a: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [70, 30, 100, 90, 10, 0],
-    maxSharpness:  [70, 30, 100, 90, 60, 0],
+    baseSharpness: [70, 30, 100, 90, 10, 0, 0],
+    maxSharpness:  [70, 30, 100, 90, 60, 0, 0],
 
     huntinghornSongs: {
         x: "earplugs_s",
@@ -1111,8 +1111,8 @@ const __generated_huntinghorn__7b: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [50, 40, 130, 100, 30, 0],
-    maxSharpness:  [50, 40, 130, 100, 50, 30],
+    baseSharpness: [50, 40, 130, 100, 30, 0, 0],
+    maxSharpness:  [50, 40, 130, 100, 50, 30, 0],
 
     huntinghornSongs: {
         x: "earplugs_s",
@@ -1154,8 +1154,8 @@ const __generated_huntinghorn__7c: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [50, 50, 120, 120, 30, 30],
-    maxSharpness:  [50, 50, 120, 120, 30, 30],
+    baseSharpness: [50, 50, 120, 120, 30, 30, 0],
+    maxSharpness:  [50, 50, 120, 120, 30, 30, 0],
 
     huntinghornSongs: {
         x: "earplugs_s",
@@ -1195,8 +1195,8 @@ const __generated_huntinghorn__8a: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [50, 50, 80, 70, 0, 0],
-    maxSharpness:  [50, 50, 80, 100, 20, 0],
+    baseSharpness: [50, 50, 80, 70, 0, 0, 0],
+    maxSharpness:  [50, 50, 80, 100, 20, 0, 0],
 
     huntinghornSongs: {
         x: "stamina_recovery_up",
@@ -1237,8 +1237,8 @@ const __generated_huntinghorn__8b: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [50, 30, 130, 100, 40, 0],
-    maxSharpness:  [50, 30, 130, 100, 80, 10],
+    baseSharpness: [50, 30, 130, 100, 40, 0, 0],
+    maxSharpness:  [50, 30, 130, 100, 80, 10, 0],
 
     huntinghornSongs: {
         x: "stamina_recovery_up",
@@ -1280,8 +1280,8 @@ const __generated_huntinghorn__8c: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [50, 70, 80, 100, 50, 0],
-    maxSharpness:  [50, 70, 80, 100, 80, 20],
+    baseSharpness: [50, 70, 80, 100, 50, 0, 0],
+    maxSharpness:  [50, 70, 80, 100, 80, 20, 0],
 
     huntinghornSongs: {
         x: "stamina_recovery_up",
@@ -1321,8 +1321,8 @@ const __generated_huntinghorn__9a: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [50, 50, 120, 30, 0, 0],
-    maxSharpness:  [50, 50, 120, 80, 0, 0],
+    baseSharpness: [50, 50, 120, 30, 0, 0, 0],
+    maxSharpness:  [50, 50, 120, 80, 0, 0, 0],
 
     huntinghornSongs: {
         x: "attack_up",
@@ -1363,8 +1363,8 @@ const __generated_huntinghorn__9b: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [40, 60, 110, 40, 0, 0],
-    maxSharpness:  [40, 60, 110, 90, 0, 0],
+    baseSharpness: [40, 60, 110, 40, 0, 0, 0],
+    maxSharpness:  [40, 60, 110, 90, 0, 0, 0],
 
     huntinghornSongs: {
         x: "attack_up",
@@ -1406,8 +1406,8 @@ const __generated_huntinghorn__9c: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [50, 90, 120, 90, 0, 0],
-    maxSharpness:  [50, 90, 120, 110, 30, 0],
+    baseSharpness: [50, 90, 120, 90, 0, 0, 0],
+    maxSharpness:  [50, 90, 120, 110, 30, 0, 0],
 
     huntinghornSongs: {
         x: "attack_up",
@@ -1444,8 +1444,8 @@ const __generated_huntinghorn__10a: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [80, 70, 50, 0, 0, 0],
-    maxSharpness:  [80, 70, 90, 10, 0, 0],
+    baseSharpness: [80, 70, 50, 0, 0, 0, 0],
+    maxSharpness:  [80, 70, 90, 10, 0, 0, 0],
 
     huntinghornSongs: {
         x: "sonic_wave",
@@ -1482,8 +1482,8 @@ const __generated_huntinghorn__10b: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [70, 60, 70, 0, 0, 0],
-    maxSharpness:  [70, 60, 110, 10, 0, 0],
+    baseSharpness: [70, 60, 70, 0, 0, 0, 0],
+    maxSharpness:  [70, 60, 110, 10, 0, 0, 0],
 
     huntinghornSongs: {
         x: "sonic_wave",
@@ -1521,8 +1521,8 @@ const __generated_huntinghorn__10c: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [60, 60, 60, 20, 0, 0],
-    maxSharpness:  [60, 60, 60, 70, 0, 0],
+    baseSharpness: [60, 60, 60, 20, 0, 0, 0],
+    maxSharpness:  [60, 60, 60, 70, 0, 0, 0],
 
     huntinghornSongs: {
         x: "sonic_wave",
@@ -1560,8 +1560,8 @@ const __generated_huntinghorn__10d: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [70, 60, 70, 50, 0, 0],
-    maxSharpness:  [70, 60, 70, 100, 0, 0],
+    baseSharpness: [70, 60, 70, 50, 0, 0, 0],
+    maxSharpness:  [70, 60, 70, 100, 0, 0, 0],
 
     huntinghornSongs: {
         x: "sonic_wave",
@@ -1601,8 +1601,8 @@ const __generated_huntinghorn__10e: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [100, 90, 90, 50, 20, 0],
-    maxSharpness:  [100, 90, 90, 50, 50, 20],
+    baseSharpness: [100, 90, 90, 50, 20, 0, 0],
+    maxSharpness:  [100, 90, 90, 50, 50, 20, 0],
 
     huntinghornSongs: {
         x: "sonic_wave",
@@ -1643,8 +1643,8 @@ const __generated_huntinghorn__10f: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [90, 90, 90, 50, 30, 0],
-    maxSharpness:  [90, 90, 90, 50, 50, 30],
+    baseSharpness: [90, 90, 90, 50, 30, 0, 0],
+    maxSharpness:  [90, 90, 90, 50, 50, 30, 0],
 
     huntinghornSongs: {
         x: "sonic_wave",
@@ -1685,8 +1685,8 @@ const __generated_huntinghorn__11a: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [100, 30, 70, 100, 50, 0],
-    maxSharpness:  [100, 30, 70, 100, 80, 20],
+    baseSharpness: [100, 30, 70, 100, 50, 0, 0],
+    maxSharpness:  [100, 30, 70, 100, 80, 20, 0],
 
     huntinghornSongs: {
         x: "stamina_recovery_up",
@@ -1728,8 +1728,8 @@ const __generated_huntinghorn__11b: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [70, 40, 120, 90, 60, 20],
-    maxSharpness:  [70, 40, 120, 90, 60, 20],
+    baseSharpness: [70, 40, 120, 90, 60, 20, 0],
+    maxSharpness:  [70, 40, 120, 90, 60, 20, 0],
 
     huntinghornSongs: {
         x: "stamina_recovery_up",
@@ -1772,8 +1772,8 @@ const __generated_huntinghorn__11c: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [70, 40, 100, 90, 70, 30],
-    maxSharpness:  [70, 40, 100, 90, 70, 30],
+    baseSharpness: [70, 40, 100, 90, 70, 30, 0],
+    maxSharpness:  [70, 40, 100, 90, 70, 30, 0],
 
     huntinghornSongs: {
         x: "stamina_recovery_up",
@@ -1813,8 +1813,8 @@ const __generated_huntinghorn__12a: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [60, 70, 20, 50, 0, 0],
-    maxSharpness:  [60, 70, 20, 100, 0, 0],
+    baseSharpness: [60, 70, 20, 50, 0, 0, 0],
+    maxSharpness:  [60, 70, 20, 100, 0, 0, 0],
 
     huntinghornSongs: {
         x: "elemental_attack_boost",
@@ -1855,8 +1855,8 @@ const __generated_huntinghorn__12b: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [60, 60, 70, 90, 20, 0],
-    maxSharpness:  [60, 60, 70, 90, 70, 0],
+    baseSharpness: [60, 60, 70, 90, 20, 0, 0],
+    maxSharpness:  [60, 60, 70, 90, 70, 0, 0],
 
     huntinghornSongs: {
         x: "elemental_attack_boost",
@@ -1898,8 +1898,8 @@ const __generated_huntinghorn__12c: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [60, 60, 100, 100, 30, 0],
-    maxSharpness:  [60, 60, 100, 100, 70, 10],
+    baseSharpness: [60, 60, 100, 100, 30, 0, 0],
+    maxSharpness:  [60, 60, 100, 100, 70, 10, 0],
 
     huntinghornSongs: {
         x: "elemental_attack_boost",
@@ -1942,8 +1942,8 @@ const __generated_huntinghorn__13a: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [140, 120, 30, 60, 0, 0],
-    maxSharpness:  [140, 120, 30, 90, 20, 0],
+    baseSharpness: [140, 120, 30, 60, 0, 0, 0],
+    maxSharpness:  [140, 120, 30, 90, 20, 0, 0],
 
     huntinghornSongs: {
         x: "stamina_recovery_up",
@@ -1987,8 +1987,8 @@ const __generated_huntinghorn__13b: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [130, 120, 20, 80, 0, 0],
-    maxSharpness:  [130, 120, 20, 100, 30, 0],
+    baseSharpness: [130, 120, 20, 80, 0, 0, 0],
+    maxSharpness:  [130, 120, 20, 100, 30, 0, 0],
 
     huntinghornSongs: {
         x: "stamina_recovery_up",
@@ -2034,8 +2034,8 @@ const __generated_huntinghorn__13c: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [120, 120, 30, 60, 20, 0],
-    maxSharpness:  [120, 120, 30, 60, 70, 0],
+    baseSharpness: [120, 120, 30, 60, 20, 0, 0],
+    maxSharpness:  [120, 120, 30, 60, 70, 0, 0],
 
     huntinghornSongs: {
         x: "stamina_recovery_up",
@@ -2075,8 +2075,8 @@ const __generated_huntinghorn__14a: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [50, 50, 100, 50, 0, 0],
-    maxSharpness:  [50, 50, 100, 100, 0, 0],
+    baseSharpness: [50, 50, 100, 50, 0, 0, 0],
+    maxSharpness:  [50, 50, 100, 100, 0, 0, 0],
 
     huntinghornSongs: {
         x: "defense_up",
@@ -2116,8 +2116,8 @@ const __generated_huntinghorn__14b: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [40, 50, 90, 70, 0, 0],
-    maxSharpness:  [40, 50, 90, 120, 0, 0],
+    baseSharpness: [40, 50, 90, 70, 0, 0, 0],
+    maxSharpness:  [40, 50, 90, 120, 0, 0, 0],
 
     huntinghornSongs: {
         x: "defense_up",
@@ -2158,8 +2158,8 @@ const __generated_huntinghorn__14c: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [40, 60, 90, 90, 20, 0],
-    maxSharpness:  [40, 60, 90, 90, 50, 20],
+    baseSharpness: [40, 60, 90, 90, 20, 0, 0],
+    maxSharpness:  [40, 60, 90, 90, 50, 20, 0],
 
     huntinghornSongs: {
         x: "defense_up",
@@ -2198,8 +2198,8 @@ const __generated_huntinghorn__15a: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [60, 60, 130, 0, 0, 0],
-    maxSharpness:  [60, 60, 140, 40, 0, 0],
+    baseSharpness: [60, 60, 130, 0, 0, 0, 0],
+    maxSharpness:  [60, 60, 140, 40, 0, 0, 0],
 
     huntinghornSongs: {
         x: "defense_up",
@@ -2238,8 +2238,8 @@ const __generated_huntinghorn__15b: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [70, 70, 120, 40, 0, 0],
-    maxSharpness:  [70, 70, 120, 80, 10, 0],
+    baseSharpness: [70, 70, 120, 40, 0, 0, 0],
+    maxSharpness:  [70, 70, 120, 80, 10, 0, 0],
 
     huntinghornSongs: {
         x: "defense_up",
@@ -2279,8 +2279,8 @@ const __generated_huntinghorn__15c: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [60, 70, 130, 90, 0, 0],
-    maxSharpness:  [60, 70, 130, 110, 10, 20],
+    baseSharpness: [60, 70, 130, 90, 0, 0, 0],
+    maxSharpness:  [60, 70, 130, 110, 10, 20, 0],
 
     huntinghornSongs: {
         x: "defense_up",
@@ -2320,8 +2320,8 @@ const __generated_huntinghorn__16a: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [30, 70, 80, 20, 0, 0],
-    maxSharpness:  [30, 70, 80, 70, 0, 0],
+    baseSharpness: [30, 70, 80, 20, 0, 0, 0],
+    maxSharpness:  [30, 70, 80, 70, 0, 0, 0],
 
     huntinghornSongs: {
         x: "health_recovery_s",
@@ -2362,8 +2362,8 @@ const __generated_huntinghorn__16b: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [40, 90, 110, 60, 0, 0],
-    maxSharpness:  [40, 90, 110, 100, 10, 0],
+    baseSharpness: [40, 90, 110, 60, 0, 0, 0],
+    maxSharpness:  [40, 90, 110, 100, 10, 0, 0],
 
     huntinghornSongs: {
         x: "health_recovery_s",
@@ -2405,8 +2405,8 @@ const __generated_huntinghorn__16c: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [40, 90, 110, 110, 0, 0],
-    maxSharpness:  [40, 90, 110, 130, 30, 0],
+    baseSharpness: [40, 90, 110, 110, 0, 0, 0],
+    maxSharpness:  [40, 90, 110, 130, 30, 0, 0],
 
     huntinghornSongs: {
         x: "health_recovery_s",
@@ -2445,8 +2445,8 @@ const __generated_huntinghorn__17a: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [70, 50, 50, 30, 0, 0],
-    maxSharpness:  [70, 50, 50, 80, 0, 0],
+    baseSharpness: [70, 50, 50, 30, 0, 0, 0],
+    maxSharpness:  [70, 50, 50, 80, 0, 0, 0],
 
     huntinghornSongs: {
         x: "stamina_recovery_up",
@@ -2486,8 +2486,8 @@ const __generated_huntinghorn__17b: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [80, 50, 70, 50, 0, 0],
-    maxSharpness:  [80, 50, 70, 50, 50, 0],
+    baseSharpness: [80, 50, 70, 50, 0, 0, 0],
+    maxSharpness:  [80, 50, 70, 50, 50, 0, 0],
 
     huntinghornSongs: {
         x: "stamina_recovery_up",
@@ -2528,8 +2528,8 @@ const __generated_huntinghorn__17c: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [80, 70, 30, 70, 50, 0],
-    maxSharpness:  [80, 70, 30, 70, 50, 50],
+    baseSharpness: [80, 70, 30, 70, 50, 0, 0],
+    maxSharpness:  [80, 70, 30, 70, 50, 50, 0],
 
     huntinghornSongs: {
         x: "stamina_recovery_up",
@@ -2571,8 +2571,8 @@ const __generated_huntinghorn__18a: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [50, 40, 70, 40, 0, 0],
-    maxSharpness:  [50, 40, 70, 90, 0, 0],
+    baseSharpness: [50, 40, 70, 40, 0, 0, 0],
+    maxSharpness:  [50, 40, 70, 90, 0, 0, 0],
 
     huntinghornSongs: {
         x: "blight_negated",
@@ -2614,8 +2614,8 @@ const __generated_huntinghorn__18b: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [60, 60, 80, 50, 0, 0],
-    maxSharpness:  [60, 60, 80, 100, 0, 0],
+    baseSharpness: [60, 60, 80, 50, 0, 0, 0],
+    maxSharpness:  [60, 60, 80, 100, 0, 0, 0],
 
     huntinghornSongs: {
         x: "blight_negated",
@@ -2659,8 +2659,8 @@ const __generated_huntinghorn__18c: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [60, 50, 70, 90, 30, 0],
-    maxSharpness:  [60, 50, 70, 90, 60, 20],
+    baseSharpness: [60, 50, 70, 90, 30, 0, 0],
+    maxSharpness:  [60, 50, 70, 90, 60, 20, 0],
 
     huntinghornSongs: {
         x: "blight_negated",
@@ -2697,8 +2697,8 @@ const __generated_huntinghorn__19a: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [70, 90, 40, 0, 0, 0],
-    maxSharpness:  [70, 90, 90, 0, 0, 0],
+    baseSharpness: [70, 90, 40, 0, 0, 0, 0],
+    maxSharpness:  [70, 90, 90, 0, 0, 0, 0],
 
     huntinghornSongs: {
         x: "environment_damage_negated",
@@ -2735,8 +2735,8 @@ const __generated_huntinghorn__19b: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [80, 70, 50, 0, 0, 0],
-    maxSharpness:  [80, 70, 100, 0, 0, 0],
+    baseSharpness: [80, 70, 50, 0, 0, 0, 0],
+    maxSharpness:  [80, 70, 100, 0, 0, 0, 0],
 
     huntinghornSongs: {
         x: "environment_damage_negated",
@@ -2774,8 +2774,8 @@ const __generated_huntinghorn__19c: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [100, 70, 70, 10, 0, 0],
-    maxSharpness:  [100, 70, 70, 60, 0, 0],
+    baseSharpness: [100, 70, 70, 10, 0, 0, 0],
+    maxSharpness:  [100, 70, 70, 60, 0, 0, 0],
 
     huntinghornSongs: {
         x: "environment_damage_negated",
@@ -2815,8 +2815,8 @@ const __generated_huntinghorn__19d: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [80, 70, 60, 40, 0, 0],
-    maxSharpness:  [80, 70, 60, 80, 10, 0],
+    baseSharpness: [80, 70, 60, 40, 0, 0, 0],
+    maxSharpness:  [80, 70, 60, 80, 10, 0, 0],
 
     huntinghornSongs: {
         x: "environment_damage_negated",
@@ -2857,8 +2857,8 @@ const __generated_huntinghorn__19e: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [150, 120, 20, 60, 0, 0],
-    maxSharpness:  [150, 120, 20, 60, 50, 0],
+    baseSharpness: [150, 120, 20, 60, 0, 0, 0],
+    maxSharpness:  [150, 120, 20, 60, 50, 0, 0],
 
     huntinghornSongs: {
         x: "environment_damage_negated",
@@ -2899,8 +2899,8 @@ const __generated_huntinghorn__20a: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [90, 80, 80, 100, 0, 0],
-    maxSharpness:  [90, 80, 80, 130, 20, 0],
+    baseSharpness: [90, 80, 80, 100, 0, 0, 0],
+    maxSharpness:  [90, 80, 80, 130, 20, 0, 0],
 
     huntinghornSongs: {
         x: "defense_up",
@@ -2942,8 +2942,8 @@ const __generated_huntinghorn__20b: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [90, 60, 80, 120, 0, 0],
-    maxSharpness:  [90, 60, 80, 140, 30, 0],
+    baseSharpness: [90, 60, 80, 120, 0, 0, 0],
+    maxSharpness:  [90, 60, 80, 140, 30, 0, 0],
 
     huntinghornSongs: {
         x: "defense_up",
@@ -2986,8 +2986,8 @@ const __generated_huntinghorn__20c: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [80, 60, 80, 120, 10, 0],
-    maxSharpness:  [80, 60, 80, 120, 50, 10],
+    baseSharpness: [80, 60, 80, 120, 10, 0, 0],
+    maxSharpness:  [80, 60, 80, 120, 50, 10, 0],
 
     huntinghornSongs: {
         x: "defense_up",
@@ -3027,8 +3027,8 @@ const __generated_huntinghorn__21a: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [70, 90, 110, 20, 10, 0],
-    maxSharpness:  [70, 90, 110, 20, 50, 10],
+    baseSharpness: [70, 90, 110, 20, 10, 0, 0],
+    maxSharpness:  [70, 90, 110, 20, 50, 10, 0],
 
     huntinghornSongs: {
         x: "divine_protection",
@@ -3069,8 +3069,8 @@ const __generated_huntinghorn__21b: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [70, 80, 90, 50, 10, 0],
-    maxSharpness:  [70, 80, 90, 50, 40, 20],
+    baseSharpness: [70, 80, 90, 50, 10, 0, 0],
+    maxSharpness:  [70, 80, 90, 50, 40, 20, 0],
 
     huntinghornSongs: {
         x: "divine_protection",
@@ -3112,8 +3112,8 @@ const __generated_huntinghorn__21c: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [80, 90, 110, 60, 10, 0],
-    maxSharpness:  [80, 90, 110, 60, 20, 40],
+    baseSharpness: [80, 90, 110, 60, 10, 0, 0],
+    maxSharpness:  [80, 90, 110, 60, 20, 40, 0],
 
     huntinghornSongs: {
         x: "divine_protection",
@@ -3152,8 +3152,8 @@ const __generated_huntinghorn__22a: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [50, 80, 70, 50, 0, 0],
-    maxSharpness:  [50, 80, 70, 80, 20, 0],
+    baseSharpness: [50, 80, 70, 50, 0, 0, 0],
+    maxSharpness:  [50, 80, 70, 80, 20, 0, 0],
 
     huntinghornSongs: {
         x: "elemental_attack_boost",
@@ -3192,8 +3192,8 @@ const __generated_huntinghorn__22b: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [70, 90, 80, 90, 20, 0],
-    maxSharpness:  [70, 90, 80, 90, 60, 10],
+    baseSharpness: [70, 90, 80, 90, 20, 0, 0],
+    maxSharpness:  [70, 90, 80, 90, 60, 10, 0],
 
     huntinghornSongs: {
         x: "elemental_attack_boost",
@@ -3233,8 +3233,8 @@ const __generated_huntinghorn__22c: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [70, 70, 80, 90, 40, 0],
-    maxSharpness:  [70, 70, 80, 90, 70, 20],
+    baseSharpness: [70, 70, 80, 90, 40, 0, 0],
+    maxSharpness:  [70, 70, 80, 90, 70, 20, 0],
 
     huntinghornSongs: {
         x: "elemental_attack_boost",
@@ -3274,8 +3274,8 @@ const __generated_huntinghorn__23a: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [60, 60, 40, 40, 0, 0],
-    maxSharpness:  [60, 60, 40, 90, 0, 0],
+    baseSharpness: [60, 60, 40, 40, 0, 0, 0],
+    maxSharpness:  [60, 60, 40, 90, 0, 0, 0],
 
     huntinghornSongs: {
         x: "defense_up",
@@ -3315,8 +3315,8 @@ const __generated_huntinghorn__23b: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [70, 70, 40, 70, 0, 0],
-    maxSharpness:  [70, 70, 40, 120, 0, 0],
+    baseSharpness: [70, 70, 40, 70, 0, 0, 0],
+    maxSharpness:  [70, 70, 40, 120, 0, 0, 0],
 
     huntinghornSongs: {
         x: "defense_up",
@@ -3357,8 +3357,8 @@ const __generated_huntinghorn__23c: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [70, 60, 50, 90, 30, 0],
-    maxSharpness:  [70, 60, 50, 90, 80, 0],
+    baseSharpness: [70, 60, 50, 90, 30, 0, 0],
+    maxSharpness:  [70, 60, 50, 90, 80, 0, 0],
 
     huntinghornSongs: {
         x: "defense_up",
@@ -3397,8 +3397,8 @@ const __generated_huntinghorn__24a: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [40, 30, 110, 20, 0, 0],
-    maxSharpness:  [40, 30, 110, 70, 0, 0],
+    baseSharpness: [40, 30, 110, 20, 0, 0, 0],
+    maxSharpness:  [40, 30, 110, 70, 0, 0, 0],
 
     huntinghornSongs: {
         x: "earplugs_s",
@@ -3438,8 +3438,8 @@ const __generated_huntinghorn__24b: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [50, 40, 120, 40, 0, 0],
-    maxSharpness:  [50, 40, 120, 90, 0, 0],
+    baseSharpness: [50, 40, 120, 40, 0, 0, 0],
+    maxSharpness:  [50, 40, 120, 90, 0, 0, 0],
 
     huntinghornSongs: {
         x: "earplugs_s",
@@ -3481,8 +3481,8 @@ const __generated_huntinghorn__24c: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [60, 40, 110, 70, 20, 0],
-    maxSharpness:  [60, 40, 110, 70, 50, 20],
+    baseSharpness: [60, 40, 110, 70, 20, 0, 0],
+    maxSharpness:  [60, 40, 110, 70, 50, 20, 0],
 
     huntinghornSongs: {
         x: "earplugs_s",
@@ -3519,8 +3519,8 @@ const __generated_huntinghorn__25a: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [110, 20, 70, 0, 0, 0],
-    maxSharpness:  [110, 20, 70, 50, 0, 0],
+    baseSharpness: [110, 20, 70, 0, 0, 0, 0],
+    maxSharpness:  [110, 20, 70, 50, 0, 0, 0],
 
     huntinghornSongs: {
         x: "health_recovery_s",
@@ -3558,8 +3558,8 @@ const __generated_huntinghorn__25b: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [110, 20, 30, 40, 0, 0],
-    maxSharpness:  [110, 20, 30, 90, 0, 0],
+    baseSharpness: [110, 20, 30, 40, 0, 0, 0],
+    maxSharpness:  [110, 20, 30, 90, 0, 0, 0],
 
     huntinghornSongs: {
         x: "health_recovery_s",
@@ -3598,8 +3598,8 @@ const __generated_huntinghorn__25c: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [130, 20, 30, 70, 0, 0],
-    maxSharpness:  [130, 20, 30, 120, 0, 0],
+    baseSharpness: [130, 20, 30, 70, 0, 0, 0],
+    maxSharpness:  [130, 20, 30, 120, 0, 0, 0],
 
     huntinghornSongs: {
         x: "health_recovery_s",
@@ -3639,8 +3639,8 @@ const __generated_huntinghorn__25d: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [150, 30, 30, 60, 30, 0],
-    maxSharpness:  [150, 30, 30, 60, 70, 10],
+    baseSharpness: [150, 30, 30, 60, 30, 0, 0],
+    maxSharpness:  [150, 30, 30, 60, 70, 10, 0],
 
     huntinghornSongs: {
         x: "health_recovery_s",
@@ -3681,8 +3681,8 @@ const __generated_huntinghorn__25e: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [140, 20, 20, 80, 40, 0],
-    maxSharpness:  [140, 20, 20, 80, 70, 20],
+    baseSharpness: [140, 20, 20, 80, 40, 0, 0],
+    maxSharpness:  [140, 20, 20, 80, 70, 20, 0],
 
     huntinghornSongs: {
         x: "health_recovery_s",
@@ -3724,8 +3724,8 @@ const __generated_huntinghorn__25f: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [160, 20, 20, 90, 60, 0],
-    maxSharpness:  [160, 20, 20, 90, 70, 40],
+    baseSharpness: [160, 20, 20, 90, 60, 0, 0],
+    maxSharpness:  [160, 20, 20, 90, 70, 40, 0],
 
     huntinghornSongs: {
         x: "health_recovery_s",
@@ -3764,8 +3764,8 @@ const __generated_huntinghorn__26a: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [150, 40, 30, 30, 0, 0],
-    maxSharpness:  [150, 40, 30, 80, 0, 0],
+    baseSharpness: [150, 40, 30, 30, 0, 0, 0],
+    maxSharpness:  [150, 40, 30, 80, 0, 0, 0],
 
     huntinghornSongs: {
         x: "defense_up",
@@ -3805,8 +3805,8 @@ const __generated_huntinghorn__26b: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [140, 20, 20, 80, 40, 0],
-    maxSharpness:  [140, 20, 20, 80, 70, 20],
+    baseSharpness: [140, 20, 20, 80, 40, 0, 0],
+    maxSharpness:  [140, 20, 20, 80, 70, 20, 0],
 
     huntinghornSongs: {
         x: "defense_up",
@@ -3847,8 +3847,8 @@ const __generated_huntinghorn__26c: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [150, 40, 20, 90, 50, 0],
-    maxSharpness:  [150, 40, 20, 90, 70, 30],
+    baseSharpness: [150, 40, 20, 90, 50, 0, 0],
+    maxSharpness:  [150, 40, 20, 90, 70, 30, 0],
 
     huntinghornSongs: {
         x: "defense_up",
@@ -3886,8 +3886,8 @@ const __generated_huntinghorn__27a: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [140, 10, 20, 30, 0, 0],
-    maxSharpness:  [140, 10, 20, 80, 0, 0],
+    baseSharpness: [140, 10, 20, 30, 0, 0, 0],
+    maxSharpness:  [140, 10, 20, 80, 0, 0, 0],
 
     huntinghornSongs: {
         x: "health_regeneration",
@@ -3927,8 +3927,8 @@ const __generated_huntinghorn__27b: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [130, 20, 30, 70, 0, 0],
-    maxSharpness:  [130, 20, 30, 120, 0, 0],
+    baseSharpness: [130, 20, 30, 70, 0, 0, 0],
+    maxSharpness:  [130, 20, 30, 120, 0, 0, 0],
 
     huntinghornSongs: {
         x: "health_regeneration",
@@ -3970,8 +3970,8 @@ const __generated_huntinghorn__27c: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [140, 20, 20, 80, 40, 0],
-    maxSharpness:  [140, 20, 20, 80, 70, 20],
+    baseSharpness: [140, 20, 20, 80, 40, 0, 0],
+    maxSharpness:  [140, 20, 20, 80, 70, 20, 0],
 
     huntinghornSongs: {
         x: "health_regeneration",
@@ -4008,8 +4008,8 @@ const __generated_huntinghorn__28a: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [160, 20, 40, 80, 0, 0],
-    maxSharpness:  [160, 20, 40, 110, 20, 0],
+    baseSharpness: [160, 20, 40, 80, 0, 0, 0],
+    maxSharpness:  [160, 20, 40, 110, 20, 0, 0],
 
     huntinghornSongs: {
         x: "sonic_barrier",
@@ -4047,8 +4047,8 @@ const __generated_huntinghorn__28b: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [170, 20, 20, 90, 0, 0],
-    maxSharpness:  [170, 20, 20, 110, 30, 0],
+    baseSharpness: [170, 20, 20, 90, 0, 0, 0],
+    maxSharpness:  [170, 20, 20, 110, 30, 0, 0],
 
     huntinghornSongs: {
         x: "sonic_barrier",
@@ -4087,8 +4087,8 @@ const __generated_huntinghorn__28c: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [190, 10, 20, 90, 40, 0],
-    maxSharpness:  [190, 10, 20, 90, 50, 40],
+    baseSharpness: [190, 10, 20, 90, 40, 0, 0],
+    maxSharpness:  [190, 10, 20, 90, 50, 40, 0],
 
     huntinghornSongs: {
         x: "sonic_barrier",
@@ -4125,8 +4125,8 @@ const __generated_huntinghorn__29a: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [30, 40, 150, 80, 0, 0],
-    maxSharpness:  [30, 40, 150, 130, 0, 0],
+    baseSharpness: [30, 40, 150, 80, 0, 0, 0],
+    maxSharpness:  [30, 40, 150, 130, 0, 0, 0],
 
     huntinghornSongs: {
         x: "attack_and_defense_up",
@@ -4163,8 +4163,8 @@ const __generated_huntinghorn__29b: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [30, 50, 180, 80, 10, 0],
-    maxSharpness:  [30, 50, 180, 80, 60, 0],
+    baseSharpness: [30, 50, 180, 80, 10, 0, 0],
+    maxSharpness:  [30, 50, 180, 80, 60, 0, 0],
 
     huntinghornSongs: {
         x: "attack_and_defense_up",
@@ -4202,8 +4202,8 @@ const __generated_huntinghorn__29c: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [30, 50, 170, 80, 20, 0],
-    maxSharpness:  [30, 50, 170, 80, 60, 10],
+    baseSharpness: [30, 50, 170, 80, 20, 0, 0],
+    maxSharpness:  [30, 50, 170, 80, 60, 10, 0],
 
     huntinghornSongs: {
         x: "attack_and_defense_up",
@@ -4240,8 +4240,8 @@ const __generated_huntinghorn__30a: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [20, 20, 20, 40, 100, 0],
-    maxSharpness:  [20, 20, 20, 40, 150, 0],
+    baseSharpness: [20, 20, 20, 40, 100, 0, 0],
+    maxSharpness:  [20, 20, 20, 40, 150, 0, 0],
 
     huntinghornSongs: {
         x: "stamina_use_reduced",
@@ -4279,8 +4279,8 @@ const __generated_huntinghorn__30b: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [20, 20, 50, 50, 110, 0],
-    maxSharpness:  [20, 20, 50, 50, 150, 10],
+    baseSharpness: [20, 20, 50, 50, 110, 0, 0],
+    maxSharpness:  [20, 20, 50, 50, 150, 10, 0],
 
     huntinghornSongs: {
         x: "stamina_use_reduced",
@@ -4319,8 +4319,8 @@ const __generated_huntinghorn__30c: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [20, 20, 80, 60, 120, 0],
-    maxSharpness:  [20, 20, 80, 60, 150, 20],
+    baseSharpness: [20, 20, 80, 60, 120, 0, 0],
+    maxSharpness:  [20, 20, 80, 60, 150, 20, 0],
 
     huntinghornSongs: {
         x: "stamina_use_reduced",
@@ -4357,8 +4357,8 @@ const __generated_huntinghorn__31a: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [20, 20, 190, 40, 30, 0],
-    maxSharpness:  [20, 20, 190, 40, 50, 30],
+    baseSharpness: [20, 20, 190, 40, 30, 0, 0],
+    maxSharpness:  [20, 20, 190, 40, 50, 30, 0],
 
     huntinghornSongs: {
         x: "stun_negated",
@@ -4396,8 +4396,8 @@ const __generated_huntinghorn__31b: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [10, 20, 220, 40, 60, 0],
-    maxSharpness:  [10, 20, 220, 40, 70, 40],
+    baseSharpness: [10, 20, 220, 40, 60, 0, 0],
+    maxSharpness:  [10, 20, 220, 40, 70, 40, 0],
 
     huntinghornSongs: {
         x: "stun_negated",
@@ -4434,8 +4434,8 @@ const __generated_huntinghorn__32a: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [60, 90, 60, 90, 0, 0],
-    maxSharpness:  [60, 90, 60, 90, 50, 0],
+    baseSharpness: [60, 90, 60, 90, 0, 0, 0],
+    maxSharpness:  [60, 90, 60, 90, 50, 0, 0],
 
     huntinghornSongs: {
         x: "earplugs_s",
@@ -4472,8 +4472,8 @@ const __generated_huntinghorn__32b: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [60, 110, 90, 80, 10, 0],
-    maxSharpness:  [60, 110, 90, 80, 30, 30],
+    baseSharpness: [60, 110, 90, 80, 10, 0, 0],
+    maxSharpness:  [60, 110, 90, 80, 30, 30, 0],
 
     huntinghornSongs: {
         x: "earplugs_s",
@@ -4512,8 +4512,8 @@ const __generated_huntinghorn__32c: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [60, 110, 80, 80, 20, 0],
-    maxSharpness:  [60, 110, 80, 80, 30, 40],
+    baseSharpness: [60, 110, 80, 80, 20, 0, 0],
+    maxSharpness:  [60, 110, 80, 80, 30, 40, 0],
 
     huntinghornSongs: {
         x: "earplugs_s",
@@ -4550,8 +4550,8 @@ const __generated_huntinghorn__33a: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [50, 60, 130, 70, 40, 0],
-    maxSharpness:  [50, 60, 130, 70, 60, 30],
+    baseSharpness: [50, 60, 130, 70, 40, 0, 0],
+    maxSharpness:  [50, 60, 130, 70, 60, 30, 0],
 
     huntinghornSongs: {
         x: "environment_damage_negated",
@@ -4590,8 +4590,8 @@ const __generated_huntinghorn__33b: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [50, 70, 130, 50, 40, 10],
-    maxSharpness:  [50, 70, 130, 50, 40, 60],
+    baseSharpness: [50, 70, 130, 50, 40, 10, 0],
+    maxSharpness:  [50, 70, 130, 50, 40, 60, 0],
 
     huntinghornSongs: {
         x: "environment_damage_negated",
@@ -4628,8 +4628,8 @@ const __generated_huntinghorn__34a: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [60, 70, 80, 130, 10, 0],
-    maxSharpness:  [60, 70, 80, 130, 50, 10],
+    baseSharpness: [60, 70, 80, 130, 10, 0, 0],
+    maxSharpness:  [60, 70, 80, 130, 50, 10, 0],
 
     huntinghornSongs: {
         x: "health_regeneration",
@@ -4667,8 +4667,8 @@ const __generated_huntinghorn__34b: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [60, 70, 70, 110, 40, 0],
-    maxSharpness:  [60, 70, 70, 110, 70, 20],
+    baseSharpness: [60, 70, 70, 110, 40, 0, 0],
+    maxSharpness:  [60, 70, 70, 110, 70, 20, 0],
 
     huntinghornSongs: {
         x: "health_regeneration",
@@ -4705,8 +4705,8 @@ const __generated_huntinghorn__35a: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [170, 30, 60, 70, 20, 0],
-    maxSharpness:  [170, 30, 60, 70, 40, 30],
+    baseSharpness: [170, 30, 60, 70, 20, 0, 0],
+    maxSharpness:  [170, 30, 60, 70, 40, 30, 0],
 
     huntinghornSongs: {
         x: "earplugs_l",
@@ -4744,8 +4744,8 @@ const __generated_huntinghorn__35b: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [170, 30, 60, 50, 40, 0],
-    maxSharpness:  [170, 30, 60, 50, 40, 50],
+    baseSharpness: [170, 30, 60, 50, 40, 0, 0],
+    maxSharpness:  [170, 30, 60, 50, 40, 50, 0],
 
     huntinghornSongs: {
         x: "earplugs_l",
@@ -4782,8 +4782,8 @@ const __generated_huntinghorn__36a: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [180, 0, 0, 0, 0, 70],
-    maxSharpness:  [180, 0, 0, 0, 0, 120],
+    baseSharpness: [180, 0, 0, 0, 0, 70, 0],
+    maxSharpness:  [180, 0, 0, 0, 0, 120, 0],
 
     huntinghornSongs: {
         x: "elemental_attack_boost",
@@ -4820,8 +4820,8 @@ const __generated_huntinghorn__36b: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [60, 0, 0, 0, 0, 90],
-    maxSharpness:  [60, 0, 0, 0, 0, 140],
+    baseSharpness: [60, 0, 0, 0, 0, 90, 0],
+    maxSharpness:  [60, 0, 0, 0, 0, 140, 0],
 
     huntinghornSongs: {
         x: "elemental_attack_boost",
@@ -4858,8 +4858,8 @@ const __generated_huntinghorn__37a: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [40, 60, 150, 0, 0, 0],
-    maxSharpness:  [40, 60, 200, 0, 0, 0],
+    baseSharpness: [40, 60, 150, 0, 0, 0, 0],
+    maxSharpness:  [40, 60, 200, 0, 0, 0, 0],
 
     huntinghornSongs: {
         x: "stamina_use_reduced",
@@ -4896,8 +4896,8 @@ const __generated_huntinghorn__37b: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [40, 60, 170, 30, 0, 0],
-    maxSharpness:  [40, 60, 170, 80, 0, 0],
+    baseSharpness: [40, 60, 170, 30, 0, 0, 0],
+    maxSharpness:  [40, 60, 170, 80, 0, 0, 0],
 
     huntinghornSongs: {
         x: "stamina_use_reduced",
@@ -4935,8 +4935,8 @@ const __generated_huntinghorn__37c: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [30, 70, 140, 60, 0, 0],
-    maxSharpness:  [30, 70, 140, 80, 30, 0],
+    baseSharpness: [30, 70, 140, 60, 0, 0, 0],
+    maxSharpness:  [30, 70, 140, 80, 30, 0, 0],
 
     huntinghornSongs: {
         x: "stamina_use_reduced",
@@ -4973,8 +4973,8 @@ const __generated_huntinghorn__38a: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [50, 30, 110, 10, 0, 0],
-    maxSharpness:  [50, 30, 110, 60, 0, 0],
+    baseSharpness: [50, 30, 110, 10, 0, 0, 0],
+    maxSharpness:  [50, 30, 110, 60, 0, 0, 0],
 
     huntinghornSongs: {
         x: "health_recovery_s",
@@ -5011,8 +5011,8 @@ const __generated_huntinghorn__38b: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [50, 60, 110, 30, 0, 0],
-    maxSharpness:  [50, 60, 110, 80, 0, 0],
+    baseSharpness: [50, 60, 110, 30, 0, 0, 0],
+    maxSharpness:  [50, 60, 110, 80, 0, 0, 0],
 
     huntinghornSongs: {
         x: "health_recovery_s",
@@ -5050,8 +5050,8 @@ const __generated_huntinghorn__38c: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [50, 60, 110, 80, 0, 0],
-    maxSharpness:  [50, 60, 110, 120, 10, 0],
+    baseSharpness: [50, 60, 110, 80, 0, 0, 0],
+    maxSharpness:  [50, 60, 110, 120, 10, 0, 0],
 
     huntinghornSongs: {
         x: "health_recovery_s",
@@ -5090,8 +5090,8 @@ const __generated_huntinghorn__38d: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [50, 60, 110, 120, 10, 0],
-    maxSharpness:  [50, 60, 110, 120, 60, 0],
+    baseSharpness: [50, 60, 110, 120, 10, 0, 0],
+    maxSharpness:  [50, 60, 110, 120, 60, 0, 0],
 
     huntinghornSongs: {
         x: "health_recovery_s",
@@ -5128,8 +5128,8 @@ const __generated_huntinghorn__39a: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [50, 40, 100, 60, 0, 0],
-    maxSharpness:  [50, 40, 100, 100, 10, 0],
+    baseSharpness: [50, 40, 100, 60, 0, 0, 0],
+    maxSharpness:  [50, 40, 100, 100, 10, 0, 0],
 
     huntinghornSongs: {
         x: "health_recovery_s_plus_antidote",
@@ -5167,8 +5167,8 @@ const __generated_huntinghorn__39b: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [40, 30, 100, 80, 0, 0],
-    maxSharpness:  [40, 30, 100, 100, 30, 0],
+    baseSharpness: [40, 30, 100, 80, 0, 0, 0],
+    maxSharpness:  [40, 30, 100, 100, 30, 0, 0],
 
     huntinghornSongs: {
         x: "health_recovery_s_plus_antidote",
@@ -5207,8 +5207,8 @@ const __generated_huntinghorn__39c: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [40, 50, 90, 100, 20, 0],
-    maxSharpness:  [40, 50, 90, 100, 50, 20],
+    baseSharpness: [40, 50, 90, 100, 20, 0, 0],
+    maxSharpness:  [40, 50, 90, 100, 50, 20, 0],
 
     huntinghornSongs: {
         x: "health_recovery_s_plus_antidote",
@@ -5245,8 +5245,8 @@ const __generated_huntinghorn__40a: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [90, 60, 80, 20, 0, 0],
-    maxSharpness:  [90, 60, 80, 70, 0, 0],
+    baseSharpness: [90, 60, 80, 20, 0, 0, 0],
+    maxSharpness:  [90, 60, 80, 70, 0, 0, 0],
 
     huntinghornSongs: {
         x: "wind_pressure_negated",
@@ -5285,8 +5285,8 @@ const __generated_huntinghorn__40b: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [90, 60, 60, 90, 0, 0],
-    maxSharpness:  [90, 60, 60, 130, 10, 0],
+    baseSharpness: [90, 60, 60, 90, 0, 0, 0],
+    maxSharpness:  [90, 60, 60, 130, 10, 0, 0],
 
     huntinghornSongs: {
         x: "wind_pressure_negated",
@@ -5326,8 +5326,8 @@ const __generated_huntinghorn__40c: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [90, 60, 60, 130, 10, 0],
-    maxSharpness:  [90, 60, 60, 130, 60, 0],
+    baseSharpness: [90, 60, 60, 130, 10, 0, 0],
+    maxSharpness:  [90, 60, 60, 130, 60, 0, 0],
 
     huntinghornSongs: {
         x: "wind_pressure_negated",
@@ -5373,8 +5373,8 @@ const __generated_huntinghorn__ra: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [70, 70, 90, 20, 0, 0],
-    maxSharpness:  [70, 70, 90, 70, 0, 0],
+    baseSharpness: [70, 70, 90, 20, 0, 0, 0],
+    maxSharpness:  [70, 70, 90, 70, 0, 0, 0],
 
     huntinghornSongs: {
         x: "earplugs_s",
@@ -5428,8 +5428,8 @@ const __generated_huntinghorn__rb: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [60, 70, 80, 40, 0, 0],
-    maxSharpness:  [60, 70, 80, 90, 0, 0],
+    baseSharpness: [60, 70, 80, 40, 0, 0, 0],
+    maxSharpness:  [60, 70, 80, 90, 0, 0, 0],
 
     huntinghornSongs: {
         x: "earplugs_s",
@@ -5496,8 +5496,8 @@ const __generated_huntinghorn__rc: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [50, 70, 80, 30, 20, 0],
-    maxSharpness:  [50, 70, 80, 30, 70, 0],
+    baseSharpness: [50, 70, 80, 30, 20, 0, 0],
+    maxSharpness:  [50, 70, 80, 30, 70, 0, 0],
 
     huntinghornSongs: {
         x: "earplugs_s",
@@ -5574,8 +5574,8 @@ const __generated_huntinghorn__rd: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [50, 70, 70, 30, 30, 0],
-    maxSharpness:  [50, 70, 70, 30, 80, 0],
+    baseSharpness: [50, 70, 70, 30, 30, 0, 0],
+    maxSharpness:  [50, 70, 70, 30, 80, 0, 0],
 
     huntinghornSongs: {
         x: "earplugs_s",
@@ -5662,8 +5662,8 @@ const __generated_huntinghorn__re: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [50, 70, 50, 50, 30, 0],
-    maxSharpness:  [50, 70, 50, 50, 70, 10],
+    baseSharpness: [50, 70, 50, 50, 30, 0, 0],
+    maxSharpness:  [50, 70, 50, 50, 70, 10, 0],
 
     huntinghornSongs: {
         x: "earplugs_s",
@@ -5763,8 +5763,8 @@ const __generated_huntinghorn__rf: HuntingHorn = {
         ],
     ],
 
-    baseSharpness: [50, 70, 30, 60, 40, 0],
-    maxSharpness:  [50, 70, 30, 60, 70, 20],
+    baseSharpness: [50, 70, 30, 60, 40, 0, 0],
+    maxSharpness:  [50, 70, 30, 60, 70, 20, 0],
 
     huntinghornSongs: {
         x: "earplugs_s",

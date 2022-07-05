@@ -122,7 +122,7 @@ class UtilityBar extends React.Component<any, any> {
                     {
                     id: "utility-bar-spacer-box",
                     },
-                    "Monster Hunter Rise Builder v2.0.0-dev, updated for Ver.3.8.0. If you notice anything missing or broken, let us know on Discord!",
+                    "Monster Hunter Rise Builder v2.0.0-dev, currently being updated for Sunbreak. If you notice anything missing or broken, let us know on Discord!",
                 ),
                 element(UtilityButtonExternalLink,
                     {

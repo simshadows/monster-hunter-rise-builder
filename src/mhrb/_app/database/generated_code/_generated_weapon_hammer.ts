@@ -167,8 +167,8 @@ const __generated_hammer__1a: Hammer = {
         ],
     ],
 
-    baseSharpness: [50, 90, 60, 0, 0, 0],
-    maxSharpness:  [50, 90, 100, 10, 0, 0],
+    baseSharpness: [50, 90, 60, 0, 0, 0, 0],
+    maxSharpness:  [50, 90, 100, 10, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "kamurahammeri",
@@ -199,8 +199,8 @@ const __generated_hammer__1b: Hammer = {
         ],
     ],
 
-    baseSharpness: [60, 70, 70, 0, 0, 0],
-    maxSharpness:  [60, 70, 110, 10, 0, 0],
+    baseSharpness: [60, 70, 70, 0, 0, 0, 0],
+    maxSharpness:  [60, 70, 110, 10, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "kamurahammerii",
@@ -232,8 +232,8 @@ const __generated_hammer__1c: Hammer = {
         ],
     ],
 
-    baseSharpness: [70, 70, 90, 20, 0, 0],
-    maxSharpness:  [70, 70, 90, 70, 0, 0],
+    baseSharpness: [70, 70, 90, 20, 0, 0, 0],
+    maxSharpness:  [70, 70, 90, 70, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "kamurahammeriii",
@@ -266,8 +266,8 @@ const __generated_hammer__1d: Hammer = {
         ],
     ],
 
-    baseSharpness: [60, 80, 80, 20, 10, 0],
-    maxSharpness:  [60, 80, 80, 20, 60, 0],
+    baseSharpness: [60, 80, 80, 20, 10, 0, 0],
+    maxSharpness:  [60, 80, 80, 20, 60, 0, 0],
 
     filterHelpers: {
         nameLower: "kamurahammeriv",
@@ -302,8 +302,8 @@ const __generated_hammer__1e: Hammer = {
         ],
     ],
 
-    baseSharpness: [60, 80, 90, 40, 30, 0],
-    maxSharpness:  [60, 80, 90, 40, 70, 10],
+    baseSharpness: [60, 80, 90, 40, 30, 0, 0],
+    maxSharpness:  [60, 80, 90, 40, 70, 10, 0],
 
     filterHelpers: {
         nameLower: "kamurahammerv",
@@ -339,8 +339,8 @@ const __generated_hammer__1f: Hammer = {
         ],
     ],
 
-    baseSharpness: [40, 90, 60, 60, 50, 0],
-    maxSharpness:  [40, 90, 60, 60, 80, 20],
+    baseSharpness: [40, 90, 60, 60, 50, 0, 0],
+    maxSharpness:  [40, 90, 60, 60, 80, 20, 0],
 
     filterHelpers: {
         nameLower: "kamuraninjahammer",
@@ -374,8 +374,8 @@ const __generated_hammer__2a: Hammer = {
         ],
     ],
 
-    baseSharpness: [80, 50, 80, 40, 0, 0],
-    maxSharpness:  [80, 50, 80, 60, 30, 0],
+    baseSharpness: [80, 50, 80, 40, 0, 0, 0],
+    maxSharpness:  [80, 50, 80, 60, 30, 0, 0],
 
     filterHelpers: {
         nameLower: "purityhammeri",
@@ -410,8 +410,8 @@ const __generated_hammer__2b: Hammer = {
         ],
     ],
 
-    baseSharpness: [110, 100, 80, 30, 30, 0],
-    maxSharpness:  [110, 100, 80, 30, 60, 20],
+    baseSharpness: [110, 100, 80, 30, 30, 0, 0],
+    maxSharpness:  [110, 100, 80, 30, 60, 20, 0],
 
     filterHelpers: {
         nameLower: "purityhammerii",
@@ -447,8 +447,8 @@ const __generated_hammer__2c: Hammer = {
         ],
     ],
 
-    baseSharpness: [100, 70, 90, 40, 50, 0],
-    maxSharpness:  [100, 70, 90, 40, 50, 50],
+    baseSharpness: [100, 70, 90, 40, 50, 0, 0],
+    maxSharpness:  [100, 70, 90, 40, 50, 50, 0],
 
     filterHelpers: {
         nameLower: "sinterhammer",
@@ -482,8 +482,8 @@ const __generated_hammer__3a: Hammer = {
         ],
     ],
 
-    baseSharpness: [140, 40, 40, 30, 0, 0],
-    maxSharpness:  [140, 40, 40, 80, 0, 0],
+    baseSharpness: [140, 40, 40, 30, 0, 0, 0],
+    maxSharpness:  [140, 40, 40, 80, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "bindingbludgeoni",
@@ -518,8 +518,8 @@ const __generated_hammer__3b: Hammer = {
         ],
     ],
 
-    baseSharpness: [150, 40, 40, 70, 0, 0],
-    maxSharpness:  [150, 40, 40, 70, 50, 0],
+    baseSharpness: [150, 40, 40, 70, 0, 0, 0],
+    maxSharpness:  [150, 40, 40, 70, 50, 0, 0],
 
     filterHelpers: {
         nameLower: "bindingbludgeonii",
@@ -556,8 +556,8 @@ const __generated_hammer__3c: Hammer = {
         ],
     ],
 
-    baseSharpness: [160, 50, 50, 70, 20, 0],
-    maxSharpness:  [160, 50, 50, 70, 70, 0],
+    baseSharpness: [160, 50, 50, 70, 20, 0, 0],
+    maxSharpness:  [160, 50, 50, 70, 70, 0, 0],
 
     filterHelpers: {
         nameLower: "armoredgogue",
@@ -593,8 +593,8 @@ const __generated_hammer__4a: Hammer = {
         ],
     ],
 
-    baseSharpness: [50, 50, 100, 50, 0, 0],
-    maxSharpness:  [50, 50, 100, 80, 20, 0],
+    baseSharpness: [50, 50, 100, 50, 0, 0, 0],
+    maxSharpness:  [50, 50, 100, 80, 20, 0, 0],
 
     filterHelpers: {
         nameLower: "almudronhammeri",
@@ -630,8 +630,8 @@ const __generated_hammer__4b: Hammer = {
         ],
     ],
 
-    baseSharpness: [60, 60, 100, 60, 20, 0],
-    maxSharpness:  [60, 60, 100, 60, 70, 0],
+    baseSharpness: [60, 60, 100, 60, 20, 0, 0],
+    maxSharpness:  [60, 60, 100, 60, 70, 0, 0],
 
     filterHelpers: {
         nameLower: "almudronhammerii",
@@ -669,8 +669,8 @@ const __generated_hammer__4c: Hammer = {
         ],
     ],
 
-    baseSharpness: [60, 60, 130, 60, 40, 0],
-    maxSharpness:  [60, 60, 130, 60, 90, 0],
+    baseSharpness: [60, 60, 130, 60, 40, 0, 0],
+    maxSharpness:  [60, 60, 130, 60, 90, 0, 0],
 
     filterHelpers: {
         nameLower: "doombringerhammer",
@@ -704,8 +704,8 @@ const __generated_hammer__5a: Hammer = {
         ],
     ],
 
-    baseSharpness: [30, 120, 50, 50, 0, 0],
-    maxSharpness:  [30, 120, 50, 90, 10, 0],
+    baseSharpness: [30, 120, 50, 50, 0, 0, 0],
+    maxSharpness:  [30, 120, 50, 90, 10, 0, 0],
 
     filterHelpers: {
         nameLower: "five-prongedhammeri",
@@ -740,8 +740,8 @@ const __generated_hammer__5b: Hammer = {
         ],
     ],
 
-    baseSharpness: [30, 140, 60, 50, 20, 0],
-    maxSharpness:  [30, 140, 60, 50, 30, 40],
+    baseSharpness: [30, 140, 60, 50, 20, 0, 0],
+    maxSharpness:  [30, 140, 60, 50, 30, 40, 0],
 
     filterHelpers: {
         nameLower: "five-prongedhammerii",
@@ -776,8 +776,8 @@ const __generated_hammer__5c: Hammer = {
         ],
     ],
 
-    baseSharpness: [30, 160, 80, 50, 30, 0],
-    maxSharpness:  [30, 160, 80, 50, 30, 50],
+    baseSharpness: [30, 160, 80, 50, 30, 0, 0],
+    maxSharpness:  [30, 160, 80, 50, 30, 50, 0],
 
     filterHelpers: {
         nameLower: "greatprongedhammer",
@@ -811,8 +811,8 @@ const __generated_hammer__6a: Hammer = {
         ],
     ],
 
-    baseSharpness: [90, 50, 40, 20, 0, 0],
-    maxSharpness:  [90, 50, 40, 70, 0, 0],
+    baseSharpness: [90, 50, 40, 20, 0, 0, 0],
+    maxSharpness:  [90, 50, 40, 70, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "wroggihammeri",
@@ -846,8 +846,8 @@ const __generated_hammer__6b: Hammer = {
         ],
     ],
 
-    baseSharpness: [90, 40, 90, 30, 0, 0],
-    maxSharpness:  [90, 40, 90, 70, 10, 0],
+    baseSharpness: [90, 40, 90, 30, 0, 0, 0],
+    maxSharpness:  [90, 40, 90, 70, 10, 0, 0],
 
     filterHelpers: {
         nameLower: "wroggihammerii",
@@ -882,8 +882,8 @@ const __generated_hammer__6c: Hammer = {
         ],
     ],
 
-    baseSharpness: [100, 50, 100, 50, 0, 0],
-    maxSharpness:  [100, 50, 100, 70, 30, 0],
+    baseSharpness: [100, 50, 100, 50, 0, 0, 0],
+    maxSharpness:  [100, 50, 100, 70, 30, 0, 0],
 
     filterHelpers: {
         nameLower: "dirtyhammer",
@@ -917,8 +917,8 @@ const __generated_hammer__7a: Hammer = {
         ],
     ],
 
-    baseSharpness: [80, 50, 50, 20, 0, 0],
-    maxSharpness:  [80, 50, 50, 70, 0, 0],
+    baseSharpness: [80, 50, 50, 20, 0, 0, 0],
+    maxSharpness:  [80, 50, 50, 70, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "gunhammeri",
@@ -953,8 +953,8 @@ const __generated_hammer__7b: Hammer = {
         ],
     ],
 
-    baseSharpness: [90, 90, 80, 40, 0, 0],
-    maxSharpness:  [90, 90, 80, 50, 40, 0],
+    baseSharpness: [90, 90, 80, 40, 0, 0, 0],
+    maxSharpness:  [90, 90, 80, 50, 40, 0, 0],
 
     filterHelpers: {
         nameLower: "gunhammerii",
@@ -990,8 +990,8 @@ const __generated_hammer__7c: Hammer = {
         ],
     ],
 
-    baseSharpness: [100, 100, 30, 50, 20, 0],
-    maxSharpness:  [100, 100, 30, 50, 50, 20],
+    baseSharpness: [100, 100, 30, 50, 20, 0, 0],
+    maxSharpness:  [100, 100, 30, 50, 50, 20, 0],
 
     filterHelpers: {
         nameLower: "deadeyerevolver",
@@ -1022,8 +1022,8 @@ const __generated_hammer__8a: Hammer = {
         ],
     ],
 
-    baseSharpness: [90, 60, 50, 0, 0, 0],
-    maxSharpness:  [90, 60, 100, 0, 0, 0],
+    baseSharpness: [90, 60, 50, 0, 0, 0, 0],
+    maxSharpness:  [90, 60, 100, 0, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "ironhammeri",
@@ -1054,8 +1054,8 @@ const __generated_hammer__8b: Hammer = {
         ],
     ],
 
-    baseSharpness: [70, 60, 70, 0, 0, 0],
-    maxSharpness:  [70, 60, 120, 0, 0, 0],
+    baseSharpness: [70, 60, 70, 0, 0, 0, 0],
+    maxSharpness:  [70, 60, 120, 0, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "irondevil",
@@ -1087,8 +1087,8 @@ const __generated_hammer__8c: Hammer = {
         ],
     ],
 
-    baseSharpness: [60, 60, 70, 10, 0, 0],
-    maxSharpness:  [60, 60, 70, 60, 0, 0],
+    baseSharpness: [60, 60, 70, 10, 0, 0, 0],
+    maxSharpness:  [60, 60, 70, 60, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "warhammeri",
@@ -1121,8 +1121,8 @@ const __generated_hammer__8d: Hammer = {
         ],
     ],
 
-    baseSharpness: [90, 70, 40, 50, 0, 0],
-    maxSharpness:  [90, 70, 40, 80, 20, 0],
+    baseSharpness: [90, 70, 40, 50, 0, 0, 0],
+    maxSharpness:  [90, 70, 40, 80, 20, 0, 0],
 
     filterHelpers: {
         nameLower: "warmace",
@@ -1156,8 +1156,8 @@ const __generated_hammer__8e: Hammer = {
         ],
     ],
 
-    baseSharpness: [70, 80, 80, 50, 20, 0],
-    maxSharpness:  [70, 80, 80, 50, 50, 20],
+    baseSharpness: [70, 80, 80, 50, 20, 0, 0],
+    maxSharpness:  [70, 80, 80, 50, 50, 20, 0],
 
     filterHelpers: {
         nameLower: "warstampi",
@@ -1192,8 +1192,8 @@ const __generated_hammer__8f: Hammer = {
         ],
     ],
 
-    baseSharpness: [50, 50, 110, 50, 40, 0],
-    maxSharpness:  [50, 50, 110, 50, 60, 30],
+    baseSharpness: [50, 50, 110, 50, 40, 0, 0],
+    maxSharpness:  [50, 50, 110, 50, 60, 30, 0],
 
     filterHelpers: {
         nameLower: "warbasher",
@@ -1229,8 +1229,8 @@ const __generated_hammer__9a: Hammer = {
         ],
     ],
 
-    baseSharpness: [100, 40, 90, 60, 10, 0],
-    maxSharpness:  [100, 40, 90, 60, 60, 0],
+    baseSharpness: [100, 40, 90, 60, 10, 0, 0],
+    maxSharpness:  [100, 40, 90, 60, 60, 0, 0],
 
     filterHelpers: {
         nameLower: "greatnovai",
@@ -1266,8 +1266,8 @@ const __generated_hammer__9b: Hammer = {
         ],
     ],
 
-    baseSharpness: [100, 50, 120, 60, 20, 0],
-    maxSharpness:  [100, 50, 120, 60, 60, 10],
+    baseSharpness: [100, 50, 120, 60, 20, 0, 0],
+    maxSharpness:  [100, 50, 120, 60, 60, 10, 0],
 
     filterHelpers: {
         nameLower: "greatnovaii",
@@ -1303,8 +1303,8 @@ const __generated_hammer__9c: Hammer = {
         ],
     ],
 
-    baseSharpness: [100, 60, 90, 70, 30, 0],
-    maxSharpness:  [100, 60, 90, 70, 50, 30],
+    baseSharpness: [100, 60, 90, 70, 30, 0, 0],
+    maxSharpness:  [100, 60, 90, 70, 50, 30, 0],
 
     filterHelpers: {
         nameLower: "supernova",
@@ -1338,8 +1338,8 @@ const __generated_hammer__10a: Hammer = {
         ],
     ],
 
-    baseSharpness: [70, 30, 100, 90, 10, 0],
-    maxSharpness:  [70, 30, 100, 90, 60, 0],
+    baseSharpness: [70, 30, 100, 90, 10, 0, 0],
+    maxSharpness:  [70, 30, 100, 90, 60, 0, 0],
 
     filterHelpers: {
         nameLower: "stripedstrikeri",
@@ -1374,8 +1374,8 @@ const __generated_hammer__10b: Hammer = {
         ],
     ],
 
-    baseSharpness: [50, 30, 130, 100, 40, 0],
-    maxSharpness:  [50, 30, 130, 100, 70, 20],
+    baseSharpness: [50, 30, 130, 100, 40, 0, 0],
+    maxSharpness:  [50, 30, 130, 100, 70, 20, 0],
 
     filterHelpers: {
         nameLower: "stripedstrikerii",
@@ -1411,8 +1411,8 @@ const __generated_hammer__10c: Hammer = {
         ],
     ],
 
-    baseSharpness: [50, 40, 120, 120, 50, 20],
-    maxSharpness:  [50, 40, 120, 120, 50, 20],
+    baseSharpness: [50, 40, 120, 120, 50, 20, 0],
+    maxSharpness:  [50, 40, 120, 120, 50, 20, 0],
 
     filterHelpers: {
         nameLower: "tigrexhammer",
@@ -1446,8 +1446,8 @@ const __generated_hammer__11a: Hammer = {
         ],
     ],
 
-    baseSharpness: [120, 70, 30, 30, 0, 0],
-    maxSharpness:  [120, 70, 30, 80, 0, 0],
+    baseSharpness: [120, 70, 30, 30, 0, 0, 0],
+    maxSharpness:  [120, 70, 30, 80, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "flamingfuryi",
@@ -1482,8 +1482,8 @@ const __generated_hammer__11b: Hammer = {
         ],
     ],
 
-    baseSharpness: [120, 100, 30, 40, 10, 0],
-    maxSharpness:  [120, 100, 30, 40, 60, 0],
+    baseSharpness: [120, 100, 30, 40, 10, 0, 0],
+    maxSharpness:  [120, 100, 30, 40, 60, 0, 0],
 
     filterHelpers: {
         nameLower: "flamingfuryii",
@@ -1520,8 +1520,8 @@ const __generated_hammer__11c: Hammer = {
         ],
     ],
 
-    baseSharpness: [130, 120, 30, 50, 20, 0],
-    maxSharpness:  [130, 120, 30, 50, 70, 0],
+    baseSharpness: [130, 120, 30, 50, 20, 0, 0],
+    maxSharpness:  [130, 120, 30, 50, 70, 0, 0],
 
     filterHelpers: {
         nameLower: "phoenixfury",
@@ -1555,8 +1555,8 @@ const __generated_hammer__12a: Hammer = {
         ],
     ],
 
-    baseSharpness: [50, 60, 70, 70, 0, 0],
-    maxSharpness:  [50, 60, 70, 100, 20, 0],
+    baseSharpness: [50, 60, 70, 70, 0, 0, 0],
+    maxSharpness:  [50, 60, 70, 100, 20, 0, 0],
 
     filterHelpers: {
         nameLower: "glacialbashi",
@@ -1591,8 +1591,8 @@ const __generated_hammer__12b: Hammer = {
         ],
     ],
 
-    baseSharpness: [50, 70, 80, 80, 20, 0],
-    maxSharpness:  [50, 70, 80, 80, 60, 10],
+    baseSharpness: [50, 70, 80, 80, 20, 0, 0],
+    maxSharpness:  [50, 70, 80, 80, 60, 10, 0],
 
     filterHelpers: {
         nameLower: "glacialbashii",
@@ -1628,8 +1628,8 @@ const __generated_hammer__12c: Hammer = {
         ],
     ],
 
-    baseSharpness: [50, 70, 80, 100, 50, 0],
-    maxSharpness:  [50, 70, 80, 100, 60, 40],
+    baseSharpness: [50, 70, 80, 100, 50, 0, 0],
+    maxSharpness:  [50, 70, 80, 100, 60, 40, 0],
 
     filterHelpers: {
         nameLower: "glacialcrunch",
@@ -1663,8 +1663,8 @@ const __generated_hammer__13a: Hammer = {
         ],
     ],
 
-    baseSharpness: [70, 50, 40, 40, 0, 0],
-    maxSharpness:  [70, 50, 40, 90, 0, 0],
+    baseSharpness: [70, 50, 40, 40, 0, 0, 0],
+    maxSharpness:  [70, 50, 40, 90, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "kulubludgeoni",
@@ -1698,8 +1698,8 @@ const __generated_hammer__13b: Hammer = {
         ],
     ],
 
-    baseSharpness: [80, 70, 50, 50, 0, 0],
-    maxSharpness:  [80, 70, 50, 90, 10, 0],
+    baseSharpness: [80, 70, 50, 50, 0, 0, 0],
+    maxSharpness:  [80, 70, 50, 90, 10, 0, 0],
 
     filterHelpers: {
         nameLower: "kulubludgeonii",
@@ -1734,8 +1734,8 @@ const __generated_hammer__13c: Hammer = {
         ],
     ],
 
-    baseSharpness: [80, 80, 70, 60, 10, 0],
-    maxSharpness:  [80, 80, 70, 60, 60, 0],
+    baseSharpness: [80, 80, 70, 60, 10, 0, 0],
+    maxSharpness:  [80, 80, 70, 60, 60, 0, 0],
 
     filterHelpers: {
         nameLower: "kulucrusher",
@@ -1772,8 +1772,8 @@ const __generated_hammer__14a: Hammer = {
         ],
     ],
 
-    baseSharpness: [30, 30, 200, 40, 0, 0],
-    maxSharpness:  [30, 30, 200, 70, 20, 0],
+    baseSharpness: [30, 30, 200, 40, 0, 0, 0],
+    maxSharpness:  [30, 30, 200, 70, 20, 0, 0],
 
     filterHelpers: {
         nameLower: "devilmasheri",
@@ -1811,8 +1811,8 @@ const __generated_hammer__14b: Hammer = {
         ],
     ],
 
-    baseSharpness: [20, 20, 200, 60, 0, 0],
-    maxSharpness:  [20, 20, 200, 70, 40, 0],
+    baseSharpness: [20, 20, 200, 60, 0, 0, 0],
+    maxSharpness:  [20, 20, 200, 70, 40, 0, 0],
 
     filterHelpers: {
         nameLower: "devilmasherii",
@@ -1852,8 +1852,8 @@ const __generated_hammer__14c: Hammer = {
         ],
     ],
 
-    baseSharpness: [30, 30, 200, 90, 0, 0],
-    maxSharpness:  [30, 30, 200, 90, 50, 0],
+    baseSharpness: [30, 30, 200, 90, 0, 0, 0],
+    maxSharpness:  [30, 30, 200, 90, 50, 0, 0],
 
     filterHelpers: {
         nameLower: "irondevil'ssoul",
@@ -1885,8 +1885,8 @@ const __generated_hammer__15a: Hammer = {
         ],
     ],
 
-    baseSharpness: [140, 30, 30, 0, 0, 0],
-    maxSharpness:  [140, 30, 60, 20, 0, 0],
+    baseSharpness: [140, 30, 30, 0, 0, 0, 0],
+    maxSharpness:  [140, 30, 60, 20, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "unbearablehammeri",
@@ -1919,8 +1919,8 @@ const __generated_hammer__15b: Hammer = {
         ],
     ],
 
-    baseSharpness: [110, 40, 50, 0, 0, 0],
-    maxSharpness:  [110, 40, 50, 50, 0, 0],
+    baseSharpness: [110, 40, 50, 0, 0, 0, 0],
+    maxSharpness:  [110, 40, 50, 50, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "unbearablehammerii",
@@ -1954,8 +1954,8 @@ const __generated_hammer__15c: Hammer = {
         ],
     ],
 
-    baseSharpness: [130, 30, 80, 60, 0, 0],
-    maxSharpness:  [130, 30, 80, 60, 50, 0],
+    baseSharpness: [130, 30, 80, 60, 0, 0, 0],
+    maxSharpness:  [130, 30, 80, 60, 50, 0, 0],
 
     filterHelpers: {
         nameLower: "barbearichammer",
@@ -1990,8 +1990,8 @@ const __generated_hammer__16a: Hammer = {
         ],
     ],
 
-    baseSharpness: [50, 50, 120, 30, 0, 0],
-    maxSharpness:  [50, 50, 120, 80, 0, 0],
+    baseSharpness: [50, 50, 120, 30, 0, 0, 0],
+    maxSharpness:  [50, 50, 120, 80, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "frilledblowi",
@@ -2026,8 +2026,8 @@ const __generated_hammer__16b: Hammer = {
         ],
     ],
 
-    baseSharpness: [40, 40, 120, 50, 0, 0],
-    maxSharpness:  [40, 40, 120, 80, 20, 0],
+    baseSharpness: [40, 40, 120, 50, 0, 0, 0],
+    maxSharpness:  [40, 40, 120, 80, 20, 0, 0],
 
     filterHelpers: {
         nameLower: "frilledblowii",
@@ -2063,8 +2063,8 @@ const __generated_hammer__16c: Hammer = {
         ],
     ],
 
-    baseSharpness: [50, 90, 120, 90, 0, 0],
-    maxSharpness:  [50, 90, 120, 100, 40, 0],
+    baseSharpness: [50, 90, 120, 90, 0, 0, 0],
+    maxSharpness:  [50, 90, 120, 100, 40, 0, 0],
 
     filterHelpers: {
         nameLower: "illusoryfrilledblow",
@@ -2099,8 +2099,8 @@ const __generated_hammer__17a: Hammer = {
         ],
     ],
 
-    baseSharpness: [70, 60, 40, 30, 0, 0],
-    maxSharpness:  [70, 60, 40, 80, 0, 0],
+    baseSharpness: [70, 60, 40, 30, 0, 0, 0],
+    maxSharpness:  [70, 60, 40, 80, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "bago'horrorsi",
@@ -2135,8 +2135,8 @@ const __generated_hammer__17b: Hammer = {
         ],
     ],
 
-    baseSharpness: [100, 60, 50, 40, 0, 0],
-    maxSharpness:  [100, 60, 50, 80, 10, 0],
+    baseSharpness: [100, 60, 50, 40, 0, 0, 0],
+    maxSharpness:  [100, 60, 50, 80, 10, 0, 0],
 
     filterHelpers: {
         nameLower: "bago'horrorsii",
@@ -2173,8 +2173,8 @@ const __generated_hammer__17c: Hammer = {
         ],
     ],
 
-    baseSharpness: [100, 40, 70, 70, 20, 0],
-    maxSharpness:  [100, 40, 70, 70, 50, 20],
+    baseSharpness: [100, 40, 70, 70, 20, 0, 0],
+    maxSharpness:  [100, 40, 70, 70, 50, 20, 0],
 
     filterHelpers: {
         nameLower: "bago'thunder",
@@ -2207,8 +2207,8 @@ const __generated_hammer__18a: Hammer = {
         ],
     ],
 
-    baseSharpness: [90, 50, 60, 0, 0, 0],
-    maxSharpness:  [90, 50, 90, 20, 0, 0],
+    baseSharpness: [90, 50, 60, 0, 0, 0, 0],
+    maxSharpness:  [90, 50, 90, 20, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "frozencorei",
@@ -2241,8 +2241,8 @@ const __generated_hammer__18b: Hammer = {
         ],
     ],
 
-    baseSharpness: [70, 50, 60, 20, 0, 0],
-    maxSharpness:  [70, 50, 60, 70, 0, 0],
+    baseSharpness: [70, 50, 60, 20, 0, 0, 0],
+    maxSharpness:  [70, 50, 60, 70, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "frozencoreii",
@@ -2277,8 +2277,8 @@ const __generated_hammer__18c: Hammer = {
         ],
     ],
 
-    baseSharpness: [100, 60, 80, 40, 20, 0],
-    maxSharpness:  [100, 60, 80, 40, 60, 10],
+    baseSharpness: [100, 60, 80, 40, 20, 0, 0],
+    maxSharpness:  [100, 60, 80, 40, 60, 10, 0],
 
     filterHelpers: {
         nameLower: "cocytus",
@@ -2309,8 +2309,8 @@ const __generated_hammer__19a: Hammer = {
         ],
     ],
 
-    baseSharpness: [70, 90, 40, 0, 0, 0],
-    maxSharpness:  [70, 90, 90, 0, 0, 0],
+    baseSharpness: [70, 90, 40, 0, 0, 0, 0],
+    maxSharpness:  [70, 90, 90, 0, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "bonehammeri",
@@ -2341,8 +2341,8 @@ const __generated_hammer__19b: Hammer = {
         ],
     ],
 
-    baseSharpness: [80, 70, 50, 0, 0, 0],
-    maxSharpness:  [80, 70, 100, 0, 0, 0],
+    baseSharpness: [80, 70, 50, 0, 0, 0, 0],
+    maxSharpness:  [80, 70, 100, 0, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "bonehammerii",
@@ -2374,8 +2374,8 @@ const __generated_hammer__19c: Hammer = {
         ],
     ],
 
-    baseSharpness: [90, 90, 70, 0, 0, 0],
-    maxSharpness:  [90, 90, 110, 10, 0, 0],
+    baseSharpness: [90, 90, 70, 0, 0, 0, 0],
+    maxSharpness:  [90, 90, 110, 10, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "hardbonehammer",
@@ -2408,8 +2408,8 @@ const __generated_hammer__19d: Hammer = {
         ],
     ],
 
-    baseSharpness: [100, 70, 80, 0, 0, 0],
-    maxSharpness:  [100, 70, 80, 50, 0, 0],
+    baseSharpness: [100, 70, 80, 0, 0, 0, 0],
+    maxSharpness:  [100, 70, 80, 50, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "bonebludgeoni",
@@ -2443,8 +2443,8 @@ const __generated_hammer__19e: Hammer = {
         ],
     ],
 
-    baseSharpness: [80, 70, 110, 40, 0, 0],
-    maxSharpness:  [80, 70, 110, 80, 10, 0],
+    baseSharpness: [80, 70, 110, 40, 0, 0, 0],
+    maxSharpness:  [80, 70, 110, 80, 10, 0, 0],
 
     filterHelpers: {
         nameLower: "bonebludgeonii",
@@ -2479,8 +2479,8 @@ const __generated_hammer__19f: Hammer = {
         ],
     ],
 
-    baseSharpness: [80, 70, 80, 70, 0, 0],
-    maxSharpness:  [80, 70, 80, 100, 20, 0],
+    baseSharpness: [80, 70, 80, 70, 0, 0, 0],
+    maxSharpness:  [80, 70, 80, 100, 20, 0, 0],
 
     filterHelpers: {
         nameLower: "heavybonebludgeon",
@@ -2516,8 +2516,8 @@ const __generated_hammer__20a: Hammer = {
         ],
     ],
 
-    baseSharpness: [50, 160, 30, 100, 10, 0],
-    maxSharpness:  [50, 160, 30, 100, 60, 0],
+    baseSharpness: [50, 160, 30, 100, 10, 0, 0],
+    maxSharpness:  [50, 160, 30, 100, 60, 0, 0],
 
     filterHelpers: {
         nameLower: "diabloshammeri",
@@ -2554,8 +2554,8 @@ const __generated_hammer__20b: Hammer = {
         ],
     ],
 
-    baseSharpness: [50, 160, 20, 100, 20, 0],
-    maxSharpness:  [50, 160, 20, 100, 70, 0],
+    baseSharpness: [50, 160, 20, 100, 20, 0, 0],
+    maxSharpness:  [50, 160, 20, 100, 70, 0, 0],
 
     filterHelpers: {
         nameLower: "diabloshammerii",
@@ -2593,8 +2593,8 @@ const __generated_hammer__20c: Hammer = {
         ],
     ],
 
-    baseSharpness: [50, 160, 10, 100, 30, 0],
-    maxSharpness:  [50, 160, 10, 100, 70, 10],
+    baseSharpness: [50, 160, 10, 100, 30, 0, 0],
+    maxSharpness:  [50, 160, 10, 100, 70, 10, 0],
 
     filterHelpers: {
         nameLower: "diablostail",
@@ -2630,8 +2630,8 @@ const __generated_hammer__21a: Hammer = {
         ],
     ],
 
-    baseSharpness: [80, 70, 50, 50, 0, 0],
-    maxSharpness:  [80, 70, 50, 100, 0, 0],
+    baseSharpness: [80, 70, 50, 50, 0, 0, 0],
+    maxSharpness:  [80, 70, 50, 100, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "cyclo-hammeri",
@@ -2668,8 +2668,8 @@ const __generated_hammer__21b: Hammer = {
         ],
     ],
 
-    baseSharpness: [80, 70, 50, 100, 0, 0],
-    maxSharpness:  [80, 70, 50, 130, 20, 0],
+    baseSharpness: [80, 70, 50, 100, 0, 0, 0],
+    maxSharpness:  [80, 70, 50, 130, 20, 0, 0],
 
     filterHelpers: {
         nameLower: "cyclo-hammerii",
@@ -2706,8 +2706,8 @@ const __generated_hammer__21c: Hammer = {
         ],
     ],
 
-    baseSharpness: [80, 70, 50, 150, 0, 0],
-    maxSharpness:  [80, 70, 50, 160, 40, 0],
+    baseSharpness: [80, 70, 50, 150, 0, 0, 0],
+    maxSharpness:  [80, 70, 50, 160, 40, 0, 0],
 
     filterHelpers: {
         nameLower: "atlashammer",
@@ -2745,8 +2745,8 @@ const __generated_hammer__22a: Hammer = {
         ],
     ],
 
-    baseSharpness: [60, 70, 90, 80, 0, 0],
-    maxSharpness:  [60, 70, 90, 100, 30, 0],
+    baseSharpness: [60, 70, 90, 80, 0, 0, 0],
+    maxSharpness:  [60, 70, 90, 100, 30, 0, 0],
 
     filterHelpers: {
         nameLower: "pukeihammeri",
@@ -2784,8 +2784,8 @@ const __generated_hammer__22b: Hammer = {
         ],
     ],
 
-    baseSharpness: [80, 70, 90, 110, 0, 0],
-    maxSharpness:  [80, 70, 90, 120, 40, 0],
+    baseSharpness: [80, 70, 90, 110, 0, 0, 0],
+    maxSharpness:  [80, 70, 90, 120, 40, 0, 0],
 
     filterHelpers: {
         nameLower: "pukeihammerii",
@@ -2825,8 +2825,8 @@ const __generated_hammer__22c: Hammer = {
         ],
     ],
 
-    baseSharpness: [80, 120, 40, 70, 40, 0],
-    maxSharpness:  [80, 120, 40, 70, 90, 0],
+    baseSharpness: [80, 120, 40, 70, 40, 0, 0],
+    maxSharpness:  [80, 120, 40, 70, 90, 0, 0],
 
     filterHelpers: {
         nameLower: "daturaclub",
@@ -2858,8 +2858,8 @@ const __generated_hammer__23a: Hammer = {
         ],
     ],
 
-    baseSharpness: [40, 140, 50, 20, 0, 0],
-    maxSharpness:  [40, 140, 50, 70, 0, 0],
+    baseSharpness: [40, 140, 50, 20, 0, 0, 0],
+    maxSharpness:  [40, 140, 50, 70, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "basariosblowi",
@@ -2892,8 +2892,8 @@ const __generated_hammer__23b: Hammer = {
         ],
     ],
 
-    baseSharpness: [40, 130, 50, 30, 0, 0],
-    maxSharpness:  [40, 130, 50, 70, 10, 0],
+    baseSharpness: [40, 130, 50, 30, 0, 0, 0],
+    maxSharpness:  [40, 130, 50, 70, 10, 0, 0],
 
     filterHelpers: {
         nameLower: "basariosblowii",
@@ -2927,8 +2927,8 @@ const __generated_hammer__23c: Hammer = {
         ],
     ],
 
-    baseSharpness: [40, 130, 70, 50, 10, 0],
-    maxSharpness:  [40, 130, 70, 50, 50, 10],
+    baseSharpness: [40, 130, 70, 50, 10, 0, 0],
+    maxSharpness:  [40, 130, 70, 50, 50, 10, 0],
 
     filterHelpers: {
         nameLower: "basariosbash",
@@ -2964,8 +2964,8 @@ const __generated_hammer__24a: Hammer = {
         ],
     ],
 
-    baseSharpness: [240, 10, 10, 70, 20, 0],
-    maxSharpness:  [240, 10, 10, 70, 70, 0],
+    baseSharpness: [240, 10, 10, 70, 20, 0, 0],
+    maxSharpness:  [240, 10, 10, 70, 70, 0, 0],
 
     filterHelpers: {
         nameLower: "redbludgeoni",
@@ -3001,8 +3001,8 @@ const __generated_hammer__24b: Hammer = {
         ],
     ],
 
-    baseSharpness: [230, 10, 10, 70, 30, 0],
-    maxSharpness:  [230, 10, 10, 70, 70, 10],
+    baseSharpness: [230, 10, 10, 70, 30, 0, 0],
+    maxSharpness:  [230, 10, 10, 70, 70, 10, 0],
 
     filterHelpers: {
         nameLower: "redbludgeonii",
@@ -3038,8 +3038,8 @@ const __generated_hammer__24c: Hammer = {
         ],
     ],
 
-    baseSharpness: [220, 10, 10, 70, 40, 0],
-    maxSharpness:  [220, 10, 10, 70, 70, 20],
+    baseSharpness: [220, 10, 10, 70, 40, 0, 0],
+    maxSharpness:  [220, 10, 10, 70, 70, 20, 0],
 
     filterHelpers: {
         nameLower: "huracanhammer",
@@ -3073,8 +3073,8 @@ const __generated_hammer__25a: Hammer = {
         ],
     ],
 
-    baseSharpness: [100, 30, 90, 30, 0, 0],
-    maxSharpness:  [100, 30, 90, 70, 10, 0],
+    baseSharpness: [100, 30, 90, 30, 0, 0, 0],
+    maxSharpness:  [100, 30, 90, 70, 10, 0, 0],
 
     filterHelpers: {
         nameLower: "yetihammeri",
@@ -3109,8 +3109,8 @@ const __generated_hammer__25b: Hammer = {
         ],
     ],
 
-    baseSharpness: [100, 30, 110, 40, 20, 0],
-    maxSharpness:  [100, 30, 110, 40, 70, 0],
+    baseSharpness: [100, 30, 110, 40, 20, 0, 0],
+    maxSharpness:  [100, 30, 110, 40, 70, 0, 0],
 
     filterHelpers: {
         nameLower: "yetihammerii",
@@ -3145,8 +3145,8 @@ const __generated_hammer__25c: Hammer = {
         ],
     ],
 
-    baseSharpness: [100, 30, 100, 40, 30, 0],
-    maxSharpness:  [100, 30, 100, 40, 80, 0],
+    baseSharpness: [100, 30, 100, 40, 30, 0, 0],
+    maxSharpness:  [100, 30, 100, 40, 80, 0, 0],
 
     filterHelpers: {
         nameLower: "yetihammeriii",
@@ -3182,8 +3182,8 @@ const __generated_hammer__25d: Hammer = {
         ],
     ],
 
-    baseSharpness: [100, 30, 90, 50, 30, 0],
-    maxSharpness:  [100, 30, 90, 50, 70, 10],
+    baseSharpness: [100, 30, 90, 50, 30, 0, 0],
+    maxSharpness:  [100, 30, 90, 50, 70, 10, 0],
 
     filterHelpers: {
         nameLower: "abominablehammer",
@@ -3218,8 +3218,8 @@ const __generated_hammer__26a: Hammer = {
         ],
     ],
 
-    baseSharpness: [70, 40, 90, 50, 0, 0],
-    maxSharpness:  [70, 40, 90, 100, 0, 0],
+    baseSharpness: [70, 40, 90, 50, 0, 0, 0],
+    maxSharpness:  [70, 40, 90, 100, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "usurper'sthunderi",
@@ -3254,8 +3254,8 @@ const __generated_hammer__26b: Hammer = {
         ],
     ],
 
-    baseSharpness: [70, 40, 70, 90, 30, 0],
-    maxSharpness:  [70, 40, 70, 90, 80, 0],
+    baseSharpness: [70, 40, 70, 90, 30, 0, 0],
+    maxSharpness:  [70, 40, 70, 90, 80, 0, 0],
 
     filterHelpers: {
         nameLower: "usurper'sthunderii",
@@ -3291,8 +3291,8 @@ const __generated_hammer__26c: Hammer = {
         ],
     ],
 
-    baseSharpness: [70, 40, 100, 100, 40, 0],
-    maxSharpness:  [70, 40, 100, 100, 50, 40],
+    baseSharpness: [70, 40, 100, 100, 40, 0, 0],
+    maxSharpness:  [70, 40, 100, 100, 50, 40, 0],
 
     filterHelpers: {
         nameLower: "despot'scrackle",
@@ -3325,8 +3325,8 @@ const __generated_hammer__27a: Hammer = {
         ],
     ],
 
-    baseSharpness: [90, 60, 80, 20, 0, 0],
-    maxSharpness:  [90, 60, 80, 70, 0, 0],
+    baseSharpness: [90, 60, 80, 20, 0, 0, 0],
+    maxSharpness:  [90, 60, 80, 70, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "calamitousportenti",
@@ -3360,8 +3360,8 @@ const __generated_hammer__27b: Hammer = {
         ],
     ],
 
-    baseSharpness: [120, 50, 50, 30, 0, 0],
-    maxSharpness:  [120, 50, 50, 70, 10, 0],
+    baseSharpness: [120, 50, 50, 30, 0, 0, 0],
+    maxSharpness:  [120, 50, 50, 70, 10, 0, 0],
 
     filterHelpers: {
         nameLower: "calamitousportentii",
@@ -3396,8 +3396,8 @@ const __generated_hammer__27c: Hammer = {
         ],
     ],
 
-    baseSharpness: [130, 60, 50, 50, 10, 0],
-    maxSharpness:  [130, 60, 50, 50, 40, 20],
+    baseSharpness: [130, 60, 50, 50, 10, 0, 0],
+    maxSharpness:  [130, 60, 50, 50, 40, 20, 0],
 
     filterHelpers: {
         nameLower: "catastrophicportent",
@@ -3430,8 +3430,8 @@ const __generated_hammer__28a: Hammer = {
         ],
     ],
 
-    baseSharpness: [40, 40, 90, 30, 0, 0],
-    maxSharpness:  [40, 40, 90, 80, 0, 0],
+    baseSharpness: [40, 40, 90, 30, 0, 0, 0],
+    maxSharpness:  [40, 40, 90, 80, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "drothsplashhammeri",
@@ -3464,8 +3464,8 @@ const __generated_hammer__28b: Hammer = {
         ],
     ],
 
-    baseSharpness: [50, 60, 100, 40, 0, 0],
-    maxSharpness:  [50, 60, 100, 90, 0, 0],
+    baseSharpness: [50, 60, 100, 40, 0, 0, 0],
+    maxSharpness:  [50, 60, 100, 90, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "drothsplashhammerii",
@@ -3500,8 +3500,8 @@ const __generated_hammer__28c: Hammer = {
         ],
     ],
 
-    baseSharpness: [60, 40, 120, 60, 20, 0],
-    maxSharpness:  [60, 40, 120, 60, 50, 20],
+    baseSharpness: [60, 40, 120, 60, 20, 0, 0],
+    maxSharpness:  [60, 40, 120, 60, 50, 20, 0],
 
     filterHelpers: {
         nameLower: "ludrothdousehammer",
@@ -3534,8 +3534,8 @@ const __generated_hammer__29a: Hammer = {
         ],
     ],
 
-    baseSharpness: [30, 70, 100, 0, 0, 0],
-    maxSharpness:  [30, 70, 140, 10, 0, 0],
+    baseSharpness: [30, 70, 100, 0, 0, 0, 0],
+    maxSharpness:  [30, 70, 140, 10, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "izuchihammeri",
@@ -3569,8 +3569,8 @@ const __generated_hammer__29b: Hammer = {
         ],
     ],
 
-    baseSharpness: [30, 60, 80, 30, 0, 0],
-    maxSharpness:  [30, 60, 80, 80, 0, 0],
+    baseSharpness: [30, 60, 80, 30, 0, 0, 0],
+    maxSharpness:  [30, 60, 80, 80, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "izuchihammerii",
@@ -3605,8 +3605,8 @@ const __generated_hammer__29c: Hammer = {
         ],
     ],
 
-    baseSharpness: [30, 80, 50, 70, 20, 0],
-    maxSharpness:  [30, 80, 50, 70, 70, 0],
+    baseSharpness: [30, 80, 50, 70, 20, 0, 0],
+    maxSharpness:  [30, 80, 50, 70, 70, 0, 0],
 
     filterHelpers: {
         nameLower: "snapperhammer",
@@ -3641,8 +3641,8 @@ const __generated_hammer__30a: Hammer = {
         ],
     ],
 
-    baseSharpness: [50, 70, 80, 100, 0, 0],
-    maxSharpness:  [50, 70, 80, 100, 50, 0],
+    baseSharpness: [50, 70, 80, 100, 0, 0, 0],
+    maxSharpness:  [50, 70, 80, 100, 50, 0, 0],
 
     filterHelpers: {
         nameLower: "hiddenbreakeri",
@@ -3678,8 +3678,8 @@ const __generated_hammer__30b: Hammer = {
         ],
     ],
 
-    baseSharpness: [100, 30, 70, 100, 50, 0],
-    maxSharpness:  [100, 30, 70, 100, 80, 20],
+    baseSharpness: [100, 30, 70, 100, 50, 0, 0],
+    maxSharpness:  [100, 30, 70, 100, 80, 20, 0],
 
     filterHelpers: {
         nameLower: "hiddenbreakerii",
@@ -3715,8 +3715,8 @@ const __generated_hammer__30c: Hammer = {
         ],
     ],
 
-    baseSharpness: [70, 40, 120, 90, 60, 20],
-    maxSharpness:  [70, 40, 120, 90, 60, 20],
+    baseSharpness: [70, 40, 120, 90, 60, 20, 0],
+    maxSharpness:  [70, 40, 120, 90, 60, 20, 0],
 
     filterHelpers: {
         nameLower: "nighteternal",
@@ -3751,8 +3751,8 @@ const __generated_hammer__31a: Hammer = {
         ],
     ],
 
-    baseSharpness: [50, 60, 140, 0, 0, 0],
-    maxSharpness:  [50, 60, 140, 50, 0, 0],
+    baseSharpness: [50, 60, 140, 0, 0, 0, 0],
+    maxSharpness:  [50, 60, 140, 50, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "carapacehammeri",
@@ -3788,8 +3788,8 @@ const __generated_hammer__31b: Hammer = {
         ],
     ],
 
-    baseSharpness: [60, 60, 160, 20, 0, 0],
-    maxSharpness:  [60, 60, 160, 60, 10, 0],
+    baseSharpness: [60, 60, 160, 20, 0, 0, 0],
+    maxSharpness:  [60, 60, 160, 60, 10, 0, 0],
 
     filterHelpers: {
         nameLower: "carapacehammerii",
@@ -3825,8 +3825,8 @@ const __generated_hammer__31c: Hammer = {
         ],
     ],
 
-    baseSharpness: [60, 60, 180, 50, 0, 0],
-    maxSharpness:  [60, 60, 180, 50, 30, 20],
+    baseSharpness: [60, 60, 180, 50, 0, 0, 0],
+    maxSharpness:  [60, 60, 180, 50, 30, 20, 0],
 
     filterHelpers: {
         nameLower: "barrothhammer",
@@ -3857,8 +3857,8 @@ const __generated_hammer__32a: Hammer = {
         ],
     ],
 
-    baseSharpness: [160, 20, 40, 80, 0, 0],
-    maxSharpness:  [160, 20, 40, 110, 20, 0],
+    baseSharpness: [160, 20, 40, 80, 0, 0, 0],
+    maxSharpness:  [160, 20, 40, 110, 20, 0, 0],
 
     filterHelpers: {
         nameLower: "sinisterhammeri",
@@ -3890,8 +3890,8 @@ const __generated_hammer__32b: Hammer = {
         ],
     ],
 
-    baseSharpness: [170, 20, 20, 90, 0, 0],
-    maxSharpness:  [170, 20, 20, 110, 30, 0],
+    baseSharpness: [170, 20, 20, 90, 0, 0, 0],
+    maxSharpness:  [170, 20, 20, 110, 30, 0, 0],
 
     filterHelpers: {
         nameLower: "sinisterhammerii",
@@ -3924,8 +3924,8 @@ const __generated_hammer__32c: Hammer = {
         ],
     ],
 
-    baseSharpness: [190, 10, 20, 90, 40, 0],
-    maxSharpness:  [190, 10, 20, 90, 60, 30],
+    baseSharpness: [190, 10, 20, 90, 40, 0, 0],
+    maxSharpness:  [190, 10, 20, 90, 60, 30, 0],
 
     filterHelpers: {
         nameLower: "sinistershadehammer",
@@ -3956,8 +3956,8 @@ const __generated_hammer__33a: Hammer = {
         ],
     ],
 
-    baseSharpness: [50, 100, 100, 0, 0, 0],
-    maxSharpness:  [50, 100, 140, 10, 0, 0],
+    baseSharpness: [50, 100, 100, 0, 0, 0, 0],
+    maxSharpness:  [50, 100, 140, 10, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "egghammeri",
@@ -3988,8 +3988,8 @@ const __generated_hammer__33b: Hammer = {
         ],
     ],
 
-    baseSharpness: [50, 100, 150, 0, 0, 0],
-    maxSharpness:  [50, 100, 180, 20, 0, 0],
+    baseSharpness: [50, 100, 150, 0, 0, 0, 0],
+    maxSharpness:  [50, 100, 180, 20, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "egghammerii",
@@ -4020,8 +4020,8 @@ const __generated_hammer__33c: Hammer = {
         ],
     ],
 
-    baseSharpness: [50, 100, 200, 0, 0, 0],
-    maxSharpness:  [50, 100, 230, 10, 10, 0],
+    baseSharpness: [50, 100, 200, 0, 0, 0, 0],
+    maxSharpness:  [50, 100, 230, 10, 10, 0, 0],
 
     filterHelpers: {
         nameLower: "gargwahammer",
@@ -4052,8 +4052,8 @@ const __generated_hammer__34a: Hammer = {
         ],
     ],
 
-    baseSharpness: [50, 20, 100, 80, 0, 0],
-    maxSharpness:  [50, 20, 100, 130, 0, 0],
+    baseSharpness: [50, 20, 100, 80, 0, 0, 0],
+    maxSharpness:  [50, 20, 100, 130, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "manemalicei",
@@ -4085,8 +4085,8 @@ const __generated_hammer__34b: Hammer = {
         ],
     ],
 
-    baseSharpness: [50, 50, 100, 100, 0, 0],
-    maxSharpness:  [50, 50, 100, 100, 50, 0],
+    baseSharpness: [50, 50, 100, 100, 0, 0, 0],
+    maxSharpness:  [50, 50, 100, 100, 50, 0, 0],
 
     filterHelpers: {
         nameLower: "manemaliceii",
@@ -4119,8 +4119,8 @@ const __generated_hammer__34c: Hammer = {
         ],
     ],
 
-    baseSharpness: [50, 50, 80, 120, 0, 0],
-    maxSharpness:  [50, 50, 80, 120, 30, 20],
+    baseSharpness: [50, 50, 80, 120, 0, 0, 0],
+    maxSharpness:  [50, 50, 80, 120, 30, 20, 0],
 
     filterHelpers: {
         nameLower: "manemalicerajang",
@@ -4151,8 +4151,8 @@ const __generated_hammer__35a: Hammer = {
         ],
     ],
 
-    baseSharpness: [20, 20, 20, 40, 100, 0],
-    maxSharpness:  [20, 20, 20, 40, 150, 0],
+    baseSharpness: [20, 20, 20, 40, 100, 0, 0],
+    maxSharpness:  [20, 20, 20, 40, 150, 0, 0],
 
     filterHelpers: {
         nameLower: "azureelderhammeri",
@@ -4184,8 +4184,8 @@ const __generated_hammer__35b: Hammer = {
         ],
     ],
 
-    baseSharpness: [20, 20, 50, 50, 110, 0],
-    maxSharpness:  [20, 20, 50, 50, 150, 10],
+    baseSharpness: [20, 20, 50, 50, 110, 0, 0],
+    maxSharpness:  [20, 20, 50, 50, 150, 10, 0],
 
     filterHelpers: {
         nameLower: "azureelderhammerii",
@@ -4218,8 +4218,8 @@ const __generated_hammer__35c: Hammer = {
         ],
     ],
 
-    baseSharpness: [20, 20, 80, 60, 120, 0],
-    maxSharpness:  [20, 20, 80, 60, 150, 20],
+    baseSharpness: [20, 20, 80, 60, 120, 0, 0],
+    maxSharpness:  [20, 20, 80, 60, 150, 20, 0],
 
     filterHelpers: {
         nameLower: "abyssalgalemauler",
@@ -4250,8 +4250,8 @@ const __generated_hammer__36a: Hammer = {
         ],
     ],
 
-    baseSharpness: [20, 20, 190, 40, 30, 0],
-    maxSharpness:  [20, 20, 190, 40, 50, 30],
+    baseSharpness: [20, 20, 190, 40, 30, 0, 0],
+    maxSharpness:  [20, 20, 190, 40, 50, 30, 0],
 
     filterHelpers: {
         nameLower: "thunderbolthammeri",
@@ -4283,8 +4283,8 @@ const __generated_hammer__36b: Hammer = {
         ],
     ],
 
-    baseSharpness: [10, 20, 220, 40, 60, 0],
-    maxSharpness:  [10, 20, 220, 40, 70, 40],
+    baseSharpness: [10, 20, 220, 40, 60, 0, 0],
+    maxSharpness:  [10, 20, 220, 40, 70, 40, 0],
 
     filterHelpers: {
         nameLower: "abyssalstormmauler",
@@ -4315,8 +4315,8 @@ const __generated_hammer__37a: Hammer = {
         ],
     ],
 
-    baseSharpness: [70, 40, 110, 90, 40, 0],
-    maxSharpness:  [70, 40, 110, 90, 60, 30],
+    baseSharpness: [70, 40, 110, 90, 40, 0, 0],
+    maxSharpness:  [70, 40, 110, 90, 60, 30, 0],
 
     filterHelpers: {
         nameLower: "icesteelhammeri",
@@ -4349,8 +4349,8 @@ const __generated_hammer__37b: Hammer = {
         ],
     ],
 
-    baseSharpness: [80, 110, 70, 40, 40, 10],
-    maxSharpness:  [80, 110, 70, 40, 40, 60],
+    baseSharpness: [80, 110, 70, 40, 40, 10, 0],
+    maxSharpness:  [80, 110, 70, 40, 40, 60, 0],
 
     filterHelpers: {
         nameLower: "daora'scolossus",
@@ -4381,8 +4381,8 @@ const __generated_hammer__38a: Hammer = {
         ],
     ],
 
-    baseSharpness: [150, 20, 50, 90, 40, 0],
-    maxSharpness:  [150, 20, 50, 90, 80, 10],
+    baseSharpness: [150, 20, 50, 90, 40, 0, 0],
+    maxSharpness:  [150, 20, 50, 90, 80, 10, 0],
 
     filterHelpers: {
         nameLower: "teostracratermakeri",
@@ -4414,8 +4414,8 @@ const __generated_hammer__38b: Hammer = {
         ],
     ],
 
-    baseSharpness: [160, 20, 30, 90, 50, 0],
-    maxSharpness:  [160, 20, 30, 90, 80, 20],
+    baseSharpness: [160, 20, 30, 90, 50, 0, 0],
+    maxSharpness:  [160, 20, 30, 90, 80, 20, 0],
 
     filterHelpers: {
         nameLower: "teostracratergouger",
@@ -4446,8 +4446,8 @@ const __generated_hammer__39a: Hammer = {
         ],
     ],
 
-    baseSharpness: [100, 30, 80, 90, 50, 0],
-    maxSharpness:  [100, 30, 80, 90, 50, 50],
+    baseSharpness: [100, 30, 80, 90, 50, 0, 0],
+    maxSharpness:  [100, 30, 80, 90, 50, 50, 0],
 
     filterHelpers: {
         nameLower: "genie'sexpansei",
@@ -4479,8 +4479,8 @@ const __generated_hammer__39b: Hammer = {
         ],
     ],
 
-    baseSharpness: [70, 30, 100, 90, 50, 10],
-    maxSharpness:  [70, 30, 100, 90, 50, 60],
+    baseSharpness: [70, 30, 100, 90, 50, 10, 0],
+    maxSharpness:  [70, 30, 100, 90, 50, 60, 0],
 
     filterHelpers: {
         nameLower: "diamalto'sdream",
@@ -4511,8 +4511,8 @@ const __generated_hammer__40a: Hammer = {
         ],
     ],
 
-    baseSharpness: [180, 0, 0, 0, 0, 70],
-    maxSharpness:  [180, 0, 0, 0, 0, 120],
+    baseSharpness: [180, 0, 0, 0, 0, 70, 0],
+    maxSharpness:  [180, 0, 0, 0, 0, 120, 0],
 
     filterHelpers: {
         nameLower: "redwingdrilli",
@@ -4543,8 +4543,8 @@ const __generated_hammer__40b: Hammer = {
         ],
     ],
 
-    baseSharpness: [60, 0, 0, 0, 0, 90],
-    maxSharpness:  [60, 0, 0, 0, 0, 140],
+    baseSharpness: [60, 0, 0, 0, 0, 90, 0],
+    maxSharpness:  [60, 0, 0, 0, 0, 140, 0],
 
     filterHelpers: {
         nameLower: "reddnaughthammer",
@@ -4575,8 +4575,8 @@ const __generated_hammer__41a: Hammer = {
         ],
     ],
 
-    baseSharpness: [50, 20, 120, 60, 0, 0],
-    maxSharpness:  [50, 20, 120, 110, 0, 0],
+    baseSharpness: [50, 20, 120, 60, 0, 0, 0],
+    maxSharpness:  [50, 20, 120, 110, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "teddybeari",
@@ -4608,8 +4608,8 @@ const __generated_hammer__41b: Hammer = {
         ],
     ],
 
-    baseSharpness: [50, 20, 130, 60, 40, 0],
-    maxSharpness:  [50, 20, 130, 60, 90, 0],
+    baseSharpness: [50, 20, 130, 60, 40, 0, 0],
+    maxSharpness:  [50, 20, 130, 60, 90, 0, 0],
 
     filterHelpers: {
         nameLower: "teddybearii",
@@ -4643,8 +4643,8 @@ const __generated_hammer__41c: Hammer = {
         ],
     ],
 
-    baseSharpness: [50, 20, 190, 60, 40, 40],
-    maxSharpness:  [50, 20, 190, 60, 40, 40],
+    baseSharpness: [50, 20, 190, 60, 40, 40, 0],
+    maxSharpness:  [50, 20, 190, 60, 40, 40, 0],
 
     filterHelpers: {
         nameLower: "sleepybear",
@@ -4675,8 +4675,8 @@ const __generated_hammer__42a: Hammer = {
         ],
     ],
 
-    baseSharpness: [50, 70, 70, 60, 0, 0],
-    maxSharpness:  [50, 70, 70, 110, 0, 0],
+    baseSharpness: [50, 70, 70, 60, 0, 0, 0],
+    maxSharpness:  [50, 70, 70, 110, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "gracefuldeathi",
@@ -4708,8 +4708,8 @@ const __generated_hammer__42b: Hammer = {
         ],
     ],
 
-    baseSharpness: [30, 70, 80, 70, 0, 0],
-    maxSharpness:  [30, 70, 80, 120, 0, 0],
+    baseSharpness: [30, 70, 80, 70, 0, 0, 0],
+    maxSharpness:  [30, 70, 80, 120, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "gracefuldeathii",
@@ -4742,8 +4742,8 @@ const __generated_hammer__42c: Hammer = {
         ],
     ],
 
-    baseSharpness: [20, 100, 100, 80, 0, 0],
-    maxSharpness:  [20, 100, 100, 80, 50, 0],
+    baseSharpness: [20, 100, 100, 80, 0, 0, 0],
+    maxSharpness:  [20, 100, 100, 80, 50, 0, 0],
 
     filterHelpers: {
         nameLower: "gracefuldeathiii",
@@ -4777,8 +4777,8 @@ const __generated_hammer__42d: Hammer = {
         ],
     ],
 
-    baseSharpness: [200, 20, 20, 100, 10, 0],
-    maxSharpness:  [200, 20, 20, 100, 50, 10],
+    baseSharpness: [200, 20, 20, 100, 10, 0, 0],
+    maxSharpness:  [200, 20, 20, 100, 50, 10, 0],
 
     filterHelpers: {
         nameLower: "yadoramorte",
@@ -4809,8 +4809,8 @@ const __generated_hammer__43a: Hammer = {
         ],
     ],
 
-    baseSharpness: [80, 100, 30, 40, 0, 0],
-    maxSharpness:  [80, 100, 30, 90, 0, 0],
+    baseSharpness: [80, 100, 30, 40, 0, 0, 0],
+    maxSharpness:  [80, 100, 30, 90, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "pumpkingi",
@@ -4841,8 +4841,8 @@ const __generated_hammer__43b: Hammer = {
         ],
     ],
 
-    baseSharpness: [80, 100, 20, 50, 0, 0],
-    maxSharpness:  [80, 100, 20, 80, 20, 0],
+    baseSharpness: [80, 100, 20, 50, 0, 0, 0],
+    maxSharpness:  [80, 100, 20, 80, 20, 0, 0],
 
     filterHelpers: {
         nameLower: "pumpkingii",
@@ -4874,8 +4874,8 @@ const __generated_hammer__43c: Hammer = {
         ],
     ],
 
-    baseSharpness: [80, 100, 40, 60, 20, 0],
-    maxSharpness:  [80, 100, 40, 60, 60, 10],
+    baseSharpness: [80, 100, 40, 60, 20, 0, 0],
+    maxSharpness:  [80, 100, 40, 60, 60, 10, 0],
 
     filterHelpers: {
         nameLower: "jack-'o-lanternking",
@@ -4915,8 +4915,8 @@ const __generated_hammer__ra: Hammer = {
         ],
     ],
 
-    baseSharpness: [70, 70, 90, 20, 0, 0],
-    maxSharpness:  [70, 70, 90, 70, 0, 0],
+    baseSharpness: [70, 70, 90, 20, 0, 0, 0],
+    maxSharpness:  [70, 70, 90, 70, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "rampagehammeri",
@@ -4960,8 +4960,8 @@ const __generated_hammer__rb: Hammer = {
         ],
     ],
 
-    baseSharpness: [60, 70, 80, 40, 0, 0],
-    maxSharpness:  [60, 70, 80, 90, 0, 0],
+    baseSharpness: [60, 70, 80, 40, 0, 0, 0],
+    maxSharpness:  [60, 70, 80, 90, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "rampagehammerii",
@@ -5018,8 +5018,8 @@ const __generated_hammer__rc: Hammer = {
         ],
     ],
 
-    baseSharpness: [50, 70, 80, 30, 20, 0],
-    maxSharpness:  [50, 70, 80, 30, 70, 0],
+    baseSharpness: [50, 70, 80, 30, 20, 0, 0],
+    maxSharpness:  [50, 70, 80, 30, 70, 0, 0],
 
     filterHelpers: {
         nameLower: "rampagehammeriii",
@@ -5082,8 +5082,8 @@ const __generated_hammer__rd: Hammer = {
         ],
     ],
 
-    baseSharpness: [50, 70, 70, 30, 30, 0],
-    maxSharpness:  [50, 70, 70, 30, 80, 0],
+    baseSharpness: [50, 70, 70, 30, 30, 0, 0],
+    maxSharpness:  [50, 70, 70, 30, 80, 0, 0],
 
     filterHelpers: {
         nameLower: "rampagehammeriv",
@@ -5156,8 +5156,8 @@ const __generated_hammer__re: Hammer = {
         ],
     ],
 
-    baseSharpness: [50, 70, 50, 50, 30, 0],
-    maxSharpness:  [50, 70, 50, 50, 70, 10],
+    baseSharpness: [50, 70, 50, 50, 30, 0, 0],
+    maxSharpness:  [50, 70, 50, 50, 70, 10, 0],
 
     filterHelpers: {
         nameLower: "rampagehammerv",
@@ -5243,8 +5243,8 @@ const __generated_hammer__rf: Hammer = {
         ],
     ],
 
-    baseSharpness: [50, 70, 30, 60, 40, 0],
-    maxSharpness:  [50, 70, 30, 60, 70, 20],
+    baseSharpness: [50, 70, 30, 60, 40, 0, 0],
+    maxSharpness:  [50, 70, 30, 60, 70, 20, 0],
 
     filterHelpers: {
         nameLower: "rampagehammers",

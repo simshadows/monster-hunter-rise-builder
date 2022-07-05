@@ -144,6 +144,7 @@
     --color-sharpness--green:  #5ed300;
     --color-sharpness--blue:   #3068ee;
     --color-sharpness--white:  var(--color-scheme--bright2);
+    --color-sharpness--purple: #de7aff;
     --color-sharpness--border: var(--color-scheme--dark7);
 }
 

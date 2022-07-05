@@ -160,8 +160,8 @@ const __generated_insectglaive__1a: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [50, 90, 60, 0, 0, 0],
-    maxSharpness:  [50, 90, 100, 10, 0, 0],
+    baseSharpness: [50, 90, 60, 0, 0, 0, 0],
+    maxSharpness:  [50, 90, 100, 10, 0, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 1,
@@ -196,8 +196,8 @@ const __generated_insectglaive__1b: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [60, 70, 70, 0, 0, 0],
-    maxSharpness:  [60, 70, 110, 10, 0, 0],
+    baseSharpness: [60, 70, 70, 0, 0, 0, 0],
+    maxSharpness:  [60, 70, 110, 10, 0, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 1,
@@ -233,8 +233,8 @@ const __generated_insectglaive__1c: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [60, 70, 90, 30, 0, 0],
-    maxSharpness:  [60, 70, 90, 80, 0, 0],
+    baseSharpness: [60, 70, 90, 30, 0, 0, 0],
+    maxSharpness:  [60, 70, 90, 80, 0, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 2,
@@ -271,8 +271,8 @@ const __generated_insectglaive__1d: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [50, 70, 80, 30, 20, 0],
-    maxSharpness:  [50, 70, 80, 30, 70, 0],
+    baseSharpness: [50, 70, 80, 30, 20, 0, 0],
+    maxSharpness:  [50, 70, 80, 30, 70, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 3,
@@ -311,8 +311,8 @@ const __generated_insectglaive__1e: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [60, 80, 90, 40, 30, 0],
-    maxSharpness:  [60, 80, 90, 40, 70, 10],
+    baseSharpness: [60, 80, 90, 40, 30, 0, 0],
+    maxSharpness:  [60, 80, 90, 40, 70, 10, 0],
 
     insectglaiveStats: {
         kinsectLevel: 4,
@@ -352,8 +352,8 @@ const __generated_insectglaive__1f: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [40, 90, 60, 60, 50, 0],
-    maxSharpness:  [40, 90, 60, 60, 80, 20],
+    baseSharpness: [40, 90, 60, 60, 50, 0, 0],
+    maxSharpness:  [40, 90, 60, 60, 80, 20, 0],
 
     insectglaiveStats: {
         kinsectLevel: 6,
@@ -392,8 +392,8 @@ const __generated_insectglaive__2a: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [50, 70, 80, 100, 0, 0],
-    maxSharpness:  [50, 70, 80, 100, 50, 0],
+    baseSharpness: [50, 70, 80, 100, 0, 0, 0],
+    maxSharpness:  [50, 70, 80, 100, 50, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 2,
@@ -433,8 +433,8 @@ const __generated_insectglaive__2b: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [100, 30, 70, 100, 50, 0],
-    maxSharpness:  [100, 30, 70, 100, 70, 30],
+    baseSharpness: [100, 30, 70, 100, 50, 0, 0],
+    maxSharpness:  [100, 30, 70, 100, 70, 30, 0],
 
     insectglaiveStats: {
         kinsectLevel: 5,
@@ -474,8 +474,8 @@ const __generated_insectglaive__2c: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [70, 40, 110, 90, 60, 30],
-    maxSharpness:  [70, 40, 110, 90, 60, 30],
+    baseSharpness: [70, 40, 110, 90, 60, 30, 0],
+    maxSharpness:  [70, 40, 110, 90, 60, 30, 0],
 
     insectglaiveStats: {
         kinsectLevel: 7,
@@ -514,8 +514,8 @@ const __generated_insectglaive__3a: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [110, 40, 30, 70, 0, 0],
-    maxSharpness:  [110, 40, 30, 90, 30, 0],
+    baseSharpness: [110, 40, 30, 70, 0, 0, 0],
+    maxSharpness:  [110, 40, 30, 90, 30, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 2,
@@ -555,8 +555,8 @@ const __generated_insectglaive__3b: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [110, 90, 70, 50, 30, 0],
-    maxSharpness:  [110, 90, 70, 50, 60, 20],
+    baseSharpness: [110, 90, 70, 50, 30, 0, 0],
+    maxSharpness:  [110, 90, 70, 50, 60, 20, 0],
 
     insectglaiveStats: {
         kinsectLevel: 5,
@@ -597,8 +597,8 @@ const __generated_insectglaive__3c: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [110, 70, 70, 50, 50, 0],
-    maxSharpness:  [110, 70, 70, 50, 50, 50],
+    baseSharpness: [110, 70, 70, 50, 50, 0, 0],
+    maxSharpness:  [110, 70, 70, 50, 50, 50, 0],
 
     insectglaiveStats: {
         kinsectLevel: 7,
@@ -636,8 +636,8 @@ const __generated_insectglaive__4a: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [50, 50, 120, 30, 0, 0],
-    maxSharpness:  [50, 50, 120, 80, 0, 0],
+    baseSharpness: [50, 50, 120, 30, 0, 0, 0],
+    maxSharpness:  [50, 50, 120, 80, 0, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 2,
@@ -676,8 +676,8 @@ const __generated_insectglaive__4b: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [40, 60, 110, 40, 0, 0],
-    maxSharpness:  [40, 60, 110, 80, 10, 0],
+    baseSharpness: [40, 60, 110, 40, 0, 0, 0],
+    maxSharpness:  [40, 60, 110, 80, 10, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 3,
@@ -717,8 +717,8 @@ const __generated_insectglaive__4c: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [50, 90, 120, 90, 0, 0],
-    maxSharpness:  [50, 90, 120, 110, 30, 0],
+    baseSharpness: [50, 90, 120, 90, 0, 0, 0],
+    maxSharpness:  [50, 90, 120, 110, 30, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 6,
@@ -759,8 +759,8 @@ const __generated_insectglaive__5a: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [70, 30, 100, 90, 10, 0],
-    maxSharpness:  [70, 30, 100, 90, 60, 0],
+    baseSharpness: [70, 30, 100, 90, 10, 0, 0],
+    maxSharpness:  [70, 30, 100, 90, 60, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 2,
@@ -801,8 +801,8 @@ const __generated_insectglaive__5b: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [50, 40, 130, 100, 30, 0],
-    maxSharpness:  [50, 40, 130, 100, 60, 20],
+    baseSharpness: [50, 40, 130, 100, 30, 0, 0],
+    maxSharpness:  [50, 40, 130, 100, 60, 20, 0],
 
     insectglaiveStats: {
         kinsectLevel: 5,
@@ -844,8 +844,8 @@ const __generated_insectglaive__5c: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [50, 40, 120, 120, 50, 20],
-    maxSharpness:  [50, 40, 120, 120, 50, 20],
+    baseSharpness: [50, 40, 120, 120, 50, 20, 0],
+    maxSharpness:  [50, 40, 120, 120, 50, 20, 0],
 
     insectglaiveStats: {
         kinsectLevel: 6,
@@ -882,8 +882,8 @@ const __generated_insectglaive__6a: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [30, 70, 80, 20, 0, 0],
-    maxSharpness:  [30, 70, 80, 70, 0, 0],
+    baseSharpness: [30, 70, 80, 20, 0, 0, 0],
+    maxSharpness:  [30, 70, 80, 70, 0, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 2,
@@ -921,8 +921,8 @@ const __generated_insectglaive__6b: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [40, 90, 110, 60, 0, 0],
-    maxSharpness:  [40, 90, 110, 100, 10, 0],
+    baseSharpness: [40, 90, 110, 60, 0, 0, 0],
+    maxSharpness:  [40, 90, 110, 100, 10, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 4,
@@ -961,8 +961,8 @@ const __generated_insectglaive__6c: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [40, 90, 110, 110, 0, 0],
-    maxSharpness:  [40, 90, 110, 110, 50, 0],
+    baseSharpness: [40, 90, 110, 110, 0, 0, 0],
+    maxSharpness:  [40, 90, 110, 110, 50, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 7,
@@ -997,8 +997,8 @@ const __generated_insectglaive__7a: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [80, 70, 50, 0, 0, 0],
-    maxSharpness:  [80, 70, 90, 10, 0, 0],
+    baseSharpness: [80, 70, 50, 0, 0, 0, 0],
+    maxSharpness:  [80, 70, 90, 10, 0, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 1,
@@ -1033,8 +1033,8 @@ const __generated_insectglaive__7b: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [70, 60, 50, 20, 0, 0],
-    maxSharpness:  [70, 60, 50, 70, 0, 0],
+    baseSharpness: [70, 60, 50, 20, 0, 0, 0],
+    maxSharpness:  [70, 60, 50, 70, 0, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 1,
@@ -1070,8 +1070,8 @@ const __generated_insectglaive__7c: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [80, 80, 50, 40, 0, 0],
-    maxSharpness:  [80, 80, 50, 90, 0, 0],
+    baseSharpness: [80, 80, 50, 40, 0, 0, 0],
+    maxSharpness:  [80, 80, 50, 90, 0, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 2,
@@ -1108,8 +1108,8 @@ const __generated_insectglaive__7d: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [90, 70, 30, 60, 0, 0],
-    maxSharpness:  [90, 70, 30, 90, 20, 0],
+    baseSharpness: [90, 70, 30, 60, 0, 0, 0],
+    maxSharpness:  [90, 70, 30, 90, 20, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 2,
@@ -1147,8 +1147,8 @@ const __generated_insectglaive__7e: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [90, 80, 60, 50, 20, 0],
-    maxSharpness:  [90, 80, 60, 50, 50, 20],
+    baseSharpness: [90, 80, 60, 50, 20, 0, 0],
+    maxSharpness:  [90, 80, 60, 50, 50, 20, 0],
 
     insectglaiveStats: {
         kinsectLevel: 3,
@@ -1187,8 +1187,8 @@ const __generated_insectglaive__7f: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [90, 80, 40, 50, 40, 0],
-    maxSharpness:  [90, 80, 40, 50, 60, 30],
+    baseSharpness: [90, 80, 40, 50, 40, 0, 0],
+    maxSharpness:  [90, 80, 40, 50, 60, 30, 0],
 
     insectglaiveStats: {
         kinsectLevel: 5,
@@ -1228,8 +1228,8 @@ const __generated_insectglaive__8a: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [70, 80, 90, 100, 10, 0],
-    maxSharpness:  [70, 80, 90, 100, 60, 0],
+    baseSharpness: [70, 80, 90, 100, 10, 0, 0],
+    maxSharpness:  [70, 80, 90, 100, 60, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 4,
@@ -1269,8 +1269,8 @@ const __generated_insectglaive__8b: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [60, 30, 140, 100, 20, 0],
-    maxSharpness:  [60, 30, 140, 100, 60, 10],
+    baseSharpness: [60, 30, 140, 100, 20, 0, 0],
+    maxSharpness:  [60, 30, 140, 100, 60, 10, 0],
 
     insectglaiveStats: {
         kinsectLevel: 6,
@@ -1311,8 +1311,8 @@ const __generated_insectglaive__8c: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [100, 50, 70, 100, 30, 0],
-    maxSharpness:  [100, 50, 70, 100, 60, 20],
+    baseSharpness: [100, 50, 70, 100, 30, 0, 0],
+    maxSharpness:  [100, 50, 70, 100, 60, 20, 0],
 
     insectglaiveStats: {
         kinsectLevel: 7,
@@ -1351,8 +1351,8 @@ const __generated_insectglaive__9a: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [70, 70, 80, 70, 10, 0],
-    maxSharpness:  [70, 70, 80, 70, 60, 0],
+    baseSharpness: [70, 70, 80, 70, 10, 0, 0],
+    maxSharpness:  [70, 70, 80, 70, 60, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 3,
@@ -1392,8 +1392,8 @@ const __generated_insectglaive__9b: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [60, 70, 70, 80, 20, 0],
-    maxSharpness:  [60, 70, 70, 80, 60, 10],
+    baseSharpness: [60, 70, 70, 80, 20, 0, 0],
+    maxSharpness:  [60, 70, 70, 80, 60, 10, 0],
 
     insectglaiveStats: {
         kinsectLevel: 4,
@@ -1435,8 +1435,8 @@ const __generated_insectglaive__9c: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [60, 70, 90, 100, 30, 0],
-    maxSharpness:  [60, 70, 90, 100, 50, 30],
+    baseSharpness: [60, 70, 90, 100, 30, 0, 0],
+    maxSharpness:  [60, 70, 90, 100, 50, 30, 0],
 
     insectglaiveStats: {
         kinsectLevel: 6,
@@ -1473,8 +1473,8 @@ const __generated_insectglaive__10a: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [30, 90, 80, 50, 0, 0],
-    maxSharpness:  [30, 90, 80, 100, 0, 0],
+    baseSharpness: [30, 90, 80, 50, 0, 0, 0],
+    maxSharpness:  [30, 90, 80, 100, 0, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 2,
@@ -1512,8 +1512,8 @@ const __generated_insectglaive__10b: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [10, 90, 90, 90, 20, 0],
-    maxSharpness:  [10, 90, 90, 90, 50, 20],
+    baseSharpness: [10, 90, 90, 90, 20, 0, 0],
+    maxSharpness:  [10, 90, 90, 90, 50, 20, 0],
 
     insectglaiveStats: {
         kinsectLevel: 5,
@@ -1551,8 +1551,8 @@ const __generated_insectglaive__10c: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [30, 90, 70, 120, 40, 0],
-    maxSharpness:  [30, 90, 70, 120, 60, 30],
+    baseSharpness: [30, 90, 70, 120, 40, 0, 0],
+    maxSharpness:  [30, 90, 70, 120, 60, 30, 0],
 
     insectglaiveStats: {
         kinsectLevel: 6,
@@ -1589,8 +1589,8 @@ const __generated_insectglaive__11a: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [60, 60, 90, 40, 0, 0],
-    maxSharpness:  [60, 60, 90, 90, 0, 0],
+    baseSharpness: [60, 60, 90, 40, 0, 0, 0],
+    maxSharpness:  [60, 60, 90, 90, 0, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 2,
@@ -1628,8 +1628,8 @@ const __generated_insectglaive__11b: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [50, 60, 90, 50, 0, 0],
-    maxSharpness:  [50, 60, 90, 100, 0, 0],
+    baseSharpness: [50, 60, 90, 50, 0, 0, 0],
+    maxSharpness:  [50, 60, 90, 100, 0, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 3,
@@ -1668,8 +1668,8 @@ const __generated_insectglaive__11c: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [50, 50, 120, 60, 20, 0],
-    maxSharpness:  [50, 50, 120, 60, 50, 20],
+    baseSharpness: [50, 50, 120, 60, 20, 0, 0],
+    maxSharpness:  [50, 50, 120, 60, 50, 20, 0],
 
     insectglaiveStats: {
         kinsectLevel: 4,
@@ -1707,8 +1707,8 @@ const __generated_insectglaive__12a: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [60, 80, 80, 30, 0, 0],
-    maxSharpness:  [60, 80, 80, 80, 0, 0],
+    baseSharpness: [60, 80, 80, 30, 0, 0, 0],
+    maxSharpness:  [60, 80, 80, 80, 0, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 3,
@@ -1746,8 +1746,8 @@ const __generated_insectglaive__12b: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [60, 60, 90, 40, 0, 0],
-    maxSharpness:  [60, 60, 90, 90, 0, 0],
+    baseSharpness: [60, 60, 90, 40, 0, 0, 0],
+    maxSharpness:  [60, 60, 90, 90, 0, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 3,
@@ -1786,8 +1786,8 @@ const __generated_insectglaive__12c: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [60, 80, 80, 50, 30, 0],
-    maxSharpness:  [60, 80, 80, 50, 80, 0],
+    baseSharpness: [60, 80, 80, 50, 30, 0, 0],
+    maxSharpness:  [60, 80, 80, 50, 80, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 4,
@@ -1826,8 +1826,8 @@ const __generated_insectglaive__13a: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [130, 30, 50, 40, 0, 0],
-    maxSharpness:  [130, 30, 50, 90, 0, 0],
+    baseSharpness: [130, 30, 50, 40, 0, 0, 0],
+    maxSharpness:  [130, 30, 50, 90, 0, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 3,
@@ -1866,8 +1866,8 @@ const __generated_insectglaive__13b: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [130, 20, 40, 60, 0, 0],
-    maxSharpness:  [130, 20, 40, 110, 0, 0],
+    baseSharpness: [130, 20, 40, 60, 0, 0, 0],
+    maxSharpness:  [130, 20, 40, 110, 0, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 3,
@@ -1909,8 +1909,8 @@ const __generated_insectglaive__13c: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [100, 90, 30, 30, 50, 0],
-    maxSharpness:  [100, 90, 30, 30, 70, 30],
+    baseSharpness: [100, 90, 30, 30, 50, 0, 0],
+    maxSharpness:  [100, 90, 30, 30, 70, 30, 0],
 
     insectglaiveStats: {
         kinsectLevel: 6,
@@ -1947,8 +1947,8 @@ const __generated_insectglaive__14a: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [80, 50, 110, 10, 0, 0],
-    maxSharpness:  [80, 50, 110, 60, 0, 0],
+    baseSharpness: [80, 50, 110, 10, 0, 0, 0],
+    maxSharpness:  [80, 50, 110, 60, 0, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 2,
@@ -1986,8 +1986,8 @@ const __generated_insectglaive__14b: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [60, 40, 100, 90, 10, 0],
-    maxSharpness:  [60, 40, 100, 90, 50, 10],
+    baseSharpness: [60, 40, 100, 90, 10, 0, 0],
+    maxSharpness:  [60, 40, 100, 90, 50, 10, 0],
 
     insectglaiveStats: {
         kinsectLevel: 4,
@@ -2026,8 +2026,8 @@ const __generated_insectglaive__14c: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [60, 40, 80, 90, 30, 0],
-    maxSharpness:  [60, 40, 80, 90, 50, 30],
+    baseSharpness: [60, 40, 80, 90, 30, 0, 0],
+    maxSharpness:  [60, 40, 80, 90, 50, 30, 0],
 
     insectglaiveStats: {
         kinsectLevel: 5,
@@ -2062,8 +2062,8 @@ const __generated_insectglaive__15a: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [70, 90, 40, 0, 0, 0],
-    maxSharpness:  [70, 90, 90, 0, 0, 0],
+    baseSharpness: [70, 90, 40, 0, 0, 0, 0],
+    maxSharpness:  [70, 90, 90, 0, 0, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 2,
@@ -2098,8 +2098,8 @@ const __generated_insectglaive__15b: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [80, 70, 50, 0, 0, 0],
-    maxSharpness:  [80, 70, 100, 0, 0, 0],
+    baseSharpness: [80, 70, 50, 0, 0, 0, 0],
+    maxSharpness:  [80, 70, 100, 0, 0, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 2,
@@ -2135,8 +2135,8 @@ const __generated_insectglaive__15c: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [100, 40, 60, 0, 0, 0],
-    maxSharpness:  [100, 40, 110, 0, 0, 0],
+    baseSharpness: [100, 40, 60, 0, 0, 0, 0],
+    maxSharpness:  [100, 40, 110, 0, 0, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 3,
@@ -2173,8 +2173,8 @@ const __generated_insectglaive__15d: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [100, 70, 60, 20, 0, 0],
-    maxSharpness:  [100, 70, 60, 70, 0, 0],
+    baseSharpness: [100, 70, 60, 20, 0, 0, 0],
+    maxSharpness:  [100, 70, 60, 70, 0, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 4,
@@ -2212,8 +2212,8 @@ const __generated_insectglaive__15e: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [80, 70, 60, 40, 0, 0],
-    maxSharpness:  [80, 70, 60, 80, 10, 0],
+    baseSharpness: [80, 70, 60, 40, 0, 0, 0],
+    maxSharpness:  [80, 70, 60, 80, 10, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 5,
@@ -2252,8 +2252,8 @@ const __generated_insectglaive__15f: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [80, 70, 60, 70, 20, 0],
-    maxSharpness:  [80, 70, 60, 70, 70, 0],
+    baseSharpness: [80, 70, 60, 70, 20, 0, 0],
+    maxSharpness:  [80, 70, 60, 70, 70, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 7,
@@ -2293,8 +2293,8 @@ const __generated_insectglaive__16a: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [80, 60, 120, 30, 10, 0],
-    maxSharpness:  [80, 60, 120, 30, 60, 0],
+    baseSharpness: [80, 60, 120, 30, 10, 0, 0],
+    maxSharpness:  [80, 60, 120, 30, 60, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 4,
@@ -2334,8 +2334,8 @@ const __generated_insectglaive__16b: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [80, 50, 120, 30, 20, 0],
-    maxSharpness:  [80, 50, 120, 30, 60, 10],
+    baseSharpness: [80, 50, 120, 30, 20, 0, 0],
+    maxSharpness:  [80, 50, 120, 30, 60, 10, 0],
 
     insectglaiveStats: {
         kinsectLevel: 5,
@@ -2376,8 +2376,8 @@ const __generated_insectglaive__16c: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [80, 50, 120, 20, 30, 0],
-    maxSharpness:  [80, 50, 120, 20, 50, 30],
+    baseSharpness: [80, 50, 120, 20, 30, 0, 0],
+    maxSharpness:  [80, 50, 120, 20, 50, 30, 0],
 
     insectglaiveStats: {
         kinsectLevel: 7,
@@ -2418,8 +2418,8 @@ const __generated_insectglaive__17a: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [180, 30, 80, 40, 20, 0],
-    maxSharpness:  [180, 30, 80, 40, 70, 0],
+    baseSharpness: [180, 30, 80, 40, 20, 0, 0],
+    maxSharpness:  [180, 30, 80, 40, 70, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 4,
@@ -2461,8 +2461,8 @@ const __generated_insectglaive__17b: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [180, 30, 70, 40, 30, 0],
-    maxSharpness:  [180, 30, 70, 40, 80, 0],
+    baseSharpness: [180, 30, 70, 40, 30, 0, 0],
+    maxSharpness:  [180, 30, 70, 40, 80, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 5,
@@ -2504,8 +2504,8 @@ const __generated_insectglaive__17c: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [170, 30, 60, 50, 40, 0],
-    maxSharpness:  [170, 30, 60, 50, 80, 10],
+    baseSharpness: [170, 30, 60, 50, 40, 0, 0],
+    maxSharpness:  [170, 30, 60, 50, 80, 10, 0],
 
     insectglaiveStats: {
         kinsectLevel: 6,
@@ -2543,8 +2543,8 @@ const __generated_insectglaive__18a: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [100, 90, 40, 20, 0, 0],
-    maxSharpness:  [100, 90, 40, 70, 0, 0],
+    baseSharpness: [100, 90, 40, 20, 0, 0, 0],
+    maxSharpness:  [100, 90, 40, 70, 0, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 2,
@@ -2583,8 +2583,8 @@ const __generated_insectglaive__18b: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [140, 70, 80, 40, 20, 0],
-    maxSharpness:  [140, 70, 80, 40, 70, 0],
+    baseSharpness: [140, 70, 80, 40, 20, 0, 0],
+    maxSharpness:  [140, 70, 80, 40, 70, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 6,
@@ -2624,8 +2624,8 @@ const __generated_insectglaive__18c: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [130, 60, 80, 50, 30, 0],
-    maxSharpness:  [130, 60, 80, 50, 80, 0],
+    baseSharpness: [130, 60, 80, 50, 30, 0, 0],
+    maxSharpness:  [130, 60, 80, 50, 80, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 7,
@@ -2664,8 +2664,8 @@ const __generated_insectglaive__19a: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [90, 30, 90, 40, 0, 0],
-    maxSharpness:  [90, 30, 90, 80, 10, 0],
+    baseSharpness: [90, 30, 90, 40, 0, 0, 0],
+    maxSharpness:  [90, 30, 90, 80, 10, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 2,
@@ -2705,8 +2705,8 @@ const __generated_insectglaive__19b: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [90, 40, 110, 40, 20, 0],
-    maxSharpness:  [90, 40, 110, 40, 70, 0],
+    baseSharpness: [90, 40, 110, 40, 20, 0, 0],
+    maxSharpness:  [90, 40, 110, 40, 70, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 4,
@@ -2747,8 +2747,8 @@ const __generated_insectglaive__19c: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [90, 40, 100, 40, 30, 0],
-    maxSharpness:  [90, 40, 100, 40, 70, 10],
+    baseSharpness: [90, 40, 100, 40, 30, 0, 0],
+    maxSharpness:  [90, 40, 100, 40, 70, 10, 0],
 
     insectglaiveStats: {
         kinsectLevel: 5,
@@ -2786,8 +2786,8 @@ const __generated_insectglaive__20a: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [110, 70, 50, 20, 0, 0],
-    maxSharpness:  [110, 70, 50, 70, 0, 0],
+    baseSharpness: [110, 70, 50, 20, 0, 0, 0],
+    maxSharpness:  [110, 70, 50, 70, 0, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 3,
@@ -2826,8 +2826,8 @@ const __generated_insectglaive__20b: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [110, 80, 70, 40, 0, 0],
-    maxSharpness:  [110, 80, 70, 90, 0, 0],
+    baseSharpness: [110, 80, 70, 40, 0, 0, 0],
+    maxSharpness:  [110, 80, 70, 90, 0, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 4,
@@ -2867,8 +2867,8 @@ const __generated_insectglaive__20c: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [90, 80, 70, 60, 0, 0],
-    maxSharpness:  [90, 80, 70, 90, 20, 0],
+    baseSharpness: [90, 80, 70, 60, 0, 0, 0],
+    maxSharpness:  [90, 80, 70, 90, 20, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 5,
@@ -2905,8 +2905,8 @@ const __generated_insectglaive__21a: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [50, 50, 80, 70, 0, 0],
-    maxSharpness:  [50, 50, 80, 100, 20, 0],
+    baseSharpness: [50, 50, 80, 70, 0, 0, 0],
+    maxSharpness:  [50, 50, 80, 100, 20, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 2,
@@ -2944,8 +2944,8 @@ const __generated_insectglaive__21b: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [50, 40, 130, 100, 30, 0],
-    maxSharpness:  [50, 40, 130, 100, 70, 10],
+    baseSharpness: [50, 40, 130, 100, 30, 0, 0],
+    maxSharpness:  [50, 40, 130, 100, 70, 10, 0],
 
     insectglaiveStats: {
         kinsectLevel: 5,
@@ -2984,8 +2984,8 @@ const __generated_insectglaive__21c: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [50, 70, 90, 100, 40, 0],
-    maxSharpness:  [50, 70, 90, 100, 70, 20],
+    baseSharpness: [50, 70, 90, 100, 40, 0, 0],
+    maxSharpness:  [50, 70, 90, 100, 70, 20, 0],
 
     insectglaiveStats: {
         kinsectLevel: 6,
@@ -3022,8 +3022,8 @@ const __generated_insectglaive__22a: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [50, 60, 110, 30, 0, 0],
-    maxSharpness:  [50, 60, 110, 80, 0, 0],
+    baseSharpness: [50, 60, 110, 30, 0, 0, 0],
+    maxSharpness:  [50, 60, 110, 80, 0, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 2,
@@ -3060,8 +3060,8 @@ const __generated_insectglaive__22b: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [60, 70, 120, 50, 0, 0],
-    maxSharpness:  [60, 70, 120, 90, 10, 0],
+    baseSharpness: [60, 70, 120, 50, 0, 0, 0],
+    maxSharpness:  [60, 70, 120, 90, 10, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 3,
@@ -3100,8 +3100,8 @@ const __generated_insectglaive__22c: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [90, 20, 80, 90, 20, 0],
-    maxSharpness:  [90, 20, 80, 90, 50, 20],
+    baseSharpness: [90, 20, 80, 90, 20, 0, 0],
+    maxSharpness:  [90, 20, 80, 90, 50, 20, 0],
 
     insectglaiveStats: {
         kinsectLevel: 5,
@@ -3141,8 +3141,8 @@ const __generated_insectglaive__23a: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [70, 40, 90, 50, 0, 0],
-    maxSharpness:  [70, 40, 90, 100, 0, 0],
+    baseSharpness: [70, 40, 90, 50, 0, 0, 0],
+    maxSharpness:  [70, 40, 90, 100, 0, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 3,
@@ -3182,8 +3182,8 @@ const __generated_insectglaive__23b: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [70, 40, 70, 100, 20, 0],
-    maxSharpness:  [70, 40, 70, 100, 70, 0],
+    baseSharpness: [70, 40, 70, 100, 20, 0, 0],
+    maxSharpness:  [70, 40, 70, 100, 70, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 6,
@@ -3224,8 +3224,8 @@ const __generated_insectglaive__23c: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [70, 40, 110, 100, 30, 0],
-    maxSharpness:  [70, 40, 110, 100, 60, 20],
+    baseSharpness: [70, 40, 110, 100, 30, 0, 0],
+    maxSharpness:  [70, 40, 110, 100, 60, 20, 0],
 
     insectglaiveStats: {
         kinsectLevel: 8,
@@ -3260,8 +3260,8 @@ const __generated_insectglaive__24a: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [70, 80, 50, 0, 0, 0],
-    maxSharpness:  [70, 80, 70, 30, 0, 0],
+    baseSharpness: [70, 80, 50, 0, 0, 0, 0],
+    maxSharpness:  [70, 80, 70, 30, 0, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 3,
@@ -3297,8 +3297,8 @@ const __generated_insectglaive__24b: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [60, 60, 50, 30, 0, 0],
-    maxSharpness:  [60, 60, 50, 80, 0, 0],
+    baseSharpness: [60, 60, 50, 30, 0, 0, 0],
+    maxSharpness:  [60, 60, 50, 80, 0, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 4,
@@ -3335,8 +3335,8 @@ const __generated_insectglaive__24c: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [60, 80, 90, 30, 40, 0],
-    maxSharpness:  [60, 80, 90, 30, 90, 0],
+    baseSharpness: [60, 80, 90, 30, 40, 0, 0],
+    maxSharpness:  [60, 80, 90, 30, 90, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 5,
@@ -3373,8 +3373,8 @@ const __generated_insectglaive__25a: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [120, 20, 20, 40, 0, 0],
-    maxSharpness:  [120, 20, 20, 90, 0, 0],
+    baseSharpness: [120, 20, 20, 40, 0, 0, 0],
+    maxSharpness:  [120, 20, 20, 90, 0, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 3,
@@ -3411,8 +3411,8 @@ const __generated_insectglaive__25b: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [150, 20, 30, 50, 0, 0],
-    maxSharpness:  [150, 20, 30, 100, 0, 0],
+    baseSharpness: [150, 20, 30, 50, 0, 0, 0],
+    maxSharpness:  [150, 20, 30, 100, 0, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 4,
@@ -3451,8 +3451,8 @@ const __generated_insectglaive__25c: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [120, 20, 30, 80, 0, 0],
-    maxSharpness:  [120, 20, 30, 130, 0, 0],
+    baseSharpness: [120, 20, 30, 80, 0, 0, 0],
+    maxSharpness:  [120, 20, 30, 130, 0, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 4,
@@ -3492,8 +3492,8 @@ const __generated_insectglaive__25d: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [150, 40, 30, 60, 20, 0],
-    maxSharpness:  [150, 40, 30, 60, 60, 10],
+    baseSharpness: [150, 40, 30, 60, 20, 0, 0],
+    maxSharpness:  [150, 40, 30, 60, 60, 10, 0],
 
     insectglaiveStats: {
         kinsectLevel: 5,
@@ -3533,8 +3533,8 @@ const __generated_insectglaive__25e: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [150, 40, 20, 60, 30, 0],
-    maxSharpness:  [150, 40, 20, 60, 60, 20],
+    baseSharpness: [150, 40, 20, 60, 30, 0, 0],
+    maxSharpness:  [150, 40, 20, 60, 60, 20, 0],
 
     insectglaiveStats: {
         kinsectLevel: 6,
@@ -3576,8 +3576,8 @@ const __generated_insectglaive__25f: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [160, 40, 20, 40, 40, 0],
-    maxSharpness:  [160, 40, 20, 40, 50, 40],
+    baseSharpness: [160, 40, 20, 40, 40, 0, 0],
+    maxSharpness:  [160, 40, 20, 40, 50, 40, 0],
 
     insectglaiveStats: {
         kinsectLevel: 8,
@@ -3617,8 +3617,8 @@ const __generated_insectglaive__26a: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [150, 40, 30, 60, 20, 0],
-    maxSharpness:  [150, 40, 30, 60, 60, 10],
+    baseSharpness: [150, 40, 30, 60, 20, 0, 0],
+    maxSharpness:  [150, 40, 30, 60, 60, 10, 0],
 
     insectglaiveStats: {
         kinsectLevel: 5,
@@ -3658,8 +3658,8 @@ const __generated_insectglaive__26b: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [150, 40, 20, 60, 30, 0],
-    maxSharpness:  [150, 40, 20, 60, 60, 20],
+    baseSharpness: [150, 40, 20, 60, 30, 0, 0],
+    maxSharpness:  [150, 40, 20, 60, 60, 20, 0],
 
     insectglaiveStats: {
         kinsectLevel: 6,
@@ -3701,8 +3701,8 @@ const __generated_insectglaive__26c: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [160, 40, 20, 40, 40, 0],
-    maxSharpness:  [160, 40, 20, 40, 50, 40],
+    baseSharpness: [160, 40, 20, 40, 40, 0, 0],
+    maxSharpness:  [160, 40, 20, 40, 50, 40, 0],
 
     insectglaiveStats: {
         kinsectLevel: 8,
@@ -3741,8 +3741,8 @@ const __generated_insectglaive__27a: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [120, 20, 30, 80, 0, 0],
-    maxSharpness:  [120, 20, 30, 130, 0, 0],
+    baseSharpness: [120, 20, 30, 80, 0, 0, 0],
+    maxSharpness:  [120, 20, 30, 130, 0, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 4,
@@ -3781,8 +3781,8 @@ const __generated_insectglaive__27b: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [150, 20, 20, 80, 30, 0],
-    maxSharpness:  [150, 20, 20, 80, 60, 20],
+    baseSharpness: [150, 20, 20, 80, 30, 0, 0],
+    maxSharpness:  [150, 20, 20, 80, 60, 20, 0],
 
     insectglaiveStats: {
         kinsectLevel: 6,
@@ -3823,8 +3823,8 @@ const __generated_insectglaive__27c: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [160, 40, 20, 40, 40, 0],
-    maxSharpness:  [160, 40, 20, 40, 50, 40],
+    baseSharpness: [160, 40, 20, 40, 40, 0, 0],
+    maxSharpness:  [160, 40, 20, 40, 50, 40, 0],
 
     insectglaiveStats: {
         kinsectLevel: 8,
@@ -3862,8 +3862,8 @@ const __generated_insectglaive__28a: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [120, 20, 20, 40, 0, 0],
-    maxSharpness:  [120, 20, 20, 90, 0, 0],
+    baseSharpness: [120, 20, 20, 40, 0, 0, 0],
+    maxSharpness:  [120, 20, 20, 90, 0, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 4,
@@ -3901,8 +3901,8 @@ const __generated_insectglaive__28b: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [150, 40, 30, 60, 20, 0],
-    maxSharpness:  [150, 40, 30, 60, 60, 10],
+    baseSharpness: [150, 40, 30, 60, 20, 0, 0],
+    maxSharpness:  [150, 40, 30, 60, 60, 10, 0],
 
     insectglaiveStats: {
         kinsectLevel: 6,
@@ -3941,8 +3941,8 @@ const __generated_insectglaive__28c: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [160, 40, 20, 40, 40, 0],
-    maxSharpness:  [160, 40, 20, 40, 70, 20],
+    baseSharpness: [160, 40, 20, 40, 40, 0, 0],
+    maxSharpness:  [160, 40, 20, 40, 70, 20, 0],
 
     insectglaiveStats: {
         kinsectLevel: 7,
@@ -3977,8 +3977,8 @@ const __generated_insectglaive__29a: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [160, 20, 40, 80, 0, 0],
-    maxSharpness:  [160, 20, 40, 110, 20, 0],
+    baseSharpness: [160, 20, 40, 80, 0, 0, 0],
+    maxSharpness:  [160, 20, 40, 110, 20, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 3,
@@ -4014,8 +4014,8 @@ const __generated_insectglaive__29b: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [170, 20, 20, 90, 0, 0],
-    maxSharpness:  [170, 20, 20, 110, 30, 0],
+    baseSharpness: [170, 20, 20, 90, 0, 0, 0],
+    maxSharpness:  [170, 20, 20, 110, 30, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 3,
@@ -4052,8 +4052,8 @@ const __generated_insectglaive__29c: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [190, 10, 20, 90, 40, 0],
-    maxSharpness:  [190, 10, 20, 90, 60, 30],
+    baseSharpness: [190, 10, 20, 90, 40, 0, 0],
+    maxSharpness:  [190, 10, 20, 90, 60, 30, 0],
 
     insectglaiveStats: {
         kinsectLevel: 7,
@@ -4088,8 +4088,8 @@ const __generated_insectglaive__30a: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [60, 40, 120, 80, 0, 0],
-    maxSharpness:  [60, 40, 120, 110, 20, 0],
+    baseSharpness: [60, 40, 120, 80, 0, 0, 0],
+    maxSharpness:  [60, 40, 120, 110, 20, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 4,
@@ -4125,8 +4125,8 @@ const __generated_insectglaive__30b: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [60, 30, 150, 100, 10, 0],
-    maxSharpness:  [60, 30, 150, 100, 60, 0],
+    baseSharpness: [60, 30, 150, 100, 10, 0, 0],
+    maxSharpness:  [60, 30, 150, 100, 60, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 5,
@@ -4163,8 +4163,8 @@ const __generated_insectglaive__30c: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [100, 50, 80, 100, 20, 0],
-    maxSharpness:  [100, 50, 80, 100, 60, 10],
+    baseSharpness: [100, 50, 80, 100, 20, 0, 0],
+    maxSharpness:  [100, 50, 80, 100, 60, 10, 0],
 
     insectglaiveStats: {
         kinsectLevel: 6,
@@ -4199,8 +4199,8 @@ const __generated_insectglaive__31a: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [20, 20, 20, 40, 100, 0],
-    maxSharpness:  [20, 20, 20, 40, 150, 0],
+    baseSharpness: [20, 20, 20, 40, 100, 0, 0],
+    maxSharpness:  [20, 20, 20, 40, 150, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 4,
@@ -4236,8 +4236,8 @@ const __generated_insectglaive__31b: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [20, 20, 50, 50, 110, 0],
-    maxSharpness:  [20, 20, 50, 50, 150, 10],
+    baseSharpness: [20, 20, 50, 50, 110, 0, 0],
+    maxSharpness:  [20, 20, 50, 50, 150, 10, 0],
 
     insectglaiveStats: {
         kinsectLevel: 5,
@@ -4274,8 +4274,8 @@ const __generated_insectglaive__31c: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [20, 20, 80, 60, 120, 0],
-    maxSharpness:  [20, 20, 80, 60, 150, 20],
+    baseSharpness: [20, 20, 80, 60, 120, 0, 0],
+    maxSharpness:  [20, 20, 80, 60, 150, 20, 0],
 
     insectglaiveStats: {
         kinsectLevel: 6,
@@ -4310,8 +4310,8 @@ const __generated_insectglaive__32a: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [20, 20, 190, 40, 30, 0],
-    maxSharpness:  [20, 20, 190, 40, 50, 30],
+    baseSharpness: [20, 20, 190, 40, 30, 0, 0],
+    maxSharpness:  [20, 20, 190, 40, 50, 30, 0],
 
     insectglaiveStats: {
         kinsectLevel: 7,
@@ -4347,8 +4347,8 @@ const __generated_insectglaive__32b: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [10, 20, 220, 40, 60, 0],
-    maxSharpness:  [10, 20, 220, 40, 70, 40],
+    baseSharpness: [10, 20, 220, 40, 60, 0, 0],
+    maxSharpness:  [10, 20, 220, 40, 70, 40, 0],
 
     insectglaiveStats: {
         kinsectLevel: 8,
@@ -4383,8 +4383,8 @@ const __generated_insectglaive__33a: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [50, 100, 110, 60, 30, 0],
-    maxSharpness:  [50, 100, 110, 60, 40, 40],
+    baseSharpness: [50, 100, 110, 60, 30, 0, 0],
+    maxSharpness:  [50, 100, 110, 60, 40, 40, 0],
 
     insectglaiveStats: {
         kinsectLevel: 6,
@@ -4421,8 +4421,8 @@ const __generated_insectglaive__33b: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [50, 100, 90, 60, 50, 0],
-    maxSharpness:  [50, 100, 90, 60, 50, 50],
+    baseSharpness: [50, 100, 90, 60, 50, 0, 0],
+    maxSharpness:  [50, 100, 90, 60, 50, 50, 0],
 
     insectglaiveStats: {
         kinsectLevel: 7,
@@ -4457,8 +4457,8 @@ const __generated_insectglaive__34a: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [60, 130, 40, 100, 20, 0],
-    maxSharpness:  [60, 130, 40, 100, 40, 30],
+    baseSharpness: [60, 130, 40, 100, 20, 0, 0],
+    maxSharpness:  [60, 130, 40, 100, 40, 30, 0],
 
     insectglaiveStats: {
         kinsectLevel: 6,
@@ -4494,8 +4494,8 @@ const __generated_insectglaive__34b: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [30, 140, 40, 110, 30, 0],
-    maxSharpness:  [30, 140, 40, 110, 30, 50],
+    baseSharpness: [30, 140, 40, 110, 30, 0, 0],
+    maxSharpness:  [30, 140, 40, 110, 30, 50, 0],
 
     insectglaiveStats: {
         kinsectLevel: 6,
@@ -4530,8 +4530,8 @@ const __generated_insectglaive__35a: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [180, 0, 0, 0, 0, 70],
-    maxSharpness:  [180, 0, 0, 0, 0, 120],
+    baseSharpness: [180, 0, 0, 0, 0, 70, 0],
+    maxSharpness:  [180, 0, 0, 0, 0, 120, 0],
 
     insectglaiveStats: {
         kinsectLevel: 5,
@@ -4566,8 +4566,8 @@ const __generated_insectglaive__35b: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [60, 0, 0, 0, 0, 90],
-    maxSharpness:  [60, 0, 0, 0, 0, 140],
+    baseSharpness: [60, 0, 0, 0, 0, 90, 0],
+    maxSharpness:  [60, 0, 0, 0, 0, 140, 0],
 
     insectglaiveStats: {
         kinsectLevel: 5,
@@ -4602,8 +4602,8 @@ const __generated_insectglaive__36a: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [60, 70, 40, 30, 0, 0],
-    maxSharpness:  [60, 70, 40, 80, 0, 0],
+    baseSharpness: [60, 70, 40, 30, 0, 0, 0],
+    maxSharpness:  [60, 70, 40, 80, 0, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 4,
@@ -4639,8 +4639,8 @@ const __generated_insectglaive__36b: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [90, 100, 40, 70, 0, 0],
-    maxSharpness:  [90, 100, 40, 120, 0, 0],
+    baseSharpness: [90, 100, 40, 70, 0, 0, 0],
+    maxSharpness:  [90, 100, 40, 120, 0, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 5,
@@ -4677,8 +4677,8 @@ const __generated_insectglaive__36c: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [90, 100, 60, 100, 0, 0],
-    maxSharpness:  [90, 100, 60, 110, 40, 0],
+    baseSharpness: [90, 100, 60, 100, 0, 0, 0],
+    maxSharpness:  [90, 100, 60, 110, 40, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 7,
@@ -4713,8 +4713,8 @@ const __generated_insectglaive__37a: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [120, 40, 40, 0, 0, 0],
-    maxSharpness:  [120, 40, 80, 10, 0, 0],
+    baseSharpness: [120, 40, 40, 0, 0, 0, 0],
+    maxSharpness:  [120, 40, 80, 10, 0, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 3,
@@ -4750,8 +4750,8 @@ const __generated_insectglaive__37b: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [120, 40, 80, 10, 0, 0],
-    maxSharpness:  [120, 40, 80, 60, 0, 0],
+    baseSharpness: [120, 40, 80, 10, 0, 0, 0],
+    maxSharpness:  [120, 40, 80, 60, 0, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 4,
@@ -4789,8 +4789,8 @@ const __generated_insectglaive__37c: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [120, 50, 70, 50, 10, 0],
-    maxSharpness:  [120, 50, 70, 50, 50, 10],
+    baseSharpness: [120, 50, 70, 50, 10, 0, 0],
+    maxSharpness:  [120, 50, 70, 50, 50, 10, 0],
 
     insectglaiveStats: {
         kinsectLevel: 5,
@@ -4829,8 +4829,8 @@ const __generated_insectglaive__37d: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [120, 60, 80, 70, 20, 0],
-    maxSharpness:  [120, 60, 80, 70, 50, 20],
+    baseSharpness: [120, 60, 80, 70, 20, 0, 0],
+    maxSharpness:  [120, 60, 80, 70, 50, 20, 0],
 
     insectglaiveStats: {
         kinsectLevel: 8,
@@ -4865,8 +4865,8 @@ const __generated_insectglaive__38a: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [60, 70, 90, 30, 0, 0],
-    maxSharpness:  [60, 70, 90, 80, 0, 0],
+    baseSharpness: [60, 70, 90, 30, 0, 0, 0],
+    maxSharpness:  [60, 70, 90, 80, 0, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 4,
@@ -4902,8 +4902,8 @@ const __generated_insectglaive__38b: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [60, 80, 120, 40, 0, 0],
-    maxSharpness:  [60, 80, 120, 80, 10, 0],
+    baseSharpness: [60, 80, 120, 40, 0, 0, 0],
+    maxSharpness:  [60, 80, 120, 80, 10, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 5,
@@ -4940,8 +4940,8 @@ const __generated_insectglaive__38c: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [40, 60, 120, 60, 20, 0],
-    maxSharpness:  [40, 60, 120, 60, 70, 0],
+    baseSharpness: [40, 60, 120, 60, 20, 0, 0],
+    maxSharpness:  [40, 60, 120, 60, 70, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 6,
@@ -4985,8 +4985,8 @@ const __generated_insectglaive__ra: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [70, 70, 90, 20, 0, 0],
-    maxSharpness:  [70, 70, 90, 70, 0, 0],
+    baseSharpness: [70, 70, 90, 20, 0, 0, 0],
+    maxSharpness:  [70, 70, 90, 70, 0, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 3,
@@ -5034,8 +5034,8 @@ const __generated_insectglaive__rb: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [60, 70, 80, 40, 0, 0],
-    maxSharpness:  [60, 70, 80, 90, 0, 0],
+    baseSharpness: [60, 70, 80, 40, 0, 0, 0],
+    maxSharpness:  [60, 70, 80, 90, 0, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 3,
@@ -5092,8 +5092,8 @@ const __generated_insectglaive__rc: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [50, 70, 80, 30, 20, 0],
-    maxSharpness:  [50, 70, 80, 30, 70, 0],
+    baseSharpness: [50, 70, 80, 30, 20, 0, 0],
+    maxSharpness:  [50, 70, 80, 30, 70, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 3,
@@ -5157,8 +5157,8 @@ const __generated_insectglaive__rd: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [50, 70, 70, 30, 30, 0],
-    maxSharpness:  [50, 70, 70, 30, 80, 0],
+    baseSharpness: [50, 70, 70, 30, 30, 0, 0],
+    maxSharpness:  [50, 70, 70, 30, 80, 0, 0],
 
     insectglaiveStats: {
         kinsectLevel: 3,
@@ -5233,8 +5233,8 @@ const __generated_insectglaive__re: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [50, 70, 50, 50, 30, 0],
-    maxSharpness:  [50, 70, 50, 50, 70, 10],
+    baseSharpness: [50, 70, 50, 50, 30, 0, 0],
+    maxSharpness:  [50, 70, 50, 50, 70, 10, 0],
 
     insectglaiveStats: {
         kinsectLevel: 3,
@@ -5317,8 +5317,8 @@ const __generated_insectglaive__rf: InsectGlaive = {
         ],
     ],
 
-    baseSharpness: [50, 70, 30, 60, 40, 0],
-    maxSharpness:  [50, 70, 30, 60, 70, 20],
+    baseSharpness: [50, 70, 30, 60, 40, 0, 0],
+    maxSharpness:  [50, 70, 30, 60, 70, 20, 0],
 
     insectglaiveStats: {
         kinsectLevel: 3,

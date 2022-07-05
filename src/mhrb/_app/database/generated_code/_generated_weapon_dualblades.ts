@@ -173,8 +173,8 @@ const __generated_dualblades__1a: DualBlades = {
         ],
     ],
 
-    baseSharpness: [50, 90, 60, 0, 0, 0],
-    maxSharpness:  [50, 90, 100, 10, 0, 0],
+    baseSharpness: [50, 90, 60, 0, 0, 0, 0],
+    maxSharpness:  [50, 90, 100, 10, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "kamuraglintbladesi",
@@ -205,8 +205,8 @@ const __generated_dualblades__1b: DualBlades = {
         ],
     ],
 
-    baseSharpness: [60, 70, 70, 0, 0, 0],
-    maxSharpness:  [60, 70, 110, 10, 0, 0],
+    baseSharpness: [60, 70, 70, 0, 0, 0, 0],
+    maxSharpness:  [60, 70, 110, 10, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "kamuraglintbladesii",
@@ -238,8 +238,8 @@ const __generated_dualblades__1c: DualBlades = {
         ],
     ],
 
-    baseSharpness: [60, 70, 90, 30, 0, 0],
-    maxSharpness:  [60, 70, 90, 80, 0, 0],
+    baseSharpness: [60, 70, 90, 30, 0, 0, 0],
+    maxSharpness:  [60, 70, 90, 80, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "kamuraglintbladesiii",
@@ -272,8 +272,8 @@ const __generated_dualblades__1d: DualBlades = {
         ],
     ],
 
-    baseSharpness: [50, 70, 80, 30, 20, 0],
-    maxSharpness:  [50, 70, 80, 30, 70, 0],
+    baseSharpness: [50, 70, 80, 30, 20, 0, 0],
+    maxSharpness:  [50, 70, 80, 30, 70, 0, 0],
 
     filterHelpers: {
         nameLower: "kamuraglintbladesiv",
@@ -308,8 +308,8 @@ const __generated_dualblades__1e: DualBlades = {
         ],
     ],
 
-    baseSharpness: [60, 80, 90, 40, 30, 0],
-    maxSharpness:  [60, 80, 90, 40, 70, 10],
+    baseSharpness: [60, 80, 90, 40, 30, 0, 0],
+    maxSharpness:  [60, 80, 90, 40, 70, 10, 0],
 
     filterHelpers: {
         nameLower: "kamuraglintbladesv",
@@ -345,8 +345,8 @@ const __generated_dualblades__1f: DualBlades = {
         ],
     ],
 
-    baseSharpness: [40, 90, 60, 60, 50, 0],
-    maxSharpness:  [40, 90, 60, 60, 80, 20],
+    baseSharpness: [40, 90, 60, 60, 50, 0, 0],
+    maxSharpness:  [40, 90, 60, 60, 80, 20, 0],
 
     filterHelpers: {
         nameLower: "kamuraninjablades",
@@ -381,8 +381,8 @@ const __generated_dualblades__2a: DualBlades = {
         ],
     ],
 
-    baseSharpness: [50, 50, 100, 50, 0, 0],
-    maxSharpness:  [50, 50, 100, 80, 20, 0],
+    baseSharpness: [50, 50, 100, 50, 0, 0, 0],
+    maxSharpness:  [50, 50, 100, 80, 20, 0, 0],
 
     filterHelpers: {
         nameLower: "mudripperi",
@@ -418,8 +418,8 @@ const __generated_dualblades__2b: DualBlades = {
         ],
     ],
 
-    baseSharpness: [60, 60, 80, 60, 40, 0],
-    maxSharpness:  [60, 60, 80, 60, 90, 0],
+    baseSharpness: [60, 60, 80, 60, 40, 0, 0],
+    maxSharpness:  [60, 60, 80, 60, 90, 0, 0],
 
     filterHelpers: {
         nameLower: "mudripperii",
@@ -456,8 +456,8 @@ const __generated_dualblades__2c: DualBlades = {
         ],
     ],
 
-    baseSharpness: [60, 60, 80, 90, 60, 0],
-    maxSharpness:  [60, 60, 80, 90, 110, 0],
+    baseSharpness: [60, 60, 80, 90, 60, 0, 0],
+    maxSharpness:  [60, 60, 80, 90, 110, 0, 0],
 
     filterHelpers: {
         nameLower: "mudtwister",
@@ -491,8 +491,8 @@ const __generated_dualblades__3a: DualBlades = {
         ],
     ],
 
-    baseSharpness: [60, 40, 50, 100, 0, 0],
-    maxSharpness:  [60, 40, 50, 150, 0, 0],
+    baseSharpness: [60, 40, 50, 100, 0, 0, 0],
+    maxSharpness:  [60, 40, 50, 150, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "usurper'sfulguri",
@@ -527,8 +527,8 @@ const __generated_dualblades__3b: DualBlades = {
         ],
     ],
 
-    baseSharpness: [60, 30, 100, 90, 20, 0],
-    maxSharpness:  [60, 30, 100, 90, 70, 0],
+    baseSharpness: [60, 30, 100, 90, 20, 0, 0],
+    maxSharpness:  [60, 30, 100, 90, 70, 0, 0],
 
     filterHelpers: {
         nameLower: "usurper'sfulgurii",
@@ -564,8 +564,8 @@ const __generated_dualblades__3c: DualBlades = {
         ],
     ],
 
-    baseSharpness: [60, 40, 120, 100, 30, 0],
-    maxSharpness:  [60, 40, 120, 100, 50, 30],
+    baseSharpness: [60, 40, 120, 100, 30, 0, 0],
+    maxSharpness:  [60, 40, 120, 100, 50, 30, 0],
 
     filterHelpers: {
         nameLower: "despot'sblitz",
@@ -599,8 +599,8 @@ const __generated_dualblades__4a: DualBlades = {
         ],
     ],
 
-    baseSharpness: [50, 50, 80, 70, 0, 0],
-    maxSharpness:  [50, 50, 80, 100, 20, 0],
+    baseSharpness: [50, 50, 80, 70, 0, 0, 0],
+    maxSharpness:  [50, 50, 80, 100, 20, 0, 0],
 
     filterHelpers: {
         nameLower: "blizzariothsi",
@@ -635,8 +635,8 @@ const __generated_dualblades__4b: DualBlades = {
         ],
     ],
 
-    baseSharpness: [50, 30, 130, 100, 40, 0],
-    maxSharpness:  [50, 30, 130, 100, 80, 10],
+    baseSharpness: [50, 30, 130, 100, 40, 0, 0],
+    maxSharpness:  [50, 30, 130, 100, 80, 10, 0],
 
     filterHelpers: {
         nameLower: "blizzariothsii",
@@ -672,8 +672,8 @@ const __generated_dualblades__4c: DualBlades = {
         ],
     ],
 
-    baseSharpness: [50, 70, 80, 100, 50, 0],
-    maxSharpness:  [50, 70, 80, 100, 80, 20],
+    baseSharpness: [50, 70, 80, 100, 50, 0, 0],
+    maxSharpness:  [50, 70, 80, 100, 80, 20, 0],
 
     filterHelpers: {
         nameLower: "mountainblizzarioths",
@@ -707,8 +707,8 @@ const __generated_dualblades__5a: DualBlades = {
         ],
     ],
 
-    baseSharpness: [70, 50, 50, 30, 0, 0],
-    maxSharpness:  [70, 50, 50, 80, 0, 0],
+    baseSharpness: [70, 50, 50, 30, 0, 0, 0],
+    maxSharpness:  [70, 50, 50, 80, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "desperadoi",
@@ -742,8 +742,8 @@ const __generated_dualblades__5b: DualBlades = {
         ],
     ],
 
-    baseSharpness: [90, 50, 60, 50, 0, 0],
-    maxSharpness:  [90, 50, 60, 100, 0, 0],
+    baseSharpness: [90, 50, 60, 50, 0, 0, 0],
+    maxSharpness:  [90, 50, 60, 100, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "desperadoii",
@@ -778,8 +778,8 @@ const __generated_dualblades__5c: DualBlades = {
         ],
     ],
 
-    baseSharpness: [90, 50, 60, 80, 20, 0],
-    maxSharpness:  [90, 50, 60, 80, 60, 10],
+    baseSharpness: [90, 50, 60, 80, 20, 0, 0],
+    maxSharpness:  [90, 50, 60, 80, 60, 10, 0],
 
     filterHelpers: {
         nameLower: "thekid",
@@ -813,8 +813,8 @@ const __generated_dualblades__6a: DualBlades = {
         ],
     ],
 
-    baseSharpness: [80, 60, 70, 40, 0, 0],
-    maxSharpness:  [80, 60, 70, 90, 0, 0],
+    baseSharpness: [80, 60, 70, 40, 0, 0, 0],
+    maxSharpness:  [80, 60, 70, 90, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "khezudaggersi",
@@ -850,8 +850,8 @@ const __generated_dualblades__6b: DualBlades = {
         ],
     ],
 
-    baseSharpness: [60, 60, 80, 50, 0, 0],
-    maxSharpness:  [60, 60, 80, 100, 0, 0],
+    baseSharpness: [60, 60, 80, 50, 0, 0, 0],
+    maxSharpness:  [60, 60, 80, 100, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "khezudaggersii",
@@ -889,8 +889,8 @@ const __generated_dualblades__6c: DualBlades = {
         ],
     ],
 
-    baseSharpness: [40, 50, 90, 90, 30, 0],
-    maxSharpness:  [40, 50, 90, 90, 70, 10],
+    baseSharpness: [40, 50, 90, 90, 30, 0, 0],
+    maxSharpness:  [40, 50, 90, 90, 70, 10, 0],
 
     filterHelpers: {
         nameLower: "khezuskards",
@@ -921,8 +921,8 @@ const __generated_dualblades__7a: DualBlades = {
         ],
     ],
 
-    baseSharpness: [80, 70, 50, 0, 0, 0],
-    maxSharpness:  [80, 70, 90, 10, 0, 0],
+    baseSharpness: [80, 70, 50, 0, 0, 0, 0],
+    maxSharpness:  [80, 70, 90, 10, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "matchedslicersi",
@@ -953,8 +953,8 @@ const __generated_dualblades__7b: DualBlades = {
         ],
     ],
 
-    baseSharpness: [70, 60, 70, 0, 0, 0],
-    maxSharpness:  [70, 60, 110, 10, 0, 0],
+    baseSharpness: [70, 60, 70, 0, 0, 0, 0],
+    maxSharpness:  [70, 60, 110, 10, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "matchedslicersii",
@@ -986,8 +986,8 @@ const __generated_dualblades__7c: DualBlades = {
         ],
     ],
 
-    baseSharpness: [80, 70, 60, 40, 0, 0],
-    maxSharpness:  [80, 70, 60, 90, 0, 0],
+    baseSharpness: [80, 70, 60, 40, 0, 0, 0],
+    maxSharpness:  [80, 70, 60, 90, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "dualdaggers",
@@ -1020,8 +1020,8 @@ const __generated_dualblades__7d: DualBlades = {
         ],
     ],
 
-    baseSharpness: [90, 70, 40, 50, 0, 0],
-    maxSharpness:  [90, 70, 40, 80, 20, 0],
+    baseSharpness: [90, 70, 40, 50, 0, 0, 0],
+    maxSharpness:  [90, 70, 40, 80, 20, 0, 0],
 
     filterHelpers: {
         nameLower: "hurricanei",
@@ -1055,8 +1055,8 @@ const __generated_dualblades__7e: DualBlades = {
         ],
     ],
 
-    baseSharpness: [90, 70, 70, 50, 20, 0],
-    maxSharpness:  [90, 70, 70, 50, 60, 10],
+    baseSharpness: [90, 70, 70, 50, 20, 0, 0],
+    maxSharpness:  [90, 70, 70, 50, 60, 10, 0],
 
     filterHelpers: {
         nameLower: "hurricaneii",
@@ -1091,8 +1091,8 @@ const __generated_dualblades__7f: DualBlades = {
         ],
     ],
 
-    baseSharpness: [80, 80, 100, 60, 30, 0],
-    maxSharpness:  [80, 80, 100, 60, 60, 20],
+    baseSharpness: [80, 80, 100, 60, 30, 0, 0],
+    maxSharpness:  [80, 80, 100, 60, 60, 20, 0],
 
     filterHelpers: {
         nameLower: "cyclone",
@@ -1126,8 +1126,8 @@ const __generated_dualblades__8a: DualBlades = {
         ],
     ],
 
-    baseSharpness: [70, 30, 100, 90, 10, 0],
-    maxSharpness:  [70, 30, 100, 90, 60, 0],
+    baseSharpness: [70, 30, 100, 90, 10, 0, 0],
+    maxSharpness:  [70, 30, 100, 90, 60, 0, 0],
 
     filterHelpers: {
         nameLower: "rexslicersi",
@@ -1162,8 +1162,8 @@ const __generated_dualblades__8b: DualBlades = {
         ],
     ],
 
-    baseSharpness: [50, 40, 110, 100, 50, 0],
-    maxSharpness:  [50, 40, 110, 100, 80, 20],
+    baseSharpness: [50, 40, 110, 100, 50, 0, 0],
+    maxSharpness:  [50, 40, 110, 100, 80, 20, 0],
 
     filterHelpers: {
         nameLower: "rexslicersii",
@@ -1199,8 +1199,8 @@ const __generated_dualblades__8c: DualBlades = {
         ],
     ],
 
-    baseSharpness: [50, 40, 100, 120, 70, 20],
-    maxSharpness:  [50, 40, 100, 120, 70, 20],
+    baseSharpness: [50, 40, 100, 120, 70, 20, 0],
+    maxSharpness:  [50, 40, 100, 120, 70, 20, 0],
 
     filterHelpers: {
         nameLower: "tigrexclaws",
@@ -1233,8 +1233,8 @@ const __generated_dualblades__9a: DualBlades = {
         ],
     ],
 
-    baseSharpness: [60, 40, 90, 60, 0, 0],
-    maxSharpness:  [60, 40, 90, 90, 20, 0],
+    baseSharpness: [60, 40, 90, 60, 0, 0, 0],
+    maxSharpness:  [60, 40, 90, 90, 20, 0, 0],
 
     filterHelpers: {
         nameLower: "morningdawni",
@@ -1269,8 +1269,8 @@ const __generated_dualblades__9b: DualBlades = {
         ],
     ],
 
-    baseSharpness: [60, 80, 100, 80, 30, 0],
-    maxSharpness:  [60, 80, 100, 80, 60, 20],
+    baseSharpness: [60, 80, 100, 80, 30, 0, 0],
+    maxSharpness:  [60, 80, 100, 80, 60, 20, 0],
 
     filterHelpers: {
         nameLower: "morningdawnii",
@@ -1306,8 +1306,8 @@ const __generated_dualblades__9c: DualBlades = {
         ],
     ],
 
-    baseSharpness: [60, 40, 120, 90, 40, 0],
-    maxSharpness:  [60, 40, 120, 90, 40, 50],
+    baseSharpness: [60, 40, 120, 90, 40, 0, 0],
+    maxSharpness:  [60, 40, 120, 90, 40, 50, 0],
 
     filterHelpers: {
         nameLower: "eveningdusk",
@@ -1340,8 +1340,8 @@ const __generated_dualblades__10a: DualBlades = {
         ],
     ],
 
-    baseSharpness: [60, 70, 90, 30, 0, 0],
-    maxSharpness:  [60, 70, 90, 80, 0, 0],
+    baseSharpness: [60, 70, 90, 30, 0, 0, 0],
+    maxSharpness:  [60, 70, 90, 80, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "schirmscorni",
@@ -1375,8 +1375,8 @@ const __generated_dualblades__10b: DualBlades = {
         ],
     ],
 
-    baseSharpness: [50, 50, 130, 60, 10, 0],
-    maxSharpness:  [50, 50, 130, 60, 40, 20],
+    baseSharpness: [50, 50, 130, 60, 10, 0, 0],
+    maxSharpness:  [50, 50, 130, 60, 40, 20, 0],
 
     filterHelpers: {
         nameLower: "schirmscornii",
@@ -1411,8 +1411,8 @@ const __generated_dualblades__10c: DualBlades = {
         ],
     ],
 
-    baseSharpness: [50, 50, 150, 70, 30, 0],
-    maxSharpness:  [50, 50, 150, 70, 50, 30],
+    baseSharpness: [50, 50, 150, 70, 30, 0, 0],
+    maxSharpness:  [50, 50, 150, 70, 50, 30, 0],
 
     filterHelpers: {
         nameLower: "daybreakdaggers",
@@ -1445,8 +1445,8 @@ const __generated_dualblades__11a: DualBlades = {
         ],
     ],
 
-    baseSharpness: [80, 80, 50, 40, 0, 0],
-    maxSharpness:  [80, 80, 50, 90, 0, 0],
+    baseSharpness: [80, 80, 50, 40, 0, 0, 0],
+    maxSharpness:  [80, 80, 50, 90, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "kulu'specki",
@@ -1480,8 +1480,8 @@ const __generated_dualblades__11b: DualBlades = {
         ],
     ],
 
-    baseSharpness: [60, 60, 70, 60, 0, 0],
-    maxSharpness:  [60, 60, 70, 110, 0, 0],
+    baseSharpness: [60, 60, 70, 60, 0, 0, 0],
+    maxSharpness:  [60, 60, 70, 110, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "kulu'speckii",
@@ -1516,8 +1516,8 @@ const __generated_dualblades__11c: DualBlades = {
         ],
     ],
 
-    baseSharpness: [60, 80, 80, 50, 30, 0],
-    maxSharpness:  [60, 80, 80, 50, 80, 0],
+    baseSharpness: [60, 80, 80, 50, 30, 0, 0],
+    maxSharpness:  [60, 80, 80, 50, 80, 0, 0],
 
     filterHelpers: {
         nameLower: "kulu'slasher",
@@ -1554,8 +1554,8 @@ const __generated_dualblades__12a: DualBlades = {
         ],
     ],
 
-    baseSharpness: [90, 90, 100, 20, 0, 0],
-    maxSharpness:  [90, 90, 100, 60, 10, 0],
+    baseSharpness: [90, 90, 100, 20, 0, 0, 0],
+    maxSharpness:  [90, 90, 100, 60, 10, 0, 0],
 
     filterHelpers: {
         nameLower: "gelidmindi",
@@ -1593,8 +1593,8 @@ const __generated_dualblades__12b: DualBlades = {
         ],
     ],
 
-    baseSharpness: [90, 70, 110, 30, 0, 0],
-    maxSharpness:  [90, 70, 110, 50, 30, 0],
+    baseSharpness: [90, 70, 110, 30, 0, 0, 0],
+    maxSharpness:  [90, 70, 110, 50, 30, 0, 0],
 
     filterHelpers: {
         nameLower: "gelidmindii",
@@ -1633,8 +1633,8 @@ const __generated_dualblades__12c: DualBlades = {
         ],
     ],
 
-    baseSharpness: [60, 40, 90, 110, 0, 0],
-    maxSharpness:  [60, 40, 90, 110, 50, 0],
+    baseSharpness: [60, 40, 90, 110, 0, 0, 0],
+    maxSharpness:  [60, 40, 90, 110, 50, 0, 0],
 
     filterHelpers: {
         nameLower: "gelidsoul",
@@ -1669,8 +1669,8 @@ const __generated_dualblades__13a: DualBlades = {
         ],
     ],
 
-    baseSharpness: [50, 70, 80, 100, 0, 0],
-    maxSharpness:  [50, 70, 80, 100, 50, 0],
+    baseSharpness: [50, 70, 80, 100, 0, 0, 0],
+    maxSharpness:  [50, 70, 80, 100, 50, 0, 0],
 
     filterHelpers: {
         nameLower: "hiddengeminii",
@@ -1706,8 +1706,8 @@ const __generated_dualblades__13b: DualBlades = {
         ],
     ],
 
-    baseSharpness: [50, 30, 120, 100, 50, 0],
-    maxSharpness:  [50, 30, 120, 100, 70, 30],
+    baseSharpness: [50, 30, 120, 100, 50, 0, 0],
+    maxSharpness:  [50, 30, 120, 100, 70, 30, 0],
 
     filterHelpers: {
         nameLower: "hiddengeminiii",
@@ -1743,8 +1743,8 @@ const __generated_dualblades__13c: DualBlades = {
         ],
     ],
 
-    baseSharpness: [70, 40, 100, 90, 70, 30],
-    maxSharpness:  [70, 40, 100, 90, 70, 30],
+    baseSharpness: [70, 40, 100, 90, 70, 30, 0],
+    maxSharpness:  [70, 40, 100, 90, 70, 30, 0],
 
     filterHelpers: {
         nameLower: "nightwings",
@@ -1777,8 +1777,8 @@ const __generated_dualblades__14a: DualBlades = {
         ],
     ],
 
-    baseSharpness: [60, 70, 90, 30, 0, 0],
-    maxSharpness:  [60, 70, 90, 80, 0, 0],
+    baseSharpness: [60, 70, 90, 30, 0, 0, 0],
+    maxSharpness:  [60, 70, 90, 80, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "twinchainsawsi",
@@ -1812,8 +1812,8 @@ const __generated_dualblades__14b: DualBlades = {
         ],
     ],
 
-    baseSharpness: [40, 50, 90, 70, 0, 0],
-    maxSharpness:  [40, 50, 90, 90, 30, 0],
+    baseSharpness: [40, 50, 90, 70, 0, 0, 0],
+    maxSharpness:  [40, 50, 90, 90, 30, 0, 0],
 
     filterHelpers: {
         nameLower: "twinchainsawsii",
@@ -1848,8 +1848,8 @@ const __generated_dualblades__14c: DualBlades = {
         ],
     ],
 
-    baseSharpness: [50, 70, 120, 100, 10, 0],
-    maxSharpness:  [50, 70, 120, 100, 60, 0],
+    baseSharpness: [50, 70, 120, 100, 10, 0, 0],
+    maxSharpness:  [50, 70, 120, 100, 60, 0, 0],
 
     filterHelpers: {
         nameLower: "guillotines",
@@ -1881,8 +1881,8 @@ const __generated_dualblades__15a: DualBlades = {
         ],
     ],
 
-    baseSharpness: [90, 60, 20, 30, 0, 0],
-    maxSharpness:  [90, 60, 20, 80, 0, 0],
+    baseSharpness: [90, 60, 20, 30, 0, 0, 0],
+    maxSharpness:  [90, 60, 20, 80, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "dualhatchetsi",
@@ -1915,8 +1915,8 @@ const __generated_dualblades__15b: DualBlades = {
         ],
     ],
 
-    baseSharpness: [60, 70, 20, 50, 0, 0],
-    maxSharpness:  [60, 70, 20, 70, 30, 0],
+    baseSharpness: [60, 70, 20, 50, 0, 0, 0],
+    maxSharpness:  [60, 70, 20, 70, 30, 0, 0],
 
     filterHelpers: {
         nameLower: "dualhatchetsii",
@@ -1950,8 +1950,8 @@ const __generated_dualblades__15c: DualBlades = {
         ],
     ],
 
-    baseSharpness: [80, 60, 60, 50, 50, 0],
-    maxSharpness:  [80, 60, 60, 50, 50, 50],
+    baseSharpness: [80, 60, 60, 50, 50, 0, 0],
+    maxSharpness:  [80, 60, 60, 50, 50, 50, 0],
 
     filterHelpers: {
         nameLower: "dualcleavers",
@@ -1986,8 +1986,8 @@ const __generated_dualblades__16a: DualBlades = {
         ],
     ],
 
-    baseSharpness: [20, 50, 150, 80, 0, 0],
-    maxSharpness:  [20, 50, 150, 100, 30, 0],
+    baseSharpness: [20, 50, 150, 80, 0, 0, 0],
+    maxSharpness:  [20, 50, 150, 100, 30, 0, 0],
 
     filterHelpers: {
         nameLower: "ceruleanaxesi",
@@ -2022,8 +2022,8 @@ const __generated_dualblades__16b: DualBlades = {
         ],
     ],
 
-    baseSharpness: [50, 50, 100, 100, 0, 0],
-    maxSharpness:  [50, 50, 100, 100, 50, 0],
+    baseSharpness: [50, 50, 100, 100, 0, 0, 0],
+    maxSharpness:  [50, 50, 100, 100, 50, 0, 0],
 
     filterHelpers: {
         nameLower: "ceruleanaxesii",
@@ -2059,8 +2059,8 @@ const __generated_dualblades__16c: DualBlades = {
         ],
     ],
 
-    baseSharpness: [70, 70, 100, 90, 20, 0],
-    maxSharpness:  [70, 70, 100, 90, 60, 10],
+    baseSharpness: [70, 70, 100, 90, 20, 0, 0],
+    maxSharpness:  [70, 70, 100, 90, 60, 10, 0],
 
     filterHelpers: {
         nameLower: "ashigaraaxes",
@@ -2095,8 +2095,8 @@ const __generated_dualblades__17a: DualBlades = {
         ],
     ],
 
-    baseSharpness: [90, 90, 50, 20, 0, 0],
-    maxSharpness:  [90, 90, 50, 70, 0, 0],
+    baseSharpness: [90, 90, 50, 20, 0, 0, 0],
+    maxSharpness:  [90, 90, 50, 70, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "flammenschildi",
@@ -2132,8 +2132,8 @@ const __generated_dualblades__17b: DualBlades = {
         ],
     ],
 
-    baseSharpness: [130, 80, 70, 50, 20, 0],
-    maxSharpness:  [130, 80, 70, 50, 70, 0],
+    baseSharpness: [130, 80, 70, 50, 20, 0, 0],
+    maxSharpness:  [130, 80, 70, 50, 70, 0, 0],
 
     filterHelpers: {
         nameLower: "flammenschildii",
@@ -2171,8 +2171,8 @@ const __generated_dualblades__17c: DualBlades = {
         ],
     ],
 
-    baseSharpness: [130, 60, 70, 50, 40, 0],
-    maxSharpness:  [130, 60, 70, 50, 90, 0],
+    baseSharpness: [130, 60, 70, 50, 40, 0, 0],
+    maxSharpness:  [130, 60, 70, 50, 90, 0, 0],
 
     filterHelpers: {
         nameLower: "gnashingflammenschild",
@@ -2203,8 +2203,8 @@ const __generated_dualblades__18a: DualBlades = {
         ],
     ],
 
-    baseSharpness: [70, 90, 40, 0, 0, 0],
-    maxSharpness:  [70, 90, 90, 0, 0, 0],
+    baseSharpness: [70, 90, 40, 0, 0, 0, 0],
+    maxSharpness:  [70, 90, 90, 0, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "bonehatchetsi",
@@ -2235,8 +2235,8 @@ const __generated_dualblades__18b: DualBlades = {
         ],
     ],
 
-    baseSharpness: [80, 70, 50, 0, 0, 0],
-    maxSharpness:  [80, 70, 100, 0, 0, 0],
+    baseSharpness: [80, 70, 50, 0, 0, 0, 0],
+    maxSharpness:  [80, 70, 100, 0, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "bonehatchetsii",
@@ -2268,8 +2268,8 @@ const __generated_dualblades__18c: DualBlades = {
         ],
     ],
 
-    baseSharpness: [90, 50, 60, 0, 0, 0],
-    maxSharpness:  [90, 50, 110, 0, 0, 0],
+    baseSharpness: [90, 50, 60, 0, 0, 0, 0],
+    maxSharpness:  [90, 50, 110, 0, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "wildhatchets",
@@ -2302,8 +2302,8 @@ const __generated_dualblades__18d: DualBlades = {
         ],
     ],
 
-    baseSharpness: [70, 90, 70, 20, 0, 0],
-    maxSharpness:  [70, 90, 70, 70, 0, 0],
+    baseSharpness: [70, 90, 70, 20, 0, 0, 0],
+    maxSharpness:  [70, 90, 70, 70, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "taloncarversi",
@@ -2337,8 +2337,8 @@ const __generated_dualblades__18e: DualBlades = {
         ],
     ],
 
-    baseSharpness: [80, 70, 60, 40, 0, 0],
-    maxSharpness:  [80, 70, 60, 80, 10, 0],
+    baseSharpness: [80, 70, 60, 40, 0, 0, 0],
+    maxSharpness:  [80, 70, 60, 80, 10, 0, 0],
 
     filterHelpers: {
         nameLower: "taloncarversii",
@@ -2373,8 +2373,8 @@ const __generated_dualblades__18f: DualBlades = {
         ],
     ],
 
-    baseSharpness: [70, 70, 80, 70, 10, 0],
-    maxSharpness:  [70, 70, 80, 70, 60, 0],
+    baseSharpness: [70, 70, 80, 70, 10, 0, 0],
+    maxSharpness:  [70, 70, 80, 70, 60, 0, 0],
 
     filterHelpers: {
         nameLower: "talontwins",
@@ -2410,8 +2410,8 @@ const __generated_dualblades__19a: DualBlades = {
         ],
     ],
 
-    baseSharpness: [80, 90, 80, 60, 40, 0],
-    maxSharpness:  [80, 90, 80, 60, 90, 0],
+    baseSharpness: [80, 90, 80, 60, 40, 0, 0],
+    maxSharpness:  [80, 90, 80, 60, 90, 0, 0],
 
     filterHelpers: {
         nameLower: "twinflamesi",
@@ -2447,8 +2447,8 @@ const __generated_dualblades__19b: DualBlades = {
         ],
     ],
 
-    baseSharpness: [60, 30, 130, 80, 50, 0],
-    maxSharpness:  [60, 30, 130, 80, 90, 10],
+    baseSharpness: [60, 30, 130, 80, 50, 0, 0],
+    maxSharpness:  [60, 30, 130, 80, 90, 10, 0],
 
     filterHelpers: {
         nameLower: "twinflamesii",
@@ -2484,8 +2484,8 @@ const __generated_dualblades__19c: DualBlades = {
         ],
     ],
 
-    baseSharpness: [80, 50, 70, 90, 60, 0],
-    maxSharpness:  [80, 50, 70, 90, 90, 20],
+    baseSharpness: [80, 50, 70, 90, 60, 0, 0],
+    maxSharpness:  [80, 50, 70, 90, 90, 20, 0],
 
     filterHelpers: {
         nameLower: "wyvernlovers",
@@ -2518,8 +2518,8 @@ const __generated_dualblades__20a: DualBlades = {
         ],
     ],
 
-    baseSharpness: [110, 70, 30, 40, 0, 0],
-    maxSharpness:  [110, 70, 30, 90, 0, 0],
+    baseSharpness: [110, 70, 30, 40, 0, 0, 0],
+    maxSharpness:  [110, 70, 30, 90, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "diablosbashersi",
@@ -2552,8 +2552,8 @@ const __generated_dualblades__20b: DualBlades = {
         ],
     ],
 
-    baseSharpness: [150, 100, 40, 60, 0, 0],
-    maxSharpness:  [150, 100, 40, 100, 10, 0],
+    baseSharpness: [150, 100, 40, 60, 0, 0, 0],
+    maxSharpness:  [150, 100, 40, 100, 10, 0, 0],
 
     filterHelpers: {
         nameLower: "diablosbashersii",
@@ -2588,8 +2588,8 @@ const __generated_dualblades__20c: DualBlades = {
         ],
     ],
 
-    baseSharpness: [130, 50, 30, 90, 0, 0],
-    maxSharpness:  [130, 50, 30, 100, 40, 0],
+    baseSharpness: [130, 50, 30, 90, 0, 0, 0],
+    maxSharpness:  [130, 50, 30, 100, 40, 0, 0],
 
     filterHelpers: {
         nameLower: "diablosmashers",
@@ -2624,8 +2624,8 @@ const __generated_dualblades__21a: DualBlades = {
         ],
     ],
 
-    baseSharpness: [100, 90, 40, 60, 10, 0],
-    maxSharpness:  [100, 90, 40, 60, 60, 0],
+    baseSharpness: [100, 90, 40, 60, 10, 0, 0],
+    maxSharpness:  [100, 90, 40, 60, 60, 0, 0],
 
     filterHelpers: {
         nameLower: "jyuraduoi",
@@ -2661,8 +2661,8 @@ const __generated_dualblades__21b: DualBlades = {
         ],
     ],
 
-    baseSharpness: [110, 70, 50, 50, 20, 0],
-    maxSharpness:  [110, 70, 50, 50, 70, 0],
+    baseSharpness: [110, 70, 50, 50, 20, 0, 0],
+    maxSharpness:  [110, 70, 50, 50, 70, 0, 0],
 
     filterHelpers: {
         nameLower: "jyuraduoii",
@@ -2698,8 +2698,8 @@ const __generated_dualblades__21c: DualBlades = {
         ],
     ],
 
-    baseSharpness: [120, 110, 50, 40, 30, 0],
-    maxSharpness:  [120, 110, 50, 40, 60, 20],
+    baseSharpness: [120, 110, 50, 40, 30, 0, 0],
+    maxSharpness:  [120, 110, 50, 40, 60, 20, 0],
 
     filterHelpers: {
         nameLower: "jyurapulverizers",
@@ -2733,8 +2733,8 @@ const __generated_dualblades__22a: DualBlades = {
         ],
     ],
 
-    baseSharpness: [50, 80, 60, 60, 0, 0],
-    maxSharpness:  [50, 80, 60, 110, 0, 0],
+    baseSharpness: [50, 80, 60, 60, 0, 0, 0],
+    maxSharpness:  [50, 80, 60, 110, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "kadachitwinbladesi",
@@ -2768,8 +2768,8 @@ const __generated_dualblades__22b: DualBlades = {
         ],
     ],
 
-    baseSharpness: [100, 90, 30, 40, 40, 0],
-    maxSharpness:  [100, 90, 30, 40, 90, 0],
+    baseSharpness: [100, 90, 30, 40, 40, 0, 0],
+    maxSharpness:  [100, 90, 30, 40, 90, 0, 0],
 
     filterHelpers: {
         nameLower: "kadachitwinbladesii",
@@ -2805,8 +2805,8 @@ const __generated_dualblades__22c: DualBlades = {
         ],
     ],
 
-    baseSharpness: [80, 90, 30, 50, 50, 0],
-    maxSharpness:  [80, 90, 30, 50, 80, 20],
+    baseSharpness: [80, 90, 30, 50, 50, 0, 0],
+    maxSharpness:  [80, 90, 30, 50, 80, 20, 0],
 
     filterHelpers: {
         nameLower: "shockblades",
@@ -2839,8 +2839,8 @@ const __generated_dualblades__23a: DualBlades = {
         ],
     ],
 
-    baseSharpness: [80, 40, 80, 50, 0, 0],
-    maxSharpness:  [80, 40, 80, 100, 0, 0],
+    baseSharpness: [80, 40, 80, 50, 0, 0, 0],
+    maxSharpness:  [80, 40, 80, 100, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "blazebladesi",
@@ -2873,8 +2873,8 @@ const __generated_dualblades__23b: DualBlades = {
         ],
     ],
 
-    baseSharpness: [80, 40, 60, 70, 0, 0],
-    maxSharpness:  [80, 40, 60, 100, 20, 0],
+    baseSharpness: [80, 40, 60, 70, 0, 0, 0],
+    maxSharpness:  [80, 40, 60, 100, 20, 0, 0],
 
     filterHelpers: {
         nameLower: "blazebladesii",
@@ -2908,8 +2908,8 @@ const __generated_dualblades__23c: DualBlades = {
         ],
     ],
 
-    baseSharpness: [80, 60, 70, 90, 0, 0],
-    maxSharpness:  [80, 60, 70, 90, 50, 0],
+    baseSharpness: [80, 60, 70, 90, 0, 0, 0],
+    maxSharpness:  [80, 60, 70, 90, 50, 0, 0],
 
     filterHelpers: {
         nameLower: "infernalfuries",
@@ -2942,8 +2942,8 @@ const __generated_dualblades__24a: DualBlades = {
         ],
     ],
 
-    baseSharpness: [50, 60, 110, 30, 0, 0],
-    maxSharpness:  [50, 60, 110, 80, 0, 0],
+    baseSharpness: [50, 60, 110, 30, 0, 0, 0],
+    maxSharpness:  [50, 60, 110, 80, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "ludrothpairi",
@@ -2977,8 +2977,8 @@ const __generated_dualblades__24b: DualBlades = {
         ],
     ],
 
-    baseSharpness: [60, 50, 110, 80, 0, 0],
-    maxSharpness:  [60, 50, 110, 110, 20, 0],
+    baseSharpness: [60, 50, 110, 80, 0, 0, 0],
+    maxSharpness:  [60, 50, 110, 110, 20, 0, 0],
 
     filterHelpers: {
         nameLower: "ludrothpairii",
@@ -3013,8 +3013,8 @@ const __generated_dualblades__24c: DualBlades = {
         ],
     ],
 
-    baseSharpness: [90, 20, 80, 90, 20, 0],
-    maxSharpness:  [90, 20, 80, 90, 50, 20],
+    baseSharpness: [90, 20, 80, 90, 20, 0, 0],
+    maxSharpness:  [90, 20, 80, 90, 50, 20, 0],
 
     filterHelpers: {
         nameLower: "doubledroth",
@@ -3050,8 +3050,8 @@ const __generated_dualblades__25a: DualBlades = {
         ],
     ],
 
-    baseSharpness: [50, 50, 120, 30, 0, 0],
-    maxSharpness:  [50, 50, 120, 80, 0, 0],
+    baseSharpness: [50, 50, 120, 30, 0, 0, 0],
+    maxSharpness:  [50, 50, 120, 80, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "frilledclawi",
@@ -3087,8 +3087,8 @@ const __generated_dualblades__25b: DualBlades = {
         ],
     ],
 
-    baseSharpness: [40, 60, 110, 40, 0, 0],
-    maxSharpness:  [40, 60, 110, 80, 10, 0],
+    baseSharpness: [40, 60, 110, 40, 0, 0, 0],
+    maxSharpness:  [40, 60, 110, 80, 10, 0, 0],
 
     filterHelpers: {
         nameLower: "frilledclawii",
@@ -3125,8 +3125,8 @@ const __generated_dualblades__25c: DualBlades = {
         ],
     ],
 
-    baseSharpness: [50, 90, 120, 90, 0, 0],
-    maxSharpness:  [50, 90, 120, 110, 30, 0],
+    baseSharpness: [50, 90, 120, 90, 0, 0, 0],
+    maxSharpness:  [50, 90, 120, 110, 30, 0, 0],
 
     filterHelpers: {
         nameLower: "illusoryfrilledclaw",
@@ -3160,8 +3160,8 @@ const __generated_dualblades__26a: DualBlades = {
         ],
     ],
 
-    baseSharpness: [70, 70, 80, 30, 0, 0],
-    maxSharpness:  [70, 70, 80, 80, 0, 0],
+    baseSharpness: [70, 70, 80, 30, 0, 0, 0],
+    maxSharpness:  [70, 70, 80, 80, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "snowslicersi",
@@ -3196,8 +3196,8 @@ const __generated_dualblades__26b: DualBlades = {
         ],
     ],
 
-    baseSharpness: [80, 80, 100, 40, 0, 0],
-    maxSharpness:  [80, 80, 100, 90, 0, 0],
+    baseSharpness: [80, 80, 100, 40, 0, 0, 0],
+    maxSharpness:  [80, 80, 100, 90, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "snowslicersii",
@@ -3233,8 +3233,8 @@ const __generated_dualblades__26c: DualBlades = {
         ],
     ],
 
-    baseSharpness: [60, 40, 100, 90, 10, 0],
-    maxSharpness:  [60, 40, 100, 90, 50, 10],
+    baseSharpness: [60, 40, 100, 90, 10, 0, 0],
+    maxSharpness:  [60, 40, 100, 90, 50, 10, 0],
 
     filterHelpers: {
         nameLower: "snowsisters",
@@ -3265,8 +3265,8 @@ const __generated_dualblades__27a: DualBlades = {
         ],
     ],
 
-    baseSharpness: [160, 20, 40, 80, 0, 0],
-    maxSharpness:  [160, 20, 40, 110, 20, 0],
+    baseSharpness: [160, 20, 40, 80, 0, 0, 0],
+    maxSharpness:  [160, 20, 40, 110, 20, 0, 0],
 
     filterHelpers: {
         nameLower: "sinisterbladesi",
@@ -3298,8 +3298,8 @@ const __generated_dualblades__27b: DualBlades = {
         ],
     ],
 
-    baseSharpness: [170, 20, 20, 90, 0, 0],
-    maxSharpness:  [170, 20, 20, 110, 30, 0],
+    baseSharpness: [170, 20, 20, 90, 0, 0, 0],
+    maxSharpness:  [170, 20, 20, 110, 30, 0, 0],
 
     filterHelpers: {
         nameLower: "sinisterbladesii",
@@ -3332,8 +3332,8 @@ const __generated_dualblades__27c: DualBlades = {
         ],
     ],
 
-    baseSharpness: [190, 10, 20, 90, 40, 0],
-    maxSharpness:  [190, 10, 20, 90, 60, 30],
+    baseSharpness: [190, 10, 20, 90, 40, 0, 0],
+    maxSharpness:  [190, 10, 20, 90, 60, 30, 0],
 
     filterHelpers: {
         nameLower: "sinisterfamineblades",
@@ -3364,8 +3364,8 @@ const __generated_dualblades__28a: DualBlades = {
         ],
     ],
 
-    baseSharpness: [60, 40, 120, 80, 0, 0],
-    maxSharpness:  [60, 40, 120, 110, 20, 0],
+    baseSharpness: [60, 40, 120, 80, 0, 0, 0],
+    maxSharpness:  [60, 40, 120, 110, 20, 0, 0],
 
     filterHelpers: {
         nameLower: "suzukatakamarui",
@@ -3397,8 +3397,8 @@ const __generated_dualblades__28b: DualBlades = {
         ],
     ],
 
-    baseSharpness: [60, 30, 150, 100, 10, 0],
-    maxSharpness:  [60, 30, 150, 100, 60, 0],
+    baseSharpness: [60, 30, 150, 100, 10, 0, 0],
+    maxSharpness:  [60, 30, 150, 100, 60, 0, 0],
 
     filterHelpers: {
         nameLower: "suzukatakamaruii",
@@ -3431,8 +3431,8 @@ const __generated_dualblades__28c: DualBlades = {
         ],
     ],
 
-    baseSharpness: [100, 50, 80, 100, 20, 0],
-    maxSharpness:  [100, 50, 80, 100, 60, 10],
+    baseSharpness: [100, 50, 80, 100, 20, 0, 0],
+    maxSharpness:  [100, 50, 80, 100, 60, 10, 0],
 
     filterHelpers: {
         nameLower: "suzukaotakemaru",
@@ -3463,8 +3463,8 @@ const __generated_dualblades__29a: DualBlades = {
         ],
     ],
 
-    baseSharpness: [20, 20, 20, 40, 100, 0],
-    maxSharpness:  [20, 20, 20, 40, 150, 0],
+    baseSharpness: [20, 20, 20, 40, 100, 0, 0],
+    maxSharpness:  [20, 20, 20, 40, 150, 0, 0],
 
     filterHelpers: {
         nameLower: "azureelderbladesi",
@@ -3496,8 +3496,8 @@ const __generated_dualblades__29b: DualBlades = {
         ],
     ],
 
-    baseSharpness: [20, 20, 50, 50, 110, 0],
-    maxSharpness:  [20, 20, 50, 50, 150, 10],
+    baseSharpness: [20, 20, 50, 50, 110, 0, 0],
+    maxSharpness:  [20, 20, 50, 50, 150, 10, 0],
 
     filterHelpers: {
         nameLower: "azureelderbladesii",
@@ -3530,8 +3530,8 @@ const __generated_dualblades__29c: DualBlades = {
         ],
     ],
 
-    baseSharpness: [20, 20, 80, 60, 120, 0],
-    maxSharpness:  [20, 20, 80, 60, 150, 20],
+    baseSharpness: [20, 20, 80, 60, 120, 0, 0],
+    maxSharpness:  [20, 20, 80, 60, 150, 20, 0],
 
     filterHelpers: {
         nameLower: "abyssalgaleblades",
@@ -3562,8 +3562,8 @@ const __generated_dualblades__30a: DualBlades = {
         ],
     ],
 
-    baseSharpness: [20, 20, 180, 40, 40, 0],
-    maxSharpness:  [20, 20, 180, 40, 60, 30],
+    baseSharpness: [20, 20, 180, 40, 40, 0, 0],
+    maxSharpness:  [20, 20, 180, 40, 60, 30, 0],
 
     filterHelpers: {
         nameLower: "thunderboltbladesi",
@@ -3595,8 +3595,8 @@ const __generated_dualblades__30b: DualBlades = {
         ],
     ],
 
-    baseSharpness: [20, 10, 220, 40, 60, 0],
-    maxSharpness:  [20, 10, 220, 40, 70, 40],
+    baseSharpness: [20, 10, 220, 40, 60, 0, 0],
+    maxSharpness:  [20, 10, 220, 40, 70, 40, 0],
 
     filterHelpers: {
         nameLower: "abyssalstormblades",
@@ -3627,8 +3627,8 @@ const __generated_dualblades__31a: DualBlades = {
         ],
     ],
 
-    baseSharpness: [60, 90, 60, 90, 0, 0],
-    maxSharpness:  [60, 90, 60, 110, 30, 0],
+    baseSharpness: [60, 90, 60, 90, 0, 0, 0],
+    maxSharpness:  [60, 90, 60, 110, 30, 0, 0],
 
     filterHelpers: {
         nameLower: "rookslayerhandaxesi",
@@ -3659,8 +3659,8 @@ const __generated_dualblades__31b: DualBlades = {
         ],
     ],
 
-    baseSharpness: [60, 110, 90, 70, 20, 0],
-    maxSharpness:  [60, 110, 90, 70, 40, 30],
+    baseSharpness: [60, 110, 90, 70, 20, 0, 0],
+    maxSharpness:  [60, 110, 90, 70, 40, 30, 0],
 
     filterHelpers: {
         nameLower: "rookslayerhandaxesii",
@@ -3693,8 +3693,8 @@ const __generated_dualblades__31c: DualBlades = {
         ],
     ],
 
-    baseSharpness: [60, 110, 80, 70, 30, 0],
-    maxSharpness:  [60, 110, 80, 70, 30, 50],
+    baseSharpness: [60, 110, 80, 70, 30, 0, 0],
+    maxSharpness:  [60, 110, 80, 70, 30, 50, 0],
 
     filterHelpers: {
         nameLower: "bazelhawkrookslayer",
@@ -3725,8 +3725,8 @@ const __generated_dualblades__32a: DualBlades = {
         ],
     ],
 
-    baseSharpness: [100, 90, 90, 40, 30, 0],
-    maxSharpness:  [100, 90, 90, 40, 50, 30],
+    baseSharpness: [100, 90, 90, 40, 30, 0, 0],
+    maxSharpness:  [100, 90, 90, 40, 50, 30, 0],
 
     filterHelpers: {
         nameLower: "icesteelfangi",
@@ -3759,8 +3759,8 @@ const __generated_dualblades__32b: DualBlades = {
         ],
     ],
 
-    baseSharpness: [90, 80, 90, 50, 30, 10],
-    maxSharpness:  [90, 80, 90, 50, 30, 60],
+    baseSharpness: [90, 80, 90, 50, 30, 10, 0],
+    maxSharpness:  [90, 80, 90, 50, 30, 60, 0],
 
     filterHelpers: {
         nameLower: "daora'shook",
@@ -3791,8 +3791,8 @@ const __generated_dualblades__33a: DualBlades = {
         ],
     ],
 
-    baseSharpness: [80, 70, 70, 50, 30, 0],
-    maxSharpness:  [80, 70, 70, 50, 70, 10],
+    baseSharpness: [80, 70, 70, 50, 30, 0, 0],
+    maxSharpness:  [80, 70, 70, 50, 70, 10, 0],
 
     filterHelpers: {
         nameLower: "twinnailsi",
@@ -3824,8 +3824,8 @@ const __generated_dualblades__33b: DualBlades = {
         ],
     ],
 
-    baseSharpness: [110, 70, 90, 30, 50, 0],
-    maxSharpness:  [110, 70, 90, 30, 70, 30],
+    baseSharpness: [110, 70, 90, 30, 50, 0, 0],
+    maxSharpness:  [110, 70, 90, 30, 70, 30, 0],
 
     filterHelpers: {
         nameLower: "fireandice",
@@ -3856,8 +3856,8 @@ const __generated_dualblades__34a: DualBlades = {
         ],
     ],
 
-    baseSharpness: [50, 60, 150, 70, 20, 0],
-    maxSharpness:  [50, 60, 150, 70, 20, 50],
+    baseSharpness: [50, 60, 150, 70, 20, 0, 0],
+    maxSharpness:  [50, 60, 150, 70, 20, 50, 0],
 
     filterHelpers: {
         nameLower: "rougeflamesi",
@@ -3889,8 +3889,8 @@ const __generated_dualblades__34b: DualBlades = {
         ],
     ],
 
-    baseSharpness: [90, 60, 70, 90, 30, 10],
-    maxSharpness:  [90, 60, 70, 90, 30, 60],
+    baseSharpness: [90, 60, 70, 90, 30, 10, 0],
+    maxSharpness:  [90, 60, 70, 90, 30, 60, 0],
 
     filterHelpers: {
         nameLower: "dualchameleos",
@@ -3921,8 +3921,8 @@ const __generated_dualblades__35a: DualBlades = {
         ],
     ],
 
-    baseSharpness: [180, 0, 0, 0, 0, 70],
-    maxSharpness:  [180, 0, 0, 0, 0, 120],
+    baseSharpness: [180, 0, 0, 0, 0, 70, 0],
+    maxSharpness:  [180, 0, 0, 0, 0, 120, 0],
 
     filterHelpers: {
         nameLower: "redwingbladesi",
@@ -3953,8 +3953,8 @@ const __generated_dualblades__35b: DualBlades = {
         ],
     ],
 
-    baseSharpness: [60, 0, 0, 0, 0, 90],
-    maxSharpness:  [60, 0, 0, 0, 0, 140],
+    baseSharpness: [60, 0, 0, 0, 0, 90, 0],
+    maxSharpness:  [60, 0, 0, 0, 0, 140, 0],
 
     filterHelpers: {
         nameLower: "reddnaughtdragonwing",
@@ -3985,8 +3985,8 @@ const __generated_dualblades__36a: DualBlades = {
         ],
     ],
 
-    baseSharpness: [100, 50, 90, 50, 10, 0],
-    maxSharpness:  [100, 50, 90, 50, 10, 50],
+    baseSharpness: [100, 50, 90, 50, 10, 0, 0],
+    maxSharpness:  [100, 50, 90, 50, 10, 50, 0],
 
     filterHelpers: {
         nameLower: "felyneclawsi",
@@ -4017,8 +4017,8 @@ const __generated_dualblades__36b: DualBlades = {
         ],
     ],
 
-    baseSharpness: [130, 50, 90, 70, 10, 0],
-    maxSharpness:  [130, 50, 90, 70, 10, 50],
+    baseSharpness: [130, 50, 90, 70, 10, 0, 0],
+    maxSharpness:  [130, 50, 90, 70, 10, 50, 0],
 
     filterHelpers: {
         nameLower: "felyneclawsii",
@@ -4050,8 +4050,8 @@ const __generated_dualblades__36c: DualBlades = {
         ],
     ],
 
-    baseSharpness: [120, 50, 80, 90, 10, 0],
-    maxSharpness:  [120, 50, 80, 90, 10, 50],
+    baseSharpness: [120, 50, 80, 90, 10, 0, 0],
+    maxSharpness:  [120, 50, 80, 90, 10, 50, 0],
 
     filterHelpers: {
         nameLower: "ragingclaws",
@@ -4082,8 +4082,8 @@ const __generated_dualblades__37a: DualBlades = {
         ],
     ],
 
-    baseSharpness: [80, 100, 90, 20, 10, 0],
-    maxSharpness:  [80, 100, 90, 20, 60, 0],
+    baseSharpness: [80, 100, 90, 20, 10, 0, 0],
+    maxSharpness:  [80, 100, 90, 20, 60, 0, 0],
 
     filterHelpers: {
         nameLower: "rainyjellyi",
@@ -4115,8 +4115,8 @@ const __generated_dualblades__37b: DualBlades = {
         ],
     ],
 
-    baseSharpness: [70, 110, 80, 20, 20, 0],
-    maxSharpness:  [70, 110, 80, 20, 60, 10],
+    baseSharpness: [70, 110, 80, 20, 20, 0, 0],
+    maxSharpness:  [70, 110, 80, 20, 60, 10, 0],
 
     filterHelpers: {
         nameLower: "rainyjellyii",
@@ -4150,8 +4150,8 @@ const __generated_dualblades__37c: DualBlades = {
         ],
     ],
 
-    baseSharpness: [100, 130, 80, 10, 30, 0],
-    maxSharpness:  [100, 130, 80, 10, 60, 20],
+    baseSharpness: [100, 130, 80, 10, 30, 0, 0],
+    maxSharpness:  [100, 130, 80, 10, 60, 20, 0],
 
     filterHelpers: {
         nameLower: "rainofgore",
@@ -4182,8 +4182,8 @@ const __generated_dualblades__38a: DualBlades = {
         ],
     ],
 
-    baseSharpness: [60, 60, 90, 40, 0, 0],
-    maxSharpness:  [60, 60, 90, 90, 0, 0],
+    baseSharpness: [60, 60, 90, 40, 0, 0, 0],
+    maxSharpness:  [60, 60, 90, 90, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "qornuwagai",
@@ -4215,8 +4215,8 @@ const __generated_dualblades__38b: DualBlades = {
         ],
     ],
 
-    baseSharpness: [30, 30, 170, 60, 10, 0],
-    maxSharpness:  [30, 30, 170, 60, 60, 0],
+    baseSharpness: [30, 30, 170, 60, 10, 0, 0],
+    maxSharpness:  [30, 30, 170, 60, 60, 0, 0],
 
     filterHelpers: {
         nameLower: "qornuwagaii",
@@ -4250,8 +4250,8 @@ const __generated_dualblades__38c: DualBlades = {
         ],
     ],
 
-    baseSharpness: [50, 70, 110, 100, 20, 0],
-    maxSharpness:  [50, 70, 110, 100, 50, 20],
+    baseSharpness: [50, 70, 110, 100, 20, 0, 0],
+    maxSharpness:  [50, 70, 110, 100, 50, 20, 0],
 
     filterHelpers: {
         nameLower: "rowaga",
@@ -4282,8 +4282,8 @@ const __generated_dualblades__39a: DualBlades = {
         ],
     ],
 
-    baseSharpness: [90, 90, 40, 30, 0, 0],
-    maxSharpness:  [90, 90, 40, 80, 0, 0],
+    baseSharpness: [90, 90, 40, 30, 0, 0, 0],
+    maxSharpness:  [90, 90, 40, 80, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "swornrapiersi",
@@ -4314,8 +4314,8 @@ const __generated_dualblades__39b: DualBlades = {
         ],
     ],
 
-    baseSharpness: [50, 70, 60, 50, 20, 0],
-    maxSharpness:  [50, 70, 60, 50, 70, 0],
+    baseSharpness: [50, 70, 60, 50, 20, 0, 0],
+    maxSharpness:  [50, 70, 60, 50, 70, 0, 0],
 
     filterHelpers: {
         nameLower: "swornrapiersii",
@@ -4348,8 +4348,8 @@ const __generated_dualblades__39c: DualBlades = {
         ],
     ],
 
-    baseSharpness: [50, 90, 70, 40, 50, 0],
-    maxSharpness:  [50, 90, 70, 40, 90, 10],
+    baseSharpness: [50, 90, 70, 40, 50, 0, 0],
+    maxSharpness:  [50, 90, 70, 40, 90, 10, 0],
 
     filterHelpers: {
         nameLower: "holysabers",
@@ -4380,8 +4380,8 @@ const __generated_dualblades__40a: DualBlades = {
         ],
     ],
 
-    baseSharpness: [110, 60, 30, 30, 20, 0],
-    maxSharpness:  [110, 60, 30, 30, 70, 0],
+    baseSharpness: [110, 60, 30, 30, 20, 0, 0],
+    maxSharpness:  [110, 60, 30, 30, 70, 0, 0],
 
     filterHelpers: {
         nameLower: "altairi",
@@ -4413,8 +4413,8 @@ const __generated_dualblades__40b: DualBlades = {
         ],
     ],
 
-    baseSharpness: [110, 80, 60, 20, 30, 0],
-    maxSharpness:  [110, 80, 60, 20, 70, 10],
+    baseSharpness: [110, 80, 60, 20, 30, 0, 0],
+    maxSharpness:  [110, 80, 60, 20, 70, 10, 0],
 
     filterHelpers: {
         nameLower: "altairii",
@@ -4447,8 +4447,8 @@ const __generated_dualblades__40c: DualBlades = {
         ],
     ],
 
-    baseSharpness: [110, 80, 80, 30, 50, 0],
-    maxSharpness:  [110, 80, 80, 30, 60, 40],
+    baseSharpness: [110, 80, 80, 30, 50, 0, 0],
+    maxSharpness:  [110, 80, 80, 30, 60, 40, 0],
 
     filterHelpers: {
         nameLower: "fortisgran",
@@ -4479,8 +4479,8 @@ const __generated_dualblades__41a: DualBlades = {
         ],
     ],
 
-    baseSharpness: [90, 30, 90, 40, 0, 0],
-    maxSharpness:  [90, 30, 90, 90, 0, 0],
+    baseSharpness: [90, 30, 90, 40, 0, 0, 0],
+    maxSharpness:  [90, 30, 90, 90, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "stealthdangoi",
@@ -4512,8 +4512,8 @@ const __generated_dualblades__41b: DualBlades = {
         ],
     ],
 
-    baseSharpness: [110, 30, 100, 60, 0, 0],
-    maxSharpness:  [110, 30, 100, 90, 20, 0],
+    baseSharpness: [110, 30, 100, 60, 0, 0, 0],
+    maxSharpness:  [110, 30, 100, 90, 20, 0, 0],
 
     filterHelpers: {
         nameLower: "stealthdangoii",
@@ -4546,8 +4546,8 @@ const __generated_dualblades__41c: DualBlades = {
         ],
     ],
 
-    baseSharpness: [130, 40, 110, 70, 0, 0],
-    maxSharpness:  [130, 40, 110, 70, 50, 0],
+    baseSharpness: [130, 40, 110, 70, 0, 0, 0],
+    maxSharpness:  [130, 40, 110, 70, 50, 0, 0],
 
     filterHelpers: {
         nameLower: "perfecteddango",
@@ -4587,8 +4587,8 @@ const __generated_dualblades__ra: DualBlades = {
         ],
     ],
 
-    baseSharpness: [70, 70, 90, 20, 0, 0],
-    maxSharpness:  [70, 70, 90, 70, 0, 0],
+    baseSharpness: [70, 70, 90, 20, 0, 0, 0],
+    maxSharpness:  [70, 70, 90, 70, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "rampagetwinbladesi",
@@ -4636,8 +4636,8 @@ const __generated_dualblades__rb: DualBlades = {
         ],
     ],
 
-    baseSharpness: [60, 70, 80, 40, 0, 0],
-    maxSharpness:  [60, 70, 80, 90, 0, 0],
+    baseSharpness: [60, 70, 80, 40, 0, 0, 0],
+    maxSharpness:  [60, 70, 80, 90, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "rampagetwinbladesii",
@@ -4694,8 +4694,8 @@ const __generated_dualblades__rc: DualBlades = {
         ],
     ],
 
-    baseSharpness: [50, 70, 80, 30, 20, 0],
-    maxSharpness:  [50, 70, 80, 30, 70, 0],
+    baseSharpness: [50, 70, 80, 30, 20, 0, 0],
+    maxSharpness:  [50, 70, 80, 30, 70, 0, 0],
 
     filterHelpers: {
         nameLower: "rampagetwinbladesiii",
@@ -4763,8 +4763,8 @@ const __generated_dualblades__rd: DualBlades = {
         ],
     ],
 
-    baseSharpness: [50, 70, 70, 30, 30, 0],
-    maxSharpness:  [50, 70, 70, 30, 80, 0],
+    baseSharpness: [50, 70, 70, 30, 30, 0, 0],
+    maxSharpness:  [50, 70, 70, 30, 80, 0, 0],
 
     filterHelpers: {
         nameLower: "rampagetwinbladesiv",
@@ -4842,8 +4842,8 @@ const __generated_dualblades__re: DualBlades = {
         ],
     ],
 
-    baseSharpness: [50, 70, 50, 50, 30, 0],
-    maxSharpness:  [50, 70, 50, 50, 70, 10],
+    baseSharpness: [50, 70, 50, 50, 30, 0, 0],
+    maxSharpness:  [50, 70, 50, 50, 70, 10, 0],
 
     filterHelpers: {
         nameLower: "rampagetwinbladesv",
@@ -4933,8 +4933,8 @@ const __generated_dualblades__rf: DualBlades = {
         ],
     ],
 
-    baseSharpness: [50, 70, 30, 60, 40, 0],
-    maxSharpness:  [50, 70, 30, 60, 70, 20],
+    baseSharpness: [50, 70, 30, 60, 40, 0, 0],
+    maxSharpness:  [50, 70, 30, 60, 70, 20, 0],
 
     filterHelpers: {
         nameLower: "rampagetwinbladess",

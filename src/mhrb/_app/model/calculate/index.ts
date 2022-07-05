@@ -44,6 +44,7 @@ const rawSharpnessModifiers = [
     1.05, // 4: Green
     1.20, // 5: Blue
     1.32, // 6: White
+    1.39, // 7: Purple
 ];
 
 
@@ -54,6 +55,7 @@ const elementalSharpnessModifiers = [
     1.00,   // 4: Green
     1.0625, // 5: Blue
     1.15,   // 6: White
+    1.25,   // 7: Purple
 ];
 
 
@@ -544,7 +546,7 @@ function getSharpnessValues(maxSharpness, handicraftLevel, sharpnessLevelReducti
 
 
 function applyHandicraft(maxSharpness, handicraftLevel) {
-    assert(isArr(maxSharpness) && (maxSharpness.length === 6)); // We only go up to white sharpness
+    assert(isArr(maxSharpness) && (maxSharpness.length === 7)); // We only go up to purple sharpness
     assert(isInt(handicraftLevel) && (handicraftLevel >= 0) && (handicraftLevel <= 5));
 
     const realSharpnessBar = [...maxSharpness];
@@ -568,7 +570,7 @@ function applyHandicraft(maxSharpness, handicraftLevel) {
 
 
 function getHighestSharpnessIndex(realSharpnessBar) {
-    assert(isArr(realSharpnessBar) && (realSharpnessBar.length === 6)); // We only go up to white sharpness
+    assert(isArr(realSharpnessBar) && (realSharpnessBar.length === 7)); // We only go up to purple sharpness
     
     let highestIndex = null;
     for (let i = realSharpnessBar.length - 1; i >= 0; --i) {

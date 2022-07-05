@@ -155,8 +155,8 @@ const __generated_swordandshield__1a: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [50, 90, 60, 0, 0, 0],
-    maxSharpness:  [50, 90, 100, 10, 0, 0],
+    baseSharpness: [50, 90, 60, 0, 0, 0, 0],
+    maxSharpness:  [50, 90, 100, 10, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "kamuraswordi",
@@ -187,8 +187,8 @@ const __generated_swordandshield__1b: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [60, 70, 70, 0, 0, 0],
-    maxSharpness:  [60, 70, 110, 10, 0, 0],
+    baseSharpness: [60, 70, 70, 0, 0, 0, 0],
+    maxSharpness:  [60, 70, 110, 10, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "kamuraswordii",
@@ -220,8 +220,8 @@ const __generated_swordandshield__1c: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [60, 70, 90, 30, 0, 0],
-    maxSharpness:  [60, 70, 90, 80, 0, 0],
+    baseSharpness: [60, 70, 90, 30, 0, 0, 0],
+    maxSharpness:  [60, 70, 90, 80, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "kamuraswordiii",
@@ -254,8 +254,8 @@ const __generated_swordandshield__1d: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [50, 70, 80, 30, 20, 0],
-    maxSharpness:  [50, 70, 80, 30, 70, 0],
+    baseSharpness: [50, 70, 80, 30, 20, 0, 0],
+    maxSharpness:  [50, 70, 80, 30, 70, 0, 0],
 
     filterHelpers: {
         nameLower: "kamuraswordiv",
@@ -290,8 +290,8 @@ const __generated_swordandshield__1e: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [60, 80, 90, 40, 30, 0],
-    maxSharpness:  [60, 80, 90, 40, 70, 10],
+    baseSharpness: [60, 80, 90, 40, 30, 0, 0],
+    maxSharpness:  [60, 80, 90, 40, 70, 10, 0],
 
     filterHelpers: {
         nameLower: "kamuraswordv",
@@ -327,8 +327,8 @@ const __generated_swordandshield__1f: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [40, 90, 60, 60, 50, 0],
-    maxSharpness:  [40, 90, 60, 60, 80, 20],
+    baseSharpness: [40, 90, 60, 60, 50, 0, 0],
+    maxSharpness:  [40, 90, 60, 60, 80, 20, 0],
 
     filterHelpers: {
         nameLower: "kamuraninjasword",
@@ -363,8 +363,8 @@ const __generated_swordandshield__2a: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [50, 70, 80, 100, 0, 0],
-    maxSharpness:  [50, 70, 80, 100, 50, 0],
+    baseSharpness: [50, 70, 80, 100, 0, 0, 0],
+    maxSharpness:  [50, 70, 80, 100, 50, 0, 0],
 
     filterHelpers: {
         nameLower: "hiddenedgei",
@@ -400,8 +400,8 @@ const __generated_swordandshield__2b: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [100, 30, 70, 100, 50, 0],
-    maxSharpness:  [100, 30, 70, 100, 70, 30],
+    baseSharpness: [100, 30, 70, 100, 50, 0, 0],
+    maxSharpness:  [100, 30, 70, 100, 70, 30, 0],
 
     filterHelpers: {
         nameLower: "hiddenedgeii",
@@ -437,8 +437,8 @@ const __generated_swordandshield__2c: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [70, 40, 110, 90, 60, 30],
-    maxSharpness:  [70, 40, 110, 90, 60, 30],
+    baseSharpness: [70, 40, 110, 90, 60, 30, 0],
+    maxSharpness:  [70, 40, 110, 90, 60, 30, 0],
 
     filterHelpers: {
         nameLower: "flashinthenight",
@@ -473,8 +473,8 @@ const __generated_swordandshield__3a: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [110, 40, 30, 70, 0, 0],
-    maxSharpness:  [110, 40, 30, 90, 30, 0],
+    baseSharpness: [110, 40, 30, 70, 0, 0, 0],
+    maxSharpness:  [110, 40, 30, 90, 30, 0, 0],
 
     filterHelpers: {
         nameLower: "hananonagoriwoi",
@@ -510,8 +510,8 @@ const __generated_swordandshield__3b: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [110, 90, 50, 50, 50, 0],
-    maxSharpness:  [110, 90, 50, 50, 80, 20],
+    baseSharpness: [110, 90, 50, 50, 50, 0, 0],
+    maxSharpness:  [110, 90, 50, 50, 80, 20, 0],
 
     filterHelpers: {
         nameLower: "hananonagoriwoii",
@@ -548,8 +548,8 @@ const __generated_swordandshield__3c: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [110, 70, 50, 50, 70, 0],
-    maxSharpness:  [110, 70, 50, 50, 70, 50],
+    baseSharpness: [110, 70, 50, 50, 70, 0, 0],
+    maxSharpness:  [110, 70, 50, 50, 70, 50, 0],
 
     filterHelpers: {
         nameLower: "kurenawiougi",
@@ -583,8 +583,8 @@ const __generated_swordandshield__4a: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [30, 140, 40, 40, 0, 0],
-    maxSharpness:  [30, 140, 40, 80, 10, 0],
+    baseSharpness: [30, 140, 40, 40, 0, 0, 0],
+    maxSharpness:  [30, 140, 40, 80, 10, 0, 0],
 
     filterHelpers: {
         nameLower: "exorcisingswordi",
@@ -619,8 +619,8 @@ const __generated_swordandshield__4b: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [20, 160, 50, 40, 30, 0],
-    maxSharpness:  [20, 160, 50, 40, 40, 40],
+    baseSharpness: [20, 160, 50, 40, 30, 0, 0],
+    maxSharpness:  [20, 160, 50, 40, 40, 40, 0],
 
     filterHelpers: {
         nameLower: "exorcisingswordii",
@@ -655,8 +655,8 @@ const __generated_swordandshield__4c: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [30, 170, 70, 40, 40, 0],
-    maxSharpness:  [30, 170, 70, 40, 40, 50],
+    baseSharpness: [30, 170, 70, 40, 40, 0, 0],
+    maxSharpness:  [30, 170, 70, 40, 40, 50, 0],
 
     filterHelpers: {
         nameLower: "shauchapureblade",
@@ -692,8 +692,8 @@ const __generated_swordandshield__5a: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [70, 40, 90, 50, 0, 0],
-    maxSharpness:  [70, 40, 90, 100, 0, 0],
+    baseSharpness: [70, 40, 90, 50, 0, 0, 0],
+    maxSharpness:  [70, 40, 90, 100, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "usurper'sfirebolti",
@@ -730,8 +730,8 @@ const __generated_swordandshield__5b: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [70, 40, 70, 80, 40, 0],
-    maxSharpness:  [70, 40, 70, 80, 90, 0],
+    baseSharpness: [70, 40, 70, 80, 40, 0, 0],
+    maxSharpness:  [70, 40, 70, 80, 90, 0, 0],
 
     filterHelpers: {
         nameLower: "usurper'sfireboltii",
@@ -769,8 +769,8 @@ const __generated_swordandshield__5c: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [70, 40, 100, 90, 50, 0],
-    maxSharpness:  [70, 40, 100, 90, 60, 40],
+    baseSharpness: [70, 40, 100, 90, 50, 0, 0],
+    maxSharpness:  [70, 40, 100, 90, 60, 40, 0],
 
     filterHelpers: {
         nameLower: "despot'scrookbolt",
@@ -804,8 +804,8 @@ const __generated_swordandshield__6a: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [90, 40, 40, 30, 0, 0],
-    maxSharpness:  [90, 40, 40, 80, 0, 0],
+    baseSharpness: [90, 40, 40, 30, 0, 0, 0],
+    maxSharpness:  [90, 40, 40, 80, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "dirtybaroni",
@@ -839,8 +839,8 @@ const __generated_swordandshield__6b: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [130, 40, 40, 40, 0, 0],
-    maxSharpness:  [130, 40, 40, 90, 0, 0],
+    baseSharpness: [130, 40, 40, 40, 0, 0, 0],
+    maxSharpness:  [130, 40, 40, 90, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "dirtybaronii",
@@ -875,8 +875,8 @@ const __generated_swordandshield__6c: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [130, 60, 40, 70, 0, 0],
-    maxSharpness:  [130, 60, 40, 90, 30, 0],
+    baseSharpness: [130, 60, 40, 70, 0, 0, 0],
+    maxSharpness:  [130, 60, 40, 90, 30, 0, 0],
 
     filterHelpers: {
         nameLower: "dirtymarquis",
@@ -910,8 +910,8 @@ const __generated_swordandshield__7a: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [50, 40, 70, 40, 0, 0],
-    maxSharpness:  [50, 40, 70, 90, 0, 0],
+    baseSharpness: [50, 40, 70, 40, 0, 0, 0],
+    maxSharpness:  [50, 40, 70, 90, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "royalclawi",
@@ -945,8 +945,8 @@ const __generated_swordandshield__7b: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [50, 60, 90, 50, 0, 0],
-    maxSharpness:  [50, 60, 90, 100, 0, 0],
+    baseSharpness: [50, 60, 90, 50, 0, 0, 0],
+    maxSharpness:  [50, 60, 90, 100, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "royalclawii",
@@ -982,8 +982,8 @@ const __generated_swordandshield__7c: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [60, 40, 120, 60, 20, 0],
-    maxSharpness:  [60, 40, 120, 60, 50, 20],
+    baseSharpness: [60, 40, 120, 60, 20, 0, 0],
+    maxSharpness:  [60, 40, 120, 60, 50, 20, 0],
 
     filterHelpers: {
         nameLower: "royalludrothclaw",
@@ -1019,8 +1019,8 @@ const __generated_swordandshield__8a: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [70, 30, 100, 90, 10, 0],
-    maxSharpness:  [70, 30, 100, 90, 60, 0],
+    baseSharpness: [70, 30, 100, 90, 10, 0, 0],
+    maxSharpness:  [70, 30, 100, 90, 60, 0, 0],
 
     filterHelpers: {
         nameLower: "rextaloni",
@@ -1056,8 +1056,8 @@ const __generated_swordandshield__8b: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [50, 40, 130, 100, 30, 0],
-    maxSharpness:  [50, 40, 130, 100, 60, 20],
+    baseSharpness: [50, 40, 130, 100, 30, 0, 0],
+    maxSharpness:  [50, 40, 130, 100, 60, 20, 0],
 
     filterHelpers: {
         nameLower: "rextalonii",
@@ -1094,8 +1094,8 @@ const __generated_swordandshield__8c: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [50, 40, 120, 120, 50, 20],
-    maxSharpness:  [50, 40, 120, 120, 50, 20],
+    baseSharpness: [50, 40, 120, 120, 50, 20, 0],
+    maxSharpness:  [50, 40, 120, 120, 50, 20, 0],
 
     filterHelpers: {
         nameLower: "tigrexsword",
@@ -1128,8 +1128,8 @@ const __generated_swordandshield__9a: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [40, 90, 70, 0, 0, 0],
-    maxSharpness:  [40, 90, 110, 10, 0, 0],
+    baseSharpness: [40, 90, 70, 0, 0, 0, 0],
+    maxSharpness:  [40, 90, 110, 10, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "frostedgei",
@@ -1162,8 +1162,8 @@ const __generated_swordandshield__9b: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [30, 70, 70, 30, 0, 0],
-    maxSharpness:  [30, 70, 70, 80, 0, 0],
+    baseSharpness: [30, 70, 70, 30, 0, 0, 0],
+    maxSharpness:  [30, 70, 70, 80, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "frostedgeii",
@@ -1197,8 +1197,8 @@ const __generated_swordandshield__9c: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [30, 60, 110, 70, 30, 0],
-    maxSharpness:  [30, 60, 110, 70, 70, 10],
+    baseSharpness: [30, 60, 110, 70, 30, 0, 0],
+    maxSharpness:  [30, 60, 110, 70, 70, 10, 0],
 
     filterHelpers: {
         nameLower: "hifrostedge",
@@ -1229,8 +1229,8 @@ const __generated_swordandshield__10a: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [80, 70, 50, 0, 0, 0],
-    maxSharpness:  [80, 70, 90, 10, 0, 0],
+    baseSharpness: [80, 70, 50, 0, 0, 0, 0],
+    maxSharpness:  [80, 70, 90, 10, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "hunter'sknifei",
@@ -1261,8 +1261,8 @@ const __generated_swordandshield__10b: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [70, 50, 80, 0, 0, 0],
-    maxSharpness:  [70, 50, 120, 10, 0, 0],
+    baseSharpness: [70, 50, 80, 0, 0, 0, 0],
+    maxSharpness:  [70, 50, 120, 10, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "hunter'sknifeii",
@@ -1294,8 +1294,8 @@ const __generated_swordandshield__10c: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [60, 60, 60, 20, 0, 0],
-    maxSharpness:  [60, 60, 60, 70, 0, 0],
+    baseSharpness: [60, 60, 60, 20, 0, 0, 0],
+    maxSharpness:  [60, 60, 60, 70, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "fightersword",
@@ -1328,8 +1328,8 @@ const __generated_swordandshield__10d: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [90, 70, 40, 50, 0, 0],
-    maxSharpness:  [90, 70, 40, 80, 20, 0],
+    baseSharpness: [90, 70, 40, 50, 0, 0, 0],
+    maxSharpness:  [90, 70, 40, 80, 20, 0, 0],
 
     filterHelpers: {
         nameLower: "ironbeateri",
@@ -1363,8 +1363,8 @@ const __generated_swordandshield__10e: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [70, 80, 80, 50, 20, 0],
-    maxSharpness:  [70, 80, 80, 50, 60, 10],
+    baseSharpness: [70, 80, 80, 50, 20, 0, 0],
+    maxSharpness:  [70, 80, 80, 50, 60, 10, 0],
 
     filterHelpers: {
         nameLower: "ironbeaterii",
@@ -1399,8 +1399,8 @@ const __generated_swordandshield__10f: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [80, 90, 90, 60, 30, 0],
-    maxSharpness:  [80, 90, 90, 60, 50, 30],
+    baseSharpness: [80, 90, 90, 60, 30, 0, 0],
+    maxSharpness:  [80, 90, 90, 60, 50, 30, 0],
 
     filterHelpers: {
         nameLower: "smithy'spride",
@@ -1436,8 +1436,8 @@ const __generated_swordandshield__11a: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [150, 50, 40, 60, 0, 0],
-    maxSharpness:  [150, 50, 40, 60, 30, 20],
+    baseSharpness: [150, 50, 40, 60, 0, 0, 0],
+    maxSharpness:  [150, 50, 40, 60, 30, 20, 0],
 
     filterHelpers: {
         nameLower: "soldier'sdaggeri",
@@ -1473,8 +1473,8 @@ const __generated_swordandshield__11b: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [160, 60, 50, 80, 0, 0],
-    maxSharpness:  [160, 60, 50, 80, 20, 30],
+    baseSharpness: [160, 60, 50, 80, 0, 0, 0],
+    maxSharpness:  [160, 60, 50, 80, 20, 30, 0],
 
     filterHelpers: {
         nameLower: "soldier'sdaggerii",
@@ -1511,8 +1511,8 @@ const __generated_swordandshield__11c: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [160, 50, 50, 90, 0, 0],
-    maxSharpness:  [160, 50, 50, 90, 10, 40],
+    baseSharpness: [160, 50, 50, 90, 0, 0, 0],
+    maxSharpness:  [160, 50, 50, 90, 10, 40, 0],
 
     filterHelpers: {
         nameLower: "commander'sdagger",
@@ -1546,8 +1546,8 @@ const __generated_swordandshield__12a: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [90, 90, 40, 60, 20, 0],
-    maxSharpness:  [90, 90, 40, 60, 60, 10],
+    baseSharpness: [90, 90, 40, 60, 20, 0, 0],
+    maxSharpness:  [90, 90, 40, 60, 60, 10, 0],
 
     filterHelpers: {
         nameLower: "odysseybladei",
@@ -1581,8 +1581,8 @@ const __generated_swordandshield__12b: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [90, 90, 40, 50, 30, 0],
-    maxSharpness:  [90, 90, 40, 50, 70, 10],
+    baseSharpness: [90, 90, 40, 50, 30, 0, 0],
+    maxSharpness:  [90, 90, 40, 50, 70, 10, 0],
 
     filterHelpers: {
         nameLower: "odysseybladeii",
@@ -1617,8 +1617,8 @@ const __generated_swordandshield__12c: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [100, 100, 50, 60, 40, 0],
-    maxSharpness:  [100, 100, 50, 60, 60, 30],
+    baseSharpness: [100, 100, 50, 60, 40, 0, 0],
+    maxSharpness:  [100, 100, 50, 60, 60, 30, 0],
 
     filterHelpers: {
         nameLower: "masterodyssey",
@@ -1652,8 +1652,8 @@ const __generated_swordandshield__13a: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [110, 50, 50, 40, 0, 0],
-    maxSharpness:  [110, 50, 50, 90, 0, 0],
+    baseSharpness: [110, 50, 50, 40, 0, 0, 0],
+    maxSharpness:  [110, 50, 50, 90, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "pukeiswordi",
@@ -1689,8 +1689,8 @@ const __generated_swordandshield__13b: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [60, 60, 70, 90, 20, 0],
-    maxSharpness:  [60, 60, 70, 90, 70, 0],
+    baseSharpness: [60, 60, 70, 90, 20, 0, 0],
+    maxSharpness:  [60, 60, 70, 90, 70, 0, 0],
 
     filterHelpers: {
         nameLower: "pukeiswordii",
@@ -1726,8 +1726,8 @@ const __generated_swordandshield__13c: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [100, 60, 80, 80, 30, 0],
-    maxSharpness:  [100, 60, 80, 80, 70, 10],
+    baseSharpness: [100, 60, 80, 80, 30, 0, 0],
+    maxSharpness:  [100, 60, 80, 80, 70, 10, 0],
 
     filterHelpers: {
         nameLower: "venomedge",
@@ -1763,8 +1763,8 @@ const __generated_swordandshield__14a: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [30, 100, 60, 60, 0, 0],
-    maxSharpness:  [30, 100, 60, 100, 10, 0],
+    baseSharpness: [30, 100, 60, 60, 0, 0, 0],
+    maxSharpness:  [30, 100, 60, 100, 10, 0, 0],
 
     filterHelpers: {
         nameLower: "djinni",
@@ -1800,8 +1800,8 @@ const __generated_swordandshield__14b: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [90, 80, 80, 60, 40, 0],
-    maxSharpness:  [90, 80, 80, 60, 90, 0],
+    baseSharpness: [90, 80, 80, 60, 40, 0, 0],
+    maxSharpness:  [90, 80, 80, 60, 90, 0, 0],
 
     filterHelpers: {
         nameLower: "djinnii",
@@ -1838,8 +1838,8 @@ const __generated_swordandshield__14c: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [50, 40, 110, 100, 50, 0],
-    maxSharpness:  [50, 40, 110, 100, 90, 10],
+    baseSharpness: [50, 40, 110, 100, 50, 0, 0],
+    maxSharpness:  [50, 40, 110, 100, 90, 10, 0],
 
     filterHelpers: {
         nameLower: "blazingfalchion",
@@ -1873,8 +1873,8 @@ const __generated_swordandshield__15a: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [50, 60, 70, 70, 0, 0],
-    maxSharpness:  [50, 60, 70, 100, 20, 0],
+    baseSharpness: [50, 60, 70, 70, 0, 0, 0],
+    maxSharpness:  [50, 60, 70, 100, 20, 0, 0],
 
     filterHelpers: {
         nameLower: "iciclespikei",
@@ -1909,8 +1909,8 @@ const __generated_swordandshield__15b: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [40, 70, 70, 100, 20, 0],
-    maxSharpness:  [40, 70, 70, 100, 70, 0],
+    baseSharpness: [40, 70, 70, 100, 20, 0, 0],
+    maxSharpness:  [40, 70, 70, 100, 70, 0, 0],
 
     filterHelpers: {
         nameLower: "iciclespikeii",
@@ -1946,8 +1946,8 @@ const __generated_swordandshield__15c: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [50, 70, 80, 80, 70, 0],
-    maxSharpness:  [50, 70, 80, 80, 90, 30],
+    baseSharpness: [50, 70, 80, 80, 70, 0, 0],
+    maxSharpness:  [50, 70, 80, 80, 90, 30, 0],
 
     filterHelpers: {
         nameLower: "nardebosche",
@@ -1981,8 +1981,8 @@ const __generated_swordandshield__16a: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [30, 70, 80, 20, 0, 0],
-    maxSharpness:  [30, 70, 80, 70, 0, 0],
+    baseSharpness: [30, 70, 80, 20, 0, 0, 0],
+    maxSharpness:  [30, 70, 80, 70, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "cunningripostei",
@@ -2017,8 +2017,8 @@ const __generated_swordandshield__16b: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [30, 70, 100, 50, 0, 0],
-    maxSharpness:  [30, 70, 100, 100, 0, 0],
+    baseSharpness: [30, 70, 100, 50, 0, 0, 0],
+    maxSharpness:  [30, 70, 100, 100, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "cunningriposteii",
@@ -2054,8 +2054,8 @@ const __generated_swordandshield__16c: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [40, 70, 110, 80, 0, 0],
-    maxSharpness:  [40, 70, 110, 120, 10, 0],
+    baseSharpness: [40, 70, 110, 80, 0, 0, 0],
+    maxSharpness:  [40, 70, 110, 120, 10, 0, 0],
 
     filterHelpers: {
         nameLower: "guardbreaker",
@@ -2089,8 +2089,8 @@ const __generated_swordandshield__17a: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [70, 60, 40, 30, 0, 0],
-    maxSharpness:  [70, 60, 40, 80, 0, 0],
+    baseSharpness: [70, 60, 40, 30, 0, 0, 0],
+    maxSharpness:  [70, 60, 40, 80, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "khezurazori",
@@ -2124,8 +2124,8 @@ const __generated_swordandshield__17b: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [100, 60, 50, 40, 0, 0],
-    maxSharpness:  [100, 60, 50, 90, 0, 0],
+    baseSharpness: [100, 60, 50, 40, 0, 0, 0],
+    maxSharpness:  [100, 60, 50, 90, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "khezurazorii",
@@ -2161,8 +2161,8 @@ const __generated_swordandshield__17c: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [100, 60, 70, 70, 0, 0],
-    maxSharpness:  [100, 60, 70, 70, 40, 10],
+    baseSharpness: [100, 60, 70, 70, 0, 0, 0],
+    maxSharpness:  [100, 60, 70, 70, 40, 10, 0],
 
     filterHelpers: {
         nameLower: "painfulrazor",
@@ -2195,8 +2195,8 @@ const __generated_swordandshield__18a: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [90, 50, 40, 20, 0, 0],
-    maxSharpness:  [90, 50, 40, 70, 0, 0],
+    baseSharpness: [90, 50, 40, 20, 0, 0, 0],
+    maxSharpness:  [90, 50, 40, 70, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "hypnosknifei",
@@ -2230,8 +2230,8 @@ const __generated_swordandshield__18b: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [100, 60, 50, 40, 0, 0],
-    maxSharpness:  [100, 60, 50, 90, 0, 0],
+    baseSharpness: [100, 60, 50, 40, 0, 0, 0],
+    maxSharpness:  [100, 60, 50, 90, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "hypnosknifeii",
@@ -2266,8 +2266,8 @@ const __generated_swordandshield__18c: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [100, 60, 50, 70, 20, 0],
-    maxSharpness:  [100, 60, 50, 70, 70, 0],
+    baseSharpness: [100, 60, 50, 70, 20, 0, 0],
+    maxSharpness:  [100, 60, 50, 70, 70, 0, 0],
 
     filterHelpers: {
         nameLower: "morpheusknife",
@@ -2298,8 +2298,8 @@ const __generated_swordandshield__19a: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [70, 90, 40, 0, 0, 0],
-    maxSharpness:  [70, 90, 90, 0, 0, 0],
+    baseSharpness: [70, 90, 40, 0, 0, 0, 0],
+    maxSharpness:  [70, 90, 90, 0, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "bonekukrii",
@@ -2330,8 +2330,8 @@ const __generated_swordandshield__19b: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [80, 70, 50, 0, 0, 0],
-    maxSharpness:  [80, 70, 100, 0, 0, 0],
+    baseSharpness: [80, 70, 50, 0, 0, 0, 0],
+    maxSharpness:  [80, 70, 100, 0, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "bonekukriii",
@@ -2363,8 +2363,8 @@ const __generated_swordandshield__19c: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [90, 90, 70, 0, 0, 0],
-    maxSharpness:  [90, 90, 110, 10, 0, 0],
+    baseSharpness: [90, 90, 70, 0, 0, 0, 0],
+    maxSharpness:  [90, 90, 110, 10, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "chiefkukri",
@@ -2397,8 +2397,8 @@ const __generated_swordandshield__19d: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [100, 70, 70, 10, 0, 0],
-    maxSharpness:  [100, 70, 70, 60, 0, 0],
+    baseSharpness: [100, 70, 70, 10, 0, 0, 0],
+    maxSharpness:  [100, 70, 70, 60, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "bonebarongi",
@@ -2432,8 +2432,8 @@ const __generated_swordandshield__19e: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [110, 90, 60, 40, 0, 0],
-    maxSharpness:  [110, 90, 60, 80, 10, 0],
+    baseSharpness: [110, 90, 60, 40, 0, 0, 0],
+    maxSharpness:  [110, 90, 60, 80, 10, 0, 0],
 
     filterHelpers: {
         nameLower: "bonebarongii",
@@ -2468,8 +2468,8 @@ const __generated_swordandshield__19f: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [80, 70, 80, 70, 0, 0],
-    maxSharpness:  [80, 70, 80, 100, 20, 0],
+    baseSharpness: [80, 70, 80, 70, 0, 0, 0],
+    maxSharpness:  [80, 70, 80, 100, 20, 0, 0],
 
     filterHelpers: {
         nameLower: "grandbarong",
@@ -2504,8 +2504,8 @@ const __generated_swordandshield__20a: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [60, 70, 90, 80, 0, 0],
-    maxSharpness:  [60, 70, 90, 100, 30, 0],
+    baseSharpness: [60, 70, 90, 80, 0, 0, 0],
+    maxSharpness:  [60, 70, 90, 100, 30, 0, 0],
 
     filterHelpers: {
         nameLower: "princessrapieri",
@@ -2540,8 +2540,8 @@ const __generated_swordandshield__20b: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [100, 40, 110, 70, 30, 0],
-    maxSharpness:  [100, 40, 110, 70, 60, 20],
+    baseSharpness: [100, 40, 110, 70, 30, 0, 0],
+    maxSharpness:  [100, 40, 110, 70, 60, 20, 0],
 
     filterHelpers: {
         nameLower: "princessrapierii",
@@ -2577,8 +2577,8 @@ const __generated_swordandshield__20c: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [90, 40, 110, 70, 40, 0],
-    maxSharpness:  [90, 40, 110, 70, 60, 30],
+    baseSharpness: [90, 40, 110, 70, 40, 0, 0],
+    maxSharpness:  [90, 40, 110, 70, 60, 30, 0],
 
     filterHelpers: {
         nameLower: "queenrapier",
@@ -2612,8 +2612,8 @@ const __generated_swordandshield__21a: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [110, 70, 70, 0, 0, 0],
-    maxSharpness:  [110, 70, 80, 40, 0, 0],
+    baseSharpness: [110, 70, 70, 0, 0, 0, 0],
+    maxSharpness:  [110, 70, 80, 40, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "bonetabari",
@@ -2648,8 +2648,8 @@ const __generated_swordandshield__21b: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [110, 90, 60, 40, 0, 0],
-    maxSharpness:  [110, 90, 60, 70, 20, 0],
+    baseSharpness: [110, 90, 60, 40, 0, 0, 0],
+    maxSharpness:  [110, 90, 60, 70, 20, 0, 0],
 
     filterHelpers: {
         nameLower: "bonetabarii",
@@ -2685,8 +2685,8 @@ const __generated_swordandshield__21c: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [130, 110, 50, 30, 30, 0],
-    maxSharpness:  [130, 110, 50, 30, 70, 10],
+    baseSharpness: [130, 110, 50, 30, 30, 0, 0],
+    maxSharpness:  [130, 110, 50, 30, 70, 10, 0],
 
     filterHelpers: {
         nameLower: "ragdostabar",
@@ -2718,8 +2718,8 @@ const __generated_swordandshield__22a: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [50, 60, 140, 0, 0, 0],
-    maxSharpness:  [50, 60, 140, 50, 0, 0],
+    baseSharpness: [50, 60, 140, 0, 0, 0, 0],
+    maxSharpness:  [50, 60, 140, 50, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "carapacemacei",
@@ -2752,8 +2752,8 @@ const __generated_swordandshield__22b: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [60, 60, 140, 40, 0, 0],
-    maxSharpness:  [60, 60, 140, 80, 10, 0],
+    baseSharpness: [60, 60, 140, 40, 0, 0, 0],
+    maxSharpness:  [60, 60, 140, 80, 10, 0, 0],
 
     filterHelpers: {
         nameLower: "carapacemaceii",
@@ -2787,8 +2787,8 @@ const __generated_swordandshield__22c: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [60, 40, 180, 50, 20, 0],
-    maxSharpness:  [60, 40, 180, 50, 40, 30],
+    baseSharpness: [60, 40, 180, 50, 20, 0, 0],
+    maxSharpness:  [60, 40, 180, 50, 40, 30, 0],
 
     filterHelpers: {
         nameLower: "barrothclub",
@@ -2822,8 +2822,8 @@ const __generated_swordandshield__23a: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [60, 40, 50, 100, 0, 0],
-    maxSharpness:  [60, 40, 50, 110, 40, 0],
+    baseSharpness: [60, 40, 50, 100, 0, 0, 0],
+    maxSharpness:  [60, 40, 50, 110, 40, 0, 0],
 
     filterHelpers: {
         nameLower: "studdedclubi",
@@ -2858,8 +2858,8 @@ const __generated_swordandshield__23b: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [70, 70, 80, 110, 20, 0],
-    maxSharpness:  [70, 70, 80, 110, 70, 0],
+    baseSharpness: [70, 70, 80, 110, 20, 0, 0],
+    maxSharpness:  [70, 70, 80, 110, 70, 0, 0],
 
     filterHelpers: {
         nameLower: "studdedclubii",
@@ -2895,8 +2895,8 @@ const __generated_swordandshield__23c: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [40, 60, 80, 120, 50, 0],
-    maxSharpness:  [40, 60, 80, 120, 100, 0],
+    baseSharpness: [40, 60, 80, 120, 50, 0, 0],
+    maxSharpness:  [40, 60, 80, 120, 100, 0, 0],
 
     filterHelpers: {
         nameLower: "spikedbat",
@@ -2929,8 +2929,8 @@ const __generated_swordandshield__24a: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [110, 30, 60, 0, 0, 0],
-    maxSharpness:  [110, 30, 60, 50, 0, 0],
+    baseSharpness: [110, 30, 60, 0, 0, 0, 0],
+    maxSharpness:  [110, 30, 60, 50, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "brashbuddiesi",
@@ -2964,8 +2964,8 @@ const __generated_swordandshield__24b: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [100, 30, 70, 50, 0, 0],
-    maxSharpness:  [100, 30, 70, 90, 10, 0],
+    baseSharpness: [100, 30, 70, 50, 0, 0, 0],
+    maxSharpness:  [100, 30, 70, 90, 10, 0, 0],
 
     filterHelpers: {
         nameLower: "brashbuddiesii",
@@ -2999,8 +2999,8 @@ const __generated_swordandshield__24c: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [140, 20, 60, 70, 10, 0],
-    maxSharpness:  [140, 20, 60, 70, 50, 10],
+    baseSharpness: [140, 20, 60, 70, 10, 0, 0],
+    maxSharpness:  [140, 20, 60, 70, 50, 10, 0],
 
     filterHelpers: {
         nameLower: "cockycomrades",
@@ -3036,8 +3036,8 @@ const __generated_swordandshield__25a: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [120, 90, 30, 50, 10, 0],
-    maxSharpness:  [120, 90, 30, 50, 60, 0],
+    baseSharpness: [120, 90, 30, 50, 10, 0, 0],
+    maxSharpness:  [120, 90, 30, 50, 60, 0, 0],
 
     filterHelpers: {
         nameLower: "flammensucheri",
@@ -3075,8 +3075,8 @@ const __generated_swordandshield__25b: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [130, 110, 40, 50, 20, 0],
-    maxSharpness:  [130, 110, 40, 50, 70, 0],
+    baseSharpness: [130, 110, 40, 50, 20, 0, 0],
+    maxSharpness:  [130, 110, 40, 50, 70, 0, 0],
 
     filterHelpers: {
         nameLower: "flammensucherii",
@@ -3115,8 +3115,8 @@ const __generated_swordandshield__25c: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [120, 110, 40, 50, 30, 0],
-    maxSharpness:  [120, 110, 40, 50, 80, 0],
+    baseSharpness: [120, 110, 40, 50, 30, 0, 0],
+    maxSharpness:  [120, 110, 40, 50, 80, 0, 0],
 
     filterHelpers: {
         nameLower: "gnashingflammensucher",
@@ -3151,8 +3151,8 @@ const __generated_swordandshield__26a: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [100, 30, 90, 30, 0, 0],
-    maxSharpness:  [100, 30, 90, 70, 10, 0],
+    baseSharpness: [100, 30, 90, 30, 0, 0, 0],
+    maxSharpness:  [100, 30, 90, 70, 10, 0, 0],
 
     filterHelpers: {
         nameLower: "mincingbladei",
@@ -3188,8 +3188,8 @@ const __generated_swordandshield__26b: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [100, 30, 110, 40, 20, 0],
-    maxSharpness:  [100, 30, 110, 40, 70, 0],
+    baseSharpness: [100, 30, 110, 40, 20, 0, 0],
+    maxSharpness:  [100, 30, 110, 40, 70, 0, 0],
 
     filterHelpers: {
         nameLower: "mincingbladeii",
@@ -3226,8 +3226,8 @@ const __generated_swordandshield__26c: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [100, 30, 100, 40, 30, 0],
-    maxSharpness:  [100, 30, 100, 40, 70, 10],
+    baseSharpness: [100, 30, 100, 40, 30, 0, 0],
+    maxSharpness:  [100, 30, 100, 40, 70, 10, 0],
 
     filterHelpers: {
         nameLower: "chef'sknife",
@@ -3260,8 +3260,8 @@ const __generated_swordandshield__27a: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [30, 70, 100, 0, 0, 0],
-    maxSharpness:  [30, 70, 140, 10, 0, 0],
+    baseSharpness: [30, 70, 100, 0, 0, 0, 0],
+    maxSharpness:  [30, 70, 140, 10, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "izuchisicklei",
@@ -3295,8 +3295,8 @@ const __generated_swordandshield__27b: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [30, 70, 60, 40, 0, 0],
-    maxSharpness:  [30, 70, 60, 90, 0, 0],
+    baseSharpness: [30, 70, 60, 40, 0, 0, 0],
+    maxSharpness:  [30, 70, 60, 90, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "izuchisickleii",
@@ -3331,8 +3331,8 @@ const __generated_swordandshield__27c: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [30, 80, 50, 60, 30, 0],
-    maxSharpness:  [30, 80, 50, 60, 80, 0],
+    baseSharpness: [30, 80, 50, 60, 30, 0, 0],
+    maxSharpness:  [30, 80, 50, 60, 80, 0, 0],
 
     filterHelpers: {
         nameLower: "snappersickle",
@@ -3369,8 +3369,8 @@ const __generated_swordandshield__28a: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [160, 30, 60, 0, 0, 0],
-    maxSharpness:  [160, 30, 60, 50, 0, 0],
+    baseSharpness: [160, 30, 60, 0, 0, 0, 0],
+    maxSharpness:  [160, 30, 60, 50, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "lavapicki",
@@ -3407,8 +3407,8 @@ const __generated_swordandshield__28b: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [100, 40, 60, 50, 0, 0],
-    maxSharpness:  [100, 40, 60, 80, 20, 0],
+    baseSharpness: [100, 40, 60, 50, 0, 0, 0],
+    maxSharpness:  [100, 40, 60, 80, 20, 0, 0],
 
     filterHelpers: {
         nameLower: "lavapickii",
@@ -3446,8 +3446,8 @@ const __generated_swordandshield__28c: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [40, 40, 70, 150, 0, 0],
-    maxSharpness:  [40, 40, 70, 150, 50, 0],
+    baseSharpness: [40, 40, 70, 150, 0, 0, 0],
+    maxSharpness:  [40, 40, 70, 150, 50, 0, 0],
 
     filterHelpers: {
         nameLower: "burlybeak",
@@ -3478,8 +3478,8 @@ const __generated_swordandshield__29a: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [100, 30, 70, 0, 0, 0],
-    maxSharpness:  [100, 30, 120, 0, 0, 0],
+    baseSharpness: [100, 30, 70, 0, 0, 0, 0],
+    maxSharpness:  [100, 30, 120, 0, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "sectanuloi",
@@ -3510,8 +3510,8 @@ const __generated_swordandshield__29b: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [90, 20, 20, 70, 0, 0],
-    maxSharpness:  [90, 20, 20, 120, 0, 0],
+    baseSharpness: [90, 20, 20, 70, 0, 0, 0],
+    maxSharpness:  [90, 20, 20, 120, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "sectaunu",
@@ -3545,8 +3545,8 @@ const __generated_swordandshield__29c: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [140, 20, 20, 70, 0, 0],
-    maxSharpness:  [140, 20, 20, 110, 10, 0],
+    baseSharpness: [140, 20, 20, 70, 0, 0, 0],
+    maxSharpness:  [140, 20, 20, 110, 10, 0, 0],
 
     filterHelpers: {
         nameLower: "sectanulowhitei",
@@ -3582,8 +3582,8 @@ const __generated_swordandshield__29d: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [150, 30, 20, 60, 40, 0],
-    maxSharpness:  [150, 30, 20, 60, 70, 20],
+    baseSharpness: [150, 30, 20, 60, 40, 0, 0],
+    maxSharpness:  [150, 30, 20, 60, 70, 20, 0],
 
     filterHelpers: {
         nameLower: "sectaunuwhite",
@@ -3619,8 +3619,8 @@ const __generated_swordandshield__30a: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [150, 30, 20, 60, 40, 0],
-    maxSharpness:  [150, 30, 20, 60, 80, 10],
+    baseSharpness: [150, 30, 20, 60, 40, 0, 0],
+    maxSharpness:  [150, 30, 20, 60, 80, 10, 0],
 
     filterHelpers: {
         nameLower: "sectanuloblacki",
@@ -3657,8 +3657,8 @@ const __generated_swordandshield__30b: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [140, 20, 20, 70, 50, 0],
-    maxSharpness:  [140, 20, 20, 70, 80, 20],
+    baseSharpness: [140, 20, 20, 70, 50, 0, 0],
+    maxSharpness:  [140, 20, 20, 70, 80, 20, 0],
 
     filterHelpers: {
         nameLower: "sectanuloblackii",
@@ -3696,8 +3696,8 @@ const __generated_swordandshield__30c: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [160, 20, 20, 90, 60, 0],
-    maxSharpness:  [160, 20, 20, 90, 70, 40],
+    baseSharpness: [160, 20, 20, 90, 60, 0, 0],
+    maxSharpness:  [160, 20, 20, 90, 70, 40, 0],
 
     filterHelpers: {
         nameLower: "sectaunublack",
@@ -3730,8 +3730,8 @@ const __generated_swordandshield__31a: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [150, 30, 30, 40, 0, 0],
-    maxSharpness:  [150, 30, 30, 90, 0, 0],
+    baseSharpness: [150, 30, 30, 40, 0, 0, 0],
+    maxSharpness:  [150, 30, 30, 90, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "sectanulogreeni",
@@ -3766,8 +3766,8 @@ const __generated_swordandshield__31b: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [140, 30, 30, 70, 30, 0],
-    maxSharpness:  [140, 30, 30, 70, 70, 10],
+    baseSharpness: [140, 30, 30, 70, 30, 0, 0],
+    maxSharpness:  [140, 30, 30, 70, 70, 10, 0],
 
     filterHelpers: {
         nameLower: "sectaunugreen",
@@ -3801,8 +3801,8 @@ const __generated_swordandshield__32a: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [140, 30, 30, 50, 0, 0],
-    maxSharpness:  [140, 30, 30, 90, 10, 0],
+    baseSharpness: [140, 30, 30, 50, 0, 0, 0],
+    maxSharpness:  [140, 30, 30, 90, 10, 0, 0],
 
     filterHelpers: {
         nameLower: "sectanuloyellowi",
@@ -3837,8 +3837,8 @@ const __generated_swordandshield__32b: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [160, 20, 20, 100, 50, 0],
-    maxSharpness:  [160, 20, 20, 100, 70, 30],
+    baseSharpness: [160, 20, 20, 100, 50, 0, 0],
+    maxSharpness:  [160, 20, 20, 100, 70, 30, 0],
 
     filterHelpers: {
         nameLower: "sectaunuyellow",
@@ -3871,8 +3871,8 @@ const __generated_swordandshield__33a: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [100, 40, 30, 30, 0, 0],
-    maxSharpness:  [100, 40, 30, 80, 0, 0],
+    baseSharpness: [100, 40, 30, 30, 0, 0, 0],
+    maxSharpness:  [100, 40, 30, 80, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "sectanuloredi",
@@ -3907,8 +3907,8 @@ const __generated_swordandshield__33b: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [120, 40, 40, 50, 0, 0],
-    maxSharpness:  [120, 40, 40, 100, 0, 0],
+    baseSharpness: [120, 40, 40, 50, 0, 0, 0],
+    maxSharpness:  [120, 40, 40, 100, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "sectanuloredii",
@@ -3946,8 +3946,8 @@ const __generated_swordandshield__33c: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [150, 30, 20, 60, 40, 0],
-    maxSharpness:  [150, 30, 20, 60, 80, 10],
+    baseSharpness: [150, 30, 20, 60, 40, 0, 0],
+    maxSharpness:  [150, 30, 20, 60, 80, 10, 0],
 
     filterHelpers: {
         nameLower: "sectaunured",
@@ -3978,8 +3978,8 @@ const __generated_swordandshield__34a: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [160, 20, 40, 80, 0, 0],
-    maxSharpness:  [160, 20, 40, 110, 20, 0],
+    baseSharpness: [160, 20, 40, 80, 0, 0, 0],
+    maxSharpness:  [160, 20, 40, 110, 20, 0, 0],
 
     filterHelpers: {
         nameLower: "sinisterswordi",
@@ -4011,8 +4011,8 @@ const __generated_swordandshield__34b: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [170, 20, 20, 90, 0, 0],
-    maxSharpness:  [170, 20, 20, 110, 30, 0],
+    baseSharpness: [170, 20, 20, 90, 0, 0, 0],
+    maxSharpness:  [170, 20, 20, 110, 30, 0, 0],
 
     filterHelpers: {
         nameLower: "sinisterswordii",
@@ -4045,8 +4045,8 @@ const __generated_swordandshield__34c: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [190, 10, 20, 90, 40, 0],
-    maxSharpness:  [190, 10, 20, 90, 60, 30],
+    baseSharpness: [190, 10, 20, 90, 40, 0, 0],
+    maxSharpness:  [190, 10, 20, 90, 60, 30, 0],
 
     filterHelpers: {
         nameLower: "sinistershadekeeper",
@@ -4077,8 +4077,8 @@ const __generated_swordandshield__35a: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [50, 20, 100, 80, 0, 0],
-    maxSharpness:  [50, 20, 100, 130, 0, 0],
+    baseSharpness: [50, 20, 100, 80, 0, 0, 0],
+    maxSharpness:  [50, 20, 100, 130, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "rajangclubi",
@@ -4110,8 +4110,8 @@ const __generated_swordandshield__35b: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [20, 40, 100, 90, 0, 0],
-    maxSharpness:  [20, 40, 100, 130, 10, 0],
+    baseSharpness: [20, 40, 100, 90, 0, 0, 0],
+    maxSharpness:  [20, 40, 100, 130, 10, 0, 0],
 
     filterHelpers: {
         nameLower: "rajangclubii",
@@ -4144,8 +4144,8 @@ const __generated_swordandshield__35c: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [50, 60, 80, 100, 10, 0],
-    maxSharpness:  [50, 60, 80, 100, 50, 10],
+    baseSharpness: [50, 60, 80, 100, 10, 0, 0],
+    maxSharpness:  [50, 60, 80, 100, 50, 10, 0],
 
     filterHelpers: {
         nameLower: "bannedrajangclub",
@@ -4176,8 +4176,8 @@ const __generated_swordandshield__36a: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [20, 20, 20, 40, 100, 0],
-    maxSharpness:  [20, 20, 20, 40, 150, 0],
+    baseSharpness: [20, 20, 20, 40, 100, 0, 0],
+    maxSharpness:  [20, 20, 20, 40, 150, 0, 0],
 
     filterHelpers: {
         nameLower: "azureelderswordi",
@@ -4209,8 +4209,8 @@ const __generated_swordandshield__36b: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [20, 20, 50, 50, 110, 0],
-    maxSharpness:  [20, 20, 50, 50, 150, 10],
+    baseSharpness: [20, 20, 50, 50, 110, 0, 0],
+    maxSharpness:  [20, 20, 50, 50, 150, 10, 0],
 
     filterHelpers: {
         nameLower: "azureelderswordii",
@@ -4243,8 +4243,8 @@ const __generated_swordandshield__36c: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [20, 20, 80, 60, 120, 0],
-    maxSharpness:  [20, 20, 80, 60, 150, 20],
+    baseSharpness: [20, 20, 80, 60, 120, 0, 0],
+    maxSharpness:  [20, 20, 80, 60, 150, 20, 0],
 
     filterHelpers: {
         nameLower: "abyssalgaleshredder",
@@ -4275,8 +4275,8 @@ const __generated_swordandshield__37a: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [20, 20, 180, 40, 40, 0],
-    maxSharpness:  [20, 20, 180, 40, 60, 30],
+    baseSharpness: [20, 20, 180, 40, 40, 0, 0],
+    maxSharpness:  [20, 20, 180, 40, 60, 30, 0],
 
     filterHelpers: {
         nameLower: "thunderboltswordi",
@@ -4308,8 +4308,8 @@ const __generated_swordandshield__37b: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [20, 10, 220, 40, 60, 0],
-    maxSharpness:  [20, 10, 220, 40, 70, 40],
+    baseSharpness: [20, 10, 220, 40, 60, 0, 0],
+    maxSharpness:  [20, 10, 220, 40, 70, 40, 0],
 
     filterHelpers: {
         nameLower: "abyssalstormshredder",
@@ -4340,8 +4340,8 @@ const __generated_swordandshield__38a: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [70, 100, 60, 70, 50, 0],
-    maxSharpness:  [70, 100, 60, 70, 70, 30],
+    baseSharpness: [70, 100, 60, 70, 50, 0, 0],
+    maxSharpness:  [70, 100, 60, 70, 70, 30, 0],
 
     filterHelpers: {
         nameLower: "icesteeldaggeri",
@@ -4374,8 +4374,8 @@ const __generated_swordandshield__38b: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [80, 120, 30, 50, 60, 10],
-    maxSharpness:  [80, 120, 30, 50, 60, 60],
+    baseSharpness: [80, 120, 30, 50, 60, 10, 0],
+    maxSharpness:  [80, 120, 30, 50, 60, 60, 0],
 
     filterHelpers: {
         nameLower: "daora'srazor",
@@ -4406,8 +4406,8 @@ const __generated_swordandshield__39a: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [150, 20, 80, 60, 40, 0],
-    maxSharpness:  [150, 20, 80, 60, 70, 20],
+    baseSharpness: [150, 20, 80, 60, 40, 0, 0],
+    maxSharpness:  [150, 20, 80, 60, 70, 20, 0],
 
     filterHelpers: {
         nameLower: "teostra'sspadai",
@@ -4439,8 +4439,8 @@ const __generated_swordandshield__39b: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [160, 50, 30, 60, 50, 0],
-    maxSharpness:  [160, 50, 30, 60, 70, 30],
+    baseSharpness: [160, 50, 30, 60, 50, 0, 0],
+    maxSharpness:  [160, 50, 30, 60, 70, 30, 0],
 
     filterHelpers: {
         nameLower: "teostra'semblem",
@@ -4471,8 +4471,8 @@ const __generated_swordandshield__40a: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [180, 0, 0, 0, 0, 70],
-    maxSharpness:  [180, 0, 0, 0, 0, 120],
+    baseSharpness: [180, 0, 0, 0, 0, 70, 0],
+    maxSharpness:  [180, 0, 0, 0, 0, 120, 0],
 
     filterHelpers: {
         nameLower: "redwingswiftbladei",
@@ -4503,8 +4503,8 @@ const __generated_swordandshield__40b: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [60, 0, 0, 0, 0, 90],
-    maxSharpness:  [60, 0, 0, 0, 0, 140],
+    baseSharpness: [60, 0, 0, 0, 0, 90, 0],
+    maxSharpness:  [60, 0, 0, 0, 0, 140, 0],
 
     filterHelpers: {
         nameLower: "vermilionorgul",
@@ -4535,8 +4535,8 @@ const __generated_swordandshield__41a: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [50, 60, 90, 0, 0, 0],
-    maxSharpness:  [50, 60, 120, 20, 0, 0],
+    baseSharpness: [50, 60, 90, 0, 0, 0, 0],
+    maxSharpness:  [50, 60, 120, 20, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "sleepyshellswordi",
@@ -4568,8 +4568,8 @@ const __generated_swordandshield__41b: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [50, 70, 100, 30, 0, 0],
-    maxSharpness:  [50, 70, 100, 60, 20, 0],
+    baseSharpness: [50, 70, 100, 30, 0, 0, 0],
+    maxSharpness:  [50, 70, 100, 60, 20, 0, 0],
 
     filterHelpers: {
         nameLower: "sleepyshellswordii",
@@ -4603,8 +4603,8 @@ const __generated_swordandshield__41c: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [50, 50, 130, 70, 0, 0],
-    maxSharpness:  [50, 50, 130, 70, 50, 0],
+    baseSharpness: [50, 50, 130, 70, 0, 0, 0],
+    maxSharpness:  [50, 50, 130, 70, 50, 0, 0],
 
     filterHelpers: {
         nameLower: "wakingnightmare",
@@ -4635,8 +4635,8 @@ const __generated_swordandshield__42a: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [60, 100, 40, 0, 0, 0],
-    maxSharpness:  [60, 100, 90, 0, 0, 0],
+    baseSharpness: [60, 100, 40, 0, 0, 0, 0],
+    maxSharpness:  [60, 100, 90, 0, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "catspawi",
@@ -4668,8 +4668,8 @@ const __generated_swordandshield__42b: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [60, 100, 80, 10, 0, 0],
-    maxSharpness:  [60, 100, 80, 60, 0, 0],
+    baseSharpness: [60, 100, 80, 10, 0, 0, 0],
+    maxSharpness:  [60, 100, 80, 60, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "catspawii",
@@ -4702,8 +4702,8 @@ const __generated_swordandshield__42c: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [60, 100, 60, 80, 0, 0],
-    maxSharpness:  [60, 100, 60, 80, 10, 40],
+    baseSharpness: [60, 100, 60, 80, 0, 0, 0],
+    maxSharpness:  [60, 100, 60, 80, 10, 40, 0],
 
     filterHelpers: {
         nameLower: "catburglar",
@@ -4734,8 +4734,8 @@ const __generated_swordandshield__43a: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [10, 20, 30, 190, 0, 0],
-    maxSharpness:  [10, 20, 30, 210, 30, 0],
+    baseSharpness: [10, 20, 30, 190, 0, 0, 0],
+    maxSharpness:  [10, 20, 30, 210, 30, 0, 0],
 
     filterHelpers: {
         nameLower: "ninjaswordi",
@@ -4766,8 +4766,8 @@ const __generated_swordandshield__43b: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [10, 20, 30, 240, 0, 0],
-    maxSharpness:  [10, 20, 30, 240, 50, 0],
+    baseSharpness: [10, 20, 30, 240, 0, 0, 0],
+    maxSharpness:  [10, 20, 30, 240, 50, 0, 0],
 
     filterHelpers: {
         nameLower: "hininjasword",
@@ -4807,8 +4807,8 @@ const __generated_swordandshield__ra: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [70, 70, 90, 20, 0, 0],
-    maxSharpness:  [70, 70, 90, 70, 0, 0],
+    baseSharpness: [70, 70, 90, 20, 0, 0, 0],
+    maxSharpness:  [70, 70, 90, 70, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "rampageswordi",
@@ -4851,8 +4851,8 @@ const __generated_swordandshield__rb: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [60, 70, 80, 40, 0, 0],
-    maxSharpness:  [60, 70, 80, 90, 0, 0],
+    baseSharpness: [60, 70, 80, 40, 0, 0, 0],
+    maxSharpness:  [60, 70, 80, 90, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "rampageswordii",
@@ -4904,8 +4904,8 @@ const __generated_swordandshield__rc: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [50, 70, 80, 30, 20, 0],
-    maxSharpness:  [50, 70, 80, 30, 70, 0],
+    baseSharpness: [50, 70, 80, 30, 20, 0, 0],
+    maxSharpness:  [50, 70, 80, 30, 70, 0, 0],
 
     filterHelpers: {
         nameLower: "rampageswordiii",
@@ -4963,8 +4963,8 @@ const __generated_swordandshield__rd: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [50, 70, 70, 30, 30, 0],
-    maxSharpness:  [50, 70, 70, 30, 80, 0],
+    baseSharpness: [50, 70, 70, 30, 30, 0, 0],
+    maxSharpness:  [50, 70, 70, 30, 80, 0, 0],
 
     filterHelpers: {
         nameLower: "rampageswordiv",
@@ -5032,8 +5032,8 @@ const __generated_swordandshield__re: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [50, 70, 50, 50, 30, 0],
-    maxSharpness:  [50, 70, 50, 50, 70, 10],
+    baseSharpness: [50, 70, 50, 50, 30, 0, 0],
+    maxSharpness:  [50, 70, 50, 50, 70, 10, 0],
 
     filterHelpers: {
         nameLower: "rampageswordv",
@@ -5108,8 +5108,8 @@ const __generated_swordandshield__rf: SwordAndShield = {
         ],
     ],
 
-    baseSharpness: [50, 70, 30, 60, 40, 0],
-    maxSharpness:  [50, 70, 30, 60, 70, 20],
+    baseSharpness: [50, 70, 30, 60, 40, 0, 0],
+    maxSharpness:  [50, 70, 30, 60, 70, 20, 0],
 
     filterHelpers: {
         nameLower: "rampageswords",

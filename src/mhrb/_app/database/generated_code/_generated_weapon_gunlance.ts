@@ -178,8 +178,8 @@ const __generated_gunlance__1a: Gunlance = {
         ],
     ],
 
-    baseSharpness: [50, 90, 60, 0, 0, 0],
-    maxSharpness:  [50, 90, 100, 10, 0, 0],
+    baseSharpness: [50, 90, 60, 0, 0, 0, 0],
+    maxSharpness:  [50, 90, 100, 10, 0, 0, 0],
 
     gunlanceStats: {
         shellingType: "normal",
@@ -215,8 +215,8 @@ const __generated_gunlance__1b: Gunlance = {
         ],
     ],
 
-    baseSharpness: [60, 70, 70, 0, 0, 0],
-    maxSharpness:  [60, 70, 110, 10, 0, 0],
+    baseSharpness: [60, 70, 70, 0, 0, 0, 0],
+    maxSharpness:  [60, 70, 110, 10, 0, 0, 0],
 
     gunlanceStats: {
         shellingType: "normal",
@@ -253,8 +253,8 @@ const __generated_gunlance__1c: Gunlance = {
         ],
     ],
 
-    baseSharpness: [60, 70, 90, 30, 0, 0],
-    maxSharpness:  [60, 70, 90, 80, 0, 0],
+    baseSharpness: [60, 70, 90, 30, 0, 0, 0],
+    maxSharpness:  [60, 70, 90, 80, 0, 0, 0],
 
     gunlanceStats: {
         shellingType: "normal",
@@ -292,8 +292,8 @@ const __generated_gunlance__1d: Gunlance = {
         ],
     ],
 
-    baseSharpness: [50, 70, 80, 30, 20, 0],
-    maxSharpness:  [50, 70, 80, 30, 70, 0],
+    baseSharpness: [50, 70, 80, 30, 20, 0, 0],
+    maxSharpness:  [50, 70, 80, 30, 70, 0, 0],
 
     gunlanceStats: {
         shellingType: "normal",
@@ -333,8 +333,8 @@ const __generated_gunlance__1e: Gunlance = {
         ],
     ],
 
-    baseSharpness: [60, 80, 90, 40, 30, 0],
-    maxSharpness:  [60, 80, 90, 40, 70, 10],
+    baseSharpness: [60, 80, 90, 40, 30, 0, 0],
+    maxSharpness:  [60, 80, 90, 40, 70, 10, 0],
 
     gunlanceStats: {
         shellingType: "normal",
@@ -375,8 +375,8 @@ const __generated_gunlance__1f: Gunlance = {
         ],
     ],
 
-    baseSharpness: [40, 90, 60, 60, 50, 0],
-    maxSharpness:  [40, 90, 60, 60, 80, 20],
+    baseSharpness: [40, 90, 60, 60, 50, 0, 0],
+    maxSharpness:  [40, 90, 60, 60, 80, 20, 0],
 
     gunlanceStats: {
         shellingType: "normal",
@@ -416,8 +416,8 @@ const __generated_gunlance__2a: Gunlance = {
         ],
     ],
 
-    baseSharpness: [90, 40, 50, 70, 0, 0],
-    maxSharpness:  [90, 40, 50, 90, 30, 0],
+    baseSharpness: [90, 40, 50, 70, 0, 0, 0],
+    maxSharpness:  [90, 40, 50, 90, 30, 0, 0],
 
     gunlanceStats: {
         shellingType: "long",
@@ -458,8 +458,8 @@ const __generated_gunlance__2b: Gunlance = {
         ],
     ],
 
-    baseSharpness: [90, 80, 70, 80, 30, 0],
-    maxSharpness:  [90, 80, 70, 80, 60, 20],
+    baseSharpness: [90, 80, 70, 80, 30, 0, 0],
+    maxSharpness:  [90, 80, 70, 80, 60, 20, 0],
 
     gunlanceStats: {
         shellingType: "long",
@@ -501,8 +501,8 @@ const __generated_gunlance__2c: Gunlance = {
         ],
     ],
 
-    baseSharpness: [90, 70, 70, 80, 40, 0],
-    maxSharpness:  [90, 70, 70, 80, 40, 50],
+    baseSharpness: [90, 70, 70, 80, 40, 0, 0],
+    maxSharpness:  [90, 70, 70, 80, 40, 50, 0],
 
     gunlanceStats: {
         shellingType: "long",
@@ -541,8 +541,8 @@ const __generated_gunlance__3a: Gunlance = {
         ],
     ],
 
-    baseSharpness: [80, 30, 70, 70, 0, 0],
-    maxSharpness:  [80, 30, 70, 120, 0, 0],
+    baseSharpness: [80, 30, 70, 70, 0, 0, 0],
+    maxSharpness:  [80, 30, 70, 120, 0, 0, 0],
 
     gunlanceStats: {
         shellingType: "normal",
@@ -581,8 +581,8 @@ const __generated_gunlance__3b: Gunlance = {
         ],
     ],
 
-    baseSharpness: [80, 30, 60, 130, 0, 0],
-    maxSharpness:  [80, 30, 60, 130, 50, 0],
+    baseSharpness: [80, 30, 60, 130, 0, 0, 0],
+    maxSharpness:  [80, 30, 60, 130, 50, 0, 0],
 
     gunlanceStats: {
         shellingType: "normal",
@@ -622,8 +622,8 @@ const __generated_gunlance__3c: Gunlance = {
         ],
     ],
 
-    baseSharpness: [80, 30, 80, 140, 20, 0],
-    maxSharpness:  [80, 30, 80, 140, 40, 30],
+    baseSharpness: [80, 30, 80, 140, 20, 0, 0],
+    maxSharpness:  [80, 30, 80, 140, 40, 30, 0],
 
     gunlanceStats: {
         shellingType: "normal",
@@ -665,8 +665,8 @@ const __generated_gunlance__4a: Gunlance = {
         ],
     ],
 
-    baseSharpness: [70, 80, 90, 100, 10, 0],
-    maxSharpness:  [70, 80, 90, 100, 50, 10],
+    baseSharpness: [70, 80, 90, 100, 10, 0, 0],
+    maxSharpness:  [70, 80, 90, 100, 50, 10, 0],
 
     gunlanceStats: {
         shellingType: "long",
@@ -708,8 +708,8 @@ const __generated_gunlance__4b: Gunlance = {
         ],
     ],
 
-    baseSharpness: [70, 80, 70, 110, 20, 0],
-    maxSharpness:  [70, 80, 70, 110, 50, 20],
+    baseSharpness: [70, 80, 70, 110, 20, 0, 0],
+    maxSharpness:  [70, 80, 70, 110, 50, 20, 0],
 
     gunlanceStats: {
         shellingType: "long",
@@ -752,8 +752,8 @@ const __generated_gunlance__4c: Gunlance = {
         ],
     ],
 
-    baseSharpness: [70, 80, 50, 120, 30, 0],
-    maxSharpness:  [70, 80, 50, 120, 50, 30],
+    baseSharpness: [70, 80, 50, 120, 30, 0, 0],
+    maxSharpness:  [70, 80, 50, 120, 50, 30, 0],
 
     gunlanceStats: {
         shellingType: "long",
@@ -791,8 +791,8 @@ const __generated_gunlance__5a: Gunlance = {
         ],
     ],
 
-    baseSharpness: [50, 80, 50, 20, 0, 0],
-    maxSharpness:  [50, 80, 50, 70, 0, 0],
+    baseSharpness: [50, 80, 50, 20, 0, 0, 0],
+    maxSharpness:  [50, 80, 50, 70, 0, 0, 0],
 
     gunlanceStats: {
         shellingType: "wide",
@@ -830,8 +830,8 @@ const __generated_gunlance__5b: Gunlance = {
         ],
     ],
 
-    baseSharpness: [40, 110, 70, 30, 0, 0],
-    maxSharpness:  [40, 110, 70, 80, 0, 0],
+    baseSharpness: [40, 110, 70, 30, 0, 0, 0],
+    maxSharpness:  [40, 110, 70, 80, 0, 0, 0],
 
     gunlanceStats: {
         shellingType: "wide",
@@ -871,8 +871,8 @@ const __generated_gunlance__5c: Gunlance = {
         ],
     ],
 
-    baseSharpness: [30, 110, 80, 50, 30, 0],
-    maxSharpness:  [30, 110, 80, 50, 70, 10],
+    baseSharpness: [30, 110, 80, 50, 30, 0, 0],
+    maxSharpness:  [30, 110, 80, 50, 70, 10, 0],
 
     gunlanceStats: {
         shellingType: "wide",
@@ -912,8 +912,8 @@ const __generated_gunlance__6a: Gunlance = {
         ],
     ],
 
-    baseSharpness: [80, 70, 50, 50, 0, 0],
-    maxSharpness:  [80, 70, 50, 100, 0, 0],
+    baseSharpness: [80, 70, 50, 50, 0, 0, 0],
+    maxSharpness:  [80, 70, 50, 100, 0, 0, 0],
 
     gunlanceStats: {
         shellingType: "normal",
@@ -954,8 +954,8 @@ const __generated_gunlance__6b: Gunlance = {
         ],
     ],
 
-    baseSharpness: [60, 60, 100, 50, 30, 0],
-    maxSharpness:  [60, 60, 100, 50, 70, 10],
+    baseSharpness: [60, 60, 100, 50, 30, 0, 0],
+    maxSharpness:  [60, 60, 100, 50, 70, 10, 0],
 
     gunlanceStats: {
         shellingType: "normal",
@@ -997,8 +997,8 @@ const __generated_gunlance__6c: Gunlance = {
         ],
     ],
 
-    baseSharpness: [60, 90, 120, 50, 30, 0],
-    maxSharpness:  [60, 90, 120, 50, 50, 30],
+    baseSharpness: [60, 90, 120, 50, 30, 0, 0],
+    maxSharpness:  [60, 90, 120, 50, 50, 30, 0],
 
     gunlanceStats: {
         shellingType: "normal",
@@ -1038,8 +1038,8 @@ const __generated_gunlance__7a: Gunlance = {
         ],
     ],
 
-    baseSharpness: [50, 60, 70, 70, 0, 0],
-    maxSharpness:  [50, 60, 70, 100, 20, 0],
+    baseSharpness: [50, 60, 70, 70, 0, 0, 0],
+    maxSharpness:  [50, 60, 70, 100, 20, 0, 0],
 
     gunlanceStats: {
         shellingType: "wide",
@@ -1080,8 +1080,8 @@ const __generated_gunlance__7b: Gunlance = {
         ],
     ],
 
-    baseSharpness: [50, 70, 80, 100, 50, 0],
-    maxSharpness:  [50, 70, 80, 100, 70, 30],
+    baseSharpness: [50, 70, 80, 100, 50, 0, 0],
+    maxSharpness:  [50, 70, 80, 100, 70, 30, 0],
 
     gunlanceStats: {
         shellingType: "wide",
@@ -1123,8 +1123,8 @@ const __generated_gunlance__7c: Gunlance = {
         ],
     ],
 
-    baseSharpness: [50, 70, 80, 90, 60, 0],
-    maxSharpness:  [50, 70, 80, 90, 60, 50],
+    baseSharpness: [50, 70, 80, 90, 60, 0, 0],
+    maxSharpness:  [50, 70, 80, 90, 60, 50, 0],
 
     gunlanceStats: {
         shellingType: "wide",
@@ -1160,8 +1160,8 @@ const __generated_gunlance__8a: Gunlance = {
         ],
     ],
 
-    baseSharpness: [80, 70, 50, 0, 0, 0],
-    maxSharpness:  [80, 70, 90, 10, 0, 0],
+    baseSharpness: [80, 70, 50, 0, 0, 0, 0],
+    maxSharpness:  [80, 70, 90, 10, 0, 0, 0],
 
     gunlanceStats: {
         shellingType: "normal",
@@ -1197,8 +1197,8 @@ const __generated_gunlance__8b: Gunlance = {
         ],
     ],
 
-    baseSharpness: [70, 60, 70, 0, 0, 0],
-    maxSharpness:  [70, 60, 70, 50, 0, 0],
+    baseSharpness: [70, 60, 70, 0, 0, 0, 0],
+    maxSharpness:  [70, 60, 70, 50, 0, 0, 0],
 
     gunlanceStats: {
         shellingType: "normal",
@@ -1235,8 +1235,8 @@ const __generated_gunlance__8c: Gunlance = {
         ],
     ],
 
-    baseSharpness: [80, 80, 50, 40, 0, 0],
-    maxSharpness:  [80, 80, 50, 90, 0, 0],
+    baseSharpness: [80, 80, 50, 40, 0, 0, 0],
+    maxSharpness:  [80, 80, 50, 90, 0, 0, 0],
 
     gunlanceStats: {
         shellingType: "normal",
@@ -1274,8 +1274,8 @@ const __generated_gunlance__8d: Gunlance = {
         ],
     ],
 
-    baseSharpness: [90, 70, 40, 50, 0, 0],
-    maxSharpness:  [90, 70, 40, 80, 20, 0],
+    baseSharpness: [90, 70, 40, 50, 0, 0, 0],
+    maxSharpness:  [90, 70, 40, 80, 20, 0, 0],
 
     gunlanceStats: {
         shellingType: "normal",
@@ -1314,8 +1314,8 @@ const __generated_gunlance__8e: Gunlance = {
         ],
     ],
 
-    baseSharpness: [90, 80, 60, 50, 20, 0],
-    maxSharpness:  [90, 80, 60, 50, 50, 20],
+    baseSharpness: [90, 80, 60, 50, 20, 0, 0],
+    maxSharpness:  [90, 80, 60, 50, 50, 20, 0],
 
     gunlanceStats: {
         shellingType: "normal",
@@ -1355,8 +1355,8 @@ const __generated_gunlance__8f: Gunlance = {
         ],
     ],
 
-    baseSharpness: [90, 80, 50, 50, 30, 0],
-    maxSharpness:  [90, 80, 50, 50, 50, 30],
+    baseSharpness: [90, 80, 50, 50, 30, 0, 0],
+    maxSharpness:  [90, 80, 50, 50, 50, 30, 0],
 
     gunlanceStats: {
         shellingType: "normal",
@@ -1397,8 +1397,8 @@ const __generated_gunlance__9a: Gunlance = {
         ],
     ],
 
-    baseSharpness: [80, 70, 70, 50, 30, 0],
-    maxSharpness:  [80, 70, 70, 50, 80, 0],
+    baseSharpness: [80, 70, 70, 50, 30, 0, 0],
+    maxSharpness:  [80, 70, 70, 50, 80, 0, 0],
 
     gunlanceStats: {
         shellingType: "wide",
@@ -1439,8 +1439,8 @@ const __generated_gunlance__9b: Gunlance = {
         ],
     ],
 
-    baseSharpness: [60, 70, 70, 60, 40, 0],
-    maxSharpness:  [60, 70, 70, 60, 80, 10],
+    baseSharpness: [60, 70, 70, 60, 40, 0, 0],
+    maxSharpness:  [60, 70, 70, 60, 80, 10, 0],
 
     gunlanceStats: {
         shellingType: "wide",
@@ -1482,8 +1482,8 @@ const __generated_gunlance__9c: Gunlance = {
         ],
     ],
 
-    baseSharpness: [90, 70, 70, 70, 50, 0],
-    maxSharpness:  [90, 70, 70, 70, 70, 30],
+    baseSharpness: [90, 70, 70, 70, 50, 0, 0],
+    maxSharpness:  [90, 70, 70, 70, 70, 30, 0],
 
     gunlanceStats: {
         shellingType: "wide",
@@ -1526,8 +1526,8 @@ const __generated_gunlance__10a: Gunlance = {
         ],
     ],
 
-    baseSharpness: [60, 70, 90, 70, 10, 0],
-    maxSharpness:  [60, 70, 90, 70, 60, 0],
+    baseSharpness: [60, 70, 90, 70, 10, 0, 0],
+    maxSharpness:  [60, 70, 90, 70, 60, 0, 0],
 
     gunlanceStats: {
         shellingType: "wide",
@@ -1570,8 +1570,8 @@ const __generated_gunlance__10b: Gunlance = {
         ],
     ],
 
-    baseSharpness: [80, 70, 90, 90, 20, 0],
-    maxSharpness:  [80, 70, 90, 90, 60, 10],
+    baseSharpness: [80, 70, 90, 90, 20, 0, 0],
+    maxSharpness:  [80, 70, 90, 90, 60, 10, 0],
 
     gunlanceStats: {
         shellingType: "wide",
@@ -1617,8 +1617,8 @@ const __generated_gunlance__10c: Gunlance = {
         ],
     ],
 
-    baseSharpness: [70, 70, 90, 80, 40, 0],
-    maxSharpness:  [70, 70, 90, 80, 70, 20],
+    baseSharpness: [70, 70, 90, 80, 40, 0, 0],
+    maxSharpness:  [70, 70, 90, 80, 70, 20, 0],
 
     gunlanceStats: {
         shellingType: "wide",
@@ -1658,8 +1658,8 @@ const __generated_gunlance__11a: Gunlance = {
         ],
     ],
 
-    baseSharpness: [60, 60, 60, 70, 0, 0],
-    maxSharpness:  [60, 60, 60, 80, 40, 0],
+    baseSharpness: [60, 60, 60, 70, 0, 0, 0],
+    maxSharpness:  [60, 60, 60, 80, 40, 0, 0],
 
     gunlanceStats: {
         shellingType: "wide",
@@ -1700,8 +1700,8 @@ const __generated_gunlance__11b: Gunlance = {
         ],
     ],
 
-    baseSharpness: [90, 80, 80, 100, 0, 0],
-    maxSharpness:  [90, 80, 80, 100, 50, 0],
+    baseSharpness: [90, 80, 80, 100, 0, 0, 0],
+    maxSharpness:  [90, 80, 80, 100, 50, 0, 0],
 
     gunlanceStats: {
         shellingType: "wide",
@@ -1743,8 +1743,8 @@ const __generated_gunlance__11c: Gunlance = {
         ],
     ],
 
-    baseSharpness: [90, 60, 80, 120, 0, 0],
-    maxSharpness:  [90, 60, 80, 120, 30, 20],
+    baseSharpness: [90, 60, 80, 120, 0, 0, 0],
+    maxSharpness:  [90, 60, 80, 120, 30, 20, 0],
 
     gunlanceStats: {
         shellingType: "wide",
@@ -1782,8 +1782,8 @@ const __generated_gunlance__12a: Gunlance = {
         ],
     ],
 
-    baseSharpness: [30, 50, 80, 40, 0, 0],
-    maxSharpness:  [30, 50, 80, 90, 0, 0],
+    baseSharpness: [30, 50, 80, 40, 0, 0, 0],
+    maxSharpness:  [30, 50, 80, 90, 0, 0, 0],
 
     gunlanceStats: {
         shellingType: "normal",
@@ -1821,8 +1821,8 @@ const __generated_gunlance__12b: Gunlance = {
         ],
     ],
 
-    baseSharpness: [40, 60, 100, 50, 0, 0],
-    maxSharpness:  [40, 60, 100, 100, 0, 0],
+    baseSharpness: [40, 60, 100, 50, 0, 0, 0],
+    maxSharpness:  [40, 60, 100, 100, 0, 0, 0],
 
     gunlanceStats: {
         shellingType: "normal",
@@ -1862,8 +1862,8 @@ const __generated_gunlance__12c: Gunlance = {
         ],
     ],
 
-    baseSharpness: [50, 60, 110, 60, 20, 0],
-    maxSharpness:  [50, 60, 110, 60, 50, 20],
+    baseSharpness: [50, 60, 110, 60, 20, 0, 0],
+    maxSharpness:  [50, 60, 110, 60, 50, 20, 0],
 
     gunlanceStats: {
         shellingType: "normal",
@@ -1903,8 +1903,8 @@ const __generated_gunlance__12d: Gunlance = {
         ],
     ],
 
-    baseSharpness: [50, 60, 100, 60, 30, 0],
-    maxSharpness:  [50, 60, 100, 60, 50, 30],
+    baseSharpness: [50, 60, 100, 60, 30, 0, 0],
+    maxSharpness:  [50, 60, 100, 60, 50, 30, 0],
 
     gunlanceStats: {
         shellingType: "normal",
@@ -1945,8 +1945,8 @@ const __generated_gunlance__13a: Gunlance = {
         ],
     ],
 
-    baseSharpness: [50, 50, 100, 50, 0, 0],
-    maxSharpness:  [50, 50, 100, 80, 20, 0],
+    baseSharpness: [50, 50, 100, 50, 0, 0, 0],
+    maxSharpness:  [50, 50, 100, 80, 20, 0, 0],
 
     gunlanceStats: {
         shellingType: "wide",
@@ -1988,8 +1988,8 @@ const __generated_gunlance__13b: Gunlance = {
         ],
     ],
 
-    baseSharpness: [60, 60, 80, 60, 40, 0],
-    maxSharpness:  [60, 60, 80, 60, 90, 0],
+    baseSharpness: [60, 60, 80, 60, 40, 0, 0],
+    maxSharpness:  [60, 60, 80, 60, 90, 0, 0],
 
     gunlanceStats: {
         shellingType: "wide",
@@ -2032,8 +2032,8 @@ const __generated_gunlance__13c: Gunlance = {
         ],
     ],
 
-    baseSharpness: [60, 60, 80, 100, 50, 0],
-    maxSharpness:  [60, 60, 80, 100, 100, 0],
+    baseSharpness: [60, 60, 80, 100, 50, 0, 0],
+    maxSharpness:  [60, 60, 80, 100, 100, 0, 0],
 
     gunlanceStats: {
         shellingType: "wide",
@@ -2072,8 +2072,8 @@ const __generated_gunlance__14a: Gunlance = {
         ],
     ],
 
-    baseSharpness: [40, 90, 40, 30, 0, 0],
-    maxSharpness:  [40, 90, 40, 80, 0, 0],
+    baseSharpness: [40, 90, 40, 30, 0, 0, 0],
+    maxSharpness:  [40, 90, 40, 80, 0, 0, 0],
 
     gunlanceStats: {
         shellingType: "long",
@@ -2113,8 +2113,8 @@ const __generated_gunlance__14b: Gunlance = {
         ],
     ],
 
-    baseSharpness: [40, 100, 70, 40, 0, 0],
-    maxSharpness:  [40, 100, 70, 40, 50, 0],
+    baseSharpness: [40, 100, 70, 40, 0, 0, 0],
+    maxSharpness:  [40, 100, 70, 40, 50, 0, 0],
 
     gunlanceStats: {
         shellingType: "long",
@@ -2156,8 +2156,8 @@ const __generated_gunlance__14c: Gunlance = {
         ],
     ],
 
-    baseSharpness: [40, 100, 80, 50, 30, 0],
-    maxSharpness:  [40, 100, 80, 50, 30, 50],
+    baseSharpness: [40, 100, 80, 50, 30, 0, 0],
+    maxSharpness:  [40, 100, 80, 50, 30, 50, 0],
 
     gunlanceStats: {
         shellingType: "long",
@@ -2199,8 +2199,8 @@ const __generated_gunlance__15a: Gunlance = {
         ],
     ],
 
-    baseSharpness: [130, 40, 50, 30, 0, 0],
-    maxSharpness:  [130, 40, 50, 80, 0, 0],
+    baseSharpness: [130, 40, 50, 30, 0, 0, 0],
+    maxSharpness:  [130, 40, 50, 80, 0, 0, 0],
 
     gunlanceStats: {
         shellingType: "long",
@@ -2243,8 +2243,8 @@ const __generated_gunlance__15b: Gunlance = {
         ],
     ],
 
-    baseSharpness: [140, 40, 50, 70, 0, 0],
-    maxSharpness:  [140, 40, 50, 70, 50, 0],
+    baseSharpness: [140, 40, 50, 70, 0, 0, 0],
+    maxSharpness:  [140, 40, 50, 70, 50, 0, 0],
 
     gunlanceStats: {
         shellingType: "long",
@@ -2288,8 +2288,8 @@ const __generated_gunlance__15c: Gunlance = {
         ],
     ],
 
-    baseSharpness: [160, 50, 50, 70, 20, 0],
-    maxSharpness:  [160, 50, 50, 70, 60, 10],
+    baseSharpness: [160, 50, 50, 70, 20, 0, 0],
+    maxSharpness:  [160, 50, 50, 70, 60, 10, 0],
 
     gunlanceStats: {
         shellingType: "long",
@@ -2327,8 +2327,8 @@ const __generated_gunlance__16a: Gunlance = {
         ],
     ],
 
-    baseSharpness: [100, 30, 50, 20, 0, 0],
-    maxSharpness:  [100, 30, 50, 70, 0, 0],
+    baseSharpness: [100, 30, 50, 20, 0, 0, 0],
+    maxSharpness:  [100, 30, 50, 70, 0, 0, 0],
 
     gunlanceStats: {
         shellingType: "long",
@@ -2367,8 +2367,8 @@ const __generated_gunlance__16b: Gunlance = {
         ],
     ],
 
-    baseSharpness: [100, 60, 50, 40, 0, 0],
-    maxSharpness:  [100, 60, 50, 90, 0, 0],
+    baseSharpness: [100, 60, 50, 40, 0, 0, 0],
+    maxSharpness:  [100, 60, 50, 90, 0, 0, 0],
 
     gunlanceStats: {
         shellingType: "long",
@@ -2408,8 +2408,8 @@ const __generated_gunlance__16c: Gunlance = {
         ],
     ],
 
-    baseSharpness: [100, 70, 60, 70, 0, 0],
-    maxSharpness:  [100, 70, 60, 70, 50, 0],
+    baseSharpness: [100, 70, 60, 70, 0, 0, 0],
+    maxSharpness:  [100, 70, 60, 70, 50, 0, 0],
 
     gunlanceStats: {
         shellingType: "long",
@@ -2450,8 +2450,8 @@ const __generated_gunlance__16d: Gunlance = {
         ],
     ],
 
-    baseSharpness: [90, 90, 80, 60, 30, 0],
-    maxSharpness:  [90, 90, 80, 60, 60, 20],
+    baseSharpness: [90, 90, 80, 60, 30, 0, 0],
+    maxSharpness:  [90, 90, 80, 60, 60, 20, 0],
 
     gunlanceStats: {
         shellingType: "long",
@@ -2490,8 +2490,8 @@ const __generated_gunlance__17a: Gunlance = {
         ],
     ],
 
-    baseSharpness: [120, 50, 40, 40, 0, 0],
-    maxSharpness:  [120, 50, 40, 80, 10, 0],
+    baseSharpness: [120, 50, 40, 40, 0, 0, 0],
+    maxSharpness:  [120, 50, 40, 80, 10, 0, 0],
 
     gunlanceStats: {
         shellingType: "long",
@@ -2533,8 +2533,8 @@ const __generated_gunlance__17b: Gunlance = {
         ],
     ],
 
-    baseSharpness: [120, 80, 50, 80, 20, 0],
-    maxSharpness:  [120, 80, 50, 80, 60, 10],
+    baseSharpness: [120, 80, 50, 80, 20, 0, 0],
+    maxSharpness:  [120, 80, 50, 80, 60, 10, 0],
 
     gunlanceStats: {
         shellingType: "long",
@@ -2577,8 +2577,8 @@ const __generated_gunlance__17c: Gunlance = {
         ],
     ],
 
-    baseSharpness: [110, 80, 30, 100, 30, 0],
-    maxSharpness:  [110, 80, 30, 100, 50, 30],
+    baseSharpness: [110, 80, 30, 100, 30, 0, 0],
+    maxSharpness:  [110, 80, 30, 100, 50, 30, 0],
 
     gunlanceStats: {
         shellingType: "long",
@@ -2614,8 +2614,8 @@ const __generated_gunlance__18a: Gunlance = {
         ],
     ],
 
-    baseSharpness: [70, 90, 40, 0, 0, 0],
-    maxSharpness:  [70, 90, 90, 0, 0, 0],
+    baseSharpness: [70, 90, 40, 0, 0, 0, 0],
+    maxSharpness:  [70, 90, 90, 0, 0, 0, 0],
 
     gunlanceStats: {
         shellingType: "long",
@@ -2651,8 +2651,8 @@ const __generated_gunlance__18b: Gunlance = {
         ],
     ],
 
-    baseSharpness: [80, 70, 50, 0, 0, 0],
-    maxSharpness:  [80, 70, 100, 0, 0, 0],
+    baseSharpness: [80, 70, 50, 0, 0, 0, 0],
+    maxSharpness:  [80, 70, 100, 0, 0, 0, 0],
 
     gunlanceStats: {
         shellingType: "long",
@@ -2689,8 +2689,8 @@ const __generated_gunlance__18c: Gunlance = {
         ],
     ],
 
-    baseSharpness: [90, 50, 60, 0, 0, 0],
-    maxSharpness:  [90, 50, 110, 0, 0, 0],
+    baseSharpness: [90, 50, 60, 0, 0, 0, 0],
+    maxSharpness:  [90, 50, 110, 0, 0, 0, 0],
 
     gunlanceStats: {
         shellingType: "long",
@@ -2728,8 +2728,8 @@ const __generated_gunlance__18d: Gunlance = {
         ],
     ],
 
-    baseSharpness: [100, 80, 60, 10, 0, 0],
-    maxSharpness:  [100, 80, 60, 60, 0, 0],
+    baseSharpness: [100, 80, 60, 10, 0, 0, 0],
+    maxSharpness:  [100, 80, 60, 60, 0, 0, 0],
 
     gunlanceStats: {
         shellingType: "long",
@@ -2768,8 +2768,8 @@ const __generated_gunlance__18e: Gunlance = {
         ],
     ],
 
-    baseSharpness: [80, 70, 60, 40, 0, 0],
-    maxSharpness:  [80, 70, 60, 80, 10, 0],
+    baseSharpness: [80, 70, 60, 40, 0, 0, 0],
+    maxSharpness:  [80, 70, 60, 80, 10, 0, 0],
 
     gunlanceStats: {
         shellingType: "long",
@@ -2809,8 +2809,8 @@ const __generated_gunlance__18f: Gunlance = {
         ],
     ],
 
-    baseSharpness: [80, 70, 80, 70, 0, 0],
-    maxSharpness:  [80, 70, 80, 100, 20, 0],
+    baseSharpness: [80, 70, 80, 70, 0, 0, 0],
+    maxSharpness:  [80, 70, 80, 100, 20, 0, 0],
 
     gunlanceStats: {
         shellingType: "long",
@@ -2850,8 +2850,8 @@ const __generated_gunlance__19a: Gunlance = {
         ],
     ],
 
-    baseSharpness: [50, 70, 100, 80, 50, 0],
-    maxSharpness:  [50, 70, 100, 80, 90, 10],
+    baseSharpness: [50, 70, 100, 80, 50, 0, 0],
+    maxSharpness:  [50, 70, 100, 80, 90, 10, 0],
 
     gunlanceStats: {
         shellingType: "long",
@@ -2891,8 +2891,8 @@ const __generated_gunlance__19b: Gunlance = {
         ],
     ],
 
-    baseSharpness: [50, 70, 90, 80, 60, 0],
-    maxSharpness:  [50, 70, 90, 80, 90, 20],
+    baseSharpness: [50, 70, 90, 80, 60, 0, 0],
+    maxSharpness:  [50, 70, 90, 80, 90, 20, 0],
 
     gunlanceStats: {
         shellingType: "long",
@@ -2932,8 +2932,8 @@ const __generated_gunlance__19c: Gunlance = {
         ],
     ],
 
-    baseSharpness: [50, 70, 100, 90, 70, 20],
-    maxSharpness:  [50, 70, 100, 90, 70, 20],
+    baseSharpness: [50, 70, 100, 90, 70, 20, 0],
+    maxSharpness:  [50, 70, 100, 90, 70, 20, 0],
 
     gunlanceStats: {
         shellingType: "long",
@@ -2972,8 +2972,8 @@ const __generated_gunlance__20a: Gunlance = {
         ],
     ],
 
-    baseSharpness: [100, 90, 30, 30, 0, 0],
-    maxSharpness:  [100, 90, 30, 80, 0, 0],
+    baseSharpness: [100, 90, 30, 30, 0, 0, 0],
+    maxSharpness:  [100, 90, 30, 80, 0, 0, 0],
 
     gunlanceStats: {
         shellingType: "wide",
@@ -3012,8 +3012,8 @@ const __generated_gunlance__20b: Gunlance = {
         ],
     ],
 
-    baseSharpness: [100, 70, 30, 50, 0, 0],
-    maxSharpness:  [100, 70, 30, 100, 0, 0],
+    baseSharpness: [100, 70, 30, 50, 0, 0, 0],
+    maxSharpness:  [100, 70, 30, 100, 0, 0, 0],
 
     gunlanceStats: {
         shellingType: "wide",
@@ -3053,8 +3053,8 @@ const __generated_gunlance__20c: Gunlance = {
         ],
     ],
 
-    baseSharpness: [150, 60, 20, 70, 0, 0],
-    maxSharpness:  [150, 60, 20, 90, 30, 0],
+    baseSharpness: [150, 60, 20, 70, 0, 0, 0],
+    maxSharpness:  [150, 60, 20, 90, 30, 0, 0],
 
     gunlanceStats: {
         shellingType: "wide",
@@ -3095,8 +3095,8 @@ const __generated_gunlance__20d: Gunlance = {
         ],
     ],
 
-    baseSharpness: [180, 60, 20, 90, 0, 0],
-    maxSharpness:  [180, 60, 20, 90, 50, 0],
+    baseSharpness: [180, 60, 20, 90, 0, 0, 0],
+    maxSharpness:  [180, 60, 20, 90, 50, 0, 0],
 
     gunlanceStats: {
         shellingType: "wide",
@@ -3133,8 +3133,8 @@ const __generated_gunlance__21a: Gunlance = {
         ],
     ],
 
-    baseSharpness: [50, 60, 140, 0, 0, 0],
-    maxSharpness:  [50, 60, 140, 50, 0, 0],
+    baseSharpness: [50, 60, 140, 0, 0, 0, 0],
+    maxSharpness:  [50, 60, 140, 50, 0, 0, 0],
 
     gunlanceStats: {
         shellingType: "long",
@@ -3172,8 +3172,8 @@ const __generated_gunlance__21b: Gunlance = {
         ],
     ],
 
-    baseSharpness: [50, 60, 130, 10, 0, 0],
-    maxSharpness:  [50, 60, 130, 50, 10, 0],
+    baseSharpness: [50, 60, 130, 10, 0, 0, 0],
+    maxSharpness:  [50, 60, 130, 50, 10, 0, 0],
 
     gunlanceStats: {
         shellingType: "long",
@@ -3212,8 +3212,8 @@ const __generated_gunlance__21c: Gunlance = {
         ],
     ],
 
-    baseSharpness: [60, 40, 190, 50, 10, 0],
-    maxSharpness:  [60, 40, 190, 50, 40, 20],
+    baseSharpness: [60, 40, 190, 50, 10, 0, 0],
+    maxSharpness:  [60, 40, 190, 50, 40, 20, 0],
 
     gunlanceStats: {
         shellingType: "long",
@@ -3251,8 +3251,8 @@ const __generated_gunlance__22a: Gunlance = {
         ],
     ],
 
-    baseSharpness: [70, 30, 100, 90, 10, 0],
-    maxSharpness:  [70, 30, 100, 90, 60, 0],
+    baseSharpness: [70, 30, 100, 90, 10, 0, 0],
+    maxSharpness:  [70, 30, 100, 90, 60, 0, 0],
 
     gunlanceStats: {
         shellingType: "wide",
@@ -3291,8 +3291,8 @@ const __generated_gunlance__22b: Gunlance = {
         ],
     ],
 
-    baseSharpness: [50, 30, 130, 100, 40, 0],
-    maxSharpness:  [50, 30, 130, 100, 70, 20],
+    baseSharpness: [50, 30, 130, 100, 40, 0, 0],
+    maxSharpness:  [50, 30, 130, 100, 70, 20, 0],
 
     gunlanceStats: {
         shellingType: "wide",
@@ -3332,8 +3332,8 @@ const __generated_gunlance__22c: Gunlance = {
         ],
     ],
 
-    baseSharpness: [50, 40, 120, 120, 40, 30],
-    maxSharpness:  [50, 40, 120, 120, 40, 30],
+    baseSharpness: [50, 40, 120, 120, 40, 30, 0],
+    maxSharpness:  [50, 40, 120, 120, 40, 30, 0],
 
     gunlanceStats: {
         shellingType: "wide",
@@ -3372,8 +3372,8 @@ const __generated_gunlance__23a: Gunlance = {
         ],
     ],
 
-    baseSharpness: [60, 70, 50, 20, 0, 0],
-    maxSharpness:  [60, 70, 50, 70, 0, 0],
+    baseSharpness: [60, 70, 50, 20, 0, 0, 0],
+    maxSharpness:  [60, 70, 50, 70, 0, 0, 0],
 
     gunlanceStats: {
         shellingType: "wide",
@@ -3413,8 +3413,8 @@ const __generated_gunlance__23b: Gunlance = {
         ],
     ],
 
-    baseSharpness: [60, 80, 60, 50, 0, 0],
-    maxSharpness:  [60, 80, 60, 100, 0, 0],
+    baseSharpness: [60, 80, 60, 50, 0, 0, 0],
+    maxSharpness:  [60, 80, 60, 100, 0, 0, 0],
 
     gunlanceStats: {
         shellingType: "wide",
@@ -3454,8 +3454,8 @@ const __generated_gunlance__23c: Gunlance = {
         ],
     ],
 
-    baseSharpness: [60, 80, 70, 80, 10, 0],
-    maxSharpness:  [60, 80, 70, 80, 50, 10],
+    baseSharpness: [60, 80, 70, 80, 10, 0, 0],
+    maxSharpness:  [60, 80, 70, 80, 50, 10, 0],
 
     gunlanceStats: {
         shellingType: "wide",
@@ -3497,8 +3497,8 @@ const __generated_gunlance__23d: Gunlance = {
         ],
     ],
 
-    baseSharpness: [60, 80, 90, 90, 30, 0],
-    maxSharpness:  [60, 80, 90, 90, 60, 20],
+    baseSharpness: [60, 80, 90, 90, 30, 0, 0],
+    maxSharpness:  [60, 80, 90, 90, 60, 20, 0],
 
     gunlanceStats: {
         shellingType: "wide",
@@ -3539,8 +3539,8 @@ const __generated_gunlance__24a: Gunlance = {
         ],
     ],
 
-    baseSharpness: [50, 60, 100, 40, 0, 0],
-    maxSharpness:  [50, 60, 100, 90, 0, 0],
+    baseSharpness: [50, 60, 100, 40, 0, 0, 0],
+    maxSharpness:  [50, 60, 100, 90, 0, 0, 0],
 
     gunlanceStats: {
         shellingType: "normal",
@@ -3582,8 +3582,8 @@ const __generated_gunlance__24b: Gunlance = {
         ],
     ],
 
-    baseSharpness: [60, 60, 120, 40, 20, 0],
-    maxSharpness:  [60, 60, 120, 40, 70, 0],
+    baseSharpness: [60, 60, 120, 40, 20, 0, 0],
+    maxSharpness:  [60, 60, 120, 40, 70, 0, 0],
 
     gunlanceStats: {
         shellingType: "normal",
@@ -3626,8 +3626,8 @@ const __generated_gunlance__24c: Gunlance = {
         ],
     ],
 
-    baseSharpness: [60, 60, 100, 50, 30, 0],
-    maxSharpness:  [60, 60, 100, 50, 70, 10],
+    baseSharpness: [60, 60, 100, 50, 30, 0, 0],
+    maxSharpness:  [60, 60, 100, 50, 70, 10, 0],
 
     gunlanceStats: {
         shellingType: "normal",
@@ -3671,8 +3671,8 @@ const __generated_gunlance__24d: Gunlance = {
         ],
     ],
 
-    baseSharpness: [60, 60, 130, 60, 40, 0],
-    maxSharpness:  [60, 60, 130, 60, 60, 30],
+    baseSharpness: [60, 60, 130, 60, 40, 0, 0],
+    maxSharpness:  [60, 60, 130, 60, 60, 30, 0],
 
     gunlanceStats: {
         shellingType: "normal",
@@ -3708,8 +3708,8 @@ const __generated_gunlance__25a: Gunlance = {
         ],
     ],
 
-    baseSharpness: [100, 50, 40, 10, 0, 0],
-    maxSharpness:  [100, 50, 40, 60, 0, 0],
+    baseSharpness: [100, 50, 40, 10, 0, 0, 0],
+    maxSharpness:  [100, 50, 40, 60, 0, 0, 0],
 
     gunlanceStats: {
         shellingType: "normal",
@@ -3747,8 +3747,8 @@ const __generated_gunlance__25b: Gunlance = {
         ],
     ],
 
-    baseSharpness: [140, 20, 20, 60, 10, 0],
-    maxSharpness:  [140, 20, 20, 60, 60, 0],
+    baseSharpness: [140, 20, 20, 60, 10, 0, 0],
+    maxSharpness:  [140, 20, 20, 60, 60, 0, 0],
 
     gunlanceStats: {
         shellingType: "normal",
@@ -3788,8 +3788,8 @@ const __generated_gunlance__25c: Gunlance = {
         ],
     ],
 
-    baseSharpness: [150, 30, 30, 50, 40, 0],
-    maxSharpness:  [150, 30, 30, 50, 50, 40],
+    baseSharpness: [150, 30, 30, 50, 40, 0, 0],
+    maxSharpness:  [150, 30, 30, 50, 50, 40, 0],
 
     gunlanceStats: {
         shellingType: "normal",
@@ -3831,8 +3831,8 @@ const __generated_gunlance__26a: Gunlance = {
         ],
     ],
 
-    baseSharpness: [190, 40, 40, 30, 50, 0],
-    maxSharpness:  [190, 40, 40, 30, 50, 50],
+    baseSharpness: [190, 40, 40, 30, 50, 0, 0],
+    maxSharpness:  [190, 40, 40, 30, 50, 50, 0],
 
     gunlanceStats: {
         shellingType: "normal",
@@ -3875,8 +3875,8 @@ const __generated_gunlance__26b: Gunlance = {
         ],
     ],
 
-    baseSharpness: [190, 40, 40, 30, 40, 10],
-    maxSharpness:  [190, 40, 40, 30, 40, 60],
+    baseSharpness: [190, 40, 40, 30, 40, 10, 0],
+    maxSharpness:  [190, 40, 40, 30, 40, 60, 0],
 
     gunlanceStats: {
         shellingType: "normal",
@@ -3920,8 +3920,8 @@ const __generated_gunlance__26c: Gunlance = {
         ],
     ],
 
-    baseSharpness: [190, 30, 40, 30, 40, 20],
-    maxSharpness:  [190, 30, 40, 30, 40, 70],
+    baseSharpness: [190, 30, 40, 30, 40, 20, 0],
+    maxSharpness:  [190, 30, 40, 30, 40, 70, 0],
 
     gunlanceStats: {
         shellingType: "normal",
@@ -3962,8 +3962,8 @@ const __generated_gunlance__27a: Gunlance = {
         ],
     ],
 
-    baseSharpness: [150, 30, 30, 60, 30, 0],
-    maxSharpness:  [150, 30, 30, 60, 70, 10],
+    baseSharpness: [150, 30, 30, 60, 30, 0, 0],
+    maxSharpness:  [150, 30, 30, 60, 70, 10, 0],
 
     gunlanceStats: {
         shellingType: "normal",
@@ -4005,8 +4005,8 @@ const __generated_gunlance__27b: Gunlance = {
         ],
     ],
 
-    baseSharpness: [140, 20, 20, 80, 40, 0],
-    maxSharpness:  [140, 20, 20, 80, 70, 20],
+    baseSharpness: [140, 20, 20, 80, 40, 0, 0],
+    maxSharpness:  [140, 20, 20, 80, 70, 20, 0],
 
     gunlanceStats: {
         shellingType: "normal",
@@ -4049,8 +4049,8 @@ const __generated_gunlance__27c: Gunlance = {
         ],
     ],
 
-    baseSharpness: [160, 20, 20, 90, 60, 0],
-    maxSharpness:  [160, 20, 20, 90, 70, 40],
+    baseSharpness: [160, 20, 20, 90, 60, 0, 0],
+    maxSharpness:  [160, 20, 20, 90, 70, 40, 0],
 
     gunlanceStats: {
         shellingType: "normal",
@@ -4089,8 +4089,8 @@ const __generated_gunlance__28a: Gunlance = {
         ],
     ],
 
-    baseSharpness: [100, 20, 30, 50, 0, 0],
-    maxSharpness:  [100, 20, 30, 100, 0, 0],
+    baseSharpness: [100, 20, 30, 50, 0, 0, 0],
+    maxSharpness:  [100, 20, 30, 100, 0, 0, 0],
 
     gunlanceStats: {
         shellingType: "normal",
@@ -4130,8 +4130,8 @@ const __generated_gunlance__28b: Gunlance = {
         ],
     ],
 
-    baseSharpness: [140, 20, 20, 60, 10, 0],
-    maxSharpness:  [140, 20, 20, 60, 60, 0],
+    baseSharpness: [140, 20, 20, 60, 10, 0, 0],
+    maxSharpness:  [140, 20, 20, 60, 60, 0, 0],
 
     gunlanceStats: {
         shellingType: "normal",
@@ -4172,8 +4172,8 @@ const __generated_gunlance__28c: Gunlance = {
         ],
     ],
 
-    baseSharpness: [140, 20, 20, 80, 40, 0],
-    maxSharpness:  [140, 20, 20, 80, 70, 20],
+    baseSharpness: [140, 20, 20, 80, 40, 0, 0],
+    maxSharpness:  [140, 20, 20, 80, 70, 20, 0],
 
     gunlanceStats: {
         shellingType: "normal",
@@ -4211,8 +4211,8 @@ const __generated_gunlance__29a: Gunlance = {
         ],
     ],
 
-    baseSharpness: [100, 30, 30, 40, 0, 0],
-    maxSharpness:  [100, 30, 30, 90, 0, 0],
+    baseSharpness: [100, 30, 30, 40, 0, 0, 0],
+    maxSharpness:  [100, 30, 30, 90, 0, 0, 0],
 
     gunlanceStats: {
         shellingType: "normal",
@@ -4251,8 +4251,8 @@ const __generated_gunlance__29b: Gunlance = {
         ],
     ],
 
-    baseSharpness: [140, 20, 20, 70, 0, 0],
-    maxSharpness:  [140, 20, 20, 70, 50, 0],
+    baseSharpness: [140, 20, 20, 70, 0, 0, 0],
+    maxSharpness:  [140, 20, 20, 70, 50, 0, 0],
 
     gunlanceStats: {
         shellingType: "normal",
@@ -4293,8 +4293,8 @@ const __generated_gunlance__29c: Gunlance = {
         ],
     ],
 
-    baseSharpness: [160, 30, 30, 60, 20, 0],
-    maxSharpness:  [160, 30, 30, 60, 60, 10],
+    baseSharpness: [160, 30, 30, 60, 20, 0, 0],
+    maxSharpness:  [160, 30, 30, 60, 60, 10, 0],
 
     gunlanceStats: {
         shellingType: "normal",
@@ -4330,8 +4330,8 @@ const __generated_gunlance__30a: Gunlance = {
         ],
     ],
 
-    baseSharpness: [160, 20, 40, 80, 0, 0],
-    maxSharpness:  [160, 20, 40, 110, 20, 0],
+    baseSharpness: [160, 20, 40, 80, 0, 0, 0],
+    maxSharpness:  [160, 20, 40, 110, 20, 0, 0],
 
     gunlanceStats: {
         shellingType: "long",
@@ -4368,8 +4368,8 @@ const __generated_gunlance__30b: Gunlance = {
         ],
     ],
 
-    baseSharpness: [170, 20, 20, 90, 0, 0],
-    maxSharpness:  [170, 20, 20, 110, 30, 0],
+    baseSharpness: [170, 20, 20, 90, 0, 0, 0],
+    maxSharpness:  [170, 20, 20, 110, 30, 0, 0],
 
     gunlanceStats: {
         shellingType: "long",
@@ -4407,8 +4407,8 @@ const __generated_gunlance__30c: Gunlance = {
         ],
     ],
 
-    baseSharpness: [190, 10, 20, 90, 40, 0],
-    maxSharpness:  [190, 10, 20, 90, 60, 30],
+    baseSharpness: [190, 10, 20, 90, 40, 0, 0],
+    maxSharpness:  [190, 10, 20, 90, 60, 30, 0],
 
     gunlanceStats: {
         shellingType: "long",
@@ -4444,8 +4444,8 @@ const __generated_gunlance__31a: Gunlance = {
         ],
     ],
 
-    baseSharpness: [50, 20, 100, 80, 0, 0],
-    maxSharpness:  [50, 20, 100, 80, 40, 10],
+    baseSharpness: [50, 20, 100, 80, 0, 0, 0],
+    maxSharpness:  [50, 20, 100, 80, 40, 10, 0],
 
     gunlanceStats: {
         shellingType: "wide",
@@ -4482,8 +4482,8 @@ const __generated_gunlance__31b: Gunlance = {
         ],
     ],
 
-    baseSharpness: [40, 20, 100, 90, 0, 0],
-    maxSharpness:  [40, 20, 100, 90, 30, 20],
+    baseSharpness: [40, 20, 100, 90, 0, 0, 0],
+    maxSharpness:  [40, 20, 100, 90, 30, 20, 0],
 
     gunlanceStats: {
         shellingType: "wide",
@@ -4521,8 +4521,8 @@ const __generated_gunlance__31c: Gunlance = {
         ],
     ],
 
-    baseSharpness: [40, 20, 120, 120, 0, 0],
-    maxSharpness:  [40, 20, 120, 120, 10, 40],
+    baseSharpness: [40, 20, 120, 120, 0, 0, 0],
+    maxSharpness:  [40, 20, 120, 120, 10, 40, 0],
 
     gunlanceStats: {
         shellingType: "wide",
@@ -4558,8 +4558,8 @@ const __generated_gunlance__32a: Gunlance = {
         ],
     ],
 
-    baseSharpness: [20, 20, 20, 40, 100, 0],
-    maxSharpness:  [20, 20, 20, 40, 150, 0],
+    baseSharpness: [20, 20, 20, 40, 100, 0, 0],
+    maxSharpness:  [20, 20, 20, 40, 150, 0, 0],
 
     gunlanceStats: {
         shellingType: "wide",
@@ -4596,8 +4596,8 @@ const __generated_gunlance__32b: Gunlance = {
         ],
     ],
 
-    baseSharpness: [20, 20, 50, 50, 110, 0],
-    maxSharpness:  [20, 20, 50, 50, 150, 10],
+    baseSharpness: [20, 20, 50, 50, 110, 0, 0],
+    maxSharpness:  [20, 20, 50, 50, 150, 10, 0],
 
     gunlanceStats: {
         shellingType: "wide",
@@ -4635,8 +4635,8 @@ const __generated_gunlance__32c: Gunlance = {
         ],
     ],
 
-    baseSharpness: [20, 20, 80, 60, 120, 0],
-    maxSharpness:  [20, 20, 80, 60, 150, 20],
+    baseSharpness: [20, 20, 80, 60, 120, 0, 0],
+    maxSharpness:  [20, 20, 80, 60, 150, 20, 0],
 
     gunlanceStats: {
         shellingType: "wide",
@@ -4672,8 +4672,8 @@ const __generated_gunlance__33a: Gunlance = {
         ],
     ],
 
-    baseSharpness: [20, 20, 190, 40, 30, 0],
-    maxSharpness:  [20, 20, 190, 40, 50, 30],
+    baseSharpness: [20, 20, 190, 40, 30, 0, 0],
+    maxSharpness:  [20, 20, 190, 40, 50, 30, 0],
 
     gunlanceStats: {
         shellingType: "normal",
@@ -4710,8 +4710,8 @@ const __generated_gunlance__33b: Gunlance = {
         ],
     ],
 
-    baseSharpness: [10, 20, 220, 40, 60, 0],
-    maxSharpness:  [10, 20, 220, 40, 70, 40],
+    baseSharpness: [10, 20, 220, 40, 60, 0, 0],
+    maxSharpness:  [10, 20, 220, 40, 70, 40, 0],
 
     gunlanceStats: {
         shellingType: "normal",
@@ -4747,8 +4747,8 @@ const __generated_gunlance__34a: Gunlance = {
         ],
     ],
 
-    baseSharpness: [60, 90, 60, 90, 0, 0],
-    maxSharpness:  [60, 90, 60, 90, 50, 0],
+    baseSharpness: [60, 90, 60, 90, 0, 0, 0],
+    maxSharpness:  [60, 90, 60, 90, 50, 0, 0],
 
     gunlanceStats: {
         shellingType: "wide",
@@ -4784,8 +4784,8 @@ const __generated_gunlance__34b: Gunlance = {
         ],
     ],
 
-    baseSharpness: [60, 110, 90, 80, 10, 0],
-    maxSharpness:  [60, 110, 90, 80, 30, 30],
+    baseSharpness: [60, 110, 90, 80, 10, 0, 0],
+    maxSharpness:  [60, 110, 90, 80, 30, 30, 0],
 
     gunlanceStats: {
         shellingType: "wide",
@@ -4823,8 +4823,8 @@ const __generated_gunlance__34c: Gunlance = {
         ],
     ],
 
-    baseSharpness: [60, 110, 80, 70, 30, 0],
-    maxSharpness:  [60, 110, 80, 70, 30, 50],
+    baseSharpness: [60, 110, 80, 70, 30, 0, 0],
+    maxSharpness:  [60, 110, 80, 70, 30, 50, 0],
 
     gunlanceStats: {
         shellingType: "wide",
@@ -4860,8 +4860,8 @@ const __generated_gunlance__35a: Gunlance = {
         ],
     ],
 
-    baseSharpness: [100, 80, 90, 40, 40, 0],
-    maxSharpness:  [100, 80, 90, 40, 60, 30],
+    baseSharpness: [100, 80, 90, 40, 40, 0, 0],
+    maxSharpness:  [100, 80, 90, 40, 60, 30, 0],
 
     gunlanceStats: {
         shellingType: "long",
@@ -4899,8 +4899,8 @@ const __generated_gunlance__35b: Gunlance = {
         ],
     ],
 
-    baseSharpness: [80, 80, 90, 50, 40, 10],
-    maxSharpness:  [80, 80, 90, 50, 40, 60],
+    baseSharpness: [80, 80, 90, 50, 40, 10, 0],
+    maxSharpness:  [80, 80, 90, 50, 40, 60, 0],
 
     gunlanceStats: {
         shellingType: "long",
@@ -4936,8 +4936,8 @@ const __generated_gunlance__36a: Gunlance = {
         ],
     ],
 
-    baseSharpness: [50, 60, 130, 70, 40, 0],
-    maxSharpness:  [50, 60, 130, 70, 70, 20],
+    baseSharpness: [50, 60, 130, 70, 40, 0, 0],
+    maxSharpness:  [50, 60, 130, 70, 70, 20, 0],
 
     gunlanceStats: {
         shellingType: "long",
@@ -4974,8 +4974,8 @@ const __generated_gunlance__36b: Gunlance = {
         ],
     ],
 
-    baseSharpness: [60, 60, 110, 70, 50, 0],
-    maxSharpness:  [60, 60, 110, 70, 60, 40],
+    baseSharpness: [60, 60, 110, 70, 50, 0, 0],
+    maxSharpness:  [60, 60, 110, 70, 60, 40, 0],
 
     gunlanceStats: {
         shellingType: "long",
@@ -5011,8 +5011,8 @@ const __generated_gunlance__37a: Gunlance = {
         ],
     ],
 
-    baseSharpness: [180, 0, 0, 0, 0, 70],
-    maxSharpness:  [180, 0, 0, 0, 0, 120],
+    baseSharpness: [180, 0, 0, 0, 0, 70, 0],
+    maxSharpness:  [180, 0, 0, 0, 0, 120, 0],
 
     gunlanceStats: {
         shellingType: "long",
@@ -5048,8 +5048,8 @@ const __generated_gunlance__37b: Gunlance = {
         ],
     ],
 
-    baseSharpness: [60, 0, 0, 0, 0, 90],
-    maxSharpness:  [60, 0, 0, 0, 0, 140],
+    baseSharpness: [60, 0, 0, 0, 0, 90, 0],
+    maxSharpness:  [60, 0, 0, 0, 0, 140, 0],
 
     gunlanceStats: {
         shellingType: "long",
@@ -5085,8 +5085,8 @@ const __generated_gunlance__38a: Gunlance = {
         ],
     ],
 
-    baseSharpness: [70, 100, 60, 70, 0, 0],
-    maxSharpness:  [70, 100, 60, 80, 40, 0],
+    baseSharpness: [70, 100, 60, 70, 0, 0, 0],
+    maxSharpness:  [70, 100, 60, 80, 40, 0, 0],
 
     gunlanceStats: {
         shellingType: "long",
@@ -5123,8 +5123,8 @@ const __generated_gunlance__38b: Gunlance = {
         ],
     ],
 
-    baseSharpness: [80, 120, 60, 80, 10, 0],
-    maxSharpness:  [80, 120, 60, 80, 60, 0],
+    baseSharpness: [80, 120, 60, 80, 10, 0, 0],
+    maxSharpness:  [80, 120, 60, 80, 60, 0, 0],
 
     gunlanceStats: {
         shellingType: "long",
@@ -5162,8 +5162,8 @@ const __generated_gunlance__38c: Gunlance = {
         ],
     ],
 
-    baseSharpness: [80, 120, 60, 70, 50, 20],
-    maxSharpness:  [80, 120, 60, 70, 50, 20],
+    baseSharpness: [80, 120, 60, 70, 50, 20, 0],
+    maxSharpness:  [80, 120, 60, 70, 50, 20, 0],
 
     gunlanceStats: {
         shellingType: "long",
@@ -5199,8 +5199,8 @@ const __generated_gunlance__39a: Gunlance = {
         ],
     ],
 
-    baseSharpness: [50, 40, 140, 70, 0, 0],
-    maxSharpness:  [50, 40, 140, 110, 10, 0],
+    baseSharpness: [50, 40, 140, 70, 0, 0, 0],
+    maxSharpness:  [50, 40, 140, 110, 10, 0, 0],
 
     gunlanceStats: {
         shellingType: "wide",
@@ -5236,8 +5236,8 @@ const __generated_gunlance__39b: Gunlance = {
         ],
     ],
 
-    baseSharpness: [50, 60, 160, 80, 0, 0],
-    maxSharpness:  [50, 60, 160, 110, 20, 0],
+    baseSharpness: [50, 60, 160, 80, 0, 0, 0],
+    maxSharpness:  [50, 60, 160, 110, 20, 0, 0],
 
     gunlanceStats: {
         shellingType: "wide",
@@ -5274,8 +5274,8 @@ const __generated_gunlance__39c: Gunlance = {
         ],
     ],
 
-    baseSharpness: [40, 40, 180, 90, 0, 0],
-    maxSharpness:  [40, 40, 180, 110, 30, 0],
+    baseSharpness: [40, 40, 180, 90, 0, 0, 0],
+    maxSharpness:  [40, 40, 180, 110, 30, 0, 0],
 
     gunlanceStats: {
         shellingType: "wide",
@@ -5311,8 +5311,8 @@ const __generated_gunlance__40a: Gunlance = {
         ],
     ],
 
-    baseSharpness: [50, 60, 90, 0, 0, 0],
-    maxSharpness:  [50, 60, 140, 0, 0, 0],
+    baseSharpness: [50, 60, 90, 0, 0, 0, 0],
+    maxSharpness:  [50, 60, 140, 0, 0, 0, 0],
 
     gunlanceStats: {
         shellingType: "wide",
@@ -5349,8 +5349,8 @@ const __generated_gunlance__40b: Gunlance = {
         ],
     ],
 
-    baseSharpness: [50, 90, 80, 30, 0, 0],
-    maxSharpness:  [50, 90, 80, 70, 10, 0],
+    baseSharpness: [50, 90, 80, 30, 0, 0, 0],
+    maxSharpness:  [50, 90, 80, 70, 10, 0, 0],
 
     gunlanceStats: {
         shellingType: "wide",
@@ -5389,8 +5389,8 @@ const __generated_gunlance__40c: Gunlance = {
         ],
     ],
 
-    baseSharpness: [60, 90, 100, 50, 0, 0],
-    maxSharpness:  [60, 90, 100, 60, 40, 0],
+    baseSharpness: [60, 90, 100, 50, 0, 0, 0],
+    maxSharpness:  [60, 90, 100, 60, 40, 0, 0],
 
     gunlanceStats: {
         shellingType: "wide",
@@ -5435,8 +5435,8 @@ const __generated_gunlance__ra: Gunlance = {
         ],
     ],
 
-    baseSharpness: [70, 70, 90, 20, 0, 0],
-    maxSharpness:  [70, 70, 90, 70, 0, 0],
+    baseSharpness: [70, 70, 90, 20, 0, 0, 0],
+    maxSharpness:  [70, 70, 90, 70, 0, 0, 0],
 
     gunlanceStats: {
         shellingType: "normal",
@@ -5488,8 +5488,8 @@ const __generated_gunlance__rb: Gunlance = {
         ],
     ],
 
-    baseSharpness: [60, 70, 80, 40, 0, 0],
-    maxSharpness:  [60, 70, 80, 90, 0, 0],
+    baseSharpness: [60, 70, 80, 40, 0, 0, 0],
+    maxSharpness:  [60, 70, 80, 90, 0, 0, 0],
 
     gunlanceStats: {
         shellingType: "normal",
@@ -5554,8 +5554,8 @@ const __generated_gunlance__rc: Gunlance = {
         ],
     ],
 
-    baseSharpness: [50, 70, 80, 30, 20, 0],
-    maxSharpness:  [50, 70, 80, 30, 70, 0],
+    baseSharpness: [50, 70, 80, 30, 20, 0, 0],
+    maxSharpness:  [50, 70, 80, 30, 70, 0, 0],
 
     gunlanceStats: {
         shellingType: "normal",
@@ -5629,8 +5629,8 @@ const __generated_gunlance__rd: Gunlance = {
         ],
     ],
 
-    baseSharpness: [50, 70, 70, 30, 30, 0],
-    maxSharpness:  [50, 70, 70, 30, 80, 0],
+    baseSharpness: [50, 70, 70, 30, 30, 0, 0],
+    maxSharpness:  [50, 70, 70, 30, 80, 0, 0],
 
     gunlanceStats: {
         shellingType: "normal",
@@ -5714,8 +5714,8 @@ const __generated_gunlance__re: Gunlance = {
         ],
     ],
 
-    baseSharpness: [50, 70, 50, 50, 30, 0],
-    maxSharpness:  [50, 70, 50, 50, 70, 10],
+    baseSharpness: [50, 70, 50, 50, 30, 0, 0],
+    maxSharpness:  [50, 70, 50, 50, 70, 10, 0],
 
     gunlanceStats: {
         shellingType: "normal",
@@ -5815,8 +5815,8 @@ const __generated_gunlance__rf: Gunlance = {
         ],
     ],
 
-    baseSharpness: [50, 70, 30, 60, 40, 0],
-    maxSharpness:  [50, 70, 30, 60, 70, 20],
+    baseSharpness: [50, 70, 30, 60, 40, 0, 0],
+    maxSharpness:  [50, 70, 30, 60, 70, 20, 0],
 
     gunlanceStats: {
         shellingType: "normal",

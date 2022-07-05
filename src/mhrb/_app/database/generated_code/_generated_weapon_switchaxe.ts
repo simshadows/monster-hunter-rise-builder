@@ -171,8 +171,8 @@ const __generated_switchaxe__1a: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [50, 90, 60, 0, 0, 0],
-    maxSharpness:  [50, 90, 100, 10, 0, 0],
+    baseSharpness: [50, 90, 60, 0, 0, 0, 0],
+    maxSharpness:  [50, 90, 100, 10, 0, 0, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -208,8 +208,8 @@ const __generated_switchaxe__1b: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [60, 70, 70, 0, 0, 0],
-    maxSharpness:  [60, 70, 110, 10, 0, 0],
+    baseSharpness: [60, 70, 70, 0, 0, 0, 0],
+    maxSharpness:  [60, 70, 110, 10, 0, 0, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -246,8 +246,8 @@ const __generated_switchaxe__1c: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [60, 70, 90, 30, 0, 0],
-    maxSharpness:  [60, 70, 90, 80, 0, 0],
+    baseSharpness: [60, 70, 90, 30, 0, 0, 0],
+    maxSharpness:  [60, 70, 90, 80, 0, 0, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -285,8 +285,8 @@ const __generated_switchaxe__1d: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [50, 70, 80, 30, 20, 0],
-    maxSharpness:  [50, 70, 80, 30, 70, 0],
+    baseSharpness: [50, 70, 80, 30, 20, 0, 0],
+    maxSharpness:  [50, 70, 80, 30, 70, 0, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -326,8 +326,8 @@ const __generated_switchaxe__1e: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [60, 80, 90, 40, 30, 0],
-    maxSharpness:  [60, 80, 90, 40, 70, 10],
+    baseSharpness: [60, 80, 90, 40, 30, 0, 0],
+    maxSharpness:  [60, 80, 90, 40, 70, 10, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -368,8 +368,8 @@ const __generated_switchaxe__1f: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [40, 90, 60, 60, 50, 0],
-    maxSharpness:  [40, 90, 60, 60, 80, 20],
+    baseSharpness: [40, 90, 60, 60, 50, 0, 0],
+    maxSharpness:  [40, 90, 60, 60, 80, 20, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -409,8 +409,8 @@ const __generated_switchaxe__2a: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [50, 50, 40, 60, 0, 0],
-    maxSharpness:  [50, 50, 40, 80, 30, 0],
+    baseSharpness: [50, 50, 40, 60, 0, 0, 0],
+    maxSharpness:  [50, 50, 40, 80, 30, 0, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -451,8 +451,8 @@ const __generated_switchaxe__2b: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [90, 90, 80, 60, 30, 0],
-    maxSharpness:  [90, 90, 80, 60, 60, 20],
+    baseSharpness: [90, 90, 80, 60, 30, 0, 0],
+    maxSharpness:  [90, 90, 80, 60, 60, 20, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -494,8 +494,8 @@ const __generated_switchaxe__2c: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [80, 80, 70, 60, 60, 0],
-    maxSharpness:  [80, 80, 70, 60, 60, 50],
+    baseSharpness: [80, 80, 70, 60, 60, 0, 0],
+    maxSharpness:  [80, 80, 70, 60, 60, 50, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -535,8 +535,8 @@ const __generated_switchaxe__3a: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [80, 100, 30, 40, 0, 0],
-    maxSharpness:  [80, 100, 30, 90, 0, 0],
+    baseSharpness: [80, 100, 30, 40, 0, 0, 0],
+    maxSharpness:  [80, 100, 30, 90, 0, 0, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -576,8 +576,8 @@ const __generated_switchaxe__3b: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [90, 80, 30, 50, 0, 0],
-    maxSharpness:  [90, 80, 30, 90, 10, 0],
+    baseSharpness: [90, 80, 30, 50, 0, 0, 0],
+    maxSharpness:  [90, 80, 30, 90, 10, 0, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -617,8 +617,8 @@ const __generated_switchaxe__3c: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [120, 120, 30, 70, 10, 0],
-    maxSharpness:  [120, 120, 30, 70, 60, 0],
+    baseSharpness: [120, 120, 30, 70, 10, 0, 0],
+    maxSharpness:  [120, 120, 30, 70, 60, 0, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -659,8 +659,8 @@ const __generated_switchaxe__3d: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [100, 100, 30, 90, 30, 0],
-    maxSharpness:  [100, 100, 30, 90, 60, 20],
+    baseSharpness: [100, 100, 30, 90, 30, 0, 0],
+    maxSharpness:  [100, 100, 30, 90, 60, 20, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -699,8 +699,8 @@ const __generated_switchaxe__4a: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [30, 140, 40, 40, 0, 0],
-    maxSharpness:  [30, 140, 40, 80, 10, 0],
+    baseSharpness: [30, 140, 40, 40, 0, 0, 0],
+    maxSharpness:  [30, 140, 40, 80, 10, 0, 0],
 
     switchaxeStats: {
         phialType: "dragon_phial",
@@ -740,8 +740,8 @@ const __generated_switchaxe__4b: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [20, 150, 60, 40, 30, 0],
-    maxSharpness:  [20, 150, 60, 40, 40, 40],
+    baseSharpness: [20, 150, 60, 40, 30, 0, 0],
+    maxSharpness:  [20, 150, 60, 40, 40, 40, 0],
 
     switchaxeStats: {
         phialType: "dragon_phial",
@@ -781,8 +781,8 @@ const __generated_switchaxe__4c: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [30, 150, 80, 50, 40, 0],
-    maxSharpness:  [30, 150, 80, 50, 40, 50],
+    baseSharpness: [30, 150, 80, 50, 40, 0, 0],
+    maxSharpness:  [30, 150, 80, 50, 40, 50, 0],
 
     switchaxeStats: {
         phialType: "dragon_phial",
@@ -820,8 +820,8 @@ const __generated_switchaxe__5a: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [30, 90, 50, 30, 0, 0],
-    maxSharpness:  [30, 90, 50, 70, 10, 0],
+    baseSharpness: [30, 90, 50, 30, 0, 0, 0],
+    maxSharpness:  [30, 90, 50, 70, 10, 0, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -859,8 +859,8 @@ const __generated_switchaxe__5b: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [30, 100, 70, 50, 0, 0],
-    maxSharpness:  [30, 100, 70, 60, 40, 0],
+    baseSharpness: [30, 100, 70, 50, 0, 0, 0],
+    maxSharpness:  [30, 100, 70, 60, 40, 0, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -900,8 +900,8 @@ const __generated_switchaxe__5c: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [30, 110, 80, 50, 30, 0],
-    maxSharpness:  [30, 110, 80, 50, 70, 10],
+    baseSharpness: [30, 110, 80, 50, 30, 0, 0],
+    maxSharpness:  [30, 110, 80, 50, 70, 10, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -940,8 +940,8 @@ const __generated_switchaxe__6a: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [70, 60, 30, 40, 0, 0],
-    maxSharpness:  [70, 60, 30, 90, 0, 0],
+    baseSharpness: [70, 60, 30, 40, 0, 0, 0],
+    maxSharpness:  [70, 60, 30, 90, 0, 0, 0],
 
     switchaxeStats: {
         phialType: "element_phial",
@@ -981,8 +981,8 @@ const __generated_switchaxe__6b: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [90, 70, 40, 50, 0, 0],
-    maxSharpness:  [90, 70, 40, 100, 0, 0],
+    baseSharpness: [90, 70, 40, 50, 0, 0, 0],
+    maxSharpness:  [90, 70, 40, 100, 0, 0, 0],
 
     switchaxeStats: {
         phialType: "element_phial",
@@ -1024,8 +1024,8 @@ const __generated_switchaxe__6c: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [90, 70, 60, 50, 30, 0],
-    maxSharpness:  [90, 70, 60, 50, 80, 0],
+    baseSharpness: [90, 70, 60, 50, 30, 0, 0],
+    maxSharpness:  [90, 70, 60, 50, 80, 0, 0],
 
     switchaxeStats: {
         phialType: "element_phial",
@@ -1062,8 +1062,8 @@ const __generated_switchaxe__7a: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [90, 60, 50, 0, 0, 0],
-    maxSharpness:  [90, 60, 80, 20, 0, 0],
+    baseSharpness: [90, 60, 50, 0, 0, 0, 0],
+    maxSharpness:  [90, 60, 80, 20, 0, 0, 0],
 
     switchaxeStats: {
         phialType: "poison_phial",
@@ -1101,8 +1101,8 @@ const __generated_switchaxe__7b: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [80, 50, 70, 0, 0, 0],
-    maxSharpness:  [80, 50, 70, 50, 0, 0],
+    baseSharpness: [80, 50, 70, 0, 0, 0, 0],
+    maxSharpness:  [80, 50, 70, 50, 0, 0, 0],
 
     switchaxeStats: {
         phialType: "poison_phial",
@@ -1143,8 +1143,8 @@ const __generated_switchaxe__7c: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [110, 40, 90, 60, 0, 0],
-    maxSharpness:  [110, 40, 90, 60, 50, 0],
+    baseSharpness: [110, 40, 90, 60, 0, 0, 0],
+    maxSharpness:  [110, 40, 90, 60, 50, 0, 0],
 
     switchaxeStats: {
         phialType: "poison_phial",
@@ -1183,8 +1183,8 @@ const __generated_switchaxe__8a: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [50, 50, 80, 70, 0, 0],
-    maxSharpness:  [50, 50, 80, 100, 20, 0],
+    baseSharpness: [50, 50, 80, 70, 0, 0, 0],
+    maxSharpness:  [50, 50, 80, 100, 20, 0, 0],
 
     switchaxeStats: {
         phialType: "element_phial",
@@ -1224,8 +1224,8 @@ const __generated_switchaxe__8b: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [50, 40, 80, 70, 10, 0],
-    maxSharpness:  [50, 40, 80, 70, 60, 0],
+    baseSharpness: [50, 40, 80, 70, 10, 0, 0],
+    maxSharpness:  [50, 40, 80, 70, 60, 0, 0],
 
     switchaxeStats: {
         phialType: "element_phial",
@@ -1265,8 +1265,8 @@ const __generated_switchaxe__8c: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [50, 70, 100, 100, 30, 0],
-    maxSharpness:  [50, 70, 100, 100, 70, 10],
+    baseSharpness: [50, 70, 100, 100, 30, 0, 0],
+    maxSharpness:  [50, 70, 100, 100, 70, 10, 0],
 
     switchaxeStats: {
         phialType: "element_phial",
@@ -1307,8 +1307,8 @@ const __generated_switchaxe__8d: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [50, 70, 80, 100, 50, 0],
-    maxSharpness:  [50, 70, 80, 100, 70, 30],
+    baseSharpness: [50, 70, 80, 100, 50, 0, 0],
+    maxSharpness:  [50, 70, 80, 100, 70, 30, 0],
 
     switchaxeStats: {
         phialType: "element_phial",
@@ -1344,8 +1344,8 @@ const __generated_switchaxe__9a: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [80, 70, 50, 0, 0, 0],
-    maxSharpness:  [80, 70, 90, 10, 0, 0],
+    baseSharpness: [80, 70, 50, 0, 0, 0, 0],
+    maxSharpness:  [80, 70, 90, 10, 0, 0, 0],
 
     switchaxeStats: {
         phialType: "paralysis_phial",
@@ -1381,8 +1381,8 @@ const __generated_switchaxe__9b: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [70, 60, 70, 0, 0, 0],
-    maxSharpness:  [70, 60, 110, 10, 0, 0],
+    baseSharpness: [70, 60, 70, 0, 0, 0, 0],
+    maxSharpness:  [70, 60, 110, 10, 0, 0, 0],
 
     switchaxeStats: {
         phialType: "paralysis_phial",
@@ -1419,8 +1419,8 @@ const __generated_switchaxe__9c: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [80, 70, 60, 40, 0, 0],
-    maxSharpness:  [80, 70, 60, 90, 0, 0],
+    baseSharpness: [80, 70, 60, 40, 0, 0, 0],
+    maxSharpness:  [80, 70, 60, 90, 0, 0, 0],
 
     switchaxeStats: {
         phialType: "paralysis_phial",
@@ -1458,8 +1458,8 @@ const __generated_switchaxe__9d: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [80, 70, 50, 50, 0, 0],
-    maxSharpness:  [80, 70, 50, 80, 20, 0],
+    baseSharpness: [80, 70, 50, 50, 0, 0, 0],
+    maxSharpness:  [80, 70, 50, 80, 20, 0, 0],
 
     switchaxeStats: {
         phialType: "paralysis_phial",
@@ -1498,8 +1498,8 @@ const __generated_switchaxe__9e: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [80, 70, 80, 50, 20, 0],
-    maxSharpness:  [80, 70, 80, 50, 50, 20],
+    baseSharpness: [80, 70, 80, 50, 20, 0, 0],
+    maxSharpness:  [80, 70, 80, 50, 50, 20, 0],
 
     switchaxeStats: {
         phialType: "paralysis_phial",
@@ -1539,8 +1539,8 @@ const __generated_switchaxe__9f: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [100, 90, 80, 50, 30, 0],
-    maxSharpness:  [100, 90, 80, 50, 40, 40],
+    baseSharpness: [100, 90, 80, 50, 30, 0, 0],
+    maxSharpness:  [100, 90, 80, 50, 40, 40, 0],
 
     switchaxeStats: {
         phialType: "paralysis_phial",
@@ -1581,8 +1581,8 @@ const __generated_switchaxe__10a: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [100, 80, 70, 50, 0, 0],
-    maxSharpness:  [100, 80, 70, 90, 10, 0],
+    baseSharpness: [100, 80, 70, 50, 0, 0, 0],
+    maxSharpness:  [100, 80, 70, 90, 10, 0, 0],
 
     switchaxeStats: {
         phialType: "element_phial",
@@ -1624,8 +1624,8 @@ const __generated_switchaxe__10b: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [100, 100, 80, 70, 0, 0],
-    maxSharpness:  [100, 100, 80, 70, 50, 0],
+    baseSharpness: [100, 100, 80, 70, 0, 0, 0],
+    maxSharpness:  [100, 100, 80, 70, 50, 0, 0],
 
     switchaxeStats: {
         phialType: "element_phial",
@@ -1668,8 +1668,8 @@ const __generated_switchaxe__10c: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [100, 100, 70, 80, 0, 0],
-    maxSharpness:  [100, 100, 70, 80, 40, 10],
+    baseSharpness: [100, 100, 70, 80, 0, 0, 0],
+    maxSharpness:  [100, 100, 70, 80, 40, 10, 0],
 
     switchaxeStats: {
         phialType: "element_phial",
@@ -1710,8 +1710,8 @@ const __generated_switchaxe__11a: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [60, 70, 90, 80, 0, 0],
-    maxSharpness:  [60, 70, 90, 100, 30, 0],
+    baseSharpness: [60, 70, 90, 80, 0, 0, 0],
+    maxSharpness:  [60, 70, 90, 100, 30, 0, 0],
 
     switchaxeStats: {
         phialType: "element_phial",
@@ -1752,8 +1752,8 @@ const __generated_switchaxe__11b: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [60, 60, 100, 110, 20, 0],
-    maxSharpness:  [60, 60, 100, 110, 70, 0],
+    baseSharpness: [60, 60, 100, 110, 20, 0, 0],
+    maxSharpness:  [60, 60, 100, 110, 70, 0, 0],
 
     switchaxeStats: {
         phialType: "element_phial",
@@ -1794,8 +1794,8 @@ const __generated_switchaxe__11c: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [90, 40, 110, 70, 40, 0],
-    maxSharpness:  [90, 40, 110, 70, 70, 20],
+    baseSharpness: [90, 40, 110, 70, 40, 0, 0],
+    maxSharpness:  [90, 40, 110, 70, 70, 20, 0],
 
     switchaxeStats: {
         phialType: "element_phial",
@@ -1834,8 +1834,8 @@ const __generated_switchaxe__12a: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [80, 80, 70, 40, 30, 0],
-    maxSharpness:  [80, 80, 70, 40, 80, 0],
+    baseSharpness: [80, 80, 70, 40, 30, 0, 0],
+    maxSharpness:  [80, 80, 70, 40, 80, 0, 0],
 
     switchaxeStats: {
         phialType: "exhaust_phial",
@@ -1875,8 +1875,8 @@ const __generated_switchaxe__12b: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [70, 70, 70, 50, 40, 0],
-    maxSharpness:  [70, 70, 70, 50, 80, 10],
+    baseSharpness: [70, 70, 70, 50, 40, 0, 0],
+    maxSharpness:  [70, 70, 70, 50, 80, 10, 0],
 
     switchaxeStats: {
         phialType: "exhaust_phial",
@@ -1917,8 +1917,8 @@ const __generated_switchaxe__12c: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [80, 80, 80, 60, 50, 0],
-    maxSharpness:  [80, 80, 80, 60, 80, 20],
+    baseSharpness: [80, 80, 80, 60, 50, 0, 0],
+    maxSharpness:  [80, 80, 80, 60, 80, 20, 0],
 
     switchaxeStats: {
         phialType: "exhaust_phial",
@@ -1957,8 +1957,8 @@ const __generated_switchaxe__13a: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [40, 90, 80, 40, 0, 0],
-    maxSharpness:  [40, 90, 80, 90, 0, 0],
+    baseSharpness: [40, 90, 80, 40, 0, 0, 0],
+    maxSharpness:  [40, 90, 80, 90, 0, 0, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -1998,8 +1998,8 @@ const __generated_switchaxe__13b: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [50, 70, 80, 50, 0, 0],
-    maxSharpness:  [50, 70, 80, 90, 10, 0],
+    baseSharpness: [50, 70, 80, 50, 0, 0, 0],
+    maxSharpness:  [50, 70, 80, 90, 10, 0, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -2040,8 +2040,8 @@ const __generated_switchaxe__13c: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [60, 80, 80, 60, 20, 0],
-    maxSharpness:  [60, 80, 80, 60, 50, 20],
+    baseSharpness: [60, 80, 80, 60, 20, 0, 0],
+    maxSharpness:  [60, 80, 80, 60, 50, 20, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -2083,8 +2083,8 @@ const __generated_switchaxe__14a: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [80, 80, 70, 50, 20, 0],
-    maxSharpness:  [80, 80, 70, 50, 70, 0],
+    baseSharpness: [80, 80, 70, 50, 20, 0, 0],
+    maxSharpness:  [80, 80, 70, 50, 70, 0, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -2126,8 +2126,8 @@ const __generated_switchaxe__14b: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [60, 80, 70, 50, 40, 0],
-    maxSharpness:  [60, 80, 70, 50, 90, 0],
+    baseSharpness: [60, 80, 70, 50, 40, 0, 0],
+    maxSharpness:  [60, 80, 70, 50, 90, 0, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -2171,8 +2171,8 @@ const __generated_switchaxe__14c: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [60, 90, 80, 60, 60, 0],
-    maxSharpness:  [60, 90, 80, 60, 80, 30],
+    baseSharpness: [60, 90, 80, 60, 60, 0, 0],
+    maxSharpness:  [60, 90, 80, 60, 80, 30, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -2213,8 +2213,8 @@ const __generated_switchaxe__15a: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [50, 50, 100, 50, 0, 0],
-    maxSharpness:  [50, 50, 100, 80, 20, 0],
+    baseSharpness: [50, 50, 100, 50, 0, 0, 0],
+    maxSharpness:  [50, 50, 100, 80, 20, 0, 0],
 
     switchaxeStats: {
         phialType: "element_phial",
@@ -2256,8 +2256,8 @@ const __generated_switchaxe__15b: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [60, 60, 100, 60, 20, 0],
-    maxSharpness:  [60, 60, 100, 60, 70, 0],
+    baseSharpness: [60, 60, 100, 60, 20, 0, 0],
+    maxSharpness:  [60, 60, 100, 60, 70, 0, 0],
 
     switchaxeStats: {
         phialType: "element_phial",
@@ -2300,8 +2300,8 @@ const __generated_switchaxe__15c: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [60, 60, 130, 60, 40, 0],
-    maxSharpness:  [60, 60, 130, 60, 90, 0],
+    baseSharpness: [60, 60, 130, 60, 40, 0, 0],
+    maxSharpness:  [60, 60, 130, 60, 90, 0, 0],
 
     switchaxeStats: {
         phialType: "element_phial",
@@ -2339,8 +2339,8 @@ const __generated_switchaxe__16a: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [30, 60, 80, 30, 0, 0],
-    maxSharpness:  [30, 60, 80, 80, 0, 0],
+    baseSharpness: [30, 60, 80, 30, 0, 0, 0],
+    maxSharpness:  [30, 60, 80, 80, 0, 0, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -2378,8 +2378,8 @@ const __generated_switchaxe__16b: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [40, 60, 110, 40, 0, 0],
-    maxSharpness:  [40, 60, 110, 80, 10, 0],
+    baseSharpness: [40, 60, 110, 40, 0, 0, 0],
+    maxSharpness:  [40, 60, 110, 80, 10, 0, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -2418,8 +2418,8 @@ const __generated_switchaxe__16c: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [40, 60, 120, 60, 20, 0],
-    maxSharpness:  [40, 60, 120, 60, 60, 10],
+    baseSharpness: [40, 60, 120, 60, 20, 0, 0],
+    maxSharpness:  [40, 60, 120, 60, 60, 10, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -2459,8 +2459,8 @@ const __generated_switchaxe__16d: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [30, 50, 120, 70, 30, 0],
-    maxSharpness:  [30, 50, 120, 70, 40, 40],
+    baseSharpness: [30, 50, 120, 70, 30, 0, 0],
+    maxSharpness:  [30, 50, 120, 70, 40, 40, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -2498,8 +2498,8 @@ const __generated_switchaxe__17a: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [60, 60, 130, 0, 0, 0],
-    maxSharpness:  [60, 60, 130, 50, 0, 0],
+    baseSharpness: [60, 60, 130, 0, 0, 0, 0],
+    maxSharpness:  [60, 60, 130, 50, 0, 0, 0],
 
     switchaxeStats: {
         phialType: "paralysis_phial",
@@ -2537,8 +2537,8 @@ const __generated_switchaxe__17b: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [70, 60, 130, 40, 0, 0],
-    maxSharpness:  [70, 60, 130, 80, 10, 0],
+    baseSharpness: [70, 60, 130, 40, 0, 0, 0],
+    maxSharpness:  [70, 60, 130, 80, 10, 0, 0],
 
     switchaxeStats: {
         phialType: "paralysis_phial",
@@ -2577,8 +2577,8 @@ const __generated_switchaxe__17c: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [60, 50, 130, 100, 10, 0],
-    maxSharpness:  [60, 50, 130, 100, 40, 20],
+    baseSharpness: [60, 50, 130, 100, 10, 0, 0],
+    maxSharpness:  [60, 50, 130, 100, 40, 20, 0],
 
     switchaxeStats: {
         phialType: "paralysis_phial",
@@ -2616,8 +2616,8 @@ const __generated_switchaxe__18a: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [100, 40, 40, 20, 0, 0],
-    maxSharpness:  [100, 40, 40, 70, 0, 0],
+    baseSharpness: [100, 40, 40, 20, 0, 0, 0],
+    maxSharpness:  [100, 40, 40, 70, 0, 0, 0],
 
     switchaxeStats: {
         phialType: "element_phial",
@@ -2656,8 +2656,8 @@ const __generated_switchaxe__18b: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [100, 60, 50, 40, 0, 0],
-    maxSharpness:  [100, 60, 50, 90, 0, 0],
+    baseSharpness: [100, 60, 50, 40, 0, 0, 0],
+    maxSharpness:  [100, 60, 50, 90, 0, 0, 0],
 
     switchaxeStats: {
         phialType: "element_phial",
@@ -2697,8 +2697,8 @@ const __generated_switchaxe__18c: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [100, 70, 60, 70, 0, 0],
-    maxSharpness:  [100, 70, 60, 90, 30, 0],
+    baseSharpness: [100, 70, 60, 70, 0, 0, 0],
+    maxSharpness:  [100, 70, 60, 90, 30, 0, 0],
 
     switchaxeStats: {
         phialType: "element_phial",
@@ -2739,8 +2739,8 @@ const __generated_switchaxe__18d: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [100, 90, 80, 60, 20, 0],
-    maxSharpness:  [100, 90, 80, 60, 70, 0],
+    baseSharpness: [100, 90, 80, 60, 20, 0, 0],
+    maxSharpness:  [100, 90, 80, 60, 70, 0, 0],
 
     switchaxeStats: {
         phialType: "element_phial",
@@ -2776,8 +2776,8 @@ const __generated_switchaxe__19a: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [70, 90, 40, 0, 0, 0],
-    maxSharpness:  [70, 90, 90, 0, 0, 0],
+    baseSharpness: [70, 90, 40, 0, 0, 0, 0],
+    maxSharpness:  [70, 90, 90, 0, 0, 0, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -2813,8 +2813,8 @@ const __generated_switchaxe__19b: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [80, 70, 50, 0, 0, 0],
-    maxSharpness:  [80, 70, 100, 0, 0, 0],
+    baseSharpness: [80, 70, 50, 0, 0, 0, 0],
+    maxSharpness:  [80, 70, 100, 0, 0, 0, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -2851,8 +2851,8 @@ const __generated_switchaxe__19c: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [100, 40, 60, 0, 0, 0],
-    maxSharpness:  [100, 40, 110, 0, 0, 0],
+    baseSharpness: [100, 40, 60, 0, 0, 0, 0],
+    maxSharpness:  [100, 40, 110, 0, 0, 0, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -2890,8 +2890,8 @@ const __generated_switchaxe__19d: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [100, 70, 70, 10, 0, 0],
-    maxSharpness:  [100, 70, 70, 60, 0, 0],
+    baseSharpness: [100, 70, 70, 10, 0, 0, 0],
+    maxSharpness:  [100, 70, 70, 60, 0, 0, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -2930,8 +2930,8 @@ const __generated_switchaxe__19e: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [80, 70, 60, 40, 0, 0],
-    maxSharpness:  [80, 70, 60, 80, 10, 0],
+    baseSharpness: [80, 70, 60, 40, 0, 0, 0],
+    maxSharpness:  [80, 70, 60, 80, 10, 0, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -2971,8 +2971,8 @@ const __generated_switchaxe__19f: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [80, 70, 80, 70, 0, 0],
-    maxSharpness:  [80, 70, 80, 100, 20, 0],
+    baseSharpness: [80, 70, 80, 70, 0, 0, 0],
+    maxSharpness:  [80, 70, 80, 100, 20, 0, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -3013,8 +3013,8 @@ const __generated_switchaxe__20a: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [140, 120, 40, 50, 0, 0],
-    maxSharpness:  [140, 120, 40, 80, 20, 0],
+    baseSharpness: [140, 120, 40, 50, 0, 0, 0],
+    maxSharpness:  [140, 120, 40, 80, 20, 0, 0],
 
     switchaxeStats: {
         phialType: "element_phial",
@@ -3056,8 +3056,8 @@ const __generated_switchaxe__20b: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [130, 120, 40, 50, 10, 0],
-    maxSharpness:  [130, 120, 40, 50, 60, 0],
+    baseSharpness: [130, 120, 40, 50, 10, 0, 0],
+    maxSharpness:  [130, 120, 40, 50, 60, 0, 0],
 
     switchaxeStats: {
         phialType: "element_phial",
@@ -3100,8 +3100,8 @@ const __generated_switchaxe__20c: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [120, 120, 40, 50, 20, 0],
-    maxSharpness:  [120, 120, 40, 50, 70, 0],
+    baseSharpness: [120, 120, 40, 50, 20, 0, 0],
+    maxSharpness:  [120, 120, 40, 50, 70, 0, 0],
 
     switchaxeStats: {
         phialType: "element_phial",
@@ -3140,8 +3140,8 @@ const __generated_switchaxe__21a: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [70, 30, 100, 90, 10, 0],
-    maxSharpness:  [70, 30, 100, 90, 60, 0],
+    baseSharpness: [70, 30, 100, 90, 10, 0, 0],
+    maxSharpness:  [70, 30, 100, 90, 60, 0, 0],
 
     switchaxeStats: {
         phialType: "exhaust_phial",
@@ -3180,8 +3180,8 @@ const __generated_switchaxe__21b: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [50, 40, 130, 100, 30, 0],
-    maxSharpness:  [50, 40, 130, 100, 50, 30],
+    baseSharpness: [50, 40, 130, 100, 30, 0, 0],
+    maxSharpness:  [50, 40, 130, 100, 50, 30, 0],
 
     switchaxeStats: {
         phialType: "exhaust_phial",
@@ -3221,8 +3221,8 @@ const __generated_switchaxe__21c: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [50, 40, 120, 120, 40, 30],
-    maxSharpness:  [50, 40, 120, 120, 40, 30],
+    baseSharpness: [50, 40, 120, 120, 40, 30, 0],
+    maxSharpness:  [50, 40, 120, 120, 40, 30, 0],
 
     switchaxeStats: {
         phialType: "exhaust_phial",
@@ -3261,8 +3261,8 @@ const __generated_switchaxe__22a: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [50, 160, 30, 110, 0, 0],
-    maxSharpness:  [50, 160, 30, 110, 40, 10],
+    baseSharpness: [50, 160, 30, 110, 0, 0, 0],
+    maxSharpness:  [50, 160, 30, 110, 40, 10, 0],
 
     switchaxeStats: {
         phialType: "exhaust_phial",
@@ -3301,8 +3301,8 @@ const __generated_switchaxe__22b: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [50, 160, 20, 120, 0, 0],
-    maxSharpness:  [50, 160, 20, 120, 30, 20],
+    baseSharpness: [50, 160, 20, 120, 0, 0, 0],
+    maxSharpness:  [50, 160, 20, 120, 30, 20, 0],
 
     switchaxeStats: {
         phialType: "exhaust_phial",
@@ -3343,8 +3343,8 @@ const __generated_switchaxe__22c: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [50, 160, 10, 130, 0, 0],
-    maxSharpness:  [50, 160, 10, 130, 20, 30],
+    baseSharpness: [50, 160, 10, 130, 0, 0, 0],
+    maxSharpness:  [50, 160, 10, 130, 20, 30, 0],
 
     switchaxeStats: {
         phialType: "exhaust_phial",
@@ -3383,8 +3383,8 @@ const __generated_switchaxe__23a: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [60, 70, 70, 50, 0, 0],
-    maxSharpness:  [60, 70, 70, 100, 0, 0],
+    baseSharpness: [60, 70, 70, 50, 0, 0, 0],
+    maxSharpness:  [60, 70, 70, 100, 0, 0, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -3424,8 +3424,8 @@ const __generated_switchaxe__23b: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [60, 60, 60, 70, 0, 0],
-    maxSharpness:  [60, 60, 60, 120, 0, 0],
+    baseSharpness: [60, 60, 60, 70, 0, 0, 0],
+    maxSharpness:  [60, 60, 60, 120, 0, 0, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -3467,8 +3467,8 @@ const __generated_switchaxe__23c: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [70, 70, 60, 70, 30, 0],
-    maxSharpness:  [70, 70, 60, 70, 60, 20],
+    baseSharpness: [70, 70, 60, 70, 30, 0, 0],
+    maxSharpness:  [70, 70, 60, 70, 60, 20, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -3508,8 +3508,8 @@ const __generated_switchaxe__24a: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [50, 70, 80, 100, 0, 0],
-    maxSharpness:  [50, 70, 80, 100, 50, 0],
+    baseSharpness: [50, 70, 80, 100, 0, 0, 0],
+    maxSharpness:  [50, 70, 80, 100, 50, 0, 0],
 
     switchaxeStats: {
         phialType: "poison_phial",
@@ -3550,8 +3550,8 @@ const __generated_switchaxe__24b: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [50, 70, 80, 100, 50, 0],
-    maxSharpness:  [50, 70, 80, 100, 80, 20],
+    baseSharpness: [50, 70, 80, 100, 50, 0, 0],
+    maxSharpness:  [50, 70, 80, 100, 80, 20, 0],
 
     switchaxeStats: {
         phialType: "poison_phial",
@@ -3592,8 +3592,8 @@ const __generated_switchaxe__24c: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [50, 70, 100, 100, 60, 20],
-    maxSharpness:  [50, 70, 100, 100, 60, 20],
+    baseSharpness: [50, 70, 100, 100, 60, 20, 0],
+    maxSharpness:  [50, 70, 100, 100, 60, 20, 0],
 
     switchaxeStats: {
         phialType: "poison_phial",
@@ -3632,8 +3632,8 @@ const __generated_switchaxe__25a: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [140, 40, 40, 30, 0, 0],
-    maxSharpness:  [140, 40, 40, 80, 0, 0],
+    baseSharpness: [140, 40, 40, 30, 0, 0, 0],
+    maxSharpness:  [140, 40, 40, 80, 0, 0, 0],
 
     switchaxeStats: {
         phialType: "element_phial",
@@ -3672,8 +3672,8 @@ const __generated_switchaxe__25b: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [140, 30, 40, 40, 0, 0],
-    maxSharpness:  [140, 30, 40, 60, 30, 0],
+    baseSharpness: [140, 30, 40, 40, 0, 0, 0],
+    maxSharpness:  [140, 30, 40, 60, 30, 0, 0],
 
     switchaxeStats: {
         phialType: "element_phial",
@@ -3713,8 +3713,8 @@ const __generated_switchaxe__25c: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [150, 40, 40, 70, 0, 0],
-    maxSharpness:  [150, 40, 40, 70, 50, 0],
+    baseSharpness: [150, 40, 40, 70, 0, 0, 0],
+    maxSharpness:  [150, 40, 40, 70, 50, 0, 0],
 
     switchaxeStats: {
         phialType: "element_phial",
@@ -3755,8 +3755,8 @@ const __generated_switchaxe__25d: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [160, 50, 50, 60, 30, 0],
-    maxSharpness:  [160, 50, 50, 60, 70, 10],
+    baseSharpness: [160, 50, 50, 60, 30, 0, 0],
+    maxSharpness:  [160, 50, 50, 60, 70, 10, 0],
 
     switchaxeStats: {
         phialType: "element_phial",
@@ -3794,8 +3794,8 @@ const __generated_switchaxe__26a: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [40, 70, 50, 40, 0, 0],
-    maxSharpness:  [40, 70, 50, 90, 0, 0],
+    baseSharpness: [40, 70, 50, 40, 0, 0, 0],
+    maxSharpness:  [40, 70, 50, 90, 0, 0, 0],
 
     switchaxeStats: {
         phialType: "element_phial",
@@ -3833,8 +3833,8 @@ const __generated_switchaxe__26b: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [50, 80, 70, 50, 0, 0],
-    maxSharpness:  [50, 80, 70, 100, 0, 0],
+    baseSharpness: [50, 80, 70, 50, 0, 0, 0],
+    maxSharpness:  [50, 80, 70, 100, 0, 0, 0],
 
     switchaxeStats: {
         phialType: "element_phial",
@@ -3874,8 +3874,8 @@ const __generated_switchaxe__26c: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [50, 80, 80, 70, 20, 0],
-    maxSharpness:  [50, 80, 80, 70, 40, 30],
+    baseSharpness: [50, 80, 80, 70, 20, 0, 0],
+    maxSharpness:  [50, 80, 80, 70, 40, 30, 0],
 
     switchaxeStats: {
         phialType: "element_phial",
@@ -3916,8 +3916,8 @@ const __generated_switchaxe__27a: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [70, 40, 90, 50, 0, 0],
-    maxSharpness:  [70, 40, 90, 80, 20, 0],
+    baseSharpness: [70, 40, 90, 50, 0, 0, 0],
+    maxSharpness:  [70, 40, 90, 80, 20, 0, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -3958,8 +3958,8 @@ const __generated_switchaxe__27b: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [70, 40, 160, 60, 20, 0],
-    maxSharpness:  [70, 40, 160, 60, 70, 0],
+    baseSharpness: [70, 40, 160, 60, 20, 0, 0],
+    maxSharpness:  [70, 40, 160, 60, 70, 0, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -4001,8 +4001,8 @@ const __generated_switchaxe__27c: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [70, 40, 120, 80, 40, 0],
-    maxSharpness:  [70, 40, 120, 80, 50, 40],
+    baseSharpness: [70, 40, 120, 80, 40, 0, 0],
+    maxSharpness:  [70, 40, 120, 80, 50, 40, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -4041,8 +4041,8 @@ const __generated_switchaxe__28a: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [70, 60, 50, 20, 0, 0],
-    maxSharpness:  [70, 60, 50, 70, 0, 0],
+    baseSharpness: [70, 60, 50, 20, 0, 0, 0],
+    maxSharpness:  [70, 60, 50, 70, 0, 0, 0],
 
     switchaxeStats: {
         phialType: "element_phial",
@@ -4082,8 +4082,8 @@ const __generated_switchaxe__28b: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [70, 50, 90, 40, 0, 0],
-    maxSharpness:  [70, 50, 90, 90, 0, 0],
+    baseSharpness: [70, 50, 90, 40, 0, 0, 0],
+    maxSharpness:  [70, 50, 90, 90, 0, 0, 0],
 
     switchaxeStats: {
         phialType: "element_phial",
@@ -4124,8 +4124,8 @@ const __generated_switchaxe__28c: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [60, 30, 100, 100, 10, 0],
-    maxSharpness:  [60, 30, 100, 100, 60, 0],
+    baseSharpness: [60, 30, 100, 100, 10, 0, 0],
+    maxSharpness:  [60, 30, 100, 100, 60, 0, 0],
 
     switchaxeStats: {
         phialType: "element_phial",
@@ -4166,8 +4166,8 @@ const __generated_switchaxe__28d: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [40, 30, 100, 100, 30, 0],
-    maxSharpness:  [40, 30, 100, 100, 60, 20],
+    baseSharpness: [40, 30, 100, 100, 30, 0, 0],
+    maxSharpness:  [40, 30, 100, 100, 60, 20, 0],
 
     switchaxeStats: {
         phialType: "element_phial",
@@ -4203,8 +4203,8 @@ const __generated_switchaxe__29a: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [160, 20, 40, 80, 0, 0],
-    maxSharpness:  [160, 20, 40, 110, 20, 0],
+    baseSharpness: [160, 20, 40, 80, 0, 0, 0],
+    maxSharpness:  [160, 20, 40, 110, 20, 0, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -4241,8 +4241,8 @@ const __generated_switchaxe__29b: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [170, 20, 20, 90, 0, 0],
-    maxSharpness:  [170, 20, 20, 110, 30, 0],
+    baseSharpness: [170, 20, 20, 90, 0, 0, 0],
+    maxSharpness:  [170, 20, 20, 110, 30, 0, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -4280,8 +4280,8 @@ const __generated_switchaxe__29c: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [190, 10, 20, 90, 40, 0],
-    maxSharpness:  [190, 10, 20, 90, 60, 30],
+    baseSharpness: [190, 10, 20, 90, 40, 0, 0],
+    maxSharpness:  [190, 10, 20, 90, 60, 30, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -4317,8 +4317,8 @@ const __generated_switchaxe__30a: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [50, 20, 100, 80, 0, 0],
-    maxSharpness:  [50, 20, 100, 120, 10, 0],
+    baseSharpness: [50, 20, 100, 80, 0, 0, 0],
+    maxSharpness:  [50, 20, 100, 120, 10, 0, 0],
 
     switchaxeStats: {
         phialType: "element_phial",
@@ -4355,8 +4355,8 @@ const __generated_switchaxe__30b: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [50, 50, 100, 100, 0, 0],
-    maxSharpness:  [50, 50, 100, 120, 30, 0],
+    baseSharpness: [50, 50, 100, 100, 0, 0, 0],
+    maxSharpness:  [50, 50, 100, 120, 30, 0, 0],
 
     switchaxeStats: {
         phialType: "element_phial",
@@ -4394,8 +4394,8 @@ const __generated_switchaxe__30c: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [50, 50, 80, 120, 0, 0],
-    maxSharpness:  [50, 50, 80, 120, 50, 0],
+    baseSharpness: [50, 50, 80, 120, 0, 0, 0],
+    maxSharpness:  [50, 50, 80, 120, 50, 0, 0],
 
     switchaxeStats: {
         phialType: "element_phial",
@@ -4431,8 +4431,8 @@ const __generated_switchaxe__31a: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [20, 20, 20, 40, 100, 0],
-    maxSharpness:  [20, 20, 20, 40, 150, 0],
+    baseSharpness: [20, 20, 20, 40, 100, 0, 0],
+    maxSharpness:  [20, 20, 20, 40, 150, 0, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -4469,8 +4469,8 @@ const __generated_switchaxe__31b: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [20, 20, 50, 50, 110, 0],
-    maxSharpness:  [20, 20, 50, 50, 150, 10],
+    baseSharpness: [20, 20, 50, 50, 110, 0, 0],
+    maxSharpness:  [20, 20, 50, 50, 150, 10, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -4508,8 +4508,8 @@ const __generated_switchaxe__31c: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [20, 20, 80, 60, 120, 0],
-    maxSharpness:  [20, 20, 80, 60, 150, 20],
+    baseSharpness: [20, 20, 80, 60, 120, 0, 0],
+    maxSharpness:  [20, 20, 80, 60, 150, 20, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -4545,8 +4545,8 @@ const __generated_switchaxe__32a: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [20, 20, 190, 40, 30, 0],
-    maxSharpness:  [20, 20, 190, 40, 50, 30],
+    baseSharpness: [20, 20, 190, 40, 30, 0, 0],
+    maxSharpness:  [20, 20, 190, 40, 50, 30, 0],
 
     switchaxeStats: {
         phialType: "element_phial",
@@ -4583,8 +4583,8 @@ const __generated_switchaxe__32b: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [10, 20, 220, 40, 60, 0],
-    maxSharpness:  [10, 20, 220, 40, 70, 40],
+    baseSharpness: [10, 20, 220, 40, 60, 0, 0],
+    maxSharpness:  [10, 20, 220, 40, 70, 40, 0],
 
     switchaxeStats: {
         phialType: "element_phial",
@@ -4620,8 +4620,8 @@ const __generated_switchaxe__33a: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [70, 60, 70, 80, 20, 0],
-    maxSharpness:  [70, 60, 70, 80, 70, 0],
+    baseSharpness: [70, 60, 70, 80, 20, 0, 0],
+    maxSharpness:  [70, 60, 70, 80, 70, 0, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -4657,8 +4657,8 @@ const __generated_switchaxe__33b: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [90, 80, 80, 70, 30, 0],
-    maxSharpness:  [90, 80, 80, 70, 70, 10],
+    baseSharpness: [90, 80, 80, 70, 30, 0, 0],
+    maxSharpness:  [90, 80, 80, 70, 70, 10, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -4696,8 +4696,8 @@ const __generated_switchaxe__33c: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [90, 80, 80, 60, 40, 0],
-    maxSharpness:  [90, 80, 80, 60, 70, 20],
+    baseSharpness: [90, 80, 80, 60, 40, 0, 0],
+    maxSharpness:  [90, 80, 80, 60, 70, 20, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -4733,8 +4733,8 @@ const __generated_switchaxe__34a: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [100, 80, 80, 50, 40, 0],
-    maxSharpness:  [100, 80, 80, 50, 60, 30],
+    baseSharpness: [100, 80, 80, 50, 40, 0, 0],
+    maxSharpness:  [100, 80, 80, 50, 60, 30, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -4772,8 +4772,8 @@ const __generated_switchaxe__34b: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [100, 70, 80, 50, 40, 10],
-    maxSharpness:  [100, 70, 80, 50, 40, 60],
+    baseSharpness: [100, 70, 80, 50, 40, 10, 0],
+    maxSharpness:  [100, 70, 80, 50, 40, 60, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -4809,8 +4809,8 @@ const __generated_switchaxe__35a: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [100, 90, 80, 60, 20, 0],
-    maxSharpness:  [100, 90, 80, 60, 60, 10],
+    baseSharpness: [100, 90, 80, 60, 20, 0, 0],
+    maxSharpness:  [100, 90, 80, 60, 60, 10, 0],
 
     switchaxeStats: {
         phialType: "element_phial",
@@ -4847,8 +4847,8 @@ const __generated_switchaxe__35b: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [100, 90, 80, 50, 30, 0],
-    maxSharpness:  [100, 90, 80, 50, 60, 20],
+    baseSharpness: [100, 90, 80, 50, 30, 0, 0],
+    maxSharpness:  [100, 90, 80, 50, 60, 20, 0],
 
     switchaxeStats: {
         phialType: "element_phial",
@@ -4884,8 +4884,8 @@ const __generated_switchaxe__36a: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [80, 30, 80, 90, 70, 0],
-    maxSharpness:  [80, 30, 80, 90, 70, 50],
+    baseSharpness: [80, 30, 80, 90, 70, 0, 0],
+    maxSharpness:  [80, 30, 80, 90, 70, 50, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -4922,8 +4922,8 @@ const __generated_switchaxe__36b: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [50, 30, 100, 90, 80, 0],
-    maxSharpness:  [50, 30, 100, 90, 80, 50],
+    baseSharpness: [50, 30, 100, 90, 80, 0, 0],
+    maxSharpness:  [50, 30, 100, 90, 80, 50, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -4959,8 +4959,8 @@ const __generated_switchaxe__37a: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [180, 0, 0, 0, 0, 70],
-    maxSharpness:  [180, 0, 0, 0, 0, 120],
+    baseSharpness: [180, 0, 0, 0, 0, 70, 0],
+    maxSharpness:  [180, 0, 0, 0, 0, 120, 0],
 
     switchaxeStats: {
         phialType: "element_phial",
@@ -4996,8 +4996,8 @@ const __generated_switchaxe__37b: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [60, 0, 0, 0, 0, 90],
-    maxSharpness:  [60, 0, 0, 0, 0, 140],
+    baseSharpness: [60, 0, 0, 0, 0, 90, 0],
+    maxSharpness:  [60, 0, 0, 0, 0, 140, 0],
 
     switchaxeStats: {
         phialType: "element_phial",
@@ -5033,8 +5033,8 @@ const __generated_switchaxe__38a: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [90, 70, 50, 30, 10, 0],
-    maxSharpness:  [90, 70, 50, 30, 60, 0],
+    baseSharpness: [90, 70, 50, 30, 10, 0, 0],
+    maxSharpness:  [90, 70, 50, 30, 60, 0, 0],
 
     switchaxeStats: {
         phialType: "dragon_phial",
@@ -5071,8 +5071,8 @@ const __generated_switchaxe__38b: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [110, 80, 60, 30, 20, 0],
-    maxSharpness:  [110, 80, 60, 30, 70, 0],
+    baseSharpness: [110, 80, 60, 30, 20, 0, 0],
+    maxSharpness:  [110, 80, 60, 30, 70, 0, 0],
 
     switchaxeStats: {
         phialType: "dragon_phial",
@@ -5110,8 +5110,8 @@ const __generated_switchaxe__38c: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [120, 90, 70, 30, 20, 20],
-    maxSharpness:  [120, 90, 70, 30, 20, 70],
+    baseSharpness: [120, 90, 70, 30, 20, 20, 0],
+    maxSharpness:  [120, 90, 70, 30, 20, 70, 0],
 
     switchaxeStats: {
         phialType: "dragon_phial",
@@ -5147,8 +5147,8 @@ const __generated_switchaxe__39a: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [50, 80, 90, 80, 0, 0],
-    maxSharpness:  [50, 80, 90, 100, 30, 0],
+    baseSharpness: [50, 80, 90, 80, 0, 0, 0],
+    maxSharpness:  [50, 80, 90, 100, 30, 0, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -5185,8 +5185,8 @@ const __generated_switchaxe__39b: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [50, 80, 100, 120, 0, 0],
-    maxSharpness:  [50, 80, 100, 120, 50, 0],
+    baseSharpness: [50, 80, 100, 120, 0, 0, 0],
+    maxSharpness:  [50, 80, 100, 120, 50, 0, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -5225,8 +5225,8 @@ const __generated_switchaxe__39c: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [50, 80, 90, 120, 10, 0],
-    maxSharpness:  [50, 80, 90, 120, 60, 0],
+    baseSharpness: [50, 80, 90, 120, 10, 0, 0],
+    maxSharpness:  [50, 80, 90, 120, 60, 0, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -5262,8 +5262,8 @@ const __generated_switchaxe__40a: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [150, 30, 30, 40, 0, 0],
-    maxSharpness:  [150, 30, 30, 90, 0, 0],
+    baseSharpness: [150, 30, 30, 40, 0, 0, 0],
+    maxSharpness:  [150, 30, 30, 90, 0, 0, 0],
 
     switchaxeStats: {
         phialType: "element_phial",
@@ -5300,8 +5300,8 @@ const __generated_switchaxe__40b: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [150, 20, 20, 60, 0, 0],
-    maxSharpness:  [150, 20, 20, 90, 20, 0],
+    baseSharpness: [150, 20, 20, 60, 0, 0, 0],
+    maxSharpness:  [150, 20, 20, 90, 20, 0, 0],
 
     switchaxeStats: {
         phialType: "element_phial",
@@ -5340,8 +5340,8 @@ const __generated_switchaxe__40c: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [160, 20, 20, 130, 20, 0],
-    maxSharpness:  [160, 20, 20, 130, 60, 10],
+    baseSharpness: [160, 20, 20, 130, 20, 0, 0],
+    maxSharpness:  [160, 20, 20, 130, 60, 10, 0],
 
     switchaxeStats: {
         phialType: "element_phial",
@@ -5377,8 +5377,8 @@ const __generated_switchaxe__41a: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [50, 60, 90, 0, 0, 0],
-    maxSharpness:  [50, 60, 140, 0, 0, 0],
+    baseSharpness: [50, 60, 90, 0, 0, 0, 0],
+    maxSharpness:  [50, 60, 140, 0, 0, 0, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -5415,8 +5415,8 @@ const __generated_switchaxe__41b: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [50, 90, 90, 20, 0, 0],
-    maxSharpness:  [50, 90, 90, 60, 10, 0],
+    baseSharpness: [50, 90, 90, 20, 0, 0, 0],
+    maxSharpness:  [50, 90, 90, 60, 10, 0, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -5455,8 +5455,8 @@ const __generated_switchaxe__41c: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [60, 90, 100, 50, 0, 0],
-    maxSharpness:  [60, 90, 100, 60, 40, 0],
+    baseSharpness: [60, 90, 100, 50, 0, 0, 0],
+    maxSharpness:  [60, 90, 100, 60, 40, 0, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -5502,8 +5502,8 @@ const __generated_switchaxe__ra: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [70, 70, 90, 20, 0, 0],
-    maxSharpness:  [70, 70, 90, 70, 0, 0],
+    baseSharpness: [70, 70, 90, 20, 0, 0, 0],
+    maxSharpness:  [70, 70, 90, 70, 0, 0, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -5557,8 +5557,8 @@ const __generated_switchaxe__rb: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [60, 70, 80, 40, 0, 0],
-    maxSharpness:  [60, 70, 80, 90, 0, 0],
+    baseSharpness: [60, 70, 80, 40, 0, 0, 0],
+    maxSharpness:  [60, 70, 80, 90, 0, 0, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -5620,8 +5620,8 @@ const __generated_switchaxe__rc: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [50, 70, 80, 30, 20, 0],
-    maxSharpness:  [50, 70, 80, 30, 70, 0],
+    baseSharpness: [50, 70, 80, 30, 20, 0, 0],
+    maxSharpness:  [50, 70, 80, 30, 70, 0, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -5694,8 +5694,8 @@ const __generated_switchaxe__rd: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [50, 70, 70, 30, 30, 0],
-    maxSharpness:  [50, 70, 70, 30, 80, 0],
+    baseSharpness: [50, 70, 70, 30, 30, 0, 0],
+    maxSharpness:  [50, 70, 70, 30, 80, 0, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -5778,8 +5778,8 @@ const __generated_switchaxe__re: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [50, 70, 50, 50, 30, 0],
-    maxSharpness:  [50, 70, 50, 50, 70, 10],
+    baseSharpness: [50, 70, 50, 50, 30, 0, 0],
+    maxSharpness:  [50, 70, 50, 50, 70, 10, 0],
 
     switchaxeStats: {
         phialType: "power_phial",
@@ -5873,8 +5873,8 @@ const __generated_switchaxe__rf: SwitchAxe = {
         ],
     ],
 
-    baseSharpness: [50, 70, 30, 60, 40, 0],
-    maxSharpness:  [50, 70, 30, 60, 70, 20],
+    baseSharpness: [50, 70, 30, 60, 40, 0, 0],
+    maxSharpness:  [50, 70, 30, 60, 70, 20, 0],
 
     switchaxeStats: {
         phialType: "power_phial",

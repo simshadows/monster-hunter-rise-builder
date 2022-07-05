@@ -158,8 +158,8 @@ const __generated_lance__1a: Lance = {
         ],
     ],
 
-    baseSharpness: [50, 90, 60, 0, 0, 0],
-    maxSharpness:  [50, 90, 100, 10, 0, 0],
+    baseSharpness: [50, 90, 60, 0, 0, 0, 0],
+    maxSharpness:  [50, 90, 100, 10, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "kamuraspeari",
@@ -190,8 +190,8 @@ const __generated_lance__1b: Lance = {
         ],
     ],
 
-    baseSharpness: [60, 70, 70, 0, 0, 0],
-    maxSharpness:  [60, 70, 110, 10, 0, 0],
+    baseSharpness: [60, 70, 70, 0, 0, 0, 0],
+    maxSharpness:  [60, 70, 110, 10, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "kamuraspearii",
@@ -223,8 +223,8 @@ const __generated_lance__1c: Lance = {
         ],
     ],
 
-    baseSharpness: [60, 70, 90, 30, 0, 0],
-    maxSharpness:  [60, 70, 90, 80, 0, 0],
+    baseSharpness: [60, 70, 90, 30, 0, 0, 0],
+    maxSharpness:  [60, 70, 90, 80, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "kamuraspeariii",
@@ -257,8 +257,8 @@ const __generated_lance__1d: Lance = {
         ],
     ],
 
-    baseSharpness: [50, 70, 80, 30, 20, 0],
-    maxSharpness:  [50, 70, 80, 30, 70, 0],
+    baseSharpness: [50, 70, 80, 30, 20, 0, 0],
+    maxSharpness:  [50, 70, 80, 30, 70, 0, 0],
 
     filterHelpers: {
         nameLower: "kamuraspeariv",
@@ -293,8 +293,8 @@ const __generated_lance__1e: Lance = {
         ],
     ],
 
-    baseSharpness: [60, 80, 90, 40, 30, 0],
-    maxSharpness:  [60, 80, 90, 40, 70, 10],
+    baseSharpness: [60, 80, 90, 40, 30, 0, 0],
+    maxSharpness:  [60, 80, 90, 40, 70, 10, 0],
 
     filterHelpers: {
         nameLower: "kamuraspearv",
@@ -330,8 +330,8 @@ const __generated_lance__1f: Lance = {
         ],
     ],
 
-    baseSharpness: [40, 90, 60, 60, 50, 0],
-    maxSharpness:  [40, 90, 60, 60, 80, 20],
+    baseSharpness: [40, 90, 60, 60, 50, 0, 0],
+    maxSharpness:  [40, 90, 60, 60, 80, 20, 0],
 
     filterHelpers: {
         nameLower: "kamuraninjaspear",
@@ -366,8 +366,8 @@ const __generated_lance__2a: Lance = {
         ],
     ],
 
-    baseSharpness: [100, 30, 90, 30, 0, 0],
-    maxSharpness:  [100, 30, 90, 70, 10, 0],
+    baseSharpness: [100, 30, 90, 30, 0, 0, 0],
+    maxSharpness:  [100, 30, 90, 70, 10, 0, 0],
 
     filterHelpers: {
         nameLower: "gosslancei",
@@ -403,8 +403,8 @@ const __generated_lance__2b: Lance = {
         ],
     ],
 
-    baseSharpness: [100, 30, 110, 40, 20, 0],
-    maxSharpness:  [100, 30, 110, 40, 70, 0],
+    baseSharpness: [100, 30, 110, 40, 20, 0, 0],
+    maxSharpness:  [100, 30, 110, 40, 70, 0, 0],
 
     filterHelpers: {
         nameLower: "gosslanceii",
@@ -441,8 +441,8 @@ const __generated_lance__2c: Lance = {
         ],
     ],
 
-    baseSharpness: [100, 30, 100, 40, 30, 0],
-    maxSharpness:  [100, 30, 100, 40, 70, 10],
+    baseSharpness: [100, 30, 100, 40, 30, 0, 0],
+    maxSharpness:  [100, 30, 100, 40, 70, 10, 0],
 
     filterHelpers: {
         nameLower: "abominablelance",
@@ -477,8 +477,8 @@ const __generated_lance__3a: Lance = {
         ],
     ],
 
-    baseSharpness: [70, 40, 40, 50, 0, 0],
-    maxSharpness:  [70, 40, 40, 70, 30, 0],
+    baseSharpness: [70, 40, 40, 50, 0, 0, 0],
+    maxSharpness:  [70, 40, 40, 70, 30, 0, 0],
 
     filterHelpers: {
         nameLower: "hanamohananarei",
@@ -514,8 +514,8 @@ const __generated_lance__3b: Lance = {
         ],
     ],
 
-    baseSharpness: [110, 100, 70, 30, 40, 0],
-    maxSharpness:  [110, 100, 70, 30, 70, 20],
+    baseSharpness: [110, 100, 70, 30, 40, 0, 0],
+    maxSharpness:  [110, 100, 70, 30, 70, 20, 0],
 
     filterHelpers: {
         nameLower: "hanamohananareii",
@@ -552,8 +552,8 @@ const __generated_lance__3c: Lance = {
         ],
     ],
 
-    baseSharpness: [110, 100, 70, 20, 50, 0],
-    maxSharpness:  [110, 100, 70, 20, 50, 50],
+    baseSharpness: [110, 100, 70, 20, 50, 0, 0],
+    maxSharpness:  [110, 100, 70, 20, 50, 50, 0],
 
     filterHelpers: {
         nameLower: "kimigakiru",
@@ -588,8 +588,8 @@ const __generated_lance__4a: Lance = {
         ],
     ],
 
-    baseSharpness: [40, 60, 70, 30, 0, 0],
-    maxSharpness:  [40, 60, 70, 80, 0, 0],
+    baseSharpness: [40, 60, 70, 30, 0, 0, 0],
+    maxSharpness:  [40, 60, 70, 80, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "naagserpentbladei",
@@ -625,8 +625,8 @@ const __generated_lance__4b: Lance = {
         ],
     ],
 
-    baseSharpness: [60, 50, 50, 40, 0, 0],
-    maxSharpness:  [60, 50, 50, 90, 0, 0],
+    baseSharpness: [60, 50, 50, 40, 0, 0, 0],
+    maxSharpness:  [60, 50, 50, 90, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "naagserpentbladeii",
@@ -662,8 +662,8 @@ const __generated_lance__4c: Lance = {
         ],
     ],
 
-    baseSharpness: [60, 60, 60, 70, 0, 0],
-    maxSharpness:  [60, 60, 60, 70, 40, 10],
+    baseSharpness: [60, 60, 60, 70, 0, 0, 0],
+    maxSharpness:  [60, 60, 60, 70, 40, 10, 0],
 
     filterHelpers: {
         nameLower: "devtaserpentblade",
@@ -696,8 +696,8 @@ const __generated_lance__5a: Lance = {
         ],
     ],
 
-    baseSharpness: [30, 80, 70, 20, 0, 0],
-    maxSharpness:  [30, 80, 70, 70, 0, 0],
+    baseSharpness: [30, 80, 70, 20, 0, 0, 0],
+    maxSharpness:  [30, 80, 70, 70, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "distensioni",
@@ -731,8 +731,8 @@ const __generated_lance__5b: Lance = {
         ],
     ],
 
-    baseSharpness: [40, 90, 110, 60, 0, 0],
-    maxSharpness:  [40, 90, 110, 100, 10, 0],
+    baseSharpness: [40, 90, 110, 60, 0, 0, 0],
+    maxSharpness:  [40, 90, 110, 100, 10, 0, 0],
 
     filterHelpers: {
         nameLower: "distensionii",
@@ -767,8 +767,8 @@ const __generated_lance__5c: Lance = {
         ],
     ],
 
-    baseSharpness: [40, 90, 110, 110, 0, 0],
-    maxSharpness:  [40, 90, 110, 130, 30, 0],
+    baseSharpness: [40, 90, 110, 110, 0, 0, 0],
+    maxSharpness:  [40, 90, 110, 130, 30, 0, 0],
 
     filterHelpers: {
         nameLower: "croaker",
@@ -801,8 +801,8 @@ const __generated_lance__6a: Lance = {
         ],
     ],
 
-    baseSharpness: [80, 30, 50, 40, 0, 0],
-    maxSharpness:  [80, 30, 50, 90, 0, 0],
+    baseSharpness: [80, 30, 50, 40, 0, 0, 0],
+    maxSharpness:  [80, 30, 50, 90, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "windthieflancei",
@@ -835,8 +835,8 @@ const __generated_lance__6b: Lance = {
         ],
     ],
 
-    baseSharpness: [80, 40, 30, 50, 0, 0],
-    maxSharpness:  [80, 40, 30, 50, 50, 0],
+    baseSharpness: [80, 40, 30, 50, 0, 0, 0],
+    maxSharpness:  [80, 40, 30, 50, 50, 0, 0],
 
     filterHelpers: {
         nameLower: "windthieflanceii",
@@ -870,8 +870,8 @@ const __generated_lance__6c: Lance = {
         ],
     ],
 
-    baseSharpness: [80, 50, 20, 50, 50, 0],
-    maxSharpness:  [80, 50, 20, 50, 50, 50],
+    baseSharpness: [80, 50, 20, 50, 50, 0, 0],
+    maxSharpness:  [80, 50, 20, 50, 50, 50, 0],
 
     filterHelpers: {
         nameLower: "galelance",
@@ -904,8 +904,8 @@ const __generated_lance__7a: Lance = {
         ],
     ],
 
-    baseSharpness: [70, 60, 50, 20, 0, 0],
-    maxSharpness:  [70, 60, 50, 70, 0, 0],
+    baseSharpness: [70, 60, 50, 20, 0, 0, 0],
+    maxSharpness:  [70, 60, 50, 70, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "sharktoothspeari",
@@ -939,8 +939,8 @@ const __generated_lance__7b: Lance = {
         ],
     ],
 
-    baseSharpness: [110, 60, 40, 40, 0, 0],
-    maxSharpness:  [110, 60, 40, 80, 10, 0],
+    baseSharpness: [110, 60, 40, 40, 0, 0, 0],
+    maxSharpness:  [110, 60, 40, 80, 10, 0, 0],
 
     filterHelpers: {
         nameLower: "sharktoothspearii",
@@ -976,8 +976,8 @@ const __generated_lance__7c: Lance = {
         ],
     ],
 
-    baseSharpness: [130, 60, 40, 50, 20, 0],
-    maxSharpness:  [130, 60, 40, 50, 60, 10],
+    baseSharpness: [130, 60, 40, 50, 20, 0, 0],
+    maxSharpness:  [130, 60, 40, 50, 60, 10, 0],
 
     filterHelpers: {
         nameLower: "razortoothspear",
@@ -1008,8 +1008,8 @@ const __generated_lance__8a: Lance = {
         ],
     ],
 
-    baseSharpness: [80, 70, 50, 0, 0, 0],
-    maxSharpness:  [80, 70, 90, 10, 0, 0],
+    baseSharpness: [80, 70, 50, 0, 0, 0, 0],
+    maxSharpness:  [80, 70, 90, 10, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "ironlancei",
@@ -1040,8 +1040,8 @@ const __generated_lance__8b: Lance = {
         ],
     ],
 
-    baseSharpness: [70, 60, 70, 0, 0, 0],
-    maxSharpness:  [70, 60, 110, 10, 0, 0],
+    baseSharpness: [70, 60, 70, 0, 0, 0, 0],
+    maxSharpness:  [70, 60, 110, 10, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "ironlanceii",
@@ -1073,8 +1073,8 @@ const __generated_lance__8c: Lance = {
         ],
     ],
 
-    baseSharpness: [80, 80, 60, 30, 0, 0],
-    maxSharpness:  [80, 80, 60, 80, 0, 0],
+    baseSharpness: [80, 80, 60, 30, 0, 0, 0],
+    maxSharpness:  [80, 80, 60, 80, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "millenniallance",
@@ -1107,8 +1107,8 @@ const __generated_lance__8d: Lance = {
         ],
     ],
 
-    baseSharpness: [90, 70, 40, 50, 0, 0],
-    maxSharpness:  [90, 70, 40, 80, 20, 0],
+    baseSharpness: [90, 70, 40, 50, 0, 0, 0],
+    maxSharpness:  [90, 70, 40, 80, 20, 0, 0],
 
     filterHelpers: {
         nameLower: "paladinlancei",
@@ -1142,8 +1142,8 @@ const __generated_lance__8e: Lance = {
         ],
     ],
 
-    baseSharpness: [100, 90, 90, 50, 20, 0],
-    maxSharpness:  [100, 90, 90, 50, 50, 20],
+    baseSharpness: [100, 90, 90, 50, 20, 0, 0],
+    maxSharpness:  [100, 90, 90, 50, 50, 20, 0],
 
     filterHelpers: {
         nameLower: "paladinlanceii",
@@ -1178,8 +1178,8 @@ const __generated_lance__8f: Lance = {
         ],
     ],
 
-    baseSharpness: [90, 90, 90, 50, 30, 0],
-    maxSharpness:  [90, 90, 90, 50, 50, 30],
+    baseSharpness: [90, 90, 90, 50, 30, 0, 0],
+    maxSharpness:  [90, 90, 90, 50, 50, 30, 0],
 
     filterHelpers: {
         nameLower: "rampart",
@@ -1213,8 +1213,8 @@ const __generated_lance__9a: Lance = {
         ],
     ],
 
-    baseSharpness: [60, 60, 120, 40, 20, 0],
-    maxSharpness:  [60, 60, 120, 40, 70, 0],
+    baseSharpness: [60, 60, 120, 40, 20, 0, 0],
+    maxSharpness:  [60, 60, 120, 40, 70, 0, 0],
 
     filterHelpers: {
         nameLower: "babelspeari",
@@ -1249,8 +1249,8 @@ const __generated_lance__9b: Lance = {
         ],
     ],
 
-    baseSharpness: [50, 50, 160, 60, 30, 0],
-    maxSharpness:  [50, 50, 160, 60, 60, 20],
+    baseSharpness: [50, 50, 160, 60, 30, 0, 0],
+    maxSharpness:  [50, 50, 160, 60, 60, 20, 0],
 
     filterHelpers: {
         nameLower: "babelspearii",
@@ -1287,8 +1287,8 @@ const __generated_lance__9c: Lance = {
         ],
     ],
 
-    baseSharpness: [20, 20, 190, 80, 40, 0],
-    maxSharpness:  [20, 20, 190, 80, 40, 50],
+    baseSharpness: [20, 20, 190, 80, 40, 0, 0],
+    maxSharpness:  [20, 20, 190, 80, 40, 50, 0],
 
     filterHelpers: {
         nameLower: "elderbabelspear",
@@ -1324,8 +1324,8 @@ const __generated_lance__10a: Lance = {
         ],
     ],
 
-    baseSharpness: [90, 90, 80, 40, 0, 0],
-    maxSharpness:  [90, 90, 80, 90, 0, 0],
+    baseSharpness: [90, 90, 80, 40, 0, 0, 0],
+    maxSharpness:  [90, 90, 80, 90, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "venomlancei",
@@ -1362,8 +1362,8 @@ const __generated_lance__10b: Lance = {
         ],
     ],
 
-    baseSharpness: [80, 80, 80, 60, 0, 0],
-    maxSharpness:  [80, 80, 80, 100, 10, 0],
+    baseSharpness: [80, 80, 80, 60, 0, 0, 0],
+    maxSharpness:  [80, 80, 80, 100, 10, 0, 0],
 
     filterHelpers: {
         nameLower: "venomlanceii",
@@ -1401,8 +1401,8 @@ const __generated_lance__10c: Lance = {
         ],
     ],
 
-    baseSharpness: [100, 90, 80, 80, 0, 0],
-    maxSharpness:  [100, 90, 80, 90, 40, 0],
+    baseSharpness: [100, 90, 80, 80, 0, 0, 0],
+    maxSharpness:  [100, 90, 80, 90, 40, 0, 0],
 
     filterHelpers: {
         nameLower: "basariosvenomspear",
@@ -1435,8 +1435,8 @@ const __generated_lance__11a: Lance = {
         ],
     ],
 
-    baseSharpness: [50, 70, 80, 100, 0, 0],
-    maxSharpness:  [50, 70, 80, 100, 50, 0],
+    baseSharpness: [50, 70, 80, 100, 0, 0, 0],
+    maxSharpness:  [50, 70, 80, 100, 50, 0, 0],
 
     filterHelpers: {
         nameLower: "hiddenstingeri",
@@ -1470,8 +1470,8 @@ const __generated_lance__11b: Lance = {
         ],
     ],
 
-    baseSharpness: [100, 30, 70, 100, 50, 0],
-    maxSharpness:  [100, 30, 70, 100, 70, 30],
+    baseSharpness: [100, 30, 70, 100, 50, 0, 0],
+    maxSharpness:  [100, 30, 70, 100, 70, 30, 0],
 
     filterHelpers: {
         nameLower: "hiddenstingerii",
@@ -1506,8 +1506,8 @@ const __generated_lance__11c: Lance = {
         ],
     ],
 
-    baseSharpness: [70, 40, 110, 90, 60, 30],
-    maxSharpness:  [70, 40, 110, 90, 60, 30],
+    baseSharpness: [70, 40, 110, 90, 60, 30, 0],
+    maxSharpness:  [70, 40, 110, 90, 60, 30, 0],
 
     filterHelpers: {
         nameLower: "nightrainsblack",
@@ -1541,8 +1541,8 @@ const __generated_lance__12a: Lance = {
         ],
     ],
 
-    baseSharpness: [90, 80, 90, 40, 0, 0],
-    maxSharpness:  [90, 80, 90, 60, 30, 0],
+    baseSharpness: [90, 80, 90, 40, 0, 0, 0],
+    maxSharpness:  [90, 80, 90, 60, 30, 0, 0],
 
     filterHelpers: {
         nameLower: "growlingwyverni",
@@ -1577,8 +1577,8 @@ const __generated_lance__12b: Lance = {
         ],
     ],
 
-    baseSharpness: [70, 80, 90, 60, 0, 0],
-    maxSharpness:  [70, 80, 90, 80, 30, 0],
+    baseSharpness: [70, 80, 90, 60, 0, 0, 0],
+    maxSharpness:  [70, 80, 90, 80, 30, 0, 0],
 
     filterHelpers: {
         nameLower: "growlingwyvernii",
@@ -1615,8 +1615,8 @@ const __generated_lance__12c: Lance = {
         ],
     ],
 
-    baseSharpness: [70, 80, 90, 90, 20, 0],
-    maxSharpness:  [70, 80, 90, 90, 70, 0],
+    baseSharpness: [70, 80, 90, 90, 20, 0, 0],
+    maxSharpness:  [70, 80, 90, 90, 70, 0, 0],
 
     filterHelpers: {
         nameLower: "roaringwyvern",
@@ -1648,8 +1648,8 @@ const __generated_lance__13a: Lance = {
         ],
     ],
 
-    baseSharpness: [130, 30, 50, 40, 0, 0],
-    maxSharpness:  [130, 30, 50, 90, 0, 0],
+    baseSharpness: [130, 30, 50, 40, 0, 0, 0],
+    maxSharpness:  [130, 30, 50, 90, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "kadachilancei",
@@ -1683,8 +1683,8 @@ const __generated_lance__13b: Lance = {
         ],
     ],
 
-    baseSharpness: [120, 70, 40, 40, 30, 0],
-    maxSharpness:  [120, 70, 40, 40, 80, 0],
+    baseSharpness: [120, 70, 40, 40, 30, 0, 0],
+    maxSharpness:  [120, 70, 40, 40, 80, 0, 0],
 
     filterHelpers: {
         nameLower: "kadachilanceii",
@@ -1719,8 +1719,8 @@ const __generated_lance__13c: Lance = {
         ],
     ],
 
-    baseSharpness: [150, 80, 40, 40, 40, 0],
-    maxSharpness:  [150, 80, 40, 40, 70, 20],
+    baseSharpness: [150, 80, 40, 40, 40, 0, 0],
+    maxSharpness:  [150, 80, 40, 40, 70, 20, 0],
 
     filterHelpers: {
         nameLower: "shockspear",
@@ -1753,8 +1753,8 @@ const __generated_lance__14a: Lance = {
         ],
     ],
 
-    baseSharpness: [30, 50, 80, 40, 0, 0],
-    maxSharpness:  [30, 50, 80, 90, 0, 0],
+    baseSharpness: [30, 50, 80, 40, 0, 0, 0],
+    maxSharpness:  [30, 50, 80, 90, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "aknosomlancei",
@@ -1787,8 +1787,8 @@ const __generated_lance__14b: Lance = {
         ],
     ],
 
-    baseSharpness: [40, 50, 100, 60, 0, 0],
-    maxSharpness:  [40, 50, 100, 100, 10, 0],
+    baseSharpness: [40, 50, 100, 60, 0, 0, 0],
+    maxSharpness:  [40, 50, 100, 100, 10, 0, 0],
 
     filterHelpers: {
         nameLower: "aknosomlanceii",
@@ -1823,8 +1823,8 @@ const __generated_lance__14c: Lance = {
         ],
     ],
 
-    baseSharpness: [50, 50, 130, 60, 10, 0],
-    maxSharpness:  [50, 50, 130, 60, 40, 20],
+    baseSharpness: [50, 50, 130, 60, 10, 0, 0],
+    maxSharpness:  [50, 50, 130, 60, 40, 20, 0],
 
     filterHelpers: {
         nameLower: "aknosomlanceiii",
@@ -1860,8 +1860,8 @@ const __generated_lance__14d: Lance = {
         ],
     ],
 
-    baseSharpness: [50, 50, 160, 60, 30, 0],
-    maxSharpness:  [50, 50, 160, 60, 40, 40],
+    baseSharpness: [50, 50, 160, 60, 30, 0, 0],
+    maxSharpness:  [50, 50, 160, 60, 40, 40, 0],
 
     filterHelpers: {
         nameLower: "dawnbreakerlance",
@@ -1894,8 +1894,8 @@ const __generated_lance__15a: Lance = {
         ],
     ],
 
-    baseSharpness: [60, 60, 130, 0, 0, 0],
-    maxSharpness:  [60, 60, 130, 50, 0, 0],
+    baseSharpness: [60, 60, 130, 0, 0, 0, 0],
+    maxSharpness:  [60, 60, 130, 50, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "ruggedlancei",
@@ -1928,8 +1928,8 @@ const __generated_lance__15b: Lance = {
         ],
     ],
 
-    baseSharpness: [60, 50, 160, 30, 0, 0],
-    maxSharpness:  [60, 50, 160, 80, 0, 0],
+    baseSharpness: [60, 50, 160, 30, 0, 0, 0],
+    maxSharpness:  [60, 50, 160, 80, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "ruggedlanceii",
@@ -1963,8 +1963,8 @@ const __generated_lance__15c: Lance = {
         ],
     ],
 
-    baseSharpness: [60, 40, 190, 50, 10, 0],
-    maxSharpness:  [60, 40, 190, 50, 40, 20],
+    baseSharpness: [60, 40, 190, 50, 10, 0, 0],
+    maxSharpness:  [60, 40, 190, 50, 40, 20, 0],
 
     filterHelpers: {
         nameLower: "barrothcarver",
@@ -1999,8 +1999,8 @@ const __generated_lance__16a: Lance = {
         ],
     ],
 
-    baseSharpness: [50, 60, 70, 70, 0, 0],
-    maxSharpness:  [50, 60, 70, 120, 0, 0],
+    baseSharpness: [50, 60, 70, 70, 0, 0, 0],
+    maxSharpness:  [50, 60, 70, 120, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "drilllancei",
@@ -2036,8 +2036,8 @@ const __generated_lance__16b: Lance = {
         ],
     ],
 
-    baseSharpness: [50, 60, 70, 120, 0, 0],
-    maxSharpness:  [50, 60, 70, 150, 20, 0],
+    baseSharpness: [50, 60, 70, 120, 0, 0, 0],
+    maxSharpness:  [50, 60, 70, 150, 20, 0, 0],
 
     filterHelpers: {
         nameLower: "drilllanceii",
@@ -2075,8 +2075,8 @@ const __generated_lance__16c: Lance = {
         ],
     ],
 
-    baseSharpness: [50, 60, 70, 160, 10, 0],
-    maxSharpness:  [50, 60, 70, 160, 60, 0],
+    baseSharpness: [50, 60, 70, 160, 10, 0, 0],
+    maxSharpness:  [50, 60, 70, 160, 60, 0, 0],
 
     filterHelpers: {
         nameLower: "gigadrilllance",
@@ -2111,8 +2111,8 @@ const __generated_lance__17a: Lance = {
         ],
     ],
 
-    baseSharpness: [100, 30, 40, 30, 0, 0],
-    maxSharpness:  [100, 30, 40, 80, 0, 0],
+    baseSharpness: [100, 30, 40, 30, 0, 0, 0],
+    maxSharpness:  [100, 30, 40, 80, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "volvistrokei",
@@ -2147,8 +2147,8 @@ const __generated_lance__17b: Lance = {
         ],
     ],
 
-    baseSharpness: [100, 40, 30, 80, 0, 0],
-    maxSharpness:  [100, 40, 30, 110, 20, 0],
+    baseSharpness: [100, 40, 30, 80, 0, 0, 0],
+    maxSharpness:  [100, 40, 30, 110, 20, 0, 0],
 
     filterHelpers: {
         nameLower: "volvistrokeii",
@@ -2184,8 +2184,8 @@ const __generated_lance__17c: Lance = {
         ],
     ],
 
-    baseSharpness: [100, 50, 50, 80, 20, 0],
-    maxSharpness:  [100, 50, 50, 80, 60, 10],
+    baseSharpness: [100, 50, 50, 80, 20, 0, 0],
+    maxSharpness:  [100, 50, 50, 80, 60, 10, 0],
 
     filterHelpers: {
         nameLower: "volvisweep",
@@ -2219,8 +2219,8 @@ const __generated_lance__18a: Lance = {
         ],
     ],
 
-    baseSharpness: [110, 20, 50, 20, 0, 0],
-    maxSharpness:  [110, 20, 50, 70, 0, 0],
+    baseSharpness: [110, 20, 50, 20, 0, 0, 0],
+    maxSharpness:  [110, 20, 50, 70, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "heatlancei",
@@ -2255,8 +2255,8 @@ const __generated_lance__18b: Lance = {
         ],
     ],
 
-    baseSharpness: [150, 20, 50, 30, 0, 0],
-    maxSharpness:  [150, 20, 50, 70, 10, 0],
+    baseSharpness: [150, 20, 50, 30, 0, 0, 0],
+    maxSharpness:  [150, 20, 50, 70, 10, 0, 0],
 
     filterHelpers: {
         nameLower: "heatlanceii",
@@ -2293,8 +2293,8 @@ const __generated_lance__18c: Lance = {
         ],
     ],
 
-    baseSharpness: [170, 20, 60, 50, 0, 0],
-    maxSharpness:  [170, 20, 60, 70, 30, 0],
+    baseSharpness: [170, 20, 60, 50, 0, 0, 0],
+    maxSharpness:  [170, 20, 60, 70, 30, 0, 0],
 
     filterHelpers: {
         nameLower: "heatstinger",
@@ -2325,8 +2325,8 @@ const __generated_lance__19a: Lance = {
         ],
     ],
 
-    baseSharpness: [70, 90, 40, 0, 0, 0],
-    maxSharpness:  [70, 90, 90, 0, 0, 0],
+    baseSharpness: [70, 90, 40, 0, 0, 0, 0],
+    maxSharpness:  [70, 90, 90, 0, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "bonelancei",
@@ -2357,8 +2357,8 @@ const __generated_lance__19b: Lance = {
         ],
     ],
 
-    baseSharpness: [80, 70, 50, 0, 0, 0],
-    maxSharpness:  [80, 70, 100, 0, 0, 0],
+    baseSharpness: [80, 70, 50, 0, 0, 0, 0],
+    maxSharpness:  [80, 70, 100, 0, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "hardbonelance",
@@ -2390,8 +2390,8 @@ const __generated_lance__19c: Lance = {
         ],
     ],
 
-    baseSharpness: [90, 50, 60, 0, 0, 0],
-    maxSharpness:  [90, 50, 110, 0, 0, 0],
+    baseSharpness: [90, 50, 60, 0, 0, 0, 0],
+    maxSharpness:  [90, 50, 110, 0, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "longhornspeari",
@@ -2424,8 +2424,8 @@ const __generated_lance__19d: Lance = {
         ],
     ],
 
-    baseSharpness: [100, 70, 70, 10, 0, 0],
-    maxSharpness:  [100, 70, 70, 60, 0, 0],
+    baseSharpness: [100, 70, 70, 10, 0, 0, 0],
+    maxSharpness:  [100, 70, 70, 60, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "longtuskspear",
@@ -2460,8 +2460,8 @@ const __generated_lance__19e: Lance = {
         ],
     ],
 
-    baseSharpness: [80, 70, 60, 40, 0, 0],
-    maxSharpness:  [80, 70, 60, 80, 10, 0],
+    baseSharpness: [80, 70, 60, 40, 0, 0, 0],
+    maxSharpness:  [80, 70, 60, 80, 10, 0, 0],
 
     filterHelpers: {
         nameLower: "barbariantuski",
@@ -2496,8 +2496,8 @@ const __generated_lance__19f: Lance = {
         ],
     ],
 
-    baseSharpness: [80, 70, 80, 70, 0, 0],
-    maxSharpness:  [80, 70, 80, 100, 20, 0],
+    baseSharpness: [80, 70, 80, 70, 0, 0, 0],
+    maxSharpness:  [80, 70, 80, 100, 20, 0, 0],
 
     filterHelpers: {
         nameLower: "barbarianfang",
@@ -2533,8 +2533,8 @@ const __generated_lance__20a: Lance = {
         ],
     ],
 
-    baseSharpness: [50, 30, 120, 70, 30, 0],
-    maxSharpness:  [50, 30, 120, 70, 60, 20],
+    baseSharpness: [50, 30, 120, 70, 30, 0, 0],
+    maxSharpness:  [50, 30, 120, 70, 60, 20, 0],
 
     filterHelpers: {
         nameLower: "tigerstingeri",
@@ -2570,8 +2570,8 @@ const __generated_lance__20b: Lance = {
         ],
     ],
 
-    baseSharpness: [50, 40, 120, 100, 40, 0],
-    maxSharpness:  [50, 40, 120, 100, 70, 20],
+    baseSharpness: [50, 40, 120, 100, 40, 0, 0],
+    maxSharpness:  [50, 40, 120, 100, 70, 20, 0],
 
     filterHelpers: {
         nameLower: "tigerstingerii",
@@ -2607,8 +2607,8 @@ const __generated_lance__20c: Lance = {
         ],
     ],
 
-    baseSharpness: [50, 50, 120, 100, 60, 20],
-    maxSharpness:  [50, 50, 120, 100, 60, 20],
+    baseSharpness: [50, 50, 120, 100, 60, 20, 0],
+    maxSharpness:  [50, 50, 120, 100, 60, 20, 0],
 
     filterHelpers: {
         nameLower: "tigrexlance",
@@ -2641,8 +2641,8 @@ const __generated_lance__21a: Lance = {
         ],
     ],
 
-    baseSharpness: [50, 60, 70, 70, 0, 0],
-    maxSharpness:  [50, 60, 70, 100, 20, 0],
+    baseSharpness: [50, 60, 70, 70, 0, 0, 0],
+    maxSharpness:  [50, 60, 70, 100, 20, 0, 0],
 
     filterHelpers: {
         nameLower: "tusklancei",
@@ -2676,8 +2676,8 @@ const __generated_lance__21b: Lance = {
         ],
     ],
 
-    baseSharpness: [50, 70, 80, 100, 50, 0],
-    maxSharpness:  [50, 70, 80, 100, 70, 30],
+    baseSharpness: [50, 70, 80, 100, 50, 0, 0],
+    maxSharpness:  [50, 70, 80, 100, 70, 30, 0],
 
     filterHelpers: {
         nameLower: "tusklanceii",
@@ -2712,8 +2712,8 @@ const __generated_lance__21c: Lance = {
         ],
     ],
 
-    baseSharpness: [50, 70, 80, 90, 60, 0],
-    maxSharpness:  [50, 70, 80, 90, 60, 50],
+    baseSharpness: [50, 70, 80, 90, 60, 0, 0],
+    maxSharpness:  [50, 70, 80, 90, 60, 50, 0],
 
     filterHelpers: {
         nameLower: "sabertooth",
@@ -2746,8 +2746,8 @@ const __generated_lance__22a: Lance = {
         ],
     ],
 
-    baseSharpness: [60, 70, 20, 50, 0, 0],
-    maxSharpness:  [60, 70, 20, 100, 0, 0],
+    baseSharpness: [60, 70, 20, 50, 0, 0, 0],
+    maxSharpness:  [60, 70, 20, 100, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "pukeispeari",
@@ -2782,8 +2782,8 @@ const __generated_lance__22b: Lance = {
         ],
     ],
 
-    baseSharpness: [60, 60, 70, 90, 20, 0],
-    maxSharpness:  [60, 60, 70, 90, 70, 0],
+    baseSharpness: [60, 60, 70, 90, 20, 0, 0],
+    maxSharpness:  [60, 60, 70, 90, 70, 0, 0],
 
     filterHelpers: {
         nameLower: "pukeispearii",
@@ -2819,8 +2819,8 @@ const __generated_lance__22c: Lance = {
         ],
     ],
 
-    baseSharpness: [60, 60, 100, 100, 30, 0],
-    maxSharpness:  [60, 60, 100, 100, 70, 10],
+    baseSharpness: [60, 60, 100, 100, 30, 0, 0],
+    maxSharpness:  [60, 60, 100, 100, 70, 10, 0],
 
     filterHelpers: {
         nameLower: "daturaspear",
@@ -2855,8 +2855,8 @@ const __generated_lance__23a: Lance = {
         ],
     ],
 
-    baseSharpness: [60, 50, 50, 40, 0, 0],
-    maxSharpness:  [60, 50, 50, 80, 10, 0],
+    baseSharpness: [60, 50, 50, 40, 0, 0, 0],
+    maxSharpness:  [60, 50, 50, 80, 10, 0, 0],
 
     filterHelpers: {
         nameLower: "redtaili",
@@ -2891,8 +2891,8 @@ const __generated_lance__23b: Lance = {
         ],
     ],
 
-    baseSharpness: [70, 80, 80, 100, 20, 0],
-    maxSharpness:  [70, 80, 80, 100, 70, 0],
+    baseSharpness: [70, 80, 80, 100, 20, 0, 0],
+    maxSharpness:  [70, 80, 80, 100, 70, 0, 0],
 
     filterHelpers: {
         nameLower: "redtailii",
@@ -2928,8 +2928,8 @@ const __generated_lance__23c: Lance = {
         ],
     ],
 
-    baseSharpness: [50, 40, 110, 110, 40, 0],
-    maxSharpness:  [50, 40, 110, 110, 70, 20],
+    baseSharpness: [50, 40, 110, 110, 40, 0, 0],
+    maxSharpness:  [50, 40, 110, 110, 70, 20, 0],
 
     filterHelpers: {
         nameLower: "spearofprominence",
@@ -2962,8 +2962,8 @@ const __generated_lance__24a: Lance = {
         ],
     ],
 
-    baseSharpness: [40, 70, 50, 40, 0, 0],
-    maxSharpness:  [40, 70, 50, 90, 0, 0],
+    baseSharpness: [40, 70, 50, 40, 0, 0, 0],
+    maxSharpness:  [40, 70, 50, 90, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "spirallancei",
@@ -2997,8 +2997,8 @@ const __generated_lance__24b: Lance = {
         ],
     ],
 
-    baseSharpness: [50, 80, 70, 50, 0, 0],
-    maxSharpness:  [50, 80, 70, 90, 10, 0],
+    baseSharpness: [50, 80, 70, 50, 0, 0, 0],
+    maxSharpness:  [50, 80, 70, 90, 10, 0, 0],
 
     filterHelpers: {
         nameLower: "spirallanceii",
@@ -3033,8 +3033,8 @@ const __generated_lance__24c: Lance = {
         ],
     ],
 
-    baseSharpness: [50, 80, 80, 70, 20, 0],
-    maxSharpness:  [50, 80, 80, 70, 60, 10],
+    baseSharpness: [50, 80, 80, 70, 20, 0, 0],
+    maxSharpness:  [50, 80, 80, 70, 60, 10, 0],
 
     filterHelpers: {
         nameLower: "spiralsplash",
@@ -3067,8 +3067,8 @@ const __generated_lance__25a: Lance = {
         ],
     ],
 
-    baseSharpness: [100, 20, 60, 20, 0, 0],
-    maxSharpness:  [100, 20, 60, 70, 0, 0],
+    baseSharpness: [100, 20, 60, 20, 0, 0, 0],
+    maxSharpness:  [100, 20, 60, 70, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "ploshastai",
@@ -3102,8 +3102,8 @@ const __generated_lance__25b: Lance = {
         ],
     ],
 
-    baseSharpness: [100, 50, 40, 60, 0, 0],
-    maxSharpness:  [100, 50, 40, 60, 50, 0],
+    baseSharpness: [100, 50, 40, 60, 0, 0, 0],
+    maxSharpness:  [100, 50, 40, 60, 50, 0, 0],
 
     filterHelpers: {
         nameLower: "ploshastaii",
@@ -3137,8 +3137,8 @@ const __generated_lance__25c: Lance = {
         ],
     ],
 
-    baseSharpness: [100, 90, 40, 70, 0, 0],
-    maxSharpness:  [100, 90, 40, 70, 30, 20],
+    baseSharpness: [100, 90, 40, 70, 0, 0, 0],
+    maxSharpness:  [100, 90, 40, 70, 30, 20, 0],
 
     filterHelpers: {
         nameLower: "rhenohasta",
@@ -3171,8 +3171,8 @@ const __generated_lance__26a: Lance = {
         ],
     ],
 
-    baseSharpness: [60, 40, 50, 100, 0, 0],
-    maxSharpness:  [60, 40, 50, 110, 40, 0],
+    baseSharpness: [60, 40, 50, 100, 0, 0, 0],
+    maxSharpness:  [60, 40, 50, 110, 40, 0, 0],
 
     filterHelpers: {
         nameLower: "diabloslancei",
@@ -3206,8 +3206,8 @@ const __generated_lance__26b: Lance = {
         ],
     ],
 
-    baseSharpness: [100, 70, 30, 120, 30, 0],
-    maxSharpness:  [100, 70, 30, 120, 70, 10],
+    baseSharpness: [100, 70, 30, 120, 30, 0, 0],
+    maxSharpness:  [100, 70, 30, 120, 70, 10, 0],
 
     filterHelpers: {
         nameLower: "diabloslanceii",
@@ -3243,8 +3243,8 @@ const __generated_lance__26c: Lance = {
         ],
     ],
 
-    baseSharpness: [40, 60, 80, 120, 50, 0],
-    maxSharpness:  [40, 60, 80, 120, 70, 30],
+    baseSharpness: [40, 60, 80, 120, 50, 0, 0],
+    maxSharpness:  [40, 60, 80, 120, 70, 30, 0],
 
     filterHelpers: {
         nameLower: "diablosspear",
@@ -3278,8 +3278,8 @@ const __generated_lance__27a: Lance = {
         ],
     ],
 
-    baseSharpness: [70, 60, 40, 30, 0, 0],
-    maxSharpness:  [70, 60, 40, 80, 0, 0],
+    baseSharpness: [70, 60, 40, 30, 0, 0, 0],
+    maxSharpness:  [70, 60, 40, 80, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "kuluspeari",
@@ -3313,8 +3313,8 @@ const __generated_lance__27b: Lance = {
         ],
     ],
 
-    baseSharpness: [50, 50, 50, 50, 0, 0],
-    maxSharpness:  [50, 50, 50, 100, 0, 0],
+    baseSharpness: [50, 50, 50, 50, 0, 0, 0],
+    maxSharpness:  [50, 50, 50, 100, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "kuluspearii",
@@ -3349,8 +3349,8 @@ const __generated_lance__27c: Lance = {
         ],
     ],
 
-    baseSharpness: [100, 70, 50, 60, 20, 0],
-    maxSharpness:  [100, 70, 50, 60, 70, 0],
+    baseSharpness: [100, 70, 50, 60, 20, 0, 0],
+    maxSharpness:  [100, 70, 50, 60, 70, 0, 0],
 
     filterHelpers: {
         nameLower: "kuluskewer",
@@ -3387,8 +3387,8 @@ const __generated_lance__28a: Lance = {
         ],
     ],
 
-    baseSharpness: [70, 40, 50, 90, 0, 0],
-    maxSharpness:  [70, 40, 50, 140, 0, 0],
+    baseSharpness: [70, 40, 50, 90, 0, 0, 0],
+    maxSharpness:  [70, 40, 50, 140, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "usurper'scomingi",
@@ -3425,8 +3425,8 @@ const __generated_lance__28b: Lance = {
         ],
     ],
 
-    baseSharpness: [60, 50, 100, 100, 40, 0],
-    maxSharpness:  [60, 50, 100, 100, 90, 0],
+    baseSharpness: [60, 50, 100, 100, 40, 0, 0],
+    maxSharpness:  [60, 50, 100, 100, 90, 0, 0],
 
     filterHelpers: {
         nameLower: "usurper'scomingii",
@@ -3464,8 +3464,8 @@ const __generated_lance__28c: Lance = {
         ],
     ],
 
-    baseSharpness: [60, 40, 100, 100, 50, 0],
-    maxSharpness:  [60, 40, 100, 100, 60, 40],
+    baseSharpness: [60, 40, 100, 100, 50, 0, 0],
+    maxSharpness:  [60, 40, 100, 100, 60, 40, 0],
 
     filterHelpers: {
         nameLower: "despot'scacophony",
@@ -3498,8 +3498,8 @@ const __generated_lance__29a: Lance = {
         ],
     ],
 
-    baseSharpness: [80, 50, 50, 20, 0, 0],
-    maxSharpness:  [80, 50, 50, 70, 0, 0],
+    baseSharpness: [80, 50, 50, 20, 0, 0, 0],
+    maxSharpness:  [80, 50, 50, 70, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "azurecresti",
@@ -3533,8 +3533,8 @@ const __generated_lance__29b: Lance = {
         ],
     ],
 
-    baseSharpness: [100, 60, 40, 50, 0, 0],
-    maxSharpness:  [100, 60, 40, 80, 20, 0],
+    baseSharpness: [100, 60, 40, 50, 0, 0, 0],
+    maxSharpness:  [100, 60, 40, 80, 20, 0, 0],
 
     filterHelpers: {
         nameLower: "azurecrestii",
@@ -3569,8 +3569,8 @@ const __generated_lance__29c: Lance = {
         ],
     ],
 
-    baseSharpness: [100, 70, 60, 50, 20, 0],
-    maxSharpness:  [100, 70, 60, 50, 50, 20],
+    baseSharpness: [100, 70, 60, 50, 20, 0, 0],
+    maxSharpness:  [100, 70, 60, 50, 50, 20, 0],
 
     filterHelpers: {
         nameLower: "azurecrestiii",
@@ -3606,8 +3606,8 @@ const __generated_lance__29d: Lance = {
         ],
     ],
 
-    baseSharpness: [130, 30, 100, 60, 30, 0],
-    maxSharpness:  [130, 30, 100, 60, 50, 30],
+    baseSharpness: [130, 30, 100, 60, 30, 0, 0],
+    maxSharpness:  [130, 30, 100, 60, 50, 30, 0],
 
     filterHelpers: {
         nameLower: "greatazure",
@@ -3638,8 +3638,8 @@ const __generated_lance__30a: Lance = {
         ],
     ],
 
-    baseSharpness: [160, 20, 40, 80, 0, 0],
-    maxSharpness:  [160, 20, 40, 110, 20, 0],
+    baseSharpness: [160, 20, 40, 80, 0, 0, 0],
+    maxSharpness:  [160, 20, 40, 110, 20, 0, 0],
 
     filterHelpers: {
         nameLower: "sinisterspeari",
@@ -3671,8 +3671,8 @@ const __generated_lance__30b: Lance = {
         ],
     ],
 
-    baseSharpness: [170, 20, 20, 90, 0, 0],
-    maxSharpness:  [170, 20, 20, 110, 30, 0],
+    baseSharpness: [170, 20, 20, 90, 0, 0, 0],
+    maxSharpness:  [170, 20, 20, 110, 30, 0, 0],
 
     filterHelpers: {
         nameLower: "sinisterspearii",
@@ -3705,8 +3705,8 @@ const __generated_lance__30c: Lance = {
         ],
     ],
 
-    baseSharpness: [190, 10, 20, 90, 40, 0],
-    maxSharpness:  [190, 10, 20, 90, 60, 30],
+    baseSharpness: [190, 10, 20, 90, 40, 0, 0],
+    maxSharpness:  [190, 10, 20, 90, 60, 30, 0],
 
     filterHelpers: {
         nameLower: "sinistershadespear",
@@ -3737,8 +3737,8 @@ const __generated_lance__31a: Lance = {
         ],
     ],
 
-    baseSharpness: [50, 20, 100, 80, 0, 0],
-    maxSharpness:  [50, 20, 100, 130, 0, 0],
+    baseSharpness: [50, 20, 100, 80, 0, 0, 0],
+    maxSharpness:  [50, 20, 100, 130, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "demonlancei",
@@ -3770,8 +3770,8 @@ const __generated_lance__31b: Lance = {
         ],
     ],
 
-    baseSharpness: [20, 40, 100, 90, 0, 0],
-    maxSharpness:  [20, 40, 100, 130, 10, 0],
+    baseSharpness: [20, 40, 100, 90, 0, 0, 0],
+    maxSharpness:  [20, 40, 100, 130, 10, 0, 0],
 
     filterHelpers: {
         nameLower: "demonlanceii",
@@ -3804,8 +3804,8 @@ const __generated_lance__31c: Lance = {
         ],
     ],
 
-    baseSharpness: [50, 60, 90, 100, 0, 0],
-    maxSharpness:  [50, 60, 90, 100, 30, 20],
+    baseSharpness: [50, 60, 90, 100, 0, 0, 0],
+    maxSharpness:  [50, 60, 90, 100, 30, 20, 0],
 
     filterHelpers: {
         nameLower: "greatdemonlance",
@@ -3836,8 +3836,8 @@ const __generated_lance__32a: Lance = {
         ],
     ],
 
-    baseSharpness: [20, 20, 20, 40, 100, 0],
-    maxSharpness:  [20, 20, 20, 40, 150, 0],
+    baseSharpness: [20, 20, 20, 40, 100, 0, 0],
+    maxSharpness:  [20, 20, 20, 40, 150, 0, 0],
 
     filterHelpers: {
         nameLower: "azureelderspeari",
@@ -3869,8 +3869,8 @@ const __generated_lance__32b: Lance = {
         ],
     ],
 
-    baseSharpness: [20, 20, 50, 50, 110, 0],
-    maxSharpness:  [20, 20, 50, 50, 150, 10],
+    baseSharpness: [20, 20, 50, 50, 110, 0, 0],
+    maxSharpness:  [20, 20, 50, 50, 150, 10, 0],
 
     filterHelpers: {
         nameLower: "azureelderspearii",
@@ -3903,8 +3903,8 @@ const __generated_lance__32c: Lance = {
         ],
     ],
 
-    baseSharpness: [20, 20, 80, 60, 120, 0],
-    maxSharpness:  [20, 20, 80, 60, 150, 20],
+    baseSharpness: [20, 20, 80, 60, 120, 0, 0],
+    maxSharpness:  [20, 20, 80, 60, 150, 20, 0],
 
     filterHelpers: {
         nameLower: "abyssalgalelance",
@@ -3935,8 +3935,8 @@ const __generated_lance__33a: Lance = {
         ],
     ],
 
-    baseSharpness: [20, 20, 190, 40, 30, 0],
-    maxSharpness:  [20, 20, 190, 40, 50, 30],
+    baseSharpness: [20, 20, 190, 40, 30, 0, 0],
+    maxSharpness:  [20, 20, 190, 40, 50, 30, 0],
 
     filterHelpers: {
         nameLower: "thunderboltspeari",
@@ -3968,8 +3968,8 @@ const __generated_lance__33b: Lance = {
         ],
     ],
 
-    baseSharpness: [10, 20, 220, 40, 60, 0],
-    maxSharpness:  [10, 20, 220, 40, 70, 40],
+    baseSharpness: [10, 20, 220, 40, 60, 0, 0],
+    maxSharpness:  [10, 20, 220, 40, 70, 40, 0],
 
     filterHelpers: {
         nameLower: "abyssalstormlance",
@@ -4000,8 +4000,8 @@ const __generated_lance__34a: Lance = {
         ],
     ],
 
-    baseSharpness: [70, 60, 70, 80, 20, 0],
-    maxSharpness:  [70, 60, 70, 80, 70, 0],
+    baseSharpness: [70, 60, 70, 80, 20, 0, 0],
+    maxSharpness:  [70, 60, 70, 80, 70, 0, 0],
 
     filterHelpers: {
         nameLower: "rookslayerlancei",
@@ -4032,8 +4032,8 @@ const __generated_lance__34b: Lance = {
         ],
     ],
 
-    baseSharpness: [90, 80, 80, 70, 30, 0],
-    maxSharpness:  [90, 80, 80, 70, 80, 0],
+    baseSharpness: [90, 80, 80, 70, 30, 0, 0],
+    maxSharpness:  [90, 80, 80, 70, 80, 0, 0],
 
     filterHelpers: {
         nameLower: "rookslayerlanceii",
@@ -4066,8 +4066,8 @@ const __generated_lance__34c: Lance = {
         ],
     ],
 
-    baseSharpness: [90, 80, 80, 60, 40, 0],
-    maxSharpness:  [90, 80, 80, 60, 70, 20],
+    baseSharpness: [90, 80, 80, 60, 40, 0, 0],
+    maxSharpness:  [90, 80, 80, 60, 70, 20, 0],
 
     filterHelpers: {
         nameLower: "bazelmyniadlance",
@@ -4098,8 +4098,8 @@ const __generated_lance__35a: Lance = {
         ],
     ],
 
-    baseSharpness: [70, 40, 110, 90, 40, 0],
-    maxSharpness:  [70, 40, 110, 90, 60, 30],
+    baseSharpness: [70, 40, 110, 90, 40, 0, 0],
+    maxSharpness:  [70, 40, 110, 90, 60, 30, 0],
 
     filterHelpers: {
         nameLower: "icesteelspeari",
@@ -4132,8 +4132,8 @@ const __generated_lance__35b: Lance = {
         ],
     ],
 
-    baseSharpness: [80, 110, 70, 40, 40, 10],
-    maxSharpness:  [80, 110, 70, 40, 40, 60],
+    baseSharpness: [80, 110, 70, 40, 40, 10, 0],
+    maxSharpness:  [80, 110, 70, 40, 40, 60, 0],
 
     filterHelpers: {
         nameLower: "daora'sfang",
@@ -4164,8 +4164,8 @@ const __generated_lance__36a: Lance = {
         ],
     ],
 
-    baseSharpness: [150, 20, 70, 90, 20, 0],
-    maxSharpness:  [150, 20, 70, 90, 20, 50],
+    baseSharpness: [150, 20, 70, 90, 20, 0, 0],
+    maxSharpness:  [150, 20, 70, 90, 20, 50, 0],
 
     filterHelpers: {
         nameLower: "teostra'showli",
@@ -4197,8 +4197,8 @@ const __generated_lance__36b: Lance = {
         ],
     ],
 
-    baseSharpness: [150, 50, 30, 90, 30, 0],
-    maxSharpness:  [150, 50, 30, 90, 30, 50],
+    baseSharpness: [150, 50, 30, 90, 30, 0, 0],
+    maxSharpness:  [150, 50, 30, 90, 30, 50, 0],
 
     filterHelpers: {
         nameLower: "teostra'sroar",
@@ -4229,8 +4229,8 @@ const __generated_lance__37a: Lance = {
         ],
     ],
 
-    baseSharpness: [180, 0, 0, 0, 0, 70],
-    maxSharpness:  [180, 0, 0, 0, 0, 120],
+    baseSharpness: [180, 0, 0, 0, 0, 70, 0],
+    maxSharpness:  [180, 0, 0, 0, 0, 120, 0],
 
     filterHelpers: {
         nameLower: "redwingspeari",
@@ -4261,8 +4261,8 @@ const __generated_lance__37b: Lance = {
         ],
     ],
 
-    baseSharpness: [60, 0, 0, 0, 0, 90],
-    maxSharpness:  [60, 0, 0, 0, 0, 140],
+    baseSharpness: [60, 0, 0, 0, 0, 90, 0],
+    maxSharpness:  [60, 0, 0, 0, 0, 140, 0],
 
     filterHelpers: {
         nameLower: "reddnaughtspear",
@@ -4293,8 +4293,8 @@ const __generated_lance__38a: Lance = {
         ],
     ],
 
-    baseSharpness: [50, 50, 100, 0, 0, 0],
-    maxSharpness:  [50, 50, 150, 0, 0, 0],
+    baseSharpness: [50, 50, 100, 0, 0, 0, 0],
+    maxSharpness:  [50, 50, 150, 0, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "plegisneedlei",
@@ -4325,8 +4325,8 @@ const __generated_lance__38b: Lance = {
         ],
     ],
 
-    baseSharpness: [40, 40, 150, 20, 0, 0],
-    maxSharpness:  [40, 40, 150, 70, 0, 0],
+    baseSharpness: [40, 40, 150, 20, 0, 0, 0],
+    maxSharpness:  [40, 40, 150, 70, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "plegisneedleii",
@@ -4358,8 +4358,8 @@ const __generated_lance__38c: Lance = {
         ],
     ],
 
-    baseSharpness: [30, 30, 210, 80, 0, 0],
-    maxSharpness:  [30, 30, 210, 80, 50, 0],
+    baseSharpness: [30, 30, 210, 80, 0, 0, 0],
+    maxSharpness:  [30, 30, 210, 80, 50, 0, 0],
 
     filterHelpers: {
         nameLower: "mightyplegis",
@@ -4390,8 +4390,8 @@ const __generated_lance__39a: Lance = {
         ],
     ],
 
-    baseSharpness: [30, 90, 50, 30, 0, 0],
-    maxSharpness:  [30, 90, 50, 80, 0, 0],
+    baseSharpness: [30, 90, 50, 30, 0, 0, 0],
+    maxSharpness:  [30, 90, 50, 80, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "alacrantzei",
@@ -4423,8 +4423,8 @@ const __generated_lance__39b: Lance = {
         ],
     ],
 
-    baseSharpness: [70, 80, 60, 40, 0, 0],
-    maxSharpness:  [70, 80, 60, 90, 0, 0],
+    baseSharpness: [70, 80, 60, 40, 0, 0, 0],
+    maxSharpness:  [70, 80, 60, 90, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "alacrantzeii",
@@ -4456,8 +4456,8 @@ const __generated_lance__39c: Lance = {
         ],
     ],
 
-    baseSharpness: [100, 80, 60, 60, 0, 0],
-    maxSharpness:  [100, 80, 60, 80, 30, 0],
+    baseSharpness: [100, 80, 60, 60, 0, 0, 0],
+    maxSharpness:  [100, 80, 60, 80, 30, 0, 0],
 
     filterHelpers: {
         nameLower: "alacrantzeiii",
@@ -4490,8 +4490,8 @@ const __generated_lance__39d: Lance = {
         ],
     ],
 
-    baseSharpness: [80, 140, 60, 50, 20, 0],
-    maxSharpness:  [80, 140, 60, 50, 30, 40],
+    baseSharpness: [80, 140, 60, 50, 20, 0, 0],
+    maxSharpness:  [80, 140, 60, 50, 30, 40, 0],
 
     filterHelpers: {
         nameLower: "scorpionlance",
@@ -4522,8 +4522,8 @@ const __generated_lance__40a: Lance = {
         ],
     ],
 
-    baseSharpness: [120, 10, 50, 20, 0, 0],
-    maxSharpness:  [120, 10, 50, 70, 0, 0],
+    baseSharpness: [120, 10, 50, 20, 0, 0, 0],
+    maxSharpness:  [120, 10, 50, 70, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "fragrancei",
@@ -4556,8 +4556,8 @@ const __generated_lance__40b: Lance = {
         ],
     ],
 
-    baseSharpness: [100, 40, 60, 50, 0, 0],
-    maxSharpness:  [100, 40, 60, 100, 0, 0],
+    baseSharpness: [100, 40, 60, 50, 0, 0, 0],
+    maxSharpness:  [100, 40, 60, 100, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "fragranceii",
@@ -4592,8 +4592,8 @@ const __generated_lance__40c: Lance = {
         ],
     ],
 
-    baseSharpness: [80, 70, 80, 70, 0, 0],
-    maxSharpness:  [80, 70, 80, 80, 40, 0],
+    baseSharpness: [80, 70, 80, 70, 0, 0, 0],
+    maxSharpness:  [80, 70, 80, 80, 40, 0, 0],
 
     filterHelpers: {
         nameLower: "classyfragrance",
@@ -4633,8 +4633,8 @@ const __generated_lance__ra: Lance = {
         ],
     ],
 
-    baseSharpness: [70, 70, 90, 20, 0, 0],
-    maxSharpness:  [70, 70, 90, 70, 0, 0],
+    baseSharpness: [70, 70, 90, 20, 0, 0, 0],
+    maxSharpness:  [70, 70, 90, 70, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "rampagespeari",
@@ -4678,8 +4678,8 @@ const __generated_lance__rb: Lance = {
         ],
     ],
 
-    baseSharpness: [60, 70, 80, 40, 0, 0],
-    maxSharpness:  [60, 70, 80, 90, 0, 0],
+    baseSharpness: [60, 70, 80, 40, 0, 0, 0],
+    maxSharpness:  [60, 70, 80, 90, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "rampagespearii",
@@ -4731,8 +4731,8 @@ const __generated_lance__rc: Lance = {
         ],
     ],
 
-    baseSharpness: [50, 70, 80, 30, 20, 0],
-    maxSharpness:  [50, 70, 80, 30, 70, 0],
+    baseSharpness: [50, 70, 80, 30, 20, 0, 0],
+    maxSharpness:  [50, 70, 80, 30, 70, 0, 0],
 
     filterHelpers: {
         nameLower: "rampagespeariii",
@@ -4791,8 +4791,8 @@ const __generated_lance__rd: Lance = {
         ],
     ],
 
-    baseSharpness: [50, 70, 70, 30, 30, 0],
-    maxSharpness:  [50, 70, 70, 30, 80, 0],
+    baseSharpness: [50, 70, 70, 30, 30, 0, 0],
+    maxSharpness:  [50, 70, 70, 30, 80, 0, 0],
 
     filterHelpers: {
         nameLower: "rampagespeariv",
@@ -4861,8 +4861,8 @@ const __generated_lance__re: Lance = {
         ],
     ],
 
-    baseSharpness: [50, 70, 50, 50, 30, 0],
-    maxSharpness:  [50, 70, 50, 50, 70, 10],
+    baseSharpness: [50, 70, 50, 50, 30, 0, 0],
+    maxSharpness:  [50, 70, 50, 50, 70, 10, 0],
 
     filterHelpers: {
         nameLower: "rampagespearv",
@@ -4939,8 +4939,8 @@ const __generated_lance__rf: Lance = {
         ],
     ],
 
-    baseSharpness: [50, 70, 30, 60, 40, 0],
-    maxSharpness:  [50, 70, 30, 60, 70, 20],
+    baseSharpness: [50, 70, 30, 60, 40, 0, 0],
+    maxSharpness:  [50, 70, 30, 60, 70, 20, 0],
 
     filterHelpers: {
         nameLower: "rampagespears",

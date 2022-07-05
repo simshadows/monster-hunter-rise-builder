@@ -18,6 +18,7 @@ const SHARPNESS_COLOURS = [
     "var(--color-sharpness--green)",
     "var(--color-sharpness--blue)",
     "var(--color-sharpness--white)",
+    "var(--color-sharpness--purple)",
 ] as const;
 
 function renderSection(values: Sharpness, height: string, circles: string[]) {
