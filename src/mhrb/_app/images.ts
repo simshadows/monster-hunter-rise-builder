@@ -37,10 +37,12 @@ imgPathMapEntries.push(
 import imgDecoSlot1Empty from "../_images/deco_slot1.svg";
 import imgDecoSlot2Empty from "../_images/deco_slot2.svg";
 import imgDecoSlot3Empty from "../_images/deco_slot3.svg";
+//import imgDecoSlot4Empty from "../_images/deco_slot4.svg";
 imgPathMapEntries.push(
     ["deco_slot1_empty", imgDecoSlot1Empty],
     ["deco_slot2_empty", imgDecoSlot2Empty],
     ["deco_slot3_empty", imgDecoSlot3Empty],
+    ["deco_slot4_empty", imgDecoSlot1Empty], // TODO
 );
 
 import imgAttackIcon   from "../_images/mhw_attack_icon_inkscapesourcefile.svg";
@@ -419,89 +421,119 @@ imgPathMapEntries.push(
     ["weapon_heavybowgun_r7", imgWeaponHeavyBowgunR7],
 );
 
-import imgHeadR1 from "../_images/derived/armour_head_r1.png";
-import imgHeadR2 from "../_images/derived/armour_head_r2.png";
-import imgHeadR3 from "../_images/derived/armour_head_r3.png";
-import imgHeadR4 from "../_images/derived/armour_head_r4.png";
-import imgHeadR5 from "../_images/derived/armour_head_r5.png";
-import imgHeadR6 from "../_images/derived/armour_head_r6.png";
-import imgHeadR7 from "../_images/derived/armour_head_r7.png";
+import imgHeadR1  from "../_images/derived/armour_head_r1.png";
+import imgHeadR2  from "../_images/derived/armour_head_r2.png";
+import imgHeadR3  from "../_images/derived/armour_head_r3.png";
+import imgHeadR4  from "../_images/derived/armour_head_r4.png";
+import imgHeadR5  from "../_images/derived/armour_head_r5.png";
+import imgHeadR6  from "../_images/derived/armour_head_r6.png";
+import imgHeadR7  from "../_images/derived/armour_head_r7.png";
+//import imgHeadR8  from "../_images/derived/armour_head_r8.png";
+//import imgHeadR9  from "../_images/derived/armour_head_r9.png";
+//import imgHeadR10 from "../_images/derived/armour_head_r10.png";
 imgPathMapEntries.push(
-    ["head_r1", imgHeadR1],
-    ["head_r2", imgHeadR2],
-    ["head_r3", imgHeadR3],
-    ["head_r4", imgHeadR4],
-    ["head_r5", imgHeadR5],
-    ["head_r6", imgHeadR6],
-    ["head_r7", imgHeadR7],
+    ["head_r1" , imgHeadR1],
+    ["head_r2" , imgHeadR2],
+    ["head_r3" , imgHeadR3],
+    ["head_r4" , imgHeadR4],
+    ["head_r5" , imgHeadR5],
+    ["head_r6" , imgHeadR6],
+    ["head_r7" , imgHeadR7],
+    ["head_r8" , imgHeadR1],
+    ["head_r9" , imgHeadR2],
+    ["head_r10", imgHeadR3],
 );
 
-import imgChestR1 from "../_images/derived/armour_chest_r1.png";
-import imgChestR2 from "../_images/derived/armour_chest_r2.png";
-import imgChestR3 from "../_images/derived/armour_chest_r3.png";
-import imgChestR4 from "../_images/derived/armour_chest_r4.png";
-import imgChestR5 from "../_images/derived/armour_chest_r5.png";
-import imgChestR6 from "../_images/derived/armour_chest_r6.png";
-import imgChestR7 from "../_images/derived/armour_chest_r7.png";
+import imgChestR1  from "../_images/derived/armour_chest_r1.png";
+import imgChestR2  from "../_images/derived/armour_chest_r2.png";
+import imgChestR3  from "../_images/derived/armour_chest_r3.png";
+import imgChestR4  from "../_images/derived/armour_chest_r4.png";
+import imgChestR5  from "../_images/derived/armour_chest_r5.png";
+import imgChestR6  from "../_images/derived/armour_chest_r6.png";
+import imgChestR7  from "../_images/derived/armour_chest_r7.png";
+//import imgChestR8  from "../_images/derived/armour_chest_r8.png";
+//import imgChestR9  from "../_images/derived/armour_chest_r9.png";
+//import imgChestR10 from "../_images/derived/armour_chest_r10.png";
 imgPathMapEntries.push(
-    ["chest_r1", imgChestR1],
-    ["chest_r2", imgChestR2],
-    ["chest_r3", imgChestR3],
-    ["chest_r4", imgChestR4],
-    ["chest_r5", imgChestR5],
-    ["chest_r6", imgChestR6],
-    ["chest_r7", imgChestR7],
+    ["chest_r1" , imgChestR1],
+    ["chest_r2" , imgChestR2],
+    ["chest_r3" , imgChestR3],
+    ["chest_r4" , imgChestR4],
+    ["chest_r5" , imgChestR5],
+    ["chest_r6" , imgChestR6],
+    ["chest_r7" , imgChestR7],
+    ["chest_r8" , imgChestR1],
+    ["chest_r9" , imgChestR2],
+    ["chest_r10", imgChestR3],
 );
 
-import imgArmsR1 from "../_images/derived/armour_arms_r1.png";
-import imgArmsR2 from "../_images/derived/armour_arms_r2.png";
-import imgArmsR3 from "../_images/derived/armour_arms_r3.png";
-import imgArmsR4 from "../_images/derived/armour_arms_r4.png";
-import imgArmsR5 from "../_images/derived/armour_arms_r5.png";
-import imgArmsR6 from "../_images/derived/armour_arms_r6.png";
-import imgArmsR7 from "../_images/derived/armour_arms_r7.png";
+import imgArmsR1  from "../_images/derived/armour_arms_r1.png";
+import imgArmsR2  from "../_images/derived/armour_arms_r2.png";
+import imgArmsR3  from "../_images/derived/armour_arms_r3.png";
+import imgArmsR4  from "../_images/derived/armour_arms_r4.png";
+import imgArmsR5  from "../_images/derived/armour_arms_r5.png";
+import imgArmsR6  from "../_images/derived/armour_arms_r6.png";
+import imgArmsR7  from "../_images/derived/armour_arms_r7.png";
+//import imgArmsR8  from "../_images/derived/armour_arms_r8.png";
+//import imgArmsR9  from "../_images/derived/armour_arms_r9.png";
+//import imgArmsR10 from "../_images/derived/armour_arms_r10.png";
 imgPathMapEntries.push(
-    ["arms_r1", imgArmsR1],
-    ["arms_r2", imgArmsR2],
-    ["arms_r3", imgArmsR3],
-    ["arms_r4", imgArmsR4],
-    ["arms_r5", imgArmsR5],
-    ["arms_r6", imgArmsR6],
-    ["arms_r7", imgArmsR7],
+    ["arms_r1" , imgArmsR1],
+    ["arms_r2" , imgArmsR2],
+    ["arms_r3" , imgArmsR3],
+    ["arms_r4" , imgArmsR4],
+    ["arms_r5" , imgArmsR5],
+    ["arms_r6" , imgArmsR6],
+    ["arms_r7" , imgArmsR7],
+    ["arms_r8" , imgArmsR1],
+    ["arms_r9" , imgArmsR2],
+    ["arms_r10", imgArmsR3],
 );
 
-import imgWaistR1 from "../_images/derived/armour_waist_r1.png";
-import imgWaistR2 from "../_images/derived/armour_waist_r2.png";
-import imgWaistR3 from "../_images/derived/armour_waist_r3.png";
-import imgWaistR4 from "../_images/derived/armour_waist_r4.png";
-import imgWaistR5 from "../_images/derived/armour_waist_r5.png";
-import imgWaistR6 from "../_images/derived/armour_waist_r6.png";
-import imgWaistR7 from "../_images/derived/armour_waist_r7.png";
+import imgWaistR1  from "../_images/derived/armour_waist_r1.png";
+import imgWaistR2  from "../_images/derived/armour_waist_r2.png";
+import imgWaistR3  from "../_images/derived/armour_waist_r3.png";
+import imgWaistR4  from "../_images/derived/armour_waist_r4.png";
+import imgWaistR5  from "../_images/derived/armour_waist_r5.png";
+import imgWaistR6  from "../_images/derived/armour_waist_r6.png";
+import imgWaistR7  from "../_images/derived/armour_waist_r7.png";
+//import imgWaistR8  from "../_images/derived/armour_waist_r8.png";
+//import imgWaistR9  from "../_images/derived/armour_waist_r9.png";
+//import imgWaistR10 from "../_images/derived/armour_waist_r10.png";
 imgPathMapEntries.push(
-    ["waist_r1", imgWaistR1],
-    ["waist_r2", imgWaistR2],
-    ["waist_r3", imgWaistR3],
-    ["waist_r4", imgWaistR4],
-    ["waist_r5", imgWaistR5],
-    ["waist_r6", imgWaistR6],
-    ["waist_r7", imgWaistR7],
+    ["waist_r1" , imgWaistR1],
+    ["waist_r2" , imgWaistR2],
+    ["waist_r3" , imgWaistR3],
+    ["waist_r4" , imgWaistR4],
+    ["waist_r5" , imgWaistR5],
+    ["waist_r6" , imgWaistR6],
+    ["waist_r7" , imgWaistR7],
+    ["waist_r8" , imgWaistR1],
+    ["waist_r9" , imgWaistR2],
+    ["waist_r10", imgWaistR3],
 );
 
-import imgLegsR1 from "../_images/derived/armour_legs_r1.png";
-import imgLegsR2 from "../_images/derived/armour_legs_r2.png";
-import imgLegsR3 from "../_images/derived/armour_legs_r3.png";
-import imgLegsR4 from "../_images/derived/armour_legs_r4.png";
-import imgLegsR5 from "../_images/derived/armour_legs_r5.png";
-import imgLegsR6 from "../_images/derived/armour_legs_r6.png";
-import imgLegsR7 from "../_images/derived/armour_legs_r7.png";
+import imgLegsR1  from "../_images/derived/armour_legs_r1.png";
+import imgLegsR2  from "../_images/derived/armour_legs_r2.png";
+import imgLegsR3  from "../_images/derived/armour_legs_r3.png";
+import imgLegsR4  from "../_images/derived/armour_legs_r4.png";
+import imgLegsR5  from "../_images/derived/armour_legs_r5.png";
+import imgLegsR6  from "../_images/derived/armour_legs_r6.png";
+import imgLegsR7  from "../_images/derived/armour_legs_r7.png";
+//import imgLegsR8  from "../_images/derived/armour_legs_r8.png";
+//import imgLegsR9  from "../_images/derived/armour_legs_r9.png";
+//import imgLegsR10 from "../_images/derived/armour_legs_r10.png";
 imgPathMapEntries.push(
-    ["legs_r1", imgLegsR1],
-    ["legs_r2", imgLegsR2],
-    ["legs_r3", imgLegsR3],
-    ["legs_r4", imgLegsR4],
-    ["legs_r5", imgLegsR5],
-    ["legs_r6", imgLegsR6],
-    ["legs_r7", imgLegsR7],
+    ["legs_r1" , imgLegsR1],
+    ["legs_r2" , imgLegsR2],
+    ["legs_r3" , imgLegsR3],
+    ["legs_r4" , imgLegsR4],
+    ["legs_r5" , imgLegsR5],
+    ["legs_r6" , imgLegsR6],
+    ["legs_r7" , imgLegsR7],
+    ["legs_r8" , imgLegsR1],
+    ["legs_r9" , imgLegsR2],
+    ["legs_r10", imgLegsR3],
 );
 
 import imgDecoSlot1Size1Blue from "../_images/deco_slot1_size1_blue.svg";

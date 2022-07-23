@@ -155,7 +155,7 @@ export class ArmourSelectView extends React.Component<any, any> {
         this.state = {
                 filterByName: "", // Empty string by default
                 filterBySlotID: "head", // Empty string, or an armour slot
-                filterByTier: "hr", // Empty string, or a Tier tag
+                filterByTier: "mr", // Empty string, or a Tier tag
             };
     }
 
@@ -183,10 +183,10 @@ export class ArmourSelectView extends React.Component<any, any> {
     }
 
     handleTierFilterCheckboxChange(e) {
-        if (this.state.filterByTier == "hr") {
+        if (this.state.filterByTier == "mr") {
             this.setState({filterByTier: ""});
         } else {
-            this.setState({filterByTier: "hr"});
+            this.setState({filterByTier: "mr"});
         }
     }
 
@@ -241,12 +241,12 @@ export class ArmourSelectView extends React.Component<any, any> {
                 element("input",
                     {
                     type: "checkbox",
-                    checked: (this.state.filterByTier == "hr"),
+                    checked: (this.state.filterByTier == "mr"),
                     onChange: (e) => {this.handleTierFilterCheckboxChange(e)},
                     },
                     null,
                 ),
-                "HR Only",
+                "MR Only",
             ),
         );
     }

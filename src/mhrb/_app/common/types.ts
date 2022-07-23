@@ -9,8 +9,8 @@ import {
     FrozenMap,
 } from "../generic/frozen-containers";
 
-export type Tier = "lr" | "hr";
-export type Rarity = 1 | 2 | 3 | 4 | 5 | 6 | 7;
+export type Tier = "lr" | "hr" | "mr";
+export type Rarity = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;
 
 export type RawTypeStr = "severing" | "blunt";
 
@@ -72,7 +72,7 @@ export type EleStatMap = FrozenMap<EleStatStr, number>;
 //};
 
 // If this is refactored into an array, we should add more validation code for the database.
-export type DecorationSlotSize = 1 | 2 | 3;
+export type DecorationSlotSize = 1 | 2 | 3 | 4;
 export type DecoSlotsArray = []
                            | [DecorationSlotSize]
                            | [DecorationSlotSize, DecorationSlotSize]
@@ -80,7 +80,7 @@ export type DecoSlotsArray = []
 export function isDecoSlotsArray(obj: number[]): obj is DecoSlotsArray { // DANGER: Returns type predicate.
     if (obj.length > 3) return false;
     for (const v of obj) {
-        if ((v !== 1) && (v !== 2) && (v !== 3)) return false;
+        if ((v !== 1) && (v !== 2) && (v !== 3) && (v !== 4)) return false;
     }
     return true;
 }

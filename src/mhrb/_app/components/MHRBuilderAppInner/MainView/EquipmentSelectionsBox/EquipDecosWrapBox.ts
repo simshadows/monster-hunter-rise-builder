@@ -85,6 +85,7 @@ class EquipDecoBox extends React.Component<any, any> {
                 if (this.props.slotSize == 1) return "deco_slot1_empty";
                 else if (this.props.slotSize == 2) return "deco_slot2_empty";
                 else if (this.props.slotSize == 3) return "deco_slot3_empty";
+                else if (this.props.slotSize == 4) return "deco_slot4_empty";
                 throw new Error("Unexpected slot size.");
             } else {
                 return this._iconsToImageID(decoPropsRO.deco.icon, decoPropsRO.deco.slotSize, this.props.slotSize);

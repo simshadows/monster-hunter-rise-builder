@@ -19342,4 +19342,151 @@ export const armourSetsArray: Readonly<ArmourSet[]> = [
             },
         },
     },
+    {
+        id: 151,
+        name: "Kamura Legacy",
+        head: {
+            setID: 151,
+            slotID: "head",
+    
+            setName: "Kamura Legacy",
+            name: "Kamura Legacy Head Scarf",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [2],
+            skills: [
+                [__generated_skill__divine_blessing, 2],
+                [__generated_skill__resuscitate, 1],
+            ],
+
+            defenseAtLevel1: 80,
+
+            fireRes:2,
+            waterRes: 0,
+            thunderRes: 0,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "kamuralegacyheadscarf",
+                setNameLower: "kamuralegacy",
+                hintStrLower: "",
+            },
+        },
+        chest: {
+            setID: 151,
+            slotID: "chest",
+    
+            setName: "Kamura Legacy",
+            name: "Kamura Legacy Garb",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [1, 1],
+            skills: [
+                [__generated_skill__wirebug_whisperer, 2],
+                [__generated_skill__wall_runner, 1],
+                [__generated_skill__critical_eye, 1],
+            ],
+
+            defenseAtLevel1: 80,
+
+            fireRes:2,
+            waterRes: 0,
+            thunderRes: 0,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "kamuralegacygarb",
+                setNameLower: "kamuralegacy",
+                hintStrLower: "",
+            },
+        },
+        arms: {
+            setID: 151,
+            slotID: "arms",
+    
+            setName: "Kamura Legacy",
+            name: "Kamura Legacy Braces",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [1],
+            skills: [
+                [__generated_skill__critical_eye, 2],
+                [__generated_skill__heroics, 1],
+                [__generated_skill__divine_blessing, 1],
+            ],
+
+            defenseAtLevel1: 80,
+
+            fireRes:2,
+            waterRes: 0,
+            thunderRes: 0,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "kamuralegacybraces",
+                setNameLower: "kamuralegacy",
+                hintStrLower: "",
+            },
+        },
+        waist: {
+            setID: 151,
+            slotID: "waist",
+    
+            setName: "Kamura Legacy",
+            name: "Kamura Legacy Obi",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4, 1],
+            skills: [
+                [__generated_skill__wirebug_whisperer, 1],
+                [__generated_skill__critical_eye, 1],
+            ],
+
+            defenseAtLevel1: 80,
+
+            fireRes:2,
+            waterRes: 0,
+            thunderRes: 0,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "kamuralegacyobi",
+                setNameLower: "kamuralegacy",
+                hintStrLower: "",
+            },
+        },
+        legs: {
+            setID: 151,
+            slotID: "legs",
+    
+            setName: "Kamura Legacy",
+            name: "Kamura Legacy Leggings",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [2],
+            skills: [
+                [__generated_skill__wall_runner, 2],
+                [__generated_skill__resuscitate, 1],
+                [__generated_skill__affinity_sliding, 1],
+            ],
+
+            defenseAtLevel1: 80,
+
+            fireRes:2,
+            waterRes: 0,
+            thunderRes: 0,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "kamuralegacyleggings",
+                setNameLower: "kamuralegacy",
+                hintStrLower: "",
+            },
+        },
+    },
 ];

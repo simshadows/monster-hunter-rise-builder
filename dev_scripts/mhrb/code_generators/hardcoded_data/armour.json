@@ -2893,6 +2893,27 @@
         "legs":  [[2,1], {"quick_sheath": 2, "focus"           : 1                       }]
     },
     "defenses": {"defLvl1": 72, "f":2, "w":2, "t":0, "i":0, "d":2}
+}],
+
+
+[151, {
+    "tier": "mr",
+    "rarity": 8,
+    "setName": "Kamura Legacy",
+    "searchHint": "",
+
+    "prefix": "Kamura Legacy",
+    "namingScheme": "kamura",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[2  ], {"divine_blessing"  : 2, "resuscitate" : 1                       }],
+        "chest": [[1,1], {"wirebug_whisperer": 2, "wall_runner" : 1, "critical_eye"    : 1}],
+        "arms":  [[1  ], {"critical_eye"     : 2, "heroics"     : 1, "divine_blessing" : 1}],
+        "waist": [[4,1], {"wirebug_whisperer": 1, "critical_eye": 1                       }],
+        "legs":  [[2  ], {"wall_runner"      : 2, "resuscitate" : 1, "affinity_sliding": 1}]
+    },
+    "defenses": {"defLvl1": 80, "f":2, "w":0, "t":0, "i":0, "d":0}
 }]
 
 
