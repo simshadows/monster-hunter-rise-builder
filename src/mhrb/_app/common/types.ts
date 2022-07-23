@@ -10,7 +10,7 @@ import {
 } from "../generic/frozen-containers";
 
 export type Tier = "lr" | "hr" | "mr";
-export type Rarity = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;
+export type Rarity = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10;
 
 export type RawTypeStr = "severing" | "blunt";
 

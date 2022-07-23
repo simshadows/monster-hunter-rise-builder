@@ -13,13 +13,16 @@ The original files are the white ones.
 We first eyedrop various icons in-game. These are my values:
 
 ```
-r2: 253 254 138       188 189 103       163 165 98        100 100 52
-r3: 253 160 186       188 117 138       156 104 119       100 61 72
-r4: 159 229 131       117 172 96        106 150 85        59 90 47
-r5: 51 204 253        34  152 186       40  129 156       11 80 98
-r6: 109 139 251       80  102 186       71  87  152       38 52 99
-r7: 233 90 70         175 65  49        142 59  46        93 31 20
-    bright spot       upper chest       waist dark bits   charge blade dark bits
+r2:  253 254 138       188 189 103       163 165 98        100 100 52
+r3:  253 160 186       188 117 138       156 104 119       100 61 72
+r4:  159 229 131       117 172 96        106 150 85        59 90 47
+r5:  51 204 253        34  152 186       40  129 156       11 80 98
+r6:  109 139 251       80  102 186       71  87  152       38 52 99
+r7:  233 90 70         175 65  49        142 59  46        93 31 20
+r8:  171 238 254       125 178 187       111 159 166       64 96 100
+r9:  150 109 251       109 81 187        93 69 154         57 42 105
+r10: 247 154 57        184 114 39        163 101 33        101 60 15
+     bright spot       upper chest       waist dark bits   charge blade dark bits
 ```
 
 Now, we set up [XnConvert](https://www.xnview.com/en/xnconvert/) with the following actions for rarity 2:
