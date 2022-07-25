@@ -1461,7 +1461,7 @@
     "pieces": {
         "head":  [[2,1], {"ice_attack"      : 2                       }],
         "chest": [[1  ], {"attack_boost"    : 1, "ice_attack"      : 1}],
-        "arms":  [[1,1], {"sleep_resistance": 1, "ice_attack"      : 1}],
+        "arms":  [[1,1], {"sleep_resistance": 2, "ice_attack"      : 1}],
         "waist": [[1  ], {"attack_boost"    : 2, "sleep_resistance": 1}],
         "legs":  [[2,1], {"attack_boost"    : 1                       }]
     },

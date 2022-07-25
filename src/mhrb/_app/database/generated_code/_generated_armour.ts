@@ -9962,7 +9962,7 @@ export const armourSetsArray: Readonly<ArmourSet[]> = [
             tierID: "hr",
             decorationSlots: [1, 1],
             skills: [
-                [__generated_skill__sleep_resistance, 1],
+                [__generated_skill__sleep_resistance, 2],
                 [__generated_skill__ice_attack, 1],
             ],
 
