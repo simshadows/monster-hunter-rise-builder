@@ -2914,6 +2914,67 @@
         "legs":  [[2  ], {"wall_runner"      : 2, "resuscitate" : 1, "affinity_sliding": 1}]
     },
     "defenses": {"defLvl1": 80, "f":2, "w":0, "t":0, "i":0, "d":0}
+}],
+[152, {
+    "tier": "mr",
+    "rarity": 8,
+    "setName": "Leather X",
+    "searchHint": "",
+
+    "prefix": "Leather",
+    "namingScheme": "scheme_1b",
+    "suffix": "X",
+
+    "pieces": {
+        "head":  [[4,1], {"geologist"  : 1, "hunger_resistance" : 1, "carving_pro": 1}],
+        "chest": [[4  ], {"botanist"   : 2, "recovery_up"       : 1                  }],
+        "arms":  [[4,1], {"geologist"  : 1, "special_ammo_boost": 1                  }],
+        "waist": [[2,1], {"recovery_up": 2, "hunger_resistance" : 2                  }],
+        "legs":  [[4,1], {"geologist"  : 1, "botanist"          : 2                  }]
+    },
+    "defenses": {"defLvl1": 80, "f":0, "w":0, "t":0, "i":0, "d":0}
+}],
+
+
+[200, {
+    "tier": "mr",
+    "rarity": 9,
+    "setName": "Magmadron",
+    "searchHint": "",
+
+    "prefix": "Magmadron",
+    "namingScheme": "scheme_2",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[3  ], {"resentment" : 1, "heroics"   : 2, "fire_attack": 3}],
+        "chest": [[4,1], {"resuscitate": 1, "heroics"   : 2                  }],
+        "arms":  [[3  ], {"resentment" : 1, "guard_up"  : 2, "heroics"    : 1}],
+        "waist": [[3,3], {"resuscitate": 1, "guard_up"  : 1                  }],
+        "legs":  [[3,3], {"resuscitate": 1, "resentment": 1                  }]
+    },
+    "defenses": {"defLvl1": 112, "f":5, "w":-5, "t":0, "i":-4, "d":0}
+}],
+
+
+[300, {
+    "tier": "mr",
+    "rarity": 10,
+    "setName": "Archfiend Armor",
+    "searchHint": "gaismagorm",
+
+    "prefix": "Archfiend Armor",
+    "namingScheme": "archfiend_armor",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[4,2  ], {"weakness_exploit": 1, "resentment": 2                 }],
+        "chest": [[3,2  ], {"weakness_exploit": 1, "resentment": 1, "chain_crit": 1}],
+        "arms":  [[4    ], {"dereliction"     : 2, "resentment": 1                 }],
+        "waist": [[4    ], {"weakness_exploit": 1, "chain_crit": 2                 }],
+        "legs":  [[3,2,2], {"dereliction"     : 1, "resentment": 1                 }]
+    },
+    "defenses": {"defLvl1": 126, "f":0, "w":3, "t":-2, "i":3, "d":-5}
 }]
 
 

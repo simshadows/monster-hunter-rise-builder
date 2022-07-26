@@ -1369,6 +1369,30 @@ export const __generated_skill__wirebug_whisperer: Skill = {
     }
 };
 
+export const __generated_skill__chain_crit: Skill = {
+    id: "chain_crit",
+    shortId: 112,
+    name: "Chain Crit",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_red",
+    filterHelpers: {
+        nameLower: "chaincrit",
+    }
+};
+
+export const __generated_skill__dereliction: Skill = {
+    id: "dereliction",
+    shortId: 113,
+    name: "Dereliction",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_red",
+    filterHelpers: {
+        nameLower: "dereliction",
+    }
+};
+
 export const skillsArray: Readonly<Skill[]> = [
     __generated_skill__fire_attack,
     __generated_skill__water_attack,
@@ -1481,4 +1505,6 @@ export const skillsArray: Readonly<Skill[]> = [
     __generated_skill__wind_alignment,
     __generated_skill__windproof,
     __generated_skill__wirebug_whisperer,
+    __generated_skill__chain_crit,
+    __generated_skill__dereliction,
 ];

@@ -1,5 +1,6 @@
 [
 
+
 {
     "id": "fire_attack",
     "shortId": 1,
@@ -888,6 +889,25 @@
     "maxLevels": 3,
 
     "icon": "lightblue"
+},
+
+
+{
+    "id": "chain_crit",
+    "shortId": 112,
+    "name": "Chain Crit",
+    "maxLevels": 3,
+
+    "icon": "red"
+},
+{
+    "id": "dereliction",
+    "shortId": 113,
+    "name": "Dereliction",
+    "maxLevels": 3,
+
+    "icon": "red"
 }
+
 
 ]

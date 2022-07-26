@@ -9,6 +9,13 @@
     "Belt",
     "Pants"
 ],
+"scheme_1b": [
+    "Headgear",
+    "Vest",
+    "Gloves",
+    "Belt",
+    "Trousers"
+],
 "scheme_2": [
     "Helm",
     "Mail",
@@ -40,6 +47,13 @@
 
 
 
+"archfiend_armor": [
+    "Cerato",
+    "Baulo",
+    "Epine",
+    "Ura",
+    "Sceros"
+],
 "azure_age": [
     "Hair",
     "Haori",

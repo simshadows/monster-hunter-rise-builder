@@ -57,6 +57,7 @@ import {
     __generated_skill__capture_master,
     __generated_skill__carving_master,
     __generated_skill__carving_pro,
+    __generated_skill__chain_crit,
     __generated_skill__chameleos_blessing,
     __generated_skill__constitution,
     __generated_skill__counterstrike,
@@ -65,6 +66,7 @@ import {
     __generated_skill__critical_element,
     __generated_skill__critical_eye,
     __generated_skill__defense_boost,
+    __generated_skill__dereliction,
     __generated_skill__diversion,
     __generated_skill__divine_blessing,
     __generated_skill__dragon_attack,
@@ -19486,6 +19488,442 @@ export const armourSetsArray: Readonly<ArmourSet[]> = [
                 nameLower: "kamuralegacyleggings",
                 setNameLower: "kamuralegacy",
                 hintStrLower: "",
+            },
+        },
+    },
+    {
+        id: 152,
+        name: "Leather X",
+        head: {
+            setID: 152,
+            slotID: "head",
+    
+            setName: "Leather X",
+            name: "Leather Headgear X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4, 1],
+            skills: [
+                [__generated_skill__geologist, 1],
+                [__generated_skill__hunger_resistance, 1],
+                [__generated_skill__carving_pro, 1],
+            ],
+
+            defenseAtLevel1: 80,
+
+            fireRes:0,
+            waterRes: 0,
+            thunderRes: 0,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "leatherheadgearx",
+                setNameLower: "leatherx",
+                hintStrLower: "",
+            },
+        },
+        chest: {
+            setID: 152,
+            slotID: "chest",
+    
+            setName: "Leather X",
+            name: "Leather Vest X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4],
+            skills: [
+                [__generated_skill__botanist, 2],
+                [__generated_skill__recovery_up, 1],
+            ],
+
+            defenseAtLevel1: 80,
+
+            fireRes:0,
+            waterRes: 0,
+            thunderRes: 0,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "leathervestx",
+                setNameLower: "leatherx",
+                hintStrLower: "",
+            },
+        },
+        arms: {
+            setID: 152,
+            slotID: "arms",
+    
+            setName: "Leather X",
+            name: "Leather Gloves X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4, 1],
+            skills: [
+                [__generated_skill__geologist, 1],
+                [__generated_skill__special_ammo_boost, 1],
+            ],
+
+            defenseAtLevel1: 80,
+
+            fireRes:0,
+            waterRes: 0,
+            thunderRes: 0,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "leatherglovesx",
+                setNameLower: "leatherx",
+                hintStrLower: "",
+            },
+        },
+        waist: {
+            setID: 152,
+            slotID: "waist",
+    
+            setName: "Leather X",
+            name: "Leather Belt X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [2, 1],
+            skills: [
+                [__generated_skill__recovery_up, 2],
+                [__generated_skill__hunger_resistance, 2],
+            ],
+
+            defenseAtLevel1: 80,
+
+            fireRes:0,
+            waterRes: 0,
+            thunderRes: 0,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "leatherbeltx",
+                setNameLower: "leatherx",
+                hintStrLower: "",
+            },
+        },
+        legs: {
+            setID: 152,
+            slotID: "legs",
+    
+            setName: "Leather X",
+            name: "Leather Trousers X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4, 1],
+            skills: [
+                [__generated_skill__geologist, 1],
+                [__generated_skill__botanist, 2],
+            ],
+
+            defenseAtLevel1: 80,
+
+            fireRes:0,
+            waterRes: 0,
+            thunderRes: 0,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "leathertrousersx",
+                setNameLower: "leatherx",
+                hintStrLower: "",
+            },
+        },
+    },
+    {
+        id: 200,
+        name: "Magmadron",
+        head: {
+            setID: 200,
+            slotID: "head",
+    
+            setName: "Magmadron",
+            name: "Magmadron Helm",
+            rarity: 9,
+            tierID: "mr",
+            decorationSlots: [3],
+            skills: [
+                [__generated_skill__resentment, 1],
+                [__generated_skill__heroics, 2],
+                [__generated_skill__fire_attack, 3],
+            ],
+
+            defenseAtLevel1: 112,
+
+            fireRes:5,
+            waterRes: -5,
+            thunderRes: 0,
+            iceRes: -4,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "magmadronhelm",
+                setNameLower: "magmadron",
+                hintStrLower: "",
+            },
+        },
+        chest: {
+            setID: 200,
+            slotID: "chest",
+    
+            setName: "Magmadron",
+            name: "Magmadron Mail",
+            rarity: 9,
+            tierID: "mr",
+            decorationSlots: [4, 1],
+            skills: [
+                [__generated_skill__resuscitate, 1],
+                [__generated_skill__heroics, 2],
+            ],
+
+            defenseAtLevel1: 112,
+
+            fireRes:5,
+            waterRes: -5,
+            thunderRes: 0,
+            iceRes: -4,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "magmadronmail",
+                setNameLower: "magmadron",
+                hintStrLower: "",
+            },
+        },
+        arms: {
+            setID: 200,
+            slotID: "arms",
+    
+            setName: "Magmadron",
+            name: "Magmadron Vambraces",
+            rarity: 9,
+            tierID: "mr",
+            decorationSlots: [3],
+            skills: [
+                [__generated_skill__resentment, 1],
+                [__generated_skill__guard_up, 2],
+                [__generated_skill__heroics, 1],
+            ],
+
+            defenseAtLevel1: 112,
+
+            fireRes:5,
+            waterRes: -5,
+            thunderRes: 0,
+            iceRes: -4,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "magmadronvambraces",
+                setNameLower: "magmadron",
+                hintStrLower: "",
+            },
+        },
+        waist: {
+            setID: 200,
+            slotID: "waist",
+    
+            setName: "Magmadron",
+            name: "Magmadron Coil",
+            rarity: 9,
+            tierID: "mr",
+            decorationSlots: [3, 3],
+            skills: [
+                [__generated_skill__resuscitate, 1],
+                [__generated_skill__guard_up, 1],
+            ],
+
+            defenseAtLevel1: 112,
+
+            fireRes:5,
+            waterRes: -5,
+            thunderRes: 0,
+            iceRes: -4,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "magmadroncoil",
+                setNameLower: "magmadron",
+                hintStrLower: "",
+            },
+        },
+        legs: {
+            setID: 200,
+            slotID: "legs",
+    
+            setName: "Magmadron",
+            name: "Magmadron Greaves",
+            rarity: 9,
+            tierID: "mr",
+            decorationSlots: [3, 3],
+            skills: [
+                [__generated_skill__resuscitate, 1],
+                [__generated_skill__resentment, 1],
+            ],
+
+            defenseAtLevel1: 112,
+
+            fireRes:5,
+            waterRes: -5,
+            thunderRes: 0,
+            iceRes: -4,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "magmadrongreaves",
+                setNameLower: "magmadron",
+                hintStrLower: "",
+            },
+        },
+    },
+    {
+        id: 300,
+        name: "Archfiend Armor",
+        head: {
+            setID: 300,
+            slotID: "head",
+    
+            setName: "Archfiend Armor",
+            name: "Archfiend Armor Cerato",
+            rarity: 10,
+            tierID: "mr",
+            decorationSlots: [4, 2],
+            skills: [
+                [__generated_skill__weakness_exploit, 1],
+                [__generated_skill__resentment, 2],
+            ],
+
+            defenseAtLevel1: 126,
+
+            fireRes:0,
+            waterRes: 3,
+            thunderRes: -2,
+            iceRes: 3,
+            dragonRes: -5,
+    
+            filterHelpers: {
+                nameLower: "archfiendarmorcerato",
+                setNameLower: "archfiendarmor",
+                hintStrLower: "gaismagorm",
+            },
+        },
+        chest: {
+            setID: 300,
+            slotID: "chest",
+    
+            setName: "Archfiend Armor",
+            name: "Archfiend Armor Baulo",
+            rarity: 10,
+            tierID: "mr",
+            decorationSlots: [3, 2],
+            skills: [
+                [__generated_skill__weakness_exploit, 1],
+                [__generated_skill__resentment, 1],
+                [__generated_skill__chain_crit, 1],
+            ],
+
+            defenseAtLevel1: 126,
+
+            fireRes:0,
+            waterRes: 3,
+            thunderRes: -2,
+            iceRes: 3,
+            dragonRes: -5,
+    
+            filterHelpers: {
+                nameLower: "archfiendarmorbaulo",
+                setNameLower: "archfiendarmor",
+                hintStrLower: "gaismagorm",
+            },
+        },
+        arms: {
+            setID: 300,
+            slotID: "arms",
+    
+            setName: "Archfiend Armor",
+            name: "Archfiend Armor Epine",
+            rarity: 10,
+            tierID: "mr",
+            decorationSlots: [4],
+            skills: [
+                [__generated_skill__dereliction, 2],
+                [__generated_skill__resentment, 1],
+            ],
+
+            defenseAtLevel1: 126,
+
+            fireRes:0,
+            waterRes: 3,
+            thunderRes: -2,
+            iceRes: 3,
+            dragonRes: -5,
+    
+            filterHelpers: {
+                nameLower: "archfiendarmorepine",
+                setNameLower: "archfiendarmor",
+                hintStrLower: "gaismagorm",
+            },
+        },
+        waist: {
+            setID: 300,
+            slotID: "waist",
+    
+            setName: "Archfiend Armor",
+            name: "Archfiend Armor Ura",
+            rarity: 10,
+            tierID: "mr",
+            decorationSlots: [4],
+            skills: [
+                [__generated_skill__weakness_exploit, 1],
+                [__generated_skill__chain_crit, 2],
+            ],
+
+            defenseAtLevel1: 126,
+
+            fireRes:0,
+            waterRes: 3,
+            thunderRes: -2,
+            iceRes: 3,
+            dragonRes: -5,
+    
+            filterHelpers: {
+                nameLower: "archfiendarmorura",
+                setNameLower: "archfiendarmor",
+                hintStrLower: "gaismagorm",
+            },
+        },
+        legs: {
+            setID: 300,
+            slotID: "legs",
+    
+            setName: "Archfiend Armor",
+            name: "Archfiend Armor Sceros",
+            rarity: 10,
+            tierID: "mr",
+            decorationSlots: [3, 2, 2],
+            skills: [
+                [__generated_skill__dereliction, 1],
+                [__generated_skill__resentment, 1],
+            ],
+
+            defenseAtLevel1: 126,
+
+            fireRes:0,
+            waterRes: 3,
+            thunderRes: -2,
+            iceRes: 3,
+            dragonRes: -5,
+    
+            filterHelpers: {
+                nameLower: "archfiendarmorsceros",
+                setNameLower: "archfiendarmor",
+                hintStrLower: "gaismagorm",
             },
         },
     },
