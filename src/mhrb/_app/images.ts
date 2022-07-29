@@ -37,12 +37,12 @@ imgPathMapEntries.push(
 import imgDecoSlot1Empty from "../_images/deco_slot1.svg";
 import imgDecoSlot2Empty from "../_images/deco_slot2.svg";
 import imgDecoSlot3Empty from "../_images/deco_slot3.svg";
-//import imgDecoSlot4Empty from "../_images/deco_slot4.svg";
+import imgDecoSlot4Empty from "../_images/deco_slot4.svg";
 imgPathMapEntries.push(
     ["deco_slot1_empty", imgDecoSlot1Empty],
     ["deco_slot2_empty", imgDecoSlot2Empty],
     ["deco_slot3_empty", imgDecoSlot3Empty],
-    ["deco_slot4_empty", imgDecoSlot1Empty], // TODO
+    ["deco_slot4_empty", imgDecoSlot4Empty],
 );
 
 import imgAttackIcon   from "../_images/mhw_attack_icon_inkscapesourcefile.svg";
@@ -626,6 +626,10 @@ import imgDecoSlot2Size2Blue from "../_images/deco_slot2_size2_blue.svg";
 import imgDecoSlot3Size1Blue from "../_images/deco_slot3_size1_blue.svg";
 import imgDecoSlot3Size2Blue from "../_images/deco_slot3_size2_blue.svg";
 import imgDecoSlot3Size3Blue from "../_images/deco_slot3_size3_blue.svg";
+import imgDecoSlot4Size1Blue from "../_images/deco_slot4_size1_blue.svg";
+import imgDecoSlot4Size2Blue from "../_images/deco_slot4_size2_blue.svg";
+import imgDecoSlot4Size3Blue from "../_images/deco_slot4_size3_blue.svg";
+import imgDecoSlot4Size4Blue from "../_images/deco_slot4_size4_blue.svg";
 imgPathMapEntries.push(
     ["deco_slot1_size1_blue", imgDecoSlot1Size1Blue],
     ["deco_slot2_size1_blue", imgDecoSlot2Size1Blue],
@@ -633,6 +637,10 @@ imgPathMapEntries.push(
     ["deco_slot3_size1_blue", imgDecoSlot3Size1Blue],
     ["deco_slot3_size2_blue", imgDecoSlot3Size2Blue],
     ["deco_slot3_size3_blue", imgDecoSlot3Size3Blue],
+    ["deco_slot4_size1_blue", imgDecoSlot4Size1Blue],
+    ["deco_slot4_size2_blue", imgDecoSlot4Size2Blue],
+    ["deco_slot4_size3_blue", imgDecoSlot4Size3Blue],
+    ["deco_slot4_size4_blue", imgDecoSlot4Size4Blue],
 );
 
 import imgDecoSlot1Size1Brown from "../_images/deco_slot1_size1_brown.svg";
@@ -641,6 +649,10 @@ import imgDecoSlot2Size2Brown from "../_images/deco_slot2_size2_brown.svg";
 import imgDecoSlot3Size1Brown from "../_images/deco_slot3_size1_brown.svg";
 import imgDecoSlot3Size2Brown from "../_images/deco_slot3_size2_brown.svg";
 import imgDecoSlot3Size3Brown from "../_images/deco_slot3_size3_brown.svg";
+import imgDecoSlot4Size1Brown from "../_images/deco_slot4_size1_brown.svg";
+import imgDecoSlot4Size2Brown from "../_images/deco_slot4_size2_brown.svg";
+import imgDecoSlot4Size3Brown from "../_images/deco_slot4_size3_brown.svg";
+import imgDecoSlot4Size4Brown from "../_images/deco_slot4_size4_brown.svg";
 imgPathMapEntries.push(
     ["deco_slot1_size1_brown", imgDecoSlot1Size1Brown],
     ["deco_slot2_size1_brown", imgDecoSlot2Size1Brown],
@@ -648,6 +660,10 @@ imgPathMapEntries.push(
     ["deco_slot3_size1_brown", imgDecoSlot3Size1Brown],
     ["deco_slot3_size2_brown", imgDecoSlot3Size2Brown],
     ["deco_slot3_size3_brown", imgDecoSlot3Size3Brown],
+    ["deco_slot4_size1_brown", imgDecoSlot4Size1Brown],
+    ["deco_slot4_size2_brown", imgDecoSlot4Size2Brown],
+    ["deco_slot4_size3_brown", imgDecoSlot4Size3Brown],
+    ["deco_slot4_size4_brown", imgDecoSlot4Size4Brown],
 );
 
 import imgDecoSlot1Size1DarkBlue from "../_images/deco_slot1_size1_darkblue.svg";
@@ -656,6 +672,10 @@ import imgDecoSlot2Size2DarkBlue from "../_images/deco_slot2_size2_darkblue.svg"
 import imgDecoSlot3Size1DarkBlue from "../_images/deco_slot3_size1_darkblue.svg";
 import imgDecoSlot3Size2DarkBlue from "../_images/deco_slot3_size2_darkblue.svg";
 import imgDecoSlot3Size3DarkBlue from "../_images/deco_slot3_size3_darkblue.svg";
+import imgDecoSlot4Size1DarkBlue from "../_images/deco_slot4_size1_darkblue.svg";
+import imgDecoSlot4Size2DarkBlue from "../_images/deco_slot4_size2_darkblue.svg";
+import imgDecoSlot4Size3DarkBlue from "../_images/deco_slot4_size3_darkblue.svg";
+import imgDecoSlot4Size4DarkBlue from "../_images/deco_slot4_size4_darkblue.svg";
 imgPathMapEntries.push(
     ["deco_slot1_size1_darkblue", imgDecoSlot1Size1DarkBlue],
     ["deco_slot2_size1_darkblue", imgDecoSlot2Size1DarkBlue],
@@ -663,6 +683,10 @@ imgPathMapEntries.push(
     ["deco_slot3_size1_darkblue", imgDecoSlot3Size1DarkBlue],
     ["deco_slot3_size2_darkblue", imgDecoSlot3Size2DarkBlue],
     ["deco_slot3_size3_darkblue", imgDecoSlot3Size3DarkBlue],
+    ["deco_slot4_size1_darkblue", imgDecoSlot4Size1DarkBlue],
+    ["deco_slot4_size2_darkblue", imgDecoSlot4Size2DarkBlue],
+    ["deco_slot4_size3_darkblue", imgDecoSlot4Size3DarkBlue],
+    ["deco_slot4_size4_darkblue", imgDecoSlot4Size4DarkBlue],
 );
 
 import imgDecoSlot1Size1Gold from "../_images/deco_slot1_size1_gold.svg";
@@ -671,6 +695,10 @@ import imgDecoSlot2Size2Gold from "../_images/deco_slot2_size2_gold.svg";
 import imgDecoSlot3Size1Gold from "../_images/deco_slot3_size1_gold.svg";
 import imgDecoSlot3Size2Gold from "../_images/deco_slot3_size2_gold.svg";
 import imgDecoSlot3Size3Gold from "../_images/deco_slot3_size3_gold.svg";
+import imgDecoSlot4Size1Gold from "../_images/deco_slot4_size1_gold.svg";
+import imgDecoSlot4Size2Gold from "../_images/deco_slot4_size2_gold.svg";
+import imgDecoSlot4Size3Gold from "../_images/deco_slot4_size3_gold.svg";
+import imgDecoSlot4Size4Gold from "../_images/deco_slot4_size4_gold.svg";
 imgPathMapEntries.push(
     ["deco_slot1_size1_gold", imgDecoSlot1Size1Gold],
     ["deco_slot2_size1_gold", imgDecoSlot2Size1Gold],
@@ -678,6 +706,10 @@ imgPathMapEntries.push(
     ["deco_slot3_size1_gold", imgDecoSlot3Size1Gold],
     ["deco_slot3_size2_gold", imgDecoSlot3Size2Gold],
     ["deco_slot3_size3_gold", imgDecoSlot3Size3Gold],
+    ["deco_slot4_size1_gold", imgDecoSlot4Size1Gold],
+    ["deco_slot4_size2_gold", imgDecoSlot4Size2Gold],
+    ["deco_slot4_size3_gold", imgDecoSlot4Size3Gold],
+    ["deco_slot4_size4_gold", imgDecoSlot4Size4Gold],
 );
 
 import imgDecoSlot1Size1Green from "../_images/deco_slot1_size1_green.svg";
@@ -686,6 +718,10 @@ import imgDecoSlot2Size2Green from "../_images/deco_slot2_size2_green.svg";
 import imgDecoSlot3Size1Green from "../_images/deco_slot3_size1_green.svg";
 import imgDecoSlot3Size2Green from "../_images/deco_slot3_size2_green.svg";
 import imgDecoSlot3Size3Green from "../_images/deco_slot3_size3_green.svg";
+import imgDecoSlot4Size1Green from "../_images/deco_slot4_size1_green.svg";
+import imgDecoSlot4Size2Green from "../_images/deco_slot4_size2_green.svg";
+import imgDecoSlot4Size3Green from "../_images/deco_slot4_size3_green.svg";
+import imgDecoSlot4Size4Green from "../_images/deco_slot4_size4_green.svg";
 imgPathMapEntries.push(
     ["deco_slot1_size1_green", imgDecoSlot1Size1Green],
     ["deco_slot2_size1_green", imgDecoSlot2Size1Green],
@@ -693,6 +729,10 @@ imgPathMapEntries.push(
     ["deco_slot3_size1_green", imgDecoSlot3Size1Green],
     ["deco_slot3_size2_green", imgDecoSlot3Size2Green],
     ["deco_slot3_size3_green", imgDecoSlot3Size3Green],
+    ["deco_slot4_size1_green", imgDecoSlot4Size1Green],
+    ["deco_slot4_size2_green", imgDecoSlot4Size2Green],
+    ["deco_slot4_size3_green", imgDecoSlot4Size3Green],
+    ["deco_slot4_size4_green", imgDecoSlot4Size4Green],
 );
 
 import imgDecoSlot1Size1Grey from "../_images/deco_slot1_size1_grey.svg";
@@ -701,6 +741,10 @@ import imgDecoSlot2Size2Grey from "../_images/deco_slot2_size2_grey.svg";
 import imgDecoSlot3Size1Grey from "../_images/deco_slot3_size1_grey.svg";
 import imgDecoSlot3Size2Grey from "../_images/deco_slot3_size2_grey.svg";
 import imgDecoSlot3Size3Grey from "../_images/deco_slot3_size3_grey.svg";
+import imgDecoSlot4Size1Grey from "../_images/deco_slot4_size1_grey.svg";
+import imgDecoSlot4Size2Grey from "../_images/deco_slot4_size2_grey.svg";
+import imgDecoSlot4Size3Grey from "../_images/deco_slot4_size3_grey.svg";
+import imgDecoSlot4Size4Grey from "../_images/deco_slot4_size4_grey.svg";
 imgPathMapEntries.push(
     ["deco_slot1_size1_grey", imgDecoSlot1Size1Grey],
     ["deco_slot2_size1_grey", imgDecoSlot2Size1Grey],
@@ -708,6 +752,10 @@ imgPathMapEntries.push(
     ["deco_slot3_size1_grey", imgDecoSlot3Size1Grey],
     ["deco_slot3_size2_grey", imgDecoSlot3Size2Grey],
     ["deco_slot3_size3_grey", imgDecoSlot3Size3Grey],
+    ["deco_slot4_size1_grey", imgDecoSlot4Size1Grey],
+    ["deco_slot4_size2_grey", imgDecoSlot4Size2Grey],
+    ["deco_slot4_size3_grey", imgDecoSlot4Size3Grey],
+    ["deco_slot4_size4_grey", imgDecoSlot4Size4Grey],
 );
 
 import imgDecoSlot1Size1LightBlue from "../_images/deco_slot1_size1_lightblue.svg";
@@ -716,6 +764,10 @@ import imgDecoSlot2Size2LightBlue from "../_images/deco_slot2_size2_lightblue.sv
 import imgDecoSlot3Size1LightBlue from "../_images/deco_slot3_size1_lightblue.svg";
 import imgDecoSlot3Size2LightBlue from "../_images/deco_slot3_size2_lightblue.svg";
 import imgDecoSlot3Size3LightBlue from "../_images/deco_slot3_size3_lightblue.svg";
+import imgDecoSlot4Size1LightBlue from "../_images/deco_slot4_size1_lightblue.svg";
+import imgDecoSlot4Size2LightBlue from "../_images/deco_slot4_size2_lightblue.svg";
+import imgDecoSlot4Size3LightBlue from "../_images/deco_slot4_size3_lightblue.svg";
+import imgDecoSlot4Size4LightBlue from "../_images/deco_slot4_size4_lightblue.svg";
 imgPathMapEntries.push(
     ["deco_slot1_size1_lightblue", imgDecoSlot1Size1LightBlue],
     ["deco_slot2_size1_lightblue", imgDecoSlot2Size1LightBlue],
@@ -723,6 +775,10 @@ imgPathMapEntries.push(
     ["deco_slot3_size1_lightblue", imgDecoSlot3Size1LightBlue],
     ["deco_slot3_size2_lightblue", imgDecoSlot3Size2LightBlue],
     ["deco_slot3_size3_lightblue", imgDecoSlot3Size3LightBlue],
+    ["deco_slot4_size1_lightblue", imgDecoSlot4Size1LightBlue],
+    ["deco_slot4_size2_lightblue", imgDecoSlot4Size2LightBlue],
+    ["deco_slot4_size3_lightblue", imgDecoSlot4Size3LightBlue],
+    ["deco_slot4_size4_lightblue", imgDecoSlot4Size4LightBlue],
 );
 
 import imgDecoSlot1Size1Orange from "../_images/deco_slot1_size1_orange.svg";
@@ -731,6 +787,10 @@ import imgDecoSlot2Size2Orange from "../_images/deco_slot2_size2_orange.svg";
 import imgDecoSlot3Size1Orange from "../_images/deco_slot3_size1_orange.svg";
 import imgDecoSlot3Size2Orange from "../_images/deco_slot3_size2_orange.svg";
 import imgDecoSlot3Size3Orange from "../_images/deco_slot3_size3_orange.svg";
+import imgDecoSlot4Size1Orange from "../_images/deco_slot4_size1_orange.svg";
+import imgDecoSlot4Size2Orange from "../_images/deco_slot4_size2_orange.svg";
+import imgDecoSlot4Size3Orange from "../_images/deco_slot4_size3_orange.svg";
+import imgDecoSlot4Size4Orange from "../_images/deco_slot4_size4_orange.svg";
 imgPathMapEntries.push(
     ["deco_slot1_size1_orange", imgDecoSlot1Size1Orange],
     ["deco_slot2_size1_orange", imgDecoSlot2Size1Orange],
@@ -738,6 +798,10 @@ imgPathMapEntries.push(
     ["deco_slot3_size1_orange", imgDecoSlot3Size1Orange],
     ["deco_slot3_size2_orange", imgDecoSlot3Size2Orange],
     ["deco_slot3_size3_orange", imgDecoSlot3Size3Orange],
+    ["deco_slot4_size1_orange", imgDecoSlot4Size1Orange],
+    ["deco_slot4_size2_orange", imgDecoSlot4Size2Orange],
+    ["deco_slot4_size3_orange", imgDecoSlot4Size3Orange],
+    ["deco_slot4_size4_orange", imgDecoSlot4Size4Orange],
 );
 
 import imgDecoSlot1Size1Pink from "../_images/deco_slot1_size1_pink.svg";
@@ -746,6 +810,10 @@ import imgDecoSlot2Size2Pink from "../_images/deco_slot2_size2_pink.svg";
 import imgDecoSlot3Size1Pink from "../_images/deco_slot3_size1_pink.svg";
 import imgDecoSlot3Size2Pink from "../_images/deco_slot3_size2_pink.svg";
 import imgDecoSlot3Size3Pink from "../_images/deco_slot3_size3_pink.svg";
+import imgDecoSlot4Size1Pink from "../_images/deco_slot4_size1_pink.svg";
+import imgDecoSlot4Size2Pink from "../_images/deco_slot4_size2_pink.svg";
+import imgDecoSlot4Size3Pink from "../_images/deco_slot4_size3_pink.svg";
+import imgDecoSlot4Size4Pink from "../_images/deco_slot4_size4_pink.svg";
 imgPathMapEntries.push(
     ["deco_slot1_size1_pink", imgDecoSlot1Size1Pink],
     ["deco_slot2_size1_pink", imgDecoSlot2Size1Pink],
@@ -753,6 +821,10 @@ imgPathMapEntries.push(
     ["deco_slot3_size1_pink", imgDecoSlot3Size1Pink],
     ["deco_slot3_size2_pink", imgDecoSlot3Size2Pink],
     ["deco_slot3_size3_pink", imgDecoSlot3Size3Pink],
+    ["deco_slot4_size1_pink", imgDecoSlot4Size1Pink],
+    ["deco_slot4_size2_pink", imgDecoSlot4Size2Pink],
+    ["deco_slot4_size3_pink", imgDecoSlot4Size3Pink],
+    ["deco_slot4_size4_pink", imgDecoSlot4Size4Pink],
 );
 
 import imgDecoSlot1Size1Purple from "../_images/deco_slot1_size1_purple.svg";
@@ -761,6 +833,10 @@ import imgDecoSlot2Size2Purple from "../_images/deco_slot2_size2_purple.svg";
 import imgDecoSlot3Size1Purple from "../_images/deco_slot3_size1_purple.svg";
 import imgDecoSlot3Size2Purple from "../_images/deco_slot3_size2_purple.svg";
 import imgDecoSlot3Size3Purple from "../_images/deco_slot3_size3_purple.svg";
+import imgDecoSlot4Size1Purple from "../_images/deco_slot4_size1_purple.svg";
+import imgDecoSlot4Size2Purple from "../_images/deco_slot4_size2_purple.svg";
+import imgDecoSlot4Size3Purple from "../_images/deco_slot4_size3_purple.svg";
+import imgDecoSlot4Size4Purple from "../_images/deco_slot4_size4_purple.svg";
 imgPathMapEntries.push(
     ["deco_slot1_size1_purple", imgDecoSlot1Size1Purple],
     ["deco_slot2_size1_purple", imgDecoSlot2Size1Purple],
@@ -768,6 +844,10 @@ imgPathMapEntries.push(
     ["deco_slot3_size1_purple", imgDecoSlot3Size1Purple],
     ["deco_slot3_size2_purple", imgDecoSlot3Size2Purple],
     ["deco_slot3_size3_purple", imgDecoSlot3Size3Purple],
+    ["deco_slot4_size1_purple", imgDecoSlot4Size1Purple],
+    ["deco_slot4_size2_purple", imgDecoSlot4Size2Purple],
+    ["deco_slot4_size3_purple", imgDecoSlot4Size3Purple],
+    ["deco_slot4_size4_purple", imgDecoSlot4Size4Purple],
 );
 
 import imgDecoSlot1Size1Red from "../_images/deco_slot1_size1_red.svg";
@@ -776,6 +856,10 @@ import imgDecoSlot2Size2Red from "../_images/deco_slot2_size2_red.svg";
 import imgDecoSlot3Size1Red from "../_images/deco_slot3_size1_red.svg";
 import imgDecoSlot3Size2Red from "../_images/deco_slot3_size2_red.svg";
 import imgDecoSlot3Size3Red from "../_images/deco_slot3_size3_red.svg";
+import imgDecoSlot4Size1Red from "../_images/deco_slot4_size1_red.svg";
+import imgDecoSlot4Size2Red from "../_images/deco_slot4_size2_red.svg";
+import imgDecoSlot4Size3Red from "../_images/deco_slot4_size3_red.svg";
+import imgDecoSlot4Size4Red from "../_images/deco_slot4_size4_red.svg";
 imgPathMapEntries.push(
     ["deco_slot1_size1_red", imgDecoSlot1Size1Red],
     ["deco_slot2_size1_red", imgDecoSlot2Size1Red],
@@ -783,6 +867,10 @@ imgPathMapEntries.push(
     ["deco_slot3_size1_red", imgDecoSlot3Size1Red],
     ["deco_slot3_size2_red", imgDecoSlot3Size2Red],
     ["deco_slot3_size3_red", imgDecoSlot3Size3Red],
+    ["deco_slot4_size1_red", imgDecoSlot4Size1Red],
+    ["deco_slot4_size2_red", imgDecoSlot4Size2Red],
+    ["deco_slot4_size3_red", imgDecoSlot4Size3Red],
+    ["deco_slot4_size4_red", imgDecoSlot4Size4Red],
 );
 
 import imgDecoSlot1Size1White from "../_images/deco_slot1_size1_white.svg";
@@ -791,6 +879,10 @@ import imgDecoSlot2Size2White from "../_images/deco_slot2_size2_white.svg";
 import imgDecoSlot3Size1White from "../_images/deco_slot3_size1_white.svg";
 import imgDecoSlot3Size2White from "../_images/deco_slot3_size2_white.svg";
 import imgDecoSlot3Size3White from "../_images/deco_slot3_size3_white.svg";
+import imgDecoSlot4Size1White from "../_images/deco_slot4_size1_white.svg";
+import imgDecoSlot4Size2White from "../_images/deco_slot4_size2_white.svg";
+import imgDecoSlot4Size3White from "../_images/deco_slot4_size3_white.svg";
+import imgDecoSlot4Size4White from "../_images/deco_slot4_size4_white.svg";
 imgPathMapEntries.push(
     ["deco_slot1_size1_white", imgDecoSlot1Size1White],
     ["deco_slot2_size1_white", imgDecoSlot2Size1White],
@@ -798,6 +890,10 @@ imgPathMapEntries.push(
     ["deco_slot3_size1_white", imgDecoSlot3Size1White],
     ["deco_slot3_size2_white", imgDecoSlot3Size2White],
     ["deco_slot3_size3_white", imgDecoSlot3Size3White],
+    ["deco_slot4_size1_white", imgDecoSlot4Size1White],
+    ["deco_slot4_size2_white", imgDecoSlot4Size2White],
+    ["deco_slot4_size3_white", imgDecoSlot4Size3White],
+    ["deco_slot4_size4_white", imgDecoSlot4Size4White],
 );
 
 import imgDecoSlot1Size1Yellow from "../_images/deco_slot1_size1_yellow.svg";
@@ -806,6 +902,10 @@ import imgDecoSlot2Size2Yellow from "../_images/deco_slot2_size2_yellow.svg";
 import imgDecoSlot3Size1Yellow from "../_images/deco_slot3_size1_yellow.svg";
 import imgDecoSlot3Size2Yellow from "../_images/deco_slot3_size2_yellow.svg";
 import imgDecoSlot3Size3Yellow from "../_images/deco_slot3_size3_yellow.svg";
+import imgDecoSlot4Size1Yellow from "../_images/deco_slot4_size1_yellow.svg";
+import imgDecoSlot4Size2Yellow from "../_images/deco_slot4_size2_yellow.svg";
+import imgDecoSlot4Size3Yellow from "../_images/deco_slot4_size3_yellow.svg";
+import imgDecoSlot4Size4Yellow from "../_images/deco_slot4_size4_yellow.svg";
 imgPathMapEntries.push(
     ["deco_slot1_size1_yellow", imgDecoSlot1Size1Yellow],
     ["deco_slot2_size1_yellow", imgDecoSlot2Size1Yellow],
@@ -813,6 +913,10 @@ imgPathMapEntries.push(
     ["deco_slot3_size1_yellow", imgDecoSlot3Size1Yellow],
     ["deco_slot3_size2_yellow", imgDecoSlot3Size2Yellow],
     ["deco_slot3_size3_yellow", imgDecoSlot3Size3Yellow],
+    ["deco_slot4_size1_yellow", imgDecoSlot4Size1Yellow],
+    ["deco_slot4_size2_yellow", imgDecoSlot4Size2Yellow],
+    ["deco_slot4_size3_yellow", imgDecoSlot4Size3Yellow],
+    ["deco_slot4_size4_yellow", imgDecoSlot4Size4Yellow],
 );
 
 const imgPathMap = new FrozenMap<string, string>(new Map(imgPathMapEntries));

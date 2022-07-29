@@ -127,3 +127,89 @@ Purple:     120 45  169
 Red:        187 53  6
 Yellow:     190 190 88
 ```
+
+# Steps for reproducing size-4 decos
+
+No deco:
+```
+ [  ] gem_size4
+ [  ] shadow_gem_size4
+ [  ] shadow_inner4_darker
+ [  ] gem_size3
+ [  ] gem_size2
+ [  ] gem_size1
+ [  ] gem_bottomouter
+ [  ] gem_bottominner
+```
+
+Size 1:
+```
+ [  ] gem_size4
+ [  ] shadow_gem_size4
+ [  ] shadow_inner4_darker
+ [  ] gem_size3
+ [  ] gem_size2
+>[ON] gem_size1
+ [  ] gem_bottomouter
+>[ON] gem_bottominner [Make only left side visible]
+```
+
+Size 2:
+```
+ [  ] gem_size4
+ [  ] shadow_gem_size4
+ [  ] shadow_inner4_darker
+ [  ] gem_size3
+>[ON] gem_size2
+>[  ] gem_size1
+ [  ] gem_bottomouter
+ [ON] gem_bottominner [All visible]
+```
+
+Size 3:
+```
+ [  ] gem_size4
+ [  ] shadow_gem_size4
+ [  ] shadow_inner4_darker
+>[ON] gem_size3
+>[  ] gem_size2
+ [  ] gem_size1
+>[ON] gem_bottomouter [Make only left side visible]
+ [ON] gem_bottominner [All visible]
+```
+
+Size 4:
+```
+>[ON] gem_size4
+>[ON] shadow_gem_size4
+>[ON] shadow_inner4_darker
+ [ON] gem_size3
+ [  ] gem_size2
+ [  ] gem_size1
+ [ON] gem_bottomouter [All visible]
+ [ON] gem_bottominner [All visible]
+```
+
+After generating the no-decoration version, start with size-1. Hide/unhide as needed, then unlock just the layers that need to be recoloured, then highlight everything to change the colour in one go. Save an optimized copy. Repeat for all colours.
+
+Repeat for all sizes.
+
+Scour SVG optimization parameters (anything not listed is probably turned off):
+```
+Options
+     [5 ] Number of significant digits for coordinates
+     [ON] Shorten color values
+     [ON] Convert CSS attributes to XML attributes
+     [ON] Collapse groups
+     [ON] Create groups for similar attributes
+     [  ] Keep editor data
+     [  ] Keep unreferenced definitions
+     [ON] Work around renderer bugs
+SVG Output:
+     [ON] Remove comments
+     [  ] Embed raster images
+IDs:
+     [ON] Remove unused IDs
+     [ON] Shorten IDs
+     [ON] Preserve manually created IDs not ending with digits
+```
