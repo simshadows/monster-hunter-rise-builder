@@ -1393,6 +1393,18 @@ export const __generated_skill__dereliction: Skill = {
     }
 };
 
+export const __generated_skill__tune_up: Skill = {
+    id: "tune_up",
+    shortId: 114,
+    name: "Tune-Up",
+    maxLevels: 2,
+
+    iconImgID: "skill_icon_grey",
+    filterHelpers: {
+        nameLower: "tune-up",
+    }
+};
+
 export const skillsArray: Readonly<Skill[]> = [
     __generated_skill__fire_attack,
     __generated_skill__water_attack,
@@ -1507,4 +1519,5 @@ export const skillsArray: Readonly<Skill[]> = [
     __generated_skill__wirebug_whisperer,
     __generated_skill__chain_crit,
     __generated_skill__dereliction,
+    __generated_skill__tune_up,
 ];

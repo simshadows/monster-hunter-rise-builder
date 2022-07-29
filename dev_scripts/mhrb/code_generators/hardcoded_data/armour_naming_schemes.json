@@ -125,6 +125,13 @@
     "---",
     "---"
 ],
+"five_element": [
+    "Mask",
+    "Garb",
+    "Arms",
+    "Obi",
+    "Legwear"
+],
 "flame_seal": [
     "Seal",
     "---",
@@ -138,6 +145,13 @@
     "Kote",
     "Obi",
     "Hakama"
+],
+"hornetaur_velociprey": [
+    "Helm",
+    "Mail",
+    "Braces",
+    "Tassets",
+    "Greaves"
 ],
 "ibushi": [
     "Ibushi's Helm",
@@ -180,6 +194,13 @@
     "Braces",
     "Obi",
     "Leggings"
+],
+"knight_squire": [
+    "Earrings",
+    "Cuirass",
+    "Braces",
+    "Belt",
+    "Greaves"
 ],
 "kushala": [
     "Glare",
@@ -290,6 +311,13 @@
     "Mask",
     "Chest",
     "Braces",
+    "Tassets",
+    "Greaves"
+],
+"vespoid": [
+    "Helm",
+    "Mail",
+    "Vambraces",
     "Tassets",
     "Greaves"
 ],
