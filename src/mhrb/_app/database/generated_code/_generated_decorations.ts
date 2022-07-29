@@ -107,7 +107,7 @@ import {
     __generated_skill__power_prolonger,
     __generated_skill__protective_polish,
     __generated_skill__punishing_draw,
-    __generated_skill__quick_sheath,
+    __generated_skill__quick_sheathe,
     __generated_skill__rapid_fire_up,
     __generated_skill__rapid_morph,
     __generated_skill__razor_sharp,
@@ -989,7 +989,7 @@ export const decosArray: Readonly<Decoration[]> = [
         slotSize: 2,
         rarity: 5,
         skills: [
-            [__generated_skill__quick_sheath, 1],
+            [__generated_skill__quick_sheathe, 1],
         ],
 
         icon: "brown",

@@ -117,7 +117,7 @@ import {
     __generated_skill__power_prolonger,
     __generated_skill__protective_polish,
     __generated_skill__punishing_draw,
-    __generated_skill__quick_sheath,
+    __generated_skill__quick_sheathe,
     __generated_skill__rapid_fire_up,
     __generated_skill__rapid_morph,
     __generated_skill__razor_sharp,
@@ -643,7 +643,7 @@ export const armourSetsArray: Readonly<ArmourSet[]> = [
             tierID: "lr",
             decorationSlots: [],
             skills: [
-                [__generated_skill__quick_sheath, 1],
+                [__generated_skill__quick_sheathe, 1],
             ],
 
             defenseAtLevel1: 4,
@@ -2977,7 +2977,7 @@ export const armourSetsArray: Readonly<ArmourSet[]> = [
             tierID: "lr",
             decorationSlots: [],
             skills: [
-                [__generated_skill__quick_sheath, 1],
+                [__generated_skill__quick_sheathe, 1],
             ],
 
             defenseAtLevel1: 16,
@@ -5521,7 +5521,7 @@ export const armourSetsArray: Readonly<ArmourSet[]> = [
             tierID: "lr",
             decorationSlots: [],
             skills: [
-                [__generated_skill__quick_sheath, 1],
+                [__generated_skill__quick_sheathe, 1],
             ],
 
             defenseAtLevel1: 20,
@@ -5602,7 +5602,7 @@ export const armourSetsArray: Readonly<ArmourSet[]> = [
             tierID: "lr",
             decorationSlots: [],
             skills: [
-                [__generated_skill__quick_sheath, 1],
+                [__generated_skill__quick_sheathe, 1],
             ],
 
             defenseAtLevel1: 20,
@@ -8970,7 +8970,7 @@ export const armourSetsArray: Readonly<ArmourSet[]> = [
             tierID: "hr",
             decorationSlots: [2],
             skills: [
-                [__generated_skill__quick_sheath, 1],
+                [__generated_skill__quick_sheathe, 1],
             ],
 
             defenseAtLevel1: 32,
@@ -10624,7 +10624,7 @@ export const armourSetsArray: Readonly<ArmourSet[]> = [
             tierID: "hr",
             decorationSlots: [2],
             skills: [
-                [__generated_skill__quick_sheath, 1],
+                [__generated_skill__quick_sheathe, 1],
                 [__generated_skill__fire_attack, 1],
             ],
 
@@ -10652,7 +10652,7 @@ export const armourSetsArray: Readonly<ArmourSet[]> = [
             tierID: "hr",
             decorationSlots: [1],
             skills: [
-                [__generated_skill__quick_sheath, 1],
+                [__generated_skill__quick_sheathe, 1],
                 [__generated_skill__peak_performance, 1],
             ],
 
@@ -10708,7 +10708,7 @@ export const armourSetsArray: Readonly<ArmourSet[]> = [
             tierID: "hr",
             decorationSlots: [3, 1],
             skills: [
-                [__generated_skill__quick_sheath, 1],
+                [__generated_skill__quick_sheathe, 1],
             ],
 
             defenseAtLevel1: 38,
@@ -15012,7 +15012,7 @@ export const armourSetsArray: Readonly<ArmourSet[]> = [
             tierID: "hr",
             decorationSlots: [2, 1, 1],
             skills: [
-                [__generated_skill__quick_sheath, 1],
+                [__generated_skill__quick_sheathe, 1],
                 [__generated_skill__maximum_might, 1],
             ],
 
@@ -15040,7 +15040,7 @@ export const armourSetsArray: Readonly<ArmourSet[]> = [
             tierID: "hr",
             decorationSlots: [2],
             skills: [
-                [__generated_skill__quick_sheath, 1],
+                [__generated_skill__quick_sheathe, 1],
                 [__generated_skill__maximum_might, 1],
                 [__generated_skill__critical_eye, 1],
             ],
@@ -15097,7 +15097,7 @@ export const armourSetsArray: Readonly<ArmourSet[]> = [
             tierID: "hr",
             decorationSlots: [3, 1],
             skills: [
-                [__generated_skill__quick_sheath, 1],
+                [__generated_skill__quick_sheathe, 1],
             ],
 
             defenseAtLevel1: 58,
@@ -19298,7 +19298,7 @@ export const armourSetsArray: Readonly<ArmourSet[]> = [
             tierID: "hr",
             decorationSlots: [3, 1],
             skills: [
-                [__generated_skill__quick_sheath, 1],
+                [__generated_skill__quick_sheathe, 1],
                 [__generated_skill__water_attack, 2],
                 [__generated_skill__critical_element, 1],
             ],
@@ -19327,7 +19327,7 @@ export const armourSetsArray: Readonly<ArmourSet[]> = [
             tierID: "hr",
             decorationSlots: [2, 1],
             skills: [
-                [__generated_skill__quick_sheath, 2],
+                [__generated_skill__quick_sheathe, 2],
                 [__generated_skill__focus, 1],
             ],
 
@@ -19854,7 +19854,7 @@ export const armourSetsArray: Readonly<ArmourSet[]> = [
             tierID: "mr",
             decorationSlots: [2],
             skills: [
-                [__generated_skill__quick_sheath, 1],
+                [__generated_skill__quick_sheathe, 1],
                 [__generated_skill__handicraft, 1],
                 [__generated_skill__ammo_up, 1],
             ],
@@ -19914,7 +19914,7 @@ export const armourSetsArray: Readonly<ArmourSet[]> = [
             skills: [
                 [__generated_skill__stun_resistance, 1],
                 [__generated_skill__attack_boost, 2],
-                [__generated_skill__quick_sheath, 1],
+                [__generated_skill__quick_sheathe, 1],
             ],
 
             defenseAtLevel1: 82,
@@ -20859,7 +20859,7 @@ export const armourSetsArray: Readonly<ArmourSet[]> = [
             tierID: "mr",
             decorationSlots: [4, 1],
             skills: [
-                [__generated_skill__quick_sheath, 1],
+                [__generated_skill__quick_sheathe, 1],
                 [__generated_skill__paralysis_resistance, 2],
             ],
 
@@ -20915,7 +20915,7 @@ export const armourSetsArray: Readonly<ArmourSet[]> = [
             tierID: "mr",
             decorationSlots: [4, 1],
             skills: [
-                [__generated_skill__quick_sheath, 1],
+                [__generated_skill__quick_sheathe, 1],
                 [__generated_skill__paralysis_resistance, 1],
             ],
 
@@ -20943,7 +20943,7 @@ export const armourSetsArray: Readonly<ArmourSet[]> = [
             tierID: "mr",
             decorationSlots: [4],
             skills: [
-                [__generated_skill__quick_sheath, 1],
+                [__generated_skill__quick_sheathe, 1],
                 [__generated_skill__wirebug_whisperer, 1],
             ],
 
@@ -21507,7 +21507,7 @@ export const armourSetsArray: Readonly<ArmourSet[]> = [
             decorationSlots: [1, 1],
             skills: [
                 [__generated_skill__maximum_might, 2],
-                [__generated_skill__quick_sheath, 1],
+                [__generated_skill__quick_sheathe, 1],
                 [__generated_skill__stun_resistance, 1],
             ],
 
@@ -21536,7 +21536,7 @@ export const armourSetsArray: Readonly<ArmourSet[]> = [
             decorationSlots: [2, 1],
             skills: [
                 [__generated_skill__slugger, 2],
-                [__generated_skill__quick_sheath, 1],
+                [__generated_skill__quick_sheathe, 1],
             ],
 
             defenseAtLevel1: 86,
@@ -21565,7 +21565,7 @@ export const armourSetsArray: Readonly<ArmourSet[]> = [
             skills: [
                 [__generated_skill__slugger, 1],
                 [__generated_skill__stamina_thief, 2],
-                [__generated_skill__quick_sheath, 1],
+                [__generated_skill__quick_sheathe, 1],
             ],
 
             defenseAtLevel1: 86,
@@ -22237,7 +22237,7 @@ export const armourSetsArray: Readonly<ArmourSet[]> = [
             tierID: "mr",
             decorationSlots: [2],
             skills: [
-                [__generated_skill__quick_sheath, 1],
+                [__generated_skill__quick_sheathe, 1],
                 [__generated_skill__fire_attack, 1],
                 [__generated_skill__critical_draw, 1],
             ],
@@ -22266,7 +22266,7 @@ export const armourSetsArray: Readonly<ArmourSet[]> = [
             tierID: "mr",
             decorationSlots: [1, 1],
             skills: [
-                [__generated_skill__quick_sheath, 1],
+                [__generated_skill__quick_sheathe, 1],
                 [__generated_skill__peak_performance, 1],
                 [__generated_skill__critical_draw, 1],
             ],
@@ -22324,7 +22324,7 @@ export const armourSetsArray: Readonly<ArmourSet[]> = [
             tierID: "mr",
             decorationSlots: [4, 1],
             skills: [
-                [__generated_skill__quick_sheath, 1],
+                [__generated_skill__quick_sheathe, 1],
                 [__generated_skill__critical_element, 1],
             ],
 
@@ -22681,7 +22681,7 @@ export const armourSetsArray: Readonly<ArmourSet[]> = [
             tierID: "mr",
             decorationSlots: [1],
             skills: [
-                [__generated_skill__quick_sheath, 2],
+                [__generated_skill__quick_sheathe, 2],
                 [__generated_skill__tremor_resistance, 2],
             ],
 
@@ -22770,7 +22770,7 @@ export const armourSetsArray: Readonly<ArmourSet[]> = [
             skills: [
                 [__generated_skill__tune_up, 1],
                 [__generated_skill__handicraft, 1],
-                [__generated_skill__quick_sheath, 1],
+                [__generated_skill__quick_sheathe, 1],
             ],
 
             defenseAtLevel1: 94,

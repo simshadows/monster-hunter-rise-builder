@@ -1009,15 +1009,15 @@ export const __generated_skill__punishing_draw: Skill = {
     }
 };
 
-export const __generated_skill__quick_sheath: Skill = {
-    id: "quick_sheath",
+export const __generated_skill__quick_sheathe: Skill = {
+    id: "quick_sheathe",
     shortId: 82,
-    name: "Quick Sheath",
+    name: "Quick Sheathe",
     maxLevels: 3,
 
     iconImgID: "skill_icon_brown",
     filterHelpers: {
-        nameLower: "quicksheath",
+        nameLower: "quicksheathe",
     }
 };
 
@@ -1487,7 +1487,7 @@ export const skillsArray: Readonly<Skill[]> = [
     __generated_skill__power_prolonger,
     __generated_skill__protective_polish,
     __generated_skill__punishing_draw,
-    __generated_skill__quick_sheath,
+    __generated_skill__quick_sheathe,
     __generated_skill__rapid_fire_up,
     __generated_skill__rapid_morph,
     __generated_skill__razor_sharp,

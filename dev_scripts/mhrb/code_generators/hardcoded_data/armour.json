@@ -70,11 +70,11 @@
     "suffix": "",
 
     "pieces": {
-        "head":  [[], {"item_prolonger"   : 1                   }],
-        "chest": [[], {"attack_boost"     : 1                   }],
-        "arms":  [[], {"quick_sheath"     : 1                   }],
-        "waist": [[], {"stun_resistance"  : 1                   }],
-        "legs":  [[], {"stun_resistance"  : 1, "attack_boost": 1}]
+        "head":  [[], {"item_prolonger" : 1                   }],
+        "chest": [[], {"attack_boost"   : 1                   }],
+        "arms":  [[], {"quick_sheathe"  : 1                   }],
+        "waist": [[], {"stun_resistance": 1                   }],
+        "legs":  [[], {"stun_resistance": 1, "attack_boost": 1}]
     },
     "defenses": {"defLvl1": 4, "f":0, "w":0, "t":0, "i":0, "d":0}
 }],
@@ -438,7 +438,7 @@
 
     "pieces": {
         "head":  [[], {"fire_attack"   : 1}],
-        "chest": [[], {"quick_sheath"  : 1}],
+        "chest": [[], {"quick_sheathe" : 1}],
         "arms":  [[], {"fire_attack"   : 1}],
         "waist": [[], {"recovery_speed": 1}],
         "legs":  [[], {"fire_attack"   : 1}]
@@ -843,10 +843,10 @@
 
     "pieces": {
         "head":  [[], {"critical_draw": 1}],
-        "chest": [[], {"quick_sheath" : 1}],
+        "chest": [[], {"quick_sheathe": 1}],
         "arms":  [[], {"critical_eye" : 1}],
         "waist": [[], {"critical_eye" : 2}],
-        "legs":  [[], {"quick_sheath" : 1}]
+        "legs":  [[], {"quick_sheathe": 1}]
     },
     "defenses": {"defLvl1": 20, "f":-1, "w":0, "t":-1, "i":3, "d":0}
 }],
@@ -1328,7 +1328,7 @@
     "pieces": {
         "head":  [[2  ], {"item_prolonger" : 1                   }],
         "chest": [[1  ], {"attack_boost"   : 1, "handicraft"  : 1}],
-        "arms":  [[2  ], {"quick_sheath"   : 1                   }],
+        "arms":  [[2  ], {"quick_sheathe"  : 1                   }],
         "waist": [[1,1], {"stun_resistance": 2                   }],
         "legs":  [[2  ], {"stun_resistance": 1, "attack_boost": 2}]
     },
@@ -1554,10 +1554,10 @@
     "suffix": "S",
 
     "pieces": {
-        "head":  [[2  ], {"quick_sheath"    : 1, "fire_attack"     : 1}],
-        "chest": [[1  ], {"quick_sheath"    : 1, "peak_performance": 1}],
+        "head":  [[2  ], {"quick_sheathe"   : 1, "fire_attack"     : 1}],
+        "chest": [[1  ], {"quick_sheathe"   : 1, "peak_performance": 1}],
         "arms":  [[1,1], {"peak_performance": 1, "fire_attack"     : 1}],
-        "waist": [[3,1], {"quick_sheath"    : 1                       }],
+        "waist": [[3,1], {"quick_sheathe"   : 1                       }],
         "legs":  [[1  ], {"peak_performance": 1, "fire_attack"     : 2}]
     },
     "defenses": {"defLvl1": 38, "f":3, "w":-3, "t":-1, "i":0, "d":0}
@@ -2251,10 +2251,10 @@
 
     "pieces": {
         "head":  [[1    ], {"critical_draw": 2                                       }],
-        "chest": [[2,1,1], {"quick_sheath" : 1, "maximum_might": 1                   }],
-        "arms":  [[2    ], {"quick_sheath" : 1, "maximum_might": 1, "critical_eye": 1}],
+        "chest": [[2,1,1], {"quick_sheathe": 1, "maximum_might": 1                   }],
+        "arms":  [[2    ], {"quick_sheathe": 1, "maximum_might": 1, "critical_eye": 1}],
         "waist": [[1    ], {"critical_draw": 1, "critical_eye" : 2                   }],
-        "legs":  [[3,1  ], {"quick_sheath" : 1                                       }]
+        "legs":  [[3,1  ], {"quick_sheathe": 1                                       }]
     },
     "defenses": {"defLvl1": 58, "f":-3, "w":0, "t":-1, "i":3, "d":0}
 }],
@@ -2886,11 +2886,11 @@
     "suffix": "",
 
     "pieces": {
-        "head":  [[2,1], {"constitution": 2, "water_attack"    : 2                       }],
-        "chest": [[2  ], {"constitution": 2, "weakness_exploit": 1                       }],
-        "arms":  [[1  ], {"constitution": 1, "weakness_exploit": 1, "critical_element": 2}],
-        "waist": [[3,1], {"quick_sheath": 1, "water_attack"    : 2, "critical_element": 1}],
-        "legs":  [[2,1], {"quick_sheath": 2, "focus"           : 1                       }]
+        "head":  [[2,1], {"constitution" : 2, "water_attack"    : 2                       }],
+        "chest": [[2  ], {"constitution" : 2, "weakness_exploit": 1                       }],
+        "arms":  [[1  ], {"constitution" : 1, "weakness_exploit": 1, "critical_element": 2}],
+        "waist": [[3,1], {"quick_sheathe": 1, "water_attack"    : 2, "critical_element": 1}],
+        "legs":  [[2,1], {"quick_sheathe": 2, "focus"           : 1                       }]
     },
     "defenses": {"defLvl1": 72, "f":2, "w":2, "t":0, "i":0, "d":2}
 }],
@@ -2966,9 +2966,9 @@
     "pieces": {
         "head":  [[2  ], {"item_prolonger" : 1, "attack_boost": 2                     }],
         "chest": [[1  ], {"attack_boost"   : 1, "handicraft"  : 1, "item_prolonger": 1}],
-        "arms":  [[2  ], {"quick_sheath"   : 1, "handicraft"  : 1, "ammo_up"       : 1}],
+        "arms":  [[2  ], {"quick_sheathe"  : 1, "handicraft"  : 1, "ammo_up"       : 1}],
         "waist": [[1,1], {"stun_resistance": 2, "handicraft"  : 1, "item_prolonger": 1}],
-        "legs":  [[2  ], {"stun_resistance": 1, "attack_boost": 2, "quick_sheath"  : 1}]
+        "legs":  [[2  ], {"stun_resistance": 1, "attack_boost": 2, "quick_sheathe" : 1}]
     },
     "defenses": {"defLvl1": 82, "f":0, "w":0, "t":0, "i":0, "d":0}
 }],
@@ -3136,10 +3136,10 @@
 
     "pieces": {
         "head":  [[4  ], {"paralysis_attack": 1, "wirebug_whisperer"   : 2}],
-        "chest": [[4,1], {"quick_sheath"    : 1, "paralysis_resistance": 2}],
+        "chest": [[4,1], {"quick_sheathe"   : 1, "paralysis_resistance": 2}],
         "arms":  [[3  ], {"paralysis_attack": 2, "master_mounter"      : 1}],
-        "waist": [[4,1], {"quick_sheath"    : 1, "paralysis_resistance": 1}],
-        "legs":  [[4  ], {"quick_sheath"    : 1, "wirebug_whisperer"   : 1}]
+        "waist": [[4,1], {"quick_sheathe"   : 1, "paralysis_resistance": 1}],
+        "legs":  [[4  ], {"quick_sheathe"   : 1, "wirebug_whisperer"   : 1}]
     },
     "defenses": {"defLvl1": 84, "f":-2, "w":1, "t":1, "i":1, "d":2}
 }],
@@ -3249,9 +3249,9 @@
     "suffix": "X",
 
     "pieces": {
-        "head":  [[1,1], {"maximum_might"  : 2, "quick_sheath" : 1, "stun_resistance": 1}],
-        "chest": [[2,1], {"slugger"        : 2, "quick_sheath" : 1                      }],
-        "arms":  [[2,1], {"slugger"        : 1, "stamina_thief": 2, "quick_sheath"   : 1}],
+        "head":  [[1,1], {"maximum_might"  : 2, "quick_sheathe": 1, "stun_resistance": 1}],
+        "chest": [[2,1], {"slugger"        : 2, "quick_sheathe": 1                      }],
+        "arms":  [[2,1], {"slugger"        : 1, "stamina_thief": 2, "quick_sheathe"  : 1}],
         "waist": [[4,1], {"stamina_thief"  : 1, "maximum_might": 1                      }],
         "legs":  [[3  ], {"stun_resistance": 2, "critical_eye" : 2                      }]
     },
@@ -3344,10 +3344,10 @@
     "suffix": "X",
 
     "pieces": {
-        "head":  [[2    ], {"quick_sheath"    : 1, "fire_attack"     : 1, "critical_draw"   : 1}],
-        "chest": [[1,1  ], {"quick_sheath"    : 1, "peak_performance": 1, "critical_draw"   : 1}],
+        "head":  [[2    ], {"quick_sheathe"   : 1, "fire_attack"     : 1, "critical_draw"   : 1}],
+        "chest": [[1,1  ], {"quick_sheathe"   : 1, "peak_performance": 1, "critical_draw"   : 1}],
         "arms":  [[2,1,1], {"peak_performance": 1, "fire_attack"     : 2, "critical_element": 1}],
-        "waist": [[4,1  ], {"quick_sheath"    : 1, "critical_element": 1                       }],
+        "waist": [[4,1  ], {"quick_sheathe"   : 1, "critical_element": 1                       }],
         "legs":  [[1,1  ], {"peak_performance": 1, "fire_attack"     : 2, "critical_draw"   : 1}]
     },
     "defenses": {"defLvl1": 88, "f":3, "w":-3, "t":-1, "i":0, "d":0}
@@ -3401,11 +3401,11 @@
     "suffix": "",
 
     "pieces": {
-        "head":  [[1  ], {"quick_sheath": 2, "tremor_resistance": 2                                      }],
-        "chest": [[1  ], {"guard"       : 3, "load_shells"      : 1, "normal_rapid_up"  : 1, "ammo_up": 1}],
-        "arms":  [[2  ], {"guard"       : 2, "guard_up"         : 1, "normal_rapid_up"  : 2              }],
-        "waist": [[2,2], {"tune_up"     : 1, "handicraft"       : 1, "quick_sheath"     : 1              }],
-        "legs":  [[4  ], {"tune_up"     : 1, "handicraft"       : 1, "tremor_resistance": 1              }]
+        "head":  [[1  ], {"quick_sheathe": 2, "tremor_resistance": 2                                      }],
+        "chest": [[1  ], {"guard"        : 3, "load_shells"      : 1, "normal_rapid_up"  : 1, "ammo_up": 1}],
+        "arms":  [[2  ], {"guard"        : 2, "guard_up"         : 1, "normal_rapid_up"  : 2              }],
+        "waist": [[2,2], {"tune_up"      : 1, "handicraft"       : 1, "quick_sheathe"    : 1              }],
+        "legs":  [[4  ], {"tune_up"      : 1, "handicraft"       : 1, "tremor_resistance": 1              }]
     },
     "defenses": {"defLvl1": 94, "f":-5, "w":1, "t":-3, "i":-1, "d":2}
 }],

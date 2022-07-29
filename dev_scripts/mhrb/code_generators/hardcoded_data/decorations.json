@@ -454,7 +454,7 @@
     "name": "Sheath",
     "slotSize": 2,
     "rarity": 5,
-    "skills": {"quick_sheath": 1},
+    "skills": {"quick_sheathe": 1},
 
     "icon": "brown"
 }],

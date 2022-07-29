@@ -651,9 +651,9 @@
     "icon": "yellow"
 },
 {
-    "id": "quick_sheath",
+    "id": "quick_sheathe",
     "shortId": 82,
-    "name": "Quick Sheath",
+    "name": "Quick Sheathe",
     "maxLevels": 3,
 
     "icon": "brown"
