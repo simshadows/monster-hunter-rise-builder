@@ -53,13 +53,18 @@ def generate_decos_source_file(json_data):
         assert isinstance(deco_id, int)
         assert isinstance(obj, dict)
 
-        assert isinstance(obj["name"], str)
+        assert isinstance(obj.get("name"), str) or isinstance(obj.get("verbatimName"), str)
         assert isinstance(obj["slotSize"], int)
         assert isinstance(obj["rarity"], int)
         assert isinstance(obj["skills"], dict)
         assert isinstance(obj["icon"], str)
 
-        actual_name = obj["name"] + " Jewel " + str(obj["slotSize"])
+        actual_name = None
+        if isinstance(obj.get("verbatimName"), str):
+            actual_name = obj["verbatimName"]
+            assert str(obj["slotSize"]) in actual_name # We expect the jewel size to be in there somewhere
+        else:
+            actual_name = obj["name"] + " Jewel " + str(obj["slotSize"])
 
         skills_entries = []
         for (k, v) in obj["skills"].items():

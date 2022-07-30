@@ -893,8 +893,16 @@
 
 
 {
-    "id": "chain_crit",
+    "id": "bladescale_hone",
     "shortId": 112,
+    "name": "Bladescale Hone",
+    "maxLevels": 3,
+
+    "icon": "yellow"
+},
+{
+    "id": "chain_crit",
+    "shortId": 113,
     "name": "Chain Crit",
     "maxLevels": 3,
 
@@ -902,19 +910,43 @@
 },
 {
     "id": "dereliction",
-    "shortId": 113,
+    "shortId": 114,
     "name": "Dereliction",
     "maxLevels": 3,
 
     "icon": "red"
 },
 {
+    "id": "quick_breath",
+    "shortId": 115,
+    "name": "Quick Breath",
+    "maxLevels": 1,
+
+    "icon": "green"
+},
+{
+    "id": "redirection",
+    "shortId": 116,
+    "name": "Redirection",
+    "maxLevels": 2,
+
+    "icon": "green"
+},
+{
     "id": "tune_up",
-    "shortId": 114,
+    "shortId": 117,
     "name": "Tune-Up",
     "maxLevels": 2,
 
     "icon": "grey"
+},
+{
+    "id": "wall_runner_boost",
+    "shortId": 118,
+    "name": "Wall Runner (Boost)",
+    "maxLevels": 1,
+
+    "icon": "green"
 }
 
 

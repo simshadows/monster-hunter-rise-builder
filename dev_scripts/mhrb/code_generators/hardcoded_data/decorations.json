@@ -2,6 +2,354 @@
 
 
 
+[102, {
+    "name": "Hard Bolt",
+    "slotSize": 3,
+    "rarity": 9,
+    "skills": {"thunder_attack": 3},
+
+    "icon": "yellow"
+}],
+[103, {
+    "name": "Hard Dragon",
+    "slotSize": 3,
+    "rarity": 9,
+    "skills": {"dragon_attack": 3},
+
+    "icon": "orange"
+}],
+[104, {
+    "name": "Mighty Bow",
+    "slotSize": 4,
+    "rarity": 10,
+    "skills": {"bow_charge_plus": 1},
+
+    "icon": "green"
+}],
+[105, {
+    "name": "Flywall",
+    "slotSize": 1,
+    "rarity": 9,
+    "skills": {"wall_runner_boost": 1},
+
+    "icon": "green"
+}],
+[106, {
+    "name": "Bladescale",
+    "slotSize": 2,
+    "rarity": 9,
+    "skills": {"bladescale_hone": 1},
+
+    "icon": "yellow"
+}],
+[107, {
+    "verbatimName": "Crit Element Jewel+ 4",
+    "slotSize": 4,
+    "rarity": 9,
+    "skills": {"critical_element": 2},
+
+    "icon": "darkblue"
+}],
+[108, {
+    "verbatimName": "Hard Defense Jewel++ 4",
+    "slotSize": 4,
+    "rarity": 10,
+    "skills": {"defense_boost": 5},
+
+    "icon": "gold"
+}],
+[109, {
+    "name": "Redirection",
+    "slotSize": 3,
+    "rarity": 9,
+    "skills": {"redirection": 1},
+
+    "icon": "green"
+}],
+[110, {
+    "verbatimName": "Hard Friendship Jewel+ 4",
+    "slotSize": 4,
+    "rarity": 9,
+    "skills": {"wide_range": 4},
+
+    "icon": "white"
+}],
+[111, {
+    "name": "Breath",
+    "slotSize": 3,
+    "rarity": 8,
+    "skills": {"quick_breath": 1},
+
+    "icon": "green"
+}],
+[112, {
+    "name": "Hard Defense",
+    "slotSize": 3,
+    "rarity": 9,
+    "skills": {"defense_boost": 3},
+
+    "icon": "gold"
+}],
+[113, {
+    "name": "Hard Steadfast",
+    "slotSize": 4,
+    "rarity": 8,
+    "skills": {"stun_resistance": 3},
+
+    "icon": "yellow"
+}],
+[114, {
+    "verbatimName": "Shield Jewel+ 4",
+    "slotSize": 4,
+    "rarity": 8,
+    "skills": {"guard_up": 2},
+
+    "icon": "white"
+}],
+[115, {
+    "verbatimName": "Ironwall Jewel+ 3",
+    "slotSize": 3,
+    "rarity": 8,
+    "skills": {"guard": 2},
+
+    "icon": "grey"
+}],
+[116, {
+    "verbatimName": "Jumping Jewel+ 4",
+    "slotSize": 4,
+    "rarity": 8,
+    "skills": {"evade_extender": 2},
+
+    "icon": "lightblue"
+}],
+[117, {
+    "verbatimName": "Gambit Jewel+ 4",
+    "slotSize": 4,
+    "rarity": 8,
+    "skills": {"punishing_draw": 2},
+
+    "icon": "yellow"
+}],
+[118, {
+    "verbatimName": "Evasion Jewel+ 4",
+    "slotSize": 4,
+    "rarity": 8,
+    "skills": {"evade_window": 2},
+
+    "icon": "lightblue"
+}],
+[119, {
+    "name": "Hard Wall Run",
+    "slotSize": 4,
+    "rarity": 8,
+    "skills": {"wall_runner": 3},
+
+    "icon": "green"
+}],
+[120, {
+    "name": "Hard Satiated",
+    "slotSize": 4,
+    "rarity": 8,
+    "skills": {"free_meal": 3},
+
+    "icon": "brown"
+}],
+[121, {
+    "verbatimName": "Charger Jewel+ 4",
+    "slotSize": 4,
+    "rarity": 8,
+    "skills": {"focus": 2},
+
+    "icon": "white"
+}],
+[122, {
+    "name": "Hard Wind Res",
+    "slotSize": 4,
+    "rarity": 8,
+    "skills": {"windproof": 3},
+
+    "icon": "white"
+}],
+[123, {
+    "name": "Hard Friendship",
+    "slotSize": 3,
+    "rarity": 8,
+    "skills": {"wide_range": 3},
+
+    "icon": "white"
+}],
+[124, {
+    "verbatimName": "Gobbler Jewel+ 4",
+    "slotSize": 4,
+    "rarity": 8,
+    "skills": {"speed_eating": 2},
+
+    "icon": "gold"
+}],
+[125, {
+    "verbatimName": "Protection Jewel+ 4",
+    "slotSize": 4,
+    "rarity": 8,
+    "skills": {"divine_blessing": 2},
+
+    "icon": "white"
+}],
+[126, {
+    "name": "Hard Recovery",
+    "slotSize": 4,
+    "rarity": 8,
+    "skills": {"recovery_speed": 3},
+
+    "icon": "green"
+}],
+[127, {
+    "verbatimName": "Medicine Jewel+ 4",
+    "slotSize": 4,
+    "rarity": 8,
+    "skills": {"recovery_up": 2},
+
+    "icon": "green"
+}],
+[128, {
+    "name": "Hard Bomber",
+    "slotSize": 4,
+    "rarity": 8,
+    "skills": {"bombardier": 3},
+
+    "icon": "orange"
+}],
+[129, {
+    "verbatimName": "Defense Jewel+ 2",
+    "slotSize": 2,
+    "rarity": 8,
+    "skills": {"defense_boost": 2},
+
+    "icon": "gold"
+}],
+[130, {
+    "verbatimName": "Blaze Jewel+ 2",
+    "slotSize": 2,
+    "rarity": 8,
+    "skills": {"fire_attack": 2},
+
+    "icon": "red"
+}],
+[131, {
+    "verbatimName": "Stream Jewel+ 2",
+    "slotSize": 2,
+    "rarity": 8,
+    "skills": {"water_attack": 2},
+
+    "icon": "blue"
+}],
+[132, {
+    "verbatimName": "Bolt Jewel+ 2",
+    "slotSize": 2,
+    "rarity": 8,
+    "skills": {"thunder_attack": 2},
+
+    "icon": "yellow"
+}],
+[133, {
+    "verbatimName": "Frost Jewel+ 2",
+    "slotSize": 2,
+    "rarity": 8,
+    "skills": {"ice_attack": 2},
+
+    "icon": "lightblue"
+}],
+[134, {
+    "verbatimName": "Dragon Jewel+ 2",
+    "slotSize": 2,
+    "rarity": 8,
+    "skills": {"dragon_attack": 2},
+
+    "icon": "orange"
+}],
+[135, {
+    "name": "Hard Hungerless",
+    "slotSize": 4,
+    "rarity": 8,
+    "skills": {"hunger_resistance": 3},
+
+    "icon": "gold"
+}],
+[136, {
+    "name": "Hard Enduring",
+    "slotSize": 4,
+    "rarity": 8,
+    "skills": {"item_prolonger": 3},
+
+    "icon": "brown"
+}],
+[137, {
+    "name": "Hard Geology",
+    "slotSize": 4,
+    "rarity": 8,
+    "skills": {"geologist": 3},
+
+    "icon": "brown"
+}],
+[138, {
+    "name": "Hard Botany",
+    "slotSize": 4,
+    "rarity": 8,
+    "skills": {"botanist": 3},
+
+    "icon": "green"
+}],
+[139, {
+    "name": "Hard Fire Res",
+    "slotSize": 4,
+    "rarity": 8,
+    "skills": {"fire_resistance": 3},
+
+    "icon": "red"
+}],
+[140, {
+    "name": "Hard Water Res",
+    "slotSize": 4,
+    "rarity": 8,
+    "skills": {"water_resistance": 3},
+
+    "icon": "blue"
+}],
+[141, {
+    "name": "Hard Thunder Res",
+    "slotSize": 4,
+    "rarity": 8,
+    "skills": {"thunder_resistance": 3},
+
+    "icon": "yellow"
+}],
+[142, {
+    "name": "Hard Ice Res",
+    "slotSize": 4,
+    "rarity": 8,
+    "skills": {"ice_resistance": 3},
+
+    "icon": "lightblue"
+}],
+[143, {
+    "name": "Hard Dragon Res",
+    "slotSize": 4,
+    "rarity": 8,
+    "skills": {"dragon_resistance": 3},
+
+    "icon": "orange"
+}],
+[144, {
+    "verbatimName": "Sniper Jewel+ 4",
+    "slotSize": 4,
+    "rarity": 8,
+    "skills": {"steadiness": 3},
+
+    "icon": "grey"
+}],
+
+
+
+
 [1, {
     "name": "Mastery",
     "slotSize": 2,

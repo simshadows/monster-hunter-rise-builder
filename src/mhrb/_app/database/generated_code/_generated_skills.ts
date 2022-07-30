@@ -1369,9 +1369,21 @@ export const __generated_skill__wirebug_whisperer: Skill = {
     }
 };
 
+export const __generated_skill__bladescale_hone: Skill = {
+    id: "bladescale_hone",
+    shortId: 112,
+    name: "Bladescale Hone",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_yellow",
+    filterHelpers: {
+        nameLower: "bladescalehone",
+    }
+};
+
 export const __generated_skill__chain_crit: Skill = {
     id: "chain_crit",
-    shortId: 112,
+    shortId: 113,
     name: "Chain Crit",
     maxLevels: 3,
 
@@ -1383,7 +1395,7 @@ export const __generated_skill__chain_crit: Skill = {
 
 export const __generated_skill__dereliction: Skill = {
     id: "dereliction",
-    shortId: 113,
+    shortId: 114,
     name: "Dereliction",
     maxLevels: 3,
 
@@ -1393,15 +1405,51 @@ export const __generated_skill__dereliction: Skill = {
     }
 };
 
+export const __generated_skill__quick_breath: Skill = {
+    id: "quick_breath",
+    shortId: 115,
+    name: "Quick Breath",
+    maxLevels: 1,
+
+    iconImgID: "skill_icon_green",
+    filterHelpers: {
+        nameLower: "quickbreath",
+    }
+};
+
+export const __generated_skill__redirection: Skill = {
+    id: "redirection",
+    shortId: 116,
+    name: "Redirection",
+    maxLevels: 2,
+
+    iconImgID: "skill_icon_green",
+    filterHelpers: {
+        nameLower: "redirection",
+    }
+};
+
 export const __generated_skill__tune_up: Skill = {
     id: "tune_up",
-    shortId: 114,
+    shortId: 117,
     name: "Tune-Up",
     maxLevels: 2,
 
     iconImgID: "skill_icon_grey",
     filterHelpers: {
         nameLower: "tune-up",
+    }
+};
+
+export const __generated_skill__wall_runner_boost: Skill = {
+    id: "wall_runner_boost",
+    shortId: 118,
+    name: "Wall Runner (Boost)",
+    maxLevels: 1,
+
+    iconImgID: "skill_icon_green",
+    filterHelpers: {
+        nameLower: "wallrunner(boost)",
     }
 };
 
@@ -1517,7 +1565,11 @@ export const skillsArray: Readonly<Skill[]> = [
     __generated_skill__wind_alignment,
     __generated_skill__windproof,
     __generated_skill__wirebug_whisperer,
+    __generated_skill__bladescale_hone,
     __generated_skill__chain_crit,
     __generated_skill__dereliction,
+    __generated_skill__quick_breath,
+    __generated_skill__redirection,
     __generated_skill__tune_up,
+    __generated_skill__wall_runner_boost,
 ];
