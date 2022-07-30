@@ -3,6 +3,7 @@
 ################################
 
 /dist
+/dev_scripts/_venv
 
 ##############################
 ### yarn Generated Ignores ###

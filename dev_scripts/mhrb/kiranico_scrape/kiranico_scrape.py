@@ -24,7 +24,7 @@ import json
 import requests
 import multiprocessing as mp
 
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, NavigableString
 
 WEAPON_URLS = [
     ("greatsword"    , "https://mhrise.kiranico.com/data/weapons?scope=wp&value=0" , {"elestat", "melee"}),
@@ -63,9 +63,9 @@ def process_string_to_identifier(s):
     a = [(m[x] if (x in m) else x.lower()) for x in s] # Convert roman numerals and force to all-lowercase
     return "_".join(re.sub("[^a-z0-9]+", "", x) for x in a) # Filter out non-alphanumeric
 
-#
-# SCRAPER
-#
+################################################################################
+# WEAPON SCRAPER ###############################################################
+################################################################################
 
 def scrape_weapon_page(url, name, category, tagset):
     soup = download(url)
@@ -477,23 +477,58 @@ def scrape_weapon_category_page(weapon_category, url, tagset):
         ret.append(data)
     return ret
 
+################################################################################
+# DECORATION SCRAPER ###########################################################
+################################################################################
+
+def scrape_decos_page(url):
+    soup = download(url)
+
+    c = soup.find_all("tbody")
+    assert len(c) == 1
+    c = c[0]
+
+    ret = []
+    for (table_index, c2) in enumerate(c.contents):
+        if isinstance(c2, NavigableString):
+            continue
+
+        deco_name = str(c2.contents[1].contents[0].contents[0])
+        ret.append({"deco_name": deco_name})
+
+    print(f"Discovered {len(ret)} decorations")
+    return ret
+
+################################################################################
+# (The rest) ###################################################################
+################################################################################
+
 def op(obj):
     (weapon_category, weapon_category_url, tagset) = obj
     return (weapon_category, scrape_weapon_category_page(weapon_category, weapon_category_url, tagset))
 
 def run():
-    with mp.Pool(len(WEAPON_URLS)) as pool:
-        result = pool.map(op, WEAPON_URLS)
+    try:
+        os.makedirs("downloaded_data")
+    except FileExistsError:
+        pass
+    #######################
+    # STEP 1: Decorations #
+    #######################
+    deco_data = scrape_decos_page("https://mhrise.kiranico.com/data/decorations")
+    fwrite_json("downloaded_data/downloaded_data_decorations.json", data=deco_data)
+    print("----------------------\n")
 
-        data = {}
-        for (weapon_category, obj) in result:
-            data[weapon_category] = obj
+    ###################
+    # STEP 2: Weapons #
+    ###################
+    #with mp.Pool(len(WEAPON_URLS)) as pool:
+    #    result = pool.map(op, WEAPON_URLS)
 
-        try:
-            os.makedirs("downloaded_data")
-        except FileExistsError:
-            pass
-        fwrite_json("downloaded_data/downloaded_data.json", data=data)
+    #    data = {}
+    #    for (weapon_category, obj) in result:
+    #        data[weapon_category] = obj
+    #    fwrite_json("downloaded_data/downloaded_data.json", data=data)
     return
 
 if __name__ == '__main__':

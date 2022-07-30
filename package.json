@@ -14,6 +14,7 @@
     "serve": "python3 -m http.server --directory ./dist",
     "ghpages-build": "webpack --output-path ./docs",
     "ghpages-serve": "python3 -m http.server --directory ./docs",
+    "python-venv-init": "python3 -m venv ./dev_scripts/_venv",
     "run-code-generators": "python3 ./dev_scripts/mhrb/code_generators/run_code_generator.py"
   },
   "devDependencies": {
