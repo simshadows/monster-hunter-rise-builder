@@ -149,6 +149,321 @@ import {
 export const decosArray: Readonly<Decoration[]> = [
     {
         id: 102,
+        name: "Fate Jewel+ 4",
+
+        slotSize: 4,
+        rarity: 9,
+        skills: [
+            [__generated_skill__good_luck, 2],
+        ],
+
+        icon: "yellow",
+        filterHelpers: {
+            nameLower: "fatejewel+4",
+        }
+    },
+    {
+        id: 103,
+        name: "Hellfire Jewel+ 4",
+
+        slotSize: 4,
+        rarity: 9,
+        skills: [
+            [__generated_skill__hellfire_cloak, 2],
+        ],
+
+        icon: "purple",
+        filterHelpers: {
+            nameLower: "hellfirejewel+4",
+        }
+    },
+    {
+        id: 104,
+        name: "Enhancer Jewel+ 4",
+
+        slotSize: 4,
+        rarity: 9,
+        skills: [
+            [__generated_skill__power_prolonger, 2],
+        ],
+
+        icon: "brown",
+        filterHelpers: {
+            nameLower: "enhancerjewel+4",
+        }
+    },
+    {
+        id: 105,
+        name: "Earplug Jewel+ 4",
+
+        slotSize: 4,
+        rarity: 9,
+        skills: [
+            [__generated_skill__earplugs, 2],
+        ],
+
+        icon: "white",
+        filterHelpers: {
+            nameLower: "earplugjewel+4",
+        }
+    },
+    {
+        id: 106,
+        name: "Fungiform Jewel+ 4",
+
+        slotSize: 4,
+        rarity: 9,
+        skills: [
+            [__generated_skill__mushroomancer, 2],
+        ],
+
+        icon: "purple",
+        filterHelpers: {
+            nameLower: "fungiformjewel+4",
+        }
+    },
+    {
+        id: 107,
+        name: "Draw Jewel+ 4",
+
+        slotSize: 4,
+        rarity: 9,
+        skills: [
+            [__generated_skill__critical_draw, 2],
+        ],
+
+        icon: "pink",
+        filterHelpers: {
+            nameLower: "drawjewel+4",
+        }
+    },
+    {
+        id: 108,
+        name: "Precise Jewel+ 4",
+
+        slotSize: 4,
+        rarity: 9,
+        skills: [
+            [__generated_skill__ballistics, 2],
+        ],
+
+        icon: "white",
+        filterHelpers: {
+            nameLower: "precisejewel+4",
+        }
+    },
+    {
+        id: 109,
+        name: "Wirebug Jewel+ 4",
+
+        slotSize: 4,
+        rarity: 9,
+        skills: [
+            [__generated_skill__wirebug_whisperer, 2],
+        ],
+
+        icon: "lightblue",
+        filterHelpers: {
+            nameLower: "wirebugjewel+4",
+        }
+    },
+    {
+        id: 110,
+        name: "Mind's Eye Jewel+ 4",
+
+        slotSize: 4,
+        rarity: 9,
+        skills: [
+            [__generated_skill__minds_eye, 2],
+        ],
+
+        icon: "white",
+        filterHelpers: {
+            nameLower: "mind'seyejewel+4",
+        }
+    },
+    {
+        id: 111,
+        name: "Sprinter Jewel+ 4",
+
+        slotSize: 4,
+        rarity: 9,
+        skills: [
+            [__generated_skill__marathon_runner, 2],
+        ],
+
+        icon: "gold",
+        filterHelpers: {
+            nameLower: "sprinterjewel+4",
+        }
+    },
+    {
+        id: 112,
+        name: "Refresh Jewel+ 4",
+
+        slotSize: 4,
+        rarity: 9,
+        skills: [
+            [__generated_skill__stamina_surge, 2],
+        ],
+
+        icon: "gold",
+        filterHelpers: {
+            nameLower: "refreshjewel+4",
+        }
+    },
+    {
+        id: 113,
+        name: "KO Jewel+ 4",
+
+        slotSize: 4,
+        rarity: 9,
+        skills: [
+            [__generated_skill__slugger, 2],
+        ],
+
+        icon: "yellow",
+        filterHelpers: {
+            nameLower: "kojewel+4",
+        }
+    },
+    {
+        id: 114,
+        name: "Bubble Jewel+ 4",
+
+        slotSize: 4,
+        rarity: 9,
+        skills: [
+            [__generated_skill__bubbly_dance, 2],
+        ],
+
+        icon: "white",
+        filterHelpers: {
+            nameLower: "bubblejewel+4",
+        }
+    },
+    {
+        id: 115,
+        name: "Physique Jewel+ 4",
+
+        slotSize: 4,
+        rarity: 9,
+        skills: [
+            [__generated_skill__constitution, 2],
+        ],
+
+        icon: "gold",
+        filterHelpers: {
+            nameLower: "physiquejewel+4",
+        }
+    },
+    {
+        id: 116,
+        name: "Footing Jewel+ 4",
+
+        slotSize: 4,
+        rarity: 9,
+        skills: [
+            [__generated_skill__tremor_resistance, 2],
+        ],
+
+        icon: "grey",
+        filterHelpers: {
+            nameLower: "footingjewel+4",
+        }
+    },
+    {
+        id: 117,
+        name: "Hard Brace Jewel 4",
+
+        slotSize: 4,
+        rarity: 9,
+        skills: [
+            [__generated_skill__flinch_free, 3],
+        ],
+
+        icon: "grey",
+        filterHelpers: {
+            nameLower: "hardbracejewel4",
+        }
+    },
+    {
+        id: 118,
+        name: "Resistor Jewel+ 4",
+
+        slotSize: 4,
+        rarity: 9,
+        skills: [
+            [__generated_skill__blight_resistance, 2],
+        ],
+
+        icon: "darkblue",
+        filterHelpers: {
+            nameLower: "resistorjewel+4",
+        }
+    },
+    {
+        id: 119,
+        name: "Hard Grinder Jewel 4",
+
+        slotSize: 4,
+        rarity: 9,
+        skills: [
+            [__generated_skill__speed_sharpening, 3],
+        ],
+
+        icon: "yellow",
+        filterHelpers: {
+            nameLower: "hardgrinderjewel4",
+        }
+    },
+    {
+        id: 120,
+        name: "Hard Drain Jewel 4",
+
+        slotSize: 4,
+        rarity: 9,
+        skills: [
+            [__generated_skill__stamina_thief, 3],
+        ],
+
+        icon: "darkblue",
+        filterHelpers: {
+            nameLower: "harddrainjewel4",
+        }
+    },
+    {
+        id: 121,
+        name: "Hard Blaze Jewel 3",
+
+        slotSize: 3,
+        rarity: 9,
+        skills: [
+            [__generated_skill__fire_attack, 3],
+        ],
+
+        icon: "red",
+        filterHelpers: {
+            nameLower: "hardblazejewel3",
+        }
+    },
+    {
+        id: 122,
+        name: "Hard Stream Jewel 3",
+
+        slotSize: 3,
+        rarity: 9,
+        skills: [
+            [__generated_skill__water_attack, 3],
+        ],
+
+        icon: "blue",
+        filterHelpers: {
+            nameLower: "hardstreamjewel3",
+        }
+    },
+    {
+        id: 123,
         name: "Hard Bolt Jewel 3",
 
         slotSize: 3,
@@ -163,7 +478,22 @@ export const decosArray: Readonly<Decoration[]> = [
         }
     },
     {
-        id: 103,
+        id: 124,
+        name: "Hard Frost Jewel 3",
+
+        slotSize: 3,
+        rarity: 9,
+        skills: [
+            [__generated_skill__ice_attack, 3],
+        ],
+
+        icon: "lightblue",
+        filterHelpers: {
+            nameLower: "hardfrostjewel3",
+        }
+    },
+    {
+        id: 125,
         name: "Hard Dragon Jewel 3",
 
         slotSize: 3,
@@ -178,7 +508,7 @@ export const decosArray: Readonly<Decoration[]> = [
         }
     },
     {
-        id: 104,
+        id: 126,
         name: "Mighty Bow Jewel 4",
 
         slotSize: 4,
@@ -193,7 +523,7 @@ export const decosArray: Readonly<Decoration[]> = [
         }
     },
     {
-        id: 105,
+        id: 127,
         name: "Flywall Jewel 1",
 
         slotSize: 1,
@@ -208,7 +538,7 @@ export const decosArray: Readonly<Decoration[]> = [
         }
     },
     {
-        id: 106,
+        id: 128,
         name: "Bladescale Jewel 2",
 
         slotSize: 2,
@@ -223,7 +553,7 @@ export const decosArray: Readonly<Decoration[]> = [
         }
     },
     {
-        id: 107,
+        id: 129,
         name: "Crit Element Jewel+ 4",
 
         slotSize: 4,
@@ -238,7 +568,7 @@ export const decosArray: Readonly<Decoration[]> = [
         }
     },
     {
-        id: 108,
+        id: 130,
         name: "Hard Defense Jewel++ 4",
 
         slotSize: 4,
@@ -253,7 +583,7 @@ export const decosArray: Readonly<Decoration[]> = [
         }
     },
     {
-        id: 109,
+        id: 131,
         name: "Redirection Jewel 3",
 
         slotSize: 3,
@@ -268,7 +598,7 @@ export const decosArray: Readonly<Decoration[]> = [
         }
     },
     {
-        id: 110,
+        id: 132,
         name: "Hard Friendship Jewel+ 4",
 
         slotSize: 4,
@@ -283,7 +613,7 @@ export const decosArray: Readonly<Decoration[]> = [
         }
     },
     {
-        id: 111,
+        id: 133,
         name: "Breath Jewel 3",
 
         slotSize: 3,
@@ -298,7 +628,7 @@ export const decosArray: Readonly<Decoration[]> = [
         }
     },
     {
-        id: 112,
+        id: 134,
         name: "Hard Defense Jewel 3",
 
         slotSize: 3,
@@ -313,7 +643,7 @@ export const decosArray: Readonly<Decoration[]> = [
         }
     },
     {
-        id: 113,
+        id: 135,
         name: "Hard Steadfast Jewel 4",
 
         slotSize: 4,
@@ -328,7 +658,7 @@ export const decosArray: Readonly<Decoration[]> = [
         }
     },
     {
-        id: 114,
+        id: 136,
         name: "Shield Jewel+ 4",
 
         slotSize: 4,
@@ -343,7 +673,7 @@ export const decosArray: Readonly<Decoration[]> = [
         }
     },
     {
-        id: 115,
+        id: 137,
         name: "Ironwall Jewel+ 3",
 
         slotSize: 3,
@@ -358,7 +688,7 @@ export const decosArray: Readonly<Decoration[]> = [
         }
     },
     {
-        id: 116,
+        id: 138,
         name: "Jumping Jewel+ 4",
 
         slotSize: 4,
@@ -373,7 +703,7 @@ export const decosArray: Readonly<Decoration[]> = [
         }
     },
     {
-        id: 117,
+        id: 139,
         name: "Gambit Jewel+ 4",
 
         slotSize: 4,
@@ -388,7 +718,7 @@ export const decosArray: Readonly<Decoration[]> = [
         }
     },
     {
-        id: 118,
+        id: 140,
         name: "Evasion Jewel+ 4",
 
         slotSize: 4,
@@ -403,7 +733,7 @@ export const decosArray: Readonly<Decoration[]> = [
         }
     },
     {
-        id: 119,
+        id: 141,
         name: "Hard Wall Run Jewel 4",
 
         slotSize: 4,
@@ -418,7 +748,7 @@ export const decosArray: Readonly<Decoration[]> = [
         }
     },
     {
-        id: 120,
+        id: 142,
         name: "Hard Satiated Jewel 4",
 
         slotSize: 4,
@@ -433,7 +763,7 @@ export const decosArray: Readonly<Decoration[]> = [
         }
     },
     {
-        id: 121,
+        id: 143,
         name: "Charger Jewel+ 4",
 
         slotSize: 4,
@@ -448,7 +778,7 @@ export const decosArray: Readonly<Decoration[]> = [
         }
     },
     {
-        id: 122,
+        id: 144,
         name: "Hard Wind Res Jewel 4",
 
         slotSize: 4,
@@ -463,7 +793,7 @@ export const decosArray: Readonly<Decoration[]> = [
         }
     },
     {
-        id: 123,
+        id: 145,
         name: "Hard Friendship Jewel 3",
 
         slotSize: 3,
@@ -478,7 +808,7 @@ export const decosArray: Readonly<Decoration[]> = [
         }
     },
     {
-        id: 124,
+        id: 146,
         name: "Gobbler Jewel+ 4",
 
         slotSize: 4,
@@ -493,7 +823,7 @@ export const decosArray: Readonly<Decoration[]> = [
         }
     },
     {
-        id: 125,
+        id: 147,
         name: "Protection Jewel+ 4",
 
         slotSize: 4,
@@ -508,7 +838,7 @@ export const decosArray: Readonly<Decoration[]> = [
         }
     },
     {
-        id: 126,
+        id: 148,
         name: "Hard Recovery Jewel 4",
 
         slotSize: 4,
@@ -523,7 +853,7 @@ export const decosArray: Readonly<Decoration[]> = [
         }
     },
     {
-        id: 127,
+        id: 149,
         name: "Medicine Jewel+ 4",
 
         slotSize: 4,
@@ -538,7 +868,7 @@ export const decosArray: Readonly<Decoration[]> = [
         }
     },
     {
-        id: 128,
+        id: 150,
         name: "Hard Bomber Jewel 4",
 
         slotSize: 4,
@@ -553,7 +883,7 @@ export const decosArray: Readonly<Decoration[]> = [
         }
     },
     {
-        id: 129,
+        id: 151,
         name: "Defense Jewel+ 2",
 
         slotSize: 2,
@@ -568,7 +898,7 @@ export const decosArray: Readonly<Decoration[]> = [
         }
     },
     {
-        id: 130,
+        id: 152,
         name: "Blaze Jewel+ 2",
 
         slotSize: 2,
@@ -583,7 +913,7 @@ export const decosArray: Readonly<Decoration[]> = [
         }
     },
     {
-        id: 131,
+        id: 153,
         name: "Stream Jewel+ 2",
 
         slotSize: 2,
@@ -598,7 +928,7 @@ export const decosArray: Readonly<Decoration[]> = [
         }
     },
     {
-        id: 132,
+        id: 154,
         name: "Bolt Jewel+ 2",
 
         slotSize: 2,
@@ -613,7 +943,7 @@ export const decosArray: Readonly<Decoration[]> = [
         }
     },
     {
-        id: 133,
+        id: 155,
         name: "Frost Jewel+ 2",
 
         slotSize: 2,
@@ -628,7 +958,7 @@ export const decosArray: Readonly<Decoration[]> = [
         }
     },
     {
-        id: 134,
+        id: 156,
         name: "Dragon Jewel+ 2",
 
         slotSize: 2,
@@ -643,7 +973,7 @@ export const decosArray: Readonly<Decoration[]> = [
         }
     },
     {
-        id: 135,
+        id: 157,
         name: "Hard Hungerless Jewel 4",
 
         slotSize: 4,
@@ -658,7 +988,7 @@ export const decosArray: Readonly<Decoration[]> = [
         }
     },
     {
-        id: 136,
+        id: 158,
         name: "Hard Enduring Jewel 4",
 
         slotSize: 4,
@@ -673,7 +1003,7 @@ export const decosArray: Readonly<Decoration[]> = [
         }
     },
     {
-        id: 137,
+        id: 159,
         name: "Hard Geology Jewel 4",
 
         slotSize: 4,
@@ -688,7 +1018,7 @@ export const decosArray: Readonly<Decoration[]> = [
         }
     },
     {
-        id: 138,
+        id: 160,
         name: "Hard Botany Jewel 4",
 
         slotSize: 4,
@@ -703,7 +1033,7 @@ export const decosArray: Readonly<Decoration[]> = [
         }
     },
     {
-        id: 139,
+        id: 161,
         name: "Hard Fire Res Jewel 4",
 
         slotSize: 4,
@@ -718,7 +1048,7 @@ export const decosArray: Readonly<Decoration[]> = [
         }
     },
     {
-        id: 140,
+        id: 162,
         name: "Hard Water Res Jewel 4",
 
         slotSize: 4,
@@ -733,7 +1063,7 @@ export const decosArray: Readonly<Decoration[]> = [
         }
     },
     {
-        id: 141,
+        id: 163,
         name: "Hard Thunder Res Jewel 4",
 
         slotSize: 4,
@@ -748,7 +1078,7 @@ export const decosArray: Readonly<Decoration[]> = [
         }
     },
     {
-        id: 142,
+        id: 164,
         name: "Hard Ice Res Jewel 4",
 
         slotSize: 4,
@@ -763,7 +1093,7 @@ export const decosArray: Readonly<Decoration[]> = [
         }
     },
     {
-        id: 143,
+        id: 165,
         name: "Hard Dragon Res Jewel 4",
 
         slotSize: 4,
@@ -778,7 +1108,7 @@ export const decosArray: Readonly<Decoration[]> = [
         }
     },
     {
-        id: 144,
+        id: 166,
         name: "Sniper Jewel+ 4",
 
         slotSize: 4,
@@ -1717,7 +2047,7 @@ export const decosArray: Readonly<Decoration[]> = [
             [__generated_skill__blight_resistance, 1],
         ],
 
-        icon: "blue",
+        icon: "darkblue",
         filterHelpers: {
             nameLower: "resistorjewel2",
         }

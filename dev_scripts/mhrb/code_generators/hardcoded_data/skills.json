@@ -200,7 +200,7 @@
     "name": "Blight Resistance",
     "maxLevels": 3,
 
-    "icon": "blue"
+    "icon": "darkblue"
 },
 {
     "id": "bludgeoner",

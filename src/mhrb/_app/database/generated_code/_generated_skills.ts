@@ -331,7 +331,7 @@ export const __generated_skill__blight_resistance: Skill = {
     name: "Blight Resistance",
     maxLevels: 3,
 
-    iconImgID: "skill_icon_blue",
+    iconImgID: "skill_icon_darkblue",
     filterHelpers: {
         nameLower: "blightresistance",
     }
