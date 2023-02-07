@@ -1,4 +1,3 @@
-// @ts-nocheck
 /*
  * Author:  simshadows <contact@simshadows.com>
  * License: GNU Affero General Public License v3 (AGPL-3.0)
@@ -8,13 +7,19 @@ import {
     type MHRDatabase,
 } from "../../database";
 import {
+    type ElementStr,
+    isStatStr,
+    isEleStatStr,
     type Skill,
 } from "../../common/types";
 
 import {Build} from "../build";
 import {CalcState} from "../calc_state";
 
-import {SkillContributions} from "./_common";
+import {
+    type EleStatObj,
+    type SkillContributions
+} from "./_common";
 
 
 const assert = console.assert;
@@ -35,9 +40,9 @@ const CRITICAL_BOOST_DAMAGE_MULTIPLIERS: RO4TupleNumbers = [
 
 const CRITICAL_ELEMENT_DAMAGE_MULTIPLIERS: RO4TupleNumbers = [
     1.00, // Level 0
-    1.05, // Level 0
-    1.10, // Level 0
-    1.15, // Level 0
+    1.05, // Level 1
+    1.10, // Level 2
+    1.15, // Level 3
 ];
 
 
@@ -115,9 +120,12 @@ function getClippedSkillsMap(build: Build): SkillLevelsMap {
 
 
 // No operation
-// (All skills that intentionally do not have any operations attached to them will use this function.)
-function nop() {
-    return () => {}; // Do nothing
+// (All skills that intentionally do not have any operations attached to them will
+// use this function.)
+function nop(skillLevel: number, skillID: string): void {
+    skillID;
+    console.assert((skillLevel % 1 === 0) && (skillLevel > 0));
+    // Do nothing
 }
 
 
@@ -131,19 +139,39 @@ function getSkillContributions(
 
     // TODO: Verify skill state labels?
 
-    function addToAllEleRes(x) {
-        const newEleResAdd = {};
+    function addToAllEleRes(x: number): void {
+        // TODO: Refactor this to either use optional keys or a constructor function.
+        const newEleResAdd: EleStatObj = {
+            fire:    0,
+            water:   0,
+            thunder: 0,
+            ice:     0,
+            dragon:  0,
+            
+            poison:    0,
+            paralysis: 0,
+            sleep:     0,
+            blast:     0,
+        };
         for (const [eleType, eleResValue] of Object.entries(v.eleResAdd)) {
+            // TODO: Refactor this so we no longer need the type predicate.
+            if (!isEleStatStr(eleType)) {
+                console.error("Expected an element/status type string.");
+                continue;
+            }
             newEleResAdd[eleType] = eleResValue + x;
         }
         v.eleResAdd = newEleResAdd;
     }
 
-    function generateElementalOps() {
-        const genOps = [];
-        for (const eleID of ["fire", "water", "thunder", "ice", "dragon"]) {
+    function generateElementalOps(): [string, (lvl: number, lid: string) => void][] { // TODO: why does return type need arg names?
+        const genOps: [string, (lvl: number, lid: string) => void][] = [];
+        const eleIDs: ElementStr[] = ["fire", "water", "thunder", "ice", "dragon"];
+        // TODO: Make this version work?
+        //for (const eleID of ["fire", "water", "thunder", "ice", "dragon"]) {
+        for (const eleID of eleIDs) {
             genOps.push(
-                [eleID + "_attack", (lid, lvl)=>{
+                [eleID + "_attack", (lvl: number, lid: string)=>{
                     switch (lvl) {
                         case 1: v.eleStatAdd[eleID] += 2; break;
                         case 2: v.eleStatAdd[eleID] += 3; break;
@@ -156,7 +184,7 @@ function getSkillContributions(
                 }],
             );
             genOps.push(
-                [eleID + "_resistance", (lid, lvl)=>{
+                [eleID + "_resistance", (lvl: number, lid: string)=>{
                     switch (lvl) {
                         case 1: v.eleResAdd[eleID] += 6; break;
                         case 2: v.eleResAdd[eleID] += 12; break;
@@ -169,11 +197,13 @@ function getSkillContributions(
         }
         return genOps;
     }
-    function generateStatusOps() {
-        const genOps = [];
+    function generateStatusOps(): [string, (lvl: number, lid: string) => void][] { // TODO: why does return type need arg names?
+        const genOps: [string, (lvl: number, lid: string) => void][] = [];
         for (const statID of ["poison", "paralysis", "sleep", "blast"]) {
+            // TODO: Remove the type predicate.
+            if (!isStatStr(statID)) throw new Error("statID must be a status ID string.");
             genOps.push(
-                [statID + "_attack", (lid, lvl)=>{
+                [statID + "_attack", (lvl: number, lid: string)=>{
                     switch (lvl) {
                         case 1: v.eleStatAdd[statID] += 1; v.eleStatMul[statID] *= 1.05; break;
                         case 2: v.eleStatAdd[statID] += 2; v.eleStatMul[statID] *= 1.10; break;
@@ -184,13 +214,14 @@ function getSkillContributions(
                 }],
             );
             genOps.push(
-                [statID + "_resistance", (lid, lvl)=>{nop();}],
+                [statID + "_resistance", nop],
             );
         }
         return genOps;
     }
 
-    const skillOps = new Map([
+    const skillOps: Map<string, (lvl: number, lid: string) => void> = new Map([ // TODO: Why do we need arg names?
+    //const skillOps = new Map([
 
         //
         // COMMON ELEMENTAL/STATUS SKILLS
@@ -204,7 +235,7 @@ function getSkillContributions(
         // EVERYTHING ELSE
         //
 
-        ["affinity_sliding", (lid, lvl)=>{
+        ["affinity_sliding", (lvl, lid)=>{
             if (!calcState.skillIsActive("Affinity Sliding (AFS)")) return;
             switch (lvl) {
                 case 1: v.affinityAdd += 30; break;
@@ -213,7 +244,7 @@ function getSkillContributions(
             }
         }],
 
-        ["agitator", (lid, lvl)=>{
+        ["agitator", (lvl, lid)=>{
             if (!calcState.skillIsActive("Agitator (AGI)")) return;
             switch (lvl) {
                 case 1: v.rawAdd +=  4; v.affinityAdd +=  3; break;
@@ -226,11 +257,11 @@ function getSkillContributions(
             }
         }],
 
-        ["ammo_up", (lid, lvl)=>{
+        ["ammo_up", (lvl)=>{
             v.ammoUpLevel = lvl;
         }],
 
-        ["attack_boost", (lid, lvl)=>{
+        ["attack_boost", (lvl, lid)=>{
             switch (lvl) {
                 case 1: v.rawAdd +=  3; break;
                 case 2: v.rawAdd +=  6; break;
@@ -244,27 +275,27 @@ function getSkillContributions(
             }
         }],
 
-        ["blight_resistance", (lid, lvl)=>{nop();}],
+        ["blight_resistance", nop],
 
-        ["bludgeoner", (lid, lvl)=>{
+        ["bludgeoner", (lvl)=>{
             v.bludgeonerLevel = lvl;
         }],
 
-        ["botanist", (lid, lvl)=>{nop();}],
+        ["botanist", nop],
 
-        ["bow_charge_plus", (lid, lvl)=>{
+        ["bow_charge_plus", (lvl)=>{
             assert(v.bowChargePlusLevel === 0);
             assert(lvl === 1);
             v.bowChargePlusLevel = 1;
         }],
 
-        ["bubbly_dance", (lid, lvl)=>{nop();}],
-        ["capture_master", (lid, lvl)=>{nop();}],
-        ["carving_master", (lid, lvl)=>{nop();}],
-        ["carving_pro", (lid, lvl)=>{nop();}],
-        ["constitution", (lid, lvl)=>{nop();}],
+        ["bubbly_dance", nop],
+        ["capture_master", nop],
+        ["carving_master", nop],
+        ["carving_pro", nop],
+        ["constitution", nop],
         
-        ["counterstrike", (lid, lvl)=>{
+        ["counterstrike", (lvl, lid)=>{
             if (!calcState.skillIsActive("Counterstrike (CS)")) return;
             switch (lvl) {
                 case 1: v.rawAdd += 10; break;
@@ -275,7 +306,7 @@ function getSkillContributions(
             }
         }],
 
-        ["critical_boost", (lid, lvl)=>{
+        ["critical_boost", (lvl, lid)=>{
             switch (lvl) {
                 case 1: /* Fallthrough */
                 case 2: /* Fallthrough */
@@ -285,7 +316,7 @@ function getSkillContributions(
             }
         }],
 
-        ["critical_draw", (lid, lvl)=>{
+        ["critical_draw", (lvl, lid)=>{
             if (!calcState.skillIsActive("Critical Draw (CD)")) return;
             switch (lvl) {
                 case 1: v.affinityAdd += 10; break;
@@ -296,7 +327,7 @@ function getSkillContributions(
             }
         }],
 
-        ["critical_element", (lid, lvl)=>{
+        ["critical_element", (lvl, lid)=>{
             switch (lvl) {
                 case 1: /* Fallthrough */
                 case 2: /* Fallthrough */
@@ -306,7 +337,7 @@ function getSkillContributions(
             }
         }],
 
-        ["critical_eye", (lid, lvl)=>{
+        ["critical_eye", (lvl, lid)=>{
             switch (lvl) {
                 case 1: v.affinityAdd +=  5; break;
                 case 2: v.affinityAdd += 10; break;
@@ -320,7 +351,7 @@ function getSkillContributions(
             }
         }],
 
-        ["defense_boost", (lid, lvl)=>{
+        ["defense_boost", (lvl, lid)=>{
             switch (lvl) {
                 case 1: v.defenseAdd +=  5; break;
                 case 2: v.defenseAdd += 10; break;
@@ -334,9 +365,9 @@ function getSkillContributions(
             }
         }],
 
-        ["diversion", (lid, lvl)=>{nop();}],
+        ["diversion", nop],
 
-        ["dragonheart", (lid, lvl)=>{
+        ["dragonheart", (lvl, lid)=>{
             if (!calcState.skillIsActive("Dragonheart (DH)")) return;
             switch (lvl) {
                 case 1: /* No Operation */ break;
@@ -351,14 +382,14 @@ function getSkillContributions(
             // TODO: Should Resuscitate also be active?
         }],
 
-        ["earplugs", (lid, lvl)=>{nop();}],
-        ["evade_extender", (lid, lvl)=>{nop();}],
-        ["evade_window", (lid, lvl)=>{nop();}],
-        ["flinch_free", (lid, lvl)=>{nop();}],
-        ["focus", (lid, lvl)=>{nop();}],
-        ["free_meal", (lid, lvl)=>{nop();}],
+        ["earplugs", nop],
+        ["evade_extender", nop],
+        ["evade_window", nop],
+        ["flinch_free", nop],
+        ["focus", nop],
+        ["free_meal", nop],
 
-        ["fortify", (lid, lvl)=>{
+        ["fortify", (lvl)=>{
             assert(lvl === 1); // Binary skill
             const fortifyState = calcState.getSkillState("Fortify (FOR)");
             assert(fortifyState >= 0); // Non-binary state
@@ -371,16 +402,16 @@ function getSkillContributions(
             }
         }],
 
-        ["geologist", (lid, lvl)=>{nop();}],
-        ["good_luck", (lid, lvl)=>{nop();}],
-        ["guard", (lid, lvl)=>{nop();}],
-        ["guard_up", (lid, lvl)=>{nop();}],
+        ["geologist", nop],
+        ["good_luck", nop],
+        ["guard", nop],
+        ["guard_up", nop],
 
-        ["handicraft", (lid, lvl)=>{
+        ["handicraft", (lvl)=>{
             v.handicraftLevel = lvl;
         }],
 
-        ["heroics", (lid, lvl)=>{
+        ["heroics", (lvl, lid)=>{
             if (!calcState.skillIsActive("Heroics (HER)")) return;
             switch (lvl) {
                 case 1: v.defenseAdd +=  50;                 break;
@@ -393,12 +424,12 @@ function getSkillContributions(
             }
         }],
 
-        ["hunger_resistance", (lid, lvl)=>{nop();}],
-        ["item_prolonger", (lid, lvl)=>{nop();}],
-        ["jump_master", (lid, lvl)=>{nop();}],
-        ["leap_of_faith", (lid, lvl)=>{nop();}],
+        ["hunger_resistance", nop],
+        ["item_prolonger", nop],
+        ["jump_master", nop],
+        ["leap_of_faith", nop],
 
-        ["kushala_blessing", (lid, lvl)=>{
+        ["kushala_blessing", (lvl, lid)=>{
             switch (lvl) {
                 case 1: v.eleStatMul["water"] *= 1.05; v.eleStatMul["ice"] *= 1.05; break;
                 case 2: /* Fallthrough */
@@ -409,7 +440,7 @@ function getSkillContributions(
             }
         }],
 
-        ["latent_power", (lid, lvl)=>{
+        ["latent_power", (lvl, lid)=>{
             if (!calcState.skillIsActive("Latent Power (LP)")) return;
             switch (lvl) {
                 case 1: v.affinityAdd += 10; break;
@@ -422,15 +453,15 @@ function getSkillContributions(
             }
         }],
 
-        ["load_shells", (lid, lvl)=>{nop();}],
-        ["marathon_runner", (lid, lvl)=>{nop();}],
-        ["master_mounter", (lid, lvl)=>{nop();}],
+        ["load_shells", nop],
+        ["marathon_runner", nop],
+        ["master_mounter", nop],
 
-        ["masters_touch", (lid, lvl)=>{
+        ["masters_touch", (lvl)=>{
             v.mastersTouchLevel = lvl;
         }],
 
-        ["maximum_might", (lid, lvl)=>{
+        ["maximum_might", (lvl, lid)=>{
             if (!calcState.skillIsActive("Maximum Might (MM)")) return;
             switch (lvl) {
                 case 1: v.affinityAdd += 10; break;
@@ -441,7 +472,7 @@ function getSkillContributions(
             }
         }],
         
-        ["minds_eye", (lid, lvl)=>{
+        ["minds_eye", (lvl, lid)=>{
             if (!calcState.skillIsActive("Mind's Eye (ME)")) return;
             switch (lvl) {
                 case 1: v.rawPostTruncMul *= 1.10; break;
@@ -452,10 +483,10 @@ function getSkillContributions(
             }
         }],
 
-        ["muck_resistance", (lid, lvl)=>{nop();}],
-        ["mushroomancer", (lid, lvl)=>{nop();}],
+        ["muck_resistance", nop],
+        ["mushroomancer", nop],
 
-        ["offensive_guard", (lid, lvl)=>{
+        ["offensive_guard", (lvl, lid)=>{
             if (!calcState.skillIsActive("Offensive Guard (OG)")) return;
             switch (lvl) {
                 case 1: v.rawMul *= 1.05; break;
@@ -466,9 +497,9 @@ function getSkillContributions(
             }
         }],
 
-        ["partbreaker", (lid, lvl)=>{nop();}],
+        ["partbreaker", nop],
 
-        ["peak_performance", (lid, lvl)=>{
+        ["peak_performance", (lvl, lid)=>{
             if (!calcState.skillIsActive("Peak Performance (PP)")) return;
             switch (lvl) {
                 case 1: v.rawAdd +=  5; break;
@@ -479,9 +510,9 @@ function getSkillContributions(
             }
         }],
 
-        ["protective_polish", (lid, lvl)=>{nop();}],
+        ["protective_polish", nop],
 
-        ["punishing_draw", (lid, lvl)=>{
+        ["punishing_draw", (lvl, lid)=>{
             if (!calcState.skillIsActive("Punishing Draw (PD)")) return;
             switch (lvl) {
                 case 1: v.rawAdd += 2; break; // TODO: Also factor in extra stun damage?
@@ -492,24 +523,24 @@ function getSkillContributions(
             }
         }],
 
-        ["quick_sheath", (lid, lvl)=>{nop();}],
+        ["quick_sheath", nop],
 
-        ["razor_sharp", (lid, lvl)=>{
+        ["razor_sharp", (lvl)=>{
             v.razorSharpLevel = lvl;
         }],
 
-        ["recoil_down", (lid, lvl)=>{
+        ["recoil_down", (lvl)=>{
             v.recoilDownLevel = lvl;
         }],
 
-        ["recovery_speed", (lid, lvl)=>{nop();}],
-        ["recovery_up", (lid, lvl)=>{nop();}],
+        ["recovery_speed", nop],
+        ["recovery_up", nop],
 
-        ["reload_speed", (lid, lvl)=>{
+        ["reload_speed", (lvl)=>{
             v.reloadSpeedLevel = lvl;
         }],
 
-        ["resentment", (lid, lvl)=>{
+        ["resentment", (lvl, lid)=>{
             if (!calcState.skillIsActive("Resentment (RES)")) return;
             switch (lvl) {
                 case 1: v.rawAdd +=  5; break;
@@ -522,7 +553,7 @@ function getSkillContributions(
             }
         }],
 
-        ["resuscitate", (lid, lvl)=>{
+        ["resuscitate", (lvl, lid)=>{
             if (!calcState.skillIsActive("Resuscitate (RSC)")) return;
             switch (lvl) {
                 case 1: v.rawAdd +=  5; break;
@@ -533,17 +564,17 @@ function getSkillContributions(
             }
         }],
 
-        ["speed_eating", (lid, lvl)=>{nop();}],
-        ["speed_sharpening", (lid, lvl)=>{nop();}],
-        ["stamina_surge", (lid, lvl)=>{nop();}],
+        ["speed_eating", nop],
+        ["speed_sharpening", nop],
+        ["stamina_surge", nop],
 
-        ["steadiness", (lid, lvl)=>{
+        ["steadiness", (lvl)=>{
             v.steadinessLevel = lvl;
         }],
 
-        ["stun_resistance", (lid, lvl)=>{nop();}],
+        ["stun_resistance", nop],
 
-        ["teostra_blessing", (lid, lvl)=>{
+        ["teostra_blessing", (lvl, lid)=>{
             switch (lvl) {
                 case 1: v.eleStatMul["fire"] *= 1.05; v.eleStatMul["blast"] *= 1.05; break;
                 case 2: /* Fallthrough */
@@ -554,10 +585,10 @@ function getSkillContributions(
             }
         }],
 
-        ["tremor_resistance", (lid, lvl)=>{nop();}],
-        ["wall_runner", (lid, lvl)=>{nop();}],
+        ["tremor_resistance", nop],
+        ["wall_runner", nop],
 
-        ["weakness_exploit", (lid, lvl)=>{
+        ["weakness_exploit", (lvl, lid)=>{
             if (!calcState.skillIsActive("Weakness Exploit (WEX)")) return;
             switch (lvl) {
                 case 1: v.affinityAdd += 15; break;
@@ -568,9 +599,9 @@ function getSkillContributions(
             }
         }],
 
-        ["wide_range", (lid, lvl)=>{nop();}],
-        ["windproof", (lid, lvl)=>{nop();}],
-        ["wirebug_whisperer", (lid, lvl)=>{nop();}],
+        ["wide_range", nop],
+        ["windproof", nop],
+        ["wirebug_whisperer", nop],
     ]);
 
     // Warn if any skill IDs are incorrect
@@ -588,10 +619,10 @@ function getSkillContributions(
     //}
 
     // Process all rampage skills in the build
-    for (const [skillLongID, [skillRO, skillLevel]] of allCurrentSkills.entries()) {
+    for (const [skillLongID, [_, skillLevel]] of allCurrentSkills.entries()) {
         const op = skillOps.get(skillLongID);
         if (op !== undefined) {
-            op(skillLongID, skillLevel);
+            op(skillLevel, skillLongID);
         }
     }
 
@@ -599,10 +630,10 @@ function getSkillContributions(
 }
 
 
-function invalidLevel(skillID) {
+function invalidLevel(skillID: string): void {
     console.warn("Invalid level for " + skillID);
 }
-function invalidState(stateName) {
+function invalidState(stateName: string): void {
     console.warn("Invalid state for " + stateName);
 }
 

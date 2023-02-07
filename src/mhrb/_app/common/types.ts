@@ -2,6 +2,8 @@
  * Author:  simshadows <contact@simshadows.com>
  * License: GNU Affero General Public License v3 (AGPL-3.0)
  *
+ * General reminder: Treat type predicates as dangerous and should be double-checked.
+ *
  * TODO: Consider splitting this file.
  */
 
@@ -18,7 +20,15 @@ export type ElementStr = "fire" | "water" | "thunder" | "ice" | "dragon";
 export type StatStr = "poison" | "paralysis" | "sleep" | "blast";
 export type EleStatStr = ElementStr | StatStr;
 
-export function isElementStr(s: string): s is ElementStr { // DANGER: Returns type predicate.
+export function isElementStr(s: string): s is ElementStr {
+    // TODO: Make this faster?
+    return ["fire", "water", "thunder", "ice", "dragon"].includes(s);
+}
+export function isStatStr(s: string): s is StatStr {
+    // TODO: Make this faster?
+    return ["poison", "paralysis", "sleep", "blast"].includes(s);
+}
+export function isEleStatStr(s: string): s is EleStatStr {
     // TODO: Make this faster?
     return ["fire", "water", "thunder", "ice", "dragon"].includes(s);
 }
@@ -44,10 +54,10 @@ export type WeaponCategory = MeleeWeaponCategory
                              | BowgunCategory
                              | "bow";
 
-export function isMeleeCategory(s: WeaponCategory): s is MeleeWeaponCategory { // DANGER: Returns type predicate.
+export function isMeleeCategory(s: WeaponCategory): s is MeleeWeaponCategory {
     return (s !== "lightbowgun") && (s !== "heavybowgun") && (s !== "bow");
 }
-export function isBowgunCategory(s: WeaponCategory): s is BowgunCategory { // DANGER: Returns type predicate.
+export function isBowgunCategory(s: WeaponCategory): s is BowgunCategory {
     return (s === "lightbowgun") || (s === "heavybowgun");
 }
 
@@ -76,7 +86,7 @@ export type DecoSlotsArray = []
                            | [DecorationSlotSize]
                            | [DecorationSlotSize, DecorationSlotSize]
                            | [DecorationSlotSize, DecorationSlotSize, DecorationSlotSize];
-export function isDecoSlotsArray(obj: number[]): obj is DecoSlotsArray { // DANGER: Returns type predicate.
+export function isDecoSlotsArray(obj: number[]): obj is DecoSlotsArray {
     if (obj.length > 3) return false;
     for (const v of obj) {
         if ((v !== 1) && (v !== 2) && (v !== 3)) return false;
@@ -205,7 +215,7 @@ export interface CBStats {
 /*** Weapon Mechanics: Insect Glaive ***/
 
 export type KinsectLevel = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;
-export function isKinsectLevel(v: number): v is KinsectLevel { // DANGER: Returns type predicate.
+export function isKinsectLevel(v: number): v is KinsectLevel {
     return (v % 1 === 0) && (v >= 1) && (v <= 8);
 }
 
@@ -275,7 +285,7 @@ export interface BowStats {
 
 export type BowgunRecoil = 0 | 1 | 2 | 3 | 4 | 5;
 export type BowgunReload = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;
-export function isBowgunRecoil(v: number): v is BowgunRecoil { // DANGER: Returns type predicate.
+export function isBowgunRecoil(v: number): v is BowgunRecoil {
     return (v % 1 === 0) && (v >= 0) && (v <= 5);
 }
 
@@ -389,36 +399,36 @@ export interface LightBowgun    extends Bowgun      {readonly category: "lightbo
 export interface HeavyBowgun    extends Bowgun      {readonly category: "heavybowgun";                                       }
 export interface Bow            extends Weapon      {readonly category: "bow";          readonly bowStats:          BowStats;}
 
-export function isMelee(obj: Weapon): obj is MeleeWeapon { // DANGER: RETURNS TYPE PREDICATE
+export function isMelee(obj: Weapon): obj is MeleeWeapon {
     return isMeleeCategory(obj.category);
 }
-export function isBowgun(obj: Weapon): obj is Bowgun { // DANGER: RETURNS TYPE PREDICATE
+export function isBowgun(obj: Weapon): obj is Bowgun {
     return isBowgunCategory(obj.category) && (obj.bowgunStats !== undefined);
 }
 
-export function isGL(obj: Weapon): obj is Gunlance { // DANGER: RETURNS TYPE PREDICATE
+export function isGL(obj: Weapon): obj is Gunlance {
     return (obj.category === "gunlance") && (obj.gunlanceStats !== undefined);
 }
-export function isHH(obj: Weapon): obj is HuntingHorn { // DANGER: RETURNS TYPE PREDICATE
+export function isHH(obj: Weapon): obj is HuntingHorn {
     return (obj.category === "huntinghorn") && (obj.huntinghornSongs !== undefined);
 }
-export function isSA(obj: Weapon): obj is SwitchAxe { // DANGER: RETURNS TYPE PREDICATE
+export function isSA(obj: Weapon): obj is SwitchAxe {
     return (obj.category === "switchaxe") && (obj.switchaxeStats !== undefined);
 }
-export function isCB(obj: Weapon): obj is ChargeBlade { // DANGER: RETURNS TYPE PREDICATE
+export function isCB(obj: Weapon): obj is ChargeBlade {
     return (obj.category === "chargeblade") && (obj.chargebladeStats !== undefined);
 }
-export function isIG(obj: Weapon): obj is InsectGlaive { // DANGER: RETURNS TYPE PREDICATE
+export function isIG(obj: Weapon): obj is InsectGlaive {
     return (obj.category === "insectglaive") && (obj.insectglaiveStats !== undefined);
 }
 
-export function isLBG(obj: Weapon): obj is LightBowgun { // DANGER: RETURNS TYPE PREDICATE
+export function isLBG(obj: Weapon): obj is LightBowgun {
     return (obj.category === "lightbowgun") && (obj.bowgunStats !== undefined);
 }
-export function isHBG(obj: Weapon): obj is HeavyBowgun { // DANGER: RETURNS TYPE PREDICATE
+export function isHBG(obj: Weapon): obj is HeavyBowgun {
     return (obj.category === "heavybowgun") && (obj.bowgunStats !== undefined);
 }
-export function isBow(obj: Weapon): obj is Bow { // DANGER: RETURNS TYPE PREDICATE
+export function isBow(obj: Weapon): obj is Bow {
     return (obj.category === "bow") && (obj.bowStats !== undefined);
 }
 
