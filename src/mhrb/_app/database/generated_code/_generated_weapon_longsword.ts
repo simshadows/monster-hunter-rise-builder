@@ -159,8 +159,8 @@ const __generated_longsword__1a: Longsword = {
         ],
     ],
 
-    baseSharpness: [50, 90, 60, 0, 0, 0],
-    maxSharpness:  [50, 90, 100, 10, 0, 0],
+    baseSharpness: [50, 90, 60, 0, 0, 0, 0],
+    maxSharpness:  [50, 90, 100, 10, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "kamurabladei",
@@ -191,8 +191,8 @@ const __generated_longsword__1b: Longsword = {
         ],
     ],
 
-    baseSharpness: [60, 70, 70, 0, 0, 0],
-    maxSharpness:  [60, 70, 110, 10, 0, 0],
+    baseSharpness: [60, 70, 70, 0, 0, 0, 0],
+    maxSharpness:  [60, 70, 110, 10, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "kamurabladeii",
@@ -224,8 +224,8 @@ const __generated_longsword__1c: Longsword = {
         ],
     ],
 
-    baseSharpness: [60, 70, 90, 30, 0, 0],
-    maxSharpness:  [60, 70, 90, 80, 0, 0],
+    baseSharpness: [60, 70, 90, 30, 0, 0, 0],
+    maxSharpness:  [60, 70, 90, 80, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "kamurabladeiii",
@@ -258,8 +258,8 @@ const __generated_longsword__1d: Longsword = {
         ],
     ],
 
-    baseSharpness: [50, 70, 80, 30, 20, 0],
-    maxSharpness:  [50, 70, 80, 30, 70, 0],
+    baseSharpness: [50, 70, 80, 30, 20, 0, 0],
+    maxSharpness:  [50, 70, 80, 30, 70, 0, 0],
 
     filterHelpers: {
         nameLower: "kamurabladeiv",
@@ -294,8 +294,8 @@ const __generated_longsword__1e: Longsword = {
         ],
     ],
 
-    baseSharpness: [60, 80, 90, 40, 30, 0],
-    maxSharpness:  [60, 80, 90, 40, 80, 0],
+    baseSharpness: [60, 80, 90, 40, 30, 0, 0],
+    maxSharpness:  [60, 80, 90, 40, 80, 0, 0],
 
     filterHelpers: {
         nameLower: "kamurabladev",
@@ -331,8 +331,8 @@ const __generated_longsword__1f: Longsword = {
         ],
     ],
 
-    baseSharpness: [40, 90, 60, 60, 50, 0],
-    maxSharpness:  [40, 90, 60, 60, 80, 20],
+    baseSharpness: [40, 90, 60, 60, 50, 0, 0],
+    maxSharpness:  [40, 90, 60, 60, 80, 20, 0],
 
     filterHelpers: {
         nameLower: "kamuraninjablade",
@@ -366,8 +366,8 @@ const __generated_longsword__2a: Longsword = {
         ],
     ],
 
-    baseSharpness: [80, 70, 50, 50, 0, 0],
-    maxSharpness:  [80, 70, 50, 100, 0, 0],
+    baseSharpness: [80, 70, 50, 50, 0, 0, 0],
+    maxSharpness:  [80, 70, 50, 100, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "usurperboltsliceri",
@@ -402,8 +402,8 @@ const __generated_longsword__2b: Longsword = {
         ],
     ],
 
-    baseSharpness: [60, 30, 100, 80, 30, 0],
-    maxSharpness:  [60, 30, 100, 80, 60, 20],
+    baseSharpness: [60, 30, 100, 80, 30, 0, 0],
+    maxSharpness:  [60, 30, 100, 80, 60, 20, 0],
 
     filterHelpers: {
         nameLower: "usurperboltslicerii",
@@ -439,8 +439,8 @@ const __generated_longsword__2c: Longsword = {
         ],
     ],
 
-    baseSharpness: [60, 40, 120, 90, 40, 0],
-    maxSharpness:  [60, 40, 120, 90, 60, 30],
+    baseSharpness: [60, 40, 120, 90, 40, 0, 0],
+    maxSharpness:  [60, 40, 120, 90, 60, 30, 0],
 
     filterHelpers: {
         nameLower: "despotboltbreaker",
@@ -473,8 +473,8 @@ const __generated_longsword__3a: Longsword = {
         ],
     ],
 
-    baseSharpness: [30, 50, 70, 50, 0, 0],
-    maxSharpness:  [30, 50, 70, 100, 0, 0],
+    baseSharpness: [30, 50, 70, 50, 0, 0, 0],
+    maxSharpness:  [30, 50, 70, 100, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "aknosomsabrei",
@@ -508,8 +508,8 @@ const __generated_longsword__3b: Longsword = {
         ],
     ],
 
-    baseSharpness: [30, 50, 110, 40, 20, 0],
-    maxSharpness:  [30, 50, 110, 40, 60, 10],
+    baseSharpness: [30, 50, 110, 40, 20, 0, 0],
+    maxSharpness:  [30, 50, 110, 40, 60, 10, 0],
 
     filterHelpers: {
         nameLower: "aknosomsabreii",
@@ -544,8 +544,8 @@ const __generated_longsword__3c: Longsword = {
         ],
     ],
 
-    baseSharpness: [30, 50, 120, 70, 30, 0],
-    maxSharpness:  [30, 50, 120, 70, 60, 20],
+    baseSharpness: [30, 50, 120, 70, 30, 0, 0],
+    maxSharpness:  [30, 50, 120, 70, 60, 20, 0],
 
     filterHelpers: {
         nameLower: "daybreakblade",
@@ -578,8 +578,8 @@ const __generated_longsword__4a: Longsword = {
         ],
     ],
 
-    baseSharpness: [70, 70, 60, 0, 0, 0],
-    maxSharpness:  [70, 70, 80, 30, 0, 0],
+    baseSharpness: [70, 70, 60, 0, 0, 0, 0],
+    maxSharpness:  [70, 70, 80, 30, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "ivoryrabbiti",
@@ -613,8 +613,8 @@ const __generated_longsword__4b: Longsword = {
         ],
     ],
 
-    baseSharpness: [70, 60, 90, 30, 0, 0],
-    maxSharpness:  [70, 60, 90, 80, 0, 0],
+    baseSharpness: [70, 60, 90, 30, 0, 0, 0],
+    maxSharpness:  [70, 60, 90, 80, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "ivoryrabbitii",
@@ -650,8 +650,8 @@ const __generated_longsword__4c: Longsword = {
         ],
     ],
 
-    baseSharpness: [60, 30, 140, 70, 0, 0],
-    maxSharpness:  [60, 30, 140, 70, 40, 10],
+    baseSharpness: [60, 30, 140, 70, 0, 0, 0],
+    maxSharpness:  [60, 30, 140, 70, 40, 10, 0],
 
     filterHelpers: {
         nameLower: "icedrabbit",
@@ -684,8 +684,8 @@ const __generated_longsword__5a: Longsword = {
         ],
     ],
 
-    baseSharpness: [90, 80, 80, 0, 0, 0],
-    maxSharpness:  [90, 80, 80, 50, 0, 0],
+    baseSharpness: [90, 80, 80, 0, 0, 0, 0],
+    maxSharpness:  [90, 80, 80, 50, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "guardianswordi",
@@ -718,8 +718,8 @@ const __generated_longsword__5b: Longsword = {
         ],
     ],
 
-    baseSharpness: [50, 80, 50, 70, 0, 0],
-    maxSharpness:  [50, 80, 50, 110, 10, 0],
+    baseSharpness: [50, 80, 50, 70, 0, 0, 0],
+    maxSharpness:  [50, 80, 50, 110, 10, 0, 0],
 
     filterHelpers: {
         nameLower: "guardianswordii",
@@ -754,8 +754,8 @@ const __generated_longsword__5c: Longsword = {
         ],
     ],
 
-    baseSharpness: [40, 50, 70, 90, 50, 0],
-    maxSharpness:  [40, 50, 70, 90, 80, 20],
+    baseSharpness: [40, 50, 70, 90, 50, 0, 0],
+    maxSharpness:  [40, 50, 70, 90, 80, 20, 0],
 
     filterHelpers: {
         nameLower: "imperialsword",
@@ -790,8 +790,8 @@ const __generated_longsword__6a: Longsword = {
         ],
     ],
 
-    baseSharpness: [60, 60, 130, 0, 0, 0],
-    maxSharpness:  [60, 60, 130, 50, 0, 0],
+    baseSharpness: [60, 60, 130, 0, 0, 0, 0],
+    maxSharpness:  [60, 60, 130, 50, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "castellosaifi",
@@ -826,8 +826,8 @@ const __generated_longsword__6b: Longsword = {
         ],
     ],
 
-    baseSharpness: [70, 60, 130, 40, 0, 0],
-    maxSharpness:  [70, 60, 130, 80, 10, 0],
+    baseSharpness: [70, 60, 130, 40, 0, 0, 0],
+    maxSharpness:  [70, 60, 130, 80, 10, 0, 0],
 
     filterHelpers: {
         nameLower: "castellosaifii",
@@ -862,8 +862,8 @@ const __generated_longsword__6c: Longsword = {
         ],
     ],
 
-    baseSharpness: [60, 50, 130, 100, 10, 0],
-    maxSharpness:  [60, 50, 130, 100, 20, 40],
+    baseSharpness: [60, 50, 130, 100, 10, 0, 0],
+    maxSharpness:  [60, 50, 130, 100, 20, 40, 0],
 
     filterHelpers: {
         nameLower: "castellumlongsword",
@@ -900,8 +900,8 @@ const __generated_longsword__7a: Longsword = {
         ],
     ],
 
-    baseSharpness: [100, 80, 60, 10, 0, 0],
-    maxSharpness:  [100, 80, 60, 60, 0, 0],
+    baseSharpness: [100, 80, 60, 10, 0, 0, 0],
+    maxSharpness:  [100, 80, 60, 60, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "gigantmakrai",
@@ -939,8 +939,8 @@ const __generated_longsword__7b: Longsword = {
         ],
     ],
 
-    baseSharpness: [110, 100, 70, 20, 0, 0],
-    maxSharpness:  [110, 100, 70, 60, 10, 0],
+    baseSharpness: [110, 100, 70, 20, 0, 0, 0],
+    maxSharpness:  [110, 100, 70, 60, 10, 0, 0],
 
     filterHelpers: {
         nameLower: "gigantmakraii",
@@ -979,8 +979,8 @@ const __generated_longsword__7c: Longsword = {
         ],
     ],
 
-    baseSharpness: [110, 100, 90, 50, 0, 0],
-    maxSharpness:  [110, 100, 90, 80, 20, 0],
+    baseSharpness: [110, 100, 90, 50, 0, 0, 0],
+    maxSharpness:  [110, 100, 90, 80, 20, 0, 0],
 
     filterHelpers: {
         nameLower: "titanicmakra",
@@ -1020,8 +1020,8 @@ const __generated_longsword__8a: Longsword = {
         ],
     ],
 
-    baseSharpness: [50, 50, 100, 50, 0, 0],
-    maxSharpness:  [50, 50, 100, 80, 20, 0],
+    baseSharpness: [50, 50, 100, 50, 0, 0, 0],
+    maxSharpness:  [50, 50, 100, 80, 20, 0, 0],
 
     filterHelpers: {
         nameLower: "almudronbladei",
@@ -1062,8 +1062,8 @@ const __generated_longsword__8b: Longsword = {
         ],
     ],
 
-    baseSharpness: [60, 60, 80, 60, 40, 0],
-    maxSharpness:  [60, 60, 80, 60, 90, 0],
+    baseSharpness: [60, 60, 80, 60, 40, 0, 0],
+    maxSharpness:  [60, 60, 80, 60, 90, 0, 0],
 
     filterHelpers: {
         nameLower: "almudronbladeii",
@@ -1105,8 +1105,8 @@ const __generated_longsword__8c: Longsword = {
         ],
     ],
 
-    baseSharpness: [60, 60, 80, 90, 60, 0],
-    maxSharpness:  [60, 60, 80, 90, 110, 0],
+    baseSharpness: [60, 60, 80, 90, 60, 0, 0],
+    maxSharpness:  [60, 60, 80, 90, 110, 0, 0],
 
     filterHelpers: {
         nameLower: "doombringerblade",
@@ -1137,8 +1137,8 @@ const __generated_longsword__9a: Longsword = {
         ],
     ],
 
-    baseSharpness: [80, 70, 50, 0, 0, 0],
-    maxSharpness:  [80, 70, 90, 10, 0, 0],
+    baseSharpness: [80, 70, 50, 0, 0, 0, 0],
+    maxSharpness:  [80, 70, 90, 10, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "ironkatanai",
@@ -1169,8 +1169,8 @@ const __generated_longsword__9b: Longsword = {
         ],
     ],
 
-    baseSharpness: [70, 60, 70, 0, 0, 0],
-    maxSharpness:  [70, 60, 110, 10, 0, 0],
+    baseSharpness: [70, 60, 70, 0, 0, 0, 0],
+    maxSharpness:  [70, 60, 110, 10, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "ironkatanaii",
@@ -1202,8 +1202,8 @@ const __generated_longsword__9c: Longsword = {
         ],
     ],
 
-    baseSharpness: [80, 70, 60, 40, 0, 0],
-    maxSharpness:  [80, 70, 60, 90, 0, 0],
+    baseSharpness: [80, 70, 60, 40, 0, 0, 0],
+    maxSharpness:  [80, 70, 60, 90, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "irongospel",
@@ -1236,8 +1236,8 @@ const __generated_longsword__9d: Longsword = {
         ],
     ],
 
-    baseSharpness: [90, 70, 40, 50, 0, 0],
-    maxSharpness:  [90, 70, 40, 80, 20, 0],
+    baseSharpness: [90, 70, 40, 50, 0, 0, 0],
+    maxSharpness:  [90, 70, 40, 80, 20, 0, 0],
 
     filterHelpers: {
         nameLower: "keenedgei",
@@ -1271,8 +1271,8 @@ const __generated_longsword__9e: Longsword = {
         ],
     ],
 
-    baseSharpness: [100, 90, 90, 50, 20, 0],
-    maxSharpness:  [100, 90, 90, 50, 50, 20],
+    baseSharpness: [100, 90, 90, 50, 20, 0, 0],
+    maxSharpness:  [100, 90, 90, 50, 50, 20, 0],
 
     filterHelpers: {
         nameLower: "keenedgeii",
@@ -1307,8 +1307,8 @@ const __generated_longsword__9f: Longsword = {
         ],
     ],
 
-    baseSharpness: [90, 90, 80, 50, 40, 0],
-    maxSharpness:  [90, 90, 80, 50, 60, 30],
+    baseSharpness: [90, 90, 80, 50, 40, 0, 0],
+    maxSharpness:  [90, 90, 80, 50, 60, 30, 0],
 
     filterHelpers: {
         nameLower: "julienneblade",
@@ -1342,8 +1342,8 @@ const __generated_longsword__10a: Longsword = {
         ],
     ],
 
-    baseSharpness: [70, 30, 100, 90, 10, 0],
-    maxSharpness:  [70, 30, 100, 90, 60, 0],
+    baseSharpness: [70, 30, 100, 90, 10, 0, 0],
+    maxSharpness:  [70, 30, 100, 90, 60, 0, 0],
 
     filterHelpers: {
         nameLower: "tigrineedgei",
@@ -1378,8 +1378,8 @@ const __generated_longsword__10b: Longsword = {
         ],
     ],
 
-    baseSharpness: [50, 40, 130, 100, 30, 0],
-    maxSharpness:  [50, 40, 130, 100, 60, 20],
+    baseSharpness: [50, 40, 130, 100, 30, 0, 0],
+    maxSharpness:  [50, 40, 130, 100, 60, 20, 0],
 
     filterHelpers: {
         nameLower: "tigrineedgeii",
@@ -1415,8 +1415,8 @@ const __generated_longsword__10c: Longsword = {
         ],
     ],
 
-    baseSharpness: [50, 40, 120, 130, 40, 20],
-    maxSharpness:  [50, 40, 120, 130, 40, 20],
+    baseSharpness: [50, 40, 120, 130, 40, 20, 0],
+    maxSharpness:  [50, 40, 120, 130, 40, 20, 0],
 
     filterHelpers: {
         nameLower: "tigrineneed",
@@ -1449,8 +1449,8 @@ const __generated_longsword__11a: Longsword = {
         ],
     ],
 
-    baseSharpness: [70, 50, 40, 40, 0, 0],
-    maxSharpness:  [70, 50, 40, 60, 30, 0],
+    baseSharpness: [70, 50, 40, 40, 0, 0, 0],
+    maxSharpness:  [70, 50, 40, 60, 30, 0, 0],
 
     filterHelpers: {
         nameLower: "kakarukumonakii",
@@ -1485,8 +1485,8 @@ const __generated_longsword__11b: Longsword = {
         ],
     ],
 
-    baseSharpness: [110, 100, 80, 30, 30, 0],
-    maxSharpness:  [110, 100, 80, 30, 60, 20],
+    baseSharpness: [110, 100, 80, 30, 30, 0, 0],
+    maxSharpness:  [110, 100, 80, 30, 60, 20, 0],
 
     filterHelpers: {
         nameLower: "kakarukumonakiii",
@@ -1522,8 +1522,8 @@ const __generated_longsword__11c: Longsword = {
         ],
     ],
 
-    baseSharpness: [100, 90, 70, 50, 40, 0],
-    maxSharpness:  [100, 90, 70, 50, 50, 40],
+    baseSharpness: [100, 90, 70, 50, 40, 0, 0],
+    maxSharpness:  [100, 90, 70, 50, 50, 40, 0],
 
     filterHelpers: {
         nameLower: "tamonowo",
@@ -1556,8 +1556,8 @@ const __generated_longsword__12a: Longsword = {
         ],
     ],
 
-    baseSharpness: [50, 70, 80, 100, 0, 0],
-    maxSharpness:  [50, 70, 80, 100, 50, 0],
+    baseSharpness: [50, 70, 80, 100, 0, 0, 0],
+    maxSharpness:  [50, 70, 80, 100, 50, 0, 0],
 
     filterHelpers: {
         nameLower: "hiddensaberi",
@@ -1591,8 +1591,8 @@ const __generated_longsword__12b: Longsword = {
         ],
     ],
 
-    baseSharpness: [70, 70, 40, 120, 50, 0],
-    maxSharpness:  [70, 70, 40, 120, 70, 30],
+    baseSharpness: [70, 70, 40, 120, 50, 0, 0],
+    maxSharpness:  [70, 70, 40, 120, 70, 30, 0],
 
     filterHelpers: {
         nameLower: "hiddensaberii",
@@ -1627,8 +1627,8 @@ const __generated_longsword__12c: Longsword = {
         ],
     ],
 
-    baseSharpness: [70, 40, 100, 90, 70, 30],
-    maxSharpness:  [70, 40, 100, 90, 70, 30],
+    baseSharpness: [70, 40, 100, 90, 70, 30, 0],
+    maxSharpness:  [70, 40, 100, 90, 70, 30, 0],
 
     filterHelpers: {
         nameLower: "deepestnight",
@@ -1662,8 +1662,8 @@ const __generated_longsword__13a: Longsword = {
         ],
     ],
 
-    baseSharpness: [50, 50, 50, 50, 0, 0],
-    maxSharpness:  [50, 50, 50, 100, 0, 0],
+    baseSharpness: [50, 50, 50, 50, 0, 0, 0],
+    maxSharpness:  [50, 50, 50, 100, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "eagercleaveri",
@@ -1697,8 +1697,8 @@ const __generated_longsword__13b: Longsword = {
         ],
     ],
 
-    baseSharpness: [40, 40, 90, 80, 0, 0],
-    maxSharpness:  [40, 40, 90, 110, 20, 0],
+    baseSharpness: [40, 40, 90, 80, 0, 0, 0],
+    maxSharpness:  [40, 40, 90, 110, 20, 0, 0],
 
     filterHelpers: {
         nameLower: "eagercleaverii",
@@ -1733,8 +1733,8 @@ const __generated_longsword__13c: Longsword = {
         ],
     ],
 
-    baseSharpness: [40, 50, 90, 120, 0, 0],
-    maxSharpness:  [40, 50, 90, 120, 50, 0],
+    baseSharpness: [40, 50, 90, 120, 0, 0, 0],
+    maxSharpness:  [40, 50, 90, 120, 50, 0, 0],
 
     filterHelpers: {
         nameLower: "devilslicer",
@@ -1767,8 +1767,8 @@ const __generated_longsword__14a: Longsword = {
         ],
     ],
 
-    baseSharpness: [70, 50, 30, 50, 0, 0],
-    maxSharpness:  [70, 50, 30, 100, 0, 0],
+    baseSharpness: [70, 50, 30, 50, 0, 0, 0],
+    maxSharpness:  [70, 50, 30, 100, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "kulukatanai",
@@ -1802,8 +1802,8 @@ const __generated_longsword__14b: Longsword = {
         ],
     ],
 
-    baseSharpness: [80, 70, 40, 60, 0, 0],
-    maxSharpness:  [80, 70, 40, 90, 20, 0],
+    baseSharpness: [80, 70, 40, 60, 0, 0, 0],
+    maxSharpness:  [80, 70, 40, 90, 20, 0, 0],
 
     filterHelpers: {
         nameLower: "kulukatanaii",
@@ -1838,8 +1838,8 @@ const __generated_longsword__14c: Longsword = {
         ],
     ],
 
-    baseSharpness: [80, 80, 70, 60, 10, 0],
-    maxSharpness:  [80, 80, 70, 60, 60, 0],
+    baseSharpness: [80, 80, 70, 60, 10, 0, 0],
+    maxSharpness:  [80, 80, 70, 60, 60, 0, 0],
 
     filterHelpers: {
         nameLower: "kuluslicer",
@@ -1875,8 +1875,8 @@ const __generated_longsword__15a: Longsword = {
         ],
     ],
 
-    baseSharpness: [60, 60, 60, 50, 20, 0],
-    maxSharpness:  [60, 60, 60, 50, 70, 0],
+    baseSharpness: [60, 60, 60, 50, 20, 0, 0],
+    maxSharpness:  [60, 60, 60, 50, 70, 0, 0],
 
     filterHelpers: {
         nameLower: "chillbladei",
@@ -1913,8 +1913,8 @@ const __generated_longsword__15b: Longsword = {
         ],
     ],
 
-    baseSharpness: [80, 70, 70, 50, 30, 0],
-    maxSharpness:  [80, 70, 70, 50, 70, 10],
+    baseSharpness: [80, 70, 70, 50, 30, 0, 0],
+    maxSharpness:  [80, 70, 70, 50, 70, 10, 0],
 
     filterHelpers: {
         nameLower: "chillbladeii",
@@ -1951,8 +1951,8 @@ const __generated_longsword__15c: Longsword = {
         ],
     ],
 
-    baseSharpness: [70, 70, 70, 50, 40, 0],
-    maxSharpness:  [70, 70, 70, 50, 70, 20],
+    baseSharpness: [70, 70, 70, 50, 40, 0, 0],
+    maxSharpness:  [70, 70, 70, 50, 70, 20, 0],
 
     filterHelpers: {
         nameLower: "rimeblossom",
@@ -1987,8 +1987,8 @@ const __generated_longsword__16a: Longsword = {
         ],
     ],
 
-    baseSharpness: [80, 80, 50, 40, 0, 0],
-    maxSharpness:  [80, 80, 50, 90, 0, 0],
+    baseSharpness: [80, 80, 50, 40, 0, 0, 0],
+    maxSharpness:  [80, 80, 50, 90, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "wyvernbladeverdei",
@@ -2024,8 +2024,8 @@ const __generated_longsword__16b: Longsword = {
         ],
     ],
 
-    baseSharpness: [80, 80, 60, 60, 20, 0],
-    maxSharpness:  [80, 80, 60, 60, 70, 0],
+    baseSharpness: [80, 80, 60, 60, 20, 0, 0],
+    maxSharpness:  [80, 80, 60, 60, 70, 0, 0],
 
     filterHelpers: {
         nameLower: "wyvernbladeverdeii",
@@ -2061,8 +2061,8 @@ const __generated_longsword__16c: Longsword = {
         ],
     ],
 
-    baseSharpness: [100, 90, 70, 70, 20, 0],
-    maxSharpness:  [100, 90, 70, 70, 40, 30],
+    baseSharpness: [100, 90, 70, 70, 20, 0, 0],
+    maxSharpness:  [100, 90, 70, 70, 40, 30, 0],
 
     filterHelpers: {
         nameLower: "wyvernbladeholly",
@@ -2100,8 +2100,8 @@ const __generated_longsword__17a: Longsword = {
         ],
     ],
 
-    baseSharpness: [160, 10, 10, 50, 20, 0],
-    maxSharpness:  [160, 10, 10, 50, 70, 0],
+    baseSharpness: [160, 10, 10, 50, 20, 0, 0],
+    maxSharpness:  [160, 10, 10, 50, 70, 0, 0],
 
     filterHelpers: {
         nameLower: "wyvernbladebloodi",
@@ -2139,8 +2139,8 @@ const __generated_longsword__17b: Longsword = {
         ],
     ],
 
-    baseSharpness: [190, 10, 10, 60, 30, 0],
-    maxSharpness:  [190, 10, 10, 60, 80, 0],
+    baseSharpness: [190, 10, 10, 60, 30, 0, 0],
+    maxSharpness:  [190, 10, 10, 60, 80, 0, 0],
 
     filterHelpers: {
         nameLower: "wyvernbladebloodii",
@@ -2179,8 +2179,8 @@ const __generated_longsword__17c: Longsword = {
         ],
     ],
 
-    baseSharpness: [220, 10, 10, 70, 40, 0],
-    maxSharpness:  [220, 10, 10, 70, 90, 0],
+    baseSharpness: [220, 10, 10, 70, 40, 0, 0],
+    maxSharpness:  [220, 10, 10, 70, 90, 0, 0],
 
     filterHelpers: {
         nameLower: "wyvernblademaple",
@@ -2211,8 +2211,8 @@ const __generated_longsword__18a: Longsword = {
         ],
     ],
 
-    baseSharpness: [70, 90, 40, 0, 0, 0],
-    maxSharpness:  [70, 90, 90, 0, 0, 0],
+    baseSharpness: [70, 90, 40, 0, 0, 0, 0],
+    maxSharpness:  [70, 90, 90, 0, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "serratedjawi",
@@ -2243,8 +2243,8 @@ const __generated_longsword__18b: Longsword = {
         ],
     ],
 
-    baseSharpness: [80, 70, 50, 0, 0, 0],
-    maxSharpness:  [80, 70, 100, 0, 0, 0],
+    baseSharpness: [80, 70, 50, 0, 0, 0, 0],
+    maxSharpness:  [80, 70, 100, 0, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "serratedjawii",
@@ -2276,8 +2276,8 @@ const __generated_longsword__18c: Longsword = {
         ],
     ],
 
-    baseSharpness: [90, 90, 70, 0, 0, 0],
-    maxSharpness:  [90, 90, 110, 10, 0, 0],
+    baseSharpness: [90, 90, 70, 0, 0, 0, 0],
+    maxSharpness:  [90, 90, 110, 10, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "serratedmaw",
@@ -2310,8 +2310,8 @@ const __generated_longsword__18d: Longsword = {
         ],
     ],
 
-    baseSharpness: [80, 70, 60, 40, 0, 0],
-    maxSharpness:  [80, 70, 60, 80, 10, 0],
+    baseSharpness: [80, 70, 60, 40, 0, 0, 0],
+    maxSharpness:  [80, 70, 60, 80, 10, 0, 0],
 
     filterHelpers: {
         nameLower: "caninekatanai",
@@ -2345,8 +2345,8 @@ const __generated_longsword__18e: Longsword = {
         ],
     ],
 
-    baseSharpness: [130, 100, 20, 50, 0, 0],
-    maxSharpness:  [130, 100, 20, 80, 20, 0],
+    baseSharpness: [130, 100, 20, 50, 0, 0, 0],
+    maxSharpness:  [130, 100, 20, 80, 20, 0, 0],
 
     filterHelpers: {
         nameLower: "caninekatanaii",
@@ -2381,8 +2381,8 @@ const __generated_longsword__18f: Longsword = {
         ],
     ],
 
-    baseSharpness: [150, 120, 20, 60, 0, 0],
-    maxSharpness:  [150, 120, 20, 60, 50, 0],
+    baseSharpness: [150, 120, 20, 60, 0, 0, 0],
+    maxSharpness:  [150, 120, 20, 60, 50, 0, 0],
 
     filterHelpers: {
         nameLower: "gnashkatana",
@@ -2416,8 +2416,8 @@ const __generated_longsword__19a: Longsword = {
         ],
     ],
 
-    baseSharpness: [100, 80, 40, 30, 0, 0],
-    maxSharpness:  [100, 80, 40, 80, 0, 0],
+    baseSharpness: [100, 80, 40, 30, 0, 0, 0],
+    maxSharpness:  [100, 80, 40, 80, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "flammenschwerti",
@@ -2452,8 +2452,8 @@ const __generated_longsword__19b: Longsword = {
         ],
     ],
 
-    baseSharpness: [100, 80, 60, 60, 0, 0],
-    maxSharpness:  [100, 80, 60, 60, 50, 0],
+    baseSharpness: [100, 80, 60, 60, 0, 0, 0],
+    maxSharpness:  [100, 80, 60, 60, 50, 0, 0],
 
     filterHelpers: {
         nameLower: "flammenschwertii",
@@ -2489,8 +2489,8 @@ const __generated_longsword__19c: Longsword = {
         ],
     ],
 
-    baseSharpness: [100, 90, 80, 60, 20, 0],
-    maxSharpness:  [100, 90, 80, 60, 70, 0],
+    baseSharpness: [100, 90, 80, 60, 20, 0, 0],
+    maxSharpness:  [100, 90, 80, 60, 70, 0, 0],
 
     filterHelpers: {
         nameLower: "fervidflammenschwert",
@@ -2523,8 +2523,8 @@ const __generated_longsword__20a: Longsword = {
         ],
     ],
 
-    baseSharpness: [50, 60, 70, 70, 0, 0],
-    maxSharpness:  [50, 60, 70, 100, 20, 0],
+    baseSharpness: [50, 60, 70, 70, 0, 0, 0],
+    maxSharpness:  [50, 60, 70, 100, 20, 0, 0],
 
     filterHelpers: {
         nameLower: "bastineedgei",
@@ -2558,8 +2558,8 @@ const __generated_longsword__20b: Longsword = {
         ],
     ],
 
-    baseSharpness: [40, 70, 70, 100, 20, 0],
-    maxSharpness:  [40, 70, 70, 100, 70, 0],
+    baseSharpness: [40, 70, 70, 100, 20, 0, 0],
+    maxSharpness:  [40, 70, 70, 100, 70, 0, 0],
 
     filterHelpers: {
         nameLower: "bastineedgeii",
@@ -2594,8 +2594,8 @@ const __generated_longsword__20c: Longsword = {
         ],
     ],
 
-    baseSharpness: [50, 70, 80, 90, 50, 10],
-    maxSharpness:  [50, 70, 80, 90, 50, 60],
+    baseSharpness: [50, 70, 80, 90, 50, 10, 0],
+    maxSharpness:  [50, 70, 80, 90, 50, 60, 0],
 
     filterHelpers: {
         nameLower: "bastizanedge",
@@ -2628,8 +2628,8 @@ const __generated_longsword__21a: Longsword = {
         ],
     ],
 
-    baseSharpness: [90, 40, 40, 30, 0, 0],
-    maxSharpness:  [90, 40, 40, 80, 0, 0],
+    baseSharpness: [90, 40, 40, 30, 0, 0, 0],
+    maxSharpness:  [90, 40, 40, 80, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "wroggiswordi",
@@ -2663,8 +2663,8 @@ const __generated_longsword__21b: Longsword = {
         ],
     ],
 
-    baseSharpness: [90, 70, 40, 50, 0, 0],
-    maxSharpness:  [90, 70, 40, 100, 0, 0],
+    baseSharpness: [90, 70, 40, 50, 0, 0, 0],
+    maxSharpness:  [90, 70, 40, 100, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "wroggiswordii",
@@ -2699,8 +2699,8 @@ const __generated_longsword__21c: Longsword = {
         ],
     ],
 
-    baseSharpness: [90, 70, 60, 80, 0, 0],
-    maxSharpness:  [90, 70, 60, 100, 30, 0],
+    baseSharpness: [90, 70, 60, 80, 0, 0, 0],
+    maxSharpness:  [90, 70, 60, 100, 30, 0, 0],
 
     filterHelpers: {
         nameLower: "poisonbarb",
@@ -2733,8 +2733,8 @@ const __generated_longsword__22a: Longsword = {
         ],
     ],
 
-    baseSharpness: [100, 40, 40, 20, 0, 0],
-    maxSharpness:  [100, 40, 40, 70, 0, 0],
+    baseSharpness: [100, 40, 40, 20, 0, 0, 0],
+    maxSharpness:  [100, 40, 40, 70, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "anantabladei",
@@ -2768,8 +2768,8 @@ const __generated_longsword__22b: Longsword = {
         ],
     ],
 
-    baseSharpness: [100, 20, 40, 40, 0, 0],
-    maxSharpness:  [100, 20, 40, 90, 0, 0],
+    baseSharpness: [100, 20, 40, 40, 0, 0, 0],
+    maxSharpness:  [100, 20, 40, 90, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "anantabladeii",
@@ -2804,8 +2804,8 @@ const __generated_longsword__22c: Longsword = {
         ],
     ],
 
-    baseSharpness: [100, 70, 60, 60, 10, 0],
-    maxSharpness:  [100, 70, 60, 60, 60, 0],
+    baseSharpness: [100, 70, 60, 60, 10, 0, 0],
+    maxSharpness:  [100, 70, 60, 60, 60, 0, 0],
 
     filterHelpers: {
         nameLower: "shadowslasher",
@@ -2836,8 +2836,8 @@ const __generated_longsword__23a: Longsword = {
         ],
     ],
 
-    baseSharpness: [130, 20, 50, 0, 0, 0],
-    maxSharpness:  [130, 20, 100, 0, 0, 0],
+    baseSharpness: [130, 20, 50, 0, 0, 0, 0],
+    maxSharpness:  [130, 20, 100, 0, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "bonescythei",
@@ -2868,8 +2868,8 @@ const __generated_longsword__23b: Longsword = {
         ],
     ],
 
-    baseSharpness: [120, 20, 60, 0, 0, 0],
-    maxSharpness:  [120, 20, 110, 0, 0, 0],
+    baseSharpness: [120, 20, 60, 0, 0, 0, 0],
+    maxSharpness:  [120, 20, 110, 0, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "bonescytheii",
@@ -2901,8 +2901,8 @@ const __generated_longsword__23c: Longsword = {
         ],
     ],
 
-    baseSharpness: [100, 20, 80, 0, 0, 0],
-    maxSharpness:  [100, 20, 110, 20, 0, 0],
+    baseSharpness: [100, 20, 80, 0, 0, 0, 0],
+    maxSharpness:  [100, 20, 110, 20, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "bonereaper",
@@ -2935,8 +2935,8 @@ const __generated_longsword__23d: Longsword = {
         ],
     ],
 
-    baseSharpness: [130, 30, 50, 40, 0, 0],
-    maxSharpness:  [130, 30, 50, 90, 0, 0],
+    baseSharpness: [130, 30, 50, 40, 0, 0, 0],
+    maxSharpness:  [130, 30, 50, 90, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "sparksliceri",
@@ -2970,8 +2970,8 @@ const __generated_longsword__23e: Longsword = {
         ],
     ],
 
-    baseSharpness: [110, 60, 70, 60, 0, 0],
-    maxSharpness:  [110, 60, 70, 90, 20, 0],
+    baseSharpness: [110, 60, 70, 60, 0, 0, 0],
+    maxSharpness:  [110, 60, 70, 90, 20, 0, 0],
 
     filterHelpers: {
         nameLower: "sparkslicerii",
@@ -3008,8 +3008,8 @@ const __generated_longsword__23f: Longsword = {
         ],
     ],
 
-    baseSharpness: [150, 100, 30, 30, 40, 0],
-    maxSharpness:  [150, 100, 30, 30, 60, 30],
+    baseSharpness: [150, 100, 30, 30, 40, 0, 0],
+    maxSharpness:  [150, 100, 30, 30, 60, 30, 0],
 
     filterHelpers: {
         nameLower: "shockingslicer",
@@ -3045,8 +3045,8 @@ const __generated_longsword__24a: Longsword = {
         ],
     ],
 
-    baseSharpness: [90, 80, 70, 50, 10, 0],
-    maxSharpness:  [90, 80, 70, 50, 60, 0],
+    baseSharpness: [90, 80, 70, 50, 10, 0, 0],
+    maxSharpness:  [90, 80, 70, 50, 60, 0, 0],
 
     filterHelpers: {
         nameLower: "jyurasaberi",
@@ -3083,8 +3083,8 @@ const __generated_longsword__24b: Longsword = {
         ],
     ],
 
-    baseSharpness: [90, 80, 60, 40, 30, 0],
-    maxSharpness:  [90, 80, 60, 40, 80, 0],
+    baseSharpness: [90, 80, 60, 40, 30, 0, 0],
+    maxSharpness:  [90, 80, 60, 40, 80, 0, 0],
 
     filterHelpers: {
         nameLower: "jyurasaberii",
@@ -3121,8 +3121,8 @@ const __generated_longsword__24c: Longsword = {
         ],
     ],
 
-    baseSharpness: [100, 90, 70, 50, 40, 0],
-    maxSharpness:  [100, 90, 70, 50, 70, 20],
+    baseSharpness: [100, 90, 70, 50, 40, 0, 0],
+    maxSharpness:  [100, 90, 70, 50, 70, 20, 0],
 
     filterHelpers: {
         nameLower: "jyurareaver",
@@ -3158,8 +3158,8 @@ const __generated_longsword__25a: Longsword = {
         ],
     ],
 
-    baseSharpness: [10, 120, 10, 60, 0, 0],
-    maxSharpness:  [10, 120, 10, 110, 0, 0],
+    baseSharpness: [10, 120, 10, 60, 0, 0, 0],
+    maxSharpness:  [10, 120, 10, 110, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "antekabladei",
@@ -3195,8 +3195,8 @@ const __generated_longsword__25b: Longsword = {
         ],
     ],
 
-    baseSharpness: [10, 160, 10, 60, 10, 0],
-    maxSharpness:  [10, 160, 10, 60, 60, 0],
+    baseSharpness: [10, 160, 10, 60, 10, 0, 0],
+    maxSharpness:  [10, 160, 10, 60, 60, 0, 0],
 
     filterHelpers: {
         nameLower: "antekabladeii",
@@ -3233,8 +3233,8 @@ const __generated_longsword__25c: Longsword = {
         ],
     ],
 
-    baseSharpness: [10, 230, 10, 70, 30, 0],
-    maxSharpness:  [10, 230, 10, 70, 70, 10],
+    baseSharpness: [10, 230, 10, 70, 30, 0, 0],
+    maxSharpness:  [10, 230, 10, 70, 70, 10, 0],
 
     filterHelpers: {
         nameLower: "antekarack",
@@ -3268,8 +3268,8 @@ const __generated_longsword__26a: Longsword = {
         ],
     ],
 
-    baseSharpness: [50, 50, 120, 30, 0, 0],
-    maxSharpness:  [50, 50, 120, 80, 0, 0],
+    baseSharpness: [50, 50, 120, 30, 0, 0, 0],
+    maxSharpness:  [50, 50, 120, 80, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "frilledslashi",
@@ -3304,8 +3304,8 @@ const __generated_longsword__26b: Longsword = {
         ],
     ],
 
-    baseSharpness: [40, 60, 110, 40, 0, 0],
-    maxSharpness:  [40, 60, 110, 90, 0, 0],
+    baseSharpness: [40, 60, 110, 40, 0, 0, 0],
+    maxSharpness:  [40, 60, 110, 90, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "frilledslashii",
@@ -3341,8 +3341,8 @@ const __generated_longsword__26c: Longsword = {
         ],
     ],
 
-    baseSharpness: [50, 90, 120, 90, 0, 0],
-    maxSharpness:  [50, 90, 120, 110, 30, 0],
+    baseSharpness: [50, 90, 120, 90, 0, 0, 0],
+    maxSharpness:  [50, 90, 120, 110, 30, 0, 0],
 
     filterHelpers: {
         nameLower: "illusoryfrilledslash",
@@ -3377,8 +3377,8 @@ const __generated_longsword__27a: Longsword = {
         ],
     ],
 
-    baseSharpness: [50, 70, 50, 30, 0, 0],
-    maxSharpness:  [50, 70, 50, 80, 0, 0],
+    baseSharpness: [50, 70, 50, 30, 0, 0, 0],
+    maxSharpness:  [50, 70, 50, 80, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "drowningshafti",
@@ -3413,8 +3413,8 @@ const __generated_longsword__27b: Longsword = {
         ],
     ],
 
-    baseSharpness: [60, 70, 80, 40, 0, 0],
-    maxSharpness:  [60, 70, 80, 90, 0, 0],
+    baseSharpness: [60, 70, 80, 40, 0, 0, 0],
+    maxSharpness:  [60, 70, 80, 90, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "drowningshaftii",
@@ -3451,8 +3451,8 @@ const __generated_longsword__27c: Longsword = {
         ],
     ],
 
-    baseSharpness: [40, 40, 100, 100, 20, 0],
-    maxSharpness:  [40, 40, 100, 100, 60, 10],
+    baseSharpness: [40, 40, 100, 100, 20, 0, 0],
+    maxSharpness:  [40, 40, 100, 100, 60, 10, 0],
 
     filterHelpers: {
         nameLower: "douserbardiche",
@@ -3484,8 +3484,8 @@ const __generated_longsword__28a: Longsword = {
         ],
     ],
 
-    baseSharpness: [50, 40, 110, 0, 0, 0],
-    maxSharpness:  [50, 40, 160, 0, 0, 0],
+    baseSharpness: [50, 40, 110, 0, 0, 0, 0],
+    maxSharpness:  [50, 40, 160, 0, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "arzurosnaginatai",
@@ -3518,8 +3518,8 @@ const __generated_longsword__28b: Longsword = {
         ],
     ],
 
-    baseSharpness: [40, 40, 120, 0, 0, 0],
-    maxSharpness:  [40, 40, 120, 50, 0, 0],
+    baseSharpness: [40, 40, 120, 0, 0, 0, 0],
+    maxSharpness:  [40, 40, 120, 50, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "arzurosnaginataii",
@@ -3555,8 +3555,8 @@ const __generated_longsword__28c: Longsword = {
         ],
     ],
 
-    baseSharpness: [40, 40, 40, 130, 0, 0],
-    maxSharpness:  [40, 40, 40, 130, 50, 0],
+    baseSharpness: [40, 40, 40, 130, 0, 0, 0],
+    maxSharpness:  [40, 40, 40, 130, 50, 0, 0],
 
     filterHelpers: {
         nameLower: "arzurosstrikequill",
@@ -3589,8 +3589,8 @@ const __generated_longsword__29a: Longsword = {
         ],
     ],
 
-    baseSharpness: [80, 50, 30, 40, 0, 0],
-    maxSharpness:  [80, 50, 30, 90, 0, 0],
+    baseSharpness: [80, 50, 30, 40, 0, 0, 0],
+    maxSharpness:  [80, 50, 30, 90, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "windthiefscimitari",
@@ -3624,8 +3624,8 @@ const __generated_longsword__29b: Longsword = {
         ],
     ],
 
-    baseSharpness: [80, 50, 20, 50, 0, 0],
-    maxSharpness:  [80, 50, 20, 50, 50, 0],
+    baseSharpness: [80, 50, 20, 50, 0, 0, 0],
+    maxSharpness:  [80, 50, 20, 50, 50, 0, 0],
 
     filterHelpers: {
         nameLower: "windthiefscimitarii",
@@ -3660,8 +3660,8 @@ const __generated_longsword__29c: Longsword = {
         ],
     ],
 
-    baseSharpness: [80, 50, 20, 50, 50, 0],
-    maxSharpness:  [80, 50, 20, 50, 50, 50],
+    baseSharpness: [80, 50, 20, 50, 50, 0, 0],
+    maxSharpness:  [80, 50, 20, 50, 50, 50, 0],
 
     filterHelpers: {
         nameLower: "galescimitar",
@@ -3697,8 +3697,8 @@ const __generated_longsword__30a: Longsword = {
         ],
     ],
 
-    baseSharpness: [100, 70, 70, 60, 0, 0],
-    maxSharpness:  [100, 70, 70, 90, 20, 0],
+    baseSharpness: [100, 70, 70, 60, 0, 0, 0],
+    maxSharpness:  [100, 70, 70, 90, 20, 0, 0],
 
     filterHelpers: {
         nameLower: "darkscythei",
@@ -3735,8 +3735,8 @@ const __generated_longsword__30b: Longsword = {
         ],
     ],
 
-    baseSharpness: [100, 80, 50, 70, 0, 0],
-    maxSharpness:  [100, 80, 50, 90, 30, 0],
+    baseSharpness: [100, 80, 50, 70, 0, 0, 0],
+    maxSharpness:  [100, 80, 50, 90, 30, 0, 0],
 
     filterHelpers: {
         nameLower: "tormentor",
@@ -3774,8 +3774,8 @@ const __generated_longsword__31a: Longsword = {
         ],
     ],
 
-    baseSharpness: [40, 40, 150, 50, 20, 0],
-    maxSharpness:  [40, 40, 150, 50, 60, 10],
+    baseSharpness: [40, 40, 150, 50, 20, 0, 0],
+    maxSharpness:  [40, 40, 150, 50, 60, 10, 0],
 
     filterHelpers: {
         nameLower: "scytheofmenacei",
@@ -3813,8 +3813,8 @@ const __generated_longsword__31b: Longsword = {
         ],
     ],
 
-    baseSharpness: [40, 40, 150, 40, 30, 0],
-    maxSharpness:  [40, 40, 150, 40, 60, 20],
+    baseSharpness: [40, 40, 150, 40, 30, 0, 0],
+    maxSharpness:  [40, 40, 150, 40, 60, 20, 0],
 
     filterHelpers: {
         nameLower: "scytheofmenaceii",
@@ -3853,8 +3853,8 @@ const __generated_longsword__31c: Longsword = {
         ],
     ],
 
-    baseSharpness: [40, 40, 190, 40, 40, 0],
-    maxSharpness:  [40, 40, 190, 40, 60, 30],
+    baseSharpness: [40, 40, 190, 40, 40, 0, 0],
+    maxSharpness:  [40, 40, 190, 40, 60, 30, 0],
 
     filterHelpers: {
         nameLower: "bigmenacingscythe",
@@ -3885,8 +3885,8 @@ const __generated_longsword__32a: Longsword = {
         ],
     ],
 
-    baseSharpness: [160, 20, 40, 80, 0, 0],
-    maxSharpness:  [160, 20, 40, 110, 20, 0],
+    baseSharpness: [160, 20, 40, 80, 0, 0, 0],
+    maxSharpness:  [160, 20, 40, 110, 20, 0, 0],
 
     filterHelpers: {
         nameLower: "sinisterlongswordi",
@@ -3918,8 +3918,8 @@ const __generated_longsword__32b: Longsword = {
         ],
     ],
 
-    baseSharpness: [170, 20, 20, 90, 0, 0],
-    maxSharpness:  [170, 20, 20, 110, 30, 0],
+    baseSharpness: [170, 20, 20, 90, 0, 0, 0],
+    maxSharpness:  [170, 20, 20, 110, 30, 0, 0],
 
     filterHelpers: {
         nameLower: "sinisterlongswordii",
@@ -3952,8 +3952,8 @@ const __generated_longsword__32c: Longsword = {
         ],
     ],
 
-    baseSharpness: [190, 10, 20, 90, 40, 0],
-    maxSharpness:  [190, 10, 20, 90, 50, 40],
+    baseSharpness: [190, 10, 20, 90, 40, 0, 0],
+    maxSharpness:  [190, 10, 20, 90, 50, 40, 0],
 
     filterHelpers: {
         nameLower: "sinistershadesword",
@@ -3984,8 +3984,8 @@ const __generated_longsword__33a: Longsword = {
         ],
     ],
 
-    baseSharpness: [70, 70, 80, 80, 0, 0],
-    maxSharpness:  [70, 70, 80, 110, 20, 0],
+    baseSharpness: [70, 70, 80, 80, 0, 0, 0],
+    maxSharpness:  [70, 70, 80, 110, 20, 0, 0],
 
     filterHelpers: {
         nameLower: "demonhalberdi",
@@ -4017,8 +4017,8 @@ const __generated_longsword__33b: Longsword = {
         ],
     ],
 
-    baseSharpness: [80, 80, 90, 100, 0, 0],
-    maxSharpness:  [80, 80, 90, 110, 40, 0],
+    baseSharpness: [80, 80, 90, 100, 0, 0, 0],
+    maxSharpness:  [80, 80, 90, 110, 40, 0, 0],
 
     filterHelpers: {
         nameLower: "demonhalberdii",
@@ -4051,8 +4051,8 @@ const __generated_longsword__33c: Longsword = {
         ],
     ],
 
-    baseSharpness: [70, 80, 90, 100, 10, 0],
-    maxSharpness:  [70, 80, 90, 100, 40, 20],
+    baseSharpness: [70, 80, 90, 100, 10, 0, 0],
+    maxSharpness:  [70, 80, 90, 100, 40, 20, 0],
 
     filterHelpers: {
         nameLower: "greatdemonhalberd",
@@ -4083,8 +4083,8 @@ const __generated_longsword__34a: Longsword = {
         ],
     ],
 
-    baseSharpness: [20, 20, 20, 40, 100, 0],
-    maxSharpness:  [20, 20, 20, 40, 150, 0],
+    baseSharpness: [20, 20, 20, 40, 100, 0, 0],
+    maxSharpness:  [20, 20, 20, 40, 150, 0, 0],
 
     filterHelpers: {
         nameLower: "azureelderlongswordi",
@@ -4116,8 +4116,8 @@ const __generated_longsword__34b: Longsword = {
         ],
     ],
 
-    baseSharpness: [20, 20, 50, 50, 110, 0],
-    maxSharpness:  [20, 20, 50, 50, 150, 10],
+    baseSharpness: [20, 20, 50, 50, 110, 0, 0],
+    maxSharpness:  [20, 20, 50, 50, 150, 10, 0],
 
     filterHelpers: {
         nameLower: "azureelderlongswordii",
@@ -4150,8 +4150,8 @@ const __generated_longsword__34c: Longsword = {
         ],
     ],
 
-    baseSharpness: [20, 20, 80, 60, 120, 0],
-    maxSharpness:  [20, 20, 80, 60, 150, 20],
+    baseSharpness: [20, 20, 80, 60, 120, 0, 0],
+    maxSharpness:  [20, 20, 80, 60, 150, 20, 0],
 
     filterHelpers: {
         nameLower: "abyssalgalesword",
@@ -4182,8 +4182,8 @@ const __generated_longsword__35a: Longsword = {
         ],
     ],
 
-    baseSharpness: [20, 20, 190, 40, 30, 0],
-    maxSharpness:  [20, 20, 190, 40, 50, 30],
+    baseSharpness: [20, 20, 190, 40, 30, 0, 0],
+    maxSharpness:  [20, 20, 190, 40, 50, 30, 0],
 
     filterHelpers: {
         nameLower: "thunderboltlongswordi",
@@ -4215,8 +4215,8 @@ const __generated_longsword__35b: Longsword = {
         ],
     ],
 
-    baseSharpness: [10, 20, 220, 40, 60, 0],
-    maxSharpness:  [10, 20, 220, 40, 70, 40],
+    baseSharpness: [10, 20, 220, 40, 60, 0, 0],
+    maxSharpness:  [10, 20, 220, 40, 70, 40, 0],
 
     filterHelpers: {
         nameLower: "abyssalstormsword",
@@ -4247,8 +4247,8 @@ const __generated_longsword__36a: Longsword = {
         ],
     ],
 
-    baseSharpness: [70, 60, 70, 80, 20, 0],
-    maxSharpness:  [70, 60, 70, 80, 70, 0],
+    baseSharpness: [70, 60, 70, 80, 20, 0, 0],
+    maxSharpness:  [70, 60, 70, 80, 70, 0, 0],
 
     filterHelpers: {
         nameLower: "rookslayersaberi",
@@ -4279,8 +4279,8 @@ const __generated_longsword__36b: Longsword = {
         ],
     ],
 
-    baseSharpness: [90, 80, 80, 70, 30, 0],
-    maxSharpness:  [90, 80, 80, 70, 80, 0],
+    baseSharpness: [90, 80, 80, 70, 30, 0, 0],
+    maxSharpness:  [90, 80, 80, 70, 80, 0, 0],
 
     filterHelpers: {
         nameLower: "rookslayersaberii",
@@ -4313,8 +4313,8 @@ const __generated_longsword__36c: Longsword = {
         ],
     ],
 
-    baseSharpness: [90, 80, 80, 60, 40, 0],
-    maxSharpness:  [90, 80, 80, 60, 80, 10],
+    baseSharpness: [90, 80, 80, 60, 40, 0, 0],
+    maxSharpness:  [90, 80, 80, 60, 80, 10, 0],
 
     filterHelpers: {
         nameLower: "bazelvargarookslayer",
@@ -4345,8 +4345,8 @@ const __generated_longsword__37a: Longsword = {
         ],
     ],
 
-    baseSharpness: [100, 90, 80, 40, 40, 0],
-    maxSharpness:  [100, 90, 80, 40, 60, 30],
+    baseSharpness: [100, 90, 80, 40, 40, 0, 0],
+    maxSharpness:  [100, 90, 80, 40, 60, 30, 0],
 
     filterHelpers: {
         nameLower: "icesteelbladei",
@@ -4379,8 +4379,8 @@ const __generated_longsword__37b: Longsword = {
         ],
     ],
 
-    baseSharpness: [100, 90, 80, 40, 30, 10],
-    maxSharpness:  [100, 90, 80, 40, 30, 60],
+    baseSharpness: [100, 90, 80, 40, 30, 10, 0],
+    maxSharpness:  [100, 90, 80, 40, 30, 60, 0],
 
     filterHelpers: {
         nameLower: "daora'sraid",
@@ -4411,8 +4411,8 @@ const __generated_longsword__38a: Longsword = {
         ],
     ],
 
-    baseSharpness: [100, 90, 70, 60, 30, 0],
-    maxSharpness:  [100, 90, 70, 60, 50, 30],
+    baseSharpness: [100, 90, 70, 60, 30, 0, 0],
+    maxSharpness:  [100, 90, 70, 60, 50, 30, 0],
 
     filterHelpers: {
         nameLower: "imperialsaberi",
@@ -4444,8 +4444,8 @@ const __generated_longsword__38b: Longsword = {
         ],
     ],
 
-    baseSharpness: [100, 90, 70, 50, 40, 0],
-    maxSharpness:  [100, 90, 70, 50, 60, 30],
+    baseSharpness: [100, 90, 70, 50, 40, 0, 0],
+    maxSharpness:  [100, 90, 70, 50, 60, 30, 0],
 
     filterHelpers: {
         nameLower: "imperialshimmer",
@@ -4476,8 +4476,8 @@ const __generated_longsword__39a: Longsword = {
         ],
     ],
 
-    baseSharpness: [100, 70, 50, 50, 30, 0],
-    maxSharpness:  [100, 70, 50, 50, 30, 50],
+    baseSharpness: [100, 70, 50, 50, 30, 0, 0],
+    maxSharpness:  [100, 70, 50, 50, 30, 50, 0],
 
     filterHelpers: {
         nameLower: "miragefinswordi",
@@ -4509,8 +4509,8 @@ const __generated_longsword__39b: Longsword = {
         ],
     ],
 
-    baseSharpness: [100, 100, 50, 60, 40, 0],
-    maxSharpness:  [100, 100, 50, 60, 40, 50],
+    baseSharpness: [100, 100, 50, 60, 40, 0, 0],
+    maxSharpness:  [100, 100, 50, 60, 40, 50, 0],
 
     filterHelpers: {
         nameLower: "phantommirage",
@@ -4541,8 +4541,8 @@ const __generated_longsword__40a: Longsword = {
         ],
     ],
 
-    baseSharpness: [180, 0, 0, 0, 0, 70],
-    maxSharpness:  [180, 0, 0, 0, 0, 120],
+    baseSharpness: [180, 0, 0, 0, 0, 70, 0],
+    maxSharpness:  [180, 0, 0, 0, 0, 120, 0],
 
     filterHelpers: {
         nameLower: "redwinglongswordi",
@@ -4573,8 +4573,8 @@ const __generated_longsword__40b: Longsword = {
         ],
     ],
 
-    baseSharpness: [60, 0, 0, 0, 0, 90],
-    maxSharpness:  [60, 0, 0, 0, 0, 140],
+    baseSharpness: [60, 0, 0, 0, 0, 90, 0],
+    maxSharpness:  [60, 0, 0, 0, 0, 140, 0],
 
     filterHelpers: {
         nameLower: "reddnaughtblade",
@@ -4605,8 +4605,8 @@ const __generated_longsword__41a: Longsword = {
         ],
     ],
 
-    baseSharpness: [60, 50, 50, 40, 0, 0],
-    maxSharpness:  [60, 50, 50, 90, 0, 0],
+    baseSharpness: [60, 50, 50, 40, 0, 0, 0],
+    maxSharpness:  [60, 50, 50, 90, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "cawscythei",
@@ -4638,8 +4638,8 @@ const __generated_longsword__41b: Longsword = {
         ],
     ],
 
-    baseSharpness: [50, 80, 60, 60, 0, 0],
-    maxSharpness:  [50, 80, 60, 90, 20, 0],
+    baseSharpness: [50, 80, 60, 60, 0, 0, 0],
+    maxSharpness:  [50, 80, 60, 90, 20, 0, 0],
 
     filterHelpers: {
         nameLower: "cawscytheii",
@@ -4672,8 +4672,8 @@ const __generated_longsword__41c: Longsword = {
         ],
     ],
 
-    baseSharpness: [80, 80, 60, 60, 20, 0],
-    maxSharpness:  [80, 80, 60, 60, 70, 0],
+    baseSharpness: [80, 80, 60, 60, 20, 0, 0],
+    maxSharpness:  [80, 80, 60, 60, 70, 0, 0],
 
     filterHelpers: {
         nameLower: "cawscytheiii",
@@ -4707,8 +4707,8 @@ const __generated_longsword__41d: Longsword = {
         ],
     ],
 
-    baseSharpness: [100, 90, 70, 60, 30, 0],
-    maxSharpness:  [100, 90, 70, 60, 70, 10],
+    baseSharpness: [100, 90, 70, 60, 30, 0, 0],
+    maxSharpness:  [100, 90, 70, 60, 70, 10, 0],
 
     filterHelpers: {
         nameLower: "squawkscythe",
@@ -4739,8 +4739,8 @@ const __generated_longsword__42a: Longsword = {
         ],
     ],
 
-    baseSharpness: [50, 60, 100, 40, 0, 0],
-    maxSharpness:  [50, 60, 100, 70, 20, 0],
+    baseSharpness: [50, 60, 100, 40, 0, 0, 0],
+    maxSharpness:  [50, 60, 100, 70, 20, 0, 0],
 
     filterHelpers: {
         nameLower: "hand-me-downswordi",
@@ -4774,8 +4774,8 @@ const __generated_longsword__42b: Longsword = {
         ],
     ],
 
-    baseSharpness: [60, 60, 80, 70, 30, 0],
-    maxSharpness:  [60, 60, 80, 70, 60, 20],
+    baseSharpness: [60, 60, 80, 70, 30, 0, 0],
+    maxSharpness:  [60, 60, 80, 70, 60, 20, 0],
 
     filterHelpers: {
         nameLower: "hand-me-downswordii",
@@ -4810,8 +4810,8 @@ const __generated_longsword__42c: Longsword = {
         ],
     ],
 
-    baseSharpness: [70, 80, 70, 80, 50, 0],
-    maxSharpness:  [70, 80, 70, 80, 50, 50],
+    baseSharpness: [70, 80, 70, 80, 50, 0, 0],
+    maxSharpness:  [70, 80, 70, 80, 50, 50, 0],
 
     filterHelpers: {
         nameLower: "kamura'sinheritance",
@@ -4842,8 +4842,8 @@ const __generated_longsword__43a: Longsword = {
         ],
     ],
 
-    baseSharpness: [50, 100, 50, 120, 20, 10],
-    maxSharpness:  [50, 100, 50, 120, 20, 60],
+    baseSharpness: [50, 100, 50, 120, 20, 10, 0],
+    maxSharpness:  [50, 100, 50, 120, 20, 60, 0],
 
     filterHelpers: {
         nameLower: "azurestarbladei",
@@ -4874,8 +4874,8 @@ const __generated_longsword__43b: Longsword = {
         ],
     ],
 
-    baseSharpness: [50, 100, 50, 100, 30, 20],
-    maxSharpness:  [50, 100, 50, 100, 30, 70],
+    baseSharpness: [50, 100, 50, 100, 30, 20, 0],
+    maxSharpness:  [50, 100, 50, 100, 30, 70, 0],
 
     filterHelpers: {
         nameLower: "azurestar\"dragondance\"",
@@ -4915,8 +4915,8 @@ const __generated_longsword__ra: Longsword = {
         ],
     ],
 
-    baseSharpness: [70, 70, 90, 20, 0, 0],
-    maxSharpness:  [70, 70, 90, 70, 0, 0],
+    baseSharpness: [70, 70, 90, 20, 0, 0, 0],
+    maxSharpness:  [70, 70, 90, 70, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "rampagebladei",
@@ -4960,8 +4960,8 @@ const __generated_longsword__rb: Longsword = {
         ],
     ],
 
-    baseSharpness: [60, 70, 80, 40, 0, 0],
-    maxSharpness:  [60, 70, 80, 90, 0, 0],
+    baseSharpness: [60, 70, 80, 40, 0, 0, 0],
+    maxSharpness:  [60, 70, 80, 90, 0, 0, 0],
 
     filterHelpers: {
         nameLower: "rampagebladeii",
@@ -5013,8 +5013,8 @@ const __generated_longsword__rc: Longsword = {
         ],
     ],
 
-    baseSharpness: [50, 70, 80, 30, 20, 0],
-    maxSharpness:  [50, 70, 80, 30, 70, 0],
+    baseSharpness: [50, 70, 80, 30, 20, 0, 0],
+    maxSharpness:  [50, 70, 80, 30, 70, 0, 0],
 
     filterHelpers: {
         nameLower: "rampagebladeiii",
@@ -5073,8 +5073,8 @@ const __generated_longsword__rd: Longsword = {
         ],
     ],
 
-    baseSharpness: [50, 70, 70, 30, 30, 0],
-    maxSharpness:  [50, 70, 70, 30, 80, 0],
+    baseSharpness: [50, 70, 70, 30, 30, 0, 0],
+    maxSharpness:  [50, 70, 70, 30, 80, 0, 0],
 
     filterHelpers: {
         nameLower: "rampagebladeiv",
@@ -5143,8 +5143,8 @@ const __generated_longsword__re: Longsword = {
         ],
     ],
 
-    baseSharpness: [50, 70, 50, 50, 30, 0],
-    maxSharpness:  [50, 70, 50, 50, 70, 10],
+    baseSharpness: [50, 70, 50, 50, 30, 0, 0],
+    maxSharpness:  [50, 70, 50, 50, 70, 10, 0],
 
     filterHelpers: {
         nameLower: "rampagebladev",
@@ -5221,8 +5221,8 @@ const __generated_longsword__rf: Longsword = {
         ],
     ],
 
-    baseSharpness: [50, 70, 30, 60, 40, 0],
-    maxSharpness:  [50, 70, 30, 60, 70, 20],
+    baseSharpness: [50, 70, 30, 60, 40, 0, 0],
+    maxSharpness:  [50, 70, 30, 60, 70, 20, 0],
 
     filterHelpers: {
         nameLower: "rampageblades",

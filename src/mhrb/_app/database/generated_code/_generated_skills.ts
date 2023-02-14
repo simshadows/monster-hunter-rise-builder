@@ -331,7 +331,7 @@ export const __generated_skill__blight_resistance: Skill = {
     name: "Blight Resistance",
     maxLevels: 3,
 
-    iconImgID: "skill_icon_blue",
+    iconImgID: "skill_icon_darkblue",
     filterHelpers: {
         nameLower: "blightresistance",
     }
@@ -1009,15 +1009,15 @@ export const __generated_skill__punishing_draw: Skill = {
     }
 };
 
-export const __generated_skill__quick_sheath: Skill = {
-    id: "quick_sheath",
+export const __generated_skill__quick_sheathe: Skill = {
+    id: "quick_sheathe",
     shortId: 82,
-    name: "Quick Sheath",
+    name: "Quick Sheathe",
     maxLevels: 3,
 
     iconImgID: "skill_icon_brown",
     filterHelpers: {
-        nameLower: "quicksheath",
+        nameLower: "quicksheathe",
     }
 };
 
@@ -1369,6 +1369,90 @@ export const __generated_skill__wirebug_whisperer: Skill = {
     }
 };
 
+export const __generated_skill__bladescale_hone: Skill = {
+    id: "bladescale_hone",
+    shortId: 112,
+    name: "Bladescale Hone",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_yellow",
+    filterHelpers: {
+        nameLower: "bladescalehone",
+    }
+};
+
+export const __generated_skill__chain_crit: Skill = {
+    id: "chain_crit",
+    shortId: 113,
+    name: "Chain Crit",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_red",
+    filterHelpers: {
+        nameLower: "chaincrit",
+    }
+};
+
+export const __generated_skill__dereliction: Skill = {
+    id: "dereliction",
+    shortId: 114,
+    name: "Dereliction",
+    maxLevels: 3,
+
+    iconImgID: "skill_icon_red",
+    filterHelpers: {
+        nameLower: "dereliction",
+    }
+};
+
+export const __generated_skill__quick_breath: Skill = {
+    id: "quick_breath",
+    shortId: 115,
+    name: "Quick Breath",
+    maxLevels: 1,
+
+    iconImgID: "skill_icon_green",
+    filterHelpers: {
+        nameLower: "quickbreath",
+    }
+};
+
+export const __generated_skill__redirection: Skill = {
+    id: "redirection",
+    shortId: 116,
+    name: "Redirection",
+    maxLevels: 2,
+
+    iconImgID: "skill_icon_green",
+    filterHelpers: {
+        nameLower: "redirection",
+    }
+};
+
+export const __generated_skill__tune_up: Skill = {
+    id: "tune_up",
+    shortId: 117,
+    name: "Tune-Up",
+    maxLevels: 2,
+
+    iconImgID: "skill_icon_grey",
+    filterHelpers: {
+        nameLower: "tune-up",
+    }
+};
+
+export const __generated_skill__wall_runner_boost: Skill = {
+    id: "wall_runner_boost",
+    shortId: 118,
+    name: "Wall Runner (Boost)",
+    maxLevels: 1,
+
+    iconImgID: "skill_icon_green",
+    filterHelpers: {
+        nameLower: "wallrunner(boost)",
+    }
+};
+
 export const skillsArray: Readonly<Skill[]> = [
     __generated_skill__fire_attack,
     __generated_skill__water_attack,
@@ -1451,7 +1535,7 @@ export const skillsArray: Readonly<Skill[]> = [
     __generated_skill__power_prolonger,
     __generated_skill__protective_polish,
     __generated_skill__punishing_draw,
-    __generated_skill__quick_sheath,
+    __generated_skill__quick_sheathe,
     __generated_skill__rapid_fire_up,
     __generated_skill__rapid_morph,
     __generated_skill__razor_sharp,
@@ -1481,4 +1565,11 @@ export const skillsArray: Readonly<Skill[]> = [
     __generated_skill__wind_alignment,
     __generated_skill__windproof,
     __generated_skill__wirebug_whisperer,
+    __generated_skill__bladescale_hone,
+    __generated_skill__chain_crit,
+    __generated_skill__dereliction,
+    __generated_skill__quick_breath,
+    __generated_skill__redirection,
+    __generated_skill__tune_up,
+    __generated_skill__wall_runner_boost,
 ];

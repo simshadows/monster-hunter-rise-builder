@@ -70,11 +70,11 @@
     "suffix": "",
 
     "pieces": {
-        "head":  [[], {"item_prolonger"   : 1                   }],
-        "chest": [[], {"attack_boost"     : 1                   }],
-        "arms":  [[], {"quick_sheath"     : 1                   }],
-        "waist": [[], {"stun_resistance"  : 1                   }],
-        "legs":  [[], {"stun_resistance"  : 1, "attack_boost": 1}]
+        "head":  [[], {"item_prolonger" : 1                   }],
+        "chest": [[], {"attack_boost"   : 1                   }],
+        "arms":  [[], {"quick_sheathe"  : 1                   }],
+        "waist": [[], {"stun_resistance": 1                   }],
+        "legs":  [[], {"stun_resistance": 1, "attack_boost": 1}]
     },
     "defenses": {"defLvl1": 4, "f":0, "w":0, "t":0, "i":0, "d":0}
 }],
@@ -438,7 +438,7 @@
 
     "pieces": {
         "head":  [[], {"fire_attack"   : 1}],
-        "chest": [[], {"quick_sheath"  : 1}],
+        "chest": [[], {"quick_sheathe" : 1}],
         "arms":  [[], {"fire_attack"   : 1}],
         "waist": [[], {"recovery_speed": 1}],
         "legs":  [[], {"fire_attack"   : 1}]
@@ -843,10 +843,10 @@
 
     "pieces": {
         "head":  [[], {"critical_draw": 1}],
-        "chest": [[], {"quick_sheath" : 1}],
+        "chest": [[], {"quick_sheathe": 1}],
         "arms":  [[], {"critical_eye" : 1}],
         "waist": [[], {"critical_eye" : 2}],
-        "legs":  [[], {"quick_sheath" : 1}]
+        "legs":  [[], {"quick_sheathe": 1}]
     },
     "defenses": {"defLvl1": 20, "f":-1, "w":0, "t":-1, "i":3, "d":0}
 }],
@@ -1328,7 +1328,7 @@
     "pieces": {
         "head":  [[2  ], {"item_prolonger" : 1                   }],
         "chest": [[1  ], {"attack_boost"   : 1, "handicraft"  : 1}],
-        "arms":  [[2  ], {"quick_sheath"   : 1                   }],
+        "arms":  [[2  ], {"quick_sheathe"  : 1                   }],
         "waist": [[1,1], {"stun_resistance": 2                   }],
         "legs":  [[2  ], {"stun_resistance": 1, "attack_boost": 2}]
     },
@@ -1461,7 +1461,7 @@
     "pieces": {
         "head":  [[2,1], {"ice_attack"      : 2                       }],
         "chest": [[1  ], {"attack_boost"    : 1, "ice_attack"      : 1}],
-        "arms":  [[1,1], {"sleep_resistance": 1, "ice_attack"      : 1}],
+        "arms":  [[1,1], {"sleep_resistance": 2, "ice_attack"      : 1}],
         "waist": [[1  ], {"attack_boost"    : 2, "sleep_resistance": 1}],
         "legs":  [[2,1], {"attack_boost"    : 1                       }]
     },
@@ -1554,10 +1554,10 @@
     "suffix": "S",
 
     "pieces": {
-        "head":  [[2  ], {"quick_sheath"    : 1, "fire_attack"     : 1}],
-        "chest": [[1  ], {"quick_sheath"    : 1, "peak_performance": 1}],
+        "head":  [[2  ], {"quick_sheathe"   : 1, "fire_attack"     : 1}],
+        "chest": [[1  ], {"quick_sheathe"   : 1, "peak_performance": 1}],
         "arms":  [[1,1], {"peak_performance": 1, "fire_attack"     : 1}],
-        "waist": [[3,1], {"quick_sheath"    : 1                       }],
+        "waist": [[3,1], {"quick_sheathe"   : 1                       }],
         "legs":  [[1  ], {"peak_performance": 1, "fire_attack"     : 2}]
     },
     "defenses": {"defLvl1": 38, "f":3, "w":-3, "t":-1, "i":0, "d":0}
@@ -2251,10 +2251,10 @@
 
     "pieces": {
         "head":  [[1    ], {"critical_draw": 2                                       }],
-        "chest": [[2,1,1], {"quick_sheath" : 1, "maximum_might": 1                   }],
-        "arms":  [[2    ], {"quick_sheath" : 1, "maximum_might": 1, "critical_eye": 1}],
+        "chest": [[2,1,1], {"quick_sheathe": 1, "maximum_might": 1                   }],
+        "arms":  [[2    ], {"quick_sheathe": 1, "maximum_might": 1, "critical_eye": 1}],
         "waist": [[1    ], {"critical_draw": 1, "critical_eye" : 2                   }],
-        "legs":  [[3,1  ], {"quick_sheath" : 1                                       }]
+        "legs":  [[3,1  ], {"quick_sheathe": 1                                       }]
     },
     "defenses": {"defLvl1": 58, "f":-3, "w":0, "t":-1, "i":3, "d":0}
 }],
@@ -2886,13 +2886,760 @@
     "suffix": "",
 
     "pieces": {
-        "head":  [[2,1], {"constitution": 2, "water_attack"    : 2                       }],
-        "chest": [[2  ], {"constitution": 2, "weakness_exploit": 1                       }],
-        "arms":  [[1  ], {"constitution": 1, "weakness_exploit": 1, "critical_element": 2}],
-        "waist": [[3,1], {"quick_sheath": 1, "water_attack"    : 2, "critical_element": 1}],
-        "legs":  [[2,1], {"quick_sheath": 2, "focus"           : 1                       }]
+        "head":  [[2,1], {"constitution" : 2, "water_attack"    : 2                       }],
+        "chest": [[2  ], {"constitution" : 2, "weakness_exploit": 1                       }],
+        "arms":  [[1  ], {"constitution" : 1, "weakness_exploit": 1, "critical_element": 2}],
+        "waist": [[3,1], {"quick_sheathe": 1, "water_attack"    : 2, "critical_element": 1}],
+        "legs":  [[2,1], {"quick_sheathe": 2, "focus"           : 1                       }]
     },
     "defenses": {"defLvl1": 72, "f":2, "w":2, "t":0, "i":0, "d":2}
+}],
+
+
+[151, {
+    "tier": "mr",
+    "rarity": 8,
+    "setName": "Kamura Legacy",
+    "searchHint": "",
+
+    "prefix": "Kamura Legacy",
+    "namingScheme": "kamura",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[2  ], {"divine_blessing"  : 2, "resuscitate" : 1                       }],
+        "chest": [[1,1], {"wirebug_whisperer": 2, "wall_runner" : 1, "critical_eye"    : 1}],
+        "arms":  [[1  ], {"critical_eye"     : 2, "heroics"     : 1, "divine_blessing" : 1}],
+        "waist": [[4,1], {"wirebug_whisperer": 1, "critical_eye": 1                       }],
+        "legs":  [[2  ], {"wall_runner"      : 2, "resuscitate" : 1, "affinity_sliding": 1}]
+    },
+    "defenses": {"defLvl1": 80, "f":2, "w":0, "t":0, "i":0, "d":0}
+}],
+[152, {
+    "tier": "mr",
+    "rarity": 8,
+    "setName": "Leather X",
+    "searchHint": "",
+
+    "prefix": "Leather",
+    "namingScheme": "scheme_1b",
+    "suffix": "X",
+
+    "pieces": {
+        "head":  [[4,1], {"geologist"  : 1, "hunger_resistance" : 1, "carving_pro": 1}],
+        "chest": [[4  ], {"botanist"   : 2, "recovery_up"       : 1                  }],
+        "arms":  [[4,1], {"geologist"  : 1, "special_ammo_boost": 1                  }],
+        "waist": [[2,1], {"recovery_up": 2, "hunger_resistance" : 2                  }],
+        "legs":  [[4,1], {"geologist"  : 1, "botanist"          : 2                  }]
+    },
+    "defenses": {"defLvl1": 80, "f":0, "w":0, "t":0, "i":0, "d":0}
+}],
+[153, {
+    "tier": "mr",
+    "rarity": 8,
+    "setName": "Chainmail X",
+    "searchHint": "",
+
+    "prefix": "Chainmail",
+    "namingScheme": "scheme_1",
+    "suffix": "X",
+
+    "pieces": {
+        "head":  [[4    ], {"stamina_surge": 1, "defense_boost": 2                    }],
+        "chest": [[4    ], {"defense_boost": 1, "flinch_free"  : 2, "guard"        : 1}],
+        "arms":  [[4,1  ], {"stamina_surge": 1, "defense_boost": 2                    }],
+        "waist": [[1,1,1], {"guard"        : 2, "flinch_free"  : 1, "defense_boost": 2}],
+        "legs":  [[1,1,1], {"stamina_surge": 1, "guard"        : 2                    }]
+    },
+    "defenses": {"defLvl1": 82, "f":0, "w":0, "t":1, "i":0, "d":0}
+}],
+[154, {
+    "tier": "mr",
+    "rarity": 8,
+    "setName": "Hunter X",
+    "searchHint": "",
+
+    "prefix": "Hunter's",
+    "namingScheme": "scheme_2",
+    "suffix": "X",
+
+    "pieces": {
+        "head":  [[2  ], {"item_prolonger" : 1, "attack_boost": 2                     }],
+        "chest": [[1  ], {"attack_boost"   : 1, "handicraft"  : 1, "item_prolonger": 1}],
+        "arms":  [[2  ], {"quick_sheathe"  : 1, "handicraft"  : 1, "ammo_up"       : 1}],
+        "waist": [[1,1], {"stun_resistance": 2, "handicraft"  : 1, "item_prolonger": 1}],
+        "legs":  [[2  ], {"stun_resistance": 1, "attack_boost": 2, "quick_sheathe" : 1}]
+    },
+    "defenses": {"defLvl1": 82, "f":0, "w":0, "t":0, "i":0, "d":0}
+}],
+[155, {
+    "tier": "mr",
+    "rarity": 8,
+    "setName": "Alloy X",
+    "searchHint": "",
+
+    "prefix": "Alloy",
+    "namingScheme": "scheme_2",
+    "suffix": "X",
+
+    "pieces": {
+        "head":  [[4  ], {"water_attack"    : 1, "protective_polish": 1, "speed_sharpening": 1}],
+        "chest": [[3  ], {"speed_sharpening": 2, "protective_polish": 2                       }],
+        "arms":  [[2,1], {"water_attack"    : 1, "critical_eye"     : 2                       }],
+        "waist": [[3,1], {"water_attack"    : 3, "critical_eye"     : 1                       }],
+        "legs":  [[4  ], {"critical_eye"    : 2                                               }]
+    },
+    "defenses": {"defLvl1": 82, "f":-1, "w":0, "t":-1, "i":-1, "d":0}
+}],
+[156, {
+    "tier": "mr",
+    "rarity": 8,
+    "setName": "Bone X",
+    "searchHint": "",
+
+    "prefix": "Bone",
+    "namingScheme": "scheme_1",
+    "suffix": "X",
+
+    "pieces": {
+        "head":  [[4  ], {"stamina_thief"  : 1, "partbreaker"    : 1                      }],
+        "chest": [[3  ], {"stamina_thief"  : 1, "marathon_runner": 2                      }],
+        "arms":  [[1,1], {"punishing_draw" : 2, "stamina_thief"  : 1, "marathon_runner": 1}],
+        "waist": [[2,1], {"focus"          : 1, "partbreaker"    : 2                      }],
+        "legs":  [[2  ], {"muck_resistance": 2, "focus"          : 1, "punishing_draw" : 1}]
+    },
+    "defenses": {"defLvl1": 82, "f":0, "w":0, "t":0, "i":-1, "d":0}
+}],
+[157, {
+    "tier": "mr",
+    "rarity": 8,
+    "setName": "Gargwa Mask X",
+    "searchHint": "",
+
+    "prefix": "Gargwa",
+    "namingScheme": "mask",
+    "suffix": "X",
+
+    "pieces": {
+        "head":  [[4], {"leap_of_faith": 1, "good_luck": 2}],
+        "chest": null,
+        "arms":  null,
+        "waist": null,
+        "legs":  null
+    },
+    "defenses": {"defLvl1": 86, "f":-3, "w":-2, "t":-2, "i":1, "d":0}
+}],
+[158, {
+    "tier": "mr",
+    "rarity": 8,
+    "setName": "Rhenoplos X",
+    "searchHint": "",
+
+    "prefix": "Rhenoplos",
+    "namingScheme": "scheme_3",
+    "suffix": "X",
+
+    "pieces": {
+        "head":  [[2  ], {"pierce_up"        : 2, "stun_resistance"  : 1, "muck_resistance"   : 1}],
+        "chest": [[4,1], {"artillery"        : 1, "stun_resistance"  : 2                         }],
+        "arms":  [[2,2], {"artillery"        : 2, "load_shells"      : 1, "special_ammo_boost": 1}],
+        "waist": [[4  ], {"tremor_resistance": 2, "load_shells"      : 1, "special_ammo_boost": 1}],
+        "legs":  [[4  ], {"pierce_up"        : 1, "tremor_resistance": 1                         }]
+    },
+    "defenses": {"defLvl1": 90, "f":2, "w":0, "t":0, "i":-2, "d":0}
+}],
+[159, {
+    "tier": "mr",
+    "rarity": 8,
+    "setName": "Bullfango Mask X",
+    "searchHint": "",
+
+    "prefix": "Bullfango",
+    "namingScheme": "mask",
+    "suffix": "X",
+
+    "pieces": {
+        "head":  [[3], {"diversion": 1, "agitator": 3}],
+        "chest": null,
+        "arms":  null,
+        "waist": null,
+        "legs":  null
+    },
+    "defenses": {"defLvl1": 86, "f":0, "w":4, "t":-2, "i":0, "d":0}
+}],
+[160, {
+    "tier": "mr",
+    "rarity": 8,
+    "setName": "Droth X",
+    "searchHint": "ludroth",
+
+    "prefix": "Droth",
+    "namingScheme": "scheme_2",
+    "suffix": "X",
+
+    "pieces": {
+        "head":  null,
+        "chest": [[4,2], {"water_attack": 2                 }],
+        "arms":  null,
+        "waist": [[4,1], {"diversion"   : 1, "resentment": 1}],
+        "legs":  [[4,1], {"water_attack": 3                 }]
+    },
+    "defenses": {"defLvl1": 90, "f":-2, "w":4, "t":-1, "i":0, "d":0}
+}],
+[161, {
+    "tier": "mr",
+    "rarity": 8,
+    "setName": "Bnahabra X",
+    "searchHint": "",
+
+    "prefix": "Bnahabra",
+    "namingScheme": "bnahabra",
+    "suffix": "X",
+
+    "pieces": {
+        "head":  [[4,1], {"poison_attack"   : 1, "recoil_down" : 2}],
+        "chest": [[3,1], {"paralysis_attack": 1, "evade_window": 2}],
+        "arms":  [[4  ], {"poison_attack"   : 2, "evade_window": 2}],
+        "waist": [[3,1], {"paralysis_attack": 2, "evade_window": 1}],
+        "legs":  [[4,1], {"recoil_down"     : 1, "steadiness"  : 2}]
+    },
+    "defenses": {"defLvl1": 84, "f":-2, "w":0, "t":0, "i":0, "d":2}
+}],
+[162, {
+    "tier": "mr",
+    "rarity": 8,
+    "setName": "Hornetaur",
+    "searchHint": "",
+
+    "prefix": "Hornetaur",
+    "namingScheme": "hornetaur_velociprey",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[3  ], {"resuscitate"  : 2, "recovery_up"      : 1                  }],
+        "chest": [[4  ], {"dragon_attack": 2, "recovery_up"      : 1                  }],
+        "arms":  [[4,2], {"dragon_attack": 1, "steadiness"       : 2                  }],
+        "waist": [[4  ], {"dragon_attack": 2, "dragon_resistance": 3                  }],
+        "legs":  [[2,2], {"resuscitate"  : 1, "steadiness"       : 1, "recovery_up": 1}]
+    },
+    "defenses": {"defLvl1": 86, "f":-1, "w":-1, "t":-1, "i":-1, "d":4}
+}],
+[163, {
+    "tier": "mr",
+    "rarity": 8,
+    "setName": "Vespoid",
+    "searchHint": "",
+
+    "prefix": "Vespoid",
+    "namingScheme": "vespoid",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[4  ], {"paralysis_attack": 1, "wirebug_whisperer"   : 2}],
+        "chest": [[4,1], {"quick_sheathe"   : 1, "paralysis_resistance": 2}],
+        "arms":  [[3  ], {"paralysis_attack": 2, "master_mounter"      : 1}],
+        "waist": [[4,1], {"quick_sheathe"   : 1, "paralysis_resistance": 1}],
+        "legs":  [[4  ], {"quick_sheathe"   : 1, "wirebug_whisperer"   : 1}]
+    },
+    "defenses": {"defLvl1": 84, "f":-2, "w":1, "t":1, "i":1, "d":2}
+}],
+[164, {
+    "tier": "mr",
+    "rarity": 8,
+    "setName": "Jaggi X",
+    "searchHint": "",
+
+    "prefix": "Jaggi",
+    "namingScheme": "jaggi",
+    "suffix": "X",
+
+    "pieces": {
+        "head":  null,
+        "chest": null,
+        "arms":  [[1,1], {"attack_boost"  : 3                  }],
+        "waist": null,
+        "legs":  [[2,1], {"master_mounter": 1, "wall_runner": 2}]
+    },
+    "defenses": {"defLvl1": 90, "f":0, "w":0, "t":0, "i":1, "d":0}
+}],
+[165, {
+    "tier": "mr",
+    "rarity": 8,
+    "setName": "Jaggi Mask X",
+    "searchHint": "",
+
+    "prefix": "Jaggi",
+    "namingScheme": "mask",
+    "suffix": "X",
+
+    "pieces": {
+        "head":  [[3,1], {"affinity_sliding": 1, "marathon_runner": 2}],
+        "chest": null,
+        "arms":  null,
+        "waist": null,
+        "legs":  null
+    },
+    "defenses": {"defLvl1": 86, "f":0, "w":0, "t":0, "i":0, "d":0}
+}],
+[166, {
+    "tier": "mr",
+    "rarity": 8,
+    "setName": "Velociprey",
+    "searchHint": "",
+
+    "prefix": "Velociprey",
+    "namingScheme": "hornetaur_velociprey",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[4,1], {"attack_boost": 1, "stun_resistance": 1}],
+        "chest": [[4,1], {"attack_boost": 1, "windproof"      : 1}],
+        "arms":  [[3,1], {"attack_boost": 2                      }],
+        "waist": [[4  ], {"attack_boost": 1, "capture_master" : 1}],
+        "legs":  [[3,2], {"windproof"   : 2, "stun_resistance": 2}]
+    },
+    "defenses": {"defLvl1": 86, "f":0, "w":0, "t":0, "i":-2, "d":0}
+}],
+[167, {
+    "tier": "mr",
+    "rarity": 8,
+    "setName": "Izuchi X",
+    "searchHint": "greatizuchi",
+
+    "prefix": "Izuchi",
+    "namingScheme": "scheme_3",
+    "suffix": "X",
+
+    "pieces": {
+        "head":  [[1,1], {"critical_eye"  : 1, "evade_window"  : 2                   }],
+        "chest": [[1  ], {"critical_eye"  : 2, "recovery_speed": 2, "evade_window": 1}],
+        "arms":  [[1,1], {"constitution"  : 2, "evade_window"  : 1                   }],
+        "waist": [[1,1], {"critical_eye"  : 2, "constitution"  : 1                   }],
+        "legs":  [[1,1], {"recovery_speed": 1, "constitution"  : 2, "evade_window": 1}]
+    },
+    "defenses": {"defLvl1": 86, "f":2, "w":-1, "t":-2, "i":0, "d":0}
+}],
+[168, {
+    "tier": "mr",
+    "rarity": 8,
+    "setName": "Baggi X",
+    "searchHint": "greatbaggi",
+
+    "prefix": "Baggi",
+    "namingScheme": "scheme_2",
+    "suffix": "X",
+
+    "pieces": {
+        "head":  [[4,1], {"sleep_attack"    : 1, "ice_resistance"  : 1}],
+        "chest": [[4  ], {"attack_boost"    : 1, "sleep_attack"    : 1}],
+        "arms":  [[4,1], {"sleep_resistance": 2, "sleep_attack"    : 1}],
+        "waist": [[3  ], {"attack_boost"    : 2, "sleep_resistance": 1}],
+        "legs":  [[2,1], {"attack_boost"    : 2, "ice_resistance"  : 2}]
+    },
+    "defenses": {"defLvl1": 86, "f":-4, "w":-1, "t":-1, "i":2, "d":1}
+}],
+[169, {
+    "tier": "mr",
+    "rarity": 8,
+    "setName": "Kulu-Ya-Ku X",
+    "searchHint": "",
+
+    "prefix": "Kulu-Ya-Ku",
+    "namingScheme": "scheme_3",
+    "suffix": "X",
+
+    "pieces": {
+        "head":  [[1,1], {"maximum_might"  : 2, "quick_sheathe": 1, "stun_resistance": 1}],
+        "chest": [[2,1], {"slugger"        : 2, "quick_sheathe": 1                      }],
+        "arms":  [[2,1], {"slugger"        : 1, "stamina_thief": 2, "quick_sheathe"  : 1}],
+        "waist": [[4,1], {"stamina_thief"  : 1, "maximum_might": 1                      }],
+        "legs":  [[3  ], {"stun_resistance": 2, "critical_eye" : 2                      }]
+    },
+    "defenses": {"defLvl1": 86, "f":0, "w":-3, "t":0, "i":1, "d":0}
+}],
+[170, {
+    "tier": "mr",
+    "rarity": 8,
+    "setName": "Wroggi X",
+    "searchHint": "greatwroggi",
+
+    "prefix": "Wroggi",
+    "namingScheme": "scheme_2",
+    "suffix": "X",
+
+    "pieces": {
+        "head":  [[1], {"rapid_fire_up" : 2, "evade_extender"   : 1                        }],
+        "chest": [[4], {"rapid_fire_up" : 1, "poison_attack"    : 1, "poison_resistance": 1}],
+        "arms":  [[4], {"ammo_up"       : 1, "poison_resistance": 2, "minds_eye"        : 2}],
+        "waist": [[1], {"ammo_up"       : 2, "poison_attack"    : 2                        }],
+        "legs":  [[4], {"evade_extender": 2                                                }]
+    },
+    "defenses": {"defLvl1": 88, "f":2, "w":-2, "t":1, "i":-4, "d":0}
+}],
+[171, {
+    "tier": "mr",
+    "rarity": 8,
+    "setName": "Arzuros X",
+    "searchHint": "",
+
+    "prefix": "Arzuros",
+    "namingScheme": "scheme_2",
+    "suffix": "X",
+
+    "pieces": {
+        "head":  [[1,1,1], {"fortify"      : 1, "defense_boost": 3, "speed_eating": 1}],
+        "chest": [[4    ], {"counterstrike": 1, "resentment"   : 1                   }],
+        "arms":  [[1,1  ], {"counterstrike": 1, "defense_boost": 1, "resentment"  : 2}],
+        "waist": [[2,1  ], {"counterstrike": 1, "defense_boost": 3, "speed_eating": 1}],
+        "legs":  [[3,2,1], {"speed_eating" : 1                                       }]
+    },
+    "defenses": {"defLvl1": 86, "f":-2, "w":0, "t":-2, "i":0, "d":0}
+}],
+[172, {
+    "tier": "mr",
+    "rarity": 8,
+    "setName": "Lagombi X",
+    "searchHint": "",
+
+    "prefix": "Lagombi",
+    "namingScheme": "scheme_2",
+    "suffix": "X",
+
+    "pieces": {
+        "head":  [[3  ], {"critical_eye"    : 1, "ice_attack"  : 2, "masters_touch": 1, "reload_speed": 1}],
+        "chest": [[1,1], {"affinity_sliding": 1, "constitution": 2, "masters_touch": 1, "reload_speed": 1}],
+        "arms":  [[2,1], {"critical_eye"    : 2, "ice_attack"  : 3                                       }],
+        "waist": [[2  ], {"constitution"    : 3                                                          }],
+        "legs":  [[3  ], {"jump_master"     : 1, "critical_eye": 1, "masters_touch": 1, "reload_speed": 1}]
+    },
+    "defenses": {"defLvl1": 86, "f":-3, "w":1, "t":0, "i":3, "d":0}
+}],
+[173, {
+    "tier": "mr",
+    "rarity": 8,
+    "setName": "Volvidon X",
+    "searchHint": "",
+
+    "prefix": "Volvidon",
+    "namingScheme": "scheme_2",
+    "suffix": "X",
+
+    "pieces": {
+        "head":  [[1,1,1], {"paralysis_attack": 1, "earplugs"        : 1               }],
+        "chest": [[2    ], {"rapid_morph"     : 1, "jump_master"     : 2, "earplugs": 1}],
+        "arms":  [[1,1,1], {"evade_extender"  : 2, "paralysis_attack": 3, "earplugs": 1}],
+        "waist": [[2    ], {"earplugs"        : 3                                      }],
+        "legs":  [[1    ], {"rapid_morph"     : 1, "evade_extender"  : 1               }]
+    },
+    "defenses": {"defLvl1": 94, "f":2, "w":-3, "t":0, "i":-1, "d":1}
+}],
+[174, {
+    "tier": "mr",
+    "rarity": 8,
+    "setName": "Aknosom X",
+    "searchHint": "",
+
+    "prefix": "Aknosom",
+    "namingScheme": "scheme_3",
+    "suffix": "X",
+
+    "pieces": {
+        "head":  [[2    ], {"quick_sheathe"   : 1, "fire_attack"     : 1, "critical_draw"   : 1}],
+        "chest": [[1,1  ], {"quick_sheathe"   : 1, "peak_performance": 1, "critical_draw"   : 1}],
+        "arms":  [[2,1,1], {"peak_performance": 1, "fire_attack"     : 2, "critical_element": 1}],
+        "waist": [[4,1  ], {"quick_sheathe"   : 1, "critical_element": 1                       }],
+        "legs":  [[1,1  ], {"peak_performance": 1, "fire_attack"     : 2, "critical_draw"   : 1}]
+    },
+    "defenses": {"defLvl1": 88, "f":3, "w":-3, "t":-1, "i":0, "d":0}
+}],
+[175, {
+    "tier": "mr",
+    "rarity": 8,
+    "setName": "Royal Ludroth X",
+    "searchHint": "",
+
+    "prefix": "Ludroth",
+    "namingScheme": "scheme_3",
+    "suffix": "X",
+
+    "pieces": {
+        "head":  [[2,1  ], {"marathon_runner": 1, "peak_performance": 1, "focus"     : 1}],
+        "chest": [[4    ], {"stamina_surge"  : 2, "focus"           : 1                 }],
+        "arms":  [[2,2,1], {"marathon_runner": 1, "power_prolonger" : 1, "spare_shot": 1}],
+        "waist": [[2    ], {"marathon_runner": 1, "peak_performance": 2                 }],
+        "legs":  [[3    ], {"power_prolonger": 2, "focus"           : 1                 }]
+    },
+    "defenses": {"defLvl1": 92, "f":-3, "w":4, "t":-1, "i":0, "d":0}
+}],
+[176, {
+    "tier": "mr",
+    "rarity": 8,
+    "setName": "Barroth X",
+    "searchHint": "",
+
+    "prefix": "Barroth",
+    "namingScheme": "scheme_2",
+    "suffix": "X",
+
+    "pieces": {
+        "head":  [[4,1], {"attack_boost": 1, "defense_boost"   : 1, "offensive_guard": 1, "spread_up": 1}],
+        "chest": [[4  ], {"attack_boost": 2, "defense_boost"   : 2, "muck_resistance": 2                }],
+        "arms":  [[2,1], {"attack_boost": 2, "affinity_sliding": 1, "offensive_guard": 1, "spread_up": 1}],
+        "waist": [[3  ], {"guard"       : 3, "defense_boost"   : 1                                      }],
+        "legs":  [[2,1], {"guard"       : 2, "defense_boost"   : 1, "offensive_guard": 1                }]
+    },
+    "defenses": {"defLvl1": 94, "f":-3, "w":-1, "t":3, "i":-1, "d":0}
+}],
+[177, {
+    "tier": "mr",
+    "rarity": 8,
+    "setName": "Hermitaur",
+    "searchHint": "daimyohermitaur",
+
+    "prefix": "Hermitaur",
+    "namingScheme": "scheme_3",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[1  ], {"quick_sheathe": 2, "tremor_resistance": 2                                      }],
+        "chest": [[1  ], {"guard"        : 3, "load_shells"      : 1, "normal_rapid_up"  : 1, "ammo_up": 1}],
+        "arms":  [[2  ], {"guard"        : 2, "guard_up"         : 1, "normal_rapid_up"  : 2              }],
+        "waist": [[2,2], {"tune_up"      : 1, "handicraft"       : 1, "quick_sheathe"    : 1              }],
+        "legs":  [[4  ], {"tune_up"      : 1, "handicraft"       : 1, "tremor_resistance": 1              }]
+    },
+    "defenses": {"defLvl1": 94, "f":-5, "w":1, "t":-3, "i":-1, "d":2}
+}],
+[178, {
+    "tier": "mr",
+    "rarity": 8,
+    "setName": "Tetranadon X",
+    "searchHint": "",
+
+    "prefix": "Tetranadon",
+    "namingScheme": "scheme_3",
+    "suffix": "X",
+
+    "pieces": {
+        "head":  [[1  ], {"normal_rapid_up"  : 2, "speed_eating"      : 1                        }],
+        "chest": [[2  ], {"normal_rapid_up"  : 1, "evade_extender"    : 1, "speed_eating"     : 1}],
+        "arms":  [[1,1], {"heroics"          : 2, "special_ammo_boost": 2, "hunger_resistance": 1}],
+        "waist": [[2  ], {"heroics"          : 2, "evade_extender"    : 2                        }],
+        "legs":  [[4  ], {"hunger_resistance": 2, "heroics"           : 1, "speed_eating"     : 1}]
+    },
+    "defenses": {"defLvl1": 90, "f":-1, "w":4, "t":-2, "i":1, "d":0}
+}],
+[179, {
+    "tier": "mr",
+    "rarity": 8,
+    "setName": "Ingot X",
+    "searchHint": "",
+
+    "prefix": "Ingot",
+    "namingScheme": "scheme_2",
+    "suffix": "X",
+
+    "pieces": {
+        "head":  [[4,1], {"windproof"      : 1, "attack_boost": 2}],
+        "chest": [[3,1], {"windproof"      : 2, "critical_eye": 2}],
+        "arms":  [[4,2], {"thunder_attack" : 3                   }],
+        "waist": [[3  ], {"power_prolonger": 2, "attack_boost": 1}],
+        "legs":  [[1,1], {"attack_boost"   : 2, "critical_eye": 2}]
+    },
+    "defenses": {"defLvl1": 94, "f":-1, "w":-1, "t":1, "i":0, "d":0}
+}],
+[180, {
+    "tier": "mr",
+    "rarity": 8,
+    "setName": "Skalda X",
+    "searchHint": "",
+
+    "prefix": "Skalda",
+    "namingScheme": "scheme_5",
+    "suffix": "X",
+
+    "pieces": {
+        "head":  [[4    ], {"poison_attack"   : 3, "latent_power"     : 1                }],
+        "chest": [[3    ], {"latent_power"    : 2, "minds_eye"        : 1                }],
+        "arms":  [[4,1,1], {"latent_power"    : 1, "poison_resistance": 1                }],
+        "waist": [[1    ], {"weakness_exploit": 2, "poison_resistance": 1                }],
+        "legs":  [[2    ], {"latent_power"    : 1, "poison_resistance": 1, "minds_eye": 2}]
+    },
+    "defenses": {"defLvl1": 98, "f":3, "w":-1, "t":-1, "i":-1, "d":3}
+}],
+[181, {
+    "tier": "mr",
+    "rarity": 8,
+    "setName": "Spio X",
+    "searchHint": "",
+
+    "prefix": "Spio",
+    "namingScheme": "scheme_5",
+    "suffix": "X",
+
+    "pieces": {
+        "head":  [[4    ], {"poison_attack"   : 3, "latent_power"     : 1                }],
+        "chest": [[3    ], {"latent_power"    : 2, "minds_eye"        : 1                }],
+        "arms":  [[4,1,1], {"latent_power"    : 1, "poison_resistance": 1                }],
+        "waist": [[1    ], {"weakness_exploit": 2, "poison_resistance": 1                }],
+        "legs":  [[2    ], {"latent_power"    : 1, "poison_resistance": 1, "minds_eye": 2}]
+    },
+    "defenses": {"defLvl1": 98, "f":3, "w":-1, "t":-1, "i":-1, "d":3}
+}],
+[182, {
+    "tier": "mr",
+    "rarity": 8,
+    "setName": "Grand Chaos",
+    "searchHint": "",
+
+    "prefix": "Grand",
+    "namingScheme": "chaos",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[3,1,1], {"mushroomancer": 1, "speed_eating": 1}],
+        "chest": [[2,1  ], {"mushroomancer": 2, "horn_maestro": 1}],
+        "arms":  null,
+        "waist": null,
+        "legs":  null
+    },
+    "defenses": {"defLvl1": 98, "f":2, "w":-2, "t":0, "i":0, "d":0}
+}],
+[183, {
+    "tier": "mr",
+    "rarity": 8,
+    "setName": "Edel X",
+    "searchHint": "",
+
+    "prefix": "Edel",
+    "namingScheme": "scheme_4",
+    "suffix": "X",
+
+    "pieces": {
+        "head":  [[4,2], {"poison_resistance": 2, "speed_eating": 1}],
+        "chest": [[3,1], {"recovery_up"      : 2, "wide_range"  : 1}],
+        "arms":  [[2,1], {"capture_master"   : 1, "wide_range"  : 3}],
+        "waist": [[4,2], {"recovery_up"      : 1, "wide_range"  : 1}],
+        "legs":  [[4,1], {"poison_resistance": 1, "speed_eating": 2}]
+    },
+    "defenses": {"defLvl1": 96, "f":-1, "w":3, "t":-1, "i":0, "d":0}
+}],
+[184, {
+    "tier": "mr",
+    "rarity": 8,
+    "setName": "Shell-Studded X",
+    "searchHint": "",
+
+    "prefix": "S. Studded",
+    "namingScheme": "shell_studded",
+    "suffix": "X",
+
+    "pieces": {
+        "head":  [[2,1], {"ballistics"     : 2, "steadiness"     : 2, "tune_up": 1}],
+        "chest": [[1,1], {"normal_rapid_up": 1, "pierce_up"      : 1, "tune_up": 1}],
+        "arms":  [[1,1], {"spread_up"      : 1, "normal_rapid_up": 1              }],
+        "waist": [[4,1], {"ballistics"     : 1, "normal_rapid_up": 1              }],
+        "legs":  [[1,1], {"spread_up"      : 1, "pierce_up"      : 2              }]
+    },
+    "defenses": {"defLvl1": 96, "f":0, "w":2, "t":1, "i":-1, "d":0}
+}],
+[185, {
+    "tier": "mr",
+    "rarity": 8,
+    "setName": "Melahoa X",
+    "searchHint": "",
+
+    "prefix": "Melahoa",
+    "namingScheme": "melahoa",
+    "suffix": "X",
+
+    "pieces": {
+        "head":  [[4,2], {"paralysis_resistance": 2, "divine_blessing": 2                      }],
+        "chest": [[4,1], {"botanist"            : 2, "recovery_up"    : 1, "divine_blessing": 1}],
+        "arms":  [[4,2], {"paralysis_resistance": 1, "botanist"       : 1, "recovery_up"    : 1}],
+        "waist": [[4,2], {"botanist"            : 1, "recovery_speed" : 1, "stamina_surge"  : 1}],
+        "legs":  [[4,1], {"recovery_up"         : 1, "recovery_speed" : 2, "stamina_surge"  : 1}]
+    },
+    "defenses": {"defLvl1": 92, "f":0, "w":1, "t":3, "i":0, "d":0}
+}],
+[186, {
+    "tier": "mr",
+    "rarity": 8,
+    "setName": "Five Element",
+    "searchHint": "",
+
+    "prefix": "Five Element",
+    "namingScheme": "five_element",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[2], {"hellfire_cloak"   : 2, "minds_eye"     : 1, "ballistics": 1}],
+        "chest": [[4], {"blight_resistance": 1, "minds_eye"     : 2                 }],
+        "arms":  [[4], {"divine_blessing"  : 1, "ballistics"    : 2                 }],
+        "waist": [[4], {"blight_resistance": 2, "master_mounter": 1                 }],
+        "legs":  [[3], {"divine_blessing"  : 2, "hellfire_cloak": 1                 }]
+    },
+    "defenses": {"defLvl1": 100, "f":0, "w":0, "t":0, "i":0, "d":3}
+}],
+[187, {
+    "tier": "mr",
+    "rarity": 8,
+    "setName": "Knight Squire",
+    "searchHint": "damefiorayne",
+
+    "prefix": "Squire's",
+    "namingScheme": "knight_squire",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[1  ], {"attack_boost"    : 2, "speed_eating"  : 3                      }],
+        "chest": [[1,1], {"razor_sharp"     : 1, "flinch_free"   : 1, "offensive_guard": 2}],
+        "arms":  [[2,1], {"guard_up"        : 3, "flinch_free"   : 2                      }],
+        "waist": [[3  ], {"weakness_exploit": 1, "critical_boost": 1, "offensive_guard": 1}],
+        "legs":  [[3,1], {"razor_sharp"     : 2, "critical_boost": 1                      }]
+    },
+    "defenses": {"defLvl1": 100, "f":1, "w":1, "t":1, "i":1, "d":1}
+}],
+
+
+[300, {
+    "tier": "mr",
+    "rarity": 9,
+    "setName": "Magmadron",
+    "searchHint": "",
+
+    "prefix": "Magmadron",
+    "namingScheme": "scheme_2",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[3  ], {"resentment" : 1, "heroics"   : 2, "fire_attack": 3}],
+        "chest": [[4,1], {"resuscitate": 1, "heroics"   : 2                  }],
+        "arms":  [[3  ], {"resentment" : 1, "guard_up"  : 2, "heroics"    : 1}],
+        "waist": [[3,3], {"resuscitate": 1, "guard_up"  : 1                  }],
+        "legs":  [[3,3], {"resuscitate": 1, "resentment": 1                  }]
+    },
+    "defenses": {"defLvl1": 112, "f":5, "w":-5, "t":0, "i":-4, "d":0}
+}],
+
+
+[400, {
+    "tier": "mr",
+    "rarity": 10,
+    "setName": "Archfiend Armor",
+    "searchHint": "gaismagorm",
+
+    "prefix": "Archfiend Armor",
+    "namingScheme": "archfiend_armor",
+    "suffix": "",
+
+    "pieces": {
+        "head":  [[4,2  ], {"weakness_exploit": 1, "resentment": 2                 }],
+        "chest": [[3,2  ], {"weakness_exploit": 1, "resentment": 1, "chain_crit": 1}],
+        "arms":  [[4    ], {"dereliction"     : 2, "resentment": 1                 }],
+        "waist": [[4    ], {"weakness_exploit": 1, "chain_crit": 2                 }],
+        "legs":  [[3,2,2], {"dereliction"     : 1, "resentment": 1                 }]
+    },
+    "defenses": {"defLvl1": 126, "f":0, "w":3, "t":-2, "i":3, "d":-5}
 }]
 
 

@@ -57,6 +57,7 @@ import {
     __generated_skill__capture_master,
     __generated_skill__carving_master,
     __generated_skill__carving_pro,
+    __generated_skill__chain_crit,
     __generated_skill__chameleos_blessing,
     __generated_skill__constitution,
     __generated_skill__counterstrike,
@@ -65,6 +66,7 @@ import {
     __generated_skill__critical_element,
     __generated_skill__critical_eye,
     __generated_skill__defense_boost,
+    __generated_skill__dereliction,
     __generated_skill__diversion,
     __generated_skill__divine_blessing,
     __generated_skill__dragon_attack,
@@ -89,6 +91,7 @@ import {
     __generated_skill__horn_maestro,
     __generated_skill__hunger_resistance,
     __generated_skill__ice_attack,
+    __generated_skill__ice_resistance,
     __generated_skill__item_prolonger,
     __generated_skill__jump_master,
     __generated_skill__kushala_blessing,
@@ -114,7 +117,7 @@ import {
     __generated_skill__power_prolonger,
     __generated_skill__protective_polish,
     __generated_skill__punishing_draw,
-    __generated_skill__quick_sheath,
+    __generated_skill__quick_sheathe,
     __generated_skill__rapid_fire_up,
     __generated_skill__rapid_morph,
     __generated_skill__razor_sharp,
@@ -142,6 +145,7 @@ import {
     __generated_skill__thunder_attack,
     __generated_skill__thunder_resistance,
     __generated_skill__tremor_resistance,
+    __generated_skill__tune_up,
     __generated_skill__wall_runner,
     __generated_skill__water_attack,
     __generated_skill__water_resistance,
@@ -639,7 +643,7 @@ export const armourSetsArray: Readonly<ArmourSet[]> = [
             tierID: "lr",
             decorationSlots: [],
             skills: [
-                [__generated_skill__quick_sheath, 1],
+                [__generated_skill__quick_sheathe, 1],
             ],
 
             defenseAtLevel1: 4,
@@ -2973,7 +2977,7 @@ export const armourSetsArray: Readonly<ArmourSet[]> = [
             tierID: "lr",
             decorationSlots: [],
             skills: [
-                [__generated_skill__quick_sheath, 1],
+                [__generated_skill__quick_sheathe, 1],
             ],
 
             defenseAtLevel1: 16,
@@ -5517,7 +5521,7 @@ export const armourSetsArray: Readonly<ArmourSet[]> = [
             tierID: "lr",
             decorationSlots: [],
             skills: [
-                [__generated_skill__quick_sheath, 1],
+                [__generated_skill__quick_sheathe, 1],
             ],
 
             defenseAtLevel1: 20,
@@ -5598,7 +5602,7 @@ export const armourSetsArray: Readonly<ArmourSet[]> = [
             tierID: "lr",
             decorationSlots: [],
             skills: [
-                [__generated_skill__quick_sheath, 1],
+                [__generated_skill__quick_sheathe, 1],
             ],
 
             defenseAtLevel1: 20,
@@ -8966,7 +8970,7 @@ export const armourSetsArray: Readonly<ArmourSet[]> = [
             tierID: "hr",
             decorationSlots: [2],
             skills: [
-                [__generated_skill__quick_sheath, 1],
+                [__generated_skill__quick_sheathe, 1],
             ],
 
             defenseAtLevel1: 32,
@@ -9962,7 +9966,7 @@ export const armourSetsArray: Readonly<ArmourSet[]> = [
             tierID: "hr",
             decorationSlots: [1, 1],
             skills: [
-                [__generated_skill__sleep_resistance, 1],
+                [__generated_skill__sleep_resistance, 2],
                 [__generated_skill__ice_attack, 1],
             ],
 
@@ -10620,7 +10624,7 @@ export const armourSetsArray: Readonly<ArmourSet[]> = [
             tierID: "hr",
             decorationSlots: [2],
             skills: [
-                [__generated_skill__quick_sheath, 1],
+                [__generated_skill__quick_sheathe, 1],
                 [__generated_skill__fire_attack, 1],
             ],
 
@@ -10648,7 +10652,7 @@ export const armourSetsArray: Readonly<ArmourSet[]> = [
             tierID: "hr",
             decorationSlots: [1],
             skills: [
-                [__generated_skill__quick_sheath, 1],
+                [__generated_skill__quick_sheathe, 1],
                 [__generated_skill__peak_performance, 1],
             ],
 
@@ -10704,7 +10708,7 @@ export const armourSetsArray: Readonly<ArmourSet[]> = [
             tierID: "hr",
             decorationSlots: [3, 1],
             skills: [
-                [__generated_skill__quick_sheath, 1],
+                [__generated_skill__quick_sheathe, 1],
             ],
 
             defenseAtLevel1: 38,
@@ -15008,7 +15012,7 @@ export const armourSetsArray: Readonly<ArmourSet[]> = [
             tierID: "hr",
             decorationSlots: [2, 1, 1],
             skills: [
-                [__generated_skill__quick_sheath, 1],
+                [__generated_skill__quick_sheathe, 1],
                 [__generated_skill__maximum_might, 1],
             ],
 
@@ -15036,7 +15040,7 @@ export const armourSetsArray: Readonly<ArmourSet[]> = [
             tierID: "hr",
             decorationSlots: [2],
             skills: [
-                [__generated_skill__quick_sheath, 1],
+                [__generated_skill__quick_sheathe, 1],
                 [__generated_skill__maximum_might, 1],
                 [__generated_skill__critical_eye, 1],
             ],
@@ -15093,7 +15097,7 @@ export const armourSetsArray: Readonly<ArmourSet[]> = [
             tierID: "hr",
             decorationSlots: [3, 1],
             skills: [
-                [__generated_skill__quick_sheath, 1],
+                [__generated_skill__quick_sheathe, 1],
             ],
 
             defenseAtLevel1: 58,
@@ -19294,7 +19298,7 @@ export const armourSetsArray: Readonly<ArmourSet[]> = [
             tierID: "hr",
             decorationSlots: [3, 1],
             skills: [
-                [__generated_skill__quick_sheath, 1],
+                [__generated_skill__quick_sheathe, 1],
                 [__generated_skill__water_attack, 2],
                 [__generated_skill__critical_element, 1],
             ],
@@ -19323,7 +19327,7 @@ export const armourSetsArray: Readonly<ArmourSet[]> = [
             tierID: "hr",
             decorationSlots: [2, 1],
             skills: [
-                [__generated_skill__quick_sheath, 2],
+                [__generated_skill__quick_sheathe, 2],
                 [__generated_skill__focus, 1],
             ],
 
@@ -19339,6 +19343,5140 @@ export const armourSetsArray: Readonly<ArmourSet[]> = [
                 nameLower: "azureagegeta",
                 setNameLower: "azureage",
                 hintStrLower: "",
+            },
+        },
+    },
+    {
+        id: 151,
+        name: "Kamura Legacy",
+        head: {
+            setID: 151,
+            slotID: "head",
+    
+            setName: "Kamura Legacy",
+            name: "Kamura Legacy Head Scarf",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [2],
+            skills: [
+                [__generated_skill__divine_blessing, 2],
+                [__generated_skill__resuscitate, 1],
+            ],
+
+            defenseAtLevel1: 80,
+
+            fireRes:2,
+            waterRes: 0,
+            thunderRes: 0,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "kamuralegacyheadscarf",
+                setNameLower: "kamuralegacy",
+                hintStrLower: "",
+            },
+        },
+        chest: {
+            setID: 151,
+            slotID: "chest",
+    
+            setName: "Kamura Legacy",
+            name: "Kamura Legacy Garb",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [1, 1],
+            skills: [
+                [__generated_skill__wirebug_whisperer, 2],
+                [__generated_skill__wall_runner, 1],
+                [__generated_skill__critical_eye, 1],
+            ],
+
+            defenseAtLevel1: 80,
+
+            fireRes:2,
+            waterRes: 0,
+            thunderRes: 0,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "kamuralegacygarb",
+                setNameLower: "kamuralegacy",
+                hintStrLower: "",
+            },
+        },
+        arms: {
+            setID: 151,
+            slotID: "arms",
+    
+            setName: "Kamura Legacy",
+            name: "Kamura Legacy Braces",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [1],
+            skills: [
+                [__generated_skill__critical_eye, 2],
+                [__generated_skill__heroics, 1],
+                [__generated_skill__divine_blessing, 1],
+            ],
+
+            defenseAtLevel1: 80,
+
+            fireRes:2,
+            waterRes: 0,
+            thunderRes: 0,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "kamuralegacybraces",
+                setNameLower: "kamuralegacy",
+                hintStrLower: "",
+            },
+        },
+        waist: {
+            setID: 151,
+            slotID: "waist",
+    
+            setName: "Kamura Legacy",
+            name: "Kamura Legacy Obi",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4, 1],
+            skills: [
+                [__generated_skill__wirebug_whisperer, 1],
+                [__generated_skill__critical_eye, 1],
+            ],
+
+            defenseAtLevel1: 80,
+
+            fireRes:2,
+            waterRes: 0,
+            thunderRes: 0,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "kamuralegacyobi",
+                setNameLower: "kamuralegacy",
+                hintStrLower: "",
+            },
+        },
+        legs: {
+            setID: 151,
+            slotID: "legs",
+    
+            setName: "Kamura Legacy",
+            name: "Kamura Legacy Leggings",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [2],
+            skills: [
+                [__generated_skill__wall_runner, 2],
+                [__generated_skill__resuscitate, 1],
+                [__generated_skill__affinity_sliding, 1],
+            ],
+
+            defenseAtLevel1: 80,
+
+            fireRes:2,
+            waterRes: 0,
+            thunderRes: 0,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "kamuralegacyleggings",
+                setNameLower: "kamuralegacy",
+                hintStrLower: "",
+            },
+        },
+    },
+    {
+        id: 152,
+        name: "Leather X",
+        head: {
+            setID: 152,
+            slotID: "head",
+    
+            setName: "Leather X",
+            name: "Leather Headgear X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4, 1],
+            skills: [
+                [__generated_skill__geologist, 1],
+                [__generated_skill__hunger_resistance, 1],
+                [__generated_skill__carving_pro, 1],
+            ],
+
+            defenseAtLevel1: 80,
+
+            fireRes:0,
+            waterRes: 0,
+            thunderRes: 0,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "leatherheadgearx",
+                setNameLower: "leatherx",
+                hintStrLower: "",
+            },
+        },
+        chest: {
+            setID: 152,
+            slotID: "chest",
+    
+            setName: "Leather X",
+            name: "Leather Vest X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4],
+            skills: [
+                [__generated_skill__botanist, 2],
+                [__generated_skill__recovery_up, 1],
+            ],
+
+            defenseAtLevel1: 80,
+
+            fireRes:0,
+            waterRes: 0,
+            thunderRes: 0,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "leathervestx",
+                setNameLower: "leatherx",
+                hintStrLower: "",
+            },
+        },
+        arms: {
+            setID: 152,
+            slotID: "arms",
+    
+            setName: "Leather X",
+            name: "Leather Gloves X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4, 1],
+            skills: [
+                [__generated_skill__geologist, 1],
+                [__generated_skill__special_ammo_boost, 1],
+            ],
+
+            defenseAtLevel1: 80,
+
+            fireRes:0,
+            waterRes: 0,
+            thunderRes: 0,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "leatherglovesx",
+                setNameLower: "leatherx",
+                hintStrLower: "",
+            },
+        },
+        waist: {
+            setID: 152,
+            slotID: "waist",
+    
+            setName: "Leather X",
+            name: "Leather Belt X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [2, 1],
+            skills: [
+                [__generated_skill__recovery_up, 2],
+                [__generated_skill__hunger_resistance, 2],
+            ],
+
+            defenseAtLevel1: 80,
+
+            fireRes:0,
+            waterRes: 0,
+            thunderRes: 0,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "leatherbeltx",
+                setNameLower: "leatherx",
+                hintStrLower: "",
+            },
+        },
+        legs: {
+            setID: 152,
+            slotID: "legs",
+    
+            setName: "Leather X",
+            name: "Leather Trousers X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4, 1],
+            skills: [
+                [__generated_skill__geologist, 1],
+                [__generated_skill__botanist, 2],
+            ],
+
+            defenseAtLevel1: 80,
+
+            fireRes:0,
+            waterRes: 0,
+            thunderRes: 0,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "leathertrousersx",
+                setNameLower: "leatherx",
+                hintStrLower: "",
+            },
+        },
+    },
+    {
+        id: 153,
+        name: "Chainmail X",
+        head: {
+            setID: 153,
+            slotID: "head",
+    
+            setName: "Chainmail X",
+            name: "Chainmail Headgear X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4],
+            skills: [
+                [__generated_skill__stamina_surge, 1],
+                [__generated_skill__defense_boost, 2],
+            ],
+
+            defenseAtLevel1: 82,
+
+            fireRes:0,
+            waterRes: 0,
+            thunderRes: 1,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "chainmailheadgearx",
+                setNameLower: "chainmailx",
+                hintStrLower: "",
+            },
+        },
+        chest: {
+            setID: 153,
+            slotID: "chest",
+    
+            setName: "Chainmail X",
+            name: "Chainmail Vest X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4],
+            skills: [
+                [__generated_skill__defense_boost, 1],
+                [__generated_skill__flinch_free, 2],
+                [__generated_skill__guard, 1],
+            ],
+
+            defenseAtLevel1: 82,
+
+            fireRes:0,
+            waterRes: 0,
+            thunderRes: 1,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "chainmailvestx",
+                setNameLower: "chainmailx",
+                hintStrLower: "",
+            },
+        },
+        arms: {
+            setID: 153,
+            slotID: "arms",
+    
+            setName: "Chainmail X",
+            name: "Chainmail Gloves X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4, 1],
+            skills: [
+                [__generated_skill__stamina_surge, 1],
+                [__generated_skill__defense_boost, 2],
+            ],
+
+            defenseAtLevel1: 82,
+
+            fireRes:0,
+            waterRes: 0,
+            thunderRes: 1,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "chainmailglovesx",
+                setNameLower: "chainmailx",
+                hintStrLower: "",
+            },
+        },
+        waist: {
+            setID: 153,
+            slotID: "waist",
+    
+            setName: "Chainmail X",
+            name: "Chainmail Belt X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [1, 1, 1],
+            skills: [
+                [__generated_skill__guard, 2],
+                [__generated_skill__flinch_free, 1],
+                [__generated_skill__defense_boost, 2],
+            ],
+
+            defenseAtLevel1: 82,
+
+            fireRes:0,
+            waterRes: 0,
+            thunderRes: 1,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "chainmailbeltx",
+                setNameLower: "chainmailx",
+                hintStrLower: "",
+            },
+        },
+        legs: {
+            setID: 153,
+            slotID: "legs",
+    
+            setName: "Chainmail X",
+            name: "Chainmail Pants X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [1, 1, 1],
+            skills: [
+                [__generated_skill__stamina_surge, 1],
+                [__generated_skill__guard, 2],
+            ],
+
+            defenseAtLevel1: 82,
+
+            fireRes:0,
+            waterRes: 0,
+            thunderRes: 1,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "chainmailpantsx",
+                setNameLower: "chainmailx",
+                hintStrLower: "",
+            },
+        },
+    },
+    {
+        id: 154,
+        name: "Hunter X",
+        head: {
+            setID: 154,
+            slotID: "head",
+    
+            setName: "Hunter X",
+            name: "Hunter's Helm X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [2],
+            skills: [
+                [__generated_skill__item_prolonger, 1],
+                [__generated_skill__attack_boost, 2],
+            ],
+
+            defenseAtLevel1: 82,
+
+            fireRes:0,
+            waterRes: 0,
+            thunderRes: 0,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "hunter'shelmx",
+                setNameLower: "hunterx",
+                hintStrLower: "",
+            },
+        },
+        chest: {
+            setID: 154,
+            slotID: "chest",
+    
+            setName: "Hunter X",
+            name: "Hunter's Mail X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [1],
+            skills: [
+                [__generated_skill__attack_boost, 1],
+                [__generated_skill__handicraft, 1],
+                [__generated_skill__item_prolonger, 1],
+            ],
+
+            defenseAtLevel1: 82,
+
+            fireRes:0,
+            waterRes: 0,
+            thunderRes: 0,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "hunter'smailx",
+                setNameLower: "hunterx",
+                hintStrLower: "",
+            },
+        },
+        arms: {
+            setID: 154,
+            slotID: "arms",
+    
+            setName: "Hunter X",
+            name: "Hunter's Vambraces X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [2],
+            skills: [
+                [__generated_skill__quick_sheathe, 1],
+                [__generated_skill__handicraft, 1],
+                [__generated_skill__ammo_up, 1],
+            ],
+
+            defenseAtLevel1: 82,
+
+            fireRes:0,
+            waterRes: 0,
+            thunderRes: 0,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "hunter'svambracesx",
+                setNameLower: "hunterx",
+                hintStrLower: "",
+            },
+        },
+        waist: {
+            setID: 154,
+            slotID: "waist",
+    
+            setName: "Hunter X",
+            name: "Hunter's Coil X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [1, 1],
+            skills: [
+                [__generated_skill__stun_resistance, 2],
+                [__generated_skill__handicraft, 1],
+                [__generated_skill__item_prolonger, 1],
+            ],
+
+            defenseAtLevel1: 82,
+
+            fireRes:0,
+            waterRes: 0,
+            thunderRes: 0,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "hunter'scoilx",
+                setNameLower: "hunterx",
+                hintStrLower: "",
+            },
+        },
+        legs: {
+            setID: 154,
+            slotID: "legs",
+    
+            setName: "Hunter X",
+            name: "Hunter's Greaves X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [2],
+            skills: [
+                [__generated_skill__stun_resistance, 1],
+                [__generated_skill__attack_boost, 2],
+                [__generated_skill__quick_sheathe, 1],
+            ],
+
+            defenseAtLevel1: 82,
+
+            fireRes:0,
+            waterRes: 0,
+            thunderRes: 0,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "hunter'sgreavesx",
+                setNameLower: "hunterx",
+                hintStrLower: "",
+            },
+        },
+    },
+    {
+        id: 155,
+        name: "Alloy X",
+        head: {
+            setID: 155,
+            slotID: "head",
+    
+            setName: "Alloy X",
+            name: "Alloy Helm X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4],
+            skills: [
+                [__generated_skill__water_attack, 1],
+                [__generated_skill__protective_polish, 1],
+                [__generated_skill__speed_sharpening, 1],
+            ],
+
+            defenseAtLevel1: 82,
+
+            fireRes:-1,
+            waterRes: 0,
+            thunderRes: -1,
+            iceRes: -1,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "alloyhelmx",
+                setNameLower: "alloyx",
+                hintStrLower: "",
+            },
+        },
+        chest: {
+            setID: 155,
+            slotID: "chest",
+    
+            setName: "Alloy X",
+            name: "Alloy Mail X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [3],
+            skills: [
+                [__generated_skill__speed_sharpening, 2],
+                [__generated_skill__protective_polish, 2],
+            ],
+
+            defenseAtLevel1: 82,
+
+            fireRes:-1,
+            waterRes: 0,
+            thunderRes: -1,
+            iceRes: -1,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "alloymailx",
+                setNameLower: "alloyx",
+                hintStrLower: "",
+            },
+        },
+        arms: {
+            setID: 155,
+            slotID: "arms",
+    
+            setName: "Alloy X",
+            name: "Alloy Vambraces X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [2, 1],
+            skills: [
+                [__generated_skill__water_attack, 1],
+                [__generated_skill__critical_eye, 2],
+            ],
+
+            defenseAtLevel1: 82,
+
+            fireRes:-1,
+            waterRes: 0,
+            thunderRes: -1,
+            iceRes: -1,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "alloyvambracesx",
+                setNameLower: "alloyx",
+                hintStrLower: "",
+            },
+        },
+        waist: {
+            setID: 155,
+            slotID: "waist",
+    
+            setName: "Alloy X",
+            name: "Alloy Coil X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [3, 1],
+            skills: [
+                [__generated_skill__water_attack, 3],
+                [__generated_skill__critical_eye, 1],
+            ],
+
+            defenseAtLevel1: 82,
+
+            fireRes:-1,
+            waterRes: 0,
+            thunderRes: -1,
+            iceRes: -1,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "alloycoilx",
+                setNameLower: "alloyx",
+                hintStrLower: "",
+            },
+        },
+        legs: {
+            setID: 155,
+            slotID: "legs",
+    
+            setName: "Alloy X",
+            name: "Alloy Greaves X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4],
+            skills: [
+                [__generated_skill__critical_eye, 2],
+            ],
+
+            defenseAtLevel1: 82,
+
+            fireRes:-1,
+            waterRes: 0,
+            thunderRes: -1,
+            iceRes: -1,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "alloygreavesx",
+                setNameLower: "alloyx",
+                hintStrLower: "",
+            },
+        },
+    },
+    {
+        id: 156,
+        name: "Bone X",
+        head: {
+            setID: 156,
+            slotID: "head",
+    
+            setName: "Bone X",
+            name: "Bone Headgear X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4],
+            skills: [
+                [__generated_skill__stamina_thief, 1],
+                [__generated_skill__partbreaker, 1],
+            ],
+
+            defenseAtLevel1: 82,
+
+            fireRes:0,
+            waterRes: 0,
+            thunderRes: 0,
+            iceRes: -1,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "boneheadgearx",
+                setNameLower: "bonex",
+                hintStrLower: "",
+            },
+        },
+        chest: {
+            setID: 156,
+            slotID: "chest",
+    
+            setName: "Bone X",
+            name: "Bone Vest X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [3],
+            skills: [
+                [__generated_skill__stamina_thief, 1],
+                [__generated_skill__marathon_runner, 2],
+            ],
+
+            defenseAtLevel1: 82,
+
+            fireRes:0,
+            waterRes: 0,
+            thunderRes: 0,
+            iceRes: -1,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "bonevestx",
+                setNameLower: "bonex",
+                hintStrLower: "",
+            },
+        },
+        arms: {
+            setID: 156,
+            slotID: "arms",
+    
+            setName: "Bone X",
+            name: "Bone Gloves X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [1, 1],
+            skills: [
+                [__generated_skill__punishing_draw, 2],
+                [__generated_skill__stamina_thief, 1],
+                [__generated_skill__marathon_runner, 1],
+            ],
+
+            defenseAtLevel1: 82,
+
+            fireRes:0,
+            waterRes: 0,
+            thunderRes: 0,
+            iceRes: -1,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "boneglovesx",
+                setNameLower: "bonex",
+                hintStrLower: "",
+            },
+        },
+        waist: {
+            setID: 156,
+            slotID: "waist",
+    
+            setName: "Bone X",
+            name: "Bone Belt X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [2, 1],
+            skills: [
+                [__generated_skill__focus, 1],
+                [__generated_skill__partbreaker, 2],
+            ],
+
+            defenseAtLevel1: 82,
+
+            fireRes:0,
+            waterRes: 0,
+            thunderRes: 0,
+            iceRes: -1,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "bonebeltx",
+                setNameLower: "bonex",
+                hintStrLower: "",
+            },
+        },
+        legs: {
+            setID: 156,
+            slotID: "legs",
+    
+            setName: "Bone X",
+            name: "Bone Pants X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [2],
+            skills: [
+                [__generated_skill__muck_resistance, 2],
+                [__generated_skill__focus, 1],
+                [__generated_skill__punishing_draw, 1],
+            ],
+
+            defenseAtLevel1: 82,
+
+            fireRes:0,
+            waterRes: 0,
+            thunderRes: 0,
+            iceRes: -1,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "bonepantsx",
+                setNameLower: "bonex",
+                hintStrLower: "",
+            },
+        },
+    },
+    {
+        id: 157,
+        name: "Gargwa Mask X",
+        head: {
+            setID: 157,
+            slotID: "head",
+    
+            setName: "Gargwa Mask X",
+            name: "Gargwa Mask X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4],
+            skills: [
+                [__generated_skill__leap_of_faith, 1],
+                [__generated_skill__good_luck, 2],
+            ],
+
+            defenseAtLevel1: 86,
+
+            fireRes:-3,
+            waterRes: -2,
+            thunderRes: -2,
+            iceRes: 1,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "gargwamaskx",
+                setNameLower: "gargwamaskx",
+                hintStrLower: "",
+            },
+        },
+        chest: undefined,
+        arms: undefined,
+        waist: undefined,
+        legs: undefined,
+    },
+    {
+        id: 158,
+        name: "Rhenoplos X",
+        head: {
+            setID: 158,
+            slotID: "head",
+    
+            setName: "Rhenoplos X",
+            name: "Rhenoplos Helm X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [2],
+            skills: [
+                [__generated_skill__pierce_up, 2],
+                [__generated_skill__stun_resistance, 1],
+                [__generated_skill__muck_resistance, 1],
+            ],
+
+            defenseAtLevel1: 90,
+
+            fireRes:2,
+            waterRes: 0,
+            thunderRes: 0,
+            iceRes: -2,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "rhenoploshelmx",
+                setNameLower: "rhenoplosx",
+                hintStrLower: "",
+            },
+        },
+        chest: {
+            setID: 158,
+            slotID: "chest",
+    
+            setName: "Rhenoplos X",
+            name: "Rhenoplos Mail X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4, 1],
+            skills: [
+                [__generated_skill__artillery, 1],
+                [__generated_skill__stun_resistance, 2],
+            ],
+
+            defenseAtLevel1: 90,
+
+            fireRes:2,
+            waterRes: 0,
+            thunderRes: 0,
+            iceRes: -2,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "rhenoplosmailx",
+                setNameLower: "rhenoplosx",
+                hintStrLower: "",
+            },
+        },
+        arms: {
+            setID: 158,
+            slotID: "arms",
+    
+            setName: "Rhenoplos X",
+            name: "Rhenoplos Braces X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [2, 2],
+            skills: [
+                [__generated_skill__artillery, 2],
+                [__generated_skill__load_shells, 1],
+                [__generated_skill__special_ammo_boost, 1],
+            ],
+
+            defenseAtLevel1: 90,
+
+            fireRes:2,
+            waterRes: 0,
+            thunderRes: 0,
+            iceRes: -2,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "rhenoplosbracesx",
+                setNameLower: "rhenoplosx",
+                hintStrLower: "",
+            },
+        },
+        waist: {
+            setID: 158,
+            slotID: "waist",
+    
+            setName: "Rhenoplos X",
+            name: "Rhenoplos Coil X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4],
+            skills: [
+                [__generated_skill__tremor_resistance, 2],
+                [__generated_skill__load_shells, 1],
+                [__generated_skill__special_ammo_boost, 1],
+            ],
+
+            defenseAtLevel1: 90,
+
+            fireRes:2,
+            waterRes: 0,
+            thunderRes: 0,
+            iceRes: -2,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "rhenoploscoilx",
+                setNameLower: "rhenoplosx",
+                hintStrLower: "",
+            },
+        },
+        legs: {
+            setID: 158,
+            slotID: "legs",
+    
+            setName: "Rhenoplos X",
+            name: "Rhenoplos Greaves X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4],
+            skills: [
+                [__generated_skill__pierce_up, 1],
+                [__generated_skill__tremor_resistance, 1],
+            ],
+
+            defenseAtLevel1: 90,
+
+            fireRes:2,
+            waterRes: 0,
+            thunderRes: 0,
+            iceRes: -2,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "rhenoplosgreavesx",
+                setNameLower: "rhenoplosx",
+                hintStrLower: "",
+            },
+        },
+    },
+    {
+        id: 159,
+        name: "Bullfango Mask X",
+        head: {
+            setID: 159,
+            slotID: "head",
+    
+            setName: "Bullfango Mask X",
+            name: "Bullfango Mask X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [3],
+            skills: [
+                [__generated_skill__diversion, 1],
+                [__generated_skill__agitator, 3],
+            ],
+
+            defenseAtLevel1: 86,
+
+            fireRes:0,
+            waterRes: 4,
+            thunderRes: -2,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "bullfangomaskx",
+                setNameLower: "bullfangomaskx",
+                hintStrLower: "",
+            },
+        },
+        chest: undefined,
+        arms: undefined,
+        waist: undefined,
+        legs: undefined,
+    },
+    {
+        id: 160,
+        name: "Droth X",
+        head: undefined,
+        chest: {
+            setID: 160,
+            slotID: "chest",
+    
+            setName: "Droth X",
+            name: "Droth Mail X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4, 2],
+            skills: [
+                [__generated_skill__water_attack, 2],
+            ],
+
+            defenseAtLevel1: 90,
+
+            fireRes:-2,
+            waterRes: 4,
+            thunderRes: -1,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "drothmailx",
+                setNameLower: "drothx",
+                hintStrLower: "ludroth",
+            },
+        },
+        arms: undefined,
+        waist: {
+            setID: 160,
+            slotID: "waist",
+    
+            setName: "Droth X",
+            name: "Droth Coil X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4, 1],
+            skills: [
+                [__generated_skill__diversion, 1],
+                [__generated_skill__resentment, 1],
+            ],
+
+            defenseAtLevel1: 90,
+
+            fireRes:-2,
+            waterRes: 4,
+            thunderRes: -1,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "drothcoilx",
+                setNameLower: "drothx",
+                hintStrLower: "ludroth",
+            },
+        },
+        legs: {
+            setID: 160,
+            slotID: "legs",
+    
+            setName: "Droth X",
+            name: "Droth Greaves X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4, 1],
+            skills: [
+                [__generated_skill__water_attack, 3],
+            ],
+
+            defenseAtLevel1: 90,
+
+            fireRes:-2,
+            waterRes: 4,
+            thunderRes: -1,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "drothgreavesx",
+                setNameLower: "drothx",
+                hintStrLower: "ludroth",
+            },
+        },
+    },
+    {
+        id: 161,
+        name: "Bnahabra X",
+        head: {
+            setID: 161,
+            slotID: "head",
+    
+            setName: "Bnahabra X",
+            name: "Bnahabra Hat X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4, 1],
+            skills: [
+                [__generated_skill__poison_attack, 1],
+                [__generated_skill__recoil_down, 2],
+            ],
+
+            defenseAtLevel1: 84,
+
+            fireRes:-2,
+            waterRes: 0,
+            thunderRes: 0,
+            iceRes: 0,
+            dragonRes: 2,
+    
+            filterHelpers: {
+                nameLower: "bnahabrahatx",
+                setNameLower: "bnahabrax",
+                hintStrLower: "",
+            },
+        },
+        chest: {
+            setID: 161,
+            slotID: "chest",
+    
+            setName: "Bnahabra X",
+            name: "Bnahabra Suit X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [3, 1],
+            skills: [
+                [__generated_skill__paralysis_attack, 1],
+                [__generated_skill__evade_window, 2],
+            ],
+
+            defenseAtLevel1: 84,
+
+            fireRes:-2,
+            waterRes: 0,
+            thunderRes: 0,
+            iceRes: 0,
+            dragonRes: 2,
+    
+            filterHelpers: {
+                nameLower: "bnahabrasuitx",
+                setNameLower: "bnahabrax",
+                hintStrLower: "",
+            },
+        },
+        arms: {
+            setID: 161,
+            slotID: "arms",
+    
+            setName: "Bnahabra X",
+            name: "Bnahabra Gloves X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4],
+            skills: [
+                [__generated_skill__poison_attack, 2],
+                [__generated_skill__evade_window, 2],
+            ],
+
+            defenseAtLevel1: 84,
+
+            fireRes:-2,
+            waterRes: 0,
+            thunderRes: 0,
+            iceRes: 0,
+            dragonRes: 2,
+    
+            filterHelpers: {
+                nameLower: "bnahabraglovesx",
+                setNameLower: "bnahabrax",
+                hintStrLower: "",
+            },
+        },
+        waist: {
+            setID: 161,
+            slotID: "waist",
+    
+            setName: "Bnahabra X",
+            name: "Bnahabra Coil X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [3, 1],
+            skills: [
+                [__generated_skill__paralysis_attack, 2],
+                [__generated_skill__evade_window, 1],
+            ],
+
+            defenseAtLevel1: 84,
+
+            fireRes:-2,
+            waterRes: 0,
+            thunderRes: 0,
+            iceRes: 0,
+            dragonRes: 2,
+    
+            filterHelpers: {
+                nameLower: "bnahabracoilx",
+                setNameLower: "bnahabrax",
+                hintStrLower: "",
+            },
+        },
+        legs: {
+            setID: 161,
+            slotID: "legs",
+    
+            setName: "Bnahabra X",
+            name: "Bnahabra Boots X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4, 1],
+            skills: [
+                [__generated_skill__recoil_down, 1],
+                [__generated_skill__steadiness, 2],
+            ],
+
+            defenseAtLevel1: 84,
+
+            fireRes:-2,
+            waterRes: 0,
+            thunderRes: 0,
+            iceRes: 0,
+            dragonRes: 2,
+    
+            filterHelpers: {
+                nameLower: "bnahabrabootsx",
+                setNameLower: "bnahabrax",
+                hintStrLower: "",
+            },
+        },
+    },
+    {
+        id: 162,
+        name: "Hornetaur",
+        head: {
+            setID: 162,
+            slotID: "head",
+    
+            setName: "Hornetaur",
+            name: "Hornetaur Helm",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [3],
+            skills: [
+                [__generated_skill__resuscitate, 2],
+                [__generated_skill__recovery_up, 1],
+            ],
+
+            defenseAtLevel1: 86,
+
+            fireRes:-1,
+            waterRes: -1,
+            thunderRes: -1,
+            iceRes: -1,
+            dragonRes: 4,
+    
+            filterHelpers: {
+                nameLower: "hornetaurhelm",
+                setNameLower: "hornetaur",
+                hintStrLower: "",
+            },
+        },
+        chest: {
+            setID: 162,
+            slotID: "chest",
+    
+            setName: "Hornetaur",
+            name: "Hornetaur Mail",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4],
+            skills: [
+                [__generated_skill__dragon_attack, 2],
+                [__generated_skill__recovery_up, 1],
+            ],
+
+            defenseAtLevel1: 86,
+
+            fireRes:-1,
+            waterRes: -1,
+            thunderRes: -1,
+            iceRes: -1,
+            dragonRes: 4,
+    
+            filterHelpers: {
+                nameLower: "hornetaurmail",
+                setNameLower: "hornetaur",
+                hintStrLower: "",
+            },
+        },
+        arms: {
+            setID: 162,
+            slotID: "arms",
+    
+            setName: "Hornetaur",
+            name: "Hornetaur Braces",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4, 2],
+            skills: [
+                [__generated_skill__dragon_attack, 1],
+                [__generated_skill__steadiness, 2],
+            ],
+
+            defenseAtLevel1: 86,
+
+            fireRes:-1,
+            waterRes: -1,
+            thunderRes: -1,
+            iceRes: -1,
+            dragonRes: 4,
+    
+            filterHelpers: {
+                nameLower: "hornetaurbraces",
+                setNameLower: "hornetaur",
+                hintStrLower: "",
+            },
+        },
+        waist: {
+            setID: 162,
+            slotID: "waist",
+    
+            setName: "Hornetaur",
+            name: "Hornetaur Tassets",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4],
+            skills: [
+                [__generated_skill__dragon_attack, 2],
+                [__generated_skill__dragon_resistance, 3],
+            ],
+
+            defenseAtLevel1: 86,
+
+            fireRes:-1,
+            waterRes: -1,
+            thunderRes: -1,
+            iceRes: -1,
+            dragonRes: 4,
+    
+            filterHelpers: {
+                nameLower: "hornetaurtassets",
+                setNameLower: "hornetaur",
+                hintStrLower: "",
+            },
+        },
+        legs: {
+            setID: 162,
+            slotID: "legs",
+    
+            setName: "Hornetaur",
+            name: "Hornetaur Greaves",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [2, 2],
+            skills: [
+                [__generated_skill__resuscitate, 1],
+                [__generated_skill__steadiness, 1],
+                [__generated_skill__recovery_up, 1],
+            ],
+
+            defenseAtLevel1: 86,
+
+            fireRes:-1,
+            waterRes: -1,
+            thunderRes: -1,
+            iceRes: -1,
+            dragonRes: 4,
+    
+            filterHelpers: {
+                nameLower: "hornetaurgreaves",
+                setNameLower: "hornetaur",
+                hintStrLower: "",
+            },
+        },
+    },
+    {
+        id: 163,
+        name: "Vespoid",
+        head: {
+            setID: 163,
+            slotID: "head",
+    
+            setName: "Vespoid",
+            name: "Vespoid Helm",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4],
+            skills: [
+                [__generated_skill__paralysis_attack, 1],
+                [__generated_skill__wirebug_whisperer, 2],
+            ],
+
+            defenseAtLevel1: 84,
+
+            fireRes:-2,
+            waterRes: 1,
+            thunderRes: 1,
+            iceRes: 1,
+            dragonRes: 2,
+    
+            filterHelpers: {
+                nameLower: "vespoidhelm",
+                setNameLower: "vespoid",
+                hintStrLower: "",
+            },
+        },
+        chest: {
+            setID: 163,
+            slotID: "chest",
+    
+            setName: "Vespoid",
+            name: "Vespoid Mail",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4, 1],
+            skills: [
+                [__generated_skill__quick_sheathe, 1],
+                [__generated_skill__paralysis_resistance, 2],
+            ],
+
+            defenseAtLevel1: 84,
+
+            fireRes:-2,
+            waterRes: 1,
+            thunderRes: 1,
+            iceRes: 1,
+            dragonRes: 2,
+    
+            filterHelpers: {
+                nameLower: "vespoidmail",
+                setNameLower: "vespoid",
+                hintStrLower: "",
+            },
+        },
+        arms: {
+            setID: 163,
+            slotID: "arms",
+    
+            setName: "Vespoid",
+            name: "Vespoid Vambraces",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [3],
+            skills: [
+                [__generated_skill__paralysis_attack, 2],
+                [__generated_skill__master_mounter, 1],
+            ],
+
+            defenseAtLevel1: 84,
+
+            fireRes:-2,
+            waterRes: 1,
+            thunderRes: 1,
+            iceRes: 1,
+            dragonRes: 2,
+    
+            filterHelpers: {
+                nameLower: "vespoidvambraces",
+                setNameLower: "vespoid",
+                hintStrLower: "",
+            },
+        },
+        waist: {
+            setID: 163,
+            slotID: "waist",
+    
+            setName: "Vespoid",
+            name: "Vespoid Tassets",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4, 1],
+            skills: [
+                [__generated_skill__quick_sheathe, 1],
+                [__generated_skill__paralysis_resistance, 1],
+            ],
+
+            defenseAtLevel1: 84,
+
+            fireRes:-2,
+            waterRes: 1,
+            thunderRes: 1,
+            iceRes: 1,
+            dragonRes: 2,
+    
+            filterHelpers: {
+                nameLower: "vespoidtassets",
+                setNameLower: "vespoid",
+                hintStrLower: "",
+            },
+        },
+        legs: {
+            setID: 163,
+            slotID: "legs",
+    
+            setName: "Vespoid",
+            name: "Vespoid Greaves",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4],
+            skills: [
+                [__generated_skill__quick_sheathe, 1],
+                [__generated_skill__wirebug_whisperer, 1],
+            ],
+
+            defenseAtLevel1: 84,
+
+            fireRes:-2,
+            waterRes: 1,
+            thunderRes: 1,
+            iceRes: 1,
+            dragonRes: 2,
+    
+            filterHelpers: {
+                nameLower: "vespoidgreaves",
+                setNameLower: "vespoid",
+                hintStrLower: "",
+            },
+        },
+    },
+    {
+        id: 164,
+        name: "Jaggi X",
+        head: undefined,
+        chest: undefined,
+        arms: {
+            setID: 164,
+            slotID: "arms",
+    
+            setName: "Jaggi X",
+            name: "Jaggi Gauntlets X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [1, 1],
+            skills: [
+                [__generated_skill__attack_boost, 3],
+            ],
+
+            defenseAtLevel1: 90,
+
+            fireRes:0,
+            waterRes: 0,
+            thunderRes: 0,
+            iceRes: 1,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "jaggigauntletsx",
+                setNameLower: "jaggix",
+                hintStrLower: "",
+            },
+        },
+        waist: undefined,
+        legs: {
+            setID: 164,
+            slotID: "legs",
+    
+            setName: "Jaggi X",
+            name: "Jaggi Shinguards X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [2, 1],
+            skills: [
+                [__generated_skill__master_mounter, 1],
+                [__generated_skill__wall_runner, 2],
+            ],
+
+            defenseAtLevel1: 90,
+
+            fireRes:0,
+            waterRes: 0,
+            thunderRes: 0,
+            iceRes: 1,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "jaggishinguardsx",
+                setNameLower: "jaggix",
+                hintStrLower: "",
+            },
+        },
+    },
+    {
+        id: 165,
+        name: "Jaggi Mask X",
+        head: {
+            setID: 165,
+            slotID: "head",
+    
+            setName: "Jaggi Mask X",
+            name: "Jaggi Mask X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [3, 1],
+            skills: [
+                [__generated_skill__affinity_sliding, 1],
+                [__generated_skill__marathon_runner, 2],
+            ],
+
+            defenseAtLevel1: 86,
+
+            fireRes:0,
+            waterRes: 0,
+            thunderRes: 0,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "jaggimaskx",
+                setNameLower: "jaggimaskx",
+                hintStrLower: "",
+            },
+        },
+        chest: undefined,
+        arms: undefined,
+        waist: undefined,
+        legs: undefined,
+    },
+    {
+        id: 166,
+        name: "Velociprey",
+        head: {
+            setID: 166,
+            slotID: "head",
+    
+            setName: "Velociprey",
+            name: "Velociprey Helm",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4, 1],
+            skills: [
+                [__generated_skill__attack_boost, 1],
+                [__generated_skill__stun_resistance, 1],
+            ],
+
+            defenseAtLevel1: 86,
+
+            fireRes:0,
+            waterRes: 0,
+            thunderRes: 0,
+            iceRes: -2,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "velocipreyhelm",
+                setNameLower: "velociprey",
+                hintStrLower: "",
+            },
+        },
+        chest: {
+            setID: 166,
+            slotID: "chest",
+    
+            setName: "Velociprey",
+            name: "Velociprey Mail",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4, 1],
+            skills: [
+                [__generated_skill__attack_boost, 1],
+                [__generated_skill__windproof, 1],
+            ],
+
+            defenseAtLevel1: 86,
+
+            fireRes:0,
+            waterRes: 0,
+            thunderRes: 0,
+            iceRes: -2,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "velocipreymail",
+                setNameLower: "velociprey",
+                hintStrLower: "",
+            },
+        },
+        arms: {
+            setID: 166,
+            slotID: "arms",
+    
+            setName: "Velociprey",
+            name: "Velociprey Braces",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [3, 1],
+            skills: [
+                [__generated_skill__attack_boost, 2],
+            ],
+
+            defenseAtLevel1: 86,
+
+            fireRes:0,
+            waterRes: 0,
+            thunderRes: 0,
+            iceRes: -2,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "velocipreybraces",
+                setNameLower: "velociprey",
+                hintStrLower: "",
+            },
+        },
+        waist: {
+            setID: 166,
+            slotID: "waist",
+    
+            setName: "Velociprey",
+            name: "Velociprey Tassets",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4],
+            skills: [
+                [__generated_skill__attack_boost, 1],
+                [__generated_skill__capture_master, 1],
+            ],
+
+            defenseAtLevel1: 86,
+
+            fireRes:0,
+            waterRes: 0,
+            thunderRes: 0,
+            iceRes: -2,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "velocipreytassets",
+                setNameLower: "velociprey",
+                hintStrLower: "",
+            },
+        },
+        legs: {
+            setID: 166,
+            slotID: "legs",
+    
+            setName: "Velociprey",
+            name: "Velociprey Greaves",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [3, 2],
+            skills: [
+                [__generated_skill__windproof, 2],
+                [__generated_skill__stun_resistance, 2],
+            ],
+
+            defenseAtLevel1: 86,
+
+            fireRes:0,
+            waterRes: 0,
+            thunderRes: 0,
+            iceRes: -2,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "velocipreygreaves",
+                setNameLower: "velociprey",
+                hintStrLower: "",
+            },
+        },
+    },
+    {
+        id: 167,
+        name: "Izuchi X",
+        head: {
+            setID: 167,
+            slotID: "head",
+    
+            setName: "Izuchi X",
+            name: "Izuchi Helm X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [1, 1],
+            skills: [
+                [__generated_skill__critical_eye, 1],
+                [__generated_skill__evade_window, 2],
+            ],
+
+            defenseAtLevel1: 86,
+
+            fireRes:2,
+            waterRes: -1,
+            thunderRes: -2,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "izuchihelmx",
+                setNameLower: "izuchix",
+                hintStrLower: "greatizuchi",
+            },
+        },
+        chest: {
+            setID: 167,
+            slotID: "chest",
+    
+            setName: "Izuchi X",
+            name: "Izuchi Mail X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [1],
+            skills: [
+                [__generated_skill__critical_eye, 2],
+                [__generated_skill__recovery_speed, 2],
+                [__generated_skill__evade_window, 1],
+            ],
+
+            defenseAtLevel1: 86,
+
+            fireRes:2,
+            waterRes: -1,
+            thunderRes: -2,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "izuchimailx",
+                setNameLower: "izuchix",
+                hintStrLower: "greatizuchi",
+            },
+        },
+        arms: {
+            setID: 167,
+            slotID: "arms",
+    
+            setName: "Izuchi X",
+            name: "Izuchi Braces X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [1, 1],
+            skills: [
+                [__generated_skill__constitution, 2],
+                [__generated_skill__evade_window, 1],
+            ],
+
+            defenseAtLevel1: 86,
+
+            fireRes:2,
+            waterRes: -1,
+            thunderRes: -2,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "izuchibracesx",
+                setNameLower: "izuchix",
+                hintStrLower: "greatizuchi",
+            },
+        },
+        waist: {
+            setID: 167,
+            slotID: "waist",
+    
+            setName: "Izuchi X",
+            name: "Izuchi Coil X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [1, 1],
+            skills: [
+                [__generated_skill__critical_eye, 2],
+                [__generated_skill__constitution, 1],
+            ],
+
+            defenseAtLevel1: 86,
+
+            fireRes:2,
+            waterRes: -1,
+            thunderRes: -2,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "izuchicoilx",
+                setNameLower: "izuchix",
+                hintStrLower: "greatizuchi",
+            },
+        },
+        legs: {
+            setID: 167,
+            slotID: "legs",
+    
+            setName: "Izuchi X",
+            name: "Izuchi Greaves X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [1, 1],
+            skills: [
+                [__generated_skill__recovery_speed, 1],
+                [__generated_skill__constitution, 2],
+                [__generated_skill__evade_window, 1],
+            ],
+
+            defenseAtLevel1: 86,
+
+            fireRes:2,
+            waterRes: -1,
+            thunderRes: -2,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "izuchigreavesx",
+                setNameLower: "izuchix",
+                hintStrLower: "greatizuchi",
+            },
+        },
+    },
+    {
+        id: 168,
+        name: "Baggi X",
+        head: {
+            setID: 168,
+            slotID: "head",
+    
+            setName: "Baggi X",
+            name: "Baggi Helm X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4, 1],
+            skills: [
+                [__generated_skill__sleep_attack, 1],
+                [__generated_skill__ice_resistance, 1],
+            ],
+
+            defenseAtLevel1: 86,
+
+            fireRes:-4,
+            waterRes: -1,
+            thunderRes: -1,
+            iceRes: 2,
+            dragonRes: 1,
+    
+            filterHelpers: {
+                nameLower: "baggihelmx",
+                setNameLower: "baggix",
+                hintStrLower: "greatbaggi",
+            },
+        },
+        chest: {
+            setID: 168,
+            slotID: "chest",
+    
+            setName: "Baggi X",
+            name: "Baggi Mail X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4],
+            skills: [
+                [__generated_skill__attack_boost, 1],
+                [__generated_skill__sleep_attack, 1],
+            ],
+
+            defenseAtLevel1: 86,
+
+            fireRes:-4,
+            waterRes: -1,
+            thunderRes: -1,
+            iceRes: 2,
+            dragonRes: 1,
+    
+            filterHelpers: {
+                nameLower: "baggimailx",
+                setNameLower: "baggix",
+                hintStrLower: "greatbaggi",
+            },
+        },
+        arms: {
+            setID: 168,
+            slotID: "arms",
+    
+            setName: "Baggi X",
+            name: "Baggi Vambraces X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4, 1],
+            skills: [
+                [__generated_skill__sleep_resistance, 2],
+                [__generated_skill__sleep_attack, 1],
+            ],
+
+            defenseAtLevel1: 86,
+
+            fireRes:-4,
+            waterRes: -1,
+            thunderRes: -1,
+            iceRes: 2,
+            dragonRes: 1,
+    
+            filterHelpers: {
+                nameLower: "baggivambracesx",
+                setNameLower: "baggix",
+                hintStrLower: "greatbaggi",
+            },
+        },
+        waist: {
+            setID: 168,
+            slotID: "waist",
+    
+            setName: "Baggi X",
+            name: "Baggi Coil X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [3],
+            skills: [
+                [__generated_skill__attack_boost, 2],
+                [__generated_skill__sleep_resistance, 1],
+            ],
+
+            defenseAtLevel1: 86,
+
+            fireRes:-4,
+            waterRes: -1,
+            thunderRes: -1,
+            iceRes: 2,
+            dragonRes: 1,
+    
+            filterHelpers: {
+                nameLower: "baggicoilx",
+                setNameLower: "baggix",
+                hintStrLower: "greatbaggi",
+            },
+        },
+        legs: {
+            setID: 168,
+            slotID: "legs",
+    
+            setName: "Baggi X",
+            name: "Baggi Greaves X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [2, 1],
+            skills: [
+                [__generated_skill__attack_boost, 2],
+                [__generated_skill__ice_resistance, 2],
+            ],
+
+            defenseAtLevel1: 86,
+
+            fireRes:-4,
+            waterRes: -1,
+            thunderRes: -1,
+            iceRes: 2,
+            dragonRes: 1,
+    
+            filterHelpers: {
+                nameLower: "baggigreavesx",
+                setNameLower: "baggix",
+                hintStrLower: "greatbaggi",
+            },
+        },
+    },
+    {
+        id: 169,
+        name: "Kulu-Ya-Ku X",
+        head: {
+            setID: 169,
+            slotID: "head",
+    
+            setName: "Kulu-Ya-Ku X",
+            name: "Kulu-Ya-Ku Helm X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [1, 1],
+            skills: [
+                [__generated_skill__maximum_might, 2],
+                [__generated_skill__quick_sheathe, 1],
+                [__generated_skill__stun_resistance, 1],
+            ],
+
+            defenseAtLevel1: 86,
+
+            fireRes:0,
+            waterRes: -3,
+            thunderRes: 0,
+            iceRes: 1,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "kulu-ya-kuhelmx",
+                setNameLower: "kulu-ya-kux",
+                hintStrLower: "",
+            },
+        },
+        chest: {
+            setID: 169,
+            slotID: "chest",
+    
+            setName: "Kulu-Ya-Ku X",
+            name: "Kulu-Ya-Ku Mail X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [2, 1],
+            skills: [
+                [__generated_skill__slugger, 2],
+                [__generated_skill__quick_sheathe, 1],
+            ],
+
+            defenseAtLevel1: 86,
+
+            fireRes:0,
+            waterRes: -3,
+            thunderRes: 0,
+            iceRes: 1,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "kulu-ya-kumailx",
+                setNameLower: "kulu-ya-kux",
+                hintStrLower: "",
+            },
+        },
+        arms: {
+            setID: 169,
+            slotID: "arms",
+    
+            setName: "Kulu-Ya-Ku X",
+            name: "Kulu-Ya-Ku Braces X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [2, 1],
+            skills: [
+                [__generated_skill__slugger, 1],
+                [__generated_skill__stamina_thief, 2],
+                [__generated_skill__quick_sheathe, 1],
+            ],
+
+            defenseAtLevel1: 86,
+
+            fireRes:0,
+            waterRes: -3,
+            thunderRes: 0,
+            iceRes: 1,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "kulu-ya-kubracesx",
+                setNameLower: "kulu-ya-kux",
+                hintStrLower: "",
+            },
+        },
+        waist: {
+            setID: 169,
+            slotID: "waist",
+    
+            setName: "Kulu-Ya-Ku X",
+            name: "Kulu-Ya-Ku Coil X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4, 1],
+            skills: [
+                [__generated_skill__stamina_thief, 1],
+                [__generated_skill__maximum_might, 1],
+            ],
+
+            defenseAtLevel1: 86,
+
+            fireRes:0,
+            waterRes: -3,
+            thunderRes: 0,
+            iceRes: 1,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "kulu-ya-kucoilx",
+                setNameLower: "kulu-ya-kux",
+                hintStrLower: "",
+            },
+        },
+        legs: {
+            setID: 169,
+            slotID: "legs",
+    
+            setName: "Kulu-Ya-Ku X",
+            name: "Kulu-Ya-Ku Greaves X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [3],
+            skills: [
+                [__generated_skill__stun_resistance, 2],
+                [__generated_skill__critical_eye, 2],
+            ],
+
+            defenseAtLevel1: 86,
+
+            fireRes:0,
+            waterRes: -3,
+            thunderRes: 0,
+            iceRes: 1,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "kulu-ya-kugreavesx",
+                setNameLower: "kulu-ya-kux",
+                hintStrLower: "",
+            },
+        },
+    },
+    {
+        id: 170,
+        name: "Wroggi X",
+        head: {
+            setID: 170,
+            slotID: "head",
+    
+            setName: "Wroggi X",
+            name: "Wroggi Helm X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [1],
+            skills: [
+                [__generated_skill__rapid_fire_up, 2],
+                [__generated_skill__evade_extender, 1],
+            ],
+
+            defenseAtLevel1: 88,
+
+            fireRes:2,
+            waterRes: -2,
+            thunderRes: 1,
+            iceRes: -4,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "wroggihelmx",
+                setNameLower: "wroggix",
+                hintStrLower: "greatwroggi",
+            },
+        },
+        chest: {
+            setID: 170,
+            slotID: "chest",
+    
+            setName: "Wroggi X",
+            name: "Wroggi Mail X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4],
+            skills: [
+                [__generated_skill__rapid_fire_up, 1],
+                [__generated_skill__poison_attack, 1],
+                [__generated_skill__poison_resistance, 1],
+            ],
+
+            defenseAtLevel1: 88,
+
+            fireRes:2,
+            waterRes: -2,
+            thunderRes: 1,
+            iceRes: -4,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "wroggimailx",
+                setNameLower: "wroggix",
+                hintStrLower: "greatwroggi",
+            },
+        },
+        arms: {
+            setID: 170,
+            slotID: "arms",
+    
+            setName: "Wroggi X",
+            name: "Wroggi Vambraces X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4],
+            skills: [
+                [__generated_skill__ammo_up, 1],
+                [__generated_skill__poison_resistance, 2],
+                [__generated_skill__minds_eye, 2],
+            ],
+
+            defenseAtLevel1: 88,
+
+            fireRes:2,
+            waterRes: -2,
+            thunderRes: 1,
+            iceRes: -4,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "wroggivambracesx",
+                setNameLower: "wroggix",
+                hintStrLower: "greatwroggi",
+            },
+        },
+        waist: {
+            setID: 170,
+            slotID: "waist",
+    
+            setName: "Wroggi X",
+            name: "Wroggi Coil X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [1],
+            skills: [
+                [__generated_skill__ammo_up, 2],
+                [__generated_skill__poison_attack, 2],
+            ],
+
+            defenseAtLevel1: 88,
+
+            fireRes:2,
+            waterRes: -2,
+            thunderRes: 1,
+            iceRes: -4,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "wroggicoilx",
+                setNameLower: "wroggix",
+                hintStrLower: "greatwroggi",
+            },
+        },
+        legs: {
+            setID: 170,
+            slotID: "legs",
+    
+            setName: "Wroggi X",
+            name: "Wroggi Greaves X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4],
+            skills: [
+                [__generated_skill__evade_extender, 2],
+            ],
+
+            defenseAtLevel1: 88,
+
+            fireRes:2,
+            waterRes: -2,
+            thunderRes: 1,
+            iceRes: -4,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "wroggigreavesx",
+                setNameLower: "wroggix",
+                hintStrLower: "greatwroggi",
+            },
+        },
+    },
+    {
+        id: 171,
+        name: "Arzuros X",
+        head: {
+            setID: 171,
+            slotID: "head",
+    
+            setName: "Arzuros X",
+            name: "Arzuros Helm X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [1, 1, 1],
+            skills: [
+                [__generated_skill__fortify, 1],
+                [__generated_skill__defense_boost, 3],
+                [__generated_skill__speed_eating, 1],
+            ],
+
+            defenseAtLevel1: 86,
+
+            fireRes:-2,
+            waterRes: 0,
+            thunderRes: -2,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "arzuroshelmx",
+                setNameLower: "arzurosx",
+                hintStrLower: "",
+            },
+        },
+        chest: {
+            setID: 171,
+            slotID: "chest",
+    
+            setName: "Arzuros X",
+            name: "Arzuros Mail X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4],
+            skills: [
+                [__generated_skill__counterstrike, 1],
+                [__generated_skill__resentment, 1],
+            ],
+
+            defenseAtLevel1: 86,
+
+            fireRes:-2,
+            waterRes: 0,
+            thunderRes: -2,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "arzurosmailx",
+                setNameLower: "arzurosx",
+                hintStrLower: "",
+            },
+        },
+        arms: {
+            setID: 171,
+            slotID: "arms",
+    
+            setName: "Arzuros X",
+            name: "Arzuros Vambraces X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [1, 1],
+            skills: [
+                [__generated_skill__counterstrike, 1],
+                [__generated_skill__defense_boost, 1],
+                [__generated_skill__resentment, 2],
+            ],
+
+            defenseAtLevel1: 86,
+
+            fireRes:-2,
+            waterRes: 0,
+            thunderRes: -2,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "arzurosvambracesx",
+                setNameLower: "arzurosx",
+                hintStrLower: "",
+            },
+        },
+        waist: {
+            setID: 171,
+            slotID: "waist",
+    
+            setName: "Arzuros X",
+            name: "Arzuros Coil X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [2, 1],
+            skills: [
+                [__generated_skill__counterstrike, 1],
+                [__generated_skill__defense_boost, 3],
+                [__generated_skill__speed_eating, 1],
+            ],
+
+            defenseAtLevel1: 86,
+
+            fireRes:-2,
+            waterRes: 0,
+            thunderRes: -2,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "arzuroscoilx",
+                setNameLower: "arzurosx",
+                hintStrLower: "",
+            },
+        },
+        legs: {
+            setID: 171,
+            slotID: "legs",
+    
+            setName: "Arzuros X",
+            name: "Arzuros Greaves X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [3, 2, 1],
+            skills: [
+                [__generated_skill__speed_eating, 1],
+            ],
+
+            defenseAtLevel1: 86,
+
+            fireRes:-2,
+            waterRes: 0,
+            thunderRes: -2,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "arzurosgreavesx",
+                setNameLower: "arzurosx",
+                hintStrLower: "",
+            },
+        },
+    },
+    {
+        id: 172,
+        name: "Lagombi X",
+        head: {
+            setID: 172,
+            slotID: "head",
+    
+            setName: "Lagombi X",
+            name: "Lagombi Helm X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [3],
+            skills: [
+                [__generated_skill__critical_eye, 1],
+                [__generated_skill__ice_attack, 2],
+                [__generated_skill__masters_touch, 1],
+                [__generated_skill__reload_speed, 1],
+            ],
+
+            defenseAtLevel1: 86,
+
+            fireRes:-3,
+            waterRes: 1,
+            thunderRes: 0,
+            iceRes: 3,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "lagombihelmx",
+                setNameLower: "lagombix",
+                hintStrLower: "",
+            },
+        },
+        chest: {
+            setID: 172,
+            slotID: "chest",
+    
+            setName: "Lagombi X",
+            name: "Lagombi Mail X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [1, 1],
+            skills: [
+                [__generated_skill__affinity_sliding, 1],
+                [__generated_skill__constitution, 2],
+                [__generated_skill__masters_touch, 1],
+                [__generated_skill__reload_speed, 1],
+            ],
+
+            defenseAtLevel1: 86,
+
+            fireRes:-3,
+            waterRes: 1,
+            thunderRes: 0,
+            iceRes: 3,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "lagombimailx",
+                setNameLower: "lagombix",
+                hintStrLower: "",
+            },
+        },
+        arms: {
+            setID: 172,
+            slotID: "arms",
+    
+            setName: "Lagombi X",
+            name: "Lagombi Vambraces X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [2, 1],
+            skills: [
+                [__generated_skill__critical_eye, 2],
+                [__generated_skill__ice_attack, 3],
+            ],
+
+            defenseAtLevel1: 86,
+
+            fireRes:-3,
+            waterRes: 1,
+            thunderRes: 0,
+            iceRes: 3,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "lagombivambracesx",
+                setNameLower: "lagombix",
+                hintStrLower: "",
+            },
+        },
+        waist: {
+            setID: 172,
+            slotID: "waist",
+    
+            setName: "Lagombi X",
+            name: "Lagombi Coil X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [2],
+            skills: [
+                [__generated_skill__constitution, 3],
+            ],
+
+            defenseAtLevel1: 86,
+
+            fireRes:-3,
+            waterRes: 1,
+            thunderRes: 0,
+            iceRes: 3,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "lagombicoilx",
+                setNameLower: "lagombix",
+                hintStrLower: "",
+            },
+        },
+        legs: {
+            setID: 172,
+            slotID: "legs",
+    
+            setName: "Lagombi X",
+            name: "Lagombi Greaves X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [3],
+            skills: [
+                [__generated_skill__jump_master, 1],
+                [__generated_skill__critical_eye, 1],
+                [__generated_skill__masters_touch, 1],
+                [__generated_skill__reload_speed, 1],
+            ],
+
+            defenseAtLevel1: 86,
+
+            fireRes:-3,
+            waterRes: 1,
+            thunderRes: 0,
+            iceRes: 3,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "lagombigreavesx",
+                setNameLower: "lagombix",
+                hintStrLower: "",
+            },
+        },
+    },
+    {
+        id: 173,
+        name: "Volvidon X",
+        head: {
+            setID: 173,
+            slotID: "head",
+    
+            setName: "Volvidon X",
+            name: "Volvidon Helm X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [1, 1, 1],
+            skills: [
+                [__generated_skill__paralysis_attack, 1],
+                [__generated_skill__earplugs, 1],
+            ],
+
+            defenseAtLevel1: 94,
+
+            fireRes:2,
+            waterRes: -3,
+            thunderRes: 0,
+            iceRes: -1,
+            dragonRes: 1,
+    
+            filterHelpers: {
+                nameLower: "volvidonhelmx",
+                setNameLower: "volvidonx",
+                hintStrLower: "",
+            },
+        },
+        chest: {
+            setID: 173,
+            slotID: "chest",
+    
+            setName: "Volvidon X",
+            name: "Volvidon Mail X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [2],
+            skills: [
+                [__generated_skill__rapid_morph, 1],
+                [__generated_skill__jump_master, 2],
+                [__generated_skill__earplugs, 1],
+            ],
+
+            defenseAtLevel1: 94,
+
+            fireRes:2,
+            waterRes: -3,
+            thunderRes: 0,
+            iceRes: -1,
+            dragonRes: 1,
+    
+            filterHelpers: {
+                nameLower: "volvidonmailx",
+                setNameLower: "volvidonx",
+                hintStrLower: "",
+            },
+        },
+        arms: {
+            setID: 173,
+            slotID: "arms",
+    
+            setName: "Volvidon X",
+            name: "Volvidon Vambraces X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [1, 1, 1],
+            skills: [
+                [__generated_skill__evade_extender, 2],
+                [__generated_skill__paralysis_attack, 3],
+                [__generated_skill__earplugs, 1],
+            ],
+
+            defenseAtLevel1: 94,
+
+            fireRes:2,
+            waterRes: -3,
+            thunderRes: 0,
+            iceRes: -1,
+            dragonRes: 1,
+    
+            filterHelpers: {
+                nameLower: "volvidonvambracesx",
+                setNameLower: "volvidonx",
+                hintStrLower: "",
+            },
+        },
+        waist: {
+            setID: 173,
+            slotID: "waist",
+    
+            setName: "Volvidon X",
+            name: "Volvidon Coil X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [2],
+            skills: [
+                [__generated_skill__earplugs, 3],
+            ],
+
+            defenseAtLevel1: 94,
+
+            fireRes:2,
+            waterRes: -3,
+            thunderRes: 0,
+            iceRes: -1,
+            dragonRes: 1,
+    
+            filterHelpers: {
+                nameLower: "volvidoncoilx",
+                setNameLower: "volvidonx",
+                hintStrLower: "",
+            },
+        },
+        legs: {
+            setID: 173,
+            slotID: "legs",
+    
+            setName: "Volvidon X",
+            name: "Volvidon Greaves X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [1],
+            skills: [
+                [__generated_skill__rapid_morph, 1],
+                [__generated_skill__evade_extender, 1],
+            ],
+
+            defenseAtLevel1: 94,
+
+            fireRes:2,
+            waterRes: -3,
+            thunderRes: 0,
+            iceRes: -1,
+            dragonRes: 1,
+    
+            filterHelpers: {
+                nameLower: "volvidongreavesx",
+                setNameLower: "volvidonx",
+                hintStrLower: "",
+            },
+        },
+    },
+    {
+        id: 174,
+        name: "Aknosom X",
+        head: {
+            setID: 174,
+            slotID: "head",
+    
+            setName: "Aknosom X",
+            name: "Aknosom Helm X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [2],
+            skills: [
+                [__generated_skill__quick_sheathe, 1],
+                [__generated_skill__fire_attack, 1],
+                [__generated_skill__critical_draw, 1],
+            ],
+
+            defenseAtLevel1: 88,
+
+            fireRes:3,
+            waterRes: -3,
+            thunderRes: -1,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "aknosomhelmx",
+                setNameLower: "aknosomx",
+                hintStrLower: "",
+            },
+        },
+        chest: {
+            setID: 174,
+            slotID: "chest",
+    
+            setName: "Aknosom X",
+            name: "Aknosom Mail X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [1, 1],
+            skills: [
+                [__generated_skill__quick_sheathe, 1],
+                [__generated_skill__peak_performance, 1],
+                [__generated_skill__critical_draw, 1],
+            ],
+
+            defenseAtLevel1: 88,
+
+            fireRes:3,
+            waterRes: -3,
+            thunderRes: -1,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "aknosommailx",
+                setNameLower: "aknosomx",
+                hintStrLower: "",
+            },
+        },
+        arms: {
+            setID: 174,
+            slotID: "arms",
+    
+            setName: "Aknosom X",
+            name: "Aknosom Braces X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [2, 1, 1],
+            skills: [
+                [__generated_skill__peak_performance, 1],
+                [__generated_skill__fire_attack, 2],
+                [__generated_skill__critical_element, 1],
+            ],
+
+            defenseAtLevel1: 88,
+
+            fireRes:3,
+            waterRes: -3,
+            thunderRes: -1,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "aknosombracesx",
+                setNameLower: "aknosomx",
+                hintStrLower: "",
+            },
+        },
+        waist: {
+            setID: 174,
+            slotID: "waist",
+    
+            setName: "Aknosom X",
+            name: "Aknosom Coil X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4, 1],
+            skills: [
+                [__generated_skill__quick_sheathe, 1],
+                [__generated_skill__critical_element, 1],
+            ],
+
+            defenseAtLevel1: 88,
+
+            fireRes:3,
+            waterRes: -3,
+            thunderRes: -1,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "aknosomcoilx",
+                setNameLower: "aknosomx",
+                hintStrLower: "",
+            },
+        },
+        legs: {
+            setID: 174,
+            slotID: "legs",
+    
+            setName: "Aknosom X",
+            name: "Aknosom Greaves X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [1, 1],
+            skills: [
+                [__generated_skill__peak_performance, 1],
+                [__generated_skill__fire_attack, 2],
+                [__generated_skill__critical_draw, 1],
+            ],
+
+            defenseAtLevel1: 88,
+
+            fireRes:3,
+            waterRes: -3,
+            thunderRes: -1,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "aknosomgreavesx",
+                setNameLower: "aknosomx",
+                hintStrLower: "",
+            },
+        },
+    },
+    {
+        id: 175,
+        name: "Royal Ludroth X",
+        head: {
+            setID: 175,
+            slotID: "head",
+    
+            setName: "Royal Ludroth X",
+            name: "Ludroth Helm X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [2, 1],
+            skills: [
+                [__generated_skill__marathon_runner, 1],
+                [__generated_skill__peak_performance, 1],
+                [__generated_skill__focus, 1],
+            ],
+
+            defenseAtLevel1: 92,
+
+            fireRes:-3,
+            waterRes: 4,
+            thunderRes: -1,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "ludrothhelmx",
+                setNameLower: "royalludrothx",
+                hintStrLower: "",
+            },
+        },
+        chest: {
+            setID: 175,
+            slotID: "chest",
+    
+            setName: "Royal Ludroth X",
+            name: "Ludroth Mail X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4],
+            skills: [
+                [__generated_skill__stamina_surge, 2],
+                [__generated_skill__focus, 1],
+            ],
+
+            defenseAtLevel1: 92,
+
+            fireRes:-3,
+            waterRes: 4,
+            thunderRes: -1,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "ludrothmailx",
+                setNameLower: "royalludrothx",
+                hintStrLower: "",
+            },
+        },
+        arms: {
+            setID: 175,
+            slotID: "arms",
+    
+            setName: "Royal Ludroth X",
+            name: "Ludroth Braces X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [2, 2, 1],
+            skills: [
+                [__generated_skill__marathon_runner, 1],
+                [__generated_skill__power_prolonger, 1],
+                [__generated_skill__spare_shot, 1],
+            ],
+
+            defenseAtLevel1: 92,
+
+            fireRes:-3,
+            waterRes: 4,
+            thunderRes: -1,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "ludrothbracesx",
+                setNameLower: "royalludrothx",
+                hintStrLower: "",
+            },
+        },
+        waist: {
+            setID: 175,
+            slotID: "waist",
+    
+            setName: "Royal Ludroth X",
+            name: "Ludroth Coil X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [2],
+            skills: [
+                [__generated_skill__marathon_runner, 1],
+                [__generated_skill__peak_performance, 2],
+            ],
+
+            defenseAtLevel1: 92,
+
+            fireRes:-3,
+            waterRes: 4,
+            thunderRes: -1,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "ludrothcoilx",
+                setNameLower: "royalludrothx",
+                hintStrLower: "",
+            },
+        },
+        legs: {
+            setID: 175,
+            slotID: "legs",
+    
+            setName: "Royal Ludroth X",
+            name: "Ludroth Greaves X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [3],
+            skills: [
+                [__generated_skill__power_prolonger, 2],
+                [__generated_skill__focus, 1],
+            ],
+
+            defenseAtLevel1: 92,
+
+            fireRes:-3,
+            waterRes: 4,
+            thunderRes: -1,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "ludrothgreavesx",
+                setNameLower: "royalludrothx",
+                hintStrLower: "",
+            },
+        },
+    },
+    {
+        id: 176,
+        name: "Barroth X",
+        head: {
+            setID: 176,
+            slotID: "head",
+    
+            setName: "Barroth X",
+            name: "Barroth Helm X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4, 1],
+            skills: [
+                [__generated_skill__attack_boost, 1],
+                [__generated_skill__defense_boost, 1],
+                [__generated_skill__offensive_guard, 1],
+                [__generated_skill__spread_up, 1],
+            ],
+
+            defenseAtLevel1: 94,
+
+            fireRes:-3,
+            waterRes: -1,
+            thunderRes: 3,
+            iceRes: -1,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "barrothhelmx",
+                setNameLower: "barrothx",
+                hintStrLower: "",
+            },
+        },
+        chest: {
+            setID: 176,
+            slotID: "chest",
+    
+            setName: "Barroth X",
+            name: "Barroth Mail X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4],
+            skills: [
+                [__generated_skill__attack_boost, 2],
+                [__generated_skill__defense_boost, 2],
+                [__generated_skill__muck_resistance, 2],
+            ],
+
+            defenseAtLevel1: 94,
+
+            fireRes:-3,
+            waterRes: -1,
+            thunderRes: 3,
+            iceRes: -1,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "barrothmailx",
+                setNameLower: "barrothx",
+                hintStrLower: "",
+            },
+        },
+        arms: {
+            setID: 176,
+            slotID: "arms",
+    
+            setName: "Barroth X",
+            name: "Barroth Vambraces X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [2, 1],
+            skills: [
+                [__generated_skill__attack_boost, 2],
+                [__generated_skill__affinity_sliding, 1],
+                [__generated_skill__offensive_guard, 1],
+                [__generated_skill__spread_up, 1],
+            ],
+
+            defenseAtLevel1: 94,
+
+            fireRes:-3,
+            waterRes: -1,
+            thunderRes: 3,
+            iceRes: -1,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "barrothvambracesx",
+                setNameLower: "barrothx",
+                hintStrLower: "",
+            },
+        },
+        waist: {
+            setID: 176,
+            slotID: "waist",
+    
+            setName: "Barroth X",
+            name: "Barroth Coil X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [3],
+            skills: [
+                [__generated_skill__guard, 3],
+                [__generated_skill__defense_boost, 1],
+            ],
+
+            defenseAtLevel1: 94,
+
+            fireRes:-3,
+            waterRes: -1,
+            thunderRes: 3,
+            iceRes: -1,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "barrothcoilx",
+                setNameLower: "barrothx",
+                hintStrLower: "",
+            },
+        },
+        legs: {
+            setID: 176,
+            slotID: "legs",
+    
+            setName: "Barroth X",
+            name: "Barroth Greaves X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [2, 1],
+            skills: [
+                [__generated_skill__guard, 2],
+                [__generated_skill__defense_boost, 1],
+                [__generated_skill__offensive_guard, 1],
+            ],
+
+            defenseAtLevel1: 94,
+
+            fireRes:-3,
+            waterRes: -1,
+            thunderRes: 3,
+            iceRes: -1,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "barrothgreavesx",
+                setNameLower: "barrothx",
+                hintStrLower: "",
+            },
+        },
+    },
+    {
+        id: 177,
+        name: "Hermitaur",
+        head: {
+            setID: 177,
+            slotID: "head",
+    
+            setName: "Hermitaur",
+            name: "Hermitaur Helm",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [1],
+            skills: [
+                [__generated_skill__quick_sheathe, 2],
+                [__generated_skill__tremor_resistance, 2],
+            ],
+
+            defenseAtLevel1: 94,
+
+            fireRes:-5,
+            waterRes: 1,
+            thunderRes: -3,
+            iceRes: -1,
+            dragonRes: 2,
+    
+            filterHelpers: {
+                nameLower: "hermitaurhelm",
+                setNameLower: "hermitaur",
+                hintStrLower: "daimyohermitaur",
+            },
+        },
+        chest: {
+            setID: 177,
+            slotID: "chest",
+    
+            setName: "Hermitaur",
+            name: "Hermitaur Mail",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [1],
+            skills: [
+                [__generated_skill__guard, 3],
+                [__generated_skill__load_shells, 1],
+                [__generated_skill__normal_rapid_up, 1],
+                [__generated_skill__ammo_up, 1],
+            ],
+
+            defenseAtLevel1: 94,
+
+            fireRes:-5,
+            waterRes: 1,
+            thunderRes: -3,
+            iceRes: -1,
+            dragonRes: 2,
+    
+            filterHelpers: {
+                nameLower: "hermitaurmail",
+                setNameLower: "hermitaur",
+                hintStrLower: "daimyohermitaur",
+            },
+        },
+        arms: {
+            setID: 177,
+            slotID: "arms",
+    
+            setName: "Hermitaur",
+            name: "Hermitaur Braces",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [2],
+            skills: [
+                [__generated_skill__guard, 2],
+                [__generated_skill__guard_up, 1],
+                [__generated_skill__normal_rapid_up, 2],
+            ],
+
+            defenseAtLevel1: 94,
+
+            fireRes:-5,
+            waterRes: 1,
+            thunderRes: -3,
+            iceRes: -1,
+            dragonRes: 2,
+    
+            filterHelpers: {
+                nameLower: "hermitaurbraces",
+                setNameLower: "hermitaur",
+                hintStrLower: "daimyohermitaur",
+            },
+        },
+        waist: {
+            setID: 177,
+            slotID: "waist",
+    
+            setName: "Hermitaur",
+            name: "Hermitaur Coil",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [2, 2],
+            skills: [
+                [__generated_skill__tune_up, 1],
+                [__generated_skill__handicraft, 1],
+                [__generated_skill__quick_sheathe, 1],
+            ],
+
+            defenseAtLevel1: 94,
+
+            fireRes:-5,
+            waterRes: 1,
+            thunderRes: -3,
+            iceRes: -1,
+            dragonRes: 2,
+    
+            filterHelpers: {
+                nameLower: "hermitaurcoil",
+                setNameLower: "hermitaur",
+                hintStrLower: "daimyohermitaur",
+            },
+        },
+        legs: {
+            setID: 177,
+            slotID: "legs",
+    
+            setName: "Hermitaur",
+            name: "Hermitaur Greaves",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4],
+            skills: [
+                [__generated_skill__tune_up, 1],
+                [__generated_skill__handicraft, 1],
+                [__generated_skill__tremor_resistance, 1],
+            ],
+
+            defenseAtLevel1: 94,
+
+            fireRes:-5,
+            waterRes: 1,
+            thunderRes: -3,
+            iceRes: -1,
+            dragonRes: 2,
+    
+            filterHelpers: {
+                nameLower: "hermitaurgreaves",
+                setNameLower: "hermitaur",
+                hintStrLower: "daimyohermitaur",
+            },
+        },
+    },
+    {
+        id: 178,
+        name: "Tetranadon X",
+        head: {
+            setID: 178,
+            slotID: "head",
+    
+            setName: "Tetranadon X",
+            name: "Tetranadon Helm X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [1],
+            skills: [
+                [__generated_skill__normal_rapid_up, 2],
+                [__generated_skill__speed_eating, 1],
+            ],
+
+            defenseAtLevel1: 90,
+
+            fireRes:-1,
+            waterRes: 4,
+            thunderRes: -2,
+            iceRes: 1,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "tetranadonhelmx",
+                setNameLower: "tetranadonx",
+                hintStrLower: "",
+            },
+        },
+        chest: {
+            setID: 178,
+            slotID: "chest",
+    
+            setName: "Tetranadon X",
+            name: "Tetranadon Mail X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [2],
+            skills: [
+                [__generated_skill__normal_rapid_up, 1],
+                [__generated_skill__evade_extender, 1],
+                [__generated_skill__speed_eating, 1],
+            ],
+
+            defenseAtLevel1: 90,
+
+            fireRes:-1,
+            waterRes: 4,
+            thunderRes: -2,
+            iceRes: 1,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "tetranadonmailx",
+                setNameLower: "tetranadonx",
+                hintStrLower: "",
+            },
+        },
+        arms: {
+            setID: 178,
+            slotID: "arms",
+    
+            setName: "Tetranadon X",
+            name: "Tetranadon Braces X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [1, 1],
+            skills: [
+                [__generated_skill__heroics, 2],
+                [__generated_skill__special_ammo_boost, 2],
+                [__generated_skill__hunger_resistance, 1],
+            ],
+
+            defenseAtLevel1: 90,
+
+            fireRes:-1,
+            waterRes: 4,
+            thunderRes: -2,
+            iceRes: 1,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "tetranadonbracesx",
+                setNameLower: "tetranadonx",
+                hintStrLower: "",
+            },
+        },
+        waist: {
+            setID: 178,
+            slotID: "waist",
+    
+            setName: "Tetranadon X",
+            name: "Tetranadon Coil X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [2],
+            skills: [
+                [__generated_skill__heroics, 2],
+                [__generated_skill__evade_extender, 2],
+            ],
+
+            defenseAtLevel1: 90,
+
+            fireRes:-1,
+            waterRes: 4,
+            thunderRes: -2,
+            iceRes: 1,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "tetranadoncoilx",
+                setNameLower: "tetranadonx",
+                hintStrLower: "",
+            },
+        },
+        legs: {
+            setID: 178,
+            slotID: "legs",
+    
+            setName: "Tetranadon X",
+            name: "Tetranadon Greaves X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4],
+            skills: [
+                [__generated_skill__hunger_resistance, 2],
+                [__generated_skill__heroics, 1],
+                [__generated_skill__speed_eating, 1],
+            ],
+
+            defenseAtLevel1: 90,
+
+            fireRes:-1,
+            waterRes: 4,
+            thunderRes: -2,
+            iceRes: 1,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "tetranadongreavesx",
+                setNameLower: "tetranadonx",
+                hintStrLower: "",
+            },
+        },
+    },
+    {
+        id: 179,
+        name: "Ingot X",
+        head: {
+            setID: 179,
+            slotID: "head",
+    
+            setName: "Ingot X",
+            name: "Ingot Helm X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4, 1],
+            skills: [
+                [__generated_skill__windproof, 1],
+                [__generated_skill__attack_boost, 2],
+            ],
+
+            defenseAtLevel1: 94,
+
+            fireRes:-1,
+            waterRes: -1,
+            thunderRes: 1,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "ingothelmx",
+                setNameLower: "ingotx",
+                hintStrLower: "",
+            },
+        },
+        chest: {
+            setID: 179,
+            slotID: "chest",
+    
+            setName: "Ingot X",
+            name: "Ingot Mail X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [3, 1],
+            skills: [
+                [__generated_skill__windproof, 2],
+                [__generated_skill__critical_eye, 2],
+            ],
+
+            defenseAtLevel1: 94,
+
+            fireRes:-1,
+            waterRes: -1,
+            thunderRes: 1,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "ingotmailx",
+                setNameLower: "ingotx",
+                hintStrLower: "",
+            },
+        },
+        arms: {
+            setID: 179,
+            slotID: "arms",
+    
+            setName: "Ingot X",
+            name: "Ingot Vambraces X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4, 2],
+            skills: [
+                [__generated_skill__thunder_attack, 3],
+            ],
+
+            defenseAtLevel1: 94,
+
+            fireRes:-1,
+            waterRes: -1,
+            thunderRes: 1,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "ingotvambracesx",
+                setNameLower: "ingotx",
+                hintStrLower: "",
+            },
+        },
+        waist: {
+            setID: 179,
+            slotID: "waist",
+    
+            setName: "Ingot X",
+            name: "Ingot Coil X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [3],
+            skills: [
+                [__generated_skill__power_prolonger, 2],
+                [__generated_skill__attack_boost, 1],
+            ],
+
+            defenseAtLevel1: 94,
+
+            fireRes:-1,
+            waterRes: -1,
+            thunderRes: 1,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "ingotcoilx",
+                setNameLower: "ingotx",
+                hintStrLower: "",
+            },
+        },
+        legs: {
+            setID: 179,
+            slotID: "legs",
+    
+            setName: "Ingot X",
+            name: "Ingot Greaves X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [1, 1],
+            skills: [
+                [__generated_skill__attack_boost, 2],
+                [__generated_skill__critical_eye, 2],
+            ],
+
+            defenseAtLevel1: 94,
+
+            fireRes:-1,
+            waterRes: -1,
+            thunderRes: 1,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "ingotgreavesx",
+                setNameLower: "ingotx",
+                hintStrLower: "",
+            },
+        },
+    },
+    {
+        id: 180,
+        name: "Skalda X",
+        head: {
+            setID: 180,
+            slotID: "head",
+    
+            setName: "Skalda X",
+            name: "Skalda Vertex X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4],
+            skills: [
+                [__generated_skill__poison_attack, 3],
+                [__generated_skill__latent_power, 1],
+            ],
+
+            defenseAtLevel1: 98,
+
+            fireRes:3,
+            waterRes: -1,
+            thunderRes: -1,
+            iceRes: -1,
+            dragonRes: 3,
+    
+            filterHelpers: {
+                nameLower: "skaldavertexx",
+                setNameLower: "skaldax",
+                hintStrLower: "",
+            },
+        },
+        chest: {
+            setID: 180,
+            slotID: "chest",
+    
+            setName: "Skalda X",
+            name: "Skalda Thorax X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [3],
+            skills: [
+                [__generated_skill__latent_power, 2],
+                [__generated_skill__minds_eye, 1],
+            ],
+
+            defenseAtLevel1: 98,
+
+            fireRes:3,
+            waterRes: -1,
+            thunderRes: -1,
+            iceRes: -1,
+            dragonRes: 3,
+    
+            filterHelpers: {
+                nameLower: "skaldathoraxx",
+                setNameLower: "skaldax",
+                hintStrLower: "",
+            },
+        },
+        arms: {
+            setID: 180,
+            slotID: "arms",
+    
+            setName: "Skalda X",
+            name: "Skalda Brachia X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4, 1, 1],
+            skills: [
+                [__generated_skill__latent_power, 1],
+                [__generated_skill__poison_resistance, 1],
+            ],
+
+            defenseAtLevel1: 98,
+
+            fireRes:3,
+            waterRes: -1,
+            thunderRes: -1,
+            iceRes: -1,
+            dragonRes: 3,
+    
+            filterHelpers: {
+                nameLower: "skaldabrachiax",
+                setNameLower: "skaldax",
+                hintStrLower: "",
+            },
+        },
+        waist: {
+            setID: 180,
+            slotID: "waist",
+    
+            setName: "Skalda X",
+            name: "Skalda Elytra X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [1],
+            skills: [
+                [__generated_skill__weakness_exploit, 2],
+                [__generated_skill__poison_resistance, 1],
+            ],
+
+            defenseAtLevel1: 98,
+
+            fireRes:3,
+            waterRes: -1,
+            thunderRes: -1,
+            iceRes: -1,
+            dragonRes: 3,
+    
+            filterHelpers: {
+                nameLower: "skaldaelytrax",
+                setNameLower: "skaldax",
+                hintStrLower: "",
+            },
+        },
+        legs: {
+            setID: 180,
+            slotID: "legs",
+    
+            setName: "Skalda X",
+            name: "Skalda Crura X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [2],
+            skills: [
+                [__generated_skill__latent_power, 1],
+                [__generated_skill__poison_resistance, 1],
+                [__generated_skill__minds_eye, 2],
+            ],
+
+            defenseAtLevel1: 98,
+
+            fireRes:3,
+            waterRes: -1,
+            thunderRes: -1,
+            iceRes: -1,
+            dragonRes: 3,
+    
+            filterHelpers: {
+                nameLower: "skaldacrurax",
+                setNameLower: "skaldax",
+                hintStrLower: "",
+            },
+        },
+    },
+    {
+        id: 181,
+        name: "Spio X",
+        head: {
+            setID: 181,
+            slotID: "head",
+    
+            setName: "Spio X",
+            name: "Spio Vertex X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4],
+            skills: [
+                [__generated_skill__poison_attack, 3],
+                [__generated_skill__latent_power, 1],
+            ],
+
+            defenseAtLevel1: 98,
+
+            fireRes:3,
+            waterRes: -1,
+            thunderRes: -1,
+            iceRes: -1,
+            dragonRes: 3,
+    
+            filterHelpers: {
+                nameLower: "spiovertexx",
+                setNameLower: "spiox",
+                hintStrLower: "",
+            },
+        },
+        chest: {
+            setID: 181,
+            slotID: "chest",
+    
+            setName: "Spio X",
+            name: "Spio Thorax X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [3],
+            skills: [
+                [__generated_skill__latent_power, 2],
+                [__generated_skill__minds_eye, 1],
+            ],
+
+            defenseAtLevel1: 98,
+
+            fireRes:3,
+            waterRes: -1,
+            thunderRes: -1,
+            iceRes: -1,
+            dragonRes: 3,
+    
+            filterHelpers: {
+                nameLower: "spiothoraxx",
+                setNameLower: "spiox",
+                hintStrLower: "",
+            },
+        },
+        arms: {
+            setID: 181,
+            slotID: "arms",
+    
+            setName: "Spio X",
+            name: "Spio Brachia X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4, 1, 1],
+            skills: [
+                [__generated_skill__latent_power, 1],
+                [__generated_skill__poison_resistance, 1],
+            ],
+
+            defenseAtLevel1: 98,
+
+            fireRes:3,
+            waterRes: -1,
+            thunderRes: -1,
+            iceRes: -1,
+            dragonRes: 3,
+    
+            filterHelpers: {
+                nameLower: "spiobrachiax",
+                setNameLower: "spiox",
+                hintStrLower: "",
+            },
+        },
+        waist: {
+            setID: 181,
+            slotID: "waist",
+    
+            setName: "Spio X",
+            name: "Spio Elytra X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [1],
+            skills: [
+                [__generated_skill__weakness_exploit, 2],
+                [__generated_skill__poison_resistance, 1],
+            ],
+
+            defenseAtLevel1: 98,
+
+            fireRes:3,
+            waterRes: -1,
+            thunderRes: -1,
+            iceRes: -1,
+            dragonRes: 3,
+    
+            filterHelpers: {
+                nameLower: "spioelytrax",
+                setNameLower: "spiox",
+                hintStrLower: "",
+            },
+        },
+        legs: {
+            setID: 181,
+            slotID: "legs",
+    
+            setName: "Spio X",
+            name: "Spio Crura X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [2],
+            skills: [
+                [__generated_skill__latent_power, 1],
+                [__generated_skill__poison_resistance, 1],
+                [__generated_skill__minds_eye, 2],
+            ],
+
+            defenseAtLevel1: 98,
+
+            fireRes:3,
+            waterRes: -1,
+            thunderRes: -1,
+            iceRes: -1,
+            dragonRes: 3,
+    
+            filterHelpers: {
+                nameLower: "spiocrurax",
+                setNameLower: "spiox",
+                hintStrLower: "",
+            },
+        },
+    },
+    {
+        id: 182,
+        name: "Grand Chaos",
+        head: {
+            setID: 182,
+            slotID: "head",
+    
+            setName: "Grand Chaos",
+            name: "Grand Chaoshroom",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [3, 1, 1],
+            skills: [
+                [__generated_skill__mushroomancer, 1],
+                [__generated_skill__speed_eating, 1],
+            ],
+
+            defenseAtLevel1: 98,
+
+            fireRes:2,
+            waterRes: -2,
+            thunderRes: 0,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "grandchaoshroom",
+                setNameLower: "grandchaos",
+                hintStrLower: "",
+            },
+        },
+        chest: {
+            setID: 182,
+            slotID: "chest",
+    
+            setName: "Grand Chaos",
+            name: "Grand Chaos Plate",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [2, 1],
+            skills: [
+                [__generated_skill__mushroomancer, 2],
+                [__generated_skill__horn_maestro, 1],
+            ],
+
+            defenseAtLevel1: 98,
+
+            fireRes:2,
+            waterRes: -2,
+            thunderRes: 0,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "grandchaosplate",
+                setNameLower: "grandchaos",
+                hintStrLower: "",
+            },
+        },
+        arms: undefined,
+        waist: undefined,
+        legs: undefined,
+    },
+    {
+        id: 183,
+        name: "Edel X",
+        head: {
+            setID: 183,
+            slotID: "head",
+    
+            setName: "Edel X",
+            name: "Edel Vizor X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4, 2],
+            skills: [
+                [__generated_skill__poison_resistance, 2],
+                [__generated_skill__speed_eating, 1],
+            ],
+
+            defenseAtLevel1: 96,
+
+            fireRes:-1,
+            waterRes: 3,
+            thunderRes: -1,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "edelvizorx",
+                setNameLower: "edelx",
+                hintStrLower: "",
+            },
+        },
+        chest: {
+            setID: 183,
+            slotID: "chest",
+    
+            setName: "Edel X",
+            name: "Edel Ribplate X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [3, 1],
+            skills: [
+                [__generated_skill__recovery_up, 2],
+                [__generated_skill__wide_range, 1],
+            ],
+
+            defenseAtLevel1: 96,
+
+            fireRes:-1,
+            waterRes: 3,
+            thunderRes: -1,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "edelribplatex",
+                setNameLower: "edelx",
+                hintStrLower: "",
+            },
+        },
+        arms: {
+            setID: 183,
+            slotID: "arms",
+    
+            setName: "Edel X",
+            name: "Edel Creeper X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [2, 1],
+            skills: [
+                [__generated_skill__capture_master, 1],
+                [__generated_skill__wide_range, 3],
+            ],
+
+            defenseAtLevel1: 96,
+
+            fireRes:-1,
+            waterRes: 3,
+            thunderRes: -1,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "edelcreeperx",
+                setNameLower: "edelx",
+                hintStrLower: "",
+            },
+        },
+        waist: {
+            setID: 183,
+            slotID: "waist",
+    
+            setName: "Edel X",
+            name: "Edel Folia X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4, 2],
+            skills: [
+                [__generated_skill__recovery_up, 1],
+                [__generated_skill__wide_range, 1],
+            ],
+
+            defenseAtLevel1: 96,
+
+            fireRes:-1,
+            waterRes: 3,
+            thunderRes: -1,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "edelfoliax",
+                setNameLower: "edelx",
+                hintStrLower: "",
+            },
+        },
+        legs: {
+            setID: 183,
+            slotID: "legs",
+    
+            setName: "Edel X",
+            name: "Edel Roots X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4, 1],
+            skills: [
+                [__generated_skill__poison_resistance, 1],
+                [__generated_skill__speed_eating, 2],
+            ],
+
+            defenseAtLevel1: 96,
+
+            fireRes:-1,
+            waterRes: 3,
+            thunderRes: -1,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "edelrootsx",
+                setNameLower: "edelx",
+                hintStrLower: "",
+            },
+        },
+    },
+    {
+        id: 184,
+        name: "Shell-Studded X",
+        head: {
+            setID: 184,
+            slotID: "head",
+    
+            setName: "Shell-Studded X",
+            name: "S. Studded Hat X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [2, 1],
+            skills: [
+                [__generated_skill__ballistics, 2],
+                [__generated_skill__steadiness, 2],
+                [__generated_skill__tune_up, 1],
+            ],
+
+            defenseAtLevel1: 96,
+
+            fireRes:0,
+            waterRes: 2,
+            thunderRes: 1,
+            iceRes: -1,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "s.studdedhatx",
+                setNameLower: "shell-studdedx",
+                hintStrLower: "",
+            },
+        },
+        chest: {
+            setID: 184,
+            slotID: "chest",
+    
+            setName: "Shell-Studded X",
+            name: "S. Studded Vest X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [1, 1],
+            skills: [
+                [__generated_skill__normal_rapid_up, 1],
+                [__generated_skill__pierce_up, 1],
+                [__generated_skill__tune_up, 1],
+            ],
+
+            defenseAtLevel1: 96,
+
+            fireRes:0,
+            waterRes: 2,
+            thunderRes: 1,
+            iceRes: -1,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "s.studdedvestx",
+                setNameLower: "shell-studdedx",
+                hintStrLower: "",
+            },
+        },
+        arms: {
+            setID: 184,
+            slotID: "arms",
+    
+            setName: "Shell-Studded X",
+            name: "S. Studded Gloves X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [1, 1],
+            skills: [
+                [__generated_skill__spread_up, 1],
+                [__generated_skill__normal_rapid_up, 1],
+            ],
+
+            defenseAtLevel1: 96,
+
+            fireRes:0,
+            waterRes: 2,
+            thunderRes: 1,
+            iceRes: -1,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "s.studdedglovesx",
+                setNameLower: "shell-studdedx",
+                hintStrLower: "",
+            },
+        },
+        waist: {
+            setID: 184,
+            slotID: "waist",
+    
+            setName: "Shell-Studded X",
+            name: "S. Studded Sash X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4, 1],
+            skills: [
+                [__generated_skill__ballistics, 1],
+                [__generated_skill__normal_rapid_up, 1],
+            ],
+
+            defenseAtLevel1: 96,
+
+            fireRes:0,
+            waterRes: 2,
+            thunderRes: 1,
+            iceRes: -1,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "s.studdedsashx",
+                setNameLower: "shell-studdedx",
+                hintStrLower: "",
+            },
+        },
+        legs: {
+            setID: 184,
+            slotID: "legs",
+    
+            setName: "Shell-Studded X",
+            name: "S. Studded Sandals X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [1, 1],
+            skills: [
+                [__generated_skill__spread_up, 1],
+                [__generated_skill__pierce_up, 2],
+            ],
+
+            defenseAtLevel1: 96,
+
+            fireRes:0,
+            waterRes: 2,
+            thunderRes: 1,
+            iceRes: -1,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "s.studdedsandalsx",
+                setNameLower: "shell-studdedx",
+                hintStrLower: "",
+            },
+        },
+    },
+    {
+        id: 185,
+        name: "Melahoa X",
+        head: {
+            setID: 185,
+            slotID: "head",
+    
+            setName: "Melahoa X",
+            name: "Melahoa Hat X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4, 2],
+            skills: [
+                [__generated_skill__paralysis_resistance, 2],
+                [__generated_skill__divine_blessing, 2],
+            ],
+
+            defenseAtLevel1: 92,
+
+            fireRes:0,
+            waterRes: 1,
+            thunderRes: 3,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "melahoahatx",
+                setNameLower: "melahoax",
+                hintStrLower: "",
+            },
+        },
+        chest: {
+            setID: 185,
+            slotID: "chest",
+    
+            setName: "Melahoa X",
+            name: "Melahoa Jacket X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4, 1],
+            skills: [
+                [__generated_skill__botanist, 2],
+                [__generated_skill__recovery_up, 1],
+                [__generated_skill__divine_blessing, 1],
+            ],
+
+            defenseAtLevel1: 92,
+
+            fireRes:0,
+            waterRes: 1,
+            thunderRes: 3,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "melahoajacketx",
+                setNameLower: "melahoax",
+                hintStrLower: "",
+            },
+        },
+        arms: {
+            setID: 185,
+            slotID: "arms",
+    
+            setName: "Melahoa X",
+            name: "Melahoa Branch X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4, 2],
+            skills: [
+                [__generated_skill__paralysis_resistance, 1],
+                [__generated_skill__botanist, 1],
+                [__generated_skill__recovery_up, 1],
+            ],
+
+            defenseAtLevel1: 92,
+
+            fireRes:0,
+            waterRes: 1,
+            thunderRes: 3,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "melahoabranchx",
+                setNameLower: "melahoax",
+                hintStrLower: "",
+            },
+        },
+        waist: {
+            setID: 185,
+            slotID: "waist",
+    
+            setName: "Melahoa X",
+            name: "Melahoa Folia X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4, 2],
+            skills: [
+                [__generated_skill__botanist, 1],
+                [__generated_skill__recovery_speed, 1],
+                [__generated_skill__stamina_surge, 1],
+            ],
+
+            defenseAtLevel1: 92,
+
+            fireRes:0,
+            waterRes: 1,
+            thunderRes: 3,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "melahoafoliax",
+                setNameLower: "melahoax",
+                hintStrLower: "",
+            },
+        },
+        legs: {
+            setID: 185,
+            slotID: "legs",
+    
+            setName: "Melahoa X",
+            name: "Melahoa Roots X",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4, 1],
+            skills: [
+                [__generated_skill__recovery_up, 1],
+                [__generated_skill__recovery_speed, 2],
+                [__generated_skill__stamina_surge, 1],
+            ],
+
+            defenseAtLevel1: 92,
+
+            fireRes:0,
+            waterRes: 1,
+            thunderRes: 3,
+            iceRes: 0,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "melahoarootsx",
+                setNameLower: "melahoax",
+                hintStrLower: "",
+            },
+        },
+    },
+    {
+        id: 186,
+        name: "Five Element",
+        head: {
+            setID: 186,
+            slotID: "head",
+    
+            setName: "Five Element",
+            name: "Five Element Mask",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [2],
+            skills: [
+                [__generated_skill__hellfire_cloak, 2],
+                [__generated_skill__minds_eye, 1],
+                [__generated_skill__ballistics, 1],
+            ],
+
+            defenseAtLevel1: 100,
+
+            fireRes:0,
+            waterRes: 0,
+            thunderRes: 0,
+            iceRes: 0,
+            dragonRes: 3,
+    
+            filterHelpers: {
+                nameLower: "fiveelementmask",
+                setNameLower: "fiveelement",
+                hintStrLower: "",
+            },
+        },
+        chest: {
+            setID: 186,
+            slotID: "chest",
+    
+            setName: "Five Element",
+            name: "Five Element Garb",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4],
+            skills: [
+                [__generated_skill__blight_resistance, 1],
+                [__generated_skill__minds_eye, 2],
+            ],
+
+            defenseAtLevel1: 100,
+
+            fireRes:0,
+            waterRes: 0,
+            thunderRes: 0,
+            iceRes: 0,
+            dragonRes: 3,
+    
+            filterHelpers: {
+                nameLower: "fiveelementgarb",
+                setNameLower: "fiveelement",
+                hintStrLower: "",
+            },
+        },
+        arms: {
+            setID: 186,
+            slotID: "arms",
+    
+            setName: "Five Element",
+            name: "Five Element Arms",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4],
+            skills: [
+                [__generated_skill__divine_blessing, 1],
+                [__generated_skill__ballistics, 2],
+            ],
+
+            defenseAtLevel1: 100,
+
+            fireRes:0,
+            waterRes: 0,
+            thunderRes: 0,
+            iceRes: 0,
+            dragonRes: 3,
+    
+            filterHelpers: {
+                nameLower: "fiveelementarms",
+                setNameLower: "fiveelement",
+                hintStrLower: "",
+            },
+        },
+        waist: {
+            setID: 186,
+            slotID: "waist",
+    
+            setName: "Five Element",
+            name: "Five Element Obi",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [4],
+            skills: [
+                [__generated_skill__blight_resistance, 2],
+                [__generated_skill__master_mounter, 1],
+            ],
+
+            defenseAtLevel1: 100,
+
+            fireRes:0,
+            waterRes: 0,
+            thunderRes: 0,
+            iceRes: 0,
+            dragonRes: 3,
+    
+            filterHelpers: {
+                nameLower: "fiveelementobi",
+                setNameLower: "fiveelement",
+                hintStrLower: "",
+            },
+        },
+        legs: {
+            setID: 186,
+            slotID: "legs",
+    
+            setName: "Five Element",
+            name: "Five Element Legwear",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [3],
+            skills: [
+                [__generated_skill__divine_blessing, 2],
+                [__generated_skill__hellfire_cloak, 1],
+            ],
+
+            defenseAtLevel1: 100,
+
+            fireRes:0,
+            waterRes: 0,
+            thunderRes: 0,
+            iceRes: 0,
+            dragonRes: 3,
+    
+            filterHelpers: {
+                nameLower: "fiveelementlegwear",
+                setNameLower: "fiveelement",
+                hintStrLower: "",
+            },
+        },
+    },
+    {
+        id: 187,
+        name: "Knight Squire",
+        head: {
+            setID: 187,
+            slotID: "head",
+    
+            setName: "Knight Squire",
+            name: "Squire's Earrings",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [1],
+            skills: [
+                [__generated_skill__attack_boost, 2],
+                [__generated_skill__speed_eating, 3],
+            ],
+
+            defenseAtLevel1: 100,
+
+            fireRes:1,
+            waterRes: 1,
+            thunderRes: 1,
+            iceRes: 1,
+            dragonRes: 1,
+    
+            filterHelpers: {
+                nameLower: "squire'searrings",
+                setNameLower: "knightsquire",
+                hintStrLower: "damefiorayne",
+            },
+        },
+        chest: {
+            setID: 187,
+            slotID: "chest",
+    
+            setName: "Knight Squire",
+            name: "Squire's Cuirass",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [1, 1],
+            skills: [
+                [__generated_skill__razor_sharp, 1],
+                [__generated_skill__flinch_free, 1],
+                [__generated_skill__offensive_guard, 2],
+            ],
+
+            defenseAtLevel1: 100,
+
+            fireRes:1,
+            waterRes: 1,
+            thunderRes: 1,
+            iceRes: 1,
+            dragonRes: 1,
+    
+            filterHelpers: {
+                nameLower: "squire'scuirass",
+                setNameLower: "knightsquire",
+                hintStrLower: "damefiorayne",
+            },
+        },
+        arms: {
+            setID: 187,
+            slotID: "arms",
+    
+            setName: "Knight Squire",
+            name: "Squire's Braces",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [2, 1],
+            skills: [
+                [__generated_skill__guard_up, 3],
+                [__generated_skill__flinch_free, 2],
+            ],
+
+            defenseAtLevel1: 100,
+
+            fireRes:1,
+            waterRes: 1,
+            thunderRes: 1,
+            iceRes: 1,
+            dragonRes: 1,
+    
+            filterHelpers: {
+                nameLower: "squire'sbraces",
+                setNameLower: "knightsquire",
+                hintStrLower: "damefiorayne",
+            },
+        },
+        waist: {
+            setID: 187,
+            slotID: "waist",
+    
+            setName: "Knight Squire",
+            name: "Squire's Belt",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [3],
+            skills: [
+                [__generated_skill__weakness_exploit, 1],
+                [__generated_skill__critical_boost, 1],
+                [__generated_skill__offensive_guard, 1],
+            ],
+
+            defenseAtLevel1: 100,
+
+            fireRes:1,
+            waterRes: 1,
+            thunderRes: 1,
+            iceRes: 1,
+            dragonRes: 1,
+    
+            filterHelpers: {
+                nameLower: "squire'sbelt",
+                setNameLower: "knightsquire",
+                hintStrLower: "damefiorayne",
+            },
+        },
+        legs: {
+            setID: 187,
+            slotID: "legs",
+    
+            setName: "Knight Squire",
+            name: "Squire's Greaves",
+            rarity: 8,
+            tierID: "mr",
+            decorationSlots: [3, 1],
+            skills: [
+                [__generated_skill__razor_sharp, 2],
+                [__generated_skill__critical_boost, 1],
+            ],
+
+            defenseAtLevel1: 100,
+
+            fireRes:1,
+            waterRes: 1,
+            thunderRes: 1,
+            iceRes: 1,
+            dragonRes: 1,
+    
+            filterHelpers: {
+                nameLower: "squire'sgreaves",
+                setNameLower: "knightsquire",
+                hintStrLower: "damefiorayne",
+            },
+        },
+    },
+    {
+        id: 300,
+        name: "Magmadron",
+        head: {
+            setID: 300,
+            slotID: "head",
+    
+            setName: "Magmadron",
+            name: "Magmadron Helm",
+            rarity: 9,
+            tierID: "mr",
+            decorationSlots: [3],
+            skills: [
+                [__generated_skill__resentment, 1],
+                [__generated_skill__heroics, 2],
+                [__generated_skill__fire_attack, 3],
+            ],
+
+            defenseAtLevel1: 112,
+
+            fireRes:5,
+            waterRes: -5,
+            thunderRes: 0,
+            iceRes: -4,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "magmadronhelm",
+                setNameLower: "magmadron",
+                hintStrLower: "",
+            },
+        },
+        chest: {
+            setID: 300,
+            slotID: "chest",
+    
+            setName: "Magmadron",
+            name: "Magmadron Mail",
+            rarity: 9,
+            tierID: "mr",
+            decorationSlots: [4, 1],
+            skills: [
+                [__generated_skill__resuscitate, 1],
+                [__generated_skill__heroics, 2],
+            ],
+
+            defenseAtLevel1: 112,
+
+            fireRes:5,
+            waterRes: -5,
+            thunderRes: 0,
+            iceRes: -4,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "magmadronmail",
+                setNameLower: "magmadron",
+                hintStrLower: "",
+            },
+        },
+        arms: {
+            setID: 300,
+            slotID: "arms",
+    
+            setName: "Magmadron",
+            name: "Magmadron Vambraces",
+            rarity: 9,
+            tierID: "mr",
+            decorationSlots: [3],
+            skills: [
+                [__generated_skill__resentment, 1],
+                [__generated_skill__guard_up, 2],
+                [__generated_skill__heroics, 1],
+            ],
+
+            defenseAtLevel1: 112,
+
+            fireRes:5,
+            waterRes: -5,
+            thunderRes: 0,
+            iceRes: -4,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "magmadronvambraces",
+                setNameLower: "magmadron",
+                hintStrLower: "",
+            },
+        },
+        waist: {
+            setID: 300,
+            slotID: "waist",
+    
+            setName: "Magmadron",
+            name: "Magmadron Coil",
+            rarity: 9,
+            tierID: "mr",
+            decorationSlots: [3, 3],
+            skills: [
+                [__generated_skill__resuscitate, 1],
+                [__generated_skill__guard_up, 1],
+            ],
+
+            defenseAtLevel1: 112,
+
+            fireRes:5,
+            waterRes: -5,
+            thunderRes: 0,
+            iceRes: -4,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "magmadroncoil",
+                setNameLower: "magmadron",
+                hintStrLower: "",
+            },
+        },
+        legs: {
+            setID: 300,
+            slotID: "legs",
+    
+            setName: "Magmadron",
+            name: "Magmadron Greaves",
+            rarity: 9,
+            tierID: "mr",
+            decorationSlots: [3, 3],
+            skills: [
+                [__generated_skill__resuscitate, 1],
+                [__generated_skill__resentment, 1],
+            ],
+
+            defenseAtLevel1: 112,
+
+            fireRes:5,
+            waterRes: -5,
+            thunderRes: 0,
+            iceRes: -4,
+            dragonRes: 0,
+    
+            filterHelpers: {
+                nameLower: "magmadrongreaves",
+                setNameLower: "magmadron",
+                hintStrLower: "",
+            },
+        },
+    },
+    {
+        id: 400,
+        name: "Archfiend Armor",
+        head: {
+            setID: 400,
+            slotID: "head",
+    
+            setName: "Archfiend Armor",
+            name: "Archfiend Armor Cerato",
+            rarity: 10,
+            tierID: "mr",
+            decorationSlots: [4, 2],
+            skills: [
+                [__generated_skill__weakness_exploit, 1],
+                [__generated_skill__resentment, 2],
+            ],
+
+            defenseAtLevel1: 126,
+
+            fireRes:0,
+            waterRes: 3,
+            thunderRes: -2,
+            iceRes: 3,
+            dragonRes: -5,
+    
+            filterHelpers: {
+                nameLower: "archfiendarmorcerato",
+                setNameLower: "archfiendarmor",
+                hintStrLower: "gaismagorm",
+            },
+        },
+        chest: {
+            setID: 400,
+            slotID: "chest",
+    
+            setName: "Archfiend Armor",
+            name: "Archfiend Armor Baulo",
+            rarity: 10,
+            tierID: "mr",
+            decorationSlots: [3, 2],
+            skills: [
+                [__generated_skill__weakness_exploit, 1],
+                [__generated_skill__resentment, 1],
+                [__generated_skill__chain_crit, 1],
+            ],
+
+            defenseAtLevel1: 126,
+
+            fireRes:0,
+            waterRes: 3,
+            thunderRes: -2,
+            iceRes: 3,
+            dragonRes: -5,
+    
+            filterHelpers: {
+                nameLower: "archfiendarmorbaulo",
+                setNameLower: "archfiendarmor",
+                hintStrLower: "gaismagorm",
+            },
+        },
+        arms: {
+            setID: 400,
+            slotID: "arms",
+    
+            setName: "Archfiend Armor",
+            name: "Archfiend Armor Epine",
+            rarity: 10,
+            tierID: "mr",
+            decorationSlots: [4],
+            skills: [
+                [__generated_skill__dereliction, 2],
+                [__generated_skill__resentment, 1],
+            ],
+
+            defenseAtLevel1: 126,
+
+            fireRes:0,
+            waterRes: 3,
+            thunderRes: -2,
+            iceRes: 3,
+            dragonRes: -5,
+    
+            filterHelpers: {
+                nameLower: "archfiendarmorepine",
+                setNameLower: "archfiendarmor",
+                hintStrLower: "gaismagorm",
+            },
+        },
+        waist: {
+            setID: 400,
+            slotID: "waist",
+    
+            setName: "Archfiend Armor",
+            name: "Archfiend Armor Ura",
+            rarity: 10,
+            tierID: "mr",
+            decorationSlots: [4],
+            skills: [
+                [__generated_skill__weakness_exploit, 1],
+                [__generated_skill__chain_crit, 2],
+            ],
+
+            defenseAtLevel1: 126,
+
+            fireRes:0,
+            waterRes: 3,
+            thunderRes: -2,
+            iceRes: 3,
+            dragonRes: -5,
+    
+            filterHelpers: {
+                nameLower: "archfiendarmorura",
+                setNameLower: "archfiendarmor",
+                hintStrLower: "gaismagorm",
+            },
+        },
+        legs: {
+            setID: 400,
+            slotID: "legs",
+    
+            setName: "Archfiend Armor",
+            name: "Archfiend Armor Sceros",
+            rarity: 10,
+            tierID: "mr",
+            decorationSlots: [3, 2, 2],
+            skills: [
+                [__generated_skill__dereliction, 1],
+                [__generated_skill__resentment, 1],
+            ],
+
+            defenseAtLevel1: 126,
+
+            fireRes:0,
+            waterRes: 3,
+            thunderRes: -2,
+            iceRes: 3,
+            dragonRes: -5,
+    
+            filterHelpers: {
+                nameLower: "archfiendarmorsceros",
+                setNameLower: "archfiendarmor",
+                hintStrLower: "gaismagorm",
             },
         },
     },

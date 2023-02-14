@@ -44,12 +44,14 @@ import {
     __generated_skill__artillery,
     __generated_skill__attack_boost,
     __generated_skill__ballistics,
+    __generated_skill__bladescale_hone,
     __generated_skill__blast_attack,
     __generated_skill__blast_resistance,
     __generated_skill__blight_resistance,
     __generated_skill__bludgeoner,
     __generated_skill__bombardier,
     __generated_skill__botanist,
+    __generated_skill__bow_charge_plus,
     __generated_skill__bubbly_dance,
     __generated_skill__carving_pro,
     __generated_skill__constitution,
@@ -107,13 +109,15 @@ import {
     __generated_skill__power_prolonger,
     __generated_skill__protective_polish,
     __generated_skill__punishing_draw,
-    __generated_skill__quick_sheath,
+    __generated_skill__quick_breath,
+    __generated_skill__quick_sheathe,
     __generated_skill__rapid_fire_up,
     __generated_skill__rapid_morph,
     __generated_skill__razor_sharp,
     __generated_skill__recoil_down,
     __generated_skill__recovery_speed,
     __generated_skill__recovery_up,
+    __generated_skill__redirection,
     __generated_skill__reload_speed,
     __generated_skill__resentment,
     __generated_skill__resuscitate,
@@ -133,6 +137,7 @@ import {
     __generated_skill__thunder_resistance,
     __generated_skill__tremor_resistance,
     __generated_skill__wall_runner,
+    __generated_skill__wall_runner_boost,
     __generated_skill__water_attack,
     __generated_skill__water_resistance,
     __generated_skill__weakness_exploit,
@@ -142,6 +147,981 @@ import {
 } from "./_generated_skills";
 
 export const decosArray: Readonly<Decoration[]> = [
+    {
+        id: 102,
+        name: "Fate Jewel+ 4",
+
+        slotSize: 4,
+        rarity: 9,
+        skills: [
+            [__generated_skill__good_luck, 2],
+        ],
+
+        icon: "yellow",
+        filterHelpers: {
+            nameLower: "fatejewel+4",
+        }
+    },
+    {
+        id: 103,
+        name: "Hellfire Jewel+ 4",
+
+        slotSize: 4,
+        rarity: 9,
+        skills: [
+            [__generated_skill__hellfire_cloak, 2],
+        ],
+
+        icon: "purple",
+        filterHelpers: {
+            nameLower: "hellfirejewel+4",
+        }
+    },
+    {
+        id: 104,
+        name: "Enhancer Jewel+ 4",
+
+        slotSize: 4,
+        rarity: 9,
+        skills: [
+            [__generated_skill__power_prolonger, 2],
+        ],
+
+        icon: "brown",
+        filterHelpers: {
+            nameLower: "enhancerjewel+4",
+        }
+    },
+    {
+        id: 105,
+        name: "Earplug Jewel+ 4",
+
+        slotSize: 4,
+        rarity: 9,
+        skills: [
+            [__generated_skill__earplugs, 2],
+        ],
+
+        icon: "white",
+        filterHelpers: {
+            nameLower: "earplugjewel+4",
+        }
+    },
+    {
+        id: 106,
+        name: "Fungiform Jewel+ 4",
+
+        slotSize: 4,
+        rarity: 9,
+        skills: [
+            [__generated_skill__mushroomancer, 2],
+        ],
+
+        icon: "purple",
+        filterHelpers: {
+            nameLower: "fungiformjewel+4",
+        }
+    },
+    {
+        id: 107,
+        name: "Draw Jewel+ 4",
+
+        slotSize: 4,
+        rarity: 9,
+        skills: [
+            [__generated_skill__critical_draw, 2],
+        ],
+
+        icon: "pink",
+        filterHelpers: {
+            nameLower: "drawjewel+4",
+        }
+    },
+    {
+        id: 108,
+        name: "Precise Jewel+ 4",
+
+        slotSize: 4,
+        rarity: 9,
+        skills: [
+            [__generated_skill__ballistics, 2],
+        ],
+
+        icon: "white",
+        filterHelpers: {
+            nameLower: "precisejewel+4",
+        }
+    },
+    {
+        id: 109,
+        name: "Wirebug Jewel+ 4",
+
+        slotSize: 4,
+        rarity: 9,
+        skills: [
+            [__generated_skill__wirebug_whisperer, 2],
+        ],
+
+        icon: "lightblue",
+        filterHelpers: {
+            nameLower: "wirebugjewel+4",
+        }
+    },
+    {
+        id: 110,
+        name: "Mind's Eye Jewel+ 4",
+
+        slotSize: 4,
+        rarity: 9,
+        skills: [
+            [__generated_skill__minds_eye, 2],
+        ],
+
+        icon: "white",
+        filterHelpers: {
+            nameLower: "mind'seyejewel+4",
+        }
+    },
+    {
+        id: 111,
+        name: "Sprinter Jewel+ 4",
+
+        slotSize: 4,
+        rarity: 9,
+        skills: [
+            [__generated_skill__marathon_runner, 2],
+        ],
+
+        icon: "gold",
+        filterHelpers: {
+            nameLower: "sprinterjewel+4",
+        }
+    },
+    {
+        id: 112,
+        name: "Refresh Jewel+ 4",
+
+        slotSize: 4,
+        rarity: 9,
+        skills: [
+            [__generated_skill__stamina_surge, 2],
+        ],
+
+        icon: "gold",
+        filterHelpers: {
+            nameLower: "refreshjewel+4",
+        }
+    },
+    {
+        id: 113,
+        name: "KO Jewel+ 4",
+
+        slotSize: 4,
+        rarity: 9,
+        skills: [
+            [__generated_skill__slugger, 2],
+        ],
+
+        icon: "yellow",
+        filterHelpers: {
+            nameLower: "kojewel+4",
+        }
+    },
+    {
+        id: 114,
+        name: "Bubble Jewel+ 4",
+
+        slotSize: 4,
+        rarity: 9,
+        skills: [
+            [__generated_skill__bubbly_dance, 2],
+        ],
+
+        icon: "white",
+        filterHelpers: {
+            nameLower: "bubblejewel+4",
+        }
+    },
+    {
+        id: 115,
+        name: "Physique Jewel+ 4",
+
+        slotSize: 4,
+        rarity: 9,
+        skills: [
+            [__generated_skill__constitution, 2],
+        ],
+
+        icon: "gold",
+        filterHelpers: {
+            nameLower: "physiquejewel+4",
+        }
+    },
+    {
+        id: 116,
+        name: "Footing Jewel+ 4",
+
+        slotSize: 4,
+        rarity: 9,
+        skills: [
+            [__generated_skill__tremor_resistance, 2],
+        ],
+
+        icon: "grey",
+        filterHelpers: {
+            nameLower: "footingjewel+4",
+        }
+    },
+    {
+        id: 117,
+        name: "Hard Brace Jewel 4",
+
+        slotSize: 4,
+        rarity: 9,
+        skills: [
+            [__generated_skill__flinch_free, 3],
+        ],
+
+        icon: "grey",
+        filterHelpers: {
+            nameLower: "hardbracejewel4",
+        }
+    },
+    {
+        id: 118,
+        name: "Resistor Jewel+ 4",
+
+        slotSize: 4,
+        rarity: 9,
+        skills: [
+            [__generated_skill__blight_resistance, 2],
+        ],
+
+        icon: "darkblue",
+        filterHelpers: {
+            nameLower: "resistorjewel+4",
+        }
+    },
+    {
+        id: 119,
+        name: "Hard Grinder Jewel 4",
+
+        slotSize: 4,
+        rarity: 9,
+        skills: [
+            [__generated_skill__speed_sharpening, 3],
+        ],
+
+        icon: "yellow",
+        filterHelpers: {
+            nameLower: "hardgrinderjewel4",
+        }
+    },
+    {
+        id: 120,
+        name: "Hard Drain Jewel 4",
+
+        slotSize: 4,
+        rarity: 9,
+        skills: [
+            [__generated_skill__stamina_thief, 3],
+        ],
+
+        icon: "darkblue",
+        filterHelpers: {
+            nameLower: "harddrainjewel4",
+        }
+    },
+    {
+        id: 121,
+        name: "Hard Blaze Jewel 3",
+
+        slotSize: 3,
+        rarity: 9,
+        skills: [
+            [__generated_skill__fire_attack, 3],
+        ],
+
+        icon: "red",
+        filterHelpers: {
+            nameLower: "hardblazejewel3",
+        }
+    },
+    {
+        id: 122,
+        name: "Hard Stream Jewel 3",
+
+        slotSize: 3,
+        rarity: 9,
+        skills: [
+            [__generated_skill__water_attack, 3],
+        ],
+
+        icon: "blue",
+        filterHelpers: {
+            nameLower: "hardstreamjewel3",
+        }
+    },
+    {
+        id: 123,
+        name: "Hard Bolt Jewel 3",
+
+        slotSize: 3,
+        rarity: 9,
+        skills: [
+            [__generated_skill__thunder_attack, 3],
+        ],
+
+        icon: "yellow",
+        filterHelpers: {
+            nameLower: "hardboltjewel3",
+        }
+    },
+    {
+        id: 124,
+        name: "Hard Frost Jewel 3",
+
+        slotSize: 3,
+        rarity: 9,
+        skills: [
+            [__generated_skill__ice_attack, 3],
+        ],
+
+        icon: "lightblue",
+        filterHelpers: {
+            nameLower: "hardfrostjewel3",
+        }
+    },
+    {
+        id: 125,
+        name: "Hard Dragon Jewel 3",
+
+        slotSize: 3,
+        rarity: 9,
+        skills: [
+            [__generated_skill__dragon_attack, 3],
+        ],
+
+        icon: "orange",
+        filterHelpers: {
+            nameLower: "harddragonjewel3",
+        }
+    },
+    {
+        id: 126,
+        name: "Mighty Bow Jewel 4",
+
+        slotSize: 4,
+        rarity: 10,
+        skills: [
+            [__generated_skill__bow_charge_plus, 1],
+        ],
+
+        icon: "green",
+        filterHelpers: {
+            nameLower: "mightybowjewel4",
+        }
+    },
+    {
+        id: 127,
+        name: "Flywall Jewel 1",
+
+        slotSize: 1,
+        rarity: 9,
+        skills: [
+            [__generated_skill__wall_runner_boost, 1],
+        ],
+
+        icon: "green",
+        filterHelpers: {
+            nameLower: "flywalljewel1",
+        }
+    },
+    {
+        id: 128,
+        name: "Bladescale Jewel 2",
+
+        slotSize: 2,
+        rarity: 9,
+        skills: [
+            [__generated_skill__bladescale_hone, 1],
+        ],
+
+        icon: "yellow",
+        filterHelpers: {
+            nameLower: "bladescalejewel2",
+        }
+    },
+    {
+        id: 129,
+        name: "Crit Element Jewel+ 4",
+
+        slotSize: 4,
+        rarity: 9,
+        skills: [
+            [__generated_skill__critical_element, 2],
+        ],
+
+        icon: "darkblue",
+        filterHelpers: {
+            nameLower: "critelementjewel+4",
+        }
+    },
+    {
+        id: 130,
+        name: "Hard Defense Jewel++ 4",
+
+        slotSize: 4,
+        rarity: 10,
+        skills: [
+            [__generated_skill__defense_boost, 5],
+        ],
+
+        icon: "gold",
+        filterHelpers: {
+            nameLower: "harddefensejewel++4",
+        }
+    },
+    {
+        id: 131,
+        name: "Redirection Jewel 3",
+
+        slotSize: 3,
+        rarity: 9,
+        skills: [
+            [__generated_skill__redirection, 1],
+        ],
+
+        icon: "green",
+        filterHelpers: {
+            nameLower: "redirectionjewel3",
+        }
+    },
+    {
+        id: 132,
+        name: "Hard Friendship Jewel+ 4",
+
+        slotSize: 4,
+        rarity: 9,
+        skills: [
+            [__generated_skill__wide_range, 4],
+        ],
+
+        icon: "white",
+        filterHelpers: {
+            nameLower: "hardfriendshipjewel+4",
+        }
+    },
+    {
+        id: 133,
+        name: "Breath Jewel 3",
+
+        slotSize: 3,
+        rarity: 8,
+        skills: [
+            [__generated_skill__quick_breath, 1],
+        ],
+
+        icon: "green",
+        filterHelpers: {
+            nameLower: "breathjewel3",
+        }
+    },
+    {
+        id: 134,
+        name: "Hard Defense Jewel 3",
+
+        slotSize: 3,
+        rarity: 9,
+        skills: [
+            [__generated_skill__defense_boost, 3],
+        ],
+
+        icon: "gold",
+        filterHelpers: {
+            nameLower: "harddefensejewel3",
+        }
+    },
+    {
+        id: 135,
+        name: "Hard Steadfast Jewel 4",
+
+        slotSize: 4,
+        rarity: 8,
+        skills: [
+            [__generated_skill__stun_resistance, 3],
+        ],
+
+        icon: "yellow",
+        filterHelpers: {
+            nameLower: "hardsteadfastjewel4",
+        }
+    },
+    {
+        id: 136,
+        name: "Shield Jewel+ 4",
+
+        slotSize: 4,
+        rarity: 8,
+        skills: [
+            [__generated_skill__guard_up, 2],
+        ],
+
+        icon: "white",
+        filterHelpers: {
+            nameLower: "shieldjewel+4",
+        }
+    },
+    {
+        id: 137,
+        name: "Ironwall Jewel+ 3",
+
+        slotSize: 3,
+        rarity: 8,
+        skills: [
+            [__generated_skill__guard, 2],
+        ],
+
+        icon: "grey",
+        filterHelpers: {
+            nameLower: "ironwalljewel+3",
+        }
+    },
+    {
+        id: 138,
+        name: "Jumping Jewel+ 4",
+
+        slotSize: 4,
+        rarity: 8,
+        skills: [
+            [__generated_skill__evade_extender, 2],
+        ],
+
+        icon: "lightblue",
+        filterHelpers: {
+            nameLower: "jumpingjewel+4",
+        }
+    },
+    {
+        id: 139,
+        name: "Gambit Jewel+ 4",
+
+        slotSize: 4,
+        rarity: 8,
+        skills: [
+            [__generated_skill__punishing_draw, 2],
+        ],
+
+        icon: "yellow",
+        filterHelpers: {
+            nameLower: "gambitjewel+4",
+        }
+    },
+    {
+        id: 140,
+        name: "Evasion Jewel+ 4",
+
+        slotSize: 4,
+        rarity: 8,
+        skills: [
+            [__generated_skill__evade_window, 2],
+        ],
+
+        icon: "lightblue",
+        filterHelpers: {
+            nameLower: "evasionjewel+4",
+        }
+    },
+    {
+        id: 141,
+        name: "Hard Wall Run Jewel 4",
+
+        slotSize: 4,
+        rarity: 8,
+        skills: [
+            [__generated_skill__wall_runner, 3],
+        ],
+
+        icon: "green",
+        filterHelpers: {
+            nameLower: "hardwallrunjewel4",
+        }
+    },
+    {
+        id: 142,
+        name: "Hard Satiated Jewel 4",
+
+        slotSize: 4,
+        rarity: 8,
+        skills: [
+            [__generated_skill__free_meal, 3],
+        ],
+
+        icon: "brown",
+        filterHelpers: {
+            nameLower: "hardsatiatedjewel4",
+        }
+    },
+    {
+        id: 143,
+        name: "Charger Jewel+ 4",
+
+        slotSize: 4,
+        rarity: 8,
+        skills: [
+            [__generated_skill__focus, 2],
+        ],
+
+        icon: "white",
+        filterHelpers: {
+            nameLower: "chargerjewel+4",
+        }
+    },
+    {
+        id: 144,
+        name: "Hard Wind Res Jewel 4",
+
+        slotSize: 4,
+        rarity: 8,
+        skills: [
+            [__generated_skill__windproof, 3],
+        ],
+
+        icon: "white",
+        filterHelpers: {
+            nameLower: "hardwindresjewel4",
+        }
+    },
+    {
+        id: 145,
+        name: "Hard Friendship Jewel 3",
+
+        slotSize: 3,
+        rarity: 8,
+        skills: [
+            [__generated_skill__wide_range, 3],
+        ],
+
+        icon: "white",
+        filterHelpers: {
+            nameLower: "hardfriendshipjewel3",
+        }
+    },
+    {
+        id: 146,
+        name: "Gobbler Jewel+ 4",
+
+        slotSize: 4,
+        rarity: 8,
+        skills: [
+            [__generated_skill__speed_eating, 2],
+        ],
+
+        icon: "gold",
+        filterHelpers: {
+            nameLower: "gobblerjewel+4",
+        }
+    },
+    {
+        id: 147,
+        name: "Protection Jewel+ 4",
+
+        slotSize: 4,
+        rarity: 8,
+        skills: [
+            [__generated_skill__divine_blessing, 2],
+        ],
+
+        icon: "white",
+        filterHelpers: {
+            nameLower: "protectionjewel+4",
+        }
+    },
+    {
+        id: 148,
+        name: "Hard Recovery Jewel 4",
+
+        slotSize: 4,
+        rarity: 8,
+        skills: [
+            [__generated_skill__recovery_speed, 3],
+        ],
+
+        icon: "green",
+        filterHelpers: {
+            nameLower: "hardrecoveryjewel4",
+        }
+    },
+    {
+        id: 149,
+        name: "Medicine Jewel+ 4",
+
+        slotSize: 4,
+        rarity: 8,
+        skills: [
+            [__generated_skill__recovery_up, 2],
+        ],
+
+        icon: "green",
+        filterHelpers: {
+            nameLower: "medicinejewel+4",
+        }
+    },
+    {
+        id: 150,
+        name: "Hard Bomber Jewel 4",
+
+        slotSize: 4,
+        rarity: 8,
+        skills: [
+            [__generated_skill__bombardier, 3],
+        ],
+
+        icon: "orange",
+        filterHelpers: {
+            nameLower: "hardbomberjewel4",
+        }
+    },
+    {
+        id: 151,
+        name: "Defense Jewel+ 2",
+
+        slotSize: 2,
+        rarity: 8,
+        skills: [
+            [__generated_skill__defense_boost, 2],
+        ],
+
+        icon: "gold",
+        filterHelpers: {
+            nameLower: "defensejewel+2",
+        }
+    },
+    {
+        id: 152,
+        name: "Blaze Jewel+ 2",
+
+        slotSize: 2,
+        rarity: 8,
+        skills: [
+            [__generated_skill__fire_attack, 2],
+        ],
+
+        icon: "red",
+        filterHelpers: {
+            nameLower: "blazejewel+2",
+        }
+    },
+    {
+        id: 153,
+        name: "Stream Jewel+ 2",
+
+        slotSize: 2,
+        rarity: 8,
+        skills: [
+            [__generated_skill__water_attack, 2],
+        ],
+
+        icon: "blue",
+        filterHelpers: {
+            nameLower: "streamjewel+2",
+        }
+    },
+    {
+        id: 154,
+        name: "Bolt Jewel+ 2",
+
+        slotSize: 2,
+        rarity: 8,
+        skills: [
+            [__generated_skill__thunder_attack, 2],
+        ],
+
+        icon: "yellow",
+        filterHelpers: {
+            nameLower: "boltjewel+2",
+        }
+    },
+    {
+        id: 155,
+        name: "Frost Jewel+ 2",
+
+        slotSize: 2,
+        rarity: 8,
+        skills: [
+            [__generated_skill__ice_attack, 2],
+        ],
+
+        icon: "lightblue",
+        filterHelpers: {
+            nameLower: "frostjewel+2",
+        }
+    },
+    {
+        id: 156,
+        name: "Dragon Jewel+ 2",
+
+        slotSize: 2,
+        rarity: 8,
+        skills: [
+            [__generated_skill__dragon_attack, 2],
+        ],
+
+        icon: "orange",
+        filterHelpers: {
+            nameLower: "dragonjewel+2",
+        }
+    },
+    {
+        id: 157,
+        name: "Hard Hungerless Jewel 4",
+
+        slotSize: 4,
+        rarity: 8,
+        skills: [
+            [__generated_skill__hunger_resistance, 3],
+        ],
+
+        icon: "gold",
+        filterHelpers: {
+            nameLower: "hardhungerlessjewel4",
+        }
+    },
+    {
+        id: 158,
+        name: "Hard Enduring Jewel 4",
+
+        slotSize: 4,
+        rarity: 8,
+        skills: [
+            [__generated_skill__item_prolonger, 3],
+        ],
+
+        icon: "brown",
+        filterHelpers: {
+            nameLower: "hardenduringjewel4",
+        }
+    },
+    {
+        id: 159,
+        name: "Hard Geology Jewel 4",
+
+        slotSize: 4,
+        rarity: 8,
+        skills: [
+            [__generated_skill__geologist, 3],
+        ],
+
+        icon: "brown",
+        filterHelpers: {
+            nameLower: "hardgeologyjewel4",
+        }
+    },
+    {
+        id: 160,
+        name: "Hard Botany Jewel 4",
+
+        slotSize: 4,
+        rarity: 8,
+        skills: [
+            [__generated_skill__botanist, 3],
+        ],
+
+        icon: "green",
+        filterHelpers: {
+            nameLower: "hardbotanyjewel4",
+        }
+    },
+    {
+        id: 161,
+        name: "Hard Fire Res Jewel 4",
+
+        slotSize: 4,
+        rarity: 8,
+        skills: [
+            [__generated_skill__fire_resistance, 3],
+        ],
+
+        icon: "red",
+        filterHelpers: {
+            nameLower: "hardfireresjewel4",
+        }
+    },
+    {
+        id: 162,
+        name: "Hard Water Res Jewel 4",
+
+        slotSize: 4,
+        rarity: 8,
+        skills: [
+            [__generated_skill__water_resistance, 3],
+        ],
+
+        icon: "blue",
+        filterHelpers: {
+            nameLower: "hardwaterresjewel4",
+        }
+    },
+    {
+        id: 163,
+        name: "Hard Thunder Res Jewel 4",
+
+        slotSize: 4,
+        rarity: 8,
+        skills: [
+            [__generated_skill__thunder_resistance, 3],
+        ],
+
+        icon: "yellow",
+        filterHelpers: {
+            nameLower: "hardthunderresjewel4",
+        }
+    },
+    {
+        id: 164,
+        name: "Hard Ice Res Jewel 4",
+
+        slotSize: 4,
+        rarity: 8,
+        skills: [
+            [__generated_skill__ice_resistance, 3],
+        ],
+
+        icon: "lightblue",
+        filterHelpers: {
+            nameLower: "hardiceresjewel4",
+        }
+    },
+    {
+        id: 165,
+        name: "Hard Dragon Res Jewel 4",
+
+        slotSize: 4,
+        rarity: 8,
+        skills: [
+            [__generated_skill__dragon_resistance, 3],
+        ],
+
+        icon: "orange",
+        filterHelpers: {
+            nameLower: "harddragonresjewel4",
+        }
+    },
+    {
+        id: 166,
+        name: "Sniper Jewel+ 4",
+
+        slotSize: 4,
+        rarity: 8,
+        skills: [
+            [__generated_skill__steadiness, 3],
+        ],
+
+        icon: "grey",
+        filterHelpers: {
+            nameLower: "sniperjewel+4",
+        }
+    },
     {
         id: 1,
         name: "Mastery Jewel 2",
@@ -989,7 +1969,7 @@ export const decosArray: Readonly<Decoration[]> = [
         slotSize: 2,
         rarity: 5,
         skills: [
-            [__generated_skill__quick_sheath, 1],
+            [__generated_skill__quick_sheathe, 1],
         ],
 
         icon: "brown",
@@ -1067,7 +2047,7 @@ export const decosArray: Readonly<Decoration[]> = [
             [__generated_skill__blight_resistance, 1],
         ],
 
-        icon: "blue",
+        icon: "darkblue",
         filterHelpers: {
             nameLower: "resistorjewel2",
         }

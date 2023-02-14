@@ -9,6 +9,13 @@
     "Belt",
     "Pants"
 ],
+"scheme_1b": [
+    "Headgear",
+    "Vest",
+    "Gloves",
+    "Belt",
+    "Trousers"
+],
 "scheme_2": [
     "Helm",
     "Mail",
@@ -40,6 +47,13 @@
 
 
 
+"archfiend_armor": [
+    "Cerato",
+    "Baulo",
+    "Epine",
+    "Ura",
+    "Sceros"
+],
 "azure_age": [
     "Hair",
     "Haori",
@@ -111,6 +125,13 @@
     "---",
     "---"
 ],
+"five_element": [
+    "Mask",
+    "Garb",
+    "Arms",
+    "Obi",
+    "Legwear"
+],
 "flame_seal": [
     "Seal",
     "---",
@@ -124,6 +145,13 @@
     "Kote",
     "Obi",
     "Hakama"
+],
+"hornetaur_velociprey": [
+    "Helm",
+    "Mail",
+    "Braces",
+    "Tassets",
+    "Greaves"
 ],
 "ibushi": [
     "Ibushi's Helm",
@@ -166,6 +194,13 @@
     "Braces",
     "Obi",
     "Leggings"
+],
+"knight_squire": [
+    "Earrings",
+    "Cuirass",
+    "Braces",
+    "Belt",
+    "Greaves"
 ],
 "kushala": [
     "Glare",
@@ -276,6 +311,13 @@
     "Mask",
     "Chest",
     "Braces",
+    "Tassets",
+    "Greaves"
+],
+"vespoid": [
+    "Helm",
+    "Mail",
+    "Vambraces",
     "Tassets",
     "Greaves"
 ],

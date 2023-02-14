@@ -44,22 +44,42 @@ array_entry_fmt = """\
     }},\
 """
 
-def generate_decos_source_file(json_data):
+def generate_decos_source_file(json_data, scraped_json_data):
     assert isinstance(json_data, list)
+    assert isinstance(scraped_json_data, list)
+
+    ##########################################################################
+    # STEP 1: Process scraped data (which will be used later for validation) #
+    ##########################################################################
+
+    scraped_names = set()
+    for obj in scraped_json_data:
+        scraped_names.add(obj["deco_name"])
+
+    #######################################
+    # STEP 2: Process the real input data #
+    #######################################
 
     entries = []
     skills_found = set()
+    names_found = set()
     for [deco_id, obj] in json_data:
         assert isinstance(deco_id, int)
         assert isinstance(obj, dict)
 
-        assert isinstance(obj["name"], str)
+        assert isinstance(obj.get("name"), str) or isinstance(obj.get("verbatimName"), str)
         assert isinstance(obj["slotSize"], int)
         assert isinstance(obj["rarity"], int)
         assert isinstance(obj["skills"], dict)
         assert isinstance(obj["icon"], str)
 
-        actual_name = obj["name"] + " Jewel " + str(obj["slotSize"])
+        actual_name = None
+        if isinstance(obj.get("verbatimName"), str):
+            actual_name = obj["verbatimName"]
+            assert str(obj["slotSize"]) in actual_name # We expect the jewel size to be in there somewhere
+        else:
+            actual_name = obj["name"] + " Jewel " + str(obj["slotSize"])
+        names_found.add(actual_name)
 
         skills_entries = []
         for (k, v) in obj["skills"].items():
@@ -83,6 +103,23 @@ def generate_decos_source_file(json_data):
     for skill_obj_name in skills_found:
         skills_entries.append(skills_import_fmt.format(obj_name=skill_obj_name))
     skills_entries.sort() # Makes the final output stable so we don't get git diffs all the time
+
+    ######################
+    # STEP 3: Validation #
+    ######################
+
+    if scraped_names == names_found:
+        print("    Decorations validated against scraped data. No issues found.")
+    if scraped_names != names_found:
+        print("    WARNING: Hardcoded decorations does not match scraped decorations.")
+        s1 = scraped_names - names_found
+        s2 = names_found - scraped_names
+        if len(s1) > 0:
+            print("        Names unique to scraped data:")
+            print("\n".join(f"            {x}" for x in s1))
+        if len(s2) > 0:
+            print("        Names unique to hardcoded data:")
+            print("\n".join(f"            {x}" for x in s2))
 
     return source_template.format(
         skill_imports="\n".join(skills_entries),

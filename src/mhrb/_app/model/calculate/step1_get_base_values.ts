@@ -372,8 +372,8 @@ function getBaseValues(
             }
             if (v.meleeStats === null) throw "Null value";
             // TODO: Check if the sharpness bars are rampage weapon default bars?
-            v.meleeStats.minSharpness = [100,150,50,20,30,0];
-            v.meleeStats.maxSharpness = [100,150,50,20,30,50];
+            v.meleeStats.minSharpness = [100,150,50,20,30,0,0];
+            v.meleeStats.maxSharpness = [100,150,50,20,30,50,0];
         }],
         ["sharpness_type_2", ()=>{
             if (!isMelee(weapon)) {
@@ -382,8 +382,8 @@ function getBaseValues(
             }
             if (v.meleeStats === null) throw "Null value";
             // TODO: Check if the sharpness bars are rampage weapon default bars?
-            v.meleeStats.minSharpness = [20,80,150,100,0,0];
-            v.meleeStats.maxSharpness = [20,80,150,100,40,10];
+            v.meleeStats.minSharpness = [20,80,150,100,0,0,0];
+            v.meleeStats.maxSharpness = [20,80,150,100,40,10,0];
         }],
         ["sharpness_type_3", ()=>{
             if (!isMelee(weapon)) {
@@ -392,8 +392,8 @@ function getBaseValues(
             }
             if (v.meleeStats === null) throw "Null value";
             // TODO: Check if the sharpness bars are rampage weapon default bars?
-            v.meleeStats.minSharpness = [70,70,30,30,100,0];
-            v.meleeStats.maxSharpness = [70,70,30,30,150,0];
+            v.meleeStats.minSharpness = [70,70,30,30,100,0,0];
+            v.meleeStats.maxSharpness = [70,70,30,30,150,0,0];
 
             v.baseRawAdd += -10;
         }],
@@ -404,8 +404,8 @@ function getBaseValues(
             }
             if (v.meleeStats === null) throw "Null value";
             // TODO: Check if the sharpness bars are rampage weapon default bars?
-            v.meleeStats.minSharpness = [50,80,70,160,10,30]; // Full bar
-            v.meleeStats.maxSharpness = [50,80,70,160,10,30];
+            v.meleeStats.minSharpness = [50,80,70,160,10,30,0]; // Full bar
+            v.meleeStats.maxSharpness = [50,80,70,160,10,30,0];
 
             v.baseRawAdd += -20;
         }],
