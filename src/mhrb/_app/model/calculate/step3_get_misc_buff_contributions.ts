@@ -1,32 +1,21 @@
-// @ts-nocheck
 /*
  * Author:  simshadows <contact@simshadows.com>
  * License: GNU Affero General Public License v3 (AGPL-3.0)
  */
 
+import {
+    type MHRDatabase,
+} from "../../database";
+
 import {Build} from "../build";
 import {CalcState} from "../calc_state";
 
-import {
-    isObj,
-    isInt,
-    isNonEmptyStr,
-    isStrOrNull,
-    isArr,
-    isMap,
-    isSet,
-    isFunction,
-} from "../../check";
-
-const assert = console.assert;
-
-function getMiscBuffContributions(db, build, calcState) {
-    assert(isObj(db));
-    assert(isMap(db.readonly.weapons.map.greatsword)); // Spot check for structure
-
-    assert(build instanceof Build);
-    assert(calcState instanceof CalcState);
-
+function getMiscBuffContributions(
+    db:        {"readonly": MHRDatabase},
+    build:     Build,
+    calcState: CalcState,
+) {
+    db; // TODO: Remove the parameter
     const weaponRO = build.getWeaponObjRO();
 
     const allCalcStateSpec = calcState.getSpecification();
@@ -34,31 +23,64 @@ function getMiscBuffContributions(db, build, calcState) {
 
     const petalaceRO = build.getPetalaceObjRO();
 
-    function buffState(groupName, stateName) {
-        const presentations = allCalcStateSpec.get(groupName).get(stateName).presentations;
+    function buffState(groupName: string, stateName: string): number {
+        // TODO: Refactor to avoid needing runtime undefineds-checking?
+
+        const specGroupMap = allCalcStateSpec.get(groupName);
+        if (specGroupMap === undefined) throw new Error("Unexpected undefined.");
+
+        const specStateMap = specGroupMap.get(stateName);
+        if (specStateMap === undefined) throw new Error("Unexpected undefined.");
+
+        const presentations = specStateMap.presentations;
         const numPossibleStates = presentations.length;
-        assert(numPossibleStates > 2);
-        const stateValue = allCalcState.get(groupName).get(stateName);
-        assert(isInt(stateValue) && (stateValue >= 0) && (stateValue < numPossibleStates));
+        if (numPossibleStates <= 2) throw new Error("Unexpected value.");
+
+        const groupMap = allCalcState.get(groupName);
+        if (groupMap === undefined) throw new Error("Unexpected undefined.");
+
+        const stateValue = groupMap.get(stateName);
+        console.log(stateValue);
+        if ((stateValue === undefined) || (stateValue % 1 !== 0)
+            || (stateValue < 0) || (stateValue >= numPossibleStates)) {
+            throw new Error("Unexpected value.");
+        }
         return stateValue;
     }
-    function miscBuffState(stateName) {
+    function miscBuffState(stateName: string): number {
         return buffState("Misc.", stateName);
     }
 
     // Defined for code readability. Returns whether a binary state is "on" or "off".
-    function buffActive(groupName, stateName) {
-        const presentations = allCalcStateSpec.get(groupName).get(stateName).presentations;
+    function buffActive(groupName: string, stateName: string): boolean {
+        // TODO: Refactor to avoid needing runtime undefineds-checking?
+        // TODO: Also, this is a duplicate.
+
+        const specGroupMap = allCalcStateSpec.get(groupName);
+        if (specGroupMap === undefined) throw new Error("Unexpected undefined.");
+
+        const specStateMap = specGroupMap.get(stateName);
+        if (specStateMap === undefined) throw new Error("Unexpected undefined.");
+
+        const presentations = specStateMap.presentations;
         const numPossibleStates = presentations.length;
-        assert(numPossibleStates === 2);
-        const stateValue = allCalcState.get(groupName).get(stateName);
-        assert(isInt(stateValue) && (stateValue >= 0) && (stateValue < 2));
+        // This line below is the only difference (at the time of writing)
+        if (numPossibleStates != 2) throw new Error("Unexpected value.");
+
+        const groupMap = allCalcState.get(groupName);
+        if (groupMap === undefined) throw new Error("Unexpected undefined.");
+
+        const stateValue = groupMap.get(stateName);
+        if ((stateValue === undefined) || (stateValue % 1 !== 0)
+            || (stateValue < 0) || (stateValue >= numPossibleStates)) {
+            throw new Error("Unexpected value.");
+        }
         return (stateValue === 1);
     }
-    function itemBoxBuffActive(stateName) {
+    function itemBoxBuffActive(stateName: string): boolean {
         return buffActive("Item Box", stateName);
     }
-    function miscBuffActive(stateName) {
+    function miscBuffActive(stateName: string): boolean {
         return buffActive("Misc.", stateName);
     }
 
