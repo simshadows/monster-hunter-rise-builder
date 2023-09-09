@@ -1,9 +1,24 @@
-// @ts-nocheck
 /*
  * Author:  simshadows <contact@simshadows.com>
  * License: GNU Affero General Public License v3 (AGPL-3.0)
  */
 
+import {
+    type SharpnessMutable,
+    type Sharpness,
+    isBowgunRecoil,
+    isBowgunReload,
+    clampBowgunRecoil,
+    clampBowgunReload,
+    clampBowgunDeviationSeverity,
+    isBowChargeLevelLimit,
+    type BowgunStatsMutable,
+    isBowgunAmmoType,
+} from "../../common/types";
+
+import {
+    type MHRDatabase,
+} from "../../database";
 import {Build} from "../build";
 import {CalcState} from "../calc_state";
 
@@ -12,24 +27,12 @@ import {getSkillContributions} from "./step2_get_skill_contributions";
 import {getMiscBuffContributions} from "./step3_get_misc_buff_contributions";
 
 import {
-    isObj,
-    isInt,
-    isNonEmptyStr,
-    isStrOrNull,
-    isArr,
-    isMap,
-    isSet,
-    isFunction,
-} from "../../check";
-import {
     isEleStr,
     getWeaponTags,
 } from "../../common";
 import {
     sum,
 } from "../../utils";
-
-const assert = console.assert;
 
 
 /****************************************************************************************/
@@ -178,19 +181,15 @@ const bowgunReloadPerAmmoTable = new Map([
 /****************************************************************************************/
 
 
-function calculateBuildPerformance(db, build, calcState) {
-    assert(isObj(db));
-    assert(isMap(db.readonly.weapons.map.greatsword)); // Spot check for structure
-
-    assert(build instanceof Build);
-    assert(calcState instanceof CalcState);
+function calculateBuildPerformance(
+    db:        {"readonly": MHRDatabase},
+    build:     Build,
+    calcState: CalcState,
+) {
 
     const weaponRO = build.getWeaponObjRO();
     const armourROs = build.getArmourROs();
     const tagset   = getWeaponTags(weaponRO.category);
-
-    const allCalcStateSpec = calcState.getSpecification();
-    const allCalcState = calcState.getCurrState();
 
     //
     // STAGE 1: Calculating base values and skill contributions.
@@ -200,80 +199,28 @@ function calculateBuildPerformance(db, build, calcState) {
 
     const b = getBaseValues(db, build, calcState);
     console.log(b);
-    assert(b.baseRaw                 !== undefined);
-    assert(b.baseAffinity            !== undefined);
-    assert(b.baseEleStat             !== undefined);
-    assert(b.meleeStats.minSharpness !== undefined);
-    assert(b.meleeStats.maxSharpness !== undefined);
-    assert(b.baseDefense             !== undefined);
-
-    assert(b.baseRawAdd      !== undefined);
-    assert(b.baseRawMul      !== undefined);
-    assert(b.rawPostTruncMul !== undefined);
-
-    assert(b.affinityAdd !== undefined);
-
-    assert(b.eleStatMul !== undefined);
-
-    assert(b.narwaSoulActive !== undefined);
-
-    assert(b.glStats     !== undefined);
-    assert(b.hhStats     !== undefined);
-    assert(b.saStats     !== undefined);
-    assert(b.cbStats     !== undefined);
-    assert(b.igStats     !== undefined);
-    assert(b.bowStats    !== undefined);
-    assert(b.bowgunStats !== undefined);
 
     const s = getSkillContributions(db, build, calcState);
-    assert(s.rawAdd                  !== undefined);
-    assert(s.rawMul                  !== undefined);
-    assert(s.affinityAdd             !== undefined);
-    assert(s.eleStatAdd              !== undefined);
-    assert(s.eleStatMul              !== undefined);
-    assert(s.rawBlunderDamage        !== undefined);
-    assert(s.rawCriticalDamage       !== undefined);
-    assert(s.elementalBlunderDamage  !== undefined);
-    assert(s.elementalCriticalDamage !== undefined);
-    assert(s.ammoUpLevel             !== undefined);
-    assert(s.bludgeonerLevel         !== undefined);
-    assert(s.bowChargePlusLevel      !== undefined);
-    assert(s.handicraftLevel         !== undefined);
-    assert(s.mastersTouchLevel       !== undefined);
-    assert(s.razorSharpLevel         !== undefined);
-    assert(s.recoilDownLevel         !== undefined);
-    assert(s.reloadSpeedLevel        !== undefined);
-    assert(s.steadinessLevel         !== undefined);
-    assert(s.defenseAdd              !== undefined);
-    assert(s.defenseMul              !== undefined);
-    assert(s.eleResAdd               !== undefined);
-
-    assert(s.rawPostTruncMul !== undefined);
 
     const m = getMiscBuffContributions(db, build, calcState);
-    assert(m.rawAdd      !== undefined);
-    assert(m.rawMul      !== undefined);
-    assert(m.affinityAdd !== undefined);
-    assert(m.eleMul      !== undefined);
-    assert(m.defenseAdd  !== undefined);
-    assert(m.defenseMul  !== undefined);
-
-    assert(m.reloadSpeedAdd !== undefined);
-
-    assert(m.sharpnessLevelReduction !== undefined);
 
     //
     // STAGE 2: Find Sharpness Modifiers
     //
 
-    let realSharpnessBar              = null;
-    let maxSharpnessBar               = null;
-    let rawSharpnessModifier          = null;
-    let elementalSharpnessModifier    = null;
+    let realSharpnessBar;
+    let maxSharpnessBar;
+    let rawSharpnessModifier;
+    let elementalSharpnessModifier;
 
     if (tagset.has("melee")) {
         
         // We first determine if the sharpness bar is full.
+
+        // TODO: Remove this runtime type check
+        if (b.meleeStats === null) {
+            throw new Error("Unexpected null.");
+        }
 
         const minSharpnessTotalHits = b.meleeStats.minSharpness.reduce(sum);
         const maxSharpnessTotalHits = b.meleeStats.maxSharpness.reduce(sum);
@@ -283,7 +230,9 @@ function calculateBuildPerformance(db, build, calcState) {
                     return true;
                 } else {
                     // TODO: Do this check again during database initialization.
-                    assert(minSharpnessTotalHits + 50 === maxSharpnessTotalHits);
+                    if (minSharpnessTotalHits + 50 !== maxSharpnessTotalHits) {
+                        throw new Error("Mismatch");
+                    }
                     return false;
                 }
             })();
@@ -308,7 +257,8 @@ function calculateBuildPerformance(db, build, calcState) {
     //
 
     const bludgeonerBaseRawMul = (()=>{
-        if (!tagset.has("melee")) return 1;
+        if (!realSharpnessBar) return 1;
+        if (!tagset.has("melee")) throw new Error("Expected melee.");
 
         const highestSharpnessIndex = getHighestSharpnessIndex(realSharpnessBar);
         if ((s.bludgeonerLevel === 1) && (highestSharpnessIndex <= 2)) { // Yellow or lower
@@ -327,7 +277,7 @@ function calculateBuildPerformance(db, build, calcState) {
         let ibushiPieces = 0;
         for (const [_, armourRO] of Object.entries(armourROs)) {
             if ((armourRO !== null) && (armourRO.setID === 144 || armourRO.setID === 145)) {
-                assert(armourRO.setName === "Ibushi"); // Sanity check
+                if (armourRO.setName !== "Ibushi") throw new Error("Failed sanity check.");
                 ++ibushiPieces;
             }
         }
@@ -369,7 +319,7 @@ function calculateBuildPerformance(db, build, calcState) {
 
     const critChance = Math.min(postbaseAffinity, 100) / 100; // Clip values to 1 or less
 
-    function getCritModifier(critDamage, blunderDamage) {
+    function getCritModifier(critDamage: number, blunderDamage: number) {
         if (critChance < 0) {
             // Negative affinity causes chance for "blunder"
             const blunderChance = -Math.max(critChance, -1); // Clip values to 1 or above, then convert to positive probability
@@ -428,7 +378,8 @@ function calculateBuildPerformance(db, build, calcState) {
     //
 
     let effectiveRaw = postbaseRaw * rawCritModifier;
-    if (tagset.has("melee")) {
+    if (rawSharpnessModifier !== undefined) {
+        if (!tagset.has("melee")) throw new Error("Expected melee.");
         effectiveRaw *= rawSharpnessModifier;
     }
 
@@ -437,7 +388,8 @@ function calculateBuildPerformance(db, build, calcState) {
         let effectiveEleStatValue = postbaseEleStatValue;
         if (isEleStr(eleStatID)) {
             effectiveEleStatValue *= elementalCritModifier;
-            if (tagset.has("melee")) {
+            if (elementalSharpnessModifier) {
+                if (!tagset.has("melee")) throw new Error("Expected melee.");
                 effectiveEleStatValue *= elementalSharpnessModifier;
             }
         }
@@ -449,33 +401,55 @@ function calculateBuildPerformance(db, build, calcState) {
     //
 
     let gunlanceStats = b.glStats;
-    assert((weaponRO.category === "gunlance") === (gunlanceStats !== null));
+    if ((weaponRO.category === "gunlance") !== (gunlanceStats !== null)) {
+        throw new Error("Mismatch.");
+    }
 
     let huntingHornSongs = b.hhStats;
-    assert((weaponRO.category === "huntinghorn") === (huntingHornSongs !== null));
+    if ((weaponRO.category === "huntinghorn") !== (huntingHornSongs !== null)) {
+        throw new Error("Mismatch.");
+    }
 
     let switchAxeStats = b.saStats;
-    assert((weaponRO.category === "switchaxe") === (switchAxeStats !== null));
+    if ((weaponRO.category === "switchaxe") !== (switchAxeStats !== null)) {
+        throw new Error("Mismatch.");
+    }
 
     let chargeBladeStats = b.cbStats;
-    assert((weaponRO.category === "chargeblade") === (chargeBladeStats !== null));
+    if ((weaponRO.category === "chargeblade") !== (chargeBladeStats !== null)) {
+        throw new Error("Mismatch.");
+    }
 
     let insectglaiveStats = b.igStats;
-    assert((weaponRO.category === "insectglaive") === (insectglaiveStats !== null));
+    if ((weaponRO.category === "insectglaive") !== (insectglaiveStats !== null)) {
+        throw new Error("Mismatch.");
+    }
 
     let bowStats = b.bowStats;
-    assert((weaponRO.category === "bow") === (bowStats !== null));
+    if ((weaponRO.category === "bow") !== (bowStats !== null)) {
+        throw new Error("Mismatch.");
+    }
     if ((weaponRO.category === "bow") && (s.bowChargePlusLevel !== 0)) {
-        assert(s.bowChargePlusLevel === 1);
+        if (s.bowChargePlusLevel !== 1) throw new Error();
+        if (!bowStats) throw new Error("Unexpected null/undefined.");
         const cllMax = bowStats.chargeShot.length;
         const cll = bowStats.chargeLevelLimit;
-        assert((cllMax === cll) || (cllMax === cll + 1)); // Assume cll is at most -1 of max
+        if (!((cllMax === cll) || (cllMax === cll + 1))) throw new Error("CLL should be at most -1 of max.");
+        if (!isBowChargeLevelLimit(cllMax)) throw new Error(`Invalid value ${cllMax}`);
         bowStats.chargeLevelLimit = cllMax; // Sets chargeLevelLimit to max
     }
 
     let bowgunStats = b.bowgunStats;
-    assert(((weaponRO.category === "lightbowgun") || (weaponRO.category === "heavybowgun")) === (bowgunStats !== null));
-    if ((weaponRO.category === "lightbowgun") || (weaponRO.category === "heavybowgun")) {
+    if (
+        ((weaponRO.category === "lightbowgun") || (weaponRO.category === "heavybowgun"))
+        !== (bowgunStats !== null)
+    ) {
+        throw new Error("Mismatch.");
+    }
+    if (bowgunStats) {
+        if ((weaponRO.category !== "lightbowgun") && (weaponRO.category !== "heavybowgun")) {
+            throw new Error(`Invalid category ${weaponRO.category}`);
+        }
         bowgunStats.reload += m.reloadSpeedAdd;
         applyBuffsToBowgunAmmoAndClamp(bowgunStats, s.ammoUpLevel, s.recoilDownLevel, s.reloadSpeedLevel, s.steadinessLevel);
     }
@@ -524,13 +498,18 @@ function calculateBuildPerformance(db, build, calcState) {
 /****************************************************************************************/
 
 
-function getSharpnessValues(maxSharpness, handicraftLevel, sharpnessLevelReduction) {
-    const realSharpnessBar = applyHandicraft(maxSharpness, handicraftLevel);
+function getSharpnessValues(
+    maxSharpness:            Sharpness,
+    handicraftLevel:         number,
+    sharpnessLevelReduction: number,
+) {
+    const realSharpnessBar: SharpnessMutable = applyHandicraft(maxSharpness, handicraftLevel);
 
     let r = sharpnessLevelReduction;
-    for (let i = realSharpnessBar.length - 1; i > 0; --i) {
+    for (const [i, sharpnessValue] of realSharpnessBar.slice().reverse().entries()) {
+    //for (let i = realSharpnessBar.length - 1; i > 0; --i) {
         if (r <= 0) break;
-        if (realSharpnessBar[i] > 0) {
+        if (sharpnessValue > 0) {
             realSharpnessBar[i] = 0;
             --r;
         }
@@ -545,17 +524,32 @@ function getSharpnessValues(maxSharpness, handicraftLevel, sharpnessLevelReducti
 }
 
 
-function applyHandicraft(maxSharpness, handicraftLevel) {
-    assert(isArr(maxSharpness) && (maxSharpness.length === 7)); // We only go up to purple sharpness
-    assert(isInt(handicraftLevel) && (handicraftLevel >= 0) && (handicraftLevel <= 5));
+function applyHandicraft(
+    maxSharpness:    Sharpness,
+    handicraftLevel: number,
+): SharpnessMutable {
+    if ((handicraftLevel % 1 !== 0) || (handicraftLevel < 0) || (handicraftLevel > 5)) {
+        throw new Error("Handicraft should be a valid integer level.");
+    }
 
-    const realSharpnessBar = [...maxSharpness];
+    // TODO: We shouldn't need to do something this verbose.
+    const realSharpnessBar: SharpnessMutable = [
+        maxSharpness[0],
+        maxSharpness[1],
+        maxSharpness[2],
+        maxSharpness[3],
+        maxSharpness[4],
+        maxSharpness[5],
+        maxSharpness[6],
+    ];
     let hitsToSubtract = 50 - (handicraftLevel * 10);
 
-    assert(isInt(hitsToSubtract) && (hitsToSubtract >= 0)) && (hitsToSubtract <= 50);
+    if ((hitsToSubtract % 1 !== 0) || (hitsToSubtract < 0) || (hitsToSubtract > 50)) {
+        throw new Error("Unexpected value.");
+    }
 
-    for (let i = realSharpnessBar.length - 1; i >= 0; --i) {
-        const currHits = realSharpnessBar[i];
+    for (const [i, sharpnessValue] of realSharpnessBar.slice().reverse().entries()) {
+        const currHits = sharpnessValue;
         const newHits = currHits - hitsToSubtract;
         if (newHits < 0) {
             hitsToSubtract = -newHits;
@@ -569,17 +563,17 @@ function applyHandicraft(maxSharpness, handicraftLevel) {
 }
 
 
-function getHighestSharpnessIndex(realSharpnessBar) {
-    assert(isArr(realSharpnessBar) && (realSharpnessBar.length === 7)); // We only go up to purple sharpness
-    
-    let highestIndex = null;
-    for (let i = realSharpnessBar.length - 1; i >= 0; --i) {
-        if (realSharpnessBar[i] > 0) {
+function getHighestSharpnessIndex(realSharpnessBar: Sharpness): number {
+    let highestIndex = -1;
+    for (const [i, sharpnessValue] of realSharpnessBar.slice().reverse().entries()) {
+        if (sharpnessValue > 0) {
             highestIndex = i;
             break;
         }
     }
-    assert(highestIndex !== null); // We always find a sharpness level
+    if ((highestIndex < 0) || (highestIndex >= 7) || (highestIndex % 1 !== 0)) {
+        throw new Error("Returned index must be within range.");
+    }
     return highestIndex;
 }
 
@@ -590,27 +584,53 @@ function getHighestSharpnessIndex(realSharpnessBar) {
 
 
 // IMPURE FUNCTION. Will modify the bowgun ammo object with new values.
-function applyBuffsToBowgunAmmoAndClamp(bowgunStats, ammoUpLevel, recoilDownLevel, reloadSpeedLevel, steadinessLevel) {
-    assert((ammoUpLevel >= 0) && (ammoUpLevel <= 3));
+function applyBuffsToBowgunAmmoAndClamp(
+    bowgunStats:      BowgunStatsMutable,
+    ammoUpLevel:      number,
+    recoilDownLevel:  number,
+    reloadSpeedLevel: number,
+    steadinessLevel:  number,
+) {
+    if ((ammoUpLevel % 1 !== 0) || (ammoUpLevel < 0) || (ammoUpLevel > 3)) {
+        throw new Error("Unexpected Ammo Up level.");
+    }
 
-    bowgunStats.deviation.severity = Math.max(0, Math.min(2, bowgunStats.deviation.severity - steadinessLevel));
-    const recoilStage = bowgunStats.recoil = Math.max(0, Math.min(5, bowgunStats.recoil - recoilDownLevel));
-    const reloadStage = bowgunStats.reload = Math.max(0, Math.min(8, bowgunStats.reload + reloadSpeedLevel));
+    bowgunStats.deviation.severity = clampBowgunDeviationSeverity(
+        bowgunStats.deviation.severity - steadinessLevel
+    );
+    const recoilStage = bowgunStats.recoil = clampBowgunRecoil(
+        bowgunStats.recoil - recoilDownLevel
+    );
+    const reloadStage = bowgunStats.reload = clampBowgunReload(
+        bowgunStats.reload + reloadSpeedLevel
+    );
 
     const keys = Object.keys(bowgunStats.ammo);
     for (const k of keys) {
+        if (!isBowgunAmmoType(k)) throw new Error("Must be an ammo type.");
         if (ammoUpLevel > 0) {
-            const addedCapacity = bowgunAmmoUpCapacityTable.get(k)[ammoUpLevel - 1];
-            assert(addedCapacity !== undefined);
+            const subtable = bowgunAmmoUpCapacityTable.get(k);
+            if (!subtable) throw new Error("Key must exist.");
+            const addedCapacity = subtable[ammoUpLevel - 1];
+            if (addedCapacity === undefined) throw new Error("Key should exist.");
             bowgunStats.ammo[k].ammoCapacity += addedCapacity;
         }
-        bowgunStats.ammo[k].recoil = bowgunRecoilPerAmmoTable.get(k)[recoilStage];
-        assert(bowgunStats.ammo[k].recoil >= 0);
-        assert(bowgunStats.ammo[k].recoil <= 3);
 
-        bowgunStats.ammo[k].reload = bowgunReloadPerAmmoTable.get(k)[reloadStage];
-        assert(bowgunStats.ammo[k].reload >= 0);
-        assert(bowgunStats.ammo[k].reload <= 3);
+        const subtable1 = bowgunRecoilPerAmmoTable.get(k);
+        if (!subtable1) throw new Error("Key must exist.");
+        const recoil = subtable1[recoilStage];
+        if (typeof recoil !== "number") throw new Error("Must be a number");
+        if (!isBowgunRecoil(recoil)) throw new Error("Invalid number.");
+        if (recoil > 3) throw new Error("Invalid number.");
+        bowgunStats.ammo[k].recoil = recoil;
+
+        const subtable2 = bowgunReloadPerAmmoTable.get(k);
+        if (!subtable2) throw new Error("Key must exist.");
+        const reload = subtable2[reloadStage];
+        if (typeof reload !== "number") throw new Error("Must be a number");
+        if (!isBowgunReload(reload)) throw new Error("Invalid number.");
+        if (reload > 3) throw new Error("Invalid number.");
+        bowgunStats.ammo[k].reload = reload;
     }
 }
 

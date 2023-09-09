@@ -10,6 +10,7 @@
     "test": "jest",
     "build": "webpack",
     "build-dev": "webpack --mode development",
+    "dev": "webpack serve --mode development",
     "start": "webpack serve --mode development",
     "serve": "python3 -m http.server --directory ./dist",
     "ghpages-build": "webpack --output-path ./docs",

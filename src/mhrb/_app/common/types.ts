@@ -259,6 +259,9 @@ export type BowCoating = "close_range_coating"
                        | "sleep_coating"
                        | "blast_coating"
                        | "exhaust_coating";
+export function isBowChargeLevelLimit(v: number): v is BowChargeLevelLimit {
+    return (v % 1 === 0) && (v >= 2) && (v <= 4);
+}
 
 // TODO: This mutable definition should be further deduplicated.
 export interface BowStatsMutable {
@@ -289,17 +292,94 @@ export type BowgunReload = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;
 export function isBowgunRecoil(v: number): v is BowgunRecoil {
     return (v % 1 === 0) && (v >= 0) && (v <= 5);
 }
+export function isBowgunReload(v: number): v is BowgunReload {
+    return (v % 1 === 0) && (v >= 0) && (v <= 8);
+}
+export function clampBowgunRecoil(v: number): BowgunRecoil {
+    // TODO: This is absolutely horrible. Replace this function with something better?
+    if (v % 1 !== 0) throw new Error("Value must be an integer.");
+    v = Math.max(0, Math.min(5, v));
+    switch (v) {
+        case 0:
+        case 1:
+        case 2:
+        case 3:
+        case 4:
+        case 5:
+            return v;
+        default:
+            throw new Error("This should never happen.");
+    }
+}
+export function clampBowgunReload(v: number): BowgunReload {
+    // TODO: This is absolutely horrible. Replace this function with something better?
+    if (v % 1 !== 0) throw new Error("Value must be an integer.");
+    v = Math.max(0, Math.min(8, v));
+    switch (v) {
+        case 0:
+        case 1:
+        case 2:
+        case 3:
+        case 4:
+        case 5:
+        case 6:
+        case 7:
+        case 8:
+            return v;
+        default:
+            throw new Error("This should never happen.");
+    }
+}
 
-export type BowgunAmmoType = `${"normal" | "pierce" | "spread" | "shrapnel" | "sticky" | "cluster"}_${1 | 2 | 3}`
-                           | `${"" | "piercing_"}${"fire" | "water" | "thunder" | "ice" | "dragon"}`
-                           | `${"poison" | "paralysis" | "sleep" | "exhaust" | "recover"}_${1 | 2}`
-                           | "demon" | "armor" | "slicing" | "wyvern" | "tranq";
+export type BowgunDeviationSeverity = 0 | 1 | 2;
+export function clampBowgunDeviationSeverity(v: number): BowgunDeviationSeverity {
+    // TODO: This is absolutely horrible. Replace this function with something better?
+    if (v % 1 !== 0) throw new Error("Value must be an integer.");
+    v = Math.max(0, Math.min(2, v));
+    switch (v) {
+        case 0:
+        case 1:
+        case 2:
+            return v;
+        default:
+            throw new Error("This should never happen.");
+    }
+}
+
+export type BowgunAmmoType =
+    `${"normal" | "pierce" | "spread" | "shrapnel" | "sticky" | "cluster"}_${1 | 2 | 3}`
+    | `${"" | "piercing_"}${"fire" | "water" | "thunder" | "ice" | "dragon"}`
+    | `${"poison" | "paralysis" | "sleep" | "exhaust" | "recover"}_${1 | 2}`
+    | "demon" | "armor" | "slicing" | "wyvern" | "tranq";
+// TODO: This hurts my soul.
+const _bowgunAmmoTypes: Set<BowgunAmmoType> = new Set([
+    "normal_1", "normal_2", "normal_3", 
+    "pierce_1", "pierce_2", "pierce_3", 
+    "spread_1", "spread_2", "spread_3", 
+    "shrapnel_1", "shrapnel_2", "shrapnel_3", 
+    "sticky_1", "sticky_2", "sticky_3", 
+    "cluster_1", "cluster_2", "cluster_3", 
+    "fire", "water", "thunder", "ice", "dragon",
+    "piercing_fire", "piercing_water", "piercing_thunder",
+    "piercing_ice", "piercing_dragon",
+    "poison_1", "poison_2", "paralysis_1", "paralysis_2",
+    "sleep_1", "sleep_2", "exhaust_1", "exhaust_2",
+    "recover_1", "recover_2",
+    "demon", "armor", "slicing", "wyvern", "tranq",
+]);
+export function isBowgunAmmoType(s: string): s is BowgunAmmoType {
+    // idk why the compiler thinks this is fine
+    const tmp: Set<string> = _bowgunAmmoTypes;
+    return tmp.has(s);
+}
 
 // TODO: Deduplicate this code somehow.
 export type BowgunAmmoMapMutable = {
     [K in BowgunAmmoType]: {
         available:    boolean;
         ammoCapacity: number;
+        recoil?:      BowgunRecoil; // TODO: I don't know why this is a thing
+        reload?:      BowgunReload; // TODO: I don't know why this is a thing
     };
 }
 export type BowgunAmmoMap = {
@@ -311,7 +391,7 @@ export type BowgunAmmoMap = {
 
 export interface BowgunStatsMutable {
     deviation: {
-        severity: 0 | 1 | 2;
+        severity: BowgunDeviationSeverity;
         left:     boolean;
         right:    boolean;
     };
